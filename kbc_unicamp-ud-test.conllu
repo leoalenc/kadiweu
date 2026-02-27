@@ -9,7 +9,7 @@
 1	ajo	ijo	DET	D	Deixis=Dist|Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	liwatece	watece	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:12
 3	ja	jaG	PART	T	Aspect=Perf	4	advmod	_	TokenRange=13:15
-4	iwaGadi	wagadi	VERB	VB	Mood=Ind|Person=3|VerbFom=Fin	0	root	_	SpaceAfter=No|TokenRange=16:23
+4	iwaGadi	wagadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=16:23
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
 
 # sent_id = ped-gramm-corpus-2
@@ -43,7 +43,7 @@
 # text_por_orig = A canoa está pesada
 # text_por = A canoa está pesada.
 1	niwatece	watece	NOUN	N$	Gender=Fem|NounClass=Gen|Number=Sing	2	nsubj	_	TokenRange=0:8
-2	iwaGadi	iwaGadi	VERB	VB	Gender=Fem	0	root	_	SpaceAfter=No|TokenRange=9:16
+2	iwaGadi	iwaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=9:16
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = ped-gramm-corpus-5
@@ -63,7 +63,7 @@
 # text_por = A canoa está perto do rio.
 1	ajo	ijo	DET	D	Deixis=Dist|Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	niwatece	watece	NOUN	N$	Gender=Fem|NounClass=Gen|Number=Sing	3	nsubj	_	TokenRange=4:12
-3	ipegitege	pegitege	VERB	VBAPL	Mood=Ind|Person[apl]=3|Person[erg]=3|VerbFom=Fin|Voice=Appl	0	root	_	TokenRange=13:22
+3	ipegitege	pegitege	VERB	VBAPL	Mood=Ind|Person[appl]=3|Person[erg]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=13:22
 4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=23:29
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
 
