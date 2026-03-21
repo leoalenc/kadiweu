@@ -72,6 +72,19 @@
 4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=23:29
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
 
+# sent_id = ped-gramm-7
+# sent_uid = e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
+# text = liGeladi Maria aGipegetege.
+# text_orig = liGeladi Maria aG ipegetege
+# text_por = A casa de Maria não é perto dela
+# text_por_orig = A casa de Maria não é perto dela
+1	liGeladi	geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=0:8
+2	Maria	maria	PROPN	NPR	_	1	nmod:poss	_	TokenRange=9:14
+3-4	aGipegetege	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=15:26
+3	aG	ag	PART	NEG	_	4	advmod	_	_
+4	ipegetege	pege	VERB	VBAPL	Gender[obj]=3|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	_
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=26:27
+
 # sent_id = ped-gramm-10
 # sent_uid = 2fff1f23-4e6f-401c-8b74-6a17ff6a391a
 # text = ica liGeladi ipegitegi.
