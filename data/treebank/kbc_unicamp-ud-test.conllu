@@ -42,6 +42,7 @@
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = ped-gramm-4
+# sent_uid = 69948fe6-81f6-4faa-a344-8f8c47486943
 # text = niwatece iwaGadi.
 # text_orig = niwatece iwaGadi
 # text_por_orig = A canoa está pesada
@@ -52,6 +53,7 @@
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = ped-gramm-5
+# sent_uid = b2e3ea43-0d68-46ee-9f33-938610cc8aec
 # text = niwatece etadi weiigi.
 # text_orig = niwatece etadi weiigi
 # text_por_orig = A canoa está no rio
@@ -63,6 +65,7 @@
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = ped-gramm-6
+# sent_uid = 1b99ecb9-5656-4c38-b60b-fbbe643708fb
 # text = ajo niwatece ipegitege weiigi.
 # text_orig = ajo niwatece ipegitege weiigi
 # text_por = A canoa está perto do rio.
@@ -112,6 +115,7 @@
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
 
 # sent_id = ped-gramm-17
+# sent_uid = 12147353-b422-4ad7-9bef-1d20e70e2a74
 # text = ica loigi ijo niganigi ipegitegi GanigotGa.
 # text_orig = ica loigi ijo niganigi ipegitegi GanigotGa
 # text_por = A comunidade do menino é perto da cidade de vocês.
