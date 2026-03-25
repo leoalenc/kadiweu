@@ -1,0 +1,17 @@
+conllu_form	issue_type	path	position	text	token_form	uid
+aGipegetege	token_conllu_form_mismatch	$.pages[0].sentences[6]	3	liGeladi Maria aGipegetege	aG@	e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
+loligi	token_conllu_form_mismatch	$.pages[0].sentences[10]	3	ica Maria looligi alidi	looligi	fef391af-9e63-419f-8f81-057459193f49
+alidi	token_conllu_form_mismatch	$.pages[0].sentences[10]	4	ica Maria looligi alidi	aG@	fef391af-9e63-419f-8f81-057459193f49
+lalogi	token_conllu_form_mismatch	$.pages[0].sentences[11]	2	ica looligi lidi	looligi	070d221f-f72d-4055-9c82-ddc383743e6a
+lalogi	token_conllu_form_mismatch	$.pages[0].sentences[12]	2	ica looligi dapiko	looligi	68277d1f-c30b-4c4f-ba9e-c2883cc133af
+loligi	token_conllu_form_mismatch	$.pages[0].sentences[13]	2	ica looligi ja dapiko	looligi	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
+loligi	token_conllu_form_mismatch	$.pages[0].sentences[14]	2	ica looligi lidGegi	looligi	c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
+lininienigi	token_conllu_form_mismatch	$.pages[0].sentences[19]	3	ica niwigo libinienigi	libinienigi	55551636-8ed3-4545-8510-d8dbfd817a1a
+anenapioi	token_conllu_form_mismatch	$.pages[0].sentences[23]	4	iGeladi idei naigi anenapioi	ane@	2f47b402-9fe7-4714-96e3-c6cbdf405472
+mijo	token_conllu_form_mismatch	$.pages[0].sentences[26]	3	iGeladi idei mijo naigi naGajo	me@	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+naigi	token_conllu_form_mismatch	$.pages[0].sentences[26]	4	iGeladi idei mijo naigi naGajo	@ijo	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+naGajo	token_conllu_form_mismatch	$.pages[0].sentences[26]	5	iGeladi idei mijo naigi naGajo	naigi	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+niganaGacanajo	token_conllu_form_mismatch	$.pages[0].sentences[29]	3	Eyodi ane niganaGacanajo	*T*	7b806584-75e5-4017-b9e2-ba97458903bd
+napioi	token_conllu_form_mismatch	$.pages[0].sentences[34]	5	iGeladi ipegitegi naigi ane napioi	*T*	014fefb1-d5e3-48c8-9ac3-9e713a41407f
+aGipegitegi	token_conllu_form_mismatch	$.pages[0].sentences[36]	2	iGeladi aGipegitegi weigi	aG@	1da1bf7a-7975-4baf-821b-9df5c75ac297
+weigi	token_conllu_form_mismatch	$.pages[0].sentences[36]	3	iGeladi aGipegitegi weigi	@ipegitegi	1da1bf7a-7975-4baf-821b-9df5c75ac297
