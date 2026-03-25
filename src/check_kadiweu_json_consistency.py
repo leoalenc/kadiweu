@@ -2,63 +2,27 @@
 # -*- coding: utf-8 -*-
 
 """
-Check the Kadiwéu pedagogical grammar JSON for omissions and inconsistencies.
+Check gramatica-pedagogica.json for omissions and inconsistencies.
 
-This script is designed for treebank cleanup before UD conversion. It reuses the
-same sentence-collection approach found in the project's inspection utilities,
-then adds consistency checks over tokens and split morphemes.
+The script traverses the pedagogical grammar JSON, collects sentence objects,
+and reports issues such as:
+- missing token tags/forms
+- missing split tags/forms/glosses
+- inconsistent token tags or glosses for the same surface form
+- inconsistent split-tag / split-form sequences for the same token form
+- inconsistent morpheme tags or glosses for the same morpheme form
+- overlap between the roles of tag and gloss for the same morpheme form
+- tokens lacking splits although the same token is segmented elsewhere
+- token/proto-CoNLL-U count and form mismatches
+- chunk spans outside the token range
 
-Main checks
------------
-1. Missing token fields
-   - missing token form
-   - missing token tag
-   - missing token gloss
-2. Missing split fields
-   - empty split object
-   - missing split form
-   - missing split tag
-   - missing split gloss when the same morpheme elsewhere has one
-3. Repeated token form with conflicting analyses
-   - conflicting token tags for the same surface form
-   - conflicting split-tag sequences for the same surface form
-   - conflicting token-level glosses for the same surface form
-4. Repeated morpheme form with conflicting analyses
-   - conflicting split tags for the same morpheme form
-   - conflicting split glosses for the same morpheme form
-5. Alignment / structure warnings
-   - token count vs proto-CoNLL-U count mismatch
-   - token/conllu surface mismatch by position
-   - chunk spans outside attested token positions
-6. Helpful cleanup heuristics
-   - tokens with no splits although the same token elsewhere has splits
-   - tokens with incomplete split descriptions although the same token elsewhere
-     has a fuller analysis
-
-Output
-------
-By default the script prints a concise human-readable summary.
-
-Optional machine-readable outputs:
-- --json-out REPORT.json   full report as JSON
-- --tsv-dir DIR            grouped TSV files, one per issue type
-
-Usage
------
-Basic:
+Usage:
     python3 check_kadiweu_json_consistency.py gramatica-pedagogica.json
-
-Write JSON report and TSVs:
     python3 check_kadiweu_json_consistency.py gramatica-pedagogica.json \
-        --json-out consistency-report.json --tsv-dir consistency-tsv
-
-Inspect only one sentence:
+        --json-out kadiweu_consistency_report.json
     python3 check_kadiweu_json_consistency.py gramatica-pedagogica.json \
-        --uid e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
-
-Inspect only sentences whose text contains a string:
-    python3 check_kadiweu_json_consistency.py gramatica-pedagogica.json \
-        --text-contains ipegitegi
+        --json-out kadiweu_consistency_report.json \
+        --tsv-dir kadiweu_consistency_tsvs
 """
 
 from __future__ import annotations
@@ -66,17 +30,12 @@ from __future__ import annotations
 import argparse
 import csv
 import json
-import sys
-from collections import Counter, defaultdict
+from collections import defaultdict
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
-
-
-JsonDict = Dict[str, Any]
+from typing import Any, Dict, List, Optional, Tuple
 
 
 def safe_get(d: Any, *path: str, default=None):
-    """Safely descend nested dicts."""
     cur = d
     for key in path:
         if not isinstance(cur, dict) or key not in cur:
@@ -85,559 +44,365 @@ def safe_get(d: Any, *path: str, default=None):
     return cur
 
 
+def norm_text(value: Any) -> Optional[str]:
+    if value is None:
+        return None
+    text = str(value).strip()
+    return text if text else None
+
+
+def token_gloss(token: Dict[str, Any]) -> Optional[str]:
+    return norm_text(safe_get(token, "attributes", "gloss-br"))
+
+
+def split_gloss(split: Dict[str, Any]) -> Optional[str]:
+    return norm_text(safe_get(split, "attributes", "gloss-br"))
+
+
 def is_sentence_object(obj: Any) -> bool:
-    """
-    Heuristic for recognizing a sentence object.
-    We expect:
-      - text
-      - struct with at least one of tokens/chunks/conllu
-    """
-    if not isinstance(obj, dict):
-        return False
-    text = obj.get("text")
-    struct = obj.get("struct")
-    if not isinstance(text, str):
-        return False
-    if not isinstance(struct, dict):
-        return False
-    return any(k in struct for k in ("tokens", "chunks", "conllu"))
+    return (
+        isinstance(obj, dict)
+        and isinstance(obj.get("text"), str)
+        and isinstance(obj.get("struct"), dict)
+        and any(k in obj["struct"] for k in ("tokens", "chunks", "conllu"))
+    )
 
 
-def walk_collect_sentences(
-    obj: Any,
-    path: str = "$",
-    inherited_meta: Optional[Dict[str, Any]] = None,
-) -> List[Dict[str, Any]]:
-    """
-    Recursively traverse the JSON and collect sentence-like objects.
-
-    This follows the same basic pattern used in the existing project scripts.
-    """
-    if inherited_meta is None:
-        inherited_meta = {}
-
+def walk_collect_sentences(obj: Any, path: str = "$") -> List[Dict[str, Any]]:
     out: List[Dict[str, Any]] = []
-
     if isinstance(obj, dict):
-        local_meta = dict(inherited_meta)
-
-        for key in ("uid", "id", "title", "name", "label", "content", "contents"):
-            if key in obj and key not in local_meta:
-                local_meta[key] = obj[key]
-
         if is_sentence_object(obj):
-            out.append(
-                {
-                    "path": path,
-                    "container_meta": local_meta,
-                    "sentence": obj,
-                }
-            )
-
+            out.append({"path": path, "sentence": obj})
         for key, value in obj.items():
-            out.extend(walk_collect_sentences(value, f"{path}.{key}", local_meta))
-
+            out.extend(walk_collect_sentences(value, f"{path}.{key}"))
     elif isinstance(obj, list):
         for i, item in enumerate(obj):
-            out.extend(walk_collect_sentences(item, f"{path}[{i}]", inherited_meta))
-
+            out.extend(walk_collect_sentences(item, f"{path}[{i}]"))
     return out
 
 
-def filter_sentences(
-    sentences: List[Dict[str, Any]],
-    uid: Optional[str] = None,
-    text_contains: Optional[str] = None,
-) -> List[Dict[str, Any]]:
-    """Filter sentence records by UID or substring in text."""
-    out = sentences
-
-    if uid is not None:
-        out = [r for r in out if safe_get(r, "sentence", "uid") == uid]
-
-    if text_contains is not None:
-        needle = text_contains.lower()
-        out = [
-            r
-            for r in out
-            if isinstance(safe_get(r, "sentence", "text"), str)
-            and needle in safe_get(r, "sentence", "text").lower()
-        ]
-
-    return out
+def split_signature(token: Dict[str, Any], field: str) -> Tuple[str, ...]:
+    splits = token.get("splits", [])
+    if not isinstance(splits, list) or not splits:
+        return tuple()
+    values: List[str] = []
+    for sp in splits:
+        if not isinstance(sp, dict):
+            values.append("")
+        else:
+            values.append(norm_text(sp.get(field)) or "")
+    return tuple(values)
 
 
-def token_gloss(token: JsonDict) -> Optional[str]:
-    return safe_get(token, "attributes", "gloss-br")
+def report_issue(bucket: Dict[str, List[Dict[str, Any]]], issue_type: str, **payload: Any) -> None:
+    bucket[issue_type].append({"issue_type": issue_type, **payload})
 
 
-def split_gloss(split: JsonDict) -> Optional[str]:
-    return safe_get(split, "attributes", "gloss-br")
-
-
-def norm_text(value: Any) -> str:
+def flatten_for_tsv(value: Any) -> str:
     if value is None:
         return ""
-    return str(value).strip()
+    if isinstance(value, (str, int, float, bool)):
+        return str(value)
+    return json.dumps(value, ensure_ascii=False, sort_keys=True)
 
 
-def split_signature(token: JsonDict) -> Tuple[str, ...]:
-    splits = token.get("splits", [])
-    if not isinstance(splits, list):
-        return tuple()
-    return tuple(norm_text(s.get("t")) if isinstance(s, dict) else "" for s in splits)
-
-
-def split_forms_signature(token: JsonDict) -> Tuple[str, ...]:
-    splits = token.get("splits", [])
-    if not isinstance(splits, list):
-        return tuple()
-    return tuple(norm_text(s.get("v")) if isinstance(s, dict) else "" for s in splits)
-
-
-def has_any_split_content(token: JsonDict) -> bool:
-    splits = token.get("splits")
-    if not isinstance(splits, list) or not splits:
-        return False
-    for s in splits:
-        if not isinstance(s, dict):
+def write_issue_tsvs(issues: Dict[str, List[Dict[str, Any]]], out_dir: Path) -> None:
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for issue_type, rows in sorted(issues.items()):
+        if not rows:
             continue
-        if any(k in s and s.get(k) not in (None, "", [], {}) for k in ("v", "t", "attributes", "fn", "idx")):
-            return True
-    return False
+        fieldnames = sorted({key for row in rows for key in row.keys()})
+        tsv_path = out_dir / f"{issue_type}.tsv"
+        with tsv_path.open("w", encoding="utf-8", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter="\t", extrasaction="ignore")
+            writer.writeheader()
+            for row in rows:
+                writer.writerow({key: flatten_for_tsv(row.get(key)) for key in fieldnames})
 
 
-def best_known_split_profile(token_records: Sequence[Tuple[JsonDict, Dict[str, Any]]]) -> Dict[str, Any]:
-    """Pick the fullest known split analysis for a token form."""
-    best = None
-    best_score = -1
-    for tok, meta in token_records:
-        splits = tok.get("splits", []) if isinstance(tok.get("splits"), list) else []
-        score = 0
-        for s in splits:
-            if not isinstance(s, dict):
-                continue
-            if norm_text(s.get("v")):
-                score += 1
-            if norm_text(s.get("t")):
-                score += 2
-            if split_gloss(s):
-                score += 1
-        if score > best_score:
-            best = {"token": tok, "meta": meta, "score": score}
-            best_score = score
-    return best or {}
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("json_file", type=Path)
+    ap.add_argument("--json-out", type=Path)
+    ap.add_argument("--tsv-dir", type=Path, help="Directory where per-issue TSV reports will be written")
+    args = ap.parse_args()
 
+    data = json.loads(args.json_file.read_text(encoding="utf-8"))
+    sentence_records = walk_collect_sentences(data)
 
-def issue_base(issue_type: str, meta: Dict[str, Any], sentence: JsonDict) -> Dict[str, Any]:
-    return {
-        "issue_type": issue_type,
-        "path": meta["path"],
-        "uid": sentence.get("uid"),
-        "text": sentence.get("text"),
-    }
-
-
-def collect_sentence_metadata(record: Dict[str, Any]) -> Dict[str, Any]:
-    sentence = record["sentence"]
-    return {
-        "path": record["path"],
-        "uid": sentence.get("uid"),
-        "text": sentence.get("text"),
-    }
-
-
-def analyze(records: List[Dict[str, Any]]) -> Dict[str, Any]:
     issues: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
 
-    token_records_by_form: Dict[str, List[Tuple[JsonDict, Dict[str, Any]]]] = defaultdict(list)
-    morpheme_records_by_form: Dict[str, List[Tuple[JsonDict, JsonDict, Dict[str, Any], int]]] = defaultdict(list)
+    token_records_by_form: Dict[str, List[Tuple[Dict[str, Any], Dict[str, Any]]]] = defaultdict(list)
+    morph_records_by_form: Dict[str, List[Tuple[Dict[str, Any], Dict[str, Any], Dict[str, Any]]]] = defaultdict(list)
 
-    n_sent = len(records)
-    n_tok = 0
-    n_split = 0
-
-    for record in records:
-        sentence = record["sentence"]
-        meta = collect_sentence_metadata(record)
-        struct = sentence.get("struct", {}) if isinstance(sentence.get("struct"), dict) else {}
-
-        tokens = struct.get("tokens", [])
-        chunks = struct.get("chunks", [])
-        conllu = struct.get("conllu", [])
-
-        if not isinstance(tokens, list):
-            tokens = []
-        if not isinstance(chunks, list):
-            chunks = []
-        if not isinstance(conllu, list):
-            conllu = []
-
-        n_tok += len(tokens)
-
-        positions = []
-        for tok in tokens:
-            if not isinstance(tok, dict):
-                continue
-            p = tok.get("p")
-            if isinstance(p, int):
-                positions.append(p)
+    # pass 1: local checks + index token/morpheme occurrences
+    for rec in sentence_records:
+        sent = rec["sentence"]
+        uid = sent.get("uid")
+        text = sent.get("text")
+        struct = sent.get("struct") if isinstance(sent.get("struct"), dict) else {}
+        tokens = struct.get("tokens") if isinstance(struct.get("tokens"), list) else []
+        conllu = struct.get("conllu") if isinstance(struct.get("conllu"), list) else []
+        chunks = struct.get("chunks") if isinstance(struct.get("chunks"), list) else []
 
         if len(tokens) != len(conllu):
-            item = issue_base("token_conllu_count_mismatch", meta, sentence)
-            item.update({"token_count": len(tokens), "conllu_count": len(conllu)})
-            issues[item["issue_type"]].append(item)
+            report_issue(
+                issues,
+                "token_conllu_count_mismatch",
+                uid=uid,
+                text=text,
+                path=rec["path"],
+                token_count=len(tokens),
+                conllu_count=len(conllu),
+            )
 
-        for i, (tok, crow) in enumerate(zip(tokens, conllu), start=1):
-            if not isinstance(tok, dict) or not isinstance(crow, dict):
-                continue
-            tv = norm_text(tok.get("v"))
-            cv = norm_text(crow.get("form"))
-            if tv and cv and tv != cv:
-                item = issue_base("token_conllu_form_mismatch", meta, sentence)
-                item.update({"position": i, "token_form": tv, "conllu_form": cv})
-                issues[item["issue_type"]].append(item)
+        for i, (tok, col) in enumerate(zip(tokens, conllu), start=1):
+            tok_form = norm_text(tok.get("v")) if isinstance(tok, dict) else None
+            col_form = norm_text(col.get("form")) if isinstance(col, dict) else None
+            if tok_form != col_form:
+                report_issue(
+                    issues,
+                    "token_conllu_form_mismatch",
+                    uid=uid,
+                    text=text,
+                    path=rec["path"],
+                    position=i,
+                    token_form=tok_form,
+                    conllu_form=col_form,
+                )
 
-        pos_set = set(positions)
+        positions = sorted(tok.get("p") for tok in tokens if isinstance(tok, dict) and isinstance(tok.get("p"), int))
+        min_p = positions[0] if positions else None
+        max_p = positions[-1] if positions else None
         for ch in chunks:
             if not isinstance(ch, dict):
                 continue
             start = ch.get("i")
             end = ch.get("f")
-            label = ch.get("t")
-            if not isinstance(start, int) or not isinstance(end, int):
+            if min_p is None or max_p is None:
                 continue
-            if positions and (start < min(positions) or end > max(positions) or start > end):
-                item = issue_base("chunk_span_out_of_range", meta, sentence)
-                item.update({"chunk_label": label, "start": start, "end": end, "token_positions": positions})
-                issues[item["issue_type"]].append(item)
+            if not isinstance(start, int) or not isinstance(end, int) or start < min_p or end > max_p or start > end:
+                report_issue(
+                    issues,
+                    "chunk_span_out_of_range",
+                    uid=uid,
+                    text=text,
+                    path=rec["path"],
+                    chunk=ch,
+                    token_range=[min_p, max_p],
+                )
 
         for tok in tokens:
             if not isinstance(tok, dict):
                 continue
-            form = norm_text(tok.get("v"))
-            tag = norm_text(tok.get("t"))
-            gloss = token_gloss(tok)
-            position = tok.get("p")
-            token_item_base = issue_base("", meta, sentence)
-            token_item_base.update({"position": position, "token_form": form, "token_tag": tag, "token_gloss": gloss})
+            tok_form = norm_text(tok.get("v"))
+            tok_tag = norm_text(tok.get("t"))
+            splits = tok.get("splits") if isinstance(tok.get("splits"), list) else []
 
-            if not form:
-                item = dict(token_item_base)
-                item["issue_type"] = "missing_token_form"
-                issues[item["issue_type"]].append(item)
-            if not tag and not tok.get("ec"):
-                item = dict(token_item_base)
-                item["issue_type"] = "missing_token_tag"
-                issues[item["issue_type"]].append(item)
-            if tok.get("ec") and not tag:
-                item = dict(token_item_base)
-                item["issue_type"] = "empty_category_without_tag"
-                issues[item["issue_type"]].append(item)
-            if form:
-                token_records_by_form[form].append((tok, meta))
+            if tok_form is None:
+                report_issue(issues, "missing_token_form", uid=uid, text=text, path=rec["path"], token=tok)
+                continue
 
-            splits = tok.get("splits", [])
-            if splits is None:
-                splits = []
-            if not isinstance(splits, list):
-                splits = []
+            token_records_by_form[tok_form].append((tok, rec))
 
-            if not splits:
-                # full omission only if this form is segmented somewhere else will be handled later
-                pass
+            if tok_tag is None:
+                report_issue(
+                    issues,
+                    "missing_token_tag",
+                    uid=uid,
+                    text=text,
+                    path=rec["path"],
+                    host_token=tok_form,
+                )
 
-            for idx, sp in enumerate(splits, start=1):
-                n_split += 1
+            if tok_form == "*T*" and tok_tag is None:
+                report_issue(
+                    issues,
+                    "empty_category_without_tag",
+                    uid=uid,
+                    text=text,
+                    path=rec["path"],
+                    host_token=tok_form,
+                )
+
+            for j, sp in enumerate(splits, start=1):
                 if not isinstance(sp, dict):
-                    item = dict(token_item_base)
-                    item["issue_type"] = "non_dict_split"
-                    item["split_index"] = idx
-                    item["split_raw"] = repr(sp)
-                    issues[item["issue_type"]].append(item)
+                    report_issue(
+                        issues,
+                        "empty_split_object",
+                        uid=uid,
+                        text=text,
+                        path=rec["path"],
+                        host_token=tok_form,
+                        split_index=j,
+                    )
                     continue
-
-                sv = norm_text(sp.get("v"))
-                st = norm_text(sp.get("t"))
-                sg = split_gloss(sp)
-
-                if not sp:
-                    item = dict(token_item_base)
-                    item["issue_type"] = "empty_split_object"
-                    item["split_index"] = idx
-                    issues[item["issue_type"]].append(item)
-                else:
-                    if not sv:
-                        item = dict(token_item_base)
-                        item["issue_type"] = "missing_split_form"
-                        item["split_index"] = idx
-                        item["split_tag"] = st
-                        issues[item["issue_type"]].append(item)
-                    if not st:
-                        item = dict(token_item_base)
-                        item["issue_type"] = "missing_split_tag"
-                        item["split_index"] = idx
-                        item["split_form"] = sv
-                        issues[item["issue_type"]].append(item)
-
-                if sv:
-                    morpheme_records_by_form[sv].append((sp, tok, meta, idx))
-
-    # token-form level consistency
-    for form, token_records in token_records_by_form.items():
-        tags = sorted({norm_text(tok.get("t")) for tok, _ in token_records if norm_text(tok.get("t"))})
-        token_glosses = sorted({norm_text(token_gloss(tok)) for tok, _ in token_records if norm_text(token_gloss(tok))})
-        splitseqs = sorted({"|".join(split_signature(tok)) for tok, _ in token_records})
-        splitformseqs = sorted({"|".join(split_forms_signature(tok)) for tok, _ in token_records})
-        has_splits = [has_any_split_content(tok) for tok, _ in token_records]
-
-        examples = [
-            {
-                "uid": meta["uid"],
-                "text": meta["text"],
-                "token_tag": tok.get("t"),
-                "token_gloss": token_gloss(tok),
-                "split_tags": list(split_signature(tok)),
-                "split_forms": list(split_forms_signature(tok)),
-            }
-            for tok, meta in token_records
-        ]
-
-        if len(tags) > 1:
-            issues["conflicting_token_tags_for_form"].append(
-                {"issue_type": "conflicting_token_tags_for_form", "token_form": form, "token_tags": tags, "examples": examples}
-            )
-
-        if len(token_glosses) > 1:
-            issues["conflicting_token_glosses_for_form"].append(
-                {"issue_type": "conflicting_token_glosses_for_form", "token_form": form, "token_glosses": token_glosses, "examples": examples}
-            )
-
-        nonempty_splitseqs = [s for s in splitseqs if s]
-        if len(set(nonempty_splitseqs)) > 1:
-            issues["conflicting_split_tag_sequences_for_form"].append(
-                {"issue_type": "conflicting_split_tag_sequences_for_form", "token_form": form, "split_tag_sequences": sorted(set(nonempty_splitseqs)), "examples": examples}
-            )
-
-        nonempty_splitformseqs = [s for s in splitformseqs if s]
-        if len(set(nonempty_splitformseqs)) > 1:
-            issues["conflicting_split_form_sequences_for_form"].append(
-                {"issue_type": "conflicting_split_form_sequences_for_form", "token_form": form, "split_form_sequences": sorted(set(nonempty_splitformseqs)), "examples": examples}
-            )
-
-        if any(has_splits) and not all(has_splits):
-            best = best_known_split_profile(token_records)
-            for tok, meta in token_records:
-                if not has_any_split_content(tok):
-                    issues["token_without_splits_but_analyzed_elsewhere"].append(
-                        {
-                            "issue_type": "token_without_splits_but_analyzed_elsewhere",
-                            "token_form": form,
-                            "uid": meta["uid"],
-                            "text": meta["text"],
-                            "token_tag": tok.get("t"),
-                            "expected_from_uid": safe_get(best, "meta", "uid"),
-                            "expected_from_text": safe_get(best, "meta", "text"),
-                            "expected_split_tags": list(split_signature(best.get("token", {}))),
-                            "expected_split_forms": list(split_forms_signature(best.get("token", {}))),
-                        }
+                sp_form = norm_text(sp.get("v"))
+                sp_tag = norm_text(sp.get("t"))
+                sp_gl = split_gloss(sp)
+                if sp_form is None and sp_tag is None and sp_gl is None:
+                    report_issue(
+                        issues,
+                        "empty_split_object",
+                        uid=uid,
+                        text=text,
+                        path=rec["path"],
+                        host_token=tok_form,
+                        split_index=j,
+                    )
+                    continue
+                if sp_form is None:
+                    report_issue(
+                        issues,
+                        "missing_split_form",
+                        uid=uid,
+                        text=text,
+                        path=rec["path"],
+                        host_token=tok_form,
+                        split_index=j,
+                    )
+                    continue
+                morph_records_by_form[sp_form].append((sp, tok, rec))
+                if sp_tag is None:
+                    report_issue(
+                        issues,
+                        "missing_split_tag",
+                        uid=uid,
+                        text=text,
+                        path=rec["path"],
+                        host_token=tok_form,
+                        split_index=j,
+                        morpheme_form=sp_form,
                     )
 
-        # same form, some splits missing tags although fuller analysis exists elsewhere
-        has_fuller = any(
-            all(norm_text(s.get("v")) and norm_text(s.get("t")) for s in (tok.get("splits", []) or []) if isinstance(s, dict))
-            and bool(tok.get("splits"))
-            for tok, _ in token_records
-        )
-        if has_fuller:
-            best = best_known_split_profile(token_records)
-            for tok, meta in token_records:
-                splits = tok.get("splits", []) if isinstance(tok.get("splits"), list) else []
-                if not splits:
-                    continue
-                incomplete = False
-                for s in splits:
-                    if isinstance(s, dict) and (not norm_text(s.get("v")) or not norm_text(s.get("t"))):
-                        incomplete = True
-                        break
-                if incomplete:
-                    issues["token_with_incomplete_splits_but_fuller_analysis_elsewhere"].append(
-                        {
-                            "issue_type": "token_with_incomplete_splits_but_fuller_analysis_elsewhere",
-                            "token_form": form,
-                            "uid": meta["uid"],
-                            "text": meta["text"],
-                            "split_tags_here": list(split_signature(tok)),
-                            "split_forms_here": list(split_forms_signature(tok)),
-                            "expected_from_uid": safe_get(best, "meta", "uid"),
-                            "expected_from_text": safe_get(best, "meta", "text"),
-                            "expected_split_tags": list(split_signature(best.get("token", {}))),
-                            "expected_split_forms": list(split_forms_signature(best.get("token", {}))),
-                        }
-                    )
-
-    # morpheme-form consistency
-    for morph, morph_records in morpheme_records_by_form.items():
-        tags = sorted({norm_text(sp.get("t")) for sp, _, _, _ in morph_records if norm_text(sp.get("t"))})
-        glosses = sorted({norm_text(split_gloss(sp)) for sp, _, _, _ in morph_records if norm_text(split_gloss(sp))})
-        examples = [
-            {
-                "uid": meta["uid"],
-                "text": meta["text"],
-                "host_token": tok.get("v"),
-                "split_index": idx,
-                "split_tag": sp.get("t"),
-                "split_gloss": split_gloss(sp),
-            }
-            for sp, tok, meta, idx in morph_records
-        ]
+    for tok_form, recs in sorted(token_records_by_form.items()):
+        tags = sorted({norm_text(tok.get("t")) for tok, _ in recs if norm_text(tok.get("t"))})
+        glosses = sorted({token_gloss(tok) for tok, _ in recs if token_gloss(tok)})
+        tag_seqs = sorted({split_signature(tok, "t") for tok, _ in recs if split_signature(tok, "t")})
+        form_seqs = sorted({split_signature(tok, "v") for tok, _ in recs if split_signature(tok, "v")})
 
         if len(tags) > 1:
-            issues["conflicting_morpheme_tags"].append(
-                {"issue_type": "conflicting_morpheme_tags", "morpheme_form": morph, "split_tags": tags, "examples": examples}
+            report_issue(
+                issues,
+                "conflicting_token_tags",
+                token_form=tok_form,
+                tags=tags,
+                occurrences=[{"uid": r[1]["sentence"].get("uid"), "text": r[1]["sentence"].get("text"), "tag": norm_text(r[0].get("t"))} for r in recs],
             )
         if len(glosses) > 1:
-            issues["conflicting_morpheme_glosses"].append(
-                {"issue_type": "conflicting_morpheme_glosses", "morpheme_form": morph, "split_glosses": glosses, "examples": examples}
+            report_issue(
+                issues,
+                "conflicting_token_glosses",
+                token_form=tok_form,
+                glosses=glosses,
+                occurrences=[{"uid": r[1]["sentence"].get("uid"), "text": r[1]["sentence"].get("text"), "gloss": token_gloss(r[0])} for r in recs if token_gloss(r[0])],
+            )
+        if len(tag_seqs) > 1:
+            report_issue(
+                issues,
+                "conflicting_split_tag_sequences",
+                token_form=tok_form,
+                split_tag_sequences=[list(x) for x in tag_seqs],
+            )
+        if len(form_seqs) > 1:
+            report_issue(
+                issues,
+                "conflicting_split_form_sequences",
+                token_form=tok_form,
+                split_form_sequences=[list(x) for x in form_seqs],
+            )
+        if any(split_signature(tok, "v") for tok, _ in recs) and any(not split_signature(tok, "v") for tok, _ in recs):
+            report_issue(
+                issues,
+                "token_lacks_splits_but_analyzed_elsewhere",
+                token_form=tok_form,
+                missing_in=[{"uid": r[1]["sentence"].get("uid"), "text": r[1]["sentence"].get("text")} for r in recs if not split_signature(r[0], "v")],
+                known_split_forms=[list(x) for x in form_seqs if x],
             )
 
-        # missing morpheme tag or gloss where known elsewhere
-        if tags:
-            for sp, tok, meta, idx in morph_records:
-                if not norm_text(sp.get("t")):
-                    issues["missing_split_tag_but_known_for_same_morpheme"].append(
-                        {
-                            "issue_type": "missing_split_tag_but_known_for_same_morpheme",
-                            "morpheme_form": morph,
-                            "uid": meta["uid"],
-                            "text": meta["text"],
-                            "host_token": tok.get("v"),
-                            "split_index": idx,
-                            "known_tags_elsewhere": tags,
-                        }
-                    )
+    for morph_form, recs in sorted(morph_records_by_form.items()):
+        tags = sorted({norm_text(sp.get("t")) for sp, _, _ in recs if norm_text(sp.get("t"))})
+        glosses = sorted({split_gloss(sp) for sp, _, _ in recs if split_gloss(sp)})
+
+        if len(tags) > 1:
+            report_issue(
+                issues,
+                "conflicting_morpheme_tags",
+                morpheme_form=morph_form,
+                tags=tags,
+                occurrences=[{
+                    "uid": rec[2]["sentence"].get("uid"),
+                    "text": rec[2]["sentence"].get("text"),
+                    "host_token": norm_text(rec[1].get("v")),
+                    "tag": norm_text(rec[0].get("t")),
+                } for rec in recs],
+            )
+        if len(glosses) > 1:
+            report_issue(
+                issues,
+                "conflicting_morpheme_glosses",
+                morpheme_form=morph_form,
+                glosses=glosses,
+                occurrences=[{
+                    "uid": rec[2]["sentence"].get("uid"),
+                    "text": rec[2]["sentence"].get("text"),
+                    "host_token": norm_text(rec[1].get("v")),
+                    "gloss": split_gloss(rec[0]),
+                } for rec in recs if split_gloss(rec[0])],
+            )
+        overlap = sorted(set(tags) & set(glosses))
+        if overlap:
+            report_issue(
+                issues,
+                "morpheme_tag_gloss_role_overlap",
+                morpheme_form=morph_form,
+                overlapping_values=overlap,
+                tag_occurrences=[{
+                    "uid": rec[2]["sentence"].get("uid"),
+                    "text": rec[2]["sentence"].get("text"),
+                    "host_token": norm_text(rec[1].get("v")),
+                    "tag": norm_text(rec[0].get("t")),
+                } for rec in recs if norm_text(rec[0].get("t")) in overlap],
+                gloss_occurrences=[{
+                    "uid": rec[2]["sentence"].get("uid"),
+                    "text": rec[2]["sentence"].get("text"),
+                    "host_token": norm_text(rec[1].get("v")),
+                    "gloss": split_gloss(rec[0]),
+                } for rec in recs if split_gloss(rec[0]) in overlap],
+            )
         if glosses:
-            for sp, tok, meta, idx in morph_records:
-                if not norm_text(split_gloss(sp)):
-                    issues["missing_split_gloss_but_known_for_same_morpheme"].append(
-                        {
-                            "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-                            "morpheme_form": morph,
-                            "uid": meta["uid"],
-                            "text": meta["text"],
-                            "host_token": tok.get("v"),
-                            "split_index": idx,
-                            "known_glosses_elsewhere": glosses,
-                        }
+            for sp, tok, rec in recs:
+                if split_gloss(sp) is None:
+                    report_issue(
+                        issues,
+                        "missing_split_gloss_but_known_for_same_morpheme",
+                        morpheme_form=morph_form,
+                        uid=rec["sentence"].get("uid"),
+                        text=rec["sentence"].get("text"),
+                        host_token=norm_text(tok.get("v")),
+                        known_glosses_elsewhere=glosses,
                     )
 
-    summary = {
-        "sentences": n_sent,
-        "tokens": n_tok,
-        "splits": n_split,
-        "issue_counts": {k: len(v) for k, v in sorted(issues.items())},
-        "issue_total": sum(len(v) for v in issues.values()),
+    counts = {k: len(v) for k, v in sorted(issues.items())}
+    report = {
+        "source_file": str(args.json_file),
+        "sentence_count": len(sentence_records),
+        "issue_counts": counts,
+        "issues": dict(sorted(issues.items())),
     }
 
-    return {
-        "summary": summary,
-        "issues": dict(issues),
-    }
-
-
-def print_summary(report: Dict[str, Any], max_examples: int = 3) -> None:
-    summary = report["summary"]
-    issues = report["issues"]
-
-    print("Kadiwéu JSON consistency report")
-    print("=" * 80)
-    print(f"Sentences: {summary['sentences']}")
-    print(f"Tokens:    {summary['tokens']}")
-    print(f"Splits:    {summary['splits']}")
-    print(f"Issues:    {summary['issue_total']}")
-    print()
-
-    if not summary["issue_counts"]:
-        print("No issues found.")
-        return
-
-    print("Issue counts")
-    print("-" * 80)
-    for kind, count in sorted(summary["issue_counts"].items(), key=lambda kv: (-kv[1], kv[0])):
-        print(f"{count:>4}  {kind}")
-
-    print()
-    print("Sample issues")
-    print("-" * 80)
-    for kind, count in sorted(summary["issue_counts"].items(), key=lambda kv: (-kv[1], kv[0])):
-        print(f"\n[{kind}] total={count}")
-        for item in issues[kind][:max_examples]:
-            print(json.dumps(item, ensure_ascii=False, sort_keys=False))
-
-
-def write_tsvs(report: Dict[str, Any], outdir: Path) -> None:
-    outdir.mkdir(parents=True, exist_ok=True)
-    for kind, rows in report["issues"].items():
-        path = outdir / f"{kind}.tsv"
-
-        all_fields = set()
-        flat_rows: List[Dict[str, Any]] = []
-        for row in rows:
-            flat = {}
-            for k, v in row.items():
-                if isinstance(v, (dict, list)):
-                    flat[k] = json.dumps(v, ensure_ascii=False, sort_keys=False)
-                else:
-                    flat[k] = v
-            flat_rows.append(flat)
-            all_fields.update(flat.keys())
-
-        fieldnames = sorted(all_fields)
-        with path.open("w", encoding="utf-8", newline="") as f:
-            writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter="\t", extrasaction="ignore")
-            writer.writeheader()
-            writer.writerows(flat_rows)
-
-
-def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Check omissions and inconsistencies in the Kadiwéu pedagogical grammar JSON.")
-    parser.add_argument("json_path", help="Path to gramatica-pedagogica.json")
-    parser.add_argument("--uid", help="Restrict analysis to one sentence UID")
-    parser.add_argument("--text-contains", help="Restrict analysis to sentences whose text contains this string")
-    parser.add_argument("--json-out", help="Write full report as JSON")
-    parser.add_argument("--tsv-dir", help="Write one TSV file per issue type into this directory")
-    parser.add_argument("--max-examples", type=int, default=3, help="Examples per issue type in stdout summary")
-    return parser.parse_args(argv)
-
-
-def main(argv: Optional[Sequence[str]] = None) -> int:
-    args = parse_args(argv)
-    path = Path(args.json_path)
-
-    with path.open("r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    sentence_records = walk_collect_sentences(data)
-    sentence_records = filter_sentences(sentence_records, uid=args.uid, text_contains=args.text_contains)
-
-    if not sentence_records:
-        print("No sentences matched the requested filters.", file=sys.stderr)
-        return 1
-
-    report = analyze(sentence_records)
-    print_summary(report, max_examples=args.max_examples)
+    print(f"Sentences checked: {len(sentence_records)}")
+    for key, value in counts.items():
+        print(f"{key}: {value}")
 
     if args.json_out:
-        out = Path(args.json_out)
-        out.parent.mkdir(parents=True, exist_ok=True)
-        with out.open("w", encoding="utf-8") as f:
-            json.dump(report, f, ensure_ascii=False, indent=2)
+        args.json_out.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"\nWrote JSON report to {args.json_out}")
 
     if args.tsv_dir:
-        write_tsvs(report, Path(args.tsv_dir))
-
-    return 0
+        write_issue_tsvs(issues, args.tsv_dir)
+        print(f"Wrote TSV reports to {args.tsv_dir}")
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()

@@ -1,71 +1,71 @@
-host_token	issue_type	known_glosses_elsewhere	morpheme_form	split_index	text	uid
-ajo	missing_split_gloss_but_known_for_same_morpheme	"[""F""]"	a	1	ajo liwatece ja iwaGadi	ed98d4d1-638c-4377-8c6d-5511855636d1
-ajo	missing_split_gloss_but_known_for_same_morpheme	"[""F""]"	a	1	ajo niwatece ipegitege weiigi	1b99ecb9-5656-4c38-b60b-fbbe643708fb
-naGajo	missing_split_gloss_but_known_for_same_morpheme	"[""F""]"	a	2	iGeladi idei mijo naigi naGajo	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
-ajo	missing_split_gloss_but_known_for_same_morpheme	"[""CL""]"	jo	2	ajo liwatece ja iwaGadi	ed98d4d1-638c-4377-8c6d-5511855636d1
-ajo	missing_split_gloss_but_known_for_same_morpheme	"[""CL""]"	jo	2	ajo niwatece etadi digoida	49347527-d19d-4689-bff1-ba3e497e7b1f
-ajo	missing_split_gloss_but_known_for_same_morpheme	"[""CL""]"	jo	2	ajo niwatece ipegitege weiigi	1b99ecb9-5656-4c38-b60b-fbbe643708fb
-ijo	missing_split_gloss_but_known_for_same_morpheme	"[""CL""]"	jo	2	ica loigi ijo niganigi ipegitegi GanigotGa	12147353-b422-4ad7-9bef-1d20e70e2a74
-me@	missing_split_gloss_but_known_for_same_morpheme	"[""CL""]"	jo	3	iGeladi idei mijo naigi naGajo	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
-naGajo	missing_split_gloss_but_known_for_same_morpheme	"[""CL""]"	jo	3	iGeladi idei mijo naigi naGajo	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
-liwatece	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	1	ajo liwatece ja iwaGadi	ed98d4d1-638c-4377-8c6d-5511855636d1
-liGeladi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	1	liGeladi Maria aGipegetege	e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
-liGeladi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	1	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
-looligi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	1	ica looligi lidi	070d221f-f72d-4055-9c82-ddc383743e6a
-lidi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	1	ica looligi lidi	070d221f-f72d-4055-9c82-ddc383743e6a
-looligi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	1	ica looligi dapiko	68277d1f-c30b-4c4f-ba9e-c2883cc133af
-looligi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	1	ica looligi ja dapiko	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
-loigipodi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	1	loigipodi libinienigipi	19cc39ce-fe03-4551-8097-9d163a38a3c0
-libinienigipi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	1	loigipodi libinienigipi	19cc39ce-fe03-4551-8097-9d163a38a3c0
-libinienigi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	1	ica liwigo libinienigi	0f478381-6858-463d-94cc-903e9dc879f9
-libinienigi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	1	ica niwigo libinienigi	55551636-8ed3-4545-8510-d8dbfd817a1a
-libinienigi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	1	ica nioladi nioxoa libinienigi	881131dd-3f70-411a-ac7e-85557139d1e3
-libinienigi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	1	ica nioladi lodawa libinienigi	95a7d135-4be0-463d-b443-76cc5828fc89
-liwatece	missing_split_gloss_but_known_for_same_morpheme	"[""canoa""]"	watece	2	ajo liwatece ja iwaGadi	ed98d4d1-638c-4377-8c6d-5511855636d1
-niwatece	missing_split_gloss_but_known_for_same_morpheme	"[""canoa""]"	watece	2	ajo niwatece ipegitege weiigi	1b99ecb9-5656-4c38-b60b-fbbe643708fb
-ja	missing_split_gloss_but_known_for_same_morpheme	"[""perfectivo/completivo""]"	jaG	1	ajo liwatece ja iwaGadi	ed98d4d1-638c-4377-8c6d-5511855636d1
-aG@	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	2	liGeladi Maria aGipegetege	e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
-ipegetege	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	1	ica liGeladi ipegetege	79a6cd4e-b585-437a-9084-1fa077dec3b6
-ica	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	1	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
-ipegitegi	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	1	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
-ica	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	1	ica Maria looligi alidi	fef391af-9e63-419f-8f81-057459193f49
-ica	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	1	ica looligi lidi	070d221f-f72d-4055-9c82-ddc383743e6a
-ica	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	1	ica looligi dapiko	68277d1f-c30b-4c4f-ba9e-c2883cc133af
-ica	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	1	ica looligi ja dapiko	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
-ica	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	1	ica looligi lidGegi	c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
-ijo	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	1	ica loigi ijo niganigi ipegitegi GanigotGa	12147353-b422-4ad7-9bef-1d20e70e2a74
-iGeladi	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	1	iGeladi idei mijo naigi naGajo	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
-micoataGa	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	2	Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi	ee1a1190-7803-404c-83f6-49d3ccf63b0d
-digoida	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	2	iGeladi idei digoida	a4ccc755-a644-4b04-ab1b-698e7acea4cc
-ipegitaGagi	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	1	iGeladi ipegitaGagi	82117289-be52-45d0-886d-a5747eb20ea2
-aG@	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	2	iGeladi aGipegitegi weigi	1da1bf7a-7975-4baf-821b-9df5c75ac297
-niwatece	missing_split_gloss_but_known_for_same_morpheme	"[""retirapossuidor,fotosemdono""]"	n	1	ajo niwatece etadi digoida	49347527-d19d-4689-bff1-ba3e497e7b1f
-niwatece	missing_split_gloss_but_known_for_same_morpheme	"[""retirapossuidor,fotosemdono""]"	n	1	niwatece iwaGadi	69948fe6-81f6-4faa-a344-8f8c47486943
-niwatece	missing_split_gloss_but_known_for_same_morpheme	"[""retirapossuidor,fotosemdono""]"	n	1	niwatece etadi weiigi	b2e3ea43-0d68-46ee-9f33-938610cc8aec
-niwatece	missing_split_gloss_but_known_for_same_morpheme	"[""retirapossuidor,fotosemdono""]"	n	1	ajo niwatece ipegitege weiigi	1b99ecb9-5656-4c38-b60b-fbbe643708fb
-nigotaGa	missing_split_gloss_but_known_for_same_morpheme	"[""retirapossuidor,fotosemdono""]"	n	1	liGeladi idei nigotaGa	e9d6dfb6-656d-44aa-ba17-86289fd72268
-nioladi	missing_split_gloss_but_known_for_same_morpheme	"[""retirapossuidor,fotosemdono""]"	n	1	ica nioladi Ganixoa	5d0b94bf-223d-4f09-8c6f-b951a70d6d0b
-ipegitegi	missing_split_gloss_but_known_for_same_morpheme	"[""aproximar""]"	pegi	2	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
-ipegitaGagi	missing_split_gloss_but_known_for_same_morpheme	"[""aproximar""]"	pegi	2	iGeladi ipegitaGagi	82117289-be52-45d0-886d-a5747eb20ea2
-aG@	missing_split_gloss_but_known_for_same_morpheme	"[""aproximar""]"	pegi	3	iGeladi aGipegitegi weigi	1da1bf7a-7975-4baf-821b-9df5c75ac297
-liGeladi	missing_split_gloss_but_known_for_same_morpheme	"[""casa""]"	iGeladi	2	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
-ica	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	2	ica liGeladi ipegetege	79a6cd4e-b585-437a-9084-1fa077dec3b6
-ica	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	2	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
-ica	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	2	ica Maria looligi alidi	fef391af-9e63-419f-8f81-057459193f49
-ica	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	2	ica looligi lidi	070d221f-f72d-4055-9c82-ddc383743e6a
-ica	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	2	ica looligi dapiko	68277d1f-c30b-4c4f-ba9e-c2883cc133af
-ica	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	2	ica looligi ja dapiko	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
-ica	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	2	ica looligi lidGegi	c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
-micoataGa	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	3	Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi	ee1a1190-7803-404c-83f6-49d3ccf63b0d
-ipegitegi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	tegi	3	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
-aG@	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	tegi	4	iGeladi aGipegitegi weigi	1da1bf7a-7975-4baf-821b-9df5c75ac297
-looligi	missing_split_gloss_but_known_for_same_morpheme	"[""comida""]"	ooligi	2	ica looligi dapiko	68277d1f-c30b-4c4f-ba9e-c2883cc133af
-looligi	missing_split_gloss_but_known_for_same_morpheme	"[""comida""]"	ooligi	2	ica looligi ja dapiko	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
-looligi	missing_split_gloss_but_known_for_same_morpheme	"[""comida""]"	ooligi	2	ica looligi lidGegi	c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
-lidGegi	missing_split_gloss_but_known_for_same_morpheme	"[""gostosura""]"	idi	2	ica looligi lidGegi	c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
-lidGegi	missing_split_gloss_but_known_for_same_morpheme	"[""gostosura""]"	idi	2	ica lidGegi loligi idei liGeladi	582429f2-67d5-4077-b209-6deb7b5df54f
-dapiko	missing_split_gloss_but_known_for_same_morpheme	"[""quente""]"	apiko	2	ica looligi ja dapiko	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
-ipegitaGagi	missing_split_gloss_but_known_for_same_morpheme	"[""M""]"	gi	4	iGeladi ipegitaGagi	82117289-be52-45d0-886d-a5747eb20ea2
-loigipodi	missing_split_gloss_but_known_for_same_morpheme	"[""comunidade""]"	oigi	2	loigipodi libinienigipi	19cc39ce-fe03-4551-8097-9d163a38a3c0
-Ganixoa	missing_split_gloss_but_known_for_same_morpheme	"[""2""]"	Gad	1	ica nioladi Ganixoa	5d0b94bf-223d-4f09-8c6f-b951a70d6d0b
-niwigo	missing_split_gloss_but_known_for_same_morpheme	"[""fotografia""]"	wigo	2	ica niwigo libinienigi	55551636-8ed3-4545-8510-d8dbfd817a1a
+host_token	issue_type	known_glosses_elsewhere	morpheme_form	text	uid
+Ganixoa	missing_split_gloss_but_known_for_same_morpheme	"[""2""]"	Gad	ica nioladi Ganixoa	5d0b94bf-223d-4f09-8c6f-b951a70d6d0b
+ajo	missing_split_gloss_but_known_for_same_morpheme	"[""F""]"	a	ajo liwatece ja iwaGadi	ed98d4d1-638c-4377-8c6d-5511855636d1
+ajo	missing_split_gloss_but_known_for_same_morpheme	"[""F""]"	a	ajo niwatece ipegitege weiigi	1b99ecb9-5656-4c38-b60b-fbbe643708fb
+naGajo	missing_split_gloss_but_known_for_same_morpheme	"[""F""]"	a	iGeladi idei mijo naigi naGajo	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+dapiko	missing_split_gloss_but_known_for_same_morpheme	"[""quente""]"	apiko	ica looligi ja dapiko	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
+ica	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	ica liGeladi ipegetege	79a6cd4e-b585-437a-9084-1fa077dec3b6
+ica	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+ica	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	ica Maria looligi alidi	fef391af-9e63-419f-8f81-057459193f49
+ica	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	ica looligi lidi	070d221f-f72d-4055-9c82-ddc383743e6a
+ica	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	ica looligi dapiko	68277d1f-c30b-4c4f-ba9e-c2883cc133af
+ica	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	ica looligi ja dapiko	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
+ica	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	ica looligi lidGegi	c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
+micoataGa	missing_split_gloss_but_known_for_same_morpheme	"[""ausente""]"	ca	Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi	ee1a1190-7803-404c-83f6-49d3ccf63b0d
+ipegitaGagi	missing_split_gloss_but_known_for_same_morpheme	"[""M""]"	gi	iGeladi ipegitaGagi	82117289-be52-45d0-886d-a5747eb20ea2
+aG@	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	liGeladi Maria aGipegetege	e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
+ipegetege	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	ica liGeladi ipegetege	79a6cd4e-b585-437a-9084-1fa077dec3b6
+ica	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+ipegitegi	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+ica	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	ica Maria looligi alidi	fef391af-9e63-419f-8f81-057459193f49
+ica	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	ica looligi lidi	070d221f-f72d-4055-9c82-ddc383743e6a
+ica	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	ica looligi dapiko	68277d1f-c30b-4c4f-ba9e-c2883cc133af
+ica	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	ica looligi ja dapiko	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
+ica	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	ica looligi lidGegi	c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
+ijo	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	ica loigi ijo niganigi ipegitegi GanigotGa	12147353-b422-4ad7-9bef-1d20e70e2a74
+iGeladi	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	iGeladi idei mijo naigi naGajo	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+micoataGa	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi	ee1a1190-7803-404c-83f6-49d3ccf63b0d
+digoida	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	iGeladi idei digoida	a4ccc755-a644-4b04-ab1b-698e7acea4cc
+ipegitaGagi	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	iGeladi ipegitaGagi	82117289-be52-45d0-886d-a5747eb20ea2
+aG@	missing_split_gloss_but_known_for_same_morpheme	"[""1"", ""3"", ""M"", ""masc""]"	i	iGeladi aGipegitegi weigi	1da1bf7a-7975-4baf-821b-9df5c75ac297
+liGeladi	missing_split_gloss_but_known_for_same_morpheme	"[""casa""]"	iGeladi	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+lidGegi	missing_split_gloss_but_known_for_same_morpheme	"[""gostosura""]"	idi	ica looligi lidGegi	c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
+lidGegi	missing_split_gloss_but_known_for_same_morpheme	"[""gostosura""]"	idi	ica lidGegi loligi idei liGeladi	582429f2-67d5-4077-b209-6deb7b5df54f
+ja	missing_split_gloss_but_known_for_same_morpheme	"[""perfectivo/completivo""]"	jaG	ajo liwatece ja iwaGadi	ed98d4d1-638c-4377-8c6d-5511855636d1
+ajo	missing_split_gloss_but_known_for_same_morpheme	"[""CL""]"	jo	ajo liwatece ja iwaGadi	ed98d4d1-638c-4377-8c6d-5511855636d1
+ajo	missing_split_gloss_but_known_for_same_morpheme	"[""CL""]"	jo	ajo niwatece etadi digoida	49347527-d19d-4689-bff1-ba3e497e7b1f
+ajo	missing_split_gloss_but_known_for_same_morpheme	"[""CL""]"	jo	ajo niwatece ipegitege weiigi	1b99ecb9-5656-4c38-b60b-fbbe643708fb
+ijo	missing_split_gloss_but_known_for_same_morpheme	"[""CL""]"	jo	ica loigi ijo niganigi ipegitegi GanigotGa	12147353-b422-4ad7-9bef-1d20e70e2a74
+me@	missing_split_gloss_but_known_for_same_morpheme	"[""CL""]"	jo	iGeladi idei mijo naigi naGajo	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+naGajo	missing_split_gloss_but_known_for_same_morpheme	"[""CL""]"	jo	iGeladi idei mijo naigi naGajo	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+liwatece	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	ajo liwatece ja iwaGadi	ed98d4d1-638c-4377-8c6d-5511855636d1
+liGeladi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	liGeladi Maria aGipegetege	e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
+liGeladi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+looligi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	ica looligi lidi	070d221f-f72d-4055-9c82-ddc383743e6a
+lidi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	ica looligi lidi	070d221f-f72d-4055-9c82-ddc383743e6a
+looligi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	ica looligi dapiko	68277d1f-c30b-4c4f-ba9e-c2883cc133af
+looligi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	ica looligi ja dapiko	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
+loigipodi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	loigipodi libinienigipi	19cc39ce-fe03-4551-8097-9d163a38a3c0
+libinienigipi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	loigipodi libinienigipi	19cc39ce-fe03-4551-8097-9d163a38a3c0
+libinienigi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	ica liwigo libinienigi	0f478381-6858-463d-94cc-903e9dc879f9
+libinienigi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	ica niwigo libinienigi	55551636-8ed3-4545-8510-d8dbfd817a1a
+libinienigi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	ica nioladi nioxoa libinienigi	881131dd-3f70-411a-ac7e-85557139d1e3
+libinienigi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	l	ica nioladi lodawa libinienigi	95a7d135-4be0-463d-b443-76cc5828fc89
+niwatece	missing_split_gloss_but_known_for_same_morpheme	"[""retirapossuidor,fotosemdono""]"	n	ajo niwatece etadi digoida	49347527-d19d-4689-bff1-ba3e497e7b1f
+niwatece	missing_split_gloss_but_known_for_same_morpheme	"[""retirapossuidor,fotosemdono""]"	n	niwatece iwaGadi	69948fe6-81f6-4faa-a344-8f8c47486943
+niwatece	missing_split_gloss_but_known_for_same_morpheme	"[""retirapossuidor,fotosemdono""]"	n	niwatece etadi weiigi	b2e3ea43-0d68-46ee-9f33-938610cc8aec
+niwatece	missing_split_gloss_but_known_for_same_morpheme	"[""retirapossuidor,fotosemdono""]"	n	ajo niwatece ipegitege weiigi	1b99ecb9-5656-4c38-b60b-fbbe643708fb
+nigotaGa	missing_split_gloss_but_known_for_same_morpheme	"[""retirapossuidor,fotosemdono""]"	n	liGeladi idei nigotaGa	e9d6dfb6-656d-44aa-ba17-86289fd72268
+nioladi	missing_split_gloss_but_known_for_same_morpheme	"[""retirapossuidor,fotosemdono""]"	n	ica nioladi Ganixoa	5d0b94bf-223d-4f09-8c6f-b951a70d6d0b
+loigipodi	missing_split_gloss_but_known_for_same_morpheme	"[""comunidade""]"	oigi	loigipodi libinienigipi	19cc39ce-fe03-4551-8097-9d163a38a3c0
+looligi	missing_split_gloss_but_known_for_same_morpheme	"[""comida""]"	ooligi	ica looligi dapiko	68277d1f-c30b-4c4f-ba9e-c2883cc133af
+looligi	missing_split_gloss_but_known_for_same_morpheme	"[""comida""]"	ooligi	ica looligi ja dapiko	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
+looligi	missing_split_gloss_but_known_for_same_morpheme	"[""comida""]"	ooligi	ica looligi lidGegi	c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
+ipegitegi	missing_split_gloss_but_known_for_same_morpheme	"[""aproximar""]"	pegi	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+ipegitaGagi	missing_split_gloss_but_known_for_same_morpheme	"[""aproximar""]"	pegi	iGeladi ipegitaGagi	82117289-be52-45d0-886d-a5747eb20ea2
+aG@	missing_split_gloss_but_known_for_same_morpheme	"[""aproximar""]"	pegi	iGeladi aGipegitegi weigi	1da1bf7a-7975-4baf-821b-9df5c75ac297
+ipegitegi	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	tegi	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+aG@	missing_split_gloss_but_known_for_same_morpheme	"[""3""]"	tegi	iGeladi aGipegitegi weigi	1da1bf7a-7975-4baf-821b-9df5c75ac297
+liwatece	missing_split_gloss_but_known_for_same_morpheme	"[""canoa""]"	watece	ajo liwatece ja iwaGadi	ed98d4d1-638c-4377-8c6d-5511855636d1
+niwatece	missing_split_gloss_but_known_for_same_morpheme	"[""canoa""]"	watece	ajo niwatece ipegitege weiigi	1b99ecb9-5656-4c38-b60b-fbbe643708fb
+niwigo	missing_split_gloss_but_known_for_same_morpheme	"[""fotografia""]"	wigo	ica niwigo libinienigi	55551636-8ed3-4545-8510-d8dbfd817a1a
