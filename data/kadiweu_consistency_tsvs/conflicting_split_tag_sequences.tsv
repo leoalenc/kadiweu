@@ -1,0 +1,11 @@
+issue_type	split_tag_sequences	token_form
+conflicting_split_tag_sequences	"[["""", """", """", """"], [""Neg"", ""Erg"", ""v"", ""Apl""], [""Neg"", ""Gen"", ""n""]]"	aG@
+conflicting_split_tag_sequences	"[[""F"", ""CL""], [""Gnr"", ""Ncl""]]"	ajo
+conflicting_split_tag_sequences	"[[""Adv"", ""Gen"", ""Ncl""], [""lá""]]"	digoida
+conflicting_split_tag_sequences	"[[""v""], [""v"", ""Gnr"", ""Ncl""]]"	etadi
+conflicting_split_tag_sequences	"[["""", """"], [""Gnr"", ""Ncl""]]"	ica
+conflicting_split_tag_sequences	"[["""", """", """"], [""Erg"", ""v"", ""Apl""]]"	ipegitegi
+conflicting_split_tag_sequences	"[[""PFV""], [""t""]]"	ja
+conflicting_split_tag_sequences	"[["""", """"], [""Gen"", ""n""], [""Gnr"", ""n""]]"	liGeladi
+conflicting_split_tag_sequences	"[[""3POSS"", ""canoa""], [""Gen"", ""n""]]"	liwatece
+conflicting_split_tag_sequences	"[[""""], [""n""]]"	weiigi

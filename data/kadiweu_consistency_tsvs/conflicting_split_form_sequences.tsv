@@ -1,0 +1,7 @@
+issue_type	split_form_sequences	token_form
+conflicting_split_form_sequences	"[[""aG"", ""i"", ""pege"", ""tege""], [""aG"", ""i"", ""pegi"", ""tegi""], [""aG"", ""l"", ""idi""]]"	aG@
+conflicting_split_form_sequences	"[[""digo"", ""i"", ""da""], [""digoida""]]"	digoida
+conflicting_split_form_sequences	"[[""et"", ""a"", ""di""], [""etadi""]]"	etadi
+conflicting_split_form_sequences	"[[""i"", ""Geladi""], [""i"", ""geladi""]]"	iGeladi
+conflicting_split_form_sequences	"[[""l"", ""Geladi""], [""l"", ""iGeladi""]]"	liGeladi
+conflicting_split_form_sequences	"[[""""], [""weiigi""]]"	weiigi

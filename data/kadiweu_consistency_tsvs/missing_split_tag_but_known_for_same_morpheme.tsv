@@ -1,0 +1,12 @@
+host_token	issue_type	known_tags_elsewhere	morpheme_form	split_index	text	uid
+liGeladi	missing_split_tag_but_known_for_same_morpheme	"[""3POSS"", ""Gen"", ""Gnr""]"	l	1	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+ica	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr""]"	i	1	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+ipegitegi	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr""]"	i	1	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr""]"	i	2	iGeladi aGipegitegi weigi	1da1bf7a-7975-4baf-821b-9df5c75ac297
+ipegitegi	missing_split_tag_but_known_for_same_morpheme	"[""v""]"	pegi	2	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""v""]"	pegi	3	iGeladi aGipegitegi weigi	1da1bf7a-7975-4baf-821b-9df5c75ac297
+liGeladi	missing_split_tag_but_known_for_same_morpheme	"[""n""]"	iGeladi	2	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	1	iGeladi aGipegitegi weigi	1da1bf7a-7975-4baf-821b-9df5c75ac297
+ica	missing_split_tag_but_known_for_same_morpheme	"[""Ncl""]"	ca	2	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+ipegitegi	missing_split_tag_but_known_for_same_morpheme	"[""Apl""]"	tegi	3	ica liGeladi ipegitegi	2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Apl""]"	tegi	4	iGeladi aGipegitegi weigi	1da1bf7a-7975-4baf-821b-9df5c75ac297

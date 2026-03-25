@@ -1,0 +1,18 @@
+Sentences checked: 37
+conflicting_morpheme_glosses: 2
+conflicting_morpheme_tags: 8
+conflicting_split_form_sequences: 6
+conflicting_split_tag_sequences: 10
+conflicting_token_glosses: 7
+conflicting_token_tags: 1
+empty_category_without_tag: 2
+empty_split_object: 1
+missing_split_gloss_but_known_for_same_morpheme: 70
+missing_split_tag: 11
+missing_token_tag: 2
+morpheme_tag_gloss_role_overlap: 3
+token_conllu_count_mismatch: 7
+token_conllu_form_mismatch: 16
+token_lacks_splits_but_analyzed_elsewhere: 4
+
+Wrote JSON report to /mnt/data/kadiweu_consistency_report.json
