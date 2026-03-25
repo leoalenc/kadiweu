@@ -128,6 +128,30 @@
 3	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=13:22
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
 
+# sent_id = ped-gramm-12
+# sent_uid = 070d221f-f72d-4055-9c82-ddc383743e6a
+# text = ica looligi lidi.
+# text_orig = ica looligi lidi
+# text_por_orig = A comida está/é deliciosa (A gostosura da comida da Maria)
+# text_por_alt1 = A comida é deliciosa.
+# text_por_alt2 = A comida está deliciosa.
+# text_por_alt3 = A gostosura da comida da Maria.
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3|Poss=Yes	3	nmod:poss	_	TokenRange=4:10
+3	lidi	idi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3|Poss=Yes	0	root	_	TokenRange=12:16
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = ped-gramm-13
+# sent_uid = 68277d1f-c30b-4c4f-ba9e-c2883cc133af
+# text = ica looligi dapiko.
+# text_orig = ica looligi dapiko
+# text_por_orig = A comida dela é quente
+# text_por = A comida dela é quente.
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3|Poss=Yes	3	nsubj	_	TokenRange=4:10
+3	dapiko	apiko	VERB	VB	Voice=Inv	0	root	_	TokenRange=12:18
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
+
 # sent_id = ped-gramm-17
 # sent_uid = 12147353-b422-4ad7-9bef-1d20e70e2a74
 # text = ica loigi ijo niganigi ipegitegi GanigotGa.
