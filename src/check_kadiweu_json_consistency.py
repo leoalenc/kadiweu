@@ -391,13 +391,51 @@ def main() -> None:
         "issues": dict(sorted(issues.items())),
     }
 
-    print(f"Sentences checked: {len(sentence_records)}")
-    for key, value in counts.items():
-        print(f"{key}: {value}")
+    token_total = 0
+    split_total = 0
+    for rec in sentence_records:
+        sent = rec["sentence"]
+        struct = sent.get("struct") if isinstance(sent.get("struct"), dict) else {}
+        tokens = struct.get("tokens") if isinstance(struct.get("tokens"), list) else []
+        token_total += len(tokens)
+        for tok in tokens:
+            if isinstance(tok, dict) and isinstance(tok.get("splits"), list):
+                split_total += len(tok.get("splits"))
+
+    total_issues = sum(counts.values())
+    count_items = sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
+
+    print("Kadiwéu JSON consistency report")
+    print("=" * 80)
+    print(f"Sentences: {len(sentence_records)}")
+    print(f"Tokens:    {token_total}")
+    print(f"Splits:    {split_total}")
+    print(f"Issues:    {total_issues}")
+    print()
+    print("Issue counts")
+    print("-" * 80)
+    if count_items:
+        for issue_type, value in count_items:
+            print(f"{value:4d}  {issue_type}")
+    else:
+        print("No issues found.")
+
+    print()
+    print("Sample issues")
+    print("-" * 80)
+    if count_items:
+        for issue_type, value in count_items:
+            print()
+            print(f"[{issue_type}] total={value}")
+            for row in issues[issue_type][:3]:
+                print(json.dumps(row, ensure_ascii=False))
+    else:
+        print("No sample issues to show.")
 
     if args.json_out:
         args.json_out.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(f"\nWrote JSON report to {args.json_out}")
+        print(f"
+Wrote JSON report to {args.json_out}")
 
     if args.tsv_dir:
         write_issue_tsvs(issues, args.tsv_dir)

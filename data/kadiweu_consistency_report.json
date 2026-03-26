@@ -1,194 +1,2414 @@
 {
-  "source_file": "gramatica-pedagogica.json",
-  "sentence_count": 37,
-  "issue_counts": {
-    "conflicting_morpheme_glosses": 2,
-    "conflicting_morpheme_tags": 8,
-    "conflicting_split_form_sequences": 6,
-    "conflicting_split_tag_sequences": 10,
-    "conflicting_token_glosses": 7,
-    "conflicting_token_tags": 1,
-    "empty_category_without_tag": 2,
-    "empty_split_object": 1,
-    "missing_split_gloss_but_known_for_same_morpheme": 70,
-    "missing_split_tag": 11,
-    "missing_token_tag": 2,
-    "morpheme_tag_gloss_role_overlap": 3,
-    "token_conllu_count_mismatch": 7,
-    "token_conllu_form_mismatch": 16,
-    "token_lacks_splits_but_analyzed_elsewhere": 4
+  "summary": {
+    "sentences": 37,
+    "tokens": 142,
+    "splits": 200,
+    "issue_counts": {
+      "conflicting_morpheme_glosses": 2,
+      "conflicting_morpheme_tags": 8,
+      "conflicting_split_form_sequences_for_form": 5,
+      "conflicting_split_tag_sequences_for_form": 9,
+      "conflicting_token_glosses_for_form": 7,
+      "conflicting_token_tags_for_form": 1,
+      "empty_category_without_tag": 2,
+      "empty_split_object": 1,
+      "missing_split_gloss_but_known_for_same_morpheme": 70,
+      "missing_split_tag": 11,
+      "missing_split_tag_but_known_for_same_morpheme": 11,
+      "morpheme_tag_gloss_role_overlap": 3,
+      "token_conllu_count_mismatch": 7,
+      "token_conllu_form_mismatch": 16,
+      "token_with_incomplete_splits_but_fuller_analysis_elsewhere": 5,
+      "token_without_splits_but_analyzed_elsewhere": 13
+    },
+    "issue_total": 171
   },
   "issues": {
-    "conflicting_morpheme_glosses": [
+    "empty_split_object": [
       {
-        "issue_type": "conflicting_morpheme_glosses",
-        "morpheme_form": "i",
-        "glosses": [
-          "1",
-          "3",
-          "M",
-          "masc"
+        "issue_type": "empty_split_object",
+        "path": "$.pages[0].sentences[4]",
+        "uid": "b2e3ea43-0d68-46ee-9f33-938610cc8aec",
+        "text": "niwatece etadi weiigi",
+        "position": 3,
+        "token_form": "weiigi",
+        "token_tag": "N",
+        "token_gloss": "rio",
+        "split_index": 1
+      }
+    ],
+    "token_conllu_count_mismatch": [
+      {
+        "issue_type": "token_conllu_count_mismatch",
+        "path": "$.pages[0].sentences[6]",
+        "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
+        "text": "liGeladi Maria aGipegetege",
+        "token_count": 4,
+        "conllu_count": 3
+      },
+      {
+        "issue_type": "token_conllu_count_mismatch",
+        "path": "$.pages[0].sentences[10]",
+        "uid": "fef391af-9e63-419f-8f81-057459193f49",
+        "text": "ica Maria looligi alidi",
+        "token_count": 5,
+        "conllu_count": 4
+      },
+      {
+        "issue_type": "token_conllu_count_mismatch",
+        "path": "$.pages[0].sentences[23]",
+        "uid": "2f47b402-9fe7-4714-96e3-c6cbdf405472",
+        "text": "iGeladi idei naigi anenapioi",
+        "token_count": 5,
+        "conllu_count": 4
+      },
+      {
+        "issue_type": "token_conllu_count_mismatch",
+        "path": "$.pages[0].sentences[26]",
+        "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+        "text": "iGeladi idei mijo naigi naGajo",
+        "token_count": 6,
+        "conllu_count": 5
+      },
+      {
+        "issue_type": "token_conllu_count_mismatch",
+        "path": "$.pages[0].sentences[29]",
+        "uid": "7b806584-75e5-4017-b9e2-ba97458903bd",
+        "text": "Eyodi ane niganaGacanajo",
+        "token_count": 4,
+        "conllu_count": 3
+      },
+      {
+        "issue_type": "token_conllu_count_mismatch",
+        "path": "$.pages[0].sentences[34]",
+        "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
+        "text": "iGeladi ipegitegi naigi ane napioi",
+        "token_count": 6,
+        "conllu_count": 5
+      },
+      {
+        "issue_type": "token_conllu_count_mismatch",
+        "path": "$.pages[0].sentences[36]",
+        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+        "text": "iGeladi aGipegitegi weigi",
+        "token_count": 4,
+        "conllu_count": 3
+      }
+    ],
+    "token_conllu_form_mismatch": [
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[6]",
+        "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
+        "text": "liGeladi Maria aGipegetege",
+        "position": 3,
+        "token_form": "aG@",
+        "conllu_form": "aGipegetege"
+      },
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[10]",
+        "uid": "fef391af-9e63-419f-8f81-057459193f49",
+        "text": "ica Maria looligi alidi",
+        "position": 3,
+        "token_form": "looligi",
+        "conllu_form": "loligi"
+      },
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[10]",
+        "uid": "fef391af-9e63-419f-8f81-057459193f49",
+        "text": "ica Maria looligi alidi",
+        "position": 4,
+        "token_form": "aG@",
+        "conllu_form": "alidi"
+      },
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[11]",
+        "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
+        "text": "ica looligi lidi",
+        "position": 2,
+        "token_form": "looligi",
+        "conllu_form": "lalogi"
+      },
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[12]",
+        "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
+        "text": "ica looligi dapiko",
+        "position": 2,
+        "token_form": "looligi",
+        "conllu_form": "lalogi"
+      },
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[13]",
+        "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
+        "text": "ica looligi ja dapiko",
+        "position": 2,
+        "token_form": "looligi",
+        "conllu_form": "loligi"
+      },
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[14]",
+        "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
+        "text": "ica looligi lidGegi",
+        "position": 2,
+        "token_form": "looligi",
+        "conllu_form": "loligi"
+      },
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[19]",
+        "uid": "55551636-8ed3-4545-8510-d8dbfd817a1a",
+        "text": "ica niwigo libinienigi",
+        "position": 3,
+        "token_form": "libinienigi",
+        "conllu_form": "lininienigi"
+      },
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[23]",
+        "uid": "2f47b402-9fe7-4714-96e3-c6cbdf405472",
+        "text": "iGeladi idei naigi anenapioi",
+        "position": 4,
+        "token_form": "ane@",
+        "conllu_form": "anenapioi"
+      },
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[26]",
+        "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+        "text": "iGeladi idei mijo naigi naGajo",
+        "position": 3,
+        "token_form": "me@",
+        "conllu_form": "mijo"
+      },
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[26]",
+        "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+        "text": "iGeladi idei mijo naigi naGajo",
+        "position": 4,
+        "token_form": "@ijo",
+        "conllu_form": "naigi"
+      },
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[26]",
+        "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+        "text": "iGeladi idei mijo naigi naGajo",
+        "position": 5,
+        "token_form": "naigi",
+        "conllu_form": "naGajo"
+      },
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[29]",
+        "uid": "7b806584-75e5-4017-b9e2-ba97458903bd",
+        "text": "Eyodi ane niganaGacanajo",
+        "position": 3,
+        "token_form": "*T*",
+        "conllu_form": "niganaGacanajo"
+      },
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[34]",
+        "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
+        "text": "iGeladi ipegitegi naigi ane napioi",
+        "position": 5,
+        "token_form": "*T*",
+        "conllu_form": "napioi"
+      },
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[36]",
+        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+        "text": "iGeladi aGipegitegi weigi",
+        "position": 2,
+        "token_form": "aG@",
+        "conllu_form": "aGipegitegi"
+      },
+      {
+        "issue_type": "token_conllu_form_mismatch",
+        "path": "$.pages[0].sentences[36]",
+        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+        "text": "iGeladi aGipegitegi weigi",
+        "position": 3,
+        "token_form": "@ipegitegi",
+        "conllu_form": "weigi"
+      }
+    ],
+    "missing_split_tag": [
+      {
+        "issue_type": "missing_split_tag",
+        "path": "$.pages[0].sentences[9]",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "position": 1,
+        "token_form": "ica",
+        "token_tag": "D",
+        "token_gloss": "a",
+        "split_index": 1,
+        "split_form": "i"
+      },
+      {
+        "issue_type": "missing_split_tag",
+        "path": "$.pages[0].sentences[9]",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "position": 1,
+        "token_form": "ica",
+        "token_tag": "D",
+        "token_gloss": "a",
+        "split_index": 2,
+        "split_form": "ca"
+      },
+      {
+        "issue_type": "missing_split_tag",
+        "path": "$.pages[0].sentences[9]",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "position": 2,
+        "token_form": "liGeladi",
+        "token_tag": "N$",
+        "token_gloss": "sua casa",
+        "split_index": 1,
+        "split_form": "l"
+      },
+      {
+        "issue_type": "missing_split_tag",
+        "path": "$.pages[0].sentences[9]",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "position": 2,
+        "token_form": "liGeladi",
+        "token_tag": "N$",
+        "token_gloss": "sua casa",
+        "split_index": 2,
+        "split_form": "iGeladi"
+      },
+      {
+        "issue_type": "missing_split_tag",
+        "path": "$.pages[0].sentences[9]",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "position": 3,
+        "token_form": "ipegitegi",
+        "token_tag": "VBAPL",
+        "token_gloss": "fica perto de",
+        "split_index": 1,
+        "split_form": "i"
+      },
+      {
+        "issue_type": "missing_split_tag",
+        "path": "$.pages[0].sentences[9]",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "position": 3,
+        "token_form": "ipegitegi",
+        "token_tag": "VBAPL",
+        "token_gloss": "fica perto de",
+        "split_index": 2,
+        "split_form": "pegi"
+      },
+      {
+        "issue_type": "missing_split_tag",
+        "path": "$.pages[0].sentences[9]",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "position": 3,
+        "token_form": "ipegitegi",
+        "token_tag": "VBAPL",
+        "token_gloss": "fica perto de",
+        "split_index": 3,
+        "split_form": "tegi"
+      },
+      {
+        "issue_type": "missing_split_tag",
+        "path": "$.pages[0].sentences[36]",
+        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+        "text": "iGeladi aGipegitegi weigi",
+        "position": 2,
+        "token_form": "aG@",
+        "token_tag": "NEG",
+        "token_gloss": null,
+        "split_index": 1,
+        "split_form": "aG"
+      },
+      {
+        "issue_type": "missing_split_tag",
+        "path": "$.pages[0].sentences[36]",
+        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+        "text": "iGeladi aGipegitegi weigi",
+        "position": 2,
+        "token_form": "aG@",
+        "token_tag": "NEG",
+        "token_gloss": null,
+        "split_index": 2,
+        "split_form": "i"
+      },
+      {
+        "issue_type": "missing_split_tag",
+        "path": "$.pages[0].sentences[36]",
+        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+        "text": "iGeladi aGipegitegi weigi",
+        "position": 2,
+        "token_form": "aG@",
+        "token_tag": "NEG",
+        "token_gloss": null,
+        "split_index": 3,
+        "split_form": "pegi"
+      },
+      {
+        "issue_type": "missing_split_tag",
+        "path": "$.pages[0].sentences[36]",
+        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+        "text": "iGeladi aGipegitegi weigi",
+        "position": 2,
+        "token_form": "aG@",
+        "token_tag": "NEG",
+        "token_gloss": null,
+        "split_index": 4,
+        "split_form": "tegi"
+      }
+    ],
+    "empty_category_without_tag": [
+      {
+        "issue_type": "empty_category_without_tag",
+        "path": "$.pages[0].sentences[29]",
+        "uid": "7b806584-75e5-4017-b9e2-ba97458903bd",
+        "text": "Eyodi ane niganaGacanajo",
+        "position": 3,
+        "token_form": "*T*",
+        "token_tag": "",
+        "token_gloss": null
+      },
+      {
+        "issue_type": "empty_category_without_tag",
+        "path": "$.pages[0].sentences[34]",
+        "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
+        "text": "iGeladi ipegitegi naigi ane napioi",
+        "position": 5,
+        "token_form": "*T*",
+        "token_tag": "",
+        "token_gloss": null
+      }
+    ],
+    "conflicting_split_tag_sequences_for_form": [
+      {
+        "issue_type": "conflicting_split_tag_sequences_for_form",
+        "token_form": "ajo",
+        "split_tag_sequences": [
+          "F|CL",
+          "Gnr|Ncl"
         ],
-        "occurrences": [
+        "examples": [
           {
             "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
             "text": "ajo liwatece ja iwaGadi",
-            "host_token": "iwaGadi",
-            "gloss": "3"
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "F",
+              "CL"
+            ],
+            "split_forms": [
+              "a",
+              "jo"
+            ]
           },
           {
-            "uid": "69948fe6-81f6-4faa-a344-8f8c47486943",
-            "text": "niwatece iwaGadi",
-            "host_token": "iwaGadi",
-            "gloss": "1"
+            "uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
+            "text": "ajo liwatece etadi weiigi",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "a",
+              "jo"
+            ]
+          },
+          {
+            "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
+            "text": "ajo niwatece etadi digoida",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "a",
+              "jo"
+            ]
           },
           {
             "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
             "text": "ajo niwatece ipegitege weiigi",
-            "host_token": "ipegitege",
-            "gloss": "3"
-          },
-          {
-            "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
-            "text": "ica liGeladi ipegetege",
-            "host_token": "ica",
-            "gloss": "M"
-          },
-          {
-            "uid": "e9d6dfb6-656d-44aa-ba17-86289fd72268",
-            "text": "liGeladi idei nigotaGa",
-            "host_token": "idei",
-            "gloss": "3"
-          },
-          {
-            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
-            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
-            "host_token": "ica",
-            "gloss": "masc"
-          },
-          {
-            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
-            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
-            "host_token": "ipegitegi",
-            "gloss": "3"
-          },
-          {
-            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
-            "text": "ica lidGegi loligi idei liGeladi",
-            "host_token": "ica",
-            "gloss": "masc"
-          },
-          {
-            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
-            "text": "ica lidGegi loligi idei liGeladi",
-            "host_token": "idei",
-            "gloss": "3"
-          },
-          {
-            "uid": "0f478381-6858-463d-94cc-903e9dc879f9",
-            "text": "ica liwigo libinienigi",
-            "host_token": "ica",
-            "gloss": "masc"
-          },
-          {
-            "uid": "55551636-8ed3-4545-8510-d8dbfd817a1a",
-            "text": "ica niwigo libinienigi",
-            "host_token": "ica",
-            "gloss": "masc"
-          },
-          {
-            "uid": "5d0b94bf-223d-4f09-8c6f-b951a70d6d0b",
-            "text": "ica nioladi Ganixoa",
-            "host_token": "ica",
-            "gloss": "masc"
-          },
-          {
-            "uid": "881131dd-3f70-411a-ac7e-85557139d1e3",
-            "text": "ica nioladi nioxoa libinienigi",
-            "host_token": "ica",
-            "gloss": "masc"
-          },
-          {
-            "uid": "95a7d135-4be0-463d-b443-76cc5828fc89",
-            "text": "ica nioladi lodawa libinienigi",
-            "host_token": "ica",
-            "gloss": "masc"
-          },
-          {
-            "uid": "2f47b402-9fe7-4714-96e3-c6cbdf405472",
-            "text": "iGeladi idei naigi anenapioi",
-            "host_token": "idei",
-            "gloss": "3"
-          },
-          {
-            "uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
-            "text": "iGeladi idei naigi me napioi",
-            "host_token": "iGeladi",
-            "gloss": "1"
-          },
-          {
-            "uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
-            "text": "iGeladi idei naigi me napioi",
-            "host_token": "idei",
-            "gloss": "3"
-          },
-          {
-            "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
-            "text": "iGeladi idei mijo naigi naGajo",
-            "host_token": "idei",
-            "gloss": "3"
-          },
-          {
-            "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
-            "text": "iGeladi idei mijo naigi naGajo",
-            "host_token": "me@",
-            "gloss": "M"
-          },
-          {
-            "uid": "a4ccc755-a644-4b04-ab1b-698e7acea4cc",
-            "text": "iGeladi idei digoida",
-            "host_token": "idei",
-            "gloss": "3"
-          },
-          {
-            "uid": "50f93fbc-14fa-48e7-b8ba-22f744109348",
-            "text": "iGeladi ipegitegi liGeladi",
-            "host_token": "ipegitegi",
-            "gloss": "3"
-          },
-          {
-            "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
-            "text": "iGeladi ipegitegi naigi ane napioi",
-            "host_token": "ipegitegi",
-            "gloss": "3"
-          },
-          {
-            "uid": "bb8018ba-76b3-43f2-82ea-78b6009c1f90",
-            "text": "iGeladi ipegitegi naigi me napioi",
-            "host_token": "ipegitegi",
-            "gloss": "3"
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "a",
+              "jo"
+            ]
           }
         ]
       },
       {
-        "issue_type": "conflicting_morpheme_glosses",
-        "morpheme_form": "taGa",
-        "glosses": [
-          "2",
-          "com"
+        "issue_type": "conflicting_split_tag_sequences_for_form",
+        "token_form": "liwatece",
+        "split_tag_sequences": [
+          "3POSS|canoa",
+          "Gen|n"
         ],
-        "occurrences": [
+        "examples": [
+          {
+            "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
+            "text": "ajo liwatece ja iwaGadi",
+            "token_tag": "N$",
+            "token_gloss": "canoa dela/dele",
+            "split_tags": [
+              "3POSS",
+              "canoa"
+            ],
+            "split_forms": [
+              "l",
+              "watece"
+            ]
+          },
+          {
+            "uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
+            "text": "ajo liwatece etadi weiigi",
+            "token_tag": "N$",
+            "token_gloss": "canoa dela/dele",
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "watece"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_split_tag_sequences_for_form",
+        "token_form": "ja",
+        "split_tag_sequences": [
+          "PFV",
+          "t"
+        ],
+        "examples": [
+          {
+            "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
+            "text": "ajo liwatece ja iwaGadi",
+            "token_tag": "T",
+            "token_gloss": "completivo",
+            "split_tags": [
+              "PFV"
+            ],
+            "split_forms": [
+              "jaG"
+            ]
+          },
+          {
+            "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
+            "text": "ica looligi ja dapiko",
+            "token_tag": "T",
+            "token_gloss": "perfectivo",
+            "split_tags": [
+              "t"
+            ],
+            "split_forms": [
+              "jaG"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_split_tag_sequences_for_form",
+        "token_form": "etadi",
+        "split_tag_sequences": [
+          "v",
+          "v|Gnr|Ncl"
+        ],
+        "examples": [
+          {
+            "uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
+            "text": "ajo liwatece etadi weiigi",
+            "token_tag": "VB",
+            "token_gloss": "está",
+            "split_tags": [
+              "v"
+            ],
+            "split_forms": [
+              "etadi"
+            ]
+          },
+          {
+            "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
+            "text": "ajo niwatece etadi digoida",
+            "token_tag": "VB",
+            "token_gloss": "está",
+            "split_tags": [
+              "v"
+            ],
+            "split_forms": [
+              "etadi"
+            ]
+          },
+          {
+            "uid": "b2e3ea43-0d68-46ee-9f33-938610cc8aec",
+            "text": "niwatece etadi weiigi",
+            "token_tag": "VB",
+            "token_gloss": "está",
+            "split_tags": [
+              "v",
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "et",
+              "a",
+              "di"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_split_tag_sequences_for_form",
+        "token_form": "digoida",
+        "split_tag_sequences": [
+          "Adv|Gen|Ncl",
+          "lá"
+        ],
+        "examples": [
+          {
+            "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
+            "text": "ajo niwatece etadi digoida",
+            "token_tag": "ADV",
+            "token_gloss": "lá",
+            "split_tags": [
+              "lá"
+            ],
+            "split_forms": [
+              "digoida"
+            ]
+          },
+          {
+            "uid": "a4ccc755-a644-4b04-ab1b-698e7acea4cc",
+            "text": "iGeladi idei digoida",
+            "token_tag": "ADV",
+            "token_gloss": "lá",
+            "split_tags": [
+              "Adv",
+              "Gen",
+              "Ncl"
+            ],
+            "split_forms": [
+              "digo",
+              "i",
+              "da"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_split_tag_sequences_for_form",
+        "token_form": "liGeladi",
+        "split_tag_sequences": [
+          "Gen|n",
+          "Gnr|n",
+          "|"
+        ],
+        "examples": [
+          {
+            "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
+            "text": "liGeladi Maria aGipegetege",
+            "token_tag": "N$",
+            "token_gloss": "casa dela/dele",
+            "split_tags": [
+              "Gnr",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "iGeladi"
+            ]
+          },
+          {
+            "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
+            "text": "ica liGeladi ipegetege",
+            "token_tag": "N$",
+            "token_gloss": null,
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "Geladi"
+            ]
+          },
+          {
+            "uid": "e9d6dfb6-656d-44aa-ba17-86289fd72268",
+            "text": "liGeladi idei nigotaGa",
+            "token_tag": "N$",
+            "token_gloss": "casa dela/dele",
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "Geladi"
+            ]
+          },
+          {
+            "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+            "text": "ica liGeladi ipegitegi",
+            "token_tag": "N$",
+            "token_gloss": "sua casa",
+            "split_tags": [
+              "",
+              ""
+            ],
+            "split_forms": [
+              "l",
+              "iGeladi"
+            ]
+          },
+          {
+            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
+            "text": "ica lidGegi loligi idei liGeladi",
+            "token_tag": "N$",
+            "token_gloss": "casa",
+            "split_tags": [],
+            "split_forms": []
+          },
+          {
+            "uid": "f081c545-c42b-463d-b57f-db87787f20e7",
+            "text": "João liGeladi ane napioi",
+            "token_tag": "N$",
+            "token_gloss": "casa",
+            "split_tags": [],
+            "split_forms": []
+          },
+          {
+            "uid": "50f93fbc-14fa-48e7-b8ba-22f744109348",
+            "text": "iGeladi ipegitegi liGeladi",
+            "token_tag": "N$",
+            "token_gloss": "(tirar)",
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "Geladi"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_split_tag_sequences_for_form",
+        "token_form": "aG@",
+        "split_tag_sequences": [
+          "Neg|Erg|v|Apl",
+          "Neg|Gen|n",
+          "|||"
+        ],
+        "examples": [
+          {
+            "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
+            "text": "liGeladi Maria aGipegetege",
+            "token_tag": "NEG",
+            "token_gloss": "não fica perto dela",
+            "split_tags": [
+              "Neg",
+              "Erg",
+              "v",
+              "Apl"
+            ],
+            "split_forms": [
+              "aG",
+              "i",
+              "pege",
+              "tege"
+            ]
+          },
+          {
+            "uid": "fef391af-9e63-419f-8f81-057459193f49",
+            "text": "ica Maria looligi alidi",
+            "token_tag": "NEG",
+            "token_gloss": "não sua gostosura",
+            "split_tags": [
+              "Neg",
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "aG",
+              "l",
+              "idi"
+            ]
+          },
+          {
+            "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+            "text": "iGeladi aGipegitegi weigi",
+            "token_tag": "NEG",
+            "token_gloss": null,
+            "split_tags": [
+              "",
+              "",
+              "",
+              ""
+            ],
+            "split_forms": [
+              "aG",
+              "i",
+              "pegi",
+              "tegi"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_split_tag_sequences_for_form",
+        "token_form": "ica",
+        "split_tag_sequences": [
+          "Gnr|Ncl",
+          "|"
+        ],
+        "examples": [
+          {
+            "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
+            "text": "ica liGeladi ipegetege",
+            "token_tag": "D",
+            "token_gloss": null,
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+            "text": "ica liGeladi ipegitegi",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "",
+              ""
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "fef391af-9e63-419f-8f81-057459193f49",
+            "text": "ica Maria looligi alidi",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
+            "text": "ica looligi lidi",
+            "token_tag": "D",
+            "token_gloss": "uma",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
+            "text": "ica looligi dapiko",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
+            "text": "ica looligi ja dapiko",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
+            "text": "ica looligi lidGegi",
+            "token_tag": "D",
+            "token_gloss": "uma",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
+            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
+            "text": "ica lidGegi loligi idei liGeladi",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "0f478381-6858-463d-94cc-903e9dc879f9",
+            "text": "ica liwigo libinienigi",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "55551636-8ed3-4545-8510-d8dbfd817a1a",
+            "text": "ica niwigo libinienigi",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "5d0b94bf-223d-4f09-8c6f-b951a70d6d0b",
+            "text": "ica nioladi Ganixoa",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "881131dd-3f70-411a-ac7e-85557139d1e3",
+            "text": "ica nioladi nioxoa libinienigi",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "95a7d135-4be0-463d-b443-76cc5828fc89",
+            "text": "ica nioladi lodawa libinienigi",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_split_tag_sequences_for_form",
+        "token_form": "ipegitegi",
+        "split_tag_sequences": [
+          "Erg|v|Apl",
+          "||"
+        ],
+        "examples": [
+          {
+            "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+            "text": "ica liGeladi ipegitegi",
+            "token_tag": "VBAPL",
+            "token_gloss": "fica perto de",
+            "split_tags": [
+              "",
+              "",
+              ""
+            ],
+            "split_forms": [
+              "i",
+              "pegi",
+              "tegi"
+            ]
+          },
+          {
+            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
+            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
+            "token_tag": "VBAPL",
+            "token_gloss": "fica próxima de",
+            "split_tags": [
+              "Erg",
+              "v",
+              "Apl"
+            ],
+            "split_forms": [
+              "i",
+              "pegi",
+              "tegi"
+            ]
+          },
+          {
+            "uid": "50f93fbc-14fa-48e7-b8ba-22f744109348",
+            "text": "iGeladi ipegitegi liGeladi",
+            "token_tag": "VBAPL",
+            "token_gloss": "fica próxima de",
+            "split_tags": [
+              "Erg",
+              "v",
+              "Apl"
+            ],
+            "split_forms": [
+              "i",
+              "pegi",
+              "tegi"
+            ]
+          },
+          {
+            "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
+            "text": "iGeladi ipegitegi naigi ane napioi",
+            "token_tag": "VBAPL",
+            "token_gloss": "fica próxima de",
+            "split_tags": [
+              "Erg",
+              "v",
+              "Apl"
+            ],
+            "split_forms": [
+              "i",
+              "pegi",
+              "tegi"
+            ]
+          },
+          {
+            "uid": "bb8018ba-76b3-43f2-82ea-78b6009c1f90",
+            "text": "iGeladi ipegitegi naigi me napioi",
+            "token_tag": "VBAPL",
+            "token_gloss": "fica próxima de",
+            "split_tags": [
+              "Erg",
+              "v",
+              "Apl"
+            ],
+            "split_forms": [
+              "i",
+              "pegi",
+              "tegi"
+            ]
+          }
+        ]
+      }
+    ],
+    "conflicting_token_glosses_for_form": [
+      {
+        "issue_type": "conflicting_token_glosses_for_form",
+        "token_form": "ja",
+        "token_glosses": [
+          "completivo",
+          "perfectivo"
+        ],
+        "examples": [
+          {
+            "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
+            "text": "ajo liwatece ja iwaGadi",
+            "token_tag": "T",
+            "token_gloss": "completivo",
+            "split_tags": [
+              "PFV"
+            ],
+            "split_forms": [
+              "jaG"
+            ]
+          },
+          {
+            "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
+            "text": "ica looligi ja dapiko",
+            "token_tag": "T",
+            "token_gloss": "perfectivo",
+            "split_tags": [
+              "t"
+            ],
+            "split_forms": [
+              "jaG"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_token_glosses_for_form",
+        "token_form": "liGeladi",
+        "token_glosses": [
+          "(tirar)",
+          "casa",
+          "casa dela/dele",
+          "sua casa"
+        ],
+        "examples": [
+          {
+            "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
+            "text": "liGeladi Maria aGipegetege",
+            "token_tag": "N$",
+            "token_gloss": "casa dela/dele",
+            "split_tags": [
+              "Gnr",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "iGeladi"
+            ]
+          },
+          {
+            "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
+            "text": "ica liGeladi ipegetege",
+            "token_tag": "N$",
+            "token_gloss": null,
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "Geladi"
+            ]
+          },
+          {
+            "uid": "e9d6dfb6-656d-44aa-ba17-86289fd72268",
+            "text": "liGeladi idei nigotaGa",
+            "token_tag": "N$",
+            "token_gloss": "casa dela/dele",
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "Geladi"
+            ]
+          },
+          {
+            "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+            "text": "ica liGeladi ipegitegi",
+            "token_tag": "N$",
+            "token_gloss": "sua casa",
+            "split_tags": [
+              "",
+              ""
+            ],
+            "split_forms": [
+              "l",
+              "iGeladi"
+            ]
+          },
+          {
+            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
+            "text": "ica lidGegi loligi idei liGeladi",
+            "token_tag": "N$",
+            "token_gloss": "casa",
+            "split_tags": [],
+            "split_forms": []
+          },
+          {
+            "uid": "f081c545-c42b-463d-b57f-db87787f20e7",
+            "text": "João liGeladi ane napioi",
+            "token_tag": "N$",
+            "token_gloss": "casa",
+            "split_tags": [],
+            "split_forms": []
+          },
+          {
+            "uid": "50f93fbc-14fa-48e7-b8ba-22f744109348",
+            "text": "iGeladi ipegitegi liGeladi",
+            "token_tag": "N$",
+            "token_gloss": "(tirar)",
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "Geladi"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_token_glosses_for_form",
+        "token_form": "aG@",
+        "token_glosses": [
+          "não fica perto dela",
+          "não sua gostosura"
+        ],
+        "examples": [
+          {
+            "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
+            "text": "liGeladi Maria aGipegetege",
+            "token_tag": "NEG",
+            "token_gloss": "não fica perto dela",
+            "split_tags": [
+              "Neg",
+              "Erg",
+              "v",
+              "Apl"
+            ],
+            "split_forms": [
+              "aG",
+              "i",
+              "pege",
+              "tege"
+            ]
+          },
+          {
+            "uid": "fef391af-9e63-419f-8f81-057459193f49",
+            "text": "ica Maria looligi alidi",
+            "token_tag": "NEG",
+            "token_gloss": "não sua gostosura",
+            "split_tags": [
+              "Neg",
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "aG",
+              "l",
+              "idi"
+            ]
+          },
+          {
+            "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+            "text": "iGeladi aGipegitegi weigi",
+            "token_tag": "NEG",
+            "token_gloss": null,
+            "split_tags": [
+              "",
+              "",
+              "",
+              ""
+            ],
+            "split_forms": [
+              "aG",
+              "i",
+              "pegi",
+              "tegi"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_token_glosses_for_form",
+        "token_form": "ica",
+        "token_glosses": [
+          "a",
+          "uma"
+        ],
+        "examples": [
+          {
+            "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
+            "text": "ica liGeladi ipegetege",
+            "token_tag": "D",
+            "token_gloss": null,
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+            "text": "ica liGeladi ipegitegi",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "",
+              ""
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "fef391af-9e63-419f-8f81-057459193f49",
+            "text": "ica Maria looligi alidi",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
+            "text": "ica looligi lidi",
+            "token_tag": "D",
+            "token_gloss": "uma",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
+            "text": "ica looligi dapiko",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
+            "text": "ica looligi ja dapiko",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
+            "text": "ica looligi lidGegi",
+            "token_tag": "D",
+            "token_gloss": "uma",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
+            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
+            "text": "ica lidGegi loligi idei liGeladi",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "0f478381-6858-463d-94cc-903e9dc879f9",
+            "text": "ica liwigo libinienigi",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "55551636-8ed3-4545-8510-d8dbfd817a1a",
+            "text": "ica niwigo libinienigi",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "5d0b94bf-223d-4f09-8c6f-b951a70d6d0b",
+            "text": "ica nioladi Ganixoa",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "881131dd-3f70-411a-ac7e-85557139d1e3",
+            "text": "ica nioladi nioxoa libinienigi",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          },
+          {
+            "uid": "95a7d135-4be0-463d-b443-76cc5828fc89",
+            "text": "ica nioladi lodawa libinienigi",
+            "token_tag": "D",
+            "token_gloss": "a",
+            "split_tags": [
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "i",
+              "ca"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_token_glosses_for_form",
+        "token_form": "ipegitegi",
+        "token_glosses": [
+          "fica perto de",
+          "fica próxima de"
+        ],
+        "examples": [
+          {
+            "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+            "text": "ica liGeladi ipegitegi",
+            "token_tag": "VBAPL",
+            "token_gloss": "fica perto de",
+            "split_tags": [
+              "",
+              "",
+              ""
+            ],
+            "split_forms": [
+              "i",
+              "pegi",
+              "tegi"
+            ]
+          },
+          {
+            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
+            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
+            "token_tag": "VBAPL",
+            "token_gloss": "fica próxima de",
+            "split_tags": [
+              "Erg",
+              "v",
+              "Apl"
+            ],
+            "split_forms": [
+              "i",
+              "pegi",
+              "tegi"
+            ]
+          },
+          {
+            "uid": "50f93fbc-14fa-48e7-b8ba-22f744109348",
+            "text": "iGeladi ipegitegi liGeladi",
+            "token_tag": "VBAPL",
+            "token_gloss": "fica próxima de",
+            "split_tags": [
+              "Erg",
+              "v",
+              "Apl"
+            ],
+            "split_forms": [
+              "i",
+              "pegi",
+              "tegi"
+            ]
+          },
+          {
+            "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
+            "text": "iGeladi ipegitegi naigi ane napioi",
+            "token_tag": "VBAPL",
+            "token_gloss": "fica próxima de",
+            "split_tags": [
+              "Erg",
+              "v",
+              "Apl"
+            ],
+            "split_forms": [
+              "i",
+              "pegi",
+              "tegi"
+            ]
+          },
+          {
+            "uid": "bb8018ba-76b3-43f2-82ea-78b6009c1f90",
+            "text": "iGeladi ipegitegi naigi me napioi",
+            "token_tag": "VBAPL",
+            "token_gloss": "fica próxima de",
+            "split_tags": [
+              "Erg",
+              "v",
+              "Apl"
+            ],
+            "split_forms": [
+              "i",
+              "pegi",
+              "tegi"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_token_glosses_for_form",
+        "token_form": "looligi",
+        "token_glosses": [
+          "comida dele/dela",
+          "sua comida"
+        ],
+        "examples": [
+          {
+            "uid": "fef391af-9e63-419f-8f81-057459193f49",
+            "text": "ica Maria looligi alidi",
+            "token_tag": "N$",
+            "token_gloss": "sua comida",
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "ooligi"
+            ]
+          },
+          {
+            "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
+            "text": "ica looligi lidi",
+            "token_tag": "N$",
+            "token_gloss": null,
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "ooligi"
+            ]
+          },
+          {
+            "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
+            "text": "ica looligi dapiko",
+            "token_tag": "N$",
+            "token_gloss": null,
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "ooligi"
+            ]
+          },
+          {
+            "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
+            "text": "ica looligi ja dapiko",
+            "token_tag": "N$",
+            "token_gloss": "comida dele/dela",
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "ooligi"
+            ]
+          },
+          {
+            "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
+            "text": "ica looligi lidGegi",
+            "token_tag": "N$",
+            "token_gloss": "sua comida",
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "ooligi"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_token_glosses_for_form",
+        "token_form": "daGa",
+        "token_glosses": [
+          "que",
+          "se"
+        ],
+        "examples": [
           {
             "uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d",
             "text": "Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi",
-            "host_token": "micoataGa",
-            "gloss": "com"
+            "token_tag": "C",
+            "token_gloss": "se",
+            "split_tags": [],
+            "split_forms": []
+          },
+          {
+            "uid": "845b9d1d-ad7c-445a-bfbd-04fd9255ffc2",
+            "text": "Eyodi daGa niganaGacanajo",
+            "token_tag": "C",
+            "token_gloss": "que",
+            "split_tags": [],
+            "split_forms": []
+          }
+        ]
+      }
+    ],
+    "conflicting_split_form_sequences_for_form": [
+      {
+        "issue_type": "conflicting_split_form_sequences_for_form",
+        "token_form": "etadi",
+        "split_form_sequences": [
+          "etadi",
+          "et|a|di"
+        ],
+        "examples": [
+          {
+            "uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
+            "text": "ajo liwatece etadi weiigi",
+            "token_tag": "VB",
+            "token_gloss": "está",
+            "split_tags": [
+              "v"
+            ],
+            "split_forms": [
+              "etadi"
+            ]
+          },
+          {
+            "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
+            "text": "ajo niwatece etadi digoida",
+            "token_tag": "VB",
+            "token_gloss": "está",
+            "split_tags": [
+              "v"
+            ],
+            "split_forms": [
+              "etadi"
+            ]
+          },
+          {
+            "uid": "b2e3ea43-0d68-46ee-9f33-938610cc8aec",
+            "text": "niwatece etadi weiigi",
+            "token_tag": "VB",
+            "token_gloss": "está",
+            "split_tags": [
+              "v",
+              "Gnr",
+              "Ncl"
+            ],
+            "split_forms": [
+              "et",
+              "a",
+              "di"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_split_form_sequences_for_form",
+        "token_form": "digoida",
+        "split_form_sequences": [
+          "digoida",
+          "digo|i|da"
+        ],
+        "examples": [
+          {
+            "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
+            "text": "ajo niwatece etadi digoida",
+            "token_tag": "ADV",
+            "token_gloss": "lá",
+            "split_tags": [
+              "lá"
+            ],
+            "split_forms": [
+              "digoida"
+            ]
+          },
+          {
+            "uid": "a4ccc755-a644-4b04-ab1b-698e7acea4cc",
+            "text": "iGeladi idei digoida",
+            "token_tag": "ADV",
+            "token_gloss": "lá",
+            "split_tags": [
+              "Adv",
+              "Gen",
+              "Ncl"
+            ],
+            "split_forms": [
+              "digo",
+              "i",
+              "da"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_split_form_sequences_for_form",
+        "token_form": "liGeladi",
+        "split_form_sequences": [
+          "l|Geladi",
+          "l|iGeladi"
+        ],
+        "examples": [
+          {
+            "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
+            "text": "liGeladi Maria aGipegetege",
+            "token_tag": "N$",
+            "token_gloss": "casa dela/dele",
+            "split_tags": [
+              "Gnr",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "iGeladi"
+            ]
+          },
+          {
+            "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
+            "text": "ica liGeladi ipegetege",
+            "token_tag": "N$",
+            "token_gloss": null,
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "Geladi"
+            ]
+          },
+          {
+            "uid": "e9d6dfb6-656d-44aa-ba17-86289fd72268",
+            "text": "liGeladi idei nigotaGa",
+            "token_tag": "N$",
+            "token_gloss": "casa dela/dele",
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "Geladi"
+            ]
+          },
+          {
+            "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+            "text": "ica liGeladi ipegitegi",
+            "token_tag": "N$",
+            "token_gloss": "sua casa",
+            "split_tags": [
+              "",
+              ""
+            ],
+            "split_forms": [
+              "l",
+              "iGeladi"
+            ]
+          },
+          {
+            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
+            "text": "ica lidGegi loligi idei liGeladi",
+            "token_tag": "N$",
+            "token_gloss": "casa",
+            "split_tags": [],
+            "split_forms": []
+          },
+          {
+            "uid": "f081c545-c42b-463d-b57f-db87787f20e7",
+            "text": "João liGeladi ane napioi",
+            "token_tag": "N$",
+            "token_gloss": "casa",
+            "split_tags": [],
+            "split_forms": []
+          },
+          {
+            "uid": "50f93fbc-14fa-48e7-b8ba-22f744109348",
+            "text": "iGeladi ipegitegi liGeladi",
+            "token_tag": "N$",
+            "token_gloss": "(tirar)",
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "l",
+              "Geladi"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_split_form_sequences_for_form",
+        "token_form": "aG@",
+        "split_form_sequences": [
+          "aG|i|pege|tege",
+          "aG|i|pegi|tegi",
+          "aG|l|idi"
+        ],
+        "examples": [
+          {
+            "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
+            "text": "liGeladi Maria aGipegetege",
+            "token_tag": "NEG",
+            "token_gloss": "não fica perto dela",
+            "split_tags": [
+              "Neg",
+              "Erg",
+              "v",
+              "Apl"
+            ],
+            "split_forms": [
+              "aG",
+              "i",
+              "pege",
+              "tege"
+            ]
+          },
+          {
+            "uid": "fef391af-9e63-419f-8f81-057459193f49",
+            "text": "ica Maria looligi alidi",
+            "token_tag": "NEG",
+            "token_gloss": "não sua gostosura",
+            "split_tags": [
+              "Neg",
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "aG",
+              "l",
+              "idi"
+            ]
+          },
+          {
+            "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+            "text": "iGeladi aGipegitegi weigi",
+            "token_tag": "NEG",
+            "token_gloss": null,
+            "split_tags": [
+              "",
+              "",
+              "",
+              ""
+            ],
+            "split_forms": [
+              "aG",
+              "i",
+              "pegi",
+              "tegi"
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_split_form_sequences_for_form",
+        "token_form": "iGeladi",
+        "split_form_sequences": [
+          "i|Geladi",
+          "i|geladi"
+        ],
+        "examples": [
+          {
+            "uid": "2f47b402-9fe7-4714-96e3-c6cbdf405472",
+            "text": "iGeladi idei naigi anenapioi",
+            "token_tag": "N$",
+            "token_gloss": null,
+            "split_tags": [],
+            "split_forms": []
+          },
+          {
+            "uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
+            "text": "iGeladi idei naigi me napioi",
+            "token_tag": "N$",
+            "token_gloss": null,
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "i",
+              "Geladi"
+            ]
+          },
+          {
+            "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+            "text": "iGeladi idei mijo naigi naGajo",
+            "token_tag": "N$",
+            "token_gloss": "minha casa",
+            "split_tags": [
+              "Gen",
+              "n"
+            ],
+            "split_forms": [
+              "i",
+              "geladi"
+            ]
+          },
+          {
+            "uid": "a4ccc755-a644-4b04-ab1b-698e7acea4cc",
+            "text": "iGeladi idei digoida",
+            "token_tag": "N$",
+            "token_gloss": null,
+            "split_tags": [],
+            "split_forms": []
           },
           {
             "uid": "82117289-be52-45d0-886d-a5747eb20ea2",
             "text": "iGeladi ipegitaGagi",
-            "host_token": "ipegitaGagi",
-            "gloss": "2"
+            "token_tag": "N$",
+            "token_gloss": null,
+            "split_tags": [],
+            "split_forms": []
+          },
+          {
+            "uid": "50f93fbc-14fa-48e7-b8ba-22f744109348",
+            "text": "iGeladi ipegitegi liGeladi",
+            "token_tag": "N$",
+            "token_gloss": null,
+            "split_tags": [],
+            "split_forms": []
+          },
+          {
+            "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
+            "text": "iGeladi ipegitegi naigi ane napioi",
+            "token_tag": "N$",
+            "token_gloss": null,
+            "split_tags": [],
+            "split_forms": []
+          },
+          {
+            "uid": "bb8018ba-76b3-43f2-82ea-78b6009c1f90",
+            "text": "iGeladi ipegitegi naigi me napioi",
+            "token_tag": "N$",
+            "token_gloss": null,
+            "split_tags": [],
+            "split_forms": []
+          },
+          {
+            "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+            "text": "iGeladi aGipegitegi weigi",
+            "token_tag": "N$",
+            "token_gloss": null,
+            "split_tags": [],
+            "split_forms": []
+          }
+        ]
+      }
+    ],
+    "token_without_splits_but_analyzed_elsewhere": [
+      {
+        "issue_type": "token_without_splits_but_analyzed_elsewhere",
+        "token_form": "weiigi",
+        "uid": "b2e3ea43-0d68-46ee-9f33-938610cc8aec",
+        "text": "niwatece etadi weiigi",
+        "token_tag": "N",
+        "expected_from_uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
+        "expected_from_text": "ajo liwatece etadi weiigi",
+        "expected_split_tags": [
+          "n"
+        ],
+        "expected_split_forms": [
+          "weiigi"
+        ]
+      },
+      {
+        "issue_type": "token_without_splits_but_analyzed_elsewhere",
+        "token_form": "weiigi",
+        "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
+        "text": "ajo niwatece ipegitege weiigi",
+        "token_tag": "N",
+        "expected_from_uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
+        "expected_from_text": "ajo liwatece etadi weiigi",
+        "expected_split_tags": [
+          "n"
+        ],
+        "expected_split_forms": [
+          "weiigi"
+        ]
+      },
+      {
+        "issue_type": "token_without_splits_but_analyzed_elsewhere",
+        "token_form": "liGeladi",
+        "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
+        "text": "ica lidGegi loligi idei liGeladi",
+        "token_tag": "N$",
+        "expected_from_uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
+        "expected_from_text": "ica liGeladi ipegetege",
+        "expected_split_tags": [
+          "Gen",
+          "n"
+        ],
+        "expected_split_forms": [
+          "l",
+          "Geladi"
+        ]
+      },
+      {
+        "issue_type": "token_without_splits_but_analyzed_elsewhere",
+        "token_form": "liGeladi",
+        "uid": "f081c545-c42b-463d-b57f-db87787f20e7",
+        "text": "João liGeladi ane napioi",
+        "token_tag": "N$",
+        "expected_from_uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
+        "expected_from_text": "ica liGeladi ipegetege",
+        "expected_split_tags": [
+          "Gen",
+          "n"
+        ],
+        "expected_split_forms": [
+          "l",
+          "Geladi"
+        ]
+      },
+      {
+        "issue_type": "token_without_splits_but_analyzed_elsewhere",
+        "token_form": "nioladi",
+        "uid": "881131dd-3f70-411a-ac7e-85557139d1e3",
+        "text": "ica nioladi nioxoa libinienigi",
+        "token_tag": "N$",
+        "expected_from_uid": "5d0b94bf-223d-4f09-8c6f-b951a70d6d0b",
+        "expected_from_text": "ica nioladi Ganixoa",
+        "expected_split_tags": [
+          "Ant",
+          "n"
+        ],
+        "expected_split_forms": [
+          "n",
+          "ioladi"
+        ]
+      },
+      {
+        "issue_type": "token_without_splits_but_analyzed_elsewhere",
+        "token_form": "nioladi",
+        "uid": "95a7d135-4be0-463d-b443-76cc5828fc89",
+        "text": "ica nioladi lodawa libinienigi",
+        "token_tag": "N$",
+        "expected_from_uid": "5d0b94bf-223d-4f09-8c6f-b951a70d6d0b",
+        "expected_from_text": "ica nioladi Ganixoa",
+        "expected_split_tags": [
+          "Ant",
+          "n"
+        ],
+        "expected_split_forms": [
+          "n",
+          "ioladi"
+        ]
+      },
+      {
+        "issue_type": "token_without_splits_but_analyzed_elsewhere",
+        "token_form": "iGeladi",
+        "uid": "2f47b402-9fe7-4714-96e3-c6cbdf405472",
+        "text": "iGeladi idei naigi anenapioi",
+        "token_tag": "N$",
+        "expected_from_uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
+        "expected_from_text": "iGeladi idei naigi me napioi",
+        "expected_split_tags": [
+          "Gen",
+          "n"
+        ],
+        "expected_split_forms": [
+          "i",
+          "Geladi"
+        ]
+      },
+      {
+        "issue_type": "token_without_splits_but_analyzed_elsewhere",
+        "token_form": "iGeladi",
+        "uid": "a4ccc755-a644-4b04-ab1b-698e7acea4cc",
+        "text": "iGeladi idei digoida",
+        "token_tag": "N$",
+        "expected_from_uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
+        "expected_from_text": "iGeladi idei naigi me napioi",
+        "expected_split_tags": [
+          "Gen",
+          "n"
+        ],
+        "expected_split_forms": [
+          "i",
+          "Geladi"
+        ]
+      },
+      {
+        "issue_type": "token_without_splits_but_analyzed_elsewhere",
+        "token_form": "iGeladi",
+        "uid": "82117289-be52-45d0-886d-a5747eb20ea2",
+        "text": "iGeladi ipegitaGagi",
+        "token_tag": "N$",
+        "expected_from_uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
+        "expected_from_text": "iGeladi idei naigi me napioi",
+        "expected_split_tags": [
+          "Gen",
+          "n"
+        ],
+        "expected_split_forms": [
+          "i",
+          "Geladi"
+        ]
+      },
+      {
+        "issue_type": "token_without_splits_but_analyzed_elsewhere",
+        "token_form": "iGeladi",
+        "uid": "50f93fbc-14fa-48e7-b8ba-22f744109348",
+        "text": "iGeladi ipegitegi liGeladi",
+        "token_tag": "N$",
+        "expected_from_uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
+        "expected_from_text": "iGeladi idei naigi me napioi",
+        "expected_split_tags": [
+          "Gen",
+          "n"
+        ],
+        "expected_split_forms": [
+          "i",
+          "Geladi"
+        ]
+      },
+      {
+        "issue_type": "token_without_splits_but_analyzed_elsewhere",
+        "token_form": "iGeladi",
+        "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
+        "text": "iGeladi ipegitegi naigi ane napioi",
+        "token_tag": "N$",
+        "expected_from_uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
+        "expected_from_text": "iGeladi idei naigi me napioi",
+        "expected_split_tags": [
+          "Gen",
+          "n"
+        ],
+        "expected_split_forms": [
+          "i",
+          "Geladi"
+        ]
+      },
+      {
+        "issue_type": "token_without_splits_but_analyzed_elsewhere",
+        "token_form": "iGeladi",
+        "uid": "bb8018ba-76b3-43f2-82ea-78b6009c1f90",
+        "text": "iGeladi ipegitegi naigi me napioi",
+        "token_tag": "N$",
+        "expected_from_uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
+        "expected_from_text": "iGeladi idei naigi me napioi",
+        "expected_split_tags": [
+          "Gen",
+          "n"
+        ],
+        "expected_split_forms": [
+          "i",
+          "Geladi"
+        ]
+      },
+      {
+        "issue_type": "token_without_splits_but_analyzed_elsewhere",
+        "token_form": "iGeladi",
+        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+        "text": "iGeladi aGipegitegi weigi",
+        "token_tag": "N$",
+        "expected_from_uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
+        "expected_from_text": "iGeladi idei naigi me napioi",
+        "expected_split_tags": [
+          "Gen",
+          "n"
+        ],
+        "expected_split_forms": [
+          "i",
+          "Geladi"
+        ]
+      }
+    ],
+    "token_with_incomplete_splits_but_fuller_analysis_elsewhere": [
+      {
+        "issue_type": "token_with_incomplete_splits_but_fuller_analysis_elsewhere",
+        "token_form": "weiigi",
+        "uid": "b2e3ea43-0d68-46ee-9f33-938610cc8aec",
+        "text": "niwatece etadi weiigi",
+        "split_tags_here": [
+          ""
+        ],
+        "split_forms_here": [
+          ""
+        ],
+        "expected_from_uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
+        "expected_from_text": "ajo liwatece etadi weiigi",
+        "expected_split_tags": [
+          "n"
+        ],
+        "expected_split_forms": [
+          "weiigi"
+        ]
+      },
+      {
+        "issue_type": "token_with_incomplete_splits_but_fuller_analysis_elsewhere",
+        "token_form": "liGeladi",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "split_tags_here": [
+          "",
+          ""
+        ],
+        "split_forms_here": [
+          "l",
+          "iGeladi"
+        ],
+        "expected_from_uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
+        "expected_from_text": "ica liGeladi ipegetege",
+        "expected_split_tags": [
+          "Gen",
+          "n"
+        ],
+        "expected_split_forms": [
+          "l",
+          "Geladi"
+        ]
+      },
+      {
+        "issue_type": "token_with_incomplete_splits_but_fuller_analysis_elsewhere",
+        "token_form": "aG@",
+        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+        "text": "iGeladi aGipegitegi weigi",
+        "split_tags_here": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "split_forms_here": [
+          "aG",
+          "i",
+          "pegi",
+          "tegi"
+        ],
+        "expected_from_uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
+        "expected_from_text": "liGeladi Maria aGipegetege",
+        "expected_split_tags": [
+          "Neg",
+          "Erg",
+          "v",
+          "Apl"
+        ],
+        "expected_split_forms": [
+          "aG",
+          "i",
+          "pege",
+          "tege"
+        ]
+      },
+      {
+        "issue_type": "token_with_incomplete_splits_but_fuller_analysis_elsewhere",
+        "token_form": "ica",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "split_tags_here": [
+          "",
+          ""
+        ],
+        "split_forms_here": [
+          "i",
+          "ca"
+        ],
+        "expected_from_uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
+        "expected_from_text": "ica loigi ijo niganigi ipegitegi GanigotGa",
+        "expected_split_tags": [
+          "Gnr",
+          "Ncl"
+        ],
+        "expected_split_forms": [
+          "i",
+          "ca"
+        ]
+      },
+      {
+        "issue_type": "token_with_incomplete_splits_but_fuller_analysis_elsewhere",
+        "token_form": "ipegitegi",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "split_tags_here": [
+          "",
+          "",
+          ""
+        ],
+        "split_forms_here": [
+          "i",
+          "pegi",
+          "tegi"
+        ],
+        "expected_from_uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
+        "expected_from_text": "ica loigi ijo niganigi ipegitegi GanigotGa",
+        "expected_split_tags": [
+          "Erg",
+          "v",
+          "Apl"
+        ],
+        "expected_split_forms": [
+          "i",
+          "pegi",
+          "tegi"
+        ]
+      }
+    ],
+    "conflicting_token_tags_for_form": [
+      {
+        "issue_type": "conflicting_token_tags_for_form",
+        "token_form": "nioladi",
+        "token_tags": [
+          "N",
+          "N$"
+        ],
+        "examples": [
+          {
+            "uid": "5d0b94bf-223d-4f09-8c6f-b951a70d6d0b",
+            "text": "ica nioladi Ganixoa",
+            "token_tag": "N",
+            "token_gloss": "língua",
+            "split_tags": [
+              "Ant",
+              "n"
+            ],
+            "split_forms": [
+              "n",
+              "ioladi"
+            ]
+          },
+          {
+            "uid": "881131dd-3f70-411a-ac7e-85557139d1e3",
+            "text": "ica nioladi nioxoa libinienigi",
+            "token_tag": "N$",
+            "token_gloss": null,
+            "split_tags": [],
+            "split_forms": []
+          },
+          {
+            "uid": "95a7d135-4be0-463d-b443-76cc5828fc89",
+            "text": "ica nioladi lodawa libinienigi",
+            "token_tag": "N$",
+            "token_gloss": null,
+            "split_tags": [],
+            "split_forms": []
           }
         ]
       }
@@ -197,1176 +2417,1009 @@
       {
         "issue_type": "conflicting_morpheme_tags",
         "morpheme_form": "a",
-        "tags": [
+        "split_tags": [
           "F",
           "Gnr"
         ],
-        "occurrences": [
+        "examples": [
           {
             "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
             "text": "ajo liwatece ja iwaGadi",
             "host_token": "ajo",
-            "tag": "F"
+            "split_index": 1,
+            "split_tag": "F",
+            "split_gloss": null
           },
           {
             "uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
             "text": "ajo liwatece etadi weiigi",
             "host_token": "ajo",
-            "tag": "Gnr"
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "F"
           },
           {
             "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
             "text": "ajo niwatece etadi digoida",
             "host_token": "ajo",
-            "tag": "Gnr"
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "F"
           },
           {
             "uid": "b2e3ea43-0d68-46ee-9f33-938610cc8aec",
             "text": "niwatece etadi weiigi",
             "host_token": "etadi",
-            "tag": "Gnr"
+            "split_index": 2,
+            "split_tag": "Gnr",
+            "split_gloss": "F"
           },
           {
             "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
             "text": "ajo niwatece ipegitege weiigi",
             "host_token": "ajo",
-            "tag": "Gnr"
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
           },
           {
             "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
             "text": "iGeladi idei mijo naigi naGajo",
             "host_token": "naGajo",
-            "tag": "Gnr"
-          }
-        ]
-      },
-      {
-        "issue_type": "conflicting_morpheme_tags",
-        "morpheme_form": "gi",
-        "tags": [
-          "Apl",
-          "Gnr"
-        ],
-        "occurrences": [
-          {
-            "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
-            "text": "ica looligi lidGegi",
-            "host_token": "lidGegi",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
-            "text": "ica lidGegi loligi idei liGeladi",
-            "host_token": "lidGegi",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "82117289-be52-45d0-886d-a5747eb20ea2",
-            "text": "iGeladi ipegitaGagi",
-            "host_token": "ipegitaGagi",
-            "tag": "Apl"
-          }
-        ]
-      },
-      {
-        "issue_type": "conflicting_morpheme_tags",
-        "morpheme_form": "i",
-        "tags": [
-          "Abs",
-          "Erg",
-          "Gen",
-          "Gnr"
-        ],
-        "occurrences": [
-          {
-            "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
-            "text": "ajo liwatece ja iwaGadi",
-            "host_token": "iwaGadi",
-            "tag": "Abs"
-          },
-          {
-            "uid": "69948fe6-81f6-4faa-a344-8f8c47486943",
-            "text": "niwatece iwaGadi",
-            "host_token": "iwaGadi",
-            "tag": "Abs"
-          },
-          {
-            "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
-            "text": "ajo niwatece ipegitege weiigi",
-            "host_token": "ipegitege",
-            "tag": "Erg"
-          },
-          {
-            "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
-            "text": "liGeladi Maria aGipegetege",
-            "host_token": "aG@",
-            "tag": "Erg"
-          },
-          {
-            "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
-            "text": "ica liGeladi ipegetege",
-            "host_token": "ica",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
-            "text": "ica liGeladi ipegetege",
-            "host_token": "ipegetege",
-            "tag": "Erg"
-          },
-          {
-            "uid": "e9d6dfb6-656d-44aa-ba17-86289fd72268",
-            "text": "liGeladi idei nigotaGa",
-            "host_token": "idei",
-            "tag": "Erg"
-          },
-          {
-            "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
-            "text": "ica liGeladi ipegitegi",
-            "host_token": "ica",
-            "tag": null
-          },
-          {
-            "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
-            "text": "ica liGeladi ipegitegi",
-            "host_token": "ipegitegi",
-            "tag": null
-          },
-          {
-            "uid": "fef391af-9e63-419f-8f81-057459193f49",
-            "text": "ica Maria looligi alidi",
-            "host_token": "ica",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
-            "text": "ica looligi lidi",
-            "host_token": "ica",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
-            "text": "ica looligi dapiko",
-            "host_token": "ica",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
-            "text": "ica looligi ja dapiko",
-            "host_token": "ica",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
-            "text": "ica looligi lidGegi",
-            "host_token": "ica",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
-            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
-            "host_token": "ica",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
-            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
-            "host_token": "ijo",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
-            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
-            "host_token": "ipegitegi",
-            "tag": "Erg"
-          },
-          {
-            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
-            "text": "ica lidGegi loligi idei liGeladi",
-            "host_token": "ica",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
-            "text": "ica lidGegi loligi idei liGeladi",
-            "host_token": "idei",
-            "tag": "Erg"
-          },
-          {
-            "uid": "0f478381-6858-463d-94cc-903e9dc879f9",
-            "text": "ica liwigo libinienigi",
-            "host_token": "ica",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "55551636-8ed3-4545-8510-d8dbfd817a1a",
-            "text": "ica niwigo libinienigi",
-            "host_token": "ica",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "5d0b94bf-223d-4f09-8c6f-b951a70d6d0b",
-            "text": "ica nioladi Ganixoa",
-            "host_token": "ica",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "881131dd-3f70-411a-ac7e-85557139d1e3",
-            "text": "ica nioladi nioxoa libinienigi",
-            "host_token": "ica",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "95a7d135-4be0-463d-b443-76cc5828fc89",
-            "text": "ica nioladi lodawa libinienigi",
-            "host_token": "ica",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "2f47b402-9fe7-4714-96e3-c6cbdf405472",
-            "text": "iGeladi idei naigi anenapioi",
-            "host_token": "idei",
-            "tag": "Erg"
-          },
-          {
-            "uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
-            "text": "iGeladi idei naigi me napioi",
-            "host_token": "iGeladi",
-            "tag": "Gen"
-          },
-          {
-            "uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
-            "text": "iGeladi idei naigi me napioi",
-            "host_token": "idei",
-            "tag": "Erg"
-          },
-          {
-            "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
-            "text": "iGeladi idei mijo naigi naGajo",
-            "host_token": "iGeladi",
-            "tag": "Gen"
-          },
-          {
-            "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
-            "text": "iGeladi idei mijo naigi naGajo",
-            "host_token": "idei",
-            "tag": "Erg"
-          },
-          {
-            "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
-            "text": "iGeladi idei mijo naigi naGajo",
-            "host_token": "me@",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d",
-            "text": "Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi",
-            "host_token": "micoataGa",
-            "tag": "Gnr"
-          },
-          {
-            "uid": "a4ccc755-a644-4b04-ab1b-698e7acea4cc",
-            "text": "iGeladi idei digoida",
-            "host_token": "idei",
-            "tag": "Erg"
-          },
-          {
-            "uid": "a4ccc755-a644-4b04-ab1b-698e7acea4cc",
-            "text": "iGeladi idei digoida",
-            "host_token": "digoida",
-            "tag": "Gen"
-          },
-          {
-            "uid": "82117289-be52-45d0-886d-a5747eb20ea2",
-            "text": "iGeladi ipegitaGagi",
-            "host_token": "ipegitaGagi",
-            "tag": "Erg"
-          },
-          {
-            "uid": "50f93fbc-14fa-48e7-b8ba-22f744109348",
-            "text": "iGeladi ipegitegi liGeladi",
-            "host_token": "ipegitegi",
-            "tag": "Erg"
-          },
-          {
-            "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
-            "text": "iGeladi ipegitegi naigi ane napioi",
-            "host_token": "ipegitegi",
-            "tag": "Erg"
-          },
-          {
-            "uid": "bb8018ba-76b3-43f2-82ea-78b6009c1f90",
-            "text": "iGeladi ipegitegi naigi me napioi",
-            "host_token": "ipegitegi",
-            "tag": "Erg"
-          },
-          {
-            "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
-            "text": "iGeladi aGipegitegi weigi",
-            "host_token": "aG@",
-            "tag": null
-          }
-        ]
-      },
-      {
-        "issue_type": "conflicting_morpheme_tags",
-        "morpheme_form": "jaG",
-        "tags": [
-          "PFV",
-          "t"
-        ],
-        "occurrences": [
-          {
-            "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
-            "text": "ajo liwatece ja iwaGadi",
-            "host_token": "ja",
-            "tag": "PFV"
-          },
-          {
-            "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
-            "text": "ica looligi ja dapiko",
-            "host_token": "ja",
-            "tag": "t"
+            "split_index": 2,
+            "split_tag": "Gnr",
+            "split_gloss": null
           }
         ]
       },
       {
         "issue_type": "conflicting_morpheme_tags",
         "morpheme_form": "jo",
-        "tags": [
+        "split_tags": [
           "CL",
           "Ncl"
         ],
-        "occurrences": [
+        "examples": [
           {
             "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
             "text": "ajo liwatece ja iwaGadi",
             "host_token": "ajo",
-            "tag": "CL"
+            "split_index": 2,
+            "split_tag": "CL",
+            "split_gloss": null
           },
           {
             "uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
             "text": "ajo liwatece etadi weiigi",
             "host_token": "ajo",
-            "tag": "Ncl"
+            "split_index": 2,
+            "split_tag": "Ncl",
+            "split_gloss": "CL"
           },
           {
             "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
             "text": "ajo niwatece etadi digoida",
             "host_token": "ajo",
-            "tag": "Ncl"
+            "split_index": 2,
+            "split_tag": "Ncl",
+            "split_gloss": null
           },
           {
             "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
             "text": "ajo niwatece ipegitege weiigi",
             "host_token": "ajo",
-            "tag": "Ncl"
+            "split_index": 2,
+            "split_tag": "Ncl",
+            "split_gloss": null
           },
           {
             "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
             "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
             "host_token": "ijo",
-            "tag": "Ncl"
+            "split_index": 2,
+            "split_tag": "Ncl",
+            "split_gloss": null
           },
           {
             "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
             "text": "iGeladi idei mijo naigi naGajo",
             "host_token": "me@",
-            "tag": "Ncl"
+            "split_index": 3,
+            "split_tag": "Ncl",
+            "split_gloss": null
           },
           {
             "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
             "text": "iGeladi idei mijo naigi naGajo",
             "host_token": "naGajo",
-            "tag": "Ncl"
+            "split_index": 3,
+            "split_tag": "Ncl",
+            "split_gloss": null
           }
         ]
       },
       {
         "issue_type": "conflicting_morpheme_tags",
         "morpheme_form": "l",
-        "tags": [
+        "split_tags": [
           "3POSS",
           "Gen",
           "Gnr"
         ],
-        "occurrences": [
+        "examples": [
           {
             "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
             "text": "ajo liwatece ja iwaGadi",
             "host_token": "liwatece",
-            "tag": "3POSS"
+            "split_index": 1,
+            "split_tag": "3POSS",
+            "split_gloss": null
           },
           {
             "uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
             "text": "ajo liwatece etadi weiigi",
             "host_token": "liwatece",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": "3"
           },
           {
             "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
             "text": "liGeladi Maria aGipegetege",
             "host_token": "liGeladi",
-            "tag": "Gnr"
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
           },
           {
             "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
             "text": "ica liGeladi ipegetege",
             "host_token": "liGeladi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": "3"
           },
           {
             "uid": "e9d6dfb6-656d-44aa-ba17-86289fd72268",
             "text": "liGeladi idei nigotaGa",
             "host_token": "liGeladi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": "3"
           },
           {
             "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
             "text": "ica liGeladi ipegitegi",
             "host_token": "liGeladi",
-            "tag": null
+            "split_index": 1,
+            "split_tag": null,
+            "split_gloss": null
           },
           {
             "uid": "fef391af-9e63-419f-8f81-057459193f49",
             "text": "ica Maria looligi alidi",
             "host_token": "looligi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": "3"
           },
           {
             "uid": "fef391af-9e63-419f-8f81-057459193f49",
             "text": "ica Maria looligi alidi",
             "host_token": "aG@",
-            "tag": "Gen"
+            "split_index": 2,
+            "split_tag": "Gen",
+            "split_gloss": "3"
           },
           {
             "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
             "text": "ica looligi lidi",
             "host_token": "looligi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": null
           },
           {
             "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
             "text": "ica looligi lidi",
             "host_token": "lidi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": null
           },
           {
             "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
             "text": "ica looligi dapiko",
             "host_token": "looligi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": null
           },
           {
             "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
             "text": "ica looligi ja dapiko",
             "host_token": "looligi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": null
           },
           {
             "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
             "text": "ica looligi lidGegi",
             "host_token": "looligi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": "3"
           },
           {
             "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
             "text": "ica looligi lidGegi",
             "host_token": "lidGegi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": "3"
           },
           {
             "uid": "19cc39ce-fe03-4551-8097-9d163a38a3c0",
             "text": "loigipodi libinienigipi",
             "host_token": "loigipodi",
-            "tag": "Gnr"
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
           },
           {
             "uid": "19cc39ce-fe03-4551-8097-9d163a38a3c0",
             "text": "loigipodi libinienigipi",
             "host_token": "libinienigipi",
-            "tag": "Gnr"
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
           },
           {
             "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
             "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
             "host_token": "loigi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": "3"
           },
           {
             "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
             "text": "ica lidGegi loligi idei liGeladi",
             "host_token": "lidGegi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": "3"
           },
           {
             "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
             "text": "ica lidGegi loligi idei liGeladi",
             "host_token": "loligi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": "3"
           },
           {
             "uid": "0f478381-6858-463d-94cc-903e9dc879f9",
             "text": "ica liwigo libinienigi",
             "host_token": "liwigo",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": "3"
           },
           {
             "uid": "0f478381-6858-463d-94cc-903e9dc879f9",
             "text": "ica liwigo libinienigi",
             "host_token": "libinienigi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": null
           },
           {
             "uid": "55551636-8ed3-4545-8510-d8dbfd817a1a",
             "text": "ica niwigo libinienigi",
             "host_token": "libinienigi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": null
           },
           {
             "uid": "881131dd-3f70-411a-ac7e-85557139d1e3",
             "text": "ica nioladi nioxoa libinienigi",
             "host_token": "libinienigi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": null
           },
           {
             "uid": "95a7d135-4be0-463d-b443-76cc5828fc89",
             "text": "ica nioladi lodawa libinienigi",
             "host_token": "libinienigi",
-            "tag": "Gen"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": null
           },
           {
             "uid": "50f93fbc-14fa-48e7-b8ba-22f744109348",
             "text": "iGeladi ipegitegi liGeladi",
             "host_token": "liGeladi",
-            "tag": "Gen"
-          }
-        ]
-      },
-      {
-        "issue_type": "conflicting_morpheme_tags",
-        "morpheme_form": "taGa",
-        "tags": [
-          "Apl",
-          "OBL"
-        ],
-        "occurrences": [
-          {
-            "uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d",
-            "text": "Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi",
-            "host_token": "micoataGa",
-            "tag": "Apl"
-          },
-          {
-            "uid": "82117289-be52-45d0-886d-a5747eb20ea2",
-            "text": "iGeladi ipegitaGagi",
-            "host_token": "ipegitaGagi",
-            "tag": "OBL"
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": "3"
           }
         ]
       },
       {
         "issue_type": "conflicting_morpheme_tags",
         "morpheme_form": "watece",
-        "tags": [
+        "split_tags": [
           "canoa",
           "n"
         ],
-        "occurrences": [
+        "examples": [
           {
             "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
             "text": "ajo liwatece ja iwaGadi",
             "host_token": "liwatece",
-            "tag": "canoa"
+            "split_index": 2,
+            "split_tag": "canoa",
+            "split_gloss": null
           },
           {
             "uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
             "text": "ajo liwatece etadi weiigi",
             "host_token": "liwatece",
-            "tag": "n"
+            "split_index": 2,
+            "split_tag": "n",
+            "split_gloss": "canoa"
           },
           {
             "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
             "text": "ajo niwatece etadi digoida",
             "host_token": "niwatece",
-            "tag": "n"
+            "split_index": 2,
+            "split_tag": "n",
+            "split_gloss": "canoa"
           },
           {
             "uid": "69948fe6-81f6-4faa-a344-8f8c47486943",
             "text": "niwatece iwaGadi",
             "host_token": "niwatece",
-            "tag": "n"
+            "split_index": 2,
+            "split_tag": "n",
+            "split_gloss": "canoa"
           },
           {
             "uid": "b2e3ea43-0d68-46ee-9f33-938610cc8aec",
             "text": "niwatece etadi weiigi",
             "host_token": "niwatece",
-            "tag": "n"
+            "split_index": 2,
+            "split_tag": "n",
+            "split_gloss": "canoa"
           },
           {
             "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
             "text": "ajo niwatece ipegitege weiigi",
             "host_token": "niwatece",
-            "tag": "n"
-          }
-        ]
-      }
-    ],
-    "conflicting_split_form_sequences": [
-      {
-        "issue_type": "conflicting_split_form_sequences",
-        "token_form": "aG@",
-        "split_form_sequences": [
-          [
-            "aG",
-            "i",
-            "pege",
-            "tege"
-          ],
-          [
-            "aG",
-            "i",
-            "pegi",
-            "tegi"
-          ],
-          [
-            "aG",
-            "l",
-            "idi"
-          ]
-        ]
-      },
-      {
-        "issue_type": "conflicting_split_form_sequences",
-        "token_form": "digoida",
-        "split_form_sequences": [
-          [
-            "digo",
-            "i",
-            "da"
-          ],
-          [
-            "digoida"
-          ]
-        ]
-      },
-      {
-        "issue_type": "conflicting_split_form_sequences",
-        "token_form": "etadi",
-        "split_form_sequences": [
-          [
-            "et",
-            "a",
-            "di"
-          ],
-          [
-            "etadi"
-          ]
-        ]
-      },
-      {
-        "issue_type": "conflicting_split_form_sequences",
-        "token_form": "iGeladi",
-        "split_form_sequences": [
-          [
-            "i",
-            "Geladi"
-          ],
-          [
-            "i",
-            "geladi"
-          ]
-        ]
-      },
-      {
-        "issue_type": "conflicting_split_form_sequences",
-        "token_form": "liGeladi",
-        "split_form_sequences": [
-          [
-            "l",
-            "Geladi"
-          ],
-          [
-            "l",
-            "iGeladi"
-          ]
-        ]
-      },
-      {
-        "issue_type": "conflicting_split_form_sequences",
-        "token_form": "weiigi",
-        "split_form_sequences": [
-          [
-            ""
-          ],
-          [
-            "weiigi"
-          ]
-        ]
-      }
-    ],
-    "conflicting_split_tag_sequences": [
-      {
-        "issue_type": "conflicting_split_tag_sequences",
-        "token_form": "aG@",
-        "split_tag_sequences": [
-          [
-            "",
-            "",
-            "",
-            ""
-          ],
-          [
-            "Neg",
-            "Erg",
-            "v",
-            "Apl"
-          ],
-          [
-            "Neg",
-            "Gen",
-            "n"
-          ]
-        ]
-      },
-      {
-        "issue_type": "conflicting_split_tag_sequences",
-        "token_form": "ajo",
-        "split_tag_sequences": [
-          [
-            "F",
-            "CL"
-          ],
-          [
-            "Gnr",
-            "Ncl"
-          ]
-        ]
-      },
-      {
-        "issue_type": "conflicting_split_tag_sequences",
-        "token_form": "digoida",
-        "split_tag_sequences": [
-          [
-            "Adv",
-            "Gen",
-            "Ncl"
-          ],
-          [
-            "lá"
-          ]
-        ]
-      },
-      {
-        "issue_type": "conflicting_split_tag_sequences",
-        "token_form": "etadi",
-        "split_tag_sequences": [
-          [
-            "v"
-          ],
-          [
-            "v",
-            "Gnr",
-            "Ncl"
-          ]
-        ]
-      },
-      {
-        "issue_type": "conflicting_split_tag_sequences",
-        "token_form": "ica",
-        "split_tag_sequences": [
-          [
-            "",
-            ""
-          ],
-          [
-            "Gnr",
-            "Ncl"
-          ]
-        ]
-      },
-      {
-        "issue_type": "conflicting_split_tag_sequences",
-        "token_form": "ipegitegi",
-        "split_tag_sequences": [
-          [
-            "",
-            "",
-            ""
-          ],
-          [
-            "Erg",
-            "v",
-            "Apl"
-          ]
-        ]
-      },
-      {
-        "issue_type": "conflicting_split_tag_sequences",
-        "token_form": "ja",
-        "split_tag_sequences": [
-          [
-            "PFV"
-          ],
-          [
-            "t"
-          ]
-        ]
-      },
-      {
-        "issue_type": "conflicting_split_tag_sequences",
-        "token_form": "liGeladi",
-        "split_tag_sequences": [
-          [
-            "",
-            ""
-          ],
-          [
-            "Gen",
-            "n"
-          ],
-          [
-            "Gnr",
-            "n"
-          ]
-        ]
-      },
-      {
-        "issue_type": "conflicting_split_tag_sequences",
-        "token_form": "liwatece",
-        "split_tag_sequences": [
-          [
-            "3POSS",
-            "canoa"
-          ],
-          [
-            "Gen",
-            "n"
-          ]
-        ]
-      },
-      {
-        "issue_type": "conflicting_split_tag_sequences",
-        "token_form": "weiigi",
-        "split_tag_sequences": [
-          [
-            ""
-          ],
-          [
-            "n"
-          ]
-        ]
-      }
-    ],
-    "conflicting_token_glosses": [
-      {
-        "issue_type": "conflicting_token_glosses",
-        "token_form": "aG@",
-        "glosses": [
-          "não fica perto dela",
-          "não sua gostosura"
-        ],
-        "occurrences": [
-          {
-            "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
-            "text": "liGeladi Maria aGipegetege",
-            "gloss": "não fica perto dela"
-          },
-          {
-            "uid": "fef391af-9e63-419f-8f81-057459193f49",
-            "text": "ica Maria looligi alidi",
-            "gloss": "não sua gostosura"
+            "split_index": 2,
+            "split_tag": "n",
+            "split_gloss": null
           }
         ]
       },
       {
-        "issue_type": "conflicting_token_glosses",
-        "token_form": "daGa",
-        "glosses": [
-          "que",
-          "se"
+        "issue_type": "conflicting_morpheme_tags",
+        "morpheme_form": "jaG",
+        "split_tags": [
+          "PFV",
+          "t"
         ],
-        "occurrences": [
-          {
-            "uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d",
-            "text": "Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi",
-            "gloss": "se"
-          },
-          {
-            "uid": "845b9d1d-ad7c-445a-bfbd-04fd9255ffc2",
-            "text": "Eyodi daGa niganaGacanajo",
-            "gloss": "que"
-          }
-        ]
-      },
-      {
-        "issue_type": "conflicting_token_glosses",
-        "token_form": "ica",
-        "glosses": [
-          "a",
-          "uma"
-        ],
-        "occurrences": [
-          {
-            "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
-            "text": "ica liGeladi ipegitegi",
-            "gloss": "a"
-          },
-          {
-            "uid": "fef391af-9e63-419f-8f81-057459193f49",
-            "text": "ica Maria looligi alidi",
-            "gloss": "a"
-          },
-          {
-            "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
-            "text": "ica looligi lidi",
-            "gloss": "uma"
-          },
-          {
-            "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
-            "text": "ica looligi dapiko",
-            "gloss": "a"
-          },
-          {
-            "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
-            "text": "ica looligi ja dapiko",
-            "gloss": "a"
-          },
-          {
-            "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
-            "text": "ica looligi lidGegi",
-            "gloss": "uma"
-          },
-          {
-            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
-            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
-            "gloss": "a"
-          },
-          {
-            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
-            "text": "ica lidGegi loligi idei liGeladi",
-            "gloss": "a"
-          },
-          {
-            "uid": "0f478381-6858-463d-94cc-903e9dc879f9",
-            "text": "ica liwigo libinienigi",
-            "gloss": "a"
-          },
-          {
-            "uid": "55551636-8ed3-4545-8510-d8dbfd817a1a",
-            "text": "ica niwigo libinienigi",
-            "gloss": "a"
-          },
-          {
-            "uid": "5d0b94bf-223d-4f09-8c6f-b951a70d6d0b",
-            "text": "ica nioladi Ganixoa",
-            "gloss": "a"
-          },
-          {
-            "uid": "881131dd-3f70-411a-ac7e-85557139d1e3",
-            "text": "ica nioladi nioxoa libinienigi",
-            "gloss": "a"
-          },
-          {
-            "uid": "95a7d135-4be0-463d-b443-76cc5828fc89",
-            "text": "ica nioladi lodawa libinienigi",
-            "gloss": "a"
-          }
-        ]
-      },
-      {
-        "issue_type": "conflicting_token_glosses",
-        "token_form": "ipegitegi",
-        "glosses": [
-          "fica perto de",
-          "fica próxima de"
-        ],
-        "occurrences": [
-          {
-            "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
-            "text": "ica liGeladi ipegitegi",
-            "gloss": "fica perto de"
-          },
-          {
-            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
-            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
-            "gloss": "fica próxima de"
-          },
-          {
-            "uid": "50f93fbc-14fa-48e7-b8ba-22f744109348",
-            "text": "iGeladi ipegitegi liGeladi",
-            "gloss": "fica próxima de"
-          },
-          {
-            "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
-            "text": "iGeladi ipegitegi naigi ane napioi",
-            "gloss": "fica próxima de"
-          },
-          {
-            "uid": "bb8018ba-76b3-43f2-82ea-78b6009c1f90",
-            "text": "iGeladi ipegitegi naigi me napioi",
-            "gloss": "fica próxima de"
-          }
-        ]
-      },
-      {
-        "issue_type": "conflicting_token_glosses",
-        "token_form": "ja",
-        "glosses": [
-          "completivo",
-          "perfectivo"
-        ],
-        "occurrences": [
+        "examples": [
           {
             "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
             "text": "ajo liwatece ja iwaGadi",
-            "gloss": "completivo"
+            "host_token": "ja",
+            "split_index": 1,
+            "split_tag": "PFV",
+            "split_gloss": null
           },
           {
             "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
             "text": "ica looligi ja dapiko",
-            "gloss": "perfectivo"
+            "host_token": "ja",
+            "split_index": 1,
+            "split_tag": "t",
+            "split_gloss": "perfectivo/completivo"
           }
         ]
       },
       {
-        "issue_type": "conflicting_token_glosses",
-        "token_form": "liGeladi",
-        "glosses": [
-          "(tirar)",
-          "casa",
-          "casa dela/dele",
-          "sua casa"
+        "issue_type": "conflicting_morpheme_tags",
+        "morpheme_form": "i",
+        "split_tags": [
+          "Abs",
+          "Erg",
+          "Gen",
+          "Gnr"
         ],
-        "occurrences": [
+        "examples": [
+          {
+            "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
+            "text": "ajo liwatece ja iwaGadi",
+            "host_token": "iwaGadi",
+            "split_index": 1,
+            "split_tag": "Abs",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "69948fe6-81f6-4faa-a344-8f8c47486943",
+            "text": "niwatece iwaGadi",
+            "host_token": "iwaGadi",
+            "split_index": 1,
+            "split_tag": "Abs",
+            "split_gloss": "1"
+          },
+          {
+            "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
+            "text": "ajo niwatece ipegitege weiigi",
+            "host_token": "ipegitege",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
           {
             "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
             "text": "liGeladi Maria aGipegetege",
-            "gloss": "casa dela/dele"
+            "host_token": "aG@",
+            "split_index": 2,
+            "split_tag": "Erg",
+            "split_gloss": null
+          },
+          {
+            "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
+            "text": "ica liGeladi ipegetege",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "M"
+          },
+          {
+            "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
+            "text": "ica liGeladi ipegetege",
+            "host_token": "ipegetege",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": null
           },
           {
             "uid": "e9d6dfb6-656d-44aa-ba17-86289fd72268",
             "text": "liGeladi idei nigotaGa",
-            "gloss": "casa dela/dele"
+            "host_token": "idei",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
           },
           {
             "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
             "text": "ica liGeladi ipegitegi",
-            "gloss": "sua casa"
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": null,
+            "split_gloss": null
           },
           {
-            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
-            "text": "ica lidGegi loligi idei liGeladi",
-            "gloss": "casa"
+            "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+            "text": "ica liGeladi ipegitegi",
+            "host_token": "ipegitegi",
+            "split_index": 1,
+            "split_tag": null,
+            "split_gloss": null
           },
-          {
-            "uid": "f081c545-c42b-463d-b57f-db87787f20e7",
-            "text": "João liGeladi ane napioi",
-            "gloss": "casa"
-          },
-          {
-            "uid": "50f93fbc-14fa-48e7-b8ba-22f744109348",
-            "text": "iGeladi ipegitegi liGeladi",
-            "gloss": "(tirar)"
-          }
-        ]
-      },
-      {
-        "issue_type": "conflicting_token_glosses",
-        "token_form": "looligi",
-        "glosses": [
-          "comida dele/dela",
-          "sua comida"
-        ],
-        "occurrences": [
           {
             "uid": "fef391af-9e63-419f-8f81-057459193f49",
             "text": "ica Maria looligi alidi",
-            "gloss": "sua comida"
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
+          },
+          {
+            "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
+            "text": "ica looligi lidi",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
+          },
+          {
+            "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
+            "text": "ica looligi dapiko",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
           },
           {
             "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
             "text": "ica looligi ja dapiko",
-            "gloss": "comida dele/dela"
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
           },
           {
             "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
             "text": "ica looligi lidGegi",
-            "gloss": "sua comida"
-          }
-        ]
-      }
-    ],
-    "conflicting_token_tags": [
-      {
-        "issue_type": "conflicting_token_tags",
-        "token_form": "nioladi",
-        "tags": [
-          "N",
-          "N$"
-        ],
-        "occurrences": [
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
+          },
+          {
+            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
+            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "masc"
+          },
+          {
+            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
+            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
+            "host_token": "ijo",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
+          },
+          {
+            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
+            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
+            "host_token": "ipegitegi",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
+            "text": "ica lidGegi loligi idei liGeladi",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "masc"
+          },
+          {
+            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
+            "text": "ica lidGegi loligi idei liGeladi",
+            "host_token": "idei",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "0f478381-6858-463d-94cc-903e9dc879f9",
+            "text": "ica liwigo libinienigi",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "masc"
+          },
+          {
+            "uid": "55551636-8ed3-4545-8510-d8dbfd817a1a",
+            "text": "ica niwigo libinienigi",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "masc"
+          },
           {
             "uid": "5d0b94bf-223d-4f09-8c6f-b951a70d6d0b",
             "text": "ica nioladi Ganixoa",
-            "tag": "N"
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "masc"
           },
           {
             "uid": "881131dd-3f70-411a-ac7e-85557139d1e3",
             "text": "ica nioladi nioxoa libinienigi",
-            "tag": "N$"
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "masc"
           },
           {
             "uid": "95a7d135-4be0-463d-b443-76cc5828fc89",
             "text": "ica nioladi lodawa libinienigi",
-            "tag": "N$"
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "masc"
+          },
+          {
+            "uid": "2f47b402-9fe7-4714-96e3-c6cbdf405472",
+            "text": "iGeladi idei naigi anenapioi",
+            "host_token": "idei",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
+            "text": "iGeladi idei naigi me napioi",
+            "host_token": "iGeladi",
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": "1"
+          },
+          {
+            "uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
+            "text": "iGeladi idei naigi me napioi",
+            "host_token": "idei",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+            "text": "iGeladi idei mijo naigi naGajo",
+            "host_token": "iGeladi",
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": null
+          },
+          {
+            "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+            "text": "iGeladi idei mijo naigi naGajo",
+            "host_token": "idei",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+            "text": "iGeladi idei mijo naigi naGajo",
+            "host_token": "me@",
+            "split_index": 2,
+            "split_tag": "Gnr",
+            "split_gloss": "M"
+          },
+          {
+            "uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d",
+            "text": "Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi",
+            "host_token": "micoataGa",
+            "split_index": 2,
+            "split_tag": "Gnr",
+            "split_gloss": null
+          },
+          {
+            "uid": "a4ccc755-a644-4b04-ab1b-698e7acea4cc",
+            "text": "iGeladi idei digoida",
+            "host_token": "idei",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "a4ccc755-a644-4b04-ab1b-698e7acea4cc",
+            "text": "iGeladi idei digoida",
+            "host_token": "digoida",
+            "split_index": 2,
+            "split_tag": "Gen",
+            "split_gloss": null
+          },
+          {
+            "uid": "82117289-be52-45d0-886d-a5747eb20ea2",
+            "text": "iGeladi ipegitaGagi",
+            "host_token": "ipegitaGagi",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": null
+          },
+          {
+            "uid": "50f93fbc-14fa-48e7-b8ba-22f744109348",
+            "text": "iGeladi ipegitegi liGeladi",
+            "host_token": "ipegitegi",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
+            "text": "iGeladi ipegitegi naigi ane napioi",
+            "host_token": "ipegitegi",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "bb8018ba-76b3-43f2-82ea-78b6009c1f90",
+            "text": "iGeladi ipegitegi naigi me napioi",
+            "host_token": "ipegitegi",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+            "text": "iGeladi aGipegitegi weigi",
+            "host_token": "aG@",
+            "split_index": 2,
+            "split_tag": null,
+            "split_gloss": null
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_morpheme_tags",
+        "morpheme_form": "gi",
+        "split_tags": [
+          "Apl",
+          "Gnr"
+        ],
+        "examples": [
+          {
+            "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
+            "text": "ica looligi lidGegi",
+            "host_token": "lidGegi",
+            "split_index": 4,
+            "split_tag": "Gnr",
+            "split_gloss": "M"
+          },
+          {
+            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
+            "text": "ica lidGegi loligi idei liGeladi",
+            "host_token": "lidGegi",
+            "split_index": 4,
+            "split_tag": "Gnr",
+            "split_gloss": "M"
+          },
+          {
+            "uid": "82117289-be52-45d0-886d-a5747eb20ea2",
+            "text": "iGeladi ipegitaGagi",
+            "host_token": "ipegitaGagi",
+            "split_index": 4,
+            "split_tag": "Apl",
+            "split_gloss": null
+          }
+        ]
+      },
+      {
+        "issue_type": "conflicting_morpheme_tags",
+        "morpheme_form": "taGa",
+        "split_tags": [
+          "Apl",
+          "OBL"
+        ],
+        "examples": [
+          {
+            "uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d",
+            "text": "Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi",
+            "host_token": "micoataGa",
+            "split_index": 5,
+            "split_tag": "Apl",
+            "split_gloss": "com"
+          },
+          {
+            "uid": "82117289-be52-45d0-886d-a5747eb20ea2",
+            "text": "iGeladi ipegitaGagi",
+            "host_token": "ipegitaGagi",
+            "split_index": 3,
+            "split_tag": "OBL",
+            "split_gloss": "2"
           }
         ]
       }
     ],
-    "empty_category_without_tag": [
+    "morpheme_tag_gloss_role_overlap": [
       {
-        "issue_type": "empty_category_without_tag",
-        "uid": "7b806584-75e5-4017-b9e2-ba97458903bd",
-        "text": "Eyodi ane niganaGacanajo",
-        "path": "$.pages[0].sentences[29]",
-        "host_token": "*T*"
+        "issue_type": "morpheme_tag_gloss_role_overlap",
+        "morpheme_form": "a",
+        "overlap_values": [
+          "F"
+        ],
+        "split_tags": [
+          "F",
+          "Gnr"
+        ],
+        "split_glosses": [
+          "F"
+        ],
+        "examples": [
+          {
+            "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
+            "text": "ajo liwatece ja iwaGadi",
+            "host_token": "ajo",
+            "split_index": 1,
+            "split_tag": "F",
+            "split_gloss": null
+          },
+          {
+            "uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
+            "text": "ajo liwatece etadi weiigi",
+            "host_token": "ajo",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "F"
+          },
+          {
+            "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
+            "text": "ajo niwatece etadi digoida",
+            "host_token": "ajo",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "F"
+          },
+          {
+            "uid": "b2e3ea43-0d68-46ee-9f33-938610cc8aec",
+            "text": "niwatece etadi weiigi",
+            "host_token": "etadi",
+            "split_index": 2,
+            "split_tag": "Gnr",
+            "split_gloss": "F"
+          },
+          {
+            "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
+            "text": "ajo niwatece ipegitege weiigi",
+            "host_token": "ajo",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
+          },
+          {
+            "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+            "text": "iGeladi idei mijo naigi naGajo",
+            "host_token": "naGajo",
+            "split_index": 2,
+            "split_tag": "Gnr",
+            "split_gloss": null
+          }
+        ]
       },
       {
-        "issue_type": "empty_category_without_tag",
-        "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
-        "text": "iGeladi ipegitegi naigi ane napioi",
-        "path": "$.pages[0].sentences[34]",
-        "host_token": "*T*"
-      }
-    ],
-    "empty_split_object": [
+        "issue_type": "morpheme_tag_gloss_role_overlap",
+        "morpheme_form": "jo",
+        "overlap_values": [
+          "CL"
+        ],
+        "split_tags": [
+          "CL",
+          "Ncl"
+        ],
+        "split_glosses": [
+          "CL"
+        ],
+        "examples": [
+          {
+            "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
+            "text": "ajo liwatece ja iwaGadi",
+            "host_token": "ajo",
+            "split_index": 2,
+            "split_tag": "CL",
+            "split_gloss": null
+          },
+          {
+            "uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
+            "text": "ajo liwatece etadi weiigi",
+            "host_token": "ajo",
+            "split_index": 2,
+            "split_tag": "Ncl",
+            "split_gloss": "CL"
+          },
+          {
+            "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
+            "text": "ajo niwatece etadi digoida",
+            "host_token": "ajo",
+            "split_index": 2,
+            "split_tag": "Ncl",
+            "split_gloss": null
+          },
+          {
+            "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
+            "text": "ajo niwatece ipegitege weiigi",
+            "host_token": "ajo",
+            "split_index": 2,
+            "split_tag": "Ncl",
+            "split_gloss": null
+          },
+          {
+            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
+            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
+            "host_token": "ijo",
+            "split_index": 2,
+            "split_tag": "Ncl",
+            "split_gloss": null
+          },
+          {
+            "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+            "text": "iGeladi idei mijo naigi naGajo",
+            "host_token": "me@",
+            "split_index": 3,
+            "split_tag": "Ncl",
+            "split_gloss": null
+          },
+          {
+            "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+            "text": "iGeladi idei mijo naigi naGajo",
+            "host_token": "naGajo",
+            "split_index": 3,
+            "split_tag": "Ncl",
+            "split_gloss": null
+          }
+        ]
+      },
       {
-        "issue_type": "empty_split_object",
-        "uid": "b2e3ea43-0d68-46ee-9f33-938610cc8aec",
-        "text": "niwatece etadi weiigi",
-        "path": "$.pages[0].sentences[4]",
-        "host_token": "weiigi",
-        "split_index": 1
+        "issue_type": "morpheme_tag_gloss_role_overlap",
+        "morpheme_form": "watece",
+        "overlap_values": [
+          "canoa"
+        ],
+        "split_tags": [
+          "canoa",
+          "n"
+        ],
+        "split_glosses": [
+          "canoa"
+        ],
+        "examples": [
+          {
+            "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
+            "text": "ajo liwatece ja iwaGadi",
+            "host_token": "liwatece",
+            "split_index": 2,
+            "split_tag": "canoa",
+            "split_gloss": null
+          },
+          {
+            "uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
+            "text": "ajo liwatece etadi weiigi",
+            "host_token": "liwatece",
+            "split_index": 2,
+            "split_tag": "n",
+            "split_gloss": "canoa"
+          },
+          {
+            "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
+            "text": "ajo niwatece etadi digoida",
+            "host_token": "niwatece",
+            "split_index": 2,
+            "split_tag": "n",
+            "split_gloss": "canoa"
+          },
+          {
+            "uid": "69948fe6-81f6-4faa-a344-8f8c47486943",
+            "text": "niwatece iwaGadi",
+            "host_token": "niwatece",
+            "split_index": 2,
+            "split_tag": "n",
+            "split_gloss": "canoa"
+          },
+          {
+            "uid": "b2e3ea43-0d68-46ee-9f33-938610cc8aec",
+            "text": "niwatece etadi weiigi",
+            "host_token": "niwatece",
+            "split_index": 2,
+            "split_tag": "n",
+            "split_gloss": "canoa"
+          },
+          {
+            "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
+            "text": "ajo niwatece ipegitege weiigi",
+            "host_token": "niwatece",
+            "split_index": 2,
+            "split_tag": "n",
+            "split_gloss": null
+          }
+        ]
       }
     ],
     "missing_split_gloss_but_known_for_same_morpheme": [
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "Gad",
-        "uid": "5d0b94bf-223d-4f09-8c6f-b951a70d6d0b",
-        "text": "ica nioladi Ganixoa",
-        "host_token": "Ganixoa",
-        "known_glosses_elsewhere": [
-          "2"
-        ]
-      },
       {
         "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
         "morpheme_form": "a",
         "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
         "text": "ajo liwatece ja iwaGadi",
         "host_token": "ajo",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "F"
         ]
@@ -1377,6 +3430,7 @@
         "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
         "text": "ajo niwatece ipegitege weiigi",
         "host_token": "ajo",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "F"
         ]
@@ -1387,108 +3441,251 @@
         "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
         "text": "iGeladi idei mijo naigi naGajo",
         "host_token": "naGajo",
+        "split_index": 2,
         "known_glosses_elsewhere": [
           "F"
         ]
       },
       {
         "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "apiko",
-        "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
-        "text": "ica looligi ja dapiko",
-        "host_token": "dapiko",
+        "morpheme_form": "jo",
+        "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
+        "text": "ajo liwatece ja iwaGadi",
+        "host_token": "ajo",
+        "split_index": 2,
         "known_glosses_elsewhere": [
-          "quente"
+          "CL"
         ]
       },
       {
         "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "ca",
-        "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
-        "text": "ica liGeladi ipegetege",
-        "host_token": "ica",
+        "morpheme_form": "jo",
+        "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
+        "text": "ajo niwatece etadi digoida",
+        "host_token": "ajo",
+        "split_index": 2,
         "known_glosses_elsewhere": [
-          "ausente"
+          "CL"
         ]
       },
       {
         "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "ca",
+        "morpheme_form": "jo",
+        "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
+        "text": "ajo niwatece ipegitege weiigi",
+        "host_token": "ajo",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "CL"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "jo",
+        "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
+        "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
+        "host_token": "ijo",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "CL"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "jo",
+        "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+        "text": "iGeladi idei mijo naigi naGajo",
+        "host_token": "me@",
+        "split_index": 3,
+        "known_glosses_elsewhere": [
+          "CL"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "jo",
+        "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+        "text": "iGeladi idei mijo naigi naGajo",
+        "host_token": "naGajo",
+        "split_index": 3,
+        "known_glosses_elsewhere": [
+          "CL"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "l",
+        "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
+        "text": "ajo liwatece ja iwaGadi",
+        "host_token": "liwatece",
+        "split_index": 1,
+        "known_glosses_elsewhere": [
+          "3"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "l",
+        "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
+        "text": "liGeladi Maria aGipegetege",
+        "host_token": "liGeladi",
+        "split_index": 1,
+        "known_glosses_elsewhere": [
+          "3"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "l",
         "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
         "text": "ica liGeladi ipegitegi",
-        "host_token": "ica",
+        "host_token": "liGeladi",
+        "split_index": 1,
         "known_glosses_elsewhere": [
-          "ausente"
+          "3"
         ]
       },
       {
         "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "ca",
-        "uid": "fef391af-9e63-419f-8f81-057459193f49",
-        "text": "ica Maria looligi alidi",
-        "host_token": "ica",
-        "known_glosses_elsewhere": [
-          "ausente"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "ca",
+        "morpheme_form": "l",
         "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
         "text": "ica looligi lidi",
-        "host_token": "ica",
+        "host_token": "looligi",
+        "split_index": 1,
         "known_glosses_elsewhere": [
-          "ausente"
+          "3"
         ]
       },
       {
         "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "ca",
+        "morpheme_form": "l",
+        "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
+        "text": "ica looligi lidi",
+        "host_token": "lidi",
+        "split_index": 1,
+        "known_glosses_elsewhere": [
+          "3"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "l",
         "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
         "text": "ica looligi dapiko",
-        "host_token": "ica",
+        "host_token": "looligi",
+        "split_index": 1,
         "known_glosses_elsewhere": [
-          "ausente"
+          "3"
         ]
       },
       {
         "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "ca",
+        "morpheme_form": "l",
         "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
         "text": "ica looligi ja dapiko",
-        "host_token": "ica",
+        "host_token": "looligi",
+        "split_index": 1,
         "known_glosses_elsewhere": [
-          "ausente"
+          "3"
         ]
       },
       {
         "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "ca",
-        "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
-        "text": "ica looligi lidGegi",
-        "host_token": "ica",
+        "morpheme_form": "l",
+        "uid": "19cc39ce-fe03-4551-8097-9d163a38a3c0",
+        "text": "loigipodi libinienigipi",
+        "host_token": "loigipodi",
+        "split_index": 1,
         "known_glosses_elsewhere": [
-          "ausente"
+          "3"
         ]
       },
       {
         "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "ca",
-        "uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d",
-        "text": "Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi",
-        "host_token": "micoataGa",
+        "morpheme_form": "l",
+        "uid": "19cc39ce-fe03-4551-8097-9d163a38a3c0",
+        "text": "loigipodi libinienigipi",
+        "host_token": "libinienigipi",
+        "split_index": 1,
         "known_glosses_elsewhere": [
-          "ausente"
+          "3"
         ]
       },
       {
         "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "gi",
-        "uid": "82117289-be52-45d0-886d-a5747eb20ea2",
-        "text": "iGeladi ipegitaGagi",
-        "host_token": "ipegitaGagi",
+        "morpheme_form": "l",
+        "uid": "0f478381-6858-463d-94cc-903e9dc879f9",
+        "text": "ica liwigo libinienigi",
+        "host_token": "libinienigi",
+        "split_index": 1,
         "known_glosses_elsewhere": [
-          "M"
+          "3"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "l",
+        "uid": "55551636-8ed3-4545-8510-d8dbfd817a1a",
+        "text": "ica niwigo libinienigi",
+        "host_token": "libinienigi",
+        "split_index": 1,
+        "known_glosses_elsewhere": [
+          "3"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "l",
+        "uid": "881131dd-3f70-411a-ac7e-85557139d1e3",
+        "text": "ica nioladi nioxoa libinienigi",
+        "host_token": "libinienigi",
+        "split_index": 1,
+        "known_glosses_elsewhere": [
+          "3"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "l",
+        "uid": "95a7d135-4be0-463d-b443-76cc5828fc89",
+        "text": "ica nioladi lodawa libinienigi",
+        "host_token": "libinienigi",
+        "split_index": 1,
+        "known_glosses_elsewhere": [
+          "3"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "watece",
+        "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
+        "text": "ajo liwatece ja iwaGadi",
+        "host_token": "liwatece",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "canoa"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "watece",
+        "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
+        "text": "ajo niwatece ipegitege weiigi",
+        "host_token": "niwatece",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "canoa"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "jaG",
+        "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
+        "text": "ajo liwatece ja iwaGadi",
+        "host_token": "ja",
+        "split_index": 1,
+        "known_glosses_elsewhere": [
+          "perfectivo/completivo"
         ]
       },
       {
@@ -1497,6 +3694,7 @@
         "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
         "text": "liGeladi Maria aGipegetege",
         "host_token": "aG@",
+        "split_index": 2,
         "known_glosses_elsewhere": [
           "1",
           "3",
@@ -1510,6 +3708,7 @@
         "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
         "text": "ica liGeladi ipegetege",
         "host_token": "ipegetege",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "1",
           "3",
@@ -1523,6 +3722,7 @@
         "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
         "text": "ica liGeladi ipegitegi",
         "host_token": "ica",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "1",
           "3",
@@ -1536,6 +3736,7 @@
         "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
         "text": "ica liGeladi ipegitegi",
         "host_token": "ipegitegi",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "1",
           "3",
@@ -1549,6 +3750,7 @@
         "uid": "fef391af-9e63-419f-8f81-057459193f49",
         "text": "ica Maria looligi alidi",
         "host_token": "ica",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "1",
           "3",
@@ -1562,6 +3764,7 @@
         "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
         "text": "ica looligi lidi",
         "host_token": "ica",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "1",
           "3",
@@ -1575,6 +3778,7 @@
         "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
         "text": "ica looligi dapiko",
         "host_token": "ica",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "1",
           "3",
@@ -1588,6 +3792,7 @@
         "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
         "text": "ica looligi ja dapiko",
         "host_token": "ica",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "1",
           "3",
@@ -1601,6 +3806,7 @@
         "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
         "text": "ica looligi lidGegi",
         "host_token": "ica",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "1",
           "3",
@@ -1614,6 +3820,7 @@
         "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
         "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
         "host_token": "ijo",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "1",
           "3",
@@ -1627,6 +3834,7 @@
         "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
         "text": "iGeladi idei mijo naigi naGajo",
         "host_token": "iGeladi",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "1",
           "3",
@@ -1640,6 +3848,7 @@
         "uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d",
         "text": "Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi",
         "host_token": "micoataGa",
+        "split_index": 2,
         "known_glosses_elsewhere": [
           "1",
           "3",
@@ -1653,6 +3862,7 @@
         "uid": "a4ccc755-a644-4b04-ab1b-698e7acea4cc",
         "text": "iGeladi idei digoida",
         "host_token": "digoida",
+        "split_index": 2,
         "known_glosses_elsewhere": [
           "1",
           "3",
@@ -1666,6 +3876,7 @@
         "uid": "82117289-be52-45d0-886d-a5747eb20ea2",
         "text": "iGeladi ipegitaGagi",
         "host_token": "ipegitaGagi",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "1",
           "3",
@@ -1679,6 +3890,7 @@
         "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
         "text": "iGeladi aGipegitegi weigi",
         "host_token": "aG@",
+        "split_index": 2,
         "known_glosses_elsewhere": [
           "1",
           "3",
@@ -1688,240 +3900,11 @@
       },
       {
         "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "iGeladi",
-        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
-        "text": "ica liGeladi ipegitegi",
-        "host_token": "liGeladi",
-        "known_glosses_elsewhere": [
-          "casa"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "idi",
-        "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
-        "text": "ica looligi lidGegi",
-        "host_token": "lidGegi",
-        "known_glosses_elsewhere": [
-          "gostosura"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "idi",
-        "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
-        "text": "ica lidGegi loligi idei liGeladi",
-        "host_token": "lidGegi",
-        "known_glosses_elsewhere": [
-          "gostosura"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "jaG",
-        "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
-        "text": "ajo liwatece ja iwaGadi",
-        "host_token": "ja",
-        "known_glosses_elsewhere": [
-          "perfectivo/completivo"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "jo",
-        "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
-        "text": "ajo liwatece ja iwaGadi",
-        "host_token": "ajo",
-        "known_glosses_elsewhere": [
-          "CL"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "jo",
-        "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
-        "text": "ajo niwatece etadi digoida",
-        "host_token": "ajo",
-        "known_glosses_elsewhere": [
-          "CL"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "jo",
-        "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
-        "text": "ajo niwatece ipegitege weiigi",
-        "host_token": "ajo",
-        "known_glosses_elsewhere": [
-          "CL"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "jo",
-        "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
-        "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
-        "host_token": "ijo",
-        "known_glosses_elsewhere": [
-          "CL"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "jo",
-        "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
-        "text": "iGeladi idei mijo naigi naGajo",
-        "host_token": "me@",
-        "known_glosses_elsewhere": [
-          "CL"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "jo",
-        "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
-        "text": "iGeladi idei mijo naigi naGajo",
-        "host_token": "naGajo",
-        "known_glosses_elsewhere": [
-          "CL"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "l",
-        "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
-        "text": "ajo liwatece ja iwaGadi",
-        "host_token": "liwatece",
-        "known_glosses_elsewhere": [
-          "3"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "l",
-        "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
-        "text": "liGeladi Maria aGipegetege",
-        "host_token": "liGeladi",
-        "known_glosses_elsewhere": [
-          "3"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "l",
-        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
-        "text": "ica liGeladi ipegitegi",
-        "host_token": "liGeladi",
-        "known_glosses_elsewhere": [
-          "3"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "l",
-        "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
-        "text": "ica looligi lidi",
-        "host_token": "looligi",
-        "known_glosses_elsewhere": [
-          "3"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "l",
-        "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
-        "text": "ica looligi lidi",
-        "host_token": "lidi",
-        "known_glosses_elsewhere": [
-          "3"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "l",
-        "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
-        "text": "ica looligi dapiko",
-        "host_token": "looligi",
-        "known_glosses_elsewhere": [
-          "3"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "l",
-        "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
-        "text": "ica looligi ja dapiko",
-        "host_token": "looligi",
-        "known_glosses_elsewhere": [
-          "3"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "l",
-        "uid": "19cc39ce-fe03-4551-8097-9d163a38a3c0",
-        "text": "loigipodi libinienigipi",
-        "host_token": "loigipodi",
-        "known_glosses_elsewhere": [
-          "3"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "l",
-        "uid": "19cc39ce-fe03-4551-8097-9d163a38a3c0",
-        "text": "loigipodi libinienigipi",
-        "host_token": "libinienigipi",
-        "known_glosses_elsewhere": [
-          "3"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "l",
-        "uid": "0f478381-6858-463d-94cc-903e9dc879f9",
-        "text": "ica liwigo libinienigi",
-        "host_token": "libinienigi",
-        "known_glosses_elsewhere": [
-          "3"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "l",
-        "uid": "55551636-8ed3-4545-8510-d8dbfd817a1a",
-        "text": "ica niwigo libinienigi",
-        "host_token": "libinienigi",
-        "known_glosses_elsewhere": [
-          "3"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "l",
-        "uid": "881131dd-3f70-411a-ac7e-85557139d1e3",
-        "text": "ica nioladi nioxoa libinienigi",
-        "host_token": "libinienigi",
-        "known_glosses_elsewhere": [
-          "3"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "l",
-        "uid": "95a7d135-4be0-463d-b443-76cc5828fc89",
-        "text": "ica nioladi lodawa libinienigi",
-        "host_token": "libinienigi",
-        "known_glosses_elsewhere": [
-          "3"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
         "morpheme_form": "n",
         "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
         "text": "ajo niwatece etadi digoida",
         "host_token": "niwatece",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "retirapossuidor,fotosemdono"
         ]
@@ -1932,6 +3915,7 @@
         "uid": "69948fe6-81f6-4faa-a344-8f8c47486943",
         "text": "niwatece iwaGadi",
         "host_token": "niwatece",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "retirapossuidor,fotosemdono"
         ]
@@ -1942,6 +3926,7 @@
         "uid": "b2e3ea43-0d68-46ee-9f33-938610cc8aec",
         "text": "niwatece etadi weiigi",
         "host_token": "niwatece",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "retirapossuidor,fotosemdono"
         ]
@@ -1952,6 +3937,7 @@
         "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
         "text": "ajo niwatece ipegitege weiigi",
         "host_token": "niwatece",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "retirapossuidor,fotosemdono"
         ]
@@ -1962,6 +3948,7 @@
         "uid": "e9d6dfb6-656d-44aa-ba17-86289fd72268",
         "text": "liGeladi idei nigotaGa",
         "host_token": "nigotaGa",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "retirapossuidor,fotosemdono"
         ]
@@ -1972,48 +3959,9 @@
         "uid": "5d0b94bf-223d-4f09-8c6f-b951a70d6d0b",
         "text": "ica nioladi Ganixoa",
         "host_token": "nioladi",
+        "split_index": 1,
         "known_glosses_elsewhere": [
           "retirapossuidor,fotosemdono"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "oigi",
-        "uid": "19cc39ce-fe03-4551-8097-9d163a38a3c0",
-        "text": "loigipodi libinienigipi",
-        "host_token": "loigipodi",
-        "known_glosses_elsewhere": [
-          "comunidade"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "ooligi",
-        "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
-        "text": "ica looligi dapiko",
-        "host_token": "looligi",
-        "known_glosses_elsewhere": [
-          "comida"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "ooligi",
-        "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
-        "text": "ica looligi ja dapiko",
-        "host_token": "looligi",
-        "known_glosses_elsewhere": [
-          "comida"
-        ]
-      },
-      {
-        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "ooligi",
-        "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
-        "text": "ica looligi lidGegi",
-        "host_token": "looligi",
-        "known_glosses_elsewhere": [
-          "comida"
         ]
       },
       {
@@ -2022,6 +3970,7 @@
         "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
         "text": "ica liGeladi ipegitegi",
         "host_token": "ipegitegi",
+        "split_index": 2,
         "known_glosses_elsewhere": [
           "aproximar"
         ]
@@ -2032,6 +3981,7 @@
         "uid": "82117289-be52-45d0-886d-a5747eb20ea2",
         "text": "iGeladi ipegitaGagi",
         "host_token": "ipegitaGagi",
+        "split_index": 2,
         "known_glosses_elsewhere": [
           "aproximar"
         ]
@@ -2042,8 +3992,108 @@
         "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
         "text": "iGeladi aGipegitegi weigi",
         "host_token": "aG@",
+        "split_index": 3,
         "known_glosses_elsewhere": [
           "aproximar"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "iGeladi",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "host_token": "liGeladi",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "casa"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "ca",
+        "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
+        "text": "ica liGeladi ipegetege",
+        "host_token": "ica",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "ausente"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "ca",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "host_token": "ica",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "ausente"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "ca",
+        "uid": "fef391af-9e63-419f-8f81-057459193f49",
+        "text": "ica Maria looligi alidi",
+        "host_token": "ica",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "ausente"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "ca",
+        "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
+        "text": "ica looligi lidi",
+        "host_token": "ica",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "ausente"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "ca",
+        "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
+        "text": "ica looligi dapiko",
+        "host_token": "ica",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "ausente"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "ca",
+        "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
+        "text": "ica looligi ja dapiko",
+        "host_token": "ica",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "ausente"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "ca",
+        "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
+        "text": "ica looligi lidGegi",
+        "host_token": "ica",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "ausente"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "ca",
+        "uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d",
+        "text": "Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi",
+        "host_token": "micoataGa",
+        "split_index": 3,
+        "known_glosses_elsewhere": [
+          "ausente"
         ]
       },
       {
@@ -2052,6 +4102,7 @@
         "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
         "text": "ica liGeladi ipegitegi",
         "host_token": "ipegitegi",
+        "split_index": 3,
         "known_glosses_elsewhere": [
           "3"
         ]
@@ -2062,28 +4113,108 @@
         "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
         "text": "iGeladi aGipegitegi weigi",
         "host_token": "aG@",
+        "split_index": 4,
         "known_glosses_elsewhere": [
           "3"
         ]
       },
       {
         "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "watece",
-        "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
-        "text": "ajo liwatece ja iwaGadi",
-        "host_token": "liwatece",
+        "morpheme_form": "ooligi",
+        "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
+        "text": "ica looligi dapiko",
+        "host_token": "looligi",
+        "split_index": 2,
         "known_glosses_elsewhere": [
-          "canoa"
+          "comida"
         ]
       },
       {
         "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
-        "morpheme_form": "watece",
-        "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
-        "text": "ajo niwatece ipegitege weiigi",
-        "host_token": "niwatece",
+        "morpheme_form": "ooligi",
+        "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
+        "text": "ica looligi ja dapiko",
+        "host_token": "looligi",
+        "split_index": 2,
         "known_glosses_elsewhere": [
-          "canoa"
+          "comida"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "ooligi",
+        "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
+        "text": "ica looligi lidGegi",
+        "host_token": "looligi",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "comida"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "idi",
+        "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
+        "text": "ica looligi lidGegi",
+        "host_token": "lidGegi",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "gostosura"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "idi",
+        "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
+        "text": "ica lidGegi loligi idei liGeladi",
+        "host_token": "lidGegi",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "gostosura"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "apiko",
+        "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
+        "text": "ica looligi ja dapiko",
+        "host_token": "dapiko",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "quente"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "gi",
+        "uid": "82117289-be52-45d0-886d-a5747eb20ea2",
+        "text": "iGeladi ipegitaGagi",
+        "host_token": "ipegitaGagi",
+        "split_index": 4,
+        "known_glosses_elsewhere": [
+          "M"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "oigi",
+        "uid": "19cc39ce-fe03-4551-8097-9d163a38a3c0",
+        "text": "loigipodi libinienigipi",
+        "host_token": "loigipodi",
+        "split_index": 2,
+        "known_glosses_elsewhere": [
+          "comunidade"
+        ]
+      },
+      {
+        "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
+        "morpheme_form": "Gad",
+        "uid": "5d0b94bf-223d-4f09-8c6f-b951a70d6d0b",
+        "text": "ica nioladi Ganixoa",
+        "host_token": "Ganixoa",
+        "split_index": 1,
+        "known_glosses_elsewhere": [
+          "2"
         ]
       },
       {
@@ -2092,538 +4223,487 @@
         "uid": "55551636-8ed3-4545-8510-d8dbfd817a1a",
         "text": "ica niwigo libinienigi",
         "host_token": "niwigo",
+        "split_index": 2,
         "known_glosses_elsewhere": [
           "fotografia"
         ]
       }
     ],
-    "missing_split_tag": [
+    "missing_split_tag_but_known_for_same_morpheme": [
       {
-        "issue_type": "missing_split_tag",
+        "issue_type": "missing_split_tag_but_known_for_same_morpheme",
+        "morpheme_form": "l",
         "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
         "text": "ica liGeladi ipegitegi",
-        "path": "$.pages[0].sentences[9]",
-        "host_token": "ica",
-        "split_index": 1,
-        "morpheme_form": "i"
-      },
-      {
-        "issue_type": "missing_split_tag",
-        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
-        "text": "ica liGeladi ipegitegi",
-        "path": "$.pages[0].sentences[9]",
-        "host_token": "ica",
-        "split_index": 2,
-        "morpheme_form": "ca"
-      },
-      {
-        "issue_type": "missing_split_tag",
-        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
-        "text": "ica liGeladi ipegitegi",
-        "path": "$.pages[0].sentences[9]",
         "host_token": "liGeladi",
         "split_index": 1,
-        "morpheme_form": "l"
+        "known_tags_elsewhere": [
+          "3POSS",
+          "Gen",
+          "Gnr"
+        ]
       },
       {
-        "issue_type": "missing_split_tag",
+        "issue_type": "missing_split_tag_but_known_for_same_morpheme",
+        "morpheme_form": "i",
         "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
         "text": "ica liGeladi ipegitegi",
-        "path": "$.pages[0].sentences[9]",
+        "host_token": "ica",
+        "split_index": 1,
+        "known_tags_elsewhere": [
+          "Abs",
+          "Erg",
+          "Gen",
+          "Gnr"
+        ]
+      },
+      {
+        "issue_type": "missing_split_tag_but_known_for_same_morpheme",
+        "morpheme_form": "i",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "host_token": "ipegitegi",
+        "split_index": 1,
+        "known_tags_elsewhere": [
+          "Abs",
+          "Erg",
+          "Gen",
+          "Gnr"
+        ]
+      },
+      {
+        "issue_type": "missing_split_tag_but_known_for_same_morpheme",
+        "morpheme_form": "i",
+        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+        "text": "iGeladi aGipegitegi weigi",
+        "host_token": "aG@",
+        "split_index": 2,
+        "known_tags_elsewhere": [
+          "Abs",
+          "Erg",
+          "Gen",
+          "Gnr"
+        ]
+      },
+      {
+        "issue_type": "missing_split_tag_but_known_for_same_morpheme",
+        "morpheme_form": "pegi",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "host_token": "ipegitegi",
+        "split_index": 2,
+        "known_tags_elsewhere": [
+          "v"
+        ]
+      },
+      {
+        "issue_type": "missing_split_tag_but_known_for_same_morpheme",
+        "morpheme_form": "pegi",
+        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+        "text": "iGeladi aGipegitegi weigi",
+        "host_token": "aG@",
+        "split_index": 3,
+        "known_tags_elsewhere": [
+          "v"
+        ]
+      },
+      {
+        "issue_type": "missing_split_tag_but_known_for_same_morpheme",
+        "morpheme_form": "iGeladi",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
         "host_token": "liGeladi",
         "split_index": 2,
-        "morpheme_form": "iGeladi"
+        "known_tags_elsewhere": [
+          "n"
+        ]
       },
       {
-        "issue_type": "missing_split_tag",
-        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
-        "text": "ica liGeladi ipegitegi",
-        "path": "$.pages[0].sentences[9]",
-        "host_token": "ipegitegi",
-        "split_index": 1,
-        "morpheme_form": "i"
-      },
-      {
-        "issue_type": "missing_split_tag",
-        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
-        "text": "ica liGeladi ipegitegi",
-        "path": "$.pages[0].sentences[9]",
-        "host_token": "ipegitegi",
-        "split_index": 2,
-        "morpheme_form": "pegi"
-      },
-      {
-        "issue_type": "missing_split_tag",
-        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
-        "text": "ica liGeladi ipegitegi",
-        "path": "$.pages[0].sentences[9]",
-        "host_token": "ipegitegi",
-        "split_index": 3,
-        "morpheme_form": "tegi"
-      },
-      {
-        "issue_type": "missing_split_tag",
+        "issue_type": "missing_split_tag_but_known_for_same_morpheme",
+        "morpheme_form": "aG",
         "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
         "text": "iGeladi aGipegitegi weigi",
-        "path": "$.pages[0].sentences[36]",
         "host_token": "aG@",
         "split_index": 1,
-        "morpheme_form": "aG"
+        "known_tags_elsewhere": [
+          "Neg"
+        ]
       },
       {
-        "issue_type": "missing_split_tag",
-        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
-        "text": "iGeladi aGipegitegi weigi",
-        "path": "$.pages[0].sentences[36]",
-        "host_token": "aG@",
+        "issue_type": "missing_split_tag_but_known_for_same_morpheme",
+        "morpheme_form": "ca",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "host_token": "ica",
         "split_index": 2,
-        "morpheme_form": "i"
+        "known_tags_elsewhere": [
+          "Ncl"
+        ]
       },
       {
-        "issue_type": "missing_split_tag",
-        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
-        "text": "iGeladi aGipegitegi weigi",
-        "path": "$.pages[0].sentences[36]",
-        "host_token": "aG@",
+        "issue_type": "missing_split_tag_but_known_for_same_morpheme",
+        "morpheme_form": "tegi",
+        "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+        "text": "ica liGeladi ipegitegi",
+        "host_token": "ipegitegi",
         "split_index": 3,
-        "morpheme_form": "pegi"
+        "known_tags_elsewhere": [
+          "Apl"
+        ]
       },
       {
-        "issue_type": "missing_split_tag",
+        "issue_type": "missing_split_tag_but_known_for_same_morpheme",
+        "morpheme_form": "tegi",
         "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
         "text": "iGeladi aGipegitegi weigi",
-        "path": "$.pages[0].sentences[36]",
         "host_token": "aG@",
         "split_index": 4,
-        "morpheme_form": "tegi"
+        "known_tags_elsewhere": [
+          "Apl"
+        ]
       }
     ],
-    "missing_token_tag": [
+    "conflicting_morpheme_glosses": [
       {
-        "issue_type": "missing_token_tag",
-        "uid": "7b806584-75e5-4017-b9e2-ba97458903bd",
-        "text": "Eyodi ane niganaGacanajo",
-        "path": "$.pages[0].sentences[29]",
-        "host_token": "*T*"
-      },
-      {
-        "issue_type": "missing_token_tag",
-        "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
-        "text": "iGeladi ipegitegi naigi ane napioi",
-        "path": "$.pages[0].sentences[34]",
-        "host_token": "*T*"
-      }
-    ],
-    "morpheme_tag_gloss_role_overlap": [
-      {
-        "issue_type": "morpheme_tag_gloss_role_overlap",
-        "morpheme_form": "a",
-        "overlapping_values": [
-          "F"
+        "issue_type": "conflicting_morpheme_glosses",
+        "morpheme_form": "i",
+        "split_glosses": [
+          "1",
+          "3",
+          "M",
+          "masc"
         ],
-        "tag_occurrences": [
+        "examples": [
           {
             "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
             "text": "ajo liwatece ja iwaGadi",
-            "host_token": "ajo",
-            "tag": "F"
-          }
-        ],
-        "gloss_occurrences": [
-          {
-            "uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
-            "text": "ajo liwatece etadi weiigi",
-            "host_token": "ajo",
-            "gloss": "F"
-          },
-          {
-            "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
-            "text": "ajo niwatece etadi digoida",
-            "host_token": "ajo",
-            "gloss": "F"
-          },
-          {
-            "uid": "b2e3ea43-0d68-46ee-9f33-938610cc8aec",
-            "text": "niwatece etadi weiigi",
-            "host_token": "etadi",
-            "gloss": "F"
-          }
-        ]
-      },
-      {
-        "issue_type": "morpheme_tag_gloss_role_overlap",
-        "morpheme_form": "jo",
-        "overlapping_values": [
-          "CL"
-        ],
-        "tag_occurrences": [
-          {
-            "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
-            "text": "ajo liwatece ja iwaGadi",
-            "host_token": "ajo",
-            "tag": "CL"
-          }
-        ],
-        "gloss_occurrences": [
-          {
-            "uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
-            "text": "ajo liwatece etadi weiigi",
-            "host_token": "ajo",
-            "gloss": "CL"
-          }
-        ]
-      },
-      {
-        "issue_type": "morpheme_tag_gloss_role_overlap",
-        "morpheme_form": "watece",
-        "overlapping_values": [
-          "canoa"
-        ],
-        "tag_occurrences": [
-          {
-            "uid": "ed98d4d1-638c-4377-8c6d-5511855636d1",
-            "text": "ajo liwatece ja iwaGadi",
-            "host_token": "liwatece",
-            "tag": "canoa"
-          }
-        ],
-        "gloss_occurrences": [
-          {
-            "uid": "ccb5ea37-b3ba-47a9-8d71-224f599ea7be",
-            "text": "ajo liwatece etadi weiigi",
-            "host_token": "liwatece",
-            "gloss": "canoa"
-          },
-          {
-            "uid": "49347527-d19d-4689-bff1-ba3e497e7b1f",
-            "text": "ajo niwatece etadi digoida",
-            "host_token": "niwatece",
-            "gloss": "canoa"
+            "host_token": "iwaGadi",
+            "split_index": 1,
+            "split_tag": "Abs",
+            "split_gloss": "3"
           },
           {
             "uid": "69948fe6-81f6-4faa-a344-8f8c47486943",
             "text": "niwatece iwaGadi",
-            "host_token": "niwatece",
-            "gloss": "canoa"
+            "host_token": "iwaGadi",
+            "split_index": 1,
+            "split_tag": "Abs",
+            "split_gloss": "1"
           },
           {
-            "uid": "b2e3ea43-0d68-46ee-9f33-938610cc8aec",
-            "text": "niwatece etadi weiigi",
-            "host_token": "niwatece",
-            "gloss": "canoa"
-          }
-        ]
-      }
-    ],
-    "token_conllu_count_mismatch": [
-      {
-        "issue_type": "token_conllu_count_mismatch",
-        "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
-        "text": "liGeladi Maria aGipegetege",
-        "path": "$.pages[0].sentences[6]",
-        "token_count": 4,
-        "conllu_count": 3
-      },
-      {
-        "issue_type": "token_conllu_count_mismatch",
-        "uid": "fef391af-9e63-419f-8f81-057459193f49",
-        "text": "ica Maria looligi alidi",
-        "path": "$.pages[0].sentences[10]",
-        "token_count": 5,
-        "conllu_count": 4
-      },
-      {
-        "issue_type": "token_conllu_count_mismatch",
-        "uid": "2f47b402-9fe7-4714-96e3-c6cbdf405472",
-        "text": "iGeladi idei naigi anenapioi",
-        "path": "$.pages[0].sentences[23]",
-        "token_count": 5,
-        "conllu_count": 4
-      },
-      {
-        "issue_type": "token_conllu_count_mismatch",
-        "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
-        "text": "iGeladi idei mijo naigi naGajo",
-        "path": "$.pages[0].sentences[26]",
-        "token_count": 6,
-        "conllu_count": 5
-      },
-      {
-        "issue_type": "token_conllu_count_mismatch",
-        "uid": "7b806584-75e5-4017-b9e2-ba97458903bd",
-        "text": "Eyodi ane niganaGacanajo",
-        "path": "$.pages[0].sentences[29]",
-        "token_count": 4,
-        "conllu_count": 3
-      },
-      {
-        "issue_type": "token_conllu_count_mismatch",
-        "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
-        "text": "iGeladi ipegitegi naigi ane napioi",
-        "path": "$.pages[0].sentences[34]",
-        "token_count": 6,
-        "conllu_count": 5
-      },
-      {
-        "issue_type": "token_conllu_count_mismatch",
-        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
-        "text": "iGeladi aGipegitegi weigi",
-        "path": "$.pages[0].sentences[36]",
-        "token_count": 4,
-        "conllu_count": 3
-      }
-    ],
-    "token_conllu_form_mismatch": [
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
-        "text": "liGeladi Maria aGipegetege",
-        "path": "$.pages[0].sentences[6]",
-        "position": 3,
-        "token_form": "aG@",
-        "conllu_form": "aGipegetege"
-      },
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "fef391af-9e63-419f-8f81-057459193f49",
-        "text": "ica Maria looligi alidi",
-        "path": "$.pages[0].sentences[10]",
-        "position": 3,
-        "token_form": "looligi",
-        "conllu_form": "loligi"
-      },
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "fef391af-9e63-419f-8f81-057459193f49",
-        "text": "ica Maria looligi alidi",
-        "path": "$.pages[0].sentences[10]",
-        "position": 4,
-        "token_form": "aG@",
-        "conllu_form": "alidi"
-      },
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
-        "text": "ica looligi lidi",
-        "path": "$.pages[0].sentences[11]",
-        "position": 2,
-        "token_form": "looligi",
-        "conllu_form": "lalogi"
-      },
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
-        "text": "ica looligi dapiko",
-        "path": "$.pages[0].sentences[12]",
-        "position": 2,
-        "token_form": "looligi",
-        "conllu_form": "lalogi"
-      },
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
-        "text": "ica looligi ja dapiko",
-        "path": "$.pages[0].sentences[13]",
-        "position": 2,
-        "token_form": "looligi",
-        "conllu_form": "loligi"
-      },
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
-        "text": "ica looligi lidGegi",
-        "path": "$.pages[0].sentences[14]",
-        "position": 2,
-        "token_form": "looligi",
-        "conllu_form": "loligi"
-      },
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "55551636-8ed3-4545-8510-d8dbfd817a1a",
-        "text": "ica niwigo libinienigi",
-        "path": "$.pages[0].sentences[19]",
-        "position": 3,
-        "token_form": "libinienigi",
-        "conllu_form": "lininienigi"
-      },
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "2f47b402-9fe7-4714-96e3-c6cbdf405472",
-        "text": "iGeladi idei naigi anenapioi",
-        "path": "$.pages[0].sentences[23]",
-        "position": 4,
-        "token_form": "ane@",
-        "conllu_form": "anenapioi"
-      },
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
-        "text": "iGeladi idei mijo naigi naGajo",
-        "path": "$.pages[0].sentences[26]",
-        "position": 3,
-        "token_form": "me@",
-        "conllu_form": "mijo"
-      },
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
-        "text": "iGeladi idei mijo naigi naGajo",
-        "path": "$.pages[0].sentences[26]",
-        "position": 4,
-        "token_form": "@ijo",
-        "conllu_form": "naigi"
-      },
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
-        "text": "iGeladi idei mijo naigi naGajo",
-        "path": "$.pages[0].sentences[26]",
-        "position": 5,
-        "token_form": "naigi",
-        "conllu_form": "naGajo"
-      },
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "7b806584-75e5-4017-b9e2-ba97458903bd",
-        "text": "Eyodi ane niganaGacanajo",
-        "path": "$.pages[0].sentences[29]",
-        "position": 3,
-        "token_form": "*T*",
-        "conllu_form": "niganaGacanajo"
-      },
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
-        "text": "iGeladi ipegitegi naigi ane napioi",
-        "path": "$.pages[0].sentences[34]",
-        "position": 5,
-        "token_form": "*T*",
-        "conllu_form": "napioi"
-      },
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
-        "text": "iGeladi aGipegitegi weigi",
-        "path": "$.pages[0].sentences[36]",
-        "position": 2,
-        "token_form": "aG@",
-        "conllu_form": "aGipegitegi"
-      },
-      {
-        "issue_type": "token_conllu_form_mismatch",
-        "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
-        "text": "iGeladi aGipegitegi weigi",
-        "path": "$.pages[0].sentences[36]",
-        "position": 3,
-        "token_form": "@ipegitegi",
-        "conllu_form": "weigi"
-      }
-    ],
-    "token_lacks_splits_but_analyzed_elsewhere": [
-      {
-        "issue_type": "token_lacks_splits_but_analyzed_elsewhere",
-        "token_form": "iGeladi",
-        "missing_in": [
-          {
-            "uid": "2f47b402-9fe7-4714-96e3-c6cbdf405472",
-            "text": "iGeladi idei naigi anenapioi"
+            "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
+            "text": "ajo niwatece ipegitege weiigi",
+            "host_token": "ipegitege",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
           },
           {
-            "uid": "a4ccc755-a644-4b04-ab1b-698e7acea4cc",
-            "text": "iGeladi idei digoida"
+            "uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
+            "text": "liGeladi Maria aGipegetege",
+            "host_token": "aG@",
+            "split_index": 2,
+            "split_tag": "Erg",
+            "split_gloss": null
           },
           {
-            "uid": "82117289-be52-45d0-886d-a5747eb20ea2",
-            "text": "iGeladi ipegitaGagi"
+            "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
+            "text": "ica liGeladi ipegetege",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "M"
           },
           {
-            "uid": "50f93fbc-14fa-48e7-b8ba-22f744109348",
-            "text": "iGeladi ipegitegi liGeladi"
+            "uid": "79a6cd4e-b585-437a-9084-1fa077dec3b6",
+            "text": "ica liGeladi ipegetege",
+            "host_token": "ipegetege",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": null
           },
           {
-            "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
-            "text": "iGeladi ipegitegi naigi ane napioi"
+            "uid": "e9d6dfb6-656d-44aa-ba17-86289fd72268",
+            "text": "liGeladi idei nigotaGa",
+            "host_token": "idei",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
           },
           {
-            "uid": "bb8018ba-76b3-43f2-82ea-78b6009c1f90",
-            "text": "iGeladi ipegitegi naigi me napioi"
+            "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+            "text": "ica liGeladi ipegitegi",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": null,
+            "split_gloss": null
           },
           {
-            "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
-            "text": "iGeladi aGipegitegi weigi"
-          }
-        ],
-        "known_split_forms": [
-          [
-            "i",
-            "Geladi"
-          ],
-          [
-            "i",
-            "geladi"
-          ]
-        ]
-      },
-      {
-        "issue_type": "token_lacks_splits_but_analyzed_elsewhere",
-        "token_form": "liGeladi",
-        "missing_in": [
+            "uid": "2fff1f23-4e6f-401c-8b74-6a17ff6a391a",
+            "text": "ica liGeladi ipegitegi",
+            "host_token": "ipegitegi",
+            "split_index": 1,
+            "split_tag": null,
+            "split_gloss": null
+          },
+          {
+            "uid": "fef391af-9e63-419f-8f81-057459193f49",
+            "text": "ica Maria looligi alidi",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
+          },
+          {
+            "uid": "070d221f-f72d-4055-9c82-ddc383743e6a",
+            "text": "ica looligi lidi",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
+          },
+          {
+            "uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
+            "text": "ica looligi dapiko",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
+          },
+          {
+            "uid": "5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5",
+            "text": "ica looligi ja dapiko",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
+          },
+          {
+            "uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
+            "text": "ica looligi lidGegi",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
+          },
+          {
+            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
+            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "masc"
+          },
+          {
+            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
+            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
+            "host_token": "ijo",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": null
+          },
+          {
+            "uid": "12147353-b422-4ad7-9bef-1d20e70e2a74",
+            "text": "ica loigi ijo niganigi ipegitegi GanigotGa",
+            "host_token": "ipegitegi",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
           {
             "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
-            "text": "ica lidGegi loligi idei liGeladi"
+            "text": "ica lidGegi loligi idei liGeladi",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "masc"
           },
           {
-            "uid": "f081c545-c42b-463d-b57f-db87787f20e7",
-            "text": "João liGeladi ane napioi"
-          }
-        ],
-        "known_split_forms": [
-          [
-            "l",
-            "Geladi"
-          ],
-          [
-            "l",
-            "iGeladi"
-          ]
-        ]
-      },
-      {
-        "issue_type": "token_lacks_splits_but_analyzed_elsewhere",
-        "token_form": "nioladi",
-        "missing_in": [
+            "uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
+            "text": "ica lidGegi loligi idei liGeladi",
+            "host_token": "idei",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "0f478381-6858-463d-94cc-903e9dc879f9",
+            "text": "ica liwigo libinienigi",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "masc"
+          },
+          {
+            "uid": "55551636-8ed3-4545-8510-d8dbfd817a1a",
+            "text": "ica niwigo libinienigi",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "masc"
+          },
+          {
+            "uid": "5d0b94bf-223d-4f09-8c6f-b951a70d6d0b",
+            "text": "ica nioladi Ganixoa",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "masc"
+          },
           {
             "uid": "881131dd-3f70-411a-ac7e-85557139d1e3",
-            "text": "ica nioladi nioxoa libinienigi"
+            "text": "ica nioladi nioxoa libinienigi",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "masc"
           },
           {
             "uid": "95a7d135-4be0-463d-b443-76cc5828fc89",
-            "text": "ica nioladi lodawa libinienigi"
+            "text": "ica nioladi lodawa libinienigi",
+            "host_token": "ica",
+            "split_index": 1,
+            "split_tag": "Gnr",
+            "split_gloss": "masc"
+          },
+          {
+            "uid": "2f47b402-9fe7-4714-96e3-c6cbdf405472",
+            "text": "iGeladi idei naigi anenapioi",
+            "host_token": "idei",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
+            "text": "iGeladi idei naigi me napioi",
+            "host_token": "iGeladi",
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": "1"
+          },
+          {
+            "uid": "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1",
+            "text": "iGeladi idei naigi me napioi",
+            "host_token": "idei",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+            "text": "iGeladi idei mijo naigi naGajo",
+            "host_token": "iGeladi",
+            "split_index": 1,
+            "split_tag": "Gen",
+            "split_gloss": null
+          },
+          {
+            "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+            "text": "iGeladi idei mijo naigi naGajo",
+            "host_token": "idei",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
+            "text": "iGeladi idei mijo naigi naGajo",
+            "host_token": "me@",
+            "split_index": 2,
+            "split_tag": "Gnr",
+            "split_gloss": "M"
+          },
+          {
+            "uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d",
+            "text": "Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi",
+            "host_token": "micoataGa",
+            "split_index": 2,
+            "split_tag": "Gnr",
+            "split_gloss": null
+          },
+          {
+            "uid": "a4ccc755-a644-4b04-ab1b-698e7acea4cc",
+            "text": "iGeladi idei digoida",
+            "host_token": "idei",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "a4ccc755-a644-4b04-ab1b-698e7acea4cc",
+            "text": "iGeladi idei digoida",
+            "host_token": "digoida",
+            "split_index": 2,
+            "split_tag": "Gen",
+            "split_gloss": null
+          },
+          {
+            "uid": "82117289-be52-45d0-886d-a5747eb20ea2",
+            "text": "iGeladi ipegitaGagi",
+            "host_token": "ipegitaGagi",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": null
+          },
+          {
+            "uid": "50f93fbc-14fa-48e7-b8ba-22f744109348",
+            "text": "iGeladi ipegitegi liGeladi",
+            "host_token": "ipegitegi",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
+            "text": "iGeladi ipegitegi naigi ane napioi",
+            "host_token": "ipegitegi",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "bb8018ba-76b3-43f2-82ea-78b6009c1f90",
+            "text": "iGeladi ipegitegi naigi me napioi",
+            "host_token": "ipegitegi",
+            "split_index": 1,
+            "split_tag": "Erg",
+            "split_gloss": "3"
+          },
+          {
+            "uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
+            "text": "iGeladi aGipegitegi weigi",
+            "host_token": "aG@",
+            "split_index": 2,
+            "split_tag": null,
+            "split_gloss": null
           }
-        ],
-        "known_split_forms": [
-          [
-            "n",
-            "ioladi"
-          ]
         ]
       },
       {
-        "issue_type": "token_lacks_splits_but_analyzed_elsewhere",
-        "token_form": "weiigi",
-        "missing_in": [
-          {
-            "uid": "1b99ecb9-5656-4c38-b60b-fbbe643708fb",
-            "text": "ajo niwatece ipegitege weiigi"
-          }
+        "issue_type": "conflicting_morpheme_glosses",
+        "morpheme_form": "taGa",
+        "split_glosses": [
+          "2",
+          "com"
         ],
-        "known_split_forms": [
-          [
-            ""
-          ],
-          [
-            "weiigi"
-          ]
+        "examples": [
+          {
+            "uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d",
+            "text": "Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi",
+            "host_token": "micoataGa",
+            "split_index": 5,
+            "split_tag": "Apl",
+            "split_gloss": "com"
+          },
+          {
+            "uid": "82117289-be52-45d0-886d-a5747eb20ea2",
+            "text": "iGeladi ipegitaGagi",
+            "host_token": "ipegitaGagi",
+            "split_index": 3,
+            "split_tag": "OBL",
+            "split_gloss": "2"
+          }
         ]
       }
     ]
