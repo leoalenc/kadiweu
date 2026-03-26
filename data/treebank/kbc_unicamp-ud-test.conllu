@@ -42,6 +42,7 @@
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = ped-gramm-4
+# sent_uid = 69948fe6-81f6-4faa-a344-8f8c47486943
 # text = niwatece iwaGadi.
 # text_orig = niwatece iwaGadi
 # text_por_orig = A canoa está pesada
@@ -52,6 +53,7 @@
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = ped-gramm-5
+# sent_uid = b2e3ea43-0d68-46ee-9f33-938610cc8aec
 # text = niwatece etadi weiigi.
 # text_orig = niwatece etadi weiigi
 # text_por_orig = A canoa está no rio
@@ -63,6 +65,7 @@
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = ped-gramm-6
+# sent_uid = 1b99ecb9-5656-4c38-b60b-fbbe643708fb
 # text = ajo niwatece ipegitege weiigi.
 # text_orig = ajo niwatece ipegitege weiigi
 # text_por = A canoa está perto do rio.
@@ -125,7 +128,32 @@
 3	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=13:22
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
 
+# sent_id = ped-gramm-12
+# sent_uid = 070d221f-f72d-4055-9c82-ddc383743e6a
+# text = ica looligi lidi.
+# text_orig = ica looligi lidi
+# text_por_orig = A comida está/é deliciosa (A gostosura da comida da Maria)
+# text_por_alt1 = A comida é deliciosa.
+# text_por_alt2 = A comida está deliciosa.
+# text_por_alt3 = A gostosura da comida da Maria.
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3|Poss=Yes	3	nmod:poss	_	TokenRange=4:10
+3	lidi	idi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3|Poss=Yes	0	root	_	TokenRange=12:16
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = ped-gramm-13
+# sent_uid = 68277d1f-c30b-4c4f-ba9e-c2883cc133af
+# text = ica looligi dapiko.
+# text_orig = ica looligi dapiko
+# text_por_orig = A comida dela é quente
+# text_por = A comida dela é quente.
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3|Poss=Yes	3	nsubj	_	TokenRange=4:10
+3	dapiko	apiko	VERB	VB	Voice=Inv	0	root	_	TokenRange=12:18
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
+
 # sent_id = ped-gramm-17
+# sent_uid = 12147353-b422-4ad7-9bef-1d20e70e2a74
 # text = ica loigi ijo niganigi ipegitegi GanigotGa.
 # text_orig = ica loigi ijo niganigi ipegitegi GanigotGa
 # text_por = A comunidade do menino é perto da cidade de vocês.
