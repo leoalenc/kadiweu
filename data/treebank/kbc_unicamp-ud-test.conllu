@@ -137,8 +137,8 @@
 # text_por_alt2 = A comida está deliciosa.
 # text_por_alt3 = A gostosura da comida da Maria.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3|Poss=Yes	3	nmod:poss	_	TokenRange=4:10
-3	lidi	idi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3|Poss=Yes	0	root	_	TokenRange=12:16
+2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:10
+3	lidi	idi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=12:16
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = ped-gramm-13
@@ -148,8 +148,8 @@
 # text_por_orig = A comida dela é quente
 # text_por = A comida dela é quente.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3|Poss=Yes	3	nsubj	_	TokenRange=4:10
-3	dapiko	apiko	VERB	VB	Voice=Inv	0	root	_	TokenRange=12:18
+2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:10
+3	dapiko	apiko	VERB	VB	Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=12:18
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = ped-gramm-17
@@ -166,4 +166,17 @@
 5	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=23:32
 6	GanigotGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=2	5	obj	_	SpaceAfter=No|TokenRange=33:42
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=42:4
+
+# sent_id = ped-gramm-36
+# sent_uid = bb8018ba-76b3-43f2-82ea-78b6009c1f90
+# text = iGeladi ipegitegi naigi me napioi.
+# text_orig = iGeladi ipegitegi naigi me napioi
+# text_por_orig = minha casa está perto da rua suja
+# text_por = minha casa está perto da rua suja.
+1	iGeladi	geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+2	ipegitegi	pegi	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
+3	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	TokenRange=18:23
+4	me	me	SCONJ	C	_	5	mark	_	TokenRange=24:26
+5	napioi	napioi	ADJ	ADJ	_	3	acl:relcl	_	SpaceAfter=No|TokenRange=27:33
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=33:34
 
