@@ -125,7 +125,7 @@
 # text_por = a comida da Maria não está deliciosa (a não gostosura da comida da Maria).
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	TokenRange=0:3
 2	Maria	maria	PROPN	NPR	_	1	obj	_	TokenRange=4:9
-3	looligi	ooligi	NOUN	N$	Poss=Yes	1	obj	_	TokenRange=10:16
+3	looligi	ooligi	NOUN	N$	Person[psor]=3	1	obj	_	TokenRange=10:16
 4-5	alidi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=18:23
 4	aG	ag	PART	NEG	_	1	advmod	_	_
 5	lidi	lidi	NOUN	N$	_	1	obj	_	SpaceAfter=No
@@ -138,8 +138,8 @@
 # text_por_orig = A comida está/é deliciosa (A gostosura da comida da Maria)
 # text_por = A comida está/é deliciosa (A gostosura da comida da Maria).
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	TokenRange=0:3
-2	looligi	ooligi	NOUN	N$	Poss=Yes	1	nsubj	_	TokenRange=4:10
-3	lidi	idi	NOUN	N$	Poss=Yes	1	obj	_	SpaceAfter=No|TokenRange=12:16
+2	looligi	ooligi	NOUN	N$	_	1	nsubj	_	TokenRange=4:10
+3	lidi	idi	NOUN	N$	_	1	obj	_	SpaceAfter=No|TokenRange=12:16
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = ped-gramm-13
@@ -149,7 +149,7 @@
 # text_por_orig = A comida dela é quente
 # text_por = A comida dela é quente.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	looligi	ooligi	NOUN	N$	Poss=Yes	3	obj	_	TokenRange=4:10
+2	looligi	ooligi	NOUN	N$	_	3	obj	_	TokenRange=4:10
 3	dapiko	apiko	VERB	VB	_	0	root	_	SpaceAfter=No|TokenRange=12:18
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
 
@@ -160,7 +160,7 @@
 # text_por_orig = a comida dela está quente
 # text_por = a comida dela está quente.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	looligi	ooligi	NOUN	N$	Poss=Yes	4	obj	_	TokenRange=4:10
+2	looligi	ooligi	NOUN	N$	_	4	obj	_	TokenRange=4:10
 3	ja	jaG	AUX	T	Aspect=Perf	4	aux	_	TokenRange=12:14
 4	dapiko	apiko	VERB	VB	_	0	root	_	SpaceAfter=No|TokenRange=15:21
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
@@ -172,8 +172,8 @@
 # text_por_orig = A comida é deliciosa (a gostosura da comida dela)
 # text_por = A comida é deliciosa (a gostosura da comida dela).
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	TokenRange=0:3
-2	looligi	ooligi	NOUN	N$	Poss=Yes	1	nsubj	_	TokenRange=4:10
-3	lidGegi	idi	NOUN	N$	Poss=Yes	1	obj	_	SpaceAfter=No|TokenRange=12:19
+2	looligi	ooligi	NOUN	N$	Person[psor]=3	1	nsubj	_	TokenRange=4:10
+3	lidGegi	idi	NOUN	N$	Person[psor]=3	1	obj	_	SpaceAfter=No|TokenRange=12:19
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=19:20
 
 # sent_id = ped-gramm-16
@@ -207,8 +207,8 @@
 # text_por_orig = a deliciosa comida está na casa dela/dele
 # text_por = a deliciosa comida está na casa dela/dele.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	lidGegi	idi	NOUN	N$	Poss=Yes	4	obj	_	TokenRange=4:11
-3	loligi	oligi	NOUN	N$	Poss=Yes	4	obj	_	TokenRange=12:18
+2	lidGegi	idi	NOUN	N$	Person[psor]=3	4	obj	_	TokenRange=4:11
+3	loligi	oligi	NOUN	N$	Person[psor]=3	4	obj	_	TokenRange=12:18
 4	idei	dei	VERB	VB	_	0	root	_	TokenRange=19:23
 5	liGeladi	geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	obj	_	SpaceAfter=No|TokenRange=24:32
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=32:33
@@ -220,8 +220,8 @@
 # text_por_orig = a fotografia dela/dele é/está bonita
 # text_por = a fotografia dela/dele é/está bonita.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	TokenRange=0:3
-2	liwigo	wigo	NOUN	N$	Poss=Yes	1	nsubj	_	TokenRange=4:10
-3	libinienigi	ibinie	NOUN	N$	Poss=Yes	1	obj	_	SpaceAfter=No|TokenRange=11:22
+2	liwigo	wigo	NOUN	N$	Person[psor]=3	1	nsubj	_	TokenRange=4:10
+3	libinienigi	ibinie	NOUN	N$	_	1	obj	_	SpaceAfter=No|TokenRange=11:22
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=22:23
 
 # sent_id = ped-gramm-20
@@ -232,7 +232,7 @@
 # text_por = a fotografia é/está bonita.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	TokenRange=0:3
 2	niwigo	wigo	NOUN	N$	_	1	nsubj	_	TokenRange=4:10
-3	libinienigi	ibinie	NOUN	N$	Poss=Yes	1	obj	_	SpaceAfter=No|TokenRange=11:22
+3	libinienigi	ibinie	NOUN	N$	_	1	obj	_	SpaceAfter=No|TokenRange=11:22
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=22:23
 
 # sent_id = ped-gramm-21
@@ -243,7 +243,7 @@
 # text_por = A língua do teu irmão.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	TokenRange=0:3
 2	nioladi	ioladi	NOUN	N	_	1	nsubj	_	TokenRange=4:11
-3	Ganixoa	nixoa	NOUN	N$	Poss=Yes	1	obj	_	SpaceAfter=No|TokenRange=12:19
+3	Ganixoa	nixoa	NOUN	N$	_	1	obj	_	SpaceAfter=No|TokenRange=12:19
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=19:20
 
 # sent_id = ped-gramm-22
@@ -255,7 +255,7 @@
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	TokenRange=0:3
 2	nioladi	nioladi	NOUN	N$	_	1	nsubj	_	TokenRange=4:11
 3	nioxoa	nioxoa	NOUN	N$	_	1	nsubj	_	TokenRange=12:18
-4	libinienigi	ibinie	NOUN	N$	Poss=Yes	1	obj	_	SpaceAfter=No|TokenRange=19:30
+4	libinienigi	ibinie	NOUN	N$	_	1	obj	_	SpaceAfter=No|TokenRange=19:30
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = ped-gramm-23
@@ -267,7 +267,7 @@
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	TokenRange=0:3
 2	nioladi	nioladi	NOUN	N$	_	1	nsubj	_	TokenRange=4:11
 3	lodawa	lodawa	NOUN	N$	_	1	nsubj	_	TokenRange=12:18
-4	libinienigi	ibinie	NOUN	N$	Poss=Yes	1	obj	_	SpaceAfter=No|TokenRange=19:30
+4	libinienigi	ibinie	NOUN	N$	_	1	obj	_	SpaceAfter=No|TokenRange=19:30
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = ped-gramm-24
@@ -290,7 +290,7 @@
 # text_orig = iGeladi idei naigi me napioi
 # text_por_orig = minha casa suja fica naquela rua
 # text_por = minha casa suja fica naquela rua.
-1	iGeladi	Geladi	NOUN	N$	Poss=Yes	2	obj	_	TokenRange=0:7
+1	iGeladi	Geladi	NOUN	N$	Person[psor]=1	2	obj	_	TokenRange=0:7
 2	idei	dei	VERB	VB	_	0	root	_	TokenRange=8:12
 3	naigi	naigi	NOUN	N	_	2	obj	_	TokenRange=13:18
 4	me	me	SCONJ	C	_	2	dep	_	TokenRange=19:21
@@ -315,7 +315,7 @@
 # text_orig = iGeladi idei mijo naigi naGajo
 # text_por_orig = A minha casa fica naquela rua suja dela
 # text_por = A minha casa fica naquela rua suja dela.
-1	iGeladi	geladi	NOUN	N$	Poss=Yes	2	obj	_	TokenRange=0:7
+1	iGeladi	geladi	NOUN	N$	_	2	obj	_	TokenRange=0:7
 2	idei	dei	VERB	VB	_	0	root	_	TokenRange=8:12
 3-4	mijo	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=13:17
 3	me	jo	SCONJ	C	_	2	dep	_	_

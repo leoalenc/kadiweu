@@ -1,52 +1,25 @@
-~/kadiweu$ validate.py --lang=kbc --max-err=0 data/treebank/draft.conllu 
+~/kadiweu/data$ validate.py --lang=kbc --max-err=0 treebank/draft.conllu 
 [Line 23 Sent ped-gramm-2]: [L3 SYNTAX too-many-objects] Multiple direct objects [2, 4] ('liwatece', 'weiigi') under the predicate 'etadi'.
 [Line 82 Sent ped-gramm-7]: [L2 METADATA spaceafter-mwt-node] 'SpaceAfter=No' cannot occur with words that are part of a multi-word token.
 [Line 105 Sent ped-gramm-9]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 3] ('liGeladi', 'nigotaGa') under the predicate 'idei'.
 [Line 131 Sent ped-gramm-11]: [L2 METADATA spaceafter-mwt-node] 'SpaceAfter=No' cannot occur with words that are part of a multi-word token.
-[Line 128 Sent ped-gramm-11]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('looligi', Poss=Yes).
-
-The following 34 feature values are currently permitted in language [kbc]:
-AdvType=Loc, AdvType=Man, AdvType=Tim, Aspect=Perf, Deixis=Remt, Gender=Fem, Gender=Masc, Gender[obj]=Fem, Gender[obj]=Masc, Mood=Ind, Number=Plur, Number=Sing, Number[obj]=Plur, Number[obj]=Sing, Number[psor]=Plur, Number[psor]=Sing, Person=1, Person=2, Person=3, Person[erg]=3, Person[obj]=1, Person[obj]=2, Person[obj]=3, Person[psor]=1, Person[psor]=2, Person[psor]=3, Polarity=Neg, PronType=Dem, PronType=Rel, VerbForm=Fin, Voice=Act, Voice=Antip, Voice=Appl, Voice=Inv
-If a language needs a feature that is not documented in the universal guidelines, the feature must
-have a language-specific documentation page in a prescribed format.
-See https://universaldependencies.org/contributing_language_specific.html for further guidelines.
-All features including universal must be specifically turned on for each language in which they are used.
-See https://quest.ms.mff.cuni.cz/udvalidator/cgi-bin/unidep/langspec/specify_feature.pl for details.
-
-
 [Line 126 Sent ped-gramm-11]: [L3 SYNTAX too-many-objects] Multiple direct objects [2, 3, 5] ('Maria', 'looligi', 'lidi') under the predicate 'ica'.
-[Line 141 Sent ped-gramm-12]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('looligi', Poss=Yes).
-[Line 142 Sent ped-gramm-12]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('lidi', Poss=Yes).
-[Line 152 Sent ped-gramm-13]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('looligi', Poss=Yes).
-[Line 163 Sent ped-gramm-14]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('looligi', Poss=Yes).
-[Line 175 Sent ped-gramm-15]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('looligi', Poss=Yes).
-[Line 176 Sent ped-gramm-15]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('lidGegi', Poss=Yes).
 [Line 197 Sent ped-gramm-17]: [L3 WARNING pron-det-without-prontype] The word 'ijo' is tagged 'DET' but it lacks the 'PronType' feature
 [Line 199 Sent ped-gramm-17]: [L3 SYNTAX too-many-objects] Multiple direct objects [2, 4, 6] ('loigi', 'niganigi', 'GanigotGa') under the predicate 'ipegitegi'.
-[Line 210 Sent ped-gramm-18]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('lidGegi', Poss=Yes).
-[Line 211 Sent ped-gramm-18]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('loligi', Poss=Yes).
 [Line 212 Sent ped-gramm-18]: [L3 SYNTAX too-many-objects] Multiple direct objects [2, 3, 5] ('lidGegi', 'loligi', 'liGeladi') under the predicate 'idei'.
-[Line 223 Sent ped-gramm-19]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('liwigo', Poss=Yes).
-[Line 224 Sent ped-gramm-19]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('libinienigi', Poss=Yes).
-[Line 235 Sent ped-gramm-20]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('libinienigi', Poss=Yes).
-[Line 246 Sent ped-gramm-21]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('Ganixoa', Poss=Yes).
-[Line 258 Sent ped-gramm-22]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('libinienigi', Poss=Yes).
 [Line 255 Sent ped-gramm-22]: [L3 SYNTAX too-many-subjects] Multiple subjects [2, 3] ('nioladi', 'nioxoa') under the predicate 'ica' not subtyped as ':outer'.
 
 Outer subjects are allowed if a clause acts as the predicate of another clause.
 
-[Line 270 Sent ped-gramm-23]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('libinienigi', Poss=Yes).
 [Line 267 Sent ped-gramm-23]: [L3 SYNTAX too-many-subjects] Multiple subjects [2, 3] ('nioladi', 'lodawa') under the predicate 'ica' not subtyped as ':outer'.
 [Line 284 Sent ped-gramm-24]: [L2 METADATA spaceafter-mwt-node] 'SpaceAfter=No' cannot occur with words that are part of a multi-word token.
 [Line 280 Sent ped-gramm-24]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 3, 4] ('iGeladi', 'naigi', 'ane') under the predicate 'idei'.
 [Line 283 Sent ped-gramm-24]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 293 Sent ped-gramm-25]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('iGeladi', Poss=Yes).
 [Line 294 Sent ped-gramm-25]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 3] ('iGeladi', 'naigi') under the predicate 'idei'.
 [Line 306 Sent ped-gramm-26]: [L3 SYNTAX too-many-objects] Multiple direct objects [2, 3] ('liGeladi', 'ane') under the predicate 'João'.
 [Line 308 Sent ped-gramm-26]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
 [Line 323 Sent ped-gramm-27]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[5] is 'naigi' but text is ' naigi naGajo....' (perhaps extra SpaceAfter=No at previous token?)
 [Line 318 Sent ped-gramm-27]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: ' naigi naGajo.'
-[Line 318 Sent ped-gramm-27]: [L4 MORPHO feature-unknown] Feature Poss is not documented for language [kbc] ('iGeladi', Poss=Yes).
 [Line 319 Sent ped-gramm-27]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 5, 6] ('iGeladi', 'naigi', 'naGajo') under the predicate 'idei'.
 [Line 322 Sent ped-gramm-27]: [L3 WARNING pron-det-without-prontype] The word 'ijo' is tagged 'DET' but it lacks the 'PronType' feature
 [Line 324 Sent ped-gramm-27]: [L3 WARNING pron-det-without-prontype] The word 'naGajo' is tagged 'PRON' but it lacks the 'PronType' feature
@@ -63,7 +36,6 @@ Outer subjects are allowed if a clause acts as the predicate of another clause.
 [Line 441 Sent ped-gramm-37]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: ' weigi.'
 [Line 444 Sent ped-gramm-37]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 4] ('iGeladi', 'weigi') under the predicate 'ipegitegi'.
 Warnings: 7
-MORPHO errors: 17
 SYNTAX errors: 17
 METADATA errors: 9
-*** FAILED *** with 43 errors
+*** FAILED *** with 26 errors

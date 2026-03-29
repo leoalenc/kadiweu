@@ -345,27 +345,55 @@ def infer_feats(form: str, tag: str, tok: Dict[str, Any]) -> str:
     if form in FORM_FEAT_OVERRIDES:
         return FORM_FEAT_OVERRIDES[form]
 
-    split_tags = normalize_split_tags(tok)
     feats = []
 
+    splits = tok.get("splits", [])
+    if not isinstance(splits, list):
+        splits = []
+
+    split_tags = normalize_split_tags(tok)
+
+    # Tense/aspect auxiliaries
     if tag == "T":
         if "PFV" in split_tags:
             feats.append("Aspect=Perf")
         if "Imperf" in split_tags:
             feats.append("Aspect=Imp")
 
+    # Negation: keep empty, following your gold sentence 7
     if tag == "NEG":
-        # Your gold leaves NEG feats empty in sentence 7.
         return "_"
 
-    if tag == "N$":
-        if "Gen" in split_tags or "3POSS" in split_tags:
-            feats.append("Poss=Yes")
-
+    # Applicative verbs
     if tag == "VBAPL":
         feats.append("Voice=Appl")
 
-    return "|".join(feats) if feats else "_"
+    # Possessor person on nouns such as N$
+    # Cases to handle:
+    #   t='Gen'  + gloss-br='1'/'2'/'3'  -> Person[psor]=1/2/3
+    #   t='3POSS'                        -> Person[psor]=3
+    # and similarly for 1POSS / 2POSS if they appear
+    for s in splits:
+        if not isinstance(s, dict):
+            continue
+
+        st = str(s.get("t", ""))
+        gloss_br = safe_get(s, "attributes", "gloss-br", default=None)
+        gloss_br = str(gloss_br).strip() if gloss_br is not None else None
+
+        if st == "Gen" and gloss_br in {"1", "2", "3"}:
+            feats.append(f"Person[psor]={gloss_br}")
+
+        elif st in {"1POSS", "2POSS", "3POSS"}:
+            person = st[0]
+            feats.append(f"Person[psor]={person}")
+
+    # Remove duplicates and keep stable order
+    if feats:
+        feats = sorted(set(feats))
+        return "|".join(feats)
+
+    return "_"
 
 
 def infer_upos(tag: str) -> str:
