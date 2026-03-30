@@ -597,12 +597,13 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
         else:
             cursor += 1
 
-    # Identify root candidate
+        # Identify root candidate
     root_id: Optional[int] = None
 
-    # First pass: deprel heuristics
+    # -----------------------------------------------------------------
+    # First pass: assign obvious relations
+    # -----------------------------------------------------------------
     for idx, dt in enumerate(draft_tokens):
-        # chunk labels from original source token position
         labels = chunk_map.get(dt.source_pos, [])
 
         if dt.upos == "VERB":
@@ -615,12 +616,7 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             continue
 
         if dt.upos == "PART" and dt.xpos == "NEG":
-            # attach later to nearest following verb
             dt.deprel = "advmod"
-            continue
-
-        if "NP-SBJ" in labels and dt.upos in {"NOUN", "PROPN", "PRON"}:
-            dt.deprel = "nsubj"
             continue
 
         if dt.upos == "DET":
@@ -631,17 +627,19 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             dt.deprel = "advmod"
             continue
 
-        # Gold-inspired possessive heuristic:
-        # PROPN immediately after a NOUN/N$ often modifies it as possessor.
+        # Possessor proper names after a noun:
+        # liGeladi Maria -> Maria = nmod:poss
         prev_dt = draft_tokens[idx - 1] if idx > 0 else None
         if dt.upos == "PROPN" and prev_dt and prev_dt.upos == "NOUN":
             dt.deprel = "nmod:poss"
             continue
 
-        if dt.upos in {"NOUN", "PROPN", "PRON"}:
-            dt.deprel = "obj"
+        # Explicit subject chunk wins
+        if "NP-SBJ" in labels and dt.upos in {"NOUN", "PROPN", "PRON"}:
+            dt.deprel = "nsubj"
             continue
 
+        # Leave remaining nominals unresolved for positional recovery
         dt.deprel = "dep"
 
     # Safety fallback if no verb was found
@@ -649,7 +647,27 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
         root_id = 1
         draft_tokens[0].deprel = "root"
 
-    # Second pass: heads
+    # -----------------------------------------------------------------
+    # Second pass: positional recovery for simple predicative clauses
+    #
+    # User's rule for gramatica-pedagogica.json:
+    #   preverbal NP  -> nsubj
+    #   postverbal NP -> obj
+    #
+    # This is meant for the current pedagogical grammar draft generator,
+    # not as a universal Kadiwéu rule.
+    # -----------------------------------------------------------------
+    if root_id is not None:
+        for dt in draft_tokens:
+            if dt.deprel == "dep" and dt.upos in {"NOUN", "PROPN", "PRON"}:
+                if dt.id < root_id:
+                    dt.deprel = "nsubj"
+                elif dt.id > root_id:
+                    dt.deprel = "obj"
+
+    # -----------------------------------------------------------------
+    # Third pass: assign heads
+    # -----------------------------------------------------------------
     for idx, dt in enumerate(draft_tokens):
         if dt.deprel == "root":
             dt.head = 0

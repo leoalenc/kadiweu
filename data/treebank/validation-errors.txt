@@ -1,41 +1,35 @@
 ~/kadiweu/data$ validate.py --lang=kbc --max-err=0 treebank/draft.conllu 
-[Line 23 Sent ped-gramm-2]: [L3 SYNTAX too-many-objects] Multiple direct objects [2, 4] ('liwatece', 'weiigi') under the predicate 'etadi'.
 [Line 82 Sent ped-gramm-7]: [L2 METADATA spaceafter-mwt-node] 'SpaceAfter=No' cannot occur with words that are part of a multi-word token.
-[Line 105 Sent ped-gramm-9]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 3] ('liGeladi', 'nigotaGa') under the predicate 'idei'.
 [Line 131 Sent ped-gramm-11]: [L2 METADATA spaceafter-mwt-node] 'SpaceAfter=No' cannot occur with words that are part of a multi-word token.
 [Line 126 Sent ped-gramm-11]: [L3 SYNTAX too-many-objects] Multiple direct objects [2, 3, 5] ('Maria', 'looligi', 'lidi') under the predicate 'ica'.
 [Line 197 Sent ped-gramm-17]: [L3 WARNING pron-det-without-prontype] The word 'ijo' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 199 Sent ped-gramm-17]: [L3 SYNTAX too-many-objects] Multiple direct objects [2, 4, 6] ('loigi', 'niganigi', 'GanigotGa') under the predicate 'ipegitegi'.
-[Line 212 Sent ped-gramm-18]: [L3 SYNTAX too-many-objects] Multiple direct objects [2, 3, 5] ('lidGegi', 'loligi', 'liGeladi') under the predicate 'idei'.
-[Line 255 Sent ped-gramm-22]: [L3 SYNTAX too-many-subjects] Multiple subjects [2, 3] ('nioladi', 'nioxoa') under the predicate 'ica' not subtyped as ':outer'.
+[Line 199 Sent ped-gramm-17]: [L3 SYNTAX too-many-subjects] Multiple subjects [2, 4] ('loigi', 'niganigi') under the predicate 'ipegitegi' not subtyped as ':outer'.
 
 Outer subjects are allowed if a clause acts as the predicate of another clause.
 
+[Line 212 Sent ped-gramm-18]: [L3 SYNTAX too-many-subjects] Multiple subjects [2, 3] ('lidGegi', 'loligi') under the predicate 'idei' not subtyped as ':outer'.
+[Line 255 Sent ped-gramm-22]: [L3 SYNTAX too-many-subjects] Multiple subjects [2, 3] ('nioladi', 'nioxoa') under the predicate 'ica' not subtyped as ':outer'.
 [Line 267 Sent ped-gramm-23]: [L3 SYNTAX too-many-subjects] Multiple subjects [2, 3] ('nioladi', 'lodawa') under the predicate 'ica' not subtyped as ':outer'.
 [Line 284 Sent ped-gramm-24]: [L2 METADATA spaceafter-mwt-node] 'SpaceAfter=No' cannot occur with words that are part of a multi-word token.
-[Line 280 Sent ped-gramm-24]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 3, 4] ('iGeladi', 'naigi', 'ane') under the predicate 'idei'.
+[Line 280 Sent ped-gramm-24]: [L3 SYNTAX too-many-objects] Multiple direct objects [3, 4] ('naigi', 'ane') under the predicate 'idei'.
 [Line 283 Sent ped-gramm-24]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 294 Sent ped-gramm-25]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 3] ('iGeladi', 'naigi') under the predicate 'idei'.
 [Line 306 Sent ped-gramm-26]: [L3 SYNTAX too-many-objects] Multiple direct objects [2, 3] ('liGeladi', 'ane') under the predicate 'João'.
 [Line 308 Sent ped-gramm-26]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
 [Line 323 Sent ped-gramm-27]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[5] is 'naigi' but text is ' naigi naGajo....' (perhaps extra SpaceAfter=No at previous token?)
 [Line 318 Sent ped-gramm-27]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: ' naigi naGajo.'
-[Line 319 Sent ped-gramm-27]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 5, 6] ('iGeladi', 'naigi', 'naGajo') under the predicate 'idei'.
+[Line 319 Sent ped-gramm-27]: [L3 SYNTAX too-many-objects] Multiple direct objects [5, 6] ('naigi', 'naGajo') under the predicate 'idei'.
 [Line 322 Sent ped-gramm-27]: [L3 WARNING pron-det-without-prontype] The word 'ijo' is tagged 'DET' but it lacks the 'PronType' feature
 [Line 324 Sent ped-gramm-27]: [L3 WARNING pron-det-without-prontype] The word 'naGajo' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 334 Sent ped-gramm-28]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 3, 7] ('Eyodi', 'naodigijedi', 'lionigipi') under the predicate 'dowediteloco'.
+[Line 334 Sent ped-gramm-28]: [L3 SYNTAX too-many-objects] Multiple direct objects [3, 7] ('naodigijedi', 'lionigipi') under the predicate 'dowediteloco'.
 [Line 361 Sent ped-gramm-30]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[3] is '*T*' but text is 'niganaGacanajo....'
 [Line 359 Sent ped-gramm-30]: [L3 SYNTAX too-many-objects] Multiple direct objects [2, 4] ('ane', 'niganaGacanajo') under the predicate 'Eyodi'.
 [Line 360 Sent ped-gramm-30]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 404 Sent ped-gramm-34]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 3] ('iGeladi', 'liGeladi') under the predicate 'ipegitegi'.
 [Line 418 Sent ped-gramm-35]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[5] is '*T*' but text is 'napioi....'
-[Line 415 Sent ped-gramm-35]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 3, 4] ('iGeladi', 'naigi', 'ane') under the predicate 'ipegitegi'.
+[Line 415 Sent ped-gramm-35]: [L3 SYNTAX too-many-objects] Multiple direct objects [3, 4] ('naigi', 'ane') under the predicate 'ipegitegi'.
 [Line 417 Sent ped-gramm-35]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 429 Sent ped-gramm-36]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 3] ('iGeladi', 'naigi') under the predicate 'ipegitegi'.
 [Line 445 Sent ped-gramm-37]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[4] is 'weigi' but text is ' weigi....' (perhaps extra SpaceAfter=No at previous token?)
 [Line 441 Sent ped-gramm-37]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: ' weigi.'
-[Line 444 Sent ped-gramm-37]: [L3 SYNTAX too-many-objects] Multiple direct objects [1, 4] ('iGeladi', 'weigi') under the predicate 'ipegitegi'.
 Warnings: 7
-SYNTAX errors: 17
+SYNTAX errors: 11
 METADATA errors: 9
-*** FAILED *** with 26 errors
+*** FAILED *** with 20 errors
