@@ -597,18 +597,19 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
         else:
             cursor += 1
 
-        # Identify root candidate
+        # -----------------------------------------------------------------
+    # Pass 1: identify root and assign obvious relations
+    # -----------------------------------------------------------------
     root_id: Optional[int] = None
+    root_upos: Optional[str] = None
 
-    # -----------------------------------------------------------------
-    # First pass: assign obvious relations
-    # -----------------------------------------------------------------
     for idx, dt in enumerate(draft_tokens):
         labels = chunk_map.get(dt.source_pos, [])
 
         if dt.upos == "VERB":
             dt.deprel = "root"
             root_id = dt.id
+            root_upos = dt.upos
             continue
 
         if dt.upos == "AUX":
@@ -627,43 +628,67 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             dt.deprel = "advmod"
             continue
 
-        # Possessor proper names after a noun:
-        # liGeladi Maria -> Maria = nmod:poss
         prev_dt = draft_tokens[idx - 1] if idx > 0 else None
         if dt.upos == "PROPN" and prev_dt and prev_dt.upos == "NOUN":
             dt.deprel = "nmod:poss"
             continue
 
-        # Explicit subject chunk wins
-        if "NP-SBJ" in labels and dt.upos in {"NOUN", "PROPN", "PRON"}:
-            dt.deprel = "nsubj"
-            continue
-
-        # Leave remaining nominals unresolved for positional recovery
         dt.deprel = "dep"
 
-    # Safety fallback if no verb was found
+    # Fallback root if no verbal predicate was found
     if root_id is None and draft_tokens:
-        root_id = 1
-        draft_tokens[0].deprel = "root"
+        nominal_root = None
+        for dt in draft_tokens:
+            if dt.upos in {"NOUN", "ADJ", "PROPN", "PRON"}:
+                nominal_root = dt
+                break
+
+        if nominal_root is not None:
+            nominal_root.deprel = "root"
+            root_id = nominal_root.id
+            root_upos = nominal_root.upos
+        else:
+            draft_tokens[0].deprel = "root"
+            root_id = draft_tokens[0].id
+            root_upos = draft_tokens[0].upos
 
     # -----------------------------------------------------------------
-    # Second pass: positional recovery for simple predicative clauses
-    #
-    # User's rule for gramatica-pedagogica.json:
-    #   preverbal NP  -> nsubj
-    #   postverbal NP -> obj
-    #
-    # This is meant for the current pedagogical grammar draft generator,
-    # not as a universal Kadiwéu rule.
+    # Pass 2: controlled recovery of nsubj / obj
+    # Rules:
+    # - obj only if licensed by a VERB root
+    # - at most one obj
+    # - at most one nsubj
     # -----------------------------------------------------------------
-    if root_id is not None:
-        for dt in draft_tokens:
-            if dt.deprel == "dep" and dt.upos in {"NOUN", "PROPN", "PRON"}:
-                if dt.id < root_id:
-                    dt.deprel = "nsubj"
-                elif dt.id > root_id:
-                    dt.deprel = "obj"
+    nominal_upos = {"NOUN", "PROPN", "PRON"}
+
+    explicit_subj_candidates = []
+    fallback_preverbal_candidates = []
+    postverbal_candidates = []
+
+    for dt in draft_tokens:
+        if dt.deprel != "dep" or dt.upos not in nominal_upos or dt.id == root_id:
+            continue
+
+        labels = chunk_map.get(dt.source_pos, [])
+
+        if "NP-SBJ" in labels:
+            explicit_subj_candidates.append(dt)
+        elif root_id is not None and dt.id < root_id:
+            fallback_preverbal_candidates.append(dt)
+        elif root_id is not None and dt.id > root_id:
+            postverbal_candidates.append(dt)
+
+    # Assign at most one subject
+    if explicit_subj_candidates:
+        explicit_subj_candidates[0].deprel = "nsubj"
+    elif fallback_preverbal_candidates:
+        fallback_preverbal_candidates[0].deprel = "nsubj"
+
+    # Assign at most one object, and only with verbal predicates
+    if root_upos == "VERB" and postverbal_candidates:
+        postverbal_candidates[0].deprel = "obj"
+        
+    # Any remaining unresolved nominals stay as dep for manual correction
 
     # -----------------------------------------------------------------
     # Third pass: assign heads
