@@ -71,7 +71,7 @@
 
 # sent_id = ped-gramm-7
 # sent_uid = e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
-# text = liGeladi Maria aG ipegetege .
+# text = liGeladi Maria aGipegetege.
 # text_orig = liGeladi Maria aGipegetege
 # text_por_orig = A casa de Maria não é perto dela
 # text_por = A casa de Maria não é perto dela.
@@ -119,7 +119,7 @@
 
 # sent_id = ped-gramm-11
 # sent_uid = fef391af-9e63-419f-8f81-057459193f49
-# text = ica Maria looligi aG lidi .
+# text = ica Maria looligi alidi.
 # text_orig = ica Maria looligi alidi
 # text_por_orig = a comida da Maria não está deliciosa (a não gostosura da comida da Maria)
 # text_por = a comida da Maria não está deliciosa (a não gostosura da comida da Maria).
@@ -272,7 +272,7 @@
 
 # sent_id = ped-gramm-24
 # sent_uid = 2f47b402-9fe7-4714-96e3-c6cbdf405472
-# text = iGeladi idei naigi ane napioi .
+# text = iGeladi idei naigi anenapioi.
 # text_orig = iGeladi idei naigi anenapioi
 # text_por_orig = a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)
 # text_por = a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo).
@@ -311,7 +311,7 @@
 
 # sent_id = ped-gramm-27
 # sent_uid = 7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
-# text = iGeladi idei me ijo naigi naGajo.
+# text = iGeladi idei mijonaigi naGajo.
 # text_orig = iGeladi idei mijo naigi naGajo
 # text_por_orig = A minha casa fica naquela rua suja dela
 # text_por = A minha casa fica naquela rua suja dela.
@@ -434,7 +434,7 @@
 
 # sent_id = ped-gramm-37
 # sent_uid = 1da1bf7a-7975-4baf-821b-9df5c75ac297
-# text = iGeladi aG ipegitegi weigi.
+# text = iGeladi aGipegitegiweigi.
 # text_orig = iGeladi aGipegitegi weigi
 # text_por_orig = Minha casa não fica perto do rio
 # text_por = Minha casa não fica perto do rio.

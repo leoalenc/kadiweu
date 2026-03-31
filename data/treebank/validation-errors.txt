@@ -1,21 +1,10 @@
-~/kadiweu$ validate --lang=kbc --max-err=0 data/treebank/draft_temp.conllu 
-[Line 80 Sent ped-gramm-7]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[3-4] is 'aGipegetege' but text is 'aG ipegetege ....'
-[Line 78 Sent ped-gramm-7]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: 'aG ipegetege .'
-[Line 129 Sent ped-gramm-11]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[4-5] is 'alidi' but text is 'aG lidi ....'
-[Line 126 Sent ped-gramm-11]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: 'aG lidi .'
+validate --lang=kbc --max-err=0 data/treebank/draft.conllu 
 [Line 197 Sent ped-gramm-17]: [L3 WARNING pron-det-without-prontype] The word 'ijo' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 282 Sent ped-gramm-24]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[4-5] is 'anenapioi' but text is 'ane napioi ....'
-[Line 279 Sent ped-gramm-24]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: 'ane napioi .'
 [Line 283 Sent ped-gramm-24]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
 [Line 308 Sent ped-gramm-26]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 320 Sent ped-gramm-27]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[3-4] is 'mijo' but text is 'me ijo naigi naGajo....'
-[Line 318 Sent ped-gramm-27]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: 'me ijo naigi naGajo.'
 [Line 322 Sent ped-gramm-27]: [L3 WARNING pron-det-without-prontype] The word 'ijo' is tagged 'DET' but it lacks the 'PronType' feature
 [Line 324 Sent ped-gramm-27]: [L3 WARNING pron-det-without-prontype] The word 'naGajo' is tagged 'PRON' but it lacks the 'PronType' feature
 [Line 360 Sent ped-gramm-30]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
 [Line 417 Sent ped-gramm-35]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 442 Sent ped-gramm-37]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[2-3] is 'aGipegitegi' but text is 'aG ipegitegi weigi....'
-[Line 441 Sent ped-gramm-37]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: 'aG ipegitegi weigi.'
 Warnings: 7
-METADATA errors: 10
-*** FAILED *** with 10 errors
+*** PASSED ***

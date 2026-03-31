@@ -441,18 +441,55 @@ def ensure_spaceafter_no(misc: str) -> str:
 
 def build_text_from_rows(rows: List[Dict[str, str]]) -> str:
     """
-    Rebuild # text from emitted FORM+MISC rows.
-    Ignore MWT range lines (IDs like '3-4').
+    Rebuild # text from the emitted surface tokenization.
+
+    Rules:
+    - If an MWT line (e.g. 3-4) is present, use its FORM in # text.
+    - Skip the component rows covered by that MWT.
+    - Otherwise use the ordinary token FORM.
+    - Insert a space unless MISC contains SpaceAfter=No.
     """
     parts = []
-    for row in rows:
+    i = 0
+
+    while i < len(rows):
+        row = rows[i]
         tok_id = row["id"]
-        if "-" in tok_id or "." in tok_id:
+
+        # MWT line: use fused surface form and skip covered component tokens
+        if "-" in tok_id:
+            start, end = tok_id.split("-", 1)
+            start_i = int(start)
+            end_i = int(end)
+
+            parts.append(row["form"])
+            if "SpaceAfter=No" not in parse_misc(row["misc"]):
+                parts.append(" ")
+
+            # Skip component tokens covered by the MWT
+            i += 1
+            while i < len(rows):
+                next_id = rows[i]["id"]
+                if "-" in next_id or "." in next_id:
+                    break
+                try:
+                    num_id = int(next_id)
+                except ValueError:
+                    break
+                if start_i <= num_id <= end_i:
+                    i += 1
+                else:
+                    break
             continue
-        parts.append(row["form"])
-        misc = row["misc"]
-        if "SpaceAfter=No" not in parse_misc(misc):
-            parts.append(" ")
+
+        # Ordinary token
+        if "." not in tok_id:
+            parts.append(row["form"])
+            if "SpaceAfter=No" not in parse_misc(row["misc"]):
+                parts.append(" ")
+
+        i += 1
+
     return "".join(parts).rstrip()
 
 
