@@ -1,10 +1,14 @@
 validate --lang=kbc --max-err=0 data/treebank/draft.conllu 
-[Line 197 Sent ped-gramm-17]: [L3 WARNING pron-det-without-prontype] The word 'ijo' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 283 Sent ped-gramm-24]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 308 Sent ped-gramm-26]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 322 Sent ped-gramm-27]: [L3 WARNING pron-det-without-prontype] The word 'ijo' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 324 Sent ped-gramm-27]: [L3 WARNING pron-det-without-prontype] The word 'naGajo' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 360 Sent ped-gramm-30]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 417 Sent ped-gramm-35]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
-Warnings: 7
-*** PASSED ***
+[Line 324 Sent ped-gramm-27]: [L4 MORPHO feature-value-upos-not-permitted] Value Prs of feature PronType is not permitted with UPOS PRON in language [kbc] ('naGajo').
+
+The following 35 feature values are currently permitted in language [kbc]:
+AdvType=Loc, AdvType=Man, AdvType=Tim, Aspect=Perf, Degree=Dim, Deixis=Remt, Gender=Fem, Gender=Masc, Gender[obj]=Fem, Gender[obj]=Masc, Mood=Ind, Number=Plur, Number=Sing, Number[obj]=Plur, Number[obj]=Sing, Number[psor]=Plur, Number[psor]=Sing, Person=1, Person=2, Person=3, Person[erg]=3, Person[obj]=1, Person[obj]=2, Person[obj]=3, Person[psor]=1, Person[psor]=2, Person[psor]=3, Polarity=Neg, PronType=Dem, PronType=Rel, VerbForm=Fin, Voice=Act, Voice=Antip, Voice=Appl, Voice=Inv
+If a language needs a feature that is not documented in the universal guidelines, the feature must
+have a language-specific documentation page in a prescribed format.
+See https://universaldependencies.org/contributing_language_specific.html for further guidelines.
+All features including universal must be specifically turned on for each language in which they are used.
+See https://quest.ms.mff.cuni.cz/udvalidator/cgi-bin/unidep/langspec/specify_feature.pl for details.
+
+
+MORPHO errors: 1
+*** FAILED *** with 1 errors

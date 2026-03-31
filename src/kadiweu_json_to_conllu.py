@@ -102,6 +102,20 @@ FORM_FEAT_OVERRIDES = {
     "ipegitegi": "Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
 }
 
+PRONTYPE_OVERRIDES = {
+    ("ajo", "DET"): "Dem",
+    ("ijo", "DET"): "Dem",
+    ("ica", "DET"): "Dem",
+    ("ane", "PRON"): "Rel",
+    ("naGajo", "PRON"): "Prs",
+}
+
+TAG_TO_DEFAULT_PRONTYPE = {
+    ("D", "DET"): "Dem",
+    ("WPRO", "PRON"): "Rel",
+    ("PRO", "PRON"): "Prs",
+    ("PRO$", "PRON"): "Prs",
+}
 
 # ---------------------------------------------------------------------
 # Utility helpers
@@ -387,6 +401,15 @@ def infer_feats(form: str, tag: str, tok: Dict[str, Any]) -> str:
         elif st in {"1POSS", "2POSS", "3POSS"}:
             person = st[0]
             feats.append(f"Person[psor]={person}")
+            
+    upos = infer_upos(tag)
+
+    pron_type = PRONTYPE_OVERRIDES.get((form, upos))
+    if pron_type is None:
+        pron_type = TAG_TO_DEFAULT_PRONTYPE.get((tag, upos))
+
+    if pron_type:
+        feats.append(f"PronType={pron_type}")
 
     # Remove duplicates and keep stable order
     if feats:
