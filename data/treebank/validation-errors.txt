@@ -1,20 +1,21 @@
-~/kadiweu$ validate.py --lang=kbc --max-err=0 data/treebank/draft.conllu 
-[Line 82 Sent ped-gramm-7]: [L2 METADATA spaceafter-mwt-node] 'SpaceAfter=No' cannot occur with words that are part of a multi-word token.
-[Line 131 Sent ped-gramm-11]: [L2 METADATA spaceafter-mwt-node] 'SpaceAfter=No' cannot occur with words that are part of a multi-word token.
+~/kadiweu$ validate --lang=kbc --max-err=0 data/treebank/draft_temp.conllu 
+[Line 80 Sent ped-gramm-7]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[3-4] is 'aGipegetege' but text is 'aG ipegetege ....'
+[Line 78 Sent ped-gramm-7]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: 'aG ipegetege .'
+[Line 129 Sent ped-gramm-11]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[4-5] is 'alidi' but text is 'aG lidi ....'
+[Line 126 Sent ped-gramm-11]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: 'aG lidi .'
 [Line 197 Sent ped-gramm-17]: [L3 WARNING pron-det-without-prontype] The word 'ijo' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 284 Sent ped-gramm-24]: [L2 METADATA spaceafter-mwt-node] 'SpaceAfter=No' cannot occur with words that are part of a multi-word token.
+[Line 282 Sent ped-gramm-24]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[4-5] is 'anenapioi' but text is 'ane napioi ....'
+[Line 279 Sent ped-gramm-24]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: 'ane napioi .'
 [Line 283 Sent ped-gramm-24]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
 [Line 308 Sent ped-gramm-26]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 323 Sent ped-gramm-27]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[5] is 'naigi' but text is ' naigi naGajo....' (perhaps extra SpaceAfter=No at previous token?)
-[Line 318 Sent ped-gramm-27]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: ' naigi naGajo.'
+[Line 320 Sent ped-gramm-27]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[3-4] is 'mijo' but text is 'me ijo naigi naGajo....'
+[Line 318 Sent ped-gramm-27]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: 'me ijo naigi naGajo.'
 [Line 322 Sent ped-gramm-27]: [L3 WARNING pron-det-without-prontype] The word 'ijo' is tagged 'DET' but it lacks the 'PronType' feature
 [Line 324 Sent ped-gramm-27]: [L3 WARNING pron-det-without-prontype] The word 'naGajo' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 361 Sent ped-gramm-30]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[3] is '*T*' but text is 'niganaGacanajo....'
 [Line 360 Sent ped-gramm-30]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 418 Sent ped-gramm-35]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[5] is '*T*' but text is 'napioi....'
 [Line 417 Sent ped-gramm-35]: [L3 WARNING pron-det-without-prontype] The word 'ane' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 445 Sent ped-gramm-37]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[4] is 'weigi' but text is ' weigi....' (perhaps extra SpaceAfter=No at previous token?)
-[Line 441 Sent ped-gramm-37]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: ' weigi.'
+[Line 442 Sent ped-gramm-37]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[2-3] is 'aGipegitegi' but text is 'aG ipegitegi weigi....'
+[Line 441 Sent ped-gramm-37]: [L2 METADATA text-extra-chars] Extra characters at the end of the text attribute, not accounted for in the FORM fields: 'aG ipegitegi weigi.'
 Warnings: 7
-METADATA errors: 9
-*** FAILED *** with 9 errors
+METADATA errors: 10
+*** FAILED *** with 10 errors
