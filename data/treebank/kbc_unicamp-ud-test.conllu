@@ -179,6 +179,21 @@
 4	libinienigi	ibinie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=19:30
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
 
+# sent_id = ped-gramm-27
+# sent_uid = 7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+# text = iGeladi idei mijonaigi naGajo.
+# text_orig = iGeladi idei mijo naigi naGajo
+# text_por_orig = A minha casa fica naquela rua suja dela
+# text_por = A minha casa fica naquela rua suja dela.
+1	iGeladi	iGeladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
+3-4	mijo	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=13:17
+3	me	me	SCONJ	C	_	5	mark	_	_
+4	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_
+5	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	advcl	_	TokenRange=18:23
+6	naGajo	jo	PRON	PRO$	Gender=Fem|PronType=Prs	5	nmod:poss	_	SpaceAfter=No|TokenRange=24:30
+7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
+
 # sent_id = ped-gramm-33
 # sent_uid = 82117289-be52-45d0-886d-a5747eb20ea2
 # text = iGeladi ipegitaGagi.

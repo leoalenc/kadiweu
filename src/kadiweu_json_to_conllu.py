@@ -102,6 +102,20 @@ FORM_FEAT_OVERRIDES = {
     "ipegitegi": "Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
 }
 
+PRONTYPE_OVERRIDES = {
+    ("ajo", "DET"): "Dem",
+    ("ijo", "DET"): "Dem",
+    ("ica", "DET"): "Dem",
+    ("ane", "PRON"): "Rel",
+    ("naGajo", "PRON"): "Prs",
+}
+
+TAG_TO_DEFAULT_PRONTYPE = {
+    ("D", "DET"): "Dem",
+    ("WPRO", "PRON"): "Rel",
+    ("PRO", "PRON"): "Prs",
+    ("PRO$", "PRON"): "Prs",
+}
 
 # ---------------------------------------------------------------------
 # Utility helpers
@@ -387,6 +401,15 @@ def infer_feats(form: str, tag: str, tok: Dict[str, Any]) -> str:
         elif st in {"1POSS", "2POSS", "3POSS"}:
             person = st[0]
             feats.append(f"Person[psor]={person}")
+            
+    upos = infer_upos(tag)
+
+    pron_type = PRONTYPE_OVERRIDES.get((form, upos))
+    if pron_type is None:
+        pron_type = TAG_TO_DEFAULT_PRONTYPE.get((tag, upos))
+
+    if pron_type:
+        feats.append(f"PronType={pron_type}")
 
     # Remove duplicates and keep stable order
     if feats:
@@ -412,6 +435,94 @@ def add_spaceafter_no(misc: str) -> str:
         parts.insert(0, "SpaceAfter=No")
     return "|".join(parts)
 
+def parse_misc(misc: str) -> List[str]:
+    """Split MISC into items, ignoring empty/_."""
+    if not misc or misc == "_":
+        return []
+    return [x for x in misc.split("|") if x and x != "_"]
+
+
+def join_misc(items: List[str]) -> str:
+    """Join MISC items or return '_'."""
+    items = [x for x in items if x]
+    return "|".join(items) if items else "_"
+
+
+def remove_spaceafter_no(misc: str) -> str:
+    """Remove SpaceAfter=No from MISC."""
+    items = [x for x in parse_misc(misc) if x != "SpaceAfter=No"]
+    return join_misc(items)
+
+
+def ensure_spaceafter_no(misc: str) -> str:
+    """Ensure SpaceAfter=No is present in MISC."""
+    items = parse_misc(misc)
+    if "SpaceAfter=No" not in items:
+        items.insert(0, "SpaceAfter=No")
+    return join_misc(items)
+
+
+def build_text_from_rows(rows: List[Dict[str, str]]) -> str:
+    """
+    Rebuild # text from the emitted surface tokenization.
+
+    Rules:
+    - If an MWT line (e.g. 3-4) is present, use its FORM in # text.
+    - Skip the component rows covered by that MWT.
+    - Otherwise use the ordinary token FORM.
+    - Insert a space unless MISC contains SpaceAfter=No.
+    """
+    parts = []
+    i = 0
+
+    while i < len(rows):
+        row = rows[i]
+        tok_id = row["id"]
+
+        # MWT line: use fused surface form and skip covered component tokens
+        if "-" in tok_id:
+            start, end = tok_id.split("-", 1)
+            start_i = int(start)
+            end_i = int(end)
+
+            parts.append(row["form"])
+            if "SpaceAfter=No" not in parse_misc(row["misc"]):
+                parts.append(" ")
+
+            # Skip component tokens covered by the MWT
+            i += 1
+            while i < len(rows):
+                next_id = rows[i]["id"]
+                if "-" in next_id or "." in next_id:
+                    break
+                try:
+                    num_id = int(next_id)
+                except ValueError:
+                    break
+                if start_i <= num_id <= end_i:
+                    i += 1
+                else:
+                    break
+            continue
+
+        # Ordinary token
+        if "." not in tok_id:
+            parts.append(row["form"])
+            if "SpaceAfter=No" not in parse_misc(row["misc"]):
+                parts.append(" ")
+
+        i += 1
+
+    return "".join(parts).rstrip()
+
+
+def final_punct_range_from_text(text_orig: str) -> Tuple[int, int]:
+    """
+    Range of appended final punctuation when original text has none.
+    """
+    start = len(text_orig)
+    end = start + 1
+    return start, end
 
 # ---------------------------------------------------------------------
 # Conversion heuristics
@@ -597,7 +708,7 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
         else:
             cursor += 1
 
-        # -----------------------------------------------------------------
+    # -----------------------------------------------------------------
     # Pass 1: identify root and assign obvious relations
     # -----------------------------------------------------------------
     root_id: Optional[int] = None
@@ -687,7 +798,7 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
     # Assign at most one object, and only with verbal predicates
     if root_upos == "VERB" and postverbal_candidates:
         postverbal_candidates[0].deprel = "obj"
-        
+
     # Any remaining unresolved nominals stay as dep for manual correction
 
     # -----------------------------------------------------------------
@@ -741,48 +852,119 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
 
         dt.head = root_id or 0
 
-        # Because # text includes final punctuation with no intervening space,
-    # the last real token must carry SpaceAfter=No.
-    if draft_tokens:
-        if draft_tokens[-1].misc == "_" or not draft_tokens[-1].misc:
-            draft_tokens[-1].misc = "SpaceAfter=No"
-        elif "SpaceAfter=No" not in draft_tokens[-1].misc.split("|"):
-            draft_tokens[-1].misc = "SpaceAfter=No|" + draft_tokens[-1].misc
+        # -----------------------------------------------------------------
+    # Clean metadata/writer block (REPLACEMENT)
+    # -----------------------------------------------------------------
 
-    # Build token output with inserted MWT lines
+    # MWT lookup
     mwt_by_start = {start: (end, form, misc) for start, end, form, misc in resolved_mwt_lines}
+
+    # Collect MWT component ids
+    mwt_component_ids = set()
+    for start, end, _form, _misc in resolved_mwt_lines:
+        for tok_id in range(start, end + 1):
+            mwt_component_ids.add(tok_id)
+
+    emitted_rows: List[Dict[str, str]] = []
 
     current_idx = 0
     while current_idx < len(draft_tokens):
         dt = draft_tokens[current_idx]
+
+        # Emit MWT line
         if dt.id in mwt_by_start:
             end, form, misc = mwt_by_start[dt.id]
-            out_lines.append(f"{dt.id}-{end}\t{form}\t_\t_\t_\t_\t_\t_\t_\t{misc}")
+            emitted_rows.append({
+                "id": f"{dt.id}-{end}",
+                "form": form,
+                "lemma": "_",
+                "upos": "_",
+                "xpos": "_",
+                "feats": "_",
+                "head": "_",
+                "deprel": "_",
+                "deps": "_",
+                "misc": misc if misc else "_",
+            })
 
-        out_lines.append(
-            "\t".join([
-                str(dt.id),
-                dt.form,
-                dt.lemma,
-                dt.upos,
-                dt.xpos,
-                dt.feats,
-                str(dt.head),
-                dt.deprel,
-                "_",
-                dt.misc,
-            ])
-        )
+        # Remove SpaceAfter=No from MWT components
+        token_misc = dt.misc
+        if dt.id in mwt_component_ids:
+            token_misc = remove_spaceafter_no(token_misc)
+
+        emitted_rows.append({
+            "id": str(dt.id),
+            "form": dt.form,
+            "lemma": dt.lemma,
+            "upos": dt.upos,
+            "xpos": dt.xpos,
+            "feats": dt.feats,
+            "head": str(dt.head),
+            "deprel": dt.deprel,
+            "deps": "_",
+            "misc": token_misc,
+        })
+
         current_idx += 1
 
-    # Final punctuation token
-    p_start, p_end = final_punct_range(text_orig)
+    # Add final punctuation
     punct_head = root_id or 0
     punct_id = len(draft_tokens) + 1
-    out_lines.append(
-        f"{punct_id}\t.\t.\tPUNCT\tPUNCT\t_\t{punct_head}\tpunct\t_\tSpaceAfter=No|{range_to_misc(p_start, p_end)}"
-    )
-    out_lines.append("")  # blank line between sentences
+    p_start, p_end = final_punct_range_from_text(text_orig)
+
+    emitted_rows.append({
+        "id": str(punct_id),
+        "form": ".",
+        "lemma": ".",
+        "upos": "PUNCT",
+        "xpos": "PUNCT",
+        "feats": "_",
+        "head": str(punct_head),
+        "deprel": "punct",
+        "deps": "_",
+        "misc": f"SpaceAfter=No|{range_to_misc(p_start, p_end)}",
+    })
+
+    # Ensure SpaceAfter=No only on last real token (not inside MWT)
+    last_real_idx = None
+    for i in range(len(emitted_rows) - 2, -1, -1):
+        if "-" not in emitted_rows[i]["id"]:
+            last_real_idx = i
+            break
+
+    if last_real_idx is not None:
+        prev_id = int(emitted_rows[last_real_idx]["id"])
+        if prev_id not in mwt_component_ids:
+            emitted_rows[last_real_idx]["misc"] = ensure_spaceafter_no(
+                emitted_rows[last_real_idx]["misc"]
+            )
+
+    # Rebuild # text from rows
+    rebuilt_text = build_text_from_rows(emitted_rows)
+
+    for i, line in enumerate(out_lines):
+        if line.startswith("# text = "):
+            out_lines[i] = f"# text = {rebuilt_text}"
+            break
+
+    # Serialize
+    for row in emitted_rows:
+        out_lines.append(
+            "\t".join([
+                row["id"],
+                row["form"],
+                row["lemma"],
+                row["upos"],
+                row["xpos"],
+                row["feats"],
+                row["head"],
+                row["deprel"],
+                row["deps"],
+                row["misc"],
+            ])
+        )
+
+    out_lines.append("")
 
     return "\n".join(out_lines)
 

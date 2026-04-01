@@ -1,0 +1,691 @@
+{
+  "metadata": {
+    "name": "Kadiweu closed-class whitelist with UD defaults",
+    "version": "0.1",
+    "description": "Curated whitelist of Kadiwéu closed-class items for UD treebank work. Entries provide default lemma, UPOS, and feature templates. Surface forms may still require context-sensitive POS decisions, especially DET vs PRON and possessive uses.",
+    "principles": [
+      "Demonstrative forms are DET by default when nominal modifiers and PRON when headless.",
+      "Possessive pronominal uses are PRON with Poss=Yes.",
+      "Classifier/deictic morphology such as -jo, -ca, etc. is not encoded as UD features by default; store it in MISC if needed.",
+      "Feature templates are defaults, not immutable analyses."
+    ],
+    "feature_encoding_policy": {
+      "det_default": "PronType=Dem",
+      "possessive_pronoun_default": "PronType=Prs|Poss=Yes",
+      "classifier_storage": "MISC Clf=...",
+      "number_policy": "Number is included when the form is transparently plural or when singular is the practical default in the treebank."
+    }
+  },
+  "entries": [
+    {
+      "form": "ajo",
+      "lemma": "ajo",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Fem|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ],
+      "notes": "Default determiner analysis; PRON when headless."
+    },
+    {
+      "form": "ijo",
+      "lemma": "ijo",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Masc|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ],
+      "notes": "Default determiner analysis; PRON when headless."
+    },
+    {
+      "form": "aca",
+      "lemma": "aca",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Fem|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "ica",
+      "lemma": "ica",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Masc|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "adi",
+      "lemma": "adi",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Fem|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "idi",
+      "lemma": "idi",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Masc|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "ida",
+      "lemma": "ida",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Masc|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ],
+      "notes": "Kept as a demonstrative/deictic closed-class item; refine if corpus evidence motivates a narrower analysis."
+    },
+    {
+      "form": "naGajo",
+      "lemma": "naGajo",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Fem|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ],
+      "contextual_overrides": [
+        {
+          "when": "possessive pronominal use",
+          "upos": "PRON",
+          "feature_template": "PronType=Prs|Poss=Yes|Person=3|Gender=Fem|Number=Sing"
+        }
+      ]
+    },
+    {
+      "form": "naǥajo",
+      "lemma": "naǥajo",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Fem|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ],
+      "contextual_overrides": [
+        {
+          "when": "possessive pronominal use",
+          "upos": "PRON",
+          "feature_template": "PronType=Prs|Poss=Yes|Person=3|Gender=Fem|Number=Sing"
+        }
+      ]
+    },
+    {
+      "form": "niǥini",
+      "lemma": "niǥini",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Masc|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "niǥida",
+      "lemma": "niǥida",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Masc|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "niǥijo",
+      "lemma": "niǥijo",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Masc|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "niǥica",
+      "lemma": "niǥica",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Masc|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "naǥani",
+      "lemma": "naǥani",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Fem|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "naǥana",
+      "lemma": "naǥana",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Fem|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "naǥaca",
+      "lemma": "naǥaca",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Fem|Number=Sing",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "icoa",
+      "lemma": "icoa",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Masc|Number=Plur",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ],
+      "notes": "Plural/honorific-style demonstrative form; keep Number=Plur as default."
+    },
+    {
+      "form": "acoa",
+      "lemma": "acoa",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Fem|Number=Plur",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "acowa",
+      "lemma": "acowa",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Fem|Number=Plur",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "ijoa",
+      "lemma": "ijoa",
+      "upos": "DET",
+      "feature_template": "PronType=Dem|Gender=Masc|Number=Plur",
+      "class": "demonstrative",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "iniwa",
+      "lemma": "iniwa",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "onaniwa",
+      "lemma": "onaniwa",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "inoatale",
+      "lemma": "inoatale",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "itiwatale",
+      "lemma": "itiwatale",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "itowatadiǥida",
+      "lemma": "itowatadiǥida",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "itoatadiǥida",
+      "lemma": "itoatadiǥida",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "idowatawece",
+      "lemma": "idowatawece",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "inoatawece",
+      "lemma": "inoatawece",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "initecibece",
+      "lemma": "initecibece",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "initicibece",
+      "lemma": "initicibece",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "itowataletibece",
+      "lemma": "itowataletibece",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "oniditice",
+      "lemma": "oniditice",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "onijotece",
+      "lemma": "onijotece",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "oniniwa",
+      "lemma": "oniniwa",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "onitecibece",
+      "lemma": "onitecibece",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "ononinitece",
+      "lemma": "ononinitece",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral"
+    },
+    {
+      "form": "onidateci",
+      "lemma": "onidateci",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral",
+      "notes": "Historical/grammatical form from Griffiths."
+    },
+    {
+      "form": "oniniteci",
+      "lemma": "oniniteci",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral",
+      "notes": "Historical/grammatical form from Griffiths."
+    },
+    {
+      "form": "oniditeci",
+      "lemma": "oniditeci",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral",
+      "notes": "Historical/grammatical form from Griffiths."
+    },
+    {
+      "form": "onijoteci",
+      "lemma": "onijoteci",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral",
+      "notes": "Historical/grammatical form from Griffiths."
+    },
+    {
+      "form": "oninateci",
+      "lemma": "oninateci",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral",
+      "notes": "Historical/grammatical form from Griffiths."
+    },
+    {
+      "form": "itowataale",
+      "lemma": "itowataale",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral",
+      "notes": "Historical/grammatical form from Griffiths."
+    },
+    {
+      "form": "iniwataale",
+      "lemma": "iniwataale",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral",
+      "notes": "Historical/grammatical form from Griffiths."
+    },
+    {
+      "form": "itiwataale",
+      "lemma": "itiwataale",
+      "upos": "NUM",
+      "feature_template": "NumType=Card",
+      "class": "numeral",
+      "notes": "Historical/grammatical form from Griffiths."
+    },
+    {
+      "form": "adaa",
+      "lemma": "adaa",
+      "upos": "DET",
+      "feature_template": "PronType=Ind",
+      "class": "quantifier",
+      "alt_upos": [
+        "PRON",
+        "ADV"
+      ],
+      "notes": "Use PRON when headless; some corpus contexts may favor ADV for locative uses."
+    },
+    {
+      "form": "adatawece",
+      "lemma": "adatawece",
+      "upos": "DET",
+      "feature_template": "PronType=Ind|Number=Plur",
+      "class": "quantifier",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "adatibece",
+      "lemma": "adatibece",
+      "upos": "DET",
+      "feature_template": "PronType=Ind|Number=Plur",
+      "class": "quantifier",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "adaatibece",
+      "lemma": "adaatibece",
+      "upos": "DET",
+      "feature_template": "PronType=Ind|Number=Plur",
+      "class": "quantifier",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "adatecitibece",
+      "lemma": "adatecitibece",
+      "upos": "DET",
+      "feature_template": "PronType=Ind|Number=Plur",
+      "class": "quantifier",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "initibece",
+      "lemma": "initibece",
+      "upos": "DET",
+      "feature_template": "PronType=Ind|Number=Plur",
+      "class": "quantifier",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "idatecibece",
+      "lemma": "idatecibece",
+      "upos": "DET",
+      "feature_template": "PronType=Ind|Number=Plur",
+      "class": "quantifier",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "idatiwece",
+      "lemma": "idatiwece",
+      "upos": "DET",
+      "feature_template": "PronType=Ind|Number=Plur",
+      "class": "quantifier",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "idiwatace",
+      "lemma": "idiwatace",
+      "upos": "DET",
+      "feature_template": "PronType=Ind|Number=Plur",
+      "class": "quantifier",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "inatawece",
+      "lemma": "inatawece",
+      "upos": "DET",
+      "feature_template": "PronType=Ind|Number=Plur",
+      "class": "quantifier",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "icoatawece",
+      "lemma": "icoatawece",
+      "upos": "DET",
+      "feature_template": "PronType=Ind|Number=Plur",
+      "class": "quantifier",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "aGica",
+      "lemma": "aGica",
+      "upos": "DET",
+      "feature_template": "PronType=Neg",
+      "class": "quantifier",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "aǥica",
+      "lemma": "aǥica",
+      "upos": "DET",
+      "feature_template": "PronType=Neg",
+      "class": "quantifier",
+      "alt_upos": [
+        "PRON"
+      ]
+    },
+    {
+      "form": "eledi",
+      "lemma": "eledi",
+      "upos": "DET",
+      "feature_template": "PronType=Ind",
+      "class": "quantifier",
+      "alt_upos": [
+        "PRON"
+      ],
+      "notes": "Practical default for 'other'; revise if a stricter determiner/adjective split emerges."
+    },
+    {
+      "form": "ane",
+      "lemma": "ane",
+      "upos": "PRON",
+      "feature_template": "PronType=Int,Rel",
+      "class": "wh",
+      "alt_upos": [
+        "DET"
+      ],
+      "notes": "Interrogative/relative argumental form; DET in nominal modifier uses."
+    },
+    {
+      "form": "ene",
+      "lemma": "ene",
+      "upos": "PRON",
+      "feature_template": "PronType=Int,Rel",
+      "class": "wh",
+      "alt_upos": [
+        "DET"
+      ]
+    },
+    {
+      "form": "damiida",
+      "lemma": "damiida",
+      "upos": "PRON",
+      "feature_template": "PronType=Int,Rel",
+      "class": "wh"
+    },
+    {
+      "form": "amidoda",
+      "lemma": "amidoda",
+      "upos": "PRON",
+      "feature_template": "PronType=Int,Rel",
+      "class": "wh"
+    },
+    {
+      "form": "agaa",
+      "lemma": "agaa",
+      "upos": "ADV",
+      "feature_template": "PronType=Int",
+      "class": "wh"
+    },
+    {
+      "form": "agaataǥa",
+      "lemma": "agaataǥa",
+      "upos": "ADV",
+      "feature_template": "PronType=Int",
+      "class": "wh"
+    },
+    {
+      "form": "igaa",
+      "lemma": "igaa",
+      "upos": "ADV",
+      "feature_template": "PronType=Int",
+      "class": "wh"
+    },
+    {
+      "form": "iǥame",
+      "lemma": "iǥame",
+      "upos": "ADV",
+      "feature_template": "PronType=Int",
+      "class": "wh"
+    },
+    {
+      "form": "akaami",
+      "lemma": "akaami",
+      "upos": "PRON",
+      "feature_template": "PronType=Prs|Person=2|Number=Sing",
+      "class": "personal_pronoun"
+    },
+    {
+      "form": "akami",
+      "lemma": "akami",
+      "upos": "PRON",
+      "feature_template": "PronType=Prs|Person=2|Number=Sing",
+      "class": "personal_pronoun"
+    },
+    {
+      "form": "aaami",
+      "lemma": "aaami",
+      "upos": "PRON",
+      "feature_template": "PronType=Prs|Person=2|Number=Sing",
+      "class": "personal_pronoun"
+    },
+    {
+      "form": "emaǥa",
+      "lemma": "emaǥa",
+      "upos": "PRON",
+      "feature_template": "PronType=Prs|Person=1|Number=Sing",
+      "class": "personal_pronoun"
+    },
+    {
+      "form": "emeǥee",
+      "lemma": "emeǥee",
+      "upos": "PRON",
+      "feature_template": "PronType=Prs|Person=1|Number=Sing",
+      "class": "personal_pronoun"
+    },
+    {
+      "form": "emeǥeǥe",
+      "lemma": "emeǥeǥe",
+      "upos": "PRON",
+      "feature_template": "PronType=Prs|Person=1|Number=Sing",
+      "class": "personal_pronoun"
+    },
+    {
+      "form": "eyomaǥa",
+      "lemma": "eyomaǥa",
+      "upos": "PRON",
+      "feature_template": "PronType=Prs|Person=1|Number=Sing",
+      "class": "personal_pronoun"
+    },
+    {
+      "form": "kô",
+      "lemma": "kô",
+      "upos": "PRON",
+      "feature_template": "PronType=Prs|Poss=Yes",
+      "class": "possessive_pronominal"
+    },
+    {
+      "form": "nebi",
+      "lemma": "nebi",
+      "upos": "PRON",
+      "feature_template": "PronType=Prs|Poss=Yes",
+      "class": "possessive_pronominal"
+    },
+    {
+      "form": "to’yat",
+      "lemma": "to’yat",
+      "upos": "PRON",
+      "feature_template": "PronType=Prs|Poss=Yes",
+      "class": "possessive_pronominal"
+    }
+  ]
+}

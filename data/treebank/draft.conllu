@@ -194,7 +194,7 @@
 # text_por = A comunidade do menino é perto da cidade de vocês.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	loigi	oigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	TokenRange=4:9
-3	ijo	jo	DET	D	_	4	det	_	TokenRange=10:13
+3	ijo	jo	DET	D	PronType=Dem	4	det	_	TokenRange=10:13
 4	niganigi	niganigi	NOUN	N	_	5	dep	_	TokenRange=14:22
 5	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=23:32
 6	GanigotGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=2	5	obj	_	SpaceAfter=No|TokenRange=33:42
@@ -280,7 +280,7 @@
 2	idei	dei	VERB	VB	_	0	root	_	TokenRange=8:12
 3	naigi	naigi	NOUN	N	_	2	obj	_	TokenRange=13:18
 4-5	anenapioi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=19:28
-4	ane	napioi	PRON	WPRO	_	2	dep	_	_
+4	ane	napioi	PRON	WPRO	PronType=Rel	2	dep	_	_
 5	napioi	napioi	ADJ	ADJ	_	2	dep	_	_
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
 
@@ -305,13 +305,13 @@
 # text_por = A casa do João é suja.
 1	João	joão	PROPN	NPR	_	0	root	_	TokenRange=0:4
 2	liGeladi	geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	1	dep	_	TokenRange=5:13
-3	ane	ane	PRON	WPRO	_	1	dep	_	TokenRange=14:17
+3	ane	ane	PRON	WPRO	PronType=Rel	1	dep	_	TokenRange=14:17
 4	napioi	napioi	ADJ	ADJ	_	1	dep	_	SpaceAfter=No|TokenRange=18:24
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = ped-gramm-27
 # sent_uid = 7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
-# text = iGeladi idei me ijo naigi naGajo.
+# text = iGeladi idei mijonaigi naGajo.
 # text_orig = iGeladi idei mijo naigi naGajo
 # text_por_orig = A minha casa fica naquela rua suja dela
 # text_por = A minha casa fica naquela rua suja dela.
@@ -319,9 +319,9 @@
 2	idei	dei	VERB	VB	_	0	root	_	TokenRange=8:12
 3-4	mijo	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=13:17
 3	me	jo	SCONJ	C	_	2	dep	_	_
-4	ijo	ijo	DET	D	_	5	det	_	_
+4	ijo	ijo	DET	D	PronType=Dem	5	det	_	_
 5	naigi	naigi	NOUN	N	_	2	obj	_	TokenRange=18:23
-6	naGajo	jo	PRON	PRO$	_	2	dep	_	SpaceAfter=No|TokenRange=24:30
+6	naGajo	jo	PRON	PRO$	PronType=Prs	2	dep	_	SpaceAfter=No|TokenRange=24:30
 7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = ped-gramm-28
@@ -357,7 +357,7 @@
 # text_por_orig = Meu pai que era cantor (explicativa)
 # text_por = Meu pai que era cantor (explicativa).
 1	Eyodi	eyodi	NOUN	N$	_	0	root	_	TokenRange=0:5
-2	ane	ane	PRON	WPRO	_	1	dep	_	TokenRange=6:9
+2	ane	ane	PRON	WPRO	PronType=Rel	1	dep	_	TokenRange=6:9
 3	*T*	*t*	X	X	_	1	dep	_	TokenRange=10:24
 4	niganaGacanajo	niganagacanajo	NOUN	N	_	1	dep	_	SpaceAfter=No
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
@@ -414,7 +414,7 @@
 1	iGeladi	igeladi	NOUN	N$	_	2	nsubj	_	TokenRange=0:7
 2	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
 3	naigi	naigi	NOUN	N	_	2	obj	_	TokenRange=18:23
-4	ane	ane	PRON	WPRO	_	2	dep	_	TokenRange=24:27
+4	ane	ane	PRON	WPRO	PronType=Rel	2	dep	_	TokenRange=24:27
 5	*T*	*t*	X	X	_	2	dep	_	TokenRange=28:34
 6	napioi	napioi	ADJ	ADJ	_	2	dep	_	SpaceAfter=No
 7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=34:35
@@ -434,7 +434,7 @@
 
 # sent_id = ped-gramm-37
 # sent_uid = 1da1bf7a-7975-4baf-821b-9df5c75ac297
-# text = iGeladi aG ipegitegi weigi.
+# text = iGeladi aGipegitegiweigi.
 # text_orig = iGeladi aGipegitegi weigi
 # text_por_orig = Minha casa não fica perto do rio
 # text_por = Minha casa não fica perto do rio.
