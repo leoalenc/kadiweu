@@ -1,4 +1,4 @@
-validate --lang=kbc --max-err=0 data/treebank/draft.conllu 
+validate.py --lang=kbc --max-err=0 data/treebank/draft.conllu 
 [Line 324 Sent ped-gramm-27]: [L4 MORPHO feature-value-upos-not-permitted] Value Prs of feature PronType is not permitted with UPOS PRON in language [kbc] ('naGajo').
 
 The following 35 feature values are currently permitted in language [kbc]:
