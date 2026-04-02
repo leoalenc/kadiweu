@@ -44,8 +44,6 @@
     "ped-gramm-32"
   ],
   "sentence_issues": 1,
-  "token_diffs": 1,
-  "improvement_counter": {
-    "LEMMA:regressed": 1
-  }
+  "token_diffs": 0,
+  "improvement_counter": {}
 }

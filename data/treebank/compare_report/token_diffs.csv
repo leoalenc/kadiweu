@@ -1,2 +1,0 @@
-sent_id,token_index,token_id,gold_form,metric,change,gold_value,old_value,new_value
-ped-gramm-11,5,5,lidi,LEMMA,regressed,idi,idi,lidi
