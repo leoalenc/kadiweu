@@ -44,16 +44,8 @@
     "ped-gramm-32"
   ],
   "sentence_issues": 1,
-  "token_diffs": 52,
+  "token_diffs": 1,
   "improvement_counter": {
-    "DEPREL:regressed": 7,
-    "LAS:regressed": 7,
-    "HEAD:regressed": 2,
-    "UAS:regressed": 2,
-    "HEAD:improved": 10,
-    "UAS:improved": 10,
-    "LEMMA:regressed": 1,
-    "DEPREL:improved": 5,
-    "LAS:improved": 8
+    "LEMMA:regressed": 1
   }
 }

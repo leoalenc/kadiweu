@@ -27,7 +27,8 @@ import json
 import re
 import sys
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, List, Optional, Tuple
+from kadiweu_empty_categories import resolve_empty_categories
 
 
 # ---------------------------------------------------------------------
@@ -271,126 +272,6 @@ def chunk_membership_for_tokens(tokens: List[Dict[str, Any]], chunks: List[Dict[
 
     return memberships
 
-
-
-
-def chunk_head_candidates(indices: List[int], draft_tokens: List["DraftToken"]) -> List[int]:
-    """Return token indices inside a chunk that are plausible lexical heads."""
-    preferred_upos = ("VERB", "NOUN", "PROPN", "PRON", "ADJ", "ADV")
-    out: List[int] = []
-    for upos in preferred_upos:
-        matches = [i for i in indices if draft_tokens[i].upos == upos]
-        if matches:
-            out.extend(matches)
-            break
-    if out:
-        return out
-    return list(indices)
-
-
-def choose_chunk_head(indices: List[int], draft_tokens: List["DraftToken"]) -> Optional[int]:
-    """Choose a lexical head index for one chunk span."""
-    if not indices:
-        return None
-    candidates = chunk_head_candidates(indices, draft_tokens)
-    if not candidates:
-        return None
-
-    nominal_like = {"NOUN", "PROPN", "PRON", "ADJ", "ADV"}
-    if all(draft_tokens[i].upos in nominal_like for i in candidates):
-        return candidates[-1]
-    return candidates[0]
-
-
-def build_chunk_infos(tokens: List[Dict[str, Any]], chunks: List[Dict[str, Any]], draft_tokens: List["DraftToken"]) -> List[Dict[str, Any]]:
-    """Build chunk records with token coverage and selected lexical heads."""
-    by_source_pos = {dt.source_pos: i for i, dt in enumerate(draft_tokens)}
-    infos: List[Dict[str, Any]] = []
-    for ch in chunks:
-        if not isinstance(ch, dict):
-            continue
-        start = ch.get("i")
-        end = ch.get("f")
-        label = ch.get("t")
-        level = ch.get("l")
-        if not isinstance(start, int) or not isinstance(end, int) or label is None:
-            continue
-        covered = []
-        for p in range(start, end + 1):
-            idx = by_source_pos.get(p)
-            if idx is not None:
-                covered.append(idx)
-        if not covered:
-            continue
-        infos.append({
-            "start": start,
-            "end": end,
-            "label": str(label),
-            "level": level if isinstance(level, int) else 999,
-            "indices": covered,
-            "head_idx": choose_chunk_head(covered, draft_tokens),
-        })
-    infos.sort(key=lambda x: (x["level"], x["start"], x["end"]))
-    return infos
-
-
-def pick_root_index(draft_tokens: List["DraftToken"], chunk_infos: List[Dict[str, Any]]) -> Optional[int]:
-    """Choose the clause root using chunk labels before POS fallbacks."""
-    # 1. verbal predicates inside VP-like chunks
-    for label in ("VP", "IP-MAT", "IP-SUB", "IP-REL"):
-        for info in chunk_infos:
-            if info["label"] != label:
-                continue
-            verb_indices = [i for i in info["indices"] if draft_tokens[i].upos == "VERB"]
-            if verb_indices:
-                return verb_indices[0]
-
-    # 2. any verbal token anywhere in the clause
-    for i, dt in enumerate(draft_tokens):
-        if dt.upos == "VERB":
-            return i
-
-    # 3. explicit predicative chunks
-    for label in ("NP-PRD", "ADJP-PRD", "ADVP-PRD"):
-        for info in chunk_infos:
-            if info["label"] == label and info["head_idx"] is not None:
-                return info["head_idx"]
-
-    # 4. older overloaded accusative chunk used predicatively in nonverbal clauses
-    for info in chunk_infos:
-        if info["label"] == "NP-ACC" and info["head_idx"] is not None:
-            return info["head_idx"]
-
-    # 5. bare NP/ADJP/ADVP chunks as weak fallback
-    for label in ("NP", "ADJP", "ADVP"):
-        for info in chunk_infos:
-            if info["label"] == label and info["head_idx"] is not None:
-                return info["head_idx"]
-
-    # 6. POS fallback
-    for i, dt in enumerate(draft_tokens):
-        if dt.upos in {"NOUN", "ADJ", "PROPN", "PRON"}:
-            return i
-    return 0 if draft_tokens else None
-
-
-def choose_nominal_attachment_target(
-    idx: int,
-    draft_tokens: List["DraftToken"],
-    root_idx: Optional[int],
-    used_indices: Set[int],
-) -> Optional[int]:
-    """Choose a conservative subject/object-like candidate among bare nominals."""
-    if root_idx is None:
-        return None
-    dt = draft_tokens[idx]
-    if dt.upos not in {"NOUN", "PROPN", "PRON"} or idx in used_indices or idx == root_idx:
-        return None
-    if idx < root_idx:
-        return idx
-    if idx > root_idx and draft_tokens[root_idx].upos == "VERB":
-        return idx
-    return None
 
 def is_mwt_start(tok: Dict[str, Any]) -> bool:
     """
@@ -673,6 +554,8 @@ class DraftToken:
         self.head = head
         self.id: Optional[int] = None
         self.is_mwt_component = is_mwt_component
+        self.forced_head_source_pos: Optional[int] = None
+        self.locked_deprel: bool = False
 
 
 def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
@@ -691,8 +574,17 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
     proto_ranges = build_space_aware_token_ranges(text_orig, proto_rows)
     proto_index = 0
 
-    tokens = get_tokens(sentence)
-    chunks = get_chunks(sentence)
+    original_tokens = get_tokens(sentence)
+    original_chunks = get_chunks(sentence)
+
+    # Normalize empty categories such as *T* before any UD conversion logic.
+    # This removes non-emitting source tokens and emits local dependency hints
+    # (currently used for relative-clause restructuring).
+    empty_resolution = resolve_empty_categories(original_tokens, original_chunks)
+    tokens = empty_resolution.tokens
+    chunks = empty_resolution.chunks
+    dependency_hints = empty_resolution.dependency_hints
+
     chunk_map = chunk_membership_for_tokens(tokens, chunks)
 
     out_lines: List[str] = []
@@ -809,6 +701,18 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
     for idx, dt in enumerate(draft_tokens, start=1):
         dt.id = idx
 
+    source_pos_to_dt = {dt.source_pos: dt for dt in draft_tokens}
+
+    # Apply local dependency hints emitted by the empty-category normalization
+    # layer before the generic dependency heuristics run.
+    for hint in dependency_hints:
+        dt = source_pos_to_dt.get(hint.source_pos)
+        if dt is None:
+            continue
+        dt.deprel = hint.deprel
+        dt.locked_deprel = True
+        dt.forced_head_source_pos = hint.head_source_pos
+
     # Resolve MWT line ids after token ids exist.
     # We assume each MWT occupies a consecutive token interval at creation time.
     mwt_line_index = 0
@@ -829,120 +733,122 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             cursor += 1
 
     # -----------------------------------------------------------------
-    # Chunk-first dependency induction
+    # Pass 1: identify root and assign obvious relations
     # -----------------------------------------------------------------
-    chunk_infos = build_chunk_infos(tokens, chunks, draft_tokens)
-    root_idx = pick_root_index(draft_tokens, chunk_infos)
     root_id: Optional[int] = None
     root_upos: Optional[str] = None
 
-    if root_idx is not None and draft_tokens:
-        root_token = draft_tokens[root_idx]
-        root_token.deprel = "root"
-        root_token.head = 0
-        root_id = root_token.id
-        root_upos = root_token.upos
-
     for idx, dt in enumerate(draft_tokens):
-        if idx == root_idx:
+        labels = chunk_map.get(dt.source_pos, [])
+
+        if dt.locked_deprel:
+            if dt.deprel == "root":
+                root_id = dt.id
+                root_upos = dt.upos
             continue
+
+        if dt.upos == "VERB":
+            dt.deprel = "root"
+            root_id = dt.id
+            root_upos = dt.upos
+            continue
+
         if dt.upos == "AUX":
             dt.deprel = "aux"
-        elif dt.upos == "PART" and dt.xpos == "NEG":
+            continue
+
+        if dt.upos == "PART" and dt.xpos == "NEG":
             dt.deprel = "advmod"
-        elif dt.upos == "DET":
+            continue
+
+        if dt.upos == "DET":
             dt.deprel = "det"
-        elif dt.upos == "ADV":
+            continue
+
+        if dt.upos == "ADV":
             dt.deprel = "advmod"
-        else:
-            dt.deprel = "dep"
-
-    used_indices: Set[int] = set()
-    if root_idx is not None:
-        used_indices.add(root_idx)
-
-    # Strong chunk-driven relations first
-    for info in chunk_infos:
-        head_idx = info.get("head_idx")
-        if head_idx is None or head_idx in used_indices:
             continue
 
-        label = info["label"]
-        if label == "NP-SBJ":
-            draft_tokens[head_idx].deprel = "nsubj"
-            used_indices.add(head_idx)
-        elif label == "NP-GEN":
-            draft_tokens[head_idx].deprel = "nmod:poss"
-            used_indices.add(head_idx)
-        elif label == "NP-LOC":
-            draft_tokens[head_idx].deprel = "obl"
-            used_indices.add(head_idx)
-        elif label == "NP-ADV":
-            draft_tokens[head_idx].deprel = "obl"
-            used_indices.add(head_idx)
-        elif label == "NP-APL":
-            draft_tokens[head_idx].deprel = "obl:arg"
-            used_indices.add(head_idx)
-        elif label == "NP-PRN":
-            draft_tokens[head_idx].deprel = "appos"
-            used_indices.add(head_idx)
-
-    # Ambiguous chunk labels resolved by clause type
-    for info in chunk_infos:
-        head_idx = info.get("head_idx")
-        if head_idx is None or head_idx in used_indices or head_idx == root_idx:
-            continue
-        label = info["label"]
-        if label == "NP-PRD":
-            if root_idx is not None and draft_tokens[root_idx].upos == "VERB":
-                draft_tokens[head_idx].deprel = "xcomp"
-                used_indices.add(head_idx)
-            continue
-        if label == "NP-ACC":
-            if root_upos == "VERB":
-                draft_tokens[head_idx].deprel = "obj"
-            else:
-                draft_tokens[head_idx].deprel = "nsubj"
-            used_indices.add(head_idx)
-
-    # Bare chunk fallbacks
-    for info in chunk_infos:
-        head_idx = info.get("head_idx")
-        if head_idx is None or head_idx in used_indices or head_idx == root_idx:
-            continue
-        label = info["label"]
-        if label in {"NP", "ADJP", "ADVP"}:
-            chosen = choose_nominal_attachment_target(head_idx, draft_tokens, root_idx, used_indices)
-            if chosen is None:
-                continue
-            if chosen < (root_idx if root_idx is not None else -1):
-                draft_tokens[chosen].deprel = "nsubj"
-            elif root_upos == "VERB":
-                draft_tokens[chosen].deprel = "obj"
-            else:
-                draft_tokens[chosen].deprel = "dep"
-            used_indices.add(chosen)
-
-    # Possessive proper-name heuristic retained as weak fallback
-    for idx, dt in enumerate(draft_tokens):
-        if dt.deprel != "dep" or dt.upos != "PROPN":
-            continue
         prev_dt = draft_tokens[idx - 1] if idx > 0 else None
-        if prev_dt and prev_dt.upos == "NOUN":
+        if dt.upos == "PROPN" and prev_dt and prev_dt.upos == "NOUN":
             dt.deprel = "nmod:poss"
+            continue
+
+        dt.deprel = "dep"
+
+    # Fallback root if no verbal predicate was found
+    if root_id is None and draft_tokens:
+        nominal_root = None
+        for dt in draft_tokens:
+            if dt.upos in {"NOUN", "ADJ", "PROPN", "PRON"}:
+                nominal_root = dt
+                break
+
+        if nominal_root is not None:
+            nominal_root.deprel = "root"
+            root_id = nominal_root.id
+            root_upos = nominal_root.upos
+        else:
+            draft_tokens[0].deprel = "root"
+            root_id = draft_tokens[0].id
+            root_upos = draft_tokens[0].upos
 
     # -----------------------------------------------------------------
-    # Head assignment
+    # Pass 2: controlled recovery of nsubj / obj
+    # Rules:
+    # - obj only if licensed by a VERB root
+    # - at most one obj
+    # - at most one nsubj
+    # -----------------------------------------------------------------
+    nominal_upos = {"NOUN", "PROPN", "PRON"}
+
+    explicit_subj_candidates = []
+    fallback_preverbal_candidates = []
+    postverbal_candidates = []
+
+    for dt in draft_tokens:
+        if dt.locked_deprel or dt.deprel != "dep" or dt.upos not in nominal_upos or dt.id == root_id:
+            continue
+
+        labels = chunk_map.get(dt.source_pos, [])
+
+        if "NP-SBJ" in labels:
+            explicit_subj_candidates.append(dt)
+        elif root_id is not None and dt.id < root_id:
+            fallback_preverbal_candidates.append(dt)
+        elif root_id is not None and dt.id > root_id:
+            postverbal_candidates.append(dt)
+
+    # Assign at most one subject
+    if explicit_subj_candidates:
+        explicit_subj_candidates[0].deprel = "nsubj"
+    elif fallback_preverbal_candidates:
+        fallback_preverbal_candidates[0].deprel = "nsubj"
+
+    # Assign at most one object, and only with verbal predicates
+    if root_upos == "VERB" and postverbal_candidates:
+        postverbal_candidates[0].deprel = "obj"
+
+    # Any remaining unresolved nominals stay as dep for manual correction
+
+    # -----------------------------------------------------------------
+    # Third pass: assign heads
     # -----------------------------------------------------------------
     for idx, dt in enumerate(draft_tokens):
         if dt.deprel == "root":
             dt.head = 0
             continue
 
+        if dt.forced_head_source_pos is not None:
+            forced = source_pos_to_dt.get(dt.forced_head_source_pos)
+            dt.head = forced.id if forced is not None else (root_id or 0)
+            continue
+
         if dt.deprel == "det":
+            # attach to nearest following nominal if available
             target = None
             for later in draft_tokens[idx + 1:]:
-                if later.upos in {"NOUN", "PROPN", "PRON", "ADJ"}:
+                if later.upos in {"NOUN", "PROPN", "PRON"}:
                     target = later.id
                     break
             dt.head = target or root_id or 0
@@ -953,6 +859,7 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             continue
 
         if dt.deprel == "advmod" and dt.xpos == "NEG":
+            # nearest following verb preferred
             target = None
             for later in draft_tokens[idx + 1:]:
                 if later.upos == "VERB":
@@ -965,22 +872,22 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             dt.head = root_id or 0
             continue
 
-        if dt.deprel in {"nsubj", "obj", "obl", "obl:arg", "xcomp"}:
+        if dt.deprel == "nsubj":
             dt.head = root_id or 0
             continue
 
-        if dt.deprel in {"nmod:poss", "appos"}:
-            target = None
-            for j in range(idx - 1, -1, -1):
-                if draft_tokens[j].upos in {"NOUN", "PROPN", "PRON"}:
-                    target = draft_tokens[j].id
-                    break
-            dt.head = target or root_id or 0
+        if dt.deprel == "nmod:poss":
+            prev_dt = draft_tokens[idx - 1] if idx > 0 else None
+            dt.head = prev_dt.id if prev_dt else (root_id or 0)
+            continue
+
+        if dt.deprel == "obj":
+            dt.head = root_id or 0
             continue
 
         dt.head = root_id or 0
 
-    # -----------------------------------------------------------------
+        # -----------------------------------------------------------------
     # Clean metadata/writer block (REPLACEMENT)
     # -----------------------------------------------------------------
 
