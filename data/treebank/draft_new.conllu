@@ -66,7 +66,7 @@
 1	ajo	ijo	DET	D	Deixis=Remt|Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=4:12
 3	ipegitege	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=13:22
-4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=23:29
+4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obl:arg	_	SpaceAfter=No|TokenRange=23:29
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
 
 # sent_id = ped-gramm-7
@@ -76,7 +76,7 @@
 # text_por_orig = A casa de Maria não é perto dela
 # text_por = A casa de Maria não é perto dela.
 1	liGeladi	geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=0:8
-2	Maria	maria	PROPN	NPR	_	1	nmod:poss	_	TokenRange=9:14
+2	Maria	maria	PROPN	NPR	_	4	obj	_	TokenRange=9:14
 3-4	aGipegetege	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=15:26
 3	aG	ag	PART	NEG	_	4	advmod	_	_
 4	ipegetege	pege	VERB	VBAPL	Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	_
@@ -124,12 +124,12 @@
 # text_por_orig = a comida da Maria não está deliciosa (a não gostosura da comida da Maria)
 # text_por = a comida da Maria não está deliciosa (a não gostosura da comida da Maria).
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	Maria	maria	PROPN	NPR	_	0	root	_	TokenRange=4:9
-3	looligi	ooligi	NOUN	N$	Person[psor]=3	2	dep	_	TokenRange=10:16
+2	Maria	maria	PROPN	NPR	_	3	dep	_	TokenRange=4:9
+3	looligi	ooligi	NOUN	N$	Person[psor]=3	0	root	_	TokenRange=10:16
 4-5	alidi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=18:23
-4	aG	ag	PART	NEG	_	2	advmod	_	_
-5	lidi	idi	NOUN	N$	_	2	dep	_	_
-6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=23:24
+4	aG	ag	PART	NEG	_	3	advmod	_	_
+5	lidi	lidi	NOUN	N$	_	3	dep	_	_
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=23:24
 
 # sent_id = ped-gramm-12
 # sent_uid = 070d221f-f72d-4055-9c82-ddc383743e6a
@@ -138,9 +138,9 @@
 # text_por_orig = A comida está/é deliciosa (A gostosura da comida da Maria)
 # text_por = A comida está/é deliciosa (A gostosura da comida da Maria).
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	looligi	ooligi	NOUN	N$	_	0	root	_	TokenRange=4:10
-3	lidi	idi	NOUN	N$	_	2	dep	_	SpaceAfter=No|TokenRange=12:16
-4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
+2	looligi	ooligi	NOUN	N$	_	3	nsubj	_	TokenRange=4:10
+3	lidi	idi	NOUN	N$	_	0	root	_	SpaceAfter=No|TokenRange=12:16
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = ped-gramm-13
 # sent_uid = 68277d1f-c30b-4c4f-ba9e-c2883cc133af
@@ -172,9 +172,9 @@
 # text_por_orig = A comida é deliciosa (a gostosura da comida dela)
 # text_por = A comida é deliciosa (a gostosura da comida dela).
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	looligi	ooligi	NOUN	N$	Person[psor]=3	0	root	_	TokenRange=4:10
-3	lidGegi	idi	NOUN	N$	Person[psor]=3	2	dep	_	SpaceAfter=No|TokenRange=12:19
-4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
+2	looligi	ooligi	NOUN	N$	Person[psor]=3	3	nsubj	_	TokenRange=4:10
+3	lidGegi	idi	NOUN	N$	Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=12:19
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=19:20
 
 # sent_id = ped-gramm-16
 # sent_uid = 19cc39ce-fe03-4551-8097-9d163a38a3c0
@@ -193,11 +193,11 @@
 # text_por_orig = A comunidade do menino é perto da cidade de vocês
 # text_por = A comunidade do menino é perto da cidade de vocês.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	loigi	oigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	TokenRange=4:9
+2	loigi	oigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	dep	_	TokenRange=4:9
 3	ijo	jo	DET	D	PronType=Dem	4	det	_	TokenRange=10:13
-4	niganigi	niganigi	NOUN	N	_	5	dep	_	TokenRange=14:22
+4	niganigi	niganigi	NOUN	N	_	5	nsubj	_	TokenRange=14:22
 5	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=23:32
-6	GanigotGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=2	5	obj	_	SpaceAfter=No|TokenRange=33:42
+6	GanigotGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=2	5	obl:arg	_	SpaceAfter=No|TokenRange=33:42
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=42:43
 
 # sent_id = ped-gramm-18
@@ -208,7 +208,7 @@
 # text_por = a deliciosa comida está na casa dela/dele.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	lidGegi	idi	NOUN	N$	Person[psor]=3	4	nsubj	_	TokenRange=4:11
-3	loligi	oligi	NOUN	N$	Person[psor]=3	4	dep	_	TokenRange=12:18
+3	loligi	oligi	NOUN	N$	Person[psor]=3	4	nsubj	_	TokenRange=12:18
 4	idei	dei	VERB	VB	_	0	root	_	TokenRange=19:23
 5	liGeladi	geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	obj	_	SpaceAfter=No|TokenRange=24:32
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=32:33
@@ -220,9 +220,9 @@
 # text_por_orig = a fotografia dela/dele é/está bonita
 # text_por = a fotografia dela/dele é/está bonita.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	liwigo	wigo	NOUN	N$	Person[psor]=3	0	root	_	TokenRange=4:10
-3	libinienigi	ibinie	NOUN	N$	_	2	dep	_	SpaceAfter=No|TokenRange=11:22
-4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
+2	liwigo	wigo	NOUN	N$	Person[psor]=3	3	nsubj	_	TokenRange=4:10
+3	libinienigi	ibinie	NOUN	N$	_	0	root	_	SpaceAfter=No|TokenRange=11:22
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
 
 # sent_id = ped-gramm-20
 # sent_uid = 55551636-8ed3-4545-8510-d8dbfd817a1a
@@ -231,9 +231,9 @@
 # text_por_orig = a fotografia é/está bonita
 # text_por = a fotografia é/está bonita.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	niwigo	wigo	NOUN	N$	_	0	root	_	TokenRange=4:10
-3	libinienigi	ibinie	NOUN	N$	_	2	dep	_	SpaceAfter=No|TokenRange=11:22
-4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
+2	niwigo	wigo	NOUN	N$	_	3	nsubj	_	TokenRange=4:10
+3	libinienigi	ibinie	NOUN	N$	_	0	root	_	SpaceAfter=No|TokenRange=11:22
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
 
 # sent_id = ped-gramm-21
 # sent_uid = 5d0b94bf-223d-4f09-8c6f-b951a70d6d0b
@@ -242,9 +242,9 @@
 # text_por_orig = A língua do teu irmão 
 # text_por = A língua do teu irmão.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	nioladi	ioladi	NOUN	N	_	0	root	_	TokenRange=4:11
-3	Ganixoa	nixoa	NOUN	N$	_	2	dep	_	SpaceAfter=No|TokenRange=12:19
-4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
+2	nioladi	ioladi	NOUN	N	_	3	nsubj	_	TokenRange=4:11
+3	Ganixoa	nixoa	NOUN	N$	_	0	root	_	SpaceAfter=No|TokenRange=12:19
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=19:20
 
 # sent_id = ped-gramm-22
 # sent_uid = 881131dd-3f70-411a-ac7e-85557139d1e3
@@ -253,10 +253,10 @@
 # text_por_orig = A língua do irmão dele/dela é bonita
 # text_por = A língua do irmão dele/dela é bonita.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	nioladi	nioladi	NOUN	N$	_	0	root	_	TokenRange=4:11
-3	nioxoa	nioxoa	NOUN	N$	_	2	nsubj	_	TokenRange=12:18
-4	libinienigi	ibinie	NOUN	N$	_	2	dep	_	SpaceAfter=No|TokenRange=19:30
-5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
+2	nioladi	nioladi	NOUN	N$	_	4	dep	_	TokenRange=4:11
+3	nioxoa	nioxoa	NOUN	N$	_	4	nsubj	_	TokenRange=12:18
+4	libinienigi	ibinie	NOUN	N$	_	0	root	_	SpaceAfter=No|TokenRange=19:30
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = ped-gramm-23
 # sent_uid = 95a7d135-4be0-463d-b443-76cc5828fc89
@@ -265,10 +265,10 @@
 # text_por_orig = A língua do marido/esposa dele/dela é bonita
 # text_por = A língua do marido/esposa dele/dela é bonita.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	nioladi	nioladi	NOUN	N$	_	0	root	_	TokenRange=4:11
-3	lodawa	lodawa	NOUN	N$	_	2	nsubj	_	TokenRange=12:18
-4	libinienigi	ibinie	NOUN	N$	_	2	dep	_	SpaceAfter=No|TokenRange=19:30
-5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
+2	nioladi	nioladi	NOUN	N$	_	4	dep	_	TokenRange=4:11
+3	lodawa	lodawa	NOUN	N$	_	4	nsubj	_	TokenRange=12:18
+4	libinienigi	ibinie	NOUN	N$	_	0	root	_	SpaceAfter=No|TokenRange=19:30
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = ped-gramm-24
 # sent_uid = 2f47b402-9fe7-4714-96e3-c6cbdf405472
@@ -303,11 +303,11 @@
 # text_orig = João liGeladi ane napioi
 # text_por_orig = A casa do João é suja
 # text_por = A casa do João é suja.
-1	João	joão	PROPN	NPR	_	0	root	_	TokenRange=0:4
-2	liGeladi	geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	1	dep	_	TokenRange=5:13
-3	ane	ane	PRON	WPRO	PronType=Rel	1	dep	_	TokenRange=14:17
-4	napioi	napioi	ADJ	ADJ	_	1	dep	_	SpaceAfter=No|TokenRange=18:24
-5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
+1	João	joão	PROPN	NPR	_	2	nsubj	_	TokenRange=0:4
+2	liGeladi	geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	TokenRange=5:13
+3	ane	ane	PRON	WPRO	PronType=Rel	2	dep	_	TokenRange=14:17
+4	napioi	napioi	ADJ	ADJ	_	2	dep	_	SpaceAfter=No|TokenRange=18:24
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = ped-gramm-27
 # sent_uid = 7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
@@ -332,11 +332,11 @@
 # text_por = meu pai cuida da plantação de flores como filhas.
 1	Eyodi	eyodi	NOUN	N$	_	2	nsubj	_	TokenRange=0:5
 2	dowediteloco	dowediteloco	VERB	VBAPL	Voice=Appl	0	root	_	TokenRange=6:18
-3	naodigijedi	naodigijedi	NOUN	N	_	2	obj	_	TokenRange=19:30
+3	naodigijedi	naodigijedi	NOUN	N	_	2	obl:arg	_	TokenRange=19:30
 4	micoataGa	taGa	X	CD	_	2	dep	_	TokenRange=31:40
 5	daGa	daga	SCONJ	C	_	2	dep	_	TokenRange=41:45
 6	me	me	SCONJ	C	_	2	dep	_	TokenRange=46:48
-7	lionigipi	lionigipi	NOUN	N$	_	2	dep	_	SpaceAfter=No|TokenRange=49:58
+7	lionigipi	lionigipi	NOUN	N$	_	2	obj	_	SpaceAfter=No|TokenRange=49:58
 8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=58:59
 
 # sent_id = ped-gramm-29
@@ -345,10 +345,10 @@
 # text_orig = Eyodi me niganaGacanajo
 # text_por_orig = Meu pai que era cantor
 # text_por = Meu pai que era cantor.
-1	Eyodi	eyodi	NOUN	N$	_	0	root	_	TokenRange=0:5
-2	me	me	SCONJ	C	_	1	dep	_	TokenRange=6:8
-3	niganaGacanajo	niganagacanajo	NOUN	N	_	1	dep	_	SpaceAfter=No|TokenRange=9:23
-4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=23:24
+1	Eyodi	eyodi	NOUN	N$	_	3	dep	_	TokenRange=0:5
+2	me	me	SCONJ	C	_	3	dep	_	TokenRange=6:8
+3	niganaGacanajo	niganagacanajo	NOUN	N	_	0	root	_	SpaceAfter=No|TokenRange=9:23
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=23:24
 
 # sent_id = ped-gramm-30
 # sent_uid = 7b806584-75e5-4017-b9e2-ba97458903bd
@@ -356,11 +356,11 @@
 # text_orig = Eyodi ane niganaGacanajo
 # text_por_orig = Meu pai que era cantor (explicativa)
 # text_por = Meu pai que era cantor (explicativa).
-1	Eyodi	eyodi	NOUN	N$	_	0	root	_	TokenRange=0:5
-2	ane	ane	PRON	WPRO	PronType=Rel	1	dep	_	TokenRange=6:9
-3	*T*	*t*	X	X	_	1	dep	_	TokenRange=10:24
-4	niganaGacanajo	niganagacanajo	NOUN	N	_	1	dep	_	SpaceAfter=No
-5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
+1	Eyodi	eyodi	NOUN	N$	_	4	nsubj	_	TokenRange=0:5
+2	ane	ane	PRON	WPRO	PronType=Rel	4	dep	_	TokenRange=6:9
+3	*T*	*t*	X	X	_	4	dep	_	TokenRange=10:24
+4	niganaGacanajo	niganagacanajo	NOUN	N	_	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = ped-gramm-31
 # sent_uid = 845b9d1d-ad7c-445a-bfbd-04fd9255ffc2
@@ -402,7 +402,7 @@
 # text_por = Minha casa está perto de sua casa.
 1	iGeladi	igeladi	NOUN	N$	_	2	nsubj	_	TokenRange=0:7
 2	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
-3	liGeladi	geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No|TokenRange=18:26
+3	liGeladi	geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	obl:arg	_	SpaceAfter=No|TokenRange=18:26
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = ped-gramm-35
@@ -413,7 +413,7 @@
 # text_por = Minha casa está perto desta rua suja (que está suja).
 1	iGeladi	igeladi	NOUN	N$	_	2	nsubj	_	TokenRange=0:7
 2	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
-3	naigi	naigi	NOUN	N	_	2	obj	_	TokenRange=18:23
+3	naigi	naigi	NOUN	N	_	2	obl:arg	_	TokenRange=18:23
 4	ane	ane	PRON	WPRO	PronType=Rel	2	dep	_	TokenRange=24:27
 5	*T*	*t*	X	X	_	2	dep	_	TokenRange=28:34
 6	napioi	napioi	ADJ	ADJ	_	2	dep	_	SpaceAfter=No
@@ -427,7 +427,7 @@
 # text_por = minha casa está perto da rua suja.
 1	iGeladi	igeladi	NOUN	N$	_	2	nsubj	_	TokenRange=0:7
 2	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
-3	naigi	naigi	NOUN	N	_	2	obj	_	TokenRange=18:23
+3	naigi	naigi	NOUN	N	_	2	obl:arg	_	TokenRange=18:23
 4	me	me	SCONJ	C	_	2	dep	_	TokenRange=24:26
 5	napioi	napioi	ADJ	ADJ	_	2	dep	_	SpaceAfter=No|TokenRange=27:33
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=33:34
@@ -442,6 +442,6 @@
 2-3	aGipegitegi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=8:19
 2	aG	ag	PART	NEG	_	3	advmod	_	_
 3	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	_
-4	weigi	weigi	NOUN	N	_	3	obj	_	SpaceAfter=No|TokenRange=20:25
+4	weigi	weigi	NOUN	N	_	3	obl:arg	_	SpaceAfter=No|TokenRange=20:25
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
 
