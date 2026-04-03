@@ -1,21 +1,9 @@
-validate.py --lang=kbc --max-err=0 draft_new.conllu 
-[Line 69 Sent ped-gramm-6]: [L4 SYNTAX unknown-deprel] Unknown DEPREL label: 'obl:arg'
-
-The following 40 relations are currently permitted in language [kbc]:
-acl, acl:relcl, advcl, advmod, amod, appos, aux, case, cc, ccomp, clf, compound, conj, cop, csubj, dep, det, det:poss, discourse, dislocated, expl, fixed, flat, goeswith, iobj, list, mark, nmod, nmod:poss, nsubj, nummod, obj, obl, orphan, parataxis, punct, reparandum, root, vocative, xcomp
-If a language needs a relation subtype that is not documented in the universal guidelines, the relation
-must have a language-specific documentation page in a prescribed format.
-See https://universaldependencies.org/contributing_language_specific.html for further guidelines.
-Documented dependency relations can be specifically turned on/off for each language in which they are used.
-See https://quest.ms.mff.cuni.cz/udvalidator/cgi-bin/unidep/langspec/specify_deprel.pl for details.
-
-
-[Line 200 Sent ped-gramm-17]: [L4 SYNTAX unknown-deprel] Unknown DEPREL label: 'obl:arg'
+validate.py --lang=kbc --max-err=0 data/treebank/draft_chunks_empty.conllu 
 [Line 212 Sent ped-gramm-18]: [L3 SYNTAX too-many-subjects] Multiple subjects [2, 3] ('lidGegi', 'loligi') under the predicate 'idei' not subtyped as ':outer'.
 
 Outer subjects are allowed if a clause acts as the predicate of another clause.
 
-[Line 324 Sent ped-gramm-27]: [L4 MORPHO feature-value-upos-not-permitted] Value Prs of feature PronType is not permitted with UPOS PRON in language [kbc] ('naGajo').
+[Line 324 Sent ped-gramm-27]: [L4 MORPHO feature-value-upos-not-permitted] Value Dem of feature PronType is not permitted with UPOS PRON in language [kbc] ('naGajo').
 
 The following 35 feature values are currently permitted in language [kbc]:
 AdvType=Loc, AdvType=Man, AdvType=Tim, Aspect=Perf, Degree=Dim, Deixis=Remt, Gender=Fem, Gender=Masc, Gender[obj]=Fem, Gender[obj]=Masc, Mood=Ind, Number=Plur, Number=Sing, Number[obj]=Plur, Number[obj]=Sing, Number[psor]=Plur, Number[psor]=Sing, Person=1, Person=2, Person=3, Person[erg]=3, Person[obj]=1, Person[obj]=2, Person[obj]=3, Person[psor]=1, Person[psor]=2, Person[psor]=3, Polarity=Neg, PronType=Dem, PronType=Rel, VerbForm=Fin, Voice=Act, Voice=Antip, Voice=Appl, Voice=Inv
@@ -26,11 +14,8 @@ All features including universal must be specifically turned on for each languag
 See https://quest.ms.mff.cuni.cz/udvalidator/cgi-bin/unidep/langspec/specify_feature.pl for details.
 
 
-[Line 335 Sent ped-gramm-28]: [L4 SYNTAX unknown-deprel] Unknown DEPREL label: 'obl:arg'
-[Line 405 Sent ped-gramm-34]: [L4 SYNTAX unknown-deprel] Unknown DEPREL label: 'obl:arg'
-[Line 416 Sent ped-gramm-35]: [L4 SYNTAX unknown-deprel] Unknown DEPREL label: 'obl:arg'
-[Line 430 Sent ped-gramm-36]: [L4 SYNTAX unknown-deprel] Unknown DEPREL label: 'obl:arg'
-[Line 445 Sent ped-gramm-37]: [L4 SYNTAX unknown-deprel] Unknown DEPREL label: 'obl:arg'
+[Line 334 Sent ped-gramm-28]: [L3 SYNTAX too-many-objects] Multiple direct objects [3, 7] ('naodigijedi', 'lionigipi') under the predicate 'dowediteloco'.
+[Line 361 Sent ped-gramm-30]: [L3 SYNTAX too-many-subjects] Multiple subjects [1, 2] ('Eyodi', 'ane') under the predicate 'niganaGacanajo' not subtyped as ':outer'.
 MORPHO errors: 1
-SYNTAX errors: 8
-*** FAILED *** with 9 errors
+SYNTAX errors: 3
+*** FAILED *** with 4 errors

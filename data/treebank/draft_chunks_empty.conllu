@@ -66,7 +66,7 @@
 1	ajo	ijo	DET	D	Deixis=Remt|Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=4:12
 3	ipegitege	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=13:22
-4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obl:arg	_	SpaceAfter=No|TokenRange=23:29
+4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=23:29
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
 
 # sent_id = ped-gramm-7
@@ -197,7 +197,7 @@
 3	ijo	jo	DET	D	PronType=Dem	4	det	_	TokenRange=10:13
 4	niganigi	niganigi	NOUN	N	_	5	nsubj	_	TokenRange=14:22
 5	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=23:32
-6	GanigotGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=2	5	obl:arg	_	SpaceAfter=No|TokenRange=33:42
+6	GanigotGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=2	5	obj	_	SpaceAfter=No|TokenRange=33:42
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=42:43
 
 # sent_id = ped-gramm-18
@@ -321,7 +321,7 @@
 3	me	jo	SCONJ	C	_	2	dep	_	_
 4	ijo	ijo	DET	D	PronType=Dem	5	det	_	_
 5	naigi	naigi	NOUN	N	_	2	obj	_	TokenRange=18:23
-6	naGajo	jo	PRON	PRO$	PronType=Prs	2	dep	_	SpaceAfter=No|TokenRange=24:30
+6	naGajo	jo	PRON	PRO$	PronType=Dem	2	dep	_	SpaceAfter=No|TokenRange=24:30
 7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = ped-gramm-28
@@ -332,7 +332,7 @@
 # text_por = meu pai cuida da plantação de flores como filhas.
 1	Eyodi	eyodi	NOUN	N$	_	2	nsubj	_	TokenRange=0:5
 2	dowediteloco	dowediteloco	VERB	VBAPL	Voice=Appl	0	root	_	TokenRange=6:18
-3	naodigijedi	naodigijedi	NOUN	N	_	2	obl:arg	_	TokenRange=19:30
+3	naodigijedi	naodigijedi	NOUN	N	_	2	obj	_	TokenRange=19:30
 4	micoataGa	taGa	X	CD	_	2	dep	_	TokenRange=31:40
 5	daGa	daga	SCONJ	C	_	2	dep	_	TokenRange=41:45
 6	me	me	SCONJ	C	_	2	dep	_	TokenRange=46:48
@@ -401,7 +401,7 @@
 # text_por = Minha casa está perto de sua casa.
 1	iGeladi	igeladi	NOUN	N$	_	2	nsubj	_	TokenRange=0:7
 2	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
-3	liGeladi	geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	obl:arg	_	SpaceAfter=No|TokenRange=18:26
+3	liGeladi	geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No|TokenRange=18:26
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = ped-gramm-35
@@ -412,7 +412,7 @@
 # text_por = Minha casa está perto desta rua suja (que está suja).
 1	iGeladi	igeladi	NOUN	N$	_	2	nsubj	_	TokenRange=0:7
 2	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
-3	naigi	naigi	NOUN	N	_	2	obl:arg	_	TokenRange=18:23
+3	naigi	naigi	NOUN	N	_	2	obj	_	TokenRange=18:23
 4	ane	ane	PRON	WPRO	PronType=Rel	5	nsubj	_	TokenRange=24:27
 5	napioi	napioi	ADJ	ADJ	_	3	acl:relcl	_	SpaceAfter=No|TokenRange=28:34
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=34:35
@@ -425,7 +425,7 @@
 # text_por = minha casa está perto da rua suja.
 1	iGeladi	igeladi	NOUN	N$	_	2	nsubj	_	TokenRange=0:7
 2	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
-3	naigi	naigi	NOUN	N	_	2	obl:arg	_	TokenRange=18:23
+3	naigi	naigi	NOUN	N	_	2	obj	_	TokenRange=18:23
 4	me	me	SCONJ	C	_	2	dep	_	TokenRange=24:26
 5	napioi	napioi	ADJ	ADJ	_	2	dep	_	SpaceAfter=No|TokenRange=27:33
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=33:34
@@ -440,6 +440,6 @@
 2-3	aGipegitegi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=8:19
 2	aG	ag	PART	NEG	_	3	advmod	_	_
 3	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	_
-4	weigi	weigi	NOUN	N	_	3	obl:arg	_	SpaceAfter=No|TokenRange=20:25
+4	weigi	weigi	NOUN	N	_	3	obj	_	SpaceAfter=No|TokenRange=20:25
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
 
