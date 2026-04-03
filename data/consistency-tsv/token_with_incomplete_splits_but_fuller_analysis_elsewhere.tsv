@@ -1,0 +1,2 @@
+expected_from_text	expected_from_uid	expected_split_forms	expected_split_tags	issue_type	split_forms_here	split_tags_here	text	token_form	uid
+ajo liwatece etadi weiigi	ccb5ea37-b3ba-47a9-8d71-224f599ea7be	"[""weiigi""]"	"[""n""]"	token_with_incomplete_splits_but_fuller_analysis_elsewhere	"[""""]"	"[""""]"	niwatece etadi weiigi	weiigi	b2e3ea43-0d68-46ee-9f33-938610cc8aec

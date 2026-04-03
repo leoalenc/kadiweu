@@ -1,0 +1,5 @@
+issue_type	path	position	split_form	split_index	text	token_form	token_gloss	token_tag	uid
+missing_split_tag	$.pages[0].sentences[36]	2	aG	1	iGeladi aGipegitegi weiigi	aGipegitegi		NEG+VBAPL	1da1bf7a-7975-4baf-821b-9df5c75ac297
+missing_split_tag	$.pages[0].sentences[36]	2	i	2	iGeladi aGipegitegi weiigi	aGipegitegi		NEG+VBAPL	1da1bf7a-7975-4baf-821b-9df5c75ac297
+missing_split_tag	$.pages[0].sentences[36]	2	pegi	3	iGeladi aGipegitegi weiigi	aGipegitegi		NEG+VBAPL	1da1bf7a-7975-4baf-821b-9df5c75ac297
+missing_split_tag	$.pages[0].sentences[36]	2	tegi	4	iGeladi aGipegitegi weiigi	aGipegitegi		NEG+VBAPL	1da1bf7a-7975-4baf-821b-9df5c75ac297

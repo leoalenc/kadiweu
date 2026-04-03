@@ -1,0 +1,5 @@
+host_token	issue_type	known_tags_elsewhere	morpheme_form	split_index	text	uid
+aGipegitegi	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr""]"	i	2	iGeladi aGipegitegi weiigi	1da1bf7a-7975-4baf-821b-9df5c75ac297
+aGipegitegi	missing_split_tag_but_known_for_same_morpheme	"[""v""]"	pegi	3	iGeladi aGipegitegi weiigi	1da1bf7a-7975-4baf-821b-9df5c75ac297
+aGipegitegi	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	1	iGeladi aGipegitegi weiigi	1da1bf7a-7975-4baf-821b-9df5c75ac297
+aGipegitegi	missing_split_tag_but_known_for_same_morpheme	"[""Apl""]"	tegi	4	iGeladi aGipegitegi weiigi	1da1bf7a-7975-4baf-821b-9df5c75ac297
