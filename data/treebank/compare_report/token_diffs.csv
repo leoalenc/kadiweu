@@ -1,8 +1,4 @@
 sent_id,token_index,token_id,gold_form,metric,change,gold_value,old_value,new_value
-ped-gramm-7,2,2,Maria,HEAD,regressed,1,1,4
-ped-gramm-7,2,2,Maria,DEPREL,regressed,nmod:poss,nmod:poss,obj
-ped-gramm-7,2,2,Maria,UAS,regressed,1,1,4
-ped-gramm-7,2,2,Maria,LAS,regressed,1|nmod:poss,1|nmod:poss,4|obj
 ped-gramm-11,2,2,Maria,HEAD,improved,3,0,3
 ped-gramm-11,2,2,Maria,UAS,improved,3,0,3
 ped-gramm-12,2,2,looligi,HEAD,improved,3,0,3
@@ -27,10 +23,14 @@ ped-gramm-15,3,3,lidGegi,LAS,improved,0|root,2|dep,0|root
 ped-gramm-15,4,4,.,HEAD,improved,3,2,3
 ped-gramm-15,4,4,.,UAS,improved,3,2,3
 ped-gramm-15,4,4,.,LAS,improved,3|punct,2|punct,3|punct
-ped-gramm-17,2,2,loigi,DEPREL,regressed,nsubj,nsubj,dep
-ped-gramm-17,2,2,loigi,LAS,regressed,5|nsubj,5|nsubj,5|dep
+ped-gramm-18,3,3,loligi,HEAD,improved,2,4,2
+ped-gramm-18,3,3,loligi,DEPREL,improved,nmod:poss,dep,nmod:poss
+ped-gramm-18,3,3,loligi,UAS,improved,2,4,2
+ped-gramm-18,3,3,loligi,LAS,improved,2|nmod:poss,4|dep,2|nmod:poss
 ped-gramm-23,2,2,nioladi,HEAD,improved,4,0,4
+ped-gramm-23,2,2,nioladi,DEPREL,improved,nsubj,root,nsubj
 ped-gramm-23,2,2,nioladi,UAS,improved,4,0,4
+ped-gramm-23,2,2,nioladi,LAS,improved,4|nsubj,0|root,4|nsubj
 ped-gramm-23,3,3,lodawa,HEAD,regressed,2,2,4
 ped-gramm-23,3,3,lodawa,UAS,regressed,2,2,4
 ped-gramm-23,4,4,libinienigi,HEAD,improved,0,2,0

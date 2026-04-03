@@ -1,19 +1,18 @@
 {
-  "gold_sentences": 23,
+  "gold_sentences": 25,
   "old_sentences": 37,
   "new_sentences": 37,
-  "gold_present_in_old": 23,
-  "gold_present_in_new": 23,
-  "common_sentences": 23,
+  "gold_present_in_old": 25,
+  "gold_present_in_new": 25,
+  "common_sentences": 25,
   "missing_old_count": 0,
   "missing_new_count": 0,
-  "extra_old_count": 14,
-  "extra_new_count": 14,
+  "extra_old_count": 12,
+  "extra_new_count": 12,
   "missing_old": [],
   "missing_new": [],
   "extra_old": [
     "ped-gramm-16",
-    "ped-gramm-18",
     "ped-gramm-19",
     "ped-gramm-20",
     "ped-gramm-21",
@@ -23,13 +22,11 @@
     "ped-gramm-26",
     "ped-gramm-28",
     "ped-gramm-29",
-    "ped-gramm-30",
     "ped-gramm-31",
     "ped-gramm-32"
   ],
   "extra_new": [
     "ped-gramm-16",
-    "ped-gramm-18",
     "ped-gramm-19",
     "ped-gramm-20",
     "ped-gramm-21",
@@ -39,20 +36,17 @@
     "ped-gramm-26",
     "ped-gramm-28",
     "ped-gramm-29",
-    "ped-gramm-30",
     "ped-gramm-31",
     "ped-gramm-32"
   ],
-  "sentence_issues": 1,
+  "sentence_issues": 3,
   "token_diffs": 41,
   "improvement_counter": {
-    "HEAD:regressed": 2,
-    "DEPREL:regressed": 2,
-    "UAS:regressed": 2,
-    "LAS:regressed": 2,
-    "HEAD:improved": 10,
-    "UAS:improved": 10,
-    "DEPREL:improved": 5,
-    "LAS:improved": 8
+    "HEAD:improved": 11,
+    "UAS:improved": 11,
+    "DEPREL:improved": 7,
+    "LAS:improved": 10,
+    "HEAD:regressed": 1,
+    "UAS:regressed": 1
   }
 }
