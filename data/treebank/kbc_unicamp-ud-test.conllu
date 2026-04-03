@@ -206,6 +206,21 @@
 6	GanigotGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=2	5	obj	_	SpaceAfter=No|TokenRange=33:42
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=42:4
 
+# sent_id = ped-gramm-18
+# sent_uid = 582429f2-67d5-4077-b209-6deb7b5df54f
+# text = ica lidGegi loligi idei liGeladi.
+# text_orig = ica lidGegi loligi idei liGeladi
+# text_por_orig = a deliciosa comida está na casa dela/dele
+# text_por_alt1 = A deliciosa comida está na casa dela.
+# text_por_alt2 = A deliciosa comida está na casa dele.
+# text_por_lit = A gostosura da comida dele/dela está na casa dela/dele.
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	lidGegi	idi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:11
+3	loligi	oligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nmod:poss	_	TokenRange=12:18
+4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=19:23
+5	liGeladi	iGeladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	obj	_	SpaceAfter=No|TokenRange=24:32
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=32:33
+
 # sent_id = ped-gramm-23
 # sent_uid = 95a7d135-4be0-463d-b443-76cc5828fc89
 # text = ica nioladi lodawa libinienigi.
@@ -224,14 +239,26 @@
 # text_orig = iGeladi idei mijo naigi naGajo
 # text_por_orig = A minha casa fica naquela rua suja dela
 # text_por = A minha casa fica naquela rua suja dela.
+# comment = Translation revision needed.
 1	iGeladi	iGeladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
 3-4	mijo	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=13:17
 3	me	me	SCONJ	C	_	5	mark	_	_
 4	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_
 5	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	advcl	_	TokenRange=18:23
-6	naGajo	jo	PRON	PRO$	Gender=Fem|PronType=Prs	5	nmod:poss	_	SpaceAfter=No|TokenRange=24:30
+6	naGajo	jo	PRON	PRO$	Gender=Fem|PronType=Dem	5	nmod:poss	_	SpaceAfter=No|TokenRange=24:30
 7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = ped-gramm-30
+# sent_uid = 7b806584-75e5-4017-b9e2-ba97458903bd
+# text = Eyodi ane niganaGacanajo.
+# text_orig = Eyodi ane niganaGacanajo
+# text_por_orig = Meu pai que era cantor (explicativa)
+# text_por = Meu pai, que era cantor.
+1	Eyodi	eyodi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	TokenRange=0:5
+2	ane	ane	PRON	WPRO	PronType=Rel	3	nsubj	_	TokenRange=6:9
+3	niganaGacanajo	niganagacanajo	NOUN	N	Gender=Masc|Number=Sing	1	acl:relcl	_	SpaceAfter=No|TokenRange=10:24
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = ped-gramm-33
 # sent_uid = 82117289-be52-45d0-886d-a5747eb20ea2
