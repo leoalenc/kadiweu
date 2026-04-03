@@ -291,17 +291,38 @@ def chunk_head_candidates(indices: List[int], draft_tokens: List["DraftToken"]) 
     return list(indices)
 
 
-def choose_chunk_head(indices: List[int], draft_tokens: List["DraftToken"]) -> Optional[int]:
-    """Choose a lexical head index for one chunk span."""
+def choose_chunk_head(
+    indices: List[int],
+    draft_tokens: List["DraftToken"],
+    label: Optional[str] = None,
+) -> Optional[int]:
+    """Choose a lexical head index for one chunk span.
+
+    Heuristic:
+    - verbal/predicative chunks: prefer leftmost verbal/predicative head
+    - NP-like chunks: prefer leftmost nominal head
+    This avoids selecting a noun inside a right-peripheral relative clause
+    as the head of the containing NP.
+    """
     if not indices:
         return None
+
     candidates = chunk_head_candidates(indices, draft_tokens)
     if not candidates:
         return None
 
-    nominal_like = {"NOUN", "PROPN", "PRON", "ADJ", "ADV"}
-    if all(draft_tokens[i].upos in nominal_like for i in candidates):
-        return candidates[-1]
+    np_like = {
+        "NP", "NP-SBJ", "NP-ACC", "NP-APL", "NP-LOC", "NP-ADV", "NP-GEN", "NP-PRN"
+    }
+
+    if label in np_like:
+        nominal_candidates = [
+            i for i in candidates
+            if draft_tokens[i].upos in {"NOUN", "PROPN", "PRON", "ADJ"}
+        ]
+        if nominal_candidates:
+            return nominal_candidates[0]
+
     return candidates[0]
 
 
@@ -331,7 +352,7 @@ def build_chunk_infos(tokens: List[Dict[str, Any]], chunks: List[Dict[str, Any]]
             "label": str(label),
             "level": level if isinstance(level, int) else 999,
             "indices": covered,
-            "head_idx": choose_chunk_head(covered, draft_tokens),
+            "head_idx": choose_chunk_head(covered, draft_tokens, str(label)),
         })
     infos.sort(key=lambda x: (x["level"], x["start"], x["end"]))
     return infos
@@ -647,6 +668,23 @@ def final_punct_range_from_text(text_orig: str) -> Tuple[int, int]:
     end = start + 1
     return start, end
 
+def is_embedded_chunk(info: Dict[str, Any], chunk_infos: List[Dict[str, Any]]) -> bool:
+    """Return True if this chunk is dominated by a subordinate/relative clause chunk."""
+    embedded_labels = {"IP-SUB", "IP-REL", "CP-REL", "CP-me", "CP-THT"}
+    for parent in chunk_infos:
+        if parent is info:
+            continue
+        if parent["label"] not in embedded_labels:
+            continue
+        if (
+            parent["level"] < info["level"]
+            and parent["start"] <= info["start"]
+            and info["end"] <= parent["end"]
+        ):
+            return True
+    return False
+
+
 # ---------------------------------------------------------------------
 # Conversion heuristics
 # ---------------------------------------------------------------------
@@ -910,7 +948,10 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             # In the locative applicative constructions currently attested in the
             # pedagogical grammar, the applied locative is a core object.
             #draft_tokens[head_idx].deprel = "obl:arg"
-            draft_tokens[head_idx].deprel = "obj"
+            if root_upos == "VERB":
+                draft_tokens[head_idx].deprel = "obj"
+            else:
+                draft_tokens[head_idx].deprel = "dep"
             used_indices.add(head_idx)
         elif label == "NP-PRN":
             draft_tokens[head_idx].deprel = "appos"
@@ -937,6 +978,34 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
                 draft_tokens[head_idx].deprel = "nsubj"
             used_indices.add(head_idx)
 
+    # Possessive N$ sequence heuristic:
+    # consecutive possessed nominals in the same clause layer often form
+    # [head noun + possessor], not two core arguments.
+    for idx in range(1, len(draft_tokens)):
+        dt = draft_tokens[idx]
+        prev_dt = draft_tokens[idx - 1]
+
+        if idx == root_idx or (idx - 1) == root_idx:
+            continue
+        if idx in used_indices or (idx - 1) in used_indices:
+            continue
+        if dt.locked_deprel or prev_dt.locked_deprel:
+            continue
+
+        if dt.upos == "NOUN" and prev_dt.upos == "NOUN":
+            if dt.xpos == "N$" and prev_dt.xpos == "N$":
+                # conservative: only apply if both are on the same side of the root
+                # and are contiguous in source positions
+                if dt.source_pos == prev_dt.source_pos + 1:
+                    same_side = (
+                        root_idx is None or
+                        ((idx < root_idx and (idx - 1) < root_idx) or
+                         (idx > root_idx and (idx - 1) > root_idx))
+                    )
+                    if same_side:
+                        dt.deprel = "nmod:poss"
+                        used_indices.add(idx)
+
     # Bare chunk fallbacks
     for info in chunk_infos:
         head_idx = info.get("head_idx")
@@ -947,6 +1016,10 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             continue
         label = info["label"]
         if label in {"NP", "ADJP", "ADVP"}:
+            # Do not promote chunks inside subordinate/relative clauses
+            # to matrix subjects/objects.
+            if is_embedded_chunk(info, chunk_infos):
+                continue
             chosen = choose_nominal_attachment_target(head_idx, draft_tokens, root_idx, used_indices)
             if chosen is None:
                 continue
@@ -965,6 +1038,28 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
         prev_dt = draft_tokens[idx - 1] if idx > 0 else None
         if prev_dt and prev_dt.upos == "NOUN":
             dt.deprel = "nmod:poss"
+
+    def demote_extra_core_dependents() -> None:
+        if root_idx is None:
+            return
+
+        subj_indices = [i for i, dt in enumerate(draft_tokens) if dt.deprel == "nsubj"]
+        obj_indices = [i for i, dt in enumerate(draft_tokens) if dt.deprel == "obj"]
+
+        # Keep the leftmost subject, demote later ones.
+        for extra in subj_indices[1:]:
+            dt = draft_tokens[extra]
+            if dt.xpos == "N$":
+                dt.deprel = "nmod:poss"
+            else:
+                dt.deprel = "dep"
+
+        # Keep the leftmost object, demote later ones.
+        for extra in obj_indices[1:]:
+            draft_tokens[extra].deprel = "dep"
+
+    demote_extra_core_dependents()
+
 
     # -----------------------------------------------------------------
     # Head assignment
