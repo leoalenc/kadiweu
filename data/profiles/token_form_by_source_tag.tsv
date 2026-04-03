@@ -7,14 +7,13 @@ VBAPL	ipegitegi	5
 N$	looligi	5
 N	naigi	5
 D	ajo	4
+N	weiigi	4
 N$	niwatece	4
 N$	libinienigi	4
 C	me	4
 ADJ	napioi	4
 N$	Eyodi	4
 VB	etadi	3
-N	weiigi	3
-NEG	aG@	3
 WPRO	ane	3
 N	niganaGacanajo	3
 N$	liwatece	2
@@ -22,11 +21,11 @@ T	ja	2
 VB	iwaGadi	2
 ADV	digoida	2
 NPR	Maria	2
+NEG	aG@	2
 VB	dapiko	2
 N$	lidGegi	2
 N$	nioladi	2
 C	daGa	2
-	*T*	2
 VBAPL	ipegitege	1
 VBAPL	@ipegetege	1
 VBAPL	ipegetege	1
@@ -56,6 +55,6 @@ VBAPL	dowediteloco	1
 N	naodigijedi	1
 CD	micoataGa	1
 N$	lionigipi	1
+	*T*	1
 VBAPL	ipegitaGagi	1
-VBAPL	@ipegitegi	1
-N	weigi	1
+NEG+VBAPL	aGipegitegi	1
