@@ -123,6 +123,13 @@ TAG_TO_DEFAULT_PRONTYPE = {
 # ---------------------------------------------------------------------
 # Utility helpers
 # ---------------------------------------------------------------------
+def warn_on_composite_tag_without_mwt(tok):
+    form = str(tok.get("v", ""))
+    tag = str(tok.get("t", ""))
+
+    if "+" in tag and "@" not in form:
+        print(f"WARNING: composite tag without MWT signal: {form} / {tag}")
+
 
 def safe_get(d: Any, *path: str, default=None):
     cur = d
@@ -769,6 +776,7 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
         tok = tokens[i] if isinstance(tokens[i], dict) else {}
         form = str(tok.get("v", "")).strip()
         tag = tok.get("t")
+        warn_on_composite_tag_without_mwt(tok)
 
         # Skip empty garbage safely
         if not form:
