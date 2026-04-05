@@ -40,3 +40,7 @@ ped-gramm-23,4,4,libinienigi,LAS,improved,0|root,2|dep,0|root
 ped-gramm-23,5,5,.,HEAD,improved,4,2,4
 ped-gramm-23,5,5,.,UAS,improved,4,2,4
 ped-gramm-23,5,5,.,LAS,improved,4|punct,2|punct,4|punct
+ped-gramm-37,1,1,iGeladi,LEMMA,improved,iGeladi,igeladi,iGeladi
+ped-gramm-37,4,4,weigi,FORM,regressed,weigi,weigi,weiigi
+ped-gramm-37,4,4,weigi,LEMMA,regressed,weigi,weigi,weiigi
+ped-gramm-37,4,4,weigi,FEATS,improved,Gender=Masc|Number=Sing,_,Gender=Masc|Number=Sing

@@ -190,6 +190,19 @@
 6	GanigotGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=2	5	obj	_	SpaceAfter=No|TokenRange=33:42
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=42:43
 
+# sent_id = ped-gramm-18
+# sent_uid = 582429f2-67d5-4077-b209-6deb7b5df54f
+# text = ica lidGegi loligi idei liGeladi.
+# text_orig = ica lidGegi loligi idei liGeladi
+# text_por_orig = a deliciosa comida está na casa dela/dele
+# text_por = a deliciosa comida está na casa dela/dele.
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	lidGegi	idi	NOUN	N$	Person[psor]=3	4	nsubj	_	TokenRange=4:11
+3	loligi	oligi	NOUN	N$	Person[psor]=3	4	dep	_	TokenRange=12:18
+4	idei	dei	VERB	VB	_	0	root	_	TokenRange=19:23
+5	liGeladi	geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	obj	_	SpaceAfter=No|TokenRange=24:32
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=32:33
+
 # sent_id = ped-gramm-23
 # sent_uid = 95a7d135-4be0-463d-b443-76cc5828fc89
 # text = ica nioladi lodawa libinienigi.
@@ -216,6 +229,18 @@
 5	naigi	naigi	NOUN	N	_	2	obj	_	TokenRange=18:23
 6	naGajo	jo	PRON	PRO$	PronType=Prs	2	dep	_	SpaceAfter=No|TokenRange=24:30
 7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = ped-gramm-30
+# sent_uid = 7b806584-75e5-4017-b9e2-ba97458903bd
+# text = Eyodi ane *T* niganaGacanajo.
+# text_orig = Eyodi ane niganaGacanajo
+# text_por_orig = Meu pai que era cantor (explicativa)
+# text_por = Meu pai que era cantor (explicativa).
+1	Eyodi	eyodi	NOUN	N$	_	0	root	_	TokenRange=0:5
+2	ane	ane	PRON	WPRO	PronType=Rel	1	dep	_	TokenRange=6:9
+3	*T*	*t*	X	X	_	1	dep	_	TokenRange=10:24
+4	niganaGacanajo	niganagacanajo	NOUN	N	_	1	dep	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = ped-gramm-33
 # sent_uid = 82117289-be52-45d0-886d-a5747eb20ea2
