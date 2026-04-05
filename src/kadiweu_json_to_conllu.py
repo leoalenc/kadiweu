@@ -123,12 +123,18 @@ TAG_TO_DEFAULT_PRONTYPE = {
 # ---------------------------------------------------------------------
 # Utility helpers
 # ---------------------------------------------------------------------
+STRICT_MWT_CHECK = True
+
 def warn_on_composite_tag_without_mwt(tok):
-    form = str(tok.get("v", ""))
-    tag = str(tok.get("t", ""))
+    form = str(tok.get("v", "")).strip()
+    tag = str(tok.get("t", "")).strip()
 
     if "+" in tag and "@" not in form:
-        print(f"WARNING: composite tag without MWT signal: {form} / {tag}")
+        msg = f"Composite tag without @-style MWT marker: {form} / {tag}"
+        if STRICT_MWT_CHECK:
+            raise ValueError(msg)
+        else:
+            print(f"WARNING: {msg}", file=sys.stderr)
 
 
 def safe_get(d: Any, *path: str, default=None):
