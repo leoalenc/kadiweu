@@ -430,7 +430,7 @@
 5	napioi	napioi	ADJ	ADJ	_	2	dep	_	SpaceAfter=No
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=33:34
 
-WARNING: composite tag without MWT signal: aGipegitegi / NEG+VBAPL
+# WARNING: composite tag without MWT signal: aGipegitegi / NEG+VBAPL
 # sent_id = ped-gramm-37
 # sent_uid = 1da1bf7a-7975-4baf-821b-9df5c75ac297
 # text = iGeladi aGipegitegi weiigi.
