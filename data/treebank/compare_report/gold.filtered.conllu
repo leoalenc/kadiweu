@@ -7,7 +7,7 @@
 # text_por_alt2 = A canoa dela é pesada.
 # text_eng_alt1 = His canoe is heavy.
 # text_eng_alt2 = Her canoe is heavy.
-1	ajo	ijo	DET	D	Deixis=Remt|Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	liwatece	watece	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:12
 3	ja	jaG	AUX	T	Aspect=Perf	4	aux	_	TokenRange=13:15
 4	iwaGadi	wagadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=16:23
@@ -22,7 +22,7 @@
 # text_por_alt2 = A canoa dela está no rio.
 # text_eng_alt1 = His canoe is in the river.
 # text_eng_alt2 = Her canoe is in the river.
-1	ajo	ijo	DET	D	Deixis=Remt|Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	liwatece	watece	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:12
 3	etadi	etidi	VERB	VB	Gender=Fem|Person=3	0	root	_	TokenRange=13:18
 4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=19:25
@@ -35,10 +35,10 @@
 # text_por_orig = A canoa está lá
 # text_por = A canoa está lá.
 # text_eng = The canoe is there.
-1	ajo	ijo	DET	D	Deixis=Remt|Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	3	nsubj	_	Gloss=canoe|MSeg=ni-watece|MGloss=ANT-canoe|TokenRange=4:12
 3	etadi	etidi	VERB	VB	Gender=Fem|Person=3	0	root	_	TokenRange=13:18
-4	digoida	digoida	ADV	ADV	AdvType=Loc|Deixis=Remt|PronType=Dem	3	advmod	_	SpaceAfter=No|TokenRange=19:26
+4	digoida	digoida	ADV	ADV	AdvType=Loc|PronType=Dem	3	advmod	_	SpaceAfter=No|TokenRange=19:26
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = ped-gramm-4
@@ -69,7 +69,7 @@
 # text = ajo niwatece ipegitege weiigi.
 # text_orig = ajo niwatece ipegitege weiigi
 # text_por = A canoa está perto do rio.
-1	ajo	ijo	DET	D	Deixis=Remt|Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	3	nsubj	_	Gloss=canoe|MSeg=ni-watece|MGloss=ANT-canoe|TokenRange=4:12
 3	ipegitege	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=13:22
 4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=23:29
@@ -200,7 +200,7 @@
 # text_eng = TODO
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	loigi	oigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	TokenRange=4:9
-3	ijo	ijo	DET	D	Deixis=Remt|Gender=Masc|Number=Sing|PronType=Dem	4	det	_	TokenRange=10:13
+3	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	TokenRange=10:13
 4	niganigi	niganigi	NOUN	N	Gender=Masc|Number=Sing	2	nmod:poss	_	TokenRange=14:22
 5	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=23:32
 6	GanigotGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=2	5	obj	_	SpaceAfter=No|TokenRange=33:42
@@ -276,7 +276,7 @@
 # text_orig = iGeladi ipegitegi liGeladi
 # text_por_orig = Minha casa está perto de sua casa
 # text_por = Minha casa está perto de sua casa.
-1	iGeladi	igeladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+1	iGeladi	iGeladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	ipegitegi	pegi	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
 3	liGeladi	iGeladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No|TokenRange=18:26
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=26:27
@@ -310,14 +310,14 @@
 
 # sent_id = ped-gramm-37
 # sent_uid = 1da1bf7a-7975-4baf-821b-9df5c75ac297
-# text = iGeladi aGipegitegi weigi.
-# text_orig = iGeladi aGipegitegi weigi
+# text = iGeladi aGipegitegi weiigi.
+# text_orig = iGeladi aGipegitegi weiigi
 # text_por_orig = Minha casa não fica perto do rio
 # text_por = Minha casa não fica perto do rio.
 1	iGeladi	iGeladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	nsubj	_	TokenRange=0:7
 2-3	aGipegitegi	_	_	_	_	_	_	_	TokenRange=8:19
 2	aG	ag	PART	NEG	Polarity=Neg	3	advmod	_	_
 3	ipegitegi	pegi	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	_
-4	weigi	weigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=20:25
+4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=20:25
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
 
