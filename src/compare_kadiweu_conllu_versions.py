@@ -373,6 +373,23 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         o = old[sent_id]
         n = new[sent_id]
 
+        if g.text != o.text or g.text != n.text:
+            sentence_issue_rows.append(
+                {
+                    "sent_id": sent_id,
+                    "issue": "text-mismatch",
+                    "gold_word_count": len(g.word_tokens),
+                    "old_word_count": len(o.word_tokens),
+                    "new_word_count": len(n.word_tokens),
+                    "gold_mwt": json.dumps(mwt_signature(g), ensure_ascii=False),
+                    "old_mwt": json.dumps(mwt_signature(o), ensure_ascii=False),
+                    "new_mwt": json.dumps(mwt_signature(n), ensure_ascii=False),
+                    "text": g.text or "",
+                    "old_text": o.text or "",
+                    "new_text": n.text or "",
+                }
+            )
+
         old_tok_match = word_signature(g) == word_signature(o)
         new_tok_match = word_signature(g) == word_signature(n)
         old_mwt_match = mwt_signature(g) == mwt_signature(o)
@@ -511,6 +528,17 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     if sentence_issue_rows:
         print(f"Sentence-level alignment/tokenization issues: {len(sentence_issue_rows)}")
     print()
+    
+    if sentence_issue_rows:
+        print("Sentence-level issues (details)")
+        print("-" * 80)
+        for row in sentence_issue_rows:
+            if row["issue"] == "text-mismatch":
+                print(f"{row['sent_id']}:")
+                print(f"  GOLD: {row.get('text','')}")
+                print(f"  OLD : {row.get('old_text','')}")
+                print(f"  NEW : {row.get('new_text','')}")
+                print()
 
     print("Aggregate metrics")
     print("-" * 80)

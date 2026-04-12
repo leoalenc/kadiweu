@@ -215,6 +215,68 @@ def warn_on_composite_tag_without_mwt(tok):
         else:
             print(f"WARNING: {msg}", file=sys.stderr)
 
+def apply_spaceafter_from_text(
+    emitted_rows: List[Dict[str, str]],
+    text: str,
+    mwt_component_ids: Set[int],
+) -> None:
+    """
+    Set SpaceAfter=No from the sentence text, treating `text` as the source of truth.
+
+    Rules:
+    - MWT rows may carry SpaceAfter=No.
+    - Component rows of an MWT must never carry SpaceAfter=No.
+    - Ordinary token rows may carry SpaceAfter=No.
+    - Punctuation rows are not handled here.
+    """
+    cursor = 0
+    n = len(text)
+
+    i = 0
+    while i < len(emitted_rows):
+        row = emitted_rows[i]
+        row_id = row["id"]
+
+        # Never keep SpaceAfter=No on MWT component rows
+        if "-" not in row_id:
+            try:
+                num_id = int(row_id)
+            except ValueError:
+                num_id = None
+            if num_id is not None and num_id in mwt_component_ids:
+                row["misc"] = remove_spaceafter_no(row["misc"])
+                i += 1
+                continue
+
+        # Skip spaces in text before matching current surface token
+        while cursor < n and text[cursor].isspace():
+            cursor += 1
+
+        form = row["form"]
+        if text[cursor:cursor + len(form)] != form:
+            raise ValueError(
+                f"Text/token alignment failed at row {row_id}: "
+                f"expected {form!r} at text position {cursor} in {text!r}"
+            )
+
+        cursor += len(form)
+
+        # Skip spaces after the token to inspect the next visible character
+        next_cursor = cursor
+        while next_cursor < n and text[next_cursor].isspace():
+            next_cursor += 1
+
+        if next_cursor < n:
+            # If the next visible character is not a space-separated continuation,
+            # the current surface token must have SpaceAfter=No.
+            if next_cursor == cursor:
+                row["misc"] = ensure_spaceafter_no(row["misc"])
+            else:
+                row["misc"] = remove_spaceafter_no(row["misc"])
+        else:
+            row["misc"] = remove_spaceafter_no(row["misc"])
+
+        i += 1
 
 def safe_get(d: Any, *path: str, default=None):
     cur = d
@@ -881,9 +943,9 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             # MWT line will use proto TokenRange if available, but converted to space-aware range
             if proto_index < len(proto_ranges):
                 start, end = proto_ranges[proto_index]
-                mwt_misc = f"SpaceAfter=No|{range_to_misc(start, end)}"
+                mwt_misc = range_to_misc(start, end)
             else:
-                mwt_misc = "SpaceAfter=No"
+                mwt_misc = "_"
 
             # Build component tokens
             # Sentence 7 pattern:
@@ -1262,6 +1324,8 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
 
         current_idx += 1
 
+    apply_spaceafter_from_text(emitted_rows, text, mwt_component_ids)
+    
     # Add final punctuation
     punct_head = root_id or 0
     punct_id = len(draft_tokens) + 1
@@ -1280,27 +1344,6 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
         "misc": f"SpaceAfter=No|{range_to_misc(p_start, p_end)}",
     })
 
-    # Ensure SpaceAfter=No only on last real token (not inside MWT)
-    last_real_idx = None
-    for i in range(len(emitted_rows) - 2, -1, -1):
-        if "-" not in emitted_rows[i]["id"]:
-            last_real_idx = i
-            break
-
-    if last_real_idx is not None:
-        prev_id = int(emitted_rows[last_real_idx]["id"])
-        if prev_id not in mwt_component_ids:
-            emitted_rows[last_real_idx]["misc"] = ensure_spaceafter_no(
-                emitted_rows[last_real_idx]["misc"]
-            )
-
-    # Rebuild # text from rows
-    rebuilt_text = build_text_from_rows(emitted_rows)
-
-    for i, line in enumerate(out_lines):
-        if line.startswith("# text = "):
-            out_lines[i] = f"# text = {rebuilt_text}"
-            break
 
     # Serialize
     for row in emitted_rows:
