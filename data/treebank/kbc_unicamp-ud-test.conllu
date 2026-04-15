@@ -287,12 +287,12 @@
 # text_orig = iGeladi ipegitegi naigi ane napioi
 # text_por_orig = Minha casa está perto desta rua suja (que está suja)
 # text_por_alt1 = Minha casa está perto desta rua suja.
-# text_por_alt2 = Minha casa está perto desta rua que está suja.
+# text_por_alt2 = Minha casa está perto desta rua, que está suja.
 1	iGeladi	iGeladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	ipegitegi	pegi	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
 3	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	TokenRange=18:23
 4	ane	ane	PRON	WPRO	PronType=Rel	5	nsubj	_	TokenRange=24:27
-5	napioi	napioi	ADJ	ADJ	_	3	acl:relcl	_	SpaceAfter=No|TokenRange=28:34
+5	napioi	napioi	NOUN	N	_	3	acl:relcl	_	SpaceAfter=No|TokenRange=28:34
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=34:35
 
 # sent_id = ped-gramm-36
@@ -305,7 +305,7 @@
 2	ipegitegi	pegi	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
 3	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	TokenRange=18:23
 4	me	me	SCONJ	C	_	5	mark	_	TokenRange=24:26
-5	napioi	napioi	ADJ	ADJ	_	3	acl:relcl	_	SpaceAfter=No|TokenRange=27:33
+5	napioi	napioi	NOUN	N	_	3	acl:relcl	_	SpaceAfter=No|TokenRange=27:33
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=33:34
 
 # sent_id = ped-gramm-37
