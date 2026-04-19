@@ -1,23 +1,44 @@
-Gatodi etidi digoida.
-O tucano está lá.
+(ijo) Gatodi etijo ida.
+O tucano está indo nele.
 
-ijo Gatodi etidi liGeladi.
-O tucano está na casa dela.
+(ijo) Gatodi etica ida.
+O tucano está nele.
 
-Gatotitedi etidi digoida.
-Os tucanos estão lá.
+(ijo) Gatodi etijo liGeladi.
+O tucano está indo na casa dele/dela.
 
-yacipaGadi etidi GodanodaGalate.
+(ijowa) Gatotitedi etijowa ida.
+Os tucanos estão indo nele (nisso).
+
+yacipaGadi etida GodanodaGalate.
 A minha bebida está no nosso armário.
 
-nacipaGadi etidi digoida.
-A bebida está lá.
+nacipaGadi etida ina. (verbo transitivo)
+A bebida está vindo nisso.
+
+ida nacipaGadi etida ina.
+A bebida está vindo nisso.
 
 lixaada etidi nixoGotagi.
 A enxada dele está na roça.
 
+lixaada etida nixoGotagi.
+A enxada dele está na roça.
+
+lixaada etica nixoGotagi.
+A enxada dele está na roça.
+
 lajiodo etadi nixoGotagi.
-A tia dela está na roça.
+A tia dele/dela está na roça.
+
+lajiodo etajo nixoGotagi.
+A tia dele/dela está na roça.
+
+lajiodo etana nixoGotagi.
+A tia dele/dela está na roça.
+
+lajiodo etaca nixoGotagi.
+A tia dele/dela está na roça.
 
 yedede etadi lixoGotagi.
 Minha mãe está na roça dela.
@@ -27,3 +48,56 @@ Meu pai está na roça dele.
 
 niale ela jeGei.
 A fruta da árvore já está madura.
+
+niale ela jaG ei.
+A fruta da árvore já está madura.
+
+Maria etadi akiidi.
+A Maria está no rio.
+
+João etidi akiidi.
+O João está no rio.
+
+ee etee akiidi.
+Eu estou no rio. (fala de homem)
+
+eyo eteyo akiidi.
+Eu estou no rio. (fala de mulher)
+
+oko otoko akiidi.
+Nós estamos no rio.
+
+(aaami) etaaami akiidi.
+Você está no rio. (fala de mulher)
+Vocês estão no rio. (fala de mulher)
+
+(aaamitiwaji) etaaamitiwaji akiidi.
+Vocês estão no rio. (fala de mulher)
+
+(akaamitiwaji) etakaamitiwaji akiidi.
+Vocês estão no rio. (fala de homem)
+
+akaami etakaamitiwaji akiidi.
+Vocês estão no rio. (fala de homem)
+
+ijotawece etidi akiidi.
+Eles estão no rio.
+
+João liGeladi napioi.
+A casa do João é suja.
+
+A fotografia dos ovos é bonita.
+liwigo okokodi ligetedi libinienigi.
+
+Os ovos da fotografia são bonitos.
+okokodi ligetedi midi niwigo libinienaGa.
+
+# estes ovos da fotografia estão bonitos
+# ijowa nigetedi niwigo libinienigipi
+# possible wrong translation
+
+
+
+
+
+
