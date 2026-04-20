@@ -348,9 +348,9 @@
 # text_orig = Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi
 # text_por_orig = meu pai cuida da plantação de flores como filhas
 # text_por = meu pai cuida da plantação de flores como filhas.
-1	eyodi	eyodi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+1	eyodi	iodi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
 2	dowediteloco	dowediteloco	VERB	VBAPL	Mood=Ind|Person[erg]=3|VerbForm=Fin|Voice=Appl	0	root	_	_
-3	naodigijedi	naodigijedi	NOUN	N	Gender=Masc|Number=Plur	2	obj	_	_
+3	naodigijedi	naodigijegi	NOUN	N	Gender=Masc|Number=Plur	2	obj	_	Lemma=nawodigijegi
 4	micoataGa	taGa	SCONJ	CD	_	7	mark	_	_
 5	daGa	daga	SCONJ	C	_	7	mark	_	_
 6	me	me	SCONJ	C	_	7	mark	_	_
