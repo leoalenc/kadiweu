@@ -357,16 +357,49 @@
 7	lionigipi	iona	NOUN	N$	Gender=Fem|Number=Plur|Person[psor]=3	2	advcl	_	SpaceAfter=No
 8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=58:59
 
+# sent_id = ped-gramm-29
+# sent_uid = 4bdb4b8f-0176-4303-8a13-e313fbb6d7ad
+# text = eyodi me niganaGacanajo.
+# text_orig = Eyodi me niganaGacanajo
+# text_por_orig = Meu pai que era cantor
+# text_por = Meu pai que era cantor.
+1	eyodi	eyodi	NOUN	N$	_	0	root	_	_
+2	me	me	SCONJ	C	_	1	mark	_	_
+3	niganaGacanajo	niganagacanajo	NOUN	N	Gender=Masc|Number=Sing	1	acl:relcl	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=23:24
+
 # sent_id = ped-gramm-30
 # sent_uid = 7b806584-75e5-4017-b9e2-ba97458903bd
-# text = Eyodi ane niganaGacanajo.
+# text = eyodi ane niganaGacanajo.
 # text_orig = Eyodi ane niganaGacanajo
 # text_por_orig = Meu pai que era cantor (explicativa)
 # text_por = Meu pai, que era cantor.
-1	Eyodi	eyodi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	TokenRange=0:5
+1	eyodi	eyodi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	TokenRange=0:5
 2	ane	ane	PRON	WPRO	PronType=Rel	3	nsubj	_	TokenRange=6:9
 3	niganaGacanajo	niganagacanajo	NOUN	N	Gender=Masc|Number=Sing	1	acl:relcl	_	SpaceAfter=No|TokenRange=10:24
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = ped-gramm-31
+# sent_uid = 845b9d1d-ad7c-445a-bfbd-04fd9255ffc2
+# text = Eyodi daGa niganaGacanajo.
+# text_orig = Eyodi daGa niganaGacanajo
+# text_por_orig = Meu pai se fosse cantor
+# text_por = Meu pai se fosse cantor.
+1	Eyodi	eyodi	NOUN	N$	_	0	root	_	_
+2	daGa	daga	SCONJ	C	_	3	mark	_	_
+3	niganaGacanajo	niganagacanajo	NOUN	N	Gender=Masc|Number=Sing	1	advcl	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = ped-gramm-32
+# sent_uid = a4ccc755-a644-4b04-ab1b-698e7acea4cc
+# text = iGeladi idei digoida.
+# text_orig = iGeladi idei digoida
+# text_por_orig = minha casa está lá
+# text_por = Minha casa está lá.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	_
+3	digoida	digoida	ADV	ADV	AdvType=Loc|Deixis=Remt|PronType=Dem	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = ped-gramm-33
 # sent_uid = 82117289-be52-45d0-886d-a5747eb20ea2
