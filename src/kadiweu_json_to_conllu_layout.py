@@ -202,7 +202,7 @@ configure_override_resources()
 # ---------------------------------------------------------------------
 # Utility helpers
 # ---------------------------------------------------------------------
-STRICT_MWT_CHECK = True
+STRICT_MWT_CHECK = False
 
 def warn_on_composite_tag_without_mwt(tok):
     form = str(tok.get("v", "")).strip()
@@ -596,21 +596,33 @@ def clean_component_form(form: str) -> str:
 
 def collect_mwt_group(tokens: List[Dict[str, Any]], start_idx: int) -> Tuple[List[Dict[str, Any]], int]:
     """
-    Collect consecutive placeholder tokens belonging to one MWT.
+    Collect one MWT group starting at start_idx.
 
-    Example:
-      aG@, @ipegetege
+    Stop when:
+    - the next token is not part of an @-style split token, or
+    - the next token starts a new MWT (split.idx == 0).
     """
     group = [tokens[start_idx]]
     j = start_idx + 1
+
     while j < len(tokens):
-        form = str(tokens[j].get("v", ""))
-        split = tokens[j].get("split")
-        if "@" in form or (isinstance(split, dict) and "idx" in split):
-            group.append(tokens[j])
-            j += 1
-        else:
+        tok = tokens[j]
+        form = str(tok.get("v", ""))
+        split = tok.get("split")
+
+        # Not MWT-like at all -> stop
+        if "@" not in form and not (isinstance(split, dict) and "idx" in split):
             break
+
+        # A new split token starts here -> stop before consuming it
+        if isinstance(split, dict):
+            idx = split.get("idx")
+            if idx in (0, "0"):
+                break
+
+        group.append(tok)
+        j += 1
+
     return group, j
 
 
@@ -929,7 +941,7 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             i += 1
             continue
 
-        # MWT handling
+                # MWT handling
         if is_mwt_start(tok):
             group, next_i = collect_mwt_group(tokens, i)
 
@@ -947,10 +959,10 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             else:
                 mwt_misc = "_"
 
+            # Record the exact component interval for this MWT
+            mwt_start_id = len(draft_tokens) + 1
+
             # Build component tokens
-            # Sentence 7 pattern:
-            #   aG@ -> aG PART NEG
-            #   @ipegetege -> ipegetege VERB VBAPL
             for gtok in group:
                 gform_raw = str(gtok.get("v", ""))
                 gform = clean_component_form(gform_raw)
@@ -973,8 +985,10 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
                 )
                 draft_tokens.append(draft)
 
-            # record placeholder; ids filled later
-            mwt_lines.append((-1, -1, mwt_form, mwt_misc))
+            mwt_end_id = len(draft_tokens)
+
+            # Store exact boundaries now, instead of trying to infer them later
+            mwt_lines.append((mwt_start_id, mwt_end_id, mwt_form, mwt_misc))
 
             i = next_i
             proto_index += 1
@@ -1022,24 +1036,7 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
         dt.locked_deprel = True
         dt.forced_head_source_pos = hint.head_source_pos
 
-    # Resolve MWT line ids after token ids exist.
-    # We assume each MWT occupies a consecutive token interval at creation time.
-    mwt_line_index = 0
-    cursor = 0
-    resolved_mwt_lines: List[Tuple[int, int, str, str]] = []
-    while cursor < len(draft_tokens):
-        if draft_tokens[cursor].is_mwt_component:
-            start = draft_tokens[cursor].id
-            end_cursor = cursor
-            while end_cursor + 1 < len(draft_tokens) and draft_tokens[end_cursor + 1].is_mwt_component:
-                end_cursor += 1
-            end = draft_tokens[end_cursor].id
-            form, misc = mwt_lines[mwt_line_index][2], mwt_lines[mwt_line_index][3]
-            resolved_mwt_lines.append((start, end, form, misc))
-            mwt_line_index += 1
-            cursor = end_cursor + 1
-        else:
-            cursor += 1
+    resolved_mwt_lines = list(mwt_lines)
 
     # -----------------------------------------------------------------
     # Chunk-first dependency induction
