@@ -4,6 +4,7 @@
     "aG": "Polarity=Neg",
     "ajo": "Gender=Fem|Number=Sing|PronType=Dem",
     "ane": "PronType=Rel",
+    "daGa": "_",
     "dapiko": "Voice=Inv",
     "etadi": "Gender=Fem|Person=3",
     "iGeladi": "Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1",
@@ -14,12 +15,15 @@
     "iwaGadi": "Mood=Ind|Person=3|VerbForm=Fin",
     "ja": "Aspect=Perf",
     "liGeladi": "Gender=Masc|Number=Sing|Person[psor]=3",
+    "libinienigi": "Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3",
     "lidGegi": "Gender=Masc|Number=Sing|Person[psor]=3",
     "liwatece": "Gender=Fem|Number=Sing|Person[psor]=3",
     "looligi": "Gender=Masc|Number=Sing|Person[psor]=3",
     "me": "_",
     "naigi": "Gender=Masc|Number=Sing",
     "napioi": "_",
+    "niganaGacanajo": "Gender=Masc|Number=Sing",
+    "nioladi": "Gender=Masc|Number=Sing|Person[psor]=3",
     "niwatece": "Gender=Fem|Number=Sing",
     "weiigi": "Gender=Masc|Number=Sing"
   },
@@ -27,17 +31,19 @@
     "Maria": "maria",
     "aG": "ag",
     "ajo": "ijo",
-    "ane": "ane",
+    "daGa": "daga",
     "dapiko": "apiko",
+    "digoida": "digoida",
     "etadi": "etidi",
-    "iGeladi": "iGeladi",
+    "iGeladi": "Geladi",
     "ica": "ica",
     "idei": "dei",
     "ijo": "ijo",
     "ipegetege": "pege",
     "ipegitegi": "pegi",
     "ja": "jaG",
-    "liGeladi": "iGeladi",
+    "liGeladi": "Geladi",
+    "libinienigi": "binie",
     "lidGegi": "idi",
     "lidi": "idi",
     "liwatece": "watece",
@@ -45,13 +51,15 @@
     "me": "me",
     "naigi": "naigi",
     "napioi": "napioi",
+    "niganaGacanajo": "niganagacanajo",
+    "nioladi": "nioladi",
     "niwatece": "watece",
     "weiigi": "weiigi"
   },
   "metadata": {
-    "aligned_sentence_count": 24,
+    "aligned_sentence_count": 36,
     "gold_file": "/home/leonel/kadiweu/data/treebank/kbc_unicamp-ud-test.conllu",
-    "gold_sentence_count": 25,
+    "gold_sentence_count": 37,
     "json_file": "/home/leonel/kadiweu/data/gramatica-pedagogica.json",
     "json_sentence_count": 37,
     "thresholds": {
@@ -68,11 +76,36 @@
   "prontype_overrides": {
     "ajo\tDET": "Dem",
     "ane\tPRON": "Rel",
+    "digoida\tADV": "Dem",
     "ica\tDET": "Dem",
     "ijo\tDET": "Dem"
   },
   "review": {
     "ambiguous_feats": [
+      {
+        "best": "AdvType=Loc|PronType=Dem",
+        "best_count": 1,
+        "counts": {
+          "AdvType=Loc|Deixis=Remt|PronType=Dem": 1,
+          "AdvType=Loc|PronType=Dem": 1
+        },
+        "form": "digoida",
+        "share": 0.5,
+        "total": 2,
+        "upos": "ADV"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1",
+        "best_count": 2,
+        "counts": {
+          "Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1": 2,
+          "_": 1
+        },
+        "form": "eyodi",
+        "share": 0.6667,
+        "total": 3,
+        "upos": "NOUN"
+      },
       {
         "best": "Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
         "best_count": 4,
@@ -99,6 +132,30 @@
       }
     ],
     "ambiguous_lemmas": [
+      {
+        "best": "ane",
+        "best_count": 3,
+        "counts": {
+          "ane": 3,
+          "napioi": 1
+        },
+        "form": "ane",
+        "share": 0.75,
+        "total": 4,
+        "upos": "PRON"
+      },
+      {
+        "best": "eyodi",
+        "best_count": 2,
+        "counts": {
+          "eyodi": 2,
+          "iodi": 1
+        },
+        "form": "eyodi",
+        "share": 0.6667,
+        "total": 3,
+        "upos": "NOUN"
+      },
       {
         "best": "wagadi",
         "best_count": 1,
@@ -148,6 +205,21 @@
       {
         "mismatches": [
           [
+            "ane",
+            "ane@"
+          ],
+          [
+            "napioi",
+            "@napioi"
+          ]
+        ],
+        "sent_id": "ped-gramm-24",
+        "sent_uid": "2f47b402-9fe7-4714-96e3-c6cbdf405472",
+        "type": "token_form_mismatch"
+      },
+      {
+        "mismatches": [
+          [
             "me",
             "me@"
           ],
@@ -161,9 +233,31 @@
         "type": "token_form_mismatch"
       },
       {
+        "mismatches": [
+          [
+            "eyodi",
+            "Eyodi"
+          ]
+        ],
+        "sent_id": "ped-gramm-28",
+        "sent_uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d",
+        "type": "token_form_mismatch"
+      },
+      {
+        "mismatches": [
+          [
+            "eyodi",
+            "Eyodi"
+          ]
+        ],
+        "sent_id": "ped-gramm-29",
+        "sent_uid": "4bdb4b8f-0176-4303-8a13-e313fbb6d7ad",
+        "type": "token_form_mismatch"
+      },
+      {
         "gold_count": 3,
         "gold_forms": [
-          "Eyodi",
+          "eyodi",
           "ane",
           "niganaGacanajo"
         ],
@@ -187,10 +281,6 @@
           [
             "ipegitegi",
             "@ipegitegi"
-          ],
-          [
-            "weigi",
-            "weiigi"
           ]
         ],
         "sent_id": "ped-gramm-37",
@@ -200,10 +290,10 @@
     ],
     "low_evidence_feats": [
       {
-        "best": "Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1",
+        "best": "_",
         "best_count": 1,
         "counts": {
-          "Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1": 1
+          "_": 1
         },
         "form": "Eyodi",
         "share": 1.0,
@@ -222,15 +312,37 @@
         "upos": "NOUN"
       },
       {
-        "best": "AdvType=Loc|PronType=Dem",
+        "best": "Gender=Masc|Number=Sing|Person[psor]=2",
         "best_count": 1,
         "counts": {
-          "AdvType=Loc|PronType=Dem": 1
+          "Gender=Masc|Number=Sing|Person[psor]=2": 1
         },
-        "form": "digoida",
+        "form": "Ganixoa",
         "share": 1.0,
         "total": 1,
-        "upos": "ADV"
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc": 1
+        },
+        "form": "João",
+        "share": 1.0,
+        "total": 1,
+        "upos": "PROPN"
+      },
+      {
+        "best": "Mood=Ind|Person[erg]=3|VerbForm=Fin|Voice=Appl",
+        "best_count": 1,
+        "counts": {
+          "Mood=Ind|Person[erg]=3|VerbForm=Fin|Voice=Appl": 1
+        },
+        "form": "dowediteloco",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
       },
       {
         "best": "Mood=Ind|Number[obj]=Sing|Person[erg]=3|Person[obj]=2|VerbForm=Fin|Voice=Appl",
@@ -255,12 +367,34 @@
         "upos": "VERB"
       },
       {
-        "best": "Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3",
+        "best": "Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3",
         "best_count": 1,
         "counts": {
-          "Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3": 1
+          "Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3": 1
         },
-        "form": "libinienigi",
+        "form": "libinienigipi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Fem|Number=Plur|Person[psor]=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Number=Plur|Person[psor]=3": 1
+        },
+        "form": "lionigipi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing|Person[psor]=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|Person[psor]=3": 1
+        },
+        "form": "liwigo",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
@@ -288,6 +422,17 @@
         "upos": "NOUN"
       },
       {
+        "best": "Gender=Masc|Number=Plur|Person[psor]=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|Person[psor]=3": 1
+        },
+        "form": "loigipodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
         "best": "Gender=Masc|Number=Sing|Person[psor]=3",
         "best_count": 1,
         "counts": {
@@ -299,10 +444,21 @@
         "upos": "NOUN"
       },
       {
-        "best": "Gender=Fem|PronType=Dem",
+        "best": "_",
         "best_count": 1,
         "counts": {
-          "Gender=Fem|PronType=Dem": 1
+          "_": 1
+        },
+        "form": "micoataGa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "SCONJ"
+      },
+      {
+        "best": "Gender=Fem|Poss=Yes|PronType=Dem",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Poss=Yes|PronType=Dem": 1
         },
         "form": "naGajo",
         "share": 1.0,
@@ -310,12 +466,12 @@
         "upos": "PRON"
       },
       {
-        "best": "Gender=Masc|Number=Sing",
+        "best": "Gender=Masc|Number=Plur",
         "best_count": 1,
         "counts": {
-          "Gender=Masc|Number=Sing": 1
+          "Gender=Masc|Number=Plur": 1
         },
-        "form": "niganaGacanajo",
+        "form": "naodigijedi",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
@@ -348,7 +504,7 @@
         "counts": {
           "Gender=Masc|Number=Sing|Person[psor]=3": 1
         },
-        "form": "nioladi",
+        "form": "nioxoa",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
@@ -359,7 +515,7 @@
         "counts": {
           "Gender=Masc|Number=Sing": 1
         },
-        "form": "weigi",
+        "form": "niwigo",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
@@ -389,15 +545,37 @@
         "upos": "NOUN"
       },
       {
-        "best": "digoida",
+        "best": "nixoa",
         "best_count": 1,
         "counts": {
-          "digoida": 1
+          "nixoa": 1
         },
-        "form": "digoida",
+        "form": "Ganixoa",
         "share": 1.0,
         "total": 1,
-        "upos": "ADV"
+        "upos": "NOUN"
+      },
+      {
+        "best": "joão",
+        "best_count": 1,
+        "counts": {
+          "joão": 1
+        },
+        "form": "João",
+        "share": 1.0,
+        "total": 1,
+        "upos": "PROPN"
+      },
+      {
+        "best": "dowediteloco",
+        "best_count": 1,
+        "counts": {
+          "dowediteloco": 1
+        },
+        "form": "dowediteloco",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
       },
       {
         "best": "pegi",
@@ -422,12 +600,34 @@
         "upos": "VERB"
       },
       {
-        "best": "ibinie",
+        "best": "binie",
         "best_count": 1,
         "counts": {
-          "ibinie": 1
+          "binie": 1
         },
-        "form": "libinienigi",
+        "form": "libinienigipi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "iona",
+        "best_count": 1,
+        "counts": {
+          "iona": 1
+        },
+        "form": "lionigipi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "wigo",
+        "best_count": 1,
+        "counts": {
+          "wigo": 1
+        },
+        "form": "liwigo",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
@@ -455,6 +655,17 @@
         "upos": "NOUN"
       },
       {
+        "best": "oigi",
+        "best_count": 1,
+        "counts": {
+          "oigi": 1
+        },
+        "form": "loigipodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
         "best": "oligi",
         "best_count": 1,
         "counts": {
@@ -464,6 +675,17 @@
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
+      },
+      {
+        "best": "taGa",
+        "best_count": 1,
+        "counts": {
+          "taGa": 1
+        },
+        "form": "micoataGa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "SCONJ"
       },
       {
         "best": "jo",
@@ -477,12 +699,12 @@
         "upos": "PRON"
       },
       {
-        "best": "niganagacanajo",
+        "best": "naodigijegi",
         "best_count": 1,
         "counts": {
-          "niganagacanajo": 1
+          "naodigijegi": 1
         },
-        "form": "niganaGacanajo",
+        "form": "naodigijedi",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
@@ -510,40 +732,29 @@
         "upos": "NOUN"
       },
       {
-        "best": "nioladi",
+        "best": "nioxoa",
         "best_count": 1,
         "counts": {
-          "nioladi": 1
+          "nioxoa": 1
         },
-        "form": "nioladi",
+        "form": "nioxoa",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
       },
       {
-        "best": "weigi",
+        "best": "wigo",
         "best_count": 1,
         "counts": {
-          "weigi": 1
+          "wigo": 1
         },
-        "form": "weigi",
+        "form": "niwigo",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
       }
     ],
     "low_evidence_prontype": [
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "digoida",
-        "share": 1.0,
-        "total": 1,
-        "upos": "ADV"
-      },
       {
         "best": "Dem",
         "best_count": 1,
@@ -559,13 +770,13 @@
     "low_evidence_tag_to_prontype": [
       {
         "best": "Dem",
-        "best_count": 1,
+        "best_count": 2,
         "counts": {
-          "Dem": 1
+          "Dem": 2
         },
         "raw_tag": "ADV",
         "share": 1.0,
-        "total": 1,
+        "total": 2,
         "upos": "ADV"
       },
       {
@@ -581,13 +792,13 @@
       },
       {
         "best": "Rel",
-        "best_count": 1,
+        "best_count": 3,
         "counts": {
-          "Rel": 1
+          "Rel": 3
         },
         "raw_tag": "WPRO",
         "share": 1.0,
-        "total": 1,
+        "total": 3,
         "upos": "PRON"
       }
     ]
