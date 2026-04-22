@@ -30,109 +30,37 @@ import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
 
+
 # ---------------------------------------------------------------------
 # Project layout defaults
 # ---------------------------------------------------------------------
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
-DEFAULT_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "gold_derived_overrides.json"
-
+DEFAULT_BASE_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "kadiweu_default_overrides.json"
+DEFAULT_GOLD_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "gold_derived_overrides.json"
+DEFAULT_MANUAL_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "kadiweu_manual_overrides.json"
 from kadiweu_empty_categories import resolve_empty_categories
-
+from kadiweu_converter_config import UPOS_MAP
 
 # ---------------------------------------------------------------------
 # Basic mappings
 # ---------------------------------------------------------------------
 
-UPOS_MAP = {
-    "VB": "VERB",
-    "VBAPL": "VERB",
-    "VBT": "VERB",
-    "VBTAPL": "VERB",
-    "VBI": "VERB",
-    "N": "NOUN",
-    "N$": "NOUN",
-    "NAPL": "NOUN",
-    "NPR": "PROPN",
-    "D": "DET",
-    "Q": "DET",
-    "PRO": "PRON",
-    "PRO$": "PRON",
-    "WPRO": "PRON",
-    "WADV": "ADV",
-    "ADV": "ADV",
-    "ADJ": "ADJ",
-    "NEG": "PART",
-    "C": "SCONJ",
-    "CT": "SCONJ",
-    "CONJ": "CCONJ",
-    "T": "AUX",
-    "PUNCT": "PUNCT",
-}
+LEMMA_OVERRIDES: Dict[str, str] = {}
+FORM_FEAT_OVERRIDES: Dict[str, str] = {}
+PRONTYPE_OVERRIDES: Dict[Tuple[str, str], str] = {}
+TAG_TO_DEFAULT_PRONTYPE: Dict[Tuple[str, str], str] = {}
 
-# Small lemma overrides from the user's gold sentences.
-# Extend as needed.
-DEFAULT_LEMMA_OVERRIDES = {
-    "ajo": "ijo",
-    "ica": "ica",
-    "ja": "jaG",
-    "aG": "ag",
-    "etadi": "etidi",
-    "iwaGadi": "wagadi",
-    "niwatece": "watece",
-    "liwatece": "watece",
-    "liGeladi": "iGeladi",
-    "lidi": "idi",
-    "loigi": "oigi",
-    "ipegitege": "pegi",
-    "ipegetege": "pege",
-    "ipegitegi": "pegi",
-    "GanigotGa": "nigotaGa",
-    "Maria": "maria",
-}
-
-# Form-specific feature overrides from the user's 10 gold sentences.
-# These spare manual correction for common early examples.
-DEFAULT_FORM_FEAT_OVERRIDES = {
-    "ajo": "Deixis=Remt|Gender=Fem|Number=Sing|PronType=Dem",
-    "ica": "Gender=Masc|Number=Sing|PronType=Dem",
-    "ja": "Aspect=Perf",
-    "aG": "_",
-    "weiigi": "Gender=Masc|Number=Sing",
-    "digoida": "AdvType=Loc|Deixis=Remt|PronType=Dem",
-    "Maria": "_",
-    "liwatece": "Gender=Fem|Number=Sing|Person[psor]=3",
-    "niwatece": "Gender=Fem|Number=Sing",
-    "liGeladi": "Gender=Masc|Number=Sing|Person[psor]=3",
-    "loigi": "Gender=Masc|Number=Sing|Person[psor]=3",
-    "GanigotGa": "Gender=Fem|Number=Sing|Person[psor]=2",
-    "etadi": "Gender=Fem|Person=3",
-    "iwaGadi": "Mood=Ind|Person=3|VerbForm=Fin",
-    "ipegitege": "Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
-    "ipegetege": "Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
-    "ipegitegi": "Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
-}
-
-DEFAULT_PRONTYPE_OVERRIDES = {
-    ("ajo", "DET"): "Dem",
-    ("ijo", "DET"): "Dem",
-    ("ica", "DET"): "Dem",
-    ("ane", "PRON"): "Rel",
-    #("naGajo", "PRON"): "Prs",
-    ("naGajo", "PRON"): "Dem",
-}
-
-DEFAULT_TAG_TO_DEFAULT_PRONTYPE = {
-    ("D", "DET"): "Dem",
-    ("WPRO", "PRON"): "Rel",
-    ("PRO", "PRON"): "Prs",
-    ("PRO$", "PRON"): "Prs",
-}
-
-
-def load_gold_derived_overrides(path: Path) -> Tuple[Dict[str, str], Dict[str, str], Dict[Tuple[str, str], str], Dict[Tuple[str, str], str]]:
+def load_override_resource(
+    path: Path,
+) -> Tuple[
+    Dict[str, str],
+    Dict[str, str],
+    Dict[Tuple[str, str], str],
+    Dict[Tuple[str, str], str],
+]:
     """
-    Load externally generated override resources.
+    Load one external override resource file.
 
     The JSON format is expected to contain the keys:
       - lemma_overrides
@@ -148,11 +76,11 @@ def load_gold_derived_overrides(path: Path) -> Tuple[Dict[str, str], Dict[str, s
     lemma_overrides = data.get("lemma_overrides", {})
     form_feat_overrides = data.get("form_feat_overrides", {})
     prontype_overrides = {
-        tuple(k.split("	")): v
+        tuple(k.split("\t")): v
         for k, v in data.get("prontype_overrides", {}).items()
     }
     tag_to_default_prontype = {
-        tuple(k.split("	")): v
+        tuple(k.split("\t")): v
         for k, v in data.get("tag_to_default_prontype", {}).items()
     }
 
@@ -163,38 +91,59 @@ def load_gold_derived_overrides(path: Path) -> Tuple[Dict[str, str], Dict[str, s
         tag_to_default_prontype,
     )
 
-
 def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
     """
-    Configure the active override resources.
+    Configure the active override resources by merging external JSON files.
 
-    If an external resource file is provided, it replaces the hard-coded defaults.
-    Otherwise, the converter behaves exactly as before.
+    Loading order:
+      1. base defaults
+      2. gold-derived overrides
+      3. manual overrides
+      4. optional extra override file passed by the user
+
+    Later files take precedence over earlier ones.
     """
     global LEMMA_OVERRIDES
     global FORM_FEAT_OVERRIDES
     global PRONTYPE_OVERRIDES
     global TAG_TO_DEFAULT_PRONTYPE
 
-    LEMMA_OVERRIDES = dict(DEFAULT_LEMMA_OVERRIDES)
-    FORM_FEAT_OVERRIDES = dict(DEFAULT_FORM_FEAT_OVERRIDES)
-    PRONTYPE_OVERRIDES = dict(DEFAULT_PRONTYPE_OVERRIDES)
-    TAG_TO_DEFAULT_PRONTYPE = dict(DEFAULT_TAG_TO_DEFAULT_PRONTYPE)
+    LEMMA_OVERRIDES = {}
+    FORM_FEAT_OVERRIDES = {}
+    PRONTYPE_OVERRIDES = {}
+    TAG_TO_DEFAULT_PRONTYPE = {}
 
-    if overrides_path is None:
-        return
+    candidate_paths = [
+        DEFAULT_BASE_OVERRIDES_PATH,
+        DEFAULT_GOLD_OVERRIDES_PATH,
+        DEFAULT_MANUAL_OVERRIDES_PATH,
+    ]
 
-    (
-        lemma_overrides,
-        form_feat_overrides,
-        prontype_overrides,
-        tag_to_default_prontype,
-    ) = load_gold_derived_overrides(overrides_path)
+    if overrides_path is not None:
+        if not overrides_path.exists():
+            raise FileNotFoundError(f"Override resource not found: {overrides_path}")
+        candidate_paths.append(overrides_path)
 
-    LEMMA_OVERRIDES = lemma_overrides
-    FORM_FEAT_OVERRIDES = form_feat_overrides
-    PRONTYPE_OVERRIDES = prontype_overrides
-    TAG_TO_DEFAULT_PRONTYPE = tag_to_default_prontype
+    print(DEFAULT_BASE_OVERRIDES_PATH, file=sys.stderr)
+    print(DEFAULT_GOLD_OVERRIDES_PATH, file=sys.stderr)
+    print(DEFAULT_MANUAL_OVERRIDES_PATH, file=sys.stderr)
+
+    for path in candidate_paths:
+        print(f"Loading override resource: {path}", file=sys.stderr)
+        if path is None or not path.exists():
+            continue
+
+        (
+            lemma_overrides,
+            form_feat_overrides,
+            prontype_overrides,
+            tag_to_default_prontype,
+        ) = load_override_resource(path)
+
+        LEMMA_OVERRIDES.update(lemma_overrides)
+        FORM_FEAT_OVERRIDES.update(form_feat_overrides)
+        PRONTYPE_OVERRIDES.update(prontype_overrides)
+        TAG_TO_DEFAULT_PRONTYPE.update(tag_to_default_prontype)
 
 
 configure_override_resources()
@@ -1383,19 +1332,27 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
         ),
     )
     parser.add_argument(
-        "--overrides",
-        dest="overrides_path",
-        type=Path,
-        default=None,
-        help=(
-            "Optional JSON file with externally generated override resources. "
-            "Example for this repository layout: data/resources/gold_derived_overrides.json"
-        ),
-    )
+    "--overrides",
+    dest="overrides_path",
+    type=Path,
+    default=None,
+    help=(
+        "Optional JSON file with additional override resources. "
+        "Overrides are applied in layers, with later layers taking precedence:\n"
+        "  1. data/resources/kadiweu_default_overrides.json\n"
+        "  2. data/resources/gold_derived_overrides.json\n"
+        "  3. data/resources/kadiweu_manual_overrides.json\n"
+        "  4. this file (if provided via --overrides)\n"
+        "The file must contain the keys: lemma_overrides, form_feat_overrides, "
+        "prontype_overrides, tag_to_default_prontype."
+    ),
+)
     return parser.parse_args(argv)
 
 
 def main(json_path: str, overrides_path: Optional[Path] = None) -> int:
+    print(SCRIPT_DIR, file=sys.stderr)
+    print(PROJECT_ROOT, file=sys.stderr)
     configure_override_resources(overrides_path)
 
     data = load_json(Path(json_path))
