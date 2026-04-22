@@ -1,0 +1,15 @@
+{
+  "lemma_overrides": {},
+  "form_feat_overrides": {},
+  "prontype_overrides": {
+    "naGajo\tPRON": "Dem",
+    "eliodi\tDET": "Ind"
+  },
+  "tag_to_default_prontype": {
+    "Q\tDET": "Ind"
+  },
+  "metadata": {
+    "description": "Hand-maintained overrides that should take precedence over defaults and gold-derived resources.",
+    "editing_policy": "Add only cases that are not yet stable enough to generate automatically from the gold treebank."
+  }
+}

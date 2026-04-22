@@ -1,0 +1,57 @@
+{
+  "lemma_overrides": {
+    "ajo": "ijo",
+    "ica": "ica",
+    "ja": "jaG",
+    "aG": "aG",
+    "etadi": "etidi",
+    "iwaGadi": "waGadi",
+    "niwatece": "watece",
+    "liwatece": "watece",
+    "liGeladi": "Geladi",
+    "lidi": "idi",
+    "loigi": "oigi",
+    "ipegitege": "pegi",
+    "ipegetege": "pegi",
+    "ipegitegi": "pegi",
+    "GanigotGa": "nigota",
+    "GanigotaGa": "nigota",
+    "Maria": "maria"
+  },
+  "form_feat_overrides": {
+    "ajo": "Deixis=Remt|Gender=Fem|Number=Sing|PronType=Dem",
+    "ica": "Gender=Masc|Number=Sing|PronType=Dem",
+    "ja": "Aspect=Perf",
+    "aG": "_",
+    "weiigi": "Gender=Masc|Number=Sing",
+    "digoida": "AdvType=Loc|Deixis=Remt|PronType=Dem",
+    "Maria": "_",
+    "liwatece": "Gender=Fem|Number=Sing|Person[psor]=3",
+    "niwatece": "Gender=Fem|Number=Sing",
+    "liGeladi": "Gender=Masc|Number=Sing|Person[psor]=3",
+    "loigi": "Gender=Masc|Number=Sing|Person[psor]=3",
+    "GanigotGa": "Gender=Fem|Number=Sing|Person[psor]=2",
+    "etadi": "Gender=Fem|Person=3",
+    "iwaGadi": "Mood=Ind|Person=3|VerbForm=Fin",
+    "ipegitege": "Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
+    "ipegetege": "Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
+    "ipegitegi": "Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl"
+  },
+  "prontype_overrides": {
+    "ajo\tDET": "Dem",
+    "ijo\tDET": "Dem",
+    "ica\tDET": "Dem",
+    "ane\tPRON": "Rel",
+    "naGajo\tPRON": "Dem"
+  },
+  "tag_to_default_prontype": {
+    "D\tDET": "Dem",
+    "WPRO\tPRON": "Rel",
+    "PRO\tPRON": "Prs",
+    "PRO$\tPRON": "Prs"
+  },
+  "metadata": {
+    "description": "Externalized defaults previously embedded in the converter.",
+    "intended_use": "Base overrides loaded on every run, then optionally refined by gold-derived and manual overrides."
+  }
+}
