@@ -1,0 +1,2284 @@
+Found 68 matching sentence(s).
+================================================================================
+Sentence 1
+================================================================================
+path: $.pages[0].sentences[0]
+uid: fcef38ed-be6b-4f2a-b5cf-fa4db625ecfb
+text: Iwalo libiniena
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: A mulher está bonita .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-2 type=IP-MAT level=0
+  span=1-1 type=NP-SBJ level=1
+  span=2-2 type=NP-PRD level=1
+
+tokens:
+  p=1   v='Iwalo'            t='N'          l=1   gloss-br='mulher'
+      splits:
+        [1] v='iwa'        t='n'        gloss-br='mulher' fn=None idx=None
+        [2] v='lo'         t='Cla'      gloss-br='cla' fn=None idx=None
+  p=2   v='libiniena'        t='N$'         l=1   gloss-br='beleza'
+
+conllu/token count check:
+  tokens=2  proto-conllu=0
+
+================================================================================
+Sentence 2
+================================================================================
+path: $.pages[0].sentences[1]
+uid: 31d3b4c0-4aab-4538-999b-b8ee85c34444
+text: Iwalo ninitibeci
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: A mulher está feliz .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-2 type=IP-MAT level=0
+  span=1-1 type=NP level=1
+
+tokens:
+  p=1   v='Iwalo'            t='N'          l=1   gloss-br='mulher'
+      splits:
+        [1] v='iwa'        t='n'        gloss-br='mulher' fn=None idx=None
+        [2] v='lo'         t='Cla'      gloss-br='cla' fn=None idx=None
+  p=2   v='ninitibeci'       t='VB'         l=0   gloss-br='está feliz'
+
+conllu/token count check:
+  tokens=2  proto-conllu=0
+
+================================================================================
+Sentence 3
+================================================================================
+path: $.pages[0].sentences[2]
+uid: 39f34955-a828-47d7-808d-b3b3565b42d6
+text: Lotaǥa ǥanioxoa libinienaǥa
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: A palavra de seu irmão é bonita .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=0
+  span=1-2 type=NP-SBJ level=1
+  span=3-3 type=NP-PRD level=1
+
+tokens:
+  p=1   v='Lotaǥa'           t='N$'         l=1   gloss-br=None
+  p=2   v='ǥanioxoa'         t='N$'         l=1   gloss-br='seu irmão'
+      splits:
+        [1] v='Ga'         t='Gnr'      gloss-br=None fn=None idx=None
+        [2] v='nioxoa'     t='n'        gloss-br=None fn=None idx=None
+  p=3   v='libinienaǥa'      t='N$'         l=1   gloss-br='bonita'
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 4
+================================================================================
+path: $.pages[0].sentences[3]
+uid: d3ae6cfd-bec1-49f3-a0f9-4ca0744e3404
+text: Lotaǥa ǥadodawa libinienaǥa
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: A palavra do seu marido é bonita .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=0
+  span=1-2 type=NP-SBJ level=1
+  span=3-3 type=NP-PRD level=1
+
+tokens:
+  p=1   v='Lotaǥa'           t='N$'         l=1   gloss-br=None
+  p=2   v='ǥadodawa'         t='N$'         l=1   gloss-br=None
+  p=3   v='libinienaǥa'      t='N$'         l=1   gloss-br='bonita'
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 5
+================================================================================
+path: $.pages[0].sentences[4]
+uid: e349508c-4d86-48b8-9918-057988755e77
+text: Etogo aneiwaǥadi adakake lojedi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: A pesada canoa está barata .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-7 type=IP-MAT level=0
+  span=1-5 type=NP-SBJ level=1
+  span=2-5 type=CP-REL level=2
+  span=2-2 type=WNP level=3
+  span=3-5 type=IP-SUB level=3
+  span=5-5 type=NP level=4
+  span=6-7 type=NP-PRD level=1
+  span=3-3 type=NP-TRACE level=4
+
+tokens:
+  p=1   v='Etogo'            t='N'          l=1   gloss-br=None
+  p=2   v='ane@'             t='WPRO'       l=3   gloss-br=None
+      split: {"v": "aneiwaǥadi", "t": "WPRO+VB", "idx": 0}
+      splits:
+        [1] v='ane'        t=None       gloss-br=None fn=True idx=None
+        [2] v='iwaGadi'    t=None       gloss-br=None fn=None idx=None
+  p=3   v='*T*'              t=None         l=4   gloss-br=None
+  p=4   v='@iwaGadi'         t='VB'         l=3   gloss-br=None
+      split: {"idx": 1}
+  p=5   v='aG@'              t='NEG'        l=4   gloss-br='não duro'
+      split: {"v": "adakake", "t": "NEG+ADJ", "idx": 0}
+      splits:
+        [1] v='aG'         t='Neg'      gloss-br=None fn=True idx=None
+        [2] v='d'          t='Inv'      gloss-br=None fn=None idx=None
+        [3] v='akake'      t='v'        gloss-br=None fn=None idx=None
+  p=6   v='@dakake'          t='ADJ'        l=1   gloss-br=None
+      split: {"idx": 1}
+  p=7   v='lojedi'           t='N$'         l=1   gloss-br='vingança/preço'
+
+conllu/token count check:
+  tokens=7  proto-conllu=0
+
+================================================================================
+Sentence 6
+================================================================================
+path: $.pages[0].sentences[5]
+uid: 1d10c633-e74d-4e27-ac23-6b6b2dde9647
+text: Etogo ane iwaǥadi adakake loojedi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: A canoa pesada é barata .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-7 type=IP-MAT level=0
+  span=1-5 type=NP-SBJ level=1
+  span=2-5 type=CP-REL level=2
+  span=2-2 type=WNP level=3
+  span=3-5 type=IP-SUB level=3
+  span=5-5 type=NP level=4
+  span=6-7 type=NP-PRD level=1
+  span=3-3 type=NP-TRACE level=4
+
+tokens:
+  p=1   v='Etogo'            t='N'          l=1   gloss-br=None
+  p=2   v='ane'              t='WPRO'       l=3   gloss-br='que '
+  p=3   v='*T*'              t=None         l=4   gloss-br=None
+  p=4   v='iwaǥadi'          t='VB'         l=3   gloss-br=None
+  p=5   v='aG@'              t='NEG'        l=4   gloss-br='não duro'
+      split: {"v": "adakake", "t": "NEG+ADJ", "idx": 0}
+      splits:
+        [1] v='aG'         t=None       gloss-br=None fn=None idx=None
+        [2] v='akake'      t='Adj'      gloss-br=None fn=None idx=None
+  p=6   v='@akake'           t='ADJ'        l=1   gloss-br=None
+      split: {"idx": 1}
+  p=7   v='loojedi'          t='N$'         l=1   gloss-br='preço'
+
+conllu/token count check:
+  tokens=7  proto-conllu=0
+
+================================================================================
+Sentence 7
+================================================================================
+path: $.pages[0].sentences[6]
+uid: 435e4b10-ab78-4ee3-84b0-7773dbe10bf7
+text: ǥawenigi eliodi me libinienigi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: A sua comida é muito bonita .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=0
+  span=1-4 type=NP level=1
+  span=1-1 type=NP level=2
+  span=3-4 type=CP-me level=2
+  span=4-4 type=IP-SUB level=3
+  span=4-4 type=NP level=4
+
+tokens:
+  p=1   v='ǥawenigi'         t='N$'         l=2   gloss-br=None
+  p=2   v='eliodi'           t='Q'          l=1   gloss-br='muito'
+  p=3   v='me'               t='C'          l=2   gloss-br='que'
+  p=4   v='libinienigi'      t='N$'         l=4   gloss-br='bonito'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='ibinie'     t='n'        gloss-br=None fn=None idx=None
+        [3] v='nigi'       t='Dim'      gloss-br='masc' fn=None idx=None
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 8
+================================================================================
+path: $.pages[0].sentences[7]
+uid: cf44903e-0c33-44bc-a146-1fb8a4ccb973
+text: Niǥijo liwenigi libinienigi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Aquela comida dela é bonita .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=0
+  span=1-2 type=NP-SBJ level=1
+  span=3-3 type=NP-PRD level=1
+
+tokens:
+  p=1   v='Niǥijo'           t='D'          l=1   gloss-br='este'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=2   v='liwenigi'         t='N$'         l=1   gloss-br=None
+  p=3   v='libinienigi'      t='N$'         l=1   gloss-br='bonito'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='ibinie'     t='n'        gloss-br=None fn=None idx=None
+        [3] v='nigi'       t='Dim'      gloss-br='masc' fn=None idx=None
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 9
+================================================================================
+path: $.pages[0].sentences[8]
+uid: 0ca977cd-2edf-45d9-b958-068648aebef9
+text: Nigida niwenigi eliodi me dakake loojedi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Aquela comida é muito cara .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-6 type=IP-MAT level=0
+  span=1-6 type=NP level=1
+  span=4-6 type=CP-me level=2
+  span=5-6 type=IP-SUB level=3
+  span=5-6 type=NP level=4
+
+tokens:
+  p=1   v='Nigida'           t='D'          l=1   gloss-br='este'
+      splits:
+        [1] v='niG'        t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='da'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=2   v='niwenigi'         t='N$'         l=1   gloss-br=None
+  p=3   v='eliodi'           t='ADJ'        l=1   gloss-br='grande'
+  p=4   v='me'               t='C'          l=2   gloss-br='que'
+  p=5   v='dakake'           t='ADJ'        l=4   gloss-br='duro'
+      splits:
+        [1] v='d'          t='Inv'      gloss-br=None fn=None idx=None
+        [2] v='akake'      t='v'        gloss-br=None fn=None idx=None
+  p=6   v='loojedi'          t='N$'         l=4   gloss-br='vingança/preço'
+
+conllu/token count check:
+  tokens=6  proto-conllu=0
+
+================================================================================
+Sentence 10
+================================================================================
+path: $.pages[0].sentences[9]
+uid: 559ba85f-edfc-48dc-9bfb-0c3f8e5ad887
+text: NaGajo lomigo Pedilo idei madi niwatece
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Aquele anzol do Pedro está na canoa .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-7 type=IP-MAT level=0
+  span=1-3 type=NP level=1
+  span=2-3 type=NP level=2
+  span=5-7 type=CP-me level=1
+  span=6-7 type=IP-SUB level=2
+  span=6-7 type=NP level=3
+
+tokens:
+  p=1   v='NaGajo'           t='PRO$'       l=1   gloss-br='dela'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=2   v='lomigo'           t='N$'         l=2   gloss-br='anzol'
+  p=3   v='Pedilo'           t='NPR'        l=2   gloss-br=None
+  p=4   v='idei'             t='VB'         l=0   gloss-br='fica'
+      splits:
+        [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
+        [2] v='dei'        t='v'        gloss-br='ficar(permanente)' fn=None idx=None
+  p=5   v='me@'              t='C'          l=1   gloss-br='que o'
+      split: {"v": "madi", "t": "C+D", "idx": 0}
+      splits:
+        [1] v='me'         t=None       gloss-br=None fn=True idx=None
+        [2] v='a'          t=None       gloss-br=None fn=None idx=None
+        [3] v='di'         t=None       gloss-br=None fn=None idx=None
+  p=6   v='@adi'             t='D'          l=3   gloss-br=None
+      split: {"idx": 1}
+  p=7   v='niwatece'         t='N$'         l=3   gloss-br='canoa'
+      splits:
+        [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
+        [2] v='watece'     t='n'        gloss-br='canoa' fn=None idx=None
+
+conllu/token count check:
+  tokens=7  proto-conllu=0
+
+================================================================================
+Sentence 11
+================================================================================
+path: $.pages[0].sentences[10]
+uid: 92838eda-ef9b-4f05-a5eb-38a4709c0337
+text: Naǥajo lomigo niganigawanigi madi niwatece
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Aquele anzol do menino é na canoa .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-6 type=IP-MAT level=0
+  span=1-6 type=NP level=1
+  span=1-2 type=NP level=2
+  span=4-6 type=CP-me level=2
+  span=5-6 type=IP-SUB level=3
+  span=5-6 type=NP level=4
+
+tokens:
+  p=1   v='Naǥajo'           t='PRO$'       l=2   gloss-br='dela'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=2   v='lomigo'           t='N$'         l=2   gloss-br='anzol'
+  p=3   v='niganigawanigi'   t='N$'         l=1   gloss-br=None
+  p=4   v='me@'              t='C'          l=2   gloss-br='que o'
+      split: {"v": "madi", "t": "C+D", "idx": 0}
+      splits:
+        [1] v='me'         t=None       gloss-br=None fn=True idx=None
+        [2] v='a'          t=None       gloss-br=None fn=None idx=None
+        [3] v='di'         t=None       gloss-br=None fn=None idx=None
+  p=5   v='@adi'             t='D'          l=4   gloss-br=None
+      split: {"idx": 1}
+  p=6   v='niwatece'         t='N$'         l=4   gloss-br='canoa'
+      splits:
+        [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
+        [2] v='watece'     t='n'        gloss-br='canoa' fn=None idx=None
+
+conllu/token count check:
+  tokens=6  proto-conllu=0
+
+================================================================================
+Sentence 12
+================================================================================
+path: $.pages[0].sentences[11]
+uid: 3a7e213b-323e-4694-bad9-47091f3533f5
+text: Te ee nigotaǥa
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Estou na cidade .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=0
+  span=2-3 type=NP level=1
+
+tokens:
+  p=1   v='Te'               t='VB'         l=0   gloss-br=None
+  p=2   v='ee'               t='D'          l=1   gloss-br='eu'
+  p=3   v='nigotaǥa'         t='N'          l=1   gloss-br='cidade'
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 13
+================================================================================
+path: $.pages[0].sentences[12]
+uid: 0de3d311-348a-4107-a191-9fc3f960c249
+text: niǥijoa lionaga iwalo idei mijotaǥa
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Aqueles filhos da mulher estão com eles .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-5 type=IP-MAT level=0
+  span=1-3 type=NP level=1
+  span=1-2 type=NP level=2
+
+tokens:
+  p=1   v='niǥijoa'          t='D'          l=2   gloss-br=None
+  p=2   v='lionaga'          t='N$'         l=2   gloss-br=None
+  p=3   v='iwalo'            t='N'          l=1   gloss-br='mulher'
+      splits:
+        [1] v='iwa'        t='n'        gloss-br='mulher' fn=None idx=None
+        [2] v='lo'         t='Cla'      gloss-br='cla' fn=None idx=None
+  p=4   v='idei'             t='VB'         l=0   gloss-br='fica'
+      splits:
+        [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
+        [2] v='dei'        t='v'        gloss-br='ficar(permanente)' fn=None idx=None
+  p=5   v='mijotaǥa'         t='CD'         l=0   gloss-br='com ele'
+
+conllu/token count check:
+  tokens=5  proto-conllu=0
+
+================================================================================
+Sentence 14
+================================================================================
+path: $.pages[0].sentences[13]
+uid: 4e9130da-80fd-4ac2-8665-956c95b299e2
+text: dibixodi ideiticoaci maditaǥa
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: As formigas estão nela .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=0
+  span=1-1 type=NP level=1
+
+tokens:
+  p=1   v='dibixodi'         t='N'          l=1   gloss-br='formiga'
+  p=2   v='ideiticoaci'      t='VBAPL'      l=0   gloss-br=None
+  p=3   v='maditaǥa'         t='CD'         l=0   gloss-br='com ela'
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 15
+================================================================================
+path: $.pages[0].sentences[14]
+uid: baccc279-f303-4b4f-a6d7-4404de699f4a
+text: Iwalepodi libinienigipi .
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: As mulheres estão bonitas .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=0
+  span=1-1 type=NP-SBJ level=1
+  span=2-2 type=NP-PRD level=1
+
+tokens:
+  p=1   v='Iwalepodi'        t='N'          l=1   gloss-br='mulheres'
+  p=2   v='libinienigipi'    t='N$'         l=1   gloss-br='suas belezas'
+  p=3   v='.'                t='PUNC'       l=0   gloss-br=None
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 16
+================================================================================
+path: $.pages[0].sentences[15]
+uid: af474637-80f3-4001-884c-4d5f452fb573
+text: Ninitibeci .
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ela está feliz .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-2 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Ninitibeci'       t='VB'         l=None gloss-br=None
+  p=2   v='.'                t='PUNC'       l=None gloss-br=None
+
+conllu/token count check:
+  tokens=2  proto-conllu=0
+
+================================================================================
+Sentence 17
+================================================================================
+path: $.pages[0].sentences[16]
+uid: 8f297896-5ee6-461f-86e3-0d4d4ef5a661
+text: ninitibeci naǥada .
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ela está feliz .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=0
+
+tokens:
+  p=1   v='ninitibeci'       t='VB'         l=0   gloss-br=None
+  p=2   v='naǥada'           t='D'          l=0   gloss-br=None
+  p=3   v='.'                t='PUNC'       l=0   gloss-br=None
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 18
+================================================================================
+path: $.pages[0].sentences[17]
+uid: 4855882d-49f1-4035-bd12-73abf82df995
+text: Ninitibeci naǥadi .
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ela está feliz .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Ninitibeci'       t='VB'         l=None gloss-br=None
+  p=2   v='naǥadi'           t=None         l=None gloss-br=None
+  p=3   v='.'                t='PUNC'       l=None gloss-br=None
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 19
+================================================================================
+path: $.pages[0].sentences[18]
+uid: d489d970-e6b1-42e3-add2-2221f2fb1fad
+text: naǥada iwaǥadi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ela está pesada
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-2 type=IP-MAT level=0
+  span=1-1 type=NP level=1
+
+tokens:
+  p=1   v='naǥada'           t='D'          l=1   gloss-br=None
+  p=2   v='iwaǥadi'          t='VB'         l=0   gloss-br=None
+
+conllu/token count check:
+  tokens=2  proto-conllu=0
+
+================================================================================
+Sentence 20
+================================================================================
+path: $.pages[0].sentences[19]
+uid: 23b27bf4-3694-4053-8f74-b3c739fc8ee2
+text: naǥadi iwaǥadi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ela está pesada.
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-2 type=IP-MAT level=0
+  span=1-1 type=NP level=1
+
+tokens:
+  p=1   v='naǥadi'           t='D'          l=1   gloss-br='aquela'
+      splits:
+        [1] v='nǥ'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [3] v='di'         t='Ncl'      gloss-br='deitad(o|a)' fn=None idx=None
+  p=2   v='iwaǥadi'          t='VB'         l=0   gloss-br='(é|está)_pesad(o|a)'
+      splits:
+        [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
+        [2] v='waǥadi'     t='v'        gloss-br='(ser|estar)_pesad(o|a)' fn=None idx=None
+
+conllu/token count check:
+  tokens=2  proto-conllu=0
+
+================================================================================
+Sentence 21
+================================================================================
+path: $.pages[0].sentences[20]
+uid: 85801af7-8128-4d85-a7bd-a182d5dc58a5
+text: Naǥana iwaǥadi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ela está pesada.
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-2 type=IP-MAT level=0
+  span=1-1 type=NP level=1
+
+tokens:
+  p=1   v='Naǥana'           t='D'          l=1   gloss-br='aquela'
+      splits:
+        [1] v='nǥ'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [3] v='na'         t='Ncl'      gloss-br='vindo' fn=None idx=None
+  p=2   v='iwaǥadi'          t='VB'         l=0   gloss-br='(é|está)_pesad(o|a)'
+      splits:
+        [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
+        [2] v='waǥadi'     t='v'        gloss-br='(ser|estar)_pesad(o|a)' fn=None idx=None
+
+conllu/token count check:
+  tokens=2  proto-conllu=0
+
+================================================================================
+Sentence 22
+================================================================================
+path: $.pages[0].sentences[21]
+uid: b9d77060-3ac9-4305-ba86-2723cc7cb70a
+text: Ada iwaǥadi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ela está é pesada.
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-2 type=IP-MAT level=0
+  span=1-1 type=NP level=1
+
+tokens:
+  p=1   v='Ada'              t='D'          l=1   gloss-br='essa'
+      splits:
+        [1] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [2] v='da'         t='Ncl'      gloss-br='em_pé' fn=None idx=None
+  p=2   v='iwaǥadi'          t='VB'         l=0   gloss-br='(é|está)_pesad(o|a)'
+      splits:
+        [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
+        [2] v='waǥadi'     t='v'        gloss-br='(ser|estar)_pesad(o|a)' fn=None idx=None
+
+conllu/token count check:
+  tokens=2  proto-conllu=0
+
+================================================================================
+Sentence 23
+================================================================================
+path: $.pages[0].sentences[22]
+uid: 7521cd51-aa9b-4ff6-8d87-a5ce4ca92b6d
+text: Ani iwaǥadi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ela está é pesada.
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-2 type=IP-MAT level=0
+  span=1-1 type=NP level=1
+
+tokens:
+  p=1   v='Ani'              t='D'          l=1   gloss-br='essa'
+      splits:
+        [1] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [2] v='ni'         t='Ncl'      gloss-br='sentad(o|a)' fn=None idx=None
+  p=2   v='iwaǥadi'          t='VB'         l=0   gloss-br='(é|está)_pesad(o|a)'
+      splits:
+        [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
+        [2] v='waǥadi'     t='v'        gloss-br='(ser|estar)_pesad(o|a)' fn=None idx=None
+
+conllu/token count check:
+  tokens=2  proto-conllu=0
+
+================================================================================
+Sentence 24
+================================================================================
+path: $.pages[0].sentences[23]
+uid: 96687d35-46ae-4338-9398-ff66a3165b61
+text: Adi iwaǥadi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ela está é pesada.
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-2 type=IP-MAT level=0
+  span=1-1 type=NP level=1
+
+tokens:
+  p=1   v='Adi'              t='D'          l=1   gloss-br='essa'
+      splits:
+        [1] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [2] v='di'         t='Ncl'      gloss-br='deitad(o|a)' fn=None idx=None
+  p=2   v='iwaǥadi'          t='VB'         l=0   gloss-br='(é|está)_pesad(o|a)'
+      splits:
+        [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
+        [2] v='waǥadi'     t='v'        gloss-br='(ser|estar)_pesad(o|a)' fn=None idx=None
+
+conllu/token count check:
+  tokens=2  proto-conllu=0
+
+================================================================================
+Sentence 25
+================================================================================
+path: $.pages[0].sentences[24]
+uid: 24a9e039-79d0-4026-8824-0d061c2b21ee
+text: naǥana eliodi meninitibeci
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ela é muito feliz .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=0
+  span=1-1 type=NP-SBJ level=1
+  span=2-4 type=NP-PRD level=1
+  span=3-4 type=CP-me level=2
+  span=4-4 type=IP-SUB level=3
+
+tokens:
+  p=1   v='naǥana'           t='D'          l=1   gloss-br='aquela'
+  p=2   v='eliodi'           t='Q'          l=1   gloss-br='muito'
+  p=3   v='me@'              t='C'          l=2   gloss-br='que está feliz'
+      split: {"v": "meninitibeci", "t": "C+VB", "idx": 0}
+      splits:
+        [1] v='me'         t=None       gloss-br=None fn=True idx=None
+        [2] v='ninitibeci' t=None       gloss-br=None fn=None idx=None
+  p=4   v='@ninitibeci'      t='VB'         l=3   gloss-br=None
+      split: {"idx": 1}
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 26
+================================================================================
+path: $.pages[0].sentences[25]
+uid: fba05264-0e3c-4248-8211-3ac87c64c2e6
+text: Dapicoǥo
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ela é quente .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-1 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Dapicoǥo'         t='VB'         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=1  proto-conllu=0
+
+================================================================================
+Sentence 27
+================================================================================
+path: $.pages[0].sentences[26]
+uid: f9af3f8f-3b06-4756-8676-b5ffb2c24b44
+text: Dapipocoǥo
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ela está quente .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-1 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Dapipocoǥo'       t=None         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=1  proto-conllu=0
+
+================================================================================
+Sentence 28
+================================================================================
+path: $.pages[0].sentences[27]
+uid: fab37d81-bb9b-4e20-a8f5-3b3969ee86d1
+text: libiniena
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ele está bonito .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-1 type=IP-MAT level=0
+  span=1-1 type=NP level=1
+
+tokens:
+  p=1   v='libiniena'        t='N$'         l=1   gloss-br='beleza'
+
+conllu/token count check:
+  tokens=1  proto-conllu=0
+
+================================================================================
+Sentence 29
+================================================================================
+path: $.pages[0].sentences[28]
+uid: 0b9bddcd-f6af-4281-80a9-cac2377d0af1
+text: libinienigi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ele é bonito.
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-1 type=IP-MAT level=0
+  span=1-1 type=NP level=1
+
+tokens:
+  p=1   v='libinienigi'      t='N$'         l=1   gloss-br='beleza'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='binie'      t='n'        gloss-br='beleza' fn=None idx=None
+        [3] v='na'         t='Dim'      gloss-br=None fn=None idx=None
+        [4] v='gi'         t='Gnr'      gloss-br='M' fn=None idx=None
+
+conllu/token count check:
+  tokens=1  proto-conllu=0
+
+================================================================================
+Sentence 30
+================================================================================
+path: $.pages[0].sentences[29]
+uid: 38c689d8-332d-4406-b236-de4593e4853a
+text: Dapicoǥo
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ele é quente .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-1 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Dapicoǥo'         t=None         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=1  proto-conllu=0
+
+================================================================================
+Sentence 31
+================================================================================
+path: $.pages[0].sentences[30]
+uid: ea70209d-4f3c-4bf9-8d93-2d91fa0f928c
+text: Dapicoǥo
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Ele está quente .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-1 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Dapicoǥo'         t=None         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=1  proto-conllu=0
+
+================================================================================
+Sentence 32
+================================================================================
+path: $.pages[0].sentences[31]
+uid: 4aed8aa8-bd36-4940-8020-8ba12122304e
+text: Ninitibigiwaji .
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Eles são felizes .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-2 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Ninitibigiwaji'   t=None         l=None gloss-br=None
+      splits:
+        [1] v='nini'       t=None       gloss-br=None fn=None idx=None
+        [2] v='tibigi'     t='Dir'      gloss-br=None fn=None idx=None
+        [3] v='waji'       t='Coll'     gloss-br=None fn=None idx=None
+  p=2   v='.'                t='PUNC'       l=None gloss-br=None
+
+conllu/token count check:
+  tokens=2  proto-conllu=0
+
+================================================================================
+Sentence 33
+================================================================================
+path: $.pages[0].sentences[32]
+uid: 3a27c7c6-ecd6-45c0-a71e-b4aa2a242a3d
+text: Niǥida lodajo lodawa aidei dineigi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Esta faca da esposa dela não está na casa .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-6 type=IP-MAT level=0
+  span=1-4 type=NP level=1
+  span=1-3 type=NP level=2
+  span=1-2 type=NP level=3
+  span=6-6 type=NP level=1
+
+tokens:
+  p=1   v='Niǥida'           t='D'          l=3   gloss-br='este'
+      splits:
+        [1] v='niG'        t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='da'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=2   v='lodajo'           t='N$'         l=3   gloss-br='faca'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='odajo'      t='n'        gloss-br=None fn=None idx=None
+  p=3   v='lodawa'           t='N$'         l=2   gloss-br='esposa'
+  p=4   v='aG@'              t='NEG'        l=1   gloss-br='não fica'
+      split: {"v": "aidei", "t": "NEG+VB", "idx": 0}
+      splits:
+        [1] v='aG'         t='Neg'      gloss-br=None fn=None idx=None
+        [2] v='idei'       t='v'        gloss-br=None fn=None idx=None
+  p=5   v='@idei'            t='VB'         l=0   gloss-br=None
+      split: {"idx": 1}
+  p=6   v='dineigi'          t='N'          l=1   gloss-br='casa'
+
+conllu/token count check:
+  tokens=6  proto-conllu=0
+
+================================================================================
+Sentence 34
+================================================================================
+path: $.pages[0].sentences[33]
+uid: 64f2c803-b436-4202-b4c7-acf5c7205bc3
+text: liwigo niganigawanigi libinienigi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Esta fotografia da criança é bonita .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=0
+  span=1-2 type=NP-SBJ level=1
+  span=1-1 type=NP level=2
+  span=3-3 type=NP-PRD level=1
+
+tokens:
+  p=1   v='liwigo'           t='N$'         l=2   gloss-br='sua fotografia'
+  p=2   v='niganigawanigi'   t='N'          l=1   gloss-br='meninos'
+  p=3   v='libinienigi'      t='N$'         l=1   gloss-br='bonito'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='ibinie'     t='n'        gloss-br=None fn=None idx=None
+        [3] v='nigi'       t='Dim'      gloss-br='masc' fn=None idx=None
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 35
+================================================================================
+path: $.pages[0].sentences[34]
+uid: 8bad7bc3-f82f-46c0-9e63-c780104b11e2
+text: naǥani wetiǥa eliodi me iwaǥadi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Esta pedra está muito pesada .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-5 type=IP-MAT level=0
+  span=1-2 type=NP-SBJ level=1
+  span=3-5 type=NP-PRD level=1
+  span=4-5 type=CP-me level=2
+  span=5-5 type=IP-SUB level=3
+
+tokens:
+  p=1   v='naǥani'           t='D'          l=1   gloss-br='aquela'
+  p=2   v='wetiǥa'           t='N'          l=1   gloss-br='pedra'
+  p=3   v='eliodi'           t='Q'          l=1   gloss-br='muito'
+  p=4   v='me'               t='C'          l=2   gloss-br='que'
+  p=5   v='iwaǥadi'          t='VB'         l=3   gloss-br='pesa'
+
+conllu/token count check:
+  tokens=5  proto-conllu=0
+
+================================================================================
+Sentence 36
+================================================================================
+path: $.pages[0].sentences[35]
+uid: 768a3635-dcaf-4210-b236-73568abadbdb
+text: Naǥani wetiǥa iwaǥadi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Esta pedra está pesada .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=0
+  span=1-2 type=NP level=1
+
+tokens:
+  p=1   v='Naǥani'           t='D'          l=1   gloss-br=None
+  p=2   v='wetiǥa'           t='N'          l=1   gloss-br='pedra'
+  p=3   v='iwaǥadi'          t='VB'         l=0   gloss-br=None
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 37
+================================================================================
+path: $.pages[0].sentences[36]
+uid: e5f90fbc-14e8-4c6f-9e07-61fbf67d042f
+text: Niginoa wetiadi iwaǥadi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Estas pedras estão pesadas .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=0
+  span=1-2 type=NP level=1
+
+tokens:
+  p=1   v='Niginoa'          t='D'          l=1   gloss-br='esses'
+      splits:
+        [1] v='niG'        t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='na'         t='Ncl'      gloss-br=None fn=None idx=None
+        [4] v='wa'         t='Plu'      gloss-br=None fn=None idx=None
+  p=2   v='wetiadi'          t='N'          l=1   gloss-br='pedras'
+  p=3   v='iwaǥadi'          t='VB'         l=0   gloss-br='pesa'
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 38
+================================================================================
+path: $.pages[0].sentences[37]
+uid: f4b854f9-c3c6-4e88-8a9b-ca73fcba8d46
+text: Naǥani wetiǥa iwaǥadi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Esta pedra é pesada .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=0
+  span=1-2 type=NP level=1
+
+tokens:
+  p=1   v='Naǥani'           t='D'          l=1   gloss-br=None
+  p=2   v='wetiǥa'           t='N'          l=1   gloss-br='pedra'
+  p=3   v='iwaǥadi'          t='VB'         l=0   gloss-br=None
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 39
+================================================================================
+path: $.pages[0].sentences[38]
+uid: 38f73c1c-ddfb-4153-9310-d24214cd68e7
+text: Naǥani wetiǥa ane iwaǥadi eniteloco iǥonagi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Esta pedra que é pesada caiu no meu pé .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-7 type=IP-MAT level=0
+  span=1-7 type=NP level=1
+  span=3-7 type=CP-REL level=2
+  span=3-3 type=WNP level=3
+  span=4-7 type=IP-SUB level=3
+  span=7-7 type=NP-APL level=4
+  span=4-4 type=NP-TRACE level=4
+
+tokens:
+  p=1   v='Naǥani'           t='D'          l=1   gloss-br='aquela'
+  p=2   v='wetiǥa'           t='N'          l=1   gloss-br='pedra'
+  p=3   v='ane'              t='WPRO'       l=3   gloss-br='que '
+  p=4   v='*T*'              t=None         l=4   gloss-br=None
+  p=5   v='iwaǥadi'          t='VB'         l=3   gloss-br='pesa'
+  p=6   v='eniteloco'        t='VBAPL'      l=3   gloss-br=None
+  p=7   v='iǥonagi'          t='N$'         l=4   gloss-br=None
+
+conllu/token count check:
+  tokens=7  proto-conllu=0
+
+================================================================================
+Sentence 40
+================================================================================
+path: $.pages[0].sentences[39]
+uid: e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4
+text: Naǥani wetiǥa ane iwaǥadi iǥonagi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Esta pedra , que é pesada , caiu no meu pé .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-6 type=IP-MAT level=0
+  span=1-6 type=NP level=1
+  span=3-6 type=CP-REL level=2
+  span=3-3 type=WNP level=3
+  span=4-6 type=IP-SUB level=3
+  span=6-6 type=NP level=4
+  span=4-4 type=NP-TRACE level=4
+
+tokens:
+  p=1   v='Naǥani'           t='D'          l=1   gloss-br='aquela'
+  p=2   v='wetiǥa'           t='N'          l=1   gloss-br='pedra'
+  p=3   v='ane'              t='WPRO'       l=3   gloss-br='que '
+  p=4   v='*T*'              t=None         l=4   gloss-br=None
+  p=5   v='iwaǥadi'          t='VB'         l=3   gloss-br='pesa'
+  p=6   v='iǥonagi'          t='N$'         l=4   gloss-br=None
+
+conllu/token count check:
+  tokens=6  proto-conllu=0
+
+================================================================================
+Sentence 41
+================================================================================
+path: $.pages[0].sentences[40]
+uid: 8dda04f0-f7e8-46d6-b41d-b65dd214f01b
+text: Nigidoa waca lotidi dapicoǥo
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Este leite está quente .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Nigidoa'          t=None         l=None gloss-br=None
+  p=2   v='waca'             t='N'          l=None gloss-br='da vaca'
+  p=3   v='lotidi'           t=None         l=None gloss-br=None
+  p=4   v='dapicoǥo'         t=None         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 42
+================================================================================
+path: $.pages[0].sentences[41]
+uid: 79cb0e55-9c06-4cb1-91b3-2b5233e1678f
+text: nigidiwa okokodi ligeledi midi niwigo libinienaǥa
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Estes ovos da fotografia dela estão bonitos .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-7 type=IP-MAT level=0
+  span=1-7 type=NP level=1
+  span=4-7 type=CP-me level=2
+  span=5-7 type=IP-SUB level=3
+  span=5-7 type=NP level=4
+
+tokens:
+  p=1   v='nigidiwa'         t='D'          l=1   gloss-br='aqueles'
+  p=2   v='okokodi'          t='N'          l=1   gloss-br='galinha'
+  p=3   v='ligeledi'         t='N$'         l=1   gloss-br='ovo'
+  p=4   v='me@'              t='C'          l=2   gloss-br='para os'
+      split: {"v": "midi", "t": "C+D", "idx": 0}
+      splits:
+        [1] v='me'         t=None       gloss-br=None fn=True idx=None
+        [2] v='i'          t=None       gloss-br=None fn=None idx=None
+        [3] v='di'         t=None       gloss-br=None fn=None idx=None
+  p=5   v='@idi'             t='D'          l=4   gloss-br=None
+      split: {"idx": 1}
+  p=6   v='niwigo'           t='N'          l=4   gloss-br='fotografia'
+  p=7   v='libinienaǥa'      t='N$'         l=4   gloss-br='bonitas'
+
+conllu/token count check:
+  tokens=7  proto-conllu=0
+
+================================================================================
+Sentence 43
+================================================================================
+path: $.pages[0].sentences[42]
+uid: a74fea0a-dd87-4c4d-8670-9db66f5b5b16
+text: nigidiwa okokodi ligetedi liwigo libinienaǥa
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Estes ovos da fotografia estão bonitos .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-5 type=IP-MAT level=None
+
+tokens:
+  p=1   v='nigidiwa'         t=None         l=None gloss-br=None
+  p=2   v='okokodi'          t=None         l=None gloss-br=None
+  p=3   v='ligetedi'         t=None         l=None gloss-br=None
+  p=4   v='liwigo'           t=None         l=None gloss-br=None
+  p=5   v='libinienaǥa'      t='ADJ'        l=None gloss-br='bonitas'
+
+conllu/token count check:
+  tokens=5  proto-conllu=0
+
+================================================================================
+Sentence 44
+================================================================================
+path: $.pages[0].sentences[43]
+uid: 83fdcd4c-338f-4a9f-8545-da8539e67e9d
+text: Nigidiwa noǥojedi lixagotaǥaǥa adakake lojedi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Estes peixes vermelhos estão baratos .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-6 type=IP-MAT level=0
+  span=1-6 type=NP level=1
+  span=1-3 type=NP level=2
+  span=5-6 type=NP level=2
+
+tokens:
+  p=1   v='Nigidiwa'         t='D'          l=2   gloss-br=None
+  p=2   v='noǥojedi'         t='N'          l=2   gloss-br='peixe'
+  p=3   v='lixagotaǥaǥa'     t='N$'         l=2   gloss-br='vermelho'
+  p=4   v='aG@'              t='NEG'        l=1   gloss-br='não duro'
+      split: {"v": "adakake", "t": "NEG+ADJ", "idx": 0}
+      splits:
+        [1] v='aG'         t=None       gloss-br=None fn=True idx=None
+        [2] v='akake'      t='Adj'      gloss-br=None fn=None idx=None
+  p=5   v='@akake'           t='ADJ'        l=2   gloss-br=None
+      split: {"idx": 1}
+  p=6   v='lojedi'           t='N$'         l=2   gloss-br='vingança'
+
+conllu/token count check:
+  tokens=6  proto-conllu=0
+
+================================================================================
+Sentence 45
+================================================================================
+path: $.pages[0].sentences[44]
+uid: 07bfcd00-7901-474d-bfb8-bf470266aafa
+text: Ee ite ee ina
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Eu estou aqui .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=0
+  span=1-1 type=NP level=1
+  span=3-3 type=NP level=1
+
+tokens:
+  p=1   v='Ee'               t='D'          l=1   gloss-br='eu'
+      splits:
+        [1] v='ejin'       t='v'        gloss-br=None fn=None idx=None
+        [2] v='aGa'        t='Plu'      gloss-br=None fn=None idx=None
+  p=2   v='ite'              t='VB'         l=0   gloss-br=None
+  p=3   v='ee'               t='D'          l=1   gloss-br='eu'
+  p=4   v='ina'              t='D'          l=0   gloss-br='ele'
+      splits:
+        [1] v='i'          t='Gnr'      gloss-br='masc' fn=None idx=None
+        [2] v='na'         t='Ncl'      gloss-br='vindo' fn=None idx=None
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 46
+================================================================================
+path: $.pages[0].sentences[45]
+uid: 42671da9-e433-4319-86a0-2a2cb8777a40
+text: Ite ee madataǥa
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Eu estou com ela .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Ite'              t=None         l=None gloss-br=None
+  p=2   v='ee'               t='D'          l=None gloss-br='eu'
+  p=3   v='madataǥa'         t='CD'         l=None gloss-br='com ela'
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 47
+================================================================================
+path: $.pages[0].sentences[46]
+uid: e58e38a7-f117-48f1-8a17-9d896867fe60
+text: Ite ee midataǥa
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Eu estou com ele .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Ite'              t=None         l=None gloss-br=None
+  p=2   v='ee'               t='D'          l=None gloss-br='eu'
+  p=3   v='midataǥa'         t=None         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 48
+================================================================================
+path: $.pages[0].sentences[47]
+uid: 4242d34b-9096-45a2-a666-502a2cb9ca49
+text: Ee aidinitibeci .
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Eu não estou feliz .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Ee'               t='D'          l=None gloss-br='disse'
+  p=2   v='aidinitibeci'     t=None         l=None gloss-br=None
+  p=3   v='.'                t='PUNC'       l=None gloss-br=None
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 49
+================================================================================
+path: $.pages[0].sentences[48]
+uid: 1e9df213-90da-4674-8889-4ac858df72fe
+text: Ee ageliodi me idinitibeci
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Eu não estou muito feliz .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=0
+  span=1-1 type=NP-SBJ level=1
+  span=2-4 type=NP-PRD level=1
+  span=3-4 type=CP-me level=2
+  span=4-4 type=IP-SUB level=3
+
+tokens:
+  p=1   v='Ee'               t='D'          l=1   gloss-br='eu'
+  p=2   v='ageliodi'         t='NEG+Q'      l=1   gloss-br=None
+  p=3   v='me'               t='C'          l=2   gloss-br='que'
+  p=4   v='idinitibeci'      t='VB'         l=3   gloss-br='alegrar-se'
+      splits:
+        [1] v='i'          t=None       gloss-br=None fn=None idx=None
+        [2] v='d'          t=None       gloss-br=None fn=None idx=None
+        [3] v='ini'        t='v'        gloss-br=None fn=None idx=None
+        [4] v='tibeci'     t=None       gloss-br=None fn=None idx=None
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 50
+================================================================================
+path: $.pages[0].sentences[49]
+uid: c4302bef-3de9-4f3c-b762-f6b77183f263
+text: Ee ajipegitege
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Eu não estou perto dela .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=0
+  span=1-1 type=NP level=1
+  span=2-2 type=NP level=1
+
+tokens:
+  p=1   v='Ee'               t='D'          l=1   gloss-br='eu'
+  p=2   v='aG@'              t='NEG'        l=1   gloss-br=None
+      split: {"v": "ajipegitege", "t": "NEG+VBAPL", "idx": 0}
+      splits:
+        [1] v='aG'         t=None       gloss-br=None fn=True idx=None
+        [2] v='j'          t=None       gloss-br=None fn=None idx=None
+        [3] v='pegi'       t=None       gloss-br=None fn=None idx=None
+        [4] v='tege'       t=None       gloss-br=None fn=None idx=None
+  p=3   v='@jpegitege'       t='VBAPL'      l=0   gloss-br=None
+      split: {"idx": 1}
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 51
+================================================================================
+path: $.pages[0].sentences[50]
+uid: 5bc48b27-0755-475f-813e-7a259f3c3c9e
+text: Ee ajipegitege
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Eu não estou perto dele .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-2 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Ee'               t='VB'         l=None gloss-br='disse'
+      splits:
+        [1] v='ejin'       t='v'        gloss-br=None fn=None idx=None
+        [2] v='aGa'        t='Plu'      gloss-br=None fn=None idx=None
+  p=2   v='ajipegitege'      t=None         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=2  proto-conllu=0
+
+================================================================================
+Sentence 52
+================================================================================
+path: $.pages[0].sentences[51]
+uid: 1e1fafc0-29c6-41d4-a0d2-4c825d9af376
+text: ee idiwaǥadi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Eu sou pesado .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-2 type=IP-MAT level=None
+
+tokens:
+  p=1   v='ee'               t='D'          l=None gloss-br='eu'
+  p=2   v='idiwaǥadi'        t='VB'         l=None gloss-br=None
+      splits:
+        [1] v='i'          t=None       gloss-br=None fn=None idx=None
+        [2] v='d'          t=None       gloss-br=None fn=None idx=None
+        [3] v='iwaGadi'    t=None       gloss-br=None fn=None idx=None
+
+conllu/token count check:
+  tokens=2  proto-conllu=0
+
+================================================================================
+Sentence 53
+================================================================================
+path: $.pages[0].sentences[52]
+uid: 71aff593-7b38-4c17-9563-4503985dbd03
+text: jipegitege
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Estou perto dela .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-1 type=IP-MAT level=None
+
+tokens:
+  p=1   v='jipegitege'       t=None         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=1  proto-conllu=0
+
+================================================================================
+Sentence 54
+================================================================================
+path: $.pages[0].sentences[53]
+uid: f4f18c18-728c-4d6b-b7dd-2df62c4a829a
+text: jipegitege
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Estou perto dele .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-1 type=IP-MAT level=None
+
+tokens:
+  p=1   v='jipegitege'       t=None         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=1  proto-conllu=0
+
+================================================================================
+Sentence 55
+================================================================================
+path: $.pages[0].sentences[54]
+uid: 90ca38d8-e063-4c98-af51-4b9022ade506
+text: aǥeliodi me idinitibeci .
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Não sou muito feliz .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=None
+
+tokens:
+  p=1   v='aǥeliodi'         t=None         l=None gloss-br=None
+  p=2   v='me'               t='C'          l=None gloss-br='que'
+  p=3   v='idinitibeci'      t='VB'         l=None gloss-br='alegrar-se'
+      splits:
+        [1] v='i'          t=None       gloss-br=None fn=None idx=None
+        [2] v='d'          t=None       gloss-br=None fn=None idx=None
+        [3] v='ini'        t='v'        gloss-br=None fn=None idx=None
+        [4] v='tibeci'     t=None       gloss-br=None fn=None idx=None
+  p=4   v='.'                t='PUNC'       l=None gloss-br=None
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 56
+================================================================================
+path: $.pages[0].sentences[55]
+uid: 82bfae64-45e7-403f-bcd0-190e00f4520f
+text: jipecaǥataǥagi .
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Nós estamos perto de você .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-2 type=IP-MAT level=None
+
+tokens:
+  p=1   v='jipecaǥataǥagi'   t=None         l=None gloss-br=None
+  p=2   v='.'                t='PUNC'       l=None gloss-br=None
+
+conllu/token count check:
+  tokens=2  proto-conllu=0
+
+================================================================================
+Sentence 57
+================================================================================
+path: $.pages[0].sentences[56]
+uid: 341bf09a-2ef8-455a-8b6b-88373c617dae
+text: oko aidejonaǥa midi ǥodoigi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Nós não estamos na comunidade .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=None
+
+tokens:
+  p=1   v='oko'              t='N'          l=None gloss-br='pessoa'
+  p=2   v='aidejonaǥa'       t=None         l=None gloss-br=None
+  p=3   v='midi'             t='C+D'        l=None gloss-br='para os'
+      splits:
+        [1] v='me'         t=None       gloss-br=None fn=None idx=None
+        [2] v='i'          t=None       gloss-br=None fn=None idx=None
+        [3] v='di'         t=None       gloss-br=None fn=None idx=None
+  p=4   v='ǥodoigi'          t=None         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 58
+================================================================================
+path: $.pages[0].sentences[57]
+uid: 9a136412-a636-4e5e-aa54-ac684ae7bed3
+text: jipecaǥataǥagitiwaji .
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Estamos perto de vocês .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-2 type=IP-MAT level=None
+
+tokens:
+  p=1   v='jipecaǥataǥagitiwaji' t=None         l=None gloss-br=None
+  p=2   v='.'                t='PUNC'       l=None gloss-br=None
+
+conllu/token count check:
+  tokens=2  proto-conllu=0
+
+================================================================================
+Sentence 59
+================================================================================
+path: $.pages[0].sentences[58]
+uid: dff00f05-7be1-4d62-b3ed-b8a8870851e9
+text: aidejonaǥa midi ǥodoigi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Não estamos na comunidade.
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=0
+  span=2-4 type=CP-me level=1
+  span=3-4 type=IP-SUB level=2
+  span=3-4 type=NP level=3
+
+tokens:
+  p=1   v='aidejonaǥa'       t='VB'         l=0   gloss-br='nós ficamos'
+  p=2   v='me@'              t='C'          l=1   gloss-br='para os'
+      split: {"v": "midi", "t": "C+D", "idx": 0}
+      splits:
+        [1] v='me'         t=None       gloss-br=None fn=True idx=None
+        [2] v='i'          t=None       gloss-br=None fn=None idx=None
+        [3] v='di'         t=None       gloss-br=None fn=None idx=None
+  p=3   v='@idi'             t='D'          l=3   gloss-br=None
+      split: {"idx": 1}
+  p=4   v='ǥodoigi'          t='N$'         l=3   gloss-br=None
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 60
+================================================================================
+path: $.pages[0].sentences[59]
+uid: 3ab5703a-eb5c-48d2-b75b-992da5e60dd6
+text: nigijo nelokodi Maria idei midi akiidi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: O avô da Maria está no rio .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-7 type=IP-MAT level=None
+
+tokens:
+  p=1   v='nigijo'           t='D'          l=None gloss-br=None
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=2   v='nelokodi'         t=None         l=None gloss-br=None
+  p=3   v='Maria'            t=None         l=None gloss-br=None
+  p=4   v='idei'             t='VB'         l=None gloss-br='fica'
+      splits:
+        [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
+        [2] v='dei'        t='v'        gloss-br='ficar(permanente)' fn=None idx=None
+  p=5   v='me@'              t='C'          l=None gloss-br='para os'
+      split: {"v": "midi", "t": "C+D", "idx": 0}
+      splits:
+        [1] v='me'         t=None       gloss-br=None fn=True idx=None
+        [2] v='i'          t=None       gloss-br=None fn=None idx=None
+        [3] v='di'         t=None       gloss-br=None fn=None idx=None
+  p=6   v='@idi'             t='D'          l=None gloss-br=None
+      split: {"idx": 1}
+  p=7   v='akiidi'           t='N'          l=None gloss-br=None
+
+conllu/token count check:
+  tokens=7  proto-conllu=0
+
+================================================================================
+Sentence 61
+================================================================================
+path: $.pages[0].sentences[60]
+uid: f0c7c722-031a-4c6e-ad7e-739402475c99
+text: Nigijo bijo dapicoǥo
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: O beiju está quente .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=0
+  span=1-2 type=NP level=1
+
+tokens:
+  p=1   v='Nigijo'           t='D'          l=1   gloss-br=None
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=2   v='bijo'             t='N'          l=1   gloss-br=None
+  p=3   v='dapicoǥo'         t='VB'         l=0   gloss-br=None
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 62
+================================================================================
+path: $.pages[0].sentences[61]
+uid: d5dcd2bf-a3d0-4074-a241-f706b153134f
+text: Nagada libiwe niale ixagodi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: O galho da árvore é vermelho .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Nagada'           t=None         l=None gloss-br=None
+  p=2   v='libiwe'           t='N$'         l=None gloss-br='seu chifre'
+  p=3   v='niale'            t='N'          l=None gloss-br=None
+  p=4   v='ixagodi'          t=None         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 63
+================================================================================
+path: $.pages[0].sentences[62]
+uid: c3225d86-7037-4f8c-9981-8e92b6a081d6
+text: nigidiwa bijotedi dapicoǥo
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Os beijus estão quentes .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=None
+
+tokens:
+  p=1   v='nigidiwa'         t=None         l=None gloss-br=None
+  p=2   v='bijotedi'         t=None         l=None gloss-br=None
+  p=3   v='dapicoǥo'         t=None         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+================================================================================
+Sentence 64
+================================================================================
+path: $.pages[0].sentences[63]
+uid: d0cb9423-93bb-4b45-a02a-fee23a6dd8bb
+text: Nigijoa lianaǥa Maria libinienigipi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Os filhos da Maria são bonitos .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Nigijoa'          t=None         l=None gloss-br=None
+  p=2   v='lianaǥa'          t=None         l=None gloss-br=None
+  p=3   v='Maria'            t=None         l=None gloss-br=None
+  p=4   v='libinienigipi'    t=None         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 65
+================================================================================
+path: $.pages[0].sentences[64]
+uid: 13f012b0-ef62-4477-b4bd-00e000484874
+text: Nigidi lionaǥa iwalo etidi metaǥa
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: Os filhos da mulher estão comigo .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-5 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Nigidi'           t='otegexa'    l=None gloss-br=None
+  p=2   v='lionaǥa'          t='N'          l=None gloss-br='filhos'
+  p=3   v='iwalo'            t='N'          l=None gloss-br='mulher'
+      splits:
+        [1] v='iwa'        t='n'        gloss-br='mulher' fn=None idx=None
+        [2] v='lo'         t='Cla'      gloss-br='cla' fn=None idx=None
+  p=4   v='etidi'            t='VB'         l=None gloss-br='estão (deitados) em'
+      splits:
+        [1] v='et'         t='v'        gloss-br='estar' fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='di'         t='Ncl'      gloss-br='deitado' fn=None idx=None
+  p=5   v='metaǥa'           t=None         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=5  proto-conllu=0
+
+================================================================================
+Sentence 66
+================================================================================
+path: $.pages[0].sentences[65]
+uid: 55fe3cf7-0293-48e6-aa78-44822f50347e
+text: liǥeladi ipegitege nakidi nigotaǥa
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: A casa dela é perto do rio da cidade .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=None
+
+tokens:
+  p=1   v='liǥeladi'         t='N$'         l=None gloss-br='casa dele/dela'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='ǥeladi'     t='n'        gloss-br='casa' fn=None idx=None
+  p=2   v='ipegitege'        t='VBAPL'      l=None gloss-br='fica perto de'
+      splits:
+        [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
+        [2] v='pegi'       t='v'        gloss-br='aproximar' fn=None idx=None
+        [3] v='tece'       t='Apl'      gloss-br='3F' fn=None idx=None
+  p=3   v='nakidi'           t=None         l=None gloss-br=None
+  p=4   v='nigotaǥa'         t=None         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 67
+================================================================================
+path: $.pages[0].sentences[66]
+uid: c0441856-b259-4d76-a88e-33a7e211b208
+text: liǥeladi ipegitege nakidi nigotaǥa
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: A casa dele é perto do rio da cidade .
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=None
+
+tokens:
+  p=1   v='liǥeladi'         t='N$'         l=None gloss-br='casa dele/dela'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='ǥeladi'     t='n'        gloss-br='casa' fn=None idx=None
+  p=2   v='ipegitege'        t='VBAPL'      l=None gloss-br='fica perto de'
+      splits:
+        [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
+        [2] v='pegi'       t='v'        gloss-br='aproximar' fn=None idx=None
+        [3] v='tece'       t='Apl'      gloss-br='3F' fn=None idx=None
+  p=3   v='nakidi'           t=None         l=None gloss-br=None
+  p=4   v='nigotaǥa'         t=None         l=None gloss-br=None
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 68
+================================================================================
+path: $.pages[0].sentences[67]
+uid: 9527d53d-7184-4b08-8bb2-51b7fff1429d
+text: nigotaǥa liǥeladi ipegitege akiidi
+visible: None
+container_meta:
+  content: ...
+  contents: ...
+  uid: ffef8450-e302-4882-8306-e5998d31f584
+translations:
+  pt-br: A cidade da casa dela é perto do rio.
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=0
+  span=1-2 type=NP level=1
+  span=4-4 type=NP-APL level=1
+
+tokens:
+  p=1   v='nigotaǥa'         t='N'          l=1   gloss-br='cidade'
+  p=2   v='liǥeladi'         t='N$'         l=1   gloss-br='casa dele/dela'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='ǥeladi'     t='n'        gloss-br='casa' fn=None idx=None
+  p=3   v='ipegitege'        t='VBAPL'      l=0   gloss-br='fica perto de'
+      splits:
+        [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
+        [2] v='pegi'       t='v'        gloss-br='aproximar' fn=None idx=None
+        [3] v='tece'       t='Apl'      gloss-br='3F' fn=None idx=None
+  p=4   v='akiidi'           t='N'          l=1   gloss-br=None
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
