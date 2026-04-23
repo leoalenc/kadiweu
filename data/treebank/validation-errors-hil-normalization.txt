@@ -1,0 +1,75 @@
+~/kadiweu/data/treebank$ validate.py --lang=kbc --max-err=0 draft-hil-refactoring-repository-normalization.edt.conllu 
+[Line 92 Sent ped-gramm-8]: [L3 WARNING pron-det-without-prontype] The word 'NiGijo' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 103 Sent ped-gramm-9]: [L3 WARNING pron-det-without-prontype] The word 'Nigida' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 123 Sent ped-gramm-10]: [L3 WARNING pron-det-without-prontype] The word 'adi' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 138 Sent ped-gramm-11]: [L3 WARNING pron-det-without-prontype] The word 'adi' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 149 Sent ped-gramm-12]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 159 Sent ped-gramm-13]: [L3 WARNING pron-det-without-prontype] The word 'niGijoa' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 186 Sent ped-gramm-15]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[4] is '.' but text is '...'
+[Line 196 Sent ped-gramm-16]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[3] is '.' but text is '...'
+[Line 207 Sent ped-gramm-17]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[4] is '.' but text is '...'
+[Line 205 Sent ped-gramm-17]: [L3 WARNING pron-det-without-prontype] The word 'naGada' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 218 Sent ped-gramm-18]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[4] is '.' but text is '...'
+[Line 226 Sent ped-gramm-19]: [L3 WARNING pron-det-without-prontype] The word 'naGada' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 237 Sent ped-gramm-20]: [L4 MORPHO feature-upos-not-permitted] Feature Mood is not permitted with UPOS X in language [kbc] ('iwaGadi').
+
+The following 38 feature values are currently permitted in language [kbc]:
+AdvType=Loc, AdvType=Man, AdvType=Tim, Aspect=Perf, Degree=Dim, Deixis=Remt, Gender=Fem, Gender=Masc, Gender[obj]=Fem, Gender[obj]=Masc, Mood=Ind, Number=Plur, Number=Sing, Number[obj]=Plur, Number[obj]=Sing, Number[psor]=Plur, Number[psor]=Sing, Person=1, Person=2, Person=3, Person[erg]=3, Person[obj]=1, Person[obj]=2, Person[obj]=3, Person[psor]=1, Person[psor]=2, Person[psor]=3, Polarity=Neg, Poss=Yes, PronType=Dem, PronType=Ind, PronType=Prs, PronType=Rel, VerbForm=Fin, Voice=Act, Voice=Antip, Voice=Appl, Voice=Inv
+If a language needs a feature that is not documented in the universal guidelines, the feature must
+have a language-specific documentation page in a prescribed format.
+See https://universaldependencies.org/contributing_language_specific.html for further guidelines.
+All features including universal must be specifically turned on for each language in which they are used.
+See https://quest.ms.mff.cuni.cz/udvalidator/cgi-bin/unidep/langspec/specify_feature.pl for details.
+
+
+[Line 237 Sent ped-gramm-20]: [L4 MORPHO feature-upos-not-permitted] Feature Person is not permitted with UPOS X in language [kbc] ('iwaGadi').
+[Line 237 Sent ped-gramm-20]: [L4 MORPHO feature-upos-not-permitted] Feature VerbForm is not permitted with UPOS X in language [kbc] ('iwaGadi').
+[Line 247 Sent ped-gramm-21]: [L4 MORPHO feature-upos-not-permitted] Feature Mood is not permitted with UPOS X in language [kbc] ('iwaGadi').
+[Line 247 Sent ped-gramm-21]: [L4 MORPHO feature-upos-not-permitted] Feature Person is not permitted with UPOS X in language [kbc] ('iwaGadi').
+[Line 247 Sent ped-gramm-21]: [L4 MORPHO feature-upos-not-permitted] Feature VerbForm is not permitted with UPOS X in language [kbc] ('iwaGadi').
+[Line 257 Sent ped-gramm-22]: [L4 MORPHO feature-upos-not-permitted] Feature Mood is not permitted with UPOS X in language [kbc] ('iwaGadi').
+[Line 257 Sent ped-gramm-22]: [L4 MORPHO feature-upos-not-permitted] Feature Person is not permitted with UPOS X in language [kbc] ('iwaGadi').
+[Line 257 Sent ped-gramm-22]: [L4 MORPHO feature-upos-not-permitted] Feature VerbForm is not permitted with UPOS X in language [kbc] ('iwaGadi').
+[Line 267 Sent ped-gramm-23]: [L4 MORPHO feature-upos-not-permitted] Feature Mood is not permitted with UPOS X in language [kbc] ('iwaGadi').
+[Line 267 Sent ped-gramm-23]: [L4 MORPHO feature-upos-not-permitted] Feature Person is not permitted with UPOS X in language [kbc] ('iwaGadi').
+[Line 267 Sent ped-gramm-23]: [L4 MORPHO feature-upos-not-permitted] Feature VerbForm is not permitted with UPOS X in language [kbc] ('iwaGadi').
+[Line 277 Sent ped-gramm-24]: [L4 MORPHO feature-upos-not-permitted] Feature Mood is not permitted with UPOS X in language [kbc] ('iwaGadi').
+[Line 277 Sent ped-gramm-24]: [L4 MORPHO feature-upos-not-permitted] Feature Person is not permitted with UPOS X in language [kbc] ('iwaGadi').
+[Line 277 Sent ped-gramm-24]: [L4 MORPHO feature-upos-not-permitted] Feature VerbForm is not permitted with UPOS X in language [kbc] ('iwaGadi').
+[Line 286 Sent ped-gramm-25]: [L3 WARNING pron-det-without-prontype] The word 'naGana' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 326 Sent ped-gramm-29]: [L4 MORPHO feature-upos-not-permitted] Feature Degree is not permitted with UPOS X in language [kbc] ('libinienigi').
+[Line 326 Sent ped-gramm-29]: [L4 MORPHO feature-upos-not-permitted] Feature Gender is not permitted with UPOS X in language [kbc] ('libinienigi').
+[Line 326 Sent ped-gramm-29]: [L4 MORPHO feature-upos-not-permitted] Feature Number is not permitted with UPOS X in language [kbc] ('libinienigi').
+[Line 326 Sent ped-gramm-29]: [L4 MORPHO feature-upos-not-permitted] Feature Person[psor] is not permitted with UPOS X in language [kbc] ('libinienigi').
+[Line 355 Sent ped-gramm-32]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[3] is '.' but text is '...'
+[Line 363 Sent ped-gramm-33]: [L3 WARNING pron-det-without-prontype] The word 'NiGida' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 389 Sent ped-gramm-35]: [L3 WARNING pron-det-without-prontype] The word 'naGani' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 402 Sent ped-gramm-36]: [L3 WARNING pron-det-without-prontype] The word 'NaGani' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 413 Sent ped-gramm-37]: [L3 WARNING pron-det-without-prontype] The word 'Niginoa' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 424 Sent ped-gramm-38]: [L3 WARNING pron-det-without-prontype] The word 'NaGani' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 435 Sent ped-gramm-39]: [L3 WARNING pron-det-without-prontype] The word 'NaGani' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 449 Sent ped-gramm-40]: [L3 WARNING pron-det-without-prontype] The word 'NaGani' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 474 Sent ped-gramm-42]: [L3 WARNING pron-det-without-prontype] The word 'nigidiwa' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 479 Sent ped-gramm-42]: [L3 WARNING pron-det-without-prontype] The word 'idi' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 503 Sent ped-gramm-44]: [L3 WARNING pron-det-without-prontype] The word 'Nigidiwa' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 518 Sent ped-gramm-45]: [L3 WARNING pron-det-without-prontype] The word 'Ee' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 520 Sent ped-gramm-45]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 521 Sent ped-gramm-45]: [L3 WARNING pron-det-without-prontype] The word 'ina' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 531 Sent ped-gramm-46]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 542 Sent ped-gramm-47]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 555 Sent ped-gramm-48]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[4] is '.' but text is '...'
+[Line 552 Sent ped-gramm-48]: [L3 WARNING pron-det-without-prontype] The word 'Ee' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 563 Sent ped-gramm-49]: [L3 WARNING pron-det-without-prontype] The word 'Ee' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 575 Sent ped-gramm-50]: [L3 WARNING pron-det-without-prontype] The word 'Ee' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 597 Sent ped-gramm-52]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 629 Sent ped-gramm-55]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[5] is '.' but text is '...'
+[Line 639 Sent ped-gramm-56]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[3] is '.' but text is '...'
+[Line 661 Sent ped-gramm-58]: [L2 METADATA text-form-mismatch] Mismatch between the text attribute and the FORM field. Form[3] is '.' but text is '...'
+[Line 672 Sent ped-gramm-59]: [L3 WARNING pron-det-without-prontype] The word 'idi' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 682 Sent ped-gramm-60]: [L3 WARNING pron-det-without-prontype] The word 'nigijo' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 688 Sent ped-gramm-60]: [L3 WARNING pron-det-without-prontype] The word 'idi' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 698 Sent ped-gramm-61]: [L3 WARNING pron-det-without-prontype] The word 'Nigijo' is tagged 'DET' but it lacks the 'PronType' feature
+Warnings: 32
+MORPHO errors: 19
+METADATA errors: 9
+*** FAILED *** with 28 errors
