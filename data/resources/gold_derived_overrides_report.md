@@ -5,7 +5,7 @@
 - Gold sentences: **37**
 - JSON sentences: **37**
 - Aligned sentence pairs: **36**
-- `lemma_overrides`: **27**
+- `lemma_overrides`: **28**
 - `form_feat_overrides`: **26**
 - `prontype_overrides`: **5**
 - `tag_to_default_prontype`: **1**
@@ -22,10 +22,9 @@
 - `{"gold_count": 3, "gold_forms": ["eyodi", "ane", "niganaGacanajo"], "json_count": 4, "json_forms": ["Eyodi", "ane", "*T*", "niganaGacanajo"], "sent_id": "ped-gramm-30", "sent_uid": "7b806584-75e5-4017-b9e2-ba97458903bd", "type": "token_count_mismatch"}`
 - `{"mismatches": [["aG", "aG@"], ["ipegitegi", "@ipegitegi"]], "sent_id": "ped-gramm-37", "sent_uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297", "type": "token_form_mismatch"}`
 
-### ambiguous_lemmas (3)
+### ambiguous_lemmas (2)
 - `{"best": "ane", "best_count": 3, "counts": {"ane": 3, "napioi": 1}, "form": "ane", "share": 0.75, "total": 4, "upos": "PRON"}`
 - `{"best": "eyodi", "best_count": 2, "counts": {"eyodi": 2, "iodi": 1}, "form": "eyodi", "share": 0.6667, "total": 3, "upos": "NOUN"}`
-- `{"best": "wagadi", "best_count": 1, "counts": {"iwaGadi": 1, "wagadi": 1}, "form": "iwaGadi", "share": 0.5, "total": 2, "upos": "VERB"}`
 
 ### ambiguous_feats (4)
 - `{"best": "AdvType=Loc|PronType=Dem", "best_count": 1, "counts": {"AdvType=Loc|Deixis=Remt|PronType=Dem": 1, "AdvType=Loc|PronType=Dem": 1}, "form": "digoida", "share": 0.5, "total": 2, "upos": "ADV"}`
@@ -41,7 +40,7 @@ _None_
 
 ### low_evidence_lemmas (21)
 - `{"best": "eyodi", "best_count": 1, "counts": {"eyodi": 1}, "form": "Eyodi", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "nigotaGa", "best_count": 1, "counts": {"nigotaGa": 1}, "form": "GanigotGa", "share": 1.0, "total": 1, "upos": "NOUN"}`
+- `{"best": "nigota", "best_count": 1, "counts": {"nigota": 1}, "form": "GanigotGa", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "nixoa", "best_count": 1, "counts": {"nixoa": 1}, "form": "Ganixoa", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "joão", "best_count": 1, "counts": {"joão": 1}, "form": "João", "share": 1.0, "total": 1, "upos": "PROPN"}`
 - `{"best": "dowediteloco", "best_count": 1, "counts": {"dowediteloco": 1}, "form": "dowediteloco", "share": 1.0, "total": 1, "upos": "VERB"}`

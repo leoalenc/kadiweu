@@ -41,6 +41,7 @@
     "ijo": "ijo",
     "ipegetege": "pege",
     "ipegitegi": "pegi",
+    "iwaGadi": "waGadi",
     "ja": "jaG",
     "liGeladi": "Geladi",
     "libinienigi": "binie",
@@ -155,18 +156,6 @@
         "share": 0.6667,
         "total": 3,
         "upos": "NOUN"
-      },
-      {
-        "best": "wagadi",
-        "best_count": 1,
-        "counts": {
-          "iwaGadi": 1,
-          "wagadi": 1
-        },
-        "form": "iwaGadi",
-        "share": 0.5,
-        "total": 2,
-        "upos": "VERB"
       }
     ],
     "ambiguous_prontype": [],
@@ -534,10 +523,10 @@
         "upos": "NOUN"
       },
       {
-        "best": "nigotaGa",
+        "best": "nigota",
         "best_count": 1,
         "counts": {
-          "nigotaGa": 1
+          "nigota": 1
         },
         "form": "GanigotGa",
         "share": 1.0,
