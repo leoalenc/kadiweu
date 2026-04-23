@@ -252,14 +252,20 @@ def safe_get(d: Any, *path: str, default=None):
     return cur
 
 
-def punctuate_if_missing(text: Optional[str], punct: str = ".") -> Optional[str]:
+def normalize_text_ground_truth(text: Optional[str], punct: str = ".") -> Optional[str]:
     if text is None:
         return None
     text = text.strip()
     if not text:
         return text
-    if text[-1] in ".!?":
+
+    # remove whitespace before final punctuation
+    text = re.sub(r"\s+([.?!]+)$", r"\1", text)
+
+    # add final punctuation only if missing
+    if text.endswith(("...", ".", "!", "?")):
         return text
+
     return text + punct
 
 
@@ -850,15 +856,15 @@ class DraftToken:
 
 def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
     text_orig = str(sentence.get("text", "")).strip()
-    text = punctuate_if_missing(text_orig) or text_orig
+    text = normalize_text_ground_truth(text_orig) or text_orig
     sent_uid = sentence.get("uid", "")
 
     translations = sentence.get("translations", {}) if isinstance(sentence.get("translations"), dict) else {}
     pt_orig = translations.get("pt-br")
     en_orig = translations.get("en")
 
-    pt_punct = punctuate_if_missing(pt_orig)
-    en_punct = punctuate_if_missing(en_orig)
+    pt_punct = normalize_text_ground_truth(pt_orig)
+    en_punct = normalize_text_ground_truth(en_orig)
 
     proto_rows = get_proto_rows(sentence)
     proto_ranges = build_space_aware_token_ranges(text_orig, proto_rows)
@@ -1291,23 +1297,24 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
     apply_spaceafter_from_text(emitted_rows, text, mwt_component_ids)
     
     # Add final punctuation
-    punct_head = root_id or 0
-    punct_id = len(draft_tokens) + 1
-    p_start, p_end = final_punct_range_from_text(text_orig)
+    needs_final_punct = bool(text_orig and not str(text_orig).strip().endswith(("...", ".", "!", "?")))
+    if needs_final_punct:
+        punct_head = root_id or 0
+        punct_id = len(draft_tokens) + 1
+        p_start, p_end = final_punct_range_from_text(text_orig)
 
-    emitted_rows.append({
-        "id": str(punct_id),
-        "form": ".",
-        "lemma": ".",
-        "upos": "PUNCT",
-        "xpos": "PUNCT",
-        "feats": "_",
-        "head": str(punct_head),
-        "deprel": "punct",
-        "deps": "_",
-        "misc": f"SpaceAfter=No|{range_to_misc(p_start, p_end)}",
+        emitted_rows.append({
+            "id": str(punct_id),
+            "form": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": "PUNCT",
+            "feats": "_",
+            "head": str(punct_head),
+            "deprel": "punct",
+            "deps": "_",
+            "misc": f"SpaceAfter=No|{range_to_misc(p_start, p_end)}",
     })
-
 
     # Serialize
     for row in emitted_rows:
