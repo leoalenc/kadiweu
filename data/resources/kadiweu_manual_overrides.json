@@ -3,7 +3,25 @@
   "form_feat_overrides": {},
   "prontype_overrides": {
     "naGajo\tPRON": "Dem",
-    "eliodi\tDET": "Ind"
+    "eliodi\tDET": "Ind",
+
+    "niGijo\tDET": "Dem",
+    "niGida\tDET": "Dem",
+    "adi\tDET": "Dem",
+    "ee\tDET": "Dem",
+    "niGijoa\tDET": "Dem",
+    "naGada\tDET": "Dem",
+    "naGadi\tDET": "Dem",
+    "naGana\tDET": "Dem",
+    "naGani\tDET": "Dem",
+    "niginoa\tDET": "Dem",
+    "nigidiwa\tDET": "Dem",
+    "idi\tDET": "Dem",
+    "ina\tDET": "Dem",
+
+    "ada\tDET": "Dem",
+    "ani\tDET": "Dem",
+    "niGidi\tDET": "Dem"
   },
   "tag_to_default_prontype": {
     "Q\tDET": "Ind"
