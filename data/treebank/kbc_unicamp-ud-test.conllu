@@ -10,7 +10,7 @@
 1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	liwatece	watece	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:12
 3	ja	jaG	AUX	T	Aspect=Perf	4	aux	_	TokenRange=13:15
-4	iwaGadi	wagadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=16:23
+4	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=16:23
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
 
 # sent_id = ped-gramm-2
@@ -49,7 +49,7 @@
 # text_por = A canoa está pesada.
 # text_eng = The canoe is heavy.
 1	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	2	nsubj	_	Gloss=canoe|MSeg=ni-watece|MGloss=ANT-canoe|TokenRange=0:8
-2	iwaGadi	iwaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=9:16
+2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=9:16
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = ped-gramm-5
@@ -214,7 +214,7 @@
 3	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	TokenRange=10:13
 4	niganigi	niganigi	NOUN	N	Gender=Masc|Number=Sing	2	nmod:poss	_	TokenRange=14:22
 5	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=23:32
-6	GanigotGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=2	5	obj	_	SpaceAfter=No|TokenRange=33:42
+6	GanigotGa	nigota	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=2	5	obj	_	SpaceAfter=No|TokenRange=33:42
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=42:4
 
 # sent_id = ped-gramm-18
