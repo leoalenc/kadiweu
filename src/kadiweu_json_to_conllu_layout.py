@@ -30,6 +30,15 @@ import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
 
+from kadiweu_empty_categories import resolve_empty_categories
+from kadiweu_converter_config import UPOS_MAP
+
+from kadiweu_normalization import (
+    normalize_form_for_lookup,
+    get_surface_and_lookup_form,
+    canonicalize_override_map,
+)
+
 
 # ---------------------------------------------------------------------
 # Project layout defaults
@@ -39,8 +48,6 @@ PROJECT_ROOT = SCRIPT_DIR.parent
 DEFAULT_BASE_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "kadiweu_default_overrides.json"
 DEFAULT_GOLD_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "gold_derived_overrides.json"
 DEFAULT_MANUAL_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "kadiweu_manual_overrides.json"
-from kadiweu_empty_categories import resolve_empty_categories
-from kadiweu_converter_config import UPOS_MAP
 
 # ---------------------------------------------------------------------
 # Basic mappings
@@ -145,12 +152,21 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
         PRONTYPE_OVERRIDES.update(prontype_overrides)
         TAG_TO_DEFAULT_PRONTYPE.update(tag_to_default_prontype)
 
+    # normalize keys once after all layers have been merged
+    LEMMA_OVERRIDES = canonicalize_override_map(LEMMA_OVERRIDES, "LEMMA_OVERRIDES")
+    FORM_FEAT_OVERRIDES = canonicalize_override_map(FORM_FEAT_OVERRIDES, "FORM_FEAT_OVERRIDES")
+    PRONTYPE_OVERRIDES = canonicalize_override_map(PRONTYPE_OVERRIDES, "PRONTYPE_OVERRIDES")
+    TAG_TO_DEFAULT_PRONTYPE = canonicalize_override_map(
+        TAG_TO_DEFAULT_PRONTYPE,
+        "TAG_TO_DEFAULT_PRONTYPE",
+    )
 
 configure_override_resources()
 
 # ---------------------------------------------------------------------
 # Utility helpers
 # ---------------------------------------------------------------------
+
 STRICT_MWT_CHECK = False
 
 def warn_on_composite_tag_without_mwt(tok):
@@ -881,12 +897,13 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
     i = 0
     while i < len(tokens):
         tok = tokens[i] if isinstance(tokens[i], dict) else {}
-        form = str(tok.get("v", "")).strip()
+        surface_form = str(tok.get("v", "")).strip()
+        surface_form, lookup_form = get_surface_and_lookup_form(surface_form)
         tag = tok.get("t")
         warn_on_composite_tag_without_mwt(tok)
 
         # Skip empty garbage safely
-        if not form:
+        if not surface_form:
             i += 1
             continue
 
@@ -915,14 +932,15 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             for gtok in group:
                 gform_raw = str(gtok.get("v", ""))
                 gform = clean_component_form(gform_raw)
+                surface_form, lookup_form = get_surface_and_lookup_form(gform)
                 gtag = str(gtok.get("t", "X"))
                 upos = infer_upos(gtag)
-                lemma = infer_lemma(gform, gtok)
-                feats = infer_feats(gform, gtag, gtok)
+                lemma = infer_lemma(lookup_form, gtok)
+                feats = infer_feats(lookup_form, gtag, gtok)
 
                 draft = DraftToken(
                     source_pos=int(gtok.get("p", 0) or 0),
-                    form=gform,
+                    form=surface_form,
                     lemma=lemma,
                     upos=upos,
                     xpos=gtag,
@@ -946,8 +964,8 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
         # Regular token
         gtag = str(tag) if tag is not None else "X"
         upos = infer_upos(gtag)
-        lemma = infer_lemma(form, tok)
-        feats = infer_feats(form, gtag, tok)
+        lemma = infer_lemma(lookup_form, tok)
+        feats = infer_feats(lookup_form, gtag, tok)
 
         # Range from proto scaffold, converted to space-aware positions
         misc = "_"
@@ -956,7 +974,7 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             misc = range_to_misc(start, end)
         draft = DraftToken(
             source_pos=int(tok.get("p", 0) or 0),
-            form=form,
+            form=surface_form,
             lemma=lemma,
             upos=upos,
             xpos=gtag,
