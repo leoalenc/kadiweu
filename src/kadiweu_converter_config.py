@@ -39,4 +39,5 @@ UPOS_MAP = {
     "CONJ": "CCONJ",
     "T": "AUX",
     "PUNCT": "PUNCT",
+    "PUNC": "PUNCT"
 }

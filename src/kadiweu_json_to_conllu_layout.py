@@ -969,9 +969,16 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
 
         # Regular token
         gtag = str(tag) if tag is not None else "X"
-        upos = infer_upos(gtag)
-        lemma = infer_lemma(lookup_form, tok)
-        feats = infer_feats(lookup_form, gtag, tok)
+        # --- FIX: normalize punctuation tokens ---
+        if surface_form in {".", ",", ":", ";", "!", "?"}:
+            upos = "PUNCT"
+            gtag = "PUNCT"
+            lemma = surface_form
+            feats = "_"
+        else:
+            upos = infer_upos(gtag)
+            lemma = infer_lemma(lookup_form, tok)
+            feats = infer_feats(lookup_form, gtag, tok)
 
         # Range from proto scaffold, converted to space-aware positions
         misc = "_"
@@ -1039,6 +1046,8 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             dt.deprel = "det"
         elif dt.upos == "ADV":
             dt.deprel = "advmod"
+        elif dt.upos == "PUNCT":
+            dt.deprel = "punct"
         else:
             dt.deprel = "dep"
 
@@ -1191,6 +1200,10 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
     for idx, dt in enumerate(draft_tokens):
         if dt.deprel == "root":
             dt.head = 0
+            continue
+        
+        if dt.upos == "PUNCT":
+            dt.head = root_id or 0
             continue
 
         if dt.forced_head_source_pos is not None:
