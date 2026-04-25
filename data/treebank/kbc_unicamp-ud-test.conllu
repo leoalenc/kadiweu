@@ -650,7 +650,7 @@
 # text_orig = Ninitibeci naGadi .
 # text_por_orig = Ela está feliz .
 # text_por = Ela está feliz.
-1	Ninitibeci	ninitibeci	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
+1	Ninitibeci	nitibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
 2	naGadi	naGadi	PRON	X	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
@@ -724,7 +724,7 @@
 2	eliodi	eliodi	ADV	Q	PronType=Ind	4	advmod	_	_
 3-4	meninitibeci	_	_	_	_	_	_	_	SpaceAfter=No
 3	me	me	SCONJ	C	_	4	mark	_	_
-4	ninitibeci	nitibeci	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
+4	ninitibeci	nitibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardLemma=-ini(tibece)
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = hil-data-26
@@ -765,7 +765,7 @@
 # text_orig = Ninitibigiwaji .
 # text_por_orig = Eles são felizes .
 # text_por = Eles são felizes.
-1	Ninitibigiwaji	waji	X	X	_	0	root	_	SpaceAfter=No
+1	Ninitibigiwaji	nitibece	VERB	X	Number=Plur|Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
 2	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
 # sent_id = hil-data-33
