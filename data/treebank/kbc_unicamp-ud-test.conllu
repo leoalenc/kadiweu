@@ -621,8 +621,8 @@
 # text_orig = Iwalepodi libinienigipi .
 # text_por_orig = As mulheres estão bonitas .
 # text_por = As mulheres estão bonitas.
-1	Iwalepodi	iwalepodi	NOUN	N	_	2	nsubj	_	_
-2	libinienigipi	libinienigipi	NOUN	N$	_	0	root	_	SpaceAfter=No
+1	Iwalepodi	iwa	NOUN	N	Gender=Fem|Number=Plur	2	nsubj	_	StandardLemma=iwaalo
+2	libinienigipi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
 # sent_id = hil-data-16
@@ -631,7 +631,7 @@
 # text_orig = Ninitibeci .
 # text_por_orig = Ela está feliz .
 # text_por = Ela está feliz.
-1	Ninitibeci	ninitibeci	VERB	VB	_	0	root	_	SpaceAfter=No
+1	Ninitibeci	nitibeci	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardLemma=-initibece
 2	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
 # sent_id = hil-data-17
