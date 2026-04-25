@@ -636,12 +636,12 @@
 
 # sent_id = hil-data-17
 # sent_uid = 8f297896-5ee6-461f-86e3-0d4d4ef5a661
-# text = ninitibeci naGada.
+# text = Ninitibeci naGada.
 # text_orig = ninitibeci naGada .
 # text_por_orig = Ela está feliz .
 # text_por = Ela está feliz.
-1	ninitibeci	ninitibeci	VERB	VB	_	0	root	_	_
-2	naGada	nagada	DET	D	PronType=Dem	1	det	_	SpaceAfter=No
+1	Ninitibeci	ninitibeci	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardLemma=-initibece
+2	naGada	naGada	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
 # sent_id = hil-data-18
@@ -650,8 +650,8 @@
 # text_orig = Ninitibeci naGadi .
 # text_por_orig = Ela está feliz .
 # text_por = Ela está feliz.
-1	Ninitibeci	ninitibeci	VERB	VB	_	0	root	_	_
-2	naGadi	nagadi	X	X	_	1	dep	_	SpaceAfter=No
+1	Ninitibeci	ninitibeci	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
+2	naGadi	naGadi	PRON	X	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
 # sent_id = hil-data-19
@@ -660,7 +660,7 @@
 # text_orig = naGada iwaGadi
 # text_por_orig = Ela está pesada
 # text_por = Ela está pesada.
-1	naGada	nagada	DET	D	PronType=Dem	2	det	_	_
+1	naGada	naGada	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
@@ -670,7 +670,7 @@
 # text_orig = naGadi iwaGadi
 # text_por_orig = Ela está pesada.
 # text_por = Ela está pesada.
-1	naGadi	di	DET	D	PronType=Dem	2	det	_	_
+1	naGadi	di	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
@@ -680,7 +680,7 @@
 # text_orig = NaGana iwaGadi
 # text_por_orig = Ela está pesada.
 # text_por = Ela está pesada.
-1	NaGana	na	DET	D	PronType=Dem	2	det	_	_
+1	NaGana	na	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
@@ -690,7 +690,7 @@
 # text_orig = Ada iwaGadi
 # text_por_orig = Ela está é pesada.
 # text_por = Ela está é pesada.
-1	Ada	da	DET	D	PronType=Dem	2	det	_	_
+1	Ada	da	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
@@ -700,7 +700,7 @@
 # text_orig = Ani iwaGadi
 # text_por_orig = Ela está é pesada.
 # text_por = Ela está é pesada.
-1	Ani	ni	DET	D	PronType=Dem	2	det	_	_
+1	Ani	ni	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
@@ -710,7 +710,7 @@
 # text_orig = Adi iwaGadi
 # text_por_orig = Ela está é pesada.
 # text_por = Ela está é pesada.
-1	Adi	di	DET	D	PronType=Dem	2	det	_	_
+1	Adi	di	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
@@ -720,11 +720,11 @@
 # text_orig = naGana eliodi meninitibeci
 # text_por_orig = Ela é muito feliz .
 # text_por = Ela é muito feliz.
-1	naGana	nagana	DET	D	PronType=Dem	4	nsubj	_	_
-2	eliodi	eliodi	DET	Q	PronType=Ind	4	det	_	_
+1	naGana	naGana	DET	D	Gender=Fem|Number=Sing|PronType=Dem	4	nsubj	_	_
+2	eliodi	eliodi	ADV	Q	PronType=Ind	4	advmod	_	_
 3-4	meninitibeci	_	_	_	_	_	_	_	SpaceAfter=No
-3	me	me	SCONJ	C	_	4	dep	_	_
-4	ninitibeci	ninitibeci	VERB	VB	_	0	root	_	_
+3	me	me	SCONJ	C	_	4	mark	_	_
+4	ninitibeci	nitibeci	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = hil-data-26
@@ -732,54 +732,32 @@
 # text = DapicoGo.
 # text_orig = DapicoGo
 # text_por_orig = Ela é quente .
+# text_por_orig_alt1 = Ela é quente .
+# text_por_orig_alt2 = TODO
 # text_por = Ela é quente.
-1	DapicoGo	dapicogo	VERB	VB	_	0	root	_	SpaceAfter=No
+# text_por_alt1 = Ela está quente.
+# text_por_alt2 = Ele é quente.
+# text_por_alt3 = Ele está quente.
+1	DapicoGo	apicoGo	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
 2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=8:9
-
-# sent_id = hil-data-27
-# sent_uid = f9af3f8f-3b06-4756-8676-b5ffb2c24b44
-# text = DapipocoGo.
-# text_orig = DapipocoGo
-# text_por_orig = Ela está quente .
-# text_por = Ela está quente.
-1	DapipocoGo	dapipocogo	X	X	_	0	root	_	SpaceAfter=No
-2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=10:11
 
 # sent_id = hil-data-28
 # sent_uid = fab37d81-bb9b-4e20-a8f5-3b3969ee86d1
-# text = libiniena.
+# text = Libiniena.
 # text_orig = libiniena
 # text_por_orig = Ele está bonito .
 # text_por = Ele está bonito.
-1	libiniena	libiniena	NOUN	N$	_	0	root	_	SpaceAfter=No
+1	Libiniena	binie	NOUN	N$	Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=9:10
 
 # sent_id = hil-data-29
 # sent_uid = 0b9bddcd-f6af-4281-80a9-cac2377d0af1
-# text = libinienigi.
+# text = Libinienigi.
 # text_orig = libinienigi
 # text_por_orig = Ele é bonito.
 # text_por = Ele é bonito.
-1	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+1	Libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=11:12
-
-# sent_id = hil-data-30
-# sent_uid = 38c689d8-332d-4406-b236-de4593e4853a
-# text = DapicoGo.
-# text_orig = DapicoGo
-# text_por_orig = Ele é quente .
-# text_por = Ele é quente.
-1	DapicoGo	dapicogo	X	X	_	0	root	_	SpaceAfter=No
-2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=8:9
-
-# sent_id = hil-data-31
-# sent_uid = ea70209d-4f3c-4bf9-8d93-2d91fa0f928c
-# text = DapicoGo.
-# text_orig = DapicoGo
-# text_por_orig = Ele está quente .
-# text_por = Ele está quente.
-1	DapicoGo	dapicogo	X	X	_	0	root	_	SpaceAfter=No
-2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=8:9
 
 # sent_id = hil-data-32
 # sent_uid = 4aed8aa8-bd36-4940-8020-8ba12122304e
