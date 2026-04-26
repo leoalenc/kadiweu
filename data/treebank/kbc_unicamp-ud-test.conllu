@@ -772,15 +772,16 @@
 # sent_uid = 3a27c7c6-ecd6-45c0-a71e-b4aa2a242a3d
 # text = NiGida lodajo lodawa aidei dineigi.
 # text_orig = NiGida lodajo lodawa aidei dineigi
-# text_por_orig = Esta faca da esposa dela não está na casa .
-# text_por = Esta faca da esposa dela não está na casa.
+# text_por_orig = Esta faca da esposa dele não está na casa .
+# text_por = Esta faca da esposa dele não está na casa.
+# text_por_alt = Esta faca do marido dela não está na casa.
 1	NiGida	da	DET	D	PronType=Dem	2	det	_	_
-2	lodajo	odajo	NOUN	N$	_	5	nsubj	_	_
-3	lodawa	lodawa	NOUN	N$	_	2	nmod:poss	_	_
+2	lodajo	odajo	NOUN	N$	_	5	nsubj	_	StandardLemma=nodaajo
+3	lodawa	odawa	NOUN	N$	_	2	nmod:poss	_	_
 4-5	aidei	_	_	_	_	_	_	_	_
 4	aG	ag	PART	NEG	Polarity=Neg	5	advmod	_	_
 5	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	_
-6	dineigi	dineigi	NOUN	N	_	5	obj	_	SpaceAfter=No
+6	dineigi	dineigi	NOUN	N	_	5	obj	_	StandardLemma=diimigi|SpaceAfter=No
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=34:35
 
 # sent_id = hil-data-34
