@@ -339,7 +339,7 @@
 3	me	me	SCONJ	C	_	5	mark	_	_
 4	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_
 5	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	TokenRange=18:23
-6	naGajo	jo	PRON	PRO$	Gender=Fem|Poss=Yes|PronType=Dem	5	nmod:poss	_	SpaceAfter=No|TokenRange=24:30
+6	naGajo	niGijo	PRON	PRO$	Gender=Fem|Poss=Yes|PronType=Dem	5	nmod:poss	_	SpaceAfter=No|TokenRange=24:30
 7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = ped-gramm-28
@@ -512,7 +512,7 @@
 # text_por = A pesada canoa está barata.
 1	Etogo	etogo	NOUN	N	Gender=Fem|Number=Sing	5	dislocated	_	_
 2-3	aneiwaGadi	_	_	_	_	_	_	_	_
-2	ane	iwaGadi	PRON	WPRO	PronType=Rel	3	nsubj	_	_
+2	ane	ane	PRON	WPRO	PronType=Rel	3	nsubj	_	_
 3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	_
 4-5	adakake	_	_	_	_	_	_	_	_
 4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
@@ -553,7 +553,7 @@
 # text_orig = NiGijo liwenigi libinienigi
 # text_por_orig = Aquela comida dela é bonita .
 # text_por = Aquela comida dela é bonita.
-1	NiGijo	jo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+1	NiGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	liwenigi	liwenigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	_
 3	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=27:28
@@ -564,7 +564,7 @@
 # text_orig = NiGida niwenigi eliodi me dakake loojedi
 # text_por_orig = Aquela comida é muito cara .
 # text_por = Aquela comida é muito cara.
-1	NiGida	da	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+1	NiGida	niGida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
 2	niwenigi	wenigi	NOUN	N$	Gender=Masc|Number=Sing	5	dislocated	_	_
 3	eliodi	eliodi	ADV	ADJ	_	5	advmod	_	_
 4	me	me	SCONJ	C	_	5	mark	_	_
@@ -578,7 +578,7 @@
 # text_orig = NaGajo lomigo Pedilo idei madi niwatece
 # text_por_orig = Aquele anzol do Pedro está na canoa .
 # text_por = Aquele anzol do Pedro está na canoa.
-1	NaGajo	jo	PRON	PRO$	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
+1	NaGajo	niGijo	PRON	PRO$	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
 2	lomigo	omigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	nsubj	_	Lemma=lomiigo
 3	Pedilo	pedilo	PROPN	NPR	_	2	nmod:poss	_	_
 4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	_
@@ -595,7 +595,7 @@
 # text_por_orig = Aquele anzol do menino é na canoa .
 # text_por = Aquele anzol do menino é na canoa.
 # text_por_alt = Aquele anzol do menino está na canoa.
-1	NaGajo	jo	DET	PRO$	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
+1	NaGajo	niGijo	DET	PRO$	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
 2	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	6	nsubj	_	Lemma=lomiigo
 3	niganigawanigi	niganigi	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing	2	nmod:poss	_	StandardForm=nigaanigawaanigi|StandardLemma=nigaanigi
 4-5	madi	_	_	_	_	_	_	_	_
@@ -641,7 +641,7 @@
 # text_por_orig = Ela está feliz .
 # text_por = Ela está feliz.
 1	Ninitibeci	ninitibeci	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardLemma=-initibece
-2	naGada	naGada	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No
+2	naGada	niGida	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
 # sent_id = hil-data-18
@@ -651,7 +651,7 @@
 # text_por_orig = Ela está feliz .
 # text_por = Ela está feliz.
 1	Ninitibeci	nitibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
-2	naGadi	naGadi	PRON	X	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No
+2	naGadi	niGidi	PRON	X	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
 # sent_id = hil-data-19
@@ -660,7 +660,7 @@
 # text_orig = naGada iwaGadi
 # text_por_orig = Ela está pesada
 # text_por = Ela está pesada.
-1	naGada	naGada	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	_
+1	naGada	niGida	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
@@ -670,7 +670,7 @@
 # text_orig = naGadi iwaGadi
 # text_por_orig = Ela está pesada.
 # text_por = Ela está pesada.
-1	naGadi	di	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	_
+1	naGadi	niGidi	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
@@ -680,7 +680,7 @@
 # text_orig = NaGana iwaGadi
 # text_por_orig = Ela está pesada.
 # text_por = Ela está pesada.
-1	NaGana	na	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	_
+1	NaGana	niGina	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
@@ -720,7 +720,7 @@
 # text_orig = naGana eliodi meninitibeci
 # text_por_orig = Ela é muito feliz .
 # text_por = Ela é muito feliz.
-1	naGana	naGana	DET	D	Gender=Fem|Number=Sing|PronType=Dem	4	nsubj	_	_
+1	naGana	niGina	DET	D	Gender=Fem|Number=Sing|PronType=Dem	4	nsubj	_	_
 2	eliodi	eliodi	ADV	Q	PronType=Ind	4	advmod	_	_
 3-4	meninitibeci	_	_	_	_	_	_	_	SpaceAfter=No
 3	me	me	SCONJ	C	_	4	mark	_	_
@@ -775,9 +775,9 @@
 # text_por_orig = Esta faca da esposa dele não está na casa .
 # text_por = Esta faca da esposa dele não está na casa.
 # text_por_alt = Esta faca do marido dela não está na casa.
-1	NiGida	da	DET	D	PronType=Dem	2	det	_	_
-2	lodajo	odajo	NOUN	N$	_	5	nsubj	_	StandardLemma=nodaajo
-3	lodawa	odawa	NOUN	N$	_	2	nmod:poss	_	_
+1	NiGida	niGida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+2	lodajo	odajo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	StandardLemma=nodaajo
+3	lodawa	odawa	NOUN	N$	Gender=Fem,Masc|Number=Sing|Person[psor]=3	2	nmod:poss	_	_
 4-5	aidei	_	_	_	_	_	_	_	_
 4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
 5	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	_
@@ -790,8 +790,8 @@
 # text_orig = liwigo niganigawanigi libinienigi
 # text_por_orig = Esta fotografia da criança é bonita .
 # text_por = Esta fotografia da criança é bonita.
-1	liwigo	liwigo	NOUN	N$	_	3	nsubj	_	_
-2	niganigawanigi	niganigawanigi	NOUN	N	_	3	dep	_	_
+1	liwigo	wigo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	_
+2	niganigawanigi	niganigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	1	nmod:poss	_	StandardForm=nigaanigawaanigi|StandardLemma=nigaanigi
 3	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=33:34
 
@@ -801,10 +801,10 @@
 # text_orig = naGani wetiGa eliodi me iwaGadi
 # text_por_orig = Esta pedra está muito pesada .
 # text_por = Esta pedra está muito pesada.
-1	naGani	nagani	DET	D	PronType=Dem	2	det	_	_
-2	wetiGa	wetiga	NOUN	N	_	5	nsubj	_	_
-3	eliodi	eliodi	DET	Q	PronType=Ind	5	det	_	_
-4	me	me	SCONJ	C	_	5	dep	_	_
+1	naGani	niGini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
+2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	5	nsubj	_	_
+3	eliodi	eliodi	ADV	Q	PronType=Ind	5	advmod	_	_
+4	me	me	SCONJ	C	_	5	mark	_	_
 5	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=31:32
 
@@ -814,19 +814,19 @@
 # text_orig = NaGani wetiGa iwaGadi
 # text_por_orig = Esta pedra está pesada .
 # text_por = Esta pedra está pesada.
-1	NaGani	nagani	DET	D	PronType=Dem	2	det	_	_
-2	wetiGa	wetiga	NOUN	N	_	3	nsubj	_	_
+1	NaGani	niGini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
+2	wetiGa	wetiga	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = hil-data-37
 # sent_uid = e5f90fbc-14e8-4c6f-9e07-61fbf67d042f
-# text = Niginoa wetiadi iwaGadi.
+# text = NiGinoa wetiadi iwaGadi.
 # text_orig = Niginoa wetiadi iwaGadi
 # text_por_orig = Estas pedras estão pesadas .
 # text_por = Estas pedras estão pesadas.
-1	Niginoa	wa	DET	D	PronType=Dem	2	det	_	_
-2	wetiadi	wetiadi	NOUN	N	_	3	nsubj	_	_
+1	NiGinoa	niGina	DET	D	Number=Plur|PronType=Dem	2	det	_	_
+2	wetiadi	wetiadi	NOUN	N	Gender=Fem|Number=Plur	3	nsubj	_	_
 3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=23:24
 
@@ -836,8 +836,8 @@
 # text_orig = NaGani wetiGa iwaGadi
 # text_por_orig = Esta pedra é pesada .
 # text_por = Esta pedra é pesada.
-1	NaGani	nagani	DET	D	PronType=Dem	2	det	_	_
-2	wetiGa	wetiga	NOUN	N	_	3	nsubj	_	_
+1	NaGani	niGini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
+2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	_
 3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
 
@@ -847,11 +847,11 @@
 # text_orig = NaGani wetiGa ane iwaGadi eniteloco iGonagi
 # text_por_orig = Esta pedra que é pesada caiu no meu pé .
 # text_por = Esta pedra que é pesada caiu no meu pé.
-1	NaGani	nagani	DET	D	PronType=Dem	2	det	_	_
-2	wetiGa	wetiga	NOUN	N	_	4	dep	_	_
+1	NaGani	niGini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
+2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	5	nsubj	_	_
 3	ane	ane	PRON	WPRO	PronType=Rel	4	nsubj	_	_
-4	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
-5	eniteloco	eniteloco	VERB	VBAPL	Voice=Appl	4	dep	_	_
-6	iGonagi	igonagi	NOUN	N$	_	4	obj	_	SpaceAfter=No
-7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=43:44
+4	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	2	acl:relcl	_	_
+5	eniteloco	eniteloco	VERB	VBAPL	Voice=Appl	0	root	_	_
+6	iGonagi	Gonagi	NOUN	N$	Number=Sing|Number[psor]=Sing|Person[psor]=1	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=43:44
 
