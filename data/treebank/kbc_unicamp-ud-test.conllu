@@ -542,7 +542,7 @@
 # text_por_orig = A sua comida é muito bonita .
 # text_por = A sua comida é muito bonita.
 1	Gawenigi	wenigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=2	4	nsubj	_	_
-2	eliodi	eliodi	DET	Q	PronType=Ind	4	det	_	_
+2	eliodi	eliodi	ADV	Q	AdvType=Deg	4	advmod	_	_
 3	me	me	SCONJ	C	_	4	mark	_	_
 4	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
@@ -611,7 +611,7 @@
 # text_por_orig = Estou na cidade .
 # text_por = Estou na cidade.
 1	Te	te	VERB	VB	Mood=Ind|VerbForm=Fin	0	root	_	_
-2	ee	ee	PRON	D	Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	det	_	_
+2	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	1	nsubj	_	_
 3	nigotaGa	nigota	NOUN	N	Gender=Fem|Number=Sing	1	obj	_	SpaceAfter=No
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
