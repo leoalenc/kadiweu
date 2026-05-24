@@ -1,0 +1,203 @@
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  ped-gramm-7
+sent_uid: e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
+mismatches: [('aG', 'aG@'), ('ipegetege', '@ipegetege')]
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  ped-gramm-11
+sent_uid: fef391af-9e63-419f-8f81-057459193f49
+mismatches: [('aG', 'aG@'), ('lidi', '@lidi')]
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  ped-gramm-13
+sent_uid: 68277d1f-c30b-4c4f-ba9e-c2883cc133af
+mismatches: [('dapiko', 'dapico')]
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  ped-gramm-18
+sent_uid: 582429f2-67d5-4077-b209-6deb7b5df54f
+mismatches: [('lidGegi', 'lideGegi')]
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  ped-gramm-24
+sent_uid: 2f47b402-9fe7-4714-96e3-c6cbdf405472
+mismatches: [('ane', 'ane@'), ('napioi', '@napioi')]
+
+=== ALIGNMENT FAILURE: TOKEN COUNT MISMATCH ===
+sent_id:  ped-gramm-26
+sent_uid: f081c545-c42b-463d-b57f-db87787f20e7
+text:     João liGeladi ane napioi.
+gold_count: 4
+json_count: 5
+gold_forms: ['João', 'liGeladi', 'ane', 'napioi']
+json_forms: ['João', 'liGeladi', 'ane', '*T*', 'napioi']
+json_path:  $.pages[0].sentences[25]
+source:     ../data/gramatica-pedagogica.json
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  ped-gramm-27
+sent_uid: 7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+mismatches: [('me', 'me@'), ('ijo', '@ijo')]
+
+=== ALIGNMENT FAILURE: TOKEN COUNT MISMATCH ===
+sent_id:  ped-gramm-28
+sent_uid: ee1a1190-7803-404c-83f6-49d3ccf63b0d
+text:     eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi.
+gold_count: 7
+json_count: 8
+gold_forms: ['eyodi', 'dowediteloco', 'naodigijedi', 'micoataGa', 'daGa', 'me', 'lionigipi']
+json_forms: ['Eyodi', 'dowediteloco', 'naodigijedi', 'me@', '@icawataGa', 'daGa', 'me', 'lionigipi']
+json_path:  $.pages[0].sentences[27]
+source:     ../data/gramatica-pedagogica.json
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  ped-gramm-29
+sent_uid: 4bdb4b8f-0176-4303-8a13-e313fbb6d7ad
+mismatches: [('eyodi', 'Eyodi')]
+
+=== ALIGNMENT FAILURE: TOKEN COUNT MISMATCH ===
+sent_id:  ped-gramm-30
+sent_uid: 7b806584-75e5-4017-b9e2-ba97458903bd
+text:     eyodi ane niganaGacanajo.
+gold_count: 3
+json_count: 4
+gold_forms: ['eyodi', 'ane', 'niganaGacanajo']
+json_forms: ['Eyodi', 'ane', '*T*', 'niganaGacanajo']
+json_path:  $.pages[0].sentences[29]
+source:     ../data/gramatica-pedagogica.json
+
+=== ALIGNMENT FAILURE: TOKEN COUNT MISMATCH ===
+sent_id:  ped-gramm-35
+sent_uid: 014fefb1-d5e3-48c8-9ac3-9e713a41407f
+text:     iGeladi ipegitegi naigi ane napioi.
+gold_count: 5
+json_count: 6
+gold_forms: ['iGeladi', 'ipegitegi', 'naigi', 'ane', 'napioi']
+json_forms: ['iGeladi', 'ipegitegi', 'naigi', 'ane', '*T*', 'napioi']
+json_path:  $.pages[0].sentences[34]
+source:     ../data/gramatica-pedagogica.json
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  ped-gramm-37
+sent_uid: 1da1bf7a-7975-4baf-821b-9df5c75ac297
+mismatches: [('aG', 'aG@'), ('ipegitegi', '@ipegitegi')]
+
+=== ALIGNMENT FAILURE: TOKEN COUNT MISMATCH ===
+sent_id:  hil-data-5
+sent_uid: e349508c-4d86-48b8-9918-057988755e77
+text:     Etogo aneiwaGadi adakake lojedi.
+gold_count: 6
+json_count: 7
+gold_forms: ['Etogo', 'ane', 'iwaGadi', 'aG', 'dakake', 'lojedi']
+json_forms: ['Etogo', 'ane@', '*T*', '@iwaGadi', 'aG@', '@dakake', 'lojedi']
+json_path:  $.pages[0].sentences[4]
+source:     ../data/dados-hil.json
+
+=== ALIGNMENT FAILURE: TOKEN COUNT MISMATCH ===
+sent_id:  hil-data-6
+sent_uid: 1d10c633-e74d-4e27-ac23-6b6b2dde9647
+text:     Etogo ane iwaGadi adakake loojedi.
+gold_count: 6
+json_count: 7
+gold_forms: ['Etogo', 'ane', 'iwaGadi', 'aG', 'akake', 'loojedi']
+json_forms: ['Etogo', 'ane', '*T*', 'iwaGadi', 'aG@', '@dakake', 'loojedi']
+json_path:  $.pages[0].sentences[5]
+source:     ../data/dados-hil.json
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  hil-data-10
+sent_uid: 559ba85f-edfc-48dc-9bfb-0c3f8e5ad887
+mismatches: [('me', 'me@'), ('adi', '@adi')]
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  hil-data-11
+sent_uid: 92838eda-ef9b-4f05-a5eb-38a4709c0337
+mismatches: [('me', 'me@'), ('adi', '@adi')]
+
+=== ALIGNMENT FAILURE: TOKEN COUNT MISMATCH ===
+sent_id:  hil-data-15
+sent_uid: baccc279-f303-4b4f-a6d7-4404de699f4a
+text:     Iwalepodi libinienigipi.
+gold_count: 2
+json_count: 3
+gold_forms: ['Iwalepodi', 'libinienigipi']
+json_forms: ['Iwalepodi', 'libinienigipi', '.']
+json_path:  $.pages[0].sentences[14]
+source:     ../data/dados-hil.json
+
+=== ALIGNMENT FAILURE: TOKEN COUNT MISMATCH ===
+sent_id:  hil-data-16
+sent_uid: af474637-80f3-4001-884c-4d5f452fb573
+text:     Ninitibeci.
+gold_count: 1
+json_count: 2
+gold_forms: ['Ninitibeci']
+json_forms: ['Ninitibeci', '.']
+json_path:  $.pages[0].sentences[15]
+source:     ../data/dados-hil.json
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  hil-data-17
+sent_uid: 8f297896-5ee6-461f-86e3-0d4d4ef5a661
+mismatches: [('Ninitibeci', 'ninitibeci')]
+
+=== ALIGNMENT FAILURE: TOKEN COUNT MISMATCH ===
+sent_id:  hil-data-18
+sent_uid: 4855882d-49f1-4035-bd12-73abf82df995
+text:     Ninitibeci naGadi.
+gold_count: 2
+json_count: 3
+gold_forms: ['Ninitibeci', 'naGadi']
+json_forms: ['Ninitibeci', 'naGadi', '.']
+json_path:  $.pages[0].sentences[17]
+source:     ../data/dados-hil.json
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  hil-data-25
+sent_uid: 24a9e039-79d0-4026-8824-0d061c2b21ee
+mismatches: [('me', 'me@'), ('ninitibeci', '@ninitibeci')]
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  hil-data-28
+sent_uid: fab37d81-bb9b-4e20-a8f5-3b3969ee86d1
+mismatches: [('Libiniena', 'libiniena')]
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  hil-data-29
+sent_uid: 0b9bddcd-f6af-4281-80a9-cac2377d0af1
+mismatches: [('Libinienigi', 'libinienigi')]
+
+=== ALIGNMENT FAILURE: TOKEN COUNT MISMATCH ===
+sent_id:  hil-data-32
+sent_uid: 4aed8aa8-bd36-4940-8020-8ba12122304e
+text:     Ninitibigiwaji.
+gold_count: 1
+json_count: 2
+gold_forms: ['Ninitibigiwaji']
+json_forms: ['Ninitibigiwaji', '.']
+json_path:  $.pages[0].sentences[31]
+source:     ../data/dados-hil.json
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  hil-data-33
+sent_uid: 3a27c7c6-ecd6-45c0-a71e-b4aa2a242a3d
+mismatches: [('aG', 'aG@'), ('idei', '@idei')]
+
+=== ALIGNMENT WARNING: TOKEN FORM MISMATCH ===
+sent_id:  hil-data-37
+sent_uid: e5f90fbc-14e8-4c6f-9e07-61fbf67d042f
+mismatches: [('NiGinoa', 'Niginoa')]
+
+=== ALIGNMENT FAILURE: TOKEN COUNT MISMATCH ===
+sent_id:  hil-data-39
+sent_uid: 38f73c1c-ddfb-4153-9310-d24214cd68e7
+text:     NaGani wetiGa ane iwaGadi eniteloco iGonagi.
+gold_count: 6
+json_count: 7
+gold_forms: ['NaGani', 'wetiGa', 'ane', 'iwaGadi', 'eniteloco', 'iGonagi']
+json_forms: ['NaGani', 'wetiGa', 'ane', '*T*', 'iwaGadi', 'eniteloco', 'iGonagi']
+json_path:  $.pages[0].sentences[38]
+source:     ../data/dados-hil.json
+Wrote JSON resource to: ../data/resources/gold_derived_overrides.json
+Wrote report to:        ../data/resources/gold_derived_overrides_report.md
