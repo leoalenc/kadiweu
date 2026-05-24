@@ -158,38 +158,38 @@
 
 # sent_id = ped-gramm-13
 # sent_uid = 68277d1f-c30b-4c4f-ba9e-c2883cc133af
-# text = ica looligi dapiko.
-# text_orig = ica looligi dapiko
+# text = ica looligi dapico.
+# text_orig = ica looligi dapico
 # text_por_orig = A comida dela é quente
 # text_por = A comida dela é quente.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:10
-3	dapiko	apiko	VERB	VB	Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=12:18
+3	dapico	apico	VERB	VB	Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=12:18
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = ped-gramm-14
 # sent_uid = 5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
-# text = ica looligi ja dapiko.
-# text_orig = ica looligi ja dapiko
+# text = ica looligi ja dapico.
+# text_orig = ica looligi ja dapico
 # text_por_orig = a comida dela está quente
 # text_por = a comida dela está quente.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:10
 3	ja	jaG	AUX	T	Aspect=Perf	4	aux	_	TokenRange=12:14
-4	dapiko	apiko	VERB	VB	Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=15:21
+4	dapico	apico	VERB	VB	Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=15:21
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = ped-gramm-15
 # sent_uid = c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
-# text = ica looligi lidGegi.
-# text_orig = ica looligi lidGegi
+# text = ica looligi lideGegi.
+# text_orig = ica looligi lideGegi
 # text_por_orig = A comida é deliciosa (a gostosura da comida dela)
 # text_por = A comida é deliciosa.
 # text_por_lit = a gostosura da comida dela
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:10
-3	lidGegi	idi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	Derivation=Nml|SpaceAfter=No|TokenRange=12:19
-4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=19:20
+3	lideGegi	idi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	Derivation=Nml|SpaceAfter=No|TokenRange=12:20
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = ped-gramm-16
 # sent_uid = 19cc39ce-fe03-4551-8097-9d163a38a3c0
@@ -376,7 +376,7 @@
 # text_por = Meu pai, que era cantor.
 1	eyodi	eyodi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	TokenRange=0:5
 2	ane	ane	PRON	WPRO	PronType=Rel	3	nsubj	_	TokenRange=6:9
-3	niganaGacanajo	niganagacanajo	NOUN	N	Gender=Masc|Number=Sing	1	acl:relcl	_	SpaceAfter=No|TokenRange=10:24
+3	niganaGacanajo	niganaGacanajo	NOUN	N	Gender=Masc|Number=Sing	1	acl:relcl	_	SpaceAfter=No|TokenRange=10:24
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = ped-gramm-31
@@ -595,7 +595,7 @@
 # text_por_orig = Aquele anzol do menino é na canoa .
 # text_por = Aquele anzol do menino é na canoa.
 # text_por_alt = Aquele anzol do menino está na canoa.
-1	NaGajo	niGijo	DET	PRO$	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
+1	NaGajo	niGijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
 2	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	6	nsubj	_	Lemma=lomiigo
 3	niganigawanigi	niganigi	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing	2	nmod:poss	_	StandardForm=nigaanigawaanigi|StandardLemma=nigaanigi
 4-5	madi	_	_	_	_	_	_	_	_
@@ -651,7 +651,7 @@
 # text_por_orig = Ela está feliz .
 # text_por = Ela está feliz.
 1	Ninitibeci	nitibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
-2	naGadi	niGidi	PRON	X	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No
+2	naGadi	niGidi	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	1	punct	_	_
 
 # sent_id = hil-data-19
