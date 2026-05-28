@@ -67,14 +67,16 @@ tokens:
   p=1   v='ajo'              t='D'          l=1   gloss-br='a'
       splits:
         [1] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
-        [2] v='jo'         t='Ncl'      gloss-br='emfrente' fn=None idx=None
+        [2] v='jo'         t='Ncl'      gloss-br='going_away' fn=None idx=None
   p=2   v='liwatece'         t='N$'         l=1   gloss-br='canoa dela/dele'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='watece'     t='n'        gloss-br='canoa' fn=None idx=None
   p=3   v='etadi'            t='VB'         l=0   gloss-br='está'
       splits:
-        [1] v='etadi'      t='v'        gloss-br='estar em/ficar em (temporário)' fn=None idx=None
+        [1] v='et'         t='v'        gloss-br='estar em/ficar em (temporário)' fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [3] v='di'         t='Ncl'      gloss-br='lying' fn=None idx=None
   p=4   v='weiigi'           t='N'          l=1   gloss-br='rio'
       splits:
         [1] v='weiigi'     t='n'        gloss-br='rio' fn=None idx=None
@@ -516,7 +518,7 @@ tokens:
   p=3   v='dapico'           t='VB'         l=0   gloss-br='é quente'
       splits:
         [1] v='d'          t='Inv'      gloss-br=None fn=None idx=None
-        [2] v='apicoGo'    t='v'        gloss-br='quente' fn=None idx=None
+        [2] v='apicoǥo'    t='v'        gloss-br='quente' fn=None idx=None
 
 conllu/token count check:
   tokens=3  proto-conllu=0
@@ -526,7 +528,7 @@ Sentence 14
 ================================================================================
 path: $.pages[0].sentences[13]
 uid: 5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
-text: ica looligi ja dapiko
+text: ica looligi ja dapico
 visible: None
 container_meta:
   content: ...
@@ -554,10 +556,10 @@ tokens:
   p=3   v='ja'               t='T'          l=0   gloss-br='perfectivo'
       splits:
         [1] v='jaG'        t='t'        gloss-br='perfectivo/completivo' fn=None idx=None
-  p=4   v='dapiko'           t='VB'         l=0   gloss-br='é quente'
+  p=4   v='dapico'           t='VB'         l=0   gloss-br='é quente'
       splits:
         [1] v='d'          t='Inv'      gloss-br=None fn=None idx=None
-        [2] v='apiko'      t='v'        gloss-br=None fn=None idx=None
+        [2] v='apicoǥo'    t='v'        gloss-br=None fn=None idx=None
 
 conllu/token count check:
   tokens=4  proto-conllu=0
@@ -695,7 +697,7 @@ Sentence 18
 ================================================================================
 path: $.pages[0].sentences[17]
 uid: 582429f2-67d5-4077-b209-6deb7b5df54f
-text: ica lideGegi loligi idei liGeladi
+text: ica lideǥegi loligi idei liGeladi
 visible: None
 container_meta:
   content: ...
@@ -717,7 +719,7 @@ tokens:
       splits:
         [1] v='i'          t='Gnr'      gloss-br='masc' fn=None idx=None
         [2] v='ca'         t='Ncl'      gloss-br='ausente' fn=None idx=None
-  p=2   v='lideGegi'         t='N$'         l=1   gloss-br='sua delícia'
+  p=2   v='lideǥegi'         t='N$'         l=1   gloss-br='sua delícia'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='idi'        t='n'        gloss-br=None fn=None idx=None
@@ -1123,7 +1125,7 @@ Sentence 28
 ================================================================================
 path: $.pages[0].sentences[27]
 uid: ee1a1190-7803-404c-83f6-49d3ccf63b0d
-text: Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi
+text: Eyodi dowediteloco naodigijedi micoataGa daǥa me lionigipi
 visible: None
 container_meta:
   content: ...
@@ -1161,7 +1163,7 @@ tokens:
         [5] v='taGa'       t='Apl'      gloss-br='com' fn=None idx=None
   p=5   v='@icawataGa'       t='DAPL'       l=4   gloss-br=None
       split: {"idx": 1}
-  p=6   v='daGa'             t='C'          l=1   gloss-br='se'
+  p=6   v='daǥa'             t='C'          l=1   gloss-br='se'
   p=7   v='me'               t='C'          l=2   gloss-br='que'
   p=8   v='lionigipi'        t='N$'         l=4   gloss-br='filhas'
 
@@ -1240,7 +1242,7 @@ Sentence 31
 ================================================================================
 path: $.pages[0].sentences[30]
 uid: 845b9d1d-ad7c-445a-bfbd-04fd9255ffc2
-text: Eyodi daGa niganaGacanajo
+text: Eyodi daǥa niganaGacanajo
 visible: None
 container_meta:
   content: ...
@@ -1261,7 +1263,7 @@ chunks:
 
 tokens:
   p=1   v='Eyodi'            t='N$'         l=1   gloss-br='meu pai'
-  p=2   v='daGa'             t='C'          l=1   gloss-br='que'
+  p=2   v='daǥa'             t='C'          l=1   gloss-br='que'
   p=3   v='niganaGacanajo'   t='N'          l=3   gloss-br='cantor'
 
 conllu/token count check:
@@ -1723,7 +1725,7 @@ Sentence 43
 ================================================================================
 path: $.pages[0].sentences[42]
 uid: 19401990-aa1d-4cf5-bea1-122254c6b77a
-text: lotaGa GanaginaGa libinienaGa .
+text: lotaǥa ǥanaginaǥa libinienaǥa .
 visible: None
 container_meta:
   content: ...
@@ -1741,16 +1743,16 @@ chunks:
   span=3-3 type=NP-PRD level=1
 
 tokens:
-  p=1   v='lotaGa'           t='N$'         l=1   gloss-br=None
+  p=1   v='lotaǥa'           t='N$'         l=1   gloss-br=None
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='otaGa'      t='n'        gloss-br=None fn=None idx=None
-  p=2   v='GanaginaGa'       t='N$'         l=1   gloss-br=None
+  p=2   v='ǥanaginaǥa'       t='N$'         l=1   gloss-br=None
       splits:
         [1] v='Gad'        t='Gen'      gloss-br='2' fn=None idx=None
         [2] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [3] v='aginaGa'    t='n'        gloss-br=None fn=None idx=None
-  p=3   v='libinienaGa'      t='N$'         l=1   gloss-br='bonitas'
+  p=3   v='libinienaǥa'      t='N$'         l=1   gloss-br='bonitas'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='binie'      t='n'        gloss-br=None fn=None idx=None
@@ -1765,7 +1767,7 @@ Sentence 44
 ================================================================================
 path: $.pages[0].sentences[43]
 uid: 6d2a809e-0d32-4254-9489-f9e356e22493
-text: nGida niwenigi daGaxa me dakake lojedi .
+text: nǥida niwenigi daǥaxa me dakake lojedi .
 visible: None
 container_meta:
   content: ...
@@ -1785,12 +1787,12 @@ chunks:
   span=5-6 type=NP level=3
 
 tokens:
-  p=1   v='nGida'            t='D'          l=1   gloss-br=None
+  p=1   v='nǥida'            t='D'          l=1   gloss-br=None
   p=2   v='niwenigi'         t='N'          l=1   gloss-br='comida'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='wenigi'     t='n'        gloss-br='comida' fn=None idx=None
-  p=3   v='daGaxa'           t='Q'          l=1   gloss-br='muito'
+  p=3   v='daǥaxa'           t='Q'          l=1   gloss-br='muito'
   p=4   v='me'               t='C'          l=1   gloss-br='que'
   p=5   v='dakake'           t='ADJ'        l=3   gloss-br='duro'
       splits:
@@ -1807,7 +1809,7 @@ Sentence 45
 ================================================================================
 path: $.pages[0].sentences[44]
 uid: c25b098d-6b0a-4416-a31d-6d7219685a63
-text: João liGeladi napioi .
+text: João liǥeladi napioi .
 visible: None
 container_meta:
   content: ...
@@ -1827,10 +1829,10 @@ chunks:
 
 tokens:
   p=1   v='João'             t='NPR'        l=1   gloss-br=None
-  p=2   v='liGeladi'         t='N$'         l=1   gloss-br='casa dele/dela'
+  p=2   v='liǥeladi'         t='N$'         l=1   gloss-br='casa dele/dela'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
-        [2] v='Geladi'     t='n'        gloss-br='casa' fn=None idx=None
+        [2] v='ǥeladi'     t='n'        gloss-br='casa' fn=None idx=None
   p=3   v='napioi'           t='N'          l=2   gloss-br='sujeira'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
@@ -1845,7 +1847,7 @@ Sentence 46
 ================================================================================
 path: $.pages[0].sentences[45]
 uid: 4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5
-text: liGeladi João napioi .
+text: liǥeladi João napioi .
 visible: None
 container_meta:
   content: ...
@@ -1864,10 +1866,10 @@ chunks:
   span=3-3 type=NP-PRD level=1
 
 tokens:
-  p=1   v='liGeladi'         t='N$'         l=1   gloss-br='casa dele/dela'
+  p=1   v='liǥeladi'         t='N$'         l=1   gloss-br='casa dele/dela'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
-        [2] v='Geladi'     t='n'        gloss-br='casa' fn=None idx=None
+        [2] v='ǥeladi'     t='n'        gloss-br='casa' fn=None idx=None
   p=2   v='João'             t='NPR'        l=2   gloss-br=None
   p=3   v='napioi'           t='N$'         l=1   gloss-br='sujeira'
       splits:
@@ -1883,7 +1885,7 @@ Sentence 47
 ================================================================================
 path: $.pages[0].sentences[46]
 uid: ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec
-text: liGeladi ipegitege niweiigi nigotaGa .
+text: liǥeladi ipegitege niweiigi nigotaǥa .
 visible: None
 container_meta:
   content: ...
@@ -1901,10 +1903,10 @@ chunks:
   span=3-4 type=NP-APL level=1
 
 tokens:
-  p=1   v='liGeladi'         t='N$'         l=1   gloss-br='casa dele/dela'
+  p=1   v='liǥeladi'         t='N$'         l=1   gloss-br='casa dele/dela'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
-        [2] v='Geladi'     t='n'        gloss-br='casa' fn=None idx=None
+        [2] v='ǥeladi'     t='n'        gloss-br='casa' fn=None idx=None
   p=2   v='ipegitege'        t='VBAPL'      l=0   gloss-br='fica perto de'
       splits:
         [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
@@ -1914,7 +1916,7 @@ tokens:
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='weiigi'     t='n'        gloss-br='lagoa' fn=None idx=None
-  p=4   v='nigotaGa'         t='N$'         l=1   gloss-br='cidade'
+  p=4   v='nigotaǥa'         t='N$'         l=1   gloss-br='cidade'
       splits:
         [1] v=None         t=None       gloss-br=None fn=None idx=None
   p=5   v='.'                t='PUNC'       l=0   gloss-br=None
@@ -1927,7 +1929,7 @@ Sentence 48
 ================================================================================
 path: $.pages[0].sentences[47]
 uid: 8b1a9983-4dfd-49e8-9285-92c56c84b652
-text: liGeladi ipegitegi niweiigi nigotaGa .
+text: liǥeladi ipegitegi niweiigi nigotaǥa .
 visible: None
 container_meta:
   content: ...
@@ -1946,10 +1948,10 @@ chunks:
   span=4-4 type=NP level=1
 
 tokens:
-  p=1   v='liGeladi'         t='N$'         l=1   gloss-br='casa dele/dela'
+  p=1   v='liǥeladi'         t='N$'         l=1   gloss-br='casa dele/dela'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
-        [2] v='Geladi'     t='n'        gloss-br='casa' fn=None idx=None
+        [2] v='ǥeladi'     t='n'        gloss-br='casa' fn=None idx=None
   p=2   v='ipegitegi'        t='VBAPL'      l=0   gloss-br='fica perto de'
       splits:
         [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
@@ -1959,7 +1961,7 @@ tokens:
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='weiigi'     t='n'        gloss-br='lagoa' fn=None idx=None
-  p=4   v='nigotaGa'         t='N'          l=1   gloss-br='cidade'
+  p=4   v='nigotaǥa'         t='N'          l=1   gloss-br='cidade'
       splits:
         [1] v=None         t=None       gloss-br=None fn=None idx=None
   p=5   v='.'                t='PUNC'       l=0   gloss-br=None
@@ -1972,7 +1974,7 @@ Sentence 49
 ================================================================================
 path: $.pages[0].sentences[48]
 uid: eeb42af3-fe5a-4b7d-97ea-b381ab589860
-text: Niwatece iwaGadi codaa adakake loojedi .
+text: Niwatece iwaǥadi codaa adakake loojedi .
 visible: None
 container_meta:
   content: ...
@@ -1994,10 +1996,10 @@ tokens:
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='watece'     t='n'        gloss-br='canoa' fn=None idx=None
-  p=2   v='iwaGadi'          t='VB'         l=0   gloss-br='(é|está)_pesad(o|a)'
+  p=2   v='iwaǥadi'          t='VB'         l=0   gloss-br='(é|está)_pesad(o|a)'
       splits:
         [1] v='i'          t='Abs'      gloss-br='1' fn=None idx=None
-        [2] v='waGadi'     t='v'        gloss-br='pesar' fn=None idx=None
+        [2] v='waǥadi'     t='v'        gloss-br='pesar' fn=None idx=None
   p=3   v='codaa'            t='CONJ'       l=0   gloss-br='e'
   p=4   v='aG@'              t='NEG'        l=0   gloss-br='não duro'
       split: {"v": "adakake", "t": "NEG+ADJ", "idx": 0}
@@ -2236,7 +2238,7 @@ Sentence 56
 ================================================================================
 path: $.pages[0].sentences[55]
 uid: edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded
-text: IGeladi midi akiidi
+text: Iǥeladi midi akiidi
 visible: None
 container_meta:
   content: ...
@@ -2256,7 +2258,7 @@ chunks:
   span=3-4 type=NP level=3
 
 tokens:
-  p=1   v='IGeladi'          t='N$'         l=1   gloss-br=None
+  p=1   v='Iǥeladi'          t='N$'         l=1   gloss-br=None
       splits:
         [1] v='i'          t='Gen'      gloss-br='1' fn=None idx=None
         [2] v='Geladi'     t='n'        gloss-br='casa' fn=None idx=None
@@ -2278,7 +2280,7 @@ Sentence 57
 ================================================================================
 path: $.pages[0].sentences[56]
 uid: 2c0248b3-8f68-46e9-b41c-9f7807572c87
-text: etogo aneiwaGadi adakake lojedi .
+text: etogo aneiwaǥadi adakake lojedi .
 visible: None
 container_meta:
   content: ...
@@ -2302,7 +2304,7 @@ chunks:
 tokens:
   p=1   v='etogo'            t='N'          l=1   gloss-br='navio'
   p=2   v='ane@'             t='WPRO'       l=3   gloss-br='que é pesado'
-      split: {"v": "aneiwaGadi", "t": "WPRO+VB", "idx": 0}
+      split: {"v": "aneiwaǥadi", "t": "WPRO+VB", "idx": 0}
       splits:
         [1] v='ane'        t='Wpro'     gloss-br=None fn=None idx=None
         [2] v='iwa'        t='v'        gloss-br=None fn=None idx=None
