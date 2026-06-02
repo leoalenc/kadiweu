@@ -110,7 +110,7 @@
 # comment_kbc_orig = jidei, ideoni, idei, ideijonaGa, ideiticwaci
 1	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nsubj	_	TokenRange=0:8
 2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=9:13
-3	nigotaGa	gotaGa	NOUN	N	Gender=Fem|Number=Sing	2	obj	_	Gloss=city|MSeg=ni-gotaGa|MGloss=ANT-city|SpaceAfter=No|TokenRange=14:22
+3	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	2	obj	_	Gloss=city|MSeg=ni-gotaGa|MGloss=ANT-city|SpaceAfter=No|TokenRange=14:22
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
 
 # sent_id = ped-gramm-10
@@ -478,7 +478,7 @@
 # text_orig = Iwalo ninitibeci
 # text_por_orig = A mulher está feliz .
 # text_por = A mulher está feliz.
-1	Iwalo	iwa	NOUN	N	Gender=Fem|Number=Sing	2	nsubj	_	NounClass=Lo
+1	Iwalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	2	nsubj	_	NounClass=Lo|StandardForm=iwaalo
 2	ninitibeci	nitibeci	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	Lemma=-initibece|SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
@@ -612,7 +612,7 @@
 # text_por = Estou na cidade.
 1	Te	te	VERB	VB	Mood=Ind|VerbForm=Fin	0	root	_	_
 2	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	1	nsubj	_	_
-3	nigotaGa	nigota	NOUN	N	Gender=Fem|Number=Sing	1	obj	_	SpaceAfter=No
+3	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	1	obj	_	SpaceAfter=No
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = hil-data-15
@@ -621,7 +621,7 @@
 # text_orig = Iwalepodi libinienigipi .
 # text_por_orig = As mulheres estão bonitas .
 # text_por = As mulheres estão bonitas.
-1	Iwalepodi	iwa	NOUN	N	Gender=Fem|Number=Plur	2	nsubj	_	StandardLemma=iwaalo
+1	Iwalepodi	iwaalo	NOUN	N	Gender=Fem|Number=Plur	2	nsubj	_	StandardForm=iwaalepodi|StandardLemma=iwaalo
 2	libinienigipi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	2	punct	_	_
 
