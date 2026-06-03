@@ -530,7 +530,13 @@ def short_preview(items: List[JsonDict], limit: int = 15) -> str:
     return "\n".join(lines)
 
 
-def build_report(resource: JsonDict, gold_count: int, json_count: int, aligned_count: int) -> str:
+def build_report(
+    resource: JsonDict,
+    gold_count: int,
+    json_count: int,
+    aligned_count: int,
+    uid_matched_count: int,
+) -> str:
     review = resource["review"]
     sections = [
         "# Gold-derived overrides report",
@@ -539,7 +545,9 @@ def build_report(resource: JsonDict, gold_count: int, json_count: int, aligned_c
         "",
         f"- Gold sentences: **{gold_count}**",
         f"- JSON sentences: **{json_count}**",
-        f"- Aligned sentence pairs: **{aligned_count}**",
+        f"- UID-matched sentence pairs: **{uid_matched_count}**",
+        f"- Usable aligned sentence pairs: **{aligned_count}**",
+        f"- UID-matched but rejected: **{uid_matched_count - aligned_count}**",
         f"- `lemma_overrides`: **{len(resource['lemma_overrides'])}**",
         f"- `form_feat_overrides`: **{len(resource['form_feat_overrides'])}**",
         f"- `prontype_overrides`: **{len(resource['prontype_overrides'])}**",
@@ -687,10 +695,11 @@ def main() -> int:
         json.dump(resource, f, ensure_ascii=False, indent=2, sort_keys=True)
 
     report = build_report(
-        resource=resource,
-        gold_count=len(gold_sentences),
-        json_count=len(json_sentences),
-        aligned_count=len(aligned_pairs),
+    resource=resource,
+    gold_count=len(gold_sentences),
+    json_count=len(json_sentences),
+    aligned_count=len(aligned_pairs),
+    uid_matched_count=uid_matched_count,
     )
     with args.out_report.open("w", encoding="utf-8") as f:
         f.write(report)

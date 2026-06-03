@@ -4,7 +4,9 @@
 
 - Gold sentences: **71**
 - JSON sentences: **128**
-- Aligned sentence pairs: **70**
+- UID-matched sentence pairs: **71**
+- Usable aligned sentence pairs: **70**
+- UID-matched but rejected: **1**
 - `lemma_overrides`: **42**
 - `form_feat_overrides`: **45**
 - `prontype_overrides`: **11**
