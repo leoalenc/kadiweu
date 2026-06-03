@@ -23,151 +23,107 @@ Usage
 
 from __future__ import annotations
 
-import argparse
 import json
 import re
 import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
-
 from kadiweu_empty_categories import resolve_empty_categories
-from kadiweu_converter_config import UPOS_MAP
 
-from kadiweu_normalization import (
-    normalize_form_for_lookup,
-    get_surface_and_lookup_form,
-    canonicalize_override_map,
-)
-
-
-# ---------------------------------------------------------------------
-# Project layout defaults
-# ---------------------------------------------------------------------
-SCRIPT_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = SCRIPT_DIR.parent
-DEFAULT_BASE_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "kadiweu_default_overrides.json"
-DEFAULT_GOLD_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "gold_derived_overrides.json"
-DEFAULT_MANUAL_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "kadiweu_manual_overrides.json"
 
 # ---------------------------------------------------------------------
 # Basic mappings
 # ---------------------------------------------------------------------
 
-LEMMA_OVERRIDES: Dict[str, str] = {}
-FORM_FEAT_OVERRIDES: Dict[str, str] = {}
-PRONTYPE_OVERRIDES: Dict[Tuple[str, str], str] = {}
-TAG_TO_DEFAULT_PRONTYPE: Dict[Tuple[str, str], str] = {}
+UPOS_MAP = {
+    "VB": "VERB",
+    "VBAPL": "VERB",
+    "VBT": "VERB",
+    "VBTAPL": "VERB",
+    "VBI": "VERB",
+    "N": "NOUN",
+    "N$": "NOUN",
+    "NAPL": "NOUN",
+    "NPR": "PROPN",
+    "D": "DET",
+    "Q": "DET",
+    "PRO": "PRON",
+    "PRO$": "PRON",
+    "WPRO": "PRON",
+    "WADV": "ADV",
+    "ADV": "ADV",
+    "ADJ": "ADJ",
+    "NEG": "PART",
+    "C": "SCONJ",
+    "CT": "SCONJ",
+    "CONJ": "CCONJ",
+    "T": "AUX",
+    "PUNCT": "PUNCT",
+}
 
-def load_override_resource(
-    path: Path,
-) -> Tuple[
-    Dict[str, str],
-    Dict[str, str],
-    Dict[Tuple[str, str], str],
-    Dict[Tuple[str, str], str],
-]:
-    """
-    Load one external override resource file.
+# Small lemma overrides from the user's gold sentences.
+# Extend as needed.
+LEMMA_OVERRIDES = {
+    "ajo": "ijo",
+    "ica": "ica",
+    "ja": "jaG",
+    "aG": "ag",
+    "etadi": "etidi",
+    "iwaGadi": "wagadi",
+    "niwatece": "watece",
+    "liwatece": "watece",
+    "liGeladi": "geladi",
+    "lidi": "idi",
+    "loigi": "oigi",
+    "ipegitege": "pegi",
+    "ipegetege": "pege",
+    "ipegitegi": "pegi",
+    "GanigotGa": "nigotaGa",
+    "Maria": "maria",
+}
 
-    The JSON format is expected to contain the keys:
-      - lemma_overrides
-      - form_feat_overrides
-      - prontype_overrides
-      - tag_to_default_prontype
+# Form-specific feature overrides from the user's 10 gold sentences.
+# These spare manual correction for common early examples.
+FORM_FEAT_OVERRIDES = {
+    "ajo": "Deixis=Remt|Gender=Fem|Number=Sing|PronType=Dem",
+    "ica": "Gender=Masc|Number=Sing|PronType=Dem",
+    "ja": "Aspect=Perf",
+    "aG": "_",
+    "weiigi": "Gender=Masc|Number=Sing",
+    "digoida": "AdvType=Loc|Deixis=Remt|PronType=Dem",
+    "Maria": "_",
+    "liwatece": "Gender=Fem|Number=Sing|Person[psor]=3",
+    "niwatece": "Gender=Fem|Number=Sing",
+    "liGeladi": "Gender=Masc|Number=Sing|Person[psor]=3",
+    "loigi": "Gender=Masc|Number=Sing|Person[psor]=3",
+    "GanigotGa": "Gender=Fem|Number=Sing|Person[psor]=2",
+    "etadi": "Gender=Fem|Person=3",
+    "iwaGadi": "Mood=Ind|Person=3|VerbForm=Fin",
+    "ipegitege": "Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
+    "ipegetege": "Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
+    "ipegitegi": "Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
+}
 
-    Tuple-keyed mappings are serialized as tab-joined strings.
-    """
-    with path.open("r", encoding="utf-8") as f:
-        data = json.load(f)
+PRONTYPE_OVERRIDES = {
+    ("ajo", "DET"): "Dem",
+    ("ijo", "DET"): "Dem",
+    ("ica", "DET"): "Dem",
+    ("ane", "PRON"): "Rel",
+    #("naGajo", "PRON"): "Prs",
+    ("naGajo", "PRON"): "Dem",
+}
 
-    lemma_overrides = data.get("lemma_overrides", {})
-    form_feat_overrides = data.get("form_feat_overrides", {})
-    prontype_overrides = {
-        tuple(k.split("\t")): v
-        for k, v in data.get("prontype_overrides", {}).items()
-    }
-    tag_to_default_prontype = {
-        tuple(k.split("\t")): v
-        for k, v in data.get("tag_to_default_prontype", {}).items()
-    }
-
-    return (
-        lemma_overrides,
-        form_feat_overrides,
-        prontype_overrides,
-        tag_to_default_prontype,
-    )
-
-def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
-    """
-    Configure the active override resources by merging external JSON files.
-
-    Loading order:
-      1. base defaults
-      2. gold-derived overrides
-      3. manual overrides
-      4. optional extra override file passed by the user
-
-    Later files take precedence over earlier ones.
-    """
-    global LEMMA_OVERRIDES
-    global FORM_FEAT_OVERRIDES
-    global PRONTYPE_OVERRIDES
-    global TAG_TO_DEFAULT_PRONTYPE
-
-    LEMMA_OVERRIDES = {}
-    FORM_FEAT_OVERRIDES = {}
-    PRONTYPE_OVERRIDES = {}
-    TAG_TO_DEFAULT_PRONTYPE = {}
-
-    candidate_paths = [
-        DEFAULT_BASE_OVERRIDES_PATH,
-        DEFAULT_GOLD_OVERRIDES_PATH,
-        DEFAULT_MANUAL_OVERRIDES_PATH,
-    ]
-
-    if overrides_path is not None:
-        if not overrides_path.exists():
-            raise FileNotFoundError(f"Override resource not found: {overrides_path}")
-        candidate_paths.append(overrides_path)
-
-    print(DEFAULT_BASE_OVERRIDES_PATH, file=sys.stderr)
-    print(DEFAULT_GOLD_OVERRIDES_PATH, file=sys.stderr)
-    print(DEFAULT_MANUAL_OVERRIDES_PATH, file=sys.stderr)
-
-    for path in candidate_paths:
-        print(f"Loading override resource: {path}", file=sys.stderr)
-        if path is None or not path.exists():
-            continue
-
-        (
-            lemma_overrides,
-            form_feat_overrides,
-            prontype_overrides,
-            tag_to_default_prontype,
-        ) = load_override_resource(path)
-
-        LEMMA_OVERRIDES.update(lemma_overrides)
-        FORM_FEAT_OVERRIDES.update(form_feat_overrides)
-        PRONTYPE_OVERRIDES.update(prontype_overrides)
-        TAG_TO_DEFAULT_PRONTYPE.update(tag_to_default_prontype)
-
-    # normalize keys once after all layers have been merged
-    LEMMA_OVERRIDES = canonicalize_override_map(LEMMA_OVERRIDES, "LEMMA_OVERRIDES")
-    FORM_FEAT_OVERRIDES = canonicalize_override_map(FORM_FEAT_OVERRIDES, "FORM_FEAT_OVERRIDES")
-    PRONTYPE_OVERRIDES = canonicalize_override_map(PRONTYPE_OVERRIDES, "PRONTYPE_OVERRIDES")
-    TAG_TO_DEFAULT_PRONTYPE = canonicalize_override_map(
-        TAG_TO_DEFAULT_PRONTYPE,
-        "TAG_TO_DEFAULT_PRONTYPE",
-    )
-
-configure_override_resources()
+TAG_TO_DEFAULT_PRONTYPE = {
+    ("D", "DET"): "Dem",
+    ("WPRO", "PRON"): "Rel",
+    ("PRO", "PRON"): "Prs",
+    ("PRO$", "PRON"): "Prs",
+}
 
 # ---------------------------------------------------------------------
 # Utility helpers
 # ---------------------------------------------------------------------
-
-STRICT_MWT_CHECK = False
+STRICT_MWT_CHECK = True
 
 def warn_on_composite_tag_without_mwt(tok):
     form = str(tok.get("v", "")).strip()
@@ -180,68 +136,6 @@ def warn_on_composite_tag_without_mwt(tok):
         else:
             print(f"WARNING: {msg}", file=sys.stderr)
 
-def apply_spaceafter_from_text(
-    emitted_rows: List[Dict[str, str]],
-    text: str,
-    mwt_component_ids: Set[int],
-) -> None:
-    """
-    Set SpaceAfter=No from the sentence text, treating `text` as the source of truth.
-
-    Rules:
-    - MWT rows may carry SpaceAfter=No.
-    - Component rows of an MWT must never carry SpaceAfter=No.
-    - Ordinary token rows may carry SpaceAfter=No.
-    - Punctuation rows are not handled here.
-    """
-    cursor = 0
-    n = len(text)
-
-    i = 0
-    while i < len(emitted_rows):
-        row = emitted_rows[i]
-        row_id = row["id"]
-
-        # Never keep SpaceAfter=No on MWT component rows
-        if "-" not in row_id:
-            try:
-                num_id = int(row_id)
-            except ValueError:
-                num_id = None
-            if num_id is not None and num_id in mwt_component_ids:
-                row["misc"] = remove_spaceafter_no(row["misc"])
-                i += 1
-                continue
-
-        # Skip spaces in text before matching current surface token
-        while cursor < n and text[cursor].isspace():
-            cursor += 1
-
-        form = row["form"]
-        if text[cursor:cursor + len(form)] != form:
-            raise ValueError(
-                f"Text/token alignment failed at row {row_id}: "
-                f"expected {form!r} at text position {cursor} in {text!r}"
-            )
-
-        cursor += len(form)
-
-        # Skip spaces after the token to inspect the next visible character
-        next_cursor = cursor
-        while next_cursor < n and text[next_cursor].isspace():
-            next_cursor += 1
-
-        if next_cursor < n:
-            # If the next visible character is not a space-separated continuation,
-            # the current surface token must have SpaceAfter=No.
-            if next_cursor == cursor:
-                row["misc"] = ensure_spaceafter_no(row["misc"])
-            else:
-                row["misc"] = remove_spaceafter_no(row["misc"])
-        else:
-            row["misc"] = remove_spaceafter_no(row["misc"])
-
-        i += 1
 
 def safe_get(d: Any, *path: str, default=None):
     cur = d
@@ -252,20 +146,14 @@ def safe_get(d: Any, *path: str, default=None):
     return cur
 
 
-def normalize_text_ground_truth(text: Optional[str], punct: str = ".") -> Optional[str]:
+def punctuate_if_missing(text: Optional[str], punct: str = ".") -> Optional[str]:
     if text is None:
         return None
     text = text.strip()
     if not text:
         return text
-
-    # remove whitespace before final punctuation
-    text = re.sub(r"\s+([.?!]+)$", r"\1", text)
-
-    # add final punctuation only if missing
-    if text.endswith(("...", ".", "!", "?")):
+    if text[-1] in ".!?":
         return text
-
     return text + punct
 
 
@@ -567,33 +455,21 @@ def clean_component_form(form: str) -> str:
 
 def collect_mwt_group(tokens: List[Dict[str, Any]], start_idx: int) -> Tuple[List[Dict[str, Any]], int]:
     """
-    Collect one MWT group starting at start_idx.
+    Collect consecutive placeholder tokens belonging to one MWT.
 
-    Stop when:
-    - the next token is not part of an @-style split token, or
-    - the next token starts a new MWT (split.idx == 0).
+    Example:
+      aG@, @ipegetege
     """
     group = [tokens[start_idx]]
     j = start_idx + 1
-
     while j < len(tokens):
-        tok = tokens[j]
-        form = str(tok.get("v", ""))
-        split = tok.get("split")
-
-        # Not MWT-like at all -> stop
-        if "@" not in form and not (isinstance(split, dict) and "idx" in split):
+        form = str(tokens[j].get("v", ""))
+        split = tokens[j].get("split")
+        if "@" in form or (isinstance(split, dict) and "idx" in split):
+            group.append(tokens[j])
+            j += 1
+        else:
             break
-
-        # A new split token starts here -> stop before consuming it
-        if isinstance(split, dict):
-            idx = split.get("idx")
-            if idx in (0, "0"):
-                break
-
-        group.append(tok)
-        j += 1
-
     return group, j
 
 
@@ -655,8 +531,9 @@ def infer_feats(form: str, tag: str, tok: Dict[str, Any]) -> str:
         if "Imperf" in split_tags:
             feats.append("Aspect=Imp")
 
+    # Negation: keep empty, following your gold sentence 7
     if tag == "NEG":
-        feats.append("Polarity=Neg")
+        return "_"
 
     # Applicative verbs
     if tag == "VBAPL":
@@ -856,15 +733,15 @@ class DraftToken:
 
 def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
     text_orig = str(sentence.get("text", "")).strip()
-    text = normalize_text_ground_truth(text_orig) or text_orig
+    text = punctuate_if_missing(text_orig) or text_orig
     sent_uid = sentence.get("uid", "")
 
     translations = sentence.get("translations", {}) if isinstance(sentence.get("translations"), dict) else {}
     pt_orig = translations.get("pt-br")
     en_orig = translations.get("en")
 
-    pt_punct = normalize_text_ground_truth(pt_orig)
-    en_punct = normalize_text_ground_truth(en_orig)
+    pt_punct = punctuate_if_missing(pt_orig)
+    en_punct = punctuate_if_missing(en_orig)
 
     proto_rows = get_proto_rows(sentence)
     proto_ranges = build_space_aware_token_ranges(text_orig, proto_rows)
@@ -903,17 +780,16 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
     i = 0
     while i < len(tokens):
         tok = tokens[i] if isinstance(tokens[i], dict) else {}
-        surface_form = str(tok.get("v", "")).strip()
-        surface_form, lookup_form = get_surface_and_lookup_form(surface_form)
+        form = str(tok.get("v", "")).strip()
         tag = tok.get("t")
         warn_on_composite_tag_without_mwt(tok)
 
         # Skip empty garbage safely
-        if not surface_form:
+        if not form:
             i += 1
             continue
 
-                # MWT handling
+        # MWT handling
         if is_mwt_start(tok):
             group, next_i = collect_mwt_group(tokens, i)
 
@@ -927,26 +803,25 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             # MWT line will use proto TokenRange if available, but converted to space-aware range
             if proto_index < len(proto_ranges):
                 start, end = proto_ranges[proto_index]
-                mwt_misc = range_to_misc(start, end)
+                mwt_misc = f"SpaceAfter=No|{range_to_misc(start, end)}"
             else:
-                mwt_misc = "_"
-
-            # Record the exact component interval for this MWT
-            mwt_start_id = len(draft_tokens) + 1
+                mwt_misc = "SpaceAfter=No"
 
             # Build component tokens
+            # Sentence 7 pattern:
+            #   aG@ -> aG PART NEG
+            #   @ipegetege -> ipegetege VERB VBAPL
             for gtok in group:
                 gform_raw = str(gtok.get("v", ""))
                 gform = clean_component_form(gform_raw)
-                surface_form, lookup_form = get_surface_and_lookup_form(gform)
                 gtag = str(gtok.get("t", "X"))
                 upos = infer_upos(gtag)
-                lemma = infer_lemma(lookup_form, gtok)
-                feats = infer_feats(lookup_form, gtag, gtok)
+                lemma = infer_lemma(gform, gtok)
+                feats = infer_feats(gform, gtag, gtok)
 
                 draft = DraftToken(
                     source_pos=int(gtok.get("p", 0) or 0),
-                    form=surface_form,
+                    form=gform,
                     lemma=lemma,
                     upos=upos,
                     xpos=gtag,
@@ -958,10 +833,8 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
                 )
                 draft_tokens.append(draft)
 
-            mwt_end_id = len(draft_tokens)
-
-            # Store exact boundaries now, instead of trying to infer them later
-            mwt_lines.append((mwt_start_id, mwt_end_id, mwt_form, mwt_misc))
+            # record placeholder; ids filled later
+            mwt_lines.append((-1, -1, mwt_form, mwt_misc))
 
             i = next_i
             proto_index += 1
@@ -969,16 +842,9 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
 
         # Regular token
         gtag = str(tag) if tag is not None else "X"
-        # --- FIX: normalize punctuation tokens ---
-        if surface_form in {".", ",", ":", ";", "!", "?"}:
-            upos = "PUNCT"
-            gtag = "PUNCT"
-            lemma = surface_form
-            feats = "_"
-        else:
-            upos = infer_upos(gtag)
-            lemma = infer_lemma(lookup_form, tok)
-            feats = infer_feats(lookup_form, gtag, tok)
+        upos = infer_upos(gtag)
+        lemma = infer_lemma(form, tok)
+        feats = infer_feats(form, gtag, tok)
 
         # Range from proto scaffold, converted to space-aware positions
         misc = "_"
@@ -987,7 +853,7 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             misc = range_to_misc(start, end)
         draft = DraftToken(
             source_pos=int(tok.get("p", 0) or 0),
-            form=surface_form,
+            form=form,
             lemma=lemma,
             upos=upos,
             xpos=gtag,
@@ -1016,7 +882,24 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
         dt.locked_deprel = True
         dt.forced_head_source_pos = hint.head_source_pos
 
-    resolved_mwt_lines = list(mwt_lines)
+    # Resolve MWT line ids after token ids exist.
+    # We assume each MWT occupies a consecutive token interval at creation time.
+    mwt_line_index = 0
+    cursor = 0
+    resolved_mwt_lines: List[Tuple[int, int, str, str]] = []
+    while cursor < len(draft_tokens):
+        if draft_tokens[cursor].is_mwt_component:
+            start = draft_tokens[cursor].id
+            end_cursor = cursor
+            while end_cursor + 1 < len(draft_tokens) and draft_tokens[end_cursor + 1].is_mwt_component:
+                end_cursor += 1
+            end = draft_tokens[end_cursor].id
+            form, misc = mwt_lines[mwt_line_index][2], mwt_lines[mwt_line_index][3]
+            resolved_mwt_lines.append((start, end, form, misc))
+            mwt_line_index += 1
+            cursor = end_cursor + 1
+        else:
+            cursor += 1
 
     # -----------------------------------------------------------------
     # Chunk-first dependency induction
@@ -1046,8 +929,6 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
             dt.deprel = "det"
         elif dt.upos == "ADV":
             dt.deprel = "advmod"
-        elif dt.upos == "PUNCT":
-            dt.deprel = "punct"
         else:
             dt.deprel = "dep"
 
@@ -1201,10 +1082,6 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
         if dt.deprel == "root":
             dt.head = 0
             continue
-        
-        if dt.upos == "PUNCT":
-            dt.head = root_id or 0
-            continue
 
         if dt.forced_head_source_pos is not None:
             forced = source_pos_to_dt.get(dt.forced_head_source_pos)
@@ -1307,27 +1184,45 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
 
         current_idx += 1
 
-    apply_spaceafter_from_text(emitted_rows, text, mwt_component_ids)
-    
     # Add final punctuation
-    needs_final_punct = bool(text_orig and not str(text_orig).strip().endswith(("...", ".", "!", "?")))
-    if needs_final_punct:
-        punct_head = root_id or 0
-        punct_id = len(draft_tokens) + 1
-        p_start, p_end = final_punct_range_from_text(text_orig)
+    punct_head = root_id or 0
+    punct_id = len(draft_tokens) + 1
+    p_start, p_end = final_punct_range_from_text(text_orig)
 
-        emitted_rows.append({
-            "id": str(punct_id),
-            "form": ".",
-            "lemma": ".",
-            "upos": "PUNCT",
-            "xpos": "PUNCT",
-            "feats": "_",
-            "head": str(punct_head),
-            "deprel": "punct",
-            "deps": "_",
-            "misc": f"SpaceAfter=No|{range_to_misc(p_start, p_end)}",
+    emitted_rows.append({
+        "id": str(punct_id),
+        "form": ".",
+        "lemma": ".",
+        "upos": "PUNCT",
+        "xpos": "PUNCT",
+        "feats": "_",
+        "head": str(punct_head),
+        "deprel": "punct",
+        "deps": "_",
+        "misc": f"SpaceAfter=No|{range_to_misc(p_start, p_end)}",
     })
+
+    # Ensure SpaceAfter=No only on last real token (not inside MWT)
+    last_real_idx = None
+    for i in range(len(emitted_rows) - 2, -1, -1):
+        if "-" not in emitted_rows[i]["id"]:
+            last_real_idx = i
+            break
+
+    if last_real_idx is not None:
+        prev_id = int(emitted_rows[last_real_idx]["id"])
+        if prev_id not in mwt_component_ids:
+            emitted_rows[last_real_idx]["misc"] = ensure_spaceafter_no(
+                emitted_rows[last_real_idx]["misc"]
+            )
+
+    # Rebuild # text from rows
+    rebuilt_text = build_text_from_rows(emitted_rows)
+
+    for i, line in enumerate(out_lines):
+        if line.startswith("# text = "):
+            out_lines[i] = f"# text = {rebuilt_text}"
+            break
 
     # Serialize
     for row in emitted_rows:
@@ -1356,43 +1251,7 @@ def load_json(path: Path) -> Dict[str, Any]:
         return json.load(f)
 
 
-def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Convert the Kadiwéu pedagogical JSON to draft UD CoNLL-U."
-    )
-    parser.add_argument(
-        "json_path",
-        nargs="?",
-        default=str(PROJECT_ROOT / "data" / "gramatica-pedagogica.json"),
-        help=(
-            "Path to gramatica-pedagogica.json. "
-            "Defaults to <project_root>/data/gramatica-pedagogica.json"
-        ),
-    )
-    parser.add_argument(
-    "--overrides",
-    dest="overrides_path",
-    type=Path,
-    default=None,
-    help=(
-        "Optional JSON file with additional override resources. "
-        "Overrides are applied in layers, with later layers taking precedence:\n"
-        "  1. data/resources/kadiweu_default_overrides.json\n"
-        "  2. data/resources/gold_derived_overrides.json\n"
-        "  3. data/resources/kadiweu_manual_overrides.json\n"
-        "  4. this file (if provided via --overrides)\n"
-        "The file must contain the keys: lemma_overrides, form_feat_overrides, "
-        "prontype_overrides, tag_to_default_prontype."
-    ),
-)
-    return parser.parse_args(argv)
-
-
-def main(json_path: str, overrides_path: Optional[Path] = None) -> int:
-    print(SCRIPT_DIR, file=sys.stderr)
-    print(PROJECT_ROOT, file=sys.stderr)
-    configure_override_resources(overrides_path)
-
+def main(json_path: str) -> int:
     data = load_json(Path(json_path))
 
     pages = data.get("pages", [])
@@ -1417,5 +1276,7 @@ def main(json_path: str, overrides_path: Optional[Path] = None) -> int:
 
 
 if __name__ == "__main__":
-    args = parse_args()
-    raise SystemExit(main(args.json_path, args.overrides_path))
+    if len(sys.argv) != 2:
+        print("Usage: python3 kadiweu_json_to_conllu.py gramatica-pedagogica.json", file=sys.stderr)
+        raise SystemExit(2)
+    raise SystemExit(main(sys.argv[1]))
