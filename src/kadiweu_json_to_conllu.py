@@ -854,7 +854,7 @@ class DraftToken:
         self.locked_deprel: bool = False
 
 
-def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
+def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: str) -> str:
     text_orig = str(sentence.get("text", "")).strip()
     text = normalize_text_ground_truth(text_orig) or text_orig
     sent_uid = sentence.get("uid", "")
@@ -883,7 +883,7 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int) -> str:
     out_lines: List[str] = []
 
     # Metadata
-    out_lines.append(f"# sent_id = ped-gramm-{sent_index}")
+    out_lines.append(f"# sent_id = {sent_id_prefix}{sent_index}")
     out_lines.append(f"# sent_uid = {sent_uid}")
     out_lines.append(f"# text = {text}")
     out_lines.append(f"# text_orig = {text_orig}")
@@ -1394,6 +1394,7 @@ def main(json_path: str, overrides_path: Optional[Path] = None) -> int:
     configure_override_resources(overrides_path)
 
     data = load_json(Path(json_path))
+    sent_id_prefix = Path(json_path).stem + "-"
 
     pages = data.get("pages", [])
     if not isinstance(pages, list):
@@ -1410,7 +1411,7 @@ def main(json_path: str, overrides_path: Optional[Path] = None) -> int:
         for sentence in sentences:
             if not isinstance(sentence, dict):
                 continue
-            print(convert_sentence(sentence, sent_index))
+            print(convert_sentence(sentence, sent_index, sent_id_prefix))
             sent_index += 1
 
     return 0
