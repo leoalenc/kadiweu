@@ -13,7 +13,7 @@
     "ane": "PronType=Rel",
     "daGa": "_",
     "dakake": "_",
-    "dapiko": "Voice=Inv",
+    "dapico": "Voice=Inv",
     "etadi": "Gender=Fem|Person=3",
     "iGeladi": "Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1",
     "ica": "Gender=Masc|Number=Sing|PronType=Dem",
@@ -26,7 +26,6 @@
     "libinienaGa": "Degree=Dim|Number=Plur|Person[psor]=3",
     "libinienigi": "Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3",
     "libinienigipi": "Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3",
-    "lidGegi": "Gender=Masc|Number=Sing|Person[psor]=3",
     "liwatece": "Gender=Fem|Number=Sing|Person[psor]=3",
     "liwigo": "Gender=Masc|Number=Sing|Person[psor]=3",
     "lodawa": "Gender=Fem,Masc|Number=Sing|Person[psor]=3",
@@ -49,7 +48,6 @@
   },
   "lemma_overrides": {
     "Etogo": "etogo",
-    "Iwalo": "iwa",
     "LotaGa": "otaGa",
     "Maria": "maria",
     "NaGani": "niGini",
@@ -59,7 +57,7 @@
     "ajo": "ijo",
     "ane": "ane",
     "daGa": "daga",
-    "dapiko": "apiko",
+    "dapico": "apico",
     "digoida": "digoida",
     "eliodi": "eliodi",
     "etadi": "etidi",
@@ -75,7 +73,6 @@
     "libinienaGa": "binie",
     "libinienigi": "binie",
     "libinienigipi": "binie",
-    "lidGegi": "idi",
     "lidi": "idi",
     "liwatece": "watece",
     "liwigo": "wigo",
@@ -88,12 +85,14 @@
     "naigi": "naigi",
     "napioi": "napioi",
     "niganigawanigi": "niganigi",
+    "nigotaGa": "nigotaGa",
     "nioladi": "nioladi",
     "niwatece": "watece",
     "weiigi": "weiigi"
   },
   "metadata": {
-    "aligned_sentence_count": 60,
+    "aligned_sentence_count": 70,
+    "alignment_rejected_sentence_count": 1,
     "gold_file": "../data/treebank/kbc_unicamp-ud-test.conllu",
     "gold_sentence_count": 71,
     "json_files": [
@@ -110,7 +109,9 @@
       "pron_min_share": 0.9,
       "tag_pron_min_count": 5,
       "tag_pron_min_share": 0.9
-    }
+    },
+    "uid_matched_sentence_count": 71,
+    "usable_aligned_sentence_count": 70
   },
   "prontype_overrides": {
     "NaGani\tDET": "Dem",
@@ -191,6 +192,18 @@
     ],
     "ambiguous_lemmas": [
       {
+        "best": "iwa",
+        "best_count": 1,
+        "counts": {
+          "iwa": 1,
+          "iwaalo": 1
+        },
+        "form": "Iwalo",
+        "share": 0.5,
+        "total": 2,
+        "upos": "NOUN"
+      },
+      {
         "best": "nitibeci",
         "best_count": 1,
         "counts": {
@@ -240,27 +253,15 @@
         "upos": "NOUN"
       },
       {
-        "best": "niganagacanajo",
+        "best": "niganaGacanajo",
         "best_count": 2,
         "counts": {
-          "niganaGacanajo": 1,
-          "niganagacanajo": 2
+          "niganaGacanajo": 2,
+          "niganagacanajo": 1
         },
         "form": "niganaGacanajo",
         "share": 0.6667,
         "total": 3,
-        "upos": "NOUN"
-      },
-      {
-        "best": "gotaGa",
-        "best_count": 1,
-        "counts": {
-          "gotaGa": 1,
-          "nigota": 1
-        },
-        "form": "nigotaGa",
-        "share": 0.5,
-        "total": 2,
         "upos": "NOUN"
       },
       {
@@ -292,49 +293,15 @@
     "ambiguous_tag_to_prontype": [],
     "json_alignment_issues": [
       {
-        "json_path": "$.pages[0].sentences[6]",
+        "json_path": "$.pages[0].sentences[14]",
         "mismatches": [
           [
-            "aG",
-            "aG@"
-          ],
-          [
-            "ipegetege",
-            "@ipegetege"
+            "lideGegi",
+            "lidGegi"
           ]
         ],
-        "sent_id": "ped-gramm-7",
-        "sent_uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9",
-        "source_file": "../data/gramatica-pedagogica.json",
-        "type": "token_form_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[10]",
-        "mismatches": [
-          [
-            "aG",
-            "aG@"
-          ],
-          [
-            "lidi",
-            "@lidi"
-          ]
-        ],
-        "sent_id": "ped-gramm-11",
-        "sent_uid": "fef391af-9e63-419f-8f81-057459193f49",
-        "source_file": "../data/gramatica-pedagogica.json",
-        "type": "token_form_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[12]",
-        "mismatches": [
-          [
-            "dapiko",
-            "dapico"
-          ]
-        ],
-        "sent_id": "ped-gramm-13",
-        "sent_uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af",
+        "sent_id": "ped-gramm-15",
+        "sent_uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
         "source_file": "../data/gramatica-pedagogica.json",
         "type": "token_form_mismatch"
       },
@@ -343,67 +310,11 @@
         "mismatches": [
           [
             "lidGegi",
-            "lideGegi"
+            "lideǥegi"
           ]
         ],
         "sent_id": "ped-gramm-18",
         "sent_uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
-        "source_file": "../data/gramatica-pedagogica.json",
-        "type": "token_form_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[23]",
-        "mismatches": [
-          [
-            "ane",
-            "ane@"
-          ],
-          [
-            "napioi",
-            "@napioi"
-          ]
-        ],
-        "sent_id": "ped-gramm-24",
-        "sent_uid": "2f47b402-9fe7-4714-96e3-c6cbdf405472",
-        "source_file": "../data/gramatica-pedagogica.json",
-        "type": "token_form_mismatch"
-      },
-      {
-        "gold_count": 4,
-        "gold_forms": [
-          "João",
-          "liGeladi",
-          "ane",
-          "napioi"
-        ],
-        "json_count": 5,
-        "json_forms": [
-          "João",
-          "liGeladi",
-          "ane",
-          "*T*",
-          "napioi"
-        ],
-        "json_path": "$.pages[0].sentences[25]",
-        "sent_id": "ped-gramm-26",
-        "sent_uid": "f081c545-c42b-463d-b57f-db87787f20e7",
-        "source_file": "../data/gramatica-pedagogica.json",
-        "type": "token_count_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[26]",
-        "mismatches": [
-          [
-            "me",
-            "me@"
-          ],
-          [
-            "ijo",
-            "@ijo"
-          ]
-        ],
-        "sent_id": "ped-gramm-27",
-        "sent_uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc",
         "source_file": "../data/gramatica-pedagogica.json",
         "type": "token_form_mismatch"
       },
@@ -425,7 +336,7 @@
           "naodigijedi",
           "me@",
           "@icawataGa",
-          "daGa",
+          "daǥa",
           "me",
           "lionigipi"
         ],
@@ -436,344 +347,30 @@
         "type": "token_count_mismatch"
       },
       {
-        "json_path": "$.pages[0].sentences[28]",
+        "json_path": "$.pages[0].sentences[30]",
         "mismatches": [
           [
-            "eyodi",
-            "Eyodi"
+            "daGa",
+            "daǥa"
           ]
         ],
-        "sent_id": "ped-gramm-29",
-        "sent_uid": "4bdb4b8f-0176-4303-8a13-e313fbb6d7ad",
+        "sent_id": "ped-gramm-31",
+        "sent_uid": "845b9d1d-ad7c-445a-bfbd-04fd9255ffc2",
         "source_file": "../data/gramatica-pedagogica.json",
         "type": "token_form_mismatch"
       },
       {
-        "gold_count": 3,
-        "gold_forms": [
-          "eyodi",
-          "ane",
-          "niganaGacanajo"
-        ],
-        "json_count": 4,
-        "json_forms": [
-          "Eyodi",
-          "ane",
-          "*T*",
-          "niganaGacanajo"
-        ],
-        "json_path": "$.pages[0].sentences[29]",
-        "sent_id": "ped-gramm-30",
-        "sent_uid": "7b806584-75e5-4017-b9e2-ba97458903bd",
-        "source_file": "../data/gramatica-pedagogica.json",
-        "type": "token_count_mismatch"
-      },
-      {
-        "gold_count": 5,
-        "gold_forms": [
-          "iGeladi",
-          "ipegitegi",
-          "naigi",
-          "ane",
-          "napioi"
-        ],
-        "json_count": 6,
-        "json_forms": [
-          "iGeladi",
-          "ipegitegi",
-          "naigi",
-          "ane",
-          "*T*",
-          "napioi"
-        ],
-        "json_path": "$.pages[0].sentences[34]",
-        "sent_id": "ped-gramm-35",
-        "sent_uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f",
-        "source_file": "../data/gramatica-pedagogica.json",
-        "type": "token_count_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[36]",
-        "mismatches": [
-          [
-            "aG",
-            "aG@"
-          ],
-          [
-            "ipegitegi",
-            "@ipegitegi"
-          ]
-        ],
-        "sent_id": "ped-gramm-37",
-        "sent_uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297",
-        "source_file": "../data/gramatica-pedagogica.json",
-        "type": "token_form_mismatch"
-      },
-      {
-        "gold_count": 6,
-        "gold_forms": [
-          "Etogo",
-          "ane",
-          "iwaGadi",
-          "aG",
-          "dakake",
-          "lojedi"
-        ],
-        "json_count": 7,
-        "json_forms": [
-          "Etogo",
-          "ane@",
-          "*T*",
-          "@iwaGadi",
-          "aG@",
-          "@dakake",
-          "lojedi"
-        ],
-        "json_path": "$.pages[0].sentences[4]",
-        "sent_id": "hil-data-5",
-        "sent_uid": "e349508c-4d86-48b8-9918-057988755e77",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_count_mismatch"
-      },
-      {
-        "gold_count": 6,
-        "gold_forms": [
-          "Etogo",
-          "ane",
-          "iwaGadi",
-          "aG",
-          "akake",
-          "loojedi"
-        ],
-        "json_count": 7,
-        "json_forms": [
-          "Etogo",
-          "ane",
-          "*T*",
-          "iwaGadi",
-          "aG@",
-          "@dakake",
-          "loojedi"
-        ],
         "json_path": "$.pages[0].sentences[5]",
+        "mismatches": [
+          [
+            "akake",
+            "@dakake"
+          ]
+        ],
         "sent_id": "hil-data-6",
         "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647",
         "source_file": "../data/dados-hil.json",
-        "type": "token_count_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[9]",
-        "mismatches": [
-          [
-            "me",
-            "me@"
-          ],
-          [
-            "adi",
-            "@adi"
-          ]
-        ],
-        "sent_id": "hil-data-10",
-        "sent_uid": "559ba85f-edfc-48dc-9bfb-0c3f8e5ad887",
-        "source_file": "../data/dados-hil.json",
         "type": "token_form_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[10]",
-        "mismatches": [
-          [
-            "me",
-            "me@"
-          ],
-          [
-            "adi",
-            "@adi"
-          ]
-        ],
-        "sent_id": "hil-data-11",
-        "sent_uid": "92838eda-ef9b-4f05-a5eb-38a4709c0337",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_form_mismatch"
-      },
-      {
-        "gold_count": 2,
-        "gold_forms": [
-          "Iwalepodi",
-          "libinienigipi"
-        ],
-        "json_count": 3,
-        "json_forms": [
-          "Iwalepodi",
-          "libinienigipi",
-          "."
-        ],
-        "json_path": "$.pages[0].sentences[14]",
-        "sent_id": "hil-data-15",
-        "sent_uid": "baccc279-f303-4b4f-a6d7-4404de699f4a",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_count_mismatch"
-      },
-      {
-        "gold_count": 1,
-        "gold_forms": [
-          "Ninitibeci"
-        ],
-        "json_count": 2,
-        "json_forms": [
-          "Ninitibeci",
-          "."
-        ],
-        "json_path": "$.pages[0].sentences[15]",
-        "sent_id": "hil-data-16",
-        "sent_uid": "af474637-80f3-4001-884c-4d5f452fb573",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_count_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[16]",
-        "mismatches": [
-          [
-            "Ninitibeci",
-            "ninitibeci"
-          ]
-        ],
-        "sent_id": "hil-data-17",
-        "sent_uid": "8f297896-5ee6-461f-86e3-0d4d4ef5a661",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_form_mismatch"
-      },
-      {
-        "gold_count": 2,
-        "gold_forms": [
-          "Ninitibeci",
-          "naGadi"
-        ],
-        "json_count": 3,
-        "json_forms": [
-          "Ninitibeci",
-          "naGadi",
-          "."
-        ],
-        "json_path": "$.pages[0].sentences[17]",
-        "sent_id": "hil-data-18",
-        "sent_uid": "4855882d-49f1-4035-bd12-73abf82df995",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_count_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[24]",
-        "mismatches": [
-          [
-            "me",
-            "me@"
-          ],
-          [
-            "ninitibeci",
-            "@ninitibeci"
-          ]
-        ],
-        "sent_id": "hil-data-25",
-        "sent_uid": "24a9e039-79d0-4026-8824-0d061c2b21ee",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_form_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[27]",
-        "mismatches": [
-          [
-            "Libiniena",
-            "libiniena"
-          ]
-        ],
-        "sent_id": "hil-data-28",
-        "sent_uid": "fab37d81-bb9b-4e20-a8f5-3b3969ee86d1",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_form_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[28]",
-        "mismatches": [
-          [
-            "Libinienigi",
-            "libinienigi"
-          ]
-        ],
-        "sent_id": "hil-data-29",
-        "sent_uid": "0b9bddcd-f6af-4281-80a9-cac2377d0af1",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_form_mismatch"
-      },
-      {
-        "gold_count": 1,
-        "gold_forms": [
-          "Ninitibigiwaji"
-        ],
-        "json_count": 2,
-        "json_forms": [
-          "Ninitibigiwaji",
-          "."
-        ],
-        "json_path": "$.pages[0].sentences[31]",
-        "sent_id": "hil-data-32",
-        "sent_uid": "4aed8aa8-bd36-4940-8020-8ba12122304e",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_count_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[32]",
-        "mismatches": [
-          [
-            "aG",
-            "aG@"
-          ],
-          [
-            "idei",
-            "@idei"
-          ]
-        ],
-        "sent_id": "hil-data-33",
-        "sent_uid": "3a27c7c6-ecd6-45c0-a71e-b4aa2a242a3d",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_form_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[36]",
-        "mismatches": [
-          [
-            "NiGinoa",
-            "Niginoa"
-          ]
-        ],
-        "sent_id": "hil-data-37",
-        "sent_uid": "e5f90fbc-14e8-4c6f-9e07-61fbf67d042f",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_form_mismatch"
-      },
-      {
-        "gold_count": 6,
-        "gold_forms": [
-          "NaGani",
-          "wetiGa",
-          "ane",
-          "iwaGadi",
-          "eniteloco",
-          "iGonagi"
-        ],
-        "json_count": 7,
-        "json_forms": [
-          "NaGani",
-          "wetiGa",
-          "ane",
-          "*T*",
-          "iwaGadi",
-          "eniteloco",
-          "iGonagi"
-        ],
-        "json_path": "$.pages[0].sentences[38]",
-        "sent_id": "hil-data-39",
-        "sent_uid": "38f73c1c-ddfb-4153-9310-d24214cd68e7",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_count_mismatch"
       }
     ],
     "low_evidence_feats": [
@@ -1119,6 +716,28 @@
         "upos": "NOUN"
       },
       {
+        "best": "Gender=Masc|Number=Sing|Person[psor]=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|Person[psor]=3": 1
+        },
+        "form": "lidGegi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing|Person[psor]=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|Person[psor]=3": 1
+        },
+        "form": "lideGegi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
         "best": "Gender=Fem|Number=Plur|Person[psor]=3",
         "best_count": 1,
         "counts": {
@@ -1418,10 +1037,10 @@
         "upos": "NOUN"
       },
       {
-        "best": "iwa",
+        "best": "iwaalo",
         "best_count": 1,
         "counts": {
-          "iwa": 1
+          "iwaalo": 1
         },
         "form": "Iwalepodi",
         "share": 1.0,
@@ -1644,6 +1263,28 @@
           "binie": 1
         },
         "form": "libiniena",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "idi",
+        "best_count": 1,
+        "counts": {
+          "idi": 1
+        },
+        "form": "lidGegi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "idi",
+        "best_count": 1,
+        "counts": {
+          "idi": 1
+        },
+        "form": "lideGegi",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
@@ -2014,22 +1655,12 @@
         "share": 1.0,
         "total": 2,
         "upos": "ADV"
-      },
-      {
-        "best": "Rel",
-        "best_count": 1,
-        "counts": {
-          "Rel": 1
-        },
-        "raw_tag": "WPRO",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
       }
     ]
   },
   "tag_to_default_prontype": {
     "D\tDET": "Dem",
-    "D\tPRON": "Dem"
+    "D\tPRON": "Dem",
+    "WPRO\tPRON": "Rel"
   }
 }

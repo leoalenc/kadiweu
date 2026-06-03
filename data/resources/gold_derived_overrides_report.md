@@ -4,39 +4,28 @@
 
 - Gold sentences: **71**
 - JSON sentences: **128**
-- Aligned sentence pairs: **60**
-- `lemma_overrides`: **43**
-- `form_feat_overrides`: **46**
+- Aligned sentence pairs: **70**
+- `lemma_overrides`: **42**
+- `form_feat_overrides`: **45**
 - `prontype_overrides`: **11**
-- `tag_to_default_prontype`: **2**
+- `tag_to_default_prontype`: **3**
 
 ## Review items
 
-### json_alignment_issues (27)
-- `{"json_path": "$.pages[0].sentences[6]", "mismatches": [["aG", "aG@"], ["ipegetege", "@ipegetege"]], "sent_id": "ped-gramm-7", "sent_uid": "e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
-- `{"json_path": "$.pages[0].sentences[10]", "mismatches": [["aG", "aG@"], ["lidi", "@lidi"]], "sent_id": "ped-gramm-11", "sent_uid": "fef391af-9e63-419f-8f81-057459193f49", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
-- `{"json_path": "$.pages[0].sentences[12]", "mismatches": [["dapiko", "dapico"]], "sent_id": "ped-gramm-13", "sent_uid": "68277d1f-c30b-4c4f-ba9e-c2883cc133af", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
-- `{"json_path": "$.pages[0].sentences[17]", "mismatches": [["lidGegi", "lideGegi"]], "sent_id": "ped-gramm-18", "sent_uid": "582429f2-67d5-4077-b209-6deb7b5df54f", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
-- `{"json_path": "$.pages[0].sentences[23]", "mismatches": [["ane", "ane@"], ["napioi", "@napioi"]], "sent_id": "ped-gramm-24", "sent_uid": "2f47b402-9fe7-4714-96e3-c6cbdf405472", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
-- `{"gold_count": 4, "gold_forms": ["João", "liGeladi", "ane", "napioi"], "json_count": 5, "json_forms": ["João", "liGeladi", "ane", "*T*", "napioi"], "json_path": "$.pages[0].sentences[25]", "sent_id": "ped-gramm-26", "sent_uid": "f081c545-c42b-463d-b57f-db87787f20e7", "source_file": "../data/gramatica-pedagogica.json", "type": "token_count_mismatch"}`
-- `{"json_path": "$.pages[0].sentences[26]", "mismatches": [["me", "me@"], ["ijo", "@ijo"]], "sent_id": "ped-gramm-27", "sent_uid": "7b810df7-6ed0-4027-b2fe-72c64e9ca1dc", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
-- `{"gold_count": 7, "gold_forms": ["eyodi", "dowediteloco", "naodigijedi", "micoataGa", "daGa", "me", "lionigipi"], "json_count": 8, "json_forms": ["Eyodi", "dowediteloco", "naodigijedi", "me@", "@icawataGa", "daGa", "me", "lionigipi"], "json_path": "$.pages[0].sentences[27]", "sent_id": "ped-gramm-28", "sent_uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d", "source_file": "../data/gramatica-pedagogica.json", "type": "token_count_mismatch"}`
-- `{"json_path": "$.pages[0].sentences[28]", "mismatches": [["eyodi", "Eyodi"]], "sent_id": "ped-gramm-29", "sent_uid": "4bdb4b8f-0176-4303-8a13-e313fbb6d7ad", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
-- `{"gold_count": 3, "gold_forms": ["eyodi", "ane", "niganaGacanajo"], "json_count": 4, "json_forms": ["Eyodi", "ane", "*T*", "niganaGacanajo"], "json_path": "$.pages[0].sentences[29]", "sent_id": "ped-gramm-30", "sent_uid": "7b806584-75e5-4017-b9e2-ba97458903bd", "source_file": "../data/gramatica-pedagogica.json", "type": "token_count_mismatch"}`
-- `{"gold_count": 5, "gold_forms": ["iGeladi", "ipegitegi", "naigi", "ane", "napioi"], "json_count": 6, "json_forms": ["iGeladi", "ipegitegi", "naigi", "ane", "*T*", "napioi"], "json_path": "$.pages[0].sentences[34]", "sent_id": "ped-gramm-35", "sent_uid": "014fefb1-d5e3-48c8-9ac3-9e713a41407f", "source_file": "../data/gramatica-pedagogica.json", "type": "token_count_mismatch"}`
-- `{"json_path": "$.pages[0].sentences[36]", "mismatches": [["aG", "aG@"], ["ipegitegi", "@ipegitegi"]], "sent_id": "ped-gramm-37", "sent_uid": "1da1bf7a-7975-4baf-821b-9df5c75ac297", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
-- `{"gold_count": 6, "gold_forms": ["Etogo", "ane", "iwaGadi", "aG", "dakake", "lojedi"], "json_count": 7, "json_forms": ["Etogo", "ane@", "*T*", "@iwaGadi", "aG@", "@dakake", "lojedi"], "json_path": "$.pages[0].sentences[4]", "sent_id": "hil-data-5", "sent_uid": "e349508c-4d86-48b8-9918-057988755e77", "source_file": "../data/dados-hil.json", "type": "token_count_mismatch"}`
-- `{"gold_count": 6, "gold_forms": ["Etogo", "ane", "iwaGadi", "aG", "akake", "loojedi"], "json_count": 7, "json_forms": ["Etogo", "ane", "*T*", "iwaGadi", "aG@", "@dakake", "loojedi"], "json_path": "$.pages[0].sentences[5]", "sent_id": "hil-data-6", "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647", "source_file": "../data/dados-hil.json", "type": "token_count_mismatch"}`
-- `{"json_path": "$.pages[0].sentences[9]", "mismatches": [["me", "me@"], ["adi", "@adi"]], "sent_id": "hil-data-10", "sent_uid": "559ba85f-edfc-48dc-9bfb-0c3f8e5ad887", "source_file": "../data/dados-hil.json", "type": "token_form_mismatch"}`
-- ... and 12 more
+### json_alignment_issues (5)
+- `{"json_path": "$.pages[0].sentences[14]", "mismatches": [["lideGegi", "lidGegi"]], "sent_id": "ped-gramm-15", "sent_uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
+- `{"json_path": "$.pages[0].sentences[17]", "mismatches": [["lidGegi", "lideǥegi"]], "sent_id": "ped-gramm-18", "sent_uid": "582429f2-67d5-4077-b209-6deb7b5df54f", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
+- `{"gold_count": 7, "gold_forms": ["eyodi", "dowediteloco", "naodigijedi", "micoataGa", "daGa", "me", "lionigipi"], "json_count": 8, "json_forms": ["Eyodi", "dowediteloco", "naodigijedi", "me@", "@icawataGa", "daǥa", "me", "lionigipi"], "json_path": "$.pages[0].sentences[27]", "sent_id": "ped-gramm-28", "sent_uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d", "source_file": "../data/gramatica-pedagogica.json", "type": "token_count_mismatch"}`
+- `{"json_path": "$.pages[0].sentences[30]", "mismatches": [["daGa", "daǥa"]], "sent_id": "ped-gramm-31", "sent_uid": "845b9d1d-ad7c-445a-bfbd-04fd9255ffc2", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
+- `{"json_path": "$.pages[0].sentences[5]", "mismatches": [["akake", "@dakake"]], "sent_id": "hil-data-6", "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647", "source_file": "../data/dados-hil.json", "type": "token_form_mismatch"}`
 
 ### ambiguous_lemmas (8)
+- `{"best": "iwa", "best_count": 1, "counts": {"iwa": 1, "iwaalo": 1}, "form": "Iwalo", "share": 0.5, "total": 2, "upos": "NOUN"}`
 - `{"best": "nitibeci", "best_count": 1, "counts": {"ninitibeci": 1, "nitibece": 1, "nitibeci": 1}, "form": "Ninitibeci", "share": 0.3333, "total": 3, "upos": "VERB"}`
 - `{"best": "dakake", "best_count": 1, "counts": {"akake": 1, "dakake": 1}, "form": "dakake", "share": 0.5, "total": 2, "upos": "ADJ"}`
 - `{"best": "eyodi", "best_count": 2, "counts": {"eyodi": 2, "iodi": 1}, "form": "eyodi", "share": 0.6667, "total": 3, "upos": "NOUN"}`
 - `{"best": "omigo", "best_count": 1, "counts": {"lomigo": 1, "omigo": 1}, "form": "lomigo", "share": 0.5, "total": 2, "upos": "NOUN"}`
-- `{"best": "niganagacanajo", "best_count": 2, "counts": {"niganaGacanajo": 1, "niganagacanajo": 2}, "form": "niganaGacanajo", "share": 0.6667, "total": 3, "upos": "NOUN"}`
-- `{"best": "gotaGa", "best_count": 1, "counts": {"gotaGa": 1, "nigota": 1}, "form": "nigotaGa", "share": 0.5, "total": 2, "upos": "NOUN"}`
+- `{"best": "niganaGacanajo", "best_count": 2, "counts": {"niganaGacanajo": 2, "niganagacanajo": 1}, "form": "niganaGacanajo", "share": 0.6667, "total": 3, "upos": "NOUN"}`
 - `{"best": "nitibeci", "best_count": 1, "counts": {"nitibece": 1, "nitibeci": 1}, "form": "ninitibeci", "share": 0.5, "total": 2, "upos": "VERB"}`
 - `{"best": "wetiGa", "best_count": 3, "counts": {"wetiGa": 3, "wetiga": 1}, "form": "wetiGa", "share": 0.75, "total": 4, "upos": "NOUN"}`
 
@@ -53,7 +42,7 @@ _None_
 ### ambiguous_tag_to_prontype (0)
 _None_
 
-### low_evidence_lemmas (48)
+### low_evidence_lemmas (50)
 - `{"best": "da", "best_count": 1, "counts": {"da": 1}, "form": "Ada", "share": 1.0, "total": 1, "upos": "PRON"}`
 - `{"best": "di", "best_count": 1, "counts": {"di": 1}, "form": "Adi", "share": 1.0, "total": 1, "upos": "PRON"}`
 - `{"best": "ni", "best_count": 1, "counts": {"ni": 1}, "form": "Ani", "share": 1.0, "total": 1, "upos": "PRON"}`
@@ -64,14 +53,14 @@ _None_
 - `{"best": "nioxoa", "best_count": 1, "counts": {"nioxoa": 1}, "form": "Ganioxoa", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "nixoa", "best_count": 1, "counts": {"nixoa": 1}, "form": "Ganixoa", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "wenigi", "best_count": 1, "counts": {"wenigi": 1}, "form": "Gawenigi", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "iwa", "best_count": 1, "counts": {"iwa": 1}, "form": "Iwalepodi", "share": 1.0, "total": 1, "upos": "NOUN"}`
+- `{"best": "iwaalo", "best_count": 1, "counts": {"iwaalo": 1}, "form": "Iwalepodi", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "joão", "best_count": 1, "counts": {"joão": 1}, "form": "João", "share": 1.0, "total": 1, "upos": "PROPN"}`
 - `{"best": "binie", "best_count": 1, "counts": {"binie": 1}, "form": "Libiniena", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "binie", "best_count": 1, "counts": {"binie": 1}, "form": "Libinienigi", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "niGijo", "best_count": 1, "counts": {"niGijo": 1}, "form": "NaGajo", "share": 1.0, "total": 1, "upos": "DET"}`
-- ... and 33 more
+- ... and 35 more
 
-### low_evidence_feats (48)
+### low_evidence_feats (50)
 - `{"best": "Gender=Fem|Number=Sing|PronType=Dem", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Ada", "share": 1.0, "total": 1, "upos": "PRON"}`
 - `{"best": "Gender=Fem|Number=Sing|PronType=Dem", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Adi", "share": 1.0, "total": 1, "upos": "PRON"}`
 - `{"best": "Gender=Fem|Number=Sing|PronType=Dem", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Ani", "share": 1.0, "total": 1, "upos": "PRON"}`
@@ -87,7 +76,7 @@ _None_
 - `{"best": "Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3", "best_count": 1, "counts": {"Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3": 1}, "form": "Libiniena", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3", "best_count": 1, "counts": {"Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3": 1}, "form": "Libinienigi", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "Gender=Fem|Number=Sing|PronType=Dem", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "NaGajo", "share": 1.0, "total": 1, "upos": "DET"}`
-- ... and 33 more
+- ... and 35 more
 
 ### low_evidence_prontype (12)
 - `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "Ada", "share": 1.0, "total": 1, "upos": "PRON"}`
@@ -103,12 +92,11 @@ _None_
 - `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "naGana", "share": 1.0, "total": 1, "upos": "DET"}`
 - `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "naGani", "share": 1.0, "total": 1, "upos": "DET"}`
 
-### low_evidence_tag_to_prontype (5)
+### low_evidence_tag_to_prontype (4)
 - `{"best": "Dem", "best_count": 2, "counts": {"Dem": 2}, "raw_tag": "D", "share": 1.0, "total": 2, "upos": "ADV"}`
 - `{"best": "Prs", "best_count": 1, "counts": {"Prs": 1}, "raw_tag": "PRO", "share": 1.0, "total": 1, "upos": "PRON"}`
 - `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "raw_tag": "PRO$", "share": 1.0, "total": 1, "upos": "PRON"}`
 - `{"best": "Ind", "best_count": 2, "counts": {"Ind": 2}, "raw_tag": "Q", "share": 1.0, "total": 2, "upos": "ADV"}`
-- `{"best": "Rel", "best_count": 1, "counts": {"Rel": 1}, "raw_tag": "WPRO", "share": 1.0, "total": 1, "upos": "PRON"}`
 
 ## Notes
 

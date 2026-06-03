@@ -295,11 +295,12 @@ def filter_json_alignment_tokens(tokens: Iterable[JsonDict]) -> List[JsonDict]:
 def align_gold_with_json(
     gold_sentences: List[JsonDict],
     json_by_uid: Dict[str, JsonDict],
-) -> Tuple[List[Tuple[JsonDict, JsonDict]], List[JsonDict]]:
+) -> Tuple[List[Tuple[JsonDict, JsonDict]], List[JsonDict], int, List[str]]:
     """Align gold CoNLL-U sentences to JSON sentences by sent_uid only."""
     aligned: List[Tuple[JsonDict, JsonDict]] = []
     issues: List[JsonDict] = []
-
+    rejected_msgs: List[str] = []
+    uid_matched_count = 0
     for gs in gold_sentences:
         comments = gs.get("comments", {})
         sent_uid = comments.get("sent_uid")
@@ -315,7 +316,6 @@ def align_gold_with_json(
                 }
             )
             continue
-
         js = json_by_uid.get(sent_uid)
 
         if js is None:
@@ -328,7 +328,7 @@ def align_gold_with_json(
                 }
             )
             continue
-
+        uid_matched_count += 1
         gold_tok = filter_gold_learning_tokens(gs["tokens"])
         json_tok = filter_json_alignment_tokens(js["tokens"])
 
@@ -346,6 +346,10 @@ def align_gold_with_json(
                     "json_forms": [t["form"] for t in json_tok],
                 }
             )
+            rejected_msgs.append(
+                    f"UID-matched but rejected: {sent_id} ({sent_uid})"
+            )
+
             continue
 
         form_mismatches = []
@@ -367,7 +371,7 @@ def align_gold_with_json(
 
         aligned.append((gs, js))
 
-    return aligned, issues
+    return aligned, issues, uid_matched_count, rejected_msgs
 
 
 def learn_overrides(
@@ -634,9 +638,9 @@ def main() -> int:
         json_sentences
     )
 
-    aligned_pairs, alignment_issues = align_gold_with_json(
-        gold_sentences,
-        json_by_uid,
+    aligned_pairs, alignment_issues, uid_matched_count, rejected_msgs = align_gold_with_json(
+    gold_sentences,
+    json_by_uid,
     )
     alignment_issues = duplicate_uid_issues + json_missing_uid_issues + alignment_issues
 
@@ -659,6 +663,9 @@ def main() -> int:
         "gold_sentence_count": len(gold_sentences),
         "json_sentence_count": len(json_sentences),
         "aligned_sentence_count": len(aligned_pairs),
+        "uid_matched_sentence_count": uid_matched_count,
+        "usable_aligned_sentence_count": len(aligned_pairs),
+        "alignment_rejected_sentence_count": uid_matched_count - len(aligned_pairs),
         "thresholds": {
             "lemma_min_count": args.lemma_min_count,
             "lemma_min_share": args.lemma_min_share,
@@ -690,6 +697,15 @@ def main() -> int:
 
     print(f"Wrote JSON resource to: {args.out_json}", file=sys.stderr)
     print(f"Wrote report to:        {args.out_report}", file=sys.stderr)
+    alignment_issues = duplicate_uid_issues + json_missing_uid_issues + alignment_issues
+    if alignment_issues or rejected_msgs:
+        print("\n=== Alignment issues and rejected UID matches ===", file=sys.stderr)
+
+        for msg in rejected_msgs:
+            print(msg, file=sys.stderr)
+
+        for issue in alignment_issues:
+            print(json.dumps(issue, ensure_ascii=False, sort_keys=True), file=sys.stderr)
     return 0
 
 
