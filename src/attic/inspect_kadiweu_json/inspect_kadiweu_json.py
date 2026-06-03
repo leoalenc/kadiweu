@@ -223,20 +223,7 @@ def print_header(title: str) -> None:
     print("=" * 80)
 
 
-def render_container_meta_value(key: str, value: Any, mode: str) -> str:
-    """Render container_meta values for human-readable text output."""
-    if key in {"content", "contents"}:
-        if mode == "ellipsis":
-            return "..."
-        if mode == "none":
-            return "<omitted>"
-
-    if isinstance(value, (dict, list)):
-        return compact_json(value)
-    return str(value)
-
-
-def print_sentence_summary(s: Dict[str, Any], container_meta_mode: str = "ellipsis") -> None:
+def print_sentence_summary(s: Dict[str, Any]) -> None:
     """Pretty-print one normalized sentence record."""
     print_header(f"Sentence {s['ordinal']}")
 
@@ -249,7 +236,9 @@ def print_sentence_summary(s: Dict[str, Any], container_meta_mode: str = "ellips
     if container_meta:
         print("container_meta:")
         for k in sorted(container_meta):
-            value = render_container_meta_value(k, container_meta[k], container_meta_mode)
+            value = container_meta[k]
+            if isinstance(value, (dict, list)):
+                value = compact_json(value)
             print(f"  {k}: {value}")
 
     translations = s.get("translations") or {}
@@ -413,16 +402,6 @@ def build_argparser() -> argparse.ArgumentParser:
         action="store_true",
         help="Only print sentence list (ordinal, uid, text), not full details",
     )
-    p.add_argument(
-        "--container-meta-mode",
-        choices=("ellipsis", "full", "none"),
-        default="ellipsis",
-        help=(
-            "How to print container_meta content/contents in the text output: "
-            "ellipsis (default) prints '...', full prints the full value, "
-            "and none prints '<omitted>'."
-        ),
-    )
     return p
 
 
@@ -468,7 +447,7 @@ def main() -> int:
             )
     else:
         for s in normalized:
-            print_sentence_summary(s, container_meta_mode=args.container_meta_mode)
+            print_sentence_summary(s)
             print()
 
     if args.jsonl_out:
