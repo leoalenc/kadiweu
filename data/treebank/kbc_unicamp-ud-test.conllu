@@ -137,7 +137,7 @@
 # text_por_lit = a não gostosura da comida da Maria
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	NumClass=Absent|TokenRange=0:3
 2	Maria	maria	PROPN	NPR	_	3	nmod:poss	_	TokenRange=4:9
-3	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	TokenRange=10:16
+3	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	TokenRange=10:17
 4-5	alidi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=18:23
 4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
 5	lidi	idi	NOUN	N$	Person[psor]=3	0	root	_	_

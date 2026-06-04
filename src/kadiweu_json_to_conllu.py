@@ -39,6 +39,8 @@ from kadiweu_normalization import (
     canonicalize_override_map,
 )
 
+from kadiweu_token_ranges import assign_token_ranges_to_emitted_rows
+
 
 # ---------------------------------------------------------------------
 # Project layout defaults
@@ -1314,20 +1316,21 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
     if needs_final_punct:
         punct_head = root_id or 0
         punct_id = len(draft_tokens) + 1
-        p_start, p_end = final_punct_range_from_text(text_orig)
 
         emitted_rows.append({
             "id": str(punct_id),
-            "form": ".",
-            "lemma": ".",
-            "upos": "PUNCT",
-            "xpos": "PUNCT",
-            "feats": "_",
-            "head": str(punct_head),
-            "deprel": "punct",
-            "deps": "_",
-            "misc": f"SpaceAfter=No|{range_to_misc(p_start, p_end)}",
+        "form": ".",
+        "lemma": ".",
+        "upos": "PUNCT",
+        "xpos": "PUNCT",
+        "feats": "_",
+        "head": str(punct_head),
+        "deprel": "punct",
+        "deps": "_",
+        "misc": "SpaceAfter=No",
     })
+        
+    assign_token_ranges_to_emitted_rows(emitted_rows, text)
 
     # Serialize
     for row in emitted_rows:
