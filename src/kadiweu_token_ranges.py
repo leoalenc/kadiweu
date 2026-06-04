@@ -218,7 +218,7 @@ def serialize_blocks(blocks: Sequence[SentenceBlock]) -> str:
         for row in block.rows:
             lines[row.line_index] = row.serialize()
         out.append("\n".join(lines))
-    return "\n\n".join(out) + ("\n" if out else "")
+    return "\n\n".join(out) + ("\n\n" if out else "")
 
 
 # ---------------------------------------------------------------------------
