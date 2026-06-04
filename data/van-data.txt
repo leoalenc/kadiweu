@@ -43,7 +43,7 @@ Sentence 2
 ================================================================================
 path: $.pages[0].sentences[1]
 uid: d07f0db7-963e-47ab-ab3f-36614732bacd
-text: iGeladi idei weigi
+text: iGeladi idei weiigi
 visible: None
 container_meta:
   content: ...
@@ -69,7 +69,7 @@ tokens:
       splits:
         [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
         [2] v='dei'        t='v'        gloss-br='ficar(permanente)' fn=None idx=None
-  p=3   v='weigi'            t='N'          l=1   gloss-br='lagoa'
+  p=3   v='weiigi'           t='N'          l=1   gloss-br='lagoa'
 
 conllu/token count check:
   tokens=3  proto-conllu=0
@@ -79,7 +79,7 @@ Sentence 3
 ================================================================================
 path: $.pages[0].sentences[2]
 uid: f50b632e-fc1a-4ec0-b8b3-610dab7be736
-text: iGeladi ideaGi weigi
+text: iGeladi ideaGi weiigi
 visible: None
 container_meta:
   content: ...
@@ -102,7 +102,7 @@ tokens:
         [1] v='i'          t='Gen'      gloss-br='1s' fn=None idx=None
         [2] v='Geladi'     t='n'        gloss-br='casa' fn=None idx=None
   p=2   v='ideaGi'           t='VB'         l=0   gloss-br=None
-  p=3   v='weigi'            t='N'          l=1   gloss-br='lagoa'
+  p=3   v='weiigi'           t='N'          l=1   gloss-br='lagoa'
 
 conllu/token count check:
   tokens=3  proto-conllu=0
@@ -180,7 +180,7 @@ Sentence 6
 ================================================================================
 path: $.pages[0].sentences[5]
 uid: 3e518fdb-d852-41e5-87a4-f8778597c2a1
-text: lotaGa GanaginaGa libinienaGa
+text: lotaGa GanaaginaGa libinienaGa
 visible: None
 container_meta:
   content: ...
@@ -193,12 +193,21 @@ proto-conllu:
   <none>
 
 chunks:
-  span=1-3 type=IP-MAT level=None
+  span=1-3 type=IP-MAT level=0
+  span=1-2 type=NP-SBJ level=1
+  span=3-3 type=NP-PRD level=1
 
 tokens:
-  p=1   v='lotaGa'           t=None         l=None gloss-br=None
-  p=2   v='GanaginaGa'       t=None         l=None gloss-br=None
-  p=3   v='libinienaGa'      t='N$'         l=None gloss-br=None
+  p=1   v='lotaGa'           t='N$'         l=1   gloss-br='palavra del(e|a)'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='otaGa'      t='n'        gloss-br='palavra' fn=None idx=None
+  p=2   v='GanaaginaGa'      t='N$'         l=1   gloss-br='teu irmão'
+      splits:
+        [1] v='Ga'         t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='naagina'    t='n'        gloss-br='irmão' fn=None idx=None
+        [3] v='Ga'         t=None       gloss-br=None fn=None idx=None
+  p=3   v='libinienaGa'      t='N$'         l=1   gloss-br=None
 
 conllu/token count check:
   tokens=3  proto-conllu=0
@@ -1087,7 +1096,7 @@ chunks:
 
 tokens:
   p=1   v='naGani'           t='D'          l=None gloss-br=None
-  p=2   v='wetiGa'           t=None         l=None gloss-br=None
+  p=2   v='wetiGa'           t='N'          l=None gloss-br=None
   p=3   v='liwaGatena'       t=None         l=None gloss-br=None
 
 conllu/token count check:
@@ -1241,25 +1250,29 @@ proto-conllu:
   <none>
 
 chunks:
-  span=1-6 type=IP-MAT level=None
+  span=1-6 type=IP-MAT level=0
+  span=1-4 type=NP level=1
+  span=3-4 type=CP-me level=2
+  span=4-4 type=IP-SUB level=3
+  span=6-6 type=NP-APL level=1
 
 tokens:
-  p=1   v='ani'              t='D'          l=None gloss-br='essa'
+  p=1   v='ani'              t='D'          l=1   gloss-br='essa'
       splits:
         [1] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
         [2] v='ni'         t='Ncl'      gloss-br='sentad(o|a)' fn=None idx=None
-  p=2   v='wetiGa'           t=None         l=None gloss-br=None
-  p=3   v='me'               t='C'          l=None gloss-br='que'
-  p=4   v='iwaGadi'          t='VB'         l=None gloss-br='pesar'
+  p=2   v='wetiGa'           t='N'          l=1   gloss-br=None
+  p=3   v='me'               t='C'          l=2   gloss-br='que'
+  p=4   v='iwaGadi'          t='VB'         l=3   gloss-br='pesar'
       splits:
         [1] v='i'          t='Abs'      gloss-br='3' fn=None idx=None
         [2] v='waGadi'     t='v'        gloss-br='pesar' fn=None idx=None
-  p=5   v='eniteloco'        t='VBAPL'      l=None gloss-br='cair em'
+  p=5   v='eniteloco'        t='VBAPL'      l=0   gloss-br='cair em'
       splits:
         [1] v='j'          t='Erg'      gloss-br='1' fn=None idx=None
         [2] v='ani'        t='v'        gloss-br=None fn=None idx=None
         [3] v='teloco'     t='Apl'      gloss-br='3' fn=None idx=None
-  p=6   v='iGonagi'          t=None         l=None gloss-br=None
+  p=6   v='iGonagi'          t='N$'         l=1   gloss-br=None
 
 conllu/token count check:
   tokens=6  proto-conllu=0
@@ -2385,7 +2398,7 @@ Sentence 67
 ================================================================================
 path: $.pages[0].sentences[66]
 uid: 6599689a-3fbe-4598-8827-78aceeff3931
-text: ijo lemé Maria ipegitegi weigi
+text: ijo lemé Maria ipegitegi weiigi
 visible: None
 container_meta:
   content: ...
@@ -2418,7 +2431,7 @@ tokens:
         [1] v='i'          t=None       gloss-br=None fn=None idx=None
         [2] v='pegi'       t=None       gloss-br=None fn=None idx=None
         [3] v='tegi'       t=None       gloss-br=None fn=None idx=None
-  p=5   v='weigi'            t='N'          l=1   gloss-br='lagoa'
+  p=5   v='weiigi'           t='N'          l=1   gloss-br='lagoa'
 
 conllu/token count check:
   tokens=5  proto-conllu=0
@@ -2608,7 +2621,7 @@ Sentence 73
 ================================================================================
 path: $.pages[0].sentences[72]
 uid: c1b350df-ed1a-4e3b-89a8-a6fa9ca8382e
-text: ligeladi ipegitege niweigi nigotaGa
+text: ligeladi ipegitege niweiigi nigotaGa
 visible: None
 container_meta:
   content: ...
@@ -2621,20 +2634,29 @@ proto-conllu:
   <none>
 
 chunks:
-  span=1-4 type=IP-MAT level=None
+  span=1-4 type=IP-MAT level=0
+  span=1-1 type=NP level=1
+  span=3-4 type=NP-APL level=1
 
 tokens:
-  p=1   v='ligeladi'         t='N$'         l=None gloss-br='sua casa'
+  p=1   v='ligeladi'         t='N$'         l=1   gloss-br='casa del(e|a)'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='Geladi'     t='n'        gloss-br='casa' fn=None idx=None
-  p=2   v='ipegitege'        t='VBAPL'      l=None gloss-br='fica perto de'
+  p=2   v='ipegitege'        t='VBAPL'      l=0   gloss-br='fica perto de'
       splits:
         [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
         [2] v='pegi'       t='v'        gloss-br='aproximar' fn=None idx=None
         [3] v='tece'       t='Apl'      gloss-br='3F' fn=None idx=None
-  p=3   v='niweigi'          t=None         l=None gloss-br=None
-  p=4   v='nigotaGa'         t='N'          l=None gloss-br='cidade'
+  p=3   v='niweiigi'         t='N$'         l=1   gloss-br='lagoa'
+      splits:
+        [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
+        [2] v='weiigi'     t='n'        gloss-br='lagoa' fn=None idx=None
+  p=4   v='nigotaGa'         t='N$'         l=1   gloss-br='cidade'
+      splits:
+        [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
+        [2] v='gota'       t='n'        gloss-br='cidade' fn=None idx=None
+        [3] v='Ga'         t='Sgv'      gloss-br='SG' fn=None idx=None
 
 conllu/token count check:
   tokens=4  proto-conllu=0
@@ -2644,7 +2666,7 @@ Sentence 74
 ================================================================================
 path: $.pages[0].sentences[73]
 uid: ebff5ffa-8a9d-4f8b-9960-38f70b344c19
-text: ligeladi ipegitegi niweigi nigotaGa
+text: ligeladi ipegitegi niweiigi nigotaGa
 visible: None
 container_meta:
   content: ...
@@ -2657,20 +2679,29 @@ proto-conllu:
   <none>
 
 chunks:
-  span=1-4 type=IP-MAT level=None
+  span=1-4 type=IP-MAT level=0
+  span=1-1 type=NP level=1
+  span=3-4 type=NP-APL level=1
 
 tokens:
-  p=1   v='ligeladi'         t='N$'         l=None gloss-br='sua casa'
+  p=1   v='ligeladi'         t='N$'         l=1   gloss-br='casa del(e|a)'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='Geladi'     t='n'        gloss-br='casa' fn=None idx=None
-  p=2   v='ipegitegi'        t='VBAPL'      l=None gloss-br='fica perto de'
+  p=2   v='ipegitegi'        t='VBAPL'      l=0   gloss-br='fica perto de'
       splits:
         [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
         [2] v='pegi'       t='v'        gloss-br='ficar_perto' fn=None idx=None
         [3] v='tegi'       t='Apl'      gloss-br='3M' fn=None idx=None
-  p=3   v='niweigi'          t=None         l=None gloss-br=None
-  p=4   v='nigotaGa'         t='N'          l=None gloss-br='cidade'
+  p=3   v='niweiigi'         t='N$'         l=1   gloss-br='lagoa'
+      splits:
+        [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
+        [2] v='weiigi'     t='n'        gloss-br='lagoa' fn=None idx=None
+  p=4   v='nigotaGa'         t='N$'         l=1   gloss-br='cidade'
+      splits:
+        [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
+        [2] v='gota'       t='n'        gloss-br='cidade' fn=None idx=None
+        [3] v='Ga'         t='Sgv'      gloss-br='SG' fn=None idx=None
 
 conllu/token count check:
   tokens=4  proto-conllu=0
@@ -2680,7 +2711,7 @@ Sentence 75
 ================================================================================
 path: $.pages[0].sentences[74]
 uid: 81048a6f-e084-4b0a-965a-f41fb5c53ff7
-text: nigotGa liGeladi ipegitegi weigi
+text: nigotaGa liGeladi ipegitegi weiigi
 visible: None
 container_meta:
   content: ...
@@ -2693,20 +2724,26 @@ proto-conllu:
   <none>
 
 chunks:
-  span=1-4 type=IP-MAT level=None
+  span=1-4 type=IP-MAT level=0
+  span=1-2 type=NP level=1
+  span=4-4 type=NP-APL level=1
 
 tokens:
-  p=1   v='nigotGa'          t=None         l=None gloss-br=None
-  p=2   v='liGeladi'         t='N$'         l=None gloss-br='sua casa'
+  p=1   v='nigotaGa'         t='N$'         l=1   gloss-br='cidade'
+      splits:
+        [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
+        [2] v='gota'       t='n'        gloss-br='cidade' fn=None idx=None
+        [3] v='Ga'         t='Sgv'      gloss-br='SG' fn=None idx=None
+  p=2   v='liGeladi'         t='N$'         l=1   gloss-br='casa del(e|a)'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='Geladi'     t='n'        gloss-br='casa' fn=None idx=None
-  p=3   v='ipegitegi'        t='VBAPL'      l=None gloss-br='fica perto de'
+  p=3   v='ipegitegi'        t='VBAPL'      l=0   gloss-br='fica perto de'
       splits:
         [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
         [2] v='pegi'       t='v'        gloss-br='ficar_perto' fn=None idx=None
         [3] v='tegi'       t='Apl'      gloss-br='3M' fn=None idx=None
-  p=4   v='weigi'            t='N'          l=None gloss-br='lagoa'
+  p=4   v='weiigi'           t='N'          l=1   gloss-br='lagoa'
 
 conllu/token count check:
   tokens=4  proto-conllu=0

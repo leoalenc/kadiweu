@@ -11,25 +11,25 @@
 
 # sent_id = van-data-2
 # sent_uid = d07f0db7-963e-47ab-ab3f-36614732bacd
-# text = iGeladi idei weigi.
-# text_orig = iGeladi idei weigi
+# text = iGeladi idei weiigi.
+# text_orig = iGeladi idei weiigi
 # text_por_orig = Minha casa é no rio
 # text_por = Minha casa é no rio.
 1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
-3	weigi	weigi	NOUN	N	_	2	obj	_	SpaceAfter=No|TokenRange=13:18
-4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=18:19
+3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=13:19
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
 
 # sent_id = van-data-3
 # sent_uid = f50b632e-fc1a-4ec0-b8b3-610dab7be736
-# text = iGeladi ideaGi weigi.
-# text_orig = iGeladi ideaGi weigi
+# text = iGeladi ideaGi weiigi.
+# text_orig = iGeladi ideaGi weiigi
 # text_por_orig = Minha casa é no rio
 # text_por = Minha casa é no rio.
 1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	ideaGi	ideagi	VERB	VB	_	0	root	_	TokenRange=8:14
-3	weigi	weigi	NOUN	N	_	2	obj	_	SpaceAfter=No|TokenRange=15:20
-4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
+3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=15:21
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = van-data-4
 # sent_uid = d26cfc71-a117-4817-9f35-4a7d23fd1f88
@@ -55,14 +55,14 @@
 
 # sent_id = van-data-6
 # sent_uid = 3e518fdb-d852-41e5-87a4-f8778597c2a1
-# text = lotaGa GanaginaGa libinienaGa.
-# text_orig = lotaGa GanaginaGa libinienaGa
+# text = lotaGa GanaaginaGa libinienaGa.
+# text_orig = lotaGa GanaaginaGa libinienaGa
 # text_por_orig = a palavra de seu irmão é bonita
 # text_por = a palavra de seu irmão é bonita.
-1	lotaGa	otaGa	X	X	Gender=Masc|Number=Sing|Person[psor]=3	3	dep	_	TokenRange=0:6
-2	GanaginaGa	ganaginaga	X	X	_	3	dep	_	TokenRange=7:17
-3	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=18:29
-4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
+1	lotaGa	otaGa	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=0:6
+2	GanaaginaGa	naagina	NOUN	N$	Person[psor]=3	3	dep	_	TokenRange=7:18
+3	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=19:30
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = van-data-7
 # sent_uid = ee540050-e6fa-424e-9252-fd0b9312769d
@@ -361,10 +361,10 @@
 # text_orig = naGani wetiGa liwaGatena
 # text_por_orig = esta pedra está muito pesada
 # text_por = esta pedra está muito pesada.
-1	naGani	niGini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	0	root	_	TokenRange=0:6
-2	wetiGa	wetiga	X	X	Gender=Fem|Number=Sing	1	dep	_	TokenRange=7:13
-3	liwaGatena	liwagatena	X	X	_	1	dep	_	SpaceAfter=No|TokenRange=14:24
-4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
+1	naGani	niGini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	wetiGa	wetiga	NOUN	N	Gender=Fem|Number=Sing	0	root	_	TokenRange=7:13
+3	liwaGatena	liwagatena	X	X	_	2	dep	_	SpaceAfter=No|TokenRange=14:24
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = van-data-33
 # sent_uid = a0bb1280-1040-4dff-9311-a1a31049b6f8
@@ -418,12 +418,12 @@
 # text_orig = ani wetiGa me iwaGadi eniteloco iGonagi
 # text_por_orig = esta pedra que é pesada caiu no meu pé
 # text_por = esta pedra que é pesada caiu no meu pé.
-1	ani	ni	DET	D	PronType=Dem	4	det	_	TokenRange=0:3
-2	wetiGa	wetiga	X	X	Gender=Fem|Number=Sing	4	dep	_	TokenRange=4:10
+1	ani	ni	DET	D	PronType=Dem	2	det	_	TokenRange=0:3
+2	wetiGa	wetiga	NOUN	N	Gender=Fem|Number=Sing	4	dep	_	TokenRange=4:10
 3	me	me	SCONJ	C	_	4	dep	_	TokenRange=11:13
 4	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=14:21
 5	eniteloco	ani	VERB	VBAPL	Voice=Appl	4	dep	_	TokenRange=22:31
-6	iGonagi	igonagi	X	X	_	4	dep	_	SpaceAfter=No|TokenRange=32:39
+6	iGonagi	igonagi	NOUN	N$	_	4	obj	_	SpaceAfter=No|TokenRange=32:39
 7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=39:40
 
 # sent_id = van-data-38
@@ -786,16 +786,16 @@
 
 # sent_id = van-data-67
 # sent_uid = 6599689a-3fbe-4598-8827-78aceeff3931
-# text = ijo lemé Maria ipegitegi weigi.
-# text_orig = ijo lemé Maria ipegitegi weigi
+# text = ijo lemé Maria ipegitegi weiigi.
+# text_orig = ijo lemé Maria ipegitegi weiigi
 # text_por_orig = o avô da Maria está no rio
 # text_por = o avô da Maria está no rio.
 1	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	lemé	emé	NOUN	N$	_	4	nsubj	_	TokenRange=4:8
 3	Maria	maria	PROPN	NPR	_	4	dep	_	TokenRange=9:14
 4	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=15:24
-5	weigi	weigi	NOUN	N	_	4	obj	_	SpaceAfter=No|TokenRange=25:30
-6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
+5	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=25:31
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = van-data-68
 # sent_uid = b8878027-73d2-4b11-bc18-cbdcf5637e55
@@ -856,37 +856,37 @@
 
 # sent_id = van-data-73
 # sent_uid = c1b350df-ed1a-4e3b-89a8-a6fa9ca8382e
-# text = ligeladi ipegitege niweigi nigotaGa.
-# text_orig = ligeladi ipegitege niweigi nigotaGa
+# text = ligeladi ipegitege niweiigi nigotaGa.
+# text_orig = ligeladi ipegitege niweiigi nigotaGa
 # text_por_orig = a casa dela é perto do rio da cidade
 # text_por = a casa dela é perto do rio da cidade.
-1	ligeladi	Geladi	NOUN	N$	Person[psor]=3	2	dep	_	TokenRange=0:8
+1	ligeladi	Geladi	NOUN	N$	Person[psor]=3	2	nsubj	_	TokenRange=0:8
 2	ipegitege	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=9:18
-3	niweigi	niweigi	X	X	_	2	dep	_	TokenRange=19:26
-4	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	2	dep	_	SpaceAfter=No|TokenRange=27:35
-5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=35:36
+3	niweiigi	weiigi	NOUN	N$	_	2	obj	_	TokenRange=19:27
+4	nigotaGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing	2	dep	_	SpaceAfter=No|TokenRange=28:36
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=36:37
 
 # sent_id = van-data-74
 # sent_uid = ebff5ffa-8a9d-4f8b-9960-38f70b344c19
-# text = ligeladi ipegitegi niweigi nigotaGa.
-# text_orig = ligeladi ipegitegi niweigi nigotaGa
+# text = ligeladi ipegitegi niweiigi nigotaGa.
+# text_orig = ligeladi ipegitegi niweiigi nigotaGa
 # text_por_orig = a casa dele é perto do rio da cidade
 # text_por = a casa dele é perto do rio da cidade.
-1	ligeladi	Geladi	NOUN	N$	Person[psor]=3	2	dep	_	TokenRange=0:8
+1	ligeladi	Geladi	NOUN	N$	Person[psor]=3	2	nsubj	_	TokenRange=0:8
 2	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=9:18
-3	niweigi	niweigi	X	X	_	2	dep	_	TokenRange=19:26
-4	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	2	dep	_	SpaceAfter=No|TokenRange=27:35
-5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=35:36
+3	niweiigi	weiigi	NOUN	N$	_	2	obj	_	TokenRange=19:27
+4	nigotaGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing	2	dep	_	SpaceAfter=No|TokenRange=28:36
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=36:37
 
 # sent_id = van-data-75
 # sent_uid = 81048a6f-e084-4b0a-965a-f41fb5c53ff7
-# text = nigotGa liGeladi ipegitegi weigi.
-# text_orig = nigotGa liGeladi ipegitegi weigi
+# text = nigotaGa liGeladi ipegitegi weiigi.
+# text_orig = nigotaGa liGeladi ipegitegi weiigi
 # text_por_orig = a cidade da casa dela é perto do rio
 # text_por = a cidade da casa dela é perto do rio.
-1	nigotGa	nigotga	X	X	_	3	dep	_	TokenRange=0:7
-2	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	dep	_	TokenRange=8:16
-3	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=17:26
-4	weigi	weigi	NOUN	N	_	3	dep	_	SpaceAfter=No|TokenRange=27:32
-5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=32:33
+1	nigotaGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=0:8
+2	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	1	nmod:poss	_	TokenRange=9:17
+3	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=18:27
+4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=28:34
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=34:35
 
