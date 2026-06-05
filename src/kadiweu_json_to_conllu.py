@@ -635,7 +635,7 @@ def infer_lemma(form: str, tok: Dict[str, Any]) -> str:
             if val:
                 return val
 
-    return form.lower()
+    return form
 
 
 def infer_feats(form: str, tag: str, tok: Dict[str, Any]) -> str:

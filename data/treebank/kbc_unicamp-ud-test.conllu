@@ -855,3 +855,36 @@
 6	iGonagi	Gonagi	NOUN	N$	Number=Sing|Number[psor]=Sing|Person[psor]=1	5	obj	_	SpaceAfter=No|TokenRange=36:43
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=43:44
 
+# sent_id = van-data-2
+# sent_uid = d07f0db7-963e-47ab-ab3f-36614732bacd
+# text = iGeladi idei weiigi.
+# text_orig = iGeladi idei weiigi
+# text_por_orig = Minha casa é no rio
+# text_por = Minha casa é no rio.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
+3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=13:19
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = van-data-3
+# sent_uid = f50b632e-fc1a-4ec0-b8b3-610dab7be736
+# text = iGeladi ideaGi weiigi.
+# text_orig = iGeladi ideaGi weiigi
+# text_por_orig = Minha casa é no rio
+# text_por = Minha casa é no rio.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+2	ideaGi	dei	VERB	VB	_	0	root	_	Directional=TowardTokenRange=8:14
+3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=15:21
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = van-data-4
+# sent_uid = d26cfc71-a117-4817-9f35-4a7d23fd1f88
+# text = iwaalo ja libiniena.
+# text_orig = iwaalo ja libiniena
+# text_por_orig = a mulher está bonita
+# text_por = a mulher está bonita.
+1	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=0:6
+2	ja	jaG	AUX	T	Aspect=Perf	3	aux	_	TokenRange=7:9
+3	libiniena	binie	NOUN	N$	Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=10:19
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=19:20
+
