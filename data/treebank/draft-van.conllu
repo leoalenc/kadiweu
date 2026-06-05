@@ -39,7 +39,7 @@
 # text_por = a mulher está bonita.
 1	iwaalo	iwaa	NOUN	N	_	0	root	_	TokenRange=0:6
 2	ja	jaG	AUX	T	Aspect=Perf	1	aux	_	TokenRange=7:9
-3	libiniena	libiniena	NOUN	N$	_	1	dep	_	SpaceAfter=No|TokenRange=10:19
+3	libiniena	binie	NOUN	N$	Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3	1	dep	_	SpaceAfter=No|TokenRange=10:19
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=19:20
 
 # sent_id = van-data-5
