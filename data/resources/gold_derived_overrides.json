@@ -23,6 +23,7 @@
     "iwaGadi": "Mood=Ind|Person=3|VerbForm=Fin",
     "ja": "Aspect=Perf",
     "liGeladi": "Gender=Masc|Number=Sing|Person[psor]=3",
+    "libiniena": "Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3",
     "libinienaGa": "Degree=Dim|Number=Plur|Person[psor]=3",
     "libinienigi": "Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3",
     "libinienigipi": "Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3",
@@ -70,6 +71,7 @@
     "iwaGadi": "waGadi",
     "ja": "jaG",
     "liGeladi": "Geladi",
+    "libiniena": "binie",
     "libinienaGa": "binie",
     "libinienigi": "binie",
     "libinienigipi": "binie",
@@ -91,15 +93,16 @@
     "weiigi": "weiigi"
   },
   "metadata": {
-    "aligned_sentence_count": 70,
+    "aligned_sentence_count": 73,
     "alignment_rejected_sentence_count": 1,
-    "gold_file": "../data/treebank/kbc_unicamp-ud-test.conllu",
-    "gold_sentence_count": 71,
+    "gold_file": "/home/leonel/kadiweu/data/treebank/kbc_unicamp-ud-test.conllu",
+    "gold_sentence_count": 74,
     "json_files": [
-      "../data/dados-hil.json",
-      "../data/gramatica-pedagogica.json"
+      "../data/gramatica-pedagogica.json",
+      "../data/van-data.json",
+      "../data/dados-hil.json"
     ],
-    "json_sentence_count": 128,
+    "json_sentence_count": 203,
     "thresholds": {
       "feats_min_count": 2,
       "feats_min_share": 0.9,
@@ -110,8 +113,8 @@
       "tag_pron_min_count": 5,
       "tag_pron_min_share": 0.9
     },
-    "uid_matched_sentence_count": 71,
-    "usable_aligned_sentence_count": 70
+    "uid_matched_sentence_count": 74,
+    "usable_aligned_sentence_count": 73
   },
   "prontype_overrides": {
     "NaGani\tDET": "Dem",
@@ -310,7 +313,7 @@
         "mismatches": [
           [
             "lidGegi",
-            "lideǥegi"
+            "lideGegi"
           ]
         ],
         "sent_id": "ped-gramm-18",
@@ -336,7 +339,7 @@
           "naodigijedi",
           "me@",
           "@icawataGa",
-          "daǥa",
+          "daGa",
           "me",
           "lionigipi"
         ],
@@ -345,19 +348,6 @@
         "sent_uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d",
         "source_file": "../data/gramatica-pedagogica.json",
         "type": "token_count_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[30]",
-        "mismatches": [
-          [
-            "daGa",
-            "daǥa"
-          ]
-        ],
-        "sent_id": "ped-gramm-31",
-        "sent_uid": "845b9d1d-ad7c-445a-bfbd-04fd9255ffc2",
-        "source_file": "../data/gramatica-pedagogica.json",
-        "type": "token_form_mismatch"
       },
       {
         "json_path": "$.pages[0].sentences[5]",
@@ -683,6 +673,17 @@
         "upos": "NOUN"
       },
       {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "_": 1
+        },
+        "form": "ideaGi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
         "best": "Mood=Ind|Number[obj]=Sing|Person[erg]=3|Person[obj]=2|VerbForm=Fin|Voice=Appl",
         "best_count": 1,
         "counts": {
@@ -705,12 +706,12 @@
         "upos": "VERB"
       },
       {
-        "best": "Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3",
+        "best": "Gender=Fem|Number=Sing",
         "best_count": 1,
         "counts": {
-          "Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3": 1
+          "Gender=Fem|Number=Sing": 1
         },
-        "form": "libiniena",
+        "form": "iwaalo",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
@@ -1235,6 +1236,17 @@
         "upos": "NOUN"
       },
       {
+        "best": "dei",
+        "best_count": 1,
+        "counts": {
+          "dei": 1
+        },
+        "form": "ideaGi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
         "best": "pegi",
         "best_count": 1,
         "counts": {
@@ -1257,12 +1269,12 @@
         "upos": "VERB"
       },
       {
-        "best": "binie",
+        "best": "iwaalo",
         "best_count": 1,
         "counts": {
-          "binie": 1
+          "iwaalo": 1
         },
-        "form": "libiniena",
+        "form": "iwaalo",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"

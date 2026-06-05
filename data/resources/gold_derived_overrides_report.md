@@ -2,23 +2,22 @@
 
 ## Summary
 
-- Gold sentences: **71**
-- JSON sentences: **128**
-- UID-matched sentence pairs: **71**
-- Usable aligned sentence pairs: **70**
+- Gold sentences: **74**
+- JSON sentences: **203**
+- UID-matched sentence pairs: **74**
+- Usable aligned sentence pairs: **73**
 - UID-matched but rejected: **1**
-- `lemma_overrides`: **42**
-- `form_feat_overrides`: **45**
+- `lemma_overrides`: **43**
+- `form_feat_overrides`: **46**
 - `prontype_overrides`: **11**
 - `tag_to_default_prontype`: **3**
 
 ## Review items
 
-### json_alignment_issues (5)
+### json_alignment_issues (4)
 - `{"json_path": "$.pages[0].sentences[14]", "mismatches": [["lideGegi", "lidGegi"]], "sent_id": "ped-gramm-15", "sent_uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
-- `{"json_path": "$.pages[0].sentences[17]", "mismatches": [["lidGegi", "lideǥegi"]], "sent_id": "ped-gramm-18", "sent_uid": "582429f2-67d5-4077-b209-6deb7b5df54f", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
-- `{"gold_count": 7, "gold_forms": ["eyodi", "dowediteloco", "naodigijedi", "micoataGa", "daGa", "me", "lionigipi"], "json_count": 8, "json_forms": ["Eyodi", "dowediteloco", "naodigijedi", "me@", "@icawataGa", "daǥa", "me", "lionigipi"], "json_path": "$.pages[0].sentences[27]", "sent_id": "ped-gramm-28", "sent_uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d", "source_file": "../data/gramatica-pedagogica.json", "type": "token_count_mismatch"}`
-- `{"json_path": "$.pages[0].sentences[30]", "mismatches": [["daGa", "daǥa"]], "sent_id": "ped-gramm-31", "sent_uid": "845b9d1d-ad7c-445a-bfbd-04fd9255ffc2", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
+- `{"json_path": "$.pages[0].sentences[17]", "mismatches": [["lidGegi", "lideGegi"]], "sent_id": "ped-gramm-18", "sent_uid": "582429f2-67d5-4077-b209-6deb7b5df54f", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
+- `{"gold_count": 7, "gold_forms": ["eyodi", "dowediteloco", "naodigijedi", "micoataGa", "daGa", "me", "lionigipi"], "json_count": 8, "json_forms": ["Eyodi", "dowediteloco", "naodigijedi", "me@", "@icawataGa", "daGa", "me", "lionigipi"], "json_path": "$.pages[0].sentences[27]", "sent_id": "ped-gramm-28", "sent_uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d", "source_file": "../data/gramatica-pedagogica.json", "type": "token_count_mismatch"}`
 - `{"json_path": "$.pages[0].sentences[5]", "mismatches": [["akake", "@dakake"]], "sent_id": "hil-data-6", "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647", "source_file": "../data/dados-hil.json", "type": "token_form_mismatch"}`
 
 ### ambiguous_lemmas (8)
@@ -44,7 +43,7 @@ _None_
 ### ambiguous_tag_to_prontype (0)
 _None_
 
-### low_evidence_lemmas (50)
+### low_evidence_lemmas (51)
 - `{"best": "da", "best_count": 1, "counts": {"da": 1}, "form": "Ada", "share": 1.0, "total": 1, "upos": "PRON"}`
 - `{"best": "di", "best_count": 1, "counts": {"di": 1}, "form": "Adi", "share": 1.0, "total": 1, "upos": "PRON"}`
 - `{"best": "ni", "best_count": 1, "counts": {"ni": 1}, "form": "Ani", "share": 1.0, "total": 1, "upos": "PRON"}`
@@ -60,9 +59,9 @@ _None_
 - `{"best": "binie", "best_count": 1, "counts": {"binie": 1}, "form": "Libiniena", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "binie", "best_count": 1, "counts": {"binie": 1}, "form": "Libinienigi", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "niGijo", "best_count": 1, "counts": {"niGijo": 1}, "form": "NaGajo", "share": 1.0, "total": 1, "upos": "DET"}`
-- ... and 35 more
+- ... and 36 more
 
-### low_evidence_feats (50)
+### low_evidence_feats (51)
 - `{"best": "Gender=Fem|Number=Sing|PronType=Dem", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Ada", "share": 1.0, "total": 1, "upos": "PRON"}`
 - `{"best": "Gender=Fem|Number=Sing|PronType=Dem", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Adi", "share": 1.0, "total": 1, "upos": "PRON"}`
 - `{"best": "Gender=Fem|Number=Sing|PronType=Dem", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Ani", "share": 1.0, "total": 1, "upos": "PRON"}`
@@ -78,7 +77,7 @@ _None_
 - `{"best": "Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3", "best_count": 1, "counts": {"Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3": 1}, "form": "Libiniena", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3", "best_count": 1, "counts": {"Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3": 1}, "form": "Libinienigi", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "Gender=Fem|Number=Sing|PronType=Dem", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "NaGajo", "share": 1.0, "total": 1, "upos": "DET"}`
-- ... and 35 more
+- ... and 36 more
 
 ### low_evidence_prontype (12)
 - `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "Ada", "share": 1.0, "total": 1, "upos": "PRON"}`
