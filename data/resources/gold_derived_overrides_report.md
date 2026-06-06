@@ -3,10 +3,10 @@
 ## Summary
 
 - Gold sentences: **74**
-- JSON sentences: **203**
+- JSON sentences: **204**
 - UID-matched sentence pairs: **74**
-- Usable aligned sentence pairs: **73**
-- UID-matched but rejected: **1**
+- Usable aligned sentence pairs: **71**
+- UID-matched but rejected: **3**
 - `lemma_overrides`: **43**
 - `form_feat_overrides`: **46**
 - `prontype_overrides`: **11**
@@ -14,11 +14,14 @@
 
 ## Review items
 
-### json_alignment_issues (4)
-- `{"json_path": "$.pages[0].sentences[14]", "mismatches": [["lideGegi", "lidGegi"]], "sent_id": "ped-gramm-15", "sent_uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
+### json_alignment_issues (7)
 - `{"json_path": "$.pages[0].sentences[17]", "mismatches": [["lidGegi", "lideGegi"]], "sent_id": "ped-gramm-18", "sent_uid": "582429f2-67d5-4077-b209-6deb7b5df54f", "source_file": "../data/gramatica-pedagogica.json", "type": "token_form_mismatch"}`
 - `{"gold_count": 7, "gold_forms": ["eyodi", "dowediteloco", "naodigijedi", "micoataGa", "daGa", "me", "lionigipi"], "json_count": 8, "json_forms": ["Eyodi", "dowediteloco", "naodigijedi", "me@", "@icawataGa", "daGa", "me", "lionigipi"], "json_path": "$.pages[0].sentences[27]", "sent_id": "ped-gramm-28", "sent_uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d", "source_file": "../data/gramatica-pedagogica.json", "type": "token_count_mismatch"}`
-- `{"json_path": "$.pages[0].sentences[5]", "mismatches": [["akake", "@dakake"]], "sent_id": "hil-data-6", "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647", "source_file": "../data/dados-hil.json", "type": "token_form_mismatch"}`
+- `{"json_path": "$.pages[0].sentences[0]", "mismatches": [["Iwalo", "Iwaalo"]], "sent_id": "hil-data-1", "sent_uid": "fcef38ed-be6b-4f2a-b5cf-fa4db625ecfb", "source_file": "../data/dados-hil.json", "type": "token_form_mismatch"}`
+- `{"json_path": "$.pages[0].sentences[1]", "mismatches": [["Iwalo", "Iwaalo"]], "sent_id": "hil-data-2", "sent_uid": "31d3b4c0-4aab-4538-999b-b8ee85c34444", "source_file": "../data/dados-hil.json", "type": "token_form_mismatch"}`
+- `{"gold_count": 6, "gold_forms": ["Etogo", "ane", "iwaGadi", "aG", "dakake", "lojedi"], "json_count": 5, "json_forms": ["Etogo", "ane@", "@iwaGadi", "adakake", "lojedi"], "json_path": "$.pages[0].sentences[4]", "sent_id": "hil-data-5", "sent_uid": "e349508c-4d86-48b8-9918-057988755e77", "source_file": "../data/dados-hil.json", "type": "token_count_mismatch"}`
+- `{"gold_count": 6, "gold_forms": ["Etogo", "ane", "iwaGadi", "aG", "akake", "loojedi"], "json_count": 5, "json_forms": ["Etogo", "ane", "iwaGadi", "adakake", "loojedi"], "json_path": "$.pages[0].sentences[5]", "sent_id": "hil-data-6", "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647", "source_file": "../data/dados-hil.json", "type": "token_count_mismatch"}`
+- `{"json_path": "$.pages[0].sentences[14]", "mismatches": [["Iwalepodi", "Iwaalepodi"]], "sent_id": "hil-data-15", "sent_uid": "baccc279-f303-4b4f-a6d7-4404de699f4a", "source_file": "../data/dados-hil.json", "type": "token_form_mismatch"}`
 
 ### ambiguous_lemmas (8)
 - `{"best": "iwa", "best_count": 1, "counts": {"iwa": 1, "iwaalo": 1}, "form": "Iwalo", "share": 0.5, "total": 2, "upos": "NOUN"}`

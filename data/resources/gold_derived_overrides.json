@@ -93,16 +93,16 @@
     "weiigi": "weiigi"
   },
   "metadata": {
-    "aligned_sentence_count": 73,
-    "alignment_rejected_sentence_count": 1,
+    "aligned_sentence_count": 71,
+    "alignment_rejected_sentence_count": 3,
     "gold_file": "/home/leonel/kadiweu/data/treebank/kbc_unicamp-ud-test.conllu",
     "gold_sentence_count": 74,
     "json_files": [
       "../data/gramatica-pedagogica.json",
-      "../data/van-data.json",
-      "../data/dados-hil.json"
+      "../data/dados-hil.json",
+      "../data/van-data.json"
     ],
-    "json_sentence_count": 203,
+    "json_sentence_count": 204,
     "thresholds": {
       "feats_min_count": 2,
       "feats_min_share": 0.9,
@@ -114,7 +114,7 @@
       "tag_pron_min_share": 0.9
     },
     "uid_matched_sentence_count": 74,
-    "usable_aligned_sentence_count": 73
+    "usable_aligned_sentence_count": 71
   },
   "prontype_overrides": {
     "NaGani\tDET": "Dem",
@@ -296,19 +296,6 @@
     "ambiguous_tag_to_prontype": [],
     "json_alignment_issues": [
       {
-        "json_path": "$.pages[0].sentences[14]",
-        "mismatches": [
-          [
-            "lideGegi",
-            "lidGegi"
-          ]
-        ],
-        "sent_id": "ped-gramm-15",
-        "sent_uid": "c5bd2cb2-e53b-40e4-9159-6dacde49c1b6",
-        "source_file": "../data/gramatica-pedagogica.json",
-        "type": "token_form_mismatch"
-      },
-      {
         "json_path": "$.pages[0].sentences[17]",
         "mismatches": [
           [
@@ -350,15 +337,89 @@
         "type": "token_count_mismatch"
       },
       {
-        "json_path": "$.pages[0].sentences[5]",
+        "json_path": "$.pages[0].sentences[0]",
         "mismatches": [
           [
-            "akake",
-            "@dakake"
+            "Iwalo",
+            "Iwaalo"
           ]
         ],
+        "sent_id": "hil-data-1",
+        "sent_uid": "fcef38ed-be6b-4f2a-b5cf-fa4db625ecfb",
+        "source_file": "../data/dados-hil.json",
+        "type": "token_form_mismatch"
+      },
+      {
+        "json_path": "$.pages[0].sentences[1]",
+        "mismatches": [
+          [
+            "Iwalo",
+            "Iwaalo"
+          ]
+        ],
+        "sent_id": "hil-data-2",
+        "sent_uid": "31d3b4c0-4aab-4538-999b-b8ee85c34444",
+        "source_file": "../data/dados-hil.json",
+        "type": "token_form_mismatch"
+      },
+      {
+        "gold_count": 6,
+        "gold_forms": [
+          "Etogo",
+          "ane",
+          "iwaGadi",
+          "aG",
+          "dakake",
+          "lojedi"
+        ],
+        "json_count": 5,
+        "json_forms": [
+          "Etogo",
+          "ane@",
+          "@iwaGadi",
+          "adakake",
+          "lojedi"
+        ],
+        "json_path": "$.pages[0].sentences[4]",
+        "sent_id": "hil-data-5",
+        "sent_uid": "e349508c-4d86-48b8-9918-057988755e77",
+        "source_file": "../data/dados-hil.json",
+        "type": "token_count_mismatch"
+      },
+      {
+        "gold_count": 6,
+        "gold_forms": [
+          "Etogo",
+          "ane",
+          "iwaGadi",
+          "aG",
+          "akake",
+          "loojedi"
+        ],
+        "json_count": 5,
+        "json_forms": [
+          "Etogo",
+          "ane",
+          "iwaGadi",
+          "adakake",
+          "loojedi"
+        ],
+        "json_path": "$.pages[0].sentences[5]",
         "sent_id": "hil-data-6",
         "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647",
+        "source_file": "../data/dados-hil.json",
+        "type": "token_count_mismatch"
+      },
+      {
+        "json_path": "$.pages[0].sentences[14]",
+        "mismatches": [
+          [
+            "Iwalepodi",
+            "Iwaalepodi"
+          ]
+        ],
+        "sent_id": "hil-data-15",
+        "sent_uid": "baccc279-f303-4b4f-a6d7-4404de699f4a",
         "source_file": "../data/dados-hil.json",
         "type": "token_form_mismatch"
       }

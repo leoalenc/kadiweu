@@ -219,14 +219,14 @@
 
 # sent_id = ped-gramm-18
 # sent_uid = 582429f2-67d5-4077-b209-6deb7b5df54f
-# text = ica lidGegi loligi idei liGeladi.
+# text = ica lideGegi loligi idei liGeladi.
 # text_orig = ica lidGegi loligi idei liGeladi
 # text_por_orig = a deliciosa comida está na casa dela/dele
 # text_por_alt1 = A deliciosa comida está na casa dela.
 # text_por_alt2 = A deliciosa comida está na casa dele.
 # text_por_lit = A gostosura da comida dele/dela está na casa dela/dele.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	lidGegi	idi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:11
+2	lideGegi	idi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:11
 3	loligi	oligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nmod:poss	_	TokenRange=12:18
 4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=19:23
 5	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	obj	_	SpaceAfter=No|TokenRange=24:32
@@ -464,21 +464,21 @@
 
 # sent_id = hil-data-1
 # sent_uid = fcef38ed-be6b-4f2a-b5cf-fa4db625ecfb
-# text = Iwalo libiniena.
-# text_orig = Iwalo libiniena
+# text = Iwaalo libiniena.
+# text_orig = Iwaalo libiniena
 # text_por_orig = A mulher está bonita .
 # text_por = A mulher está bonita.
-1	Iwalo	iwa	NOUN	N	Gender=Fem|Number=Sing	2	nsubj	_	NounClass=Lo|TokenRange=0:5
+1	Iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	2	nsubj	_	NounClass=Lo|TokenRange=0:5
 2	libiniena	binie	NOUN	N$	Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=6:15
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
 
 # sent_id = hil-data-2
 # sent_uid = 31d3b4c0-4aab-4538-999b-b8ee85c34444
-# text = Iwalo ninitibeci.
-# text_orig = Iwalo ninitibeci
+# text = Iwaalo ninitibeci.
+# text_orig = Iwaalo ninitibeci
 # text_por_orig = A mulher está feliz .
 # text_por = A mulher está feliz.
-1	Iwalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	2	nsubj	_	NounClass=Lo|StandardForm=iwaalo|TokenRange=0:5
+1	Iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	2	nsubj	_	NounClass=Lo|StandardForm=iwaalo|TokenRange=0:5
 2	ninitibeci	nitibeci	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	Lemma=-initibece|SpaceAfter=No|TokenRange=6:16
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
@@ -617,11 +617,11 @@
 
 # sent_id = hil-data-15
 # sent_uid = baccc279-f303-4b4f-a6d7-4404de699f4a
-# text = Iwalepodi libinienigipi.
-# text_orig = Iwalepodi libinienigipi .
+# text = Iwaalepodi libinienigipi.
+# text_orig = Iwaalepodi libinienigipi .
 # text_por_orig = As mulheres estão bonitas .
 # text_por = As mulheres estão bonitas.
-1	Iwalepodi	iwaalo	NOUN	N	Gender=Fem|Number=Plur	2	nsubj	_	StandardForm=iwaalepodi|StandardLemma=iwaalo|TokenRange=0:9
+1	Iwaalepodi	iwaalo	NOUN	N	Gender=Fem|Number=Plur	2	nsubj	_	StandardForm=iwaalepodi|StandardLemma=iwaalo|TokenRange=0:9
 2	libinienigipi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=10:23
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=23:24
 
