@@ -898,3 +898,14 @@
 2	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=4:12
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
 
+# sent_id = van-data-34
+# sent_uid = e1acd124-849e-40dc-bbb0-a8b6ed281592
+# text = niGidiwa wetiadi iwaGadi.
+# text_orig = niGidiwa wetiadi iwaGadi
+# text_por_orig = estas pedras estão pesadas
+# text_por = estas pedras estão pesadas.
+1	niGidiwa	niGidiwa	DET	D	_	2	det	_	TokenRange=0:8
+2	wetiadi	wetiGa	NOUN	N	_	3	nsubj	_	TokenRange=9:16
+3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=17:24
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=24:25
+
