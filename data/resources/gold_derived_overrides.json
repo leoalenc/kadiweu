@@ -1,7 +1,7 @@
 {
   "form_feat_overrides": {
     "Etogo": "Gender=Fem|Number=Sing",
-    "Iwalo": "Gender=Fem|Number=Sing",
+    "Iwaalo": "Gender=Fem|Number=Sing",
     "LotaGa": "Gender=Masc|Number=Sing|Person[psor]=3",
     "Maria": "_",
     "NaGani": "Gender=Fem|Number=Sing|PronType=Dem",
@@ -27,6 +27,7 @@
     "libinienaGa": "Degree=Dim|Number=Plur|Person[psor]=3",
     "libinienigi": "Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3",
     "libinienigipi": "Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3",
+    "lideGegi": "Gender=Masc|Number=Sing|Person[psor]=3",
     "liwatece": "Gender=Fem|Number=Sing|Person[psor]=3",
     "liwigo": "Gender=Masc|Number=Sing|Person[psor]=3",
     "lodawa": "Gender=Fem,Masc|Number=Sing|Person[psor]=3",
@@ -49,6 +50,7 @@
   },
   "lemma_overrides": {
     "Etogo": "etogo",
+    "Iwaalo": "iwaalo",
     "LotaGa": "otaGa",
     "Maria": "maria",
     "NaGani": "niGini",
@@ -75,6 +77,7 @@
     "libinienaGa": "binie",
     "libinienigi": "binie",
     "libinienigipi": "binie",
+    "lideGegi": "idi",
     "lidi": "idi",
     "liwatece": "watece",
     "liwigo": "wigo",
@@ -195,18 +198,6 @@
     ],
     "ambiguous_lemmas": [
       {
-        "best": "iwa",
-        "best_count": 1,
-        "counts": {
-          "iwa": 1,
-          "iwaalo": 1
-        },
-        "form": "Iwalo",
-        "share": 0.5,
-        "total": 2,
-        "upos": "NOUN"
-      },
-      {
         "best": "nitibeci",
         "best_count": 1,
         "counts": {
@@ -296,19 +287,6 @@
     "ambiguous_tag_to_prontype": [],
     "json_alignment_issues": [
       {
-        "json_path": "$.pages[0].sentences[17]",
-        "mismatches": [
-          [
-            "lidGegi",
-            "lideGegi"
-          ]
-        ],
-        "sent_id": "ped-gramm-18",
-        "sent_uid": "582429f2-67d5-4077-b209-6deb7b5df54f",
-        "source_file": "../data/gramatica-pedagogica.json",
-        "type": "token_form_mismatch"
-      },
-      {
         "gold_count": 7,
         "gold_forms": [
           "eyodi",
@@ -335,32 +313,6 @@
         "sent_uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d",
         "source_file": "../data/gramatica-pedagogica.json",
         "type": "token_count_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[0]",
-        "mismatches": [
-          [
-            "Iwalo",
-            "Iwaalo"
-          ]
-        ],
-        "sent_id": "hil-data-1",
-        "sent_uid": "fcef38ed-be6b-4f2a-b5cf-fa4db625ecfb",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_form_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[1]",
-        "mismatches": [
-          [
-            "Iwalo",
-            "Iwaalo"
-          ]
-        ],
-        "sent_id": "hil-data-2",
-        "sent_uid": "31d3b4c0-4aab-4538-999b-b8ee85c34444",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_form_mismatch"
       },
       {
         "gold_count": 6,
@@ -409,19 +361,6 @@
         "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647",
         "source_file": "../data/dados-hil.json",
         "type": "token_count_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[14]",
-        "mismatches": [
-          [
-            "Iwalepodi",
-            "Iwaalepodi"
-          ]
-        ],
-        "sent_id": "hil-data-15",
-        "sent_uid": "baccc279-f303-4b4f-a6d7-4404de699f4a",
-        "source_file": "../data/dados-hil.json",
-        "type": "token_form_mismatch"
       }
     ],
     "low_evidence_feats": [
@@ -541,7 +480,7 @@
         "counts": {
           "Gender=Fem|Number=Plur": 1
         },
-        "form": "Iwalepodi",
+        "form": "Iwaalepodi",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
@@ -773,28 +712,6 @@
           "Gender=Fem|Number=Sing": 1
         },
         "form": "iwaalo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "Gender=Masc|Number=Sing|Person[psor]=3",
-        "best_count": 1,
-        "counts": {
-          "Gender=Masc|Number=Sing|Person[psor]=3": 1
-        },
-        "form": "lidGegi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "Gender=Masc|Number=Sing|Person[psor]=3",
-        "best_count": 1,
-        "counts": {
-          "Gender=Masc|Number=Sing|Person[psor]=3": 1
-        },
-        "form": "lideGegi",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
@@ -1104,7 +1021,7 @@
         "counts": {
           "iwaalo": 1
         },
-        "form": "Iwalepodi",
+        "form": "Iwaalepodi",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
@@ -1336,28 +1253,6 @@
           "iwaalo": 1
         },
         "form": "iwaalo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "idi",
-        "best_count": 1,
-        "counts": {
-          "idi": 1
-        },
-        "form": "lidGegi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "idi",
-        "best_count": 1,
-        "counts": {
-          "idi": 1
-        },
-        "form": "lideGegi",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"

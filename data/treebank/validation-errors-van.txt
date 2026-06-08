@@ -1,4 +1,4 @@
-validate.py --lang=kbc --max-err=0 draft-van.conllu 
+leonel@yawarate:~/kadiweu/data$ validate.py --lang=kbc --max-err=0 treebank/draft-van.conllu 
 [Line 8 Sent van-data-1]: [L4 MORPHO feature-upos-not-permitted] Feature AdvType is not permitted with UPOS DET in language [kbc] ('digoida').
 
 The following 38 feature values are currently permitted in language [kbc]:
@@ -10,51 +10,36 @@ All features including universal must be specifically turned on for each languag
 See https://quest.ms.mff.cuni.cz/udvalidator/cgi-bin/unidep/langspec/specify_feature.pl for details.
 
 
-[Line 62 Sent van-data-6]: [L4 MORPHO feature-upos-not-permitted] Feature Gender is not permitted with UPOS X in language [kbc] ('lotaGa').
-[Line 62 Sent van-data-6]: [L4 MORPHO feature-upos-not-permitted] Feature Number is not permitted with UPOS X in language [kbc] ('lotaGa').
-[Line 62 Sent van-data-6]: [L4 MORPHO feature-upos-not-permitted] Feature Person[psor] is not permitted with UPOS X in language [kbc] ('lotaGa').
-[Line 73 Sent van-data-7]: [L4 MORPHO feature-upos-not-permitted] Feature Gender is not permitted with UPOS X in language [kbc] ('lotaGa').
-[Line 73 Sent van-data-7]: [L4 MORPHO feature-upos-not-permitted] Feature Number is not permitted with UPOS X in language [kbc] ('lotaGa').
-[Line 73 Sent van-data-7]: [L4 MORPHO feature-upos-not-permitted] Feature Person[psor] is not permitted with UPOS X in language [kbc] ('lotaGa').
-[Line 195 Sent van-data-17]: [L3 WARNING pron-det-without-prontype] The word 'Eyo' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 205 Sent van-data-18]: [L3 WARNING pron-det-without-prontype] The word 'Eyo' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 342 Sent van-data-30]: [L4 MORPHO feature-upos-not-permitted] Feature AdvType is not permitted with UPOS DET in language [kbc] ('digoida').
-[Line 365 Sent van-data-32]: [L4 MORPHO feature-upos-not-permitted] Feature Gender is not permitted with UPOS X in language [kbc] ('wetiGa').
-[Line 365 Sent van-data-32]: [L4 MORPHO feature-upos-not-permitted] Feature Number is not permitted with UPOS X in language [kbc] ('wetiGa').
-[Line 376 Sent van-data-33]: [L4 MORPHO feature-upos-not-permitted] Feature Gender is not permitted with UPOS X in language [kbc] ('wetiGa').
-[Line 376 Sent van-data-33]: [L4 MORPHO feature-upos-not-permitted] Feature Number is not permitted with UPOS X in language [kbc] ('wetiGa').
-[Line 386 Sent van-data-34]: [L3 WARNING pron-det-without-prontype] The word 'niGidiwa' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 398 Sent van-data-35]: [L4 MORPHO feature-upos-not-permitted] Feature Gender is not permitted with UPOS X in language [kbc] ('wetiGa').
-[Line 398 Sent van-data-35]: [L4 MORPHO feature-upos-not-permitted] Feature Number is not permitted with UPOS X in language [kbc] ('wetiGa').
-[Line 411 Sent van-data-36]: [L4 MORPHO feature-upos-not-permitted] Feature Gender is not permitted with UPOS X in language [kbc] ('wetiGa').
-[Line 411 Sent van-data-36]: [L4 MORPHO feature-upos-not-permitted] Feature Number is not permitted with UPOS X in language [kbc] ('wetiGa').
-[Line 422 Sent van-data-37]: [L4 MORPHO feature-upos-not-permitted] Feature Gender is not permitted with UPOS X in language [kbc] ('wetiGa').
-[Line 422 Sent van-data-37]: [L4 MORPHO feature-upos-not-permitted] Feature Number is not permitted with UPOS X in language [kbc] ('wetiGa').
-[Line 449 Sent van-data-39]: [L3 WARNING pron-det-without-prontype] The word 'idiwa' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 460 Sent van-data-40]: [L3 WARNING pron-det-without-prontype] The word 'niGidowa' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 472 Sent van-data-41]: [L3 WARNING pron-det-without-prontype] The word 'idowa' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 484 Sent van-data-42]: [L3 WARNING pron-det-without-prontype] The word 'ijowa' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 499 Sent van-data-43]: [L3 WARNING pron-det-without-prontype] The word 'ijowa' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 509 Sent van-data-44]: [L3 WARNING pron-det-without-prontype] The word 'ijowa' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 548 Sent van-data-47]: [L3 WARNING pron-det-without-prontype] The word 'idiwa' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 607 Sent van-data-52]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 620 Sent van-data-53]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 643 Sent van-data-55]: [L4 MORPHO feature-value-upos-not-permitted] Value Prs of feature PronType is not permitted with UPOS DET in language [kbc] ('ee').
-[Line 681 Sent van-data-58]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 691 Sent van-data-59]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 701 Sent van-data-60]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 713 Sent van-data-61]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 729 Sent van-data-62]: [L3 WARNING pron-det-without-prontype] The word 'eyo' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 780 Sent van-data-66]: [L5 MORPHO aux-lemma] 'jaga' is not an auxiliary in language [kbc]
+[Line 199 Sent van-data-17]: [L3 WARNING pron-det-without-prontype] The word 'Eyo' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 209 Sent van-data-18]: [L3 WARNING pron-det-without-prontype] The word 'Eyo' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 350 Sent van-data-30]: [L4 MORPHO feature-upos-not-permitted] Feature AdvType is not permitted with UPOS DET in language [kbc] ('digoida').
+[Line 394 Sent van-data-34]: [L3 WARNING pron-det-without-prontype] The word 'niGidiwa' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 457 Sent van-data-39]: [L3 WARNING pron-det-without-prontype] The word 'idiwa' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 468 Sent van-data-40]: [L3 WARNING pron-det-without-prontype] The word 'niGidowa' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 480 Sent van-data-41]: [L3 WARNING pron-det-without-prontype] The word 'idowa' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 492 Sent van-data-42]: [L3 WARNING pron-det-without-prontype] The word 'ijowa' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 507 Sent van-data-43]: [L3 WARNING pron-det-without-prontype] The word 'ijowa' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 517 Sent van-data-44]: [L3 WARNING pron-det-without-prontype] The word 'ijowa' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 556 Sent van-data-47]: [L3 WARNING pron-det-without-prontype] The word 'idiwa' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 613 Sent van-data-52]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 626 Sent van-data-53]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 640 Sent van-data-54]: [L4 MORPHO feature-value-upos-not-permitted] Value Prs of feature PronType is not permitted with UPOS DET in language [kbc] ('ee').
+[Line 651 Sent van-data-55]: [L4 MORPHO feature-value-upos-not-permitted] Value Prs of feature PronType is not permitted with UPOS DET in language [kbc] ('ee').
+[Line 689 Sent van-data-58]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 699 Sent van-data-59]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 709 Sent van-data-60]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 721 Sent van-data-61]: [L3 WARNING pron-det-without-prontype] The word 'ee' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 737 Sent van-data-62]: [L3 WARNING pron-det-without-prontype] The word 'eyo' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 788 Sent van-data-66]: [L5 MORPHO aux-lemma] 'jaGa' is not an auxiliary in language [kbc]
 
 The following 1 auxiliaries are currently documented in language [kbc]:
 jaG
 See https://quest.ms.mff.cuni.cz/udvalidator/cgi-bin/unidep/langspec/specify_auxiliary.pl?lcode=kbc for details.
 
 
-[Line 827 Sent van-data-70]: [L3 WARNING pron-det-without-prontype] The word 'idiwa' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 838 Sent van-data-71]: [L3 WARNING pron-det-without-prontype] The word 'idiwa' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 850 Sent van-data-72]: [L3 WARNING pron-det-without-prontype] The word 'ijowa' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 835 Sent van-data-70]: [L3 WARNING pron-det-without-prontype] The word 'idiwa' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 846 Sent van-data-71]: [L3 WARNING pron-det-without-prontype] The word 'idiwa' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 858 Sent van-data-72]: [L3 WARNING pron-det-without-prontype] The word 'ijowa' is tagged 'DET' but it lacks the 'PronType' feature
 Warnings: 20
-MORPHO errors: 20
-*** FAILED *** with 20 errors
+MORPHO errors: 5
+*** FAILED *** with 5 errors
