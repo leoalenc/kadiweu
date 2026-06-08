@@ -888,3 +888,13 @@
 3	libiniena	binie	NOUN	N$	Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=10:19
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=19:20
 
+# sent_id = van-data-17
+# sent_uid = 86f5c128-e931-4443-90cc-2359748ed69f
+# text = Eyo nigotaGa.
+# text_orig = Eyo nigotaGa
+# text_por_orig = Estou na cidade
+# text_por = Estou na cidade.
+1	Eyo	eyo	PRON	PRO	Gender=Fem|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	StandardLemma=eeyo|TokenRange=0:3
+2	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=4:12
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
+
