@@ -402,7 +402,7 @@
 # text_orig = ani wetiGa eliodi me iwaGadi
 # text_por_orig = esta pedra está muito pesada
 # text_por = esta pedra está muito pesada.
-1	ani	ni	VERB	VB	_	0	root	_	TokenRange=0:3
+1	ani	ini	VERB	VB	_	0	root	_	TokenRange=0:3
 2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	1	obj	_	TokenRange=4:10
 3	eliodi	eliodi	DET	Q	PronType=Ind	1	det	_	TokenRange=11:17
 4	me	me	SCONJ	C	_	1	dep	_	TokenRange=18:20
@@ -415,7 +415,7 @@
 # text_orig = ani wetiGa iwaGadi
 # text_por_orig = esta pedra é pesada
 # text_por = esta pedra é pesada.
-1	ani	ni	DET	D	PronType=Dem	2	det	_	TokenRange=0:3
+1	ani	ini	DET	D	PronType=Dem	2	det	_	TokenRange=0:3
 2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=4:10
 3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=11:18
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
@@ -426,7 +426,7 @@
 # text_orig = ani wetiGa me iwaGadi eniteloco iGonagi
 # text_por_orig = esta pedra que é pesada caiu no meu pé
 # text_por = esta pedra que é pesada caiu no meu pé.
-1	ani	ni	DET	D	PronType=Dem	2	det	_	TokenRange=0:3
+1	ani	ini	DET	D	PronType=Dem	2	det	_	TokenRange=0:3
 2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	4	dep	_	TokenRange=4:10
 3	me	me	SCONJ	C	_	4	dep	_	TokenRange=11:13
 4	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=14:21
@@ -440,7 +440,7 @@
 # text_orig = ani wetiGa ane iwaGadi eniteloco iGonagi
 # text_por_orig = esta pedra , que é pesada , caiu no meu pé
 # text_por = esta pedra , que é pesada , caiu no meu pé.
-1	ani	ni	DET	D	PronType=Dem	2	det	_	TokenRange=0:3
+1	ani	ini	DET	D	PronType=Dem	2	det	_	TokenRange=0:3
 2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	4	dep	_	TokenRange=4:10
 3	ane	ane	PRON	WPRO	PronType=Rel	4	nsubj	_	TokenRange=11:14
 4	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=15:22

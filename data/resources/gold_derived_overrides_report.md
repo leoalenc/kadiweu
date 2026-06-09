@@ -8,7 +8,7 @@
 - Usable aligned sentence pairs: **79**
 - UID-matched but rejected: **3**
 - `lemma_overrides`: **103**
-- `form_feat_overrides`: **52**
+- `form_feat_overrides`: **106**
 - `prontype_overrides`: **31**
 - `lemma_prontype_overrides`: **23**
 - `tag_to_default_prontype`: **3**
@@ -50,23 +50,8 @@ _None_
 ### low_evidence_lemmas (0)
 _None_
 
-### low_evidence_feats (55)
-- `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Ada", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Adi", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Ani", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Mood=Ind|Person=3|VerbForm=Fin", "best_count": 1, "counts": {"Mood=Ind|Person=3|VerbForm=Fin": 1}, "form": "DapicoGo", "share": 1.0, "total": 1, "upos": "VERB"}`
-- `{"best": "Gender=Fem|Number=Sing|Person=1", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|Person=1|PronType=Prs": 1}, "form": "Eyo", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "_", "best_count": 1, "counts": {"_": 1}, "form": "Eyodi", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "Gender=Fem,Masc|Number=Sing|Person[psor]=2", "best_count": 1, "counts": {"Gender=Fem,Masc|Number=Sing|Person[psor]=2": 1}, "form": "Gadodawa", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "Gender=Fem|Number=Sing|Person[psor]=2", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|Person[psor]=2": 1}, "form": "GanigotGa", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "Gender=Masc|Number=Sing|Person[psor]=2", "best_count": 1, "counts": {"Gender=Masc|Number=Sing|Person[psor]=2": 1}, "form": "Ganioxoa", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "Gender=Masc|Number=Sing|Person[psor]=2", "best_count": 1, "counts": {"Gender=Masc|Number=Sing|Person[psor]=2": 1}, "form": "Ganixoa", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "Gender=Masc|Number=Sing|Person[psor]=2", "best_count": 1, "counts": {"Gender=Masc|Number=Sing|Person[psor]=2": 1}, "form": "Gawenigi", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "Gender=Fem|Number=Plur", "best_count": 1, "counts": {"Gender=Fem|Number=Plur": 1}, "form": "Iwaalepodi", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "Gender=Masc", "best_count": 1, "counts": {"Gender=Masc": 1}, "form": "João", "share": 1.0, "total": 1, "upos": "PROPN"}`
-- `{"best": "Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3", "best_count": 1, "counts": {"Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3": 1}, "form": "Libiniena", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3", "best_count": 1, "counts": {"Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3": 1}, "form": "Libinienigi", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- ... and 40 more
+### low_evidence_feats (0)
+_None_
 
 ### low_evidence_prontype (0)
 _None_
