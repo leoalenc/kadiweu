@@ -937,3 +937,49 @@
 3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=17:24
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=24:25
 
+# sent_id = van-data-39
+# sent_uid = 6459c008-b2ad-4517-8227-b525616b720d
+# text = idiwa wetiadi iwaGadi.
+# text_orig = idiwa wetiadi iwaGadi
+# text_por_orig = estas pedras estão pesadas
+# text_por = estas pedras estão pesadas.
+1	idiwa	idi	DET	Q	_	2	det	Gender=Masc|Number=Plur|PronType=Dem	TokenRange=0:5
+2	wetiadi	wetiGa	NOUN	N	Gender=Fem|Number=Plur	3	nsubj	_	TokenRange=6:13
+3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=14:21
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = van-data-40
+# sent_uid = b4e1df8d-6590-4ce9-9f72-c0b054398c89
+# text = niGidowa waca lotiidi dapicoGo.
+# text_orig = niGidowa waca lotiidi dapicoGo
+# text_por_orig = este leite está quente
+# text_por = este leite está quente.
+1	niGidowa	niGida	DET	D	Gender=Masc|Number=Plur|PronType=Dem	3	det	_	StandardForm=niGidoa|TokenRange=0:8
+2	waca	waca	NOUN	N	Gender=Fem|Number=Sing	3	nmod:poss	_	TokenRange=9:13
+3	lotiidi	otiidi	NOUN	N$	Number=Plur|Person[psor]=3	4	nsubj	_	TokenRange=14:21
+4	dapicoGo	apicoGo	VERB	VB	Mood=Ind|Number=Sing|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=22:30
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = van-data-41
+# sent_uid = 278e4c5c-aaab-4ca3-8f5e-277610fb80c2
+# text = idowa waca lotiidi dapicoGo.
+# text_orig = idowa waca lotiidi dapicoGo
+# text_por_orig = este leite está quente
+# text_por = este leite está quente.
+1	idowa	ida	DET	D	Gender=Masc|Number=Plur|PronType=Dem	3	det	_	StandardForm=idoa|TokenRange=0:5
+2	waca	waca	NOUN	N	Gender=Fem|Number=Sing	3	nmod:poss	_	TokenRange=6:10
+3	lotiidi	otiidi	NOUN	N$	_	4	nsubj	_	TokenRange=11:18
+4	dapicoGo	apicoGo	VERB	VB	Mood=Ind|Number=Sing|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=19:27
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = van-data-42
+# sent_uid = 44646324-eb90-42f0-b944-21f0452109e2
+# text = ijowa nigetedi liwigo libinienaGa.
+# text_orig = ijowa nigetedi liwigo libinienaGa
+# text_por_orig = estes ovos da fotografia dela estão bonitos
+# text_por = estes ovos da fotografia dela estão bonitos.
+1	ijowa	ijo	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:5
+2	nigetedi	getegi	NOUN	N	Gender=Masc|Number=Plur	4	nsubj	_	StandardLemma=ligetegi|TokenRange=6:14
+3	liwigo	wigo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nmod:poss	_	TokenRange=15:21
+4	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=22:33
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=33:34
