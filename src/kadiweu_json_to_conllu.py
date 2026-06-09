@@ -672,17 +672,33 @@ def infer_lemma(form: str, tok: Dict[str, Any]) -> str:
     return form
 
 
-def infer_feats(form: str, tag: str, tok: Dict[str, Any], upos: Optional[str] = None) -> str:
-    if upos is None:
-        upos = infer_upos(tag)
+def infer_feats(
+    lookup_form: str,
+    tag: str,
+    tok: Dict[str, Any],
+    upos: Optional[str] = None,
+    surface_form: Optional[str] = None,
+) -> str:
 
     feats: List[str] = []
+
+    candidate_forms = []
+
+    for f in (surface_form, lookup_form):
+        if f and f not in candidate_forms:
+            candidate_forms.append(f)
 
     # Start from full form-level feature override if present,
     # but do NOT return early: PronType may still need to be added
     # or corrected below.
-    if form in FORM_FEAT_OVERRIDES:
-        override_feats = FORM_FEAT_OVERRIDES[form]
+    override_feats = None
+
+    for f in candidate_forms:
+        if f in FORM_FEAT_OVERRIDES:
+            override_feats = FORM_FEAT_OVERRIDES[f]
+            break
+
+    if override_feats is not None:
         if override_feats and override_feats != "_":
             feats.extend(override_feats.split("|"))
 
@@ -724,13 +740,13 @@ def infer_feats(form: str, tag: str, tok: Dict[str, Any], upos: Optional[str] = 
                 feats.append(f"Person[psor]={person}")
 
     # Infer lemma before PronType lookup.
-    lemma = infer_lemma(form, tok)
+    lemma = infer_lemma(lookup_form, tok)
 
     # PronType lookup hierarchy:
     # 1. form + UPOS: exceptional/manual override
     # 2. lemma + UPOS: preferred learned default
     # 3. source tag + UPOS: broad fallback
-    pron_type = PRONTYPE_OVERRIDES.get((form, upos))
+    pron_type = PRONTYPE_OVERRIDES.get((lookup_form, upos))
 
     if pron_type is None:
         pron_type = LEMMA_PRONTYPE_OVERRIDES.get((lemma, upos))
