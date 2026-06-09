@@ -542,7 +542,7 @@
 # text_por_orig = A sua comida é muito bonita .
 # text_por = A sua comida é muito bonita.
 1	Gawenigi	wenigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=2	4	nsubj	_	TokenRange=0:8
-2	eliodi	eliodi	ADV	Q	AdvType=Deg	4	advmod	_	TokenRange=9:15
+2	eliodi	eliodi	ADV	Q	_	4	advmod	_	TokenRange=9:15
 3	me	me	SCONJ	C	_	4	mark	_	TokenRange=16:18
 4	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=19:30
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
@@ -915,7 +915,7 @@
 # text_orig = nGijo lodajo ajo lodowa aGica digoida liGeladi
 # text_por_orig = esta faca da esposa dele não está na casa
 # text_por = esta faca da esposa dele não está na casa.
-1	niGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	_	2	det	_	TokenRange=0:5
+1	niGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:5
 2	lodajo	odaajo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	8	nsubj	_	StandardForm=lodaajo|TokenRange=6:12
 3	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	4	det	_	TokenRange=13:16
 4	lodowa	odawa	NOUN	N$	Gender=Fem,Masc|Number=Sing|Person[psor]=3	2	nmod:poss	_	StandardForm=lodawa|TokenRange=17:23
@@ -943,7 +943,7 @@
 # text_orig = idiwa wetiadi iwaGadi
 # text_por_orig = estas pedras estão pesadas
 # text_por = estas pedras estão pesadas.
-1	idiwa	idi	DET	Q	_	2	det	Gender=Masc|Number=Plur|PronType=Dem	TokenRange=0:5
+1	idiwa	idi	DET	Q	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:5
 2	wetiadi	wetiGa	NOUN	N	Gender=Fem|Number=Plur	3	nsubj	_	TokenRange=6:13
 3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=14:21
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
@@ -983,3 +983,4 @@
 3	liwigo	wigo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nmod:poss	_	TokenRange=15:21
 4	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=22:33
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=33:34
+
