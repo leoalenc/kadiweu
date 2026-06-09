@@ -584,7 +584,7 @@
 4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=21:25
 5-6	madi	_	_	_	_	_	_	_	TokenRange=26:30
 5	me	me	SCONJ	C	_	7	mark	_	_
-6	adi	adi	DET	D	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_
+6	adi	idi	DET	D	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_
 7	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=31:39
 8	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=39:40
 
@@ -600,7 +600,7 @@
 3	niganigawanigi	niganigi	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing	2	nmod:poss	_	StandardForm=nigaanigawaanigi|StandardLemma=nigaanigi|TokenRange=14:28
 4-5	madi	_	_	_	_	_	_	_	TokenRange=29:33
 4	me	me	SCONJ	C	_	6	mark	_	_
-5	adi	adi	DET	D	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
+5	adi	idi	DET	D	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
 6	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=34:42
 7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=42:43
 
@@ -710,7 +710,7 @@
 # text_orig = Adi iwaGadi
 # text_por_orig = Ela está é pesada.
 # text_por = Ela está é pesada.
-1	Adi	di	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
+1	Adi	idi	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
 2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=4:11
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 

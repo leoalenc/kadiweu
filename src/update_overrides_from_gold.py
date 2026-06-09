@@ -487,16 +487,14 @@ def learn_overrides(
             lemma_prontype_overrides[json_key(lemma, upos)] = value
 
     for (form, upos), counter in sorted(feats_counts.items()):
-
-        # Do not learn full FEATS bundles for DET/PRON here.
-        # PronType should be handled by the UPOS-sensitive tables:
-        #   prontype_overrides
-        #   lemma_prontype_overrides
-        #   tag_to_default_prontype
-        if upos in {"DET", "PRON"}:
-            continue
-
         value, best, total, share = most_common_with_share(counter)
+
+        if upos in {"DET", "PRON"} and value != "_":
+            value = "|".join(
+                f for f in value.split("|")
+                if not f.startswith("PronType=")
+            ) or "_"
+
         rec = {
             "form": form,
             "upos": upos,
@@ -506,6 +504,7 @@ def learn_overrides(
             "total": total,
             "share": round(share, 4),
         }
+
         if total < feats_min_count:
             review["low_evidence_feats"].append(rec)
         elif share < feats_min_share:

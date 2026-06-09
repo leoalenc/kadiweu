@@ -7,10 +7,10 @@
 - UID-matched sentence pairs: **82**
 - Usable aligned sentence pairs: **79**
 - UID-matched but rejected: **3**
-- `lemma_overrides`: **49**
-- `form_feat_overrides`: **42**
-- `prontype_overrides`: **12**
-- `lemma_prontype_overrides`: **14**
+- `lemma_overrides`: **103**
+- `form_feat_overrides`: **52**
+- `prontype_overrides`: **31**
+- `lemma_prontype_overrides`: **23**
 - `tag_to_default_prontype`: **3**
 ## Review items
 
@@ -47,26 +47,15 @@ _None_
 ### ambiguous_tag_to_prontype (0)
 _None_
 
-### low_evidence_lemmas (55)
-- `{"best": "da", "best_count": 1, "counts": {"da": 1}, "form": "Ada", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "di", "best_count": 1, "counts": {"di": 1}, "form": "Adi", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "ni", "best_count": 1, "counts": {"ni": 1}, "form": "Ani", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "apicoGo", "best_count": 1, "counts": {"apicoGo": 1}, "form": "DapicoGo", "share": 1.0, "total": 1, "upos": "VERB"}`
-- `{"best": "eyo", "best_count": 1, "counts": {"eyo": 1}, "form": "Eyo", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "eyodi", "best_count": 1, "counts": {"eyodi": 1}, "form": "Eyodi", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "odawa", "best_count": 1, "counts": {"odawa": 1}, "form": "Gadodawa", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "nigota", "best_count": 1, "counts": {"nigota": 1}, "form": "GanigotGa", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "nioxoa", "best_count": 1, "counts": {"nioxoa": 1}, "form": "Ganioxoa", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "nixoa", "best_count": 1, "counts": {"nixoa": 1}, "form": "Ganixoa", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "wenigi", "best_count": 1, "counts": {"wenigi": 1}, "form": "Gawenigi", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "iwaalo", "best_count": 1, "counts": {"iwaalo": 1}, "form": "Iwaalepodi", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "joão", "best_count": 1, "counts": {"joão": 1}, "form": "João", "share": 1.0, "total": 1, "upos": "PROPN"}`
-- `{"best": "binie", "best_count": 1, "counts": {"binie": 1}, "form": "Libiniena", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "binie", "best_count": 1, "counts": {"binie": 1}, "form": "Libinienigi", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- ... and 40 more
+### low_evidence_lemmas (0)
+_None_
 
-### low_evidence_feats (36)
+### low_evidence_feats (55)
+- `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Ada", "share": 1.0, "total": 1, "upos": "PRON"}`
+- `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Adi", "share": 1.0, "total": 1, "upos": "PRON"}`
+- `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Ani", "share": 1.0, "total": 1, "upos": "PRON"}`
 - `{"best": "Mood=Ind|Person=3|VerbForm=Fin", "best_count": 1, "counts": {"Mood=Ind|Person=3|VerbForm=Fin": 1}, "form": "DapicoGo", "share": 1.0, "total": 1, "upos": "VERB"}`
+- `{"best": "Gender=Fem|Number=Sing|Person=1", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|Person=1|PronType=Prs": 1}, "form": "Eyo", "share": 1.0, "total": 1, "upos": "PRON"}`
 - `{"best": "_", "best_count": 1, "counts": {"_": 1}, "form": "Eyodi", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "Gender=Fem,Masc|Number=Sing|Person[psor]=2", "best_count": 1, "counts": {"Gender=Fem,Masc|Number=Sing|Person[psor]=2": 1}, "form": "Gadodawa", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "Gender=Fem|Number=Sing|Person[psor]=2", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|Person[psor]=2": 1}, "form": "GanigotGa", "share": 1.0, "total": 1, "upos": "NOUN"}`
@@ -77,41 +66,13 @@ _None_
 - `{"best": "Gender=Masc", "best_count": 1, "counts": {"Gender=Masc": 1}, "form": "João", "share": 1.0, "total": 1, "upos": "PROPN"}`
 - `{"best": "Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3", "best_count": 1, "counts": {"Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3": 1}, "form": "Libiniena", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3", "best_count": 1, "counts": {"Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3": 1}, "form": "Libinienigi", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "Mood=Ind|Number=Plur|Person=3|VerbForm=Fin", "best_count": 1, "counts": {"Mood=Ind|Number=Plur|Person=3|VerbForm=Fin": 1}, "form": "Ninitibigiwaji", "share": 1.0, "total": 1, "upos": "VERB"}`
-- `{"best": "_", "best_count": 1, "counts": {"_": 1}, "form": "Pedilo", "share": 1.0, "total": 1, "upos": "PROPN"}`
-- `{"best": "Mood=Ind|VerbForm=Fin", "best_count": 1, "counts": {"Mood=Ind|VerbForm=Fin": 1}, "form": "Te", "share": 1.0, "total": 1, "upos": "VERB"}`
-- `{"best": "_", "best_count": 1, "counts": {"_": 1}, "form": "dineigi", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- ... and 21 more
+- ... and 40 more
 
-### low_evidence_prontype (19)
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "Ada", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "Adi", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "Ani", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Prs", "best_count": 1, "counts": {"Prs": 1}, "form": "Eyo", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "NaGajo", "share": 1.0, "total": 1, "upos": "DET"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "NaGajo", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "NaGana", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "NiGijo", "share": 1.0, "total": 1, "upos": "DET"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "NiGinoa", "share": 1.0, "total": 1, "upos": "DET"}`
-- `{"best": "Prs", "best_count": 1, "counts": {"Prs": 1}, "form": "ee", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "idiwa", "share": 1.0, "total": 1, "upos": "DET"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "idowa", "share": 1.0, "total": 1, "upos": "DET"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "ijowa", "share": 1.0, "total": 1, "upos": "DET"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "naGajo", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "form": "naGana", "share": 1.0, "total": 1, "upos": "DET"}`
-- ... and 4 more
+### low_evidence_prontype (0)
+_None_
 
-### low_evidence_lemma_prontype (10)
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "lemma": "da", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "lemma": "di", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Prs", "best_count": 1, "counts": {"Prs": 1}, "lemma": "ee", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Prs", "best_count": 1, "counts": {"Prs": 1}, "lemma": "eyo", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "lemma": "ida", "share": 1.0, "total": 1, "upos": "DET"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "lemma": "idi", "share": 1.0, "total": 1, "upos": "DET"}`
-- `{"best": "Rel", "best_count": 1, "counts": {"Rel": 1}, "lemma": "napioi", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "lemma": "ni", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "lemma": "niGidi", "share": 1.0, "total": 1, "upos": "DET"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "lemma": "niGina", "share": 1.0, "total": 1, "upos": "PRON"}`
+### low_evidence_lemma_prontype (0)
+_None_
 
 ### low_evidence_tag_to_prontype (5)
 - `{"best": "Dem", "best_count": 2, "counts": {"Dem": 2}, "raw_tag": "D", "share": 1.0, "total": 2, "upos": "ADV"}`

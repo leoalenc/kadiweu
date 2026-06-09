@@ -4,15 +4,23 @@
     "Iwaalo": "Gender=Fem|Number=Sing",
     "LotaGa": "Gender=Masc|Number=Sing|Person[psor]=3",
     "Maria": "_",
+    "NaGani": "Gender=Fem|Number=Sing",
+    "NiGida": "Gender=Masc|Number=Sing",
     "Ninitibeci": "Mood=Ind|Person=3|VerbForm=Fin",
     "aG": "Polarity=Neg",
+    "adi": "Gender=Fem|Number=Sing",
+    "ajo": "Gender=Fem|Number=Sing",
+    "ane": "_",
     "daGa": "_",
     "dakake": "_",
     "dapico": "Voice=Inv",
     "dapicoGo": "Mood=Ind|Number=Sing|Person=3|VerbForm=Fin",
+    "digoida": "Gender=Masc|Number=Sing",
     "etadi": "Gender=Fem|Person=3",
     "iGeladi": "Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1",
+    "ica": "Gender=Masc|Number=Sing",
     "idei": "Mood=Ind|Person[erg]=3|VerbForm=Fin",
+    "ijo": "Gender=Masc|Number=Sing",
     "ipegetege": "Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
     "iwaGadi": "Mood=Ind|Person=3|VerbForm=Fin",
     "ja": "Aspect=Perf",
@@ -30,6 +38,8 @@
     "loojedi": "Gender=Masc|Number=Sing|Person[psor]=3",
     "looligi": "Gender=Masc|Number=Sing|Person[psor]=3",
     "me": "_",
+    "naGada": "Gender=Fem|Number=Sing",
+    "naGadi": "Gender=Fem|Number=Sing",
     "naigi": "Gender=Masc|Number=Sing",
     "napioi": "_",
     "niganaGacanajo": "Gender=Masc|Number=Sing",
@@ -44,29 +54,63 @@
     "wetiadi": "Gender=Fem|Number=Plur"
   },
   "lemma_overrides": {
+    "Ada": "da",
+    "Adi": "idi",
+    "Ani": "ni",
+    "DapicoGo": "apicoGo",
     "Etogo": "etogo",
+    "Eyo": "eyo",
+    "Eyodi": "eyodi",
+    "Gadodawa": "odawa",
+    "GanigotGa": "nigota",
+    "Ganioxoa": "nioxoa",
+    "Ganixoa": "nixoa",
+    "Gawenigi": "wenigi",
+    "Iwaalepodi": "iwaalo",
     "Iwaalo": "iwaalo",
+    "João": "joão",
+    "Libiniena": "binie",
+    "Libinienigi": "binie",
     "LotaGa": "otaGa",
     "Maria": "maria",
+    "NaGajo": "niGijo",
+    "NaGana": "niGina",
     "NaGani": "niGini",
     "NiGida": "niGida",
+    "NiGijo": "niGijo",
+    "NiGinoa": "niGina",
+    "Ninitibigiwaji": "nitibece",
+    "Pedilo": "pedilo",
+    "Te": "te",
     "aG": "aG",
-    "adi": "adi",
+    "adi": "idi",
     "ajo": "ijo",
     "ane": "ane",
     "daGa": "daga",
     "dapico": "apico",
     "dapicoGo": "apicoGo",
     "digoida": "digoida",
+    "dineigi": "dineigi",
+    "dowediteloco": "dowediteloco",
+    "ee": "ee",
     "eliodi": "eliodi",
+    "eniteloco": "eniteloco",
     "etadi": "etidi",
     "iGeladi": "Geladi",
+    "iGonagi": "Gonagi",
     "ica": "ica",
+    "ideaGi": "dei",
     "idei": "dei",
+    "idiwa": "idi",
+    "idowa": "ida",
     "ijo": "ijo",
+    "ijowa": "ijo",
     "ipegetege": "pege",
+    "ipegitaGagi": "pegi",
+    "ipegitege": "pegi",
     "ipegitegi": "pegi",
     "iwaGadi": "waGadi",
+    "iwaalo": "iwaalo",
     "ja": "jaG",
     "liGeladi": "Geladi",
     "libiniena": "binie",
@@ -75,45 +119,74 @@
     "libinienigipi": "binie",
     "lideGegi": "idi",
     "lidi": "idi",
+    "lionigipi": "iona",
     "liwatece": "watece",
+    "liwenigi": "liwenigi",
     "liwigo": "wigo",
     "lodawa": "odawa",
+    "lodowa": "odawa",
+    "loigi": "oigi",
+    "loigipodi": "oigi",
+    "lojedi": "ojedi",
+    "loligi": "oligi",
     "loojedi": "loojedi",
     "looligi": "ooligi",
     "lotiidi": "otiidi",
     "me": "me",
+    "micoataGa": "taGa",
     "naGada": "niGida",
     "naGadi": "niGidi",
+    "naGajo": "niGijo",
+    "naGana": "niGina",
+    "naGani": "niGini",
     "naigi": "naigi",
+    "naodigijedi": "naodigijegi",
     "napioi": "napioi",
+    "niGidiwa": "niGidi",
+    "niGidowa": "niGida",
+    "niGijo": "niGijo",
     "niganigawanigi": "niganigi",
+    "niganigi": "niganigi",
+    "nigetedi": "getegi",
     "nigotaGa": "nigotaGa",
     "nioladi": "nioladi",
+    "nioxoa": "nioxoa",
     "niwatece": "watece",
+    "niwenigi": "wenigi",
+    "niwigo": "wigo",
     "waca": "waca",
     "weiigi": "weiigi",
     "wetiadi": "wetiGa"
   },
   "lemma_prontype_overrides": {
-    "adi\tDET": "Dem",
     "ane\tPRON": "Rel",
+    "da\tPRON": "Dem",
     "digoida\tADV": "Dem",
     "digoida\tDET": "Dem",
+    "ee\tPRON": "Prs",
     "eliodi\tADV": "Ind",
+    "eyo\tPRON": "Prs",
     "ica\tDET": "Dem",
+    "ida\tDET": "Dem",
+    "idi\tDET": "Dem",
+    "idi\tPRON": "Dem",
     "ijo\tDET": "Dem",
+    "napioi\tPRON": "Rel",
+    "ni\tPRON": "Dem",
     "niGida\tDET": "Dem",
     "niGida\tPRON": "Dem",
+    "niGidi\tDET": "Dem",
     "niGidi\tPRON": "Dem",
     "niGijo\tDET": "Dem",
     "niGijo\tPRON": "Dem",
     "niGina\tDET": "Dem",
+    "niGina\tPRON": "Dem",
     "niGini\tDET": "Dem"
   },
   "metadata": {
     "aligned_sentence_count": 79,
     "alignment_rejected_sentence_count": 3,
-    "gold_file": "/home/leonel/kadiweu/data/treebank/kbc_unicamp-ud-test.conllu",
+    "gold_file": "../data/treebank/kbc_unicamp-ud-test.conllu",
     "gold_sentence_count": 82,
     "json_files": [
       "../data/gramatica-pedagogica.json",
@@ -124,9 +197,9 @@
     "thresholds": {
       "feats_min_count": 2,
       "feats_min_share": 0.9,
-      "lemma_min_count": 2,
+      "lemma_min_count": 1,
       "lemma_min_share": 0.8,
-      "pron_min_count": 2,
+      "pron_min_count": 1,
       "pron_min_share": 0.9,
       "tag_pron_min_count": 5,
       "tag_pron_min_share": 0.9
@@ -135,18 +208,37 @@
     "usable_aligned_sentence_count": 79
   },
   "prontype_overrides": {
+    "Ada\tPRON": "Dem",
+    "Adi\tPRON": "Dem",
+    "Ani\tPRON": "Dem",
+    "Eyo\tPRON": "Prs",
+    "NaGajo\tDET": "Dem",
+    "NaGajo\tPRON": "Dem",
+    "NaGana\tPRON": "Dem",
     "NaGani\tDET": "Dem",
     "NiGida\tDET": "Dem",
+    "NiGijo\tDET": "Dem",
+    "NiGinoa\tDET": "Dem",
     "adi\tDET": "Dem",
     "ajo\tDET": "Dem",
     "ane\tPRON": "Rel",
     "digoida\tADV": "Dem",
     "digoida\tDET": "Dem",
+    "ee\tPRON": "Prs",
     "eliodi\tADV": "Ind",
     "ica\tDET": "Dem",
+    "idiwa\tDET": "Dem",
+    "idowa\tDET": "Dem",
     "ijo\tDET": "Dem",
+    "ijowa\tDET": "Dem",
     "naGada\tPRON": "Dem",
-    "naGadi\tPRON": "Dem"
+    "naGadi\tPRON": "Dem",
+    "naGajo\tPRON": "Dem",
+    "naGana\tDET": "Dem",
+    "naGani\tDET": "Dem",
+    "niGidiwa\tDET": "Dem",
+    "niGidowa\tDET": "Dem",
+    "niGijo\tDET": "Dem"
   },
   "review": {
     "ambiguous_feats": [
@@ -418,6 +510,39 @@
     ],
     "low_evidence_feats": [
       {
+        "best": "Gender=Fem|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Number=Sing|PronType=Dem": 1
+        },
+        "form": "Ada",
+        "share": 1.0,
+        "total": 1,
+        "upos": "PRON"
+      },
+      {
+        "best": "Gender=Fem|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Number=Sing|PronType=Dem": 1
+        },
+        "form": "Adi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "PRON"
+      },
+      {
+        "best": "Gender=Fem|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Number=Sing|PronType=Dem": 1
+        },
+        "form": "Ani",
+        "share": 1.0,
+        "total": 1,
+        "upos": "PRON"
+      },
+      {
         "best": "Mood=Ind|Person=3|VerbForm=Fin",
         "best_count": 1,
         "counts": {
@@ -427,6 +552,17 @@
         "share": 1.0,
         "total": 1,
         "upos": "VERB"
+      },
+      {
+        "best": "Gender=Fem|Number=Sing|Person=1",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Number=Sing|Person=1|PronType=Prs": 1
+        },
+        "form": "Eyo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "PRON"
       },
       {
         "best": "_",
@@ -539,6 +675,61 @@
         "upos": "NOUN"
       },
       {
+        "best": "Gender=Fem|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Number=Sing|PronType=Dem": 1
+        },
+        "form": "NaGajo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Gender=Fem|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Number=Sing|PronType=Dem": 1
+        },
+        "form": "NaGajo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "PRON"
+      },
+      {
+        "best": "Gender=Fem|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Number=Sing|PronType=Dem": 1
+        },
+        "form": "NaGana",
+        "share": 1.0,
+        "total": 1,
+        "upos": "PRON"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|PronType=Dem": 1
+        },
+        "form": "NiGijo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Number=Plur|PronType=Dem": 1
+        },
+        "form": "NiGinoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
         "best": "Mood=Ind|Number=Plur|Person=3|VerbForm=Fin",
         "best_count": 1,
         "counts": {
@@ -594,6 +785,17 @@
         "upos": "VERB"
       },
       {
+        "best": "Gender=Masc|Number=Sing|Person=1",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|Person=1|PronType=Prs": 1
+        },
+        "form": "ee",
+        "share": 1.0,
+        "total": 1,
+        "upos": "PRON"
+      },
+      {
         "best": "Voice=Appl",
         "best_count": 1,
         "counts": {
@@ -625,6 +827,39 @@
         "share": 1.0,
         "total": 1,
         "upos": "VERB"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|PronType=Dem": 1
+        },
+        "form": "idiwa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|PronType=Dem": 1
+        },
+        "form": "idowa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|PronType=Dem": 1
+        },
+        "form": "ijowa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
       },
       {
         "best": "Mood=Ind|Number[obj]=Sing|Person[erg]=3|Person[obj]=2|VerbForm=Fin|Voice=Appl",
@@ -748,6 +983,39 @@
         "upos": "SCONJ"
       },
       {
+        "best": "Gender=Fem|Poss=Yes",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Poss=Yes|PronType=Dem": 1
+        },
+        "form": "naGajo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "PRON"
+      },
+      {
+        "best": "Gender=Fem|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Number=Sing|PronType=Dem": 1
+        },
+        "form": "naGana",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Gender=Fem|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Number=Sing|PronType=Dem": 1
+        },
+        "form": "naGani",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
         "best": "Gender=Masc|Number=Plur",
         "best_count": 1,
         "counts": {
@@ -757,6 +1025,39 @@
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|PronType=Dem": 1
+        },
+        "form": "niGidiwa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|PronType=Dem": 1
+        },
+        "form": "niGidowa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|PronType=Dem": 1
+        },
+        "form": "niGijo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
       },
       {
         "best": "Gender=Masc|Number=Sing",
@@ -814,936 +1115,9 @@
         "upos": "NOUN"
       }
     ],
-    "low_evidence_lemma_prontype": [
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "lemma": "da",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "lemma": "di",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "Prs",
-        "best_count": 1,
-        "counts": {
-          "Prs": 1
-        },
-        "lemma": "ee",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "Prs",
-        "best_count": 1,
-        "counts": {
-          "Prs": 1
-        },
-        "lemma": "eyo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "lemma": "ida",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "lemma": "idi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "Rel",
-        "best_count": 1,
-        "counts": {
-          "Rel": 1
-        },
-        "lemma": "napioi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "lemma": "ni",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "lemma": "niGidi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "lemma": "niGina",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      }
-    ],
-    "low_evidence_lemmas": [
-      {
-        "best": "da",
-        "best_count": 1,
-        "counts": {
-          "da": 1
-        },
-        "form": "Ada",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "di",
-        "best_count": 1,
-        "counts": {
-          "di": 1
-        },
-        "form": "Adi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "ni",
-        "best_count": 1,
-        "counts": {
-          "ni": 1
-        },
-        "form": "Ani",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "apicoGo",
-        "best_count": 1,
-        "counts": {
-          "apicoGo": 1
-        },
-        "form": "DapicoGo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "VERB"
-      },
-      {
-        "best": "eyo",
-        "best_count": 1,
-        "counts": {
-          "eyo": 1
-        },
-        "form": "Eyo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "eyodi",
-        "best_count": 1,
-        "counts": {
-          "eyodi": 1
-        },
-        "form": "Eyodi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "odawa",
-        "best_count": 1,
-        "counts": {
-          "odawa": 1
-        },
-        "form": "Gadodawa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "nigota",
-        "best_count": 1,
-        "counts": {
-          "nigota": 1
-        },
-        "form": "GanigotGa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "nioxoa",
-        "best_count": 1,
-        "counts": {
-          "nioxoa": 1
-        },
-        "form": "Ganioxoa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "nixoa",
-        "best_count": 1,
-        "counts": {
-          "nixoa": 1
-        },
-        "form": "Ganixoa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "wenigi",
-        "best_count": 1,
-        "counts": {
-          "wenigi": 1
-        },
-        "form": "Gawenigi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "iwaalo",
-        "best_count": 1,
-        "counts": {
-          "iwaalo": 1
-        },
-        "form": "Iwaalepodi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "joão",
-        "best_count": 1,
-        "counts": {
-          "joão": 1
-        },
-        "form": "João",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PROPN"
-      },
-      {
-        "best": "binie",
-        "best_count": 1,
-        "counts": {
-          "binie": 1
-        },
-        "form": "Libiniena",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "binie",
-        "best_count": 1,
-        "counts": {
-          "binie": 1
-        },
-        "form": "Libinienigi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "niGijo",
-        "best_count": 1,
-        "counts": {
-          "niGijo": 1
-        },
-        "form": "NaGajo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "niGijo",
-        "best_count": 1,
-        "counts": {
-          "niGijo": 1
-        },
-        "form": "NaGajo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "niGina",
-        "best_count": 1,
-        "counts": {
-          "niGina": 1
-        },
-        "form": "NaGana",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "niGijo",
-        "best_count": 1,
-        "counts": {
-          "niGijo": 1
-        },
-        "form": "NiGijo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "niGina",
-        "best_count": 1,
-        "counts": {
-          "niGina": 1
-        },
-        "form": "NiGinoa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "nitibece",
-        "best_count": 1,
-        "counts": {
-          "nitibece": 1
-        },
-        "form": "Ninitibigiwaji",
-        "share": 1.0,
-        "total": 1,
-        "upos": "VERB"
-      },
-      {
-        "best": "pedilo",
-        "best_count": 1,
-        "counts": {
-          "pedilo": 1
-        },
-        "form": "Pedilo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PROPN"
-      },
-      {
-        "best": "te",
-        "best_count": 1,
-        "counts": {
-          "te": 1
-        },
-        "form": "Te",
-        "share": 1.0,
-        "total": 1,
-        "upos": "VERB"
-      },
-      {
-        "best": "dineigi",
-        "best_count": 1,
-        "counts": {
-          "dineigi": 1
-        },
-        "form": "dineigi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "dowediteloco",
-        "best_count": 1,
-        "counts": {
-          "dowediteloco": 1
-        },
-        "form": "dowediteloco",
-        "share": 1.0,
-        "total": 1,
-        "upos": "VERB"
-      },
-      {
-        "best": "ee",
-        "best_count": 1,
-        "counts": {
-          "ee": 1
-        },
-        "form": "ee",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "eniteloco",
-        "best_count": 1,
-        "counts": {
-          "eniteloco": 1
-        },
-        "form": "eniteloco",
-        "share": 1.0,
-        "total": 1,
-        "upos": "VERB"
-      },
-      {
-        "best": "Gonagi",
-        "best_count": 1,
-        "counts": {
-          "Gonagi": 1
-        },
-        "form": "iGonagi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "dei",
-        "best_count": 1,
-        "counts": {
-          "dei": 1
-        },
-        "form": "ideaGi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "VERB"
-      },
-      {
-        "best": "idi",
-        "best_count": 1,
-        "counts": {
-          "idi": 1
-        },
-        "form": "idiwa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "ida",
-        "best_count": 1,
-        "counts": {
-          "ida": 1
-        },
-        "form": "idowa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "ijo",
-        "best_count": 1,
-        "counts": {
-          "ijo": 1
-        },
-        "form": "ijowa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "pegi",
-        "best_count": 1,
-        "counts": {
-          "pegi": 1
-        },
-        "form": "ipegitaGagi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "VERB"
-      },
-      {
-        "best": "pegi",
-        "best_count": 1,
-        "counts": {
-          "pegi": 1
-        },
-        "form": "ipegitege",
-        "share": 1.0,
-        "total": 1,
-        "upos": "VERB"
-      },
-      {
-        "best": "iwaalo",
-        "best_count": 1,
-        "counts": {
-          "iwaalo": 1
-        },
-        "form": "iwaalo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "iona",
-        "best_count": 1,
-        "counts": {
-          "iona": 1
-        },
-        "form": "lionigipi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "liwenigi",
-        "best_count": 1,
-        "counts": {
-          "liwenigi": 1
-        },
-        "form": "liwenigi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "odawa",
-        "best_count": 1,
-        "counts": {
-          "odawa": 1
-        },
-        "form": "lodowa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "oigi",
-        "best_count": 1,
-        "counts": {
-          "oigi": 1
-        },
-        "form": "loigi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "oigi",
-        "best_count": 1,
-        "counts": {
-          "oigi": 1
-        },
-        "form": "loigipodi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "ojedi",
-        "best_count": 1,
-        "counts": {
-          "ojedi": 1
-        },
-        "form": "lojedi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "oligi",
-        "best_count": 1,
-        "counts": {
-          "oligi": 1
-        },
-        "form": "loligi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "taGa",
-        "best_count": 1,
-        "counts": {
-          "taGa": 1
-        },
-        "form": "micoataGa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "SCONJ"
-      },
-      {
-        "best": "niGijo",
-        "best_count": 1,
-        "counts": {
-          "niGijo": 1
-        },
-        "form": "naGajo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "niGina",
-        "best_count": 1,
-        "counts": {
-          "niGina": 1
-        },
-        "form": "naGana",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "niGini",
-        "best_count": 1,
-        "counts": {
-          "niGini": 1
-        },
-        "form": "naGani",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "naodigijegi",
-        "best_count": 1,
-        "counts": {
-          "naodigijegi": 1
-        },
-        "form": "naodigijedi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "niGidi",
-        "best_count": 1,
-        "counts": {
-          "niGidi": 1
-        },
-        "form": "niGidiwa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "niGida",
-        "best_count": 1,
-        "counts": {
-          "niGida": 1
-        },
-        "form": "niGidowa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "niGijo",
-        "best_count": 1,
-        "counts": {
-          "niGijo": 1
-        },
-        "form": "niGijo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "niganigi",
-        "best_count": 1,
-        "counts": {
-          "niganigi": 1
-        },
-        "form": "niganigi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "getegi",
-        "best_count": 1,
-        "counts": {
-          "getegi": 1
-        },
-        "form": "nigetedi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "nioxoa",
-        "best_count": 1,
-        "counts": {
-          "nioxoa": 1
-        },
-        "form": "nioxoa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "wenigi",
-        "best_count": 1,
-        "counts": {
-          "wenigi": 1
-        },
-        "form": "niwenigi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      },
-      {
-        "best": "wigo",
-        "best_count": 1,
-        "counts": {
-          "wigo": 1
-        },
-        "form": "niwigo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "NOUN"
-      }
-    ],
-    "low_evidence_prontype": [
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "Ada",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "Adi",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "Ani",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "Prs",
-        "best_count": 1,
-        "counts": {
-          "Prs": 1
-        },
-        "form": "Eyo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "NaGajo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "NaGajo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "NaGana",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "NiGijo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "NiGinoa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "Prs",
-        "best_count": 1,
-        "counts": {
-          "Prs": 1
-        },
-        "form": "ee",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "idiwa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "idowa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "ijowa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "naGajo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "naGana",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "naGani",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "niGidiwa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "niGidowa",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "form": "niGijo",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      }
-    ],
+    "low_evidence_lemma_prontype": [],
+    "low_evidence_lemmas": [],
+    "low_evidence_prontype": [],
     "low_evidence_tag_to_prontype": [
       {
         "best": "Dem",

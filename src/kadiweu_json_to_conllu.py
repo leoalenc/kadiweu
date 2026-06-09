@@ -128,6 +128,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
     global LEMMA_OVERRIDES
     global FORM_FEAT_OVERRIDES
     global PRONTYPE_OVERRIDES
+    global LEMMA_PRONTYPE_OVERRIDES
     global TAG_TO_DEFAULT_PRONTYPE
 
     LEMMA_OVERRIDES = {}
@@ -728,6 +729,9 @@ def infer_feats(form: str, tag: str, tok: Dict[str, Any]) -> str:
         feats = [f for f in feats if not f.startswith("PronType=")]
         feats.append(f"PronType={pron_type}")
 
+    if upos != "ADV":
+        feats = [f for f in feats if not f.startswith("AdvType=")]
+        
     if feats:
         return "|".join(sorted(set(feats)))
 
