@@ -1,5 +1,9 @@
 {
-  "lemma_overrides": {},
+  "lemma_overrides": {
+  "jaGa": "jaG"},
+  "upos_overrides": {
+  "ee\tD": "PRON",
+  "eeyo\tD": "PRON"},
   "form_feat_overrides": {},
   "prontype_overrides": {
     "naGajo\tPRON": "Dem",
@@ -8,7 +12,6 @@
     "niGijo\tDET": "Dem",
     "niGida\tDET": "Dem",
     "adi\tDET": "Dem",
-    "ee\tDET": "Prs",
     "niGijoa\tDET": "Dem",
     "naGada\tDET": "Dem",
     "naGadi\tDET": "Dem",

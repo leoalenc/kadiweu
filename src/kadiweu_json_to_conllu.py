@@ -67,6 +67,8 @@ LEMMA_PRONTYPE_OVERRIDES: Dict[Tuple[str, str], str] = {}
 # Broad fallback: source tag + UPOS
 TAG_TO_DEFAULT_PRONTYPE: Dict[Tuple[str, str], str] = {}
 
+UPOS_OVERRIDES: Dict[Tuple[str, str], str] = {}
+
 def load_override_resource(
     path: Path,
 ) -> Tuple[
@@ -105,12 +107,18 @@ def load_override_resource(
         for k, v in data.get("tag_to_default_prontype", {}).items()
     }
 
+    upos_overrides = {
+    tuple(k.split("\t")): v
+    for k, v in data.get("upos_overrides", {}).items()
+}
+
     return (
         lemma_overrides,
         form_feat_overrides,
         prontype_overrides,
         lemma_prontype_overrides,
         tag_to_default_prontype,
+        upos_overrides,
     )
 
 def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
@@ -130,12 +138,14 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
     global PRONTYPE_OVERRIDES
     global LEMMA_PRONTYPE_OVERRIDES
     global TAG_TO_DEFAULT_PRONTYPE
+    global UPOS_OVERRIDES
 
     LEMMA_OVERRIDES = {}
     FORM_FEAT_OVERRIDES = {}
     PRONTYPE_OVERRIDES = {}
     LEMMA_PRONTYPE_OVERRIDES = {}
     TAG_TO_DEFAULT_PRONTYPE = {}
+    UPOS_OVERRIDES = {}
 
     candidate_paths = [
         DEFAULT_BASE_OVERRIDES_PATH,
@@ -163,6 +173,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
             prontype_overrides,
             lemma_prontype_overrides,
             tag_to_default_prontype,
+            upos_overrides
         ) = load_override_resource(path)
 
         LEMMA_OVERRIDES.update(lemma_overrides)
@@ -170,6 +181,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
         PRONTYPE_OVERRIDES.update(prontype_overrides)
         LEMMA_PRONTYPE_OVERRIDES.update(lemma_prontype_overrides)
         TAG_TO_DEFAULT_PRONTYPE.update(tag_to_default_prontype)
+        UPOS_OVERRIDES.update(upos_overrides)
 
     # normalize keys once after all layers have been merged
     LEMMA_OVERRIDES = canonicalize_override_map(LEMMA_OVERRIDES, "LEMMA_OVERRIDES")
@@ -183,6 +195,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
         TAG_TO_DEFAULT_PRONTYPE,
         "TAG_TO_DEFAULT_PRONTYPE",
     )
+    UPOS_OVERRIDES = canonicalize_override_map(UPOS_OVERRIDES, "UPOS_OVERRIDES")
 
 configure_override_resources()
 
@@ -659,8 +672,9 @@ def infer_lemma(form: str, tok: Dict[str, Any]) -> str:
     return form
 
 
-def infer_feats(form: str, tag: str, tok: Dict[str, Any]) -> str:
-    upos = infer_upos(tag)
+def infer_feats(form: str, tag: str, tok: Dict[str, Any], upos: Optional[str] = None) -> str:
+    if upos is None:
+        upos = infer_upos(tag)
 
     feats: List[str] = []
 
@@ -731,7 +745,7 @@ def infer_feats(form: str, tag: str, tok: Dict[str, Any]) -> str:
 
     if upos != "ADV":
         feats = [f for f in feats if not f.startswith("AdvType=")]
-        
+
     if feats:
         return "|".join(sorted(set(feats)))
 
@@ -740,7 +754,18 @@ def infer_feats(form: str, tag: str, tok: Dict[str, Any]) -> str:
 def infer_upos(tag: str) -> str:
     return UPOS_MAP.get(tag, "X")
 
+def infer_upos_for_form(form: str, tag: str) -> str:
+    override = UPOS_OVERRIDES.get((form, tag))
+    if override is not None:
+        return override
+    return infer_upos(tag)
 
+def apply_upos_override(form: str, tag: str, upos: str) -> str:
+    override = UPOS_OVERRIDES.get((form, tag))
+    if override is not None:
+        return override
+    return upos
+    
 def add_spaceafter_no(misc: str) -> str:
     """
     Ensure SpaceAfter=No is present in MISC.
@@ -979,8 +1004,9 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
                 surface_form, lookup_form = get_surface_and_lookup_form(gform)
                 gtag = str(gtok.get("t", "X"))
                 upos = infer_upos(gtag)
+                upos = apply_upos_override(lookup_form, gtag, upos)
                 lemma = infer_lemma(lookup_form, gtok)
-                feats = infer_feats(lookup_form, gtag, gtok)
+                feats = infer_feats(lookup_form, gtag, gtok, upos=upos)
 
                 draft = DraftToken(
                     source_pos=int(gtok.get("p", 0) or 0),
@@ -1015,8 +1041,9 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
             feats = "_"
         else:
             upos = infer_upos(gtag)
+            upos = apply_upos_override(lookup_form, gtag, upos)
             lemma = infer_lemma(lookup_form, tok)
-            feats = infer_feats(lookup_form, gtag, tok)
+            feats = infer_feats(lookup_form, gtag, tok, upos=upos)
 
         # Range from proto scaffold, converted to space-aware positions
         misc = "_"
