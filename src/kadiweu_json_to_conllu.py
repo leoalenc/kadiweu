@@ -57,7 +57,14 @@ DEFAULT_MANUAL_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "kadiweu_m
 
 LEMMA_OVERRIDES: Dict[str, str] = {}
 FORM_FEAT_OVERRIDES: Dict[str, str] = {}
+
+# Most specific: surface form + UPOS
 PRONTYPE_OVERRIDES: Dict[Tuple[str, str], str] = {}
+
+# Preferred learned default: lemma + UPOS
+LEMMA_PRONTYPE_OVERRIDES: Dict[Tuple[str, str], str] = {}
+
+# Broad fallback: source tag + UPOS
 TAG_TO_DEFAULT_PRONTYPE: Dict[Tuple[str, str], str] = {}
 
 def load_override_resource(
@@ -65,6 +72,7 @@ def load_override_resource(
 ) -> Tuple[
     Dict[str, str],
     Dict[str, str],
+    Dict[Tuple[str, str], str],
     Dict[Tuple[str, str], str],
     Dict[Tuple[str, str], str],
 ]:
@@ -88,6 +96,10 @@ def load_override_resource(
         tuple(k.split("\t")): v
         for k, v in data.get("prontype_overrides", {}).items()
     }
+    lemma_prontype_overrides = {
+        tuple(k.split("\t")): v
+        for k, v in data.get("lemma_prontype_overrides", {}).items()
+    }
     tag_to_default_prontype = {
         tuple(k.split("\t")): v
         for k, v in data.get("tag_to_default_prontype", {}).items()
@@ -97,6 +109,7 @@ def load_override_resource(
         lemma_overrides,
         form_feat_overrides,
         prontype_overrides,
+        lemma_prontype_overrides,
         tag_to_default_prontype,
     )
 
@@ -120,6 +133,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
     LEMMA_OVERRIDES = {}
     FORM_FEAT_OVERRIDES = {}
     PRONTYPE_OVERRIDES = {}
+    LEMMA_PRONTYPE_OVERRIDES = {}
     TAG_TO_DEFAULT_PRONTYPE = {}
 
     candidate_paths = [
@@ -146,18 +160,24 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
             lemma_overrides,
             form_feat_overrides,
             prontype_overrides,
+            lemma_prontype_overrides,
             tag_to_default_prontype,
         ) = load_override_resource(path)
 
         LEMMA_OVERRIDES.update(lemma_overrides)
         FORM_FEAT_OVERRIDES.update(form_feat_overrides)
         PRONTYPE_OVERRIDES.update(prontype_overrides)
+        LEMMA_PRONTYPE_OVERRIDES.update(lemma_prontype_overrides)
         TAG_TO_DEFAULT_PRONTYPE.update(tag_to_default_prontype)
 
     # normalize keys once after all layers have been merged
     LEMMA_OVERRIDES = canonicalize_override_map(LEMMA_OVERRIDES, "LEMMA_OVERRIDES")
     FORM_FEAT_OVERRIDES = canonicalize_override_map(FORM_FEAT_OVERRIDES, "FORM_FEAT_OVERRIDES")
     PRONTYPE_OVERRIDES = canonicalize_override_map(PRONTYPE_OVERRIDES, "PRONTYPE_OVERRIDES")
+    LEMMA_PRONTYPE_OVERRIDES = canonicalize_override_map(
+        LEMMA_PRONTYPE_OVERRIDES,
+        "LEMMA_PRONTYPE_OVERRIDES",
+    )
     TAG_TO_DEFAULT_PRONTYPE = canonicalize_override_map(
         TAG_TO_DEFAULT_PRONTYPE,
         "TAG_TO_DEFAULT_PRONTYPE",
@@ -639,67 +659,79 @@ def infer_lemma(form: str, tok: Dict[str, Any]) -> str:
 
 
 def infer_feats(form: str, tag: str, tok: Dict[str, Any]) -> str:
-    if form in FORM_FEAT_OVERRIDES:
-        return FORM_FEAT_OVERRIDES[form]
-
-    feats = []
-
-    splits = tok.get("splits", [])
-    if not isinstance(splits, list):
-        splits = []
-
-    split_tags = normalize_split_tags(tok)
-
-    # Tense/aspect auxiliaries
-    if tag == "T":
-        if "PFV" in split_tags:
-            feats.append("Aspect=Perf")
-        if "Imperf" in split_tags:
-            feats.append("Aspect=Imp")
-
-    if tag == "NEG":
-        feats.append("Polarity=Neg")
-
-    # Applicative verbs
-    if tag == "VBAPL":
-        feats.append("Voice=Appl")
-
-    # Possessor person on nouns such as N$
-    # Cases to handle:
-    #   t='Gen'  + gloss-br='1'/'2'/'3'  -> Person[psor]=1/2/3
-    #   t='3POSS'                        -> Person[psor]=3
-    # and similarly for 1POSS / 2POSS if they appear
-    for s in splits:
-        if not isinstance(s, dict):
-            continue
-
-        st = str(s.get("t", ""))
-        gloss_br = safe_get(s, "attributes", "gloss-br", default=None)
-        gloss_br = str(gloss_br).strip() if gloss_br is not None else None
-
-        if st == "Gen" and gloss_br in {"1", "2", "3"}:
-            feats.append(f"Person[psor]={gloss_br}")
-
-        elif st in {"1POSS", "2POSS", "3POSS"}:
-            person = st[0]
-            feats.append(f"Person[psor]={person}")
-            
     upos = infer_upos(tag)
 
+    feats: List[str] = []
+
+    # Start from full form-level feature override if present,
+    # but do NOT return early: PronType may still need to be added
+    # or corrected below.
+    if form in FORM_FEAT_OVERRIDES:
+        override_feats = FORM_FEAT_OVERRIDES[form]
+        if override_feats and override_feats != "_":
+            feats.extend(override_feats.split("|"))
+
+    else:
+        splits = tok.get("splits", [])
+        if not isinstance(splits, list):
+            splits = []
+
+        split_tags = normalize_split_tags(tok)
+
+        # Tense/aspect auxiliaries
+        if tag == "T":
+            if "PFV" in split_tags:
+                feats.append("Aspect=Perf")
+            if "Imperf" in split_tags:
+                feats.append("Aspect=Imp")
+
+        if tag == "NEG":
+            feats.append("Polarity=Neg")
+
+        # Applicative verbs
+        if tag == "VBAPL":
+            feats.append("Voice=Appl")
+
+        # Possessor person on nouns such as N$
+        for s in splits:
+            if not isinstance(s, dict):
+                continue
+
+            st = str(s.get("t", ""))
+            gloss_br = safe_get(s, "attributes", "gloss-br", default=None)
+            gloss_br = str(gloss_br).strip() if gloss_br is not None else None
+
+            if st == "Gen" and gloss_br in {"1", "2", "3"}:
+                feats.append(f"Person[psor]={gloss_br}")
+
+            elif st in {"1POSS", "2POSS", "3POSS"}:
+                person = st[0]
+                feats.append(f"Person[psor]={person}")
+
+    # Infer lemma before PronType lookup.
+    lemma = infer_lemma(form, tok)
+
+    # PronType lookup hierarchy:
+    # 1. form + UPOS: exceptional/manual override
+    # 2. lemma + UPOS: preferred learned default
+    # 3. source tag + UPOS: broad fallback
     pron_type = PRONTYPE_OVERRIDES.get((form, upos))
+
+    if pron_type is None:
+        pron_type = LEMMA_PRONTYPE_OVERRIDES.get((lemma, upos))
+
     if pron_type is None:
         pron_type = TAG_TO_DEFAULT_PRONTYPE.get((tag, upos))
 
-    if pron_type:
+    if pron_type and upos in {"DET", "PRON", "ADV"}:
+        # Avoid duplicated or wrong PronType, e.g. PronType=Prs on DET.
+        feats = [f for f in feats if not f.startswith("PronType=")]
         feats.append(f"PronType={pron_type}")
 
-    # Remove duplicates and keep stable order
     if feats:
-        feats = sorted(set(feats))
-        return "|".join(feats)
+        return "|".join(sorted(set(feats)))
 
     return "_"
-
 
 def infer_upos(tag: str) -> str:
     return UPOS_MAP.get(tag, "X")

@@ -1074,7 +1074,7 @@ container_meta:
   contents: ...
   uid: 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
 translations:
-  pt-br: esta faca da esposa dela não está na casa
+  pt-br: esta faca da esposa dele não está na casa
 
 proto-conllu:
   <none>
@@ -1084,17 +1084,17 @@ chunks:
 
 tokens:
   p=1   v='nGijo'            t=None         l=None gloss-br=None
-  p=2   v='lodajo'           t='N$'         l=None gloss-br='faca'
+  p=2   v='lodajo'           t='N$'         l=None gloss-br='faca del(e|a)'
       splits:
-        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='odajo'      t='n'        gloss-br=None fn=None idx=None
   p=3   v='ajo'              t='D'          l=None gloss-br='a'
       splits:
-        [1] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
-        [2] v='jo'         t='Ncl'      gloss-br='emfrente' fn=None idx=None
-  p=4   v='lodowa'           t='N$'         l=None gloss-br='marido'
+        [1] v='a'          t='Gnr'      gloss-br='Fem' fn=None idx=None
+        [2] v='jo'         t='Ncl'      gloss-br='em_frente' fn=None idx=None
+  p=4   v='lodowa'           t='N$'         l=None gloss-br='cônjuge del(e|a)'
       splits:
-        [1] v='l'          t='Pos'      gloss-br='3pessoa' fn=None idx=None
+        [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='odowa'      t='n'        gloss-br='cônjuge' fn=None idx=None
   p=5   v='aG@'              t='NEG'        l=None gloss-br=None
       split: {"v": "aGica", "t": "NEG+D", "idx": 0}
@@ -1242,7 +1242,12 @@ chunks:
   span=1-2 type=NP level=1
 
 tokens:
-  p=1   v='niGidiwa'         t='D'          l=1   gloss-br=None
+  p=1   v='niGidiwa'         t='D'          l=1   gloss-br='est(e|a)s'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br='MASC' fn=None idx=None
+        [3] v='di'         t='Ncl'      gloss-br='deitad(o|a)' fn=None idx=None
+        [4] v='wa'         t='Plu'      gloss-br=None fn=None idx=None
   p=2   v='wetiadi'          t='N'          l=1   gloss-br='pedras'
       splits:
         [1] v='wetiGa'     t='n'        gloss-br='pedra' fn=None idx=None

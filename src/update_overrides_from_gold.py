@@ -388,17 +388,25 @@ def learn_overrides(
 ) -> JsonDict:
     lemma_counts: Dict[Tuple[str, str], Counter] = defaultdict(Counter)
     feats_counts: Dict[Tuple[str, str], Counter] = defaultdict(Counter)
-    pron_counts: Dict[Tuple[str, str], Counter] = defaultdict(Counter)
-    tag_pron_counts: Dict[Tuple[str, str], Counter] = defaultdict(Counter)
 
+    # form + UPOS, for exceptional cases
+    pron_counts: Dict[Tuple[str, str], Counter] = defaultdict(Counter)
+
+    # lemma + UPOS, preferred learned table
+    lemma_pron_counts: Dict[Tuple[str, str], Counter] = defaultdict(Counter)
+
+    # source tag + UPOS, broad fallback
+    tag_pron_counts: Dict[Tuple[str, str], Counter] = defaultdict(Counter)
     review: Dict[str, List[JsonDict]] = {
         "ambiguous_lemmas": [],
         "ambiguous_feats": [],
         "ambiguous_prontype": [],
+        "ambiguous_lemma_prontype": [],
         "ambiguous_tag_to_prontype": [],
         "low_evidence_lemmas": [],
         "low_evidence_feats": [],
         "low_evidence_prontype": [],
+        "low_evidence_lemma_prontype": [],
         "low_evidence_tag_to_prontype": [],
         "json_alignment_issues": [],
     }
@@ -416,6 +424,9 @@ def learn_overrides(
 
             if pron is not None and upos in {"DET", "PRON", "ADV"}:
                 pron_counts[(form, upos)][pron] += 1
+
+                if lemma and lemma != "_":
+                    lemma_pron_counts[(lemma, upos)][pron] += 1
 
     for gs, js in aligned_pairs:
         gold_tok = filter_gold_learning_tokens(gs["tokens"])
@@ -436,6 +447,7 @@ def learn_overrides(
     lemma_overrides: Dict[str, str] = {}
     form_feat_overrides: Dict[str, str] = {}
     prontype_overrides: Dict[str, str] = {}
+    lemma_prontype_overrides: Dict[str, str] = {}
     tag_to_default_prontype: Dict[str, str] = {}
 
     for (form, upos), counter in sorted(lemma_counts.items()):
@@ -455,8 +467,35 @@ def learn_overrides(
             review["ambiguous_lemmas"].append(rec)
         else:
             lemma_overrides[form] = value
+            
+    for (lemma, upos), counter in sorted(lemma_pron_counts.items()):
+        value, best, total, share = most_common_with_share(counter)
+        rec = {
+            "lemma": lemma,
+            "upos": upos,
+            "counts": dict(counter),
+            "best": value,
+            "best_count": best,
+            "total": total,
+            "share": round(share, 4),
+        }
+        if total < pron_min_count:
+            review["low_evidence_lemma_prontype"].append(rec)
+        elif share < pron_min_share:
+            review["ambiguous_lemma_prontype"].append(rec)
+        else:
+            lemma_prontype_overrides[json_key(lemma, upos)] = value
 
     for (form, upos), counter in sorted(feats_counts.items()):
+
+        # Do not learn full FEATS bundles for DET/PRON here.
+        # PronType should be handled by the UPOS-sensitive tables:
+        #   prontype_overrides
+        #   lemma_prontype_overrides
+        #   tag_to_default_prontype
+        if upos in {"DET", "PRON"}:
+            continue
+
         value, best, total, share = most_common_with_share(counter)
         rec = {
             "form": form,
@@ -514,6 +553,7 @@ def learn_overrides(
         "lemma_overrides": dict(sorted(lemma_overrides.items())),
         "form_feat_overrides": dict(sorted(form_feat_overrides.items())),
         "prontype_overrides": dict(sorted(prontype_overrides.items())),
+        "lemma_prontype_overrides": dict(sorted(lemma_prontype_overrides.items())),
         "tag_to_default_prontype": dict(sorted(tag_to_default_prontype.items())),
         "review": review,
     }
@@ -551,8 +591,8 @@ def build_report(
         f"- `lemma_overrides`: **{len(resource['lemma_overrides'])}**",
         f"- `form_feat_overrides`: **{len(resource['form_feat_overrides'])}**",
         f"- `prontype_overrides`: **{len(resource['prontype_overrides'])}**",
+        f"- `lemma_prontype_overrides`: **{len(resource['lemma_prontype_overrides'])}**",
         f"- `tag_to_default_prontype`: **{len(resource['tag_to_default_prontype'])}**",
-        "",
         "## Review items",
         "",
         f"### json_alignment_issues ({len(review['json_alignment_issues'])})",
@@ -567,6 +607,9 @@ def build_report(
         f"### ambiguous_prontype ({len(review['ambiguous_prontype'])})",
         short_preview(review["ambiguous_prontype"]),
         "",
+        f"### ambiguous_lemma_prontype ({len(review['ambiguous_lemma_prontype'])})",
+        short_preview(review["ambiguous_lemma_prontype"]),
+        "",
         f"### ambiguous_tag_to_prontype ({len(review['ambiguous_tag_to_prontype'])})",
         short_preview(review["ambiguous_tag_to_prontype"]),
         "",
@@ -578,6 +621,9 @@ def build_report(
         "",
         f"### low_evidence_prontype ({len(review['low_evidence_prontype'])})",
         short_preview(review["low_evidence_prontype"]),
+        "",
+        f"### low_evidence_lemma_prontype ({len(review['low_evidence_lemma_prontype'])})",
+        short_preview(review["low_evidence_lemma_prontype"]),
         "",
         f"### low_evidence_tag_to_prontype ({len(review['low_evidence_tag_to_prontype'])})",
         short_preview(review["low_evidence_tag_to_prontype"]),
