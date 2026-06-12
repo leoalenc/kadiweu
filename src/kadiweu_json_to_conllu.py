@@ -32,6 +32,7 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 
 from kadiweu_empty_categories import resolve_empty_categories
 from kadiweu_converter_config import UPOS_MAP
+from kadiweu_morphology import get_standard_form_correction
 
 from kadiweu_normalization import (
     normalize_form_for_lookup,
@@ -806,6 +807,11 @@ def join_misc(items: List[str]) -> str:
     items = [x for x in items if x]
     return "|".join(items) if items else "_"
 
+def add_misc_item(misc: str, item: str) -> str:
+    items = parse_misc(misc)
+    if item not in items:
+        items.append(item)
+    return join_misc(items)
 
 def remove_spaceafter_no(misc: str) -> str:
     """Remove SpaceAfter=No from MISC."""
@@ -985,6 +991,14 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
         surface_form = str(tok.get("v", "")).strip()
         surface_form, lookup_form = get_surface_and_lookup_form(surface_form)
         tag = tok.get("t")
+
+        correction = get_standard_form_correction(lookup_form)
+
+        standard_form = None
+        if correction is not None:
+            standard_form = correction["standard_form"]
+            lookup_form = standard_form
+
         warn_on_composite_tag_without_mwt(tok)
 
         # Skip empty garbage safely
@@ -1066,6 +1080,8 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
         if proto_index < len(proto_ranges):
             start, end = proto_ranges[proto_index]
             misc = range_to_misc(start, end)
+        if standard_form is not None and standard_form != surface_form:
+            misc = add_misc_item(misc, f"StandardForm={standard_form}")
         draft = DraftToken(
             source_pos=int(tok.get("p", 0) or 0),
             form=surface_form,

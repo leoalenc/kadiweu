@@ -2,15 +2,15 @@
 
 ## Summary
 
-- Gold sentences: **82**
+- Gold sentences: **93**
 - JSON sentences: **204**
-- UID-matched sentence pairs: **82**
-- Usable aligned sentence pairs: **79**
+- UID-matched sentence pairs: **93**
+- Usable aligned sentence pairs: **90**
 - UID-matched but rejected: **3**
-- `lemma_overrides`: **103**
-- `form_feat_overrides`: **106**
-- `prontype_overrides`: **31**
-- `lemma_prontype_overrides`: **23**
+- `lemma_overrides`: **112**
+- `form_feat_overrides`: **58**
+- `prontype_overrides`: **37**
+- `lemma_prontype_overrides`: **27**
 - `tag_to_default_prontype`: **3**
 ## Review items
 
@@ -27,15 +27,16 @@
 - `{"best": "odajo", "best_count": 1, "counts": {"odaajo": 1, "odajo": 1}, "form": "lodajo", "share": 0.5, "total": 2, "upos": "NOUN"}`
 - `{"best": "omigo", "best_count": 1, "counts": {"lomigo": 1, "omigo": 1}, "form": "lomigo", "share": 0.5, "total": 2, "upos": "NOUN"}`
 - `{"best": "niganaGacanajo", "best_count": 2, "counts": {"niganaGacanajo": 2, "niganagacanajo": 1}, "form": "niganaGacanajo", "share": 0.6667, "total": 3, "upos": "NOUN"}`
-- `{"best": "nitibeci", "best_count": 1, "counts": {"nitibece": 1, "nitibeci": 1}, "form": "ninitibeci", "share": 0.5, "total": 2, "upos": "VERB"}`
+- `{"best": "ninitibeci", "best_count": 2, "counts": {"ninitibeci": 2, "nitibece": 1, "nitibeci": 1}, "form": "ninitibeci", "share": 0.5, "total": 4, "upos": "VERB"}`
 - `{"best": "wetiGa", "best_count": 3, "counts": {"wetiGa": 3, "wetiga": 1}, "form": "wetiGa", "share": 0.75, "total": 4, "upos": "NOUN"}`
 
-### ambiguous_feats (6)
+### ambiguous_feats (7)
 - `{"best": "AdvType=Loc|PronType=Dem", "best_count": 1, "counts": {"AdvType=Loc|Deixis=Remt|PronType=Dem": 1, "AdvType=Loc|PronType=Dem": 1}, "form": "digoida", "share": 0.5, "total": 2, "upos": "ADV"}`
 - `{"best": "_", "best_count": 2, "counts": {"PronType=Ind": 2, "_": 2}, "form": "eliodi", "share": 0.5, "total": 4, "upos": "ADV"}`
 - `{"best": "Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1", "best_count": 2, "counts": {"Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1": 2, "_": 1}, "form": "eyodi", "share": 0.6667, "total": 3, "upos": "NOUN"}`
 - `{"best": "Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl", "best_count": 4, "counts": {"Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl": 4, "Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl": 2}, "form": "ipegitegi", "share": 0.6667, "total": 6, "upos": "VERB"}`
 - `{"best": "Person[psor]=3", "best_count": 1, "counts": {"Gender=Masc|Number=Sing|Person[psor]=3": 1, "Person[psor]=3": 1}, "form": "lidi", "share": 0.5, "total": 2, "upos": "NOUN"}`
+- `{"best": "Gender=Fem|Number=Plur|Person[psor]=3", "best_count": 1, "counts": {"Gender=Fem,Masc|Number=Plur|Person[psor]=3": 1, "Gender=Fem|Number=Plur|Person[psor]=3": 1}, "form": "lionigipi", "share": 0.5, "total": 2, "upos": "NOUN"}`
 - `{"best": "Number=Plur|Person[psor]=3", "best_count": 1, "counts": {"Number=Plur|Person[psor]=3": 1, "_": 1}, "form": "lotiidi", "share": 0.5, "total": 2, "upos": "NOUN"}`
 
 ### ambiguous_prontype (0)
@@ -50,8 +51,23 @@ _None_
 ### low_evidence_lemmas (0)
 _None_
 
-### low_evidence_feats (0)
-_None_
+### low_evidence_feats (59)
+- `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Ada", "share": 1.0, "total": 1, "upos": "PRON"}`
+- `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Adi", "share": 1.0, "total": 1, "upos": "PRON"}`
+- `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Ani", "share": 1.0, "total": 1, "upos": "PRON"}`
+- `{"best": "Mood=Ind|Number=Sing|Person=3|VerbForm=Fin", "best_count": 1, "counts": {"Mood=Ind|Number=Sing|Person=3|VerbForm=Fin": 1}, "form": "DapicoGo", "share": 1.0, "total": 1, "upos": "VERB"}`
+- `{"best": "_", "best_count": 1, "counts": {"_": 1}, "form": "Eyodi", "share": 1.0, "total": 1, "upos": "NOUN"}`
+- `{"best": "Number=Sing|Person[psor]=2", "best_count": 1, "counts": {"Number=Sing|Person[psor]=2": 1}, "form": "GanaaginaGa", "share": 1.0, "total": 1, "upos": "NOUN"}`
+- `{"best": "Gender=Fem|Number=Sing|Person[psor]=2", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|Person[psor]=2": 1}, "form": "GanigotGa", "share": 1.0, "total": 1, "upos": "NOUN"}`
+- `{"best": "Gender=Masc|Number=Sing|Person[psor]=2", "best_count": 1, "counts": {"Gender=Masc|Number=Sing|Person[psor]=2": 1}, "form": "Ganioxoa", "share": 1.0, "total": 1, "upos": "NOUN"}`
+- `{"best": "Gender=Masc|Number=Sing|Person[psor]=2", "best_count": 1, "counts": {"Gender=Masc|Number=Sing|Person[psor]=2": 1}, "form": "Ganixoa", "share": 1.0, "total": 1, "upos": "NOUN"}`
+- `{"best": "Gender=Fem|Number=Plur", "best_count": 1, "counts": {"Gender=Fem|Number=Plur": 1}, "form": "Iwaalepodi", "share": 1.0, "total": 1, "upos": "NOUN"}`
+- `{"best": "Gender=Masc", "best_count": 1, "counts": {"Gender=Masc": 1}, "form": "João", "share": 1.0, "total": 1, "upos": "PROPN"}`
+- `{"best": "Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3", "best_count": 1, "counts": {"Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3": 1}, "form": "Libiniena", "share": 1.0, "total": 1, "upos": "NOUN"}`
+- `{"best": "Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3", "best_count": 1, "counts": {"Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3": 1}, "form": "Libinienigi", "share": 1.0, "total": 1, "upos": "NOUN"}`
+- `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "NaGajo", "share": 1.0, "total": 1, "upos": "DET"}`
+- `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "NaGajo", "share": 1.0, "total": 1, "upos": "PRON"}`
+- ... and 44 more
 
 ### low_evidence_prontype (0)
 _None_
@@ -59,12 +75,14 @@ _None_
 ### low_evidence_lemma_prontype (0)
 _None_
 
-### low_evidence_tag_to_prontype (5)
+### low_evidence_tag_to_prontype (7)
 - `{"best": "Dem", "best_count": 2, "counts": {"Dem": 2}, "raw_tag": "D", "share": 1.0, "total": 2, "upos": "ADV"}`
-- `{"best": "Prs", "best_count": 2, "counts": {"Prs": 2}, "raw_tag": "PRO", "share": 1.0, "total": 2, "upos": "PRON"}`
+- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "raw_tag": "DAPL", "share": 1.0, "total": 1, "upos": "DET"}`
+- `{"best": "Dem", "best_count": 2, "counts": {"Dem": 2}, "raw_tag": "DAPL", "share": 1.0, "total": 2, "upos": "PRON"}`
+- `{"best": "Prs", "best_count": 3, "counts": {"Prs": 3}, "raw_tag": "PRO", "share": 1.0, "total": 3, "upos": "PRON"}`
 - `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "raw_tag": "PRO$", "share": 1.0, "total": 1, "upos": "PRON"}`
 - `{"best": "Ind", "best_count": 2, "counts": {"Ind": 2}, "raw_tag": "Q", "share": 1.0, "total": 2, "upos": "ADV"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "raw_tag": "Q", "share": 1.0, "total": 1, "upos": "DET"}`
+- `{"best": "Ind", "best_count": 1, "counts": {"Dem": 1, "Ind": 1}, "raw_tag": "Q", "share": 0.5, "total": 2, "upos": "DET"}`
 
 ## Notes
 
