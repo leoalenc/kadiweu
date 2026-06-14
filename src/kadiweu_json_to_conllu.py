@@ -1070,10 +1070,32 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
             lemma = surface_form
             feats = "_"
         else:
-            upos = infer_upos(gtag)
-            upos = apply_upos_override(lookup_form, gtag, upos)
-            lemma = infer_lemma(lookup_form, tok)
-            feats = infer_feats(lookup_form, gtag, tok, upos=upos)
+            if correction is not None:
+                upos = correction.get("upos", infer_upos(gtag))
+                gtag = correction.get("xpos", gtag)
+                lemma = correction.get("standard_lemma", lookup_form)
+            else:
+                upos = infer_upos(gtag)
+                upos = apply_upos_override(lookup_form, gtag, upos)
+                lemma = infer_lemma(lookup_form, tok)
+
+            feats = infer_feats(
+                lookup_form,
+                gtag,
+                tok,
+                upos=upos,
+                surface_form=surface_form,
+            )
+
+            if correction is not None and correction.get("feats"):
+                correction_feats = correction["feats"].split("|")
+                current_feats = [] if feats == "_" else feats.split("|")
+
+                for feat in correction_feats:
+                    if feat not in current_feats:
+                        current_feats.append(feat)
+
+                feats = "|".join(sorted(set(current_feats))) if current_feats else "_"
 
         # Range from proto scaffold, converted to space-aware positions
         misc = "_"

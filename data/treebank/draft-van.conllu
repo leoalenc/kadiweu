@@ -48,10 +48,10 @@
 # text_orig = iwaalo ja ninitibeke
 # text_por_orig = a mulher está feliz
 # text_por = a mulher está feliz.
-1	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	0	root	_	TokenRange=0:6
-2	ja	jaG	AUX	T	Aspect=Perf	1	aux	_	TokenRange=7:9
-3	ninitibeke	ninitibeke	X	X	_	1	dep	_	SpaceAfter=No|TokenRange=10:20
-4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
+1	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	3	dep	_	TokenRange=0:6
+2	ja	jaG	AUX	T	Aspect=Perf	3	aux	_	TokenRange=7:9
+3	ninitibeke	ninitibeke	VERB	VB	_	0	root	_	SpaceAfter=No|TokenRange=10:20
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = van-data-6
 # sent_uid = 3e518fdb-d852-41e5-87a4-f8778597c2a1
@@ -77,26 +77,26 @@
 
 # sent_id = van-data-8
 # sent_uid = 947061b4-7b73-4612-8aa8-0af0e04cbc85
-# text = niwatece iwaGadi noxilece lodejedi.
-# text_orig = niwatece iwaGadi noxilece lodejedi
+# text = niwatece iwaGadi noxilece lojetedi.
+# text_orig = niwatece iwaGadi noxilece lojetedi
 # text_por_orig = a pesada canoa está barata
 # text_por = a pesada canoa está barata.
-1	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	2	dep	_	TokenRange=0:8
+1	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	2	nsubj	_	TokenRange=0:8
 2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:16
-3	noxilece	noxilece	NOUN	N$	_	2	dep	_	TokenRange=17:25
-4	lodejedi	lodejedi	X	X	_	2	dep	_	SpaceAfter=No|TokenRange=26:34
+3	noxilece	oxilece	VERB	VB	_	2	dep	_	TokenRange=17:25
+4	lojetedi	tedi	NOUN	N$	_	2	obj	_	SpaceAfter=No|TokenRange=26:34
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=34:35
 
 # sent_id = van-data-9
 # sent_uid = 2c026af9-b8a1-4389-b658-00113b070dee
 # text = niwatece liwaGatena lodejedi.
 # text_orig = niwatece liwaGatena lodejedi
-# text_por_orig = a canoa pesada [ é / está ] barata
-# text_por = a canoa pesada [ é / está ] barata.
-1	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	0	root	_	TokenRange=0:8
-2	liwaGatena	liwaGatena	X	X	_	1	dep	_	TokenRange=9:19
-3	lodejedi	lodejedi	X	X	_	1	dep	_	SpaceAfter=No|TokenRange=20:28
-4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=28:29
+# text_por_orig = a canoa pesada barata
+# text_por = a canoa pesada barata.
+1	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=0:8
+2	liwaGatena	iwaaGadi	NOUN	N$	_	3	dep	_	TokenRange=9:19
+3	lodejedi	lodejedi	NOUN	N$	_	0	root	_	SpaceAfter=No|TokenRange=20:28
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=28:29
 
 # sent_id = van-data-10
 # sent_uid = 0c38eab8-c6b0-4f02-bf05-27ea6285fe70
@@ -123,45 +123,43 @@
 
 # sent_id = van-data-12
 # sent_uid = a1e15803-1e5e-481f-8137-a84beac6cbcc
-# text = nGida niwenigi daGaxa me dakake lojedi.
-# text_orig = nGida niwenigi daGaxa me dakake lojedi
+# text = niGida niwenigi daGaxa me dakake loojedi.
+# text_orig = niGida niwenigi daGaxa me dakake loojedi
 # text_por_orig = aquela comida é muito cara
 # text_por = aquela comida é muito cara.
-1	nGida	niGida	X	X	Gender=Masc|Number=Sing	2	dep	_	StandardForm=niGida|TokenRange=0:5
-2	niwenigi	enigi	NOUN	N$	_	0	root	_	TokenRange=6:14
-3	daGaxa	daGaxa	ADV	ADV	_	2	advmod	_	TokenRange=15:21
-4	me	me	SCONJ	C	_	2	dep	_	TokenRange=22:24
-5	dakake	akake	ADJ	ADJ	_	2	dep	_	TokenRange=25:31
-6	lojedi	ojedi	NOUN	N$	_	2	dep	_	SpaceAfter=No|TokenRange=32:38
-7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=38:39
+1	niGida	niGida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	niwenigi	enigi	NOUN	N$	_	5	nsubj	_	TokenRange=7:15
+3	daGaxa	daGaxa	DET	Q	_	6	det	_	TokenRange=16:22
+4	me	me	SCONJ	C	_	5	dep	_	TokenRange=23:25
+5	dakake	akake	VERB	VB	_	0	root	_	TokenRange=26:32
+6	loojedi	loojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	obj	_	SpaceAfter=No|TokenRange=33:40
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=40:41
 
 # sent_id = van-data-13
 # sent_uid = e9806e26-701d-4f5f-9ca9-63216cccf3d0
-# text = nGajo lomigo Pedro idei noatece.
-# text_orig = nGajo lomigo Pedro idei noatece
+# text = naGajo lomigo Pedro idei noatece.
+# text_orig = naGajo lomigo Pedro idei noatece
 # text_por_orig = aquele anzol do Pedro está na canoa
 # text_por = aquele anzol do Pedro está na canoa.
-1	nGajo	niGijo	X	X	_	4	dep	_	StandardForm=naGajo|TokenRange=0:5
-2	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	dep	_	TokenRange=6:12
-3	Pedro	pedro	X	X	_	4	dep	_	TokenRange=13:18
-4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=19:23
-5	noatece	noatece	X	X	_	4	dep	_	SpaceAfter=No|TokenRange=24:31
-6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=31:32
+1	naGajo	niGijo	X	X	_	4	dep	_	TokenRange=0:6
+2	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	dep	_	TokenRange=7:13
+3	Pedro	pedro	X	X	_	4	dep	_	TokenRange=14:19
+4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=20:24
+5	noatece	noatece	X	X	_	4	dep	_	SpaceAfter=No|TokenRange=25:32
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=32:33
 
 # sent_id = van-data-14
 # sent_uid = 2386b5b5-57d0-4a1f-86c2-73f67561744c
-# text = nGajo lomigo niganigawaanigi manitaGa noatece.
-# text_orig = nGajo lomigo niganigawaanigi manitaGa noatece
+# text = naGajo lomiigo nigaanigawaanigi manitaGa niwatece.
+# text_orig = naGajo lomiigo nigaanigawaanigi manitaGa niwatece
 # text_por_orig = aquele anzol do menino é na canoa
 # text_por = aquele anzol do menino é na canoa.
-1	nGajo	niGijo	X	X	_	2	dep	_	StandardForm=naGajo|TokenRange=0:5
-2	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	0	root	_	TokenRange=6:12
-3	niganigawaanigi	niganigawaanigi	X	X	_	2	dep	_	TokenRange=13:28
-4-5	manitaGa	_	_	_	_	_	_	_	TokenRange=29:37
-4	me	me	SCONJ	C	_	2	dep	_	_
-5	anitaGa	anitaGa	X	DAPL	_	2	dep	_	_
-6	noatece	noatece	X	X	_	2	dep	_	SpaceAfter=No|TokenRange=38:45
-7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=45:46
+1	naGajo	niGijo	DET	D	PronType=Dem	2	det	_	TokenRange=0:6
+2	lomiigo	omiigo	NOUN	N$	Person[psor]=3	5	nsubj	_	TokenRange=7:14
+3	nigaanigawaanigi	nigaa	NOUN	N	_	5	dep	_	TokenRange=15:31
+4	manitaGa	taGa	X	C+DAPL	_	5	dep	_	TokenRange=32:40
+5	niwatece	watece	NOUN	N	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=41:49
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=49:50
 
 # sent_id = van-data-15
 # sent_uid = 4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7
@@ -169,26 +167,26 @@
 # text_orig = niGijo niganigawaanigi lomigo niwatece
 # text_por_orig = aquele menino é na canoa do anzol
 # text_por = aquele menino é na canoa do anzol.
-1	niGijo	niGijo	DET	D	PronType=Dem	3	det	_	TokenRange=0:6
-2	niganigawaanigi	niganigawaanigi	X	X	_	3	dep	_	TokenRange=7:22
-3	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	0	root	_	TokenRange=23:29
-4	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	3	dep	_	SpaceAfter=No|TokenRange=30:38
-5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=38:39
+1	niGijo	niGijo	DET	D	PronType=Dem	2	det	_	TokenRange=0:6
+2	niganigawaanigi	niganigawaanigi	NOUN	N	_	4	nsubj	_	TokenRange=7:22
+3	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	dep	_	TokenRange=23:29
+4	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=30:38
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=38:39
 
 # sent_id = van-data-16
 # sent_uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
-# text = niGijo niganigawaanigi manitaGa lomigo niwatece.
-# text_orig = niGijo niganigawaanigi manitaGa lomigo niwatece
+# text = niGijo nigaanigawaanigi manitaGa lomigo niwatece.
+# text_orig = niGijo nigaanigawaanigi manitaGa lomigo niwatece
 # text_por_orig = aquele menino é na canoa do anzol
 # text_por = aquele menino é na canoa do anzol.
-1	niGijo	niGijo	DET	D	PronType=Dem	5	det	_	TokenRange=0:6
-2	niganigawaanigi	niganigawaanigi	X	X	_	5	dep	_	TokenRange=7:22
-3-4	manitaGa	_	_	_	_	_	_	_	TokenRange=23:31
+1	niGijo	niGijo	DET	D	PronType=Dem	2	det	_	TokenRange=0:6
+2	nigaanigawaanigi	nigaanigawaanigi	NOUN	N	_	5	nsubj	_	TokenRange=7:23
+3-4	manitaGa	_	_	_	_	_	_	_	TokenRange=24:32
 3	me	me	SCONJ	C	_	5	dep	_	_
 4	anitaGa	anitaGa	X	DAPL	_	5	dep	_	_
-5	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	0	root	_	TokenRange=32:38
-6	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	5	dep	_	SpaceAfter=No|TokenRange=39:47
-7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=47:48
+5	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	0	root	_	TokenRange=33:39
+6	niwatece	watece	NOUN	N	Gender=Fem|Number=Sing	5	dep	_	SpaceAfter=No|TokenRange=40:48
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=48:49
 
 # sent_id = van-data-17
 # sent_uid = 86f5c128-e931-4443-90cc-2359748ed69f
@@ -289,10 +287,10 @@
 # text_orig = ajo eliodi linikeGegi
 # text_por_orig = ela é muito feliz
 # text_por = ela é muito feliz.
-1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	0	root	_	TokenRange=0:3
-2	eliodi	eliodi	DET	Q	PronType=Ind	1	det	_	TokenRange=4:10
-3	linikeGegi	linikeGegi	X	X	_	1	dep	_	SpaceAfter=No|TokenRange=11:21
-4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=21:22
+1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	TokenRange=0:3
+2	eliodi	eliodi	DET	Q	PronType=Ind	3	det	_	TokenRange=4:10
+3	linikeGegi	ni	NOUN	N$	Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=11:21
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = van-data-26
 # sent_uid = 5c1017dc-b596-4a2b-8be3-665166eef81c
@@ -316,12 +314,12 @@
 
 # sent_id = van-data-28
 # sent_uid = d369088d-7d87-44b9-a956-2d5bd5f955e1
-# text = ijo lapikaGigi.
-# text_orig = ijo lapikaGigi
+# text = ijo lapicaGigi.
+# text_orig = ijo lapicaGigi
 # text_por_orig = ele é / está quente
 # text_por = ele é / está quente.
 1	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
-2	lapikaGigi	apico	NOUN	N$	Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=4:14
+2	lapicaGigi	apico	NOUN	N$	Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=4:14
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = van-data-29
@@ -330,8 +328,8 @@
 # text_orig = nGijo ninitibigiwaji
 # text_por_orig = eles são felizes
 # text_por = eles são felizes.
-1	nGijo	niGijo	X	X	_	2	dep	_	StandardForm=niGijo|TokenRange=0:5
-2	ninitibigiwaji	nitibece	NOUN	N	_	0	root	_	SpaceAfter=No|TokenRange=6:20
+1	nGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	StandardForm=niGijo|TokenRange=0:5
+2	ninitibigiwaji	nitibece	VERB	VB	_	0	root	_	SpaceAfter=No|TokenRange=6:20
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = van-data-30
@@ -340,16 +338,16 @@
 # text_orig = nGijo lodajo ajo lodowa aGica digoida liGeladi
 # text_por_orig = esta faca da esposa dele não está na casa
 # text_por = esta faca da esposa dele não está na casa.
-1	nGijo	niGijo	X	X	_	2	dep	_	StandardForm=niGijo|TokenRange=0:5
-2	lodajo	odajo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	TokenRange=6:12
+1	nGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	StandardForm=niGijo|TokenRange=0:5
+2	lodajo	odajo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	8	nsubj	_	TokenRange=6:12
 3	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	4	det	_	TokenRange=13:16
-4	lodowa	odawa	NOUN	N$	Person[psor]=3	2	dep	_	TokenRange=17:23
+4	lodowa	odawa	NOUN	N	Person[psor]=3	8	dep	_	TokenRange=17:23
 5-6	aGica	_	_	_	_	_	_	_	TokenRange=24:29
-5	aG	aG	PART	NEG	Polarity=Neg	2	advmod	_	_
-6	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_
+5	aG	aG	PART	NEG	Polarity=Neg	8	advmod	_	_
+6	ica	ica	DET	Q	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_
 7	digoida	digoida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	TokenRange=30:37
-8	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	dep	_	SpaceAfter=No|TokenRange=38:46
-9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=46:47
+8	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=38:46
+9	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=46:47
 
 # sent_id = van-data-31
 # sent_uid = 5d76c7ee-51ce-47b0-a85d-ddc7f7d33f5f
@@ -454,7 +452,7 @@
 # text_orig = idiwa wetiadi iwaGadi
 # text_por_orig = estas pedras estão pesadas
 # text_por = estas pedras estão pesadas.
-1	idiwa	idi	DET	Q	PronType=Dem	2	det	_	TokenRange=0:5
+1	idiwa	idi	DET	D	PronType=Dem	2	det	_	TokenRange=0:5
 2	wetiadi	wetiGa	NOUN	N	Gender=Fem|Number=Plur	3	nsubj	_	TokenRange=6:13
 3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=14:21
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
@@ -631,16 +629,16 @@
 
 # sent_id = van-data-54
 # sent_uid = 969ba2f3-88dc-417e-ad3f-16ce88b4c762
-# text = aGee elide niinikeGegi.
-# text_orig = aGee elide niinikeGegi
+# text = aGee eliodi niinikeGegi.
+# text_orig = aGee eliodi niinikeGegi
 # text_por_orig = eu não estou muito feliz
 # text_por = eu não estou muito feliz.
 1-2	aGee	_	_	_	_	_	_	_	TokenRange=0:4
-1	aG	aG	PART	NEG	Polarity=Neg	2	advmod	_	_
-2	ee	ee	PRON	D	PronType=Prs	0	root	_	_
-3	elide	elide	X	X	_	2	dep	_	TokenRange=5:10
-4	niinikeGegi	niinikeGegi	NOUN	N	_	2	dep	_	SpaceAfter=No|TokenRange=11:22
-5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
+1	aG	aG	PART	NEG	Polarity=Neg	4	advmod	_	_
+2	ee	ee	PRON	D	PronType=Prs	4	nsubj	_	_
+3	eliodi	eliodi	DET	Q	PronType=Ind	4	det	_	TokenRange=5:11
+4	niinikeGegi	nini	NOUN	N	_	0	root	_	SpaceAfter=No|TokenRange=12:23
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
 
 # sent_id = van-data-55
 # sent_uid = 39925f76-d73f-423f-95cd-f88bd78f2a6e
@@ -648,11 +646,13 @@
 # text_orig = ee eliodi me aGidininitibeki
 # text_por_orig = eu não estou muito feliz
 # text_por = eu não estou muito feliz.
-1	ee	ee	PRON	D	PronType=Prs	0	root	_	TokenRange=0:2
-2	eliodi	eliodi	DET	Q	PronType=Ind	1	det	_	TokenRange=3:9
-3	me	me	SCONJ	C	_	1	dep	_	TokenRange=10:12
-4	aGidininitibeki	aGidininitibeki	X	X	_	1	dep	_	SpaceAfter=No|TokenRange=13:28
-5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=28:29
+1	ee	ee	PRON	D	PronType=Prs	5	nsubj	_	TokenRange=0:2
+2	eliodi	eliodi	DET	Q	PronType=Ind	5	det	_	TokenRange=3:9
+3	me	me	SCONJ	C	_	5	dep	_	TokenRange=10:12
+4-5	aGidininitibeki	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=13:28
+4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
+5	dninitibeci	dninitibeci	VERB	VB	_	0	root	_	_
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=28:29
 
 # sent_id = van-data-56
 # sent_uid = d3095a7e-477d-405e-9ea2-85bfdacad7d3

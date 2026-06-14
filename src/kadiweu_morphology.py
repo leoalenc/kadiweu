@@ -74,6 +74,29 @@ GENDER_VOWELS: Dict[str, str] = {
 }
 
 
+
+def pluralize_ng_form(singular_form: str) -> str:
+    """
+    Build the plural form of an nG- demonstrative.
+
+    Griffiths (2002):
+        niGidi -> niGidiwa
+        niGini -> niGiniwa
+        niGina -> niGinoa
+        niGijo -> niGijoa
+        niGida -> niGidoa
+    """
+    if singular_form.endswith("i"):
+        return singular_form + "wa"
+
+    if singular_form.endswith("a"):
+        return singular_form[:-1] + "oa"
+
+    if singular_form.endswith("o"):
+        return singular_form + "a"
+
+    return singular_form + "wa"
+
 def build_ng_deictic_form_map(
     roots: Optional[Mapping[str, Mapping[str, str]]] = None,
     gender_vowels: Optional[Mapping[str, str]] = None,
@@ -111,10 +134,29 @@ def build_ng_deictic_form_map(
         for vowel, gender in gender_vowels.items():
             standard_form = f"n{vowel}G{vowel}{root}"
             reduced_form = f"nG{vowel}{root}"
+            plural_form = pluralize_ng_form(standard_form)
+            reduced_plural_form = pluralize_ng_form(reduced_form)
 
             out[reduced_form] = {
                 "standard_form": standard_form,
+                "standard_lemma": standard_form,
+                "upos": "DET",
+                "xpos": "D",
+                "feats": f"Gender={gender}|Number=Sing",
                 "gender": gender,
+                "number": "Sing",
+                "deictic_root": root,
+                **dict(gloss_info),
+            }
+
+            out[reduced_plural_form] = {
+                "standard_form": plural_form,
+                "standard_lemma": standard_form,
+                "upos": "DET",
+                "xpos": "D",
+                "feats": "Gender=Masc|Number=Plur",
+                "gender": "Masc",
+                "number": "Plur",
                 "deictic_root": root,
                 **dict(gloss_info),
             }
