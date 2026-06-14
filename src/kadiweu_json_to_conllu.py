@@ -70,6 +70,8 @@ TAG_TO_DEFAULT_PRONTYPE: Dict[Tuple[str, str], str] = {}
 
 UPOS_OVERRIDES: Dict[Tuple[str, str], str] = {}
 
+FORM_CORRECTIONS: Dict[str, Dict[str, str]] = {}
+
 def load_override_resource(
     path: Path,
 ) -> Tuple[
@@ -112,6 +114,7 @@ def load_override_resource(
     tuple(k.split("\t")): v
     for k, v in data.get("upos_overrides", {}).items()
 }
+    form_corrections = data.get("form_corrections", {})
 
     return (
         lemma_overrides,
@@ -120,6 +123,7 @@ def load_override_resource(
         lemma_prontype_overrides,
         tag_to_default_prontype,
         upos_overrides,
+        form_corrections,
     )
 
 def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
@@ -140,6 +144,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
     global LEMMA_PRONTYPE_OVERRIDES
     global TAG_TO_DEFAULT_PRONTYPE
     global UPOS_OVERRIDES
+    global FORM_CORRECTIONS
 
     LEMMA_OVERRIDES = {}
     FORM_FEAT_OVERRIDES = {}
@@ -147,6 +152,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
     LEMMA_PRONTYPE_OVERRIDES = {}
     TAG_TO_DEFAULT_PRONTYPE = {}
     UPOS_OVERRIDES = {}
+    FORM_CORRECTIONS = {}
 
     candidate_paths = [
         DEFAULT_BASE_OVERRIDES_PATH,
@@ -174,7 +180,8 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
             prontype_overrides,
             lemma_prontype_overrides,
             tag_to_default_prontype,
-            upos_overrides
+            upos_overrides,
+            form_corrections,
         ) = load_override_resource(path)
 
         LEMMA_OVERRIDES.update(lemma_overrides)
@@ -183,6 +190,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
         LEMMA_PRONTYPE_OVERRIDES.update(lemma_prontype_overrides)
         TAG_TO_DEFAULT_PRONTYPE.update(tag_to_default_prontype)
         UPOS_OVERRIDES.update(upos_overrides)
+        FORM_CORRECTIONS.update(form_corrections)
 
     # normalize keys once after all layers have been merged
     LEMMA_OVERRIDES = canonicalize_override_map(LEMMA_OVERRIDES, "LEMMA_OVERRIDES")
@@ -782,6 +790,20 @@ def apply_upos_override(form: str, tag: str, upos: str) -> str:
     if override is not None:
         return override
     return upos
+
+def get_form_correction(form: str) -> Optional[Dict[str, str]]:
+    """
+    Return correction metadata for known non-canonical source forms.
+
+    Priority:
+      1. Manual JSON correction
+      2. Morphology-generated correction
+    """
+    manual = FORM_CORRECTIONS.get(form)
+    if manual is not None:
+        return dict(manual)
+
+    return get_standard_form_correction(form)
     
 def add_spaceafter_no(misc: str) -> str:
     """
@@ -992,7 +1014,7 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
         surface_form, lookup_form = get_surface_and_lookup_form(surface_form)
         tag = tok.get("t")
 
-        correction = get_standard_form_correction(lookup_form)
+        correction = get_form_correction(lookup_form)
 
         standard_form = None
         if correction is not None:

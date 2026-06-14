@@ -1,4 +1,70 @@
 {
+  "form_corrections": {
+  "dapiko": {
+    "standard_form": "dapico",
+    "standard_lemma": "apico"
+  },
+  "iwaGadi": {
+    "standard_form": "iwaaGadi",
+    "standard_lemma": "waaGadi"
+  },
+   "niganigawanigi": {
+      "standard_form": "nigaanigawaanigi",
+      "standard_lemma": "nigaanigi"
+    },
+    "iwalepodi": {
+      "standard_form": "iwaalepodi",
+      "standard_lemma": "iwaalo"
+    },
+    "iwalo": {
+      "standard_form": "iwaalo",
+      "standard_lemma": "iwaalo"
+    },
+    "Eyo": {
+      "standard_form": "Eeyo",
+      "standard_lemma": "eeyo"
+    },
+    "lodajo": {
+      "standard_form": "lodaajo",
+      "standard_lemma": "odaajo"
+    },
+    "lodowa": {
+      "standard_form": "lodawa",
+      "standard_lemma": "odawa"
+    },
+    "niGidowa": {
+      "standard_form": "niGidoa",
+      "standard_lemma": "niGida"
+    },
+    "idowa": {
+      "standard_form": "idoa",
+      "standard_lemma": "ida"
+    },
+    "lojedi": {
+      "standard_form": "loojedi",
+      "standard_lemma": "loojedi"
+    },
+    "lodejedi": {
+      "standard_form": "lojetedi",
+      "standard_lemma": "lojetedi"
+    },
+    "ninitibeke": {
+      "standard_form": "ninitibece",
+      "standard_lemma": "initibece"
+    },
+    "ninitibeci": {
+      "standard_form": "ninitibece",
+      "standard_lemma": "initibece"
+    },
+    "ninitibeki": { 
+      "standard_form": "ninitibece",
+      "standard_lemma": "initibece"
+    },
+      "lotidi": { 
+        "standard_form": "lotiidi",
+        "standard_lemma": "otiidi"
+      }
+},
   "lemma_overrides": {
   "jaGa": "jaG"},
   "upos_overrides": {
