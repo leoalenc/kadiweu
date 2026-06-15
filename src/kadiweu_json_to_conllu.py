@@ -1020,6 +1020,14 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
         if correction is not None:
             standard_form = correction["standard_form"]
             lookup_form = standard_form
+            morphology_correction = get_standard_form_correction(lookup_form)
+
+            if morphology_correction is not None:
+                enriched = dict(morphology_correction)
+                enriched.update(correction)
+                correction = enriched
+        else:
+            correction = get_form_correction(lookup_form)
 
         warn_on_composite_tag_without_mwt(tok)
 
