@@ -132,7 +132,7 @@
 3	daGaxa	daGaxa	DET	Q	_	6	det	_	TokenRange=16:22
 4	me	me	SCONJ	C	_	5	dep	_	TokenRange=23:25
 5	dakake	akake	VERB	VB	_	0	root	_	TokenRange=26:32
-6	loojedi	loojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	obj	_	SpaceAfter=No|TokenRange=33:40
+6	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	obj	_	SpaceAfter=No|TokenRange=33:40
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=40:41
 
 # sent_id = van-data-13
@@ -329,7 +329,7 @@
 # text_por_orig = eles são felizes
 # text_por = eles são felizes.
 1	nGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	StandardForm=niGijo|TokenRange=0:5
-2	ninitibigiwaji	nitibece	VERB	VB	_	0	root	_	SpaceAfter=No|TokenRange=6:20
+2	ninitibigiwaji	initibece	VERB	VB	_	0	root	_	SpaceAfter=No|TokenRange=6:20
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = van-data-30
