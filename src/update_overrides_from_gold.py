@@ -69,6 +69,15 @@ def extract_prontype(feats: str) -> Optional[str]:
             return part.split("=", 1)[1]
     return None
 
+def extract_standard_form(misc: str) -> Optional[str]:
+    if not misc or misc == "_":
+        return None
+
+    for item in misc.split("|"):
+        if item.startswith("StandardForm="):
+            return item.split("=", 1)[1]
+
+    return None
 
 def json_key(*parts: str) -> str:
     return "\t".join(parts)
@@ -121,6 +130,7 @@ def parse_conllu(path: Path) -> List[JsonDict]:
                     "upos": cols[3],
                     "xpos": cols[4],
                     "feats": normalize_feats(cols[5]),
+                    "misc": cols[9],
                 }
             )
 
@@ -414,19 +424,27 @@ def learn_overrides(
     for sent in gold_sentences:
         for tok in filter_gold_learning_tokens(sent["tokens"]):
             form = tok["form"]
+            standard_form = extract_standard_form(tok.get("misc", ""))
+
+            forms_for_learning = [form]
+            if standard_form and standard_form != form:
+                forms_for_learning.append(standard_form)
+
             upos = tok["upos"]
             lemma = tok["lemma"]
             feats = tok["feats"]
             pron = extract_prontype(feats)
 
-            lemma_counts[(form, upos)][lemma] += 1
-            feats_counts[(form, upos)][feats] += 1
+            for form_key in forms_for_learning:
+                lemma_counts[(form_key, upos)][lemma] += 1
+                feats_counts[(form_key, upos)][feats] += 1
 
-            if pron is not None and upos in {"DET", "PRON", "ADV"}:
-                pron_counts[(form, upos)][pron] += 1
+                if pron is not None and upos in {"DET", "PRON", "ADV"}:
+                    pron_counts[(form_key, upos)][pron] += 1
 
-                if lemma and lemma != "_":
-                    lemma_pron_counts[(lemma, upos)][pron] += 1
+        if pron is not None and upos in {"DET", "PRON", "ADV"}:
+            if lemma and lemma != "_":
+                lemma_pron_counts[(lemma, upos)][pron] += 1
 
     for gs, js in aligned_pairs:
         gold_tok = filter_gold_learning_tokens(gs["tokens"])

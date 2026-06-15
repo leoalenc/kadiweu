@@ -50,7 +50,7 @@
 # text_por = a mulher está feliz.
 1	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	3	dep	_	TokenRange=0:6
 2	ja	jaG	AUX	T	Aspect=Perf	3	aux	_	TokenRange=7:9
-3	ninitibeke	initibece	VERB	VB	_	0	root	_	SpaceAfter=No|StandardForm=ninitibece|TokenRange=10:20
+3	ninitibeke	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=ninitibece|TokenRange=10:20
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = van-data-6
@@ -156,7 +156,7 @@
 # text_por = aquele anzol do menino é na canoa.
 1	naGajo	niGijo	DET	D	PronType=Dem	2	det	_	TokenRange=0:6
 2	lomiigo	omiigo	NOUN	N$	Person[psor]=3	5	nsubj	_	TokenRange=7:14
-3	nigaanigawaanigi	nigaa	NOUN	N	_	5	dep	_	TokenRange=15:31
+3	nigaanigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	5	dep	_	TokenRange=15:31
 4	manitaGa	taGa	X	C+DAPL	_	5	dep	_	TokenRange=32:40
 5	niwatece	watece	NOUN	N	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=41:49
 6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=49:50
@@ -168,7 +168,7 @@
 # text_por_orig = aquele menino é na canoa do anzol
 # text_por = aquele menino é na canoa do anzol.
 1	niGijo	niGijo	DET	D	PronType=Dem	2	det	_	TokenRange=0:6
-2	niganigawaanigi	nigaanigi	NOUN	N	_	4	nsubj	_	StandardForm=nigaanigawaanigi|TokenRange=7:22
+2	niganigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	4	nsubj	_	StandardForm=nigaanigawaanigi|TokenRange=7:22
 3	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	dep	_	TokenRange=23:29
 4	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=30:38
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=38:39
@@ -180,7 +180,7 @@
 # text_por_orig = aquele menino é na canoa do anzol
 # text_por = aquele menino é na canoa do anzol.
 1	niGijo	niGijo	DET	D	PronType=Dem	2	det	_	TokenRange=0:6
-2	nigaanigawaanigi	nigaanigawaanigi	NOUN	N	_	5	nsubj	_	TokenRange=7:23
+2	nigaanigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	5	nsubj	_	TokenRange=7:23
 3-4	manitaGa	_	_	_	_	_	_	_	TokenRange=24:32
 3	me	me	SCONJ	C	_	5	dep	_	_
 4	anitaGa	anitaGa	X	DAPL	_	5	dep	_	_
