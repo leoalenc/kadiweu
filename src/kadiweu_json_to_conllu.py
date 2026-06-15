@@ -687,6 +687,7 @@ def infer_feats(
     tok: Dict[str, Any],
     upos: Optional[str] = None,
     surface_form: Optional[str] = None,
+    lemma_override: Optional[str] = None,
 ) -> str:
 
     feats: List[str] = []
@@ -749,7 +750,7 @@ def infer_feats(
                 feats.append(f"Person[psor]={person}")
 
     # Infer lemma before PronType lookup.
-    lemma = infer_lemma(lookup_form, tok)
+    lemma = lemma_override if lemma_override is not None else infer_lemma(lookup_form, tok)
 
     # PronType lookup hierarchy:
     # 1. form + UPOS: exceptional/manual override
@@ -1115,6 +1116,7 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
                 tok,
                 upos=upos,
                 surface_form=surface_form,
+                lemma_override=lemma,
             )
 
             if correction is not None and correction.get("feats"):
