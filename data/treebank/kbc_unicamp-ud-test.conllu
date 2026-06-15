@@ -532,7 +532,7 @@
 4-5	adakake	_	_	_	_	_	_	_	TokenRange=18:25
 4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
 5	dakake	dakake	ADJ	ADJ	_	0	root	_	_
-6	loojedi	loojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	SpaceAfter=No|TokenRange=26:33
+6	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	SpaceAfter=No|TokenRange=26:33
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=33:34
 
 # sent_id = hil-data-7
