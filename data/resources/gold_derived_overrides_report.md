@@ -7,8 +7,8 @@
 - UID-matched sentence pairs: **94**
 - Usable aligned sentence pairs: **91**
 - UID-matched but rejected: **3**
-- `lemma_overrides`: **121**
-- `form_feat_overrides`: **61**
+- `lemma_overrides`: **122**
+- `form_feat_overrides`: **62**
 - `prontype_overrides`: **40**
 - `lemma_prontype_overrides`: **6**
 - `tag_to_default_prontype`: **3**

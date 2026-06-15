@@ -10,7 +10,7 @@
 1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	liwatece	watece	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:12
 3	ja	jaG	AUX	T	Aspect=Perf	4	aux	_	TokenRange=13:15
-4	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=16:23
+4	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=16:23
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
 
 # sent_id = ped-gramm-2
@@ -49,7 +49,7 @@
 # text_por = A canoa está pesada.
 # text_eng = The canoe is heavy.
 1	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	2	nsubj	_	Gloss=canoe|MSeg=ni-watece|MGloss=ANT-canoe|TokenRange=0:8
-2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=9:16
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=9:16
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = ped-gramm-5
@@ -513,7 +513,7 @@
 1	Etogo	etogo	NOUN	N	Gender=Fem|Number=Sing	5	dislocated	_	TokenRange=0:5
 2-3	aneiwaGadi	_	_	_	_	_	_	_	TokenRange=6:16
 2	ane	ane	PRON	WPRO	PronType=Rel	3	nsubj	_	_
-3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	_
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	StandardForm=iwaaGadi|
 4-5	adakake	_	_	_	_	_	_	_	TokenRange=17:24
 4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
 5	dakake	dakake	ADJ	ADJ	_	0	root	_	_
@@ -528,7 +528,7 @@
 # text_por = A canoa pesada é barata.
 1	Etogo	etogo	NOUN	N	Gender=Fem|Number=Sing	5	dislocated	_	TokenRange=0:5
 2	ane	ane	PRON	WPRO	PronType=Rel	3	nsubj	_	TokenRange=6:9
-3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	TokenRange=10:17
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	StandardForm=iwaaGadi|TokenRange=10:17
 4-5	adakake	_	_	_	_	_	_	_	TokenRange=18:25
 4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
 5	dakake	dakake	ADJ	ADJ	_	0	root	_	_
@@ -661,7 +661,7 @@
 # text_por_orig = Ela está pesada
 # text_por = Ela está pesada.
 1	naGada	niGida	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:6
-2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:14
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=7:14
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = hil-data-20
@@ -671,7 +671,7 @@
 # text_por_orig = Ela está pesada.
 # text_por = Ela está pesada.
 1	naGadi	niGidi	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:6
-2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:14
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=7:14
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = hil-data-21
@@ -681,7 +681,7 @@
 # text_por_orig = Ela está pesada.
 # text_por = Ela está pesada.
 1	NaGana	niGina	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:6
-2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:14
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=7:14
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = hil-data-22
@@ -691,7 +691,7 @@
 # text_por_orig = Ela está é pesada.
 # text_por = Ela está é pesada.
 1	Ada	ida	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
-2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=4:11
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=4:11
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
 # sent_id = hil-data-23
@@ -701,7 +701,7 @@
 # text_por_orig = Ela está é pesada.
 # text_por = Ela está é pesada.
 1	Ani	ini	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
-2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=4:11
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=4:11
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
 # sent_id = hil-data-24
@@ -711,7 +711,7 @@
 # text_por_orig = Ela está é pesada.
 # text_por = Ela está é pesada.
 1	Adi	idi	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
-2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=4:11
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=4:11
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
 # sent_id = hil-data-25
@@ -805,7 +805,7 @@
 2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	5	nsubj	_	TokenRange=7:13
 3	eliodi	eliodi	ADV	Q	PronType=Ind	5	advmod	_	TokenRange=14:20
 4	me	me	SCONJ	C	_	5	mark	_	TokenRange=21:23
-5	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=24:31
+5	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=24:31
 6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = hil-data-36
@@ -816,7 +816,7 @@
 # text_por = Esta pedra está pesada.
 1	NaGani	niGini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
 2	wetiGa	wetiga	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=7:13
-3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=14:21
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=14:21
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = hil-data-37
@@ -827,7 +827,7 @@
 # text_por = Estas pedras estão pesadas.
 1	NiGinoa	niGina	DET	D	Number=Plur|PronType=Dem	2	det	_	TokenRange=0:7
 2	wetiadi	wetiGa	NOUN	N	Gender=Fem|Number=Plur	3	nsubj	_	TokenRange=8:15
-3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=16:23
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=16:23
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=23:24
 
 # sent_id = hil-data-38
@@ -838,7 +838,7 @@
 # text_por = Esta pedra é pesada.
 1	NaGani	niGini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
 2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=7:13
-3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=14:21
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=14:21
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = hil-data-39
@@ -850,7 +850,7 @@
 1	NaGani	niGini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
 2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	5	nsubj	_	TokenRange=7:13
 3	ane	ane	PRON	WPRO	PronType=Rel	4	nsubj	_	TokenRange=14:17
-4	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	2	acl:relcl	_	TokenRange=18:25
+4	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	2	acl:relcl	_	StandardForm=iwaaGadi|TokenRange=18:25
 5	eniteloco	eniteloco	VERB	VBAPL	Voice=Appl	0	root	_	TokenRange=26:35
 6	iGonagi	Gonagi	NOUN	N$	Number=Sing|Number[psor]=Sing|Person[psor]=1	5	obj	_	SpaceAfter=No|TokenRange=36:43
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=43:44
@@ -1035,7 +1035,7 @@
 # text_por_orig = ela está pesada / é pesada
 # text_por = ela está pesada / é pesada.
 1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=4:11
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=4:11
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
 # sent_id = van-data-24
@@ -1074,7 +1074,7 @@
 # text_por = estas pedras estão pesadas.
 1	niGidiwa	niGidi	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:8
 2	wetiadi	wetiGa	NOUN	N	Gender=Fem|Number=Plur	3	nsubj	_	TokenRange=9:16
-3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=17:24
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=17:24
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = van-data-39
@@ -1085,7 +1085,7 @@
 # text_por = estas pedras estão pesadas.
 1	idiwa	idi	DET	Q	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:5
 2	wetiadi	wetiGa	NOUN	N	Gender=Fem|Number=Plur	3	nsubj	_	TokenRange=6:13
-3	iwaGadi	waGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=14:21
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=14:21
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = van-data-40
