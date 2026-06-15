@@ -7,7 +7,7 @@
 - UID-matched sentence pairs: **93**
 - Usable aligned sentence pairs: **90**
 - UID-matched but rejected: **3**
-- `lemma_overrides`: **112**
+- `lemma_overrides`: **113**
 - `form_feat_overrides`: **58**
 - `prontype_overrides`: **37**
 - `lemma_prontype_overrides`: **27**
@@ -20,14 +20,13 @@
 - `{"gold_count": 6, "gold_forms": ["Etogo", "ane", "iwaGadi", "aG", "dakake", "loojedi"], "json_count": 5, "json_forms": ["Etogo", "ane", "iwaGadi", "adakake", "loojedi"], "json_path": "$.pages[0].sentences[5]", "sent_id": "hil-data-6", "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647", "source_file": "../data/dados-hil.json", "type": "token_count_mismatch"}`
 - `{"json_path": "$.pages[0].sentences[29]", "mismatches": [["niGijo", "nGijo"]], "sent_id": "van-data-30", "sent_uid": "0c7e64fb-f070-4faa-a12a-c110cdf4bf16", "source_file": "../data/van-data.json", "type": "token_form_mismatch"}`
 
-### ambiguous_lemmas (8)
-- `{"best": "nitibeci", "best_count": 1, "counts": {"ninitibeci": 1, "nitibece": 1, "nitibeci": 1}, "form": "Ninitibeci", "share": 0.3333, "total": 3, "upos": "VERB"}`
+### ambiguous_lemmas (7)
 - `{"best": "dakake", "best_count": 2, "counts": {"akake": 1, "dakake": 2}, "form": "dakake", "share": 0.6667, "total": 3, "upos": "ADJ"}`
 - `{"best": "eyodi", "best_count": 2, "counts": {"eyodi": 2, "iodi": 1}, "form": "eyodi", "share": 0.6667, "total": 3, "upos": "NOUN"}`
 - `{"best": "odajo", "best_count": 1, "counts": {"odaajo": 1, "odajo": 1}, "form": "lodajo", "share": 0.5, "total": 2, "upos": "NOUN"}`
 - `{"best": "omigo", "best_count": 1, "counts": {"lomigo": 1, "omigo": 1}, "form": "lomigo", "share": 0.5, "total": 2, "upos": "NOUN"}`
+- `{"best": "oojedi", "best_count": 1, "counts": {"loojedi": 1, "oojedi": 1}, "form": "loojedi", "share": 0.5, "total": 2, "upos": "NOUN"}`
 - `{"best": "niganaGacanajo", "best_count": 2, "counts": {"niganaGacanajo": 2, "niganagacanajo": 1}, "form": "niganaGacanajo", "share": 0.6667, "total": 3, "upos": "NOUN"}`
-- `{"best": "ninitibeci", "best_count": 2, "counts": {"ninitibeci": 2, "nitibece": 1, "nitibeci": 1}, "form": "ninitibeci", "share": 0.5, "total": 4, "upos": "VERB"}`
 - `{"best": "wetiGa", "best_count": 3, "counts": {"wetiGa": 3, "wetiga": 1}, "form": "wetiGa", "share": 0.75, "total": 4, "upos": "NOUN"}`
 
 ### ambiguous_feats (7)

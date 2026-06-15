@@ -479,7 +479,7 @@
 # text_por_orig = A mulher está feliz .
 # text_por = A mulher está feliz.
 1	Iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	2	nsubj	_	NounClass=Lo|StandardForm=iwaalo|TokenRange=0:5
-2	ninitibeci	nitibeci	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	Lemma=-initibece|SpaceAfter=No|TokenRange=6:16
+2	ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=ninitibece|SpaceAfter=No|TokenRange=6:16
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = hil-data-3
@@ -631,7 +631,7 @@
 # text_orig = Ninitibeci .
 # text_por_orig = Ela está feliz .
 # text_por = Ela está feliz.
-1	Ninitibeci	nitibeci	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardLemma=-initibece|TokenRange=0:10
+1	Ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=ninitibece|TokenRange=0:10
 2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=10:11
 
 # sent_id = hil-data-17
@@ -640,7 +640,7 @@
 # text_orig = ninitibeci naGada .
 # text_por_orig = Ela está feliz .
 # text_por = Ela está feliz.
-1	Ninitibeci	ninitibeci	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardLemma=-initibece|TokenRange=0:10
+1	Ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=ninitibece|TokenRange=0:10
 2	naGada	niGida	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No|TokenRange=11:17
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=17:18
 
@@ -650,7 +650,7 @@
 # text_orig = Ninitibeci naGadi .
 # text_por_orig = Ela está feliz .
 # text_por = Ela está feliz.
-1	Ninitibeci	nitibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:10
+1	Ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=Ninitibece|TokenRange=0:10
 2	naGadi	niGidi	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No|TokenRange=11:17
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=17:18
 
@@ -724,7 +724,7 @@
 2	eliodi	eliodi	ADV	Q	PronType=Ind	4	advmod	_	TokenRange=7:13
 3-4	meninitibeci	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=14:26
 3	me	me	SCONJ	C	_	4	mark	_	_
-4	ninitibeci	nitibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardLemma=-ini(tibece)
+4	ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=ninitibece
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = hil-data-26
@@ -765,7 +765,7 @@
 # text_orig = Ninitibigiwaji .
 # text_por_orig = Eles são felizes .
 # text_por = Eles são felizes.
-1	Ninitibigiwaji	nitibece	VERB	X	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:14
+1	Ninitibigiwaji	initibece	VERB	X	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:14
 2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = hil-data-33
@@ -1013,7 +1013,7 @@
 # text_por_orig = ela está feliz
 # text_por = ela está feliz.
 1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	ninitibeci	ninitibeci	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=4:14
+2	ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=ninitibece|SpaceAfter=No|TokenRange=4:14
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = van-data-23
@@ -1034,7 +1034,7 @@
 # text_por = ela é muito feliz.
 1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	TokenRange=0:3
 2	daGaxa	daGaxa	ADV	ADV	_	3	advmod	_	TokenRange=4:10
-3	ninitibeci	ninitibeci	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=11:21
+3	ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=ninitibece|TokenRange=11:21
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = van-data-30

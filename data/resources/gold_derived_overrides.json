@@ -86,7 +86,8 @@
     "NiGida": "niGida",
     "NiGijo": "niGijo",
     "NiGinoa": "niGina",
-    "Ninitibigiwaji": "nitibece",
+    "Ninitibeci": "initibece",
+    "Ninitibigiwaji": "initibece",
     "Pedilo": "pedilo",
     "Te": "te",
     "aG": "aG",
@@ -141,7 +142,6 @@
     "loigipodi": "oigi",
     "lojedi": "oojedi",
     "loligi": "oligi",
-    "loojedi": "loojedi",
     "looligi": "ooligi",
     "lotaGa": "otaGa",
     "lotiidi": "otiidi",
@@ -164,6 +164,7 @@
     "niganigi": "niganigi",
     "nigetedi": "getegi",
     "nigotaGa": "nigotaGa",
+    "ninitibeci": "initibece",
     "nioladi": "nioladi",
     "nioxoa": "nioxoa",
     "niwatece": "watece",
@@ -355,19 +356,6 @@
     "ambiguous_lemma_prontype": [],
     "ambiguous_lemmas": [
       {
-        "best": "nitibeci",
-        "best_count": 1,
-        "counts": {
-          "ninitibeci": 1,
-          "nitibece": 1,
-          "nitibeci": 1
-        },
-        "form": "Ninitibeci",
-        "share": 0.3333,
-        "total": 3,
-        "upos": "VERB"
-      },
-      {
         "best": "dakake",
         "best_count": 2,
         "counts": {
@@ -416,6 +404,18 @@
         "upos": "NOUN"
       },
       {
+        "best": "oojedi",
+        "best_count": 1,
+        "counts": {
+          "loojedi": 1,
+          "oojedi": 1
+        },
+        "form": "loojedi",
+        "share": 0.5,
+        "total": 2,
+        "upos": "NOUN"
+      },
+      {
         "best": "niganaGacanajo",
         "best_count": 2,
         "counts": {
@@ -426,19 +426,6 @@
         "share": 0.6667,
         "total": 3,
         "upos": "NOUN"
-      },
-      {
-        "best": "ninitibeci",
-        "best_count": 2,
-        "counts": {
-          "ninitibeci": 2,
-          "nitibece": 1,
-          "nitibeci": 1
-        },
-        "form": "ninitibeci",
-        "share": 0.5,
-        "total": 4,
-        "upos": "VERB"
       },
       {
         "best": "wetiGa",
