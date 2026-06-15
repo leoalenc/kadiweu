@@ -517,7 +517,7 @@
 4-5	adakake	_	_	_	_	_	_	_	TokenRange=17:24
 4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
 5	dakake	dakake	ADJ	ADJ	_	0	root	_	_
-6	lojedi	ojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	Lemma=loojedi|SpaceAfter=No|TokenRange=25:31
+6	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	StandardForm=loojedi|SpaceAfter=No|TokenRange=25:31
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = hil-data-6
@@ -597,7 +597,7 @@
 # text_por_alt = Aquele anzol do menino está na canoa.
 1	NaGajo	niGijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
 2	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	6	nsubj	_	Lemma=lomiigo|TokenRange=7:13
-3	niganigawanigi	niganigi	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing	2	nmod:poss	_	StandardForm=nigaanigawaanigi|StandardLemma=nigaanigi|TokenRange=14:28
+3	niganigawanigi	nigaanigi	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing	2	nmod:poss	_	StandardForm=nigaanigawaanigi|TokenRange=14:28
 4-5	madi	_	_	_	_	_	_	_	TokenRange=29:33
 4	me	me	SCONJ	C	_	6	mark	_	_
 5	adi	idi	DET	D	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
@@ -791,7 +791,7 @@
 # text_por_orig = Esta fotografia da criança é bonita .
 # text_por = Esta fotografia da criança é bonita.
 1	liwigo	wigo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=0:6
-2	niganigawanigi	niganigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	1	nmod:poss	_	StandardForm=nigaanigawaanigi|StandardLemma=nigaanigi|TokenRange=7:21
+2	niganigawanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	1	nmod:poss	_	StandardForm=nigaanigawaanigi|TokenRange=7:21
 3	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=22:33
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=33:34
 

@@ -168,7 +168,7 @@
 # text_por_orig = aquele menino é na canoa do anzol
 # text_por = aquele menino é na canoa do anzol.
 1	niGijo	niGijo	DET	D	PronType=Dem	2	det	_	TokenRange=0:6
-2	niganigawaanigi	niganigawaanigi	NOUN	N	_	4	nsubj	_	TokenRange=7:22
+2	niganigawaanigi	nigaanigi	NOUN	N	_	4	nsubj	_	StandardForm=nigaanigawaanigi|TokenRange=7:22
 3	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	dep	_	TokenRange=23:29
 4	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=30:38
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=38:39
