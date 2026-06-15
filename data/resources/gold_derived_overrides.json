@@ -2,12 +2,15 @@
   "form_feat_overrides": {
     "Eeyo": "Gender=Fem|Number=Sing|Person=1",
     "Etogo": "Gender=Fem|Number=Sing",
+    "Eyo": "Gender=Fem|Number=Sing|Person=1",
     "Gadodawa": "Gender=Fem,Masc|Number=Sing|Person[psor]=2",
     "Gawenigi": "Gender=Masc|Number=Sing|Person[psor]=2",
+    "Iwaalo": "Gender=Fem|Number=Sing",
     "LotaGa": "Gender=Masc|Number=Sing|Person[psor]=3",
     "Maria": "_",
     "NaGani": "Gender=Fem|Number=Sing",
     "NiGida": "Gender=Masc|Number=Sing",
+    "Ninitibeci": "Mood=Ind|Person=3|VerbForm=Fin",
     "aG": "Polarity=Neg",
     "adi": "Gender=Fem|Number=Sing",
     "ajo": "Gender=Fem|Number=Sing",
@@ -35,6 +38,7 @@
     "liwatece": "Gender=Fem|Number=Sing|Person[psor]=3",
     "liwenigi": "Gender=Masc|Number=Sing|Person[psor]=3",
     "liwigo": "Gender=Masc|Number=Sing|Person[psor]=3",
+    "lodajo": "Gender=Masc|Number=Sing|Person[psor]=3",
     "lodawa": "Gender=Fem,Masc|Number=Sing|Person[psor]=3",
     "lomigo": "Gender=Fem|Number=Sing|Person[psor]=3",
     "loojedi": "Gender=Masc|Number=Sing|Person[psor]=3",
@@ -47,8 +51,10 @@
     "napioi": "_",
     "nigaanigawaanigi": "Degree=Dim|Gender=Masc|Number=Sing",
     "niganaGacanajo": "Gender=Masc|Number=Sing",
+    "niganigawanigi": "Degree=Dim|Gender=Masc|Number=Sing",
     "nigotaGa": "Gender=Fem|Number=Sing",
     "ninitibece": "Mood=Ind|Person=3|VerbForm=Fin",
+    "ninitibeci": "Mood=Ind|Person=3|VerbForm=Fin",
     "nioladi": "Gender=Masc|Number=Sing|Person[psor]=3",
     "niwatece": "Gender=Fem|Number=Sing",
     "waca": "Gender=Fem|Number=Sing",
@@ -63,6 +69,7 @@
     "DapicoGo": "apicoGo",
     "Eeyo": "eyo",
     "Etogo": "etogo",
+    "Eyo": "eyo",
     "Eyodi": "eyodi",
     "Gadodawa": "odawa",
     "GanaaginaGa": "aaginaGa",
@@ -70,6 +77,7 @@
     "Ganioxoa": "nioxoa",
     "Ganixoa": "nixoa",
     "Gawenigi": "wenigi",
+    "Iwaalepodi": "iwaalo",
     "Iwaalo": "iwaalo",
     "João": "joão",
     "Libiniena": "binie",
@@ -83,6 +91,7 @@
     "NiGijo": "niGijo",
     "NiGinoa": "niGina",
     "Ninitibece": "initibece",
+    "Ninitibeci": "initibece",
     "Ninitibigiwaji": "initibece",
     "Pedilo": "pedilo",
     "Te": "te",
@@ -110,6 +119,7 @@
     "idei": "dei",
     "idiwa": "idi",
     "idoa": "ida",
+    "idowa": "ida",
     "ijo": "ijo",
     "ijowa": "ijo",
     "initaGa": "initaGa",
@@ -119,6 +129,7 @@
     "ipegitegi": "pegi",
     "iwaGadi": "waGadi",
     "iwaalo": "iwaalo",
+    "iwalepodi": "iwaalepodi",
     "ja": "jaG",
     "liGeladi": "Geladi",
     "libiniena": "binie",
@@ -132,10 +143,11 @@
     "liwenigi": "liwenigi",
     "liwigo": "wigo",
     "lodaajo": "odaajo",
-    "lodajo": "odajo",
     "lodawa": "odawa",
+    "lodowa": "odawa",
     "loigi": "oigi",
     "loigipodi": "oigi",
+    "lojedi": "oojedi",
     "loligi": "oligi",
     "looligi": "ooligi",
     "lotaGa": "otaGa",
@@ -153,13 +165,17 @@
     "niGida": "niGida",
     "niGidiwa": "niGidi",
     "niGidoa": "niGida",
+    "niGidowa": "niGida",
     "niGijo": "niGijo",
     "niGijoa": "niGijo",
     "nigaanigawaanigi": "nigaanigi",
+    "niganigawanigi": "nigaanigi",
     "niganigi": "niganigi",
     "nigetedi": "getegi",
     "nigotaGa": "nigotaGa",
     "ninitibece": "initibece",
+    "ninitibeci": "initibece",
+    "ninitibeke": "initibece",
     "nioladi": "nioladi",
     "nioxoa": "nioxoa",
     "niwatece": "watece",
@@ -170,33 +186,12 @@
     "wetiadi": "wetiGa"
   },
   "lemma_prontype_overrides": {
-    "ane\tPRON": "Rel",
-    "anitaGa\tDET": "Dem",
     "anitaGa\tPRON": "Dem",
     "digoida\tADV": "Dem",
-    "digoida\tDET": "Dem",
-    "ee\tPRON": "Prs",
-    "eliodi\tADV": "Ind",
-    "eliodi\tDET": "Ind",
-    "eyo\tPRON": "Prs",
-    "ica\tDET": "Dem",
-    "ida\tDET": "Dem",
-    "ida\tPRON": "Dem",
-    "idi\tDET": "Dem",
-    "idi\tPRON": "Dem",
-    "ijo\tDET": "Dem",
-    "ini\tPRON": "Dem",
     "initaGa\tPRON": "Dem",
-    "napioi\tPRON": "Rel",
-    "niGida\tDET": "Dem",
     "niGida\tPRON": "Dem",
-    "niGidi\tDET": "Dem",
     "niGidi\tPRON": "Dem",
-    "niGijo\tDET": "Dem",
-    "niGijo\tPRON": "Dem",
-    "niGina\tDET": "Dem",
-    "niGina\tPRON": "Dem",
-    "niGini\tDET": "Dem"
+    "niGijo\tPRON": "Dem"
   },
   "metadata": {
     "aligned_sentence_count": 91,
@@ -227,6 +222,7 @@
     "Adi\tPRON": "Dem",
     "Ani\tPRON": "Dem",
     "Eeyo\tPRON": "Prs",
+    "Eyo\tPRON": "Prs",
     "NaGajo\tDET": "Dem",
     "NaGajo\tPRON": "Dem",
     "NaGana\tPRON": "Dem",
@@ -247,6 +243,7 @@
     "ica\tDET": "Dem",
     "idiwa\tDET": "Dem",
     "idoa\tDET": "Dem",
+    "idowa\tDET": "Dem",
     "ijo\tDET": "Dem",
     "ijowa\tDET": "Dem",
     "initaGa\tPRON": "Dem",
@@ -258,6 +255,7 @@
     "niGida\tDET": "Dem",
     "niGidiwa\tDET": "Dem",
     "niGidoa\tDET": "Dem",
+    "niGidowa\tDET": "Dem",
     "niGijo\tDET": "Dem",
     "niGijoa\tDET": "Dem"
   },
@@ -394,6 +392,18 @@
           "iwaalo": 1
         },
         "form": "iwaalepodi",
+        "share": 0.5,
+        "total": 2,
+        "upos": "NOUN"
+      },
+      {
+        "best": "odajo",
+        "best_count": 1,
+        "counts": {
+          "odaajo": 1,
+          "odajo": 1
+        },
+        "form": "lodajo",
         "share": 0.5,
         "total": 2,
         "upos": "NOUN"
@@ -641,12 +651,12 @@
         "upos": "NOUN"
       },
       {
-        "best": "Gender=Fem|Number=Sing",
+        "best": "Gender=Fem|Number=Plur",
         "best_count": 1,
         "counts": {
-          "Gender=Fem|Number=Sing": 1
+          "Gender=Fem|Number=Plur": 1
         },
-        "form": "Iwaalo",
+        "form": "Iwaalepodi",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
@@ -932,6 +942,17 @@
         "counts": {
           "Gender=Masc|Number=Plur|PronType=Dem": 1
         },
+        "form": "idowa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|PronType=Dem": 1
+        },
         "form": "ijowa",
         "share": 1.0,
         "total": 1,
@@ -971,6 +992,17 @@
         "upos": "VERB"
       },
       {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "_": 1
+        },
+        "form": "iwalepodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
         "best": "Gender=Masc|Number=Sing|Person[psor]=3",
         "best_count": 1,
         "counts": {
@@ -982,12 +1014,12 @@
         "upos": "NOUN"
       },
       {
-        "best": "Gender=Masc|Number=Sing|Person[psor]=3",
+        "best": "Gender=Fem,Masc|Number=Sing|Person[psor]=3",
         "best_count": 1,
         "counts": {
-          "Gender=Masc|Number=Sing|Person[psor]=3": 1
+          "Gender=Fem,Masc|Number=Sing|Person[psor]=3": 1
         },
-        "form": "lodajo",
+        "form": "lodowa",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
@@ -1010,6 +1042,17 @@
           "Gender=Masc|Number=Plur|Person[psor]=3": 1
         },
         "form": "loigipodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing|Person[psor]=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|Person[psor]=3": 1
+        },
+        "form": "lojedi",
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
@@ -1114,6 +1157,17 @@
         "upos": "DET"
       },
       {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|PronType=Dem": 1
+        },
+        "form": "niGidowa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
         "best": "Gender=Masc|Number=Sing",
         "best_count": 1,
         "counts": {
@@ -1156,6 +1210,17 @@
         "share": 1.0,
         "total": 1,
         "upos": "NOUN"
+      },
+      {
+        "best": "Mood=Ind|Person=3|VerbForm=Fin",
+        "best_count": 1,
+        "counts": {
+          "Mood=Ind|Person=3|VerbForm=Fin": 1
+        },
+        "form": "ninitibeke",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
       },
       {
         "best": "Gender=Masc|Number=Sing|Person[psor]=3",

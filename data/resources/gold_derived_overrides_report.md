@@ -7,10 +7,10 @@
 - UID-matched sentence pairs: **94**
 - Usable aligned sentence pairs: **91**
 - UID-matched but rejected: **3**
-- `lemma_overrides`: **111**
-- `form_feat_overrides`: **55**
-- `prontype_overrides`: **37**
-- `lemma_prontype_overrides`: **27**
+- `lemma_overrides`: **121**
+- `form_feat_overrides`: **61**
+- `prontype_overrides`: **40**
+- `lemma_prontype_overrides`: **6**
 - `tag_to_default_prontype`: **3**
 ## Review items
 
@@ -20,10 +20,11 @@
 - `{"gold_count": 6, "gold_forms": ["Etogo", "ane", "iwaGadi", "aG", "dakake", "loojedi"], "json_count": 5, "json_forms": ["Etogo", "ane", "iwaGadi", "adakake", "loojedi"], "json_path": "$.pages[0].sentences[5]", "sent_id": "hil-data-6", "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647", "source_file": "../data/dados-hil.json", "type": "token_count_mismatch"}`
 - `{"json_path": "$.pages[0].sentences[29]", "mismatches": [["niGijo", "nGijo"]], "sent_id": "van-data-30", "sent_uid": "0c7e64fb-f070-4faa-a12a-c110cdf4bf16", "source_file": "../data/van-data.json", "type": "token_form_mismatch"}`
 
-### ambiguous_lemmas (7)
+### ambiguous_lemmas (8)
 - `{"best": "dakake", "best_count": 2, "counts": {"akake": 1, "dakake": 2}, "form": "dakake", "share": 0.6667, "total": 3, "upos": "ADJ"}`
 - `{"best": "eyodi", "best_count": 2, "counts": {"eyodi": 2, "iodi": 1}, "form": "eyodi", "share": 0.6667, "total": 3, "upos": "NOUN"}`
 - `{"best": "iwaalo", "best_count": 1, "counts": {"iwaalepodi": 1, "iwaalo": 1}, "form": "iwaalepodi", "share": 0.5, "total": 2, "upos": "NOUN"}`
+- `{"best": "odajo", "best_count": 1, "counts": {"odaajo": 1, "odajo": 1}, "form": "lodajo", "share": 0.5, "total": 2, "upos": "NOUN"}`
 - `{"best": "omigo", "best_count": 1, "counts": {"lomigo": 1, "omigo": 1}, "form": "lomigo", "share": 0.5, "total": 2, "upos": "NOUN"}`
 - `{"best": "oojedi", "best_count": 2, "counts": {"loojedi": 1, "oojedi": 2}, "form": "loojedi", "share": 0.6667, "total": 3, "upos": "NOUN"}`
 - `{"best": "niganaGacanajo", "best_count": 2, "counts": {"niganaGacanajo": 2, "niganagacanajo": 1}, "form": "niganaGacanajo", "share": 0.6667, "total": 3, "upos": "NOUN"}`
@@ -51,7 +52,7 @@ _None_
 ### low_evidence_lemmas (0)
 _None_
 
-### low_evidence_feats (59)
+### low_evidence_feats (64)
 - `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Ada", "share": 1.0, "total": 1, "upos": "PRON"}`
 - `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Adi", "share": 1.0, "total": 1, "upos": "PRON"}`
 - `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "Ani", "share": 1.0, "total": 1, "upos": "PRON"}`
@@ -61,13 +62,13 @@ _None_
 - `{"best": "Gender=Fem|Number=Sing|Person[psor]=2", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|Person[psor]=2": 1}, "form": "GanigotGa", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "Gender=Masc|Number=Sing|Person[psor]=2", "best_count": 1, "counts": {"Gender=Masc|Number=Sing|Person[psor]=2": 1}, "form": "Ganioxoa", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "Gender=Masc|Number=Sing|Person[psor]=2", "best_count": 1, "counts": {"Gender=Masc|Number=Sing|Person[psor]=2": 1}, "form": "Ganixoa", "share": 1.0, "total": 1, "upos": "NOUN"}`
-- `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing": 1}, "form": "Iwaalo", "share": 1.0, "total": 1, "upos": "NOUN"}`
+- `{"best": "Gender=Fem|Number=Plur", "best_count": 1, "counts": {"Gender=Fem|Number=Plur": 1}, "form": "Iwaalepodi", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "Gender=Masc", "best_count": 1, "counts": {"Gender=Masc": 1}, "form": "João", "share": 1.0, "total": 1, "upos": "PROPN"}`
 - `{"best": "Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3", "best_count": 1, "counts": {"Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3": 1}, "form": "Libiniena", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3", "best_count": 1, "counts": {"Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3": 1}, "form": "Libinienigi", "share": 1.0, "total": 1, "upos": "NOUN"}`
 - `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "NaGajo", "share": 1.0, "total": 1, "upos": "DET"}`
 - `{"best": "Gender=Fem|Number=Sing", "best_count": 1, "counts": {"Gender=Fem|Number=Sing|PronType=Dem": 1}, "form": "NaGajo", "share": 1.0, "total": 1, "upos": "PRON"}`
-- ... and 44 more
+- ... and 49 more
 
 ### low_evidence_prontype (0)
 _None_
