@@ -71,10 +71,15 @@
 },
   "lemma_overrides": {
   "jaGa": "jaG"},
+
   "upos_overrides": {
   "ee\tD": "PRON",
   "eeyo\tD": "PRON"},
-  "form_feat_overrides": {},
+
+  "form_feat_overrides": {
+  "ninitibece": "Mood=Ind|Person=3|VerbForm=Fin"
+},
+
   "prontype_overrides": {
     "naGajo\tPRON": "Dem",
     "eliodi\tDET": "Ind",

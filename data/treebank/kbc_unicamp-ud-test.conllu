@@ -899,6 +899,18 @@
 3	libiniena	binie	NOUN	N$	Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=10:19
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=19:20
 
+# sent_id = van-data-5
+# sent_uid = e3b84bb7-7e6e-474c-9ad6-c6a47b409a5a
+# text = iwaalo ja ninitibeke.
+# text_orig = iwaalo ja ninitibeke
+# text_por_orig = a mulher está feliz
+# text_por = a mulher está feliz.
+1	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	3	dep	_	TokenRange=0:6
+2	ja	jaG	AUX	T	Aspect=Perf	3	aux	_	TokenRange=7:9
+3	ninitibeke	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=ninitibece|TokenRange=10:20
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+
+
 # sent_id = van-data-6
 # sent_uid = 3e518fdb-d852-41e5-87a4-f8778597c2a1
 # text = lotaGa GanaaginaGa libinienaGa.
