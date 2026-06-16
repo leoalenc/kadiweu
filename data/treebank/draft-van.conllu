@@ -155,11 +155,13 @@
 # text_por_orig = aquele anzol do menino é na canoa
 # text_por = aquele anzol do menino é na canoa.
 1	naGajo	niGijo	DET	D	PronType=Dem	2	det	_	TokenRange=0:6
-2	lomiigo	omiigo	NOUN	N$	Person[psor]=3	5	nsubj	_	TokenRange=7:14
-3	nigaanigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	5	dep	_	TokenRange=15:31
-4	manitaGa	taGa	X	C+DAPL	_	5	dep	_	TokenRange=32:40
-5	niwatece	watece	NOUN	N	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=41:49
-6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=49:50
+2	lomiigo	omiigo	NOUN	N$	Person[psor]=3	3	nsubj	_	TokenRange=7:14
+3	nigaanigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	0	root	_	TokenRange=15:31
+4-5	manitaGa	_	_	_	_	_	_	_	TokenRange=32:40
+4	me	me	SCONJ	C	_	3	dep	_	_
+5	anitaGa	anitaGa	X	DAPL	_	3	dep	_	_
+6	niwatece	watece	NOUN	N	Gender=Fem|Number=Sing	3	dep	_	SpaceAfter=No|TokenRange=41:49
+7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=49:50
 
 # sent_id = van-data-15
 # sent_uid = 4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7
@@ -324,13 +326,13 @@
 
 # sent_id = van-data-29
 # sent_uid = a0ab1cad-f01e-49bb-8f31-5edf4fa4c102
-# text = nGijo ninitibigiwaji.
-# text_orig = nGijo ninitibigiwaji
+# text = niGijo ninitibigiwaji.
+# text_orig = niGijo ninitibigiwaji
 # text_por_orig = eles são felizes
 # text_por = eles são felizes.
-1	nGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	StandardForm=niGijo|TokenRange=0:5
-2	ninitibigiwaji	initibece	VERB	VB	_	0	root	_	SpaceAfter=No|TokenRange=6:20
-3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
+1	niGijo	niGijo	DET	D	PronType=Dem	2	det	_	TokenRange=0:6
+2	ninitibigiwaji	initibece	VERB	VB	_	0	root	_	SpaceAfter=No|TokenRange=7:21
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = van-data-30
 # sent_uid = 0c7e64fb-f070-4faa-a12a-c110cdf4bf16
@@ -771,7 +773,7 @@
 # text_orig = jipacaGataGagitiwaji
 # text_por_orig = estamos perto de vocês
 # text_por = estamos perto de vocês.
-1	jipacaGataGagitiwaji	jipacaGataGagitiwaji	VERB	VBAPL	Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:20
+1	jipacaGataGagitiwaji	pegi	VERB	VBAPL	Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:20
 2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = van-data-66
