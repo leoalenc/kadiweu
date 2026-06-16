@@ -513,7 +513,7 @@
 1	Etogo	etogo	NOUN	N	Gender=Fem|Number=Sing	5	dislocated	_	TokenRange=0:5
 2-3	aneiwaGadi	_	_	_	_	_	_	_	TokenRange=6:16
 2	ane	ane	PRON	WPRO	PronType=Rel	3	nsubj	_	_
-3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	StandardForm=iwaaGadi|
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	StandardForm=iwaaGadi
 4-5	adakake	_	_	_	_	_	_	_	TokenRange=17:24
 4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
 5	dakake	dakake	ADJ	ADJ	_	0	root	_	_
@@ -910,7 +910,6 @@
 3	ninitibeke	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=ninitibece|TokenRange=10:20
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
-
 # sent_id = van-data-6
 # sent_uid = 3e518fdb-d852-41e5-87a4-f8778597c2a1
 # text = lotaGa GanaaginaGa libinienaGa.
@@ -933,6 +932,18 @@
 3	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=16:27
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=27:28
 
+# sent_id = van-data-8
+# sent_uid = 947061b4-7b73-4612-8aa8-0af0e04cbc85
+# text = niwatece iwaGadi noxilece lojetedi.
+# text_orig = niwatece iwaGadi noxilece lojetedi
+# text_por_orig = a pesada canoa está barata
+# text_por = a pesada canoa está barata.
+1	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	2	nsubj	_	TokenRange=0:8
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=iwaaGadi|TokenRange=9:16
+3	noxilece	oxilece	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	2	parataxis	_	TokenRange=17:25
+4	lojetedi	oojedi	NOUN	N$	Gender=Masc|Number=Plur|Person[psor]=3	3	nsubj	_	SpaceAfter=No|TokenRange=26:34
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=34:35
+
 # sent_id = van-data-10
 # sent_uid = 0c38eab8-c6b0-4f02-bf05-27ea6285fe70
 # text = Gawenigi eliodi me libinienigi.
@@ -952,9 +963,23 @@
 # text_por_orig = aquela comida dela é bonita
 # text_por = aquela comida dela é bonita.
 1	niGida	niGida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
-2	liwenigi	liwenigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=7:15
+2	liwenigi	wenigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=7:15
 3	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=16:27
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = van-data-12
+# sent_uid = a1e15803-1e5e-481f-8137-a84beac6cbcc
+# text = niGida niwenigi daGaxa me dakake loojedi.
+# text_orig = niGida niwenigi daGaxa me dakake loojedi
+# text_por_orig = aquela comida é muito cara
+# text_por = aquela comida é muito cara.
+1	niGida	niGida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	niwenigi	wenigi	NOUN	N$	Gender=Masc|Number=Sing	5	dislocated	_	TokenRange=7:15
+3	daGaxa	daGaxa	ADV	Q	_	5	advmod	_	TokenRange=16:22
+4	me	me	SCONJ	C	_	5	mark	_	TokenRange=23:25
+5	dakake	akake	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	TokenRange=26:32
+6	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	SpaceAfter=No|TokenRange=33:40
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=40:41
 
 # sent_id = van-data-17
 # sent_uid = 86f5c128-e931-4443-90cc-2359748ed69f
