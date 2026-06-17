@@ -412,8 +412,16 @@ def learn_overrides(
     # lemma + UPOS, preferred learned table
     lemma_pron_counts: Dict[Tuple[str, str], Counter] = defaultdict(Counter)
 
-    # source tag + UPOS, broad fallback
+    # source tag + UPOS, broad fallback for PronType
     tag_pron_counts: Dict[Tuple[str, str], Counter] = defaultdict(Counter)
+
+    # source tag -> UPOS, broad fallback for UPOS
+    tag_upos_counts: Dict[str, Counter] = defaultdict(Counter)
+
+    # form + source tag -> UPOS, specific UPOS override
+    form_upos_counts: Dict[Tuple[str, str], Counter] = defaultdict(Counter)
+
+
     review: Dict[str, List[JsonDict]] = {
         "ambiguous_lemmas": [],
         "ambiguous_feats": [],
@@ -460,6 +468,14 @@ def learn_overrides(
         json_tok = filter_json_alignment_tokens(js["tokens"])
 
         for gt, jt in zip(gold_tok, json_tok):
+            upos = gt["upos"]
+            raw_tag = jt["raw_tag"]
+            form = normalize_override_form(str(jt["form"]).replace("@", ""))
+
+            if raw_tag:
+                tag_upos_counts[raw_tag][upos] += 1
+                form_upos_counts[(form, raw_tag)][upos] += 1
+
             pron = extract_prontype(gt["feats"])
             if pron is None:
                 continue
@@ -476,7 +492,9 @@ def learn_overrides(
     prontype_overrides: Dict[str, str] = {}
     lemma_prontype_overrides: Dict[str, str] = {}
     tag_to_default_prontype: Dict[str, str] = {}
-
+    upos_overrides: Dict[str, str] = {}
+    tag_to_upos: Dict[str, str] = {}
+   
     for (form, upos), counter in sorted(lemma_counts.items()):
         value, best, total, share = most_common_with_share(counter)
         rec = {
@@ -575,12 +593,54 @@ def learn_overrides(
         else:
             tag_to_default_prontype[json_key(raw_tag, upos)] = value
 
+    for (form, raw_tag), counter in sorted(form_upos_counts.items()):
+        value, best, total, share = most_common_with_share(counter)
+
+        rec = {
+            "form": form,
+            "raw_tag": raw_tag,
+            "counts": dict(counter),
+            "best": value,
+            "best_count": best,
+            "total": total,
+            "share": round(share, 4),
+        }
+
+        if total < tag_pron_min_count:
+            review.setdefault("low_evidence_upos", []).append(rec)
+        elif share < tag_pron_min_share:
+            review.setdefault("ambiguous_upos", []).append(rec)
+        else:
+            upos_overrides[json_key(form, raw_tag)] = value
+
+
+    for raw_tag, counter in sorted(tag_upos_counts.items()):
+        value, best, total, share = most_common_with_share(counter)
+
+        rec = {
+            "raw_tag": raw_tag,
+            "counts": dict(counter),
+            "best": value,
+            "best_count": best,
+            "total": total,
+            "share": round(share, 4),
+        }
+
+        if total < tag_pron_min_count:
+            review.setdefault("low_evidence_tag_to_upos", []).append(rec)
+        elif share < tag_pron_min_share:
+            review.setdefault("ambiguous_tag_to_upos", []).append(rec)
+        else:
+            tag_to_upos[raw_tag] = value
+
     return {
         "lemma_overrides": dict(sorted(lemma_overrides.items())),
         "form_feat_overrides": dict(sorted(form_feat_overrides.items())),
         "prontype_overrides": dict(sorted(prontype_overrides.items())),
         "lemma_prontype_overrides": dict(sorted(lemma_prontype_overrides.items())),
         "tag_to_default_prontype": dict(sorted(tag_to_default_prontype.items())),
+        "upos_overrides": dict(sorted(upos_overrides.items())),
+        "tag_to_upos": dict(sorted(tag_to_upos.items())),
         "review": review,
     }
 

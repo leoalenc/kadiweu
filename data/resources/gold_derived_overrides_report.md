@@ -11,7 +11,7 @@
 - `form_feat_overrides`: **111**
 - `prontype_overrides`: **36**
 - `lemma_prontype_overrides`: **6**
-- `tag_to_default_prontype`: **3**
+- `tag_to_default_prontype`: **9**
 ## Review items
 
 ### json_alignment_issues (4)
@@ -47,8 +47,8 @@ _None_
 ### ambiguous_lemma_prontype (0)
 _None_
 
-### ambiguous_tag_to_prontype (0)
-_None_
+### ambiguous_tag_to_prontype (1)
+- `{"best": "Ind", "best_count": 1, "counts": {"Dem": 1, "Ind": 1}, "raw_tag": "Q", "share": 0.5, "total": 2, "upos": "DET"}`
 
 ### low_evidence_lemmas (0)
 _None_
@@ -62,14 +62,8 @@ _None_
 ### low_evidence_lemma_prontype (0)
 _None_
 
-### low_evidence_tag_to_prontype (7)
-- `{"best": "Dem", "best_count": 2, "counts": {"Dem": 2}, "raw_tag": "D", "share": 1.0, "total": 2, "upos": "ADV"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "raw_tag": "DAPL", "share": 1.0, "total": 1, "upos": "DET"}`
-- `{"best": "Dem", "best_count": 2, "counts": {"Dem": 2}, "raw_tag": "DAPL", "share": 1.0, "total": 2, "upos": "PRON"}`
-- `{"best": "Prs", "best_count": 3, "counts": {"Prs": 3}, "raw_tag": "PRO", "share": 1.0, "total": 3, "upos": "PRON"}`
-- `{"best": "Dem", "best_count": 1, "counts": {"Dem": 1}, "raw_tag": "PRO$", "share": 1.0, "total": 1, "upos": "PRON"}`
-- `{"best": "Ind", "best_count": 2, "counts": {"Ind": 2}, "raw_tag": "Q", "share": 1.0, "total": 2, "upos": "ADV"}`
-- `{"best": "Ind", "best_count": 1, "counts": {"Dem": 1, "Ind": 1}, "raw_tag": "Q", "share": 0.5, "total": 2, "upos": "DET"}`
+### low_evidence_tag_to_prontype (0)
+_None_
 
 ## Notes
 

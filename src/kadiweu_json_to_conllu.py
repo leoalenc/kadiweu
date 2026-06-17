@@ -72,6 +72,8 @@ UPOS_OVERRIDES: Dict[Tuple[str, str], str] = {}
 
 FORM_CORRECTIONS: Dict[str, Dict[str, str]] = {}
 
+TAG_TO_UPOS: Dict[str, str] = {}
+
 def load_override_resource(
     path: Path,
 ) -> Tuple[
@@ -116,6 +118,8 @@ def load_override_resource(
 }
     form_corrections = data.get("form_corrections", {})
 
+    tag_to_upos = data.get("tag_to_upos", {})
+
     return (
         lemma_overrides,
         form_feat_overrides,
@@ -124,6 +128,7 @@ def load_override_resource(
         tag_to_default_prontype,
         upos_overrides,
         form_corrections,
+        tag_to_upos
     )
 
 def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
@@ -145,6 +150,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
     global TAG_TO_DEFAULT_PRONTYPE
     global UPOS_OVERRIDES
     global FORM_CORRECTIONS
+    global TAG_TO_UPOS
 
     LEMMA_OVERRIDES = {}
     FORM_FEAT_OVERRIDES = {}
@@ -153,6 +159,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
     TAG_TO_DEFAULT_PRONTYPE = {}
     UPOS_OVERRIDES = {}
     FORM_CORRECTIONS = {}
+    TAG_TO_UPOS = {}
 
     candidate_paths = [
         DEFAULT_BASE_OVERRIDES_PATH,
@@ -182,6 +189,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
             tag_to_default_prontype,
             upos_overrides,
             form_corrections,
+            tag_to_upos
         ) = load_override_resource(path)
 
         LEMMA_OVERRIDES.update(lemma_overrides)
@@ -191,6 +199,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
         TAG_TO_DEFAULT_PRONTYPE.update(tag_to_default_prontype)
         UPOS_OVERRIDES.update(upos_overrides)
         FORM_CORRECTIONS.update(form_corrections)
+        TAG_TO_UPOS.update(tag_to_upos)
 
     # normalize keys once after all layers have been merged
     LEMMA_OVERRIDES = canonicalize_override_map(LEMMA_OVERRIDES, "LEMMA_OVERRIDES")
@@ -784,6 +793,9 @@ def infer_feats(
     return "_"
 
 def infer_upos(tag: str) -> str:
+    override = TAG_TO_UPOS.get(tag)
+    if override is not None:
+        return override
     return UPOS_MAP.get(tag, "X")
 
 def upos_override_candidates(form: str, tag: str):
