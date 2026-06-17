@@ -171,6 +171,18 @@ def build_ng_deictic_form_map(
                 "number": "Plur",
                 "deictic_root": root,
                 **dict(gloss_info),
+            }
+            
+            out[standard_form] = {
+                "standard_form": standard_form,
+                "standard_lemma": standard_form,
+                "upos": "DET",
+                "xpos": "D",
+                "feats": f"Gender={gender}|Number=Sing|PronType=Dem",
+                "gender": gender,
+                "number": "Sing",
+                "deictic_root": root,
+                **dict(gloss_info),
         }
 
     return out

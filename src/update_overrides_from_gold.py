@@ -42,6 +42,13 @@ DEFAULT_JSON_PATH = PROJECT_ROOT / "data" / "gramatica-pedagogica.json"
 DEFAULT_OUT_JSON = PROJECT_ROOT / "data" / "resources" / "gold_derived_overrides.json"
 DEFAULT_OUT_REPORT = PROJECT_ROOT / "data" / "resources" / "gold_derived_overrides_report.md"
 
+def normalize_override_form(form: Any) -> str:
+    if form is None:
+        return ""
+    s = str(form).strip()
+    if not s:
+        return ""
+    return s[:1].lower() + s[1:]
 
 def safe_get(d: Any, *path: str, default=None):
     cur = d
@@ -423,8 +430,10 @@ def learn_overrides(
 
     for sent in gold_sentences:
         for tok in filter_gold_learning_tokens(sent["tokens"]):
-            form = tok["form"]
+            form = normalize_override_form(tok["form"])
             standard_form = extract_standard_form(tok.get("misc", ""))
+            if standard_form:
+                standard_form = normalize_override_form(standard_form)
 
             forms_for_learning = [form]
             if standard_form and standard_form != form:

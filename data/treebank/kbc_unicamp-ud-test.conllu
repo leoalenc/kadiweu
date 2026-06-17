@@ -578,7 +578,7 @@
 # text_orig = NaGajo lomigo Pedilo idei madi niwatece
 # text_por_orig = Aquele anzol do Pedro está na canoa .
 # text_por = Aquele anzol do Pedro está na canoa.
-1	NaGajo	niGijo	PRON	PRO$	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+1	NaGajo	niGijo	DET	PRO$	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
 2	lomigo	omigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	nsubj	_	Lemma=lomiigo|TokenRange=7:13
 3	Pedilo	pedilo	PROPN	NPR	_	2	nmod:poss	_	TokenRange=14:20
 4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=21:25

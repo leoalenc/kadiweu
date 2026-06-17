@@ -695,8 +695,9 @@ def infer_feats(
     candidate_forms = []
 
     for f in (surface_form, lookup_form):
-        if f and f not in candidate_forms:
-            candidate_forms.append(f)
+        for cand in (f, normalize_form_for_lookup(f) if f else None):
+            if cand and cand not in candidate_forms:
+                candidate_forms.append(cand)
 
     # Start from full form-level feature override if present,
     # but do NOT return early: PronType may still need to be added
@@ -756,7 +757,12 @@ def infer_feats(
     # 1. form + UPOS: exceptional/manual override
     # 2. lemma + UPOS: preferred learned default
     # 3. source tag + UPOS: broad fallback
-    pron_type = PRONTYPE_OVERRIDES.get((lookup_form, upos))
+    pron_type = None
+    
+    for f in candidate_forms:
+        pron_type = PRONTYPE_OVERRIDES.get((f, upos))
+        if pron_type is not None:
+            break
 
     if pron_type is None:
         pron_type = LEMMA_PRONTYPE_OVERRIDES.get((lemma, upos))
@@ -780,16 +786,30 @@ def infer_feats(
 def infer_upos(tag: str) -> str:
     return UPOS_MAP.get(tag, "X")
 
+def upos_override_candidates(form: str, tag: str):
+    forms = []
+    for f in (form, normalize_form_for_lookup(form) if form else None):
+        if f and f not in forms:
+            forms.append(f)
+
+    for f in forms:
+        yield (f, tag)
+
+
+
 def infer_upos_for_form(form: str, tag: str) -> str:
-    override = UPOS_OVERRIDES.get((form, tag))
-    if override is not None:
-        return override
+    for key in upos_override_candidates(form, tag):
+        override = UPOS_OVERRIDES.get(key)
+        if override is not None:
+            return override
     return infer_upos(tag)
 
+
 def apply_upos_override(form: str, tag: str, upos: str) -> str:
-    override = UPOS_OVERRIDES.get((form, tag))
-    if override is not None:
-        return override
+    for key in upos_override_candidates(form, tag):
+        override = UPOS_OVERRIDES.get(key)
+        if override is not None:
+            return override
     return upos
 
 def get_form_correction(form: str) -> Optional[Dict[str, str]]:
