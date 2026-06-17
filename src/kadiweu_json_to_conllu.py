@@ -72,6 +72,8 @@ UPOS_OVERRIDES: Dict[Tuple[str, str], str] = {}
 
 FORM_CORRECTIONS: Dict[str, Dict[str, str]] = {}
 
+TAG_TO_UPOS: Dict[str, str] = {}
+
 def load_override_resource(
     path: Path,
 ) -> Tuple[
@@ -116,6 +118,8 @@ def load_override_resource(
 }
     form_corrections = data.get("form_corrections", {})
 
+    tag_to_upos = data.get("tag_to_upos", {})
+
     return (
         lemma_overrides,
         form_feat_overrides,
@@ -124,6 +128,7 @@ def load_override_resource(
         tag_to_default_prontype,
         upos_overrides,
         form_corrections,
+        tag_to_upos
     )
 
 def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
@@ -145,6 +150,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
     global TAG_TO_DEFAULT_PRONTYPE
     global UPOS_OVERRIDES
     global FORM_CORRECTIONS
+    global TAG_TO_UPOS
 
     LEMMA_OVERRIDES = {}
     FORM_FEAT_OVERRIDES = {}
@@ -153,6 +159,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
     TAG_TO_DEFAULT_PRONTYPE = {}
     UPOS_OVERRIDES = {}
     FORM_CORRECTIONS = {}
+    TAG_TO_UPOS = {}
 
     candidate_paths = [
         DEFAULT_BASE_OVERRIDES_PATH,
@@ -182,6 +189,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
             tag_to_default_prontype,
             upos_overrides,
             form_corrections,
+            tag_to_upos
         ) = load_override_resource(path)
 
         LEMMA_OVERRIDES.update(lemma_overrides)
@@ -191,6 +199,7 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
         TAG_TO_DEFAULT_PRONTYPE.update(tag_to_default_prontype)
         UPOS_OVERRIDES.update(upos_overrides)
         FORM_CORRECTIONS.update(form_corrections)
+        TAG_TO_UPOS.update(tag_to_upos)
 
     # normalize keys once after all layers have been merged
     LEMMA_OVERRIDES = canonicalize_override_map(LEMMA_OVERRIDES, "LEMMA_OVERRIDES")
@@ -758,7 +767,7 @@ def infer_feats(
     # 2. lemma + UPOS: preferred learned default
     # 3. source tag + UPOS: broad fallback
     pron_type = None
-    
+
     for f in candidate_forms:
         pron_type = PRONTYPE_OVERRIDES.get((f, upos))
         if pron_type is not None:
@@ -784,6 +793,9 @@ def infer_feats(
     return "_"
 
 def infer_upos(tag: str) -> str:
+    override = TAG_TO_UPOS.get(tag)
+    if override is not None:
+        return override
     return UPOS_MAP.get(tag, "X")
 
 def upos_override_candidates(form: str, tag: str):
@@ -1039,16 +1051,9 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
 
         standard_form = None
         if correction is not None:
-            standard_form = correction["standard_form"]
-            lookup_form = standard_form
-            morphology_correction = get_standard_form_correction(lookup_form)
-
-            if morphology_correction is not None:
-                enriched = dict(morphology_correction)
-                enriched.update(correction)
-                correction = enriched
-        else:
-            correction = get_form_correction(lookup_form)
+            standard_form = correction.get("standard_form")
+            if standard_form:
+                lookup_form = standard_form
 
         warn_on_composite_tag_without_mwt(tok)
 
@@ -1124,7 +1129,14 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
             if correction is not None:
                 upos = correction.get("upos", infer_upos(gtag))
                 gtag = correction.get("xpos", gtag)
-                lemma = correction.get("standard_lemma", lookup_form)
+
+                lemma = LEMMA_OVERRIDES.get(lookup_form)
+                if lemma is None:
+                    lemma = LEMMA_OVERRIDES.get(surface_form)
+                if lemma is None:
+                    lemma = correction.get("standard_lemma")
+                if lemma is None:
+                    lemma = infer_lemma(lookup_form, tok)
             else:
                 upos = infer_upos(gtag)
                 upos = apply_upos_override(lookup_form, gtag, upos)

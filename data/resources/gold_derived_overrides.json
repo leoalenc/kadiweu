@@ -248,7 +248,7 @@
       "lemma_min_share": 0.8,
       "pron_min_count": 1,
       "pron_min_share": 0.9,
-      "tag_pron_min_count": 5,
+      "tag_pron_min_count": 1,
       "tag_pron_min_share": 0.9
     },
     "uid_matched_sentence_count": 96,
@@ -515,7 +515,130 @@
       }
     ],
     "ambiguous_prontype": [],
-    "ambiguous_tag_to_prontype": [],
+    "ambiguous_tag_to_prontype": [
+      {
+        "best": "Ind",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1,
+          "Ind": 1
+        },
+        "raw_tag": "Q",
+        "share": 0.5,
+        "total": 2,
+        "upos": "DET"
+      }
+    ],
+    "ambiguous_tag_to_upos": [
+      {
+        "best": "DET",
+        "best_count": 48,
+        "counts": {
+          "ADV": 2,
+          "DET": 48,
+          "PRON": 8
+        },
+        "raw_tag": "D",
+        "share": 0.8276,
+        "total": 58
+      },
+      {
+        "best": "PRON",
+        "best_count": 2,
+        "counts": {
+          "DET": 1,
+          "PRON": 2
+        },
+        "raw_tag": "DAPL",
+        "share": 0.6667,
+        "total": 3
+      },
+      {
+        "best": "ADV",
+        "best_count": 5,
+        "counts": {
+          "ADV": 5,
+          "DET": 2
+        },
+        "raw_tag": "Q",
+        "share": 0.7143,
+        "total": 7
+      }
+    ],
+    "ambiguous_upos": [
+      {
+        "best": "DET",
+        "best_count": 2,
+        "counts": {
+          "DET": 2,
+          "PRON": 1
+        },
+        "form": "adi",
+        "raw_tag": "D",
+        "share": 0.6667,
+        "total": 3
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1,
+          "PRON": 1
+        },
+        "form": "anitaGa",
+        "raw_tag": "DAPL",
+        "share": 0.5,
+        "total": 2
+      },
+      {
+        "best": "ADV",
+        "best_count": 2,
+        "counts": {
+          "ADV": 2,
+          "DET": 2
+        },
+        "form": "digoida",
+        "raw_tag": "D",
+        "share": 0.5,
+        "total": 4
+      },
+      {
+        "best": "ADV",
+        "best_count": 4,
+        "counts": {
+          "ADV": 4,
+          "DET": 1
+        },
+        "form": "eliodi",
+        "raw_tag": "Q",
+        "share": 0.8,
+        "total": 5
+      },
+      {
+        "best": "PRON",
+        "best_count": 1,
+        "counts": {
+          "DET": 1,
+          "PRON": 1
+        },
+        "form": "naGana",
+        "raw_tag": "D",
+        "share": 0.5,
+        "total": 2
+      },
+      {
+        "best": "ADJ",
+        "best_count": 2,
+        "counts": {
+          "ADJ": 2,
+          "NOUN": 2
+        },
+        "form": "napioi",
+        "raw_tag": "N",
+        "share": 0.5,
+        "total": 4
+      }
+    ],
     "json_alignment_issues": [
       {
         "gold_count": 7,
@@ -611,90 +734,139 @@
     "low_evidence_lemma_prontype": [],
     "low_evidence_lemmas": [],
     "low_evidence_prontype": [],
-    "low_evidence_tag_to_prontype": [
-      {
-        "best": "Dem",
-        "best_count": 2,
-        "counts": {
-          "Dem": 2
-        },
-        "raw_tag": "D",
-        "share": 1.0,
-        "total": 2,
-        "upos": "ADV"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "raw_tag": "DAPL",
-        "share": 1.0,
-        "total": 1,
-        "upos": "DET"
-      },
-      {
-        "best": "Dem",
-        "best_count": 2,
-        "counts": {
-          "Dem": 2
-        },
-        "raw_tag": "DAPL",
-        "share": 1.0,
-        "total": 2,
-        "upos": "PRON"
-      },
-      {
-        "best": "Prs",
-        "best_count": 3,
-        "counts": {
-          "Prs": 3
-        },
-        "raw_tag": "PRO",
-        "share": 1.0,
-        "total": 3,
-        "upos": "PRON"
-      },
-      {
-        "best": "Dem",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1
-        },
-        "raw_tag": "PRO$",
-        "share": 1.0,
-        "total": 1,
-        "upos": "PRON"
-      },
-      {
-        "best": "Ind",
-        "best_count": 2,
-        "counts": {
-          "Ind": 2
-        },
-        "raw_tag": "Q",
-        "share": 1.0,
-        "total": 2,
-        "upos": "ADV"
-      },
-      {
-        "best": "Ind",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1,
-          "Ind": 1
-        },
-        "raw_tag": "Q",
-        "share": 0.5,
-        "total": 2,
-        "upos": "DET"
-      }
-    ]
+    "low_evidence_tag_to_prontype": []
   },
   "tag_to_default_prontype": {
+    "D\tADV": "Dem",
     "D\tDET": "Dem",
     "D\tPRON": "Dem",
+    "DAPL\tDET": "Dem",
+    "DAPL\tPRON": "Dem",
+    "PRO\tPRON": "Prs",
+    "PRO$\tPRON": "Dem",
+    "Q\tADV": "Ind",
     "WPRO\tPRON": "Rel"
+  },
+  "tag_to_upos": {
+    "ADJ": "ADJ",
+    "ADV": "ADV",
+    "C": "SCONJ",
+    "N": "NOUN",
+    "N$": "NOUN",
+    "NEG": "PART",
+    "NPR": "PROPN",
+    "PRO": "PRON",
+    "PRO$": "PRON",
+    "T": "AUX",
+    "VB": "VERB",
+    "VBAPL": "VERB",
+    "WPRO": "PRON"
+  },
+  "upos_overrides": {
+    "aG\tNEG": "PART",
+    "ada\tD": "PRON",
+    "ajo\tD": "DET",
+    "ane\tWPRO": "PRON",
+    "ani\tD": "PRON",
+    "daGa\tC": "SCONJ",
+    "daGaxa\tADV": "ADV",
+    "daGaxa\tQ": "ADV",
+    "dakake\tADJ": "ADJ",
+    "dakake\tVB": "VERB",
+    "dapico\tVB": "VERB",
+    "dapicoGo\tVB": "VERB",
+    "dibixodi\tN": "NOUN",
+    "dineigi\tN": "NOUN",
+    "ee\tPRO": "PRON",
+    "eniteloco\tVBAPL": "VERB",
+    "etadi\tVB": "VERB",
+    "eyo\tPRO": "PRON",
+    "eyodi\tN$": "NOUN",
+    "gadodawa\tN$": "NOUN",
+    "ganaaginaGa\tN$": "NOUN",
+    "ganigotGa\tN$": "NOUN",
+    "ganioxoa\tN$": "NOUN",
+    "ganixoa\tN$": "NOUN",
+    "gawenigi\tN$": "NOUN",
+    "iGeladi\tN$": "NOUN",
+    "iGonagi\tN$": "NOUN",
+    "ica\tD": "DET",
+    "ica\tQ": "DET",
+    "ideaGi\tVB": "VERB",
+    "idei\tVB": "VERB",
+    "idiwa\tD": "DET",
+    "idowa\tD": "DET",
+    "ijo\tD": "DET",
+    "ijowa\tD": "DET",
+    "initaGa\tDAPL": "PRON",
+    "ipegetege\tVBAPL": "VERB",
+    "ipegitaGagi\tVBAPL": "VERB",
+    "ipegitege\tVBAPL": "VERB",
+    "ipegitegi\tVBAPL": "VERB",
+    "iwaGadi\tVB": "VERB",
+    "iwaalepodi\tN": "NOUN",
+    "iwaalo\tN": "NOUN",
+    "iwalepodi\tN": "NOUN",
+    "ja\tT": "AUX",
+    "joão\tNPR": "PROPN",
+    "liGeladi\tN$": "NOUN",
+    "libiniena\tN$": "NOUN",
+    "libinienaGa\tN$": "NOUN",
+    "libinienigi\tN$": "NOUN",
+    "libinienigipi\tN$": "NOUN",
+    "lideGegi\tN$": "NOUN",
+    "lidi\tN$": "NOUN",
+    "lionigipi\tN$": "NOUN",
+    "liwatece\tN$": "NOUN",
+    "liwenigi\tN$": "NOUN",
+    "liwigo\tN$": "NOUN",
+    "lodajo\tN$": "NOUN",
+    "lodawa\tN$": "NOUN",
+    "lodowa\tN": "NOUN",
+    "loigi\tN$": "NOUN",
+    "loigipodi\tN$": "NOUN",
+    "lojetedi\tN$": "NOUN",
+    "loligi\tN$": "NOUN",
+    "lomigo\tN$": "NOUN",
+    "loojedi\tN$": "NOUN",
+    "looligi\tN$": "NOUN",
+    "lotaGa\tN$": "NOUN",
+    "lotiidi\tN$": "NOUN",
+    "maria\tNPR": "PROPN",
+    "me\tC": "SCONJ",
+    "nGijo\tD": "DET",
+    "naGada\tD": "PRON",
+    "naGadi\tD": "PRON",
+    "naGajo\tD": "DET",
+    "naGajo\tPRO$": "PRON",
+    "naGani\tD": "DET",
+    "naigi\tN": "NOUN",
+    "napioi\tADJ": "ADJ",
+    "niGida\tD": "DET",
+    "niGidiwa\tD": "DET",
+    "niGidowa\tD": "DET",
+    "niGijo\tD": "DET",
+    "niGijoa\tD": "DET",
+    "niGinoa\tD": "DET",
+    "niganaGacanajo\tN": "NOUN",
+    "niganigawanigi\tN": "NOUN",
+    "niganigi\tN": "NOUN",
+    "nigetedi\tN": "NOUN",
+    "nigotaGa\tN": "NOUN",
+    "ninitibeci\tVB": "VERB",
+    "ninitibeke\tVB": "VERB",
+    "ninitibigiwaji\tN": "VERB",
+    "nioladi\tN": "NOUN",
+    "nioxoa\tN$": "NOUN",
+    "niwatece\tN$": "NOUN",
+    "niwenigi\tN$": "NOUN",
+    "niwigo\tN$": "NOUN",
+    "noxilece\tVB": "VERB",
+    "pedilo\tNPR": "PROPN",
+    "te\tVB": "VERB",
+    "waca\tN": "NOUN",
+    "weiigi\tN": "NOUN",
+    "wetiGa\tN": "NOUN",
+    "wetiadi\tN": "NOUN"
   }
 }
