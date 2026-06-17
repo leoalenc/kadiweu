@@ -1038,7 +1038,7 @@
 # text_orig = iwalepodi ja libinienigipi
 # text_por_orig = as mulheres estão bonitas
 # text_por = as mulheres estão bonitas.
-1	iwalepodi	iwaalepodi	NOUN	N	_	3	nsubj	_	StandardForm=iwaalepodi|TokenRange=0:9
+1	iwalepodi	iwaalo	NOUN	N	_	3	nsubj	_	StandardForm=iwaalepodi|TokenRange=0:9
 2	ja	jaG	AUX	T	Aspect=Perf	3	aux	_	TokenRange=10:12
 3	libinienigipi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=13:26
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27

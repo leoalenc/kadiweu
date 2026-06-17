@@ -46,11 +46,11 @@
     },
     "lojedi": {
       "standard_form": "loojedi",
-      "standard_lemma": "loojedi"
+      "standard_lemma": "oojedi"
     },
     "lodejedi": {
       "standard_form": "lojetedi",
-      "standard_lemma": "lojetedi"
+      "standard_lemma": "oojedi"
     },
     "ninitibeke": {
       "standard_form": "ninitibece",
@@ -67,7 +67,11 @@
       "lotidi": { 
         "standard_form": "lotiidi",
         "standard_lemma": "otiidi"
-      }
+      },
+      "noatece": { 
+        "standard_form": "niwatece",
+        "standard_lemma": "watece"
+      },
 },
   "lemma_overrides": {
   "jaGa": "jaG"},

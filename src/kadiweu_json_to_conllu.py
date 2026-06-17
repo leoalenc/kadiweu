@@ -758,7 +758,7 @@ def infer_feats(
     # 2. lemma + UPOS: preferred learned default
     # 3. source tag + UPOS: broad fallback
     pron_type = None
-    
+
     for f in candidate_forms:
         pron_type = PRONTYPE_OVERRIDES.get((f, upos))
         if pron_type is not None:
@@ -1039,16 +1039,9 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
 
         standard_form = None
         if correction is not None:
-            standard_form = correction["standard_form"]
-            lookup_form = standard_form
-            morphology_correction = get_standard_form_correction(lookup_form)
-
-            if morphology_correction is not None:
-                enriched = dict(morphology_correction)
-                enriched.update(correction)
-                correction = enriched
-        else:
-            correction = get_form_correction(lookup_form)
+            standard_form = correction.get("standard_form")
+            if standard_form:
+                lookup_form = standard_form
 
         warn_on_composite_tag_without_mwt(tok)
 
@@ -1124,7 +1117,14 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
             if correction is not None:
                 upos = correction.get("upos", infer_upos(gtag))
                 gtag = correction.get("xpos", gtag)
-                lemma = correction.get("standard_lemma", lookup_form)
+
+                lemma = LEMMA_OVERRIDES.get(lookup_form)
+                if lemma is None:
+                    lemma = LEMMA_OVERRIDES.get(surface_form)
+                if lemma is None:
+                    lemma = correction.get("standard_lemma")
+                if lemma is None:
+                    lemma = infer_lemma(lookup_form, tok)
             else:
                 upos = infer_upos(gtag)
                 upos = apply_upos_override(lookup_form, gtag, upos)

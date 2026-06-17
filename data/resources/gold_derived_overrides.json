@@ -159,8 +159,9 @@
     "ipegitegi": "pegi",
     "iwaGadi": "waaGadi",
     "iwaaGadi": "waaGadi",
+    "iwaalepodi": "iwaalo",
     "iwaalo": "iwaalo",
-    "iwalepodi": "iwaalepodi",
+    "iwalepodi": "iwaalo",
     "ja": "jaG",
     "joão": "joão",
     "liGeladi": "Geladi",
@@ -415,18 +416,6 @@
         "form": "eyodi",
         "share": 0.75,
         "total": 4,
-        "upos": "NOUN"
-      },
-      {
-        "best": "iwaalo",
-        "best_count": 1,
-        "counts": {
-          "iwaalepodi": 1,
-          "iwaalo": 1
-        },
-        "form": "iwaalepodi",
-        "share": 0.5,
-        "total": 2,
         "upos": "NOUN"
       },
       {

@@ -7,7 +7,7 @@
 - UID-matched sentence pairs: **96**
 - Usable aligned sentence pairs: **93**
 - UID-matched but rejected: **3**
-- `lemma_overrides`: **108**
+- `lemma_overrides`: **109**
 - `form_feat_overrides`: **111**
 - `prontype_overrides`: **36**
 - `lemma_prontype_overrides`: **6**
@@ -20,10 +20,9 @@
 - `{"gold_count": 6, "gold_forms": ["Etogo", "ane", "iwaGadi", "aG", "dakake", "loojedi"], "json_count": 5, "json_forms": ["Etogo", "ane", "iwaGadi", "adakake", "loojedi"], "json_path": "$.pages[0].sentences[5]", "sent_id": "hil-data-6", "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647", "source_file": "../data/dados-hil.json", "type": "token_count_mismatch"}`
 - `{"json_path": "$.pages[0].sentences[29]", "mismatches": [["niGijo", "nGijo"]], "sent_id": "van-data-30", "sent_uid": "0c7e64fb-f070-4faa-a12a-c110cdf4bf16", "source_file": "../data/van-data.json", "type": "token_form_mismatch"}`
 
-### ambiguous_lemmas (10)
+### ambiguous_lemmas (9)
 - `{"best": "dakake", "best_count": 2, "counts": {"akake": 1, "dakake": 2}, "form": "dakake", "share": 0.6667, "total": 3, "upos": "ADJ"}`
 - `{"best": "eyodi", "best_count": 3, "counts": {"eyodi": 3, "iodi": 1}, "form": "eyodi", "share": 0.75, "total": 4, "upos": "NOUN"}`
-- `{"best": "iwaalo", "best_count": 1, "counts": {"iwaalepodi": 1, "iwaalo": 1}, "form": "iwaalepodi", "share": 0.5, "total": 2, "upos": "NOUN"}`
 - `{"best": "liwenigi", "best_count": 1, "counts": {"liwenigi": 1, "wenigi": 1}, "form": "liwenigi", "share": 0.5, "total": 2, "upos": "NOUN"}`
 - `{"best": "odajo", "best_count": 1, "counts": {"odaajo": 1, "odajo": 1}, "form": "lodajo", "share": 0.5, "total": 2, "upos": "NOUN"}`
 - `{"best": "omigo", "best_count": 1, "counts": {"lomigo": 1, "omigo": 1}, "form": "lomigo", "share": 0.5, "total": 2, "upos": "NOUN"}`
