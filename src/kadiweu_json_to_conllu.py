@@ -1166,8 +1166,14 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
                 if lemma is None:
                     lemma = infer_lemma(lookup_form, tok)
             else:
-                upos = infer_upos(gtag)
-                upos = apply_upos_override(lookup_form, gtag, upos)
+                upos = FORM_TO_UPOS.get(lookup_form)
+                if upos is None:
+                    upos = infer_upos(gtag)
+                    upos = apply_upos_override(lookup_form, gtag, upos)
+
+                if gtag == "X":
+                    gtag = FORM_TO_XPOS.get(lookup_form, gtag)
+
                 lemma = infer_lemma(lookup_form, tok)
 
             feats = infer_feats(

@@ -82,6 +82,7 @@
 
   "upos_overrides": {
   "ee\tD": "PRON",
+  "anitaGa\tDAPL": "DET",
   "eeyo\tD": "PRON"},
 
   "form_feat_overrides": {

@@ -1198,9 +1198,43 @@
 # text_orig = ijowa nigetedi liwigo libinienaGa
 # text_por_orig = estes ovos da fotografia dela estão bonitos
 # text_por = estes ovos da fotografia dela estão bonitos.
-1	ijowa	ijo	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:5
-2	nigetedi	getegi	NOUN	N	Gender=Masc|Number=Plur	4	nsubj	_	StandardLemma=ligetegi|TokenRange=6:14
+1	ijowa	ijo	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	StandardForm=ijoa|TokenRange=0:5
+2	nigetedi	getegi	NOUN	N	Gender=Masc|Number=Plur	4	nsubj	_	TokenRange=6:14
 3	liwigo	wigo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nmod:poss	_	TokenRange=15:21
 4	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=22:33
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=33:34
+
+# sent_id = van-data-49
+# sent_uid = 889846ee-66df-4c8f-88d1-e89d3619eb1e
+# text = eteyo ina.
+# text_orig = eteyo ina
+# text_por_orig = eu estou aqui
+# text_por = eu estou aqui.
+1	eteyo	et	VERB	VB	Gender=Fem|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	StandardForm=eteeyo|TokenRange=0:5
+2	ina	na	PRON	D	Gender=Masc|Number=Sing|PronType=Dem	1	det	_	SpaceAfter=No|TokenRange=6:9
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=9:10
+
+# sent_id = van-data-50
+# sent_uid = e7f4ab65-14d7-44f5-a197-c99c4ab173cd
+# text = etee manitaGa.
+# text_orig = etee manitaGa
+# text_por_orig = eu estou com ela
+# text_por = eu estou com ela.
+1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+2-3	manitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
+2	me	me	SCONJ	C	_	3	mark	_	_
+3	anitaGa	anitaGa	PRON	DAPL	Gender=Fem|Number=Sing|PronType=Dem	1	obj	_	Case=Com
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
+
+# sent_id = van-data-51
+# sent_uid = 7aa17dd7-2c26-4df9-8f90-65d8d58e2c59
+# text = etee minitaGa.
+# text_orig = etee minitaGa
+# text_por_orig = eu estou com ele
+# text_por = eu estou com ele.
+1	etee	VB	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+2-3	minitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
+2	me	me	SCONJ	C	_	3	mark	_	_
+3	initaGa	initaGa	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	Case=Com
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
 

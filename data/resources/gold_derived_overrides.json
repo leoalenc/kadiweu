@@ -21,6 +21,9 @@
     "eliodi": "_",
     "eniteloco": "Voice=Appl",
     "etadi": "Gender=Fem|Person=3",
+    "etee": "Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin",
+    "eteeyo": "Gender=Fem|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin",
+    "eteyo": "Gender=Fem|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin",
     "etogo": "Gender=Fem|Number=Sing",
     "eyo": "Gender=Fem|Number=Sing|Person=1",
     "gadodawa": "Gender=Fem,Masc|Number=Sing|Person[psor]=2",
@@ -38,7 +41,9 @@
     "idoa": "Gender=Masc|Number=Plur",
     "idowa": "Gender=Masc|Number=Plur",
     "ijo": "Gender=Masc|Number=Sing",
+    "ijoa": "Gender=Masc|Number=Plur",
     "ijowa": "Gender=Masc|Number=Plur",
+    "ina": "Gender=Masc|Number=Sing",
     "initaGa": "Gender=Masc|Number=Sing",
     "ipegetege": "Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
     "ipegitaGagi": "Mood=Ind|Number[obj]=Sing|Person[erg]=3|Person[obj]=2|VerbForm=Fin|Voice=Appl",
@@ -91,6 +96,7 @@
     "niGinoa": "Number=Plur",
     "nigaanigawaanigi": "Degree=Dim|Gender=Masc|Number=Sing",
     "niganaGacanajo": "Gender=Masc|Number=Sing",
+    "niganigawaanigi": "Degree=Dim|Gender=Masc|Number=Sing",
     "niganigawanigi": "Degree=Dim|Gender=Masc|Number=Sing",
     "niganigi": "Gender=Masc|Number=Sing",
     "nigetedi": "Gender=Masc|Number=Plur",
@@ -104,8 +110,10 @@
     "niwatece": "Gender=Fem|Number=Sing",
     "niwenigi": "Gender=Masc|Number=Sing",
     "niwigo": "Gender=Masc|Number=Sing",
+    "noatece": "Gender=Fem|Number=Sing",
     "noxilece": "Mood=Ind|Person[erg]=3|VerbForm=Fin",
     "pedilo": "_",
+    "pedro": "_",
     "te": "Mood=Ind|VerbForm=Fin",
     "waca": "Gender=Fem|Number=Sing",
     "weiigi": "Gender=Masc|Number=Sing",
@@ -129,6 +137,9 @@
     "eeyo": "PRON",
     "eniteloco": "VERB",
     "etadi": "VERB",
+    "etee": "VERB",
+    "eteeyo": "VERB",
+    "eteyo": "VERB",
     "etogo": "NOUN",
     "eyo": "PRON",
     "eyodi": "NOUN",
@@ -147,7 +158,9 @@
     "idoa": "DET",
     "idowa": "DET",
     "ijo": "DET",
+    "ijoa": "DET",
     "ijowa": "DET",
+    "ina": "PRON",
     "initaGa": "PRON",
     "ipegetege": "VERB",
     "ipegitaGagi": "VERB",
@@ -181,6 +194,7 @@
     "lojetedi": "NOUN",
     "loligi": "NOUN",
     "lomigo": "NOUN",
+    "lomiigo": "NOUN",
     "loojedi": "NOUN",
     "looligi": "NOUN",
     "lotaGa": "NOUN",
@@ -202,6 +216,7 @@
     "niGinoa": "DET",
     "nigaanigawaanigi": "NOUN",
     "niganaGacanajo": "NOUN",
+    "niganigawaanigi": "NOUN",
     "niganigawanigi": "NOUN",
     "niganigi": "NOUN",
     "nigetedi": "NOUN",
@@ -215,8 +230,10 @@
     "niwatece": "NOUN",
     "niwenigi": "NOUN",
     "niwigo": "NOUN",
+    "noatece": "NOUN",
     "noxilece": "VERB",
     "pedilo": "PROPN",
+    "pedro": "PROPN",
     "te": "VERB",
     "waca": "NOUN",
     "weiigi": "NOUN",
@@ -241,6 +258,9 @@
     "eeyo": "PRO",
     "eniteloco": "VBAPL",
     "etadi": "VB",
+    "etee": "VB",
+    "eteeyo": "VB",
+    "eteyo": "VB",
     "etogo": "N",
     "eyo": "PRO",
     "eyodi": "N$",
@@ -259,7 +279,9 @@
     "idoa": "D",
     "idowa": "D",
     "ijo": "D",
+    "ijoa": "D",
     "ijowa": "D",
+    "ina": "D",
     "initaGa": "DAPL",
     "ipegetege": "VBAPL",
     "ipegitaGagi": "VBAPL",
@@ -293,6 +315,7 @@
     "lojetedi": "N$",
     "loligi": "N$",
     "lomigo": "N$",
+    "lomiigo": "N$",
     "loojedi": "N$",
     "looligi": "N$",
     "lotaGa": "N$",
@@ -314,6 +337,7 @@
     "niGijoa": "D",
     "niGinoa": "D",
     "niganaGacanajo": "N",
+    "niganigawaanigi": "N",
     "niganigi": "N",
     "nigetedi": "N",
     "nigotaGa": "N",
@@ -322,11 +346,12 @@
     "ninitibeke": "VB",
     "ninitibigiwaji": "X",
     "nioxoa": "N$",
-    "niwatece": "N$",
     "niwenigi": "N$",
     "niwigo": "N$",
+    "noatece": "N$",
     "noxilece": "VB",
     "pedilo": "NPR",
+    "pedro": "NPR",
     "te": "VB",
     "waca": "N",
     "weiigi": "N",
@@ -351,12 +376,12 @@
     "dineigi": "dineigi",
     "dowediteloco": "dowediteloco",
     "ee": "ee",
-    "eeyo": "eyo",
     "eliodi": "eliodi",
     "eniteloco": "eniteloco",
     "etadi": "etidi",
+    "eteeyo": "et",
+    "eteyo": "et",
     "etogo": "etogo",
-    "eyo": "eyo",
     "gadodawa": "odawa",
     "ganaaginaGa": "aaginaGa",
     "ganigotGa": "nigota",
@@ -372,7 +397,9 @@
     "idoa": "ida",
     "idowa": "ida",
     "ijo": "ijo",
+    "ijoa": "ijo",
     "ijowa": "ijo",
+    "ina": "na",
     "initaGa": "initaGa",
     "ipegetege": "pege",
     "ipegitaGagi": "pegi",
@@ -403,6 +430,7 @@
     "lojedi": "oojedi",
     "lojetedi": "oojedi",
     "loligi": "oligi",
+    "lomiigo": "omiigo",
     "looligi": "ooligi",
     "lotaGa": "otaGa",
     "lotiidi": "otiidi",
@@ -425,6 +453,7 @@
     "niGijoa": "niGijo",
     "niGinoa": "niGina",
     "nigaanigawaanigi": "nigaanigi",
+    "niganigawaanigi": "nigaanigi",
     "niganigawanigi": "nigaanigi",
     "niganigi": "niganigi",
     "nigetedi": "getegi",
@@ -437,8 +466,10 @@
     "nioxoa": "nioxoa",
     "niwatece": "watece",
     "niwigo": "wigo",
+    "noatece": "watece",
     "noxilece": "oxilece",
     "pedilo": "pedilo",
+    "pedro": "pedro",
     "te": "te",
     "waca": "waca",
     "weiigi": "weiigi",
@@ -448,15 +479,16 @@
     "anitaGa\tPRON": "Dem",
     "digoida\tADV": "Dem",
     "initaGa\tPRON": "Dem",
+    "na\tPRON": "Dem",
     "niGida\tPRON": "Dem",
     "niGidi\tPRON": "Dem",
     "niGijo\tPRON": "Dem"
   },
   "metadata": {
-    "aligned_sentence_count": 93,
+    "aligned_sentence_count": 100,
     "alignment_rejected_sentence_count": 3,
     "gold_file": "../data/treebank/kbc_unicamp-ud-test.conllu",
-    "gold_sentence_count": 96,
+    "gold_sentence_count": 103,
     "json_files": [
       "../data/gramatica-pedagogica.json",
       "../data/dados-hil.json",
@@ -473,8 +505,8 @@
       "tag_pron_min_count": 1,
       "tag_pron_min_share": 0.9
     },
-    "uid_matched_sentence_count": 96,
-    "usable_aligned_sentence_count": 93
+    "uid_matched_sentence_count": 103,
+    "usable_aligned_sentence_count": 100
   },
   "prontype_overrides": {
     "ada\tPRON": "Dem",
@@ -497,7 +529,9 @@
     "idoa\tDET": "Dem",
     "idowa\tDET": "Dem",
     "ijo\tDET": "Dem",
+    "ijoa\tDET": "Dem",
     "ijowa\tDET": "Dem",
+    "ina\tPRON": "Dem",
     "initaGa\tPRON": "Dem",
     "naGada\tPRON": "Dem",
     "naGadi\tPRON": "Dem",
@@ -601,6 +635,18 @@
         "upos": "NOUN"
       },
       {
+        "best": "Gender=Fem|Number=Sing|Person[psor]=3",
+        "best_count": 2,
+        "counts": {
+          "Gender=Fem|Number=Sing|Person[psor]=3": 2,
+          "Person[psor]=3": 1
+        },
+        "form": "lomiigo",
+        "share": 0.6667,
+        "total": 3,
+        "upos": "NOUN"
+      },
+      {
         "best": "Number=Plur|Person[psor]=3",
         "best_count": 1,
         "counts": {
@@ -627,14 +673,14 @@
       },
       {
         "best": "DET",
-        "best_count": 1,
+        "best_count": 3,
         "counts": {
-          "DET": 1,
-          "PRON": 1
+          "DET": 3,
+          "PRON": 2
         },
         "form": "anitaGa",
-        "share": 0.5,
-        "total": 2
+        "share": 0.6,
+        "total": 5
       },
       {
         "best": "ADJ",
@@ -671,14 +717,14 @@
       },
       {
         "best": "DET",
-        "best_count": 2,
+        "best_count": 4,
         "counts": {
-          "DET": 2,
+          "DET": 4,
           "PRON": 1
         },
         "form": "naGajo",
-        "share": 0.6667,
-        "total": 3
+        "share": 0.8,
+        "total": 5
       },
       {
         "best": "PRON",
@@ -749,15 +795,15 @@
         "total": 5
       },
       {
-        "best": "PRO$",
-        "best_count": 2,
+        "best": "D",
+        "best_count": 3,
         "counts": {
-          "D": 1,
+          "D": 3,
           "PRO$": 2
         },
         "form": "naGajo",
-        "share": 0.6667,
-        "total": 3
+        "share": 0.6,
+        "total": 5
       },
       {
         "best": "ADJ",
@@ -771,15 +817,15 @@
         "total": 5
       },
       {
-        "best": "N$",
-        "best_count": 1,
+        "best": "N",
+        "best_count": 4,
         "counts": {
-          "N": 1,
+          "N": 4,
           "N$": 1
         },
         "form": "nigaanigawaanigi",
-        "share": 0.5,
-        "total": 2
+        "share": 0.8,
+        "total": 5
       },
       {
         "best": "N$",
@@ -802,6 +848,17 @@
         "form": "nioladi",
         "share": 0.6667,
         "total": 3
+      },
+      {
+        "best": "N$",
+        "best_count": 9,
+        "counts": {
+          "N": 2,
+          "N$": 9
+        },
+        "form": "niwatece",
+        "share": 0.8182,
+        "total": 11
       }
     ],
     "ambiguous_lemma_prontype": [],
@@ -817,6 +874,42 @@
         "share": 0.6667,
         "total": 3,
         "upos": "ADJ"
+      },
+      {
+        "best": "eyo",
+        "best_count": 1,
+        "counts": {
+          "eeyo": 1,
+          "eyo": 1
+        },
+        "form": "eeyo",
+        "share": 0.5,
+        "total": 2,
+        "upos": "PRON"
+      },
+      {
+        "best": "et",
+        "best_count": 1,
+        "counts": {
+          "VB": 1,
+          "et": 1
+        },
+        "form": "etee",
+        "share": 0.5,
+        "total": 2,
+        "upos": "VERB"
+      },
+      {
+        "best": "eyo",
+        "best_count": 1,
+        "counts": {
+          "eeyo": 1,
+          "eyo": 1
+        },
+        "form": "eyo",
+        "share": 0.5,
+        "total": 2,
+        "upos": "PRON"
       },
       {
         "best": "eyodi",
@@ -855,15 +948,16 @@
         "upos": "NOUN"
       },
       {
-        "best": "omigo",
-        "best_count": 1,
+        "best": "lomigo",
+        "best_count": 2,
         "counts": {
-          "lomigo": 1,
-          "omigo": 1
+          "lomigo": 2,
+          "omigo": 1,
+          "omiigo": 2
         },
         "form": "lomigo",
-        "share": 0.5,
-        "total": 2,
+        "share": 0.4,
+        "total": 5,
         "upos": "NOUN"
       },
       {
@@ -933,26 +1027,26 @@
     "ambiguous_tag_to_upos": [
       {
         "best": "DET",
-        "best_count": 48,
+        "best_count": 51,
         "counts": {
           "ADV": 2,
-          "DET": 48,
-          "PRON": 8
+          "DET": 51,
+          "PRON": 9
         },
         "raw_tag": "D",
-        "share": 0.8276,
-        "total": 58
+        "share": 0.8226,
+        "total": 62
       },
       {
         "best": "PRON",
-        "best_count": 2,
+        "best_count": 4,
         "counts": {
-          "DET": 1,
-          "PRON": 2
+          "DET": 3,
+          "PRON": 4
         },
         "raw_tag": "DAPL",
-        "share": 0.6667,
-        "total": 3
+        "share": 0.5714,
+        "total": 7
       },
       {
         "best": "ADV",
@@ -981,15 +1075,15 @@
       },
       {
         "best": "DET",
-        "best_count": 1,
+        "best_count": 3,
         "counts": {
-          "DET": 1,
-          "PRON": 1
+          "DET": 3,
+          "PRON": 2
         },
         "form": "anitaGa",
         "raw_tag": "DAPL",
-        "share": 0.5,
-        "total": 2
+        "share": 0.6,
+        "total": 5
       },
       {
         "best": "ADV",
@@ -1181,6 +1275,7 @@
     "ee\tPRO": "PRON",
     "eniteloco\tVBAPL": "VERB",
     "etadi\tVB": "VERB",
+    "etee\tVB": "VERB",
     "eyo\tPRO": "PRON",
     "eyodi\tN$": "NOUN",
     "gadodawa\tN$": "NOUN",
@@ -1199,6 +1294,7 @@
     "idowa\tD": "DET",
     "ijo\tD": "DET",
     "ijowa\tD": "DET",
+    "ina\tD": "PRON",
     "initaGa\tDAPL": "PRON",
     "ipegetege\tVBAPL": "VERB",
     "ipegitaGagi\tVBAPL": "VERB",
@@ -1229,6 +1325,7 @@
     "lojetedi\tN$": "NOUN",
     "loligi\tN$": "NOUN",
     "lomigo\tN$": "NOUN",
+    "lomiigo\tN$": "NOUN",
     "loojedi\tN$": "NOUN",
     "looligi\tN$": "NOUN",
     "lotaGa\tN$": "NOUN",
@@ -1249,7 +1346,9 @@
     "niGijo\tD": "DET",
     "niGijoa\tD": "DET",
     "niGinoa\tD": "DET",
+    "nigaanigawaanigi\tN": "NOUN",
     "niganaGacanajo\tN": "NOUN",
+    "niganigawaanigi\tN": "NOUN",
     "niganigawanigi\tN": "NOUN",
     "niganigi\tN": "NOUN",
     "nigetedi\tN": "NOUN",
@@ -1259,6 +1358,7 @@
     "ninitibigiwaji\tN": "VERB",
     "nioladi\tN": "NOUN",
     "nioxoa\tN$": "NOUN",
+    "niwatece\tN": "NOUN",
     "niwatece\tN$": "NOUN",
     "niwenigi\tN$": "NOUN",
     "niwigo\tN$": "NOUN",
