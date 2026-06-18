@@ -905,7 +905,7 @@
 # text_orig = iwaalo ja ninitibeke
 # text_por_orig = a mulher está feliz
 # text_por = a mulher está feliz.
-1	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	3	dep	_	TokenRange=0:6
+1	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=0:6
 2	ja	jaG	AUX	T	Aspect=Perf	3	aux	_	TokenRange=7:9
 3	ninitibeke	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=ninitibece|TokenRange=10:20
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
@@ -917,7 +917,7 @@
 # text_por_orig = a palavra de seu irmão é bonita
 # text_por = a palavra de seu irmão é bonita.
 1	lotaGa	otaGa	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=0:6
-2	GanaaginaGa	aaginaGa	NOUN	N$	Number=Sing|Person[psor]=2	3	dep	_	TokenRange=7:18
+2	GanaaginaGa	aaginaGa	NOUN	N$	Number=Sing|Person[psor]=2	1	nmod:poss	_	TokenRange=7:18
 3	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=19:30
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=30:31
 
@@ -928,7 +928,7 @@
 # text_por_orig = a palavra do seu marido é bonita
 # text_por = a palavra do seu marido é bonita.
 1	lotaGa	otaGa	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=0:6
-2	Gadodawa	odawa	NOUN	N$	Gender=Fem,Masc|Number=Sing|Person[psor]=2	3	dep	_	TokenRange=7:15
+2	Gadodawa	odawa	NOUN	N$	Gender=Fem,Masc|Number=Sing|Person[psor]=2	1	nmod:poss	_	TokenRange=7:15
 3	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=16:27
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=27:28
 
@@ -952,7 +952,7 @@
 # text_por = a sua comida é muito bonita.
 1	Gawenigi	wenigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=2	4	nsubj	_	TokenRange=0:8
 2	eliodi	eliodi	DET	Q	PronType=Ind	4	det	_	TokenRange=9:15
-3	me	me	SCONJ	C	_	4	dep	_	TokenRange=16:18
+3	me	me	SCONJ	C	_	4	mark	_	TokenRange=16:18
 4	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=19:30
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
 
@@ -981,6 +981,61 @@
 6	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	SpaceAfter=No|TokenRange=33:40
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=40:41
 
+# sent_id = van-data-13
+# sent_uid = e9806e26-701d-4f5f-9ca9-63216cccf3d0
+# text = naGajo lomigo Pedro idei noatece.
+# text_orig = naGajo lomigo Pedro idei noatece
+# text_por_orig = aquele anzol do Pedro está na canoa
+# text_por = aquele anzol do Pedro está na canoa.
+1	naGajo	niGijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	lomigo	omiigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	nsubj	_	StandardForm=lomiigo|TokenRange=7:13
+3	Pedro	pedro	PROPN	NPR	_	2	nmod:poss	_	TokenRange=14:19
+4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=20:24
+5	noatece	watece	NOUN	N$	Gender=Fem|Number=Sing	4	obj	_	SpaceAfter=No|StandardForm=niwatece|TokenRange=25:32
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=32:33
+
+# sent_id = van-data-14
+# sent_uid = 2386b5b5-57d0-4a1f-86c2-73f67561744c
+# text = naGajo lomiigo nigaanigawaanigi manitaGa niwatece.
+# text_orig = naGajo lomiigo nigaanigawaanigi manitaGa niwatece
+# text_por_orig = aquele anzol do menino é na canoa
+# text_por = aquele anzol do menino é na canoa.
+1	naGajo	niGijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	lomiigo	omiigo	NOUN	N$	Person[psor]=3	6	nsubj	_	TokenRange=7:14
+3	nigaanigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	2	nmod:poss	_	TokenRange=15:31
+4-5	manitaGa	_	_	_	_	_	_	_	TokenRange=32:40
+4	me	me	SCONJ	C	_	6	mark	_	_
+5	anitaGa	anitaGa	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
+6	niwatece	watece	NOUN	N	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=41:49
+7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=49:50
+
+# sent_id = van-data-15
+# sent_uid = 4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7
+# text = niGijo niganigawaanigi lomigo niwatece.
+# text_orig = niGijo niganigawaanigi lomigo niwatece
+# text_por_orig = aquele menino é na canoa do anzol
+# text_por = aquele menino é na canoa do anzol.
+1	niGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	niganigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	4	nsubj	_	StandardForm=nigaanigawaanigi|TokenRange=7:22
+3	lomigo	omiigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	nmod:poss	_	StandardForm=lomiigo|TokenRange=23:29
+4	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=30:38
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=38:39
+
+# sent_id = van-data-16
+# sent_uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+# text = niGijo nigaanigawaanigi manitaGa lomigo niwatece.
+# text_orig = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+# text_por_orig = aquele menino é na canoa do anzol
+# text_por = aquele menino é na canoa do anzol.
+1	niGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	nigaanigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	6	nsubj	_	TokenRange=7:23
+3-4	manitaGa	_	_	_	_	_	_	_	TokenRange=24:32
+3	me	me	SCONJ	C	_	6	mark	_	_
+4	anitaGa	anitaGa	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
+5	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	6	nmod:poss	_	TokenRange=33:39
+6	niwatece	watece	NOUN	N	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=40:48
+7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=48:49
+
 # sent_id = van-data-17
 # sent_uid = 86f5c128-e931-4443-90cc-2359748ed69f
 # text = Eyo nigotaGa.
@@ -997,7 +1052,7 @@
 # text_orig = Eyo manitaGa nigotaGa
 # text_por_orig = Estou na cidade
 # text_por = Estou na cidade.
-1	Eyo	eyo	PRON	PRO	Gender=Fem|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	StandardForm=Eeyo|StandardLemma=eeyo|TokenRange=0:3
+1	Eyo	eeyo	PRON	PRO	Gender=Fem|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	StandardForm=Eeyo|TokenRange=0:3
 2-3	manitaGa	_	_	_	_	_	_	_	TokenRange=4:12
 2	me	me	SCONJ	C	_	4	mark	_	_
 3	anitaGa	anitaGa	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	4	det	_	_
@@ -1012,10 +1067,10 @@
 # text_por = aqueles filhos da mulher estão com eles.
 1	niGijoa	niGijo	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:7
 2	lionigipi	iona	NOUN	N$	Gender=Fem,Masc|Number=Plur|Person[psor]=3	4	nsubj	_	TokenRange=8:17
-3	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	4	dep	_	TokenRange=18:24
+3	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	2	nmod:poss	_	TokenRange=18:24
 4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=25:29
 5-6	minitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=30:38
-5	me	me	SCONJ	C	_	4	mark	_	_
+5	me	me	SCONJ	C	_	6	mark	_	_
 6	initaGa	initaGa	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	4	obj	_	Case=Com|NumClass=Sitting
 7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=38:39
 
@@ -1028,7 +1083,7 @@
 1	dibixodi	dibixoGo	NOUN	N	Gender=Masc|Number=Plur	2	nsubj	_	TokenRange=0:8
 2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=9:13
 3-4	manitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=14:22
-3	me	me	SCONJ	C	_	2	mark	_	_
+3	me	me	SCONJ	C	_	4	mark	_	_
 4	anitaGa	anitaGa	PRON	DAPL	Gender=Fem|Number=Sing|PronType=Dem	2	obj	_	Case=Com|NumClass=Sitting
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
 
