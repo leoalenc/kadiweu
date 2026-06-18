@@ -74,6 +74,9 @@ FORM_CORRECTIONS: Dict[str, Dict[str, str]] = {}
 
 TAG_TO_UPOS: Dict[str, str] = {}
 
+FORM_TO_UPOS: Dict[str, str] = {}
+FORM_TO_XPOS: Dict[str, str] = {}
+
 def load_override_resource(
     path: Path,
 ) -> Tuple[
@@ -120,6 +123,9 @@ def load_override_resource(
 
     tag_to_upos = data.get("tag_to_upos", {})
 
+    form_to_upos = data.get("form_to_upos", {})
+    form_to_xpos = data.get("form_to_xpos", {})
+
     return (
         lemma_overrides,
         form_feat_overrides,
@@ -128,7 +134,9 @@ def load_override_resource(
         tag_to_default_prontype,
         upos_overrides,
         form_corrections,
-        tag_to_upos
+        tag_to_upos,
+        form_to_upos,
+        form_to_xpos,
     )
 
 def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
@@ -151,6 +159,8 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
     global UPOS_OVERRIDES
     global FORM_CORRECTIONS
     global TAG_TO_UPOS
+    global FORM_TO_UPOS
+    global FORM_TO_XPOS
 
     LEMMA_OVERRIDES = {}
     FORM_FEAT_OVERRIDES = {}
@@ -160,6 +170,8 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
     UPOS_OVERRIDES = {}
     FORM_CORRECTIONS = {}
     TAG_TO_UPOS = {}
+    FORM_TO_UPOS = {}
+    FORM_TO_XPOS = {}
 
     candidate_paths = [
         DEFAULT_BASE_OVERRIDES_PATH,
@@ -189,7 +201,9 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
             tag_to_default_prontype,
             upos_overrides,
             form_corrections,
-            tag_to_upos
+            tag_to_upos,
+            form_to_upos,
+            form_to_xpos,
         ) = load_override_resource(path)
 
         LEMMA_OVERRIDES.update(lemma_overrides)
@@ -200,6 +214,8 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
         UPOS_OVERRIDES.update(upos_overrides)
         FORM_CORRECTIONS.update(form_corrections)
         TAG_TO_UPOS.update(tag_to_upos)
+        FORM_TO_UPOS.update(form_to_upos)
+        FORM_TO_XPOS.update(form_to_xpos)
 
     # normalize keys once after all layers have been merged
     LEMMA_OVERRIDES = canonicalize_override_map(LEMMA_OVERRIDES, "LEMMA_OVERRIDES")
@@ -214,6 +230,9 @@ def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
         "TAG_TO_DEFAULT_PRONTYPE",
     )
     UPOS_OVERRIDES = canonicalize_override_map(UPOS_OVERRIDES, "UPOS_OVERRIDES")
+
+    FORM_TO_UPOS = canonicalize_override_map(FORM_TO_UPOS, "FORM_TO_UPOS")
+    FORM_TO_XPOS = canonicalize_override_map(FORM_TO_XPOS, "FORM_TO_XPOS")
 
 configure_override_resources()
 
@@ -1127,8 +1146,17 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
             feats = "_"
         else:
             if correction is not None:
-                upos = correction.get("upos", infer_upos(gtag))
-                gtag = correction.get("xpos", gtag)
+                upos = correction.get("upos")
+                if upos is None:
+                    upos = FORM_TO_UPOS.get(lookup_form)
+                if upos is None:
+                    upos = infer_upos_for_form(lookup_form, gtag)
+
+                gtag = correction.get("xpos")
+                if gtag is None:
+                    gtag = FORM_TO_XPOS.get(lookup_form)
+                if gtag is None:
+                    gtag = str(tag) if tag is not None else "X"
 
                 lemma = LEMMA_OVERRIDES.get(lookup_form)
                 if lemma is None:

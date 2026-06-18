@@ -421,6 +421,8 @@ def learn_overrides(
     # form + source tag -> UPOS, specific UPOS override
     form_upos_counts: Dict[Tuple[str, str], Counter] = defaultdict(Counter)
 
+    form_upos_default_counts: Dict[str, Counter] = defaultdict(Counter)
+    form_xpos_default_counts: Dict[str, Counter] = defaultdict(Counter)
 
     review: Dict[str, List[JsonDict]] = {
         "ambiguous_lemmas": [],
@@ -455,6 +457,8 @@ def learn_overrides(
             for form_key in forms_for_learning:
                 lemma_counts[(form_key, upos)][lemma] += 1
                 feats_counts[(form_key, upos)][feats] += 1
+                form_upos_default_counts[form_key][upos] += 1
+                form_xpos_default_counts[form_key][tok["xpos"]] += 1
 
                 if pron is not None and upos in {"DET", "PRON", "ADV"}:
                     pron_counts[(form_key, upos)][pron] += 1
@@ -494,6 +498,8 @@ def learn_overrides(
     tag_to_default_prontype: Dict[str, str] = {}
     upos_overrides: Dict[str, str] = {}
     tag_to_upos: Dict[str, str] = {}
+    form_to_upos: Dict[str, str] = {}
+    form_to_xpos: Dict[str, str] = {}
    
     for (form, upos), counter in sorted(lemma_counts.items()):
         value, best, total, share = most_common_with_share(counter)
@@ -633,6 +639,45 @@ def learn_overrides(
         else:
             tag_to_upos[raw_tag] = value
 
+    for form, counter in sorted(form_upos_default_counts.items()):
+        value, best, total, share = most_common_with_share(counter)
+
+        rec = {
+        "form": form,
+        "counts": dict(counter),
+        "best": value,
+        "best_count": best,
+        "total": total,
+        "share": round(share, 4),
+    }
+
+        if total < tag_pron_min_count:
+            review.setdefault("low_evidence_form_to_upos", []).append(rec)
+        elif share < tag_pron_min_share:
+            review.setdefault("ambiguous_form_to_upos", []).append(rec)
+        else:
+            form_to_upos[form] = value
+
+
+    for form, counter in sorted(form_xpos_default_counts.items()):
+        value, best, total, share = most_common_with_share(counter)
+
+        rec = {
+        "form": form,
+        "counts": dict(counter),
+        "best": value,
+        "best_count": best,
+        "total": total,
+        "share": round(share, 4),
+    }
+
+        if total < tag_pron_min_count:
+            review.setdefault("low_evidence_form_to_xpos", []).append(rec)
+        elif share < tag_pron_min_share:
+            review.setdefault("ambiguous_form_to_xpos", []).append(rec)
+        else:
+            form_to_xpos[form] = value
+    
     return {
         "lemma_overrides": dict(sorted(lemma_overrides.items())),
         "form_feat_overrides": dict(sorted(form_feat_overrides.items())),
@@ -641,6 +686,8 @@ def learn_overrides(
         "tag_to_default_prontype": dict(sorted(tag_to_default_prontype.items())),
         "upos_overrides": dict(sorted(upos_overrides.items())),
         "tag_to_upos": dict(sorted(tag_to_upos.items())),
+        "form_to_upos": dict(sorted(form_to_upos.items())),
+        "form_to_xpos": dict(sorted(form_to_xpos.items())),
         "review": review,
     }
 
