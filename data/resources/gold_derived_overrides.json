@@ -11,7 +11,6 @@
     "daGaxa": "_",
     "dakake": "Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv",
     "dapico": "Voice=Inv",
-    "dapicoGo": "Mood=Ind|Number=Sing|Person=3|VerbForm=Fin",
     "dibixodi": "Gender=Masc|Number=Plur",
     "digoida": "Gender=Masc|Number=Sing",
     "dineigi": "_",
@@ -551,6 +550,18 @@
   "review": {
     "ambiguous_feats": [
       {
+        "best": "Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Inv",
+        "best_count": 2,
+        "counts": {
+          "Mood=Ind|Number=Sing|Person=3|VerbForm=Fin": 1,
+          "Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Inv": 2
+        },
+        "form": "dapicoGo",
+        "share": 0.6667,
+        "total": 3,
+        "upos": "VERB"
+      },
+      {
         "best": "AdvType=Loc|PronType=Dem",
         "best_count": 1,
         "counts": {
@@ -1027,15 +1038,15 @@
     "ambiguous_tag_to_upos": [
       {
         "best": "DET",
-        "best_count": 51,
+        "best_count": 52,
         "counts": {
           "ADV": 2,
-          "DET": 51,
+          "DET": 52,
           "PRON": 9
         },
         "raw_tag": "D",
-        "share": 0.8226,
-        "total": 62
+        "share": 0.8254,
+        "total": 63
       },
       {
         "best": "PRON",
@@ -1212,6 +1223,23 @@
         "type": "token_count_mismatch"
       },
       {
+        "json_path": "$.pages[0].sentences[12]",
+        "mismatches": [
+          [
+            "lomigo",
+            "lomiigo"
+          ],
+          [
+            "noatece",
+            "niwatece"
+          ]
+        ],
+        "sent_id": "van-data-13",
+        "sent_uid": "e9806e26-701d-4f5f-9ca9-63216cccf3d0",
+        "source_file": "../data/van-data.json",
+        "type": "token_form_mismatch"
+      },
+      {
         "json_path": "$.pages[0].sentences[29]",
         "mismatches": [
           [
@@ -1364,6 +1392,7 @@
     "niwigo\tN$": "NOUN",
     "noxilece\tVB": "VERB",
     "pedilo\tNPR": "PROPN",
+    "pedro\tNPR": "PROPN",
     "te\tVB": "VERB",
     "waca\tN": "NOUN",
     "weiigi\tN": "NOUN",

@@ -8,16 +8,17 @@
 - Usable aligned sentence pairs: **100**
 - UID-matched but rejected: **3**
 - `lemma_overrides`: **115**
-- `form_feat_overrides`: **119**
+- `form_feat_overrides`: **118**
 - `prontype_overrides`: **38**
 - `lemma_prontype_overrides`: **7**
 - `tag_to_default_prontype`: **9**
 ## Review items
 
-### json_alignment_issues (4)
+### json_alignment_issues (5)
 - `{"gold_count": 7, "gold_forms": ["eyodi", "dowediteloco", "naodigijedi", "micoataGa", "daGa", "me", "lionigipi"], "json_count": 8, "json_forms": ["Eyodi", "dowediteloco", "naodigijedi", "me@", "@icawataGa", "daGa", "me", "lionigipi"], "json_path": "$.pages[0].sentences[27]", "sent_id": "ped-gramm-28", "sent_uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d", "source_file": "../data/gramatica-pedagogica.json", "type": "token_count_mismatch"}`
 - `{"gold_count": 6, "gold_forms": ["Etogo", "ane", "iwaGadi", "aG", "dakake", "lojedi"], "json_count": 5, "json_forms": ["Etogo", "ane@", "@iwaGadi", "adakake", "lojedi"], "json_path": "$.pages[0].sentences[4]", "sent_id": "hil-data-5", "sent_uid": "e349508c-4d86-48b8-9918-057988755e77", "source_file": "../data/dados-hil.json", "type": "token_count_mismatch"}`
 - `{"gold_count": 6, "gold_forms": ["Etogo", "ane", "iwaGadi", "aG", "dakake", "loojedi"], "json_count": 5, "json_forms": ["Etogo", "ane", "iwaGadi", "adakake", "loojedi"], "json_path": "$.pages[0].sentences[5]", "sent_id": "hil-data-6", "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647", "source_file": "../data/dados-hil.json", "type": "token_count_mismatch"}`
+- `{"json_path": "$.pages[0].sentences[12]", "mismatches": [["lomigo", "lomiigo"], ["noatece", "niwatece"]], "sent_id": "van-data-13", "sent_uid": "e9806e26-701d-4f5f-9ca9-63216cccf3d0", "source_file": "../data/van-data.json", "type": "token_form_mismatch"}`
 - `{"json_path": "$.pages[0].sentences[29]", "mismatches": [["niGijo", "nGijo"]], "sent_id": "van-data-30", "sent_uid": "0c7e64fb-f070-4faa-a12a-c110cdf4bf16", "source_file": "../data/van-data.json", "type": "token_form_mismatch"}`
 
 ### ambiguous_lemmas (12)
@@ -34,7 +35,8 @@
 - `{"best": "enigi", "best_count": 1, "counts": {"enigi": 1, "wenigi": 1}, "form": "niwenigi", "share": 0.5, "total": 2, "upos": "NOUN"}`
 - `{"best": "wetiGa", "best_count": 3, "counts": {"wetiGa": 3, "wetiga": 1}, "form": "wetiGa", "share": 0.75, "total": 4, "upos": "NOUN"}`
 
-### ambiguous_feats (9)
+### ambiguous_feats (10)
+- `{"best": "Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Inv", "best_count": 2, "counts": {"Mood=Ind|Number=Sing|Person=3|VerbForm=Fin": 1, "Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Inv": 2}, "form": "dapicoGo", "share": 0.6667, "total": 3, "upos": "VERB"}`
 - `{"best": "AdvType=Loc|PronType=Dem", "best_count": 1, "counts": {"AdvType=Loc|Deixis=Remt|PronType=Dem": 1, "AdvType=Loc|PronType=Dem": 1}, "form": "digoida", "share": 0.5, "total": 2, "upos": "ADV"}`
 - `{"best": "_", "best_count": 2, "counts": {"PronType=Ind": 2, "_": 2}, "form": "eliodi", "share": 0.5, "total": 4, "upos": "ADV"}`
 - `{"best": "Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1", "best_count": 2, "counts": {"Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1": 2, "_": 2}, "form": "eyodi", "share": 0.5, "total": 4, "upos": "NOUN"}`
