@@ -1,0 +1,18 @@
+~/kadiweu/src$ ./kadiweu_json_to_conllu.py ../data/van-data.json > ../data/treebank/draft-van.edt.conllu 
+/home/leonel/kadiweu/data/resources/kadiweu_default_overrides.json
+/home/leonel/kadiweu/data/resources/gold_derived_overrides.json
+/home/leonel/kadiweu/data/resources/kadiweu_manual_overrides.json
+Loading override resource: /home/leonel/kadiweu/data/resources/kadiweu_default_overrides.json
+Loading override resource: /home/leonel/kadiweu/data/resources/gold_derived_overrides.json
+Loading override resource: /home/leonel/kadiweu/data/resources/kadiweu_manual_overrides.json
+/home/leonel/kadiweu/src
+/home/leonel/kadiweu
+/home/leonel/kadiweu/data/resources/kadiweu_default_overrides.json
+/home/leonel/kadiweu/data/resources/gold_derived_overrides.json
+/home/leonel/kadiweu/data/resources/kadiweu_manual_overrides.json
+Loading override resource: /home/leonel/kadiweu/data/resources/kadiweu_default_overrides.json
+Loading override resource: /home/leonel/kadiweu/data/resources/gold_derived_overrides.json
+Loading override resource: /home/leonel/kadiweu/data/resources/kadiweu_manual_overrides.json
+WARNING: Composite tag without @-style MWT marker: adakake / NEG+ADJ
+leonel@yawarate:~/kadiweu/src$ validate.py --lang=kbc --max-err=0 ../data/treebank/draft-van.edt.conllu 
+*** PASSED ***

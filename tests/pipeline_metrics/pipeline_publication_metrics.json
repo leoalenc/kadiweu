@@ -1,0 +1,3865 @@
+{
+  "metadata": {
+    "generated_at": "2026-06-22T12:26:33",
+    "script": "pipeline_publication_metrics.py",
+    "python_version": "3.8.10 (default, Mar 18 2025, 20:04:55) \n[GCC 9.4.0]",
+    "src": "/home/leonel/kadiweu/src",
+    "json_resources": [
+      "/home/leonel/kadiweu/data/resources/kadiweu_default_overrides.json",
+      "/home/leonel/kadiweu/data/resources/gold_derived_overrides.json",
+      "/home/leonel/kadiweu/data/resources/kadiweu_manual_overrides.json",
+      "/home/leonel/kadiweu/data/lexicon-kadiweu.json",
+      "/home/leonel/kadiweu/data/gramatica-pedagogica.json",
+      "/home/leonel/kadiweu/data/van-data.json",
+      "/home/leonel/kadiweu/data/dados-hil.json"
+    ],
+    "json_out": "/home/leonel/kadiweu/pipeline_publication_metrics.json",
+    "external_tools": {
+      "cloc": "/usr/bin/cloc",
+      "radon": "/home/leonel/venvs/metrics/bin/radon"
+    },
+    "notes": [
+      "CoNLL-U statistics are intentionally not computed here; use the standard UD Perl scripts.",
+      "Only JSON resources explicitly supplied with --json-resource are included.",
+      "The tests directory is not analyzed unless it is inside --src."
+    ]
+  },
+  "software_metrics": {
+    "cloc": {
+      "available": true,
+      "tool": "cloc",
+      "raw": {
+        "header": {
+          "cloc_url": "github.com/AlDanial/cloc",
+          "cloc_version": "1.82",
+          "elapsed_seconds": 0.0478899478912354,
+          "n_files": 15,
+          "n_lines": 7490,
+          "files_per_second": 313.218131580913,
+          "lines_per_second": 156400.253702736
+        },
+        "Python": {
+          "nFiles": 14,
+          "blank": 1272,
+          "comment": 828,
+          "code": 5360
+        },
+        "Bourne Shell": {
+          "nFiles": 1,
+          "blank": 3,
+          "comment": 0,
+          "code": 27
+        },
+        "SUM": {
+          "blank": 1275,
+          "comment": 828,
+          "code": 5387,
+          "nFiles": 15
+        }
+      },
+      "summary": {
+        "python_files": 14,
+        "python_blank_lines": 1272,
+        "python_comment_lines": 828,
+        "python_code_lines_sloc": 5360,
+        "all_files": 15,
+        "all_blank_lines": 1275,
+        "all_comment_lines": 828,
+        "all_code_lines": 5387
+      }
+    },
+    "radon_cc": {
+      "available": true,
+      "tool": "radon cc",
+      "raw": {
+        "/home/leonel/kadiweu/src/kadiweu_lexicon_explorer.py": [
+          {
+            "type": "method",
+            "rank": "E",
+            "endline": 460,
+            "classname": "KadiweuLexicon",
+            "complexity": 36,
+            "lineno": 417,
+            "name": "infer_ud_upos",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "D",
+            "endline": 691,
+            "classname": "KadiweuLexicon",
+            "complexity": 25,
+            "lineno": 647,
+            "name": "_extract_field_values",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "D",
+            "endline": 625,
+            "classname": "KadiweuLexicon",
+            "complexity": 23,
+            "lineno": 603,
+            "name": "stats",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "D",
+            "endline": 882,
+            "complexity": 21,
+            "lineno": 823,
+            "name": "main",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "C",
+            "endline": 376,
+            "classname": "KadiweuLexicon",
+            "complexity": 16,
+            "lineno": 321,
+            "name": "search_by_pos_semantics",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 747,
+            "complexity": 14,
+            "lineno": 726,
+            "name": "pretty_entry",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "C",
+            "endline": 220,
+            "classname": "KadiweuLexicon",
+            "complexity": 11,
+            "lineno": 193,
+            "name": "look_up",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "B",
+            "endline": 415,
+            "classname": "KadiweuLexicon",
+            "complexity": 10,
+            "lineno": 378,
+            "name": "filter_entries",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "B",
+            "endline": 558,
+            "classname": "KadiweuLexicon",
+            "complexity": 10,
+            "lineno": 537,
+            "name": "ud_notes",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "B",
+            "endline": 723,
+            "complexity": 8,
+            "lineno": 141,
+            "name": "KadiweuLexicon",
+            "col_offset": 0,
+            "methods": [
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 166,
+                "classname": "KadiweuLexicon",
+                "complexity": 5,
+                "lineno": 144,
+                "name": "__init__",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 169,
+                "classname": "KadiweuLexicon",
+                "complexity": 1,
+                "lineno": 168,
+                "name": "__len__",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 172,
+                "classname": "KadiweuLexicon",
+                "complexity": 1,
+                "lineno": 171,
+                "name": "all_names",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 188,
+                "classname": "KadiweuLexicon",
+                "complexity": 1,
+                "lineno": 174,
+                "name": "list_fields",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 191,
+                "classname": "KadiweuLexicon",
+                "complexity": 1,
+                "lineno": 190,
+                "name": "get_by_uid",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "C",
+                "endline": 220,
+                "classname": "KadiweuLexicon",
+                "complexity": 11,
+                "lineno": 193,
+                "name": "look_up",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 268,
+                "classname": "KadiweuLexicon",
+                "complexity": 5,
+                "lineno": 222,
+                "name": "search",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 280,
+                "classname": "KadiweuLexicon",
+                "complexity": 1,
+                "lineno": 270,
+                "name": "search_field",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 292,
+                "classname": "KadiweuLexicon",
+                "complexity": 1,
+                "lineno": 282,
+                "name": "search_by_text",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 301,
+                "classname": "KadiweuLexicon",
+                "complexity": 4,
+                "lineno": 294,
+                "name": "search_by_tag",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 310,
+                "classname": "KadiweuLexicon",
+                "complexity": 4,
+                "lineno": 303,
+                "name": "search_by_grammar",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 319,
+                "classname": "KadiweuLexicon",
+                "complexity": 4,
+                "lineno": 312,
+                "name": "search_by_status",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "C",
+                "endline": 376,
+                "classname": "KadiweuLexicon",
+                "complexity": 16,
+                "lineno": 321,
+                "name": "search_by_pos_semantics",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "B",
+                "endline": 415,
+                "classname": "KadiweuLexicon",
+                "complexity": 10,
+                "lineno": 378,
+                "name": "filter_entries",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "E",
+                "endline": 460,
+                "classname": "KadiweuLexicon",
+                "complexity": 36,
+                "lineno": 417,
+                "name": "infer_ud_upos",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 464,
+                "classname": "KadiweuLexicon",
+                "complexity": 3,
+                "lineno": 462,
+                "name": "ud_candidates",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "B",
+                "endline": 499,
+                "classname": "KadiweuLexicon",
+                "complexity": 6,
+                "lineno": 466,
+                "name": "conversion_hints",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "B",
+                "endline": 521,
+                "classname": "KadiweuLexicon",
+                "complexity": 6,
+                "lineno": 501,
+                "name": "semantic_flags",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "B",
+                "endline": 535,
+                "classname": "KadiweuLexicon",
+                "complexity": 8,
+                "lineno": 523,
+                "name": "tokenization_warning",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "B",
+                "endline": 558,
+                "classname": "KadiweuLexicon",
+                "complexity": 10,
+                "lineno": 537,
+                "name": "ud_notes",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 566,
+                "classname": "KadiweuLexicon",
+                "complexity": 5,
+                "lineno": 560,
+                "name": "related_entries",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "B",
+                "endline": 577,
+                "classname": "KadiweuLexicon",
+                "complexity": 8,
+                "lineno": 568,
+                "name": "variants_of",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "B",
+                "endline": 601,
+                "classname": "KadiweuLexicon",
+                "complexity": 8,
+                "lineno": 579,
+                "name": "entry_summary",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "D",
+                "endline": 625,
+                "classname": "KadiweuLexicon",
+                "complexity": 23,
+                "lineno": 603,
+                "name": "stats",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 629,
+                "classname": "KadiweuLexicon",
+                "complexity": 2,
+                "lineno": 628,
+                "name": "_trim",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 636,
+                "classname": "KadiweuLexicon",
+                "complexity": 3,
+                "lineno": 631,
+                "name": "_first_match",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 645,
+                "classname": "KadiweuLexicon",
+                "complexity": 5,
+                "lineno": 638,
+                "name": "_field_text",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "D",
+                "endline": 691,
+                "classname": "KadiweuLexicon",
+                "complexity": 25,
+                "lineno": 647,
+                "name": "_extract_field_values",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 703,
+                "classname": "KadiweuLexicon",
+                "complexity": 2,
+                "lineno": 693,
+                "name": "_matches_entry",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "B",
+                "endline": 723,
+                "classname": "KadiweuLexicon",
+                "complexity": 6,
+                "lineno": 705,
+                "name": "_text_matches",
+                "col_offset": 4,
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "rank": "B",
+            "endline": 535,
+            "classname": "KadiweuLexicon",
+            "complexity": 8,
+            "lineno": 523,
+            "name": "tokenization_warning",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "B",
+            "endline": 577,
+            "classname": "KadiweuLexicon",
+            "complexity": 8,
+            "lineno": 568,
+            "name": "variants_of",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "B",
+            "endline": 601,
+            "classname": "KadiweuLexicon",
+            "complexity": 8,
+            "lineno": 579,
+            "name": "entry_summary",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "B",
+            "endline": 499,
+            "classname": "KadiweuLexicon",
+            "complexity": 6,
+            "lineno": 466,
+            "name": "conversion_hints",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "B",
+            "endline": 521,
+            "classname": "KadiweuLexicon",
+            "complexity": 6,
+            "lineno": 501,
+            "name": "semantic_flags",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "B",
+            "endline": 723,
+            "classname": "KadiweuLexicon",
+            "complexity": 6,
+            "lineno": 705,
+            "name": "_text_matches",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 166,
+            "classname": "KadiweuLexicon",
+            "complexity": 5,
+            "lineno": 144,
+            "name": "__init__",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 268,
+            "classname": "KadiweuLexicon",
+            "complexity": 5,
+            "lineno": 222,
+            "name": "search",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 566,
+            "classname": "KadiweuLexicon",
+            "complexity": 5,
+            "lineno": 560,
+            "name": "related_entries",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 645,
+            "classname": "KadiweuLexicon",
+            "complexity": 5,
+            "lineno": 638,
+            "name": "_field_text",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 130,
+            "complexity": 4,
+            "lineno": 121,
+            "name": "normalize_text",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 301,
+            "classname": "KadiweuLexicon",
+            "complexity": 4,
+            "lineno": 294,
+            "name": "search_by_tag",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 310,
+            "classname": "KadiweuLexicon",
+            "complexity": 4,
+            "lineno": 303,
+            "name": "search_by_grammar",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 319,
+            "classname": "KadiweuLexicon",
+            "complexity": 4,
+            "lineno": 312,
+            "name": "search_by_status",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 138,
+            "complexity": 3,
+            "lineno": 133,
+            "name": "_ensure_list",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 464,
+            "classname": "KadiweuLexicon",
+            "complexity": 3,
+            "lineno": 462,
+            "name": "ud_candidates",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 636,
+            "classname": "KadiweuLexicon",
+            "complexity": 3,
+            "lineno": 631,
+            "name": "_first_match",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 629,
+            "classname": "KadiweuLexicon",
+            "complexity": 2,
+            "lineno": 628,
+            "name": "_trim",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 703,
+            "classname": "KadiweuLexicon",
+            "complexity": 2,
+            "lineno": 693,
+            "name": "_matches_entry",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 820,
+            "complexity": 1,
+            "lineno": 750,
+            "name": "_build_parser",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 169,
+            "classname": "KadiweuLexicon",
+            "complexity": 1,
+            "lineno": 168,
+            "name": "__len__",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 172,
+            "classname": "KadiweuLexicon",
+            "complexity": 1,
+            "lineno": 171,
+            "name": "all_names",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 188,
+            "classname": "KadiweuLexicon",
+            "complexity": 1,
+            "lineno": 174,
+            "name": "list_fields",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 191,
+            "classname": "KadiweuLexicon",
+            "complexity": 1,
+            "lineno": 190,
+            "name": "get_by_uid",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 280,
+            "classname": "KadiweuLexicon",
+            "complexity": 1,
+            "lineno": 270,
+            "name": "search_field",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 292,
+            "classname": "KadiweuLexicon",
+            "complexity": 1,
+            "lineno": 282,
+            "name": "search_by_text",
+            "col_offset": 4,
+            "closures": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/kadiweu_empty_categories.py": [
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 186,
+            "complexity": 18,
+            "lineno": 115,
+            "name": "resolve_empty_categories",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 72,
+            "complexity": 3,
+            "lineno": 65,
+            "name": "is_empty_category_token",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 96,
+            "complexity": 3,
+            "lineno": 91,
+            "name": "_same_local_domain",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 104,
+            "complexity": 3,
+            "lineno": 99,
+            "name": "_nearest_previous",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 112,
+            "complexity": 3,
+            "lineno": 107,
+            "name": "_nearest_next",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 62,
+            "complexity": 2,
+            "lineno": 60,
+            "name": "token_pos",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 80,
+            "complexity": 2,
+            "lineno": 75,
+            "name": "is_relative_pronoun",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 53,
+            "complexity": 1,
+            "lineno": 52,
+            "name": "token_form",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 57,
+            "complexity": 1,
+            "lineno": 56,
+            "name": "token_tag",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 84,
+            "complexity": 1,
+            "lineno": 83,
+            "name": "is_predicate_candidate",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 88,
+            "complexity": 1,
+            "lineno": 87,
+            "name": "is_nominal_candidate",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 41,
+            "complexity": 1,
+            "lineno": 37,
+            "name": "DependencyHint",
+            "col_offset": 0,
+            "methods": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 49,
+            "complexity": 1,
+            "lineno": 45,
+            "name": "EmptyCategoryResolution",
+            "col_offset": 0,
+            "methods": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/update_overrides_from_gold.py": [
+          {
+            "type": "function",
+            "rank": "F",
+            "endline": 691,
+            "complexity": 51,
+            "lineno": 394,
+            "name": "learn_overrides",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 147,
+            "complexity": 12,
+            "lineno": 102,
+            "name": "parse_conllu",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 391,
+            "complexity": 11,
+            "lineno": 312,
+            "name": "align_gold_with_json",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 219,
+            "complexity": 8,
+            "lineno": 175,
+            "name": "parse_json_sentences",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 68,
+            "complexity": 7,
+            "lineno": 62,
+            "name": "normalize_feats",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 897,
+            "complexity": 7,
+            "lineno": 815,
+            "name": "main",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 172,
+            "complexity": 6,
+            "lineno": 162,
+            "name": "walk_collect_sentences",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 77,
+            "complexity": 5,
+            "lineno": 71,
+            "name": "extract_prontype",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 87,
+            "complexity": 5,
+            "lineno": 79,
+            "name": "extract_standard_form",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 159,
+            "complexity": 5,
+            "lineno": 150,
+            "name": "is_sentence_object",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 274,
+            "complexity": 5,
+            "lineno": 222,
+            "name": "index_json_sentences_by_uid",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 59,
+            "complexity": 4,
+            "lineno": 53,
+            "name": "safe_get",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 703,
+            "complexity": 4,
+            "lineno": 695,
+            "name": "short_preview",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 51,
+            "complexity": 3,
+            "lineno": 45,
+            "name": "normalize_override_form",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 99,
+            "complexity": 3,
+            "lineno": 93,
+            "name": "most_common_with_share",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 278,
+            "complexity": 3,
+            "lineno": 277,
+            "name": "filter_gold_learning_tokens",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 309,
+            "complexity": 3,
+            "lineno": 294,
+            "name": "filter_json_alignment_tokens",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 291,
+            "complexity": 2,
+            "lineno": 281,
+            "name": "normalize_alignment_form",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 90,
+            "complexity": 1,
+            "lineno": 89,
+            "name": "json_key",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 772,
+            "complexity": 1,
+            "lineno": 706,
+            "name": "build_report",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 812,
+            "complexity": 1,
+            "lineno": 775,
+            "name": "parse_args",
+            "col_offset": 0,
+            "closures": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/inspect_kadiweu_json.py": [
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 348,
+            "complexity": 19,
+            "lineno": 239,
+            "name": "print_sentence_summary",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 216,
+            "complexity": 11,
+            "lineno": 190,
+            "name": "normalize_sentence",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 140,
+            "complexity": 10,
+            "lineno": 99,
+            "name": "walk_collect_sentences",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 478,
+            "complexity": 9,
+            "lineno": 429,
+            "name": "main",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 376,
+            "complexity": 8,
+            "lineno": 356,
+            "name": "filter_sentences",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 96,
+            "complexity": 5,
+            "lineno": 77,
+            "name": "is_sentence_object",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 236,
+            "complexity": 5,
+            "lineno": 226,
+            "name": "render_container_meta_value",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 59,
+            "complexity": 4,
+            "lineno": 52,
+            "name": "safe_get",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 176,
+            "complexity": 4,
+            "lineno": 163,
+            "name": "normalize_token",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 382,
+            "complexity": 2,
+            "lineno": 379,
+            "name": "write_jsonl",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 64,
+            "complexity": 1,
+            "lineno": 62,
+            "name": "compact_json",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 69,
+            "complexity": 1,
+            "lineno": 67,
+            "name": "token_gloss",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 74,
+            "complexity": 1,
+            "lineno": 72,
+            "name": "split_gloss",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 148,
+            "complexity": 1,
+            "lineno": 143,
+            "name": "normalize_conllu_entry",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 159,
+            "complexity": 1,
+            "lineno": 152,
+            "name": "normalize_split",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 186,
+            "complexity": 1,
+            "lineno": 180,
+            "name": "normalize_chunk",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 223,
+            "complexity": 1,
+            "lineno": 220,
+            "name": "print_header",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 353,
+            "complexity": 1,
+            "lineno": 351,
+            "name": "load_json",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 426,
+            "complexity": 1,
+            "lineno": 385,
+            "name": "build_argparser",
+            "col_offset": 0,
+            "closures": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/induce_kadiweu_ud_mappings.py": [
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 269,
+            "complexity": 16,
+            "lineno": 144,
+            "name": "main",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 103,
+            "complexity": 10,
+            "lineno": 60,
+            "name": "read_conllu",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 126,
+            "complexity": 6,
+            "lineno": 116,
+            "name": "conllu_sentence_key",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 52,
+            "complexity": 5,
+            "lineno": 48,
+            "name": "parse_feats",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 45,
+            "complexity": 4,
+            "lineno": 38,
+            "name": "norm",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 113,
+            "complexity": 4,
+            "lineno": 106,
+            "name": "group_tsv_by_sentence",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 134,
+            "complexity": 2,
+            "lineno": 129,
+            "name": "most_common_mapping",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 57,
+            "complexity": 1,
+            "lineno": 55,
+            "name": "read_tsv",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 141,
+            "complexity": 1,
+            "lineno": 137,
+            "name": "write_counter_table",
+            "col_offset": 0,
+            "closures": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/kadiweu_json_to_token_table.py": [
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 340,
+            "complexity": 17,
+            "lineno": 235,
+            "name": "sentence_to_rows",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 195,
+            "complexity": 11,
+            "lineno": 156,
+            "name": "build_chunk_membership",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 130,
+            "complexity": 10,
+            "lineno": 90,
+            "name": "walk_collect_sentences",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 153,
+            "complexity": 8,
+            "lineno": 133,
+            "name": "filter_sentences",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 485,
+            "complexity": 7,
+            "lineno": 452,
+            "name": "main",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 87,
+            "complexity": 5,
+            "lineno": 72,
+            "name": "is_sentence_object",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 54,
+            "complexity": 4,
+            "lineno": 47,
+            "name": "safe_get",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 232,
+            "complexity": 4,
+            "lineno": 213,
+            "name": "normalize_split_list",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 409,
+            "complexity": 4,
+            "lineno": 363,
+            "name": "write_table",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 210,
+            "complexity": 3,
+            "lineno": 198,
+            "name": "index_proto_conllu",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 360,
+            "complexity": 3,
+            "lineno": 343,
+            "name": "collect_rows",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 64,
+            "complexity": 2,
+            "lineno": 62,
+            "name": "token_gloss",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 69,
+            "complexity": 2,
+            "lineno": 67,
+            "name": "split_gloss",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 59,
+            "complexity": 1,
+            "lineno": 57,
+            "name": "compact_json",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 414,
+            "complexity": 1,
+            "lineno": 412,
+            "name": "load_json",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 449,
+            "complexity": 1,
+            "lineno": 417,
+            "name": "build_argparser",
+            "col_offset": 0,
+            "closures": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/kadiweu_tag_profiles.py": [
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 265,
+            "complexity": 13,
+            "lineno": 209,
+            "name": "compute_profiles",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 190,
+            "complexity": 11,
+            "lineno": 152,
+            "name": "build_chunk_membership",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 126,
+            "complexity": 10,
+            "lineno": 90,
+            "name": "walk_collect_sentences",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 149,
+            "complexity": 8,
+            "lineno": 129,
+            "name": "filter_sentences",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 430,
+            "complexity": 7,
+            "lineno": 344,
+            "name": "main",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 87,
+            "complexity": 5,
+            "lineno": 72,
+            "name": "is_sentence_object",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 69,
+            "complexity": 4,
+            "lineno": 62,
+            "name": "safe_get",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 206,
+            "complexity": 4,
+            "lineno": 193,
+            "name": "split_tag_sequence",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 280,
+            "complexity": 3,
+            "lineno": 268,
+            "name": "print_counter",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 301,
+            "complexity": 3,
+            "lineno": 283,
+            "name": "write_counter_tsv",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 336,
+            "complexity": 1,
+            "lineno": 304,
+            "name": "build_argparser",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 341,
+            "complexity": 1,
+            "lineno": 339,
+            "name": "load_json",
+            "col_offset": 0,
+            "closures": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py": [
+          {
+            "type": "function",
+            "rank": "F",
+            "endline": 1569,
+            "complexity": 154,
+            "lineno": 1016,
+            "name": "convert_sentence",
+            "col_offset": 0,
+            "closures": [
+              {
+                "type": "function",
+                "rank": "B",
+                "endline": 1409,
+                "complexity": 9,
+                "lineno": 1392,
+                "name": "demote_extra_core_dependents",
+                "col_offset": 4,
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "E",
+            "endline": 812,
+            "complexity": 36,
+            "lineno": 712,
+            "name": "infer_feats",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "D",
+            "endline": 596,
+            "complexity": 23,
+            "lineno": 559,
+            "name": "pick_root_index",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 317,
+            "complexity": 13,
+            "lineno": 256,
+            "name": "apply_spaceafter_from_text",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 556,
+            "complexity": 11,
+            "lineno": 527,
+            "name": "build_chunk_infos",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 955,
+            "complexity": 11,
+            "lineno": 904,
+            "name": "build_text_from_rows",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 473,
+            "complexity": 10,
+            "lineno": 448,
+            "name": "chunk_membership_for_tokens",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 709,
+            "complexity": 10,
+            "lineno": 687,
+            "name": "infer_lemma",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 615,
+            "complexity": 8,
+            "lineno": 599,
+            "name": "choose_nominal_attachment_target",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 524,
+            "complexity": 7,
+            "lineno": 492,
+            "name": "choose_chunk_head",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 670,
+            "complexity": 7,
+            "lineno": 641,
+            "name": "collect_mwt_group",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 980,
+            "complexity": 7,
+            "lineno": 966,
+            "name": "is_embedded_chunk",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 1635,
+            "complexity": 7,
+            "lineno": 1609,
+            "name": "main",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 235,
+            "complexity": 6,
+            "lineno": 142,
+            "name": "configure_override_resources",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 391,
+            "complexity": 6,
+            "lineno": 373,
+            "name": "extract_range",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 435,
+            "complexity": 6,
+            "lineno": 394,
+            "name": "build_space_aware_token_ranges",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 489,
+            "complexity": 6,
+            "lineno": 478,
+            "name": "chunk_head_candidates",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 684,
+            "complexity": 6,
+            "lineno": 673,
+            "name": "mwt_surface_form",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 827,
+            "complexity": 6,
+            "lineno": 820,
+            "name": "upos_override_candidates",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 876,
+            "complexity": 6,
+            "lineno": 872,
+            "name": "parse_misc",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 139,
+            "complexity": 5,
+            "lineno": 80,
+            "name": "load_override_resource",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 355,
+            "complexity": 5,
+            "lineno": 345,
+            "name": "normalize_split_tags",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 629,
+            "complexity": 5,
+            "lineno": 617,
+            "name": "is_mwt_start",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 254,
+            "complexity": 4,
+            "lineno": 245,
+            "name": "warn_on_composite_tag_without_mwt",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 325,
+            "complexity": 4,
+            "lineno": 319,
+            "name": "safe_get",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 342,
+            "complexity": 4,
+            "lineno": 328,
+            "name": "normalize_text_ground_truth",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 870,
+            "complexity": 4,
+            "lineno": 860,
+            "name": "add_spaceafter_no",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 882,
+            "complexity": 4,
+            "lineno": 879,
+            "name": "join_misc",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 836,
+            "complexity": 3,
+            "lineno": 831,
+            "name": "infer_upos_for_form",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 844,
+            "complexity": 3,
+            "lineno": 839,
+            "name": "apply_upos_override",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 893,
+            "complexity": 3,
+            "lineno": 890,
+            "name": "remove_spaceafter_no",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 360,
+            "complexity": 2,
+            "lineno": 358,
+            "name": "get_proto_rows",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 365,
+            "complexity": 2,
+            "lineno": 363,
+            "name": "get_tokens",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 370,
+            "complexity": 2,
+            "lineno": 368,
+            "name": "get_chunks",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 818,
+            "complexity": 2,
+            "lineno": 814,
+            "name": "infer_upos",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 858,
+            "complexity": 2,
+            "lineno": 846,
+            "name": "get_form_correction",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 888,
+            "complexity": 2,
+            "lineno": 884,
+            "name": "add_misc_item",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 901,
+            "complexity": 2,
+            "lineno": 896,
+            "name": "ensure_spaceafter_no",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 1013,
+            "complexity": 2,
+            "lineno": 987,
+            "name": "DraftToken",
+            "col_offset": 0,
+            "methods": [
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 1013,
+                "classname": "DraftToken",
+                "complexity": 1,
+                "lineno": 988,
+                "name": "__init__",
+                "col_offset": 4,
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 439,
+            "complexity": 1,
+            "lineno": 438,
+            "name": "range_to_misc",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 445,
+            "complexity": 1,
+            "lineno": 442,
+            "name": "final_punct_range",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 638,
+            "complexity": 1,
+            "lineno": 632,
+            "name": "clean_component_form",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 964,
+            "complexity": 1,
+            "lineno": 958,
+            "name": "final_punct_range_from_text",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 1574,
+            "complexity": 1,
+            "lineno": 1572,
+            "name": "load_json",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 1606,
+            "complexity": 1,
+            "lineno": 1577,
+            "name": "parse_args",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 1013,
+            "classname": "DraftToken",
+            "complexity": 1,
+            "lineno": 988,
+            "name": "__init__",
+            "col_offset": 4,
+            "closures": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/check_kadiweu_json_consistency.py": [
+          {
+            "type": "function",
+            "rank": "F",
+            "endline": 557,
+            "complexity": 94,
+            "lineno": 250,
+            "name": "analyze",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 144,
+            "complexity": 10,
+            "lineno": 106,
+            "name": "walk_collect_sentences",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 229,
+            "complexity": 10,
+            "lineno": 210,
+            "name": "best_known_split_profile",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 167,
+            "complexity": 8,
+            "lineno": 147,
+            "name": "filter_sentences",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 207,
+            "complexity": 8,
+            "lineno": 198,
+            "name": "has_any_split_content",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 103,
+            "complexity": 5,
+            "lineno": 88,
+            "name": "is_sentence_object",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 588,
+            "complexity": 5,
+            "lineno": 561,
+            "name": "print_summary",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 612,
+            "complexity": 5,
+            "lineno": 591,
+            "name": "write_tsvs",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 85,
+            "complexity": 4,
+            "lineno": 78,
+            "name": "safe_get",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 188,
+            "complexity": 4,
+            "lineno": 184,
+            "name": "split_signature",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 195,
+            "complexity": 4,
+            "lineno": 191,
+            "name": "split_forms_signature",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 652,
+            "complexity": 4,
+            "lineno": 626,
+            "name": "main",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 181,
+            "complexity": 2,
+            "lineno": 178,
+            "name": "norm_text",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 171,
+            "complexity": 1,
+            "lineno": 170,
+            "name": "token_gloss",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 175,
+            "complexity": 1,
+            "lineno": 174,
+            "name": "split_gloss",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 237,
+            "complexity": 1,
+            "lineno": 232,
+            "name": "issue_base",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 246,
+            "complexity": 1,
+            "lineno": 241,
+            "name": "collect_sentence_metadata",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 623,
+            "complexity": 1,
+            "lineno": 615,
+            "name": "parse_args",
+            "col_offset": 0,
+            "closures": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/compare_kadiweu_conllu_versions.py": [
+          {
+            "type": "function",
+            "rank": "F",
+            "endline": 609,
+            "complexity": 62,
+            "lineno": 331,
+            "name": "main",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 152,
+            "complexity": 12,
+            "lineno": 138,
+            "name": "normalize_feats",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 219,
+            "complexity": 4,
+            "lineno": 159,
+            "name": "read_conllu",
+            "col_offset": 0,
+            "closures": [
+              {
+                "type": "function",
+                "rank": "B",
+                "endline": 206,
+                "complexity": 10,
+                "lineno": 164,
+                "name": "flush",
+                "col_offset": 4,
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 297,
+            "complexity": 4,
+            "lineno": 293,
+            "name": "update_metrics",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 318,
+            "complexity": 4,
+            "lineno": 300,
+            "name": "metric_table",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 112,
+            "complexity": 4,
+            "lineno": 100,
+            "name": "Sentence",
+            "col_offset": 0,
+            "methods": [
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 108,
+                "classname": "Sentence",
+                "complexity": 3,
+                "lineno": 107,
+                "name": "word_tokens",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 112,
+                "classname": "Sentence",
+                "complexity": 3,
+                "lineno": 111,
+                "name": "mwt_tokens",
+                "col_offset": 4,
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 135,
+            "complexity": 3,
+            "lineno": 130,
+            "name": "parse_id",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 250,
+            "complexity": 3,
+            "lineno": 244,
+            "name": "write_filtered_conllu",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 283,
+            "complexity": 3,
+            "lineno": 271,
+            "name": "compare_token_columns",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 290,
+            "complexity": 3,
+            "lineno": 286,
+            "name": "init_metric_dict",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 108,
+            "classname": "Sentence",
+            "complexity": 3,
+            "lineno": 107,
+            "name": "word_tokens",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 112,
+            "classname": "Sentence",
+            "complexity": 3,
+            "lineno": 111,
+            "name": "mwt_tokens",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 127,
+            "complexity": 3,
+            "lineno": 116,
+            "name": "MetricCounts",
+            "col_offset": 0,
+            "methods": [
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 123,
+                "classname": "MetricCounts",
+                "complexity": 2,
+                "lineno": 120,
+                "name": "add",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 127,
+                "classname": "MetricCounts",
+                "complexity": 2,
+                "lineno": 126,
+                "name": "acc",
+                "col_offset": 4,
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 241,
+            "complexity": 2,
+            "lineno": 222,
+            "name": "serialize_sentence",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 254,
+            "complexity": 2,
+            "lineno": 253,
+            "name": "mwt_signature",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 258,
+            "complexity": 2,
+            "lineno": 257,
+            "name": "word_signature",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 268,
+            "complexity": 2,
+            "lineno": 265,
+            "name": "safe_pct",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 328,
+            "complexity": 2,
+            "lineno": 321,
+            "name": "write_csv",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 123,
+            "classname": "MetricCounts",
+            "complexity": 2,
+            "lineno": 120,
+            "name": "add",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 127,
+            "classname": "MetricCounts",
+            "complexity": 2,
+            "lineno": 126,
+            "name": "acc",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 156,
+            "complexity": 1,
+            "lineno": 155,
+            "name": "normalize_deprel",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 262,
+            "complexity": 1,
+            "lineno": 261,
+            "name": "token_count_match",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 96,
+            "complexity": 1,
+            "lineno": 84,
+            "name": "Token",
+            "col_offset": 0,
+            "methods": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/kadiweu_token_ranges.py": [
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 345,
+            "complexity": 12,
+            "lineno": 311,
+            "name": "assign_token_ranges_to_rows",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 211,
+            "complexity": 9,
+            "lineno": 189,
+            "name": "parse_conllu_blocks",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 414,
+            "complexity": 9,
+            "lineno": 395,
+            "name": "check_sentence",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 506,
+            "complexity": 8,
+            "lineno": 478,
+            "name": "main",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 110,
+            "complexity": 6,
+            "lineno": 107,
+            "name": "parse_misc",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 255,
+            "complexity": 6,
+            "lineno": 240,
+            "name": "visible_surface_rows",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 295,
+            "complexity": 6,
+            "lineno": 258,
+            "name": "align_forms_to_text",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 115,
+            "complexity": 5,
+            "lineno": 113,
+            "name": "join_misc",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 144,
+            "complexity": 5,
+            "lineno": 131,
+            "name": "set_misc_key",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 221,
+            "complexity": 4,
+            "lineno": 214,
+            "name": "serialize_blocks",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 66,
+            "complexity": 4,
+            "lineno": 55,
+            "name": "TokenRangeIssue",
+            "col_offset": 0,
+            "methods": [
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 66,
+                "classname": "TokenRangeIssue",
+                "complexity": 3,
+                "lineno": 63,
+                "name": "format",
+                "col_offset": 4,
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 123,
+            "complexity": 3,
+            "lineno": 118,
+            "name": "get_misc_value",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 128,
+            "complexity": 3,
+            "lineno": 126,
+            "name": "remove_misc_key",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 155,
+            "complexity": 3,
+            "lineno": 154,
+            "name": "remove_flag",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 162,
+            "complexity": 3,
+            "lineno": 158,
+            "name": "get_token_range",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 237,
+            "complexity": 3,
+            "lineno": 229,
+            "name": "mwt_component_ids",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 303,
+            "complexity": 3,
+            "lineno": 298,
+            "name": "expected_ranges_for_rows",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 387,
+            "complexity": 3,
+            "lineno": 348,
+            "name": "assign_token_ranges_to_emitted_rows",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 443,
+            "complexity": 3,
+            "lineno": 424,
+            "name": "fix_conllu_text",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 66,
+            "classname": "TokenRangeIssue",
+            "complexity": 3,
+            "lineno": 63,
+            "name": "format",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 151,
+            "complexity": 2,
+            "lineno": 147,
+            "name": "ensure_flag",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 186,
+            "complexity": 2,
+            "lineno": 182,
+            "name": "mwt_span",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 308,
+            "complexity": 2,
+            "lineno": 307,
+            "name": "_next_visible_starts_immediately",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 421,
+            "complexity": 2,
+            "lineno": 417,
+            "name": "check_conllu_text",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 91,
+            "complexity": 2,
+            "lineno": 70,
+            "name": "ConlluRow",
+            "col_offset": 0,
+            "methods": [
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 76,
+                "classname": "ConlluRow",
+                "complexity": 1,
+                "lineno": 75,
+                "name": "id",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 80,
+                "classname": "ConlluRow",
+                "complexity": 1,
+                "lineno": 79,
+                "name": "form",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 84,
+                "classname": "ConlluRow",
+                "complexity": 1,
+                "lineno": 83,
+                "name": "misc",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 88,
+                "classname": "ConlluRow",
+                "complexity": 2,
+                "lineno": 87,
+                "name": "misc",
+                "col_offset": 4,
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 91,
+                "classname": "ConlluRow",
+                "complexity": 1,
+                "lineno": 90,
+                "name": "serialize",
+                "col_offset": 4,
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 88,
+            "classname": "ConlluRow",
+            "complexity": 2,
+            "lineno": 87,
+            "name": "misc",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 171,
+            "complexity": 1,
+            "lineno": 170,
+            "name": "is_int_id",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 175,
+            "complexity": 1,
+            "lineno": 174,
+            "name": "is_mwt_id",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 179,
+            "complexity": 1,
+            "lineno": 178,
+            "name": "is_empty_node_id",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 475,
+            "complexity": 1,
+            "lineno": 451,
+            "name": "parse_args",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 76,
+            "classname": "ConlluRow",
+            "complexity": 1,
+            "lineno": 75,
+            "name": "id",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 80,
+            "classname": "ConlluRow",
+            "complexity": 1,
+            "lineno": 79,
+            "name": "form",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 84,
+            "classname": "ConlluRow",
+            "complexity": 1,
+            "lineno": 83,
+            "name": "misc",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 91,
+            "classname": "ConlluRow",
+            "complexity": 1,
+            "lineno": 90,
+            "name": "serialize",
+            "col_offset": 4,
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 99,
+            "complexity": 1,
+            "lineno": 95,
+            "name": "SentenceBlock",
+            "col_offset": 0,
+            "methods": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/kadiweu_morphology.py": [
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 188,
+            "complexity": 5,
+            "lineno": 100,
+            "name": "build_ng_deictic_form_map",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 98,
+            "complexity": 4,
+            "lineno": 78,
+            "name": "pluralize_ng_form",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 288,
+            "complexity": 4,
+            "lineno": 275,
+            "name": "format_gloss",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 207,
+            "complexity": 3,
+            "lineno": 191,
+            "name": "build_form_corrections_from_ng_deictics",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 220,
+            "complexity": 3,
+            "lineno": 211,
+            "name": "describe_ng_deictic_form",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 241,
+            "complexity": 2,
+            "lineno": 233,
+            "name": "get_standard_form_correction",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 272,
+            "complexity": 2,
+            "lineno": 243,
+            "name": "test_ng_deictic_forms",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 231,
+            "complexity": 1,
+            "lineno": 222,
+            "name": "correct_ng_deictic_form",
+            "col_offset": 0,
+            "closures": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/kadiweu_normalization.py": [
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 54,
+            "complexity": 6,
+            "lineno": 40,
+            "name": "canonicalize_override_map",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 33,
+            "complexity": 3,
+            "lineno": 14,
+            "name": "normalize_form_for_lookup",
+            "col_offset": 0,
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 38,
+            "complexity": 2,
+            "lineno": 35,
+            "name": "get_surface_and_lookup_form",
+            "col_offset": 0,
+            "closures": []
+          }
+        ]
+      },
+      "summary": {
+        "functions_and_methods": 249,
+        "classes": 10,
+        "total_cyclomatic_complexity": 1586,
+        "average_cyclomatic_complexity_per_function": 6.369,
+        "maximum_cyclomatic_complexity": 154,
+        "rank_counts": {
+          "E": 2,
+          "D": 4,
+          "C": 18,
+          "B": 48,
+          "A": 173,
+          "F": 4
+        },
+        "top_complex_functions": [
+          {
+            "type": "function",
+            "rank": "F",
+            "endline": 1569,
+            "complexity": 154,
+            "lineno": 1016,
+            "name": "convert_sentence",
+            "col_offset": 0,
+            "closures": [
+              {
+                "type": "function",
+                "rank": "B",
+                "endline": 1409,
+                "complexity": 9,
+                "lineno": 1392,
+                "name": "demote_extra_core_dependents",
+                "col_offset": 4,
+                "closures": []
+              }
+            ],
+            "file": "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py"
+          },
+          {
+            "type": "function",
+            "rank": "F",
+            "endline": 557,
+            "complexity": 94,
+            "lineno": 250,
+            "name": "analyze",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/check_kadiweu_json_consistency.py"
+          },
+          {
+            "type": "function",
+            "rank": "F",
+            "endline": 609,
+            "complexity": 62,
+            "lineno": 331,
+            "name": "main",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/compare_kadiweu_conllu_versions.py"
+          },
+          {
+            "type": "function",
+            "rank": "F",
+            "endline": 691,
+            "complexity": 51,
+            "lineno": 394,
+            "name": "learn_overrides",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/update_overrides_from_gold.py"
+          },
+          {
+            "type": "method",
+            "rank": "E",
+            "endline": 460,
+            "classname": "KadiweuLexicon",
+            "complexity": 36,
+            "lineno": 417,
+            "name": "infer_ud_upos",
+            "col_offset": 4,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_lexicon_explorer.py"
+          },
+          {
+            "type": "function",
+            "rank": "E",
+            "endline": 812,
+            "complexity": 36,
+            "lineno": 712,
+            "name": "infer_feats",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py"
+          },
+          {
+            "type": "method",
+            "rank": "D",
+            "endline": 691,
+            "classname": "KadiweuLexicon",
+            "complexity": 25,
+            "lineno": 647,
+            "name": "_extract_field_values",
+            "col_offset": 4,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_lexicon_explorer.py"
+          },
+          {
+            "type": "method",
+            "rank": "D",
+            "endline": 625,
+            "classname": "KadiweuLexicon",
+            "complexity": 23,
+            "lineno": 603,
+            "name": "stats",
+            "col_offset": 4,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_lexicon_explorer.py"
+          },
+          {
+            "type": "function",
+            "rank": "D",
+            "endline": 596,
+            "complexity": 23,
+            "lineno": 559,
+            "name": "pick_root_index",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py"
+          },
+          {
+            "type": "function",
+            "rank": "D",
+            "endline": 882,
+            "complexity": 21,
+            "lineno": 823,
+            "name": "main",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_lexicon_explorer.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 348,
+            "complexity": 19,
+            "lineno": 239,
+            "name": "print_sentence_summary",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/inspect_kadiweu_json.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 186,
+            "complexity": 18,
+            "lineno": 115,
+            "name": "resolve_empty_categories",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_empty_categories.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 340,
+            "complexity": 17,
+            "lineno": 235,
+            "name": "sentence_to_rows",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_json_to_token_table.py"
+          },
+          {
+            "type": "method",
+            "rank": "C",
+            "endline": 376,
+            "classname": "KadiweuLexicon",
+            "complexity": 16,
+            "lineno": 321,
+            "name": "search_by_pos_semantics",
+            "col_offset": 4,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_lexicon_explorer.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 269,
+            "complexity": 16,
+            "lineno": 144,
+            "name": "main",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/induce_kadiweu_ud_mappings.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 747,
+            "complexity": 14,
+            "lineno": 726,
+            "name": "pretty_entry",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_lexicon_explorer.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 265,
+            "complexity": 13,
+            "lineno": 209,
+            "name": "compute_profiles",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_tag_profiles.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 317,
+            "complexity": 13,
+            "lineno": 256,
+            "name": "apply_spaceafter_from_text",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 147,
+            "complexity": 12,
+            "lineno": 102,
+            "name": "parse_conllu",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/update_overrides_from_gold.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 152,
+            "complexity": 12,
+            "lineno": 138,
+            "name": "normalize_feats",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/compare_kadiweu_conllu_versions.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 345,
+            "complexity": 12,
+            "lineno": 311,
+            "name": "assign_token_ranges_to_rows",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_token_ranges.py"
+          },
+          {
+            "type": "method",
+            "rank": "C",
+            "endline": 220,
+            "classname": "KadiweuLexicon",
+            "complexity": 11,
+            "lineno": 193,
+            "name": "look_up",
+            "col_offset": 4,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_lexicon_explorer.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 391,
+            "complexity": 11,
+            "lineno": 312,
+            "name": "align_gold_with_json",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/update_overrides_from_gold.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 216,
+            "complexity": 11,
+            "lineno": 190,
+            "name": "normalize_sentence",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/inspect_kadiweu_json.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 195,
+            "complexity": 11,
+            "lineno": 156,
+            "name": "build_chunk_membership",
+            "col_offset": 0,
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_json_to_token_table.py"
+          }
+        ]
+      }
+    },
+    "radon_mi": {
+      "available": true,
+      "tool": "radon mi",
+      "raw": {
+        "/home/leonel/kadiweu/src/kadiweu_lexicon_explorer.py": {
+          "mi": 0.0,
+          "rank": "C"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_empty_categories.py": {
+          "mi": 55.720811745972775,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/update_overrides_from_gold.py": {
+          "mi": 15.539889832869438,
+          "rank": "B"
+        },
+        "/home/leonel/kadiweu/src/inspect_kadiweu_json.py": {
+          "mi": 41.03471635724365,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/induce_kadiweu_ud_mappings.py": {
+          "mi": 44.941799903829136,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_converter_config.py": {
+          "mi": 100.0,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_json_to_token_table.py": {
+          "mi": 41.265756263131124,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_tag_profiles.py": {
+          "mi": 44.70359634188872,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py": {
+          "mi": 0.0,
+          "rank": "C"
+        },
+        "/home/leonel/kadiweu/src/check_kadiweu_json_consistency.py": {
+          "mi": 20.950654907205315,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/compare_kadiweu_conllu_versions.py": {
+          "mi": 25.972902233157537,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_token_ranges.py": {
+          "mi": 34.509630694076776,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_morphology.py": {
+          "mi": 69.22263391295613,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_normalization.py": {
+          "mi": 81.50928297166332,
+          "rank": "A"
+        }
+      },
+      "summary": {
+        "files": 14,
+        "average_maintainability_index": 41.098,
+        "minimum_maintainability_index": 0.0,
+        "maximum_maintainability_index": 100.0,
+        "rank_counts": {
+          "C": 2,
+          "A": 11,
+          "B": 1
+        },
+        "files_by_maintainability": [
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_lexicon_explorer.py",
+            "maintainability_index": 0.0,
+            "rank": "C"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py",
+            "maintainability_index": 0.0,
+            "rank": "C"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/update_overrides_from_gold.py",
+            "maintainability_index": 15.539889832869438,
+            "rank": "B"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/check_kadiweu_json_consistency.py",
+            "maintainability_index": 20.950654907205315,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/compare_kadiweu_conllu_versions.py",
+            "maintainability_index": 25.972902233157537,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_token_ranges.py",
+            "maintainability_index": 34.509630694076776,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/inspect_kadiweu_json.py",
+            "maintainability_index": 41.03471635724365,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_json_to_token_table.py",
+            "maintainability_index": 41.265756263131124,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_tag_profiles.py",
+            "maintainability_index": 44.70359634188872,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/induce_kadiweu_ud_mappings.py",
+            "maintainability_index": 44.941799903829136,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_empty_categories.py",
+            "maintainability_index": 55.720811745972775,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_morphology.py",
+            "maintainability_index": 69.22263391295613,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_normalization.py",
+            "maintainability_index": 81.50928297166332,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_converter_config.py",
+            "maintainability_index": 100.0,
+            "rank": "A"
+          }
+        ]
+      }
+    },
+    "python_ast": {
+      "summary": {
+        "python_files": 14,
+        "logical_loc_ast_statements": 3717,
+        "functions_and_methods_ast": 251,
+        "classes_ast": 10
+      },
+      "files": [
+        {
+          "path": "check_kadiweu_json_consistency.py",
+          "parse_error": null,
+          "logical_loc": 355,
+          "functions": 18,
+          "classes": 0
+        },
+        {
+          "path": "compare_kadiweu_conllu_versions.py",
+          "parse_error": null,
+          "logical_loc": 307,
+          "functions": 21,
+          "classes": 3
+        },
+        {
+          "path": "induce_kadiweu_ud_mappings.py",
+          "parse_error": null,
+          "logical_loc": 164,
+          "functions": 9,
+          "classes": 0
+        },
+        {
+          "path": "inspect_kadiweu_json.py",
+          "parse_error": null,
+          "logical_loc": 210,
+          "functions": 19,
+          "classes": 0
+        },
+        {
+          "path": "kadiweu_converter_config.py",
+          "parse_error": null,
+          "logical_loc": 3,
+          "functions": 0,
+          "classes": 0
+        },
+        {
+          "path": "kadiweu_empty_categories.py",
+          "parse_error": null,
+          "logical_loc": 95,
+          "functions": 11,
+          "classes": 2
+        },
+        {
+          "path": "kadiweu_json_to_conllu.py",
+          "parse_error": null,
+          "logical_loc": 942,
+          "functions": 46,
+          "classes": 1
+        },
+        {
+          "path": "kadiweu_json_to_token_table.py",
+          "parse_error": null,
+          "logical_loc": 218,
+          "functions": 16,
+          "classes": 0
+        },
+        {
+          "path": "kadiweu_lexicon_explorer.py",
+          "parse_error": null,
+          "logical_loc": 463,
+          "functions": 35,
+          "classes": 1
+        },
+        {
+          "path": "kadiweu_morphology.py",
+          "parse_error": null,
+          "logical_loc": 73,
+          "functions": 8,
+          "classes": 0
+        },
+        {
+          "path": "kadiweu_normalization.py",
+          "parse_error": null,
+          "logical_loc": 25,
+          "functions": 3,
+          "classes": 0
+        },
+        {
+          "path": "kadiweu_tag_profiles.py",
+          "parse_error": null,
+          "logical_loc": 202,
+          "functions": 12,
+          "classes": 0
+        },
+        {
+          "path": "kadiweu_token_ranges.py",
+          "parse_error": null,
+          "logical_loc": 262,
+          "functions": 32,
+          "classes": 3
+        },
+        {
+          "path": "update_overrides_from_gold.py",
+          "parse_error": null,
+          "logical_loc": 398,
+          "functions": 21,
+          "classes": 0
+        }
+      ]
+    }
+  },
+  "linguistic_resources": {
+    "summary": {
+      "files": 7,
+      "physical_lines": 1583,
+      "blank_lines": 5,
+      "sentence_like_objects": 204,
+      "lexicon_entries_heuristic": 7119,
+      "override_rules_heuristic": 827,
+      "parse_errors": []
+    },
+    "files": [
+      {
+        "path": "/home/leonel/kadiweu/data/resources/kadiweu_default_overrides.json",
+        "physical_lines": 57,
+        "blank_lines": 0,
+        "parse_error": null,
+        "top_level_type": "dict",
+        "top_level_items": 5,
+        "sentence_like_objects": 0,
+        "lexicon_entries_heuristic": 0,
+        "override_rules_heuristic": 45
+      },
+      {
+        "path": "/home/leonel/kadiweu/data/resources/gold_derived_overrides.json",
+        "physical_lines": 1402,
+        "blank_lines": 0,
+        "parse_error": null,
+        "top_level_type": "dict",
+        "top_level_items": 11,
+        "sentence_like_objects": 0,
+        "lexicon_entries_heuristic": 0,
+        "override_rules_heuristic": 719
+      },
+      {
+        "path": "/home/leonel/kadiweu/data/resources/kadiweu_manual_overrides.json",
+        "physical_lines": 120,
+        "blank_lines": 5,
+        "parse_error": null,
+        "top_level_type": "dict",
+        "top_level_items": 7,
+        "sentence_like_objects": 0,
+        "lexicon_entries_heuristic": 0,
+        "override_rules_heuristic": 63
+      },
+      {
+        "path": "/home/leonel/kadiweu/data/lexicon-kadiweu.json",
+        "physical_lines": 1,
+        "blank_lines": 0,
+        "parse_error": null,
+        "top_level_type": "list",
+        "top_level_items": 7119,
+        "sentence_like_objects": 0,
+        "lexicon_entries_heuristic": 7119,
+        "override_rules_heuristic": 0
+      },
+      {
+        "path": "/home/leonel/kadiweu/data/gramatica-pedagogica.json",
+        "physical_lines": 1,
+        "blank_lines": 0,
+        "parse_error": null,
+        "top_level_type": "dict",
+        "top_level_items": 3,
+        "sentence_like_objects": 61,
+        "lexicon_entries_heuristic": 0,
+        "override_rules_heuristic": 0
+      },
+      {
+        "path": "/home/leonel/kadiweu/data/van-data.json",
+        "physical_lines": 1,
+        "blank_lines": 0,
+        "parse_error": null,
+        "top_level_type": "dict",
+        "top_level_items": 3,
+        "sentence_like_objects": 75,
+        "lexicon_entries_heuristic": 0,
+        "override_rules_heuristic": 0
+      },
+      {
+        "path": "/home/leonel/kadiweu/data/dados-hil.json",
+        "physical_lines": 1,
+        "blank_lines": 0,
+        "parse_error": null,
+        "top_level_type": "dict",
+        "top_level_items": 3,
+        "sentence_like_objects": 68,
+        "lexicon_entries_heuristic": 0,
+        "override_rules_heuristic": 0
+      }
+    ]
+  }
+}

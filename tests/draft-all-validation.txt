@@ -1,0 +1,36 @@
+~/kadiweu/data/treebank$ validate.py --lang=kbc --max-err=0 draft-all.conllu 
+[Line 457 Sent gramatica-pedagogica-38]: [L3 WARNING pron-det-without-prontype] The word 'ida' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 466 Sent gramatica-pedagogica-39]: [L3 WARNING pron-det-without-prontype] The word 'ijotawece' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 526 Sent gramatica-pedagogica-44]: [L4 MORPHO feature-upos-not-permitted] Feature Mood is not permitted with UPOS ADJ in language [kbc] ('dakake').
+
+The following 38 feature values are currently permitted in language [kbc]:
+AdvType=Loc, AdvType=Man, AdvType=Tim, Aspect=Perf, Degree=Dim, Deixis=Remt, Gender=Fem, Gender=Masc, Gender[obj]=Fem, Gender[obj]=Masc, Mood=Ind, Number=Plur, Number=Sing, Number[obj]=Plur, Number[obj]=Sing, Number[psor]=Plur, Number[psor]=Sing, Person=1, Person=2, Person=3, Person[erg]=3, Person[obj]=1, Person[obj]=2, Person[obj]=3, Person[psor]=1, Person[psor]=2, Person[psor]=3, Polarity=Neg, Poss=Yes, PronType=Dem, PronType=Ind, PronType=Prs, PronType=Rel, VerbForm=Fin, Voice=Act, Voice=Antip, Voice=Appl, Voice=Inv
+If a language needs a feature that is not documented in the universal guidelines, the feature must
+have a language-specific documentation page in a prescribed format.
+See https://universaldependencies.org/contributing_language_specific.html for further guidelines.
+All features including universal must be specifically turned on for each language in which they are used.
+See https://quest.ms.mff.cuni.cz/udvalidator/cgi-bin/unidep/langspec/specify_feature.pl for details.
+
+
+[Line 526 Sent gramatica-pedagogica-44]: [L4 MORPHO feature-upos-not-permitted] Feature Person is not permitted with UPOS ADJ in language [kbc] ('dakake').
+[Line 526 Sent gramatica-pedagogica-44]: [L4 MORPHO feature-upos-not-permitted] Feature VerbForm is not permitted with UPOS ADJ in language [kbc] ('dakake').
+[Line 526 Sent gramatica-pedagogica-44]: [L4 MORPHO feature-upos-not-permitted] Feature Voice is not permitted with UPOS ADJ in language [kbc] ('dakake').
+[Line 641 Sent gramatica-pedagogica-54]: [L3 WARNING pron-det-without-prontype] The word 'akaami' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 642 Sent gramatica-pedagogica-54]: [L3 WARNING pron-det-without-prontype] The word 'oko' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 705 Sent gramatica-pedagogica-59]: [L4 MORPHO feature-upos-not-permitted] Feature Mood is not permitted with UPOS ADJ in language [kbc] ('dakake').
+[Line 705 Sent gramatica-pedagogica-59]: [L4 MORPHO feature-upos-not-permitted] Feature Person is not permitted with UPOS ADJ in language [kbc] ('dakake').
+[Line 705 Sent gramatica-pedagogica-59]: [L4 MORPHO feature-upos-not-permitted] Feature VerbForm is not permitted with UPOS ADJ in language [kbc] ('dakake').
+[Line 705 Sent gramatica-pedagogica-59]: [L4 MORPHO feature-upos-not-permitted] Feature Voice is not permitted with UPOS ADJ in language [kbc] ('dakake').
+[Line 716 Sent gramatica-pedagogica-60]: [L4 MORPHO feature-upos-not-permitted] Feature Mood is not permitted with UPOS ADJ in language [kbc] ('dakake').
+[Line 716 Sent gramatica-pedagogica-60]: [L4 MORPHO feature-upos-not-permitted] Feature Person is not permitted with UPOS ADJ in language [kbc] ('dakake').
+[Line 716 Sent gramatica-pedagogica-60]: [L4 MORPHO feature-upos-not-permitted] Feature VerbForm is not permitted with UPOS ADJ in language [kbc] ('dakake').
+[Line 716 Sent gramatica-pedagogica-60]: [L4 MORPHO feature-upos-not-permitted] Feature Voice is not permitted with UPOS ADJ in language [kbc] ('dakake').
+[Line 832 Sent dados-hil-9]: [L4 MORPHO feature-upos-not-permitted] Feature Mood is not permitted with UPOS ADJ in language [kbc] ('dakake').
+[Line 832 Sent dados-hil-9]: [L4 MORPHO feature-upos-not-permitted] Feature Person is not permitted with UPOS ADJ in language [kbc] ('dakake').
+[Line 832 Sent dados-hil-9]: [L4 MORPHO feature-upos-not-permitted] Feature VerbForm is not permitted with UPOS ADJ in language [kbc] ('dakake').
+[Line 832 Sent dados-hil-9]: [L4 MORPHO feature-upos-not-permitted] Feature Voice is not permitted with UPOS ADJ in language [kbc] ('dakake').
+[Line 1445 Sent dados-hil-62]: [L3 WARNING pron-det-without-prontype] The word 'Nagada' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 1468 Sent dados-hil-64]: [L3 WARNING pron-det-without-prontype] The word 'Nigijoa' is tagged 'DET' but it lacks the 'PronType' feature
+Warnings: 6
+MORPHO errors: 16
+*** FAILED *** with 16 errors
