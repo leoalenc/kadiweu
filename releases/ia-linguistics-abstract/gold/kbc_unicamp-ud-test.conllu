@@ -1,0 +1,1240 @@
+# sent_id = ped-gramm-1
+# sent_uid = ed98d4d1-638c-4377-8c6d-5511855636d1
+# text = ajo liwatece ja iwaGadi.
+# text_orig = ajo liwatece ja iwaGadi
+# text_por_orig = a canoa dele/a é pesada
+# text_por_alt1 = A canoa dele é pesada.
+# text_por_alt2 = A canoa dela é pesada.
+# text_eng_alt1 = His canoe is heavy.
+# text_eng_alt2 = Her canoe is heavy.
+1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	liwatece	watece	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:12
+3	ja	jaG	AUX	T	Aspect=Perf	4	aux	_	TokenRange=13:15
+4	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=16:23
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = ped-gramm-2
+# sent_uid = ccb5ea37-b3ba-47a9-8d71-224f599ea7be
+# text = ajo liwatece etadi weiigi.
+# text_orig = ajo liwatece etadi weiigi
+# text_por_orig = a canoa dele/a está no rio
+# text_por_alt1 = A canoa dele está no rio.
+# text_por_alt2 = A canoa dela está no rio.
+# text_eng_alt1 = His canoe is in the river.
+# text_eng_alt2 = Her canoe is in the river.
+1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	liwatece	watece	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:12
+3	etadi	etidi	VERB	VB	Gender=Fem|Person=3	0	root	_	TokenRange=13:18
+4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=19:25
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = ped-gramm-3
+# sent_uid = 49347527-d19d-4689-bff1-ba3e497e7b1f
+# text = ajo niwatece etadi digoida.
+# text_orig = ajo niwatece etadi digoida
+# text_por_orig = A canoa está lá
+# text_por = A canoa está lá.
+# text_eng = The canoe is there.
+1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	3	nsubj	_	Gloss=canoe|MSeg=ni-watece|MGloss=ANT-canoe|TokenRange=4:12
+3	etadi	etidi	VERB	VB	Gender=Fem|Person=3	0	root	_	TokenRange=13:18
+4	digoida	digoida	ADV	ADV	AdvType=Loc|PronType=Dem	3	advmod	_	SpaceAfter=No|TokenRange=19:26
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = ped-gramm-4
+# sent_uid = 69948fe6-81f6-4faa-a344-8f8c47486943
+# text = niwatece iwaGadi.
+# text_orig = niwatece iwaGadi
+# text_por_orig = A canoa está pesada
+# text_por = A canoa está pesada.
+# text_eng = The canoe is heavy.
+1	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	2	nsubj	_	Gloss=canoe|MSeg=ni-watece|MGloss=ANT-canoe|TokenRange=0:8
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=9:16
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = ped-gramm-5
+# sent_uid = b2e3ea43-0d68-46ee-9f33-938610cc8aec
+# text = niwatece etadi weiigi.
+# text_orig = niwatece etadi weiigi
+# text_por_orig = A canoa está no rio
+# text_por = A canoa está no rio.
+# text_eng = The canoe is in the river.
+1	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	2	nsubj	_	Gloss=canoe|MSeg=ni-watece|MGloss=ANT-canoe|TokenRange=0:8
+2	etadi	etidi	VERB	VB	Gender=Fem|Person=3	0	root	_	TokenRange=9:14
+3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=15:21
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = ped-gramm-6
+# sent_uid = 1b99ecb9-5656-4c38-b60b-fbbe643708fb
+# text = ajo niwatece ipegitege weiigi.
+# text_orig = ajo niwatece ipegitege weiigi
+# text_por = A canoa está perto do rio.
+1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	3	nsubj	_	Gloss=canoe|MSeg=ni-watece|MGloss=ANT-canoe|TokenRange=4:12
+3	ipegitege	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=13:22
+4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=23:29
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
+
+# sent_id = ped-gramm-7
+# sent_uid = e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
+# text = liGeladi Maria aGipegetege.
+# text_orig = liGeladi Maria aGipegetege
+# text_por = A casa de Maria não é perto dela
+# text_por_orig = A casa de Maria não é perto dela
+1	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=0:8
+2	Maria	maria	PROPN	NPR	_	1	nmod:poss	_	TokenRange=9:14
+3-4	aGipegetege	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=15:26
+3	aG	aG	PART	NEG	Polarity=Neg	4	advmod	_	_
+4	ipegetege	pege	VERB	VBAPL	Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	_
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = ped-gramm-8
+# sent_uid = 79a6cd4e-b585-437a-9084-1fa077dec3b6
+# text = ica liGeladi ipegetege.
+# text_orig = ica liGeladi ipegetege
+# text_por = A casa está perto dela.
+# text_por_orig = A casa está perto dela
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:12
+3	ipegetege	pege	VERB	VBAPL	Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=13:22
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = ped-gramm-9
+# sent_uid = e9d6dfb6-656d-44aa-ba17-86289fd72268
+# text = liGeladi idei nigotaGa.
+# text_orig = liGeladi idei nigotaGa
+# text_por_orig = A casa fica perto da cidade
+# text_por = A casa fica perto da cidade.
+# text_eng_orig = jidei, ideoni, idei, ideijonaGa, ideiticwaci
+# text_eng = TODO
+# comment_kbc_orig = jidei, ideoni, idei, ideijonaGa, ideiticwaci
+1	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nsubj	_	TokenRange=0:8
+2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=9:13
+3	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	2	obj	_	Gloss=city|MSeg=ni-gotaGa|MGloss=ANT-city|SpaceAfter=No|TokenRange=14:22
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = ped-gramm-10
+# sent_uid = 2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+# text = ica liGeladi ipegitegi.
+# text_orig = ica liGeladi ipegitegi
+# text_por_alt1 = A casa dela fica perto dela.
+# text_por_alt2 = A casa dele fica perto dele.
+# text_por_alt3 = A casa dele fica perto dela.
+# text_por_alt4 = A casa dela fica perto dele.
+# text_por_orig = a casa dela/dele fica perto dele/dela
+# comment_por_orig = perguntar mais sobre a variação i/e
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:12
+3	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=13:22
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = ped-gramm-11
+# sent_uid = fef391af-9e63-419f-8f81-057459193f49
+# text = ica Maria looligi alidi.
+# text_orig = ica Maria looligi alidi
+# text_por_orig = a comida da Maria não está deliciosa (a não gostosura da comida da Maria)
+# text_por = A comida da Maria não está deliciosa.
+# text_por_lit = a não gostosura da comida da Maria
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	NumClass=Absent|TokenRange=0:3
+2	Maria	maria	PROPN	NPR	_	3	nmod:poss	_	TokenRange=4:9
+3	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	TokenRange=10:17
+4-5	alidi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=18:23
+4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
+5	lidi	idi	NOUN	N$	Person[psor]=3	0	root	_	_
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = ped-gramm-12
+# sent_uid = 070d221f-f72d-4055-9c82-ddc383743e6a
+# text = ica looligi lidi.
+# text_orig = ica looligi lidi
+# text_por_orig = A comida está/é deliciosa (A gostosura da comida da Maria)
+# text_por_alt1 = A comida é deliciosa.
+# text_por_alt2 = A comida está deliciosa.
+# text_por_alt3 = A gostosura da comida da Maria.
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:11
+3	lidi	idi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=12:16
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = ped-gramm-13
+# sent_uid = 68277d1f-c30b-4c4f-ba9e-c2883cc133af
+# text = ica looligi dapico.
+# text_orig = ica looligi dapico
+# text_por_orig = A comida dela é quente
+# text_por = A comida dela é quente.
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:11
+3	dapico	apico	VERB	VB	Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=12:18
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
+
+# sent_id = ped-gramm-14
+# sent_uid = 5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
+# text = ica looligi ja dapico.
+# text_orig = ica looligi ja dapico
+# text_por_orig = a comida dela está quente
+# text_por = a comida dela está quente.
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:11
+3	ja	jaG	AUX	T	Aspect=Perf	4	aux	_	TokenRange=12:14
+4	dapico	apico	VERB	VB	Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=15:21
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = ped-gramm-15
+# sent_uid = c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
+# text = ica looligi lideGegi.
+# text_orig = ica looligi lideGegi
+# text_por_orig = A comida é deliciosa (a gostosura da comida dela)
+# text_por = A comida é deliciosa.
+# text_por_lit = a gostosura da comida dela
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:11
+3	lideGegi	idi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	Derivation=Nml|SpaceAfter=No|TokenRange=12:20
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = ped-gramm-16
+# sent_uid = 19cc39ce-fe03-4551-8097-9d163a38a3c0
+# text = loigipodi libinienigipi.
+# text_orig = loigipodi libinienigipi
+# text_por_orig = A comunidade dele/dela é bonita
+# text_por_alt1 = A comunidade dele é bonita.
+# text_por_alt2 = A comunidade dela é bonita.
+1	loigipodi	oigi	NOUN	N$	Gender=Masc|Number=Plur|Person[psor]=3	2	nsubj	_	TokenRange=0:9
+2	libinienigipi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=10:23
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = ped-gramm-17
+# sent_uid = 12147353-b422-4ad7-9bef-1d20e70e2a74
+# text = ica loigi ijo niganigi ipegitegi GanigotGa.
+# text_orig = ica loigi ijo niganigi ipegitegi GanigotGa
+# text_por = A comunidade do menino é perto da cidade de vocês.
+# text_por_orig = A comunidade do menino é perto da cidade de vocês
+# text_eng = TODO
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	loigi	oigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	TokenRange=4:9
+3	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	TokenRange=10:13
+4	niganigi	niganigi	NOUN	N	Gender=Masc|Number=Sing	2	nmod:poss	_	TokenRange=14:22
+5	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=23:32
+6	GanigotGa	nigota	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=2	5	obj	_	SpaceAfter=No|TokenRange=33:42
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=42:43
+
+# sent_id = ped-gramm-18
+# sent_uid = 582429f2-67d5-4077-b209-6deb7b5df54f
+# text = ica lideGegi loligi idei liGeladi.
+# text_orig = ica lidGegi loligi idei liGeladi
+# text_por_orig = a deliciosa comida está na casa dela/dele
+# text_por_alt1 = A deliciosa comida está na casa dela.
+# text_por_alt2 = A deliciosa comida está na casa dele.
+# text_por_lit = A gostosura da comida dele/dela está na casa dela/dele.
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	lideGegi	idi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:11
+3	loligi	oligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nmod:poss	_	TokenRange=12:18
+4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=19:23
+5	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	obj	_	SpaceAfter=No|TokenRange=24:32
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=32:33
+
+# sent_id = ped-gramm-19
+# sent_uid = 0f478381-6858-463d-94cc-903e9dc879f9
+# text = ica liwigo libinienigi.
+# text_orig = ica liwigo libinienigi
+# text_por_orig = a fotografia dela/dele é/está bonita
+# text_por = a fotografia dela/dele é/está bonita.
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	liwigo	wigo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:10
+3	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=11:22
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = ped-gramm-20
+# sent_uid = 55551636-8ed3-4545-8510-d8dbfd817a1a
+# text = ica niwigo libinienigi.
+# text_orig = ica niwigo libinienigi
+# text_por_orig = a fotografia é/está bonita
+# text_por = a fotografia é/está bonita.
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	niwigo	wigo	NOUN	N$	Gender=Masc|Number=Sing	3	nsubj	_	TokenRange=4:10
+3	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=11:22
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = ped-gramm-21
+# sent_uid = 5d0b94bf-223d-4f09-8c6f-b951a70d6d0b
+# text = ica nioladi Ganixoa.
+# text_orig = ica nioladi Ganixoa
+# text_por_orig = A língua do teu irmão 
+# text_por = A língua do teu irmão.
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	nioladi	nioladi	NOUN	N	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	TokenRange=4:11
+3	Ganixoa	nixoa	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=2	2	nmod:poss	_	SpaceAfter=No|TokenRange=12:19
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = ped-gramm-22
+# sent_uid = 881131dd-3f70-411a-ac7e-85557139d1e3
+# text = ica nioladi nioxoa libinienigi.
+# text_orig = ica nioladi nioxoa libinienigi
+# text_por_orig = A língua do irmão dele/dela é bonita
+# text_por = A língua do irmão dele/dela é bonita.
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	nioladi	nioladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:11
+3	nioxoa	nioxoa	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nmod:poss	_	TokenRange=12:18
+4	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=19:30
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = ped-gramm-23
+# sent_uid = 95a7d135-4be0-463d-b443-76cc5828fc89
+# text = ica nioladi lodawa libinienigi.
+# text_orig = ica nioladi lodawa libinienigi
+# text_por_orig = A língua do marido/esposa dele/dela é bonita
+# text_por = A língua do marido/esposa dele/dela é bonita.
+1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	nioladi	nioladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:11
+3	lodawa	odawa	NOUN	N$	Gender=Fem,Masc|Number=Sing|Person[psor]=3	2	nmod:poss	_	TokenRange=12:18
+4	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=19:30
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = ped-gramm-24
+# sent_uid = 2f47b402-9fe7-4714-96e3-c6cbdf405472
+# text = iGeladi idei naigi anenapioi.
+# text_orig = iGeladi idei naigi anenapioi
+# text_por_orig = a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)
+# text_por = a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo).
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
+3	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	TokenRange=13:18
+4-5	anenapioi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=19:28
+4	ane	napioi	PRON	WPRO	PronType=Rel	5	nsubj	_	_
+5	napioi	napioi	ADJ	ADJ	_	3	acl:relcl	_	_
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
+
+# sent_id = ped-gramm-25
+# sent_uid = a4d33655-fe74-4df2-8d5e-b3c88fba5fd1
+# text = iGeladi idei naigi me napioi.
+# text_orig = iGeladi idei naigi me napioi
+# text_por_orig = minha casa suja fica naquela rua
+# text_por = minha casa suja fica naquela rua.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
+3	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	TokenRange=13:18
+4	me	me	SCONJ	C	_	5	mark	_	TokenRange=19:21
+5	napioi	napioi	ADJ	ADJ	_	3	acl:relcl	_	SpaceAfter=No|TokenRange=22:28
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
+
+# sent_id = ped-gramm-26
+# sent_uid = f081c545-c42b-463d-b57f-db87787f20e7
+# text = João liGeladi ane napioi.
+# text_orig = João liGeladi ane napioi
+# text_por_orig = a casa do João, que é suja
+# text_por = A casa do João, que é suja.
+1	João	joão	PROPN	NPR	Gender=Masc	2	nmod:poss	_	TokenRange=0:4
+2	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	TokenRange=5:13
+3	ane	ane	PRON	WPRO	PronType=Rel	4	nsubj	_	TokenRange=14:17
+4	napioi	napioi	ADJ	ADJ	_	2	acl:relcl	_	SpaceAfter=No|TokenRange=18:24
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = ped-gramm-27
+# sent_uid = 7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+# text = iGeladi idei mijo naigi naGajo.
+# text_orig = iGeladi idei mijo naigi naGajo
+# text_por = A minha casa fica naquela rua dela.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
+3-4	mijo	_	_	_	_	_	_	_	TokenRange=13:17
+3	me	me	SCONJ	C	_	5	mark	_	_
+4	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_
+5	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	TokenRange=18:23
+6	naGajo	niGijo	PRON	PRO$	Gender=Fem|Number=Sing|PronType=Dem	5	nmod:poss	_	Poss=Yes|SpaceAfter=No|TokenRange=24:30
+7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = ped-gramm-28
+# sent_uid = ee1a1190-7803-404c-83f6-49d3ccf63b0d
+# text = eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi.
+# text_orig = Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi
+# text_por_orig = meu pai cuida da plantação de flores como filhas
+# text_por = meu pai cuida da plantação de flores como filhas.
+1	eyodi	iodi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:5
+2	dowediteloco	dowediteloco	VERB	VBAPL	Mood=Ind|Person[erg]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=6:18
+3	naodigijedi	naodigijegi	NOUN	N	Gender=Masc|Number=Plur	2	obj	_	Lemma=nawodigijegi|TokenRange=19:30
+4	micoataGa	taGa	SCONJ	CD	_	7	mark	_	TokenRange=31:40
+5	daGa	daga	SCONJ	C	_	7	mark	_	TokenRange=41:45
+6	me	me	SCONJ	C	_	7	mark	_	TokenRange=46:48
+7	lionigipi	iona	NOUN	N$	Gender=Fem|Number=Plur|Person[psor]=3	2	advcl	_	SpaceAfter=No|TokenRange=49:58
+8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=58:59
+
+# sent_id = ped-gramm-29
+# sent_uid = 4bdb4b8f-0176-4303-8a13-e313fbb6d7ad
+# text = eyodi me niganaGacanajo.
+# text_orig = Eyodi me niganaGacanajo
+# text_por_orig = Meu pai que era cantor
+# text_por = Meu pai que era cantor.
+1	eyodi	eyodi	NOUN	N$	_	0	root	_	TokenRange=0:5
+2	me	me	SCONJ	C	_	1	mark	_	TokenRange=6:8
+3	niganaGacanajo	niganagacanajo	NOUN	N	Gender=Masc|Number=Sing	1	acl:relcl	_	SpaceAfter=No|TokenRange=9:23
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = ped-gramm-30
+# sent_uid = 7b806584-75e5-4017-b9e2-ba97458903bd
+# text = eyodi ane niganaGacanajo.
+# text_orig = Eyodi ane niganaGacanajo
+# text_por_orig = Meu pai que era cantor (explicativa)
+# text_por = Meu pai, que era cantor.
+1	eyodi	eyodi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	TokenRange=0:5
+2	ane	ane	PRON	WPRO	PronType=Rel	3	nsubj	_	TokenRange=6:9
+3	niganaGacanajo	niganaGacanajo	NOUN	N	Gender=Masc|Number=Sing	1	acl:relcl	_	SpaceAfter=No|TokenRange=10:24
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = ped-gramm-31
+# sent_uid = 845b9d1d-ad7c-445a-bfbd-04fd9255ffc2
+# text = Eyodi daGa niganaGacanajo.
+# text_orig = Eyodi daGa niganaGacanajo
+# text_por_orig = Meu pai se fosse cantor
+# text_por = Meu pai se fosse cantor.
+1	Eyodi	eyodi	NOUN	N$	_	0	root	_	TokenRange=0:5
+2	daGa	daga	SCONJ	C	_	3	mark	_	TokenRange=6:10
+3	niganaGacanajo	niganaGacanajo	NOUN	N	Gender=Masc|Number=Sing	1	advcl	_	SpaceAfter=No|TokenRange=11:25
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = ped-gramm-32
+# sent_uid = a4ccc755-a644-4b04-ab1b-698e7acea4cc
+# text = iGeladi idei digoida.
+# text_orig = iGeladi idei digoida
+# text_por_orig = minha casa está lá
+# text_por = Minha casa está lá.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
+3	digoida	digoida	ADV	ADV	AdvType=Loc|Deixis=Remt|PronType=Dem	2	advmod	_	SpaceAfter=No|TokenRange=13:20
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = ped-gramm-33
+# sent_uid = 82117289-be52-45d0-886d-a5747eb20ea2
+# text = iGeladi ipegitaGagi.
+# text_orig = iGeladi ipegitaGagi
+# text_por_orig = Minha casa está perto de você
+# text_por = Minha casa está perto de você.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+2	ipegitaGagi	pegi	VERB	VBAPL	Mood=Ind|Number[obj]=Sing|Person[erg]=3|Person[obj]=2|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=8:19
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = ped-gramm-34
+# sent_uid = 50f93fbc-14fa-48e7-b8ba-22f744109348
+# text = iGeladi ipegitegi liGeladi.
+# text_orig = iGeladi ipegitegi liGeladi
+# text_por_orig = Minha casa está perto de sua casa
+# text_por = Minha casa está perto de sua casa.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+2	ipegitegi	pegi	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
+3	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No|TokenRange=18:26
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = ped-gramm-35
+# sent_uid = 014fefb1-d5e3-48c8-9ac3-9e713a41407f
+# text = iGeladi ipegitegi naigi ane napioi.
+# text_orig = iGeladi ipegitegi naigi ane napioi
+# text_por_orig = Minha casa está perto desta rua suja (que está suja)
+# text_por_alt1 = Minha casa está perto desta rua suja.
+# text_por_alt2 = Minha casa está perto desta rua, que está suja.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+2	ipegitegi	pegi	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
+3	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	TokenRange=18:23
+4	ane	ane	PRON	WPRO	PronType=Rel	5	nsubj	_	TokenRange=24:27
+5	napioi	napioi	NOUN	N	_	3	acl:relcl	_	SpaceAfter=No|TokenRange=28:34
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# sent_id = ped-gramm-36
+# sent_uid = bb8018ba-76b3-43f2-82ea-78b6009c1f90
+# text = iGeladi ipegitegi naigi me napioi.
+# text_orig = iGeladi ipegitegi naigi me napioi
+# text_por_orig = minha casa está perto da rua suja
+# text_por = minha casa está perto da rua suja.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+2	ipegitegi	pegi	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
+3	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	TokenRange=18:23
+4	me	me	SCONJ	C	_	5	mark	_	TokenRange=24:26
+5	napioi	napioi	NOUN	N	_	3	acl:relcl	_	SpaceAfter=No|TokenRange=27:33
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=33:34
+
+# sent_id = ped-gramm-37
+# sent_uid = 1da1bf7a-7975-4baf-821b-9df5c75ac297
+# text = iGeladi aGipegitegi weiigi.
+# text_orig = iGeladi aGipegitegi weiigi
+# text_por_orig = Minha casa não fica perto do rio
+# text_por = Minha casa não fica perto do rio.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	nsubj	_	TokenRange=0:7
+2-3	aGipegitegi	_	_	_	_	_	_	_	TokenRange=8:19
+2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
+3	ipegitegi	pegi	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	_
+4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=20:26
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = hil-data-1
+# sent_uid = fcef38ed-be6b-4f2a-b5cf-fa4db625ecfb
+# text = Iwaalo libiniena.
+# text_orig = Iwaalo libiniena
+# text_por_orig = A mulher está bonita .
+# text_por = A mulher está bonita.
+1	Iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	2	nsubj	_	NounClass=Lo|TokenRange=0:5
+2	libiniena	binie	NOUN	N$	Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=6:15
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
+
+# sent_id = hil-data-2
+# sent_uid = 31d3b4c0-4aab-4538-999b-b8ee85c34444
+# text = Iwaalo ninitibeci.
+# text_orig = Iwaalo ninitibeci
+# text_por_orig = A mulher está feliz .
+# text_por = A mulher está feliz.
+1	Iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	2	nsubj	_	NounClass=Lo|StandardForm=iwaalo|TokenRange=0:5
+2	ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=ninitibece|SpaceAfter=No|TokenRange=6:16
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = hil-data-3
+# sent_uid = 39f34955-a828-47d7-808d-b3b3565b42d6
+# text = LotaGa Ganioxoa libinienaGa.
+# text_orig = LotaGa Ganioxoa libinienaGa
+# text_por_orig = A palavra de seu irmão é bonita .
+# text_por = A palavra de seu irmão é bonita.
+1	LotaGa	otaGa	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=0:6
+2	Ganioxoa	nioxoa	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=2	1	nmod:poss	_	TokenRange=7:15
+3	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=16:27
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = hil-data-4
+# sent_uid = d3ae6cfd-bec1-49f3-a0f9-4ca0744e3404
+# text = LotaGa Gadodawa libinienaGa.
+# text_orig = LotaGa Gadodawa libinienaGa
+# text_por_orig = A palavra do seu marido é bonita .
+# text_por = A palavra do seu marido é bonita.
+1	LotaGa	otaGa	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=0:6
+2	Gadodawa	odawa	NOUN	N$	Gender=Fem,Masc|Number=Sing|Person[psor]=2	1	nmod:poss	_	TokenRange=7:15
+3	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=16:27
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = hil-data-5
+# sent_uid = e349508c-4d86-48b8-9918-057988755e77
+# text = Etogo aneiwaGadi adakake lojedi.
+# text_orig = Etogo aneiwaGadi adakake lojedi
+# text_por_orig = A pesada canoa está barata .
+# text_por = A pesada canoa está barata.
+1	Etogo	etogo	NOUN	N	Gender=Fem|Number=Sing	5	dislocated	_	TokenRange=0:5
+2-3	aneiwaGadi	_	_	_	_	_	_	_	TokenRange=6:16
+2	ane	ane	PRON	WPRO	PronType=Rel	3	nsubj	_	_
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	StandardForm=iwaaGadi
+4-5	adakake	_	_	_	_	_	_	_	TokenRange=17:24
+4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
+5	dakake	dakake	ADJ	ADJ	_	0	root	_	_
+6	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	StandardForm=loojedi|SpaceAfter=No|TokenRange=25:31
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=31:32
+
+# sent_id = hil-data-6
+# sent_uid = 1d10c633-e74d-4e27-ac23-6b6b2dde9647
+# text = Etogo ane iwaGadi adakake loojedi.
+# text_orig = Etogo ane iwaGadi adakake loojedi
+# text_por_orig = A canoa pesada é barata .
+# text_por = A canoa pesada é barata.
+1	Etogo	etogo	NOUN	N	Gender=Fem|Number=Sing	5	dislocated	_	TokenRange=0:5
+2	ane	ane	PRON	WPRO	PronType=Rel	3	nsubj	_	TokenRange=6:9
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	StandardForm=iwaaGadi|TokenRange=10:17
+4-5	adakake	_	_	_	_	_	_	_	TokenRange=18:25
+4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
+5	dakake	dakake	ADJ	ADJ	_	0	root	_	_
+6	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	SpaceAfter=No|TokenRange=26:33
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=33:34
+
+# sent_id = hil-data-7
+# sent_uid = 435e4b10-ab78-4ee3-84b0-7773dbe10bf7
+# text = Gawenigi eliodi me libinienigi.
+# text_orig = Gawenigi eliodi me libinienigi
+# text_por_orig = A sua comida é muito bonita .
+# text_por = A sua comida é muito bonita.
+1	Gawenigi	wenigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=2	4	nsubj	_	TokenRange=0:8
+2	eliodi	eliodi	ADV	Q	_	4	advmod	_	TokenRange=9:15
+3	me	me	SCONJ	C	_	4	mark	_	TokenRange=16:18
+4	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=19:30
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = hil-data-8
+# sent_uid = cf44903e-0c33-44bc-a146-1fb8a4ccb973
+# text = NiGijo liwenigi libinienigi.
+# text_orig = NiGijo liwenigi libinienigi
+# text_por_orig = Aquela comida dela é bonita .
+# text_por = Aquela comida dela é bonita.
+1	NiGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	liwenigi	liwenigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=7:15
+3	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=16:27
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = hil-data-9
+# sent_uid = 0ca977cd-2edf-45d9-b958-068648aebef9
+# text = NiGida niwenigi eliodi me dakake loojedi.
+# text_orig = NiGida niwenigi eliodi me dakake loojedi
+# text_por_orig = Aquela comida é muito cara .
+# text_por = Aquela comida é muito cara.
+1	NiGida	niGida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	niwenigi	enigi	NOUN	N$	Gender=Masc|Number=Sing	5	dislocated	_	TokenRange=7:15
+3	eliodi	eliodi	ADV	ADJ	_	5	advmod	_	TokenRange=16:22
+4	me	me	SCONJ	C	_	5	mark	_	TokenRange=23:25
+5	dakake	akake	ADJ	ADJ	_	0	root	_	TokenRange=26:32
+6	loojedi	loojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	SpaceAfter=No|TokenRange=33:40
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=40:41
+
+# sent_id = hil-data-10
+# sent_uid = 559ba85f-edfc-48dc-9bfb-0c3f8e5ad887
+# text = NaGajo lomigo Pedilo idei madi niwatece.
+# text_orig = NaGajo lomigo Pedilo idei madi niwatece
+# text_por_orig = Aquele anzol do Pedro está na canoa .
+# text_por = Aquele anzol do Pedro está na canoa.
+1	NaGajo	niGijo	DET	PRO$	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	lomigo	omigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	nsubj	_	Lemma=lomiigo|TokenRange=7:13
+3	Pedilo	pedilo	PROPN	NPR	_	2	nmod:poss	_	TokenRange=14:20
+4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=21:25
+5-6	madi	_	_	_	_	_	_	_	TokenRange=26:30
+5	me	me	SCONJ	C	_	7	mark	_	_
+6	adi	idi	DET	D	Gender=Fem|Number=Sing|PronType=Dem	7	det	_	_
+7	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=31:39
+8	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=39:40
+
+# sent_id = hil-data-11
+# sent_uid = 92838eda-ef9b-4f05-a5eb-38a4709c0337
+# text = NaGajo lomigo niganigawanigi madi niwatece.
+# text_orig = NaGajo lomigo niganigawanigi madi niwatece
+# text_por_orig = Aquele anzol do menino é na canoa .
+# text_por = Aquele anzol do menino é na canoa.
+# text_por_alt = Aquele anzol do menino está na canoa.
+1	NaGajo	niGijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	6	nsubj	_	Lemma=lomiigo|TokenRange=7:13
+3	niganigawanigi	nigaanigi	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing	2	nmod:poss	_	StandardForm=nigaanigawaanigi|TokenRange=14:28
+4-5	madi	_	_	_	_	_	_	_	TokenRange=29:33
+4	me	me	SCONJ	C	_	6	mark	_	_
+5	adi	idi	DET	D	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
+6	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=34:42
+7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=42:43
+
+# sent_id = hil-data-12
+# sent_uid = 3a7e213b-323e-4694-bad9-47091f3533f5
+# text = Te ee nigotaGa.
+# text_orig = Te ee nigotaGa
+# text_por_orig = Estou na cidade .
+# text_por = Estou na cidade.
+1	Te	te	VERB	VB	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=0:2
+2	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	1	nsubj	_	TokenRange=3:5
+3	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=6:14
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = hil-data-15
+# sent_uid = baccc279-f303-4b4f-a6d7-4404de699f4a
+# text = Iwaalepodi libinienigipi.
+# text_orig = Iwaalepodi libinienigipi .
+# text_por_orig = As mulheres estão bonitas .
+# text_por = As mulheres estão bonitas.
+1	Iwaalepodi	iwaalo	NOUN	N	Gender=Fem|Number=Plur	2	nsubj	_	StandardForm=iwaalepodi|StandardLemma=iwaalo|TokenRange=0:9
+2	libinienigipi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=10:23
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = hil-data-16
+# sent_uid = af474637-80f3-4001-884c-4d5f452fb573
+# text = Ninitibeci.
+# text_orig = Ninitibeci .
+# text_por_orig = Ela está feliz .
+# text_por = Ela está feliz.
+1	Ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=ninitibece|TokenRange=0:10
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=10:11
+
+# sent_id = hil-data-17
+# sent_uid = 8f297896-5ee6-461f-86e3-0d4d4ef5a661
+# text = Ninitibeci naGada.
+# text_orig = ninitibeci naGada .
+# text_por_orig = Ela está feliz .
+# text_por = Ela está feliz.
+1	Ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=ninitibece|TokenRange=0:10
+2	naGada	niGida	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No|TokenRange=11:17
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=17:18
+
+# sent_id = hil-data-18
+# sent_uid = 4855882d-49f1-4035-bd12-73abf82df995
+# text = Ninitibeci naGadi.
+# text_orig = Ninitibeci naGadi .
+# text_por_orig = Ela está feliz .
+# text_por = Ela está feliz.
+1	Ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=Ninitibece|TokenRange=0:10
+2	naGadi	niGidi	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No|TokenRange=11:17
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=17:18
+
+# sent_id = hil-data-19
+# sent_uid = d489d970-e6b1-42e3-add2-2221f2fb1fad
+# text = naGada iwaGadi.
+# text_orig = naGada iwaGadi
+# text_por_orig = Ela está pesada
+# text_por = Ela está pesada.
+1	naGada	niGida	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:6
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=7:14
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = hil-data-20
+# sent_uid = 23b27bf4-3694-4053-8f74-b3c739fc8ee2
+# text = naGadi iwaGadi.
+# text_orig = naGadi iwaGadi
+# text_por_orig = Ela está pesada.
+# text_por = Ela está pesada.
+1	naGadi	niGidi	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:6
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=7:14
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = hil-data-21
+# sent_uid = 85801af7-8128-4d85-a7bd-a182d5dc58a5
+# text = NaGana iwaGadi.
+# text_orig = NaGana iwaGadi
+# text_por_orig = Ela está pesada.
+# text_por = Ela está pesada.
+1	NaGana	niGina	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:6
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=7:14
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = hil-data-22
+# sent_uid = b9d77060-3ac9-4305-ba86-2723cc7cb70a
+# text = Ada iwaGadi.
+# text_orig = Ada iwaGadi
+# text_por_orig = Ela está é pesada.
+# text_por = Ela está é pesada.
+1	Ada	ida	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=4:11
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
+
+# sent_id = hil-data-23
+# sent_uid = 7521cd51-aa9b-4ff6-8d87-a5ce4ca92b6d
+# text = Ani iwaGadi.
+# text_orig = Ani iwaGadi
+# text_por_orig = Ela está é pesada.
+# text_por = Ela está é pesada.
+1	Ani	ini	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=4:11
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
+
+# sent_id = hil-data-24
+# sent_uid = 96687d35-46ae-4338-9398-ff66a3165b61
+# text = Adi iwaGadi.
+# text_orig = Adi iwaGadi
+# text_por_orig = Ela está é pesada.
+# text_por = Ela está é pesada.
+1	Adi	idi	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=4:11
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
+
+# sent_id = hil-data-25
+# sent_uid = 24a9e039-79d0-4026-8824-0d061c2b21ee
+# text = naGana eliodi meninitibeci.
+# text_orig = naGana eliodi meninitibeci
+# text_por_orig = Ela é muito feliz .
+# text_por = Ela é muito feliz.
+1	naGana	niGina	DET	D	Gender=Fem|Number=Sing|PronType=Dem	4	nsubj	_	TokenRange=0:6
+2	eliodi	eliodi	ADV	Q	PronType=Ind	4	advmod	_	TokenRange=7:13
+3-4	meninitibeci	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=14:26
+3	me	me	SCONJ	C	_	4	mark	_	_
+4	ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=ninitibece
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = hil-data-26
+# sent_uid = fba05264-0e3c-4248-8211-3ac87c64c2e6
+# text = DapicoGo.
+# text_orig = DapicoGo
+# text_por_orig = Ela é quente .
+# text_por_orig_alt1 = Ela é quente .
+# text_por_orig_alt2 = TODO
+# text_por = Ela é quente.
+# text_por_alt1 = Ela está quente.
+# text_por_alt2 = Ele é quente.
+# text_por_alt3 = Ele está quente.
+1	DapicoGo	apicoGo	VERB	VB	Mood=Ind|Number=Sing|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:8
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=8:9
+
+# sent_id = hil-data-28
+# sent_uid = fab37d81-bb9b-4e20-a8f5-3b3969ee86d1
+# text = Libiniena.
+# text_orig = libiniena
+# text_por_orig = Ele está bonito .
+# text_por = Ele está bonito.
+1	Libiniena	binie	NOUN	N$	Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=0:9
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=9:10
+
+# sent_id = hil-data-29
+# sent_uid = 0b9bddcd-f6af-4281-80a9-cac2377d0af1
+# text = Libinienigi.
+# text_orig = libinienigi
+# text_por_orig = Ele é bonito.
+# text_por = Ele é bonito.
+1	Libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=0:11
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=11:12
+
+# sent_id = hil-data-32
+# sent_uid = 4aed8aa8-bd36-4940-8020-8ba12122304e
+# text = Ninitibigiwaji.
+# text_orig = Ninitibigiwaji .
+# text_por_orig = Eles são felizes .
+# text_por = Eles são felizes.
+1	Ninitibigiwaji	initibece	VERB	X	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:14
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = hil-data-33
+# sent_uid = 3a27c7c6-ecd6-45c0-a71e-b4aa2a242a3d
+# text = NiGida lodajo lodawa aidei dineigi.
+# text_orig = NiGida lodajo lodawa aidei dineigi
+# text_por_orig = Esta faca da esposa dele não está na casa .
+# text_por = Esta faca da esposa dele não está na casa.
+# text_por_alt = Esta faca do marido dela não está na casa.
+1	NiGida	niGida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	lodajo	odajo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	StandardLemma=nodaajo|TokenRange=7:13
+3	lodawa	odawa	NOUN	N$	Gender=Fem,Masc|Number=Sing|Person[psor]=3	2	nmod:poss	_	TokenRange=14:20
+4-5	aidei	_	_	_	_	_	_	_	TokenRange=21:26
+4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
+5	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	_
+6	dineigi	dineigi	NOUN	N	_	5	obj	_	StandardLemma=diimigi|SpaceAfter=No|TokenRange=27:34
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# sent_id = hil-data-34
+# sent_uid = 64f2c803-b436-4202-b4c7-acf5c7205bc3
+# text = liwigo niganigawanigi libinienigi.
+# text_orig = liwigo niganigawanigi libinienigi
+# text_por_orig = Esta fotografia da criança é bonita .
+# text_por = Esta fotografia da criança é bonita.
+1	liwigo	wigo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=0:6
+2	niganigawanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	1	nmod:poss	_	StandardForm=nigaanigawaanigi|TokenRange=7:21
+3	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=22:33
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=33:34
+
+# sent_id = hil-data-35
+# sent_uid = 8bad7bc3-f82f-46c0-9e63-c780104b11e2
+# text = naGani wetiGa eliodi me iwaGadi.
+# text_orig = naGani wetiGa eliodi me iwaGadi
+# text_por_orig = Esta pedra está muito pesada .
+# text_por = Esta pedra está muito pesada.
+1	naGani	niGini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	5	nsubj	_	TokenRange=7:13
+3	eliodi	eliodi	ADV	Q	PronType=Ind	5	advmod	_	TokenRange=14:20
+4	me	me	SCONJ	C	_	5	mark	_	TokenRange=21:23
+5	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=24:31
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=31:32
+
+# sent_id = hil-data-36
+# sent_uid = 768a3635-dcaf-4210-b236-73568abadbdb
+# text = NaGani wetiGa iwaGadi.
+# text_orig = NaGani wetiGa iwaGadi
+# text_por_orig = Esta pedra está pesada .
+# text_por = Esta pedra está pesada.
+1	NaGani	niGini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	wetiGa	wetiga	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=7:13
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=14:21
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = hil-data-37
+# sent_uid = e5f90fbc-14e8-4c6f-9e07-61fbf67d042f
+# text = NiGinoa wetiadi iwaGadi.
+# text_orig = Niginoa wetiadi iwaGadi
+# text_por_orig = Estas pedras estão pesadas .
+# text_por = Estas pedras estão pesadas.
+1	NiGinoa	niGina	DET	D	Number=Plur|PronType=Dem	2	det	_	TokenRange=0:7
+2	wetiadi	wetiGa	NOUN	N	Gender=Fem|Number=Plur	3	nsubj	_	TokenRange=8:15
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=16:23
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = hil-data-38
+# sent_uid = f4b854f9-c3c6-4e88-8a9b-ca73fcba8d46
+# text = NaGani wetiGa iwaGadi.
+# text_orig = NaGani wetiGa iwaGadi
+# text_por_orig = Esta pedra é pesada .
+# text_por = Esta pedra é pesada.
+1	NaGani	niGini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=7:13
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=14:21
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = hil-data-39
+# sent_uid = 38f73c1c-ddfb-4153-9310-d24214cd68e7
+# text = NaGani wetiGa ane iwaGadi eniteloco iGonagi.
+# text_orig = NaGani wetiGa ane iwaGadi eniteloco iGonagi
+# text_por_orig = Esta pedra que é pesada caiu no meu pé .
+# text_por = Esta pedra que é pesada caiu no meu pé.
+1	NaGani	niGini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	5	nsubj	_	TokenRange=7:13
+3	ane	ane	PRON	WPRO	PronType=Rel	4	nsubj	_	TokenRange=14:17
+4	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	2	acl:relcl	_	StandardForm=iwaaGadi|TokenRange=18:25
+5	eniteloco	eniteloco	VERB	VBAPL	Voice=Appl	0	root	_	TokenRange=26:35
+6	iGonagi	Gonagi	NOUN	N$	Number=Sing|Number[psor]=Sing|Person[psor]=1	5	obj	_	SpaceAfter=No|TokenRange=36:43
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=43:44
+
+# sent_id = van-data-1
+# sent_uid = a7e338a1-5403-40d4-b169-c840cf193aae
+# text = iGeladi digoida weiigi.
+# text_orig = iGeladi digoida weiigi
+# text_por_orig = Minha casa é no rio
+# text_por = Minha casa é no rio.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	nsubj	_	TokenRange=0:7
+2	digoida	digoida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	TokenRange=8:15
+3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=16:22
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = van-data-2
+# sent_uid = d07f0db7-963e-47ab-ab3f-36614732bacd
+# text = iGeladi idei weiigi.
+# text_orig = iGeladi idei weiigi
+# text_por_orig = Minha casa é no rio
+# text_por = Minha casa é no rio.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
+3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=13:19
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = van-data-3
+# sent_uid = f50b632e-fc1a-4ec0-b8b3-610dab7be736
+# text = iGeladi ideaGi weiigi.
+# text_orig = iGeladi ideaGi weiigi
+# text_por_orig = Minha casa é no rio
+# text_por = Minha casa é no rio.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+2	ideaGi	dei	VERB	VB	_	0	root	_	Directional=TowardTokenRange=8:14
+3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=15:21
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = van-data-4
+# sent_uid = d26cfc71-a117-4817-9f35-4a7d23fd1f88
+# text = iwaalo ja libiniena.
+# text_orig = iwaalo ja libiniena
+# text_por_orig = a mulher está bonita
+# text_por = a mulher está bonita.
+1	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=0:6
+2	ja	jaG	AUX	T	Aspect=Perf	3	aux	_	TokenRange=7:9
+3	libiniena	binie	NOUN	N$	Degree=Dim|Gender=Fem|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=10:19
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = van-data-5
+# sent_uid = e3b84bb7-7e6e-474c-9ad6-c6a47b409a5a
+# text = iwaalo ja ninitibeke.
+# text_orig = iwaalo ja ninitibeke
+# text_por_orig = a mulher está feliz
+# text_por = a mulher está feliz.
+1	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=0:6
+2	ja	jaG	AUX	T	Aspect=Perf	3	aux	_	TokenRange=7:9
+3	ninitibeke	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=ninitibece|TokenRange=10:20
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = van-data-6
+# sent_uid = 3e518fdb-d852-41e5-87a4-f8778597c2a1
+# text = lotaGa GanaaginaGa libinienaGa.
+# text_orig = lotaGa GanaaginaGa libinienaGa
+# text_por_orig = a palavra de seu irmão é bonita
+# text_por = a palavra de seu irmão é bonita.
+1	lotaGa	otaGa	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=0:6
+2	GanaaginaGa	aaginaGa	NOUN	N$	Number=Sing|Person[psor]=2	1	nmod:poss	_	TokenRange=7:18
+3	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=19:30
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = van-data-7
+# sent_uid = ee540050-e6fa-424e-9252-fd0b9312769d
+# text = lotaGa Gadodawa libinienaGa.
+# text_orig = lotaGa Gadodawa libinienaGa
+# text_por_orig = a palavra do seu marido é bonita
+# text_por = a palavra do seu marido é bonita.
+1	lotaGa	otaGa	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=0:6
+2	Gadodawa	odawa	NOUN	N$	Gender=Fem,Masc|Number=Sing|Person[psor]=2	1	nmod:poss	_	TokenRange=7:15
+3	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=16:27
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = van-data-8
+# sent_uid = 947061b4-7b73-4612-8aa8-0af0e04cbc85
+# text = niwatece iwaGadi noxilece lojetedi.
+# text_orig = niwatece iwaGadi noxilece lojetedi
+# text_por_orig = a pesada canoa está barata
+# text_por = a pesada canoa está barata.
+1	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	2	nsubj	_	TokenRange=0:8
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=iwaaGadi|TokenRange=9:16
+3	noxilece	oxilece	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	2	parataxis	_	TokenRange=17:25
+4	lojetedi	oojedi	NOUN	N$	Gender=Masc|Number=Plur|Person[psor]=3	3	nsubj	_	SpaceAfter=No|TokenRange=26:34
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# sent_id = van-data-10
+# sent_uid = 0c38eab8-c6b0-4f02-bf05-27ea6285fe70
+# text = Gawenigi eliodi me libinienigi.
+# text_orig = Gawenigi eliodi me libinienigi
+# text_por_orig = a sua comida é muito bonita
+# text_por = a sua comida é muito bonita.
+1	Gawenigi	wenigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=2	4	nsubj	_	TokenRange=0:8
+2	eliodi	eliodi	DET	Q	PronType=Ind	4	det	_	TokenRange=9:15
+3	me	me	SCONJ	C	_	4	mark	_	TokenRange=16:18
+4	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=19:30
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = van-data-11
+# sent_uid = a85fda39-1575-4120-9432-8fb534ebdbd2
+# text = niGida liwenigi libinienigi.
+# text_orig = niGida liwenigi libinienigi
+# text_por_orig = aquela comida dela é bonita
+# text_por = aquela comida dela é bonita.
+1	niGida	niGida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	liwenigi	wenigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=7:15
+3	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=16:27
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = van-data-12
+# sent_uid = a1e15803-1e5e-481f-8137-a84beac6cbcc
+# text = niGida niwenigi daGaxa me dakake loojedi.
+# text_orig = niGida niwenigi daGaxa me dakake loojedi
+# text_por_orig = aquela comida é muito cara
+# text_por = aquela comida é muito cara.
+1	niGida	niGida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	niwenigi	wenigi	NOUN	N$	Gender=Masc|Number=Sing	5	dislocated	_	TokenRange=7:15
+3	daGaxa	daGaxa	ADV	Q	_	5	advmod	_	TokenRange=16:22
+4	me	me	SCONJ	C	_	5	mark	_	TokenRange=23:25
+5	dakake	akake	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	TokenRange=26:32
+6	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	SpaceAfter=No|TokenRange=33:40
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=40:41
+
+# sent_id = van-data-13
+# sent_uid = e9806e26-701d-4f5f-9ca9-63216cccf3d0
+# text = naGajo lomigo Pedro idei noatece.
+# text_orig = naGajo lomigo Pedro idei noatece
+# text_por_orig = aquele anzol do Pedro está na canoa
+# text_por = aquele anzol do Pedro está na canoa.
+1	naGajo	niGijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	lomigo	omiigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	nsubj	_	StandardForm=lomiigo|TokenRange=7:13
+3	Pedro	pedro	PROPN	NPR	_	2	nmod:poss	_	TokenRange=14:19
+4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=20:24
+5	noatece	watece	NOUN	N$	Gender=Fem|Number=Sing	4	obj	_	SpaceAfter=No|StandardForm=niwatece|TokenRange=25:32
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=32:33
+
+# sent_id = van-data-14
+# sent_uid = 2386b5b5-57d0-4a1f-86c2-73f67561744c
+# text = naGajo lomiigo nigaanigawaanigi manitaGa niwatece.
+# text_orig = naGajo lomiigo nigaanigawaanigi manitaGa niwatece
+# text_por_orig = aquele anzol do menino é na canoa
+# text_por = aquele anzol do menino é na canoa.
+1	naGajo	niGijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	lomiigo	omiigo	NOUN	N$	Person[psor]=3	6	nsubj	_	TokenRange=7:14
+3	nigaanigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	2	nmod:poss	_	TokenRange=15:31
+4-5	manitaGa	_	_	_	_	_	_	_	TokenRange=32:40
+4	me	me	SCONJ	C	_	6	mark	_	_
+5	anitaGa	anitaGa	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
+6	niwatece	watece	NOUN	N	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=41:49
+7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=49:50
+
+# sent_id = van-data-15
+# sent_uid = 4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7
+# text = niGijo niganigawaanigi lomigo niwatece.
+# text_orig = niGijo niganigawaanigi lomigo niwatece
+# text_por_orig = aquele menino é na canoa do anzol
+# text_por = aquele menino é na canoa do anzol.
+1	niGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	niganigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	4	nsubj	_	StandardForm=nigaanigawaanigi|TokenRange=7:22
+3	lomigo	omiigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	nmod:poss	_	StandardForm=lomiigo|TokenRange=23:29
+4	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=30:38
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=38:39
+
+# sent_id = van-data-16
+# sent_uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+# text = niGijo nigaanigawaanigi manitaGa lomigo niwatece.
+# text_orig = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+# text_por_orig = aquele menino é na canoa do anzol
+# text_por = aquele menino é na canoa do anzol.
+1	niGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	nigaanigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	6	nsubj	_	TokenRange=7:23
+3-4	manitaGa	_	_	_	_	_	_	_	TokenRange=24:32
+3	me	me	SCONJ	C	_	6	mark	_	_
+4	anitaGa	anitaGa	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
+5	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	6	nmod:poss	_	TokenRange=33:39
+6	niwatece	watece	NOUN	N	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=40:48
+7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=48:49
+
+# sent_id = van-data-17
+# sent_uid = 86f5c128-e931-4443-90cc-2359748ed69f
+# text = Eyo nigotaGa.
+# text_orig = Eyo nigotaGa
+# text_por_orig = Estou na cidade
+# text_por = Estou na cidade.
+1	Eyo	eyo	PRON	PRO	Gender=Fem|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	StandardForm=Eeyo|StandardLemma=eeyo|TokenRange=0:3
+2	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=4:12
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
+
+# sent_id = van-data-18
+# sent_uid = d021bede-064b-4fd5-bb33-6c7cd4279c1b
+# text = Eyo manitaGa nigotaGa.
+# text_orig = Eyo manitaGa nigotaGa
+# text_por_orig = Estou na cidade
+# text_por = Estou na cidade.
+1	Eyo	eeyo	PRON	PRO	Gender=Fem|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	StandardForm=Eeyo|TokenRange=0:3
+2-3	manitaGa	_	_	_	_	_	_	_	TokenRange=4:12
+2	me	me	SCONJ	C	_	4	mark	_	_
+3	anitaGa	anitaGa	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	4	det	_	_
+4	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	0	root	_	Case=Com|NumClass=Sitting|SpaceAfter=No|TokenRange=13:21
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = van-data-19
+# sent_uid = e5c65dad-8b04-46da-b965-4921887cbca4
+# text = niGijoa lionigipi iwaalo idei minitaGa.
+# text_orig = niGijoa lionigipi iwaalo idei minitaGa
+# text_por_orig = aqueles filhos da mulher estão com eles
+# text_por = aqueles filhos da mulher estão com eles.
+1	niGijoa	niGijo	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:7
+2	lionigipi	iona	NOUN	N$	Gender=Fem,Masc|Number=Plur|Person[psor]=3	4	nsubj	_	TokenRange=8:17
+3	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	2	nmod:poss	_	TokenRange=18:24
+4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=25:29
+5-6	minitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=30:38
+5	me	me	SCONJ	C	_	6	mark	_	_
+6	initaGa	initaGa	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	4	obj	_	Case=Com|NumClass=Sitting
+7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=38:39
+
+# sent_id = van-data-20
+# sent_uid = 8c5dd09c-d010-4c48-9601-9d3b14c61119
+# text = dibixodi idei manitaGa.
+# text_orig = dibixodi idei manitaGa
+# text_por_orig = as formigas estão nela
+# text_por = as formigas estão nela.
+1	dibixodi	dibixoGo	NOUN	N	Gender=Masc|Number=Plur	2	nsubj	_	TokenRange=0:8
+2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=9:13
+3-4	manitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=14:22
+3	me	me	SCONJ	C	_	4	mark	_	_
+4	anitaGa	anitaGa	PRON	DAPL	Gender=Fem|Number=Sing|PronType=Dem	2	obj	_	Case=Com|NumClass=Sitting
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = van-data-21
+# sent_uid = 9b107abc-b49f-4ce2-9c43-30c7e5b5f8b2
+# text = iwalepodi ja libinienigipi.
+# text_orig = iwalepodi ja libinienigipi
+# text_por_orig = as mulheres estão bonitas
+# text_por = as mulheres estão bonitas.
+1	iwalepodi	iwaalo	NOUN	N	_	3	nsubj	_	StandardForm=iwaalepodi|TokenRange=0:9
+2	ja	jaG	AUX	T	Aspect=Perf	3	aux	_	TokenRange=10:12
+3	libinienigipi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=13:26
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = van-data-22
+# sent_uid = 0d6cdbcf-9d99-4eff-8615-149ec22fec5f
+# text = ajo ninitibeci.
+# text_orig = ajo ninitibeci
+# text_por_orig = ela está feliz
+# text_por = ela está feliz.
+1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=ninitibece|SpaceAfter=No|TokenRange=4:14
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = van-data-23
+# sent_uid = 05676093-36c9-4e30-959a-e850447f32a5
+# text = ajo iwaGadi.
+# text_orig = ajo iwaGadi
+# text_por_orig = ela está pesada / é pesada
+# text_por = ela está pesada / é pesada.
+1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=4:11
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
+
+# sent_id = van-data-24
+# sent_uid = 661c62a7-3c8c-4609-b989-017deaae82c6
+# text = ajo daGaxa ninitibeci.
+# text_orig = ajo daGaxa ninitibeci
+# text_por_orig = ela é muito feliz
+# text_por = ela é muito feliz.
+1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	TokenRange=0:3
+2	daGaxa	daGaxa	ADV	ADV	_	3	advmod	_	TokenRange=4:10
+3	ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=ninitibece|TokenRange=11:21
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = van-data-30
+# sent_uid = 0c7e64fb-f070-4faa-a12a-c110cdf4bf16
+# text = niGijo lodajo ajo lodowa aGica digoida liGeladi.
+# text_orig = nGijo lodajo ajo lodowa aGica digoida liGeladi
+# text_por_orig = esta faca da esposa dele não está na casa
+# text_por = esta faca da esposa dele não está na casa.
+1	niGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:5
+2	lodajo	odaajo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	8	nsubj	_	StandardForm=lodaajo|TokenRange=6:12
+3	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	4	det	_	TokenRange=13:16
+4	lodowa	odawa	NOUN	N$	Gender=Fem,Masc|Number=Sing|Person[psor]=3	2	nmod:poss	_	StandardForm=lodawa|TokenRange=17:23
+5-6	aGica	_	_	_	_	_	_	_	TokenRange=24:29
+5	aG	aG	PART	NEG	Polarity=Neg	8	advmod	_	_
+6	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	_
+7	digoida	digoida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	8	det	_	TokenRange=30:37
+8	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=38:46
+9	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=46:47
+
+# sent_id = van-data-34
+# sent_uid = e1acd124-849e-40dc-bbb0-a8b6ed281592
+# text = niGidiwa wetiadi iwaGadi.
+# text_orig = niGidiwa wetiadi iwaGadi
+# text_por_orig = estas pedras estão pesadas
+# text_por = estas pedras estão pesadas.
+1	niGidiwa	niGidi	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:8
+2	wetiadi	wetiGa	NOUN	N	Gender=Fem|Number=Plur	3	nsubj	_	TokenRange=9:16
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=17:24
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = van-data-39
+# sent_uid = 6459c008-b2ad-4517-8227-b525616b720d
+# text = idiwa wetiadi iwaGadi.
+# text_orig = idiwa wetiadi iwaGadi
+# text_por_orig = estas pedras estão pesadas
+# text_por = estas pedras estão pesadas.
+1	idiwa	idi	DET	Q	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:5
+2	wetiadi	wetiGa	NOUN	N	Gender=Fem|Number=Plur	3	nsubj	_	TokenRange=6:13
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=14:21
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = van-data-40
+# sent_uid = b4e1df8d-6590-4ce9-9f72-c0b054398c89
+# text = niGidowa waca lotiidi dapicoGo.
+# text_orig = niGidowa waca lotiidi dapicoGo
+# text_por_orig = este leite está quente
+# text_por = este leite está quente.
+1	niGidowa	niGida	DET	D	Gender=Masc|Number=Plur|PronType=Dem	3	det	_	StandardForm=niGidoa|TokenRange=0:8
+2	waca	waca	NOUN	N	Gender=Fem|Number=Sing	3	nmod:poss	_	TokenRange=9:13
+3	lotiidi	otiidi	NOUN	N$	Number=Plur|Person[psor]=3	4	nsubj	_	TokenRange=14:21
+4	dapicoGo	apicoGo	VERB	VB	Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=22:30
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = van-data-41
+# sent_uid = 278e4c5c-aaab-4ca3-8f5e-277610fb80c2
+# text = idowa waca lotiidi dapicoGo.
+# text_orig = idowa waca lotiidi dapicoGo
+# text_por_orig = este leite está quente
+# text_por = este leite está quente.
+1	idowa	ida	DET	D	Gender=Masc|Number=Plur|PronType=Dem	3	det	_	StandardForm=idoa|TokenRange=0:5
+2	waca	waca	NOUN	N	Gender=Fem|Number=Sing	3	nmod:poss	_	TokenRange=6:10
+3	lotiidi	otiidi	NOUN	N$	_	4	nsubj	_	TokenRange=11:18
+4	dapicoGo	apicoGo	VERB	VB	Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=19:27
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = van-data-42
+# sent_uid = 44646324-eb90-42f0-b944-21f0452109e2
+# text = ijowa nigetedi liwigo libinienaGa.
+# text_orig = ijowa nigetedi liwigo libinienaGa
+# text_por_orig = estes ovos da fotografia dela estão bonitos
+# text_por = estes ovos da fotografia dela estão bonitos.
+1	ijowa	ijo	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	StandardForm=ijoa|TokenRange=0:5
+2	nigetedi	getegi	NOUN	N	Gender=Masc|Number=Plur	4	nsubj	_	TokenRange=6:14
+3	liwigo	wigo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nmod:poss	_	TokenRange=15:21
+4	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=22:33
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=33:34
+
+# sent_id = van-data-49
+# sent_uid = 889846ee-66df-4c8f-88d1-e89d3619eb1e
+# text = eteyo ina.
+# text_orig = eteyo ina
+# text_por_orig = eu estou aqui
+# text_por = eu estou aqui.
+1	eteyo	et	VERB	VB	Gender=Fem|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	StandardForm=eteeyo|TokenRange=0:5
+2	ina	na	PRON	D	Gender=Masc|Number=Sing|PronType=Dem	1	det	_	SpaceAfter=No|TokenRange=6:9
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=9:10
+
+# sent_id = van-data-50
+# sent_uid = e7f4ab65-14d7-44f5-a197-c99c4ab173cd
+# text = etee manitaGa.
+# text_orig = etee manitaGa
+# text_por_orig = eu estou com ela
+# text_por = eu estou com ela.
+1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+2-3	manitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
+2	me	me	SCONJ	C	_	3	mark	_	_
+3	anitaGa	anitaGa	PRON	DAPL	Gender=Fem|Number=Sing|PronType=Dem	1	obj	_	Case=Com
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
+
+# sent_id = van-data-51
+# sent_uid = 7aa17dd7-2c26-4df9-8f90-65d8d58e2c59
+# text = etee minitaGa.
+# text_orig = etee minitaGa
+# text_por_orig = eu estou com ele
+# text_por = eu estou com ele.
+1	etee	VB	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+2-3	minitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
+2	me	me	SCONJ	C	_	3	mark	_	_
+3	initaGa	initaGa	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	Case=Com
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
+

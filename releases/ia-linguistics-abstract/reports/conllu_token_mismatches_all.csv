@@ -1,0 +1,4 @@
+draft_file,sent_uid,gold_sent_id,draft_sent_id,reason,gold_token_count,draft_token_count,gold_token_ids,draft_token_ids,gold_forms,draft_forms
+draft-all.conllu,ee1a1190-7803-404c-83f6-49d3ccf63b0d,ped-gramm-28,gramatica-pedagogica-28,token_count_mismatch,8,9,1 2 3 4 5 6 7 8,1 2 3 4 5 6 7 8 9,eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi .,Eyodi dowediteloco naodigijedi me icawataGa daGa me lionigipi .
+draft-all.conllu,e349508c-4d86-48b8-9918-057988755e77,hil-data-5,hil-data-5,token_count_mismatch,7,6,1 2 3 4 5 6 7,1 2 3 4 5 6,Etogo ane iwaGadi aG dakake lojedi .,Etogo ane iwaGadi adakake lojedi .
+draft-all.conllu,1d10c633-e74d-4e27-ac23-6b6b2dde9647,hil-data-6,hil-data-6,token_count_mismatch,7,6,1 2 3 4 5 6 7,1 2 3 4 5 6,Etogo ane iwaGadi aG dakake loojedi .,Etogo ane iwaGadi adakake loojedi .

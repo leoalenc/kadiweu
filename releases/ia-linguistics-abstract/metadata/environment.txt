@@ -1,0 +1,21 @@
+Python 3.9.x
+
+Universal Dependencies release: 2.18
+
+Operating system:
+Ubuntu ...
+
+Project repository:
+https://github.com/leoalenc/kadiweu
+
+Repository status:
+Public development repository for the Kadiwéu UD conversion pipeline.
+
+Official UD repository:
+Not applicable for this snapshot.
+
+Comparison script:
+compare_conllu_drafts_to_gold.py
+
+Converter:
+kadiweu_json_to_conllu.py
