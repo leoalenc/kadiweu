@@ -1,0 +1,9 @@
+Repository: https://github.com/leoalenc/kadiweu
+Branch: main
+Snapshot tag: ia-linguistics-abstract-2026
+Snapshot commit: 3c8f523975c85a34b09bf61bdb0c8b6dde0a080d
+Commit date: 2026-06-27T12:05:16-03:00
+Recorded: 2026-06-27T12:13:30-03:00
+
+This snapshot preserves the evaluation reported in the Texto Livre abstract.
+The authoritative Git reference for this snapshot is the annotated tag above.
