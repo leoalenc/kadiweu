@@ -2,8 +2,19 @@
 # -*- coding: utf-8 -*-
 
 """
-Inspect the structure of the Kadiwéu pedagogical grammar JSON in a way that is useful
-for later conversion to UD CoNLL-U.
+Inspect the structure of a Kadiwéu Tycho Brahe JSON source document in a way that is useful
+for later conversion to UD CoNLL-U. 
+
+The repository uses stable source identifiers for the three current Tycho Brahe
+source documents:
+
+- ped-gramm
+- hil-data
+- van-data
+
+The corresponding JSON files are expected to be named ped-gramm.json,
+hil-data.json, and van-data.json.
+
 
 What this script does
 ---------------------
@@ -28,16 +39,24 @@ What this script does
 Usage
 -----
 Basic inspection:
-    python3 inspect_kadiweu_json.py gramatica-pedagogica.json
+    python3 inspect_kadiweu_json.py ped-gramm.json
 
 Inspect only first 10 sentences:
-    python3 inspect_kadiweu_json.py gramatica-pedagogica.json --limit 10
+    python3 inspect_kadiweu_json.py ped-gramm.json --limit 10
 
 Inspect one sentence by UID:
-    python3 inspect_kadiweu_json.py gramatica-pedagogica.json --uid e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
+    python3 inspect_kadiweu_json.py ped-gramm.json --uid e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
 
 Write normalized JSONL:
-    python3 inspect_kadiweu_json.py gramatica-pedagogica.json --jsonl-out sentences.jsonl
+    python3 inspect_kadiweu_json.py ped-gramm.json --jsonl-out ped-gramm.jsonl
+
+Usage examples with the other JSON files
+    python3 inspect_kadiweu_json.py data/ped-gramm.json
+    python3 inspect_kadiweu_json.py data/hil-data.json --summary-only
+    python3 inspect_kadiweu_json.py data/van-data.json --limit 10
+    python3 inspect_kadiweu_json.py data/ped-gramm.json --jsonl-out data/ped-gramm.jsonl
+    python3 inspect_kadiweu_json.py data/hil-data.json --jsonl-out data/hil-data.jsonl
+    python3 inspect_kadiweu_json.py data/van-data.json --jsonl-out data/van-data.jsonl
 """
 
 from __future__ import annotations
@@ -384,9 +403,18 @@ def write_jsonl(path: Path, normalized: Iterable[Dict[str, Any]]) -> None:
 
 def build_argparser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
-        description="Inspect sentence structure in the Kadiwéu pedagogical grammar JSON."
-    )
-    p.add_argument("json_file", help="Input JSON file")
+    description="Inspect sentence structure in a Kadiwéu Tycho Brahe JSON source document.",
+    epilog="""Examples:
+  python3 inspect_kadiweu_json.py data/ped-gramm.json --summary-only
+  python3 inspect_kadiweu_json.py data/hil-data.json --limit 10
+  python3 inspect_kadiweu_json.py data/van-data.json --jsonl-out data/van-data.jsonl
+""",
+    formatter_class=argparse.RawDescriptionHelpFormatter,
+)
+    p.add_argument(
+    "json_file",
+    help="Input Tycho Brahe JSON file, e.g. data/ped-gramm.json, data/hil-data.json, or data/van-data.json",
+)
     p.add_argument(
         "--limit",
         type=int,
