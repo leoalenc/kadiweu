@@ -2,23 +2,60 @@
 # -*- coding: utf-8 -*-
 
 """
-Basic semi-automatic converter from Tycho Brahe Kadiwéu JSON to draft UD CoNLL-U.
+Basic semi-automatic converter from Kadiwéu Tycho Brahe JSON source documents
+to draft UD CoNLL-U.
 
 Goals
 -----
-- Produce a draft CoNLL-U for manual correction.
+- Produce draft CoNLL-U files for manual correction.
+- Derive sent_id prefixes from the input filename (e.g. ped-gramm,
+  hil-data, van-data) so that sentence identifiers remain stable,
+  globally unique, and consistent with the project's gold treebank.
 - Handle missing keys robustly.
 - Reconstruct split source tokens such as:
       aG@ + @ipegetege -> MWT aGipegetege
 - Emit proper CoNLL-U MWT lines.
 - Preserve space-aware TokenRange alignment.
-- Add metadata in the user's current style:
-      sent_id, sent_uid, text, text_orig, text_por, text_por_orig, text_eng, text_eng_orig
-- Use lightweight heuristics learned from the user's manually annotated sentences.
+- Add metadata in the current project style:
+      sent_id, sent_uid, text, text_orig, text_por, text_por_orig,
+      text_eng, text_eng_orig
+- Use lightweight heuristics learned from manually annotated sentences.
+
+Canonical source files
+----------------------
+    data/ped-gramm.json
+    data/hil-data.json
+    data/van-data.json
+
+Canonical draft outputs
+-----------------------
+    data/treebank/draft-ped-gramm.conllu
+    data/treebank/draft-hil-data.conllu
+    data/treebank/draft-van-data.conllu
 
 Usage
 -----
-    python3 kadiweu_json_to_conllu.py gramatica-pedagogica.json > draft.conllu
+Convert one source document:
+
+    python3 kadiweu_json_to_conllu.py \
+      ../data/ped-gramm.json \
+      > ../data/treebank/draft-ped-gramm.conllu
+
+    python3 kadiweu_json_to_conllu.py \
+      ../data/hil-data.json \
+      > ../data/treebank/draft-hil-data.conllu
+
+    python3 kadiweu_json_to_conllu.py \
+      ../data/van-data.json \
+      > ../data/treebank/draft-van-data.conllu
+
+Create the combined draft:
+
+    cat \
+      ../data/treebank/draft-ped-gramm.conllu \
+      ../data/treebank/draft-hil-data.conllu \
+      ../data/treebank/draft-van-data.conllu \
+      > ../data/treebank/draft-all.conllu
 """
 
 from __future__ import annotations
@@ -1576,15 +1613,23 @@ def load_json(path: Path) -> Dict[str, Any]:
 
 def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Convert the Kadiwéu pedagogical JSON to draft UD CoNLL-U."
+    description="Convert a Kadiwéu Tycho Brahe JSON source document to draft UD CoNLL-U.",
+    epilog="""Examples:
+        python3 kadiweu_json_to_conllu.py ../data/ped-gramm.json > ../data/treebank/draft-ped-gramm.conllu
+        python3 kadiweu_json_to_conllu.py ../data/hil-data.json > ../data/treebank/draft-hil-data.conllu
+        python3 kadiweu_json_to_conllu.py ../data/van-data.json > ../data/treebank/draft-van-data.conllu
+    """,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
         "json_path",
         nargs="?",
-        default=str(PROJECT_ROOT / "data" / "gramatica-pedagogica.json"),
+        default=str(PROJECT_ROOT / "data" / "ped-gramm.json"),
         help=(
-            "Path to gramatica-pedagogica.json. "
-            "Defaults to <project_root>/data/gramatica-pedagogica.json"
+            "Path to a Kadiwéu Tycho Brahe JSON source document. "
+            "Canonical inputs are data/ped-gramm.json, data/hil-data.json, "
+            "and data/van-data.json. "
+            "Defaults to <project_root>/data/ped-gramm.json."
         ),
     )
     parser.add_argument(
@@ -1607,6 +1652,27 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
 
 
 def main(json_path: str, overrides_path: Optional[Path] = None) -> int:
+    """
+    Convert one Tycho Brahe JSON document into a draft UD CoNLL-U treebank.
+
+    The stem of the input filename is used as the sent_id prefix.
+    For example, converting
+
+        ped-gramm.json
+        hil-data.json
+        van-data.json
+
+    produces sentence identifiers beginning with
+
+        ped-gramm-
+        hil-data-
+        van-data-
+
+    respectively. This convention guarantees globally unique sentence
+    identifiers when multiple source documents are merged into a single
+    draft treebank and preserves compatibility with the project's gold
+    treebank.
+    """
     print(SCRIPT_DIR, file=sys.stderr)
     print(PROJECT_ROOT, file=sys.stderr)
     configure_override_resources(overrides_path)

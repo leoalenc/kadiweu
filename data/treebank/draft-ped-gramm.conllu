@@ -1,4 +1,4 @@
-# sent_id = gramatica-pedagogica-1
+# sent_id = ped-gramm-1
 # sent_uid = ed98d4d1-638c-4377-8c6d-5511855636d1
 # text = ajo liwatece ja iwaGadi.
 # text_orig = ajo liwatece ja iwaGadi
@@ -10,7 +10,7 @@
 4	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=16:23
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
 
-# sent_id = gramatica-pedagogica-2
+# sent_id = ped-gramm-2
 # sent_uid = ccb5ea37-b3ba-47a9-8d71-224f599ea7be
 # text = ajo liwatece etadi weiigi.
 # text_orig = ajo liwatece etadi weiigi
@@ -24,7 +24,7 @@
 4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=19:25
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
 
-# sent_id = gramatica-pedagogica-3
+# sent_id = ped-gramm-3
 # sent_uid = 49347527-d19d-4689-bff1-ba3e497e7b1f
 # text = ajo niwatece etadi digoida.
 # text_orig = ajo niwatece etadi digoida
@@ -36,7 +36,7 @@
 4	digoida	digoida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	SpaceAfter=No|TokenRange=19:26
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
 
-# sent_id = gramatica-pedagogica-4
+# sent_id = ped-gramm-4
 # sent_uid = 69948fe6-81f6-4faa-a344-8f8c47486943
 # text = niwatece iwaGadi.
 # text_orig = niwatece iwaGadi
@@ -46,7 +46,7 @@
 2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=9:16
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
-# sent_id = gramatica-pedagogica-5
+# sent_id = ped-gramm-5
 # sent_uid = b2e3ea43-0d68-46ee-9f33-938610cc8aec
 # text = niwatece etadi weiigi.
 # text_orig = niwatece etadi weiigi
@@ -57,7 +57,7 @@
 3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=15:21
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=21:22
 
-# sent_id = gramatica-pedagogica-6
+# sent_id = ped-gramm-6
 # sent_uid = 1b99ecb9-5656-4c38-b60b-fbbe643708fb
 # text = ajo niwatece ipegitege weiigi.
 # text_orig = ajo niwatece ipegitege weiigi
@@ -69,7 +69,7 @@
 4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=23:29
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
 
-# sent_id = gramatica-pedagogica-7
+# sent_id = ped-gramm-7
 # sent_uid = e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
 # text = liGeladi Maria aGipegetege.
 # text_orig = liGeladi Maria aGipegetege
@@ -82,7 +82,7 @@
 4	ipegetege	pege	VERB	VBAPL	Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	_
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=26:27
 
-# sent_id = gramatica-pedagogica-8
+# sent_id = ped-gramm-8
 # sent_uid = 79a6cd4e-b585-437a-9084-1fa077dec3b6
 # text = ica liGeladi ipegetege.
 # text_orig = ica liGeladi ipegetege
@@ -93,7 +93,7 @@
 3	ipegetege	pege	VERB	VBAPL	Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=13:22
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
 
-# sent_id = gramatica-pedagogica-9
+# sent_id = ped-gramm-9
 # sent_uid = e9d6dfb6-656d-44aa-ba17-86289fd72268
 # text = liGeladi idei nigotaGa.
 # text_orig = liGeladi idei nigotaGa
@@ -106,7 +106,7 @@
 3	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=14:22
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
 
-# sent_id = gramatica-pedagogica-10
+# sent_id = ped-gramm-10
 # sent_uid = 2fff1f23-4e6f-401c-8b74-6a17ff6a391a
 # text = ica liGeladi ipegitegi.
 # text_orig = ica liGeladi ipegitegi
@@ -117,7 +117,7 @@
 3	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=13:22
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
 
-# sent_id = gramatica-pedagogica-11
+# sent_id = ped-gramm-11
 # sent_uid = fef391af-9e63-419f-8f81-057459193f49
 # text = ica Maria looligi alidi.
 # text_orig = ica Maria looligi alidi
@@ -131,7 +131,7 @@
 5	lidi	idi	NOUN	N$	_	0	root	_	_
 6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=23:24
 
-# sent_id = gramatica-pedagogica-12
+# sent_id = ped-gramm-12
 # sent_uid = 070d221f-f72d-4055-9c82-ddc383743e6a
 # text = ica looligi lidi.
 # text_orig = ica looligi lidi
@@ -142,7 +142,7 @@
 3	lidi	idi	NOUN	N$	_	0	root	_	SpaceAfter=No|TokenRange=12:16
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=16:17
 
-# sent_id = gramatica-pedagogica-13
+# sent_id = ped-gramm-13
 # sent_uid = 68277d1f-c30b-4c4f-ba9e-c2883cc133af
 # text = ica looligi dapico.
 # text_orig = ica looligi dapico
@@ -153,7 +153,7 @@
 3	dapico	apico	VERB	VB	Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=12:18
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
 
-# sent_id = gramatica-pedagogica-14
+# sent_id = ped-gramm-14
 # sent_uid = 5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
 # text = ica looligi ja dapico.
 # text_orig = ica looligi ja dapico
@@ -165,7 +165,7 @@
 4	dapico	apico	VERB	VB	Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=15:21
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
 
-# sent_id = gramatica-pedagogica-15
+# sent_id = ped-gramm-15
 # sent_uid = c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
 # text = ica looligi lideGegi.
 # text_orig = ica looligi lideGegi
@@ -176,7 +176,7 @@
 3	lideGegi	idi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=12:20
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
-# sent_id = gramatica-pedagogica-16
+# sent_id = ped-gramm-16
 # sent_uid = 19cc39ce-fe03-4551-8097-9d163a38a3c0
 # text = loigipodi libinienigipi.
 # text_orig = loigipodi libinienigipi
@@ -186,7 +186,7 @@
 2	libinienigipi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=10:23
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=23:24
 
-# sent_id = gramatica-pedagogica-17
+# sent_id = ped-gramm-17
 # sent_uid = 12147353-b422-4ad7-9bef-1d20e70e2a74
 # text = ica loigi ijo niganigi ipegitegi GanigotGa.
 # text_orig = ica loigi ijo niganigi ipegitegi GanigotGa
@@ -200,7 +200,7 @@
 6	GanigotGa	nigota	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=2	5	obj	_	SpaceAfter=No|TokenRange=33:42
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=42:43
 
-# sent_id = gramatica-pedagogica-18
+# sent_id = ped-gramm-18
 # sent_uid = 582429f2-67d5-4077-b209-6deb7b5df54f
 # text = ica lideGegi loligi idei liGeladi.
 # text_orig = ica lideGegi loligi idei liGeladi
@@ -213,7 +213,7 @@
 5	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	obj	_	SpaceAfter=No|TokenRange=25:33
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=33:34
 
-# sent_id = gramatica-pedagogica-19
+# sent_id = ped-gramm-19
 # sent_uid = 0f478381-6858-463d-94cc-903e9dc879f9
 # text = ica liwigo libinienigi.
 # text_orig = ica liwigo libinienigi
@@ -224,7 +224,7 @@
 3	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=11:22
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
 
-# sent_id = gramatica-pedagogica-20
+# sent_id = ped-gramm-20
 # sent_uid = 55551636-8ed3-4545-8510-d8dbfd817a1a
 # text = ica niwigo libinienigi.
 # text_orig = ica niwigo libinienigi
@@ -235,7 +235,7 @@
 3	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=11:22
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
 
-# sent_id = gramatica-pedagogica-21
+# sent_id = ped-gramm-21
 # sent_uid = 5d0b94bf-223d-4f09-8c6f-b951a70d6d0b
 # text = ica nioladi Ganixoa.
 # text_orig = ica nioladi Ganixoa
@@ -246,7 +246,7 @@
 3	Ganixoa	nixoa	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=2	0	root	_	SpaceAfter=No|TokenRange=12:19
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=19:20
 
-# sent_id = gramatica-pedagogica-22
+# sent_id = ped-gramm-22
 # sent_uid = 881131dd-3f70-411a-ac7e-85557139d1e3
 # text = ica nioladi nioxoa libinienigi.
 # text_orig = ica nioladi nioxoa libinienigi
@@ -258,7 +258,7 @@
 4	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=19:30
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
 
-# sent_id = gramatica-pedagogica-23
+# sent_id = ped-gramm-23
 # sent_uid = 95a7d135-4be0-463d-b443-76cc5828fc89
 # text = ica nioladi lodawa libinienigi.
 # text_orig = ica nioladi lodawa libinienigi
@@ -270,7 +270,7 @@
 4	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=19:30
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
 
-# sent_id = gramatica-pedagogica-24
+# sent_id = ped-gramm-24
 # sent_uid = 2f47b402-9fe7-4714-96e3-c6cbdf405472
 # text = iGeladi idei naigi anenapioi.
 # text_orig = iGeladi idei naigi anenapioi
@@ -284,7 +284,7 @@
 5	napioi	napioi	ADJ	ADJ	_	2	dep	_	_
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
 
-# sent_id = gramatica-pedagogica-25
+# sent_id = ped-gramm-25
 # sent_uid = a4d33655-fe74-4df2-8d5e-b3c88fba5fd1
 # text = iGeladi idei naigi me napioi.
 # text_orig = iGeladi idei naigi me napioi
@@ -297,7 +297,7 @@
 5	napioi	napioi	NOUN	N	_	2	dep	_	SpaceAfter=No|TokenRange=22:28
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
 
-# sent_id = gramatica-pedagogica-26
+# sent_id = ped-gramm-26
 # sent_uid = f081c545-c42b-463d-b57f-db87787f20e7
 # text = João liGeladi ane napioi.
 # text_orig = João liGeladi ane napioi
@@ -309,7 +309,7 @@
 4	napioi	napioi	NOUN	N	_	2	acl:relcl	_	SpaceAfter=No|TokenRange=18:24
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
 
-# sent_id = gramatica-pedagogica-27
+# sent_id = ped-gramm-27
 # sent_uid = 7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
 # text = iGeladi idei mijo naigi naGajo.
 # text_orig = iGeladi idei mijo naigi naGajo
@@ -324,7 +324,7 @@
 6	naGajo	niGijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	SpaceAfter=No|TokenRange=24:30
 7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
 
-# sent_id = gramatica-pedagogica-28
+# sent_id = ped-gramm-28
 # sent_uid = ee1a1190-7803-404c-83f6-49d3ccf63b0d
 # text = Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi.
 # text_orig = Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi
@@ -341,7 +341,7 @@
 8	lionigipi	iona	NOUN	N$	Person[psor]=3	2	dep	_	SpaceAfter=No|TokenRange=49:58
 9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=58:59
 
-# sent_id = gramatica-pedagogica-29
+# sent_id = ped-gramm-29
 # sent_uid = 4bdb4b8f-0176-4303-8a13-e313fbb6d7ad
 # text = Eyodi me niganaGacanajo.
 # text_orig = Eyodi me niganaGacanajo
@@ -352,7 +352,7 @@
 3	niganaGacanajo	niganaGacanajo	NOUN	N	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=9:23
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=23:24
 
-# sent_id = gramatica-pedagogica-30
+# sent_id = ped-gramm-30
 # sent_uid = 7b806584-75e5-4017-b9e2-ba97458903bd
 # text = Eyodi ane niganaGacanajo.
 # text_orig = Eyodi ane niganaGacanajo
@@ -363,7 +363,7 @@
 3	niganaGacanajo	niganaGacanajo	NOUN	N	Gender=Masc|Number=Sing	1	acl:relcl	_	SpaceAfter=No|TokenRange=10:24
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
 
-# sent_id = gramatica-pedagogica-31
+# sent_id = ped-gramm-31
 # sent_uid = 845b9d1d-ad7c-445a-bfbd-04fd9255ffc2
 # text = Eyodi daGa niganaGacanajo.
 # text_orig = Eyodi daGa niganaGacanajo
@@ -374,7 +374,7 @@
 3	niganaGacanajo	niganaGacanajo	NOUN	N	Gender=Masc|Number=Sing	1	dep	_	SpaceAfter=No|TokenRange=11:25
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
 
-# sent_id = gramatica-pedagogica-32
+# sent_id = ped-gramm-32
 # sent_uid = a4ccc755-a644-4b04-ab1b-698e7acea4cc
 # text = iGeladi idei digoida.
 # text_orig = iGeladi idei digoida
@@ -385,7 +385,7 @@
 3	digoida	digoida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	SpaceAfter=No|TokenRange=13:20
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
 
-# sent_id = gramatica-pedagogica-33
+# sent_id = ped-gramm-33
 # sent_uid = 82117289-be52-45d0-886d-a5747eb20ea2
 # text = iGeladi ipegitaGagi.
 # text_orig = iGeladi ipegitaGagi
@@ -395,7 +395,7 @@
 2	ipegitaGagi	pegi	VERB	VBAPL	Mood=Ind|Number[obj]=Sing|Person[erg]=3|Person[obj]=2|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=8:19
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
 
-# sent_id = gramatica-pedagogica-34
+# sent_id = ped-gramm-34
 # sent_uid = 50f93fbc-14fa-48e7-b8ba-22f744109348
 # text = iGeladi ipegitegi liGeladi.
 # text_orig = iGeladi ipegitegi liGeladi
@@ -406,7 +406,7 @@
 3	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No|TokenRange=18:26
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=26:27
 
-# sent_id = gramatica-pedagogica-35
+# sent_id = ped-gramm-35
 # sent_uid = 014fefb1-d5e3-48c8-9ac3-9e713a41407f
 # text = iGeladi ipegitegi naigi ane napioi.
 # text_orig = iGeladi ipegitegi naigi ane napioi
@@ -419,7 +419,7 @@
 5	napioi	napioi	NOUN	N	_	3	acl:relcl	_	SpaceAfter=No|TokenRange=28:34
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=34:35
 
-# sent_id = gramatica-pedagogica-36
+# sent_id = ped-gramm-36
 # sent_uid = bb8018ba-76b3-43f2-82ea-78b6009c1f90
 # text = iGeladi ipegitegi naigi me napioi.
 # text_orig = iGeladi ipegitegi naigi me napioi
@@ -432,7 +432,7 @@
 5	napioi	napioi	NOUN	N	_	2	dep	_	SpaceAfter=No|TokenRange=27:33
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=33:34
 
-# sent_id = gramatica-pedagogica-37
+# sent_id = ped-gramm-37
 # sent_uid = 1da1bf7a-7975-4baf-821b-9df5c75ac297
 # text = iGeladi aGipegitegi weiigi.
 # text_orig = iGeladi aGipegitegi weiigi
@@ -445,7 +445,7 @@
 4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=20:26
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
 
-# sent_id = gramatica-pedagogica-38
+# sent_id = ped-gramm-38
 # sent_uid = 46bbf9a8-c650-4e4b-a44f-78bfe6c5d979
 # text = ijo Gatodi etijo ida.
 # text_orig = ijo Gatodi etijo ida .
@@ -457,7 +457,7 @@
 4	ida	da	PRON	PRO	_	3	obj	_	SpaceAfter=No|TokenRange=17:20
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
-# sent_id = gramatica-pedagogica-39
+# sent_id = ped-gramm-39
 # sent_uid = 4ffc2f68-0474-488f-a94e-4065f952482a
 # text = ijotawece etidi akiidi.
 # text_orig = ijotawece etidi akiidi .
@@ -468,7 +468,7 @@
 3	akiidi	akiidi	NOUN	N	_	2	obj	_	SpaceAfter=No|TokenRange=16:22
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
 
-# sent_id = gramatica-pedagogica-40
+# sent_id = ped-gramm-40
 # sent_uid = 10e550d6-df13-4527-8aee-aa23e3f2fcdd
 # text = iGeladi digoida weiigi.
 # text_orig = iGeladi digoida weiigi .
@@ -479,7 +479,7 @@
 3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	1	dep	_	SpaceAfter=No|TokenRange=16:22
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=22:23
 
-# sent_id = gramatica-pedagogica-41
+# sent_id = ped-gramm-41
 # sent_uid = 874c123b-4c43-4001-bfce-8af4af0e5805
 # text = iGeladi idei weiigi.
 # text_orig = iGeladi idei weiigi .
@@ -490,7 +490,7 @@
 3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=13:19
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
 
-# sent_id = gramatica-pedagogica-42
+# sent_id = ped-gramm-42
 # sent_uid = aad13f14-bd9a-462a-9a43-68ba69a81519
 # text = nigotaGa liGeladi ipegitegi weiigi.
 # text_orig = nigotaGa liGeladi ipegitegi weiigi .
@@ -502,7 +502,7 @@
 4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=28:34
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=34:35
 
-# sent_id = gramatica-pedagogica-43
+# sent_id = ped-gramm-43
 # sent_uid = 19401990-aa1d-4cf5-bea1-122254c6b77a
 # text = lotaGa GanaginaGa libinienaGa.
 # text_orig = lotaGa GanaginaGa libinienaGa .
@@ -513,7 +513,7 @@
 3	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=18:29
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
 
-# sent_id = gramatica-pedagogica-44
+# sent_id = ped-gramm-44
 # sent_uid = 6d2a809e-0d32-4254-9489-f9e356e22493
 # text = nGida niwenigi daGaxa me dakake lojedi.
 # text_orig = nGida niwenigi daGaxa me dakake lojedi .
@@ -527,7 +527,7 @@
 6	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|StandardForm=loojedi|TokenRange=32:38
 7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=38:39
 
-# sent_id = gramatica-pedagogica-45
+# sent_id = ped-gramm-45
 # sent_uid = c25b098d-6b0a-4416-a31d-6d7219685a63
 # text = João liGeladi napioi.
 # text_orig = João liGeladi napioi .
@@ -538,7 +538,7 @@
 3	napioi	napioi	NOUN	N	_	2	dep	_	SpaceAfter=No|TokenRange=14:20
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
 
-# sent_id = gramatica-pedagogica-46
+# sent_id = ped-gramm-46
 # sent_uid = 4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5
 # text = liGeladi João napioi.
 # text_orig = liGeladi João napioi .
@@ -549,7 +549,7 @@
 3	napioi	napioi	NOUN	N$	_	0	root	_	SpaceAfter=No|TokenRange=14:20
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
-# sent_id = gramatica-pedagogica-47
+# sent_id = ped-gramm-47
 # sent_uid = ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec
 # text = liGeladi ipegitege niweiigi nigotaGa.
 # text_orig = liGeladi ipegitege niweiigi nigotaGa .
@@ -561,7 +561,7 @@
 4	nigotaGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing	2	dep	_	SpaceAfter=No|TokenRange=28:36
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=36:37
 
-# sent_id = gramatica-pedagogica-48
+# sent_id = ped-gramm-48
 # sent_uid = 8b1a9983-4dfd-49e8-9285-92c56c84b652
 # text = liGeladi ipegitegi niweiigi nigotaGa.
 # text_orig = liGeladi ipegitegi niweiigi nigotaGa .
@@ -573,7 +573,7 @@
 4	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	2	dep	_	SpaceAfter=No|TokenRange=28:36
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=36:37
 
-# sent_id = gramatica-pedagogica-49
+# sent_id = ped-gramm-49
 # sent_uid = eeb42af3-fe5a-4b7d-97ea-b381ab589860
 # text = Niwatece iwaGadi codaa adakake loojedi.
 # text_orig = Niwatece iwaGadi codaa adakake loojedi .
@@ -586,7 +586,7 @@
 5	loojedi	loojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No|TokenRange=31:38
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=38:39
 
-# sent_id = gramatica-pedagogica-50
+# sent_id = ped-gramm-50
 # sent_uid = 156fa9a4-4323-44f1-9cdc-ef5dc052b428
 # text = etee minitaGa.
 # text_orig = etee minitaGa
@@ -598,7 +598,7 @@
 3	initaGa	initaGa	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	1	dep	_	_
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
 
-# sent_id = gramatica-pedagogica-51
+# sent_id = ped-gramm-51
 # sent_uid = 3b45c470-6164-4fcf-a4d5-90be0f27eb1d
 # text = ee aGidininitibeci.
 # text_orig = ee aGidininitibeci
@@ -610,7 +610,7 @@
 3	idininitebeci	idininitebeci	VERB	VB	_	0	root	_	_
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
 
-# sent_id = gramatica-pedagogica-52
+# sent_id = ped-gramm-52
 # sent_uid = d543f155-c01f-4b5e-add1-0533b8ac6e15
 # text = jipacaGataGagitiwaji.
 # text_orig = jipacaGataGagitiwaji
@@ -619,7 +619,7 @@
 1	jipacaGataGagitiwaji	paca	VERB	VBAPL	Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:20
 2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
 
-# sent_id = gramatica-pedagogica-53
+# sent_id = ped-gramm-53
 # sent_uid = 3f077b37-aa95-4012-9efb-a21630cdd6e9
 # text = aGee eliodi niinikeGegi.
 # text_orig = aGee eliodi niinikeGegi
@@ -632,7 +632,7 @@
 4	niinikeGegi	niinikeGegi	NOUN	N	_	0	root	_	SpaceAfter=No|TokenRange=12:23
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
 
-# sent_id = gramatica-pedagogica-54
+# sent_id = ped-gramm-54
 # sent_uid = 74a76be1-d4b6-42e1-9100-6a436a7fa065
 # text = akaami oko jipacaGataGagitiwaji.
 # text_orig = akaami oko jipacaGataGagitiwaji
@@ -643,7 +643,7 @@
 3	jipacaGataGagitiwaji	jipacaGataGagitiwaji	VERB	VBAPL	Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=11:31
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=31:32
 
-# sent_id = gramatica-pedagogica-55
+# sent_id = ped-gramm-55
 # sent_uid = d3e098e5-4edd-4c24-81cf-78ff4a4d398c
 # text = niGidowa waca lotiidi dapikoGo.
 # text_orig = niGidowa waca lotiidi dapikoGo
@@ -655,7 +655,7 @@
 4	dapikoGo	apiko	VERB	VB	_	0	root	_	SpaceAfter=No|TokenRange=22:30
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
 
-# sent_id = gramatica-pedagogica-56
+# sent_id = ped-gramm-56
 # sent_uid = edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded
 # text = IiGeladi midi akiidi.
 # text_orig = IiGeladi midi akiidi
@@ -668,7 +668,7 @@
 4	akiidi	akiidi	NOUN	N	_	0	root	_	SpaceAfter=No|TokenRange=14:20
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=20:21
 
-# sent_id = gramatica-pedagogica-57
+# sent_id = ped-gramm-57
 # sent_uid = 2c0248b3-8f68-46e9-b41c-9f7807572c87
 # text = etogo aneiwaGadi adakake lojedi.
 # text_orig = etogo aneiwaGadi adakake lojedi .
@@ -684,7 +684,7 @@
 6	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	dep	_	SpaceAfter=No|StandardForm=loojedi|TokenRange=25:31
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=31:32
 
-# sent_id = gramatica-pedagogica-58
+# sent_id = ped-gramm-58
 # sent_uid = 73ceda1b-be14-4e75-9b1e-2a490d7df366
 # text = etogo adakake lojedi.
 # text_orig = etogo adakake lojedi
@@ -695,7 +695,7 @@
 4	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	obj	_	SpaceAfter=No|StandardForm=loojedi|TokenRange=14:20
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
-# sent_id = gramatica-pedagogica-59
+# sent_id = ped-gramm-59
 # sent_uid = bf632295-26f8-4ee6-979f-33f090ef0471
 # text = etogoli dakake lojetedi.
 # text_orig = etogoli dakake lojetedi
@@ -706,7 +706,7 @@
 3	lojetedi	oojedi	NOUN	N$	Gender=Masc|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=15:23
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=23:24
 
-# sent_id = gramatica-pedagogica-60
+# sent_id = ped-gramm-60
 # sent_uid = bbd6b80b-3236-4172-8bd5-ba3fb404049e
 # text = etogoli dakake loojedi.
 # text_orig = etogoli dakake loojedi
@@ -717,7 +717,7 @@
 3	loojedi	loojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=15:22
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
 
-# sent_id = gramatica-pedagogica-61
+# sent_id = ped-gramm-61
 # sent_uid = 1ab7fa26-ed92-4d55-98d0-0d76396373f0
 # text = Etogoli iwaGadi adakake lojetedi.
 # text_orig = Etogoli iwaGadi adakake lojetedi
