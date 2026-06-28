@@ -4,11 +4,39 @@
 """
 Generate gold-derived linguistic override resources for the Kadiwéu UD converter.
 
-This script is designed for the project layout:
+This script learns override resources by comparing the manually corrected
+gold CoNLL-U treebank with one or more Kadiwéu Tycho Brahe JSON source
+documents.
 
+The repository uses stable source identifiers for the current source
+documents:
+
+    ped-gramm
+    hil-data
+    van-data
+
+The corresponding canonical JSON files are:
+
+    data/ped-gramm.json
+    data/hil-data.json
+    data/van-data.json
+
+Sentence alignment is UID-only:
+
+    gold CoNLL-U # sent_uid  <->  JSON sentence uid
+
+The filename-based sent_id prefixes used elsewhere in the pipeline
+(ped-gramm-, hil-data-, van-data-) are not used for alignment here.
+They are documented because the same stable source identifiers organize
+the JSON files, draft CoNLL-U files, and gold treebank sentence IDs.
+
+Project layout
+--------------
 kadiweu/
 ├── data/
-│   ├── gramatica-pedagogica.json
+│   ├── ped-gramm.json
+│   ├── hil-data.json
+│   ├── van-data.json
 │   ├── treebank/
 │   │   └── kbc_unicamp-ud-test.conllu
 │   └── resources/
@@ -18,9 +46,10 @@ kadiweu/
     ├── kadiweu_json_to_conllu.py
     └── update_overrides_from_gold.py
 
-If run from kadiweu/src/update_overrides_from_gold.py with no arguments, it uses
-the default gold treebank and default JSON source. Command-line arguments can
-override them. The --json option accepts one or more JSON source files.
+If run from kadiweu/src/update_overrides_from_gold.py with no arguments,
+it uses the default gold treebank and the default JSON source
+data/ped-gramm.json. The --json option accepts one or more JSON source
+files, so the full current source set can be passed explicitly.
 """
 
 from __future__ import annotations
@@ -38,7 +67,11 @@ JsonDict = Dict[str, Any]
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
 DEFAULT_GOLD_PATH = PROJECT_ROOT / "data" / "treebank" / "kbc_unicamp-ud-test.conllu"
-DEFAULT_JSON_PATH = PROJECT_ROOT / "data" / "gramatica-pedagogica.json"
+# Default to the historical first source document. The full current source
+# set can be supplied with --json data/ped-gramm.json data/hil-data.json
+# data/van-data.json.
+DEFAULT_JSON_PATH = PROJECT_ROOT / "data" / "ped-gramm.json"
+DEFAULT_JSON_PATH = PROJECT_ROOT / "data" / "ped-gramm.json"
 DEFAULT_OUT_JSON = PROJECT_ROOT / "data" / "resources" / "gold_derived_overrides.json"
 DEFAULT_OUT_REPORT = PROJECT_ROOT / "data" / "resources" / "gold_derived_overrides_report.md"
 
@@ -173,6 +206,18 @@ def walk_collect_sentences(obj: Any, path: str = "$") -> List[JsonDict]:
 
 
 def parse_json_sentences(path: Path) -> List[JsonDict]:
+    """
+    Parse sentence-like objects from one Kadiwéu Tycho Brahe JSON source file.
+
+    The returned records preserve:
+      - JSON sentence uid, used for UID-only alignment with gold sent_uid;
+      - source token forms and raw tags, used for learning converter overrides;
+      - source_file and json_path, used in diagnostics and reports.
+
+    The source filename is not used for alignment, but canonical filenames
+    should follow the repository source IDs: ped-gramm.json, hil-data.json,
+    and van-data.json.
+    """
     with path.open("r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -313,7 +358,16 @@ def align_gold_with_json(
     gold_sentences: List[JsonDict],
     json_by_uid: Dict[str, JsonDict],
 ) -> Tuple[List[Tuple[JsonDict, JsonDict]], List[JsonDict], int, List[str]]:
-    """Align gold CoNLL-U sentences to JSON sentences by sent_uid only."""
+    """
+Align gold CoNLL-U sentences to JSON sentences by UID only.
+
+Gold sentences use the CoNLL-U metadata field # sent_uid.
+JSON source sentences use the Tycho Brahe sentence field uid.
+
+The sent_id prefix is intentionally not used for alignment. This keeps
+alignment stable even if sentence numbering changes, provided the UID is
+preserved.
+"""
     aligned: List[Tuple[JsonDict, JsonDict]] = []
     issues: List[JsonDict] = []
     rejected_msgs: List[str] = []
@@ -767,6 +821,7 @@ def build_report(
         "- In a later step, this can be made residual relative to converter heuristics.",
         "- Sentence alignment is UID-only: gold `sent_uid` must match JSON sentence `uid`.",
         "- Token alignment ignores punctuation and MWT lines.",
+        "- Source filenames follow stable source identifiers: `ped-gramm`, `hil-data`, and `van-data`.",
         "",
     ]
     return "\n".join(sections)
@@ -774,8 +829,17 @@ def build_report(
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Generate gold-derived Kadiwéu converter overrides."
-    )
+    description="Generate gold-derived Kadiwéu converter overrides.",
+    epilog="""Examples:
+  python3 update_overrides_from_gold.py \\
+    --gold ../data/treebank/kbc_unicamp-ud-test.conllu \\
+    --json ../data/ped-gramm.json ../data/hil-data.json ../data/van-data.json
+
+  python3 update_overrides_from_gold.py \\
+    --json ../data/ped-gramm.json
+""",
+    formatter_class=argparse.RawDescriptionHelpFormatter,
+)
     parser.add_argument(
         "--gold",
         type=Path,
@@ -787,7 +851,12 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         nargs="+",
         default=[DEFAULT_JSON_PATH],
-        help=f"One or more source JSON files (default: {DEFAULT_JSON_PATH})",
+        help=(
+            "One or more Kadiwéu Tycho Brahe JSON source files. "
+            "Canonical inputs are data/ped-gramm.json, data/hil-data.json, "
+            "and data/van-data.json. "
+            f"Default: {DEFAULT_JSON_PATH}"
+    ),
     )
     parser.add_argument(
         "--out-json",

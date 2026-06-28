@@ -1,0 +1,22 @@
+source_tag	split_tag_sequence	best_upos	best_count	total	confidence
+		NOUN	2	4	0.500
+C		SCONJ	1	2	0.500
+C	c|Gnr|Ncl|Plu|Apl	SCONJ	1	1	1.000
+D		DET	1	1	1.000
+D	Dem|Gnr|Ncl	PRON	1	1	1.000
+DAPL		SCONJ	1	1	1.000
+N		NOUN	3	4	0.750
+N	Ant|n	PUNCT	2	2	1.000
+N	n|Gnr|Ep|Plu	NOUN	1	1	1.000
+N	|Dir|Coll	VERB	1	1	1.000
+N$		NOUN	2	2	1.000
+N$	Gen|n	NOUN	2	3	0.667
+N$	Gen|n|Dim|Gnr|Plu	NOUN	1	1	1.000
+N$	Gen|n|Plu	PUNCT	1	1	1.000
+NPR		PROPN	1	1	1.000
+PUNC		PUNCT	4	4	1.000
+VB		VERB	2	2	1.000
+VB	Erg|v	VERB	1	1	1.000
+VBAPL		VERB	1	1	1.000
+VBAPL	Erg|v|Apl	VERB	1	2	0.500
+WPRO		PRON	4	4	1.000

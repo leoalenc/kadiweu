@@ -1,0 +1,12 @@
+source_tag	best_feats	best_count	total	confidence
+	_	2	4	0.500
+C	_	2	3	0.667
+D	Gender=Fem|Number=Sing|PronType=Dem	2	2	1.000
+DAPL	_	1	1	1.000
+N	_	3	8	0.375
+N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	7	0.429
+NPR	Gender=Masc	1	1	1.000
+PUNC	_	4	4	1.000
+VB	Mood=Ind|Person=3|VerbForm=Fin	2	3	0.667
+VBAPL	Mood=Ind|Person[erg]=3|VerbForm=Fin|Voice=Appl	1	3	0.333
+WPRO	PronType=Rel	4	4	1.000

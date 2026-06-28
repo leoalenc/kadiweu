@@ -2,16 +2,31 @@
 # -*- coding: utf-8 -*-
 
 """
-Normalize the Kadiwéu pedagogical grammar JSON into a flat token table.
+Normalize a Kadiwéu Tycho Brahe JSON source document into a flat token table.
 
-Output:
-- one row per sentence-token
+The repository uses stable source identifiers for the current source documents:
+
+    ped-gramm
+    hil-data
+    van-data
+
+The corresponding canonical JSON files are:
+
+    data/ped-gramm.json
+    data/hil-data.json
+    data/van-data.json
+
+Output
+------
+- one row per source sentence-token
 - TSV by default, optionally CSV
-- suitable for inspection, spreadsheet import, and rule design for UD conversion
+- suitable for inspection, spreadsheet import, rule design, and provisional
+  mapping induction for UD conversion
 
 Columns include:
-- sentence metadata
+- sentence metadata, including sent_uid
 - token metadata
+- source token tags
 - split morphemes and glosses
 - chunk memberships
 - proto-CoNLL-U scaffold fields
@@ -19,19 +34,49 @@ Columns include:
 Usage
 -----
 Basic TSV to stdout:
-    python3 kadiweu_json_to_token_table.py gramatica-pedagogica.json > tokens.tsv
+
+    python3 kadiweu_json_to_token_table.py data/ped-gramm.json
 
 Write TSV to file:
-    python3 kadiweu_json_to_token_table.py gramatica-pedagogica.json --out tokens.tsv
+
+    python3 kadiweu_json_to_token_table.py \
+      data/ped-gramm.json \
+      --out data/ped-gramm-tokens.tsv
+
+Generate token tables for all current source documents:
+
+    python3 kadiweu_json_to_token_table.py \
+      data/ped-gramm.json \
+      --out data/ped-gramm-tokens.tsv
+
+    python3 kadiweu_json_to_token_table.py \
+      data/hil-data.json \
+      --out data/hil-data-tokens.tsv
+
+    python3 kadiweu_json_to_token_table.py \
+      data/van-data.json \
+      --out data/van-data-tokens.tsv
 
 Write CSV instead:
-    python3 kadiweu_json_to_token_table.py gramatica-pedagogica.json --format csv --out tokens.csv
+
+    python3 kadiweu_json_to_token_table.py \
+      data/ped-gramm.json \
+      --format csv \
+      --out data/ped-gramm-tokens.csv
 
 Only first 20 sentences:
-    python3 kadiweu_json_to_token_table.py gramatica-pedagogica.json --limit 20 --out sample.tsv
+
+    python3 kadiweu_json_to_token_table.py \
+      data/ped-gramm.json \
+      --limit 20 \
+      --out data/sample-tokens.tsv
 
 Filter by sentence UID:
-    python3 kadiweu_json_to_token_table.py gramatica-pedagogica.json --uid SOME-UID --out one.tsv
+
+    python3 kadiweu_json_to_token_table.py \
+      data/ped-gramm.json \
+      --uid SOME-UID \
+      --out data/one-sentence-tokens.tsv
 """
 
 from __future__ import annotations
@@ -232,8 +277,17 @@ def normalize_split_list(token: Dict[str, Any]) -> List[Dict[str, Any]]:
     return out
 
 
-def sentence_to_rows(record: Dict[str, Any], sent_ordinal: int) -> List[Dict[str, Any]]:
-    """Convert one sentence object into flat token rows."""
+def sentence_to_rows(
+    record: Dict[str, Any],
+    sent_ordinal: int,
+    source_id: str,
+) -> List[Dict[str, Any]]:
+    """
+    Convert one Tycho Brahe sentence object into flat token rows.
+
+    `source_id` is the stable repository identifier derived from the input
+    filename, e.g. `ped-gramm`, `hil-data`, or `van-data`.
+    """
     sentence = record["sentence"]
     struct = sentence.get("struct", {}) if isinstance(sentence.get("struct"), dict) else {}
 
@@ -299,6 +353,7 @@ def sentence_to_rows(record: Dict[str, Any], sent_ordinal: int) -> List[Dict[str
         rows.append(
             {
                 # sentence-level metadata
+                "source_id": source_id,
                 "sent_ordinal": sent_ordinal,
                 "sent_uid": sentence_uid,
                 "sent_text": sentence_text,
@@ -342,11 +397,17 @@ def sentence_to_rows(record: Dict[str, Any], sent_ordinal: int) -> List[Dict[str
 
 def collect_rows(
     data: Any,
+    source_id: str,
     uid: Optional[str] = None,
     text_contains: Optional[str] = None,
     limit: Optional[int] = None,
 ) -> List[Dict[str, Any]]:
-    """Collect all flat token rows from the JSON."""
+    """
+    Collect all flat token rows from one Kadiwéu Tycho Brahe JSON source document.
+
+    The source document is identified externally by its filename, using the
+    stable repository IDs ped-gramm, hil-data, and van-data.
+"""
     sentence_records = walk_collect_sentences(data)
     sentence_records = filter_sentences(sentence_records, uid=uid, text_contains=text_contains)
 
@@ -355,7 +416,7 @@ def collect_rows(
 
     all_rows: List[Dict[str, Any]] = []
     for sent_ordinal, record in enumerate(sentence_records, start=1):
-        all_rows.extend(sentence_to_rows(record, sent_ordinal))
+        all_rows.extend(sentence_to_rows(record, sent_ordinal, source_id))
 
     return all_rows
 
@@ -366,6 +427,7 @@ def write_table(rows: List[Dict[str, Any]], out_path: Optional[Path], fmt: str) 
         raise ValueError("No rows to write.")
 
     fieldnames = [
+        "source_id",
         "sent_ordinal",
         "sent_uid",
         "sent_text",
@@ -416,9 +478,22 @@ def load_json(path: Path) -> Any:
 
 def build_argparser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
-        description="Flatten the Kadiwéu pedagogical grammar JSON into a token table."
-    )
-    p.add_argument("json_file", help="Input JSON file")
+    description="Flatten a Kadiwéu Tycho Brahe JSON source document into a token table.",
+    epilog="""Examples:
+  python3 kadiweu_json_to_token_table.py ../data/ped-gramm.json --out ../data/ped-gramm-tokens.tsv
+  python3 kadiweu_json_to_token_table.py ../data/hil-data.json --out ../data/hil-data-tokens.tsv
+  python3 kadiweu_json_to_token_table.py ../data/van-data.json --out ../data/van-data-tokens.tsv
+""",
+    formatter_class=argparse.RawDescriptionHelpFormatter,
+)
+    p.add_argument(
+    "json_file",
+    help=(
+        "Input Kadiwéu Tycho Brahe JSON source file. "
+        "Canonical inputs are data/ped-gramm.json, data/hil-data.json, "
+        "and data/van-data.json."
+    ),
+)
     p.add_argument(
         "--out",
         default=None,
@@ -453,6 +528,7 @@ def main() -> int:
     args = build_argparser().parse_args()
 
     json_path = Path(args.json_file)
+    source_id = json_path.stem
     if not json_path.is_file():
         print(f"ERROR: file not found: {json_path}", file=sys.stderr)
         return 1
@@ -460,10 +536,11 @@ def main() -> int:
     try:
         data = load_json(json_path)
         rows = collect_rows(
-            data,
-            uid=args.uid,
-            text_contains=args.text_contains,
-            limit=args.limit,
+        data,
+        source_id=source_id,
+        uid=args.uid,
+        text_contains=args.text_contains,
+        limit=args.limit,
         )
         if not rows:
             print("No rows generated.", file=sys.stderr)
