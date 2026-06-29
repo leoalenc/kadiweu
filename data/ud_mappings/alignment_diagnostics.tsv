@@ -1,10 +1,7 @@
 sent_uid	status	src_count	gold_count	src_forms	gold_forms	ignored_final_punct	text_orig
-f081c545-c42b-463d-b57f-db87787f20e7	TOKEN_COUNT_MISMATCH	5	4	João liGeladi ane *T* napioi	João liGeladi ane napioi	yes	João liGeladi ane napioi
 ee1a1190-7803-404c-83f6-49d3ccf63b0d	TOKEN_COUNT_MISMATCH	8	7	Eyodi dowediteloco naodigijedi me@ @icawataGa daGa me lionigipi	eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi	yes	Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi
-7b806584-75e5-4017-b9e2-ba97458903bd	TOKEN_COUNT_MISMATCH	4	3	Eyodi ane *T* niganaGacanajo	eyodi ane niganaGacanajo	yes	Eyodi ane niganaGacanajo
-014fefb1-d5e3-48c8-9ac3-9e713a41407f	TOKEN_COUNT_MISMATCH	6	5	iGeladi ipegitegi naigi ane *T* napioi	iGeladi ipegitegi naigi ane napioi	yes	iGeladi ipegitegi naigi ane napioi
-8f297896-5ee6-461f-86e3-0d4d4ef5a661	TOKEN_COUNT_MISMATCH	2	3	ninitibeci naGada	Ninitibeci naGada .	no	ninitibeci naGada .
-38f73c1c-ddfb-4153-9310-d24214cd68e7	TOKEN_COUNT_MISMATCH	7	6	NaGani wetiGa ane *T* iwaGadi eniteloco iGonagi	NaGani wetiGa ane iwaGadi eniteloco iGonagi	yes	NaGani wetiGa ane iwaGadi eniteloco iGonagi
+e349508c-4d86-48b8-9918-057988755e77	TOKEN_COUNT_MISMATCH	5	6	Etogo ane@ @iwaGadi adakake lojedi	Etogo ane iwaGadi aG dakake lojedi	yes	Etogo aneiwaGadi adakake lojedi
+1d10c633-e74d-4e27-ac23-6b6b2dde9647	TOKEN_COUNT_MISMATCH	5	6	Etogo ane iwaGadi adakake loojedi	Etogo ane iwaGadi aG dakake loojedi	yes	Etogo ane iwaGadi adakake loojedi
 0575dd46-865a-4ba4-bd49-ed6db054eeb4	TOKEN_TABLE_UID_NOT_IN_GOLD	2					
 075356e6-f89c-4d83-b001-435d13b319dc	TOKEN_TABLE_UID_NOT_IN_GOLD	4					
 07bfcd00-7901-474d-bfb8-bf470266aafa	TOKEN_TABLE_UID_NOT_IN_GOLD	4					

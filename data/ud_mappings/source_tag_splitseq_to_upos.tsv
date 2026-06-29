@@ -1,5 +1,5 @@
 source_tag	split_tag_sequence	best_upos	best_count	total	confidence
-		VERB	3	3	1.000
+		VERB	1	1	1.000
 ADJ		ADJ	1	1	1.000
 ADJ	Inv|v	ADJ	1	1	1.000
 ADV		ADV	1	1	1.000
@@ -10,20 +10,20 @@ C	c|Gnr|Ncl|Apl	SCONJ	1	1	1.000
 C	|	SCONJ	1	1	1.000
 C	|Gnr|Ncl|Apl	SCONJ	5	5	1.000
 C	||	SCONJ	2	2	1.000
-D		DET	8	8	1.000
+D		DET	9	9	1.000
 D	Adv|Gen|Ncl	ADV	1	1	1.000
 D	Anf|Gnr|Ncl	DET	3	3	1.000
 D	Anf|Gnr|Ncl|Plu	DET	3	3	1.000
-D	Dem|Gnr|Ncl	DET	9	13	0.692
+D	Dem|Gnr|Ncl	DET	9	14	0.643
 D	Dem|Gnr|Ncl|Plu	DET	1	1	1.000
 D	Gnr|Ncl	DET	23	27	0.852
 D	Gnr|Ncl|Plu	DET	1	1	1.000
 D	|Gnr|Ncl	DET	2	2	1.000
 D	||	ADV	1	2	0.500
 DAPL		PRON	4	7	0.571
-N		NOUN	28	28	1.000
+N		NOUN	29	29	1.000
 N	Ant|cidade	NOUN	1	1	1.000
-N	Ant|n	NOUN	5	6	0.833
+N	Ant|n	NOUN	6	8	0.750
 N	Gen|n	NOUN	1	1	1.000
 N	n	NOUN	6	6	1.000
 N	n|Cla	NOUN	5	5	1.000
@@ -35,7 +35,7 @@ N$		NOUN	20	20	1.000
 N$	Ant|n	NOUN	11	11	1.000
 N$	Gen|Ant|n	NOUN	1	1	1.000
 N$	Gen|canoa	NOUN	1	1	1.000
-N$	Gen|n	NOUN	45	45	1.000
+N$	Gen|n	NOUN	48	48	1.000
 N$	Gen|n|Der|Gnr	NOUN	1	1	1.000
 N$	Gen|n|Dim	NOUN	8	8	1.000
 N$	Gen|n|Dim|Gnr	NOUN	3	3	1.000
@@ -45,32 +45,28 @@ N$	Gen|n|Plu	NOUN	1	1	1.000
 N$	Gen|v|Der|Gnr	NOUN	1	1	1.000
 N$	Gnr|n	NOUN	1	1	1.000
 N$	Gnr|n|Plu	NOUN	2	2	1.000
-N$	|	NOUN	1	1	1.000
 N$	||	NOUN	1	1	1.000
 NEG	Neg|Erg|v|Apl	PART	2	2	1.000
 NEG	Neg|Gen|n	PART	1	1	1.000
 NEG	Neg|v	PART	1	1	1.000
 NEG	||	PART	1	1	1.000
-NEG+ADJ	Neg|Inv|v	ADJ	1	1	1.000
-NEG+ADJ	|Adj	ADJ	1	1	1.000
-NPR		PROPN	4	4	1.000
+NPR		PROPN	5	5	1.000
 PRO		PRON	3	3	1.000
 PRO$	Dem|Gnr|Ncl	PRON	1	1	1.000
 PUNC		PUNCT	4	4	1.000
 Q		ADV	5	7	0.714
 T	PFV	AUX	4	4	1.000
 T	t	AUX	1	1	1.000
-VB		VERB	12	13	0.923
+VB		VERB	13	13	1.000
 VB	Abs|v	VERB	6	6	1.000
 VB	Dir|v	VERB	1	1	1.000
-VB	Erg|v	VERB	21	22	0.955
+VB	Erg|v	VERB	22	22	1.000
 VB	Inv|v	VERB	5	5	1.000
 VB	v	VERB	1	1	1.000
 VB	v|Gnr|Ncl	VERB	2	2	1.000
 VB	|	VERB	1	1	1.000
 VBAPL		VERB	2	2	1.000
-VBAPL	Erg|v|Apl	VERB	6	6	1.000
+VBAPL	Erg|v|Apl	VERB	8	8	1.000
 VBAPL	Erg|v|OBL|Apl	VERB	1	1	1.000
-WPRO		PRON	1	1	1.000
+WPRO		PRON	4	4	1.000
 WPRO	Wpro|Adj	PRON	1	1	1.000
-WPRO	|	PRON	1	1	1.000

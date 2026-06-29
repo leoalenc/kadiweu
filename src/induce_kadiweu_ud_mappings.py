@@ -78,6 +78,16 @@ DEFAULT_OUTDIR = PROJECT_ROOT / "data" / "ud_mappings"
 
 FINAL_PUNCT_FOR_ALIGNMENT = set(string.punctuation) | {"…"}
 
+def filter_source_learning_tokens(rows):
+    """
+    Remove source tokens that do not correspond to overt surface tokens.
+    """
+    return [
+        row
+        for row in rows
+        if row.get("token_form") != "*T*"
+    ]
+
 
 def text_orig_has_final_punct(sent: Dict) -> bool:
     """Return True if # text_orig already ends in sentence-final punctuation."""
@@ -280,7 +290,9 @@ def main() -> int:
             )
             continue
 
-        src_rows = tsv_by_uid.get(sent_uid)
+        src_rows = filter_source_learning_tokens(
+            tsv_by_uid.get(sent_uid, [])
+        )
 
         if not src_rows:
             no_uid_match += 1
