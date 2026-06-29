@@ -48,11 +48,19 @@ Sentence alignment is UID-based:
 
     token table sent_uid  <->  CoNLL-U # sent_uid
 
-Token alignment is ordinal within each UID-matched sentence. If the gold
-sentence has final punctuation that is absent from # text_orig, that final
-punctuation token is ignored for alignment. Multiword-token
-lines and empty nodes are ignored when reading CoNLL-U, so only ordinary
-syntactic tokens participate in mapping induction.
+Token alignment is ordinal within each UID-matched sentence.
+
+Before token alignment:
+
+- source-side empty-category tokens (e.g. `*T*`) are ignored;
+- one final gold punctuation token is ignored when it was added during
+  conversion and is absent from `# text_orig`.
+
+After these normalizations, the source and gold token counts must agree
+exactly; otherwise, the sentence is rejected for mapping induction.
+
+Multiword-token (MWT) lines and empty nodes are ignored when reading
+CoNLL-U, so only ordinary syntactic tokens participate in mapping induction.
 
 Usage
 -----
@@ -78,7 +86,9 @@ DEFAULT_OUTDIR = PROJECT_ROOT / "data" / "ud_mappings"
 
 FINAL_PUNCT_FOR_ALIGNMENT = set(string.punctuation) | {"…"}
 
-def filter_source_learning_tokens(rows):
+def filter_source_learning_tokens(
+    rows: List[Dict[str, str]]
+    ) -> List[Dict[str, str]]:
     """
     Remove source tokens that do not correspond to overt surface tokens.
     """
@@ -264,6 +274,7 @@ def main() -> int:
     feats_by_tag = Counter()
     deprel_by_tagchunk = Counter()
     diagnostics = []
+    mismatch_details = []
 
     matched = 0
     missing_gold_uid = 0
@@ -306,7 +317,6 @@ def main() -> int:
                     "",
                     "",
                     "",
-                    "",
                 ]
             )
             continue
@@ -329,6 +339,14 @@ def main() -> int:
                     "yes" if ignored_punct else "no",
                     sent.get("meta", {}).get("text_orig", ""),
                 ]
+            )
+            mismatch_details.append(
+                {
+                    "sent_uid": sent_uid,
+                    "src_rows": src_rows,
+                    "gold_toks": gold_toks,
+                    "text_orig": sent.get("meta", {}).get("text_orig", ""),
+                }
             )
             continue
 
@@ -459,6 +477,33 @@ def main() -> int:
     print(f"  Ignored final punctuation:      {ignored_final_punct}")
     print(f"  Token-table UIDs not in gold:   {len(token_table_uids_not_in_gold)}")
     print(f"Wrote induced tables to:          {outdir}")
+    if mismatch_details:
+        print()
+        print("Token-count mismatches")
+        print("=" * 22)
+
+        for m in mismatch_details:
+            print()
+            print(f"sent_uid: {m['sent_uid']}")
+            print()
+
+            print(f"Source ({len(m['src_rows'])}):")
+            for i, row in enumerate(m["src_rows"], 1):
+                print(f"  {i:>2}  {row.get('token_form', '')}")
+
+            print()
+
+            print(f"Gold ({len(m['gold_toks'])}):")
+            for i, tok in enumerate(m["gold_toks"], 1):
+                print(f"  {i:>2}  {tok.get('form', '')}")
+
+            print()
+
+            print("text_orig:")
+            print(f"  {m['text_orig']}")
+
+            print()
+            print("-" * 60)
     return 0
 
 
