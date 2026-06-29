@@ -637,7 +637,7 @@
 # sent_id = hil-data-17
 # sent_uid = 8f297896-5ee6-461f-86e3-0d4d4ef5a661
 # text = Ninitibeci naGada.
-# text_orig = ninitibeci naGada .
+# text_orig = ninitibeci naGada
 # text_por_orig = Ela está feliz .
 # text_por = Ela está feliz.
 1	Ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=ninitibece|TokenRange=0:10

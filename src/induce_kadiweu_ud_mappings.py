@@ -207,6 +207,10 @@ def write_counter_table(path: Path, rows: List[List[str]], header: List[str]) ->
         w.writerow(header)
         w.writerows(rows)
 
+def token_sequence(tokens: List[Dict[str, str]]) -> str:
+    """Return a compact FORM sequence for diagnostics."""
+    return " ".join(tok.get("form", "") for tok in tokens)
+
 
 def main() -> int:
     ap = argparse.ArgumentParser(
@@ -262,14 +266,37 @@ def main() -> int:
 
         if not sent_uid:
             missing_gold_uid += 1
-            diagnostics.append(["", "GOLD_SENTENCE_MISSING_SENT_UID", "", ""])
+            diagnostics.append(
+                [
+                    "",
+                    "GOLD_SENTENCE_MISSING_SENT_UID",
+                    "",
+                    "",
+                    "",   # src_forms
+                    "",   # gold_forms
+                    "",   # ignored_final_punct
+                    "",   # text_orig
+                ]
+            )
             continue
 
         src_rows = tsv_by_uid.get(sent_uid)
 
         if not src_rows:
             no_uid_match += 1
-            diagnostics.append([sent_uid, "NO_UID_MATCH", "", ""])
+            diagnostics.append(
+                [
+                    sent_uid,
+                    "NO_UID_MATCH",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                ]
+            )
             continue
 
         gold_toks, ignored_punct = gold_tokens_for_alignment(sent)
@@ -285,6 +312,10 @@ def main() -> int:
                     "TOKEN_COUNT_MISMATCH",
                     str(len(src_rows)),
                     str(len(gold_toks)),
+                    " ".join(row.get("token_form", "") for row in src_rows),
+                    token_sequence(gold_toks),
+                    "yes" if ignored_punct else "no",
+                    sent.get("meta", {}).get("text_orig", ""),
                 ]
             )
             continue
@@ -321,12 +352,16 @@ def main() -> int:
 
     for sent_uid in token_table_uids_not_in_gold:
         diagnostics.append(
-            [
-                sent_uid,
-                "TOKEN_TABLE_UID_NOT_IN_GOLD",
-                str(len(tsv_by_uid[sent_uid])),
-                "",
-            ]
+        [
+            sent_uid,
+            "TOKEN_TABLE_UID_NOT_IN_GOLD",
+            str(len(tsv_by_uid[sent_uid])),
+            "",
+            "",
+            "",
+            "",
+            "",
+        ]
         )
     # collapse to readable summaries
     by_tag = defaultdict(Counter)
@@ -390,8 +425,17 @@ def main() -> int:
     write_counter_table(
         outdir / "alignment_diagnostics.tsv",
         diagnostics,
-        ["sent_uid", "status", "src_count", "gold_count"],
-    )
+        [
+            "sent_uid",
+            "status",
+            "src_count",
+            "gold_count",
+            "src_forms",
+            "gold_forms",
+            "ignored_final_punct",
+            "text_orig",
+        ],
+        )
 
     print("Alignment summary:")
     print(f"  Gold sentences:                 {len(conllu_sents)}")
