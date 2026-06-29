@@ -48,7 +48,9 @@ Sentence alignment is UID-based:
 
     token table sent_uid  <->  CoNLL-U # sent_uid
 
-Token alignment is ordinal within each UID-matched sentence. Multiword-token
+Token alignment is ordinal within each UID-matched sentence. If the gold
+sentence has final punctuation that is absent from # text_orig, that final
+punctuation token is ignored for alignment. Multiword-token
 lines and empty nodes are ignored when reading CoNLL-U, so only ordinary
 syntactic tokens participate in mapping induction.
 
@@ -68,10 +70,39 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Dict, List, Tuple
+import string
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
 DEFAULT_OUTDIR = PROJECT_ROOT / "data" / "ud_mappings"
+
+FINAL_PUNCT_FOR_ALIGNMENT = set(string.punctuation) | {"…"}
+
+
+def text_orig_has_final_punct(sent: Dict) -> bool:
+    """Return True if # text_orig already ends in sentence-final punctuation."""
+    text_orig = sent.get("meta", {}).get("text_orig", "").strip()
+    return bool(text_orig) and text_orig.endswith(tuple(FINAL_PUNCT_FOR_ALIGNMENT))
+
+
+def gold_tokens_for_alignment(sent: Dict) -> Tuple[List[Dict[str, str]], bool]:
+    """
+    Return gold tokens for source-token alignment.
+
+    If the gold sentence has one final punctuation token that was not present
+    in # text_orig, remove it. This avoids false token-count mismatches caused
+    by converter-added final punctuation while preserving source punctuation.
+    """
+    tokens = list(sent["tokens"])
+
+    if (
+        tokens
+        and tokens[-1].get("upos") == "PUNCT"
+        and not text_orig_has_final_punct(sent)
+    ):
+        return tokens[:-1], True
+
+    return tokens, False
 
 
 def parse_feats(feats: str) -> str:
@@ -224,6 +255,7 @@ def main() -> int:
     missing_gold_uid = 0
     no_uid_match = 0
     token_count_mismatches = 0
+    ignored_final_punct = 0
 
     for sent in conllu_sents:
         sent_uid = conllu_sent_uid(sent)
@@ -240,12 +272,20 @@ def main() -> int:
             diagnostics.append([sent_uid, "NO_UID_MATCH", "", ""])
             continue
 
-        gold_toks = sent["tokens"]
+        gold_toks, ignored_punct = gold_tokens_for_alignment(sent)
+
+        if ignored_punct:
+            ignored_final_punct += 1
         
         if len(src_rows) != len(gold_toks):
             token_count_mismatches += 1
             diagnostics.append(
-                [sent_uid, "TOKEN_COUNT_MISMATCH", str(len(src_rows)), str(len(gold_toks))]
+                [
+                    sent_uid,
+                    "TOKEN_COUNT_MISMATCH",
+                    str(len(src_rows)),
+                    str(len(gold_toks)),
+                ]
             )
             continue
 
@@ -287,7 +327,7 @@ def main() -> int:
                 str(len(tsv_by_uid[sent_uid])),
                 "",
             ]
-    )
+        )
     # collapse to readable summaries
     by_tag = defaultdict(Counter)
     for (tag, upos), count in upos_by_tag.items():
@@ -360,6 +400,7 @@ def main() -> int:
     print(f"  Gold sentences missing UID:     {missing_gold_uid}")
     print(f"  Gold sentences without UID match:{no_uid_match}")
     print(f"  Token-count mismatches:         {token_count_mismatches}")
+    print(f"  Ignored final punctuation:      {ignored_final_punct}")
     print(f"  Token-table UIDs not in gold:   {len(token_table_uids_not_in_gold)}")
     print(f"Wrote induced tables to:          {outdir}")
     return 0
