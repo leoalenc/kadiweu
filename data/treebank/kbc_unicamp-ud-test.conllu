@@ -1204,6 +1204,21 @@
 4	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=22:33
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=33:34
 
+# sent_id = van-data-47
+# sent_uid = fad6e8d3-1e9f-451c-aaa7-fd28aecfd967
+# text = idiwa noGojedi lixagotaGaGa adakake loojedi.
+# text_orig = idiwa noGojedi lixagotaGaGa adakake loojedi
+# text_por_orig = estes peixes vermelhos estão baratos
+# text_por = estes peixes vermelhos estão baratos.
+1	idiwa	idi	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:5
+2	noGojedi	noGojegi	NOUN	N	Gender=Masc|Number=Plur	3	nmod:poss	_	TokenRange=6:14
+3	lixagotaGaGa	ixagodi	NOUN	N$	Number=Plur	5	dislocated	_	TokenRange=15:27
+4-5	adakake	_	_	_	_	_	_	_	TokenRange=28:35
+4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
+5	dakake	akake	VERB	VBU	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	_
+6	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	SpaceAfter=No|TokenRange=36:43
+7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=43:44
+
 # sent_id = van-data-49
 # sent_uid = 889846ee-66df-4c8f-88d1-e89d3619eb1e
 # text = eteyo ina.
