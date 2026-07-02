@@ -1211,7 +1211,7 @@
 # text_por_orig = eu estou aqui
 # text_por = eu estou aqui.
 1	eteyo	et	VERB	VB	Gender=Fem|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	StandardForm=eteeyo|TokenRange=0:5
-2	ina	na	PRON	D	Gender=Masc|Number=Sing|PronType=Dem	1	det	_	SpaceAfter=No|TokenRange=6:9
+2	ina	ina	PRON	D	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	SpaceAfter=No|TokenRange=6:9
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=9:10
 
 # sent_id = van-data-50
@@ -1232,7 +1232,7 @@
 # text_orig = etee minitaGa
 # text_por_orig = eu estou com ele
 # text_por = eu estou com ele.
-1	etee	VB	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
 2-3	minitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
 2	me	me	SCONJ	C	_	3	mark	_	_
 3	initaGa	initaGa	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	Case=Com
