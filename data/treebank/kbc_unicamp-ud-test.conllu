@@ -1223,7 +1223,7 @@
 1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
 2-3	manitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
 2	me	me	SCONJ	C	_	3	mark	_	_
-3	anitaGa	anitaGa	PRON	DAPL	Gender=Fem|Number=Sing|PronType=Dem	1	obj	_	Case=Com
+3	anitaGa	ini	PRON	DAPL	Gender=Fem|Number=Sing|PronType=Dem	1	obj	_	Case=Com
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
 
 # sent_id = van-data-51
@@ -1235,6 +1235,6 @@
 1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
 2-3	minitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
 2	me	me	SCONJ	C	_	3	mark	_	_
-3	initaGa	initaGa	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	Case=Com
+3	initaGa	ini	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	Case=Com
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
 
