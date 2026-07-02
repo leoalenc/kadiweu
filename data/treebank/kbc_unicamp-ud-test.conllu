@@ -1005,7 +1005,7 @@
 3	nigaanigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	2	nmod:poss	_	TokenRange=15:31
 4-5	manitaGa	_	_	_	_	_	_	_	TokenRange=32:40
 4	me	me	SCONJ	C	_	6	mark	_	_
-5	anitaGa	anitaGa	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
+5	anitaGa	ini	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
 6	niwatece	watece	NOUN	N	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=41:49
 7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=49:50
 
@@ -1031,7 +1031,7 @@
 2	nigaanigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	6	nsubj	_	TokenRange=7:23
 3-4	manitaGa	_	_	_	_	_	_	_	TokenRange=24:32
 3	me	me	SCONJ	C	_	6	mark	_	_
-4	anitaGa	anitaGa	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
+4	anitaGa	ini	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
 5	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	6	nmod:poss	_	TokenRange=33:39
 6	niwatece	watece	NOUN	N	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=40:48
 7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=48:49
@@ -1055,7 +1055,7 @@
 1	Eyo	eeyo	PRON	PRO	Gender=Fem|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	StandardForm=Eeyo|TokenRange=0:3
 2-3	manitaGa	_	_	_	_	_	_	_	TokenRange=4:12
 2	me	me	SCONJ	C	_	4	mark	_	_
-3	anitaGa	anitaGa	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	4	det	_	_
+3	anitaGa	ini	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	4	det	_	_
 4	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	0	root	_	Case=Com|NumClass=Sitting|SpaceAfter=No|TokenRange=13:21
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
 
@@ -1071,7 +1071,7 @@
 4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=25:29
 5-6	minitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=30:38
 5	me	me	SCONJ	C	_	6	mark	_	_
-6	initaGa	initaGa	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	4	obj	_	Case=Com|NumClass=Sitting
+6	initaGa	ini	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	4	obj	_	Case=Com|NumClass=Sitting
 7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=38:39
 
 # sent_id = van-data-20
@@ -1084,7 +1084,7 @@
 2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=9:13
 3-4	manitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=14:22
 3	me	me	SCONJ	C	_	4	mark	_	_
-4	anitaGa	anitaGa	PRON	DAPL	Gender=Fem|Number=Sing|PronType=Dem	2	obj	_	Case=Com|NumClass=Sitting
+4	anitaGa	ini	PRON	DAPL	Gender=Fem|Number=Sing|PronType=Dem	2	obj	_	Case=Com|NumClass=Sitting
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
 
 # sent_id = van-data-21
