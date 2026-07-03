@@ -184,7 +184,6 @@ process_one() {
 
 # Process all known source documents.
 for uid in "${!UID_TO_BASE[@]}"; do
-for uid in "${!UID_TO_BASE[@]}"; do
   base="${UID_TO_BASE[$uid]}"
   src="$(find_json_for_uid "$uid")"
   process_one "$src" "$base" "$uid"
