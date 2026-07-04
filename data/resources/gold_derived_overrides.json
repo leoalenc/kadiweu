@@ -129,6 +129,7 @@
     "ani": "PRON",
     "daGa": "SCONJ",
     "daGaxa": "ADV",
+    "dakake": "VERB",
     "dapico": "VERB",
     "dapicoGo": "VERB",
     "dibixodi": "NOUN",
@@ -492,8 +493,8 @@
     "niGijo\tPRON": "Dem"
   },
   "metadata": {
-    "aligned_sentence_count": 100,
-    "alignment_rejected_sentence_count": 4,
+    "aligned_sentence_count": 101,
+    "alignment_rejected_sentence_count": 3,
     "gold_file": "/home/leonel/kadiweu/data/treebank/kbc_unicamp-ud-test.conllu",
     "gold_sentence_count": 104,
     "json_files": [
@@ -501,7 +502,7 @@
       "../data/hil-data.json",
       "../data/van-data.json"
     ],
-    "json_sentence_count": 204,
+    "json_sentence_count": 206,
     "thresholds": {
       "feats_min_count": 1,
       "feats_min_share": 0.9,
@@ -513,7 +514,7 @@
       "tag_pron_min_share": 0.9
     },
     "uid_matched_sentence_count": 104,
-    "usable_aligned_sentence_count": 100
+    "usable_aligned_sentence_count": 101
   },
   "prontype_overrides": {
     "ada\tPRON": "Dem",
@@ -702,17 +703,6 @@
         "total": 5
       },
       {
-        "best": "ADJ",
-        "best_count": 3,
-        "counts": {
-          "ADJ": 3,
-          "VERB": 2
-        },
-        "form": "dakake",
-        "share": 0.6,
-        "total": 5
-      },
-      {
         "best": "ADV",
         "best_count": 2,
         "counts": {
@@ -781,16 +771,15 @@
         "total": 2
       },
       {
-        "best": "ADJ",
-        "best_count": 3,
+        "best": "VB",
+        "best_count": 1,
         "counts": {
-          "ADJ": 3,
           "VB": 1,
           "VBU": 1
         },
         "form": "dakake",
-        "share": 0.6,
-        "total": 5
+        "share": 0.5,
+        "total": 2
       },
       {
         "best": "ADV",
@@ -894,18 +883,6 @@
     ],
     "ambiguous_lemma_prontype": [],
     "ambiguous_lemmas": [
-      {
-        "best": "dakake",
-        "best_count": 2,
-        "counts": {
-          "akake": 1,
-          "dakake": 2
-        },
-        "form": "dakake",
-        "share": 0.6667,
-        "total": 3,
-        "upos": "ADJ"
-      },
       {
         "best": "eyo",
         "best_count": 1,
@@ -1034,15 +1011,15 @@
     "ambiguous_tag_to_upos": [
       {
         "best": "DET",
-        "best_count": 52,
+        "best_count": 51,
         "counts": {
           "ADV": 2,
-          "DET": 52,
+          "DET": 51,
           "PRON": 9
         },
         "raw_tag": "D",
-        "share": 0.8254,
-        "total": 63
+        "share": 0.8226,
+        "total": 62
       },
       {
         "best": "PRON",
@@ -1057,14 +1034,14 @@
       },
       {
         "best": "ADV",
-        "best_count": 5,
+        "best_count": 4,
         "counts": {
-          "ADV": 5,
+          "ADV": 4,
           "DET": 2
         },
         "raw_tag": "Q",
-        "share": 0.7143,
-        "total": 7
+        "share": 0.6667,
+        "total": 6
       }
     ],
     "ambiguous_upos": [
@@ -1106,15 +1083,15 @@
       },
       {
         "best": "ADV",
-        "best_count": 4,
+        "best_count": 3,
         "counts": {
-          "ADV": 4,
+          "ADV": 3,
           "DET": 1
         },
         "form": "eliodi",
         "raw_tag": "Q",
-        "share": 0.8,
-        "total": 5
+        "share": 0.75,
+        "total": 4
       },
       {
         "best": "PRON",
@@ -1171,50 +1148,52 @@
         "type": "token_count_mismatch"
       },
       {
-        "gold_count": 6,
-        "gold_forms": [
-          "Etogo",
-          "ane",
-          "iwaGadi",
-          "aG",
-          "dakake",
-          "lojedi"
-        ],
-        "json_count": 5,
-        "json_forms": [
-          "Etogo",
-          "ane@",
-          "@iwaGadi",
-          "adakake",
-          "lojedi"
-        ],
         "json_path": "$.pages[0].sentences[4]",
+        "mismatches": [
+          [
+            "aG",
+            "adakake"
+          ]
+        ],
         "sent_id": "hil-data-5",
         "sent_uid": "e349508c-4d86-48b8-9918-057988755e77",
         "source_file": "../data/hil-data.json",
-        "type": "token_count_mismatch"
+        "type": "token_form_mismatch"
       },
       {
-        "gold_count": 6,
+        "json_path": "$.pages[0].sentences[5]",
+        "mismatches": [
+          [
+            "aG",
+            "adakake"
+          ]
+        ],
+        "sent_id": "hil-data-6",
+        "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647",
+        "source_file": "../data/hil-data.json",
+        "type": "token_form_mismatch"
+      },
+      {
+        "gold_count": 5,
         "gold_forms": [
-          "Etogo",
-          "ane",
-          "iwaGadi",
-          "aG",
+          "NiGida",
+          "niwenigi",
+          "eliodi",
+          "me",
+          "loojedi"
+        ],
+        "json_count": 6,
+        "json_forms": [
+          "NiGida",
+          "niwenigi",
+          "eliodi",
+          "me",
           "dakake",
           "loojedi"
         ],
-        "json_count": 5,
-        "json_forms": [
-          "Etogo",
-          "ane",
-          "iwaGadi",
-          "adakake",
-          "loojedi"
-        ],
-        "json_path": "$.pages[0].sentences[5]",
-        "sent_id": "hil-data-6",
-        "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647",
+        "json_path": "$.pages[0].sentences[8]",
+        "sent_id": "hil-data-9",
+        "sent_uid": "0ca977cd-2edf-45d9-b958-068648aebef9",
         "source_file": "../data/hil-data.json",
         "type": "token_count_mismatch"
       },
@@ -1294,9 +1273,11 @@
     "ADJ": "ADJ",
     "ADV": "ADV",
     "C": "SCONJ",
+    "CNEG+VB": "PART",
     "N": "NOUN",
     "N$": "NOUN",
     "NEG": "PART",
+    "NEG+VB": "PART",
     "NPR": "PROPN",
     "PRO": "PRON",
     "PRO$": "PRON",
@@ -1309,13 +1290,14 @@
   "upos_overrides": {
     "aG\tNEG": "PART",
     "ada\tD": "PRON",
+    "adakake\tCNEG+VB": "PART",
+    "adakake\tNEG+VB": "PART",
     "ajo\tD": "DET",
     "ane\tWPRO": "PRON",
     "ani\tD": "PRON",
     "daGa\tC": "SCONJ",
     "daGaxa\tADV": "ADV",
     "daGaxa\tQ": "ADV",
-    "dakake\tADJ": "ADJ",
     "dakake\tVB": "VERB",
     "dakake\tVBU": "VERB",
     "dapico\tVB": "VERB",
@@ -1326,6 +1308,7 @@
     "eniteloco\tVBAPL": "VERB",
     "etadi\tVB": "VERB",
     "etee\tVB": "VERB",
+    "etogo\tN": "NOUN",
     "eyo\tPRO": "PRON",
     "eyodi\tN$": "NOUN",
     "gadodawa\tN$": "NOUN",
@@ -1369,10 +1352,12 @@
     "liwigo\tN$": "NOUN",
     "lixagotaGaGa\tN$": "NOUN",
     "lodajo\tN$": "NOUN",
+    "lodawa\tN": "NOUN",
     "lodawa\tN$": "NOUN",
     "lodowa\tN$": "NOUN",
     "loigi\tN$": "NOUN",
     "loigipodi\tN$": "NOUN",
+    "lojedi\tN$": "NOUN",
     "lojetedi\tN$": "NOUN",
     "loligi\tN$": "NOUN",
     "lomigo\tN$": "NOUN",

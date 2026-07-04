@@ -290,9 +290,9 @@
 # text_orig = iGeladi idei naigi me napioi
 # text_por_orig = minha casa suja fica naquela rua
 # text_por = minha casa suja fica naquela rua.
-1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	dep	_	TokenRange=0:7
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
-3	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	dep	_	TokenRange=13:18
+3	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	TokenRange=13:18
 4	me	me	SCONJ	C	_	2	dep	_	TokenRange=19:21
 5	napioi	napioi	NOUN	N	_	2	dep	_	SpaceAfter=No|TokenRange=22:28
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
@@ -330,7 +330,7 @@
 # text_orig = Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi
 # text_por_orig = meu pai cuida da plantação de flores como filhas
 # text_por = meu pai cuida da plantação de flores como filhas.
-1	Eyodi	eyodi	NOUN	N$	_	2	nsubj	_	TokenRange=0:5
+1	Eyodi	eyodi	NOUN	N$	_	2	dep	_	TokenRange=0:5
 2	dowediteloco	dowediteloco	VERB	VBAPL	Mood=Ind|Person[erg]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=6:18
 3	naodigijedi	naodigijegi	NOUN	N	Gender=Masc|Number=Plur	2	obj	_	TokenRange=19:30
 4-5	micoataGa	_	_	_	_	_	_	_	TokenRange=31:40
@@ -425,7 +425,7 @@
 # text_orig = iGeladi ipegitegi naigi me napioi
 # text_por_orig = minha casa está perto da rua suja
 # text_por = minha casa está perto da rua suja.
-1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	dep	_	TokenRange=0:7
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
 3	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	TokenRange=18:23
 4	me	me	SCONJ	C	_	2	dep	_	TokenRange=24:26
@@ -515,17 +515,17 @@
 
 # sent_id = ped-gramm-44
 # sent_uid = 6d2a809e-0d32-4254-9489-f9e356e22493
-# text = nGida niwenigi daGaxa me dakake lojedi.
-# text_orig = nGida niwenigi daGaxa me dakake lojedi .
+# text = nGida niwenigi daGaxa me dakake loojedi.
+# text_orig = nGida niwenigi daGaxa me dakake loojedi .
 # text_por_orig = Aquela comida é muito cara.
 # text_por = Aquela comida é muito cara.
 1	nGida	niGida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	StandardForm=niGida|TokenRange=0:5
-2	niwenigi	wenigi	NOUN	N	Gender=Masc|Number=Sing	6	nsubj	_	TokenRange=6:14
-3	daGaxa	daGaxa	ADV	Q	_	6	advmod	_	TokenRange=15:21
-4	me	me	SCONJ	C	_	6	dep	_	TokenRange=22:24
-5	dakake	akake	ADJ	ADJ	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	6	dep	_	TokenRange=25:31
-6	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|StandardForm=loojedi|TokenRange=32:38
-7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=38:39
+2	niwenigi	wenigi	NOUN	N	Gender=Masc|Number=Sing	5	nsubj	_	TokenRange=6:14
+3	daGaxa	daGaxa	ADV	Q	_	5	advmod	_	TokenRange=15:21
+4	me	me	SCONJ	C	_	5	dep	_	TokenRange=22:24
+5	dakake	akake	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	TokenRange=25:31
+6	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	dep	_	SpaceAfter=No|TokenRange=32:39
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=39:40
 
 # sent_id = ped-gramm-45
 # sent_uid = c25b098d-6b0a-4416-a31d-6d7219685a63
@@ -582,9 +582,11 @@
 1	Niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	2	nsubj	_	TokenRange=0:8
 2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=iwaaGadi|TokenRange=9:16
 3	codaa	codaa	CCONJ	CONJ	_	2	dep	_	TokenRange=17:22
-4	adakake	akake	X	NEG+ADJ	_	2	dep	_	TokenRange=23:30
-5	loojedi	loojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No|TokenRange=31:38
-6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=38:39
+4-5	adakake	_	_	_	_	_	_	_	TokenRange=23:30
+4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
+5	dakake	akake	VERB	VBU	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	2	dep	_	_
+6	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No|TokenRange=31:38
+7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=38:39
 
 # sent_id = ped-gramm-50
 # sent_uid = 156fa9a4-4323-44f1-9cdc-ef5dc052b428
@@ -592,10 +594,10 @@
 # text_orig = etee minitaGa
 # text_por_orig = Estou com ele
 # text_por = Estou com ele.
-1	etee	VB	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
 2-3	minitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
 2	me	me	SCONJ	C	_	1	dep	_	_
-3	initaGa	initaGa	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	1	dep	_	_
+3	initaGa	ini	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	1	dep	_	_
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
 
 # sent_id = ped-gramm-51
@@ -629,7 +631,7 @@
 1	aG	aG	PART	NEG	Polarity=Neg	4	advmod	_	_
 2	ee	ee	PRON	D	Gender=Masc|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
 3	eliodi	eliodi	DET	Q	PronType=Ind	4	det	_	TokenRange=5:11
-4	niinikeGegi	niinikeGegi	NOUN	N	_	0	root	_	SpaceAfter=No|TokenRange=12:23
+4	niinikeGegi	nini	NOUN	N	_	0	root	_	SpaceAfter=No|TokenRange=12:23
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
 
 # sent_id = ped-gramm-54
@@ -678,22 +680,18 @@
 2-3	aneiwaGadi	_	_	_	_	_	_	_	TokenRange=6:16
 2	ane	ane	PRON	WPRO	PronType=Rel	3	nsubj	_	_
 3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
-4-5	adakake	_	_	_	_	_	_	_	TokenRange=17:24
-4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
-5	dakake	akake	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	3	dep	_	_
-6	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	dep	_	SpaceAfter=No|StandardForm=loojedi|TokenRange=25:31
-7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=31:32
+4	adakake	akake	PART	NEG+VB	_	3	dep	_	TokenRange=17:24
+5	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	xcomp	_	SpaceAfter=No|StandardForm=loojedi|TokenRange=25:31
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = ped-gramm-58
 # sent_uid = 73ceda1b-be14-4e75-9b1e-2a490d7df366
 # text = etogo adakake lojedi.
 # text_orig = etogo adakake lojedi
 1	etogo	etogo	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=0:5
-2-3	adakake	_	_	_	_	_	_	_	TokenRange=6:13
-2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
-3	dakake	akake	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	_
-4	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	obj	_	SpaceAfter=No|StandardForm=loojedi|TokenRange=14:20
-5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+2	adakake	akake	PART	NEG+VB	_	3	dep	_	TokenRange=6:13
+3	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|StandardForm=loojedi|TokenRange=14:20
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = ped-gramm-59
 # sent_uid = bf632295-26f8-4ee6-979f-33f090ef0471
@@ -701,10 +699,10 @@
 # text_orig = etogoli dakake lojetedi
 # text_por_orig = As canoas (individualmente) são caras (cada uma com um preço caro)
 # text_por = As canoas (individualmente) são caras (cada uma com um preço caro).
-1	etogoli	etogo	NOUN	N	_	3	nsubj	_	TokenRange=0:7
-2	dakake	akake	ADJ	ADJ	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	3	dep	_	TokenRange=8:14
-3	lojetedi	oojedi	NOUN	N$	Gender=Masc|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=15:23
-4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=23:24
+1	etogoli	etogo	NOUN	N	_	2	dep	_	TokenRange=0:7
+2	dakake	akake	VERB	ADJ	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	TokenRange=8:14
+3	lojetedi	oojedi	NOUN	N$	Gender=Masc|Number=Plur|Person[psor]=3	2	xcomp	_	SpaceAfter=No|TokenRange=15:23
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=23:24
 
 # sent_id = ped-gramm-60
 # sent_uid = bbd6b80b-3236-4172-8bd5-ba3fb404049e
@@ -712,10 +710,10 @@
 # text_orig = etogoli dakake loojedi
 # text_por_orig = as canoas (como classe/grupo) são caras 
 # text_por = as canoas (como classe/grupo) são caras.
-1	etogoli	etogo	NOUN	N	_	3	nsubj	_	TokenRange=0:7
-2	dakake	akake	ADJ	ADJ	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	3	dep	_	TokenRange=8:14
-3	loojedi	loojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=15:22
-4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
+1	etogoli	etogo	NOUN	N	_	2	dep	_	TokenRange=0:7
+2	dakake	akake	VERB	ADJ	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	TokenRange=8:14
+3	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	xcomp	_	SpaceAfter=No|TokenRange=15:22
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
 
 # sent_id = ped-gramm-61
 # sent_uid = 1ab7fa26-ed92-4d55-98d0-0d76396373f0

@@ -3,10 +3,10 @@
 ## Summary
 
 - Gold sentences: **104**
-- JSON sentences: **204**
+- JSON sentences: **206**
 - UID-matched sentence pairs: **104**
-- Usable aligned sentence pairs: **100**
-- UID-matched but rejected: **4**
+- Usable aligned sentence pairs: **101**
+- UID-matched but rejected: **3**
 - `lemma_overrides`: **119**
 - `form_feat_overrides`: **120**
 - `prontype_overrides`: **38**
@@ -14,16 +14,16 @@
 - `tag_to_default_prontype`: **9**
 ## Review items
 
-### json_alignment_issues (6)
+### json_alignment_issues (7)
 - `{"gold_count": 7, "gold_forms": ["eyodi", "dowediteloco", "naodigijedi", "micoataGa", "daGa", "me", "lionigipi"], "json_count": 8, "json_forms": ["Eyodi", "dowediteloco", "naodigijedi", "me@", "@icawataGa", "daGa", "me", "lionigipi"], "json_path": "$.pages[0].sentences[27]", "sent_id": "ped-gramm-28", "sent_uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d", "source_file": "../data/ped-gramm.json", "type": "token_count_mismatch"}`
-- `{"gold_count": 6, "gold_forms": ["Etogo", "ane", "iwaGadi", "aG", "dakake", "lojedi"], "json_count": 5, "json_forms": ["Etogo", "ane@", "@iwaGadi", "adakake", "lojedi"], "json_path": "$.pages[0].sentences[4]", "sent_id": "hil-data-5", "sent_uid": "e349508c-4d86-48b8-9918-057988755e77", "source_file": "../data/hil-data.json", "type": "token_count_mismatch"}`
-- `{"gold_count": 6, "gold_forms": ["Etogo", "ane", "iwaGadi", "aG", "dakake", "loojedi"], "json_count": 5, "json_forms": ["Etogo", "ane", "iwaGadi", "adakake", "loojedi"], "json_path": "$.pages[0].sentences[5]", "sent_id": "hil-data-6", "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647", "source_file": "../data/hil-data.json", "type": "token_count_mismatch"}`
+- `{"json_path": "$.pages[0].sentences[4]", "mismatches": [["aG", "adakake"]], "sent_id": "hil-data-5", "sent_uid": "e349508c-4d86-48b8-9918-057988755e77", "source_file": "../data/hil-data.json", "type": "token_form_mismatch"}`
+- `{"json_path": "$.pages[0].sentences[5]", "mismatches": [["aG", "adakake"]], "sent_id": "hil-data-6", "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647", "source_file": "../data/hil-data.json", "type": "token_form_mismatch"}`
+- `{"gold_count": 5, "gold_forms": ["NiGida", "niwenigi", "eliodi", "me", "loojedi"], "json_count": 6, "json_forms": ["NiGida", "niwenigi", "eliodi", "me", "dakake", "loojedi"], "json_path": "$.pages[0].sentences[8]", "sent_id": "hil-data-9", "sent_uid": "0ca977cd-2edf-45d9-b958-068648aebef9", "source_file": "../data/hil-data.json", "type": "token_count_mismatch"}`
 - `{"json_path": "$.pages[0].sentences[12]", "mismatches": [["lomigo", "lomiigo"], ["noatece", "niwatece"]], "sent_id": "van-data-13", "sent_uid": "e9806e26-701d-4f5f-9ca9-63216cccf3d0", "source_file": "../data/van-data.json", "type": "token_form_mismatch"}`
 - `{"gold_count": 4, "gold_forms": ["niGijo", "niganigawaanigi", "lomigo", "niwatece"], "json_count": 7, "json_forms": ["Ijo", "nigaanigawaanigi", "idei", "me@", "@adi", "lomiigo", "niwatece"], "json_path": "$.pages[0].sentences[14]", "sent_id": "van-data-15", "sent_uid": "4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7", "source_file": "../data/van-data.json", "type": "token_count_mismatch"}`
 - `{"json_path": "$.pages[0].sentences[29]", "mismatches": [["niGijo", "nGijo"]], "sent_id": "van-data-30", "sent_uid": "0c7e64fb-f070-4faa-a12a-c110cdf4bf16", "source_file": "../data/van-data.json", "type": "token_form_mismatch"}`
 
-### ambiguous_lemmas (10)
-- `{"best": "dakake", "best_count": 2, "counts": {"akake": 1, "dakake": 2}, "form": "dakake", "share": 0.6667, "total": 3, "upos": "ADJ"}`
+### ambiguous_lemmas (9)
 - `{"best": "eyo", "best_count": 1, "counts": {"eeyo": 1, "eyo": 1}, "form": "eeyo", "share": 0.5, "total": 2, "upos": "PRON"}`
 - `{"best": "eyo", "best_count": 1, "counts": {"eeyo": 1, "eyo": 1}, "form": "eyo", "share": 0.5, "total": 2, "upos": "PRON"}`
 - `{"best": "eyodi", "best_count": 3, "counts": {"eyodi": 3, "iodi": 1}, "form": "eyodi", "share": 0.75, "total": 4, "upos": "NOUN"}`

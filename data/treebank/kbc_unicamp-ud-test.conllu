@@ -462,6 +462,161 @@
 4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=20:26
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
 
+# sent_id = ped-gramm-38
+# sent_uid = 46bbf9a8-c650-4e4b-a44f-78bfe6c5d979
+# text = ijo Gatodi etijo ida.
+# text_orig = ijo Gatodi etijo ida .
+# text_por_orig = O tucano está indo nele.
+# text_por = O tucano está indo nele.
+1	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	Gatodi	Gatodi	NOUN	N	Gender=Masc|Number=Sing	3	nsubj	_	TokenRange=4:10
+3	etijo	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=3	0	root	_	TokenRange=11:16
+4	ida	ida	PRON	PRO	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=17:20
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = ped-gramm-39
+# sent_uid = 4ffc2f68-0474-488f-a94e-4065f952482a
+# text = ijotawece etidi akiidi.
+# text_orig = ijotawece etidi akiidi .
+# text_por_orig = Eles (todos) estão (deitados) no rio.
+# text_por = Eles (todos) estão (deitados) no rio.
+1	ijotawece	tawece	DET	D	_	3	det	_	TokenRange=0:9
+2	etidi	et	VERB	VB	_	0	root	_	TokenRange=10:15
+3	akiidi	akiidi	NOUN	N	_	2	obj	_	SpaceAfter=No|TokenRange=16:22
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = ped-gramm-40
+# sent_uid = 10e550d6-df13-4527-8aee-aa23e3f2fcdd
+# text = iGeladi digoida weiigi.
+# text_orig = iGeladi digoida weiigi .
+# text_por_orig = Minha casa é no rio.
+# text_por = Minha casa é no rio.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	TokenRange=0:7
+2	digoida	digoida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	TokenRange=8:15
+3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	1	dep	_	SpaceAfter=No|TokenRange=16:22
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = ped-gramm-41
+# sent_uid = 874c123b-4c43-4001-bfce-8af4af0e5805
+# text = iGeladi idei weiigi.
+# text_orig = iGeladi idei weiigi .
+# text_por_orig = Minha casa é no rio.
+# text_por = Minha casa é no rio.
+1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
+2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
+3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=13:19
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = ped-gramm-42
+# sent_uid = aad13f14-bd9a-462a-9a43-68ba69a81519
+# text = nigotaGa liGeladi ipegitegi weiigi.
+# text_orig = nigotaGa liGeladi ipegitegi weiigi .
+# text_por_orig = A cidade da casa dela é perto do rio.
+# text_por = A cidade da casa dela é perto do rio.
+1	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=0:8
+2	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	dep	_	TokenRange=9:17
+3	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=18:27
+4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=28:34
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# sent_id = ped-gramm-43
+# sent_uid = 19401990-aa1d-4cf5-bea1-122254c6b77a
+# text = lotaGa GanaginaGa libinienaGa.
+# text_orig = lotaGa GanaginaGa libinienaGa .
+# text_por_orig = A palavra de seu (teu) irmão é bonita.
+# text_por = A palavra de seu (teu) irmão é bonita.
+1	lotaGa	otaGa	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=0:6
+2	GanaginaGa	aginaGa	NOUN	N$	Person[psor]=2	3	dep	_	TokenRange=7:17
+3	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=18:29
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
+
+# sent_id = ped-gramm-44
+# sent_uid = 6d2a809e-0d32-4254-9489-f9e356e22493
+# text = nGida niwenigi daGaxa me dakake loojedi.
+# text_orig = nGida niwenigi daGaxa me dakake loojedi .
+# text_por_orig = Aquela comida é muito cara.
+# text_por = Aquela comida é muito cara.
+1	nGida	niGida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	StandardForm=niGida|TokenRange=0:5
+2	niwenigi	wenigi	NOUN	N	Gender=Masc|Number=Sing	5	nsubj	_	TokenRange=6:14
+3	daGaxa	daGaxa	ADV	Q	_	5	advmod	_	TokenRange=15:21
+4	me	me	SCONJ	C	_	5	dep	_	TokenRange=22:24
+5	dakake	akake	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	TokenRange=25:31
+6	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	dep	_	SpaceAfter=No|TokenRange=32:39
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=39:40
+
+# sent_id = ped-gramm-45
+# sent_uid = c25b098d-6b0a-4416-a31d-6d7219685a63
+# text = João liGeladi napioi.
+# text_orig = João liGeladi napioi .
+# text_por_orig = A casa do João é suja.
+# text_por = A casa do João é suja.
+1	João	joão	PROPN	NPR	Gender=Masc	2	nsubj	_	TokenRange=0:4
+2	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	TokenRange=5:13
+3	napioi	napioi	NOUN	N	_	2	dep	_	SpaceAfter=No|TokenRange=14:20
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = ped-gramm-46
+# sent_uid = 4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5
+# text = liGeladi João napioi.
+# text_orig = liGeladi João napioi .
+# text_por_orig = A casa do João é suja.
+# text_por = A casa do João é suja.
+1	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=0:8
+2	João	joão	PROPN	NPR	Gender=Masc	3	dep	_	TokenRange=9:13
+3	napioi	napioi	NOUN	N$	_	0	root	_	SpaceAfter=No|TokenRange=14:20
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = ped-gramm-47
+# sent_uid = ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec
+# text = liGeladi ipegitege niweiigi nigotaGa.
+# text_orig = liGeladi ipegitege niweiigi nigotaGa .
+# text_por_orig = A casa dele/dela é perto da cidade da lagoa.
+# text_por = A casa dele/dela é perto da cidade da lagoa.
+1	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nsubj	_	TokenRange=0:8
+2	ipegitege	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=9:18
+3	niweiigi	weiigi	NOUN	N	_	2	obj	_	TokenRange=19:27
+4	nigotaGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing	2	dep	_	SpaceAfter=No|TokenRange=28:36
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=36:37
+
+# sent_id = ped-gramm-48
+# sent_uid = 8b1a9983-4dfd-49e8-9285-92c56c84b652
+# text = liGeladi ipegitegi niweiigi nigotaGa.
+# text_orig = liGeladi ipegitegi niweiigi nigotaGa .
+# text_por_orig = A casa dele/dela é perto da lagoa da cidade.
+# text_por = A casa dele/dela é perto da lagoa da cidade.
+1	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nsubj	_	TokenRange=0:8
+2	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=9:18
+3	niweiigi	weiigi	NOUN	N	_	2	obj	_	TokenRange=19:27
+4	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	2	dep	_	SpaceAfter=No|TokenRange=28:36
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=36:37
+
+# sent_id = ped-gramm-49
+# sent_uid = eeb42af3-fe5a-4b7d-97ea-b381ab589860
+# text = Niwatece iwaGadi codaa adakake loojedi.
+# text_orig = Niwatece iwaGadi codaa adakake loojedi .
+# text_por_orig = A canoa é pesada e seu preço é barato
+# text_por = A canoa é pesada e seu preço é barato.
+1	Niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	2	nsubj	_	TokenRange=0:8
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=iwaaGadi|TokenRange=9:16
+3	codaa	codaa	CCONJ	CONJ	_	5	cc	_	TokenRange=17:22
+4-5	adakake	_	_	_	_	_	_	_	TokenRange=23:30
+4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
+5	dakake	akake	VERB	VBU	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	2	conj	_	_
+6	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	SpaceAfter=No|TokenRange=31:38
+7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=38:39
+
+# sent_id = ped-gramm-51
+# sent_uid = 3b45c470-6164-4fcf-a4d5-90be0f27eb1d
+# text = ee aGidininitibeci.
+# text_orig = ee aGidininitibeci
+# text_por_orig = Eu não estou feliz
+# text_por = Eu não estou feliz.
+1	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
+2-3	aGidininitibeci	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=3:18
+2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
+3	idininitebeci	initibece	VERB	VB	Mood=Ind|Person=1|VerbForm=Fin|Voice=Inv	0	root	Mood=Ind|Person=3|VerbForm=Fin	StandardForm=idinitibece
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
+
 # sent_id = hil-data-1
 # sent_uid = fcef38ed-be6b-4f2a-b5cf-fa4db625ecfb
 # text = Iwaalo libiniena.
