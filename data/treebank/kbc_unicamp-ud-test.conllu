@@ -614,7 +614,7 @@
 1	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
 2-3	aGidininitibeci	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=3:18
 2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
-3	idininitebeci	initibece	VERB	VB	Mood=Ind|Person=1|VerbForm=Fin|Voice=Inv	0	root	Mood=Ind|Person=3|VerbForm=Fin	StandardForm=idinitibece
+3	idininitebeci	initibece	VERB	VB	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin|Voice=Inv	0	root	_	StandardForm=idinitibece
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = hil-data-1
