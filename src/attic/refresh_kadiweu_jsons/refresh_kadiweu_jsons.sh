@@ -26,9 +26,6 @@
 #   data/van-data.txt
 #   data/van-data.jsonl
 #
-#   data/kadiweu-all.txt
-#   data/kadiweu-all.jsonl
-#
 # The script also appends one provenance record per imported document to:
 #
 #   data/import-json-history.tsv
@@ -152,7 +149,7 @@ process_one() {
   cp "$src" "$json"
   sed -i 's/ǥ/G/g' "$json"
 
-  "$INSPECT" "$json" --source-id "$base" --jsonl-out "$jsonl" > "$txt"
+  "$INSPECT" "$json" --jsonl-out "$jsonl" > "$txt"
   sentences="$(sentence_count_from_txt "$txt")"
 
   printf "%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n" \
@@ -191,25 +188,6 @@ for uid in "${!UID_TO_BASE[@]}"; do
   src="$(find_json_for_uid "$uid")"
   process_one "$src" "$base" "$uid"
 done
-
-# Generate consolidated inspection files for corpus-wide diagnostics.
-ALL_TXT="$DATA/kadiweu-all.txt"
-ALL_JSONL="$DATA/kadiweu-all.jsonl"
-
-"$INSPECT" \
-  "$DATA/ped-gramm.json" \
-  "$DATA/hil-data.json" \
-  "$DATA/van-data.json" \
-  --source-id ped-gramm \
-  --source-id hil-data \
-  --source-id van-data \
-  --jsonl-out "$ALL_JSONL" \
-  --summary-only > "$ALL_TXT"
-
-echo "Generated consolidated inspection files:"
-echo "  data/kadiweu-all.txt"
-echo "  data/kadiweu-all.jsonl"
-echo
 
 echo "Done."
 echo "Provenance log:"
