@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Check one or more Kadiwéu Tycho Brahe JSON dumps for omissions and inconsistencies.
+Check the Kadiwéu pedagogical grammar JSON for omissions and inconsistencies.
 
 This script is designed for treebank cleanup before UD conversion. It reuses the
 same sentence-collection approach found in the project's inspection utilities,
@@ -46,29 +46,19 @@ Optional machine-readable outputs:
 Usage
 -----
 Basic:
-    python3 check_kadiweu_json_consistency.py data/ped-gramm.json --source-id ped-gramm
+    python3 check_kadiweu_json_consistency.py gramatica-pedagogica.json
 
 Write JSON report and TSVs:
-    python3 check_kadiweu_json_consistency.py data/ped-gramm.json \
-        --source-id ped-gramm \
+    python3 check_kadiweu_json_consistency.py gramatica-pedagogica.json \
         --json-out consistency-report.json --tsv-dir consistency-tsv
 
 Inspect only one sentence:
-    python3 check_kadiweu_json_consistency.py data/ped-gramm.json \
-        --source-id ped-gramm \
+    python3 check_kadiweu_json_consistency.py gramatica-pedagogica.json \
         --uid e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
 
 Inspect only sentences whose text contains a string:
-    python3 check_kadiweu_json_consistency.py data/ped-gramm.json \
-        --source-id ped-gramm \
+    python3 check_kadiweu_json_consistency.py gramatica-pedagogica.json \
         --text-contains ipegitegi
-
-Consolidated report for the three canonical project sources:
-    python3 check_kadiweu_json_consistency.py \
-        data/ped-gramm.json data/hil-data.json data/van-data.json \
-        --source-id ped-gramm --source-id hil-data --source-id van-data \
-        --json-out data/consistency/kadiweu-all.consistency.json \
-        --tsv-dir data/consistency/kadiweu-all-tsv
 """
 
 from __future__ import annotations
@@ -242,9 +232,6 @@ def best_known_split_profile(token_records: Sequence[Tuple[JsonDict, Dict[str, A
 def issue_base(issue_type: str, meta: Dict[str, Any], sentence: JsonDict) -> Dict[str, Any]:
     return {
         "issue_type": issue_type,
-        "source_id": meta.get("source_id"),
-        "source_file": meta.get("source_file"),
-        "source_ordinal": meta.get("source_ordinal"),
         "path": meta["path"],
         "uid": sentence.get("uid"),
         "text": sentence.get("text"),
@@ -254,9 +241,6 @@ def issue_base(issue_type: str, meta: Dict[str, Any], sentence: JsonDict) -> Dic
 def collect_sentence_metadata(record: Dict[str, Any]) -> Dict[str, Any]:
     sentence = record["sentence"]
     return {
-        "source_id": record.get("source_id"),
-        "source_file": record.get("source_file"),
-        "source_ordinal": record.get("source_ordinal"),
         "path": record["path"],
         "uid": sentence.get("uid"),
         "text": sentence.get("text"),
@@ -409,8 +393,6 @@ def analyze(records: List[Dict[str, Any]]) -> Dict[str, Any]:
 
         examples = [
             {
-                "source_id": meta.get("source_id"),
-                "source_file": meta.get("source_file"),
                 "uid": meta["uid"],
                 "text": meta["text"],
                 "token_tag": tok.get("t"),
@@ -451,8 +433,6 @@ def analyze(records: List[Dict[str, Any]]) -> Dict[str, Any]:
                         {
                             "issue_type": "token_without_splits_but_analyzed_elsewhere",
                             "token_form": form,
-                            "source_id": meta.get("source_id"),
-                            "source_file": meta.get("source_file"),
                             "uid": meta["uid"],
                             "text": meta["text"],
                             "token_tag": tok.get("t"),
@@ -485,8 +465,6 @@ def analyze(records: List[Dict[str, Any]]) -> Dict[str, Any]:
                         {
                             "issue_type": "token_with_incomplete_splits_but_fuller_analysis_elsewhere",
                             "token_form": form,
-                            "source_id": meta.get("source_id"),
-                            "source_file": meta.get("source_file"),
                             "uid": meta["uid"],
                             "text": meta["text"],
                             "split_tags_here": list(split_signature(tok)),
@@ -504,8 +482,6 @@ def analyze(records: List[Dict[str, Any]]) -> Dict[str, Any]:
         glosses = sorted({norm_text(split_gloss(sp)) for sp, _, _, _ in morph_records if norm_text(split_gloss(sp))})
         examples = [
             {
-                "source_id": meta.get("source_id"),
-                "source_file": meta.get("source_file"),
                 "uid": meta["uid"],
                 "text": meta["text"],
                 "host_token": tok.get("v"),
@@ -546,8 +522,6 @@ def analyze(records: List[Dict[str, Any]]) -> Dict[str, Any]:
                         {
                             "issue_type": "missing_split_tag_but_known_for_same_morpheme",
                             "morpheme_form": morph,
-                            "source_id": meta.get("source_id"),
-                            "source_file": meta.get("source_file"),
                             "uid": meta["uid"],
                             "text": meta["text"],
                             "host_token": tok.get("v"),
@@ -562,8 +536,6 @@ def analyze(records: List[Dict[str, Any]]) -> Dict[str, Any]:
                         {
                             "issue_type": "missing_split_gloss_but_known_for_same_morpheme",
                             "morpheme_form": morph,
-                            "source_id": meta.get("source_id"),
-                            "source_file": meta.get("source_file"),
                             "uid": meta["uid"],
                             "text": meta["text"],
                             "host_token": tok.get("v"),
@@ -572,10 +544,7 @@ def analyze(records: List[Dict[str, Any]]) -> Dict[str, Any]:
                         }
                     )
 
-    source_counts = Counter(norm_text(record.get("source_id")) or "UNKNOWN" for record in records)
-
     summary = {
-        "sources": dict(sorted(source_counts.items())),
         "sentences": n_sent,
         "tokens": n_tok,
         "splits": n_split,
@@ -599,10 +568,6 @@ def print_summary(report: Dict[str, Any], max_examples: int = 3) -> None:
     print(f"Tokens:    {summary['tokens']}")
     print(f"Splits:    {summary['splits']}")
     print(f"Issues:    {summary['issue_total']}")
-    if summary.get("sources"):
-        print("Sources:")
-        for source_id, count in summary["sources"].items():
-            print(f"  {source_id}: {count} sentence(s)")
     print()
 
     if not summary["issue_counts"]:
@@ -647,47 +612,9 @@ def write_tsvs(report: Dict[str, Any], outdir: Path) -> None:
             writer.writerows(flat_rows)
 
 
-def validate_source_ids(json_paths: Sequence[str], source_ids: Optional[Sequence[str]]) -> List[str]:
-    """Return one source identifier per input JSON file."""
-    if not source_ids:
-        return [Path(path).stem for path in json_paths]
-    if len(source_ids) != len(json_paths):
-        raise ValueError(
-            f"received {len(source_ids)} --source-id value(s) for {len(json_paths)} JSON file(s); "
-            "provide exactly one --source-id per input file, or omit --source-id to use file stems"
-        )
-    return list(source_ids)
-
-
-def load_sentence_records(json_paths: Sequence[str], source_ids: Sequence[str]) -> List[Dict[str, Any]]:
-    """Load all input JSON files and attach source provenance to every sentence record."""
-    all_records: List[Dict[str, Any]] = []
-    for ordinal, (json_path, source_id) in enumerate(zip(json_paths, source_ids), start=1):
-        path = Path(json_path)
-        with path.open("r", encoding="utf-8") as f:
-            data = json.load(f)
-        records = walk_collect_sentences(data)
-        for record in records:
-            record["source_id"] = source_id
-            record["source_file"] = str(path)
-            record["source_ordinal"] = ordinal
-        all_records.extend(records)
-    return all_records
-
-
 def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Check omissions and inconsistencies in one or more Kadiwéu Tycho Brahe JSON dumps.")
-    parser.add_argument("json_paths", nargs="+", help="Path(s) to Kadiwéu Tycho Brahe JSON dump(s)")
-    parser.add_argument(
-        "--source-id",
-        action="append",
-        dest="source_ids",
-        help=(
-            "Stable source identifier for the corresponding JSON file. "
-            "Repeat once per input file, e.g. --source-id ped-gramm --source-id hil-data. "
-            "If omitted, file stems are used."
-        ),
-    )
+    parser = argparse.ArgumentParser(description="Check omissions and inconsistencies in the Kadiwéu pedagogical grammar JSON.")
+    parser.add_argument("json_path", help="Path to gramatica-pedagogica.json")
     parser.add_argument("--uid", help="Restrict analysis to one sentence UID")
     parser.add_argument("--text-contains", help="Restrict analysis to sentences whose text contains this string")
     parser.add_argument("--json-out", help="Write full report as JSON")
@@ -698,14 +625,12 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
     args = parse_args(argv)
+    path = Path(args.json_path)
 
-    try:
-        source_ids = validate_source_ids(args.json_paths, args.source_ids)
-    except ValueError as exc:
-        print(f"ERROR: {exc}", file=sys.stderr)
-        return 2
+    with path.open("r", encoding="utf-8") as f:
+        data = json.load(f)
 
-    sentence_records = load_sentence_records(args.json_paths, source_ids)
+    sentence_records = walk_collect_sentences(data)
     sentence_records = filter_sentences(sentence_records, uid=args.uid, text_contains=args.text_contains)
 
     if not sentence_records:
@@ -713,10 +638,6 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         return 1
 
     report = analyze(sentence_records)
-    report["inputs"] = [
-        {"source_id": source_id, "source_file": str(Path(json_path))}
-        for json_path, source_id in zip(args.json_paths, source_ids)
-    ]
     print_summary(report, max_examples=args.max_examples)
 
     if args.json_out:
