@@ -1,0 +1,2 @@
+issue_type	path	position	source_file	source_id	source_ordinal	text	token_form	token_gloss	token_tag	uid
+missing_token_tag	$.pages[0].sentences[48]	1	data/van-data.json	van-data	3	eteyo ina	eteyo			889846ee-66df-4c8f-88d1-e89d3619eb1e

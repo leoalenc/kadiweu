@@ -1,0 +1,8 @@
+issue_type	path	position	source_file	source_id	source_ordinal	split_index	text	token_form	token_gloss	token_tag	uid
+empty_split_object	$.pages[0].sentences[4]	3	data/ped-gramm.json	ped-gramm	1	1	niwatece etadi weiigi	weiigi	rio	N	b2e3ea43-0d68-46ee-9f33-938610cc8aec
+empty_split_object	$.pages[0].sentences[46]	4	data/ped-gramm.json	ped-gramm	1	1	liGeladi ipegitege niweiigi nigotaGa .	nigotaGa	cidade	N$	ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec
+empty_split_object	$.pages[0].sentences[47]	4	data/ped-gramm.json	ped-gramm	1	1	liGeladi ipegitegi niweiigi nigotaGa .	nigotaGa	cidade	N	8b1a9983-4dfd-49e8-9285-92c56c84b652
+empty_split_object	$.pages[0].sentences[11]	3	data/hil-data.json	hil-data	2	1	Te ee nigotaGa	nigotaGa	cidade	N	3a7e213b-323e-4694-bad9-47091f3533f5
+empty_split_object	$.pages[0].sentences[65]	4	data/hil-data.json	hil-data	2	1	liGeladi ipegitege nakidi nigotaGa	nigotaGa	cidade	N	55fe3cf7-0293-48e6-aa78-44822f50347e
+empty_split_object	$.pages[0].sentences[66]	4	data/hil-data.json	hil-data	2	1	liGeladi ipegitege nakidi nigotaGa	nigotaGa	cidade	N	c0441856-b259-4d76-a88e-33a7e211b208
+empty_split_object	$.pages[0].sentences[67]	1	data/hil-data.json	hil-data	2	1	nigotaGa liGeladi ipegitege akiidi	nigotaGa	cidade	N	9527d53d-7184-4b08-8bb2-51b7fff1429d

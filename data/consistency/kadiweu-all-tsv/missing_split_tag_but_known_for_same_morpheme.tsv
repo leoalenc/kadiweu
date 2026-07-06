@@ -1,0 +1,117 @@
+host_token	issue_type	known_tags_elsewhere	morpheme_form	source_file	source_id	split_index	text	uid
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Gnr"", ""Plu""]"	a	data/hil-data.json	hil-data	2	NaGajo lomigo Pedilo idei madi niwatece	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Gnr"", ""Plu""]"	a	data/hil-data.json	hil-data	2	NaGajo lomigo niganigawanigi madi niwatece	92838eda-ef9b-4f05-a5eb-38a4709c0337
+lotiidi	missing_split_tag_but_known_for_same_morpheme	"[""Gen"", ""Gnr""]"	l	data/ped-gramm.json	ped-gramm	1	niGidowa waca lotiidi dapikoGo	d3e098e5-4edd-4c24-81cf-78ff4a4d398c
+lojedi	missing_split_tag_but_known_for_same_morpheme	"[""Gen"", ""Gnr""]"	l	data/ped-gramm.json	ped-gramm	1	etogo adakake lojedi	73ceda1b-be14-4e75-9b1e-2a490d7df366
+lojedi	missing_split_tag_but_known_for_same_morpheme	"[""Gen"", ""Gnr""]"	l	data/hil-data.json	hil-data	1	Etogo aneiwaGadi adakake lojedi	e349508c-4d86-48b8-9918-057988755e77
+lojedi	missing_split_tag_but_known_for_same_morpheme	"[""Gen"", ""Gnr""]"	l	data/hil-data.json	hil-data	1	Nigidiwa noGojedi lixagotaGaGa adakake lojedi	83fdcd4c-338f-4a9f-8545-da8539e67e9d
+lojetedi	missing_split_tag_but_known_for_same_morpheme	"[""Gen"", ""Gnr""]"	l	data/van-data.json	van-data	1	niwatece iwaGadi noxilece lojetedi	947061b4-7b73-4612-8aa8-0af0e04cbc85
+lemé	missing_split_tag_but_known_for_same_morpheme	"[""Gen"", ""Gnr""]"	l	data/van-data.json	van-data	1	ijo lemé Maria ipegitegi weiigi	6599689a-3fbe-4598-8827-78aceeff3931
+digoida	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/ped-gramm.json	ped-gramm	2	ajo niwatece etadi digoida	49347527-d19d-4689-bff1-ba3e497e7b1f
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/hil-data.json	hil-data	2	nigidiwa okokodi ligetedi midi niwigo libinienaGa	79cb0e55-9c06-4cb1-91b3-2b5233e1678f
+idinitibeci	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/hil-data.json	hil-data	1	Ee ageliodi me idinitibeci	1e9df213-90da-4674-8889-4ac858df72fe
+idiwaGadi	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/hil-data.json	hil-data	1	ee idiwaGadi	1e1fafc0-29c6-41d4-a0d2-4c825d9af376
+idinitibeci	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/hil-data.json	hil-data	1	aGeliodi me idinitibeci .	90ca38d8-e063-4c98-af51-4b9022ade506
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/hil-data.json	hil-data	2	oko aidejonaGa midi Godoigi	341bf09a-2ef8-455a-8b6b-88373c617dae
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/hil-data.json	hil-data	2	aidejonaGa midi Godoigi	dff00f05-7be1-4d62-b3ed-b8a8870851e9
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/hil-data.json	hil-data	2	niGijo nelokodi Maria idei midi akiidi	3ab5703a-eb5c-48d2-b75b-992da5e60dd6
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/van-data.json	van-data	2	nGijo lodajo ajo lodowa aGica digoida liGeladi	0c7e64fb-f070-4faa-a12a-c110cdf4bf16
+idiwa	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/van-data.json	van-data	1	idiwa wetiadi iwaGadi	6459c008-b2ad-4517-8227-b525616b720d
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/van-data.json	van-data	2	ee aGidininitibeci	c4d99cf1-e781-4efb-83ff-4a0ab873b7ec
+aGica	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/van-data.json	van-data	2	aGica daGa jipegitege	d3095a7e-477d-405e-9ea2-85bfdacad7d3
+aGica	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/van-data.json	van-data	2	aGica daGa jipegitegi	813f2ad7-42fb-4fbd-84b4-1957c68aa4f9
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/van-data.json	van-data	2	aGeewi mica iniKGigi	42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+iniKGigi	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/van-data.json	van-data	1	aGeewi mica iniKGigi	42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/van-data.json	van-data	2	aGeyo mica inikGigi	27d94732-46ea-4286-a1d4-b2861806a579
+inikGigi	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/van-data.json	van-data	1	aGeyo mica inikGigi	27d94732-46ea-4286-a1d4-b2861806a579
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/van-data.json	van-data	2	aGidedonaGa midi Godoigi	d3952c8a-1ac1-4255-be0b-63978fdf368b
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/van-data.json	van-data	2	aGide jonaGa midi Godoigi	fbae0277-3aad-4812-9229-94179b5a97a0
+ipegitegi	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/van-data.json	van-data	1	ijo lemé Maria ipegitegi weiigi	6599689a-3fbe-4598-8827-78aceeff3931
+idiwa	missing_split_tag_but_known_for_same_morpheme	"[""Abs"", ""Erg"", ""Gen"", ""Gnr"", ""Plu""]"	i	data/van-data.json	van-data	1	idiwa leonigipi Maria libinienigipi	f240dcfe-ca05-42aa-8644-07b9e3464e1a
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Inv"", ""Ncl"", ""Plu""]"	di	data/hil-data.json	hil-data	3	NaGajo lomigo Pedilo idei madi niwatece	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Inv"", ""Ncl"", ""Plu""]"	di	data/hil-data.json	hil-data	3	NaGajo lomigo niganigawanigi madi niwatece	92838eda-ef9b-4f05-a5eb-38a4709c0337
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Inv"", ""Ncl"", ""Plu""]"	di	data/hil-data.json	hil-data	3	nigidiwa okokodi ligetedi midi niwigo libinienaGa	79cb0e55-9c06-4cb1-91b3-2b5233e1678f
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Inv"", ""Ncl"", ""Plu""]"	di	data/hil-data.json	hil-data	3	oko aidejonaGa midi Godoigi	341bf09a-2ef8-455a-8b6b-88373c617dae
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Inv"", ""Ncl"", ""Plu""]"	di	data/hil-data.json	hil-data	3	aidejonaGa midi Godoigi	dff00f05-7be1-4d62-b3ed-b8a8870851e9
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Inv"", ""Ncl"", ""Plu""]"	di	data/hil-data.json	hil-data	3	niGijo nelokodi Maria idei midi akiidi	3ab5703a-eb5c-48d2-b75b-992da5e60dd6
+idiwa	missing_split_tag_but_known_for_same_morpheme	"[""Inv"", ""Ncl"", ""Plu""]"	di	data/van-data.json	van-data	2	idiwa wetiadi iwaGadi	6459c008-b2ad-4517-8227-b525616b720d
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Inv"", ""Ncl"", ""Plu""]"	di	data/van-data.json	van-data	3	aGidedonaGa midi Godoigi	d3952c8a-1ac1-4255-be0b-63978fdf368b
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Inv"", ""Ncl"", ""Plu""]"	di	data/van-data.json	van-data	3	aGide jonaGa midi Godoigi	fbae0277-3aad-4812-9229-94179b5a97a0
+idiwa	missing_split_tag_but_known_for_same_morpheme	"[""Inv"", ""Ncl"", ""Plu""]"	di	data/van-data.json	van-data	2	idiwa leonigipi Maria libinienigipi	f240dcfe-ca05-42aa-8644-07b9e3464e1a
+digoida	missing_split_tag_but_known_for_same_morpheme	"[""Adv""]"	digo	data/ped-gramm.json	ped-gramm	1	ajo niwatece etadi digoida	49347527-d19d-4689-bff1-ba3e497e7b1f
+digoida	missing_split_tag_but_known_for_same_morpheme	"[""Adv""]"	digo	data/van-data.json	van-data	1	iGeladi digoida weiigi	a7e338a1-5403-40d4-b169-c840cf193aae
+digoida	missing_split_tag_but_known_for_same_morpheme	"[""Adv""]"	digo	data/van-data.json	van-data	1	nGijo lodajo ajo lodowa aGica digoida liGeladi	0c7e64fb-f070-4faa-a12a-c110cdf4bf16
+digoida	missing_split_tag_but_known_for_same_morpheme	"[""Ncl""]"	da	data/ped-gramm.json	ped-gramm	3	ajo niwatece etadi digoida	49347527-d19d-4689-bff1-ba3e497e7b1f
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""v""]"	pegi	data/hil-data.json	hil-data	3	Ee ajipegitege	c4302bef-3de9-4f3c-b762-f6b77183f263
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""v""]"	pegi	data/hil-data.json	hil-data	3	Ee ajipegitege	5bc48b27-0755-475f-813e-7a259f3c3c9e
+ipegitegi	missing_split_tag_but_known_for_same_morpheme	"[""v""]"	pegi	data/van-data.json	van-data	2	ijo lemé Maria ipegitegi weiigi	6599689a-3fbe-4598-8827-78aceeff3931
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	data/ped-gramm.json	ped-gramm	1	aGee eliodi niinikeGegi	3f077b37-aa95-4012-9efb-a21630cdd6e9
+adakake	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	data/ped-gramm.json	ped-gramm	1	etogo aneiwaGadi adakake lojedi .	2c0248b3-8f68-46e9-b41c-9f7807572c87
+adakake	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	data/ped-gramm.json	ped-gramm	1	etogo adakake lojedi	73ceda1b-be14-4e75-9b1e-2a490d7df366
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	data/hil-data.json	hil-data	1	Nigidiwa noGojedi lixagotaGaGa adakake lojedi	83fdcd4c-338f-4a9f-8545-da8539e67e9d
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	data/hil-data.json	hil-data	1	Ee aidinitibeci .	4242d34b-9096-45a2-a666-502a2cb9ca49
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	data/hil-data.json	hil-data	1	Ee ageliodi me idinitibeci	1e9df213-90da-4674-8889-4ac858df72fe
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	data/hil-data.json	hil-data	1	Ee ajipegitege	c4302bef-3de9-4f3c-b762-f6b77183f263
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	data/hil-data.json	hil-data	1	Ee ajipegitege	5bc48b27-0755-475f-813e-7a259f3c3c9e
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	data/hil-data.json	hil-data	1	aGeliodi me idinitibeci .	90ca38d8-e063-4c98-af51-4b9022ade506
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	data/van-data.json	van-data	1	nGijo lodajo ajo lodowa aGica digoida liGeladi	0c7e64fb-f070-4faa-a12a-c110cdf4bf16
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	data/van-data.json	van-data	1	ee aGidininitibeci	c4d99cf1-e781-4efb-83ff-4a0ab873b7ec
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	data/van-data.json	van-data	1	aGee eliodi niinikeGegi	969ba2f3-88dc-417e-ad3f-16ce88b4c762
+aGica	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	data/van-data.json	van-data	1	aGica daGa jipegitegi	813f2ad7-42fb-4fbd-84b4-1957c68aa4f9
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	data/van-data.json	van-data	1	aGeyo mica inikGigi	27d94732-46ea-4286-a1d4-b2861806a579
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Neg""]"	aG	data/van-data.json	van-data	1	aGide jonaGa midi Godoigi	fbae0277-3aad-4812-9229-94179b5a97a0
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Apl""]"	tege	data/hil-data.json	hil-data	4	Ee ajipegitege	c4302bef-3de9-4f3c-b762-f6b77183f263
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Apl""]"	tege	data/hil-data.json	hil-data	4	Ee ajipegitege	5bc48b27-0755-475f-813e-7a259f3c3c9e
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Ncl""]"	ca	data/van-data.json	van-data	3	nGijo lodajo ajo lodowa aGica digoida liGeladi	0c7e64fb-f070-4faa-a12a-c110cdf4bf16
+aGica	missing_split_tag_but_known_for_same_morpheme	"[""Ncl""]"	ca	data/van-data.json	van-data	3	aGica daGa jipegitege	d3095a7e-477d-405e-9ea2-85bfdacad7d3
+aGica	missing_split_tag_but_known_for_same_morpheme	"[""Ncl""]"	ca	data/van-data.json	van-data	3	aGica daGa jipegitegi	813f2ad7-42fb-4fbd-84b4-1957c68aa4f9
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Ncl""]"	ca	data/van-data.json	van-data	3	aGeewi mica iniKGigi	42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+me@	missing_split_tag_but_known_for_same_morpheme	"[""Ncl""]"	ca	data/van-data.json	van-data	3	aGeyo mica inikGigi	27d94732-46ea-4286-a1d4-b2861806a579
+ipegitegi	missing_split_tag_but_known_for_same_morpheme	"[""Apl""]"	tegi	data/van-data.json	van-data	3	ijo lemé Maria ipegitegi weiigi	6599689a-3fbe-4598-8827-78aceeff3931
+idinitibeci	missing_split_tag_but_known_for_same_morpheme	"[""Inv""]"	d	data/hil-data.json	hil-data	2	Ee ageliodi me idinitibeci	1e9df213-90da-4674-8889-4ac858df72fe
+idiwaGadi	missing_split_tag_but_known_for_same_morpheme	"[""Inv""]"	d	data/hil-data.json	hil-data	2	ee idiwaGadi	1e1fafc0-29c6-41d4-a0d2-4c825d9af376
+idinitibeci	missing_split_tag_but_known_for_same_morpheme	"[""Inv""]"	d	data/hil-data.json	hil-data	2	aGeliodi me idinitibeci .	90ca38d8-e063-4c98-af51-4b9022ade506
+dapicoGo	missing_split_tag_but_known_for_same_morpheme	"[""Inv""]"	d	data/van-data.json	van-data	1	idowa waca lotiidi dapicoGo	278e4c5c-aaab-4ca3-8f5e-277610fb80c2
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Inv""]"	d	data/van-data.json	van-data	3	ee aGidininitibeci	c4d99cf1-e781-4efb-83ff-4a0ab873b7ec
+iniKGigi	missing_split_tag_but_known_for_same_morpheme	"[""Apl"", ""Gnr""]"	gi	data/van-data.json	van-data	4	aGeewi mica iniKGigi	42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+inikGigi	missing_split_tag_but_known_for_same_morpheme	"[""Apl"", ""Gnr""]"	gi	data/van-data.json	van-data	4	aGeyo mica inikGigi	27d94732-46ea-4286-a1d4-b2861806a579
+ane@	missing_split_tag_but_known_for_same_morpheme	"[""Wpro""]"	ane	data/hil-data.json	hil-data	1	Etogo aneiwaGadi adakake lojedi	e349508c-4d86-48b8-9918-057988755e77
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/hil-data.json	hil-data	1	NaGajo lomigo Pedilo idei madi niwatece	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/hil-data.json	hil-data	1	NaGajo lomigo niganigawanigi madi niwatece	92838eda-ef9b-4f05-a5eb-38a4709c0337
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/hil-data.json	hil-data	1	niGijoa lionaGa iwaalo idei mijotaGa	0de3d311-348a-4107-a191-9fc3f960c249
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/hil-data.json	hil-data	1	naGana eliodi meninitibeci	24a9e039-79d0-4026-8824-0d061c2b21ee
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/hil-data.json	hil-data	1	nigidiwa okokodi ligetedi midi niwigo libinienaGa	79cb0e55-9c06-4cb1-91b3-2b5233e1678f
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/hil-data.json	hil-data	1	Ite ee madataGa	42671da9-e433-4319-86a0-2a2cb8777a40
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/hil-data.json	hil-data	1	Ite ee midataGa	e58e38a7-f117-48f1-8a17-9d896867fe60
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/hil-data.json	hil-data	1	oko aidejonaGa midi Godoigi	341bf09a-2ef8-455a-8b6b-88373c617dae
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/hil-data.json	hil-data	1	aidejonaGa midi Godoigi	dff00f05-7be1-4d62-b3ed-b8a8870851e9
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/hil-data.json	hil-data	1	niGijo nelokodi Maria idei midi akiidi	3ab5703a-eb5c-48d2-b75b-992da5e60dd6
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/hil-data.json	hil-data	1	NiGidi lionaGa iwaalo etidi meetaGa	13f012b0-ef62-4477-b4bd-00e000484874
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/van-data.json	van-data	1	niGijo nigaanigawaanigi manitaGa lomigo niwatece	235440ba-548e-4df6-8d9e-214cc8714f8f
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/van-data.json	van-data	1	Eyo manitaGa nigotaGa	d021bede-064b-4fd5-bb33-6c7cd4279c1b
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/van-data.json	van-data	1	dibixodi idei manitaGa	8c5dd09c-d010-4c48-9601-9d3b14c61119
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/van-data.json	van-data	1	etee manitaGa	e7f4ab65-14d7-44f5-a197-c99c4ab173cd
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/van-data.json	van-data	1	etee minitaGa	7aa17dd7-2c26-4df9-8f90-65d8d58e2c59
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/van-data.json	van-data	1	aGeewi mica iniKGigi	42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/van-data.json	van-data	1	aGeyo mica inikGigi	27d94732-46ea-4286-a1d4-b2861806a579
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/van-data.json	van-data	1	aGidedonaGa midi Godoigi	d3952c8a-1ac1-4255-be0b-63978fdf368b
+me@	missing_split_tag_but_known_for_same_morpheme	"[""c""]"	me	data/van-data.json	van-data	1	aGide jonaGa midi Godoigi	fbae0277-3aad-4812-9229-94179b5a97a0
+idiwa	missing_split_tag_but_known_for_same_morpheme	"[""Plu""]"	wa	data/van-data.json	van-data	3	idiwa wetiadi iwaGadi	6459c008-b2ad-4517-8227-b525616b720d
+idiwa	missing_split_tag_but_known_for_same_morpheme	"[""Plu""]"	wa	data/van-data.json	van-data	3	idiwa leonigipi Maria libinienigipi	f240dcfe-ca05-42aa-8644-07b9e3464e1a
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Pro""]"	ee	data/ped-gramm.json	ped-gramm	2	aGee eliodi niinikeGegi	3f077b37-aa95-4012-9efb-a21630cdd6e9
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""Pro""]"	ee	data/van-data.json	van-data	2	aGee eliodi niinikeGegi	969ba2f3-88dc-417e-ad3f-16ce88b4c762
+aG@	missing_split_tag_but_known_for_same_morpheme	"[""v""]"	nini	data/van-data.json	van-data	4	ee aGidininitibeci	c4d99cf1-e781-4efb-83ff-4a0ab873b7ec
+lotiidi	missing_split_tag_but_known_for_same_morpheme	"[""n""]"	otiidi	data/ped-gramm.json	ped-gramm	2	niGidowa waca lotiidi dapikoGo	d3e098e5-4edd-4c24-81cf-78ff4a4d398c
+lojedi	missing_split_tag_but_known_for_same_morpheme	"[""n""]"	ojedi	data/ped-gramm.json	ped-gramm	2	etogo adakake lojedi	73ceda1b-be14-4e75-9b1e-2a490d7df366
+lojedi	missing_split_tag_but_known_for_same_morpheme	"[""n""]"	ojedi	data/hil-data.json	hil-data	2	Etogo aneiwaGadi adakake lojedi	e349508c-4d86-48b8-9918-057988755e77
+lojedi	missing_split_tag_but_known_for_same_morpheme	"[""n""]"	ojedi	data/hil-data.json	hil-data	2	Nigidiwa noGojedi lixagotaGaGa adakake lojedi	83fdcd4c-338f-4a9f-8545-da8539e67e9d
+lojetedi	missing_split_tag_but_known_for_same_morpheme	"[""Plu""]"	tedi	data/van-data.json	van-data	3	niwatece iwaGadi noxilece lojetedi	947061b4-7b73-4612-8aa8-0af0e04cbc85
+ixagodi	missing_split_tag_but_known_for_same_morpheme	"[""v""]"	ixagodi	data/hil-data.json	hil-data	1	Nagada libiwe niale ixagodi	d5dcd2bf-a3d0-4074-a241-f706b153134f
+ixagodi	missing_split_tag_but_known_for_same_morpheme	"[""v""]"	ixagodi	data/van-data.json	van-data	1	libiwe niale ixagodi	30ef1810-38e0-4cef-8db3-4dda590faa09
+idinitibeci	missing_split_tag_but_known_for_same_morpheme	"[""Dir""]"	tibeci	data/hil-data.json	hil-data	4	Ee ageliodi me idinitibeci	1e9df213-90da-4674-8889-4ac858df72fe
+idinitibeci	missing_split_tag_but_known_for_same_morpheme	"[""Dir""]"	tibeci	data/hil-data.json	hil-data	4	aGeliodi me idinitibeci .	90ca38d8-e063-4c98-af51-4b9022ade506
+iniKGigi	missing_split_tag_but_known_for_same_morpheme	"[""Der""]"	Gi	data/van-data.json	van-data	3	aGeewi mica iniKGigi	42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+inikGigi	missing_split_tag_but_known_for_same_morpheme	"[""Der""]"	Gi	data/van-data.json	van-data	3	aGeyo mica inikGigi	27d94732-46ea-4286-a1d4-b2861806a579
+dapicoGo	missing_split_tag_but_known_for_same_morpheme	"[""v""]"	apikoGo	data/van-data.json	van-data	2	idowa waca lotiidi dapicoGo	278e4c5c-aaab-4ca3-8f5e-277610fb80c2
+iniKGigi	missing_split_tag_but_known_for_same_morpheme	"[""v""]"	nike	data/van-data.json	van-data	2	aGeewi mica iniKGigi	42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+inikGigi	missing_split_tag_but_known_for_same_morpheme	"[""v""]"	nike	data/van-data.json	van-data	2	aGeyo mica inikGigi	27d94732-46ea-4286-a1d4-b2861806a579

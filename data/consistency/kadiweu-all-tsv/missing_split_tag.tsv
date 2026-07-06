@@ -1,0 +1,143 @@
+issue_type	path	position	source_file	source_id	source_ordinal	split_form	split_index	text	token_form	token_gloss	token_tag	uid
+missing_split_tag	$.pages[0].sentences[2]	4	data/ped-gramm.json	ped-gramm	1	digo	1	ajo niwatece etadi digoida	digoida	nele (cidade/local)	D	49347527-d19d-4689-bff1-ba3e497e7b1f
+missing_split_tag	$.pages[0].sentences[2]	4	data/ped-gramm.json	ped-gramm	1	i	2	ajo niwatece etadi digoida	digoida	nele (cidade/local)	D	49347527-d19d-4689-bff1-ba3e497e7b1f
+missing_split_tag	$.pages[0].sentences[2]	4	data/ped-gramm.json	ped-gramm	1	da	3	ajo niwatece etadi digoida	digoida	nele (cidade/local)	D	49347527-d19d-4689-bff1-ba3e497e7b1f
+missing_split_tag	$.pages[0].sentences[39]	2	data/ped-gramm.json	ped-gramm	1	digo i da	1	iGeladi digoida weiigi .	digoida	nele (cidade/local)	D	10e550d6-df13-4527-8aee-aa23e3f2fcdd
+missing_split_tag	$.pages[0].sentences[49]	1	data/ped-gramm.json	ped-gramm	1	VB	1	etee minitaGa	etee	estou	VB	156fa9a4-4323-44f1-9cdc-ef5dc052b428
+missing_split_tag	$.pages[0].sentences[52]	1	data/ped-gramm.json	ped-gramm	1	aG	1	aGee eliodi niinikeGegi	aG@	não eu	NEG	3f077b37-aa95-4012-9efb-a21630cdd6e9
+missing_split_tag	$.pages[0].sentences[52]	1	data/ped-gramm.json	ped-gramm	1	ee	2	aGee eliodi niinikeGegi	aG@	não eu	NEG	3f077b37-aa95-4012-9efb-a21630cdd6e9
+missing_split_tag	$.pages[0].sentences[54]	3	data/ped-gramm.json	ped-gramm	1	l	1	niGidowa waca lotiidi dapikoGo	lotiidi	leite dela	N$	d3e098e5-4edd-4c24-81cf-78ff4a4d398c
+missing_split_tag	$.pages[0].sentences[54]	3	data/ped-gramm.json	ped-gramm	1	otiidi	2	niGidowa waca lotiidi dapikoGo	lotiidi	leite dela	N$	d3e098e5-4edd-4c24-81cf-78ff4a4d398c
+missing_split_tag	$.pages[0].sentences[56]	5	data/ped-gramm.json	ped-gramm	1	aG	1	etogo aneiwaGadi adakake lojedi .	adakake	não duro	NEG+VB	2c0248b3-8f68-46e9-b41c-9f7807572c87
+missing_split_tag	$.pages[0].sentences[57]	2	data/ped-gramm.json	ped-gramm	1	aG	1	etogo adakake lojedi	adakake	não duro	NEG+VB	73ceda1b-be14-4e75-9b1e-2a490d7df366
+missing_split_tag	$.pages[0].sentences[57]	3	data/ped-gramm.json	ped-gramm	1	l	1	etogo adakake lojedi	lojedi	vingança	N$	73ceda1b-be14-4e75-9b1e-2a490d7df366
+missing_split_tag	$.pages[0].sentences[57]	3	data/ped-gramm.json	ped-gramm	1	ojedi	2	etogo adakake lojedi	lojedi	vingança	N$	73ceda1b-be14-4e75-9b1e-2a490d7df366
+missing_split_tag	$.pages[0].sentences[4]	2	data/hil-data.json	hil-data	2	ane	1	Etogo aneiwaGadi adakake lojedi	ane@		WPRO	e349508c-4d86-48b8-9918-057988755e77
+missing_split_tag	$.pages[0].sentences[4]	2	data/hil-data.json	hil-data	2	iwaGadi	2	Etogo aneiwaGadi adakake lojedi	ane@		WPRO	e349508c-4d86-48b8-9918-057988755e77
+missing_split_tag	$.pages[0].sentences[4]	6	data/hil-data.json	hil-data	2	l	1	Etogo aneiwaGadi adakake lojedi	lojedi	vingança/preço	N$	e349508c-4d86-48b8-9918-057988755e77
+missing_split_tag	$.pages[0].sentences[4]	6	data/hil-data.json	hil-data	2	ojedi	2	Etogo aneiwaGadi adakake lojedi	lojedi	vingança/preço	N$	e349508c-4d86-48b8-9918-057988755e77
+missing_split_tag	$.pages[0].sentences[5]	5	data/hil-data.json	hil-data	2	dakake	2	Etogo ane iwaGadi adakake loojedi	adakake	não duro	NEG+VB	1d10c633-e74d-4e27-ac23-6b6b2dde9647
+missing_split_tag	$.pages[0].sentences[9]	5	data/hil-data.json	hil-data	2	me	1	NaGajo lomigo Pedilo idei madi niwatece	me@	que o	C	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887
+missing_split_tag	$.pages[0].sentences[9]	5	data/hil-data.json	hil-data	2	a	2	NaGajo lomigo Pedilo idei madi niwatece	me@	que o	C	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887
+missing_split_tag	$.pages[0].sentences[9]	5	data/hil-data.json	hil-data	2	di	3	NaGajo lomigo Pedilo idei madi niwatece	me@	que o	C	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887
+missing_split_tag	$.pages[0].sentences[10]	4	data/hil-data.json	hil-data	2	me	1	NaGajo lomigo niganigawanigi madi niwatece	me@	que o	C	92838eda-ef9b-4f05-a5eb-38a4709c0337
+missing_split_tag	$.pages[0].sentences[10]	4	data/hil-data.json	hil-data	2	a	2	NaGajo lomigo niganigawanigi madi niwatece	me@	que o	C	92838eda-ef9b-4f05-a5eb-38a4709c0337
+missing_split_tag	$.pages[0].sentences[10]	4	data/hil-data.json	hil-data	2	di	3	NaGajo lomigo niganigawanigi madi niwatece	me@	que o	C	92838eda-ef9b-4f05-a5eb-38a4709c0337
+missing_split_tag	$.pages[0].sentences[12]	5	data/hil-data.json	hil-data	2	me	1	niGijoa lionaGa iwaalo idei mijotaGa	me@	com ele	C	0de3d311-348a-4107-a191-9fc3f960c249
+missing_split_tag	$.pages[0].sentences[12]	5	data/hil-data.json	hil-data	2	ijotaGa	2	niGijoa lionaGa iwaalo idei mijotaGa	me@	com ele	C	0de3d311-348a-4107-a191-9fc3f960c249
+missing_split_tag	$.pages[0].sentences[24]	3	data/hil-data.json	hil-data	2	me	1	naGana eliodi meninitibeci	me@	que está feliz	C	24a9e039-79d0-4026-8824-0d061c2b21ee
+missing_split_tag	$.pages[0].sentences[24]	3	data/hil-data.json	hil-data	2	ninitibeci	2	naGana eliodi meninitibeci	me@	que está feliz	C	24a9e039-79d0-4026-8824-0d061c2b21ee
+missing_split_tag	$.pages[0].sentences[41]	4	data/hil-data.json	hil-data	2	me	1	nigidiwa okokodi ligetedi midi niwigo libinienaGa	me@	para os	C	79cb0e55-9c06-4cb1-91b3-2b5233e1678f
+missing_split_tag	$.pages[0].sentences[41]	4	data/hil-data.json	hil-data	2	i	2	nigidiwa okokodi ligetedi midi niwigo libinienaGa	me@	para os	C	79cb0e55-9c06-4cb1-91b3-2b5233e1678f
+missing_split_tag	$.pages[0].sentences[41]	4	data/hil-data.json	hil-data	2	di	3	nigidiwa okokodi ligetedi midi niwigo libinienaGa	me@	para os	C	79cb0e55-9c06-4cb1-91b3-2b5233e1678f
+missing_split_tag	$.pages[0].sentences[43]	4	data/hil-data.json	hil-data	2	aG	1	Nigidiwa noGojedi lixagotaGaGa adakake lojedi	aG@	não duro	NEG	83fdcd4c-338f-4a9f-8545-da8539e67e9d
+missing_split_tag	$.pages[0].sentences[43]	7	data/hil-data.json	hil-data	2	l	1	Nigidiwa noGojedi lixagotaGaGa adakake lojedi	lojedi	vingança	N$	83fdcd4c-338f-4a9f-8545-da8539e67e9d
+missing_split_tag	$.pages[0].sentences[43]	7	data/hil-data.json	hil-data	2	ojedi	2	Nigidiwa noGojedi lixagotaGaGa adakake lojedi	lojedi	vingança	N$	83fdcd4c-338f-4a9f-8545-da8539e67e9d
+missing_split_tag	$.pages[0].sentences[45]	3	data/hil-data.json	hil-data	2	me	1	Ite ee madataGa	me@	com ela	C	42671da9-e433-4319-86a0-2a2cb8777a40
+missing_split_tag	$.pages[0].sentences[45]	3	data/hil-data.json	hil-data	2	adataGa	2	Ite ee madataGa	me@	com ela	C	42671da9-e433-4319-86a0-2a2cb8777a40
+missing_split_tag	$.pages[0].sentences[46]	3	data/hil-data.json	hil-data	2	me	1	Ite ee midataGa	me@		C	e58e38a7-f117-48f1-8a17-9d896867fe60
+missing_split_tag	$.pages[0].sentences[46]	3	data/hil-data.json	hil-data	2	idataGa	2	Ite ee midataGa	me@		C	e58e38a7-f117-48f1-8a17-9d896867fe60
+missing_split_tag	$.pages[0].sentences[47]	2	data/hil-data.json	hil-data	2	aG	1	Ee aidinitibeci .	aG@		NEG	4242d34b-9096-45a2-a666-502a2cb9ca49
+missing_split_tag	$.pages[0].sentences[47]	2	data/hil-data.json	hil-data	2	idinitibeci	2	Ee aidinitibeci .	aG@		NEG	4242d34b-9096-45a2-a666-502a2cb9ca49
+missing_split_tag	$.pages[0].sentences[48]	2	data/hil-data.json	hil-data	2	aG	1	Ee ageliodi me idinitibeci	aG@		NEG	1e9df213-90da-4674-8889-4ac858df72fe
+missing_split_tag	$.pages[0].sentences[48]	2	data/hil-data.json	hil-data	2	eliodi	2	Ee ageliodi me idinitibeci	aG@		NEG	1e9df213-90da-4674-8889-4ac858df72fe
+missing_split_tag	$.pages[0].sentences[48]	5	data/hil-data.json	hil-data	2	i	1	Ee ageliodi me idinitibeci	idinitibeci	alegrar-se	VB	1e9df213-90da-4674-8889-4ac858df72fe
+missing_split_tag	$.pages[0].sentences[48]	5	data/hil-data.json	hil-data	2	d	2	Ee ageliodi me idinitibeci	idinitibeci	alegrar-se	VB	1e9df213-90da-4674-8889-4ac858df72fe
+missing_split_tag	$.pages[0].sentences[48]	5	data/hil-data.json	hil-data	2	tibeci	4	Ee ageliodi me idinitibeci	idinitibeci	alegrar-se	VB	1e9df213-90da-4674-8889-4ac858df72fe
+missing_split_tag	$.pages[0].sentences[49]	2	data/hil-data.json	hil-data	2	aG	1	Ee ajipegitege	aG@		NEG	c4302bef-3de9-4f3c-b762-f6b77183f263
+missing_split_tag	$.pages[0].sentences[49]	2	data/hil-data.json	hil-data	2	ji	2	Ee ajipegitege	aG@		NEG	c4302bef-3de9-4f3c-b762-f6b77183f263
+missing_split_tag	$.pages[0].sentences[49]	2	data/hil-data.json	hil-data	2	pegi	3	Ee ajipegitege	aG@		NEG	c4302bef-3de9-4f3c-b762-f6b77183f263
+missing_split_tag	$.pages[0].sentences[49]	2	data/hil-data.json	hil-data	2	tege	4	Ee ajipegitege	aG@		NEG	c4302bef-3de9-4f3c-b762-f6b77183f263
+missing_split_tag	$.pages[0].sentences[50]	2	data/hil-data.json	hil-data	2	aG	1	Ee ajipegitege	aG@		NEG	5bc48b27-0755-475f-813e-7a259f3c3c9e
+missing_split_tag	$.pages[0].sentences[50]	2	data/hil-data.json	hil-data	2	ji	2	Ee ajipegitege	aG@		NEG	5bc48b27-0755-475f-813e-7a259f3c3c9e
+missing_split_tag	$.pages[0].sentences[50]	2	data/hil-data.json	hil-data	2	pegi	3	Ee ajipegitege	aG@		NEG	5bc48b27-0755-475f-813e-7a259f3c3c9e
+missing_split_tag	$.pages[0].sentences[50]	2	data/hil-data.json	hil-data	2	tege	4	Ee ajipegitege	aG@		NEG	5bc48b27-0755-475f-813e-7a259f3c3c9e
+missing_split_tag	$.pages[0].sentences[51]	2	data/hil-data.json	hil-data	2	i	1	ee idiwaGadi	idiwaGadi		VB	1e1fafc0-29c6-41d4-a0d2-4c825d9af376
+missing_split_tag	$.pages[0].sentences[51]	2	data/hil-data.json	hil-data	2	d	2	ee idiwaGadi	idiwaGadi		VB	1e1fafc0-29c6-41d4-a0d2-4c825d9af376
+missing_split_tag	$.pages[0].sentences[51]	2	data/hil-data.json	hil-data	2	iwaGadi	3	ee idiwaGadi	idiwaGadi		VB	1e1fafc0-29c6-41d4-a0d2-4c825d9af376
+missing_split_tag	$.pages[0].sentences[54]	1	data/hil-data.json	hil-data	2	aG	1	aGeliodi me idinitibeci .	aG@		NEG	90ca38d8-e063-4c98-af51-4b9022ade506
+missing_split_tag	$.pages[0].sentences[54]	1	data/hil-data.json	hil-data	2	eliodi	2	aGeliodi me idinitibeci .	aG@		NEG	90ca38d8-e063-4c98-af51-4b9022ade506
+missing_split_tag	$.pages[0].sentences[54]	4	data/hil-data.json	hil-data	2	i	1	aGeliodi me idinitibeci .	idinitibeci	alegrar-se	VB	90ca38d8-e063-4c98-af51-4b9022ade506
+missing_split_tag	$.pages[0].sentences[54]	4	data/hil-data.json	hil-data	2	d	2	aGeliodi me idinitibeci .	idinitibeci	alegrar-se	VB	90ca38d8-e063-4c98-af51-4b9022ade506
+missing_split_tag	$.pages[0].sentences[54]	4	data/hil-data.json	hil-data	2	tibeci	4	aGeliodi me idinitibeci .	idinitibeci	alegrar-se	VB	90ca38d8-e063-4c98-af51-4b9022ade506
+missing_split_tag	$.pages[0].sentences[55]	1	data/hil-data.json	hil-data	2	ipegi	2	jipecaGataGagi .	jipecaGataGagi		VBAPL	82bfae64-45e7-403f-bcd0-190e00f4520f
+missing_split_tag	$.pages[0].sentences[56]	4	data/hil-data.json	hil-data	2	me	1	oko aidejonaGa midi Godoigi	me@	para os	C	341bf09a-2ef8-455a-8b6b-88373c617dae
+missing_split_tag	$.pages[0].sentences[56]	4	data/hil-data.json	hil-data	2	i	2	oko aidejonaGa midi Godoigi	me@	para os	C	341bf09a-2ef8-455a-8b6b-88373c617dae
+missing_split_tag	$.pages[0].sentences[56]	4	data/hil-data.json	hil-data	2	di	3	oko aidejonaGa midi Godoigi	me@	para os	C	341bf09a-2ef8-455a-8b6b-88373c617dae
+missing_split_tag	$.pages[0].sentences[57]	1	data/hil-data.json	hil-data	2	ti	6	jipecaGataGagitiwaji .	jipecaGataGagitiwaji		VBAPL	9a136412-a636-4e5e-aa54-ac684ae7bed3
+missing_split_tag	$.pages[0].sentences[58]	3	data/hil-data.json	hil-data	2	me	1	aidejonaGa midi Godoigi	me@		C	dff00f05-7be1-4d62-b3ed-b8a8870851e9
+missing_split_tag	$.pages[0].sentences[58]	3	data/hil-data.json	hil-data	2	i	2	aidejonaGa midi Godoigi	me@		C	dff00f05-7be1-4d62-b3ed-b8a8870851e9
+missing_split_tag	$.pages[0].sentences[58]	3	data/hil-data.json	hil-data	2	di	3	aidejonaGa midi Godoigi	me@		C	dff00f05-7be1-4d62-b3ed-b8a8870851e9
+missing_split_tag	$.pages[0].sentences[59]	5	data/hil-data.json	hil-data	2	me	1	niGijo nelokodi Maria idei midi akiidi	me@	para os	C	3ab5703a-eb5c-48d2-b75b-992da5e60dd6
+missing_split_tag	$.pages[0].sentences[59]	5	data/hil-data.json	hil-data	2	i	2	niGijo nelokodi Maria idei midi akiidi	me@	para os	C	3ab5703a-eb5c-48d2-b75b-992da5e60dd6
+missing_split_tag	$.pages[0].sentences[59]	5	data/hil-data.json	hil-data	2	di	3	niGijo nelokodi Maria idei midi akiidi	me@	para os	C	3ab5703a-eb5c-48d2-b75b-992da5e60dd6
+missing_split_tag	$.pages[0].sentences[61]	4	data/hil-data.json	hil-data	2	ixagodi	1	Nagada libiwe niale ixagodi	ixagodi	é vermelho	VB	d5dcd2bf-a3d0-4074-a241-f706b153134f
+missing_split_tag	$.pages[0].sentences[64]	5	data/hil-data.json	hil-data	2	me	1	NiGidi lionaGa iwaalo etidi meetaGa	me@	que é em mim	C	13f012b0-ef62-4477-b4bd-00e000484874
+missing_split_tag	$.pages[0].sentences[0]	2	data/van-data.json	van-data	3	digo	1	iGeladi digoida weiigi	digoida	nele (cidade/local)	D	a7e338a1-5403-40d4-b169-c840cf193aae
+missing_split_tag	$.pages[0].sentences[7]	4	data/van-data.json	van-data	3	l	1	niwatece iwaGadi noxilece lojetedi	lojetedi	seu preço/vingança	N$	947061b4-7b73-4612-8aa8-0af0e04cbc85
+missing_split_tag	$.pages[0].sentences[7]	4	data/van-data.json	van-data	3	oje	2	niwatece iwaGadi noxilece lojetedi	lojetedi	seu preço/vingança	N$	947061b4-7b73-4612-8aa8-0af0e04cbc85
+missing_split_tag	$.pages[0].sentences[7]	4	data/van-data.json	van-data	3	tedi	3	niwatece iwaGadi noxilece lojetedi	lojetedi	seu preço/vingança	N$	947061b4-7b73-4612-8aa8-0af0e04cbc85
+missing_split_tag	$.pages[0].sentences[15]	3	data/van-data.json	van-data	3	me	1	niGijo nigaanigawaanigi manitaGa lomigo niwatece	me@		C	235440ba-548e-4df6-8d9e-214cc8714f8f
+missing_split_tag	$.pages[0].sentences[17]	2	data/van-data.json	van-data	3	me	1	Eyo manitaGa nigotaGa	me@		C	d021bede-064b-4fd5-bb33-6c7cd4279c1b
+missing_split_tag	$.pages[0].sentences[18]	5	data/van-data.json	van-data	3	initaGa	2	niGijoa lionigipi iwaalo idei minitaGa	me@	com ele	C	e5c65dad-8b04-46da-b965-4921887cbca4
+missing_split_tag	$.pages[0].sentences[19]	3	data/van-data.json	van-data	3	me	1	dibixodi idei manitaGa	me@		C	8c5dd09c-d010-4c48-9601-9d3b14c61119
+missing_split_tag	$.pages[0].sentences[29]	5	data/van-data.json	van-data	3	aG	1	nGijo lodajo ajo lodowa aGica digoida liGeladi	aG@		NEG	0c7e64fb-f070-4faa-a12a-c110cdf4bf16
+missing_split_tag	$.pages[0].sentences[29]	5	data/van-data.json	van-data	3	i	2	nGijo lodajo ajo lodowa aGica digoida liGeladi	aG@		NEG	0c7e64fb-f070-4faa-a12a-c110cdf4bf16
+missing_split_tag	$.pages[0].sentences[29]	5	data/van-data.json	van-data	3	ca	3	nGijo lodajo ajo lodowa aGica digoida liGeladi	aG@		NEG	0c7e64fb-f070-4faa-a12a-c110cdf4bf16
+missing_split_tag	$.pages[0].sentences[29]	7	data/van-data.json	van-data	3	digo	1	nGijo lodajo ajo lodowa aGica digoida liGeladi	digoida	nele (cidade/local)	D	0c7e64fb-f070-4faa-a12a-c110cdf4bf16
+missing_split_tag	$.pages[0].sentences[31]	3	data/van-data.json	van-data	3	te	3	naGani wetiGa liwaGatena	liwaGatena	peso del(e|a)	N$	46190f73-f21e-4073-b09c-8b2d17c6668e
+missing_split_tag	$.pages[0].sentences[38]	1	data/van-data.json	van-data	3	i	1	idiwa wetiadi iwaGadi	idiwa	tinha	D	6459c008-b2ad-4517-8227-b525616b720d
+missing_split_tag	$.pages[0].sentences[38]	1	data/van-data.json	van-data	3	di	2	idiwa wetiadi iwaGadi	idiwa	tinha	D	6459c008-b2ad-4517-8227-b525616b720d
+missing_split_tag	$.pages[0].sentences[38]	1	data/van-data.json	van-data	3	wa	3	idiwa wetiadi iwaGadi	idiwa	tinha	D	6459c008-b2ad-4517-8227-b525616b720d
+missing_split_tag	$.pages[0].sentences[40]	4	data/van-data.json	van-data	3	d	1	idowa waca lotiidi dapicoGo	dapicoGo	está quente	VB	278e4c5c-aaab-4ca3-8f5e-277610fb80c2
+missing_split_tag	$.pages[0].sentences[40]	4	data/van-data.json	van-data	3	apikoGo	2	idowa waca lotiidi dapicoGo	dapicoGo	está quente	VB	278e4c5c-aaab-4ca3-8f5e-277610fb80c2
+missing_split_tag	$.pages[0].sentences[47]	1	data/van-data.json	van-data	3	VB	1	etee ina	etee	estou	VB	e189be3e-9290-4d1c-b343-74d3858ce7cd
+missing_split_tag	$.pages[0].sentences[49]	1	data/van-data.json	van-data	3	VB	1	etee manitaGa	etee	estou	VB	e7f4ab65-14d7-44f5-a197-c99c4ab173cd
+missing_split_tag	$.pages[0].sentences[49]	2	data/van-data.json	van-data	3	me	1	etee manitaGa	me@		C	e7f4ab65-14d7-44f5-a197-c99c4ab173cd
+missing_split_tag	$.pages[0].sentences[50]	1	data/van-data.json	van-data	3	VB	1	etee minitaGa	etee	estou	VB	7aa17dd7-2c26-4df9-8f90-65d8d58e2c59
+missing_split_tag	$.pages[0].sentences[50]	2	data/van-data.json	van-data	3	me	1	etee minitaGa	me@	com ele	C	7aa17dd7-2c26-4df9-8f90-65d8d58e2c59
+missing_split_tag	$.pages[0].sentences[52]	2	data/van-data.json	van-data	3	aG	1	ee aGidininitibeci	aG@	não estou feliz	NEG	c4d99cf1-e781-4efb-83ff-4a0ab873b7ec
+missing_split_tag	$.pages[0].sentences[52]	2	data/van-data.json	van-data	3	i	2	ee aGidininitibeci	aG@	não estou feliz	NEG	c4d99cf1-e781-4efb-83ff-4a0ab873b7ec
+missing_split_tag	$.pages[0].sentences[52]	2	data/van-data.json	van-data	3	d	3	ee aGidininitibeci	aG@	não estou feliz	NEG	c4d99cf1-e781-4efb-83ff-4a0ab873b7ec
+missing_split_tag	$.pages[0].sentences[52]	2	data/van-data.json	van-data	3	nini	4	ee aGidininitibeci	aG@	não estou feliz	NEG	c4d99cf1-e781-4efb-83ff-4a0ab873b7ec
+missing_split_tag	$.pages[0].sentences[53]	1	data/van-data.json	van-data	3	aG	1	aGee eliodi niinikeGegi	aG@	não eu	NEG	969ba2f3-88dc-417e-ad3f-16ce88b4c762
+missing_split_tag	$.pages[0].sentences[53]	1	data/van-data.json	van-data	3	ee	2	aGee eliodi niinikeGegi	aG@	não eu	NEG	969ba2f3-88dc-417e-ad3f-16ce88b4c762
+missing_split_tag	$.pages[0].sentences[55]	1	data/van-data.json	van-data	3	i	2	aGica daGa jipegitege	aGica		NEG+D	d3095a7e-477d-405e-9ea2-85bfdacad7d3
+missing_split_tag	$.pages[0].sentences[55]	1	data/van-data.json	van-data	3	ca	3	aGica daGa jipegitege	aGica		NEG+D	d3095a7e-477d-405e-9ea2-85bfdacad7d3
+missing_split_tag	$.pages[0].sentences[56]	1	data/van-data.json	van-data	3	aG	1	aGica daGa jipegitegi	aGica		NEG+D	813f2ad7-42fb-4fbd-84b4-1957c68aa4f9
+missing_split_tag	$.pages[0].sentences[56]	1	data/van-data.json	van-data	3	i	2	aGica daGa jipegitegi	aGica		NEG+D	813f2ad7-42fb-4fbd-84b4-1957c68aa4f9
+missing_split_tag	$.pages[0].sentences[56]	1	data/van-data.json	van-data	3	ca	3	aGica daGa jipegitegi	aGica		NEG+D	813f2ad7-42fb-4fbd-84b4-1957c68aa4f9
+missing_split_tag	$.pages[0].sentences[60]	4	data/van-data.json	van-data	3	me	1	aGeewi mica iniKGigi	me@	que a	C	42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+missing_split_tag	$.pages[0].sentences[60]	4	data/van-data.json	van-data	3	i	2	aGeewi mica iniKGigi	me@	que a	C	42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+missing_split_tag	$.pages[0].sentences[60]	4	data/van-data.json	van-data	3	ca	3	aGeewi mica iniKGigi	me@	que a	C	42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+missing_split_tag	$.pages[0].sentences[60]	6	data/van-data.json	van-data	3	i	1	aGeewi mica iniKGigi	iniKGigi		N$	42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+missing_split_tag	$.pages[0].sentences[60]	6	data/van-data.json	van-data	3	nike	2	aGeewi mica iniKGigi	iniKGigi		N$	42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+missing_split_tag	$.pages[0].sentences[60]	6	data/van-data.json	van-data	3	Gi	3	aGeewi mica iniKGigi	iniKGigi		N$	42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+missing_split_tag	$.pages[0].sentences[60]	6	data/van-data.json	van-data	3	gi	4	aGeewi mica iniKGigi	iniKGigi		N$	42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+missing_split_tag	$.pages[0].sentences[61]	1	data/van-data.json	van-data	3	aG	1	aGeyo mica inikGigi	aG@		NEG	27d94732-46ea-4286-a1d4-b2861806a579
+missing_split_tag	$.pages[0].sentences[61]	1	data/van-data.json	van-data	3	eyo	2	aGeyo mica inikGigi	aG@		NEG	27d94732-46ea-4286-a1d4-b2861806a579
+missing_split_tag	$.pages[0].sentences[61]	3	data/van-data.json	van-data	3	me	1	aGeyo mica inikGigi	me@	que a	C	27d94732-46ea-4286-a1d4-b2861806a579
+missing_split_tag	$.pages[0].sentences[61]	3	data/van-data.json	van-data	3	i	2	aGeyo mica inikGigi	me@	que a	C	27d94732-46ea-4286-a1d4-b2861806a579
+missing_split_tag	$.pages[0].sentences[61]	3	data/van-data.json	van-data	3	ca	3	aGeyo mica inikGigi	me@	que a	C	27d94732-46ea-4286-a1d4-b2861806a579
+missing_split_tag	$.pages[0].sentences[61]	5	data/van-data.json	van-data	3	i	1	aGeyo mica inikGigi	inikGigi		N$	27d94732-46ea-4286-a1d4-b2861806a579
+missing_split_tag	$.pages[0].sentences[61]	5	data/van-data.json	van-data	3	nike	2	aGeyo mica inikGigi	inikGigi		N$	27d94732-46ea-4286-a1d4-b2861806a579
+missing_split_tag	$.pages[0].sentences[61]	5	data/van-data.json	van-data	3	Gi	3	aGeyo mica inikGigi	inikGigi		N$	27d94732-46ea-4286-a1d4-b2861806a579
+missing_split_tag	$.pages[0].sentences[61]	5	data/van-data.json	van-data	3	gi	4	aGeyo mica inikGigi	inikGigi		N$	27d94732-46ea-4286-a1d4-b2861806a579
+missing_split_tag	$.pages[0].sentences[63]	3	data/van-data.json	van-data	3	me	1	aGidedonaGa midi Godoigi	me@		C	d3952c8a-1ac1-4255-be0b-63978fdf368b
+missing_split_tag	$.pages[0].sentences[63]	3	data/van-data.json	van-data	3	i	2	aGidedonaGa midi Godoigi	me@		C	d3952c8a-1ac1-4255-be0b-63978fdf368b
+missing_split_tag	$.pages[0].sentences[63]	3	data/van-data.json	van-data	3	di	3	aGidedonaGa midi Godoigi	me@		C	d3952c8a-1ac1-4255-be0b-63978fdf368b
+missing_split_tag	$.pages[0].sentences[64]	1	data/van-data.json	van-data	3	ti	6	jipacaGataGagitiwaji	jipacaGataGagitiwaji		VBAPL	e9b78452-925e-458b-848a-d52ab76f6840
+missing_split_tag	$.pages[0].sentences[65]	1	data/van-data.json	van-data	3	aG	1	aGide jonaGa midi Godoigi	aG@		NEG	fbae0277-3aad-4812-9229-94179b5a97a0
+missing_split_tag	$.pages[0].sentences[65]	1	data/van-data.json	van-data	3	ije	2	aGide jonaGa midi Godoigi	aG@		NEG	fbae0277-3aad-4812-9229-94179b5a97a0
+missing_split_tag	$.pages[0].sentences[65]	5	data/van-data.json	van-data	3	me	1	aGide jonaGa midi Godoigi	me@		C	fbae0277-3aad-4812-9229-94179b5a97a0
+missing_split_tag	$.pages[0].sentences[65]	5	data/van-data.json	van-data	3	i	2	aGide jonaGa midi Godoigi	me@		C	fbae0277-3aad-4812-9229-94179b5a97a0
+missing_split_tag	$.pages[0].sentences[65]	5	data/van-data.json	van-data	3	di	3	aGide jonaGa midi Godoigi	me@		C	fbae0277-3aad-4812-9229-94179b5a97a0
+missing_split_tag	$.pages[0].sentences[66]	2	data/van-data.json	van-data	3	l	1	ijo lemé Maria ipegitegi weiigi	lemé		N$	6599689a-3fbe-4598-8827-78aceeff3931
+missing_split_tag	$.pages[0].sentences[66]	2	data/van-data.json	van-data	3	emé	2	ijo lemé Maria ipegitegi weiigi	lemé		N$	6599689a-3fbe-4598-8827-78aceeff3931
+missing_split_tag	$.pages[0].sentences[66]	4	data/van-data.json	van-data	3	i	1	ijo lemé Maria ipegitegi weiigi	ipegitegi	fica perto de	VBAPL	6599689a-3fbe-4598-8827-78aceeff3931
+missing_split_tag	$.pages[0].sentences[66]	4	data/van-data.json	van-data	3	pegi	2	ijo lemé Maria ipegitegi weiigi	ipegitegi	fica perto de	VBAPL	6599689a-3fbe-4598-8827-78aceeff3931
+missing_split_tag	$.pages[0].sentences[66]	4	data/van-data.json	van-data	3	tegi	3	ijo lemé Maria ipegitegi weiigi	ipegitegi	fica perto de	VBAPL	6599689a-3fbe-4598-8827-78aceeff3931
+missing_split_tag	$.pages[0].sentences[68]	3	data/van-data.json	van-data	3	ixagodi	1	libiwe niale ixagodi	ixagodi	é vermelho	VB	30ef1810-38e0-4cef-8db3-4dda590faa09
+missing_split_tag	$.pages[0].sentences[70]	1	data/van-data.json	van-data	3	i	1	idiwa leonigipi Maria libinienigipi	idiwa	tinha	Q	f240dcfe-ca05-42aa-8644-07b9e3464e1a
+missing_split_tag	$.pages[0].sentences[70]	1	data/van-data.json	van-data	3	di	2	idiwa leonigipi Maria libinienigipi	idiwa	tinha	Q	f240dcfe-ca05-42aa-8644-07b9e3464e1a
+missing_split_tag	$.pages[0].sentences[70]	1	data/van-data.json	van-data	3	wa	3	idiwa leonigipi Maria libinienigipi	idiwa	tinha	Q	f240dcfe-ca05-42aa-8644-07b9e3464e1a
