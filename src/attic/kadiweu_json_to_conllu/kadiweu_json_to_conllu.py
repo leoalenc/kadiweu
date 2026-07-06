@@ -68,19 +68,13 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
 
 from kadiweu_empty_categories import resolve_empty_categories
-from kadiweu_normalization import get_surface_and_lookup_form
+from kadiweu_converter_config import UPOS_MAP
+from kadiweu_morphology import get_standard_form_correction
 
-from kadiweu_linguistic_mappings_with_split_tags import (
-    LEMMA_OVERRIDES,
-    FORM_TO_UPOS,
-    FORM_TO_XPOS,
-    configure_override_resources,
-    infer_lemma,
-    infer_feats,
-    infer_upos,
-    infer_upos_for_form,
-    apply_upos_override,
-    get_form_correction,
+from kadiweu_normalization import (
+    normalize_form_for_lookup,
+    get_surface_and_lookup_form,
+    canonicalize_override_map,
 )
 
 from kadiweu_token_ranges import assign_token_ranges_to_emitted_rows
@@ -94,6 +88,190 @@ PROJECT_ROOT = SCRIPT_DIR.parent
 DEFAULT_BASE_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "kadiweu_default_overrides.json"
 DEFAULT_GOLD_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "gold_derived_overrides.json"
 DEFAULT_MANUAL_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "kadiweu_manual_overrides.json"
+
+# ---------------------------------------------------------------------
+# Basic mappings
+# ---------------------------------------------------------------------
+
+LEMMA_OVERRIDES: Dict[str, str] = {}
+FORM_FEAT_OVERRIDES: Dict[str, str] = {}
+
+# Most specific: surface form + UPOS
+PRONTYPE_OVERRIDES: Dict[Tuple[str, str], str] = {}
+
+# Preferred learned default: lemma + UPOS
+LEMMA_PRONTYPE_OVERRIDES: Dict[Tuple[str, str], str] = {}
+
+# Broad fallback: source tag + UPOS
+TAG_TO_DEFAULT_PRONTYPE: Dict[Tuple[str, str], str] = {}
+
+UPOS_OVERRIDES: Dict[Tuple[str, str], str] = {}
+
+FORM_CORRECTIONS: Dict[str, Dict[str, str]] = {}
+
+TAG_TO_UPOS: Dict[str, str] = {}
+
+FORM_TO_UPOS: Dict[str, str] = {}
+FORM_TO_XPOS: Dict[str, str] = {}
+
+def load_override_resource(
+    path: Path,
+) -> Tuple[
+    Dict[str, str],
+    Dict[str, str],
+    Dict[Tuple[str, str], str],
+    Dict[Tuple[str, str], str],
+    Dict[Tuple[str, str], str],
+]:
+    """
+    Load one external override resource file.
+
+    The JSON format is expected to contain the keys:
+      - lemma_overrides
+      - form_feat_overrides
+      - prontype_overrides
+      - tag_to_default_prontype
+
+    Tuple-keyed mappings are serialized as tab-joined strings.
+    """
+    with path.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    lemma_overrides = data.get("lemma_overrides", {})
+    form_feat_overrides = data.get("form_feat_overrides", {})
+    prontype_overrides = {
+        tuple(k.split("\t")): v
+        for k, v in data.get("prontype_overrides", {}).items()
+    }
+    lemma_prontype_overrides = {
+        tuple(k.split("\t")): v
+        for k, v in data.get("lemma_prontype_overrides", {}).items()
+    }
+    tag_to_default_prontype = {
+        tuple(k.split("\t")): v
+        for k, v in data.get("tag_to_default_prontype", {}).items()
+    }
+
+    upos_overrides = {
+    tuple(k.split("\t")): v
+    for k, v in data.get("upos_overrides", {}).items()
+}
+    form_corrections = data.get("form_corrections", {})
+
+    tag_to_upos = data.get("tag_to_upos", {})
+
+    form_to_upos = data.get("form_to_upos", {})
+    form_to_xpos = data.get("form_to_xpos", {})
+
+    return (
+        lemma_overrides,
+        form_feat_overrides,
+        prontype_overrides,
+        lemma_prontype_overrides,
+        tag_to_default_prontype,
+        upos_overrides,
+        form_corrections,
+        tag_to_upos,
+        form_to_upos,
+        form_to_xpos,
+    )
+
+def configure_override_resources(overrides_path: Optional[Path] = None) -> None:
+    """
+    Configure the active override resources by merging external JSON files.
+
+    Loading order:
+      1. base defaults
+      2. gold-derived overrides
+      3. manual overrides
+      4. optional extra override file passed by the user
+
+    Later files take precedence over earlier ones.
+    """
+    global LEMMA_OVERRIDES
+    global FORM_FEAT_OVERRIDES
+    global PRONTYPE_OVERRIDES
+    global LEMMA_PRONTYPE_OVERRIDES
+    global TAG_TO_DEFAULT_PRONTYPE
+    global UPOS_OVERRIDES
+    global FORM_CORRECTIONS
+    global TAG_TO_UPOS
+    global FORM_TO_UPOS
+    global FORM_TO_XPOS
+
+    LEMMA_OVERRIDES = {}
+    FORM_FEAT_OVERRIDES = {}
+    PRONTYPE_OVERRIDES = {}
+    LEMMA_PRONTYPE_OVERRIDES = {}
+    TAG_TO_DEFAULT_PRONTYPE = {}
+    UPOS_OVERRIDES = {}
+    FORM_CORRECTIONS = {}
+    TAG_TO_UPOS = {}
+    FORM_TO_UPOS = {}
+    FORM_TO_XPOS = {}
+
+    candidate_paths = [
+        DEFAULT_BASE_OVERRIDES_PATH,
+        DEFAULT_GOLD_OVERRIDES_PATH,
+        DEFAULT_MANUAL_OVERRIDES_PATH,
+    ]
+
+    if overrides_path is not None:
+        if not overrides_path.exists():
+            raise FileNotFoundError(f"Override resource not found: {overrides_path}")
+        candidate_paths.append(overrides_path)
+
+    print(DEFAULT_BASE_OVERRIDES_PATH, file=sys.stderr)
+    print(DEFAULT_GOLD_OVERRIDES_PATH, file=sys.stderr)
+    print(DEFAULT_MANUAL_OVERRIDES_PATH, file=sys.stderr)
+
+    for path in candidate_paths:
+        print(f"Loading override resource: {path}", file=sys.stderr)
+        if path is None or not path.exists():
+            continue
+
+        (
+            lemma_overrides,
+            form_feat_overrides,
+            prontype_overrides,
+            lemma_prontype_overrides,
+            tag_to_default_prontype,
+            upos_overrides,
+            form_corrections,
+            tag_to_upos,
+            form_to_upos,
+            form_to_xpos,
+        ) = load_override_resource(path)
+
+        LEMMA_OVERRIDES.update(lemma_overrides)
+        FORM_FEAT_OVERRIDES.update(form_feat_overrides)
+        PRONTYPE_OVERRIDES.update(prontype_overrides)
+        LEMMA_PRONTYPE_OVERRIDES.update(lemma_prontype_overrides)
+        TAG_TO_DEFAULT_PRONTYPE.update(tag_to_default_prontype)
+        UPOS_OVERRIDES.update(upos_overrides)
+        FORM_CORRECTIONS.update(form_corrections)
+        TAG_TO_UPOS.update(tag_to_upos)
+        FORM_TO_UPOS.update(form_to_upos)
+        FORM_TO_XPOS.update(form_to_xpos)
+
+    # normalize keys once after all layers have been merged
+    LEMMA_OVERRIDES = canonicalize_override_map(LEMMA_OVERRIDES, "LEMMA_OVERRIDES")
+    FORM_FEAT_OVERRIDES = canonicalize_override_map(FORM_FEAT_OVERRIDES, "FORM_FEAT_OVERRIDES")
+    PRONTYPE_OVERRIDES = canonicalize_override_map(PRONTYPE_OVERRIDES, "PRONTYPE_OVERRIDES")
+    LEMMA_PRONTYPE_OVERRIDES = canonicalize_override_map(
+        LEMMA_PRONTYPE_OVERRIDES,
+        "LEMMA_PRONTYPE_OVERRIDES",
+    )
+    TAG_TO_DEFAULT_PRONTYPE = canonicalize_override_map(
+        TAG_TO_DEFAULT_PRONTYPE,
+        "TAG_TO_DEFAULT_PRONTYPE",
+    )
+    UPOS_OVERRIDES = canonicalize_override_map(UPOS_OVERRIDES, "UPOS_OVERRIDES")
+
+    FORM_TO_UPOS = canonicalize_override_map(FORM_TO_UPOS, "FORM_TO_UPOS")
+    FORM_TO_XPOS = canonicalize_override_map(FORM_TO_XPOS, "FORM_TO_XPOS")
+
+configure_override_resources()
 
 # ---------------------------------------------------------------------
 # Utility helpers
@@ -199,6 +377,19 @@ def normalize_text_ground_truth(text: Optional[str], punct: str = ".") -> Option
         return text
 
     return text + punct
+
+
+def normalize_split_tags(token: Dict[str, Any]) -> List[str]:
+    splits = token.get("splits", [])
+    if not isinstance(splits, list):
+        return []
+    tags = []
+    for s in splits:
+        if isinstance(s, dict):
+            t = s.get("t")
+            if t:
+                tags.append(str(t))
+    return tags
 
 
 def get_proto_rows(sentence: Dict[str, Any]) -> List[Dict[str, Any]]:
@@ -530,6 +721,179 @@ def mwt_surface_form(group: List[Dict[str, Any]], proto_form: Optional[str]) -> 
     return "".join(clean_component_form(str(tok.get("v", ""))) for tok in group)
 
 
+def infer_lemma(form: str, tok: Dict[str, Any]) -> str:
+    if form in LEMMA_OVERRIDES:
+        return LEMMA_OVERRIDES[form]
+
+    splits = tok.get("splits", [])
+    if isinstance(splits, list):
+        # Prefer lexical-looking split tags
+        for s in splits:
+            if not isinstance(s, dict):
+                continue
+            tag = str(s.get("t", ""))
+            val = str(s.get("v", ""))
+            if tag in {"v", "n"} and val:
+                return val
+        # Fallback: final split with actual letters
+        for s in reversed(splits):
+            if not isinstance(s, dict):
+                continue
+            val = str(s.get("v", ""))
+            if val:
+                return val
+
+    return form
+
+
+def infer_feats(
+    lookup_form: str,
+    tag: str,
+    tok: Dict[str, Any],
+    upos: Optional[str] = None,
+    surface_form: Optional[str] = None,
+    lemma_override: Optional[str] = None,
+) -> str:
+
+    feats: List[str] = []
+
+    candidate_forms = []
+
+    for f in (surface_form, lookup_form):
+        for cand in (f, normalize_form_for_lookup(f) if f else None):
+            if cand and cand not in candidate_forms:
+                candidate_forms.append(cand)
+
+    # Start from full form-level feature override if present,
+    # but do NOT return early: PronType may still need to be added
+    # or corrected below.
+    override_feats = None
+
+    for f in candidate_forms:
+        if f in FORM_FEAT_OVERRIDES:
+            override_feats = FORM_FEAT_OVERRIDES[f]
+            break
+
+    if override_feats is not None:
+        if override_feats and override_feats != "_":
+            feats.extend(override_feats.split("|"))
+
+    else:
+        splits = tok.get("splits", [])
+        if not isinstance(splits, list):
+            splits = []
+
+        split_tags = normalize_split_tags(tok)
+
+        # Tense/aspect auxiliaries
+        if tag == "T":
+            if "PFV" in split_tags:
+                feats.append("Aspect=Perf")
+            if "Imperf" in split_tags:
+                feats.append("Aspect=Imp")
+
+        if tag == "NEG":
+            feats.append("Polarity=Neg")
+
+        # Applicative verbs
+        if tag == "VBAPL":
+            feats.append("Voice=Appl")
+
+        # Possessor person on nouns such as N$
+        for s in splits:
+            if not isinstance(s, dict):
+                continue
+
+            st = str(s.get("t", ""))
+            gloss_br = safe_get(s, "attributes", "gloss-br", default=None)
+            gloss_br = str(gloss_br).strip() if gloss_br is not None else None
+
+            if st == "Gen" and gloss_br in {"1", "2", "3"}:
+                feats.append(f"Person[psor]={gloss_br}")
+
+            elif st in {"1POSS", "2POSS", "3POSS"}:
+                person = st[0]
+                feats.append(f"Person[psor]={person}")
+
+    # Infer lemma before PronType lookup.
+    lemma = lemma_override if lemma_override is not None else infer_lemma(lookup_form, tok)
+
+    # PronType lookup hierarchy:
+    # 1. form + UPOS: exceptional/manual override
+    # 2. lemma + UPOS: preferred learned default
+    # 3. source tag + UPOS: broad fallback
+    pron_type = None
+
+    for f in candidate_forms:
+        pron_type = PRONTYPE_OVERRIDES.get((f, upos))
+        if pron_type is not None:
+            break
+
+    if pron_type is None:
+        pron_type = LEMMA_PRONTYPE_OVERRIDES.get((lemma, upos))
+
+    if pron_type is None:
+        pron_type = TAG_TO_DEFAULT_PRONTYPE.get((tag, upos))
+
+    if pron_type and upos in {"DET", "PRON", "ADV"}:
+        # Avoid duplicated or wrong PronType, e.g. PronType=Prs on DET.
+        feats = [f for f in feats if not f.startswith("PronType=")]
+        feats.append(f"PronType={pron_type}")
+
+    if upos != "ADV":
+        feats = [f for f in feats if not f.startswith("AdvType=")]
+
+    if feats:
+        return "|".join(sorted(set(feats)))
+
+    return "_"
+
+def infer_upos(tag: str) -> str:
+    override = TAG_TO_UPOS.get(tag)
+    if override is not None:
+        return override
+    return UPOS_MAP.get(tag, "X")
+
+def upos_override_candidates(form: str, tag: str):
+    forms = []
+    for f in (form, normalize_form_for_lookup(form) if form else None):
+        if f and f not in forms:
+            forms.append(f)
+
+    for f in forms:
+        yield (f, tag)
+
+
+
+def infer_upos_for_form(form: str, tag: str) -> str:
+    for key in upos_override_candidates(form, tag):
+        override = UPOS_OVERRIDES.get(key)
+        if override is not None:
+            return override
+    return infer_upos(tag)
+
+
+def apply_upos_override(form: str, tag: str, upos: str) -> str:
+    for key in upos_override_candidates(form, tag):
+        override = UPOS_OVERRIDES.get(key)
+        if override is not None:
+            return override
+    return upos
+
+def get_form_correction(form: str) -> Optional[Dict[str, str]]:
+    """
+    Return correction metadata for known non-canonical source forms.
+
+    Priority:
+      1. Manual JSON correction
+      2. Morphology-generated correction
+    """
+    manual = FORM_CORRECTIONS.get(form)
+    if manual is not None:
+        return dict(manual)
+
+    return get_standard_form_correction(form)
+    
 def add_spaceafter_no(misc: str) -> str:
     """
     Ensure SpaceAfter=No is present in MISC.
@@ -784,16 +1148,7 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
                 upos = infer_upos(gtag)
                 upos = apply_upos_override(lookup_form, gtag, upos)
                 lemma = infer_lemma(lookup_form, gtok)
-                feats = infer_feats(
-                    lookup_form,
-                    gtag,
-                    gtok,
-                    upos=upos,
-                    surface_form=surface_form,
-                    lemma_override=lemma,
-                    feature_source_token=group[0],
-                    restrict_split_feats_to_component=True,
-                )
+                feats = infer_feats(lookup_form, gtag, gtok, upos=upos)
 
                 draft = DraftToken(
                     source_pos=int(gtok.get("p", 0) or 0),

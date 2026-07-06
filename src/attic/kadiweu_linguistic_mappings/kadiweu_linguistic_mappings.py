@@ -9,8 +9,6 @@ This module centralizes language-specific and notation-specific knowledge:
 - Tycho Brahe tag -> UD UPOS mappings;
 - lemma inference from morphemic splits;
 - UD FEATS inference from source token tags and morpheme tags;
-- normalization of recurrent Tycho Brahe morpheme-tag variants;
-- distribution of split-derived features across MWT components;
 - PronType lookup hierarchy;
 - known form corrections.
 
@@ -58,86 +56,8 @@ def safe_get(d: Any, *path: str, default=None):
     return cur
 
 
-# ---------------------------------------------------------------------
-# Tycho Brahe morpheme tag normalization and feature mapping
-# ---------------------------------------------------------------------
-
-# Canonicalize recurrent spelling/case variants in split-level tags.
-# This table is intentionally restricted to morpheme/split tags, not
-# source token tags. For example, token-level M is still handled by
-# the UPOS map, while split-level M is a masculine gender marker.
-SPLIT_TAG_ALIASES: Dict[str, str] = {
-    "M": "Masc",
-    "Masc": "Masc",
-    "masc": "Masc",
-    "F": "Fem",
-    "Fem": "Fem",
-    "fem": "Fem",
-    "Plu": "Plur",
-    "Pl": "Plur",
-    "pl": "Plur",
-    "Sg": "Sing",
-    "sg": "Sing",
-    "Sing": "Sing",
-    "sing": "Sing",
-    "Neg": "Neg",
-    "NEG": "Neg",
-    "neg": "Neg",
-    "Inv": "Inv",
-    "inv": "Inv",
-    "Coll": "Tot",
-    "coll": "Tot",
-    "Apl": "Apl",
-    "APL": "Apl",
-    "PFV": "PFV",
-    "Pfv": "PFV",
-    "Imperf": "Imperf",
-    "IMPERF": "Imperf",
-}
-
-# Direct split-tag -> UD FEATS mappings. Context-sensitive mappings such
-# as Abs with gloss-br=1 are handled in features_from_split().
-SPLIT_TAG_TO_FEATS: Dict[str, List[str]] = {
-    "Masc": ["Gender=Masc"],
-    "Fem": ["Gender=Fem"],
-    "Plur": ["Number=Plur"],
-    "Sing": ["Number=Sing"],
-    "Tot": [],
-    "Neg": ["Polarity=Neg"],
-    "Inv": ["Voice=Inv"],
-    "Apl": ["Voice=Appl"],
-    "PFV": ["Aspect=Perf"],
-    "Imperf": ["Aspect=Imp"],
-}
-
-# Split-derived features in @-style MWTs must be assigned to the component
-# that realizes the corresponding grammatical information. NEG-targeted
-# features attach to the negative particle; VERB-targeted features attach
-# to the verbal component. None means the feature may remain on ordinary
-# non-MWT tokens.
-SPLIT_TAG_FEATURE_TARGET: Dict[str, str] = {
-    "Neg": "NEG",
-    "Inv": "VERB",
-    "Apl": "VERB",
-    "PFV": "VERB",
-    "Imperf": "VERB",
-    "Abs": "VERB",
-    "Erg": "VERB",
-    "v": "VERB",
-}
-
-VERBAL_SOURCE_TAGS = {"VB", "VBI", "VBT", "VBAPL", "VBTAPL", "AUX", "T"}
-NEGATIVE_SOURCE_TAGS = {"NEG", "ADVNEG", "CNEG"}
-
-
-def canonicalize_split_tag(tag: Any) -> str:
-    """Return the canonical spelling of a Tycho Brahe split/morpheme tag."""
-    raw = str(tag).strip()
-    return SPLIT_TAG_ALIASES.get(raw, raw)
-
-
 def normalize_split_tags(token: Dict[str, Any]) -> List[str]:
-    """Return canonicalized source morpheme/split tags as strings."""
+    """Return source morpheme/split tags as strings, preserving current behavior."""
     splits = token.get("splits", [])
     if not isinstance(splits, list):
         return []
@@ -146,91 +66,8 @@ def normalize_split_tags(token: Dict[str, Any]) -> List[str]:
         if isinstance(split, dict):
             tag = split.get("t")
             if tag:
-                tags.append(canonicalize_split_tag(tag))
+                tags.append(str(tag))
     return tags
-
-
-def _target_for_component(component_tag: str, component_upos: Optional[str]) -> str:
-    """Classify an emitted token/component for MWT feature distribution."""
-    if component_tag in NEGATIVE_SOURCE_TAGS or component_upos == "PART":
-        return "NEG"
-    if component_tag in VERBAL_SOURCE_TAGS or component_upos in {"VERB", "AUX"}:
-        return "VERB"
-    return component_tag
-
-
-def _feature_applies_to_component(
-    split_tag: str,
-    component_tag: str,
-    component_upos: Optional[str],
-    *,
-    restrict_to_mwt_component: bool,
-) -> bool:
-    """Return whether a split-derived feature belongs on this emitted token."""
-    if not restrict_to_mwt_component:
-        return True
-
-    target = SPLIT_TAG_FEATURE_TARGET.get(split_tag)
-    if target is None:
-        return True
-
-    return _target_for_component(component_tag, component_upos) == target
-
-
-def features_from_split(split: Dict[str, Any]) -> List[str]:
-    """Map one Tycho Brahe split/morpheme analysis to UD FEATS."""
-    split_tag = canonicalize_split_tag(split.get("t", ""))
-    features: List[str] = list(SPLIT_TAG_TO_FEATS.get(split_tag, []))
-
-    gloss_br = safe_get(split, "attributes", "gloss-br", default=None)
-    gloss_br = str(gloss_br).strip() if gloss_br is not None else None
-
-    if split_tag == "Abs" and gloss_br in {"1", "2", "3"}:
-        features.append(f"Person={gloss_br}")
-
-    # Some gender markers are encoded as a generic Gnr split tag, with the
-    # actual gender in the gloss. This preserves the distinction without
-    # guessing from the segment itself.
-    if split_tag == "Gnr" and gloss_br in {"M", "Masc", "masc"}:
-        features.append("Gender=Masc")
-    elif split_tag == "Gnr" and gloss_br in {"F", "Fem", "fem"}:
-        features.append("Gender=Fem")
-
-    if split_tag == "Gen" and gloss_br in {"1", "2", "3"}:
-        features.append(f"Person[psor]={gloss_br}")
-    elif split_tag in {"1POSS", "2POSS", "3POSS"}:
-        features.append(f"Person[psor]={split_tag[0]}")
-
-    return features
-
-
-def split_derived_feats(
-    token: Dict[str, Any],
-    component_tag: str,
-    component_upos: Optional[str],
-    *,
-    restrict_to_mwt_component: bool = False,
-) -> List[str]:
-    """Return UD FEATS inferred from split tags for one emitted token."""
-    splits = token.get("splits", [])
-    if not isinstance(splits, list):
-        return []
-
-    features: List[str] = []
-    for split in splits:
-        if not isinstance(split, dict):
-            continue
-        split_tag = canonicalize_split_tag(split.get("t", ""))
-        if not _feature_applies_to_component(
-            split_tag,
-            component_tag,
-            component_upos,
-            restrict_to_mwt_component=restrict_to_mwt_component,
-        ):
-            continue
-        features.extend(features_from_split(split))
-
-    return features
 
 
 def load_override_resource(
@@ -412,17 +249,8 @@ def infer_feats(
     upos: Optional[str] = None,
     surface_form: Optional[str] = None,
     lemma_override: Optional[str] = None,
-    feature_source_token: Optional[Dict[str, Any]] = None,
-    restrict_split_feats_to_component: bool = False,
 ) -> str:
-    """Infer UD FEATS from source tag, morpheme tags, and override resources.
-
-    feature_source_token is normally tok. In @-style MWTs, however, the
-    complete split analysis may be stored on the first source token only
-    (e.g. aG@ in NEG+VB). In that case, the converter can pass the MWT
-    source token as feature_source_token while tag/upos identify the emitted
-    component that should receive the compatible features.
-    """
+    """Infer UD FEATS from source tag, morpheme tags, and override resources."""
     feats: List[str] = []
     candidate_forms = _candidate_forms(surface_form, lookup_form)
 
@@ -436,31 +264,37 @@ def infer_feats(
         if override_feats and override_feats != "_":
             feats.extend(override_feats.split("|"))
     else:
-        source_token = feature_source_token if feature_source_token is not None else tok
-        feats.extend(
-            split_derived_feats(
-                source_token,
-                tag,
-                upos,
-                restrict_to_mwt_component=restrict_split_feats_to_component,
-            )
-        )
+        splits = tok.get("splits", [])
+        if not isinstance(splits, list):
+            splits = []
 
-        # Keep previous token-tag heuristics for compatibility when the
-        # source token has no corresponding split analysis.
-        split_tags = normalize_split_tags(source_token)
+        split_tags = normalize_split_tags(tok)
 
         if tag == "T":
-            if "PFV" in split_tags and "Aspect=Perf" not in feats:
+            if "PFV" in split_tags:
                 feats.append("Aspect=Perf")
-            if "Imperf" in split_tags and "Aspect=Imp" not in feats:
+            if "Imperf" in split_tags:
                 feats.append("Aspect=Imp")
 
-        if tag == "NEG" and "Polarity=Neg" not in feats:
+        if tag == "NEG":
             feats.append("Polarity=Neg")
 
-        if tag == "VBAPL" and "Voice=Appl" not in feats:
+        if tag == "VBAPL":
             feats.append("Voice=Appl")
+
+        for split in splits:
+            if not isinstance(split, dict):
+                continue
+
+            split_tag = str(split.get("t", ""))
+            gloss_br = safe_get(split, "attributes", "gloss-br", default=None)
+            gloss_br = str(gloss_br).strip() if gloss_br is not None else None
+
+            if split_tag == "Gen" and gloss_br in {"1", "2", "3"}:
+                feats.append(f"Person[psor]={gloss_br}")
+            elif split_tag in {"1POSS", "2POSS", "3POSS"}:
+                person = split_tag[0]
+                feats.append(f"Person[psor]={person}")
 
     lemma = lemma_override if lemma_override is not None else infer_lemma(lookup_form, tok)
 
@@ -484,6 +318,7 @@ def infer_feats(
         feats = [feat for feat in feats if not feat.startswith("AdvType=")]
 
     return "|".join(sorted(set(feats))) if feats else "_"
+
 
 def infer_upos(tag: str) -> str:
     """Infer UD UPOS from a source tag."""
