@@ -70,7 +70,7 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 from kadiweu_empty_categories import resolve_empty_categories
 from kadiweu_normalization import get_surface_and_lookup_form
 
-from kadiweu_linguistic_mappings import (
+from kadiweu_linguistic_mappings_with_split_tags import (
     LEMMA_OVERRIDES,
     FORM_TO_UPOS,
     FORM_TO_XPOS,
