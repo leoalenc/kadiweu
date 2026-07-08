@@ -72,6 +72,10 @@
         "standard_form": "lomiigo",
         "standard_lemma": "omiigo"
       },
+      "nigidiwa": { 
+        "standard_form": "niGidiwa",
+        "standard_lemma": "niGida"
+      },
       "noatece": { 
         "standard_form": "niwatece",
         "standard_lemma": "watece"

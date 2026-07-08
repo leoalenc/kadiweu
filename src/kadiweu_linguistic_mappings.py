@@ -93,6 +93,50 @@ SPLIT_TAG_ALIASES: Dict[str, str] = {
     "Pfv": "PFV",
     "Imperf": "Imperf",
     "IMPERF": "Imperf",
+    "imperf": "Imperf",
+    "Erg": "Erg",
+    "ERG": "Erg",
+    "erg": "Erg",
+        "Abs": "Abs",
+    "ABS": "Abs",
+    "abs": "Abs",
+
+    # Demonstrative / anaphoric split tags.
+    # In the current data, Anf behaves like the demonstrative/anaphoric
+    # prefix found in forms such as niGijo, naGani, niGida, etc.
+    "Dem": "Dem",
+    "DEM": "Dem",
+    "dem": "Dem",
+    "Anf": "Dem",
+    "ANF": "Dem",
+    "anf": "Dem",
+
+    # Relative/pronominal split tags.
+    "Wpro": "Wpro",
+    "WPRO": "Wpro",
+    "wpro": "Wpro",
+    "Pro": "Pro",
+    "PRO": "Pro",
+    "pro": "Pro",
+
+    # Nominal morphology.
+    "Dim": "Dim",
+    "DIM": "Dim",
+    "dim": "Dim",
+    "Cla": "Cla",
+    "CLA": "Cla",
+    "cla": "Cla",
+
+    # Applicative/oblique person marking variants.
+    "OBL": "OBL",
+    "Obl": "OBL",
+    "obl": "OBL",
+
+    # Nominalization variants. Keep these as Der for now; do not
+    # generate UD FEATS directly from them yet.
+    "Nmlz": "Der",
+    "NMLZ": "Der",
+    "nmlz": "Der",
 }
 
 # Direct split-tag -> UD FEATS mappings. Context-sensitive mappings such
@@ -102,12 +146,18 @@ SPLIT_TAG_TO_FEATS: Dict[str, List[str]] = {
     "Fem": ["Gender=Fem"],
     "Plur": ["Number=Plur"],
     "Sing": ["Number=Sing"],
-    "Tot": [],
+    "Tot": [], # TODO: "Tot" is a totaltative marker, but UD does not have a standard feature for it.
     "Neg": ["Polarity=Neg"],
     "Inv": ["Voice=Inv"],
     "Apl": ["Voice=Appl"],
     "PFV": ["Aspect=Perf"],
     "Imperf": ["Aspect=Imp"],
+
+    # Strong productive mappings from split tags.
+    # Lexical/contextual refinements remain the job of the override resources.
+    "Dem": ["PronType=Dem"],
+    "Wpro": ["PronType=Rel"],
+    "Dim": ["Degree=Dim"],
 }
 
 # Split-derived features in @-style MWTs must be assigned to the component
@@ -121,9 +171,19 @@ SPLIT_TAG_FEATURE_TARGET: Dict[str, str] = {
     "Apl": "VERB",
     "PFV": "VERB",
     "Imperf": "VERB",
-    "Abs": "VERB",
+        "Abs": "VERB",
     "Erg": "VERB",
+    "OBL": "VERB",
     "v": "VERB",
+
+    # These should attach to the nominal/pronominal component in MWTs
+    # such as C+D and C+DAPL, not to the complementizer component.
+    "Dem": "NOMINAL",
+    "Wpro": "NOMINAL",
+    "Pro": "NOMINAL",
+    "Dim": "NOMINAL",
+    "Gnr": "NOMINAL",
+    "Cla": "NOMINAL",
 }
 
 VERBAL_SOURCE_TAGS = {"VB", "VBI", "VBT", "VBAPL", "VBTAPL", "AUX", "T"}
@@ -151,11 +211,19 @@ def normalize_split_tags(token: Dict[str, Any]) -> List[str]:
 
 
 def _target_for_component(component_tag: str, component_upos: Optional[str]) -> str:
-    """Classify an emitted token/component for MWT feature distribution."""
+    """Classify an emitted token/component for MWT feature distribution.
+
+    This is mainly relevant for @-style MWTs such as C+D, C+DAPL,
+    NEG+VB, and NEG+VBAPL. The split analysis may be stored on the
+    first source token, but features must be assigned only to the
+    component that realizes them.
+    """
     if component_tag in NEGATIVE_SOURCE_TAGS or component_upos == "PART":
         return "NEG"
     if component_tag in VERBAL_SOURCE_TAGS or component_upos in {"VERB", "AUX"}:
         return "VERB"
+    if component_upos in {"NOUN", "PROPN", "PRON", "DET", "ADJ", "NUM"}:
+        return "NOMINAL"
     return component_tag
 
 
@@ -176,30 +244,114 @@ def _feature_applies_to_component(
 
     return _target_for_component(component_tag, component_upos) == target
 
+def _split_gloss(split: Dict[str, Any], key: str = "gloss-br") -> Optional[str]:
+    """Return a normalized split gloss string, if present."""
+    gloss = safe_get(split, "attributes", key, default=None)
+    if gloss is None:
+        return None
+    value = str(gloss).strip()
+    return value or None
+
+
+def _person_from_gloss(gloss: Optional[str]) -> Optional[str]:
+    """Extract person from common Tycho gloss values such as 1, 1s, 1SG, 3M."""
+    if not gloss:
+        return None
+    value = gloss.strip()
+    if value and value[0] in {"1", "2", "3"}:
+        return value[0]
+    return None
+
+
+def _is_singular_gloss(gloss: Optional[str]) -> bool:
+    """Return True for glosses that explicitly encode singular."""
+    if not gloss:
+        return False
+    return gloss.lower() in {"1s", "1sg", "2s", "2sg", "3s", "3sg"}
+
+
+def _gender_from_gloss(gloss: Optional[str]) -> Optional[str]:
+    """Extract UD gender from recurrent Tycho gloss values."""
+    if not gloss:
+        return None
+    value = gloss.strip()
+    if value in {"M", "Masc", "masc", "MASC"} or "MASC" in value.upper():
+        return "Masc"
+    if value in {"F", "Fem", "fem", "FEM"} or "FEM" in value.upper():
+        return "Fem"
+    return None
+
 
 def features_from_split(split: Dict[str, Any]) -> List[str]:
-    """Map one Tycho Brahe split/morpheme analysis to UD FEATS."""
+    """Map one Tycho Brahe split/morpheme analysis to UD FEATS.
+
+    This function should encode productive split-level morphology only.
+    Lexical gender, context-dependent UPOS decisions, and corrections for
+    incomplete or wrong Tycho annotations remain in the override resources.
+    """
     split_tag = canonicalize_split_tag(split.get("t", ""))
     features: List[str] = list(SPLIT_TAG_TO_FEATS.get(split_tag, []))
 
-    gloss_br = safe_get(split, "attributes", "gloss-br", default=None)
-    gloss_br = str(gloss_br).strip() if gloss_br is not None else None
+    gloss_br = _split_gloss(split, "gloss-br")
+    gloss = _split_gloss(split, "gloss")
+    gloss_for_gender = gloss_br or gloss
 
-    if split_tag == "Abs" and gloss_br in {"1", "2", "3"}:
-        features.append(f"Person={gloss_br}")
+    # Absolutive agreement on verbal predicates.
+    person = _person_from_gloss(gloss_br)
+    if split_tag == "Abs" and person is not None:
+        features.append(f"Person={person}")
 
-    # Some gender markers are encoded as a generic Gnr split tag, with the
-    # actual gender in the gloss. This preserves the distinction without
-    # guessing from the segment itself.
-    if split_tag == "Gnr" and gloss_br in {"M", "Masc", "masc"}:
-        features.append("Gender=Masc")
-    elif split_tag == "Gnr" and gloss_br in {"F", "Fem", "fem"}:
-        features.append("Gender=Fem")
+    # Ergative agreement on verbal predicates.
+    if split_tag == "Erg" and person is not None:
+        features.append(f"Person[erg]={person}")
 
-    if split_tag == "Gen" and gloss_br in {"1", "2", "3"}:
-        features.append(f"Person[psor]={gloss_br}")
+    # Possessor person on possessed nouns.
+    if split_tag == "Gen" and person is not None:
+        features.append(f"Person[psor]={person}")
+        if _is_singular_gloss(gloss_br):
+            features.append("Number[psor]=Sing")
     elif split_tag in {"1POSS", "2POSS", "3POSS"}:
         features.append(f"Person[psor]={split_tag[0]}")
+
+    # Gender is often encoded by the generic Gnr split tag and the actual
+    # gender value is stored in gloss-br/gloss.
+    gender = _gender_from_gloss(gloss_for_gender)
+    if split_tag == "Gnr" and gender is not None:
+        features.append(f"Gender={gender}")
+
+    # Cla is not as general as Gnr, but it occurs in nominal classifiers such
+    # as iwaalo = iwaa + lo, where the gloss identifies feminine gender.
+    if split_tag == "Cla" and gender is not None:
+        features.append(f"Gender={gender}")
+
+    # Applicative agreement. Keep this conservative: derive object person and
+    # gender only when the gloss explicitly encodes them.
+    if split_tag == "Apl":
+        obj_person = _person_from_gloss(gloss_br)
+        if obj_person is not None:
+            features.append(f"Person[obj]={obj_person}")
+
+        obj_gender = _gender_from_gloss(gloss_br)
+        if obj_gender is not None:
+            features.append(f"Gender[obj]={obj_gender}")
+
+    # OBL occurs in applicative-like verbal forms with object/oblique person
+    # information, e.g. gloss-br=2 in ipegitaGagi.
+    if split_tag == "OBL":
+        obj_person = _person_from_gloss(gloss_br)
+        if obj_person is not None:
+            features.append(f"Person[obj]={obj_person}")
+        if _is_singular_gloss(gloss_br):
+            features.append("Number[obj]=Sing")
+
+    # Independent personal-pronoun split, e.g. ee with gloss-br=1SG.
+    if split_tag == "Pro":
+        features.append("PronType=Prs")
+        pro_person = _person_from_gloss(gloss_br)
+        if pro_person is not None:
+            features.append(f"Person={pro_person}")
+        if _is_singular_gloss(gloss_br):
+            features.append("Number=Sing")
 
     return features
 
@@ -461,6 +613,18 @@ def infer_feats(
 
         if tag == "VBAPL" and "Voice=Appl" not in feats:
             feats.append("Voice=Appl")
+        
+        # Kadiwéu finite verbal predicates are often identifiable by verbal
+        # split morphology even when Mood/VerbForm are not explicitly encoded
+        # in the source. Gold-derived overrides already learn these features
+        # for many forms; this fallback improves coverage for new or unseen
+        # forms without replacing lexical overrides.
+        if upos in {"VERB", "AUX"}:
+            if any(t in split_tags for t in {"v", "Erg", "Abs", "Inv", "Apl", "OBL"}):
+                if "VerbForm=Fin" not in feats:
+                    feats.append("VerbForm=Fin")
+                if "Mood=Ind" not in feats:
+                    feats.append("Mood=Ind")
 
     lemma = lemma_override if lemma_override is not None else infer_lemma(lookup_form, tok)
 

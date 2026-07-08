@@ -403,18 +403,38 @@ def write_jsonl(path: Path, normalized: Iterable[Dict[str, Any]]) -> None:
 
 def build_argparser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
-    description="Inspect sentence structure in a Kadiwéu Tycho Brahe JSON source document.",
-    epilog="""Examples:
+        description=(
+            "Inspect sentence structure in one or more Kadiwéu Tycho Brahe "
+            "JSON source documents."
+        ),
+        epilog="""Examples:
   python3 inspect_kadiweu_json.py data/ped-gramm.json --summary-only
   python3 inspect_kadiweu_json.py data/hil-data.json --limit 10
   python3 inspect_kadiweu_json.py data/van-data.json --jsonl-out data/van-data.jsonl
+  python3 inspect_kadiweu_json.py data/ped-gramm.json data/hil-data.json data/van-data.json \\
+      --source-id ped-gramm --source-id hil-data --source-id van-data \\
+      --jsonl-out data/kadiweu-all.jsonl
 """,
-    formatter_class=argparse.RawDescriptionHelpFormatter,
-)
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
     p.add_argument(
-    "json_file",
-    help="Input Tycho Brahe JSON file, e.g. data/ped-gramm.json, data/hil-data.json, or data/van-data.json",
-)
+        "json_file",
+        nargs="+",
+        help=(
+            "Input Tycho Brahe JSON file(s), e.g. data/ped-gramm.json, "
+            "data/hil-data.json, or data/van-data.json"
+        ),
+    )
+    p.add_argument(
+        "--source-id",
+        action="append",
+        default=None,
+        help=(
+            "Stable source identifier for an input JSON file, e.g. ped-gramm, "
+            "hil-data, or van-data. May be supplied once per input file. "
+            "If omitted, the input file stem is used."
+        ),
+    )
     p.add_argument(
         "--limit",
         type=int,
@@ -454,16 +474,48 @@ def build_argparser() -> argparse.ArgumentParser:
     return p
 
 
+def attach_source_metadata(
+    records: List[Dict[str, Any]],
+    source_id: str,
+    source_file: Path,
+) -> List[Dict[str, Any]]:
+    """Attach stable source metadata to raw sentence records."""
+    source_file_str = str(source_file)
+
+    for record in records:
+        record["source_id"] = source_id
+        record["source_file"] = source_file_str
+
+    return records
+
+
 def main() -> int:
     args = build_argparser().parse_args()
-    json_path = Path(args.json_file)
 
-    if not json_path.is_file():
-        print(f"ERROR: file not found: {json_path}", file=sys.stderr)
+    json_paths = [Path(path) for path in args.json_file]
+
+    if args.source_id is not None and len(args.source_id) != len(json_paths):
+        print(
+            "ERROR: --source-id must be supplied exactly once per input JSON file "
+            f"({len(args.source_id)} source-id value(s) for "
+            f"{len(json_paths)} file(s)).",
+            file=sys.stderr,
+        )
         return 1
 
-    data = load_json(json_path)
-    raw_sentences = walk_collect_sentences(data)
+    source_ids = args.source_id or [path.stem for path in json_paths]
+
+    raw_sentences: List[Dict[str, Any]] = []
+
+    for json_path, source_id in zip(json_paths, source_ids):
+        if not json_path.is_file():
+            print(f"ERROR: file not found: {json_path}", file=sys.stderr)
+            return 1
+
+        data = load_json(json_path)
+        records = walk_collect_sentences(data)
+        records = attach_source_metadata(records, source_id, json_path)
+        raw_sentences.extend(records)
 
     if not raw_sentences:
         print("No sentence-like objects found.", file=sys.stderr)
@@ -478,18 +530,22 @@ def main() -> int:
     if args.limit is not None:
         raw_sentences = raw_sentences[: args.limit]
 
-    normalized = [
-        normalize_sentence(rec, ordinal=i)
-        for i, rec in enumerate(raw_sentences, start=1)
-    ]
+    normalized = []
+
+    for i, rec in enumerate(raw_sentences, start=1):
+        norm = normalize_sentence(rec, ordinal=i)
+        norm["source_id"] = rec.get("source_id")
+        norm["source_file"] = rec.get("source_file")
+        normalized.append(norm)
 
     print(f"Found {len(normalized)} matching sentence(s).")
 
     if args.summary_only:
         for s in normalized:
             print(
-                "{ord:>4}  uid={uid}  text={text}".format(
+                "{ord:>4}  source={source:<10} uid={uid}  text={text}".format(
                     ord=s["ordinal"],
+                    source=s.get("source_id") or "",
                     uid=s.get("uid"),
                     text=s.get("text"),
                 )
@@ -504,7 +560,6 @@ def main() -> int:
         print(f"Wrote JSONL to: {args.jsonl_out}")
 
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())

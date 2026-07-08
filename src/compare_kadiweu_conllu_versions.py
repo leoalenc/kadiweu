@@ -319,14 +319,21 @@ def metric_table(old_metrics: Dict[str, MetricCounts], new_metrics: Dict[str, Me
 
 
 def write_csv(path: Path, rows: List[Dict[str, object]]) -> None:
+    """Write CSV rows whose dictionaries may not all have identical keys."""
     if not rows:
         path.write_text("", encoding="utf-8")
         return
+
+    fieldnames: List[str] = []
+    for row in rows:
+        for key in row.keys():
+            if key not in fieldnames:
+                fieldnames.append(key)
+
     with path.open("w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(rows)
-
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
@@ -341,6 +348,16 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         action="store_true",
         help="Write gold/old/new CoNLL-U subsets restricted to the sentence ids present in gold",
     )
+    parser.add_argument(
+        "--sentence-universe",
+        choices=["gold", "common-drafts"],
+        default="gold",
+        help=(
+        "Which sentence inventory to compare. "
+        "'gold' compares only sentences present in the gold file; "
+        "'common-drafts' compares all sentences shared by old and new drafts."
+        ),
+    )
     args = parser.parse_args(argv)
 
     gold = read_conllu(args.gold)
@@ -354,7 +371,10 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     gold_ordered_ids = list(gold.keys())
     gold_present_in_old = [sid for sid in gold_ordered_ids if sid in old]
     gold_present_in_new = [sid for sid in gold_ordered_ids if sid in new]
-    common_ids = [sid for sid in gold_ordered_ids if sid in old and sid in new]
+    if args.sentence_universe == "gold":
+        common_ids = [sid for sid in gold_ordered_ids if sid in old and sid in new]
+    else:
+        common_ids = sorted(old_ids & new_ids)
     missing_old = [sid for sid in gold_ordered_ids if sid not in old]
     missing_new = [sid for sid in gold_ordered_ids if sid not in new]
     extra_old = sorted(old_ids - gold_ids)
@@ -369,7 +389,10 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     improvement_counter = Counter()
 
     for sent_id in common_ids:
-        g = gold[sent_id]
+        if args.sentence_universe == "gold":
+            g = gold[sent_id]
+        else:
+            g = old[sent_id]
         o = old[sent_id]
         n = new[sent_id]
 
@@ -510,21 +533,46 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     print("CoNLL-U version comparison")
     print("=" * 80)
+    print(f"Sentence universe:              {args.sentence_universe}")
     print(f"Gold sentences:                 {len(gold_ids)}")
-    print(f"Old sentences:                  {len(old_ids)}")
-    print(f"New sentences:                  {len(new_ids)}")
-    print(f"Gold ids present in old:        {len(gold_present_in_old)}")
-    print(f"Gold ids present in new:        {len(gold_present_in_new)}")
-    print(f"Compared in all three files:    {len(common_ids)}")
-    print()
-    if missing_old:
-        print(f"Missing in old ({len(missing_old)}): {', '.join(missing_old[:10])}{' ...' if len(missing_old) > 10 else ''}")
-    if missing_new:
-        print(f"Missing in new ({len(missing_new)}): {', '.join(missing_new[:10])}{' ...' if len(missing_new) > 10 else ''}")
-    if extra_old:
-        print(f"Extra in old ({len(extra_old)}): {', '.join(extra_old[:10])}{' ...' if len(extra_old) > 10 else ''}")
-    if extra_new:
-        print(f"Extra in new ({len(extra_new)}): {', '.join(extra_new[:10])}{' ...' if len(extra_new) > 10 else ''}")
+    print(f"Old draft sentences:            {len(old_ids)}")
+    print(f"New draft sentences:            {len(new_ids)}")
+
+    if args.sentence_universe == "gold":
+        print(f"Gold ids present in old:        {len(gold_present_in_old)}")
+        print(f"Gold ids present in new:        {len(gold_present_in_new)}")
+        print(f"Compared gold sentences:        {len(common_ids)}")
+        print()
+        if missing_old:
+            print(f"Gold sentences missing in old ({len(missing_old)}): {', '.join(missing_old[:10])}{' ...' if len(missing_old) > 10 else ''}")
+        if missing_new:
+            print(f"Gold sentences missing in new ({len(missing_new)}): {', '.join(missing_new[:10])}{' ...' if len(missing_new) > 10 else ''}")
+        if extra_old:
+            print(f"Draft-only sentences in old ({len(extra_old)}): {', '.join(extra_old[:10])}{' ...' if len(extra_old) > 10 else ''}")
+        if extra_new:
+            print(f"Draft-only sentences in new ({len(extra_new)}): {', '.join(extra_new[:10])}{' ...' if len(extra_new) > 10 else ''}")
+    else:
+        old_only = sorted(old_ids - new_ids)
+        new_only = sorted(new_ids - old_ids)
+        common_draft_ids = sorted(old_ids & new_ids)
+        common_draft_not_in_gold = [sid for sid in common_draft_ids if sid not in gold_ids]
+
+        print(f"Common old/new draft sentences: {len(common_draft_ids)}")
+        print(f"Common draft-only sentences:    {len(common_draft_not_in_gold)}")
+        print(f"Old-only draft sentences:       {len(old_only)}")
+        print(f"New-only draft sentences:       {len(new_only)}")
+        print(f"Compared old/new sentences:     {len(common_ids)}")
+        print()
+        if old_only:
+            print(f"Old-only draft sentences ({len(old_only)}): {', '.join(old_only[:10])}{' ...' if len(old_only) > 10 else ''}")
+        if new_only:
+            print(f"New-only draft sentences ({len(new_only)}): {', '.join(new_only[:10])}{' ...' if len(new_only) > 10 else ''}")
+        if common_draft_not_in_gold:
+            print(
+                f"Compared sentences not in gold ({len(common_draft_not_in_gold)}): "
+                f"{', '.join(common_draft_not_in_gold[:10])}{' ...' if len(common_draft_not_in_gold) > 10 else ''}"
+            )
+
     if sentence_issue_rows:
         print(f"Sentence-level alignment/tokenization issues: {len(sentence_issue_rows)}")
     print()
@@ -552,7 +600,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     print()
 
     if improvement_counter:
-        print("Changed token decisions relative to gold")
+        comparison_basis = "gold" if args.sentence_universe == "gold" else "reference draft"
+        print(f"Changed token decisions relative to {comparison_basis}")
         print("-" * 80)
         for key in sorted(improvement_counter):
             print(f"{key}: {improvement_counter[key]}")
@@ -561,13 +610,20 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     if args.focus_sent_id:
         print("Focused sentence summaries")
         print("-" * 80)
-        focus_ids = [sid for sid in args.focus_sent_id if sid in gold]
+        if args.sentence_universe == "gold":
+            focus_ids = [sid for sid in args.focus_sent_id if sid in gold]
+        else:
+            focus_ids = [sid for sid in args.focus_sent_id if sid in old and sid in new]
         for sid in focus_ids:
-            g = gold.get(sid)
+            if args.sentence_universe == "gold":
+                g = gold.get(sid)
+            else:
+                g = old.get(sid)
             o = old.get(sid)
             n = new.get(sid)
             print(f"{sid}")
-            print(f"  Gold text: {g.text if g else ''}")
+            reference_label = "Gold" if args.sentence_universe == "gold" else "Reference draft"
+            print(f"  {reference_label} text: {g.text if g else ''}")
             if o:
                 print(f"  Old words: {len(o.word_tokens)}  MWT: {mwt_signature(o)}")
             else:
