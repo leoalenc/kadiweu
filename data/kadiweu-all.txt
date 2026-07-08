@@ -1,0 +1,208 @@
+Found 206 matching sentence(s).
+   1  source=ped-gramm  uid=ed98d4d1-638c-4377-8c6d-5511855636d1  text=ajo liwatece ja iwaGadi
+   2  source=ped-gramm  uid=ccb5ea37-b3ba-47a9-8d71-224f599ea7be  text=ajo liwatece etadi weiigi
+   3  source=ped-gramm  uid=49347527-d19d-4689-bff1-ba3e497e7b1f  text=ajo niwatece etadi digoida
+   4  source=ped-gramm  uid=69948fe6-81f6-4faa-a344-8f8c47486943  text=niwatece iwaGadi
+   5  source=ped-gramm  uid=b2e3ea43-0d68-46ee-9f33-938610cc8aec  text=niwatece etadi weiigi
+   6  source=ped-gramm  uid=1b99ecb9-5656-4c38-b60b-fbbe643708fb  text=ajo niwatece ipegitege weiigi
+   7  source=ped-gramm  uid=e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9  text=liGeladi Maria aGipegetege
+   8  source=ped-gramm  uid=79a6cd4e-b585-437a-9084-1fa077dec3b6  text=ica liGeladi ipegetege
+   9  source=ped-gramm  uid=e9d6dfb6-656d-44aa-ba17-86289fd72268  text=liGeladi idei nigotaGa
+  10  source=ped-gramm  uid=2fff1f23-4e6f-401c-8b74-6a17ff6a391a  text=ica liGeladi ipegitegi
+  11  source=ped-gramm  uid=fef391af-9e63-419f-8f81-057459193f49  text=ica Maria looligi alidi
+  12  source=ped-gramm  uid=070d221f-f72d-4055-9c82-ddc383743e6a  text=ica looligi lidi
+  13  source=ped-gramm  uid=68277d1f-c30b-4c4f-ba9e-c2883cc133af  text=ica looligi dapico
+  14  source=ped-gramm  uid=5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5  text=ica looligi ja dapico
+  15  source=ped-gramm  uid=c5bd2cb2-e53b-40e4-9159-6dacde49c1b6  text=ica looligi lideGegi
+  16  source=ped-gramm  uid=19cc39ce-fe03-4551-8097-9d163a38a3c0  text=loigipodi libinienigipi
+  17  source=ped-gramm  uid=12147353-b422-4ad7-9bef-1d20e70e2a74  text=ica loigi ijo niganigi ipegitegi GanigotGa
+  18  source=ped-gramm  uid=582429f2-67d5-4077-b209-6deb7b5df54f  text=ica lideGegi loligi idei liGeladi
+  19  source=ped-gramm  uid=0f478381-6858-463d-94cc-903e9dc879f9  text=ica liwigo libinienigi
+  20  source=ped-gramm  uid=55551636-8ed3-4545-8510-d8dbfd817a1a  text=ica niwigo libinienigi
+  21  source=ped-gramm  uid=5d0b94bf-223d-4f09-8c6f-b951a70d6d0b  text=ica nioladi Ganixoa
+  22  source=ped-gramm  uid=881131dd-3f70-411a-ac7e-85557139d1e3  text=ica nioladi nioxoa libinienigi
+  23  source=ped-gramm  uid=95a7d135-4be0-463d-b443-76cc5828fc89  text=ica nioladi lodawa libinienigi
+  24  source=ped-gramm  uid=2f47b402-9fe7-4714-96e3-c6cbdf405472  text=iGeladi idei naigi anenapioi
+  25  source=ped-gramm  uid=a4d33655-fe74-4df2-8d5e-b3c88fba5fd1  text=iGeladi idei naigi me napioi
+  26  source=ped-gramm  uid=f081c545-c42b-463d-b57f-db87787f20e7  text=João liGeladi ane napioi
+  27  source=ped-gramm  uid=7b810df7-6ed0-4027-b2fe-72c64e9ca1dc  text=iGeladi idei mijo naigi naGajo
+  28  source=ped-gramm  uid=ee1a1190-7803-404c-83f6-49d3ccf63b0d  text=Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi
+  29  source=ped-gramm  uid=4bdb4b8f-0176-4303-8a13-e313fbb6d7ad  text=Eyodi me niganaGacanajo
+  30  source=ped-gramm  uid=7b806584-75e5-4017-b9e2-ba97458903bd  text=Eyodi ane niganaGacanajo
+  31  source=ped-gramm  uid=845b9d1d-ad7c-445a-bfbd-04fd9255ffc2  text=Eyodi daGa niganaGacanajo
+  32  source=ped-gramm  uid=a4ccc755-a644-4b04-ab1b-698e7acea4cc  text=iGeladi idei digoida
+  33  source=ped-gramm  uid=82117289-be52-45d0-886d-a5747eb20ea2  text=iGeladi ipegitaGagi
+  34  source=ped-gramm  uid=50f93fbc-14fa-48e7-b8ba-22f744109348  text=iGeladi ipegitegi liGeladi
+  35  source=ped-gramm  uid=014fefb1-d5e3-48c8-9ac3-9e713a41407f  text=iGeladi ipegitegi naigi ane napioi
+  36  source=ped-gramm  uid=bb8018ba-76b3-43f2-82ea-78b6009c1f90  text=iGeladi ipegitegi naigi me napioi
+  37  source=ped-gramm  uid=1da1bf7a-7975-4baf-821b-9df5c75ac297  text=iGeladi aGipegitegi weiigi
+  38  source=ped-gramm  uid=46bbf9a8-c650-4e4b-a44f-78bfe6c5d979  text=ijo Gatodi etijo ida .
+  39  source=ped-gramm  uid=4ffc2f68-0474-488f-a94e-4065f952482a  text=ijotawece etidi akiidi .
+  40  source=ped-gramm  uid=10e550d6-df13-4527-8aee-aa23e3f2fcdd  text=iGeladi digoida weiigi .
+  41  source=ped-gramm  uid=874c123b-4c43-4001-bfce-8af4af0e5805  text=iGeladi idei weiigi .
+  42  source=ped-gramm  uid=aad13f14-bd9a-462a-9a43-68ba69a81519  text=nigotaGa liGeladi ipegitegi weiigi .
+  43  source=ped-gramm  uid=19401990-aa1d-4cf5-bea1-122254c6b77a  text=lotaGa GanaginaGa libinienaGa .
+  44  source=ped-gramm  uid=6d2a809e-0d32-4254-9489-f9e356e22493  text=nGida niwenigi daGaxa me dakake loojedi .
+  45  source=ped-gramm  uid=c25b098d-6b0a-4416-a31d-6d7219685a63  text=João liGeladi napioi .
+  46  source=ped-gramm  uid=4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5  text=liGeladi João napioi .
+  47  source=ped-gramm  uid=ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec  text=liGeladi ipegitege niweiigi nigotaGa .
+  48  source=ped-gramm  uid=8b1a9983-4dfd-49e8-9285-92c56c84b652  text=liGeladi ipegitegi niweiigi nigotaGa .
+  49  source=ped-gramm  uid=eeb42af3-fe5a-4b7d-97ea-b381ab589860  text=Niwatece iwaGadi codaa adakake loojedi .
+  50  source=ped-gramm  uid=156fa9a4-4323-44f1-9cdc-ef5dc052b428  text=etee minitaGa
+  51  source=ped-gramm  uid=3b45c470-6164-4fcf-a4d5-90be0f27eb1d  text=ee aGidininitibeci
+  52  source=ped-gramm  uid=d543f155-c01f-4b5e-add1-0533b8ac6e15  text=jipacaGataGagitiwaji
+  53  source=ped-gramm  uid=3f077b37-aa95-4012-9efb-a21630cdd6e9  text=aGee eliodi niinikeGegi
+  54  source=ped-gramm  uid=74a76be1-d4b6-42e1-9100-6a436a7fa065  text=akaami oko jipacaGataGagitiwaji
+  55  source=ped-gramm  uid=d3e098e5-4edd-4c24-81cf-78ff4a4d398c  text=niGidowa waca lotiidi dapikoGo
+  56  source=ped-gramm  uid=edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded  text=IiGeladi midi akiidi
+  57  source=ped-gramm  uid=2c0248b3-8f68-46e9-b41c-9f7807572c87  text=etogo aneiwaGadi adakake lojedi .
+  58  source=ped-gramm  uid=73ceda1b-be14-4e75-9b1e-2a490d7df366  text=etogo adakake lojedi
+  59  source=ped-gramm  uid=bf632295-26f8-4ee6-979f-33f090ef0471  text=etogoli dakake lojetedi
+  60  source=ped-gramm  uid=bbd6b80b-3236-4172-8bd5-ba3fb404049e  text=etogoli dakake loojedi
+  61  source=ped-gramm  uid=1ab7fa26-ed92-4d55-98d0-0d76396373f0  text=Etogoli iwaGadi adakake lojetedi
+  62  source=hil-data   uid=fcef38ed-be6b-4f2a-b5cf-fa4db625ecfb  text=Iwaalo libiniena
+  63  source=hil-data   uid=31d3b4c0-4aab-4538-999b-b8ee85c34444  text=Iwaalo ninitibeci
+  64  source=hil-data   uid=39f34955-a828-47d7-808d-b3b3565b42d6  text=LotaGa Ganioxoa libinienaGa
+  65  source=hil-data   uid=d3ae6cfd-bec1-49f3-a0f9-4ca0744e3404  text=LotaGa Gadodawa libinienaGa
+  66  source=hil-data   uid=e349508c-4d86-48b8-9918-057988755e77  text=Etogo aneiwaGadi adakake lojedi
+  67  source=hil-data   uid=1d10c633-e74d-4e27-ac23-6b6b2dde9647  text=Etogo ane iwaGadi adakake loojedi
+  68  source=hil-data   uid=435e4b10-ab78-4ee3-84b0-7773dbe10bf7  text=Gawenigi eliodi me libinienigi
+  69  source=hil-data   uid=cf44903e-0c33-44bc-a146-1fb8a4ccb973  text=NiGijo liwenigi libinienigi
+  70  source=hil-data   uid=0ca977cd-2edf-45d9-b958-068648aebef9  text=NiGida niwenigi eliodi me dakake loojedi
+  71  source=hil-data   uid=559ba85f-edfc-48dc-9bfb-0c3f8e5ad887  text=NaGajo lomigo Pedilo idei madi niwatece
+  72  source=hil-data   uid=92838eda-ef9b-4f05-a5eb-38a4709c0337  text=NaGajo lomigo niganigawanigi madi niwatece
+  73  source=hil-data   uid=3a7e213b-323e-4694-bad9-47091f3533f5  text=Te ee nigotaGa
+  74  source=hil-data   uid=0de3d311-348a-4107-a191-9fc3f960c249  text=niGijoa lionaGa iwaalo idei mijotaGa
+  75  source=hil-data   uid=4e9130da-80fd-4ac2-8665-956c95b299e2  text=dibixodi ideiticoaci maditaGa
+  76  source=hil-data   uid=baccc279-f303-4b4f-a6d7-4404de699f4a  text=Iwaalepodi libinienigipi .
+  77  source=hil-data   uid=af474637-80f3-4001-884c-4d5f452fb573  text=Ninitibeci .
+  78  source=hil-data   uid=8f297896-5ee6-461f-86e3-0d4d4ef5a661  text=ninitibeci naGada
+  79  source=hil-data   uid=4855882d-49f1-4035-bd12-73abf82df995  text=Ninitibeci naGadi .
+  80  source=hil-data   uid=d489d970-e6b1-42e3-add2-2221f2fb1fad  text=naGada iwaGadi
+  81  source=hil-data   uid=23b27bf4-3694-4053-8f74-b3c739fc8ee2  text=naGadi iwaGadi
+  82  source=hil-data   uid=85801af7-8128-4d85-a7bd-a182d5dc58a5  text=NaGana iwaGadi
+  83  source=hil-data   uid=b9d77060-3ac9-4305-ba86-2723cc7cb70a  text=Ada iwaGadi
+  84  source=hil-data   uid=7521cd51-aa9b-4ff6-8d87-a5ce4ca92b6d  text=Ani iwaGadi
+  85  source=hil-data   uid=96687d35-46ae-4338-9398-ff66a3165b61  text=Adi iwaGadi
+  86  source=hil-data   uid=24a9e039-79d0-4026-8824-0d061c2b21ee  text=naGana eliodi meninitibeci
+  87  source=hil-data   uid=fba05264-0e3c-4248-8211-3ac87c64c2e6  text=DapicoGo
+  88  source=hil-data   uid=f9af3f8f-3b06-4756-8676-b5ffb2c24b44  text=DapipocoGo
+  89  source=hil-data   uid=fab37d81-bb9b-4e20-a8f5-3b3969ee86d1  text=libiniena
+  90  source=hil-data   uid=0b9bddcd-f6af-4281-80a9-cac2377d0af1  text=libinienigi
+  91  source=hil-data   uid=38c689d8-332d-4406-b236-de4593e4853a  text=DapicoGo
+  92  source=hil-data   uid=ea70209d-4f3c-4bf9-8d93-2d91fa0f928c  text=DapicoGo
+  93  source=hil-data   uid=4aed8aa8-bd36-4940-8020-8ba12122304e  text=Ninitibigiwaji .
+  94  source=hil-data   uid=3a27c7c6-ecd6-45c0-a71e-b4aa2a242a3d  text=NiGida lodajo lodawa aidei dineigi
+  95  source=hil-data   uid=64f2c803-b436-4202-b4c7-acf5c7205bc3  text=liwigo niganigawanigi libinienigi
+  96  source=hil-data   uid=8bad7bc3-f82f-46c0-9e63-c780104b11e2  text=naGani wetiGa eliodi me iwaGadi
+  97  source=hil-data   uid=768a3635-dcaf-4210-b236-73568abadbdb  text=NaGani wetiGa iwaGadi
+  98  source=hil-data   uid=e5f90fbc-14e8-4c6f-9e07-61fbf67d042f  text=NiGinoa wetiadi iwaGadi
+  99  source=hil-data   uid=f4b854f9-c3c6-4e88-8a9b-ca73fcba8d46  text=NaGani wetiGa iwaGadi
+ 100  source=hil-data   uid=38f73c1c-ddfb-4153-9310-d24214cd68e7  text=NaGani wetiGa ane iwaGadi eniteloco iGonagi
+ 101  source=hil-data   uid=e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4  text=NaGani wetiGa ane iwaGadi iGonagi
+ 102  source=hil-data   uid=8dda04f0-f7e8-46d6-b41d-b65dd214f01b  text=NiGidoa waca lotiidi dapicoGo
+ 103  source=hil-data   uid=79cb0e55-9c06-4cb1-91b3-2b5233e1678f  text=nigidiwa okokodi ligetedi midi niwigo libinienaGa
+ 104  source=hil-data   uid=a74fea0a-dd87-4c4d-8670-9db66f5b5b16  text=nigidiwa okokodi ligetedi liwigo libinienaGa
+ 105  source=hil-data   uid=83fdcd4c-338f-4a9f-8545-da8539e67e9d  text=NiGidiwa noGojedi lixagotaGaGa adakake loojedi
+ 106  source=hil-data   uid=07bfcd00-7901-474d-bfb8-bf470266aafa  text=Ee ite ee ina
+ 107  source=hil-data   uid=42671da9-e433-4319-86a0-2a2cb8777a40  text=Ite ee madataGa
+ 108  source=hil-data   uid=e58e38a7-f117-48f1-8a17-9d896867fe60  text=Ite ee midataGa
+ 109  source=hil-data   uid=4242d34b-9096-45a2-a666-502a2cb9ca49  text=Ee aidinitibeci .
+ 110  source=hil-data   uid=1e9df213-90da-4674-8889-4ac858df72fe  text=Ee ageliodi me idinitibeci
+ 111  source=hil-data   uid=c4302bef-3de9-4f3c-b762-f6b77183f263  text=Ee ajipegitege
+ 112  source=hil-data   uid=5bc48b27-0755-475f-813e-7a259f3c3c9e  text=Ee ajipegitege
+ 113  source=hil-data   uid=1e1fafc0-29c6-41d4-a0d2-4c825d9af376  text=ee idiwaGadi
+ 114  source=hil-data   uid=71aff593-7b38-4c17-9563-4503985dbd03  text=jipegitege
+ 115  source=hil-data   uid=f4f18c18-728c-4d6b-b7dd-2df62c4a829a  text=jipegitege
+ 116  source=hil-data   uid=90ca38d8-e063-4c98-af51-4b9022ade506  text=aGeliodi me idinitibeci .
+ 117  source=hil-data   uid=82bfae64-45e7-403f-bcd0-190e00f4520f  text=jipecaGataGagi .
+ 118  source=hil-data   uid=341bf09a-2ef8-455a-8b6b-88373c617dae  text=oko aidejonaGa midi Godoigi
+ 119  source=hil-data   uid=9a136412-a636-4e5e-aa54-ac684ae7bed3  text=jipecaGataGagitiwaji .
+ 120  source=hil-data   uid=dff00f05-7be1-4d62-b3ed-b8a8870851e9  text=aidejonaGa midi Godoigi
+ 121  source=hil-data   uid=3ab5703a-eb5c-48d2-b75b-992da5e60dd6  text=niGijo nelokodi Maria idei midi akiidi
+ 122  source=hil-data   uid=f0c7c722-031a-4c6e-ad7e-739402475c99  text=NiGijo bijo dapicoGo
+ 123  source=hil-data   uid=d5dcd2bf-a3d0-4074-a241-f706b153134f  text=Nagada libiwe niale ixagodi
+ 124  source=hil-data   uid=c3225d86-7037-4f8c-9981-8e92b6a081d6  text=nigidiwa bijotedi dapicoGo
+ 125  source=hil-data   uid=d0cb9423-93bb-4b45-a02a-fee23a6dd8bb  text=Nigijoa lianaGa Maria libinienigipi
+ 126  source=hil-data   uid=13f012b0-ef62-4477-b4bd-00e000484874  text=NiGidi lionaGa iwaalo etidi meetaGa
+ 127  source=hil-data   uid=55fe3cf7-0293-48e6-aa78-44822f50347e  text=liGeladi ipegitege nakidi nigotaGa
+ 128  source=hil-data   uid=c0441856-b259-4d76-a88e-33a7e211b208  text=liGeladi ipegitege nakidi nigotaGa
+ 129  source=hil-data   uid=9527d53d-7184-4b08-8bb2-51b7fff1429d  text=nigotaGa liGeladi ipegitege akiidi
+ 130  source=hil-data   uid=9669b093-f0a2-4187-9063-cec9ba4c0196  text=Nigaanigawaanigi etini liwatece Pedilo
+ 131  source=hil-data   uid=529c167b-b3a7-40cc-af76-c7522719c6d4  text=NiGijo nigaanigawaanigi etini liwatece ideloGole
+ 132  source=van-data   uid=a7e338a1-5403-40d4-b169-c840cf193aae  text=iGeladi digoida weiigi
+ 133  source=van-data   uid=d07f0db7-963e-47ab-ab3f-36614732bacd  text=iGeladi idei weiigi
+ 134  source=van-data   uid=f50b632e-fc1a-4ec0-b8b3-610dab7be736  text=iGeladi ideaGi weiigi
+ 135  source=van-data   uid=d26cfc71-a117-4817-9f35-4a7d23fd1f88  text=iwaalo ja libiniena
+ 136  source=van-data   uid=e3b84bb7-7e6e-474c-9ad6-c6a47b409a5a  text=iwaalo ja ninitibeke
+ 137  source=van-data   uid=3e518fdb-d852-41e5-87a4-f8778597c2a1  text=lotaGa GanaaginaGa libinienaGa
+ 138  source=van-data   uid=ee540050-e6fa-424e-9252-fd0b9312769d  text=lotaGa Gadodawa libinienaGa
+ 139  source=van-data   uid=947061b4-7b73-4612-8aa8-0af0e04cbc85  text=niwatece iwaGadi noxilece lojetedi
+ 140  source=van-data   uid=2c026af9-b8a1-4389-b658-00113b070dee  text=niwatece liwaGatena lodejedi etidi weiigi
+ 141  source=van-data   uid=0c38eab8-c6b0-4f02-bf05-27ea6285fe70  text=Gawenigi eliodi me libinienigi
+ 142  source=van-data   uid=a85fda39-1575-4120-9432-8fb534ebdbd2  text=niGida liwenigi libinienigi
+ 143  source=van-data   uid=a1e15803-1e5e-481f-8137-a84beac6cbcc  text=niGida niwenigi daGaxa me dakake loojedi
+ 144  source=van-data   uid=e9806e26-701d-4f5f-9ca9-63216cccf3d0  text=naGajo lomiigo Pedro idei niwatece
+ 145  source=van-data   uid=2386b5b5-57d0-4a1f-86c2-73f67561744c  text=naGajo lomiigo nigaanigawaanigi manitaGa niwatece
+ 146  source=van-data   uid=4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7  text=Ijo nigaanigawaanigi idei madi lomiigo niwatece
+ 147  source=van-data   uid=235440ba-548e-4df6-8d9e-214cc8714f8f  text=niGijo nigaanigawaanigi manitaGa lomigo niwatece
+ 148  source=van-data   uid=86f5c128-e931-4443-90cc-2359748ed69f  text=Eyo nigotaGa
+ 149  source=van-data   uid=d021bede-064b-4fd5-bb33-6c7cd4279c1b  text=Eyo manitaGa nigotaGa
+ 150  source=van-data   uid=e5c65dad-8b04-46da-b965-4921887cbca4  text=niGijoa lionigipi iwaalo idei minitaGa
+ 151  source=van-data   uid=8c5dd09c-d010-4c48-9601-9d3b14c61119  text=dibixodi idei manitaGa
+ 152  source=van-data   uid=9b107abc-b49f-4ce2-9c43-30c7e5b5f8b2  text=iwalepodi ja libinienigipi
+ 153  source=van-data   uid=0d6cdbcf-9d99-4eff-8615-149ec22fec5f  text=ajo ninitibeci
+ 154  source=van-data   uid=05676093-36c9-4e30-959a-e850447f32a5  text=ajo iwaGadi
+ 155  source=van-data   uid=661c62a7-3c8c-4609-b989-017deaae82c6  text=ajo daGaxa ninitibeci
+ 156  source=van-data   uid=abe20c80-8394-478c-92eb-feef1512e5ed  text=ajo eliodi linikeGegi
+ 157  source=van-data   uid=0575dd46-865a-4ba4-bd49-ed6db054eeb4  text=ajo lapicaGa
+ 158  source=van-data   uid=3aba0004-0ce2-4392-a334-ef814428ec0d  text=ijo libinienigi
+ 159  source=van-data   uid=d369088d-7d87-44b9-a956-2d5bd5f955e1  text=ijo lapicaGigi
+ 160  source=van-data   uid=a0ab1cad-f01e-49bb-8f31-5edf4fa4c102  text=niGijo ninitibigiwaji
+ 161  source=van-data   uid=0c7e64fb-f070-4faa-a12a-c110cdf4bf16  text=nGijo lodajo ajo lodowa aGica digoida liGeladi
+ 162  source=van-data   uid=5d76c7ee-51ce-47b0-a85d-ddc7f7d33f5f  text=ica liwigo niganigawanigi libinienigi
+ 163  source=van-data   uid=46190f73-f21e-4073-b09c-8b2d17c6668e  text=naGani wetiGa liwaGatena
+ 164  source=van-data   uid=a0bb1280-1040-4dff-9311-a1a31049b6f8  text=naGani wetiGa iwaGadi
+ 165  source=van-data   uid=e1acd124-849e-40dc-bbb0-a8b6ed281592  text=niGidiwa wetiadi iwaGadi
+ 166  source=van-data   uid=675ef4d4-ebe8-4601-bf42-908deb0df82b  text=ani wetiGa eliodi me iwaGadi
+ 167  source=van-data   uid=42b65fc9-cec4-40a9-8aec-cdeec3731df8  text=ani wetiGa iwaGadi
+ 168  source=van-data   uid=ba34b659-bcb8-4aa2-b9f4-b969ba786b12  text=ani wetiGa me iwaGadi eniteloco iGonagi
+ 169  source=van-data   uid=61da4017-2140-4577-82e4-d5108efae675  text=ani wetiGa ane iwaGadi eniteloco iGonagi
+ 170  source=van-data   uid=6459c008-b2ad-4517-8227-b525616b720d  text=idiwa wetiadi iwaGadi
+ 171  source=van-data   uid=b4e1df8d-6590-4ce9-9f72-c0b054398c89  text=niGidowa waca lotiidi dapicoGo
+ 172  source=van-data   uid=278e4c5c-aaab-4ca3-8f5e-277610fb80c2  text=idowa waca lotiidi dapicoGo
+ 173  source=van-data   uid=44646324-eb90-42f0-b944-21f0452109e2  text=ijowa nigetedi liwigo libinienaGa
+ 174  source=van-data   uid=a2910ce3-a0d2-4eac-bcc3-2da15db88b90  text=ijo niwigo libinienigi ijowa nigetedi
+ 175  source=van-data   uid=075356e6-f89c-4d83-b001-435d13b319dc  text=ijowa nigetedi niwigo libinienigipi
+ 176  source=van-data   uid=5739aca1-95fc-4584-9550-d7bd73c3c361  text=okokodi ligetedi midi niwigo libinienaGa .
+ 177  source=van-data   uid=83a62eb4-5a9e-43b0-b6b4-bded8dbd8ffe  text=liwigo okokodi ligetedi libinienigi .
+ 178  source=van-data   uid=fad6e8d3-1e9f-451c-aaa7-fd28aecfd967  text=idiwa noGojedi lixagotaGaGa adakake loojedi
+ 179  source=van-data   uid=e189be3e-9290-4d1c-b343-74d3858ce7cd  text=etee ina
+ 180  source=van-data   uid=889846ee-66df-4c8f-88d1-e89d3619eb1e  text=eteyo ina
+ 181  source=van-data   uid=e7f4ab65-14d7-44f5-a197-c99c4ab173cd  text=etee manitaGa
+ 182  source=van-data   uid=7aa17dd7-2c26-4df9-8f90-65d8d58e2c59  text=etee minitaGa
+ 183  source=van-data   uid=c3c548d7-b154-437e-9baf-541a1bbbab6e  text=ee aGica inikeGegi
+ 184  source=van-data   uid=c4d99cf1-e781-4efb-83ff-4a0ab873b7ec  text=ee aGidininitibeci
+ 185  source=van-data   uid=969ba2f3-88dc-417e-ad3f-16ce88b4c762  text=aGee eliodi niinikeGegi
+ 186  source=van-data   uid=39925f76-d73f-423f-95cd-f88bd78f2a6e  text=ee eliodi me aGidininitibeci
+ 187  source=van-data   uid=d3095a7e-477d-405e-9ea2-85bfdacad7d3  text=aGica daGa jipegitege
+ 188  source=van-data   uid=813f2ad7-42fb-4fbd-84b4-1957c68aa4f9  text=aGica daGa jipegitegi
+ 189  source=van-data   uid=b3c03f67-7664-43b7-9de8-b5243321eeb7  text=ee idiwaaGadi
+ 190  source=van-data   uid=6852927c-53de-411d-9ed9-e0f9d78309cd  text=ee jigipegitege
+ 191  source=van-data   uid=2b6a6bee-392e-49f9-97a9-0afbb0af2eff  text=ee jigipegitegi
+ 192  source=van-data   uid=42df6a83-6ae1-49b2-bd99-fbed7e2a083b  text=aGeewi mica iniKGigi
+ 193  source=van-data   uid=27d94732-46ea-4286-a1d4-b2861806a579  text=aGeyo mica inikGigi
+ 194  source=van-data   uid=651a68ed-90a0-45b7-9eb5-411bc2c189c7  text=JipecaGataGagi
+ 195  source=van-data   uid=d3952c8a-1ac1-4255-be0b-63978fdf368b  text=aGidedonaGa midi Godoigi
+ 196  source=van-data   uid=e9b78452-925e-458b-848a-d52ab76f6840  text=jipacaGataGagitiwaji
+ 197  source=van-data   uid=fbae0277-3aad-4812-9229-94179b5a97a0  text=aGide jonaGa midi Godoigi
+ 198  source=van-data   uid=6599689a-3fbe-4598-8827-78aceeff3931  text=ijo lemé Maria ipegitegi weiigi
+ 199  source=van-data   uid=b8878027-73d2-4b11-bc18-cbdcf5637e55  text=biju dapico
+ 200  source=van-data   uid=30ef1810-38e0-4cef-8db3-4dda590faa09  text=libiwe niale ixagodi
+ 201  source=van-data   uid=444f95ae-8ed7-422e-84f1-aae6d4af2b6d  text=idiwa bejoli dapico
+ 202  source=van-data   uid=f240dcfe-ca05-42aa-8644-07b9e3464e1a  text=idiwa leonigipi Maria libinienigipi
+ 203  source=van-data   uid=b97e5b2f-d0da-4238-8ee6-2c64ded91f76  text=ijowa leonigipi iwaalo idi metaGa
+ 204  source=van-data   uid=c1b350df-ed1a-4e3b-89a8-a6fa9ca8382e  text=ligeladi ipegitege niweiigi nigotaGa
+ 205  source=van-data   uid=ebff5ffa-8a9d-4f8b-9960-38f70b344c19  text=ligeladi ipegitegi niweiigi nigotaGa
+ 206  source=van-data   uid=81048a6f-e084-4b0a-965a-f41fb5c53ff7  text=nigotaGa liGeladi ipegitegi weiigi
+Wrote JSONL to: /home/leonel/kadiweu/data/kadiweu-all.jsonl
