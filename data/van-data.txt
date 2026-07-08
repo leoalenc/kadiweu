@@ -2008,11 +2008,12 @@ proto-conllu:
   <none>
 
 chunks:
-  span=1-2 type=IP-MAT level=None
+  span=1-2 type=IP-MAT level=0
+  span=2-2 type=NP level=1
 
 tokens:
-  p=1   v='eteyo'            t=None         l=None gloss-br=None
-  p=2   v='ina'              t='D'          l=None gloss-br='ele'
+  p=1   v='eteyo'            t='VB'         l=0   gloss-br=None
+  p=2   v='ina'              t='D'          l=1   gloss-br='ele'
       splits:
         [1] v='i'          t='Gnr'      gloss-br='masc' fn=None idx=None
         [2] v='na'         t='Ncl'      gloss-br='vindo' fn=None idx=None
