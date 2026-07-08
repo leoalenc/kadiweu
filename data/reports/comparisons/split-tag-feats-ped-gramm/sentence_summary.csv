@@ -1,0 +1,51 @@
+sent_id,text,gold_word_count,old_word_count,new_word_count,old_tokenization_exact,new_tokenization_exact,old_mwt_exact,new_mwt_exact,old_text,new_text
+ped-gramm-1,ajo liwatece ja iwaGadi.,5,5,5,True,True,True,True,ajo liwatece ja iwaGadi.,ajo liwatece ja iwaGadi.
+ped-gramm-2,ajo liwatece etadi weiigi.,5,5,5,True,True,True,True,ajo liwatece etadi weiigi.,ajo liwatece etadi weiigi.
+ped-gramm-3,ajo niwatece etadi digoida.,5,5,5,True,True,True,True,ajo niwatece etadi digoida.,ajo niwatece etadi digoida.
+ped-gramm-4,niwatece iwaGadi.,3,3,3,True,True,True,True,niwatece iwaGadi.,niwatece iwaGadi.
+ped-gramm-5,niwatece etadi weiigi.,4,4,4,True,True,True,True,niwatece etadi weiigi.,niwatece etadi weiigi.
+ped-gramm-6,ajo niwatece ipegitege weiigi.,5,5,5,True,True,True,True,ajo niwatece ipegitege weiigi.,ajo niwatece ipegitege weiigi.
+ped-gramm-7,liGeladi Maria aGipegetege.,5,5,5,True,True,True,True,liGeladi Maria aGipegetege.,liGeladi Maria aGipegetege.
+ped-gramm-8,ica liGeladi ipegetege.,4,4,4,True,True,True,True,ica liGeladi ipegetege.,ica liGeladi ipegetege.
+ped-gramm-9,liGeladi idei nigotaGa.,4,4,4,True,True,True,True,liGeladi idei nigotaGa.,liGeladi idei nigotaGa.
+ped-gramm-10,ica liGeladi ipegitegi.,4,4,4,True,True,True,True,ica liGeladi ipegitegi.,ica liGeladi ipegitegi.
+ped-gramm-11,ica Maria looligi alidi.,6,6,6,True,True,True,True,ica Maria looligi alidi.,ica Maria looligi alidi.
+ped-gramm-12,ica looligi lidi.,4,4,4,True,True,True,True,ica looligi lidi.,ica looligi lidi.
+ped-gramm-13,ica looligi dapico.,4,4,4,True,True,True,True,ica looligi dapico.,ica looligi dapico.
+ped-gramm-14,ica looligi ja dapico.,5,5,5,True,True,True,True,ica looligi ja dapico.,ica looligi ja dapico.
+ped-gramm-15,ica looligi lideGegi.,4,4,4,True,True,True,True,ica looligi lideGegi.,ica looligi lideGegi.
+ped-gramm-16,loigipodi libinienigipi.,3,3,3,True,True,True,True,loigipodi libinienigipi.,loigipodi libinienigipi.
+ped-gramm-17,ica loigi ijo niganigi ipegitegi GanigotGa.,7,7,7,True,True,True,True,ica loigi ijo niganigi ipegitegi GanigotGa.,ica loigi ijo niganigi ipegitegi GanigotGa.
+ped-gramm-18,ica lideGegi loligi idei liGeladi.,6,6,6,True,True,True,True,ica lideGegi loligi idei liGeladi.,ica lideGegi loligi idei liGeladi.
+ped-gramm-19,ica liwigo libinienigi.,4,4,4,True,True,True,True,ica liwigo libinienigi.,ica liwigo libinienigi.
+ped-gramm-20,ica niwigo libinienigi.,4,4,4,True,True,True,True,ica niwigo libinienigi.,ica niwigo libinienigi.
+ped-gramm-21,ica nioladi Ganixoa.,4,4,4,True,True,True,True,ica nioladi Ganixoa.,ica nioladi Ganixoa.
+ped-gramm-22,ica nioladi nioxoa libinienigi.,5,5,5,True,True,True,True,ica nioladi nioxoa libinienigi.,ica nioladi nioxoa libinienigi.
+ped-gramm-23,ica nioladi lodawa libinienigi.,5,5,5,True,True,True,True,ica nioladi lodawa libinienigi.,ica nioladi lodawa libinienigi.
+ped-gramm-24,iGeladi idei naigi anenapioi.,6,6,6,True,True,True,True,iGeladi idei naigi anenapioi.,iGeladi idei naigi anenapioi.
+ped-gramm-25,iGeladi idei naigi me napioi.,6,6,6,True,True,True,True,iGeladi idei naigi me napioi.,iGeladi idei naigi me napioi.
+ped-gramm-26,João liGeladi ane napioi.,5,5,5,True,True,True,True,João liGeladi ane napioi.,João liGeladi ane napioi.
+ped-gramm-27,iGeladi idei mijo naigi naGajo.,7,7,7,True,True,True,True,iGeladi idei mijo naigi naGajo.,iGeladi idei mijo naigi naGajo.
+ped-gramm-28,eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi.,8,9,9,False,False,False,False,Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi.,Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi.
+ped-gramm-29,eyodi me niganaGacanajo.,4,4,4,False,False,True,True,Eyodi me niganaGacanajo.,Eyodi me niganaGacanajo.
+ped-gramm-30,eyodi ane niganaGacanajo.,4,4,4,False,False,True,True,Eyodi ane niganaGacanajo.,Eyodi ane niganaGacanajo.
+ped-gramm-31,Eyodi daGa niganaGacanajo.,4,4,4,True,True,True,True,Eyodi daGa niganaGacanajo.,Eyodi daGa niganaGacanajo.
+ped-gramm-32,iGeladi idei digoida.,4,4,4,True,True,True,True,iGeladi idei digoida.,iGeladi idei digoida.
+ped-gramm-33,iGeladi ipegitaGagi.,3,3,3,True,True,True,True,iGeladi ipegitaGagi.,iGeladi ipegitaGagi.
+ped-gramm-34,iGeladi ipegitegi liGeladi.,4,4,4,True,True,True,True,iGeladi ipegitegi liGeladi.,iGeladi ipegitegi liGeladi.
+ped-gramm-35,iGeladi ipegitegi naigi ane napioi.,6,6,6,True,True,True,True,iGeladi ipegitegi naigi ane napioi.,iGeladi ipegitegi naigi ane napioi.
+ped-gramm-36,iGeladi ipegitegi naigi me napioi.,6,6,6,True,True,True,True,iGeladi ipegitegi naigi me napioi.,iGeladi ipegitegi naigi me napioi.
+ped-gramm-37,iGeladi aGipegitegi weiigi.,5,5,5,True,True,True,True,iGeladi aGipegitegi weiigi.,iGeladi aGipegitegi weiigi.
+ped-gramm-38,ijo Gatodi etijo ida.,5,5,5,True,True,True,True,ijo Gatodi etijo ida.,ijo Gatodi etijo ida.
+ped-gramm-39,ijotawece etidi akiidi.,4,4,4,True,True,True,True,ijotawece etidi akiidi.,ijotawece etidi akiidi.
+ped-gramm-40,iGeladi digoida weiigi.,4,4,4,True,True,True,True,iGeladi digoida weiigi.,iGeladi digoida weiigi.
+ped-gramm-41,iGeladi idei weiigi.,4,4,4,True,True,True,True,iGeladi idei weiigi.,iGeladi idei weiigi.
+ped-gramm-42,nigotaGa liGeladi ipegitegi weiigi.,5,5,5,True,True,True,True,nigotaGa liGeladi ipegitegi weiigi.,nigotaGa liGeladi ipegitegi weiigi.
+ped-gramm-43,lotaGa GanaginaGa libinienaGa.,4,4,4,True,True,True,True,lotaGa GanaginaGa libinienaGa.,lotaGa GanaginaGa libinienaGa.
+ped-gramm-44,nGida niwenigi daGaxa me dakake loojedi.,7,7,7,True,True,True,True,nGida niwenigi daGaxa me dakake loojedi.,nGida niwenigi daGaxa me dakake loojedi.
+ped-gramm-45,João liGeladi napioi.,4,4,4,True,True,True,True,João liGeladi napioi.,João liGeladi napioi.
+ped-gramm-46,liGeladi João napioi.,4,4,4,True,True,True,True,liGeladi João napioi.,liGeladi João napioi.
+ped-gramm-47,liGeladi ipegitege niweiigi nigotaGa.,5,5,5,True,True,True,True,liGeladi ipegitege niweiigi nigotaGa.,liGeladi ipegitege niweiigi nigotaGa.
+ped-gramm-48,liGeladi ipegitegi niweiigi nigotaGa.,5,5,5,True,True,True,True,liGeladi ipegitegi niweiigi nigotaGa.,liGeladi ipegitegi niweiigi nigotaGa.
+ped-gramm-49,Niwatece iwaGadi codaa adakake loojedi.,7,7,7,True,True,True,True,Niwatece iwaGadi codaa adakake loojedi.,Niwatece iwaGadi codaa adakake loojedi.
+ped-gramm-51,ee aGidininitibeci.,4,4,4,True,True,True,True,ee aGidininitibeci.,ee aGidininitibeci.

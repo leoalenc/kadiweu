@@ -1,0 +1,5 @@
+sent_id,issue,gold_word_count,old_word_count,new_word_count,gold_mwt,old_mwt,new_mwt,text,old_text,new_text
+ped-gramm-28,text-mismatch,8,9,9,[],"[[""4-5"", ""micoataGa""]]","[[""4-5"", ""micoataGa""]]",eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi.,Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi.,Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi.
+ped-gramm-28,token-count-mismatch,8,9,9,[],"[[""4-5"", ""micoataGa""]]","[[""4-5"", ""micoataGa""]]",eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi.,,
+ped-gramm-29,text-mismatch,4,4,4,[],[],[],eyodi me niganaGacanajo.,Eyodi me niganaGacanajo.,Eyodi me niganaGacanajo.
+ped-gramm-30,text-mismatch,4,4,4,[],[],[],eyodi ane niganaGacanajo.,Eyodi ane niganaGacanajo.,Eyodi ane niganaGacanajo.

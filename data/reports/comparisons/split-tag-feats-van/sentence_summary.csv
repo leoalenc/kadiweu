@@ -1,0 +1,34 @@
+sent_id,text,gold_word_count,old_word_count,new_word_count,old_tokenization_exact,new_tokenization_exact,old_mwt_exact,new_mwt_exact,old_text,new_text
+van-data-1,iGeladi digoida weiigi.,4,4,4,True,True,True,True,iGeladi digoida weiigi.,iGeladi digoida weiigi.
+van-data-2,iGeladi idei weiigi.,4,4,4,True,True,True,True,iGeladi idei weiigi.,iGeladi idei weiigi.
+van-data-3,iGeladi ideaGi weiigi.,4,4,4,True,True,True,True,iGeladi ideaGi weiigi.,iGeladi ideaGi weiigi.
+van-data-4,iwaalo ja libiniena.,4,4,4,True,True,True,True,iwaalo ja libiniena.,iwaalo ja libiniena.
+van-data-5,iwaalo ja ninitibeke.,4,4,4,True,True,True,True,iwaalo ja ninitibeke.,iwaalo ja ninitibeke.
+van-data-6,lotaGa GanaaginaGa libinienaGa.,4,4,4,True,True,True,True,lotaGa GanaaginaGa libinienaGa.,lotaGa GanaaginaGa libinienaGa.
+van-data-7,lotaGa Gadodawa libinienaGa.,4,4,4,True,True,True,True,lotaGa Gadodawa libinienaGa.,lotaGa Gadodawa libinienaGa.
+van-data-8,niwatece iwaGadi noxilece lojetedi.,5,5,5,True,True,True,True,niwatece iwaGadi noxilece lojetedi.,niwatece iwaGadi noxilece lojetedi.
+van-data-10,Gawenigi eliodi me libinienigi.,5,5,5,True,True,True,True,Gawenigi eliodi me libinienigi.,Gawenigi eliodi me libinienigi.
+van-data-11,niGida liwenigi libinienigi.,4,4,4,True,True,True,True,niGida liwenigi libinienigi.,niGida liwenigi libinienigi.
+van-data-12,niGida niwenigi daGaxa me dakake loojedi.,7,7,7,True,True,True,True,niGida niwenigi daGaxa me dakake loojedi.,niGida niwenigi daGaxa me dakake loojedi.
+van-data-13,naGajo lomigo Pedro idei noatece.,6,6,6,False,False,True,True,naGajo lomiigo Pedro idei niwatece.,naGajo lomiigo Pedro idei niwatece.
+van-data-14,naGajo lomiigo nigaanigawaanigi manitaGa niwatece.,7,7,7,True,True,True,True,naGajo lomiigo nigaanigawaanigi manitaGa niwatece.,naGajo lomiigo nigaanigawaanigi manitaGa niwatece.
+van-data-15,niGijo niganigawaanigi lomigo niwatece.,5,8,8,False,False,False,False,Ijo nigaanigawaanigi idei madi lomiigo niwatece.,Ijo nigaanigawaanigi idei madi lomiigo niwatece.
+van-data-16,niGijo nigaanigawaanigi manitaGa lomigo niwatece.,7,7,7,True,True,True,True,niGijo nigaanigawaanigi manitaGa lomigo niwatece.,niGijo nigaanigawaanigi manitaGa lomigo niwatece.
+van-data-17,Eyo nigotaGa.,3,3,3,True,True,True,True,Eyo nigotaGa.,Eyo nigotaGa.
+van-data-18,Eyo manitaGa nigotaGa.,5,5,5,True,True,True,True,Eyo manitaGa nigotaGa.,Eyo manitaGa nigotaGa.
+van-data-19,niGijoa lionigipi iwaalo idei minitaGa.,7,7,7,True,True,True,True,niGijoa lionigipi iwaalo idei minitaGa.,niGijoa lionigipi iwaalo idei minitaGa.
+van-data-20,dibixodi idei manitaGa.,5,5,5,True,True,True,True,dibixodi idei manitaGa.,dibixodi idei manitaGa.
+van-data-21,iwalepodi ja libinienigipi.,4,4,4,True,True,True,True,iwalepodi ja libinienigipi.,iwalepodi ja libinienigipi.
+van-data-22,ajo ninitibeci.,3,3,3,True,True,True,True,ajo ninitibeci.,ajo ninitibeci.
+van-data-23,ajo iwaGadi.,3,3,3,True,True,True,True,ajo iwaGadi.,ajo iwaGadi.
+van-data-24,ajo daGaxa ninitibeci.,4,4,4,True,True,True,True,ajo daGaxa ninitibeci.,ajo daGaxa ninitibeci.
+van-data-30,niGijo lodajo ajo lodowa aGica digoida liGeladi.,9,9,9,False,False,True,True,nGijo lodajo ajo lodowa aGica digoida liGeladi.,nGijo lodajo ajo lodowa aGica digoida liGeladi.
+van-data-34,niGidiwa wetiadi iwaGadi.,4,4,4,True,True,True,True,niGidiwa wetiadi iwaGadi.,niGidiwa wetiadi iwaGadi.
+van-data-39,idiwa wetiadi iwaGadi.,4,4,4,True,True,True,True,idiwa wetiadi iwaGadi.,idiwa wetiadi iwaGadi.
+van-data-40,niGidowa waca lotiidi dapicoGo.,5,5,5,True,True,True,True,niGidowa waca lotiidi dapicoGo.,niGidowa waca lotiidi dapicoGo.
+van-data-41,idowa waca lotiidi dapicoGo.,5,5,5,True,True,True,True,idowa waca lotiidi dapicoGo.,idowa waca lotiidi dapicoGo.
+van-data-42,ijowa nigetedi liwigo libinienaGa.,5,5,5,True,True,True,True,ijowa nigetedi liwigo libinienaGa.,ijowa nigetedi liwigo libinienaGa.
+van-data-47,idiwa noGojedi lixagotaGaGa adakake loojedi.,7,7,7,True,True,True,True,idiwa noGojedi lixagotaGaGa adakake loojedi.,idiwa noGojedi lixagotaGaGa adakake loojedi.
+van-data-49,eteyo ina.,3,3,3,True,True,True,True,eteyo ina.,eteyo ina.
+van-data-50,etee manitaGa.,4,4,4,True,True,True,True,etee manitaGa.,etee manitaGa.
+van-data-51,etee minitaGa.,4,4,4,True,True,True,True,etee minitaGa.,etee minitaGa.

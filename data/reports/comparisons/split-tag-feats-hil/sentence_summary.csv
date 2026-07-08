@@ -1,0 +1,35 @@
+sent_id,text,gold_word_count,old_word_count,new_word_count,old_tokenization_exact,new_tokenization_exact,old_mwt_exact,new_mwt_exact,old_text,new_text
+hil-data-1,Iwaalo libiniena.,3,3,3,True,True,True,True,Iwaalo libiniena.,Iwaalo libiniena.
+hil-data-2,Iwaalo ninitibeci.,3,3,3,True,True,True,True,Iwaalo ninitibeci.,Iwaalo ninitibeci.
+hil-data-3,LotaGa Ganioxoa libinienaGa.,4,4,4,True,True,True,True,LotaGa Ganioxoa libinienaGa.,LotaGa Ganioxoa libinienaGa.
+hil-data-4,LotaGa Gadodawa libinienaGa.,4,4,4,True,True,True,True,LotaGa Gadodawa libinienaGa.,LotaGa Gadodawa libinienaGa.
+hil-data-5,Etogo aneiwaGadi adakake lojedi.,7,6,6,False,False,False,False,Etogo aneiwaGadi adakake lojedi.,Etogo aneiwaGadi adakake lojedi.
+hil-data-6,Etogo ane iwaGadi adakake loojedi.,7,6,6,False,False,False,False,Etogo ane iwaGadi adakake loojedi.,Etogo ane iwaGadi adakake loojedi.
+hil-data-7,Gawenigi eliodi me libinienigi.,5,5,5,True,True,True,True,Gawenigi eliodi me libinienigi.,Gawenigi eliodi me libinienigi.
+hil-data-8,NiGijo liwenigi libinienigi.,4,4,4,True,True,True,True,NiGijo liwenigi libinienigi.,NiGijo liwenigi libinienigi.
+hil-data-9,NiGida niwenigi eliodi me dakake loojedi.,7,7,7,True,True,True,True,NiGida niwenigi eliodi me dakake loojedi.,NiGida niwenigi eliodi me dakake loojedi.
+hil-data-10,NaGajo lomigo Pedilo idei madi niwatece.,8,8,8,True,True,True,True,NaGajo lomigo Pedilo idei madi niwatece.,NaGajo lomigo Pedilo idei madi niwatece.
+hil-data-11,NaGajo lomigo niganigawanigi madi niwatece.,7,7,7,True,True,True,True,NaGajo lomigo niganigawanigi madi niwatece.,NaGajo lomigo niganigawanigi madi niwatece.
+hil-data-12,Te ee nigotaGa.,4,4,4,True,True,True,True,Te ee nigotaGa.,Te ee nigotaGa.
+hil-data-15,Iwaalepodi libinienigipi.,3,3,3,True,True,True,True,Iwaalepodi libinienigipi.,Iwaalepodi libinienigipi.
+hil-data-16,Ninitibeci.,2,2,2,True,True,True,True,Ninitibeci.,Ninitibeci.
+hil-data-17,Ninitibeci naGada.,3,3,3,False,False,True,True,ninitibeci naGada.,ninitibeci naGada.
+hil-data-18,Ninitibeci naGadi.,3,3,3,True,True,True,True,Ninitibeci naGadi.,Ninitibeci naGadi.
+hil-data-19,naGada iwaGadi.,3,3,3,True,True,True,True,naGada iwaGadi.,naGada iwaGadi.
+hil-data-20,naGadi iwaGadi.,3,3,3,True,True,True,True,naGadi iwaGadi.,naGadi iwaGadi.
+hil-data-21,NaGana iwaGadi.,3,3,3,True,True,True,True,NaGana iwaGadi.,NaGana iwaGadi.
+hil-data-22,Ada iwaGadi.,3,3,3,True,True,True,True,Ada iwaGadi.,Ada iwaGadi.
+hil-data-23,Ani iwaGadi.,3,3,3,True,True,True,True,Ani iwaGadi.,Ani iwaGadi.
+hil-data-24,Adi iwaGadi.,3,3,3,True,True,True,True,Adi iwaGadi.,Adi iwaGadi.
+hil-data-25,naGana eliodi meninitibeci.,5,5,5,True,True,True,True,naGana eliodi meninitibeci.,naGana eliodi meninitibeci.
+hil-data-26,DapicoGo.,2,2,2,True,True,True,True,DapicoGo.,DapicoGo.
+hil-data-28,Libiniena.,2,2,2,False,False,True,True,libiniena.,libiniena.
+hil-data-29,Libinienigi.,2,2,2,False,False,True,True,libinienigi.,libinienigi.
+hil-data-32,Ninitibigiwaji.,2,2,2,True,True,True,True,Ninitibigiwaji.,Ninitibigiwaji.
+hil-data-33,NiGida lodajo lodawa aidei dineigi.,7,7,7,True,True,True,True,NiGida lodajo lodawa aidei dineigi.,NiGida lodajo lodawa aidei dineigi.
+hil-data-34,liwigo niganigawanigi libinienigi.,4,4,4,True,True,True,True,liwigo niganigawanigi libinienigi.,liwigo niganigawanigi libinienigi.
+hil-data-35,naGani wetiGa eliodi me iwaGadi.,6,6,6,True,True,True,True,naGani wetiGa eliodi me iwaGadi.,naGani wetiGa eliodi me iwaGadi.
+hil-data-36,NaGani wetiGa iwaGadi.,4,4,4,True,True,True,True,NaGani wetiGa iwaGadi.,NaGani wetiGa iwaGadi.
+hil-data-37,NiGinoa wetiadi iwaGadi.,4,4,4,True,True,True,True,NiGinoa wetiadi iwaGadi.,NiGinoa wetiadi iwaGadi.
+hil-data-38,NaGani wetiGa iwaGadi.,4,4,4,True,True,True,True,NaGani wetiGa iwaGadi.,NaGani wetiGa iwaGadi.
+hil-data-39,NaGani wetiGa ane iwaGadi eniteloco iGonagi.,7,7,7,True,True,True,True,NaGani wetiGa ane iwaGadi eniteloco iGonagi.,NaGani wetiGa ane iwaGadi eniteloco iGonagi.

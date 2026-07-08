@@ -1,0 +1,5 @@
+sent_id,issue,gold_word_count,old_word_count,new_word_count,gold_mwt,old_mwt,new_mwt,text,old_text,new_text
+van-data-13,text-mismatch,6,6,6,[],[],[],naGajo lomigo Pedro idei noatece.,naGajo lomiigo Pedro idei niwatece.,naGajo lomiigo Pedro idei niwatece.
+van-data-15,text-mismatch,5,8,8,[],"[[""4-5"", ""madi""]]","[[""4-5"", ""madi""]]",niGijo niganigawaanigi lomigo niwatece.,Ijo nigaanigawaanigi idei madi lomiigo niwatece.,Ijo nigaanigawaanigi idei madi lomiigo niwatece.
+van-data-15,token-count-mismatch,5,8,8,[],"[[""4-5"", ""madi""]]","[[""4-5"", ""madi""]]",niGijo niganigawaanigi lomigo niwatece.,,
+van-data-30,text-mismatch,9,9,9,"[[""5-6"", ""aGica""]]","[[""5-6"", ""aGica""]]","[[""5-6"", ""aGica""]]",niGijo lodajo ajo lodowa aGica digoida liGeladi.,nGijo lodajo ajo lodowa aGica digoida liGeladi.,nGijo lodajo ajo lodowa aGica digoida liGeladi.

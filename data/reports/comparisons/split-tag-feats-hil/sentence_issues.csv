@@ -1,0 +1,6 @@
+sent_id,issue,gold_word_count,old_word_count,new_word_count,gold_mwt,old_mwt,new_mwt,text,old_text,new_text
+hil-data-5,token-count-mismatch,7,6,6,"[[""2-3"", ""aneiwaGadi""], [""4-5"", ""adakake""]]","[[""2-3"", ""aneiwaGadi""]]","[[""2-3"", ""aneiwaGadi""]]",Etogo aneiwaGadi adakake lojedi.,,
+hil-data-6,token-count-mismatch,7,6,6,"[[""4-5"", ""adakake""]]",[],[],Etogo ane iwaGadi adakake loojedi.,,
+hil-data-17,text-mismatch,3,3,3,[],[],[],Ninitibeci naGada.,ninitibeci naGada.,ninitibeci naGada.
+hil-data-28,text-mismatch,2,2,2,[],[],[],Libiniena.,libiniena.,libiniena.
+hil-data-29,text-mismatch,2,2,2,[],[],[],Libinienigi.,libinienigi.,libinienigi.
