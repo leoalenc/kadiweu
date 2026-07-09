@@ -227,9 +227,12 @@ def normalize_sentence(record: Dict[str, Any], ordinal: int) -> Dict[str, Any]:
         "path": record["path"],
         "container_meta": record.get("container_meta", {}),
         "uid": sentence.get("uid"),
+        "status": sentence.get("status"),
+        "struct_status": struct.get("status"),
         "text": sentence.get("text"),
         "translations": sentence.get("translations", {}),
         "visible": struct.get("visible"),
+        "comments": sentence.get("comments", []),
         "tokens": [normalize_token(t) for t in tokens if isinstance(t, dict)],
         "chunks": [normalize_chunk(c) for c in chunks if isinstance(c, dict)],
         "conllu": [normalize_conllu_entry(c) for c in conllu if isinstance(c, dict)],
@@ -262,6 +265,8 @@ def print_sentence_summary(s: Dict[str, Any], container_meta_mode: str = "ellips
     print(f"path: {s['path']}")
     print(f"uid: {s.get('uid')}")
     print(f"text: {s.get('text')}")
+    print(f"status: {s.get('status')}")
+    print(f"struct_status: {s.get('struct_status')}")
     print(f"visible: {s.get('visible')}")
 
     container_meta = s.get("container_meta", {})
@@ -276,6 +281,31 @@ def print_sentence_summary(s: Dict[str, Any], container_meta_mode: str = "ellips
     if translations:
         for lang, value in translations.items():
             print(f"  {lang}: {value}")
+    else:
+        print("  <none>")
+
+    comments = s.get("comments") or []
+
+    print("comments:")
+    if comments:
+        for i, comment in enumerate(comments, start=1):
+            title = comment.get("title")
+            name = comment.get("name")
+            date = comment.get("date")
+            value = comment.get("value")
+
+            header = f"  [{i}]"
+            if date:
+                header += f" {date}"
+            if name:
+                header += f" — {name}"
+            if title:
+                header += f" — {title}"
+
+            print(header)
+
+            if value:
+                print(f"      {value}")
     else:
         print("  <none>")
 
@@ -543,11 +573,13 @@ def main() -> int:
     if args.summary_only:
         for s in normalized:
             print(
-                "{ord:>4}  source={source:<10} uid={uid}  text={text}".format(
+                    "{ord:>4}  source={source:<10} uid={uid}  status={status!s:<10} struct={struct_status!s:<10} text={text}".format(
                     ord=s["ordinal"],
                     source=s.get("source_id") or "",
                     uid=s.get("uid"),
                     text=s.get("text"),
+                    status=s.get("status"),
+                    struct_status=s.get("struct_status"),
                 )
             )
     else:
