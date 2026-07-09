@@ -48,6 +48,7 @@ Combined profiles:
 - chunk_label_counts.tsv
 - source_tag_x_chunk.tsv
 - source_tag_x_splitseq.tsv
+- split_form_x_split_tag.tsv
 
 Source-aware profiles:
 - source_id_x_source_tag.tsv
@@ -59,6 +60,7 @@ Source-aware profiles:
 - source_id_x_chunk_label.tsv
 - source_id_x_source_tag_x_chunk.tsv
 - source_id_x_source_tag_x_splitseq.tsv
+- source_id_x_split_form_x_split_tag.tsv
 
 Usage
 -----
@@ -354,6 +356,8 @@ def empty_profiles() -> Dict[str, Counter]:
         "source_tag_counts": Counter(),
         "token_form_by_source_tag": Counter(),
         "split_tag_counts": Counter(),
+        "split_form_x_split_tag": Counter(),
+        "source_id_x_split_form_x_split_tag": Counter(),
         "split_tag_sequence_counts": Counter(),
         "gloss_br_counts": Counter(),
         "split_tag_x_gloss_br": Counter(),
@@ -420,9 +424,14 @@ def compute_profiles(sentence_records: List[Dict[str, Any]]) -> Dict[str, Counte
             if isinstance(splits, list):
                 for s in splits:
                     if isinstance(s, dict):
+                        split_form = str(s.get("v", ""))
                         split_tag = str(s.get("t", ""))
+
                         counters["split_tag_counts"][split_tag] += 1
                         counters["source_id_x_split_tag"][(source_id, split_tag)] += 1
+
+                        counters["split_form_x_split_tag"][(split_form, split_tag)] += 1
+                        counters["source_id_x_split_form_x_split_tag"][(source_id, split_form, split_tag)] += 1
 
                         gloss = split_gloss_br(s)
                         if gloss:
@@ -487,6 +496,11 @@ def write_profiles(outdir: Path, profiles: Dict[str, Counter]) -> None:
     write_counter_tsv(outdir / "chunk_label_counts.tsv", profiles["chunk_label_counts"], ["chunk_label"])
     write_counter_tsv(outdir / "source_tag_x_chunk.tsv", profiles["source_tag_x_chunk"], ["source_tag", "chunk_label"])
     write_counter_tsv(outdir / "source_tag_x_splitseq.tsv", profiles["source_tag_x_splitseq"], ["source_tag", "split_tag_sequence"])
+    write_counter_tsv(
+        outdir / "split_form_x_split_tag.tsv",
+        profiles["split_form_x_split_tag"],
+        ["split_form", "split_tag"],
+    )
 
     write_counter_tsv(outdir / "source_id_x_source_tag.tsv", profiles["source_id_x_source_tag"], ["source_id", "source_tag"])
     write_counter_tsv(outdir / "source_id_x_token_form_by_source_tag.tsv", profiles["source_id_x_token_form_by_source_tag"], ["source_id", "source_tag", "token_form"])
@@ -497,7 +511,11 @@ def write_profiles(outdir: Path, profiles: Dict[str, Counter]) -> None:
     write_counter_tsv(outdir / "source_id_x_chunk_label.tsv", profiles["source_id_x_chunk_label"], ["source_id", "chunk_label"])
     write_counter_tsv(outdir / "source_id_x_source_tag_x_chunk.tsv", profiles["source_id_x_source_tag_x_chunk"], ["source_id", "source_tag", "chunk_label"])
     write_counter_tsv(outdir / "source_id_x_source_tag_x_splitseq.tsv", profiles["source_id_x_source_tag_x_splitseq"], ["source_id", "source_tag", "split_tag_sequence"])
-
+    write_counter_tsv(
+        outdir / "source_id_x_split_form_x_split_tag.tsv",
+        profiles["source_id_x_split_form_x_split_tag"],
+        ["source_id", "split_form", "split_tag"],
+    )
 
 def build_argparser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(

@@ -1,0 +1,346 @@
+source_id	split_form	split_tag	count
+ped-gramm	l	Gen	40
+van-data	l	Gen	40
+hil-data	l	Gen	30
+ped-gramm	i	Gnr	25
+van-data	i	Gnr	24
+van-data	gi	Gnr	22
+ped-gramm	i	Erg	20
+hil-data	i	Erg	20
+ped-gramm	Geladi	n	19
+van-data	a	Gnr	19
+ped-gramm	n	Ant	18
+hil-data	a	Gnr	17
+van-data	n	Ant	16
+van-data	jo	Ncl	16
+ped-gramm	ca	Ncl	15
+hil-data	i	Gnr	15
+hil-data	nG	Anf	14
+van-data	na	Dim	14
+hil-data	waGadi	v	13
+van-data	i		13
+ped-gramm	i	Gen	12
+ped-gramm	pegi	v	11
+hil-data	Ga	Plu	11
+hil-data	d	Inv	11
+hil-data	me		11
+van-data	binie	n	11
+van-data	ni	Ncl	11
+ped-gramm	jo	Ncl	10
+ped-gramm	d	Inv	10
+hil-data	ee	Pro	10
+van-data	i	Abs	10
+hil-data	na	Dim	9
+hil-data	nG	Dem	9
+van-data	waGadi	v	9
+van-data	taGa	Apl	9
+van-data	me		9
+ped-gramm	weiigi	n	8
+ped-gramm	tegi	Apl	8
+hil-data	gi	Gnr	8
+hil-data	ni	Ncl	8
+van-data	i	Erg	8
+ped-gramm	a	Gnr	7
+ped-gramm	dei	v	7
+hil-data	binie	n	7
+hil-data	jo	Ncl	7
+hil-data	di	Ncl	7
+hil-data	i		7
+van-data	Geladi	n	7
+van-data	d	Inv	7
+van-data	ee	Pro	7
+van-data	pegi	v	7
+ped-gramm	watece	n	6
+ped-gramm	aG	Neg	6
+ped-gramm	apioi	n	6
+ped-gramm	akake	v	6
+hil-data	aG	Neg	6
+hil-data	da	Ncl	6
+hil-data	di		6
+hil-data	apicoGo	v	6
+van-data	da	Ncl	6
+van-data	Ga	Plu	6
+van-data	watece	n	6
+van-data	di	Ncl	6
+van-data	pi	Plu	6
+van-data	aG		6
+van-data	wigo	n	6
+van-data	aG	Neg	6
+ped-gramm	i	Abs	5
+ped-gramm	iGeladi	n	5
+ped-gramm	ooligi	n	5
+ped-gramm	oojedi	n	5
+hil-data	aG		5
+van-data	dei	v	5
+van-data	me	c	5
+van-data	nG	Anf	5
+van-data	ca		5
+van-data	wa	Plu	5
+ped-gramm	waGadi	v	4
+ped-gramm	et	v	4
+ped-gramm	di	Ncl	4
+ped-gramm	ibinie	n	4
+ped-gramm	nigi	Dim	4
+ped-gramm	me	c	4
+hil-data	iwaa	n	4
+hil-data	lo	Cla	4
+hil-data	n	Ant	4
+hil-data	dei	v	4
+hil-data			4
+hil-data	na	Ncl	4
+hil-data	pegi	v	4
+van-data	i	Gen	4
+van-data	iwaa	n	4
+van-data	lo	Cla	4
+van-data	nG	Dem	4
+van-data	j	Erg	4
+van-data	di		4
+ped-gramm			3
+ped-gramm	idi	n	3
+ped-gramm	gi	Gnr	3
+ped-gramm	Gad	Gen	3
+ped-gramm	da	Ncl	3
+ped-gramm	aG		3
+ped-gramm	etogo	n	3
+ped-gramm	li	Plu	3
+hil-data	akake	v	3
+hil-data	oojedi	n	3
+hil-data	ibinie	n	3
+hil-data	nigi	Dim	3
+hil-data	taGa	Apl	3
+hil-data	wigo	n	3
+hil-data	wa	Plu	3
+hil-data	j	Erg	3
+hil-data	d		3
+hil-data	et	v	3
+hil-data	Geladi	n	3
+hil-data	tece	Apl	3
+van-data	weiigi	n	3
+van-data	jaG	PFV	3
+van-data	omiigo	n	3
+van-data	nigaa	n	3
+van-data	awaana	Dim	3
+van-data	apico	v	3
+van-data	di	Plu	3
+van-data	VB		3
+van-data	tegi	Apl	3
+van-data	gota	n	3
+van-data	Ga	Sgv	3
+ped-gramm	tece	Apl	2
+ped-gramm	pege	v	2
+ped-gramm	tege	Apl	2
+ped-gramm	apicoGo	v	2
+ped-gramm	Ge	Der	2
+ped-gramm	l	Gnr	2
+ped-gramm	oigi	n	2
+ped-gramm	pi	Plu	2
+ped-gramm	wigo	n	2
+ped-gramm	ane	Wpro	2
+ped-gramm	nG	Dem	2
+ped-gramm	wa	Plu	2
+ped-gramm	taGa	Apl	2
+ped-gramm	Ga	Plu	2
+ped-gramm	l		2
+ped-gramm	tedi	Plu	2
+hil-data	otaGa	n	2
+hil-data	iwaGadi		2
+hil-data	a		2
+hil-data	watece	n	2
+hil-data	pi	Plu	2
+hil-data	waji	Tot	2
+hil-data	di	Plu	2
+hil-data	i	Gen	2
+hil-data	Gonagi	n	2
+hil-data	getegi	n	2
+hil-data	tedi	Plu	2
+hil-data	eliodi		2
+hil-data	ini	v	2
+hil-data	tibeci		2
+hil-data	ji		2
+hil-data	pegi		2
+hil-data	tege		2
+hil-data	i	Abs	2
+hil-data	ejona	v	2
+hil-data	nigaa	n	2
+hil-data	awaana	Dim	2
+hil-data	watece	canoa	2
+van-data	digo		2
+van-data	otaGa	n	2
+van-data	l		2
+van-data	oojedi	n	2
+van-data	ni	v	2
+van-data	waji	Tot	2
+van-data	ca	Ncl	2
+van-data	wetiGa	n	2
+van-data	ani	v	2
+van-data	teloco	Apl	2
+van-data	wa		2
+van-data	waca	n	2
+van-data	otiidi	n	2
+van-data	d		2
+van-data	getegi	n	2
+van-data	tedi	Plu	2
+van-data	na	Ncl	2
+van-data	tibeci	Dir	2
+van-data	jigi	Erg	2
+van-data	nike		2
+van-data	Gi		2
+van-data	gi		2
+van-data	l	Gnr	2
+van-data	eoni	n	2
+ped-gramm	watece	canoa	1
+ped-gramm	jaG	PFV	1
+ped-gramm	etadi	v	1
+ped-gramm	digo		1
+ped-gramm	i		1
+ped-gramm	da		1
+ped-gramm	gotaGa	cidade	1
+ped-gramm	jaG	t	1
+ped-gramm	ide	v	1
+ped-gramm	podi	Plu	1
+ped-gramm	binienigi	n	1
+ped-gramm	nigotaGa	n	1
+ped-gramm	oligi	n	1
+ped-gramm	ioladi	n	1
+ped-gramm	nixoa	n	1
+ped-gramm	napioi	Adj	1
+ped-gramm	ionigi	n	1
+ped-gramm	digo	Adv	1
+ped-gramm	taGa	OBL	1
+ped-gramm	gi	Apl	1
+ped-gramm	tawece	Coll	1
+ped-gramm	digo i da		1
+ped-gramm	otaGa	n	1
+ped-gramm	aginaGa	n	1
+ped-gramm	binie	n	1
+ped-gramm	naGa	Dim	1
+ped-gramm	wenigi	n	1
+ped-gramm	akake	vu	1
+ped-gramm	VB		1
+ped-gramm	ni	Ncl	1
+ped-gramm	ejin	v	1
+ped-gramm	aGa	Plu	1
+ped-gramm	di	Inv	1
+ped-gramm	ninitebeci	v	1
+ped-gramm	j	Erg	1
+ped-gramm	paca	v	1
+ped-gramm	ta	Hon	1
+ped-gramm	Gagi	Apl	1
+ped-gramm	tiwaji	Coll	1
+ped-gramm	ee		1
+ped-gramm	nini	v	1
+ped-gramm	keGe	Der	1
+ped-gramm	akaam	Pro	1
+ped-gramm	i	Plu	1
+ped-gramm	waca	n	1
+ped-gramm	otiidi		1
+ped-gramm	apiko	v	1
+ped-gramm	iwa	v	1
+ped-gramm	Gadi	Der	1
+ped-gramm	ojedi	n	1
+ped-gramm	ojedi		1
+hil-data	Ga	Gnr	1
+hil-data	nioxoa	n	1
+hil-data	Gad	Gen	1
+hil-data	odawa	n	1
+hil-data	ane		1
+hil-data	l		1
+hil-data	ojedi		1
+hil-data	dakake		1
+hil-data	wenigi	n	1
+hil-data	a	Plu	1
+hil-data	ion	n	1
+hil-data	ijotaGa		1
+hil-data	ticoaci	Dir	1
+hil-data	me	c	1
+hil-data	Iwaa	n	1
+hil-data	lo	Gnr	1
+hil-data	p	Ep	1
+hil-data	adi	Plu	1
+hil-data	ninitibeci		1
+hil-data	n	Abs	1
+hil-data	ni	v	1
+hil-data	tibigi	Dir	1
+hil-data	niG	Dem	1
+hil-data	odajo	n	1
+hil-data	idei	v	1
+hil-data	wetiGa	n	1
+hil-data	ani	v	1
+hil-data	teloco	Apl	1
+hil-data	waca	n	1
+hil-data	otiidi	n	1
+hil-data	noGojegi	n	1
+hil-data	ixagodi	v	1
+hil-data	taGa	Der	1
+hil-data	ejin	v	1
+hil-data	aGa	Plu	1
+hil-data	adataGa		1
+hil-data	idataGa		1
+hil-data	idinitibeci		1
+hil-data	ipegi		1
+hil-data	taGagi	Apl	1
+hil-data	ti		1
+hil-data	ibiwe	n	1
+hil-data	ixagodi		1
+hil-data	iona	n	1
+van-data	Ga	Gen	1
+van-data	aaginaGa	n	1
+van-data	naGa	Dim	1
+van-data	Gad	Gen	1
+van-data	odawa	n	1
+van-data	n	Dir	1
+van-data	oxilece	v	1
+van-data	oje		1
+van-data	tedi		1
+van-data	iwaaGadi	v	1
+van-data	tena	Der	1
+van-data	niG	Dem	1
+van-data	wenigi	n	1
+van-data	akake	v	1
+van-data	a	Plu	1
+van-data	ionigi	n	1
+van-data	initaGa		1
+van-data	ke	Dir	1
+van-data	Ge	Nmlz	1
+van-data	apica	v	1
+van-data	Ga	Der	1
+van-data	Gi	Der	1
+van-data	n	Abs	1
+van-data	tibigi	Dir	1
+van-data	odajo	n	1
+van-data	odowa	n	1
+van-data	iwaaGa	v	1
+van-data	te		1
+van-data	apikoGo	v	1
+van-data	apikoGo		1
+van-data	ibinie	n	1
+van-data	nigi	Dim	1
+van-data	noGojegi	n	1
+van-data	ixagodi	v	1
+van-data	aGa	Der	1
+van-data	akake	vu	1
+van-data	nike	v	1
+van-data	Ge	Der	1
+van-data	nini		1
+van-data	ee		1
+van-data	nini	v	1
+van-data	keGe	Der	1
+van-data	inini	v	1
+van-data	id	Abs	1
+van-data	waaGadi	v	1
+van-data	tege	Apl	1
+van-data	ewi	a	1
+van-data	eyo		1
+van-data	edona	v	1
+van-data	ti		1
+van-data	ije		1
+van-data	one	ev	1
+van-data	jaGa	t	1
+van-data	emé		1
+van-data	pegi		1
+van-data	tegi		1
+van-data	ibiwe	n	1
+van-data	ixagodi		1
+van-data	biju	n	1
+van-data	li	Plu	1
+van-data	tece	Apl	1
