@@ -65,7 +65,7 @@
 # text_por = A canoa está perto do rio.
 1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=4:12
-3	ipegitege	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=13:22
+3	ipegitege	pegi	VERB	VBAPL	Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=13:22
 4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=23:29
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
 
@@ -618,7 +618,7 @@
 # text_orig = jipacaGataGagitiwaji
 # text_por_orig = Estamos perto de vocês.
 # text_por = Estamos perto de vocês.
-1	jipacaGataGagitiwaji	paca	VERB	VBAPL	Mood=Ind|Number=Plur|Person[erg]=1|Person[obj]=2|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:20
+1	jipacaGataGagitiwaji	paca	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Number=Plur|Person[erg]=1|Person[obj]=2|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:20
 2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = ped-gramm-53

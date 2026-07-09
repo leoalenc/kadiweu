@@ -76,6 +76,18 @@
         "standard_form": "niGidiwa",
         "standard_lemma": "niGida"
       },
+      "ipegetege": { 
+        "standard_form": "ipegitege",
+        "standard_lemma": "pegi"
+      },
+       "ipegetegi": { 
+        "standard_form": "ipegitegi",
+        "standard_lemma": "pegi"
+      },
+      "GanigotGa": { 
+        "standard_form": "GanigotaGa",
+        "standard_lemma": "nigotaGa"
+      },
       "noatece": { 
         "standard_form": "niwatece",
         "standard_lemma": "watece"
