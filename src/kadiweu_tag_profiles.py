@@ -13,9 +13,11 @@ or revising the UD conversion pipeline. It computes frequency profiles for:
 2. token forms by source tag
 3. split tags
 4. split tag sequences
-5. chunk labels
-6. source tag x chunk label
-7. source tag x split tag sequence
+5. gloss-br values
+6. split tag x gloss-br
+7. chunk labels
+8. source tag x chunk label
+9. source tag x split tag sequence
 
 It now supports the current canonical JSON dump names used in the repository:
 
@@ -41,6 +43,8 @@ Combined profiles:
 - token_form_by_source_tag.tsv
 - split_tag_counts.tsv
 - split_tag_sequence_counts.tsv
+- gloss_br_counts.tsv
+- split_tag_x_gloss_br.tsv
 - chunk_label_counts.tsv
 - source_tag_x_chunk.tsv
 - source_tag_x_splitseq.tsv
@@ -50,6 +54,8 @@ Source-aware profiles:
 - source_id_x_token_form_by_source_tag.tsv
 - source_id_x_split_tag.tsv
 - source_id_x_split_tag_sequence.tsv
+- source_id_x_gloss_br.tsv
+- source_id_x_split_tag_x_gloss_br.tsv
 - source_id_x_chunk_label.tsv
 - source_id_x_source_tag_x_chunk.tsv
 - source_id_x_source_tag_x_splitseq.tsv
@@ -273,6 +279,75 @@ def split_tag_sequence(token: Dict[str, Any]) -> str:
     return "|".join(tags)
 
 
+def _stringify_gloss_value(value: Any) -> str:
+    """Return a stable string representation for one gloss value."""
+    if value is None:
+        return ""
+    if isinstance(value, str):
+        return value.strip()
+    return str(value).strip()
+
+
+def _extract_gloss_value(obj: Dict[str, Any]) -> str:
+    """
+    Extract a gloss value from a token or split object.
+
+    The Tycho Brahe JSON is not fully uniform across dumps and export dates.
+    Glosses may occur as either:
+
+    - attributes: {"gloss-br": "..."}
+    - attributes: {"gloss": "..."}
+    - attributes: [{"gloss-br": "..."}, {"gloss": "..."}]
+    - directly on the object as gloss-br/gloss, in older or normalized exports
+
+    Prefer gloss-br when available, but fall back to gloss. If multiple values
+    are present in an attributes list, join them with ' | ' so information is
+    not silently dropped.
+    """
+    values: List[str] = []
+
+    def add(value: Any) -> None:
+        text = _stringify_gloss_value(value)
+        if text:
+            values.append(text)
+
+    attrs = obj.get("attributes")
+
+    if isinstance(attrs, dict):
+        add(attrs.get("gloss-br"))
+        if not values:
+            add(attrs.get("gloss"))
+    elif isinstance(attrs, list):
+        # First collect all Brazilian Portuguese glosses, then fall back to
+        # generic glosses only if no gloss-br value was found.
+        for attr in attrs:
+            if isinstance(attr, dict):
+                add(attr.get("gloss-br"))
+        if not values:
+            for attr in attrs:
+                if isinstance(attr, dict):
+                    add(attr.get("gloss"))
+
+    if not values:
+        add(obj.get("gloss-br"))
+    if not values:
+        add(obj.get("gloss"))
+
+    # Preserve order but remove duplicates.
+    deduped = list(dict.fromkeys(values))
+    return " | ".join(deduped)
+
+
+def token_gloss_br(token: Dict[str, Any]) -> str:
+    """Return a token-level gloss value, preferably gloss-br, or an empty string."""
+    return _extract_gloss_value(token)
+
+
+def split_gloss_br(split: Dict[str, Any]) -> str:
+    """Return a split-level gloss value, preferably gloss-br, or an empty string."""
+    return _extract_gloss_value(split)
+
+
 def empty_profiles() -> Dict[str, Counter]:
     """Create all counters used by this script."""
     return {
@@ -280,6 +355,8 @@ def empty_profiles() -> Dict[str, Counter]:
         "token_form_by_source_tag": Counter(),
         "split_tag_counts": Counter(),
         "split_tag_sequence_counts": Counter(),
+        "gloss_br_counts": Counter(),
+        "split_tag_x_gloss_br": Counter(),
         "chunk_label_counts": Counter(),
         "source_tag_x_chunk": Counter(),
         "source_tag_x_splitseq": Counter(),
@@ -287,6 +364,8 @@ def empty_profiles() -> Dict[str, Counter]:
         "source_id_x_token_form_by_source_tag": Counter(),
         "source_id_x_split_tag": Counter(),
         "source_id_x_split_tag_sequence": Counter(),
+        "source_id_x_gloss_br": Counter(),
+        "source_id_x_split_tag_x_gloss_br": Counter(),
         "source_id_x_chunk_label": Counter(),
         "source_id_x_source_tag_x_chunk": Counter(),
         "source_id_x_source_tag_x_splitseq": Counter(),
@@ -325,6 +404,11 @@ def compute_profiles(sentence_records: List[Dict[str, Any]]) -> Dict[str, Counte
             counters["source_id_x_source_tag"][(source_id, tag)] += 1
             counters["source_id_x_token_form_by_source_tag"][(source_id, tag, form)] += 1
 
+            gloss = token_gloss_br(tok)
+            if gloss:
+                counters["gloss_br_counts"][gloss] += 1
+                counters["source_id_x_gloss_br"][(source_id, gloss)] += 1
+
             seq = split_tag_sequence(tok)
             if seq:
                 counters["split_tag_sequence_counts"][seq] += 1
@@ -339,6 +423,13 @@ def compute_profiles(sentence_records: List[Dict[str, Any]]) -> Dict[str, Counte
                         split_tag = str(s.get("t", ""))
                         counters["split_tag_counts"][split_tag] += 1
                         counters["source_id_x_split_tag"][(source_id, split_tag)] += 1
+
+                        gloss = split_gloss_br(s)
+                        if gloss:
+                            counters["gloss_br_counts"][gloss] += 1
+                            counters["source_id_x_gloss_br"][(source_id, gloss)] += 1
+                            counters["split_tag_x_gloss_br"][(split_tag, gloss)] += 1
+                            counters["source_id_x_split_tag_x_gloss_br"][(source_id, split_tag, gloss)] += 1
 
             token_chunks = chunk_membership.get(p, []) if isinstance(p, int) else []
             for ch in token_chunks:
@@ -391,6 +482,8 @@ def write_profiles(outdir: Path, profiles: Dict[str, Counter]) -> None:
     write_counter_tsv(outdir / "token_form_by_source_tag.tsv", profiles["token_form_by_source_tag"], ["source_tag", "token_form"])
     write_counter_tsv(outdir / "split_tag_counts.tsv", profiles["split_tag_counts"], ["split_tag"])
     write_counter_tsv(outdir / "split_tag_sequence_counts.tsv", profiles["split_tag_sequence_counts"], ["split_tag_sequence"])
+    write_counter_tsv(outdir / "gloss_br_counts.tsv", profiles["gloss_br_counts"], ["gloss_br"])
+    write_counter_tsv(outdir / "split_tag_x_gloss_br.tsv", profiles["split_tag_x_gloss_br"], ["split_tag", "gloss_br"])
     write_counter_tsv(outdir / "chunk_label_counts.tsv", profiles["chunk_label_counts"], ["chunk_label"])
     write_counter_tsv(outdir / "source_tag_x_chunk.tsv", profiles["source_tag_x_chunk"], ["source_tag", "chunk_label"])
     write_counter_tsv(outdir / "source_tag_x_splitseq.tsv", profiles["source_tag_x_splitseq"], ["source_tag", "split_tag_sequence"])
@@ -399,6 +492,8 @@ def write_profiles(outdir: Path, profiles: Dict[str, Counter]) -> None:
     write_counter_tsv(outdir / "source_id_x_token_form_by_source_tag.tsv", profiles["source_id_x_token_form_by_source_tag"], ["source_id", "source_tag", "token_form"])
     write_counter_tsv(outdir / "source_id_x_split_tag.tsv", profiles["source_id_x_split_tag"], ["source_id", "split_tag"])
     write_counter_tsv(outdir / "source_id_x_split_tag_sequence.tsv", profiles["source_id_x_split_tag_sequence"], ["source_id", "split_tag_sequence"])
+    write_counter_tsv(outdir / "source_id_x_gloss_br.tsv", profiles["source_id_x_gloss_br"], ["source_id", "gloss_br"])
+    write_counter_tsv(outdir / "source_id_x_split_tag_x_gloss_br.tsv", profiles["source_id_x_split_tag_x_gloss_br"], ["source_id", "split_tag", "gloss_br"])
     write_counter_tsv(outdir / "source_id_x_chunk_label.tsv", profiles["source_id_x_chunk_label"], ["source_id", "chunk_label"])
     write_counter_tsv(outdir / "source_id_x_source_tag_x_chunk.tsv", profiles["source_id_x_source_tag_x_chunk"], ["source_id", "source_tag", "chunk_label"])
     write_counter_tsv(outdir / "source_id_x_source_tag_x_splitseq.tsv", profiles["source_id_x_source_tag_x_splitseq"], ["source_id", "source_tag", "split_tag_sequence"])
@@ -539,6 +634,8 @@ def main() -> int:
         print_counter("Token form by source tag", profiles["token_form_by_source_tag"], limit=args.top)
         print_counter("Split tag counts", profiles["split_tag_counts"], limit=args.top)
         print_counter("Split tag sequence counts", profiles["split_tag_sequence_counts"], limit=args.top)
+        print_counter("gloss-br value counts", profiles["gloss_br_counts"], limit=args.top)
+        print_counter("Split tag x gloss-br", profiles["split_tag_x_gloss_br"], limit=args.top)
         print_counter("Chunk label counts", profiles["chunk_label_counts"], limit=args.top)
         print_counter("Source tag x chunk label", profiles["source_tag_x_chunk"], limit=args.top)
         print_counter("Source tag x split tag sequence", profiles["source_tag_x_splitseq"], limit=args.top)
@@ -546,6 +643,8 @@ def main() -> int:
         if not args.skip_source_aware_print:
             print_counter("Source ID x source tag", profiles["source_id_x_source_tag"], limit=args.top)
             print_counter("Source ID x split tag", profiles["source_id_x_split_tag"], limit=args.top)
+            print_counter("Source ID x gloss-br", profiles["source_id_x_gloss_br"], limit=args.top)
+            print_counter("Source ID x split tag x gloss-br", profiles["source_id_x_split_tag_x_gloss_br"], limit=args.top)
             print_counter("Source ID x chunk label", profiles["source_id_x_chunk_label"], limit=args.top)
 
         if args.outdir:
