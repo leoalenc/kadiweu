@@ -19,6 +19,8 @@ comments:
       Sena (2025) glosa "-lo" em "iwaalo" como FEM. Então a etiqueta não seria Gnr?
   [2] 2026-06-06 15:51:43 — Filomena Sandalo
       Nunca separei o -lo. Não parece muito produtivo. Tem muitas palavras com -lo? Nunca vi iwaa ocorrendo sem "lo".
+  [3] 2026-07-09 15:39:12 — Leonel Figueiredo de Alencar — Morfema "lo"?
+      Obrigado pelo feedback. Realmente, o status de "lo" como morfema é discutível. Lembro de um texto antigo de morfologia gerativa que propõe esse tipo de morfema. Vou colocar uma possível correção no backlog.
 
 proto-conllu:
   <none>

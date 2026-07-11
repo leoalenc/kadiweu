@@ -5,8 +5,8 @@ Sentence 1
 path: $.pages[0].sentences[0]
 uid: ed98d4d1-638c-4377-8c6d-5511855636d1
 text: ajo liwatece ja iwaGadi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
@@ -15,7 +15,8 @@ container_meta:
 translations:
   pt-br: A canoa dele/a é pesada
 comments:
-  <none>
+  [1] 2026-07-10 15:27:47 — Leonel Figueiredo de Alencar — Adição do status FINALIZADO
+      Estou adicionando o status FINALIZADO a todas as sentenças com árvores corretas, dada a política atual de anotação, mesmo que ainda não incluam os subrótulos funcionais SBJ, ACC (ou OBJ) etc., de resto, depreensíveis da configuração arbórea.
 
 proto-conllu:
   <none>
@@ -50,15 +51,14 @@ Sentence 2
 path: $.pages[0].sentences[1]
 uid: ccb5ea37-b3ba-47a9-8d71-224f599ea7be
 text: ajo liwatece etadi weiigi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
   contents: ...
   uid: 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 translations:
-  en: verbo irregular: eteyo, etaami, etadi, etoko, etaami, etidi
   pt-br: A canoa dele/a está no rio
 comments:
   [1] 2026-03-25 17:52:20 — Filomena Sandalo
@@ -74,6 +74,8 @@ ca
 di
   [4] 2026-05-30 15:39:49 — Leonel Figueiredo de Alencar — Glosas das raízes dêiticas
       (Testando o envio de comentário por e-mail.) Utilizei as glosas de Sandalo e Michelioudakis (2016), traduzindo-as para o português, sem implicar, com isso, que constituam traduções idiomáticas. Entendo que o lugar da tradução idiomático é o campo Traduções. Seguindo as Leipzig Glossing Rules, as glosas, quando não representam categorias gramaticais como MASC, PERF etc., representam traduções literais que procuram dar uma ideia da estrutura do exemplo original.
+  [5] 2026-07-10 15:23:19 — Leonel Figueiredo de Alencar — Pequena arrumação em metadado
+      Esta observação estava no campo da tradução inglesa porque na época inexistia campo próprio para comentários: verbo irregular: eteyo, etaami, etadi, etoko, etaami, etidi.
 
 proto-conllu:
   <none>
@@ -110,8 +112,8 @@ Sentence 3
 path: $.pages[0].sentences[2]
 uid: 49347527-d19d-4689-bff1-ba3e497e7b1f
 text: ajo niwatece etadi digoida
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
@@ -122,6 +124,8 @@ translations:
 comments:
   [1] 2026-03-25 17:53:29 — Filomena Sandalo
       o antipassivo em nomes signifca posse alienável
+  [2] 2026-07-10 15:31:21 — Leonel Figueiredo de Alencar — O morfema "digo"
+      Registro aqui como tarefa futura (TODO no informatiquês) investigar o morfema "digo", atualmente desprovido de etiqueta.
 
 proto-conllu:
   <none>
@@ -158,8 +162,8 @@ Sentence 4
 path: $.pages[0].sentences[3]
 uid: 69948fe6-81f6-4faa-a344-8f8c47486943
 text: niwatece iwaGadi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
@@ -196,8 +200,8 @@ Sentence 5
 path: $.pages[0].sentences[4]
 uid: b2e3ea43-0d68-46ee-9f33-938610cc8aec
 text: niwatece etadi weiigi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
@@ -208,6 +212,8 @@ translations:
 comments:
   [1] 2026-03-25 18:27:19 — Filomena Sandalo
       não se tem certeza de que etadi é de fato verbo
+  [2] 2026-07-10 15:43:06 — Leonel Figueiredo de Alencar — Arrumando metadado
+      Removi para cá algo que estava em "gloss": etadi fem etidi masc
 
 proto-conllu:
   <none>
@@ -220,13 +226,13 @@ chunks:
 tokens:
   p=1   v='niwatece'         t='N$'         l=1   gloss-br='canoa'
       splits:
-        [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
+        [1] v='n'          t='Ant'      gloss-br='canoa' fn=None idx=None
         [2] v='watece'     t='n'        gloss-br='canoa' fn=None idx=None
   p=2   v='etadi'            t='VB'         l=0   gloss-br='está'
       splits:
-        [1] v='et'         t='v'        gloss-br=None fn=None idx=None
+        [1] v='et'         t='v'        gloss-br='estar em/ficar em (temporário)' fn=None idx=None
         [2] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
-        [3] v='di'         t='Ncl'      gloss-br=None fn=None idx=None
+        [3] v='di'         t='Ncl'      gloss-br='deitado' fn=None idx=None
   p=3   v='weiigi'           t='N'          l=1   gloss-br='rio'
       splits:
         [1] v=None         t=None       gloss-br=None fn=None idx=None
@@ -240,8 +246,8 @@ Sentence 6
 path: $.pages[0].sentences[5]
 uid: 1b99ecb9-5656-4c38-b60b-fbbe643708fb
 text: ajo niwatece ipegitege weiigi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
@@ -288,8 +294,8 @@ Sentence 7
 path: $.pages[0].sentences[6]
 uid: e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
 text: liGeladi Maria aGipegetege
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
@@ -333,8 +339,8 @@ Sentence 8
 path: $.pages[0].sentences[7]
 uid: 79a6cd4e-b585-437a-9084-1fa077dec3b6
 text: ica liGeladi ipegetege
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
@@ -343,7 +349,8 @@ container_meta:
 translations:
   pt-br: A casa está perto dela
 comments:
-  <none>
+  [1] 2026-07-10 15:52:25 — Leonel Figueiredo de Alencar — Arrumando glosa
+      A glosa em português era: aplicativo de 3 pessoa feminino
 
 proto-conllu:
   <none>
@@ -355,17 +362,17 @@ chunks:
 tokens:
   p=1   v='ica'              t='D'          l=1   gloss-br='a'
       splits:
-        [1] v='i'          t='Gnr'      gloss-br='Masc' fn=None idx=None
+        [1] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
         [2] v='ca'         t='Ncl'      gloss-br='ausente' fn=None idx=None
   p=2   v='liGeladi'         t='N$'         l=1   gloss-br='sua casa'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='Geladi'     t='n'        gloss-br='casa' fn=None idx=None
-  p=3   v='ipegetege'        t='VBAPL'      l=0   gloss-br=None
+  p=3   v='ipegetege'        t='VBAPL'      l=0   gloss-br='está perto dela'
       splits:
-        [1] v='i'          t='Erg'      gloss-br=None fn=None idx=None
-        [2] v='pege'       t='v'        gloss-br='aproximar' fn=None idx=None
-        [3] v='tege'       t='Apl'      gloss-br='aplicativo de 3 pessoa feminino' fn=None idx=None
+        [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
+        [2] v='pege'       t='v'        gloss-br='aproximar|estar_perto' fn=None idx=None
+        [3] v='tege'       t='Apl'      gloss-br='3F' fn=None idx=None
 
 conllu/token count check:
   tokens=3  proto-conllu=0
@@ -376,15 +383,14 @@ Sentence 9
 path: $.pages[0].sentences[8]
 uid: e9d6dfb6-656d-44aa-ba17-86289fd72268
 text: liGeladi idei nigotaGa
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
   contents: ...
   uid: 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 translations:
-  en: jidei, ideoni, idei, ideijonaGa, ideiticwaci
   pt-br: A casa fica perto da cidade
 comments:
   [1] 2026-03-25 18:31:58 — Filomena Sandalo
@@ -397,6 +403,8 @@ GanigotaGa sua cidade
 nigotakawaana aldeia
 
 Como o "n" não está em distribuição complementar com os outros prefixos genitivos, seria parte da raiz lexical? 
+  [3] 2026-07-10 15:55:02 — Leonel Figueiredo de Alencar — Arrumando metadado
+      Transferi para cá (estava no campo tradução inglesa): jidei, ideoni, idei, ideijonaGa, ideiticwaci
 
 proto-conllu:
   <none>
@@ -429,8 +437,8 @@ Sentence 10
 path: $.pages[0].sentences[9]
 uid: 2fff1f23-4e6f-401c-8b74-6a17ff6a391a
 text: ica liGeladi ipegitegi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
@@ -472,8 +480,8 @@ Sentence 11
 path: $.pages[0].sentences[10]
 uid: fef391af-9e63-419f-8f81-057459193f49
 text: ica Maria looligi alidi
-status: None
-struct_status: AUTO
+status: REVIEW
+struct_status: REVIEW
 visible: None
 container_meta:
   content: ...
@@ -484,6 +492,8 @@ translations:
 comments:
   [1] 2026-03-25 18:34:21 — Filomena Sandalo
       O Parser não executpu NP-PRD
+  [2] 2026-07-10 16:22:36 — Leonel Figueiredo de Alencar — Complemento nominal (possuidor) como projeção máxima?
+      O complemento nominal (possuidor) não parece constituir uma projeção máxima, i.e., NP. Ou NPR é considerado um tipo de NP? Caso afirmativo, tudo bem. Mudamos de REVISAR para FINALIZADO.
 
 proto-conllu:
   <none>
@@ -521,8 +531,8 @@ Sentence 12
 path: $.pages[0].sentences[11]
 uid: 070d221f-f72d-4055-9c82-ddc383743e6a
 text: ica looligi lidi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
@@ -564,8 +574,8 @@ Sentence 13
 path: $.pages[0].sentences[12]
 uid: 68277d1f-c30b-4c4f-ba9e-c2883cc133af
 text: ica looligi dapico
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
@@ -606,8 +616,8 @@ Sentence 14
 path: $.pages[0].sentences[13]
 uid: 5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
 text: ica looligi ja dapico
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
@@ -616,7 +626,10 @@ container_meta:
 translations:
   pt-br: a comida dela está quente
 comments:
-  <none>
+  [1] 2026-07-10 16:29:14 — Leonel Figueiredo de Alencar — Uniformizando notação do perfectivo
+      Temos atualmente "t" e PFV como etiqueta do jaG. Registro como tarefa futura a uniformização.
+  [2] 2026-07-10 16:30:57 — Leonel Figueiredo de Alencar — Arrumando glosa
+      Movendo da glosa para cá esta explicação: perfectivo/completivo
 
 proto-conllu:
   <none>
@@ -636,7 +649,7 @@ tokens:
         [2] v='ooligi'     t='n'        gloss-br=None fn=None idx=None
   p=3   v='ja'               t='T'          l=0   gloss-br='perfectivo'
       splits:
-        [1] v='jaG'        t='t'        gloss-br='perfectivo/completivo' fn=None idx=None
+        [1] v='jaG'        t='t'        gloss-br='PFV' fn=None idx=None
   p=4   v='dapico'           t='VB'         l=0   gloss-br='é quente'
       splits:
         [1] v='d'          t='Inv'      gloss-br=None fn=None idx=None
@@ -651,8 +664,8 @@ Sentence 15
 path: $.pages[0].sentences[14]
 uid: c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
 text: ica looligi lideGegi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
@@ -699,8 +712,8 @@ Sentence 16
 path: $.pages[0].sentences[15]
 uid: 19cc39ce-fe03-4551-8097-9d163a38a3c0
 text: loigipodi libinienigipi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
@@ -709,7 +722,8 @@ container_meta:
 translations:
   pt-br: A comunidade dele/dela é bonita
 comments:
-  <none>
+  [1] 2026-07-10 16:38:15 — Leonel Figueiredo de Alencar — Segmentação morfêmica de "libinienigipi"
+      Apliquei a outra entrada lexical existente, que contempla os morfemas diminutivo e o masculino. 
 
 proto-conllu:
   <none>
@@ -725,11 +739,13 @@ tokens:
         [1] v='l'          t='Gnr'      gloss-br=None fn=None idx=None
         [2] v='oigi'       t='n'        gloss-br=None fn=None idx=None
         [3] v='podi'       t='Plu'      gloss-br=None fn=None idx=None
-  p=2   v='libinienigipi'    t='N$'         l=1   gloss-br='sua beleza'
+  p=2   v='libinienigipi'    t='N$'         l=1   gloss-br='belezas del(e|a)'
       splits:
-        [1] v='l'          t='Gnr'      gloss-br=None fn=None idx=None
-        [2] v='binienigi'  t='n'        gloss-br=None fn=None idx=None
-        [3] v='pi'         t='Plu'      gloss-br=None fn=None idx=None
+        [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='binie'      t='n'        gloss-br='beleza' fn=None idx=None
+        [3] v='na'         t='Dim'      gloss-br=None fn=None idx=None
+        [4] v='gi'         t='Gnr'      gloss-br='MASC' fn=None idx=None
+        [5] v='pi'         t='Plu'      gloss-br='PL' fn=None idx=None
 
 conllu/token count check:
   tokens=2  proto-conllu=0
@@ -848,8 +864,8 @@ Sentence 19
 path: $.pages[0].sentences[18]
 uid: 0f478381-6858-463d-94cc-903e9dc879f9
 text: ica liwigo libinienigi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
@@ -858,7 +874,8 @@ container_meta:
 translations:
   pt-br: a fotografia dela/dele é/está bonita
 comments:
-  <none>
+  [1] 2026-07-10 16:44:59 — Leonel Figueiredo de Alencar — Análise de "libinienigi"
+      Mesmo procedimento que na sentença anterior, optando pela entrada lexical mais rica já existente.
 
 proto-conllu:
   <none>
@@ -877,11 +894,12 @@ tokens:
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='wigo'       t='n'        gloss-br='fotografia' fn=None idx=None
-  p=3   v='libinienigi'      t='N$'         l=1   gloss-br='bonito'
+  p=3   v='libinienigi'      t='N$'         l=1   gloss-br='beleza'
       splits:
-        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
-        [2] v='ibinie'     t='n'        gloss-br=None fn=None idx=None
-        [3] v='nigi'       t='Dim'      gloss-br='masc' fn=None idx=None
+        [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='binie'      t='n'        gloss-br='beleza' fn=None idx=None
+        [3] v='na'         t='Dim'      gloss-br=None fn=None idx=None
+        [4] v='gi'         t='Gnr'      gloss-br='M' fn=None idx=None
 
 conllu/token count check:
   tokens=3  proto-conllu=0
@@ -892,8 +910,8 @@ Sentence 20
 path: $.pages[0].sentences[19]
 uid: 55551636-8ed3-4545-8510-d8dbfd817a1a
 text: ica niwigo libinienigi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: DONE
 visible: None
 container_meta:
   content: ...
@@ -902,7 +920,10 @@ container_meta:
 translations:
   pt-br: a fotografia é/está bonita
 comments:
-  <none>
+  [1] 2026-07-10 16:47:40 — Leonel Figueiredo de Alencar — Corrigindo etiqueta de "niwigo"
+      Removendo da glosa para cá esta observação: retirapossuidor,fotosemdono. Correção feita: N$ -> N.
+  [2] 2026-07-10 16:52:44 — Leonel Figueiredo de Alencar — Segmentação mais rica de "libinienigi"
+      Apliquei a entrada lexical mais rica (como em sentenças anteriores).
 
 proto-conllu:
   <none>
@@ -910,6 +931,7 @@ proto-conllu:
 chunks:
   span=1-3 type=IP-MAT level=0
   span=1-2 type=NP-SBJ level=1
+  span=2-2 type=NP level=2
   span=3-3 type=NP-PRD level=1
 
 tokens:
@@ -917,15 +939,16 @@ tokens:
       splits:
         [1] v='i'          t='Gnr'      gloss-br='masc' fn=None idx=None
         [2] v='ca'         t='Ncl'      gloss-br='ausente' fn=None idx=None
-  p=2   v='niwigo'           t='N$'         l=1   gloss-br='fotografia'
+  p=2   v='niwigo'           t='N'          l=2   gloss-br='espírito/fotografia'
       splits:
-        [1] v='n'          t='Ant'      gloss-br='retirapossuidor,fotosemdono' fn=None idx=None
-        [2] v='wigo'       t='n'        gloss-br=None fn=None idx=None
-  p=3   v='libinienigi'      t='N$'         l=1   gloss-br='bonito'
+        [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
+        [2] v='wigo'       t='n'        gloss-br='espírito/fotografia' fn=None idx=None
+  p=3   v='libinienigi'      t='N$'         l=1   gloss-br='beleza'
       splits:
-        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
-        [2] v='ibinie'     t='n'        gloss-br=None fn=None idx=None
-        [3] v='nigi'       t='Dim'      gloss-br='masc' fn=None idx=None
+        [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='binie'      t='n'        gloss-br='beleza' fn=None idx=None
+        [3] v='na'         t='Dim'      gloss-br=None fn=None idx=None
+        [4] v='gi'         t='Gnr'      gloss-br='M' fn=None idx=None
 
 conllu/token count check:
   tokens=3  proto-conllu=0
@@ -936,8 +959,8 @@ Sentence 21
 path: $.pages[0].sentences[20]
 uid: 5d0b94bf-223d-4f09-8c6f-b951a70d6d0b
 text: ica nioladi Ganixoa
-status: None
-struct_status: AUTO
+status: REVIEW
+struct_status: REVIEW
 visible: None
 container_meta:
   content: ...
@@ -946,7 +969,8 @@ container_meta:
 translations:
   pt-br: A língua do teu irmão 
 comments:
-  <none>
+  [1] 2026-07-10 16:57:23 — Leonel Figueiredo de Alencar — Fragmento
+      É só um NP solto (que poderia constituir uma resposta a uma pergunta de constituinte). 
 
 proto-conllu:
   <none>
@@ -980,8 +1004,8 @@ Sentence 22
 path: $.pages[0].sentences[21]
 uid: 881131dd-3f70-411a-ac7e-85557139d1e3
 text: ica nioladi nioxoa libinienigi
-status: None
-struct_status: AUTO
+status: REVIEW
+struct_status: REVIEW
 visible: None
 container_meta:
   content: ...
@@ -990,7 +1014,10 @@ container_meta:
 translations:
   pt-br: A língua do irmão dele/dela é bonita
 comments:
-  <none>
+  [1] 2026-07-10 17:08:19 — Leonel Figueiredo de Alencar — "libinienigi"
+      V. comentários anteriores.
+  [2] 2026-07-10 17:16:48 — Leonel Figueiredo de Alencar — Estrutura interna do NP com possuidor
+      A árvore não indica que "irmão" seja o possuidor. Provável ambiguidade estrutural, impossível de ser resolvida por um parser sintático baseado em regras, conforme a literatura clássica sobre o assunto. Deixo aqui o registro do fato. Talvez se possa heuristicamente determinar que o segundo N$ seja o possuidor, mas empiricamente isso pode vir a ser falseado (possuidor não necessariamente pós-nominal na língua). Possível mudança para FINALIZADO.
 
 proto-conllu:
   <none>
@@ -998,7 +1025,6 @@ proto-conllu:
 chunks:
   span=1-4 type=IP-MAT level=0
   span=1-3 type=NP-SBJ level=1
-  span=2-2 type=NP level=2
   span=4-4 type=NP-PRD level=1
 
 tokens:
@@ -1006,13 +1032,20 @@ tokens:
       splits:
         [1] v='i'          t='Gnr'      gloss-br='masc' fn=None idx=None
         [2] v='ca'         t='Ncl'      gloss-br='ausente' fn=None idx=None
-  p=2   v='nioladi'          t='N'          l=2   gloss-br=None
-  p=3   v='nioxoa'           t='N$'         l=1   gloss-br=None
-  p=4   v='libinienigi'      t='N$'         l=1   gloss-br='bonito'
+  p=2   v='nioladi'          t='N$'         l=1   gloss-br='língua|boca del(e|a)'
       splits:
-        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
-        [2] v='ibinie'     t='n'        gloss-br=None fn=None idx=None
-        [3] v='nigi'       t='Dim'      gloss-br='masc' fn=None idx=None
+        [1] v='n'          t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='ioladi'     t='n'        gloss-br='língua|boca' fn=None idx=None
+  p=3   v='nioxoa'           t='N$'         l=1   gloss-br='irmão dele'
+      splits:
+        [1] v='n'          t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='ioxoa'      t='n'        gloss-br='irmão' fn=None idx=None
+  p=4   v='libinienigi'      t='N$'         l=1   gloss-br='beleza'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='binie'      t='n'        gloss-br='beleza' fn=None idx=None
+        [3] v='na'         t='Dim'      gloss-br=None fn=None idx=None
+        [4] v='gi'         t='Gnr'      gloss-br='M' fn=None idx=None
 
 conllu/token count check:
   tokens=4  proto-conllu=0

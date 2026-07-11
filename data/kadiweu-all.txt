@@ -1,26 +1,26 @@
 Found 206 matching sentence(s).
-   1  source=ped-gramm  uid=ed98d4d1-638c-4377-8c6d-5511855636d1  status=None       struct=AUTO       text=ajo liwatece ja iwaGadi
-   2  source=ped-gramm  uid=ccb5ea37-b3ba-47a9-8d71-224f599ea7be  status=None       struct=AUTO       text=ajo liwatece etadi weiigi
-   3  source=ped-gramm  uid=49347527-d19d-4689-bff1-ba3e497e7b1f  status=None       struct=AUTO       text=ajo niwatece etadi digoida
-   4  source=ped-gramm  uid=69948fe6-81f6-4faa-a344-8f8c47486943  status=None       struct=AUTO       text=niwatece iwaGadi
-   5  source=ped-gramm  uid=b2e3ea43-0d68-46ee-9f33-938610cc8aec  status=None       struct=AUTO       text=niwatece etadi weiigi
-   6  source=ped-gramm  uid=1b99ecb9-5656-4c38-b60b-fbbe643708fb  status=None       struct=AUTO       text=ajo niwatece ipegitege weiigi
-   7  source=ped-gramm  uid=e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9  status=None       struct=AUTO       text=liGeladi Maria aGipegetege
-   8  source=ped-gramm  uid=79a6cd4e-b585-437a-9084-1fa077dec3b6  status=None       struct=AUTO       text=ica liGeladi ipegetege
-   9  source=ped-gramm  uid=e9d6dfb6-656d-44aa-ba17-86289fd72268  status=None       struct=AUTO       text=liGeladi idei nigotaGa
-  10  source=ped-gramm  uid=2fff1f23-4e6f-401c-8b74-6a17ff6a391a  status=None       struct=AUTO       text=ica liGeladi ipegitegi
-  11  source=ped-gramm  uid=fef391af-9e63-419f-8f81-057459193f49  status=None       struct=AUTO       text=ica Maria looligi alidi
-  12  source=ped-gramm  uid=070d221f-f72d-4055-9c82-ddc383743e6a  status=None       struct=AUTO       text=ica looligi lidi
-  13  source=ped-gramm  uid=68277d1f-c30b-4c4f-ba9e-c2883cc133af  status=None       struct=AUTO       text=ica looligi dapico
-  14  source=ped-gramm  uid=5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5  status=None       struct=AUTO       text=ica looligi ja dapico
-  15  source=ped-gramm  uid=c5bd2cb2-e53b-40e4-9159-6dacde49c1b6  status=None       struct=AUTO       text=ica looligi lideGegi
-  16  source=ped-gramm  uid=19cc39ce-fe03-4551-8097-9d163a38a3c0  status=None       struct=AUTO       text=loigipodi libinienigipi
+   1  source=ped-gramm  uid=ed98d4d1-638c-4377-8c6d-5511855636d1  status=DONE       struct=DONE       text=ajo liwatece ja iwaGadi
+   2  source=ped-gramm  uid=ccb5ea37-b3ba-47a9-8d71-224f599ea7be  status=DONE       struct=DONE       text=ajo liwatece etadi weiigi
+   3  source=ped-gramm  uid=49347527-d19d-4689-bff1-ba3e497e7b1f  status=DONE       struct=DONE       text=ajo niwatece etadi digoida
+   4  source=ped-gramm  uid=69948fe6-81f6-4faa-a344-8f8c47486943  status=DONE       struct=DONE       text=niwatece iwaGadi
+   5  source=ped-gramm  uid=b2e3ea43-0d68-46ee-9f33-938610cc8aec  status=DONE       struct=DONE       text=niwatece etadi weiigi
+   6  source=ped-gramm  uid=1b99ecb9-5656-4c38-b60b-fbbe643708fb  status=DONE       struct=DONE       text=ajo niwatece ipegitege weiigi
+   7  source=ped-gramm  uid=e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9  status=DONE       struct=DONE       text=liGeladi Maria aGipegetege
+   8  source=ped-gramm  uid=79a6cd4e-b585-437a-9084-1fa077dec3b6  status=DONE       struct=DONE       text=ica liGeladi ipegetege
+   9  source=ped-gramm  uid=e9d6dfb6-656d-44aa-ba17-86289fd72268  status=DONE       struct=DONE       text=liGeladi idei nigotaGa
+  10  source=ped-gramm  uid=2fff1f23-4e6f-401c-8b74-6a17ff6a391a  status=DONE       struct=DONE       text=ica liGeladi ipegitegi
+  11  source=ped-gramm  uid=fef391af-9e63-419f-8f81-057459193f49  status=REVIEW     struct=REVIEW     text=ica Maria looligi alidi
+  12  source=ped-gramm  uid=070d221f-f72d-4055-9c82-ddc383743e6a  status=DONE       struct=DONE       text=ica looligi lidi
+  13  source=ped-gramm  uid=68277d1f-c30b-4c4f-ba9e-c2883cc133af  status=DONE       struct=DONE       text=ica looligi dapico
+  14  source=ped-gramm  uid=5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5  status=DONE       struct=DONE       text=ica looligi ja dapico
+  15  source=ped-gramm  uid=c5bd2cb2-e53b-40e4-9159-6dacde49c1b6  status=DONE       struct=DONE       text=ica looligi lideGegi
+  16  source=ped-gramm  uid=19cc39ce-fe03-4551-8097-9d163a38a3c0  status=DONE       struct=DONE       text=loigipodi libinienigipi
   17  source=ped-gramm  uid=12147353-b422-4ad7-9bef-1d20e70e2a74  status=None       struct=AUTO       text=ica loigi ijo niganigi ipegitegi GanigotGa
   18  source=ped-gramm  uid=582429f2-67d5-4077-b209-6deb7b5df54f  status=REVIEW     struct=REVIEW     text=ica lideGegi loligi idei liGeladi
-  19  source=ped-gramm  uid=0f478381-6858-463d-94cc-903e9dc879f9  status=None       struct=AUTO       text=ica liwigo libinienigi
-  20  source=ped-gramm  uid=55551636-8ed3-4545-8510-d8dbfd817a1a  status=None       struct=AUTO       text=ica niwigo libinienigi
-  21  source=ped-gramm  uid=5d0b94bf-223d-4f09-8c6f-b951a70d6d0b  status=None       struct=AUTO       text=ica nioladi Ganixoa
-  22  source=ped-gramm  uid=881131dd-3f70-411a-ac7e-85557139d1e3  status=None       struct=AUTO       text=ica nioladi nioxoa libinienigi
+  19  source=ped-gramm  uid=0f478381-6858-463d-94cc-903e9dc879f9  status=DONE       struct=DONE       text=ica liwigo libinienigi
+  20  source=ped-gramm  uid=55551636-8ed3-4545-8510-d8dbfd817a1a  status=DONE       struct=DONE       text=ica niwigo libinienigi
+  21  source=ped-gramm  uid=5d0b94bf-223d-4f09-8c6f-b951a70d6d0b  status=REVIEW     struct=REVIEW     text=ica nioladi Ganixoa
+  22  source=ped-gramm  uid=881131dd-3f70-411a-ac7e-85557139d1e3  status=REVIEW     struct=REVIEW     text=ica nioladi nioxoa libinienigi
   23  source=ped-gramm  uid=95a7d135-4be0-463d-b443-76cc5828fc89  status=None       struct=AUTO       text=ica nioladi lodawa libinienigi
   24  source=ped-gramm  uid=2f47b402-9fe7-4714-96e3-c6cbdf405472  status=REVIEW     struct=REVIEW     text=iGeladi idei naigi anenapioi
   25  source=ped-gramm  uid=a4d33655-fe74-4df2-8d5e-b3c88fba5fd1  status=None       struct=AUTO       text=iGeladi idei naigi me napioi
