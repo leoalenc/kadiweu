@@ -65,7 +65,8 @@ import csv
 import json
 import re
 import sys
-from datetime import date
+from datetime import datetime
+import subprocess
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
 
@@ -694,8 +695,8 @@ def convert_sentence(
     sent_index: int,
     sent_id_prefix: str,
     source_document_uid: str,
-    source_json_sha256: str,
-    generation_date: str,
+    project_git_commit: str,
+    generation_timestamp: str,
 ) -> str:
     text_orig = str(sentence.get("text", "")).strip()
     text = normalize_text_ground_truth(text_orig) or text_orig
@@ -755,8 +756,8 @@ def convert_sentence(
             f"# source_struct_status = {source_struct_status}"
         )
 
-    out_lines.append(f"# source_json_sha256 = {source_json_sha256}")
-    out_lines.append(f"# generation_date = {generation_date}")
+    out_lines.append(f"# project_git_commit = {project_git_commit}")
+    out_lines.append(f"# generation_timestamp = {generation_timestamp}")
     out_lines.append("# ud_review_status = TODO")
 
     draft_tokens: List[DraftToken] = []
@@ -1366,6 +1367,23 @@ def load_latest_import_record(
 
     return latest
 
+def get_project_git_commit(project_root: Path) -> str:
+    """
+    Return the full Git commit hash of the current repository.
+
+    Raises RuntimeError if the project directory is not inside a Git
+    repository or Git cannot be executed.
+    """
+    try:
+        return subprocess.check_output(
+            ["git", "rev-parse", "HEAD"],
+            cwd=project_root,
+            text=True,
+        ).strip()
+    except Exception as exc:
+        raise RuntimeError(
+            f"Unable to determine Git commit: {exc}"
+        ) from exc
 
 def get_source_struct_status(sentence: Dict[str, Any]) -> Optional[str]:
     """
@@ -1480,8 +1498,11 @@ def main(
         return 1
 
     source_document_uid = import_record["document_uid"]
-    source_json_sha256 = import_record["sha256"]
-    generation_date = date.today().isoformat()
+    project_git_commit = get_project_git_commit(PROJECT_ROOT)
+
+    generation_timestamp = datetime.now().astimezone().strftime(
+    "%Y-%m-%d %H:%M"
+    )
 
     pages = data.get("pages", [])
     if not isinstance(pages, list):
@@ -1519,8 +1540,8 @@ def main(
                     sent_index=sent_index,
                     sent_id_prefix=sent_id_prefix,
                     source_document_uid=source_document_uid,
-                    source_json_sha256=source_json_sha256,
-                    generation_date=generation_date,
+                    project_git_commit=project_git_commit,
+                    generation_timestamp=generation_timestamp,
                 )
             )
             sent_index += 1
