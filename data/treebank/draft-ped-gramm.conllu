@@ -5,8 +5,9 @@
 # text_por_orig = A canoa dele/a é pesada
 # text_por = A canoa dele/a é pesada.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	liwatece	watece	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:12
@@ -21,8 +22,9 @@
 # text_por_orig = A canoa dele/a está no rio
 # text_por = A canoa dele/a está no rio.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	liwatece	watece	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:12
@@ -37,8 +39,9 @@
 # text_por_orig = A canoa está lá
 # text_por = A canoa está lá.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=4:12
@@ -53,8 +56,9 @@
 # text_por_orig = A canoa está pesada
 # text_por = A canoa está pesada.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	2	nsubj	_	TokenRange=0:8
 2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=9:16
@@ -67,8 +71,9 @@
 # text_por_orig = A canoa está no rio
 # text_por = A canoa está no rio.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	2	nsubj	_	TokenRange=0:8
 2	etadi	etidi	VERB	VB	Gender=Fem|Person=3	0	root	_	TokenRange=9:14
@@ -82,8 +87,9 @@
 # text_por_orig = A canoa está perto do rio
 # text_por = A canoa está perto do rio.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=4:12
@@ -98,8 +104,9 @@
 # text_por_orig = A casa de Maria não é perto dela
 # text_por = A casa de Maria não é perto dela.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=0:8
 2	Maria	maria	PROPN	NPR	_	4	dep	_	TokenRange=9:14
@@ -115,8 +122,9 @@
 # text_por_orig = A casa está perto dela
 # text_por = A casa está perto dela.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:12
@@ -130,8 +138,9 @@
 # text_por_orig = A casa fica perto da cidade
 # text_por = A casa fica perto da cidade.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nsubj	_	TokenRange=0:8
 2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=9:13
@@ -145,8 +154,9 @@
 # text_por_orig = a casa dela/dele fica perto dele 
 # text_por = a casa dela/dele fica perto dele.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:12
@@ -160,8 +170,9 @@
 # text_por_orig = a comida da Maria não está deliciosa (a não gostosura da comida da Maria)
 # text_por = a comida da Maria não está deliciosa (a não gostosura da comida da Maria).
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = REVIEW
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	Maria	maria	PROPN	NPR	_	5	dep	_	TokenRange=4:9
@@ -178,8 +189,9 @@
 # text_por_orig = A comida está/é deliciosa (A gostosura da comida da Maria)
 # text_por = A comida está/é deliciosa (A gostosura da comida da Maria).
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:11
@@ -193,8 +205,9 @@
 # text_por_orig = A comida dela está quente
 # text_por = A comida dela está quente.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:11
@@ -208,8 +221,9 @@
 # text_por_orig = a comida dela está quente
 # text_por = a comida dela está quente.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:11
@@ -224,8 +238,9 @@
 # text_por_orig = A comida é deliciosa (a gostosura da comida dela)
 # text_por = A comida é deliciosa (a gostosura da comida dela).
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:11
@@ -239,8 +254,9 @@
 # text_por_orig = A comunidade dele/dela é bonita
 # text_por = A comunidade dele/dela é bonita.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	loigipodi	oigi	NOUN	N$	Gender=Masc|Number=Plur|Person[psor]=3	2	nsubj	_	TokenRange=0:9
 2	libinienigipi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=10:23
@@ -253,8 +269,9 @@
 # text_por_orig = A comunidade do menino é perto da cidade de vocês
 # text_por = A comunidade do menino é perto da cidade de vocês.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	loigi	oigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	TokenRange=4:9
@@ -271,8 +288,9 @@
 # text_por_orig = a deliciosa comida está na casa dela/dele
 # text_por = a deliciosa comida está na casa dela/dele.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = REVIEW
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	lideGegi	idi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:12
@@ -288,8 +306,9 @@
 # text_por_orig = a fotografia dela/dele é/está bonita
 # text_por = a fotografia dela/dele é/está bonita.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	liwigo	wigo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:10
@@ -303,8 +322,9 @@
 # text_por_orig = a fotografia é/está bonita
 # text_por = a fotografia é/está bonita.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = DONE
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	niwigo	wigo	NOUN	N	Gender=Masc|Number=Sing	3	nsubj	_	TokenRange=4:10
@@ -318,8 +338,9 @@
 # text_por_orig = A língua do teu irmão 
 # text_por = A língua do teu irmão.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = REVIEW
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	nioladi	nioladi	NOUN	N	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:11
@@ -333,8 +354,9 @@
 # text_por_orig = A língua do irmão dele/dela é bonita
 # text_por = A língua do irmão dele/dela é bonita.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = REVIEW
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	nioladi	nioladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:11
@@ -349,8 +371,9 @@
 # text_por_orig = A língua do marido/esposa dele/dela é bonita
 # text_por = A língua do marido/esposa dele/dela é bonita.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	nioladi	nioladi	NOUN	N	Gender=Masc|Number=Sing|Person[psor]=3	4	nsubj	_	TokenRange=4:11
@@ -365,8 +388,9 @@
 # text_por_orig = a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)
 # text_por = a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo).
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = REVIEW
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
@@ -383,8 +407,9 @@
 # text_por_orig = minha casa suja fica naquela rua
 # text_por = minha casa suja fica naquela rua.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
@@ -400,8 +425,9 @@
 # text_por_orig = a casa do João, que é suja
 # text_por = a casa do João, que é suja.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	João	joão	PROPN	NPR	Gender=Masc	2	dep	_	TokenRange=0:4
 2	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	TokenRange=5:13
@@ -416,8 +442,9 @@
 # text_por_orig = A minha casa fica naquela rua suja dela
 # text_por = A minha casa fica naquela rua suja dela.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
@@ -435,8 +462,9 @@
 # text_por_orig = meu pai cuida da plantação de flores como filhas
 # text_por = meu pai cuida da plantação de flores como filhas.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	Eyodi	eyodi	NOUN	N$	_	2	nsubj	_	TokenRange=0:5
 2	dowediteloco	dowediteloco	VERB	VBAPL	Mood=Ind|Person[erg]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=6:18
@@ -456,8 +484,9 @@
 # text_por_orig = Meu pai que era cantor
 # text_por = Meu pai que era cantor.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	Eyodi	eyodi	NOUN	N$	_	3	nsubj	_	TokenRange=0:5
 2	me	me	SCONJ	C	_	3	dep	_	TokenRange=6:8
@@ -471,8 +500,9 @@
 # text_por_orig = Meu pai que era cantor (explicativa)
 # text_por = Meu pai que era cantor (explicativa).
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	Eyodi	eyodi	NOUN	N$	_	0	root	_	TokenRange=0:5
 2	ane	ane	PRON	WPRO	PronType=Rel	3	nsubj	_	TokenRange=6:9
@@ -486,8 +516,9 @@
 # text_por_orig = Meu pai se fosse cantor
 # text_por = Meu pai se fosse cantor.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	Eyodi	eyodi	NOUN	N$	_	0	root	_	TokenRange=0:5
 2	daGa	daga	SCONJ	C	_	1	dep	_	TokenRange=6:10
@@ -501,8 +532,9 @@
 # text_por_orig = minha casa está lá
 # text_por = minha casa está lá.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
@@ -516,8 +548,9 @@
 # text_por_orig = Minha casa está perto de você
 # text_por = Minha casa está perto de você.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	ipegitaGagi	pegi	VERB	VBAPL	Mood=Ind|Number[obj]=Sing|Person[erg]=3|Person[obj]=2|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=8:19
@@ -530,8 +563,9 @@
 # text_por_orig = Minha casa está perto de sua casa
 # text_por = Minha casa está perto de sua casa.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
@@ -545,8 +579,9 @@
 # text_por_orig = Minha casa está perto desta rua suja (que está suja)
 # text_por = Minha casa está perto desta rua suja (que está suja).
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
@@ -562,8 +597,9 @@
 # text_por_orig = minha casa está perto da rua suja
 # text_por = minha casa está perto da rua suja.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=8:17
@@ -579,8 +615,9 @@
 # text_por_orig = Minha casa não fica perto do rio
 # text_por = Minha casa não fica perto do rio.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	nsubj	_	TokenRange=0:7
 2-3	aGipegitegi	_	_	_	_	_	_	_	TokenRange=8:19
@@ -596,8 +633,9 @@
 # text_por_orig = O tucano está indo nele.
 # text_por = O tucano está indo nele.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	Gatodi	gatodi	NOUN	N	_	3	nsubj	_	TokenRange=4:10
@@ -612,8 +650,9 @@
 # text_por_orig = Eles (todos) estão (deitados) no rio.
 # text_por = Eles (todos) estão (deitados) no rio.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ijotawece	tawece	DET	D	Gender=Masc	3	det	_	TokenRange=0:9
 2	etidi	et	VERB	VB	Gender=Masc|Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=10:15
@@ -627,8 +666,9 @@
 # text_por_orig = Minha casa é no rio.
 # text_por = Minha casa é no rio.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	TokenRange=0:7
 2	digoida	digoida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	TokenRange=8:15
@@ -642,8 +682,9 @@
 # text_por_orig = Minha casa é no rio.
 # text_por = Minha casa é no rio.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
@@ -657,8 +698,9 @@
 # text_por_orig = A cidade da casa dela é perto do rio.
 # text_por = A cidade da casa dela é perto do rio.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=0:8
 2	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	dep	_	TokenRange=9:17
@@ -673,8 +715,9 @@
 # text_por_orig = A palavra de seu (teu) irmão é bonita.
 # text_por = A palavra de seu (teu) irmão é bonita.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	lotaGa	otaGa	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=0:6
 2	GanaginaGa	aginaGa	NOUN	N$	Person[psor]=2	3	dep	_	TokenRange=7:17
@@ -688,8 +731,9 @@
 # text_por_orig = Aquela comida é muito cara.
 # text_por = Aquela comida é muito cara.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = REVIEW
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	nGida	niGida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	StandardForm=niGida|TokenRange=0:5
 2	niwenigi	wenigi	NOUN	N	Gender=Masc|Number=Sing	5	nsubj	_	TokenRange=6:14
@@ -706,8 +750,9 @@
 # text_por_orig = A casa do João é suja.
 # text_por = A casa do João é suja.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	João	joão	PROPN	NPR	Gender=Masc	2	nsubj	_	TokenRange=0:4
 2	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	TokenRange=5:13
@@ -721,8 +766,9 @@
 # text_por_orig = A casa do João é suja.
 # text_por = A casa do João é suja.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=0:8
 2	João	joão	PROPN	NPR	Gender=Masc	3	dep	_	TokenRange=9:13
@@ -736,8 +782,9 @@
 # text_por_orig = A casa dele/dela é perto da cidade da lagoa.
 # text_por = A casa dele/dela é perto da cidade da lagoa.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nsubj	_	TokenRange=0:8
 2	ipegitege	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=9:18
@@ -752,8 +799,9 @@
 # text_por_orig = A casa dele/dela é perto da lagoa da cidade.
 # text_por = A casa dele/dela é perto da lagoa da cidade.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = REVIEW
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nsubj	_	TokenRange=0:8
 2	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=9:18
@@ -768,8 +816,9 @@
 # text_por_orig = A canoa é pesada e seu preço é barato
 # text_por = A canoa é pesada e seu preço é barato.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = REVIEW
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	Niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	2	nsubj	_	TokenRange=0:8
 2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=iwaaGadi|TokenRange=9:16
@@ -787,8 +836,9 @@
 # text_por_orig = Estou com ele
 # text_por = Estou com ele.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
 2-3	minitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
@@ -803,8 +853,9 @@
 # text_por_orig = Eu não estou feliz
 # text_por = Eu não estou feliz.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
 2-3	aGidininitibeci	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=3:18
@@ -819,8 +870,9 @@
 # text_por_orig = Estamos perto de vocês.
 # text_por = Estamos perto de vocês.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	jipacaGataGagitiwaji	paca	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Number=Plur|Person[erg]=1|Person[obj]=2|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:20
 2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
@@ -832,8 +884,9 @@
 # text_por_orig = Eu não estou muito feliz
 # text_por = Eu não estou muito feliz.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1-2	aGee	_	_	_	_	_	_	_	TokenRange=0:4
 1	aG	aG	PART	NEG	Polarity=Neg	4	advmod	_	_
@@ -849,8 +902,9 @@
 # text_por_orig = Estamos perto de vocês.
 # text_por = Estamos perto de vocês.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	akaami	i	PRON	PRO	Number=Plur|PronType=Prs	3	nsubj	_	TokenRange=0:6
 2	oko	oko	PRON	PRO	_	3	dep	_	TokenRange=7:10
@@ -864,8 +918,9 @@
 # text_por_orig = O leite da vaca está quente
 # text_por = O leite da vaca está quente.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	niGidowa	niGida	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	StandardForm=niGidoa|TokenRange=0:8
 2	waca	waca	NOUN	N	Gender=Fem|Number=Sing	4	nsubj	_	TokenRange=9:13
@@ -880,8 +935,9 @@
 # text_por_orig = A casa dele/dela é no rio.
 # text_por = A casa dele/dela é no rio.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	IiGeladi	Geladi	NOUN	N$	Person[psor]=3	4	nsubj	_	TokenRange=0:8
 2-3	midi	_	_	_	_	_	_	_	TokenRange=9:13
@@ -897,8 +953,9 @@
 # text_por_orig = A pesada canoa está barata.
 # text_por = A pesada canoa está barata.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	etogo	etogo	NOUN	N	Gender=Fem|Number=Sing	3	dep	_	TokenRange=0:5
 2-3	aneiwaGadi	_	_	_	_	_	_	_	TokenRange=6:16
@@ -915,8 +972,9 @@
 # text = etogo adakake lojedi.
 # text_orig = etogo adakake lojedi
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	etogo	etogo	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=0:5
 2-3	adakake	_	_	_	_	_	_	_	TokenRange=6:13
@@ -932,8 +990,9 @@
 # text_por_orig = As canoas (individualmente) são caras (cada uma com um preço caro)
 # text_por = As canoas (individualmente) são caras (cada uma com um preço caro).
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	etogoli	etogo	NOUN	N	Number=Plur	2	dep	_	TokenRange=0:7
 2	dakake	akake	VERB	ADJ	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	TokenRange=8:14
@@ -947,8 +1006,9 @@
 # text_por_orig = as canoas (como classe/grupo) são caras 
 # text_por = as canoas (como classe/grupo) são caras.
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	etogoli	etogo	NOUN	N	Number=Plur	2	dep	_	TokenRange=0:7
 2	dakake	akake	VERB	ADJ	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	TokenRange=8:14
@@ -960,8 +1020,9 @@
 # text = Etogoli iwaGadi adakake lojetedi.
 # text_orig = Etogoli iwaGadi adakake lojetedi
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
-# project_git_commit = 229e657f2d74fe24c079f0930260b8d6252f1b8e
-# generation_timestamp = 2026-07-10 23:56
+# source_struct_status = AUTO
+# project_git_commit = d5ba39a4cc6f0ed3fb396a631f56ff344d3db5da
+# generation_timestamp = 2026-07-11 00:16
 # ud_review_status = TODO
 1	Etogoli	etogo	NOUN	N	Number=Plur	2	nsubj	_	TokenRange=0:7
 2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=iwaaGadi|TokenRange=8:15

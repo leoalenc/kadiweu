@@ -1387,12 +1387,16 @@ def get_project_git_commit(project_root: Path) -> str:
 
 def get_source_struct_status(sentence: Dict[str, Any]) -> Optional[str]:
     """
-    Return Tycho Brahe's original sentence-level struct_status label unchanged.
+    Return Tycho Brahe's original structural annotation status unchanged.
 
-    No normalization or mapping is performed because this metadata describes
-    the source annotation workflow rather than the UD review workflow.
+    In the Tycho Brahe JSON, this value is stored as:
+
+        sentence["struct"]["status"]
+
+    The CoNLL-U metadata name source_struct_status distinguishes this source
+    annotation status from the manual review status of the generated UD tree.
     """
-    value = sentence.get("struct_status")
+    value = safe_get(sentence, "struct", "status")
 
     if value is None:
         return None
