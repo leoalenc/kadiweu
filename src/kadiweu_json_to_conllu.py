@@ -61,9 +61,11 @@ Create the combined draft:
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import re
 import sys
+from datetime import date
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
 
@@ -94,6 +96,7 @@ PROJECT_ROOT = SCRIPT_DIR.parent
 DEFAULT_BASE_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "kadiweu_default_overrides.json"
 DEFAULT_GOLD_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "gold_derived_overrides.json"
 DEFAULT_MANUAL_OVERRIDES_PATH = PROJECT_ROOT / "data" / "resources" / "kadiweu_manual_overrides.json"
+DEFAULT_IMPORT_HISTORY_PATH = PROJECT_ROOT / "data" / "import-json-history.tsv"
 
 # ---------------------------------------------------------------------
 # Utility helpers
@@ -686,10 +689,18 @@ class DraftToken:
         self.locked_deprel: bool = False
 
 
-def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: str) -> str:
+def convert_sentence(
+    sentence: Dict[str, Any],
+    sent_index: int,
+    sent_id_prefix: str,
+    source_document_uid: str,
+    source_json_sha256: str,
+    generation_date: str,
+) -> str:
     text_orig = str(sentence.get("text", "")).strip()
     text = normalize_text_ground_truth(text_orig) or text_orig
     sent_uid = sentence.get("uid", "")
+    source_struct_status = get_source_struct_status(sentence)
 
     translations = sentence.get("translations", {}) if isinstance(sentence.get("translations"), dict) else {}
     pt_orig = translations.get("pt-br")
@@ -714,7 +725,10 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
 
     out_lines: List[str] = []
 
-    # Metadata
+    # -----------------------------------------------------------------
+    # Sentence metadata
+    # -----------------------------------------------------------------
+
     out_lines.append(f"# sent_id = {sent_id_prefix}{sent_index}")
     out_lines.append(f"# sent_uid = {sent_uid}")
     out_lines.append(f"# text = {text}")
@@ -724,10 +738,26 @@ def convert_sentence(sentence: Dict[str, Any], sent_index: int, sent_id_prefix: 
         out_lines.append(f"# text_por_orig = {pt_orig}")
     if pt_punct:
         out_lines.append(f"# text_por = {pt_punct}")
+
     if en_orig:
         out_lines.append(f"# text_eng_orig = {en_orig}")
     if en_punct:
         out_lines.append(f"# text_eng = {en_punct}")
+
+    # -----------------------------------------------------------------
+    # Provenance and review metadata
+    # -----------------------------------------------------------------
+
+    out_lines.append(f"# source_document_uid = {source_document_uid}")
+
+    if source_struct_status is not None:
+        out_lines.append(
+            f"# source_struct_status = {source_struct_status}"
+        )
+
+    out_lines.append(f"# source_json_sha256 = {source_json_sha256}")
+    out_lines.append(f"# generation_date = {generation_date}")
+    out_lines.append("# ud_review_status = TODO")
 
     draft_tokens: List[DraftToken] = []
     mwt_lines: List[Tuple[int, int, str, str]] = []  # start_id, end_id, form, misc
@@ -1255,6 +1285,103 @@ def load_json(path: Path) -> Dict[str, Any]:
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
 
+def load_latest_import_record(
+    history_path: Path,
+    source_id: str,
+) -> Dict[str, str]:
+    """
+    Return the most recent provenance record for one canonical source document.
+
+    The import history is expected to contain these columns:
+
+        timestamp
+        target
+        source_file
+        source_path
+        size_bytes
+        document_uid
+        sentences
+        sha256
+
+    Records are selected by the canonical target name, such as:
+
+        ped-gramm
+        hil-data
+        van-data
+
+    If multiple records exist, the last matching row is used because the
+    refresh script appends records chronologically.
+    """
+    if not history_path.is_file():
+        raise FileNotFoundError(
+            f"Import history file not found: {history_path}"
+        )
+
+    latest: Optional[Dict[str, str]] = None
+
+    with history_path.open("r", encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f, delimiter="\t")
+
+        required_columns = {
+            "timestamp",
+            "target",
+            "document_uid",
+            "sha256",
+        }
+        actual_columns = set(reader.fieldnames or [])
+        missing_columns = required_columns - actual_columns
+
+        if missing_columns:
+            missing = ", ".join(sorted(missing_columns))
+            raise ValueError(
+                f"Import history is missing required column(s): {missing}"
+            )
+
+        for row in reader:
+            if row.get("target") == source_id:
+                latest = {
+                    key: value.strip() if isinstance(value, str) else value
+                    for key, value in row.items()
+                }
+
+    if latest is None:
+        raise ValueError(
+            f"No import-history record found for source {source_id!r} "
+            f"in {history_path}"
+        )
+
+    document_uid = latest.get("document_uid", "")
+    sha256 = latest.get("sha256", "")
+
+    if not document_uid:
+        raise ValueError(
+            f"Latest import-history record for {source_id!r} "
+            "has no document_uid"
+        )
+
+    if not re.fullmatch(r"[0-9a-fA-F]{64}", sha256):
+        raise ValueError(
+            f"Invalid SHA-256 value for {source_id!r}: {sha256!r}"
+        )
+
+    return latest
+
+
+def get_source_struct_status(sentence: Dict[str, Any]) -> Optional[str]:
+    """
+    Return Tycho Brahe's original sentence-level struct_status label unchanged.
+
+    No normalization or mapping is performed because this metadata describes
+    the source annotation workflow rather than the UD review workflow.
+    """
+    value = sentence.get("struct_status")
+
+    if value is None:
+        return None
+
+    value = str(value).strip()
+    return value or None
+
 
 def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -1278,25 +1405,40 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
         ),
     )
     parser.add_argument(
-    "--overrides",
-    dest="overrides_path",
-    type=Path,
-    default=None,
-    help=(
-        "Optional JSON file with additional override resources. "
-        "Overrides are applied in layers, with later layers taking precedence:\n"
-        "  1. data/resources/kadiweu_default_overrides.json\n"
-        "  2. data/resources/gold_derived_overrides.json\n"
-        "  3. data/resources/kadiweu_manual_overrides.json\n"
-        "  4. this file (if provided via --overrides)\n"
-        "The file must contain the keys: lemma_overrides, form_feat_overrides, "
-        "prontype_overrides, tag_to_default_prontype."
-    ),
-)
+        "--overrides",
+        dest="overrides_path",
+        type=Path,
+        default=None,
+        help=(
+            "Optional JSON file with additional override resources. "
+            "Overrides are applied in layers, with later layers taking precedence:\n"
+            "  1. data/resources/kadiweu_default_overrides.json\n"
+            "  2. data/resources/gold_derived_overrides.json\n"
+            "  3. data/resources/kadiweu_manual_overrides.json\n"
+            "  4. this file (if provided via --overrides)\n"
+            "The file must contain the keys: lemma_overrides, form_feat_overrides, "
+            "prontype_overrides, tag_to_default_prontype."
+        ),
+    )
+    parser.add_argument(
+        "--import-history",
+        type=Path,
+        default=DEFAULT_IMPORT_HISTORY_PATH,
+        help=(
+            "TSV provenance log generated by refresh_kadiweu_jsons.sh. "
+            "The latest row matching the canonical input stem is used to "
+            "obtain source_document_uid and source_json_sha256. "
+            "Defaults to data/import-json-history.tsv."
+        ),
+    )
     return parser.parse_args(argv)
 
 
-def main(json_path: str, overrides_path: Optional[Path] = None) -> int:
+def main(
+    json_path: str,
+    overrides_path: Optional[Path] = None,
+    import_history_path: Path = DEFAULT_IMPORT_HISTORY_PATH,
+) -> int:
     """
     Convert one Tycho Brahe JSON document into a draft UD CoNLL-U treebank.
 
@@ -1322,12 +1464,43 @@ def main(json_path: str, overrides_path: Optional[Path] = None) -> int:
     print(PROJECT_ROOT, file=sys.stderr)
     configure_override_resources(overrides_path)
 
-    data = load_json(Path(json_path))
-    sent_id_prefix = Path(json_path).stem + "-"
+    json_file = Path(json_path)
+    data = load_json(json_file)
+
+    source_id = json_file.stem
+    sent_id_prefix = source_id + "-"
+
+    try:
+        import_record = load_latest_import_record(
+            import_history_path,
+            source_id,
+        )
+    except (FileNotFoundError, ValueError) as exc:
+        print(f"ERROR: {exc}", file=sys.stderr)
+        return 1
+
+    source_document_uid = import_record["document_uid"]
+    source_json_sha256 = import_record["sha256"]
+    generation_date = date.today().isoformat()
 
     pages = data.get("pages", [])
     if not isinstance(pages, list):
         print("ERROR: JSON has no valid 'pages' list.", file=sys.stderr)
+        return 1
+    
+    page_uids = {
+        str(page.get("uid", "")).strip()
+        for page in pages
+        if isinstance(page, dict) and page.get("uid")
+    }
+
+    if source_document_uid not in page_uids:
+        found = ", ".join(sorted(page_uids)) or "<none>"
+        print(
+            "ERROR: provenance document UID does not match the JSON. "
+            f"Expected {source_document_uid!r}; found page UID(s): {found}",
+            file=sys.stderr,
+        )
         return 1
 
     sent_index = 1
@@ -1340,7 +1513,16 @@ def main(json_path: str, overrides_path: Optional[Path] = None) -> int:
         for sentence in sentences:
             if not isinstance(sentence, dict):
                 continue
-            print(convert_sentence(sentence, sent_index, sent_id_prefix))
+            print(
+                convert_sentence(
+                    sentence=sentence,
+                    sent_index=sent_index,
+                    sent_id_prefix=sent_id_prefix,
+                    source_document_uid=source_document_uid,
+                    source_json_sha256=source_json_sha256,
+                    generation_date=generation_date,
+                )
+            )
             sent_index += 1
 
     return 0
@@ -1348,4 +1530,10 @@ def main(json_path: str, overrides_path: Optional[Path] = None) -> int:
 
 if __name__ == "__main__":
     args = parse_args()
-    raise SystemExit(main(args.json_path, args.overrides_path))
+    raise SystemExit(
+        main(
+            json_path=args.json_path,
+            overrides_path=args.overrides_path,
+            import_history_path=args.import_history,
+        )
+    )
