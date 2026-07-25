@@ -97,7 +97,7 @@ SPLIT_TAG_ALIASES: Dict[str, str] = {
     "Erg": "Erg",
     "ERG": "Erg",
     "erg": "Erg",
-        "Abs": "Abs",
+    "Abs": "Abs",
     "ABS": "Abs",
     "abs": "Abs",
 
@@ -171,7 +171,7 @@ SPLIT_TAG_FEATURE_TARGET: Dict[str, str] = {
     "Apl": "VERB",
     "PFV": "VERB",
     "Imperf": "VERB",
-        "Abs": "VERB",
+    "Abs": "VERB",
     "Erg": "VERB",
     "OBL": "VERB",
     "v": "VERB",
@@ -274,11 +274,20 @@ def _gender_from_gloss(gloss: Optional[str]) -> Optional[str]:
     """Extract UD gender from recurrent Tycho gloss values."""
     if not gloss:
         return None
+
     value = gloss.strip()
-    if value in {"M", "Masc", "masc", "MASC"} or "MASC" in value.upper():
+    value_upper = value.upper()
+
+    if value in {"M", "Masc", "masc", "MASC", "3M", "2M"}:
         return "Masc"
-    if value in {"F", "Fem", "fem", "FEM"} or "FEM" in value.upper():
+    if value in {"F", "Fem", "fem", "FEM", "3F", "2F"}:
         return "Fem"
+
+    if "MASC" in value_upper or "MASCULINO" in value_upper:
+        return "Masc"
+    if "FEM" in value_upper or "FEMININO" in value_upper:
+        return "Fem"
+
     return None
 
 
