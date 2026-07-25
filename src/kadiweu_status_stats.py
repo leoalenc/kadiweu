@@ -14,6 +14,8 @@ Generate TSV and Markdown tables:
         data/ped-gramm.json data/hil-data.json data/van-data.json \
         --outdir data/reports/status
 
+This also writes ``sentence_status_individual.tsv``, with one row per sentence.
+
 Also generate per-corpus pie charts and a comparative 100% stacked bar chart:
 
     python3 kadiweu_status_stats.py \
@@ -74,6 +76,16 @@ class StatusRow:
     count: int
     percentage: float
     total: int
+
+
+@dataclass(frozen=True)
+class IndividualStatusRow:
+    """The constituency-tree status of one sentence."""
+
+    sentence_number: int
+    sentence_uid: str
+    dataset: str
+    constituency_status: str
 
 
 def is_sentence_object(obj: Any) -> bool:
@@ -191,6 +203,39 @@ def build_rows(
     return rows
 
 
+def build_individual_rows(
+    corpus: str,
+    sentences: Iterable[Mapping[str, Any]],
+    *,
+    status_field: str = "status",
+    missing_label: str = DEFAULT_MISSING_LABEL,
+    uppercase: bool = False,
+) -> list[IndividualStatusRow]:
+    """Build one status row per sentence, preserving source order."""
+
+    rows = []
+    for sentence_number, sentence in enumerate(sentences, start=1):
+        raw_uid = sentence.get("uid")
+        sentence_uid = (
+            str(raw_uid).strip()
+            if raw_uid is not None and str(raw_uid).strip()
+            else missing_label
+        )
+        rows.append(
+            IndividualStatusRow(
+                sentence_number=sentence_number,
+                sentence_uid=sentence_uid,
+                dataset=corpus,
+                constituency_status=normalize_status(
+                    sentence.get(status_field),
+                    missing_label=missing_label,
+                    uppercase=uppercase,
+                ),
+            )
+        )
+    return rows
+
+
 def status_sort_key(status: str) -> tuple[int, str]:
     """Sort common workflow statuses first and all others alphabetically."""
 
@@ -227,6 +272,33 @@ def write_delimited(
                     row.count,
                     f"{row.percentage:.{percentage_digits}f}",
                     row.total,
+                ]
+            )
+
+
+def write_individual_tsv(
+    rows: Sequence[IndividualStatusRow],
+    path: Path,
+) -> None:
+    """Write a TSV containing the status and identity of every sentence."""
+
+    with path.open("w", encoding="utf-8", newline="") as stream:
+        writer = csv.writer(stream, delimiter="\t")
+        writer.writerow(
+            [
+                "sentence_number",
+                "sentence_uid",
+                "dataset",
+                "constituency_status",
+            ]
+        )
+        for row in rows:
+            writer.writerow(
+                [
+                    row.sentence_number,
+                    row.sentence_uid,
+                    row.dataset,
+                    row.constituency_status,
                 ]
             )
 
@@ -578,6 +650,7 @@ def run(args: argparse.Namespace) -> tuple[list[StatusRow], list[Path]]:
     validate_args(args)
     corpora = resolve_corpora(args.json_files, args.corpus)
     counts_by_corpus: OrderedDict[str, Counter[str]] = OrderedDict()
+    individual_rows: list[IndividualStatusRow] = []
 
     for spec in corpora:
         if not spec.path.is_file():
@@ -601,6 +674,15 @@ def run(args: argparse.Namespace) -> tuple[list[StatusRow], list[Path]]:
                 f"no non-blank {args.status_field!r} value"
             )
         counts_by_corpus[spec.name] = counts
+        individual_rows.extend(
+            build_individual_rows(
+                spec.name,
+                sentences,
+                status_field=args.status_field,
+                missing_label=args.missing_label,
+                uppercase=args.normalize_status,
+            )
+        )
 
     rows = build_rows(
         counts_by_corpus,
@@ -608,6 +690,9 @@ def run(args: argparse.Namespace) -> tuple[list[StatusRow], list[Path]]:
     )
     args.outdir.mkdir(parents=True, exist_ok=True)
     generated: list[Path] = []
+    individual_output = args.outdir / "sentence_status_individual.tsv"
+    write_individual_tsv(individual_rows, individual_output)
+    generated.append(individual_output)
     table_formats = args.table_formats or ["tsv", "markdown"]
 
     for table_format in dict.fromkeys(table_formats):
