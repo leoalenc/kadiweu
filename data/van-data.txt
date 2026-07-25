@@ -5,8 +5,8 @@ Sentence 1
 path: $.pages[0].sentences[0]
 uid: a7e338a1-5403-40d4-b169-c840cf193aae
 text: iGeladi digoida weiigi
-status: None
-struct_status: AUTO
+status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -48,8 +48,8 @@ Sentence 2
 path: $.pages[0].sentences[1]
 uid: d07f0db7-963e-47ab-ab3f-36614732bacd
 text: iGeladi idei weiigi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -88,8 +88,8 @@ Sentence 3
 path: $.pages[0].sentences[2]
 uid: f50b632e-fc1a-4ec0-b8b3-610dab7be736
 text: iGeladi ideaGi weiigi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -126,7 +126,7 @@ path: $.pages[0].sentences[3]
 uid: d26cfc71-a117-4817-9f35-4a7d23fd1f88
 text: iwaalo ja libiniena
 status: DONE
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -135,10 +135,10 @@ container_meta:
 translations:
   pt-br: a mulher está bonita
 comments:
-  [1] 2026-06-03 14:48:53 — Leonel Figueiredo de Alencar — glosa do sufixo "-lo"
-      Sena (2025, p. 92) glosa "-lo" como "FEM". Nesse caso, a etiqueta não seria "Gnr"? Caso fique como "Cla", qual o valor desse atributo, i.e., classe nominal?
-  [2] 2026-06-11 14:10:33 — Filomena Sandalo
+  [1] 2026-06-11 14:10:33 — Filomena Sandalo
       Não acho muito produtivo se for de fato um morfema
+  [2] 2026-06-03 14:48:53 — Leonel Figueiredo de Alencar — glosa do sufixo "-lo"
+      Sena (2025, p. 92) glosa "-lo" como "FEM". Nesse caso, a etiqueta não seria "Gnr"? Caso fique como "Cla", qual o valor desse atributo, i.e., classe nominal?
 
 proto-conllu:
   <none>
@@ -168,7 +168,7 @@ path: $.pages[0].sentences[4]
 uid: e3b84bb7-7e6e-474c-9ad6-c6a47b409a5a
 text: iwaalo ja ninitibeke
 status: DONE
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -177,12 +177,12 @@ container_meta:
 translations:
   pt-br: a mulher está feliz
 comments:
-  [1] 2026-06-10 00:43:31 — Leonel Figueiredo de Alencar — dúvida ortográfica
-      ninitibece (Griffiths)?
-  [2] 2026-06-11 14:32:47 — Filomena Sandalo
+  [1] 2026-06-11 14:32:47 — Filomena Sandalo
       nini+Dir é verbo
 Dir é um morfema ou direcional ou intensificativo, aqui parece ser insensificativo.
 A árvore está correta
+  [2] 2026-06-10 00:43:31 — Leonel Figueiredo de Alencar — dúvida ortográfica
+      ninitibece (Griffiths)?
 
 proto-conllu:
   <none>
@@ -210,8 +210,8 @@ Sentence 6
 path: $.pages[0].sentences[5]
 uid: 3e518fdb-d852-41e5-87a4-f8778597c2a1
 text: lotaGa GanaaginaGa libinienaGa
-status: DONE
-struct_status: AUTO
+status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -256,7 +256,7 @@ path: $.pages[0].sentences[6]
 uid: ee540050-e6fa-424e-9252-fd0b9312769d
 text: lotaGa Gadodawa libinienaGa
 status: DONE
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -301,7 +301,7 @@ path: $.pages[0].sentences[7]
 uid: 947061b4-7b73-4612-8aa8-0af0e04cbc85
 text: niwatece iwaGadi noxilece lojetedi
 status: DONE
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -310,37 +310,37 @@ container_meta:
 translations:
   pt-br: a pesada canoa está barata
 comments:
-  [1] 2026-06-10 13:47:04 — Leonel Figueiredo de Alencar — grafia de "preço" ("vingança")
+  [1] 2026-06-11 18:48:57 — Leonel Figueiredo de Alencar
+      Certo.
+  [2] 2026-06-11 17:03:55 — Filomena Sandalo
+      Mas de todo modo, tem vários n-, ppode ainda ser hither (direcional), que acho que é o caso no exemplo ou terceira pessoa. Não acho que este n- seja antipassivo porque a construcão ee transitiva, ou terceira pessoa ou hither. Como n- para 3p. ee mais comum no plural, fico com hither. 
+  [3] 2026-06-11 16:23:36 — Filomena Sandalo
+      Não. São dois morfemas diferentes. N é valência. E d é marca de voz inversa. Não intransitiviza. Veja Sândalo 2023 no ijal sobre voz e alinhamento inverso 
+  [4] 2026-06-11 16:14:34 — Leonel Figueiredo de Alencar — Prefixo -n antipassivo?
+      Entendi. O prefixo -n seria antipassivo ou alomorfe do d- do paradigma de Griffiths (2002:329)?
+  [5] 2026-06-11 14:15:45 — Leonel Figueiredo de Alencar — Mais uma tradução alterantiva
+      Hilário: "Canoa está pesada diminuindo/baixando seu preço".
+  [6] 2026-06-11 14:15:43 — Filomena Sandalo
+      o verbo diminuir/baixar é transitivo aqui e o sujeito oculto é canoa
+  [7] 2026-06-11 14:14:05 — Filomena Sandalo
+      As formas com d- de terceira pessoa são inacusativas ou proximativas. Pode-se usar o morfema inverso para salientar o objeto, neste caso a estrutura fica transitiva, ver mestrado da Ticiana. Veja tbm meu texto no IJAL de 2023.
+  [8] 2026-06-11 14:08:15 — Leonel Figueiredo de Alencar — Valência de oxilece
+      O verbo oxilece é dado como transitivo por Griffiths e a terceira é com d- e não n-. Seria então uma variante inacusativa?
+  [9] 2026-06-10 22:12:25 — Leonel Figueiredo de Alencar — Tradução original
+      No documento original "dados para gramática pedagógica.docx", consta esta tradução literal: "canoa está pesada abaixou preço dela".
+  [10] 2026-06-10 16:54:07 — Leonel Figueiredo de Alencar — Traduções alternativas
+      Barco pesado abaixou o preço. (Vanda)
+Barco pesa e abaixou seu preço. (Vanda)
+Canoa está pesado [sic] baixou o preço. (Hilário)
+
+  [11] 2026-06-10 13:58:01 — Filomena Sandalo
+      O parser precisa ver a transitiidade do verbo para fazer regras com movimento
+  [12] 2026-06-10 13:47:04 — Leonel Figueiredo de Alencar — grafia de "preço" ("vingança")
       Griffiths (2002):
 loojedi lojetedi subst masc preço (dele)
 noojedi preço
 -noojete comprar
 
-  [2] 2026-06-10 13:58:01 — Filomena Sandalo
-      O parser precisa ver a transitiidade do verbo para fazer regras com movimento
-  [3] 2026-06-10 16:54:07 — Leonel Figueiredo de Alencar — Traduções alternativas
-      Barco pesado abaixou o preço. (Vanda)
-Barco pesa e abaixou seu preço. (Vanda)
-Canoa está pesado [sic] baixou o preço. (Hilário)
-
-  [4] 2026-06-10 22:12:25 — Leonel Figueiredo de Alencar — Tradução original
-      No documento original "dados para gramática pedagógica.docx", consta esta tradução literal: "canoa está pesada abaixou preço dela".
-  [5] 2026-06-11 14:08:15 — Leonel Figueiredo de Alencar — Valência de oxilece
-      O verbo oxilece é dado como transitivo por Griffiths e a terceira é com d- e não n-. Seria então uma variante inacusativa?
-  [6] 2026-06-11 14:14:05 — Filomena Sandalo
-      As formas com d- de terceira pessoa são inacusativas ou proximativas. Pode-se usar o morfema inverso para salientar o objeto, neste caso a estrutura fica transitiva, ver mestrado da Ticiana. Veja tbm meu texto no IJAL de 2023.
-  [7] 2026-06-11 14:15:43 — Filomena Sandalo
-      o verbo diminuir/baixar é transitivo aqui e o sujeito oculto é canoa
-  [8] 2026-06-11 14:15:45 — Leonel Figueiredo de Alencar — Mais uma tradução alterantiva
-      Hilário: "Canoa está pesada diminuindo/baixando seu preço".
-  [9] 2026-06-11 16:14:34 — Leonel Figueiredo de Alencar — Prefixo -n antipassivo?
-      Entendi. O prefixo -n seria antipassivo ou alomorfe do d- do paradigma de Griffiths (2002:329)?
-  [10] 2026-06-11 16:23:36 — Filomena Sandalo
-      Não. São dois morfemas diferentes. N é valência. E d é marca de voz inversa. Não intransitiviza. Veja Sândalo 2023 no ijal sobre voz e alinhamento inverso 
-  [11] 2026-06-11 17:03:55 — Filomena Sandalo
-      Mas de todo modo, tem vários n-, ppode ainda ser hither (direcional), que acho que é o caso no exemplo ou terceira pessoa. Não acho que este n- seja antipassivo porque a construcão ee transitiva, ou terceira pessoa ou hither. Como n- para 3p. ee mais comum no plural, fico com hither. 
-  [12] 2026-06-11 18:48:57 — Leonel Figueiredo de Alencar
-      Certo.
 
 proto-conllu:
   <none>
@@ -380,7 +380,7 @@ path: $.pages[0].sentences[8]
 uid: 2c026af9-b8a1-4389-b658-00113b070dee
 text: niwatece liwaGatena lodejedi etidi weiigi
 status: REVIEW
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -389,12 +389,12 @@ container_meta:
 translations:
   pt-br: a canoa pesada barata está na lagoa
 comments:
-  [1] 2026-06-10 22:15:34 — Leonel Figueiredo de Alencar — Tradução original
-      No documento original, consta como tradução: "a canoa pesada barata". Ou seja, seria apenas um NP "solto" e não uma sentença completa. Não se pode ser interpretada também como a sentença anterior.
+  [1] 2026-06-11 14:22:21 — Filomena Sandalo
+      O parser fez uma predicativa, como pedimos, mas seria o Peso da cano é seu preço!!!
   [2] 2026-06-11 14:18:30 — Filomena Sandalo
       Essa mais parece um NP recursivo: o peso do preço da canoa!! Discutir
-  [3] 2026-06-11 14:22:21 — Filomena Sandalo
-      O parser fez uma predicativa, como pedimos, mas seria o Peso da cano é seu preço!!!
+  [3] 2026-06-10 22:15:34 — Leonel Figueiredo de Alencar — Tradução original
+      No documento original, consta como tradução: "a canoa pesada barata". Ou seja, seria apenas um NP "solto" e não uma sentença completa. Não se pode ser interpretada também como a sentença anterior.
 
 proto-conllu:
   <none>
@@ -428,7 +428,7 @@ path: $.pages[0].sentences[9]
 uid: 0c38eab8-c6b0-4f02-bf05-27ea6285fe70
 text: Gawenigi eliodi me libinienigi
 status: REVIEW
-struct_status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -469,8 +469,8 @@ Sentence 11
 path: $.pages[0].sentences[10]
 uid: a85fda39-1575-4120-9432-8fb534ebdbd2
 text: niGida liwenigi libinienigi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -512,8 +512,8 @@ Sentence 12
 path: $.pages[0].sentences[11]
 uid: a1e15803-1e5e-481f-8137-a84beac6cbcc
 text: niGida niwenigi daGaxa me dakake loojedi
-status: DONE
-struct_status: AUTO
+status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -522,15 +522,17 @@ container_meta:
 translations:
   pt-br: aquela comida é muito cara
 comments:
-  [1] 2026-06-11 14:38:44 — Filomena Sandalo — CP-me
-      1. CP-me gerado errado
-2. Acho melhor considerar dakake verbo inacusativo, pois kad nnao é uma língua muito produtiva em adjetivos
-  [2] 2026-06-12 13:37:33 — Leonel Figueiredo de Alencar — Classe de dakake
-      Certo. Com base na minha experiência com nheengatu, tendo a preferir também a análise como verbo. Pelo menos naquela outra língua, orações com predicado não verbal têm-se mostrado mais difíceis de analisar automaticamente. 
+  [1] 2026-07-11 18:47:18 — Leonel Figueiredo de Alencar — Subida do possuidor
+      Comparar com outras árvores com subida do possuidor.
+  [2] 2026-06-12 21:28:20 — Filomena Sandalo
+      Deplicidade. É quantificador. Kadiwéu tem um Q (muito) para contável e outro para incontável. Ver texto da LIV.
   [3] 2026-06-12 13:43:14 — Leonel Figueiredo de Alencar — Classe de daGaxa
       No léxico, está também como Q. É advérbio para Griffiths, que adota uma terminologia tradicional. Trata-se de ambiguidade real ou duplicidade terminológica? Deixei o que já estava, ou seja, ADV,  
-  [4] 2026-06-12 21:28:20 — Filomena Sandalo
-      Deplicidade. É quantificador. Kadiwéu tem um Q (muito) para contável e outro para incontável. Ver texto da LIV.
+  [4] 2026-06-12 13:37:33 — Leonel Figueiredo de Alencar — Classe de dakake
+      Certo. Com base na minha experiência com nheengatu, tendo a preferir também a análise como verbo. Pelo menos naquela outra língua, orações com predicado não verbal têm-se mostrado mais difíceis de analisar automaticamente. 
+  [5] 2026-06-11 14:38:44 — Filomena Sandalo — CP-me
+      1. CP-me gerado errado
+2. Acho melhor considerar dakake verbo inacusativo, pois kad nnao é uma língua muito produtiva em adjetivos
 
 proto-conllu:
   <none>
@@ -573,7 +575,7 @@ path: $.pages[0].sentences[12]
 uid: e9806e26-701d-4f5f-9ca9-63216cccf3d0
 text: naGajo lomiigo Pedro idei niwatece
 status: DONE
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -582,12 +584,19 @@ container_meta:
 translations:
   pt-br: aquele anzol do Pedro está na canoa
 comments:
-  [1] 2026-06-17 12:30:26 — Leonel Figueiredo de Alencar — Normalização de "noatece"
-      Seguindo orientação anterior de adotar grafia fonêmica, alterei a forma "noatece" ("niwatece" -> "nwatece" -> "noatece"), usada pela consultora indígena, para "niwatece". O parser não havia analisado a sentença porque "naotece" não consta no léxico. A forma "niwatece" ocorre noutras sentenças da mesma consultora.
-  [2] 2026-06-17 12:49:55 — Leonel Figueiredo de Alencar — Normalização de vogais longas
-      Seguindo orientação anterior, apliquei a normalização "lomigo" -> "lomiigo". Esta última forma é a única que consta em Griffiths (2002).
-  [3] 2026-06-17 13:58:17 — Filomena Sandalo
+  [1] 2026-07-11 15:31:33 — Leonel Figueiredo de Alencar — Sentenças análogas
+      Esta foi mesmo a sentença para traduzir: "aquele anzol do Pedro está na canoa". Comparar com a versão com o verbo "ser", não muito idiomática em português: 
+
+>aquele anzol do menino é na canoa
+>nGajo lomigo niganigawaanigi manitaGa noatece
+>                            (me+ani+taGa)
+>Possível preposição
+  [2] 2026-06-17 13:58:17 — Filomena Sandalo
       Ok
+  [3] 2026-06-17 12:49:55 — Leonel Figueiredo de Alencar — Normalização de vogais longas
+      Seguindo orientação anterior, apliquei a normalização "lomigo" -> "lomiigo". Esta última forma é a única que consta em Griffiths (2002).
+  [4] 2026-06-17 12:30:26 — Leonel Figueiredo de Alencar — Normalização de "noatece"
+      Seguindo orientação anterior de adotar grafia fonêmica, alterei a forma "noatece" ("niwatece" -> "nwatece" -> "noatece"), usada pela consultora indígena, para "niwatece". O parser não havia analisado a sentença porque "naotece" não consta no léxico. A forma "niwatece" ocorre noutras sentenças da mesma consultora.
 
 proto-conllu:
   <none>
@@ -627,19 +636,32 @@ Sentence 14
 path: $.pages[0].sentences[13]
 uid: 2386b5b5-57d0-4a1f-86c2-73f67561744c
 text: naGajo lomiigo nigaanigawaanigi manitaGa niwatece
-status: DONE
-struct_status: AUTO
+status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
   contents: ...
   uid: 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
 translations:
-  pt-br: aquele anzol do menino é na canoa
+  pt-br: Aquele anzol do menino está na canoa.
 comments:
-  [1] 2026-06-13 14:47:04 — Leonel Figueiredo de Alencar — A forma "noatece" e normalização ortográfica da senteną
-      Não consta no léxico "noatece". Deve ser "typo" ou produto de alguma regra fonológica aplicada sobre a forma canônica "niwatece". Substituí. Também normalizei a escrita das demais palavras do original, que reza: nGajo lomigo niganigawaanigi manitaGa noatece.
-  [2] 2026-06-13 14:52:00 — Leonel Figueiredo de Alencar — Segmentação morfêmica de "nigaanigawaanigi"
+  [1] 2026-07-11 15:26:50 — Leonel Figueiredo de Alencar — Versão portuguesa e idiomaticidade no kadiwéu
+      Estava: "aquele anzol do menino é na canoa". Isso foi dado à consultora para traduzir. Talvez verificar com a consultora se a sentença é gramatical e idiomática. 
+  [2] 2026-07-11 15:21:21 — Leonel Figueiredo de Alencar — Possível preposição?
+      No documento original, consta:
+
+>aquele anzol do menino é na canoa
+>nGajo lomigo niganigawaanigi manitaGa noatece
+>                             (me+ani+taGa)
+>Possível preposição
+
+Deixo aqui registrado para investigação futura.
+  [3] 2026-06-15 13:42:34 — Filomena Sandalo
+      OK
+  [4] 2026-06-15 13:42:27 — Filomena Sandalo
+      Antes de /wV/, uma vogal tende a cair e e forma-se um novo ditongo com [oV]. Mas acho que a ortografia deve manter o fonêmico. 
+  [5] 2026-06-13 14:52:00 — Leonel Figueiredo de Alencar — Segmentação morfêmica de "nigaanigawaanigi"
       Segui literalmente Sena (2025, p. 83). Griffiths (2002, p. 133): nigaanigi nigaanigipi subst masc gurí
 niga-aanigi (fala da mulher)
 nigaana (forma fem)
@@ -647,10 +669,8 @@ menos de 10 anos, criança
 nigaanigipawaanigi criançada
 nigaanigawaanigi (forma dim)
 
-  [3] 2026-06-15 13:42:27 — Filomena Sandalo
-      Antes de /wV/, uma vogal tende a cair e e forma-se um novo ditongo com [oV]. Mas acho que a ortografia deve manter o fonêmico. 
-  [4] 2026-06-15 13:42:34 — Filomena Sandalo
-      OK
+  [6] 2026-06-13 14:47:04 — Leonel Figueiredo de Alencar — A forma "noatece" e normalização ortográfica da senteną
+      Não consta no léxico "noatece". Deve ser "typo" ou produto de alguma regra fonológica aplicada sobre a forma canônica "niwatece". Substituí. Também normalizei a escrita das demais palavras do original, que reza: nGajo lomigo niganigawaanigi manitaGa noatece.
 
 proto-conllu:
   <none>
@@ -704,27 +724,29 @@ path: $.pages[0].sentences[14]
 uid: 4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7
 text: Ijo nigaanigawaanigi idei madi lomiigo niwatece
 status: REVIEW
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
   contents: ...
   uid: 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
 translations:
-  pt-br: o menino está na canoa do azol??? 
+  pt-br: [?] O menino está na canoa do azol. 
 comments:
-  [1] 2026-06-10 12:29:10 — Leonel Figueiredo de Alencar — niganigawaanigi ou nigaanigawaanigi?
-      niganigawaanigi como está ou nigaanigawaanigi conforme Griffiths? De modo geral, como lidar com discrepâncias de grafia, especialmente no que tange à quantidade vocálica, entre sentenças redigidas pelos informantes e as formas dicionarizadas?
-  [2] 2026-06-10 20:18:19 — Filomena Sandalo
-      Manter as vogais longas 
-  [3] 2026-06-11 14:42:33 — Filomena Sandalo
-      Manter sempre Griffiths para facilitar a conversa com o dicionário
+  [1] 2026-07-11 15:12:18 — Leonel Figueiredo de Alencar — Arrumando tradução portuguesa
+      Estava: "o menino está na canoa do anzol???". Estou indicando a dúvida sobre o teor da tradução por meio de "[?]" no início da sentença. 
+  [2] 2026-06-24 18:46:52 — Leonel Figueiredo de Alencar — Tradução e árvore
+      Deixei status "Revisar" porque fiquei em dúvida sobre a representação do NP possessivo.
+  [3] 2026-06-24 18:32:00 — Leonel Figueiredo de Alencar — Correção do texto em kadiwéu
+      Atualizei a versão em kadiwéu conforme mensagem da Vanda enviada por Whattsapp em 19/06/26 e encaminhada para mim. Fiz as devidas noremalizaçòes  na sentença original "Ijo niganigawani idei Madi lomigo niwatece".
   [4] 2026-06-19 14:43:03 — Filomena Sandalo
       estrutura errada feita pelo parser
-  [5] 2026-06-24 18:32:00 — Leonel Figueiredo de Alencar — Correção do texto em kadiwéu
-      Atualizei a versão em kadiwéu conforme mensagem da Vanda enviada por Whattsapp em 19/06/26 e encaminhada para mim. Fiz as devidas noremalizaçòes  na sentença original "Ijo niganigawani idei Madi lomigo niwatece".
-  [6] 2026-06-24 18:46:52 — Leonel Figueiredo de Alencar — Tradução e árvore
-      Deixei status "Revisar" porque fiquei em dúvida sobre a representação do NP possessivo.
+  [5] 2026-06-11 14:42:33 — Filomena Sandalo
+      Manter sempre Griffiths para facilitar a conversa com o dicionário
+  [6] 2026-06-10 20:18:19 — Filomena Sandalo
+      Manter as vogais longas 
+  [7] 2026-06-10 12:29:10 — Leonel Figueiredo de Alencar — niganigawaanigi ou nigaanigawaanigi?
+      niganigawaanigi como está ou nigaanigawaanigi conforme Griffiths? De modo geral, como lidar com discrepâncias de grafia, especialmente no que tange à quantidade vocálica, entre sentenças redigidas pelos informantes e as formas dicionarizadas?
 
 proto-conllu:
   <none>
@@ -778,17 +800,18 @@ Sentence 16
 path: $.pages[0].sentences[15]
 uid: 235440ba-548e-4df6-8d9e-214cc8714f8f
 text: niGijo nigaanigawaanigi manitaGa lomigo niwatece
-status: DONE
-struct_status: AUTO
+status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
   contents: ...
   uid: 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
 translations:
-  pt-br: aquele menino é na canoa do anzol
+  pt-br: Aquele menino está na canoa do anzol.
 comments:
-  <none>
+  [1] 2026-07-11 15:18:42 — Leonel Figueiredo de Alencar — Tradução portuguesa. 
+      Estava: "aquele menino é na canoa do anzol".
 
 proto-conllu:
   <none>
@@ -837,9 +860,9 @@ Sentence 17
 ================================================================================
 path: $.pages[0].sentences[16]
 uid: 86f5c128-e931-4443-90cc-2359748ed69f
-text: Eyo nigotaGa
-status: None
-struct_status: AUTO
+text: Eeyo nigotaGa
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -848,7 +871,12 @@ container_meta:
 translations:
   pt-br: Estou na cidade
 comments:
-  <none>
+  [1] 2026-07-11 18:11:12 — Leonel Figueiredo de Alencar — "n" prefixal como morfema?
+      "n" de "nigotaGa" como morfema?
+  [2] 2026-07-11 18:03:44 — Leonel Figueiredo de Alencar — Eyo -> Eeyo
+      Eyo -> Eeyo
+  [3] 2026-07-11 18:02:14 — Leonel Figueiredo de Alencar — Arrumando glosas
+      Removi da glosa inglesa: niáligi
 
 proto-conllu:
   <none>
@@ -859,7 +887,9 @@ chunks:
   span=2-2 type=NP-PRD level=1
 
 tokens:
-  p=1   v='Eyo'              t='PRO'        l=1   gloss-br='eu'
+  p=1   v='Eeyo'             t='PRO'        l=1   gloss-br='eu (fala de mulher)'
+      splits:
+        [1] v='eeyo'       t='Pro'      gloss-br='1SG' fn=None idx=None
   p=2   v='nigotaGa'         t='N'          l=1   gloss-br='cidade'
 
 conllu/token count check:
@@ -871,8 +901,8 @@ Sentence 18
 path: $.pages[0].sentences[17]
 uid: d021bede-064b-4fd5-bb33-6c7cd4279c1b
 text: Eyo manitaGa nigotaGa
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -915,8 +945,8 @@ Sentence 19
 path: $.pages[0].sentences[18]
 uid: e5c65dad-8b04-46da-b965-4921887cbca4
 text: niGijoa lionigipi iwaalo idei minitaGa
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -963,7 +993,9 @@ tokens:
       split: {"v": "minitaGa", "t": "C+DAPL", "idx": 0}
       splits:
         [1] v='me'         t='c'        gloss-br=None fn=True idx=None
-        [2] v='initaGa'    t=None       gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='ni'         t='Ncl'      gloss-br='sentad(o|a)' fn=None idx=None
+        [4] v='taGa'       t='Apl'      gloss-br='COM' fn=None idx=None
   p=6   v='@initaGa'         t='DAPL'       l=3   gloss-br=None
       split: {"idx": 1}
 
@@ -976,8 +1008,8 @@ Sentence 20
 path: $.pages[0].sentences[19]
 uid: 8c5dd09c-d010-4c48-9601-9d3b14c61119
 text: dibixodi idei manitaGa
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1004,12 +1036,12 @@ tokens:
       splits:
         [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
         [2] v='dei'        t='v'        gloss-br='ficar(permanente)' fn=None idx=None
-  p=3   v='me@'              t='C'          l=1   gloss-br=None
+  p=3   v='me@'              t='C'          l=1   gloss-br='que com el(e|a)'
       split: {"v": "manitaGa", "t": "C+DAPL", "idx": 0}
       splits:
-        [1] v='me'         t=None       gloss-br=None fn=None idx=None
-        [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
-        [3] v='ni'         t='Ncl'      gloss-br=None fn=None idx=None
+        [1] v='me'         t='c'        gloss-br='COMP' fn=True idx=None
+        [2] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [3] v='ni'         t='Ncl'      gloss-br='sentad(o|a)' fn=None idx=None
         [4] v='taGa'       t='Apl'      gloss-br='3' fn=None idx=None
   p=4   v='@anitaGa'         t='DAPL'       l=3   gloss-br=None
       split: {"idx": 1}
@@ -1023,8 +1055,8 @@ Sentence 21
 path: $.pages[0].sentences[20]
 uid: 9b107abc-b49f-4ce2-9c43-30c7e5b5f8b2
 text: iwalepodi ja libinienigipi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1065,8 +1097,8 @@ Sentence 22
 path: $.pages[0].sentences[21]
 uid: 0d6cdbcf-9d99-4eff-8615-149ec22fec5f
 text: ajo ninitibeci
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1088,7 +1120,7 @@ tokens:
   p=1   v='ajo'              t='D'          l=1   gloss-br='a'
       splits:
         [1] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
-        [2] v='jo'         t='Ncl'      gloss-br='emfrente' fn=None idx=None
+        [2] v='jo'         t='Ncl'      gloss-br='em_frente' fn=None idx=None
   p=2   v='ninitibeci'       t='VB'         l=0   gloss-br=None
 
 conllu/token count check:
@@ -1100,8 +1132,8 @@ Sentence 23
 path: $.pages[0].sentences[22]
 uid: 05676093-36c9-4e30-959a-e850447f32a5
 text: ajo iwaGadi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1138,8 +1170,8 @@ Sentence 24
 path: $.pages[0].sentences[23]
 uid: 661c62a7-3c8c-4609-b989-017deaae82c6
 text: ajo daGaxa ninitibeci
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1176,7 +1208,7 @@ path: $.pages[0].sentences[24]
 uid: abe20c80-8394-478c-92eb-feef1512e5ed
 text: ajo eliodi linikeGegi
 status: DONE
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1185,10 +1217,10 @@ container_meta:
 translations:
   pt-br: ela é muito feliz
 comments:
-  [1] 2026-06-11 19:41:31 — Leonel Figueiredo de Alencar — Nominalizador Ge
-      Sena descreve Ge como nominalizador (NMLZ), apresentando diversos exemplos de nomes deverbais com esse sufixo, alguns com o sufixo gi de masculino . No entanto, não encontrei um verbo nike que funcionaria como base para essa nominalização.
-  [2] 2026-06-11 19:47:52 — Leonel Figueiredo de Alencar
+  [1] 2026-06-11 19:47:52 — Leonel Figueiredo de Alencar
       Analisei o ke como direcional. O ni que restou da segmentação parece corresponder ao lema -ini(tibece) 'alegrar-se' de Griffiths.
+  [2] 2026-06-11 19:41:31 — Leonel Figueiredo de Alencar — Nominalizador Ge
+      Sena descreve Ge como nominalizador (NMLZ), apresentando diversos exemplos de nomes deverbais com esse sufixo, alguns com o sufixo gi de masculino . No entanto, não encontrei um verbo nike que funcionaria como base para essa nominalização.
 
 proto-conllu:
   <none>
@@ -1222,7 +1254,7 @@ path: $.pages[0].sentences[25]
 uid: 0575dd46-865a-4ba4-bd49-ed6db054eeb4
 text: ajo lapicaGa
 status: DONE
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1263,8 +1295,8 @@ Sentence 27
 path: $.pages[0].sentences[26]
 uid: 3aba0004-0ce2-4392-a334-ef814428ec0d
 text: ijo libinienigi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1305,7 +1337,7 @@ path: $.pages[0].sentences[27]
 uid: d369088d-7d87-44b9-a956-2d5bd5f955e1
 text: ijo lapicaGigi
 status: DONE
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1314,21 +1346,21 @@ container_meta:
 translations:
   pt-br: ele é / está quente
 comments:
-  [1] 2026-06-12 13:14:50 — Leonel Figueiredo de Alencar — Normalização de lapikaGigi
-      Estou mudando lapikaGigi para lapicaGigi. Não encontrei na literatura nada sobre o sufixo Gi (ou Gi). Seria alomorfe do nominalizador Ge? Griffiths (2002): lapicaGaga 'calor'. 
-  [2] 2026-06-12 21:11:27 — Filomena Sandalo
-      Nominalizador 
-O GV muda muito a vogal por harmonia 
-  [3] 2026-06-15 13:44:51 — Filomena Sandalo
+  [1] 2026-06-16 17:36:08 — Leonel Figueiredo de Alencar — A tag "Der"
+      Entendido. No exemplo, temos: etiqueta: Der. gloss-br: Nmlz
+  [2] 2026-06-16 17:25:16 — Filomena Sandalo
+      A gente marca como Der todo morfema que mude categoria, e na linha debaixo especifca como Nomlz ou etc. 
+  [3] 2026-06-15 18:48:01 — Leonel Figueiredo de Alencar — Sequência Gigi
+      Entendi. Perfeito. Mudei a tag de Gi (Ge subjacente) para Nmlz por ser mais específica. Tudo bem?
+  [4] 2026-06-15 13:44:51 — Filomena Sandalo
       Acho que GV é nominalizador e gi masculino. Não são dois Gs, certo? 
 =Gigi
 O nominalizador GV sofre harmionia vocálica e deixamos a ortografia com a harmonia porque, caso contário, eles não reconhecem a palavra escrita.
-  [4] 2026-06-15 18:48:01 — Leonel Figueiredo de Alencar — Sequência Gigi
-      Entendi. Perfeito. Mudei a tag de Gi (Ge subjacente) para Nmlz por ser mais específica. Tudo bem?
-  [5] 2026-06-16 17:25:16 — Filomena Sandalo
-      A gente marca como Der todo morfema que mude categoria, e na linha debaixo especifca como Nomlz ou etc. 
-  [6] 2026-06-16 17:36:08 — Leonel Figueiredo de Alencar — A tag "Der"
-      Entendido. No exemplo, temos: etiqueta: Der. gloss-br: Nmlz
+  [5] 2026-06-12 21:11:27 — Filomena Sandalo
+      Nominalizador 
+O GV muda muito a vogal por harmonia 
+  [6] 2026-06-12 13:14:50 — Leonel Figueiredo de Alencar — Normalização de lapikaGigi
+      Estou mudando lapikaGigi para lapicaGigi. Não encontrei na literatura nada sobre o sufixo Gi (ou Gi). Seria alomorfe do nominalizador Ge? Griffiths (2002): lapicaGaga 'calor'. 
 
 proto-conllu:
   <none>
@@ -1360,7 +1392,7 @@ path: $.pages[0].sentences[28]
 uid: a0ab1cad-f01e-49bb-8f31-5edf4fa4c102
 text: niGijo ninitibigiwaji
 status: DONE
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1369,11 +1401,9 @@ container_meta:
 translations:
   pt-br: eles são felizes
 comments:
-  [1] 2026-06-10 00:31:17 — Leonel Figueiredo de Alencar — síncope ou não realização de vogal em nG
-      Ocorrem diversas formas como nGijo (ao lado de niGijo) em que não se insere uma vogal no morfema nG.
-  [2] 2026-06-11 14:45:56 — Filomena Sandalo
-      problemas de ortografia, manter como em Griffith para facilitar 
-  [3] 2026-06-14 17:56:42 — Leonel Figueiredo de Alencar — Análise de ninitibigiwaji
+  [1] 2026-06-15 13:37:30 — Filomena Sandalo
+      Você tem razão. Tem vearios pluralizadores clíticos que merecem mais estudo no kadiwéu. Pode alterar para totalitativo, parece mais adequado. 
+  [2] 2026-06-14 17:56:42 — Leonel Figueiredo de Alencar — Análise de ninitibigiwaji
       Em princípio, seguindo literalmente o paradigma dado por Griffiths, ninitibigiwaji seria a terceira pessoa do plural desse verbo. Lendo Sandalo (1995), porém, tendo a tratar n- como marca de terceira pessoa apenas. Sobre o pluralizador "wajI", me pergunto se não seria algo como o que se tem chamado de "totalitative" em tipologia, especialmente de línguas ameríndias, uma vez que tem escopo variável sobre o sujeito ou o objeto, dependendo da transitividade verbal. Lembra-me a partícula "pawa" ("pá" ou "páu") do nheengatu, traduzível por "todos" e também de escopo sobre o sujeito ou o objeto. 
 
 No momento, "waji" está como marca de coletivo. Deixamos assim ou mudamos? 
@@ -1387,8 +1417,10 @@ ninitibece
 Godinitibece
 aniniitibecetiwaji
 ninitibigiwaji
-  [4] 2026-06-15 13:37:30 — Filomena Sandalo
-      Você tem razão. Tem vearios pluralizadores clíticos que merecem mais estudo no kadiwéu. Pode alterar para totalitativo, parece mais adequado. 
+  [3] 2026-06-11 14:45:56 — Filomena Sandalo
+      problemas de ortografia, manter como em Griffith para facilitar 
+  [4] 2026-06-10 00:31:17 — Leonel Figueiredo de Alencar — síncope ou não realização de vogal em nG
+      Ocorrem diversas formas como nGijo (ao lado de niGijo) em que não se insere uma vogal no morfema nG.
 
 proto-conllu:
   <none>
@@ -1420,7 +1452,7 @@ path: $.pages[0].sentences[29]
 uid: 0c7e64fb-f070-4faa-a12a-c110cdf4bf16
 text: nGijo lodajo ajo lodowa aGica digoida liGeladi
 status: REVIEW
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1483,8 +1515,8 @@ Sentence 31
 path: $.pages[0].sentences[30]
 uid: 5d76c7ee-51ce-47b0-a85d-ddc7f7d33f5f
 text: ica liwigo niganigawanigi libinienigi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1530,8 +1562,8 @@ Sentence 32
 path: $.pages[0].sentences[31]
 uid: 46190f73-f21e-4073-b09c-8b2d17c6668e
 text: naGani wetiGa liwaGatena
-status: REVIEW
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1575,8 +1607,8 @@ Sentence 33
 path: $.pages[0].sentences[32]
 uid: a0bb1280-1040-4dff-9311-a1a31049b6f8
 text: naGani wetiGa iwaGadi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1611,8 +1643,8 @@ Sentence 34
 path: $.pages[0].sentences[33]
 uid: e1acd124-849e-40dc-bbb0-a8b6ed281592
 text: niGidiwa wetiadi iwaGadi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1655,8 +1687,8 @@ Sentence 35
 path: $.pages[0].sentences[34]
 uid: 675ef4d4-ebe8-4601-bf42-908deb0df82b
 text: ani wetiGa eliodi me iwaGadi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1672,12 +1704,12 @@ proto-conllu:
 
 chunks:
   span=1-5 type=IP-MAT level=0
-  span=2-2 type=NP level=1
+  span=1-2 type=NP-SBJ level=1
   span=3-5 type=CP-me level=1
   span=5-5 type=IP-SUB level=2
 
 tokens:
-  p=1   v='ani'              t='VB'         l=0   gloss-br=None
+  p=1   v='ani'              t='D'          l=1   gloss-br='essa'
       splits:
         [1] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
         [2] v='ni'         t='Ncl'      gloss-br='sentad(o|a)' fn=None idx=None
@@ -1698,8 +1730,8 @@ Sentence 36
 path: $.pages[0].sentences[35]
 uid: 42b65fc9-cec4-40a9-8aec-cdeec3731df8
 text: ani wetiGa iwaGadi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1737,8 +1769,8 @@ Sentence 37
 path: $.pages[0].sentences[36]
 uid: ba34b659-bcb8-4aa2-b9f4-b969ba786b12
 text: ani wetiGa me iwaGadi eniteloco iGonagi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1786,8 +1818,8 @@ Sentence 38
 path: $.pages[0].sentences[37]
 uid: 61da4017-2140-4577-82e4-d5108efae675
 text: ani wetiGa ane iwaGadi eniteloco iGonagi
-status: REVIEW
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1838,8 +1870,8 @@ Sentence 39
 path: $.pages[0].sentences[38]
 uid: 6459c008-b2ad-4517-8227-b525616b720d
 text: idiwa wetiadi iwaGadi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1881,8 +1913,8 @@ Sentence 40
 path: $.pages[0].sentences[39]
 uid: b4e1df8d-6590-4ce9-9f72-c0b054398c89
 text: niGidowa waca lotiidi dapicoGo
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1929,8 +1961,8 @@ Sentence 41
 path: $.pages[0].sentences[40]
 uid: 278e4c5c-aaab-4ca3-8f5e-277610fb80c2
 text: idowa waca lotiidi dapicoGo
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1975,9 +2007,9 @@ Sentence 42
 ================================================================================
 path: $.pages[0].sentences[41]
 uid: 44646324-eb90-42f0-b944-21f0452109e2
-text: ijowa nigetedi liwigo libinienaGa
-status: None
-struct_status: AUTO
+text: ijoa nigetedi liwigo libinienaGa
+status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -1986,7 +2018,10 @@ container_meta:
 translations:
   pt-br: estes ovos da fotografia dela estão bonitos
 comments:
-  <none>
+  [1] 2026-07-11 19:36:00 — Leonel Figueiredo de Alencar — ijowa -> ijoa
+      ijowa -> ijoa
+  [2] 2026-07-11 19:25:30 — Leonel Figueiredo de Alencar — Construção posessiva
+      O NP complemento é "ovos" na árvore, mas parece que deveria ser fotografia. Por outro lado, o determinante refere-se a "ovos". Portanto, deveria constituir nó irmão com esse nome.
 
 proto-conllu:
   <none>
@@ -1998,8 +2033,16 @@ chunks:
   span=4-4 type=NP-PRD level=1
 
 tokens:
-  p=1   v='ijowa'            t='D'          l=1   gloss-br='o'
+  p=1   v='ijoa'             t='D'          l=1   gloss-br='os|as'
+      splits:
+        [1] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [2] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+        [3] v='wa'         t='Plu'      gloss-br=None fn=None idx=None
   p=2   v='nigetedi'         t='N'          l=2   gloss-br='ovos'
+      splits:
+        [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
+        [2] v='getegi'     t='n'        gloss-br='ovo[M]' fn=None idx=None
+        [3] v='di'         t='Plu'      gloss-br=None fn=None idx=None
   p=3   v='liwigo'           t='N$'         l=1   gloss-br='sua fotografia'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
@@ -2016,7 +2059,7 @@ path: $.pages[0].sentences[42]
 uid: a2910ce3-a0d2-4eac-bcc3-2da15db88b90
 text: ijo niwigo libinienigi ijowa nigetedi
 status: REVIEW
-struct_status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2061,9 +2104,9 @@ Sentence 44
 ================================================================================
 path: $.pages[0].sentences[43]
 uid: 075356e6-f89c-4d83-b001-435d13b319dc
-text: ijowa nigetedi niwigo libinienigipi
-status: None
-struct_status: AUTO
+text: ijoa nigetedi niwigo libinienigipi
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2084,12 +2127,20 @@ chunks:
   span=4-4 type=NP-PRD level=1
 
 tokens:
-  p=1   v='ijowa'            t='D'          l=1   gloss-br='o'
-  p=2   v='nigetedi'         t='N$'         l=1   gloss-br='ovos'
-  p=3   v='niwigo'           t='N'          l=2   gloss-br=None
+  p=1   v='ijoa'             t='D'          l=1   gloss-br='os|as'
+      splits:
+        [1] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [2] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+        [3] v='wa'         t='Plu'      gloss-br=None fn=None idx=None
+  p=2   v='nigetedi'         t='N'          l=1   gloss-br='ovos'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
-        [2] v='wigo'       t='n'        gloss-br='espírito/fotografia' fn=None idx=None
+        [2] v='getegi'     t='n'        gloss-br='ovo[M]' fn=None idx=None
+        [3] v='di'         t='Plu'      gloss-br=None fn=None idx=None
+  p=3   v='niwigo'           t='N'          l=2   gloss-br='espírito|fotografia'
+      splits:
+        [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
+        [2] v='wigo'       t='n'        gloss-br='espírito|fotografia' fn=None idx=None
   p=4   v='libinienigipi'    t='N$'         l=1   gloss-br='suas belezas'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
@@ -2107,8 +2158,8 @@ Sentence 45
 path: $.pages[0].sentences[44]
 uid: 5739aca1-95fc-4584-9550-d7bd73c3c361
 text: okokodi ligetedi midi niwigo libinienaGa .
-status: None
-struct_status: AUTO
+status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2117,7 +2168,9 @@ container_meta:
 translations:
   pt-br: Os ovos da fotografia são bonitos. (Os ovos de galinha que estão na fotografia são bonitos.)
 comments:
-  [1] 2026-04-18 12:46:17 — Filomena Sandalo
+  [1] 2026-07-11 21:08:52 — Leonel Figueiredo de Alencar — "niwigo": N em vez de N$
+      Feito.
+  [2] 2026-04-18 12:46:17 — Filomena Sandalo
       árvore errada, corrigir parser
 
 proto-conllu:
@@ -2129,6 +2182,7 @@ chunks:
   span=3-6 type=CP-me level=1
   span=4-6 type=IP-SUB level=2
   span=4-6 type=NP level=3
+  span=5-5 type=NP level=4
 
 tokens:
   p=1   v='okokodi'          t='N'          l=1   gloss-br='galinha'
@@ -2145,10 +2199,10 @@ tokens:
         [3] v='di'         t='Ncl'      gloss-br='deitad(o)(a)' fn=None idx=None
   p=4   v='@idi'             t='D'          l=3   gloss-br=None
       split: {"idx": 1}
-  p=5   v='niwigo'           t='N$'         l=3   gloss-br='espírito/fotografia'
+  p=5   v='niwigo'           t='N'          l=4   gloss-br='espírito|fotografia'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
-        [2] v='wigo'       t='n'        gloss-br='espírito/fotografia' fn=None idx=None
+        [2] v='wigo'       t='n'        gloss-br='espírito|fotografia' fn=None idx=None
   p=6   v='libinienaGa'      t='N$'         l=3   gloss-br='bonitas/bonitos'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
@@ -2166,8 +2220,8 @@ Sentence 46
 path: $.pages[0].sentences[45]
 uid: 83a62eb4-5a9e-43b0-b6b4-bded8dbd8ffe
 text: liwigo okokodi ligetedi libinienigi .
-status: None
-struct_status: AUTO
+status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2188,7 +2242,7 @@ chunks:
   span=4-4 type=NP-PRD level=1
 
 tokens:
-  p=1   v='liwigo'           t='N$'         l=1   gloss-br='espírito/fotografia dele/a(s)'
+  p=1   v='liwigo'           t='N$'         l=1   gloss-br='espírito|fotografia del(e|a)'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='wigo'       t='n'        gloss-br='espírito/fotografia' fn=None idx=None
@@ -2216,7 +2270,7 @@ path: $.pages[0].sentences[46]
 uid: fad6e8d3-1e9f-451c-aaa7-fd28aecfd967
 text: idiwa noGojedi lixagotaGaGa adakake loojedi
 status: DONE
-struct_status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2225,23 +2279,23 @@ container_meta:
 translations:
   pt-br: estes peixes vermelhos estão baratos
 comments:
-  [1] 2026-06-18 19:13:51 — Leonel Figueiredo de Alencar — Falta de split em "adakake" na árvore
-      adakake -> aG dakake? Estamos analisando "dakake" agora como verbo, né?
-  [2] 2026-06-29 22:59:16 — Leonel Figueiredo de Alencar — Atualização da análise de "adakake"
-      Fiz a atualização.
-  [3] 2026-06-29 23:05:23 — Leonel Figueiredo de Alencar — Forma canônica do morfema lexical
-      É uma dúvida recorrente minha. O "i" de "ixagodi" faz parte do morfema lexical ou é apenas epentético? Estamos usando "Geladi" em vez de "iGeladi". Griffiths tende a incluir o "i" nos lemas, mas isso parece uma simplificação dada a proposta do dicionário.
-  [4] 2026-06-29 23:06:10 — Filomena Sandalo
-      Sim, verbo 
-  [5] 2026-06-29 23:09:01 — Filomena Sandalo
-      O único modo de saber é pelo acento. As vogais temáticas não recebem acento. A maioria das palavras tem acento inicial. Mas não temos a forma gravada de todas as palavras. Tenho uma lista demais de mil verbos gravados, mas ainda não passei para o dicionário. Você quer ter acesso? 
-  [6] 2026-06-29 23:11:15 — Filomena Sandalo
-      Acho que o acento está no xa. Então é epentetica. Mas é um problema confiar demais na minha memória. Mas é o que temos agora. 
-  [7] 2026-06-29 23:13:07 — Filomena Sandalo
+  [1] 2026-07-02 14:05:47 — Leonel Figueiredo de Alencar — Tarefas colocadas na fila
+      Deixei registrada a tarefa no meu repositório do treebank de UD, uma vez que afeta tanto esse treebank quanto o daqui. Por enquanto, vou aguardar um pouco para obtermos mais informações (talvez consultar os falantes). Também aguardarei a implementação de mudanças em lote de que o Luiz falou. https://github.com/leoalenc/kadiweu/issues/106
+  [2] 2026-06-29 23:13:07 — Filomena Sandalo
       Acho que liGeladi tem acento no li. Então a raiz tem i. Por favor, arrume. 
 Neste momento teremos que confiar na minha memória, não é um método confiável. Mas será o que temos para agora. 
-  [8] 2026-07-02 14:05:47 — Leonel Figueiredo de Alencar — Tarefas colocadas na fila
-      Deixei registrada a tarefa no meu repositório do treebank de UD, uma vez que afeta tanto esse treebank quanto o daqui. Por enquanto, vou aguardar um pouco para obtermos mais informações (talvez consultar os falantes). Também aguardarei a implementação de mudanças em lote de que o Luiz falou. https://github.com/leoalenc/kadiweu/issues/106
+  [3] 2026-06-29 23:11:15 — Filomena Sandalo
+      Acho que o acento está no xa. Então é epentetica. Mas é um problema confiar demais na minha memória. Mas é o que temos agora. 
+  [4] 2026-06-29 23:09:01 — Filomena Sandalo
+      O único modo de saber é pelo acento. As vogais temáticas não recebem acento. A maioria das palavras tem acento inicial. Mas não temos a forma gravada de todas as palavras. Tenho uma lista demais de mil verbos gravados, mas ainda não passei para o dicionário. Você quer ter acesso? 
+  [5] 2026-06-29 23:06:10 — Filomena Sandalo
+      Sim, verbo 
+  [6] 2026-06-29 23:05:23 — Leonel Figueiredo de Alencar — Forma canônica do morfema lexical
+      É uma dúvida recorrente minha. O "i" de "ixagodi" faz parte do morfema lexical ou é apenas epentético? Estamos usando "Geladi" em vez de "iGeladi". Griffiths tende a incluir o "i" nos lemas, mas isso parece uma simplificação dada a proposta do dicionário.
+  [7] 2026-06-29 22:59:16 — Leonel Figueiredo de Alencar — Atualização da análise de "adakake"
+      Fiz a atualização.
+  [8] 2026-06-18 19:13:51 — Leonel Figueiredo de Alencar — Falta de split em "adakake" na árvore
+      adakake -> aG dakake? Estamos analisando "dakake" agora como verbo, né?
 
 proto-conllu:
   <none>
@@ -2292,8 +2346,8 @@ Sentence 48
 path: $.pages[0].sentences[47]
 uid: e189be3e-9290-4d1c-b343-74d3858ce7cd
 text: etee ina
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2314,7 +2368,8 @@ chunks:
 tokens:
   p=1   v='etee'             t='VB'         l=0   gloss-br='estou'
       splits:
-        [1] v='VB'         t=None       gloss-br=None fn=None idx=None
+        [1] v='et'         t='v'        gloss-br='estar' fn=None idx=None
+        [2] v='ee'         t='Pro'      gloss-br='1SG (fala de homem)' fn=None idx=None
   p=2   v='ina'              t='D'          l=1   gloss-br='ele'
       splits:
         [1] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
@@ -2329,8 +2384,8 @@ Sentence 49
 path: $.pages[0].sentences[48]
 uid: 889846ee-66df-4c8f-88d1-e89d3619eb1e
 text: eteyo ina
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2349,10 +2404,13 @@ chunks:
   span=2-2 type=NP level=1
 
 tokens:
-  p=1   v='eteyo'            t='VB'         l=0   gloss-br=None
+  p=1   v='eteyo'            t='VB'         l=0   gloss-br='estou'
+      splits:
+        [1] v='et'         t='v'        gloss-br='estar' fn=None idx=None
+        [2] v='eeyo'       t='Pro'      gloss-br='1SG (fala de homem)' fn=None idx=None
   p=2   v='ina'              t='D'          l=1   gloss-br='ele'
       splits:
-        [1] v='i'          t='Gnr'      gloss-br='masc' fn=None idx=None
+        [1] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
         [2] v='na'         t='Ncl'      gloss-br='vindo' fn=None idx=None
 
 conllu/token count check:
@@ -2364,8 +2422,8 @@ Sentence 50
 path: $.pages[0].sentences[49]
 uid: e7f4ab65-14d7-44f5-a197-c99c4ab173cd
 text: etee manitaGa
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2388,13 +2446,14 @@ chunks:
 tokens:
   p=1   v='etee'             t='VB'         l=0   gloss-br='estou'
       splits:
-        [1] v='VB'         t=None       gloss-br=None fn=None idx=None
-  p=2   v='me@'              t='C'          l=1   gloss-br=None
+        [1] v='et'         t='v'        gloss-br='estar' fn=None idx=None
+        [2] v='ee'         t='Pro'      gloss-br='1SG (fala de homem)' fn=None idx=None
+  p=2   v='me@'              t='C'          l=1   gloss-br='que com el(e|a)'
       split: {"v": "manitaGa", "t": "C+DAPL", "idx": 0}
       splits:
-        [1] v='me'         t=None       gloss-br=None fn=True idx=None
-        [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
-        [3] v='ni'         t='Ncl'      gloss-br=None fn=None idx=None
+        [1] v='me'         t='c'        gloss-br='COMP' fn=True idx=None
+        [2] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [3] v='ni'         t='Ncl'      gloss-br='sentad(o|a)' fn=None idx=None
         [4] v='taGa'       t='Apl'      gloss-br='3' fn=None idx=None
   p=3   v='@anitaGa'         t='DAPL'       l=3   gloss-br=None
       split: {"idx": 1}
@@ -2408,8 +2467,8 @@ Sentence 51
 path: $.pages[0].sentences[50]
 uid: 7aa17dd7-2c26-4df9-8f90-65d8d58e2c59
 text: etee minitaGa
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2432,14 +2491,15 @@ chunks:
 tokens:
   p=1   v='etee'             t='VB'         l=0   gloss-br='estou'
       splits:
-        [1] v='VB'         t=None       gloss-br=None fn=None idx=None
-  p=2   v='me@'              t='C'          l=1   gloss-br='com ele'
+        [1] v='et'         t='v'        gloss-br='estar' fn=None idx=None
+        [2] v='ee'         t='Pro'      gloss-br='1SG (fala de homem)' fn=None idx=None
+  p=2   v='me@'              t='C'          l=1   gloss-br='que com ele'
       split: {"v": "minitaGa", "t": "C+DAPL", "idx": 0}
       splits:
-        [1] v='me'         t=None       gloss-br=None fn=True idx=None
+        [1] v='me'         t='c'        gloss-br='COMP' fn=True idx=None
         [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
-        [3] v='ni'         t='Ncl'      gloss-br=None fn=None idx=None
-        [4] v='taGa'       t='Apl'      gloss-br=None fn=None idx=None
+        [3] v='ni'         t='Ncl'      gloss-br='sentad(o|a)' fn=None idx=None
+        [4] v='taGa'       t='Apl'      gloss-br='COM' fn=None idx=None
   p=3   v='@initaGa'         t='DAPL'       l=3   gloss-br=None
       split: {"idx": 1}
 
@@ -2452,8 +2512,8 @@ Sentence 52
 path: $.pages[0].sentences[51]
 uid: c3c548d7-b154-437e-9baf-541a1bbbab6e
 text: ee aGica inikeGegi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2468,20 +2528,23 @@ proto-conllu:
   <none>
 
 chunks:
-  span=1-3 type=IP-MAT level=0
+  span=1-4 type=IP-MAT level=0
   span=1-1 type=NP-SBJ level=1
-  span=3-3 type=NP-PRD level=1
+  span=3-4 type=NP-PRD level=1
 
 tokens:
   p=1   v='ee'               t='PRO'        l=1   gloss-br='eu'
       splits:
-        [1] v='ee'         t='Pro'      gloss-br='1SG' fn=None idx=None
-  p=2   v='aGica'            t='NEG+D'      l=0   gloss-br=None
+        [1] v='ee'         t='Pro'      gloss-br='1SG (fala masculina)' fn=None idx=None
+  p=2   v='aG@'              t='NEG'        l=0   gloss-br='não ele'
+      split: {"v": "aGica", "t": "NEG+D", "idx": 0}
       splits:
         [1] v='aG'         t='Neg'      gloss-br=None fn=True idx=None
-        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
-        [3] v='ca'         t='Ncl'      gloss-br=None fn=None idx=None
-  p=3   v='inikeGegi'        t='N$'         l=1   gloss-br=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='ca'         t='Ncl'      gloss-br='ausente' fn=None idx=None
+  p=3   v='@ica'             t='D'          l=1   gloss-br=None
+      split: {"idx": 1}
+  p=4   v='inikeGegi'        t='N$'         l=1   gloss-br='minha felicidade'
       splits:
         [1] v='i'          t='Gen'      gloss-br='1' fn=None idx=None
         [2] v='nike'       t='v'        gloss-br=None fn=None idx=None
@@ -2489,7 +2552,7 @@ tokens:
         [4] v='gi'         t='Gnr'      gloss-br='M' fn=None idx=None
 
 conllu/token count check:
-  tokens=3  proto-conllu=0
+  tokens=4  proto-conllu=0
 
 ================================================================================
 Sentence 53
@@ -2497,8 +2560,8 @@ Sentence 53
 path: $.pages[0].sentences[52]
 uid: c4d99cf1-e781-4efb-83ff-4a0ab873b7ec
 text: ee aGidininitibeci
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2507,7 +2570,8 @@ container_meta:
 translations:
   pt-br: eu não estou feliz
 comments:
-  <none>
+  [1] 2026-07-11 21:55:15 — Leonel Figueiredo de Alencar — "i" como marca de pessoa em vez de gênero?
+      Se é verbo, parece que o prefixo "i" deveria ser marca de 1SG. Alguma relação com o que Griffith chama de forma reflexiva com o prefixo "din-"?:
 
 proto-conllu:
   <none>
@@ -2519,16 +2583,16 @@ chunks:
 tokens:
   p=1   v='ee'               t='PRO'        l=1   gloss-br='eu'
       splits:
-        [1] v='ee'         t='Pro'      gloss-br='1SG' fn=None idx=None
+        [1] v='ee'         t='Pro'      gloss-br='1SG (fala masculina)' fn=None idx=None
   p=2   v='aG@'              t='NEG'        l=0   gloss-br='não estou feliz'
       split: {"v": "aGidininitibeci", "t": "NEG+VB", "idx": 0}
       splits:
-        [1] v='aG'         t=None       gloss-br=None fn=True idx=None
-        [2] v='i'          t=None       gloss-br=None fn=None idx=None
-        [3] v='d'          t=None       gloss-br=None fn=None idx=None
-        [4] v='nini'       t=None       gloss-br=None fn=None idx=None
+        [1] v='aG'         t='Neg'      gloss-br=None fn=True idx=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='d'          t='Inv'      gloss-br=None fn=None idx=None
+        [4] v='nini'       t='v'        gloss-br='alegrar-se' fn=None idx=None
         [5] v='tibeci'     t='Dir'      gloss-br='intesificador' fn=None idx=None
-  p=3   v='@idininitebeci'   t='VB'         l=0   gloss-br=None
+  p=3   v='@dininitibeci'    t='VB'         l=0   gloss-br=None
       split: {"idx": 1}
 
 conllu/token count check:
@@ -2541,7 +2605,7 @@ path: $.pages[0].sentences[53]
 uid: 969ba2f3-88dc-417e-ad3f-16ce88b4c762
 text: aGee eliodi niinikeGegi
 status: DONE
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2550,15 +2614,15 @@ container_meta:
 translations:
   pt-br: eu não estou muito feliz
 comments:
-  [1] 2026-06-08 14:41:09 — Leonel Figueiredo de Alencar — erro de digitação?
+  [1] 2026-06-11 13:58:19 — Filomena Sandalo
+      Não existe a palavra elide e nem leodi, é eliodi.
+Erros de datilografia
+  [2] 2026-06-08 14:41:09 — Leonel Figueiredo de Alencar — erro de digitação?
       A sentença "aGee elide niinikeGegi" ('eu não estou muito feliz') ou "aGee elide niinikeGegi" não ocorre em "dados para gramática pedagógica.docx", base do conjunto VANDA DADOS. Em vez disso, ocorre esta sentença: 
 eu não estou muito feliz
 aGee leodi inikeGegi
 eu não muita felicidade
 (https://github.com/leoalenc/kadiweu/issues/78)
-  [2] 2026-06-11 13:58:19 — Filomena Sandalo
-      Não existe a palavra elide e nem leodi, é eliodi.
-Erros de datilografia
 
 proto-conllu:
   <none>
@@ -2572,8 +2636,8 @@ tokens:
   p=1   v='aG@'              t='NEG'        l=0   gloss-br='não eu'
       split: {"v": "aGee", "t": "NEG+D", "idx": 0}
       splits:
-        [1] v='aG'         t=None       gloss-br=None fn=True idx=None
-        [2] v='ee'         t=None       gloss-br=None fn=None idx=None
+        [1] v='aG'         t='Neg'      gloss-br=None fn=True idx=None
+        [2] v='ee'         t='Pro'      gloss-br='1SG (fala de homem)' fn=None idx=None
   p=2   v='@ee'              t='D'          l=1   gloss-br=None
       split: {"idx": 1}
   p=3   v='eliodi'           t='Q'          l=1   gloss-br='grande'
@@ -2581,7 +2645,7 @@ tokens:
       splits:
         [1] v='nini'       t='v'        gloss-br=None fn=None idx=None
         [2] v='keGe'       t='Der'      gloss-br=None fn=None idx=None
-        [3] v='gi'         t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='gi'         t='Gnr'      gloss-br='M' fn=None idx=None
 
 conllu/token count check:
   tokens=4  proto-conllu=0
@@ -2593,7 +2657,7 @@ path: $.pages[0].sentences[54]
 uid: 39925f76-d73f-423f-95cd-f88bd78f2a6e
 text: ee eliodi me aGidininitibeci
 status: REVIEW
-struct_status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2602,10 +2666,10 @@ container_meta:
 translations:
   pt-br: eu não estou muito feliz
 comments:
-  [1] 2026-06-11 14:51:31 — Filomena Sandalo
-      CP-me mal formado
-  [2] 2026-07-02 03:08:22 — Leonel Figueiredo de Alencar — Estrutura alterada
+  [1] 2026-07-02 03:08:22 — Leonel Figueiredo de Alencar — Estrutura alterada
       A árvore mudou. Porém, como não tenho certeza se está correta, deixo com status de REVISAR. Troquei morfe "nini" por "inini" para evitar "dnini" na árvore. 
+  [2] 2026-06-11 14:51:31 — Filomena Sandalo
+      CP-me mal formado
 
 proto-conllu:
   <none>
@@ -2641,8 +2705,8 @@ Sentence 56
 path: $.pages[0].sentences[55]
 uid: d3095a7e-477d-405e-9ea2-85bfdacad7d3
 text: aGica daGa jipegitege
-status: None
-struct_status: AUTO
+status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2657,20 +2721,24 @@ proto-conllu:
   <none>
 
 chunks:
-  span=1-3 type=CP-D level=0
-  span=3-3 type=IP-SUB level=1
+  span=1-4 type=CP-D level=0
+  span=2-2 type=NP level=1
+  span=4-4 type=IP-SUB level=1
 
 tokens:
-  p=1   v='aGica'            t='NEG+D'      l=0   gloss-br=None
+  p=1   v='aG@'              t='NEG'        l=0   gloss-br='não ele'
+      split: {"v": "aGica", "t": "NEG+D", "idx": 0}
       splits:
         [1] v='aG'         t='Neg'      gloss-br=None fn=True idx=None
-        [2] v='i'          t=None       gloss-br=None fn=None idx=None
-        [3] v='ca'         t=None       gloss-br=None fn=None idx=None
-  p=2   v='daGa'             t='C'          l=0   gloss-br='irrealis'
-  p=3   v='jipegitege'       t='VBAPL'      l=1   gloss-br=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='ca'         t='Ncl'      gloss-br='ausente' fn=None idx=None
+  p=2   v='@ica'             t='D'          l=1   gloss-br=None
+      split: {"idx": 1}
+  p=3   v='daGa'             t='C'          l=0   gloss-br='irrealis'
+  p=4   v='jipegitege'       t='VBAPL'      l=1   gloss-br=None
 
 conllu/token count check:
-  tokens=3  proto-conllu=0
+  tokens=4  proto-conllu=0
 
 ================================================================================
 Sentence 57
@@ -2678,8 +2746,8 @@ Sentence 57
 path: $.pages[0].sentences[56]
 uid: 813f2ad7-42fb-4fbd-84b4-1957c68aa4f9
 text: aGica daGa jipegitegi
-status: None
-struct_status: AUTO
+status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2694,20 +2762,24 @@ proto-conllu:
   <none>
 
 chunks:
-  span=1-3 type=CP-D level=0
-  span=3-3 type=IP-SUB level=1
+  span=1-4 type=CP-D level=0
+  span=2-2 type=NP level=1
+  span=4-4 type=IP-SUB level=1
 
 tokens:
-  p=1   v='aGica'            t='NEG+D'      l=0   gloss-br=None
+  p=1   v='aG@'              t='NEG'        l=0   gloss-br='não ele'
+      split: {"v": "aGica", "t": "NEG+D", "idx": 0}
       splits:
-        [1] v='aG'         t=None       gloss-br=None fn=True idx=None
-        [2] v='i'          t=None       gloss-br=None fn=None idx=None
-        [3] v='ca'         t=None       gloss-br=None fn=None idx=None
-  p=2   v='daGa'             t='C'          l=0   gloss-br='irrealis'
-  p=3   v='jipegitegi'       t='VBAPL'      l=1   gloss-br=None
+        [1] v='aG'         t='Neg'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='ca'         t='Ncl'      gloss-br='ausente' fn=None idx=None
+  p=2   v='@ica'             t='D'          l=1   gloss-br=None
+      split: {"idx": 1}
+  p=3   v='daGa'             t='C'          l=0   gloss-br='irrealis'
+  p=4   v='jipegitegi'       t='VBAPL'      l=1   gloss-br=None
 
 conllu/token count check:
-  tokens=3  proto-conllu=0
+  tokens=4  proto-conllu=0
 
 ================================================================================
 Sentence 58
@@ -2716,7 +2788,7 @@ path: $.pages[0].sentences[57]
 uid: b3c03f67-7664-43b7-9de8-b5243321eeb7
 text: ee idiwaaGadi
 status: DONE
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2725,10 +2797,10 @@ container_meta:
 translations:
   pt-br: eu sou pesado
 comments:
-  [1] 2026-06-18 19:17:06 — Leonel Figueiredo de Alencar — "di" em "idiwaGadi"
-      O que seria esse "di"? Primeira pessoa do singular de "-waaGadi"?
-  [2] 2026-06-19 14:06:06 — Leonel Figueiredo de Alencar — prefixo "-idi"
+  [1] 2026-06-19 14:06:06 — Leonel Figueiredo de Alencar — prefixo "-idi"
       Encontrei em Griffiths o sufixo -id de 1SG para a subclasse 5 dos intransitivos. O "i" de "idi" seria epentético, né? Seria o caso de atribuir a tag recém-criada VBI?
+  [2] 2026-06-18 19:17:06 — Leonel Figueiredo de Alencar — "di" em "idiwaGadi"
+      O que seria esse "di"? Primeira pessoa do singular de "-waaGadi"?
 
 proto-conllu:
   <none>
@@ -2756,7 +2828,7 @@ path: $.pages[0].sentences[58]
 uid: 6852927c-53de-411d-9ed9-e0f9d78309cd
 text: ee jigipegitege
 status: DONE
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2801,7 +2873,7 @@ path: $.pages[0].sentences[59]
 uid: 2b6a6bee-392e-49f9-97a9-0afbb0af2eff
 text: ee jigipegitegi
 status: DONE
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2838,17 +2910,20 @@ Sentence 61
 path: $.pages[0].sentences[60]
 uid: 42df6a83-6ae1-49b2-bd99-fbed7e2a083b
 text: aGeewi mica iniKGigi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
   contents: ...
   uid: 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
 translations:
-  pt-br: não sou muito feliz
+  pt-br: não sou muito feliz (não é verdade que eu sou feliz)
 comments:
-  <none>
+  [1] 2026-07-23 16:39:33 — Filomena Sandalo
+      Não creio que seja partícula, pode ser um nome.
+  [2] 2026-07-23 14:34:59 — Leonel Figueiredo de Alencar — "ewi": ADJ mesmo?
+      TODO: Advérbio? Griffiths traduz, também, como "em verdade". Lembra-me a partícula "supí" do nheengatu.
 
 proto-conllu:
   <none>
@@ -2895,8 +2970,8 @@ Sentence 62
 path: $.pages[0].sentences[61]
 uid: 27d94732-46ea-4286-a1d4-b2861806a579
 text: aGeyo mica inikGigi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2949,8 +3024,8 @@ Sentence 63
 path: $.pages[0].sentences[62]
 uid: 651a68ed-90a0-45b7-9eb5-411bc2c189c7
 text: JipecaGataGagi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -2986,8 +3061,8 @@ Sentence 64
 path: $.pages[0].sentences[63]
 uid: d3952c8a-1ac1-4255-be0b-63978fdf368b
 text: aGidedonaGa midi Godoigi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -3037,8 +3112,8 @@ Sentence 65
 path: $.pages[0].sentences[64]
 uid: e9b78452-925e-458b-848a-d52ab76f6840
 text: jipacaGataGagitiwaji
-status: TODO
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -3047,10 +3122,10 @@ container_meta:
 translations:
   pt-br: estamos perto de vocês
 comments:
-  [1] 2026-06-16 00:48:11 — Leonel Figueiredo de Alencar — Sufixo "ti"
-      Fiz a análise com base na outra sentença com análoga tradução, mas sem "waji" (n° 63 "nós estamos perto de você"). O que seria o sufixo "ti"? Por outro lado, que morfema expressa a segunda pessoa ou se trata de morfema zero?
-  [2] 2026-06-19 14:20:35 — Leonel Figueiredo de Alencar — "tiwaji"
+  [1] 2026-06-19 14:20:35 — Leonel Figueiredo de Alencar — "tiwaji"
       "tiwaji" seria um sufixo só? Griffiths sugere isso (p. 237).
+  [2] 2026-06-16 00:48:11 — Leonel Figueiredo de Alencar — Sufixo "ti"
+      Fiz a análise com base na outra sentença com análoga tradução, mas sem "waji" (n° 63 "nós estamos perto de você"). O que seria o sufixo "ti"? Por outro lado, que morfema expressa a segunda pessoa ou se trata de morfema zero?
 
 proto-conllu:
   <none>
@@ -3078,8 +3153,8 @@ Sentence 66
 path: $.pages[0].sentences[65]
 uid: fbae0277-3aad-4812-9229-94179b5a97a0
 text: aGide jonaGa midi Godoigi
-status: None
-struct_status: AUTO
+status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -3088,7 +3163,18 @@ container_meta:
 translations:
   pt-br: não estamos na comunidade
 comments:
-  [1] 2026-05-21 16:47:59 — Filomena Sandalo
+  [1] 2026-07-23 19:48:20 — Leonel Figueiredo de Alencar — Segmentação não padrão?
+      Griffiths (2002, p. 281): 1PP idejonaGa 'estar ali (temporário). Seria então "aGidejonaGa" em vez de "aGide jonaGa"? No documento original temos: 
+
+nós não estamos na comunidade
+aGidedonaGa midi Godoigi
+
+não estamos na comunidade
+aGije jonaGa midi Godoigi
+
+Griffiths não consigna uma forma "ije".
+
+  [2] 2026-05-21 16:47:59 — Filomena Sandalo
       verificar o que significa ije
 
 proto-conllu:
@@ -3134,8 +3220,8 @@ Sentence 67
 path: $.pages[0].sentences[66]
 uid: 6599689a-3fbe-4598-8827-78aceeff3931
 text: ijo lemé Maria ipegitegi weiigi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -3181,8 +3267,8 @@ Sentence 68
 path: $.pages[0].sentences[67]
 uid: b8878027-73d2-4b11-bc18-cbdcf5637e55
 text: biju dapico
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -3216,8 +3302,8 @@ Sentence 69
 path: $.pages[0].sentences[68]
 uid: 30ef1810-38e0-4cef-8db3-4dda590faa09
 text: libiwe niale ixagodi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -3256,7 +3342,7 @@ path: $.pages[0].sentences[69]
 uid: 444f95ae-8ed7-422e-84f1-aae6d4af2b6d
 text: idiwa bejoli dapico
 status: DONE
-struct_status: AUTO
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -3265,13 +3351,13 @@ container_meta:
 translations:
   pt-br: os beijus estão quentes
 comments:
-  [1] 2026-06-25 22:00:49 — Leonel Figueiredo de Alencar — Classe de "idiwa"
-      Estava como Q, troquei para D. A glosa era "tinha".
-  [2] 2026-06-25 22:24:04 — Leonel Figueiredo de Alencar — Sufixo "li" pluralizador
-      O formativo "li" é alomorfe de "-ali", né? Interessante aplicar-se a bases que denotam formas alongadas. Outra questão é se devo representar o sufixo pela forma canônica "ali".
-  [3] 2026-06-26 12:37:34 — Filomena Sandalo
+  [1] 2026-06-26 12:37:34 — Filomena Sandalo
       Acho que pode deixar como -li na morfologia. Não estou sendo muito fonológica para evitar abstrações. 
 Sobre ser para formas alongadas, acgo que a Ticiana argumentou contra, não foi? Necessita verificar na tese dela. 
+  [2] 2026-06-25 22:24:04 — Leonel Figueiredo de Alencar — Sufixo "li" pluralizador
+      O formativo "li" é alomorfe de "-ali", né? Interessante aplicar-se a bases que denotam formas alongadas. Outra questão é se devo representar o sufixo pela forma canônica "ali".
+  [3] 2026-06-25 22:00:49 — Leonel Figueiredo de Alencar — Classe de "idiwa"
+      Estava como Q, troquei para D. A glosa era "tinha".
 
 proto-conllu:
   <none>
@@ -3304,8 +3390,8 @@ Sentence 71
 path: $.pages[0].sentences[70]
 uid: f240dcfe-ca05-42aa-8644-07b9e3464e1a
 text: idiwa leonigipi Maria libinienigipi
-status: None
-struct_status: AUTO
+status: DONE
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -3356,7 +3442,7 @@ path: $.pages[0].sentences[71]
 uid: b97e5b2f-d0da-4238-8ee6-2c64ded91f76
 text: ijowa leonigipi iwaalo idi metaGa
 status: REVIEW
-struct_status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -3365,10 +3451,10 @@ container_meta:
 translations:
   pt-br: os filhos da mulher estão com ele
 comments:
-  [1] 2026-05-21 16:23:13 — Filomena Sandalo
-      CAPL não existe no Parser, ocorre porque o idi Ncl com funçnao de pronome foi extraído ed o verbo é cpopular zero.
-  [2] 2026-07-02 03:32:02 — Leonel Figueiredo de Alencar — Split de metaGa?
+  [1] 2026-07-02 03:32:02 — Leonel Figueiredo de Alencar — Split de metaGa?
       Noutros exemplos, o "me" é  separado. Seria o caso de fazer isso aqui também? Caso contrário, marcamos como análise finalizada?
+  [2] 2026-05-21 16:23:13 — Filomena Sandalo
+      CAPL não existe no Parser, ocorre porque o idi Ncl com funçnao de pronome foi extraído ed o verbo é cpopular zero.
 
 proto-conllu:
   <none>
@@ -3409,8 +3495,8 @@ Sentence 73
 path: $.pages[0].sentences[72]
 uid: c1b350df-ed1a-4e3b-89a8-a6fa9ca8382e
 text: ligeladi ipegitege niweiigi nigotaGa
-status: None
-struct_status: AUTO
+status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -3459,8 +3545,8 @@ Sentence 74
 path: $.pages[0].sentences[73]
 uid: ebff5ffa-8a9d-4f8b-9960-38f70b344c19
 text: ligeladi ipegitegi niweiigi nigotaGa
-status: None
-struct_status: AUTO
+status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...
@@ -3508,8 +3594,8 @@ Sentence 75
 path: $.pages[0].sentences[74]
 uid: 81048a6f-e084-4b0a-965a-f41fb5c53ff7
 text: nigotaGa liGeladi ipegitegi weiigi
-status: None
-struct_status: AUTO
+status: REVIEW
+struct_status: None
 visible: None
 container_meta:
   content: ...

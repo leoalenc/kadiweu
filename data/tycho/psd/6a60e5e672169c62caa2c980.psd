@@ -1,7 +1,7 @@
 
 ( (IP-MAT (NP (D ajo) (N$ liwatece))
 	  (T ja)
-	  (VB iwaǥadi)))
+	  (VB iwaGadi)))
 
 ( (IP-MAT (NP (D ajo) (N$ liwatece))
 	  (VB etadi)
@@ -12,7 +12,7 @@
 	  (NP (D digoida))))
 
 ( (IP-MAT (NP (N$ niwatece))
-	  (VB iwaǥadi)))
+	  (VB iwaGadi)))
 
 ( (IP-MAT (NP (N$ niwatece))
 	  (VB etadi)
@@ -22,19 +22,19 @@
 	  (VBAPL ipegitege)
 	  (NP-APL (N weiigi))))
 
-( (IP-MAT (NP (N$ liǥeladi)
+( (IP-MAT (NP (N$ liGeladi)
 	      (NP (NPR Maria)))
-	  (NEǥ aǥ@)
+	  (NEG aG@)
 	  (VBAPL @ipegetege)))
 
-( (IP-MAT (NP (D ica) (N$ liǥeladi))
+( (IP-MAT (NP (D ica) (N$ liGeladi))
 	  (VBAPL ipegetege)))
 
-( (IP-MAT (NP (N$ liǥeladi))
+( (IP-MAT (NP (N$ liGeladi))
 	  (VB idei)
-	  (NP (N nigotaǥa))))
+	  (NP (N nigotaGa))))
 
-( (IP-MAT (NP (D ica) (N$ liǥeladi))
+( (IP-MAT (NP (D ica) (N$ liGeladi))
 	  (VBAPL ipegitegi)))
 
 ( (IP-MAT (NP-SBJ (D ica) (N$ looligi))
@@ -48,7 +48,7 @@
 	  (VB dapico)))
 
 ( (IP-MAT (NP-SBJ (D ica) (N$ looligi))
-	  (NP-PRD (N$ lideǥegi))))
+	  (NP-PRD (N$ lideGegi))))
 
 ( (IP-MAT (NP-SBJ (N$ loigipodi))
 	  (NP-PRD (N$ libinienigipi))))
@@ -60,24 +60,24 @@
 		  (NP (N niwigo)))
 	  (NP-PRD (N$ libinienigi))))
 
-( (IP-MAT (NP (N$ iǥeladi))
+( (IP-MAT (NP (N$ iGeladi))
 	  (VB idei)
 	  (NP (N naigi)
 	      (CP-me (C me)
 		     (IP-SUB (NP (N napioi)))))))
 
-( (IP-MAT (NP (N$ iǥeladi))
+( (IP-MAT (NP (N$ iGeladi))
 	  (VB idei)
 	  (NP (D digoida))))
 
-( (IP-MAT (NP (N$ iǥeladi))
-	  (VBAPL ipegitaǥagi)))
+( (IP-MAT (NP (N$ iGeladi))
+	  (VBAPL ipegitaGagi)))
 
 ( (IP-MAT (NP (N$ iǥeladi))
 	  (VBAPL ipegitegi)
 	  (NP-APL (N$ liǥeladi))))
 
-( (IP-MAT (NP (N$ iǥeladi))
+( (IP-MAT (NP (N$ iGeladi))
 	  (VBAPL ipegitegi)
 	  (NP-APL (N naigi)
 		  (CP-REL (WNP-1 (WPRO ane))
@@ -91,7 +91,7 @@
 			 (IP-SUB (NP (N napioi)))))))
 
 ( (IP-MAT (NP (N$ iǥeladi))
-	  (NEǥ aǥ@)
+	  (NEG aǥ@)
 	  (VBAPL @ipegitegi)
 	  (NP-APL (N weiigi))))
 
@@ -100,7 +100,7 @@
 	  (NP (N akiidi))
 	  (PUNC .)))
 
-( (IP-MAT (NP (N$ iǥeladi))
+( (IP-MAT (NP (N$ iGeladi))
 	  (VB idei)
 	  (NP (N weiigi))
 	  (PUNC .)))
@@ -112,46 +112,46 @@
 
 ( (IP-MAT (VB etee)
 	  (CP-me (C me@)
-		 (IP-SUB (NP (DAPL @initaǥa))))))
+		 (IP-SUB (NP (DAPL @initaGa))))))
 
 ( (IP-MAT (NP (PRO ee))
-	  (NEǥ aǥ@)
+	  (NEG aG@)
 	  (VB @idininitebeci)))
 
-( (IP-MAT (VBAPL jipacaǥataǥagitiwaji)))
+( (IP-MAT (VBAPL jipacaGataGagitiwaji)))
 
 ( (IP-MAT (NP (PRO akaami))
 	  (NP (PRO oko))
-	  (VBAPL jipacaǥataǥagitiwaji)))
+	  (VBAPL jipacaGataGagitiwaji)))
 
-( (IP-MAT (NP (D niǥidowa)
+( (IP-MAT (NP (D niGidowa)
 	      (NP (N waca))
 	      (N$ lotiidi))
-	  (VB dapikoǥo)))
+	  (VB dapikoGo)))
 
 ( (IP-MAT (NP-SBJ (N$ Iiǥeladi))
 	  (CP-me (C me@)
 		 (IP-SUB (NP (D @idi) (N akiidi))))))
 
 ( (IP-MAT (NP-1 (N etogo))
-	  (NEǥ aǥ@)
+	  (NEG aǥ@)
 	  (VBU @dakake)
-	  (NP (NP-ǥEN *T*-1)
+	  (NP (NP-GEN *T*-1)
 	      (N$ lojedi))))
 
 ( (IP-MAT (NP-1 (N etogoli))
 	  (VBU dakake)
-	  (NP (NP-ǥEN *T*-1)
+	  (NP (NP-GEN *T*-1)
 	      (N$ lojetedi))))
 
 ( (IP-MAT (NP-1 (N etogoli))
 	  (VBU dakake)
-	  (NP (NP-ǥEN *T*-1)
+	  (NP (NP-GEN *T*-1)
 	      (N$ loojedi))))
 
 ( (IP-MAT (NP (N Etogoli))
-	  (VB iwaǥadi)
-	  (IP-ADV (NEǥ aǥ@)
+	  (VB iwaGadi)
+	  (IP-ADV (NEG aǥ@)
 		  (VBU @dakake)
 		  (NP (N$ lojetedi)))))
 

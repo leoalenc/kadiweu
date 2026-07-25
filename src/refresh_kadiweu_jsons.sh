@@ -5,7 +5,8 @@
 # For each of the three Tycho Brahe Platform documents, this script:
 #
 # 1. identifies the newest downloaded JSON export by its stable document UID;
-# 2. finds the corresponding PSD export by comparing normalized first sentences;
+# 2. finds the corresponding PSD export by validating all JSON sentences whose
+#    status is DONE against all PSD trees, in their original order;
 # 3. creates canonical JSON and PSD files directly under data/;
 # 4. normalizes canonical JSON files from "ǥ" to "G";
 # 5. normalizes canonical PSD files from "G" to "ǥ";
@@ -101,113 +102,212 @@ find_json_for_uid() {
   ls -t "${matches[@]}" | head -n 1
 }
 
-# Normalize a sentence signature for content-based JSON/PSD matching.
-# Orthographic G and ǥ are treated as equivalent, matching is case-insensitive,
-# and runs of whitespace are collapsed.
-normalize_sentence_signature() {
-  python3 -c 'import re, sys
-text = sys.stdin.read().replace("ǥ", "G")
-text = re.sub(r"\s+", " ", text).strip().casefold()
-print(text)'
-}
-
-# Extract the first sentence text from a Tycho Brahe JSON export.
-json_first_sentence_signature() {
+# Validate the complete ordered alignment between a Tycho Brahe JSON export
+# and a PSD export.
+#
+# Tycho Brahe PSD exports contain all and only JSON sentences whose
+# sentence-level status is DONE, preserving their relative order.
+#
+# The comparison uses:
+#
+#   JSON: the v values of non-empty tokens in each DONE sentence
+#   PSD:  the terminal values in each constituency tree
+#
+# Orthographic G and ǥ are treated as equivalent, and matching is
+# case-insensitive. Empty-category terminals beginning with "*" are ignored.
+validate_json_psd_alignment() {
   local json_src="$1"
+  local psd_src="$2"
+  local report_errors="${3:-yes}"
 
-  python3 - "$json_src" <<'PY_JSON'
+  python3 - "$json_src" "$psd_src" "$report_errors" <<'PY_ALIGNMENT'
 import json
 import re
 import sys
 
-path = sys.argv[1]
-with open(path, encoding="utf-8") as stream:
-    data = json.load(stream)
+json_path = sys.argv[1]
+psd_path = sys.argv[2]
+report_errors = sys.argv[3] == "yes"
 
-def find_first_sentence(obj):
+
+def fail(message):
+    if report_errors:
+        print(message, file=sys.stderr)
+    raise SystemExit(1)
+
+
+def normalize_token(token):
+    return token.replace("ǥ", "G").casefold()
+
+
+def iter_sentence_objects(obj):
     if isinstance(obj, dict):
         text = obj.get("text")
         struct = obj.get("struct")
-        if isinstance(text, str) and isinstance(struct, dict):
-            if any(key in struct for key in ("tokens", "chunks", "conllu")):
-                return text
+
+        if (
+            isinstance(text, str)
+            and isinstance(struct, dict)
+            and isinstance(struct.get("tokens"), list)
+        ):
+            yield obj
+            return
+
         for value in obj.values():
-            result = find_first_sentence(value)
-            if result is not None:
-                return result
+            yield from iter_sentence_objects(value)
+
     elif isinstance(obj, list):
         for value in obj:
-            result = find_first_sentence(value)
-            if result is not None:
-                return result
-    return None
+            yield from iter_sentence_objects(value)
 
-text = find_first_sentence(data)
-if text is None:
-    raise SystemExit(f"ERROR: could not find a sentence object in JSON: {path}")
 
-text = text.replace("ǥ", "G")
-text = re.sub(r"\s+", " ", text).strip().casefold()
-print(text)
-PY_JSON
+def json_token_values(sentence):
+    tokens = []
+
+    for token in sentence["struct"]["tokens"]:
+        value = token.get("v")
+
+        if (
+            isinstance(value, str)
+            and value
+            and not token.get("ec", False)
+      ):
+            tokens.append(value)
+
+    return tokens
+
+
+def extract_psd_trees(content):
+    trees = []
+    start = None
+    depth = 0
+
+    for index, char in enumerate(content):
+        if char == "(":
+            if depth == 0:
+                start = index
+            depth += 1
+
+        elif char == ")":
+            if depth == 0:
+                fail(
+                    f"ERROR: unmatched closing parenthesis in PSD: "
+                    f"{psd_path}"
+                )
+
+            depth -= 1
+
+            if depth == 0 and start is not None:
+                trees.append(content[start:index + 1])
+                start = None
+
+    if depth != 0:
+        fail(f"ERROR: unbalanced tree in PSD: {psd_path}")
+
+    if not trees:
+        fail(f"ERROR: no trees found in PSD: {psd_path}")
+
+    return trees
+
+
+def psd_terminal_values(tree):
+    terminals = re.findall(
+        r"\([^()\s]+\s+([^()\s]+)\)",
+        tree,
+    )
+
+    return [
+        token
+        for token in terminals
+        if not token.startswith("*")
+    ]
+
+
+with open(json_path, encoding="utf-8") as stream:
+    data = json.load(stream)
+
+sentences = list(iter_sentence_objects(data))
+
+done_sentences = [
+    (position, sentence)
+    for position, sentence in enumerate(sentences, start=1)
+    if sentence.get("status") == "DONE"
+]
+
+if not done_sentences:
+    fail(
+        f"ERROR: no sentence with status DONE found in JSON: "
+        f"{json_path}"
+    )
+
+with open(psd_path, encoding="utf-8") as stream:
+    psd_content = stream.read()
+
+psd_trees = extract_psd_trees(psd_content)
+
+if len(done_sentences) != len(psd_trees):
+    fail(
+        "\n".join(
+            [
+                "ERROR: JSON/PSD sentence-count mismatch",
+                f"  JSON:            {json_path}",
+                f"  PSD:             {psd_path}",
+                f"  JSON DONE:       {len(done_sentences)}",
+                f"  PSD trees:       {len(psd_trees)}",
+            ]
+        )
+    )
+
+for tree_number, ((json_position, sentence), tree) in enumerate(
+    zip(done_sentences, psd_trees),
+    start=1,
+):
+    json_tokens = json_token_values(sentence)
+    psd_tokens = psd_terminal_values(tree)
+
+    normalized_json = [
+        normalize_token(token)
+        for token in json_tokens
+    ]
+    normalized_psd = [
+        normalize_token(token)
+        for token in psd_tokens
+    ]
+
+    if normalized_json != normalized_psd:
+        sentence_uid = sentence.get("uid", "<missing>")
+
+        fail(
+            "\n".join(
+                [
+                    "ERROR: JSON/PSD token alignment mismatch",
+                    f"  JSON:            {json_path}",
+                    f"  PSD:             {psd_path}",
+                    f"  PSD tree:        {tree_number}",
+                    f"  JSON position:   {json_position}",
+                    f"  Sentence UID:    {sentence_uid}",
+                    f"  Status:          {sentence.get('status')}",
+                    f"  JSON tokens:     {' '.join(json_tokens)}",
+                    f"  PSD terminals:   {' '.join(psd_tokens)}",
+                ]
+            )
+        )
+
+raise SystemExit(0)
+PY_ALIGNMENT
 }
 
-# Extract terminals from the first balanced Penn-style tree in a PSD file.
-# Preterminal labels such as D, N$, VB, and punctuation tags are discarded.
-psd_first_sentence_signature() {
-  local psd_src="$1"
 
-  python3 - "$psd_src" <<'PY_PSD'
-import re
-import sys
-
-path = sys.argv[1]
-with open(path, encoding="utf-8") as stream:
-    content = stream.read()
-
-start = content.find("(")
-if start < 0:
-    raise SystemExit(f"ERROR: no tree found in PSD: {path}")
-
-depth = 0
-end = None
-for index in range(start, len(content)):
-    char = content[index]
-    if char == "(":
-        depth += 1
-    elif char == ")":
-        depth -= 1
-        if depth == 0:
-            end = index + 1
-            break
-
-if end is None:
-    raise SystemExit(f"ERROR: unbalanced first tree in PSD: {path}")
-
-first_tree = content[start:end]
-terminals = re.findall(r"\([^()\s]+\s+([^()\s]+)\)", first_tree)
-if not terminals:
-    raise SystemExit(f"ERROR: no terminals found in first PSD tree: {path}")
-
-# Empty-category terminals do not represent words in the surface sentence.
-terminals = [token for token in terminals if not token.startswith("*")]
-text = " ".join(terminals).replace("ǥ", "G")
-text = re.sub(r"\s+", " ", text).strip().casefold()
-print(text)
-PY_PSD
-}
-
-# PSD exports do not contain document UIDs and their generated filenames are
-# unrelated to the JSON filenames. Match them by the normalized first sentence.
+# PSD exports do not contain document UIDs, and their generated filenames are
+# unrelated to the JSON filenames. Retain only PSD files whose complete ordered
+# tree sequence matches all DONE sentences in the JSON.
 find_psd_for_json() {
   local json_src="$1"
   local base="$2"
-  local json_signature psd_signature
   local candidates=()
   local psd_files=()
   local psd
-
-  json_signature="$(json_first_sentence_signature "$json_src")"
+  local newest_psd
 
   shopt -s nullglob
   psd_files=("$DOWNLOAD_DIR"/*.psd "$DOWNLOAD_DIR"/*.PSD)
@@ -219,22 +319,26 @@ find_psd_for_json() {
   fi
 
   for psd in "${psd_files[@]}"; do
-    psd_signature="$(psd_first_sentence_signature "$psd")"
-    if [[ "$psd_signature" == "$json_signature" ]]; then
+    if validate_json_psd_alignment "$json_src" "$psd" no; then
       candidates+=("$psd")
     fi
   done
 
   if [[ "${#candidates[@]}" -eq 0 ]]; then
-    echo "ERROR: no PSD first sentence matches the JSON corpus $base" >&2
+    echo "ERROR: no PSD export completely matches the DONE sentences of $base" >&2
     echo "  JSON: $json_src" >&2
-    echo "  Normalized first sentence: $json_signature" >&2
+    echo >&2
+    echo "Detailed comparison with the newest available PSD:" >&2
+
+    newest_psd="$(ls -t "${psd_files[@]}" | head -n 1)"
+    validate_json_psd_alignment "$json_src" "$newest_psd" yes || true
+
     exit 1
   fi
 
   if [[ "${#candidates[@]}" -gt 1 ]]; then
     {
-      echo "Found ${#candidates[@]} matching PSD exports for corpus $base:"
+      echo "Found ${#candidates[@]} fully matching PSD exports for corpus $base:"
       ls -lh -t "${candidates[@]}"
       echo "Using newest."
       echo
@@ -399,11 +503,14 @@ EOF_README
 A JSON export is identified by the stable document UID stored in its content.
 The corresponding PSD file does not contain that UID, and Tycho Brahe assigns
 new, unrelated opaque filenames whenever JSON and PSD files are downloaded.
-The script therefore extracts the first sentence from the JSON and the terminal
-sequence of the first PSD tree, normalizes both, and compares them. Matching is
-case-insensitive, treats \`G\` and \`ǥ\` as equivalent, and ignores tree labels,
-parentheses, and whitespace differences. If several PSD downloads match, the
-newest one is selected and the alternatives are reported.
+PSD exports contain all and only JSON sentences whose sentence-level
+\`status\` is \`DONE\`, preserving their relative order. The script therefore
+compares the token \`v\` values of every \`DONE\` JSON sentence with the
+terminal sequence of the corresponding PSD tree. Matching is case-insensitive,
+treats \`G\` and \`ǥ\` as equivalent, and ignores empty-category terminals.
+Both the sentence counts and every ordered token sequence must agree. If
+several PSD downloads match completely, the newest one is selected and the
+alternatives are reported.
 
 ## Normalization
 
