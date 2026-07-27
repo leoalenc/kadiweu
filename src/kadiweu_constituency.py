@@ -170,6 +170,39 @@ class ConstituencyTree:
 
         return "\n".join(render(root, 0) for root in self.roots)
 
+    def to_corpussearch(self, *, indent: int = 2) -> str:
+        """Return a CorpusSearch-compatible Penn-style bracketed tree.
+
+        Coindices are appended to constituent labels and empty-category forms.
+        Empty categories are printed directly under their dominating
+        constituent, and an outer sentence wrapper is added as required by
+        Penn-style ``.psd`` corpora.
+        """
+        if indent < 0:
+            raise ValueError("indent must be non-negative")
+
+        def indexed(value: str, coindex: tuple[int, ...]) -> str:
+            if not coindex:
+                return value
+            return value + "".join(f"-{index}" for index in coindex)
+
+        def render(node: TreeNode, depth: int) -> str:
+            margin = " " * (indent * depth)
+            if isinstance(node, TokenNode):
+                form = indexed(node.form, node.coindex)
+                if node.empty_category:
+                    return f"{margin}{form}"
+                label = indexed(node.label, node.coindex)
+                return f"{margin}({label} {form})"
+            label = indexed(node.label, node.coindex)
+            if not node.children:
+                return f"{margin}({label})"
+            children = "\n".join(render(child, depth + 1) for child in node.children)
+            return f"{margin}({label}\n{children}\n{margin})"
+
+        roots = "\n".join(render(root, 1) for root in self.roots)
+        return f"(\n{roots}\n)"
+
 
 def _coindex(item: JsonObject) -> tuple[int, ...]:
     value = item.get("coidx", ())
@@ -406,9 +439,76 @@ def print_tree(
     )
 
 
+def selected_trees(
+    document: JsonObject,
+    *,
+    numbers: Sequence[int] | None = None,
+    uids: Sequence[str] | None = None,
+    select_all: bool = False,
+    statuses: Sequence[str] | None = None,
+) -> list[ConstituencyTree]:
+    """Return trees selected by number/UID and, optionally, sentence status."""
+    if select_all:
+        trees = [
+            tree_from_sentence(sentence, sentence_number=number)
+            for number, sentence in iter_sentences(document)
+        ]
+    elif numbers is not None:
+        trees = []
+        for number in numbers:
+            found_number, sentence = find_sentence(document, number=number)
+            trees.append(tree_from_sentence(sentence, sentence_number=found_number))
+    elif uids is not None:
+        trees = []
+        for uid in uids:
+            found_number, sentence = find_sentence(document, uid=uid)
+            trees.append(tree_from_sentence(sentence, sentence_number=found_number))
+    else:
+        trees = []
+
+    if statuses is not None:
+        allowed = set(statuses)
+        trees = [tree for tree in trees if tree.status in allowed]
+    return trees
+
+
+def write_trees(
+    trees: Sequence[ConstituencyTree],
+    *,
+    stream: TextIO,
+    output_format: str = "pretty",
+    show_metadata: bool = True,
+    show_spans: bool = False,
+    show_positions: bool = False,
+) -> None:
+    """Write one or more trees to a text stream."""
+    for index, tree in enumerate(trees):
+        if index:
+            print(file=stream)
+        if output_format == "corpussearch":
+            print(tree.to_corpussearch(), file=stream)
+        elif output_format == "lisp":
+            if show_metadata:
+                if tree.sentence_number is not None:
+                    print(f"# sentence = {tree.sentence_number}", file=stream)
+                if tree.sentence_uid:
+                    print(f"# uid = {tree.sentence_uid}", file=stream)
+                if tree.text:
+                    print(f"# text = {tree.text}", file=stream)
+            print(tree.to_lisp(), file=stream)
+        else:
+            print_tree(
+                tree,
+                stream=stream,
+                show_metadata=show_metadata,
+                show_spans=show_spans,
+                show_positions=show_positions,
+            )
+
+
 def build_argument_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Reconstruct and print a constituency tree from a Tycho JSON dump."
+        description="Reconstruct and print constituency trees from a Tycho JSON dump."
     )
     parser.add_argument("json_file", type=Path, help="Tycho JSON dump")
     selector = parser.add_mutually_exclusive_group(required=True)
@@ -416,10 +516,21 @@ def build_argument_parser() -> argparse.ArgumentParser:
         "-n",
         "--number",
         "--sentence-number",
+        dest="numbers",
         type=int,
-        help="one-based sentence number in JSON order",
+        nargs="+",
+        metavar="NUMBER",
+        help="one or more one-based sentence numbers in JSON order",
     )
-    selector.add_argument("-u", "--uid", help="sentence UID")
+    selector.add_argument(
+        "-u",
+        "--uid",
+        dest="uids",
+        nargs="+",
+        metavar="UID",
+        help="one or more sentence UIDs",
+    )
+    selector.add_argument("--all", action="store_true", help="print every tree")
     parser.add_argument(
         "--show-spans", action="store_true", help="show constituent token spans"
     )
@@ -430,10 +541,24 @@ def build_argument_parser() -> argparse.ArgumentParser:
         "--no-metadata", action="store_true", help="omit sentence metadata"
     )
     parser.add_argument(
+        "--status",
+        dest="statuses",
+        nargs="+",
+        metavar="STATUS",
+        help="include only sentences with one of these status values",
+    )
+    parser.add_argument(
         "--format",
-        choices=("pretty", "lisp"),
+        choices=("pretty", "lisp", "corpussearch"),
         default="pretty",
         help="output format (default: pretty)",
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        type=Path,
+        metavar="FILE",
+        help="write output to FILE instead of standard output",
     )
     return parser
 
@@ -443,24 +568,32 @@ def main(argv: Sequence[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         document = load_document(args.json_file)
-        number, sentence = find_sentence(
-            document, number=args.number, uid=args.uid
+        trees = selected_trees(
+            document,
+            numbers=args.numbers,
+            uids=args.uids,
+            select_all=args.all,
+            statuses=args.statuses,
         )
-        tree = tree_from_sentence(sentence, sentence_number=number)
-        if args.format == "lisp":
-            if not args.no_metadata:
-                if tree.sentence_uid:
-                    print(f"# uid = {tree.sentence_uid}")
-                if tree.text:
-                    print(f"# text = {tree.text}")
-            print(tree.to_lisp())
-        else:
-            print_tree(
-                tree,
+        if args.output is None:
+            write_trees(
+                trees,
+                stream=sys.stdout,
+                output_format=args.format,
                 show_metadata=not args.no_metadata,
                 show_spans=args.show_spans,
                 show_positions=args.show_positions,
             )
+        else:
+            with args.output.open("w", encoding="utf-8", newline="\n") as stream:
+                write_trees(
+                    trees,
+                    stream=stream,
+                    output_format=args.format,
+                    show_metadata=not args.no_metadata,
+                    show_spans=args.show_spans,
+                    show_positions=args.show_positions,
+                )
     except (OSError, json.JSONDecodeError, TreeConstructionError, LookupError, ValueError) as error:
         parser.error(str(error))
     return 0
