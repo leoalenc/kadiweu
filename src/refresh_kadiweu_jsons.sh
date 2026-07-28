@@ -47,11 +47,21 @@ TYCHO_JSON_DIR="$TYCHO_DIR/json"
 TYCHO_PSD_DIR="$TYCHO_DIR/psd"
 TYCHO_README="$TYCHO_DIR/README.md"
 
-# Stable document/container UIDs and canonical repository names.
+# Tycho Brahe source corpus.
+TYCHO_CORPUS_TITLE="Corpus Kadiwéu – gramática pedagógica"
+
+# Stable document UIDs and canonical repository document identifiers.
 declare -A UID_TO_BASE=(
   ["28eeb8a0-d923-4d75-aebe-599aadddfbbb"]="ped-gramm"
   ["ffef8450-e302-4882-8306-e5998d31f584"]="hil-data"
   ["9d0f60a9-8c32-44c0-ac68-0b5d5b993db8"]="van-data"
+)
+
+# Current document titles on the Tycho Brahe Platform.
+declare -A UID_TO_TITLE=(
+  ["28eeb8a0-d923-4d75-aebe-599aadddfbbb"]="Dados para a gramática do sintagma nominal"
+  ["ffef8450-e302-4882-8306-e5998d31f584"]="dados do Hilário abril de 2026"
+  ["9d0f60a9-8c32-44c0-ac68-0b5d5b993db8"]="Vanda dados"
 )
 
 # Explicit order keeps processing and README output deterministic.
@@ -338,7 +348,7 @@ find_psd_for_json() {
 
   if [[ "${#candidates[@]}" -gt 1 ]]; then
     {
-      echo "Found ${#candidates[@]} fully matching PSD exports for corpus $base:"
+      echo "Found ${#candidates[@]} fully matching PSD exports for document $base:"
       ls -lh -t "${candidates[@]}"
       echo "Using newest."
       echo
@@ -431,7 +441,8 @@ process_one() {
     "$json_sha" >> "$LOG"
 
   echo "============================================================"
-  echo "Corpus:             $base"
+  echo "Document:           $base"
+  echo "Source title:       ${UID_TO_TITLE[$uid]}"
   echo "JSON source:        $(basename "$original_json_path")"
   echo "PSD source:         $(basename "$original_psd_path")"
   echo "Canonical JSON:     data/$base.json"
@@ -456,7 +467,7 @@ process_one() {
 }
 
 write_tycho_readme() {
-  local generated_at uid base
+  local generated_at uid base title
 
   generated_at="$(date --iso-8601=seconds)"
 
@@ -466,6 +477,14 @@ write_tycho_readme() {
 This directory stores the **original downloaded exports** from the Tycho Brahe
 Platform after they have been processed by
 \`src/refresh_kadiweu_jsons.sh\`.
+
+The exports come from three documents belonging to the Tycho Brahe corpus
+*\$TYCHO_CORPUS_TITLE*. The document titles are the human-readable titles
+currently shown on the platform; the repository document identifiers remain
+stable if those titles change.
+
+For a durable explanation of the corpus–document relationship and the history
+of the \`ped-gramm\` identifier, see \`../README.md\`.
 
 ## Directory names
 
@@ -483,14 +502,16 @@ Downloaded files retain their opaque Tycho Brahe export names in this archive.
 The processing script creates stable, human-readable canonical names directly
 under \`data/\`:
 
-| Canonical base | Document UID | Downloaded JSON | Downloaded PSD | Archived JSON | Archived PSD | Canonical JSON | Canonical PSD |
-|---|---|---|---|---|---|---|---|
+| Repository document identifier | Tycho Brahe document title | Document UID | Downloaded JSON | Downloaded PSD | Archived JSON | Archived PSD | Canonical JSON | Canonical PSD |
+|---|---|---|---|---|---|---|---|---|
 EOF_README
 
   for uid in "${UID_ORDER[@]}"; do
     base="${UID_TO_BASE[$uid]}"
-    printf '| `%s` | `%s` | `%s` | `%s` | `json/%s` | `psd/%s` | `../%s.json` | `../%s.psd` |\n' \
-      "$base" "$uid" \
+    title="${UID_TO_TITLE[$uid]}"
+
+    printf '| `%s` | %s | `%s` | `%s` | `%s` | `json/%s` | `psd/%s` | `../%s.json` | `../%s.psd` |\n' \
+      "$base" "$title" "$uid" \
       "${IMPORTED_JSON_NAME[$base]}" "${IMPORTED_PSD_NAME[$base]}" \
       "${ARCHIVED_JSON_NAME[$base]}" "${ARCHIVED_PSD_NAME[$base]}" \
       "$base" "$base" >> "$TYCHO_README"

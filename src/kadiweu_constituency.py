@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -506,6 +507,106 @@ def write_trees(
             )
 
 
+OUTPUT_EXTENSIONS = {
+    "pretty": ".txt",
+    "lisp": ".lisp",
+    "corpussearch": ".psd",
+}
+
+
+def _filename_component(value: str, *, description: str) -> str:
+    """Return a conservative, lowercase filename component."""
+    component = re.sub(r"[^a-z0-9]+", "-", value.strip().lower()).strip("-")
+    if not component:
+        raise ValueError(
+            f"{description} {value!r} cannot be represented in a filename"
+        )
+    return component
+
+
+def status_suffix(statuses: Sequence[str] | None) -> str | None:
+    """Return statuses as a lowercase, hyphen-separated filename suffix."""
+    if not statuses:
+        return None
+    return "-".join(
+        _filename_component(status, description="status") for status in statuses
+    )
+
+
+def _short_uid(uid: str, *, length: int = 8) -> str:
+    """Return a readable prefix for use in an automatically generated name."""
+    component = _filename_component(uid, description="UID")
+    return component[:length]
+
+
+def derived_output_name(
+    json_file: Path,
+    *,
+    output_format: str,
+    numbers: Sequence[int] | None,
+    uids: Sequence[str] | None,
+    select_all: bool,
+    statuses: Sequence[str] | None,
+) -> str:
+    """Derive an unambiguous output filename from the input and selection."""
+    try:
+        extension = OUTPUT_EXTENSIONS[output_format]
+    except KeyError as error:
+        raise ValueError(f"unsupported output format: {output_format!r}") from error
+
+    parts = [json_file.stem]
+    if numbers is not None:
+        parts.append("sent-" + "-".join(str(number) for number in numbers))
+    elif uids is not None:
+        parts.append("uid-" + "-".join(_short_uid(uid) for uid in uids))
+    elif not select_all:
+        raise ValueError("cannot derive a name without a sentence selection")
+
+    statuses_part = status_suffix(statuses)
+    if statuses_part:
+        parts.append(statuses_part)
+    elif select_all:
+        # The unsuffixed name is reserved for the PSD downloaded from Tycho.
+        parts.append("all-statuses")
+
+    return ".".join(parts) + extension
+
+
+def resolve_output_path(args: argparse.Namespace) -> Path | None:
+    """Resolve the exact output path requested by the command line."""
+    if args.output is not None:
+        return args.output
+    if args.output_dir is None:
+        return None
+    if not args.output_dir.exists():
+        raise ValueError(f"output directory does not exist: {args.output_dir}")
+    if not args.output_dir.is_dir():
+        raise ValueError(f"output directory is not a directory: {args.output_dir}")
+    return args.output_dir / derived_output_name(
+        args.json_file,
+        output_format=args.format,
+        numbers=args.numbers,
+        uids=args.uids,
+        select_all=args.all,
+        statuses=args.statuses,
+    )
+
+
+def _reject_duplicates(values: Sequence[Any] | None, description: str) -> None:
+    """Reject repeated selectors or statuses that obscure user intent."""
+    if values is None:
+        return
+    seen = set()
+    duplicates = []
+    for value in values:
+        if value in seen and value not in duplicates:
+            duplicates.append(value)
+        seen.add(value)
+    if duplicates:
+        rendered = ", ".join(map(str, duplicates))
+        raise ValueError(f"duplicate {description}: {rendered}")
+
+
 def build_argument_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Reconstruct and print constituency trees from a Tycho JSON dump."
@@ -553,12 +654,19 @@ def build_argument_parser() -> argparse.ArgumentParser:
         default="pretty",
         help="output format (default: pretty)",
     )
-    parser.add_argument(
+    destination = parser.add_mutually_exclusive_group()
+    destination.add_argument(
         "-o",
         "--output",
         type=Path,
         metavar="FILE",
-        help="write output to FILE instead of standard output",
+        help="write to this exact filename instead of standard output",
+    )
+    destination.add_argument(
+        "--output-dir",
+        type=Path,
+        metavar="DIR",
+        help="write to DIR using an automatically derived filename",
     )
     return parser
 
@@ -567,6 +675,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = build_argument_parser()
     args = parser.parse_args(argv)
     try:
+        _reject_duplicates(args.numbers, "sentence number")
+        _reject_duplicates(args.uids, "sentence UID")
+        _reject_duplicates(args.statuses, "status")
         document = load_document(args.json_file)
         trees = selected_trees(
             document,
@@ -575,7 +686,16 @@ def main(argv: Sequence[str] | None = None) -> int:
             select_all=args.all,
             statuses=args.statuses,
         )
-        if args.output is None:
+        if not trees:
+            if args.statuses:
+                requested = ", ".join(args.statuses)
+                raise ValueError(
+                    f"selection contains no trees with status: {requested}"
+                )
+            raise ValueError("selection contains no trees")
+
+        output_path = resolve_output_path(args)
+        if output_path is None:
             write_trees(
                 trees,
                 stream=sys.stdout,
@@ -585,7 +705,17 @@ def main(argv: Sequence[str] | None = None) -> int:
                 show_positions=args.show_positions,
             )
         else:
-            with args.output.open("w", encoding="utf-8", newline="\n") as stream:
+            if output_path.exists() and output_path.is_dir():
+                raise ValueError(f"output path is a directory: {output_path}")
+            if not output_path.parent.exists():
+                raise ValueError(
+                    f"output parent directory does not exist: {output_path.parent}"
+                )
+            if not output_path.parent.is_dir():
+                raise ValueError(
+                    f"output parent is not a directory: {output_path.parent}"
+                )
+            with output_path.open("w", encoding="utf-8", newline="\n") as stream:
                 write_trees(
                     trees,
                     stream=stream,
@@ -594,6 +724,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                     show_spans=args.show_spans,
                     show_positions=args.show_positions,
                 )
+            print(output_path)
     except (OSError, json.JSONDecodeError, TreeConstructionError, LookupError, ValueError) as error:
         parser.error(str(error))
     return 0
