@@ -174,25 +174,6 @@ class ConstituencyTree:
         return "\n".join(render(root, 0) for root in self.roots)
 
     def corpussearch_id(self) -> str:
-        """Return the sentence identifier used in CorpusSearch PSD output."""
-        if not self.source_name:
-            raise TreeConstructionError(
-                "cannot generate a CorpusSearch ID without a source name"
-            )
-        if self.sentence_number is None:
-            raise TreeConstructionError(
-                "cannot generate a CorpusSearch ID without a sentence number"
-            )
-
-        source = re.sub(r"[^A-Za-z0-9_-]+", "_", self.source_name).strip("_")
-        if not source:
-            raise TreeConstructionError(
-                f"invalid CorpusSearch source name: {self.source_name!r}"
-            )
-
-        return f"{source},0.{self.sentence_number}"
-
-    def corpussearch_id(self) -> str:
         """Return a stable CorpusSearch identifier for this sentence."""
         if not self.source_name:
             raise TreeConstructionError(
@@ -434,7 +415,9 @@ def tree_from_sentence(
         roots=roots,
         tokens=tokens,
         sentence_uid=(
-        str(sentence["uid"]) if sentence.get("uid") is not None else None
+            str(sentence["uid"]) 
+            if sentence.get("uid") is not None 
+            else None
         ),
         sentence_number=sentence_number,
         source_name=source_name,
@@ -573,7 +556,12 @@ def selected_trees(
         trees = []
         for uid in uids:
             found_number, sentence = find_sentence(document, uid=uid)
-            trees.append(tree_from_sentence(sentence, sentence_number=found_number, source_name=source_name))
+            trees.append(tree_from_sentence(
+                sentence, 
+                sentence_number=found_number, 
+                source_name=source_name
+                )
+            )
     else:
         trees = []
 
