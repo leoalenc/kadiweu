@@ -226,16 +226,31 @@ class ConstituencyTree:
         *,
         indent: int = 2,
         show_metadata: bool = True,
+        trace_format: str = "tycho",
     ) -> str:
-        """Return a CorpusSearch-compatible Penn-style sentence record.
+        """Return a Penn-style sentence record for CorpusSearch or Tycho.
 
         Coindices are appended to constituent labels and empty-category forms.
-        Empty categories are printed directly under their dominating
-        constituent. The syntactic tree and its ID are enclosed in the
-        unlabeled outer sentence wrapper required by CorpusSearch.
+
+        In ``tycho`` trace format, an empty-category terminal is printed
+        directly under its dominating constituent, for example::
+
+            (NP-TRACE *T*-1)
+
+        In ``corpussearch`` trace format, the terminal receives the ``-NONE-``
+        preterminal required for lossless processing by CorpusSearch 2.003.00::
+
+            (NP-TRACE (-NONE- *T*-1))
+
+        The syntactic tree and its ID are enclosed in the unlabeled outer
+        sentence wrapper required by CorpusSearch.
         """
         if indent < 0:
             raise ValueError("indent must be non-negative")
+        if trace_format not in {"tycho", "corpussearch"}:
+            raise ValueError(
+                f"unsupported trace format: {trace_format!r}"
+            )
 
         def indexed(value: str, coindex: tuple[int, ...]) -> str:
             if not coindex:
@@ -244,10 +259,14 @@ class ConstituencyTree:
 
         def render(node: TreeNode, depth: int) -> str:
             margin = " " * (indent * depth)
+
             if isinstance(node, TokenNode):
                 form = indexed(node.form, node.coindex)
                 if node.empty_category:
+                    if trace_format == "corpussearch":
+                        return f"{margin}(-NONE- {form})"
                     return f"{margin}{form}"
+
                 label = indexed(node.label, node.coindex)
                 return f"{margin}({label} {form})"
 
@@ -272,7 +291,6 @@ class ConstituencyTree:
         if show_metadata:
             return f"{self.corpussearch_metadata()}\n{record}"
         return record
-
 
 def _coindex(item: JsonObject) -> tuple[int, ...]:
     value = item.get("coidx", ())
@@ -579,6 +597,7 @@ def write_trees(
     show_metadata: bool = True,
     show_spans: bool = False,
     show_positions: bool = False,
+    trace_format: str = "tycho",
 ) -> None:
     """Write one or more trees to a text stream."""
     for index, tree in enumerate(trees):
@@ -586,7 +605,10 @@ def write_trees(
             print(file=stream)
         if output_format == "corpussearch":
             print(
-                tree.to_corpussearch(show_metadata=show_metadata),
+                tree.to_corpussearch(
+                    show_metadata=show_metadata,
+                    trace_format=trace_format,
+                ),
                 file=stream,
             )
         elif output_format == "lisp":
@@ -648,6 +670,7 @@ def derived_output_name(
     uids: Sequence[str] | None,
     select_all: bool,
     statuses: Sequence[str] | None,
+    trace_format: str = "tycho",
 ) -> str:
     """Derive an unambiguous output filename from the input and selection."""
     try:
@@ -670,6 +693,9 @@ def derived_output_name(
         # The unsuffixed name is reserved for the PSD downloaded from Tycho.
         parts.append("all-statuses")
 
+    if output_format == "corpussearch" and trace_format == "corpussearch":
+        parts.append("corpussearch")
+
     return ".".join(parts) + extension
 
 
@@ -690,6 +716,7 @@ def resolve_output_path(args: argparse.Namespace) -> Path | None:
         uids=args.uids,
         select_all=args.all,
         statuses=args.statuses,
+        trace_format=args.trace_format,
     )
 
 
@@ -760,6 +787,16 @@ def build_argument_parser() -> argparse.ArgumentParser:
         default="pretty",
         help="output format (default: pretty)",
     )
+    parser.add_argument(
+        "--trace-format",
+        choices=("tycho", "corpussearch"),
+        default="tycho",
+        help=(
+            "representation of empty-category terminals in CorpusSearch output: "
+            "'tycho' produces (NP-TRACE *T*-1), while 'corpussearch' produces "
+            "(NP-TRACE (-NONE- *T*-1)); default: tycho"
+        ),
+    )
     destination = parser.add_mutually_exclusive_group()
     destination.add_argument(
         "-o",
@@ -784,6 +821,12 @@ def main(argv: Sequence[str] | None = None) -> int:
         _reject_duplicates(args.numbers, "sentence number")
         _reject_duplicates(args.uids, "sentence UID")
         _reject_duplicates(args.statuses, "status")
+
+        if args.trace_format != "tycho" and args.format != "corpussearch":
+            raise ValueError(
+                "--trace-format corpussearch requires --format corpussearch"
+            )
+
         document = load_document(args.json_file)
         trees = selected_trees(
             document,
@@ -803,13 +846,14 @@ def main(argv: Sequence[str] | None = None) -> int:
 
         output_path = resolve_output_path(args)
         if output_path is None:
-            write_trees(
+                write_trees(
                 trees,
                 stream=sys.stdout,
                 output_format=args.format,
                 show_metadata=not args.no_metadata,
                 show_spans=args.show_spans,
                 show_positions=args.show_positions,
+                trace_format=args.trace_format,
             )
         else:
             if output_path.exists() and output_path.is_dir():
@@ -830,6 +874,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                     show_metadata=not args.no_metadata,
                     show_spans=args.show_spans,
                     show_positions=args.show_positions,
+                    trace_format=args.trace_format,
                 )
             print(output_path)
     except (OSError, json.JSONDecodeError, TreeConstructionError, LookupError, ValueError) as error:

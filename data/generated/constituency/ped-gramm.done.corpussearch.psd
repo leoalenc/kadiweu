@@ -1,0 +1,778 @@
+/*
+sentence = 1
+uid = ed98d4d1-638c-4377-8c6d-5511855636d1
+status = DONE
+text = ajo liwatece ja iwaGadi
+text_por = A canoa dele/a é pesada
+*/
+(
+  (IP-MAT
+    (NP
+      (D ajo)
+      (N$ liwatece)
+    )
+    (T ja)
+    (VB iwaGadi)
+  )
+  (ID ped-gramm,0.1)
+)
+
+/*
+sentence = 2
+uid = ccb5ea37-b3ba-47a9-8d71-224f599ea7be
+status = DONE
+text = ajo liwatece etadi weiigi
+text_por = A canoa dele/a está no rio
+*/
+(
+  (IP-MAT
+    (NP
+      (D ajo)
+      (N$ liwatece)
+    )
+    (VB etadi)
+    (NP
+      (N weiigi)
+    )
+  )
+  (ID ped-gramm,0.2)
+)
+
+/*
+sentence = 3
+uid = 49347527-d19d-4689-bff1-ba3e497e7b1f
+status = DONE
+text = ajo niwatece etadi digoida
+text_por = A canoa está lá
+*/
+(
+  (IP-MAT
+    (NP
+      (D ajo)
+      (N$ niwatece)
+    )
+    (VB etadi)
+    (NP
+      (D digoida)
+    )
+  )
+  (ID ped-gramm,0.3)
+)
+
+/*
+sentence = 4
+uid = 69948fe6-81f6-4faa-a344-8f8c47486943
+status = DONE
+text = niwatece iwaGadi
+text_por = A canoa está pesada
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ niwatece)
+    )
+    (VB iwaGadi)
+  )
+  (ID ped-gramm,0.4)
+)
+
+/*
+sentence = 5
+uid = b2e3ea43-0d68-46ee-9f33-938610cc8aec
+status = DONE
+text = niwatece etadi weiigi
+text_por = A canoa está no rio
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ niwatece)
+    )
+    (VB etadi)
+    (NP
+      (N weiigi)
+    )
+  )
+  (ID ped-gramm,0.5)
+)
+
+/*
+sentence = 6
+uid = 1b99ecb9-5656-4c38-b60b-fbbe643708fb
+status = DONE
+text = ajo niwatece ipegitege weiigi
+text_por = A canoa está perto do rio
+*/
+(
+  (IP-MAT
+    (NP
+      (D ajo)
+      (N$ niwatece)
+    )
+    (VBAPL ipegitege)
+    (NP-APL
+      (N weiigi)
+    )
+  )
+  (ID ped-gramm,0.6)
+)
+
+/*
+sentence = 7
+uid = e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
+status = DONE
+text = liGeladi Maria aGipegetege
+text_por = A casa de Maria não é perto dela
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ liGeladi)
+      (NP
+        (NPR Maria)
+      )
+    )
+    (NEG aG@)
+    (VBAPL @ipegetege)
+  )
+  (ID ped-gramm,0.7)
+)
+
+/*
+sentence = 8
+uid = 79a6cd4e-b585-437a-9084-1fa077dec3b6
+status = DONE
+text = ica liGeladi ipegetege
+text_por = A casa está perto dela
+*/
+(
+  (IP-MAT
+    (NP
+      (D ica)
+      (N$ liGeladi)
+    )
+    (VBAPL ipegetege)
+  )
+  (ID ped-gramm,0.8)
+)
+
+/*
+sentence = 9
+uid = e9d6dfb6-656d-44aa-ba17-86289fd72268
+status = DONE
+text = liGeladi idei nigotaGa
+text_por = A casa fica perto da cidade
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ liGeladi)
+    )
+    (VB idei)
+    (NP
+      (N nigotaGa)
+    )
+  )
+  (ID ped-gramm,0.9)
+)
+
+/*
+sentence = 10
+uid = 2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+status = DONE
+text = ica liGeladi ipegitegi
+text_por = a casa dela/dele fica perto dele
+*/
+(
+  (IP-MAT
+    (NP
+      (D ica)
+      (N$ liGeladi)
+    )
+    (VBAPL ipegitegi)
+  )
+  (ID ped-gramm,0.10)
+)
+
+/*
+sentence = 12
+uid = 070d221f-f72d-4055-9c82-ddc383743e6a
+status = DONE
+text = ica looligi lidi
+text_por = A comida está/é deliciosa (A gostosura da comida da Maria)
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ica)
+      (N$ looligi)
+    )
+    (NP-PRD
+      (N$ lidi)
+    )
+  )
+  (ID ped-gramm,0.12)
+)
+
+/*
+sentence = 13
+uid = 68277d1f-c30b-4c4f-ba9e-c2883cc133af
+status = DONE
+text = ica looligi dapico
+text_por = A comida dela está quente
+*/
+(
+  (IP-MAT
+    (NP
+      (D ica)
+      (N$ looligi)
+    )
+    (VB dapico)
+  )
+  (ID ped-gramm,0.13)
+)
+
+/*
+sentence = 14
+uid = 5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
+status = DONE
+text = ica looligi ja dapico
+text_por = a comida dela está quente
+*/
+(
+  (IP-MAT
+    (NP
+      (D ica)
+      (N$ looligi)
+    )
+    (T ja)
+    (VB dapico)
+  )
+  (ID ped-gramm,0.14)
+)
+
+/*
+sentence = 15
+uid = c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
+status = DONE
+text = ica looligi lideGegi
+text_por = A comida é deliciosa (a gostosura da comida dela)
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ica)
+      (N$ looligi)
+    )
+    (NP-PRD
+      (N$ lideGegi)
+    )
+  )
+  (ID ped-gramm,0.15)
+)
+
+/*
+sentence = 16
+uid = 19cc39ce-fe03-4551-8097-9d163a38a3c0
+status = DONE
+text = loigipodi libinienigipi
+text_por = A comunidade dele/dela é bonita
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ loigipodi)
+    )
+    (NP-PRD
+      (N$ libinienigipi)
+    )
+  )
+  (ID ped-gramm,0.16)
+)
+
+/*
+sentence = 19
+uid = 0f478381-6858-463d-94cc-903e9dc879f9
+status = DONE
+text = ica liwigo libinienigi
+text_por = a fotografia dela/dele é/está bonita
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ica)
+      (N$ liwigo)
+    )
+    (NP-PRD
+      (N$ libinienigi)
+    )
+  )
+  (ID ped-gramm,0.19)
+)
+
+/*
+sentence = 20
+uid = 55551636-8ed3-4545-8510-d8dbfd817a1a
+status = DONE
+text = ica niwigo libinienigi
+text_por = a fotografia é/está bonita
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ica)
+      (NP
+        (N niwigo)
+      )
+    )
+    (NP-PRD
+      (N$ libinienigi)
+    )
+  )
+  (ID ped-gramm,0.20)
+)
+
+/*
+sentence = 25
+uid = a4d33655-fe74-4df2-8d5e-b3c88fba5fd1
+status = DONE
+text = iGeladi idei naigi me napioi
+text_por = Minha casa fica na rua suja (na rua que é suja).
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ iGeladi)
+    )
+    (VB idei)
+    (NP
+      (N naigi)
+      (CP-me
+        (C me)
+        (IP-SUB
+          (NP
+            (N napioi)
+          )
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.25)
+)
+
+/*
+sentence = 32
+uid = a4ccc755-a644-4b04-ab1b-698e7acea4cc
+status = DONE
+text = iGeladi idei digoida
+text_por = minha casa está lá
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ iGeladi)
+    )
+    (VB idei)
+    (NP
+      (D digoida)
+    )
+  )
+  (ID ped-gramm,0.32)
+)
+
+/*
+sentence = 33
+uid = 82117289-be52-45d0-886d-a5747eb20ea2
+status = DONE
+text = iGeladi ipegitaGagi
+text_por = Minha casa está perto de você
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ iGeladi)
+    )
+    (VBAPL ipegitaGagi)
+  )
+  (ID ped-gramm,0.33)
+)
+
+/*
+sentence = 34
+uid = 50f93fbc-14fa-48e7-b8ba-22f744109348
+status = DONE
+text = iGeladi ipegitegi liGeladi
+text_por = Minha casa está perto de sua casa
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ iGeladi)
+    )
+    (VBAPL ipegitegi)
+    (NP-APL
+      (N$ liGeladi)
+    )
+  )
+  (ID ped-gramm,0.34)
+)
+
+/*
+sentence = 35
+uid = 014fefb1-d5e3-48c8-9ac3-9e713a41407f
+status = DONE
+text = iGeladi ipegitegi naigi ane napioi
+text_por = Minha casa está perto desta rua suja (que está suja)
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ iGeladi)
+    )
+    (VBAPL ipegitegi)
+    (NP-APL
+      (N naigi)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (NP
+            (N napioi)
+          )
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.35)
+)
+
+/*
+sentence = 36
+uid = bb8018ba-76b3-43f2-82ea-78b6009c1f90
+status = DONE
+text = iGeladi ipegitegi naigi me napioi
+text_por = minha casa está perto da rua suja
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ iGeladi)
+    )
+    (VBAPL ipegitegi)
+    (NP-APL
+      (N naigi)
+      (CP-me
+        (C me)
+        (IP-SUB
+          (NP
+            (N napioi)
+          )
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.36)
+)
+
+/*
+sentence = 37
+uid = 1da1bf7a-7975-4baf-821b-9df5c75ac297
+status = DONE
+text = iGeladi aGipegitegi weiigi
+text_por = Minha casa não fica perto do rio
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ iGeladi)
+    )
+    (NEG aG@)
+    (VBAPL @ipegitegi)
+    (NP-APL
+      (N weiigi)
+    )
+  )
+  (ID ped-gramm,0.37)
+)
+
+/*
+sentence = 39
+uid = 4ffc2f68-0474-488f-a94e-4065f952482a
+status = DONE
+text = ijotawece etidi akiidi .
+text_por = Eles (todos) estão (deitados) no rio.
+*/
+(
+  (IP-MAT
+    (NP
+      (D ijotawece)
+    )
+    (VB etidi)
+    (NP
+      (N akiidi)
+    )
+    (PUNC .)
+  )
+  (ID ped-gramm,0.39)
+)
+
+/*
+sentence = 41
+uid = 874c123b-4c43-4001-bfce-8af4af0e5805
+status = DONE
+text = iGeladi idei weiigi .
+text_por = Minha casa é no rio.
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ iGeladi)
+    )
+    (VB idei)
+    (NP
+      (N weiigi)
+    )
+    (PUNC .)
+  )
+  (ID ped-gramm,0.41)
+)
+
+/*
+sentence = 46
+uid = 4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5
+status = DONE
+text = liGeladi João napioi .
+text_por = A casa do João é suja.
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ liGeladi)
+      (NP
+        (NPR João)
+      )
+    )
+    (NP-PRD
+      (N$ napioi)
+    )
+    (PUNC .)
+  )
+  (ID ped-gramm,0.46)
+)
+
+/*
+sentence = 50
+uid = 156fa9a4-4323-44f1-9cdc-ef5dc052b428
+status = DONE
+text = etee minitaGa
+text_por = Estou com ele
+*/
+(
+  (IP-MAT
+    (VB etee)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (DAPL @initaGa)
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.50)
+)
+
+/*
+sentence = 51
+uid = 3b45c470-6164-4fcf-a4d5-90be0f27eb1d
+status = DONE
+text = ee aGidininitibeci
+text_por = Eu não estou feliz
+*/
+(
+  (IP-MAT
+    (NP
+      (PRO ee)
+    )
+    (NEG aG@)
+    (VB @idininitebeci)
+  )
+  (ID ped-gramm,0.51)
+)
+
+/*
+sentence = 52
+uid = d543f155-c01f-4b5e-add1-0533b8ac6e15
+status = DONE
+text = jipacaGataGagitiwaji
+text_por = Estamos perto de vocês.
+*/
+(
+  (IP-MAT
+    (VBAPL jipacaGataGagitiwaji)
+  )
+  (ID ped-gramm,0.52)
+)
+
+/*
+sentence = 54
+uid = 74a76be1-d4b6-42e1-9100-6a436a7fa065
+status = DONE
+text = akaami oko jipacaGataGagitiwaji
+text_por = Estamos perto de vocês.
+*/
+(
+  (IP-MAT
+    (NP
+      (PRO akaami)
+    )
+    (NP
+      (PRO oko)
+    )
+    (VBAPL jipacaGataGagitiwaji)
+  )
+  (ID ped-gramm,0.54)
+)
+
+/*
+sentence = 55
+uid = d3e098e5-4edd-4c24-81cf-78ff4a4d398c
+status = DONE
+text = niGidowa waca lotiidi dapikoGo
+text_por = O leite da vaca está quente
+*/
+(
+  (IP-MAT
+    (NP
+      (D niGidowa)
+      (NP
+        (N waca)
+      )
+      (N$ lotiidi)
+    )
+    (VB dapikoGo)
+  )
+  (ID ped-gramm,0.55)
+)
+
+/*
+sentence = 56
+uid = edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded
+status = DONE
+text = IiGeladi midi akiidi
+text_por = A casa dele/dela é no rio.
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ IiGeladi)
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (D @idi)
+          (N akiidi)
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.56)
+)
+
+/*
+sentence = 58
+uid = 73ceda1b-be14-4e75-9b1e-2a490d7df366
+status = DONE
+text = etogo adakake lojedi
+text_por = A canoa está barata.
+*/
+(
+  (IP-MAT
+    (NP-1
+      (N etogo)
+    )
+    (NEG aG@)
+    (VBU @dakake)
+    (NP
+      (NP-GEN
+        (-NONE- *T*-1)
+      )
+      (N$ lojedi)
+    )
+  )
+  (ID ped-gramm,0.58)
+)
+
+/*
+sentence = 59
+uid = bf632295-26f8-4ee6-979f-33f090ef0471
+status = DONE
+text = etogoli dakake lojetedi
+text_por = As canoas (individualmente) são caras (cada uma com um preço caro)
+*/
+(
+  (IP-MAT
+    (NP-1
+      (N etogoli)
+    )
+    (VBU dakake)
+    (NP
+      (NP-GEN
+        (-NONE- *T*-1)
+      )
+      (N$ lojetedi)
+    )
+  )
+  (ID ped-gramm,0.59)
+)
+
+/*
+sentence = 60
+uid = bbd6b80b-3236-4172-8bd5-ba3fb404049e
+status = DONE
+text = etogoli dakake loojedi
+text_por = as canoas (como classe/grupo) são caras
+*/
+(
+  (IP-MAT
+    (NP-1
+      (N etogoli)
+    )
+    (VBU dakake)
+    (NP
+      (NP-GEN
+        (-NONE- *T*-1)
+      )
+      (N$ loojedi)
+    )
+  )
+  (ID ped-gramm,0.60)
+)
+
+/*
+sentence = 61
+uid = 1ab7fa26-ed92-4d55-98d0-0d76396373f0
+status = DONE
+text = Etogoli iwaGadi adakake lojetedi
+*/
+(
+  (IP-MAT
+    (NP
+      (N Etogoli)
+    )
+    (VB iwaGadi)
+    (IP-ADV
+      (NEG aG@)
+      (VBU @dakake)
+      (NP
+        (N$ lojetedi)
+      )
+    )
+  )
+  (ID ped-gramm,0.61)
+)
