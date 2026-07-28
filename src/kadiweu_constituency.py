@@ -113,7 +113,9 @@ class ConstituencyTree:
     tokens: list[TokenNode]
     sentence_uid: str | None = None
     sentence_number: int | None = None
+    source_name: str | None = None
     text: str | None = None
+    text_por: str | None = None
     status: str | None = None
     source_sentence: JsonObject = field(
         default_factory=dict, repr=False, compare=False
@@ -171,13 +173,85 @@ class ConstituencyTree:
 
         return "\n".join(render(root, 0) for root in self.roots)
 
-    def to_corpussearch(self, *, indent: int = 2) -> str:
-        """Return a CorpusSearch-compatible Penn-style bracketed tree.
+    def corpussearch_id(self) -> str:
+        """Return the sentence identifier used in CorpusSearch PSD output."""
+        if not self.source_name:
+            raise TreeConstructionError(
+                "cannot generate a CorpusSearch ID without a source name"
+            )
+        if self.sentence_number is None:
+            raise TreeConstructionError(
+                "cannot generate a CorpusSearch ID without a sentence number"
+            )
+
+        source = re.sub(r"[^A-Za-z0-9_-]+", "_", self.source_name).strip("_")
+        if not source:
+            raise TreeConstructionError(
+                f"invalid CorpusSearch source name: {self.source_name!r}"
+            )
+
+        return f"{source},0.{self.sentence_number}"
+
+    def corpussearch_id(self) -> str:
+        """Return a stable CorpusSearch identifier for this sentence."""
+        if not self.source_name:
+            raise TreeConstructionError(
+                "cannot generate a CorpusSearch ID without a source name"
+            )
+        if self.sentence_number is None:
+            raise TreeConstructionError(
+                "cannot generate a CorpusSearch ID without a sentence number"
+            )
+
+        source = re.sub(
+            r"[^A-Za-z0-9_-]+", "_", self.source_name
+        ).strip("_")
+        if not source:
+            raise TreeConstructionError(
+                f"invalid CorpusSearch source name: {self.source_name!r}"
+            )
+
+        return f"{source},0.{self.sentence_number}"
+
+    @staticmethod
+    def _corpussearch_metadata_value(value: str) -> str:
+        """Normalize a value for use inside a CorpusSearch block comment."""
+        value = " ".join(value.split())
+        return value.replace("*/", "* /")
+
+    def corpussearch_metadata(self) -> str:
+        """Return a CorpusSearch comment containing sentence metadata."""
+        metadata: list[tuple[str, str]] = []
+
+        if self.sentence_number is not None:
+            metadata.append(("sentence", str(self.sentence_number)))
+        if self.sentence_uid:
+            metadata.append(("uid", self.sentence_uid))
+        if self.status:
+            metadata.append(("status", self.status))
+        if self.text:
+            metadata.append(("text", self.text))
+        if self.text_por:
+            metadata.append(("text_por", self.text_por))
+
+        lines = [
+            f"{key} = {self._corpussearch_metadata_value(value)}"
+            for key, value in metadata
+        ]
+        return "/*\n" + "\n".join(lines) + "\n*/"
+
+    def to_corpussearch(
+        self,
+        *,
+        indent: int = 2,
+        show_metadata: bool = True,
+    ) -> str:
+        """Return a CorpusSearch-compatible Penn-style sentence record.
 
         Coindices are appended to constituent labels and empty-category forms.
         Empty categories are printed directly under their dominating
-        constituent, and an outer sentence wrapper is added as required by
-        Penn-style ``.psd`` corpora.
+        constituent. The syntactic tree and its ID are enclosed in the
+        unlabeled outer sentence wrapper required by CorpusSearch.
         """
         if indent < 0:
             raise ValueError("indent must be non-negative")
@@ -195,14 +269,28 @@ class ConstituencyTree:
                     return f"{margin}{form}"
                 label = indexed(node.label, node.coindex)
                 return f"{margin}({label} {form})"
+
             label = indexed(node.label, node.coindex)
             if not node.children:
                 return f"{margin}({label})"
-            children = "\n".join(render(child, depth + 1) for child in node.children)
+
+            children = "\n".join(
+                render(child, depth + 1) for child in node.children
+            )
             return f"{margin}({label}\n{children}\n{margin})"
 
         roots = "\n".join(render(root, 1) for root in self.roots)
-        return f"(\n{roots}\n)"
+        id_margin = " " * indent
+        record = (
+            f"(\n"
+            f"{roots}\n"
+            f"{id_margin}(ID {self.corpussearch_id()})\n"
+            f")"
+        )
+
+        if show_metadata:
+            return f"{self.corpussearch_metadata()}\n{record}"
+        return record
 
 
 def _coindex(item: JsonObject) -> tuple[int, ...]:
@@ -219,7 +307,10 @@ def _contains(parent: ConstituentNode, start: int, end: int) -> bool:
 
 
 def tree_from_sentence(
-    sentence: JsonObject, *, sentence_number: int | None = None
+    sentence: JsonObject,
+    *,
+    sentence_number: int | None = None,
+    source_name: str | None = None,
 ) -> ConstituencyTree:
     """Build a :class:`ConstituencyTree` from one Tycho sentence mapping.
 
@@ -333,16 +424,24 @@ def tree_from_sentence(
         key=lambda node: (node.start, node.end, node.level),
     )
     tokens.sort(key=lambda token: token.position)
+    translations = sentence.get("translations")
+    text_por: str | None = None
+    if isinstance(translations, Mapping):
+        translation = translations.get("pt-br")
+        if translation is not None:
+            text_por = str(translation).strip() or None
     return ConstituencyTree(
         roots=roots,
         tokens=tokens,
         sentence_uid=(
-            str(sentence["uid"]) if sentence.get("uid") is not None else None
+        str(sentence["uid"]) if sentence.get("uid") is not None else None
         ),
         sentence_number=sentence_number,
+        source_name=source_name,
         text=str(sentence["text"]) if sentence.get("text") is not None else None,
+        text_por=text_por,
         status=(
-            str(sentence["status"]) if sentence.get("status") is not None else None
+        str(sentence["status"]) if sentence.get("status") is not None else None
         ),
         source_sentence=sentence,
     )
@@ -444,6 +543,7 @@ def selected_trees(
     document: JsonObject,
     *,
     numbers: Sequence[int] | None = None,
+    source_name: str | None = None,
     uids: Sequence[str] | None = None,
     select_all: bool = False,
     statuses: Sequence[str] | None = None,
@@ -451,19 +551,29 @@ def selected_trees(
     """Return trees selected by number/UID and, optionally, sentence status."""
     if select_all:
         trees = [
-            tree_from_sentence(sentence, sentence_number=number)
+            tree_from_sentence(
+                sentence,
+                sentence_number=number,
+                source_name=source_name,
+            )
             for number, sentence in iter_sentences(document)
         ]
     elif numbers is not None:
         trees = []
         for number in numbers:
             found_number, sentence = find_sentence(document, number=number)
-            trees.append(tree_from_sentence(sentence, sentence_number=found_number))
+            trees.append(
+                tree_from_sentence(
+                sentence,
+                sentence_number=found_number,
+                source_name=source_name,
+                )
+            )
     elif uids is not None:
         trees = []
         for uid in uids:
             found_number, sentence = find_sentence(document, uid=uid)
-            trees.append(tree_from_sentence(sentence, sentence_number=found_number))
+            trees.append(tree_from_sentence(sentence, sentence_number=found_number, source_name=source_name))
     else:
         trees = []
 
@@ -487,7 +597,10 @@ def write_trees(
         if index:
             print(file=stream)
         if output_format == "corpussearch":
-            print(tree.to_corpussearch(), file=stream)
+            print(
+                tree.to_corpussearch(show_metadata=show_metadata),
+                file=stream,
+            )
         elif output_format == "lisp":
             if show_metadata:
                 if tree.sentence_number is not None:
@@ -639,7 +752,12 @@ def build_argument_parser() -> argparse.ArgumentParser:
         "--show-positions", action="store_true", help="show terminal positions"
     )
     parser.add_argument(
-        "--no-metadata", action="store_true", help="omit sentence metadata"
+        "--no-metadata",
+        action="store_true",
+        help=(
+            "omit sentence metadata, including Portuguese translations; "
+            "CorpusSearch IDs are retained"
+        ),
     )
     parser.add_argument(
         "--status",
@@ -681,6 +799,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         document = load_document(args.json_file)
         trees = selected_trees(
             document,
+            source_name=args.json_file.stem,
             numbers=args.numbers,
             uids=args.uids,
             select_all=args.all,

@@ -41,7 +41,6 @@ the treebank are periodically synchronized with the separate
 [UD_Kadiweu-UNICAMP](https://github.com/UniversalDependencies/UD_Kadiweu-UNICAMP)
 distribution repository.
 
-## License
 
 ## License
 

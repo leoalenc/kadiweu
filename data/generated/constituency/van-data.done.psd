@@ -1,0 +1,1119 @@
+/*
+sentence = 2
+uid = d07f0db7-963e-47ab-ab3f-36614732bacd
+status = DONE
+text = iGeladi idei weiigi
+text_por = Minha casa é no rio
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ iGeladi)
+    )
+    (VB idei)
+    (NP
+      (N weiigi)
+    )
+  )
+  (ID van-data,0.2)
+)
+
+/*
+sentence = 3
+uid = f50b632e-fc1a-4ec0-b8b3-610dab7be736
+status = DONE
+text = iGeladi ideaGi weiigi
+text_por = Minha casa é no rio
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ iGeladi)
+    )
+    (VB ideaGi)
+    (NP
+      (N weiigi)
+    )
+  )
+  (ID van-data,0.3)
+)
+
+/*
+sentence = 4
+uid = d26cfc71-a117-4817-9f35-4a7d23fd1f88
+status = DONE
+text = iwaalo ja libiniena
+text_por = a mulher está bonita
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N iwaalo)
+    )
+    (T ja)
+    (NP-PRD
+      (N$ libiniena)
+    )
+  )
+  (ID van-data,0.4)
+)
+
+/*
+sentence = 5
+uid = e3b84bb7-7e6e-474c-9ad6-c6a47b409a5a
+status = DONE
+text = iwaalo ja ninitibeke
+text_por = a mulher está feliz
+*/
+(
+  (IP-MAT
+    (NP
+      (N iwaalo)
+    )
+    (T ja)
+    (VB ninitibeke)
+  )
+  (ID van-data,0.5)
+)
+
+/*
+sentence = 7
+uid = ee540050-e6fa-424e-9252-fd0b9312769d
+status = DONE
+text = lotaGa Gadodawa libinienaGa
+text_por = a palavra do seu marido é bonita
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ lotaGa)
+      (N$ Gadodawa)
+    )
+    (NP-PRD
+      (N$ libinienaGa)
+    )
+  )
+  (ID van-data,0.7)
+)
+
+/*
+sentence = 8
+uid = 947061b4-7b73-4612-8aa8-0af0e04cbc85
+status = DONE
+text = niwatece iwaGadi noxilece lojetedi
+text_por = a pesada canoa está barata
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ niwatece)
+    )
+    (VB iwaGadi)
+    (IP-ADV
+      (VB noxilece)
+      (NP
+        (N$ lojetedi)
+      )
+    )
+  )
+  (ID van-data,0.8)
+)
+
+/*
+sentence = 11
+uid = a85fda39-1575-4120-9432-8fb534ebdbd2
+status = DONE
+text = niGida liwenigi libinienigi
+text_por = aquela comida dela é bonita
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D niGida)
+      (N$ liwenigi)
+    )
+    (NP-PRD
+      (N$ libinienigi)
+    )
+  )
+  (ID van-data,0.11)
+)
+
+/*
+sentence = 13
+uid = e9806e26-701d-4f5f-9ca9-63216cccf3d0
+status = DONE
+text = naGajo lomiigo Pedro idei niwatece
+text_por = aquele anzol do Pedro está na canoa
+*/
+(
+  (IP-MAT
+    (NP
+      (D naGajo)
+      (N$ lomiigo)
+      (NP
+        (NPR Pedro)
+      )
+    )
+    (VB idei)
+    (NP
+      (N niwatece)
+    )
+  )
+  (ID van-data,0.13)
+)
+
+/*
+sentence = 17
+uid = 86f5c128-e931-4443-90cc-2359748ed69f
+status = DONE
+text = Eeyo nigotaGa
+text_por = Estou na cidade
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (PRO Eeyo)
+    )
+    (NP-PRD
+      (N nigotaGa)
+    )
+  )
+  (ID van-data,0.17)
+)
+
+/*
+sentence = 18
+uid = d021bede-064b-4fd5-bb33-6c7cd4279c1b
+status = DONE
+text = Eyo manitaGa nigotaGa
+text_por = Estou na cidade
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (PRO Eyo)
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (DAPL @anitaGa)
+          (N nigotaGa)
+        )
+      )
+    )
+  )
+  (ID van-data,0.18)
+)
+
+/*
+sentence = 19
+uid = e5c65dad-8b04-46da-b965-4921887cbca4
+status = DONE
+text = niGijoa lionigipi iwaalo idei minitaGa
+text_por = aqueles filhos da mulher estão com eles
+*/
+(
+  (IP-MAT
+    (NP
+      (D niGijoa)
+      (N$ lionigipi)
+      (NP
+        (N iwaalo)
+      )
+    )
+    (VB idei)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (DAPL @initaGa)
+        )
+      )
+    )
+  )
+  (ID van-data,0.19)
+)
+
+/*
+sentence = 20
+uid = 8c5dd09c-d010-4c48-9601-9d3b14c61119
+status = DONE
+text = dibixodi idei manitaGa
+text_por = as formigas estão nela
+*/
+(
+  (IP-MAT
+    (NP
+      (N dibixodi)
+    )
+    (VB idei)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (DAPL @anitaGa)
+        )
+      )
+    )
+  )
+  (ID van-data,0.20)
+)
+
+/*
+sentence = 21
+uid = 9b107abc-b49f-4ce2-9c43-30c7e5b5f8b2
+status = DONE
+text = iwalepodi ja libinienigipi
+text_por = as mulheres estão bonitas
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N iwalepodi)
+    )
+    (T ja)
+    (NP-PRD
+      (N$ libinienigipi)
+    )
+  )
+  (ID van-data,0.21)
+)
+
+/*
+sentence = 22
+uid = 0d6cdbcf-9d99-4eff-8615-149ec22fec5f
+status = DONE
+text = ajo ninitibeci
+text_por = ela está feliz
+*/
+(
+  (IP-MAT
+    (NP
+      (D ajo)
+    )
+    (VB ninitibeci)
+  )
+  (ID van-data,0.22)
+)
+
+/*
+sentence = 23
+uid = 05676093-36c9-4e30-959a-e850447f32a5
+status = DONE
+text = ajo iwaGadi
+text_por = ela está pesada / é pesada
+*/
+(
+  (IP-MAT
+    (NP
+      (D ajo)
+    )
+    (VB iwaGadi)
+  )
+  (ID van-data,0.23)
+)
+
+/*
+sentence = 24
+uid = 661c62a7-3c8c-4609-b989-017deaae82c6
+status = DONE
+text = ajo daGaxa ninitibeci
+text_por = ela é muito feliz
+*/
+(
+  (IP-MAT
+    (NP
+      (D ajo)
+    )
+    (ADVP
+      (ADV daGaxa)
+    )
+    (VB ninitibeci)
+  )
+  (ID van-data,0.24)
+)
+
+/*
+sentence = 25
+uid = abe20c80-8394-478c-92eb-feef1512e5ed
+status = DONE
+text = ajo eliodi linikeGegi
+text_por = ela é muito feliz
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ajo)
+    )
+    (NP-PRD
+      (Q eliodi)
+      (N$ linikeGegi)
+    )
+  )
+  (ID van-data,0.25)
+)
+
+/*
+sentence = 26
+uid = 0575dd46-865a-4ba4-bd49-ed6db054eeb4
+status = DONE
+text = ajo lapicaGa
+text_por = ela é / está quente
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ajo)
+    )
+    (NP-PRD
+      (N$ lapicaGa)
+    )
+  )
+  (ID van-data,0.26)
+)
+
+/*
+sentence = 27
+uid = 3aba0004-0ce2-4392-a334-ef814428ec0d
+status = DONE
+text = ijo libinienigi
+text_por = ele está / é bonito
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ijo)
+    )
+    (NP-PRD
+      (N$ libinienigi)
+    )
+  )
+  (ID van-data,0.27)
+)
+
+/*
+sentence = 28
+uid = d369088d-7d87-44b9-a956-2d5bd5f955e1
+status = DONE
+text = ijo lapicaGigi
+text_por = ele é / está quente
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ijo)
+    )
+    (NP-PRD
+      (N$ lapicaGigi)
+    )
+  )
+  (ID van-data,0.28)
+)
+
+/*
+sentence = 29
+uid = a0ab1cad-f01e-49bb-8f31-5edf4fa4c102
+status = DONE
+text = niGijo ninitibigiwaji
+text_por = eles são felizes
+*/
+(
+  (IP-MAT
+    (NP
+      (D niGijo)
+    )
+    (VB ninitibigiwaji)
+  )
+  (ID van-data,0.29)
+)
+
+/*
+sentence = 31
+uid = 5d76c7ee-51ce-47b0-a85d-ddc7f7d33f5f
+status = DONE
+text = ica liwigo niganigawanigi libinienigi
+text_por = esta fotografia da criança é bonita
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ica)
+      (N$ liwigo)
+      (NP
+        (N niganigawanigi)
+      )
+    )
+    (NP-PRD
+      (N$ libinienigi)
+    )
+  )
+  (ID van-data,0.31)
+)
+
+/*
+sentence = 32
+uid = 46190f73-f21e-4073-b09c-8b2d17c6668e
+status = DONE
+text = naGani wetiGa liwaGatena
+text_por = esta pedra está muito pesada
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D naGani)
+      (NP
+        (N wetiGa)
+      )
+    )
+    (NP-PRD
+      (N$ liwaGatena)
+    )
+  )
+  (ID van-data,0.32)
+)
+
+/*
+sentence = 33
+uid = a0bb1280-1040-4dff-9311-a1a31049b6f8
+status = DONE
+text = naGani wetiGa iwaGadi
+text_por = esta pedra está pesada
+*/
+(
+  (IP-MAT
+    (NP
+      (D naGani)
+      (N wetiGa)
+    )
+    (VB iwaGadi)
+  )
+  (ID van-data,0.33)
+)
+
+/*
+sentence = 34
+uid = e1acd124-849e-40dc-bbb0-a8b6ed281592
+status = DONE
+text = niGidiwa wetiadi iwaGadi
+text_por = estas pedras estão pesadas
+*/
+(
+  (IP-MAT
+    (NP
+      (D niGidiwa)
+      (N wetiadi)
+    )
+    (VB iwaGadi)
+  )
+  (ID van-data,0.34)
+)
+
+/*
+sentence = 35
+uid = 675ef4d4-ebe8-4601-bf42-908deb0df82b
+status = DONE
+text = ani wetiGa eliodi me iwaGadi
+text_por = esta pedra está muito pesada
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ani)
+      (N wetiGa)
+    )
+    (CP-me
+      (Q eliodi)
+      (C me)
+      (IP-SUB
+        (VB iwaGadi)
+      )
+    )
+  )
+  (ID van-data,0.35)
+)
+
+/*
+sentence = 36
+uid = 42b65fc9-cec4-40a9-8aec-cdeec3731df8
+status = DONE
+text = ani wetiGa iwaGadi
+text_por = esta pedra é pesada
+*/
+(
+  (IP-MAT
+    (NP
+      (D ani)
+      (N wetiGa)
+    )
+    (VB iwaGadi)
+  )
+  (ID van-data,0.36)
+)
+
+/*
+sentence = 37
+uid = ba34b659-bcb8-4aa2-b9f4-b969ba786b12
+status = DONE
+text = ani wetiGa me iwaGadi eniteloco iGonagi
+text_por = esta pedra que é pesada caiu no meu pé
+*/
+(
+  (IP-MAT
+    (NP
+      (D ani)
+      (N wetiGa)
+      (CP-me
+        (C me)
+        (IP-SUB
+          (VB iwaGadi)
+        )
+      )
+    )
+    (VBAPL eniteloco)
+    (NP-APL
+      (N$ iGonagi)
+    )
+  )
+  (ID van-data,0.37)
+)
+
+/*
+sentence = 38
+uid = 61da4017-2140-4577-82e4-d5108efae675
+status = DONE
+text = ani wetiGa ane iwaGadi eniteloco iGonagi
+text_por = esta pedra , que é pesada , caiu no meu pé
+*/
+(
+  (IP-MAT
+    (NP
+      (D ani)
+      (N wetiGa)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            *T*-1
+          )
+          (VB iwaGadi)
+        )
+      )
+    )
+    (VBAPL eniteloco)
+    (NP-APL
+      (N$ iGonagi)
+    )
+  )
+  (ID van-data,0.38)
+)
+
+/*
+sentence = 39
+uid = 6459c008-b2ad-4517-8227-b525616b720d
+status = DONE
+text = idiwa wetiadi iwaGadi
+text_por = estas pedras estão pesadas
+*/
+(
+  (IP-MAT
+    (NP
+      (D idiwa)
+      (N wetiadi)
+    )
+    (VB iwaGadi)
+  )
+  (ID van-data,0.39)
+)
+
+/*
+sentence = 40
+uid = b4e1df8d-6590-4ce9-9f72-c0b054398c89
+status = DONE
+text = niGidowa waca lotiidi dapicoGo
+text_por = este leite está quente
+*/
+(
+  (IP-MAT
+    (NP
+      (D niGidowa)
+      (NP
+        (N waca)
+      )
+      (N$ lotiidi)
+    )
+    (VB dapicoGo)
+  )
+  (ID van-data,0.40)
+)
+
+/*
+sentence = 41
+uid = 278e4c5c-aaab-4ca3-8f5e-277610fb80c2
+status = DONE
+text = idowa waca lotiidi dapicoGo
+text_por = este leite está quente
+*/
+(
+  (IP-MAT
+    (NP
+      (D idowa)
+      (NP
+        (N waca)
+      )
+      (N$ lotiidi)
+    )
+    (VB dapicoGo)
+  )
+  (ID van-data,0.41)
+)
+
+/*
+sentence = 44
+uid = 075356e6-f89c-4d83-b001-435d13b319dc
+status = DONE
+text = ijoa nigetedi niwigo libinienigipi
+text_por = estes ovos da fotografia estão bonitos
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ijoa)
+      (N nigetedi)
+      (NP
+        (N niwigo)
+      )
+    )
+    (NP-PRD
+      (N$ libinienigipi)
+    )
+  )
+  (ID van-data,0.44)
+)
+
+/*
+sentence = 47
+uid = fad6e8d3-1e9f-451c-aaa7-fd28aecfd967
+status = DONE
+text = idiwa noGojedi lixagotaGaGa adakake loojedi
+text_por = estes peixes vermelhos estão baratos
+*/
+(
+  (IP-MAT
+    (NP-1
+      (D idiwa)
+      (NP
+        (N noGojedi)
+      )
+      (N$ lixagotaGaGa)
+    )
+    (NEG aG@)
+    (VBU @dakake)
+    (NP
+      (NP-GEN
+        *T*-1
+      )
+      (N$ loojedi)
+    )
+  )
+  (ID van-data,0.47)
+)
+
+/*
+sentence = 48
+uid = e189be3e-9290-4d1c-b343-74d3858ce7cd
+status = DONE
+text = etee ina
+text_por = eu estou aqui
+*/
+(
+  (IP-MAT
+    (VB etee)
+    (NP
+      (D ina)
+    )
+  )
+  (ID van-data,0.48)
+)
+
+/*
+sentence = 49
+uid = 889846ee-66df-4c8f-88d1-e89d3619eb1e
+status = DONE
+text = eteyo ina
+text_por = eu estou aqui
+*/
+(
+  (IP-MAT
+    (VB eteyo)
+    (NP
+      (D ina)
+    )
+  )
+  (ID van-data,0.49)
+)
+
+/*
+sentence = 50
+uid = e7f4ab65-14d7-44f5-a197-c99c4ab173cd
+status = DONE
+text = etee manitaGa
+text_por = eu estou com ela
+*/
+(
+  (IP-MAT
+    (VB etee)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (DAPL @anitaGa)
+        )
+      )
+    )
+  )
+  (ID van-data,0.50)
+)
+
+/*
+sentence = 51
+uid = 7aa17dd7-2c26-4df9-8f90-65d8d58e2c59
+status = DONE
+text = etee minitaGa
+text_por = eu estou com ele
+*/
+(
+  (IP-MAT
+    (VB etee)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (DAPL @initaGa)
+        )
+      )
+    )
+  )
+  (ID van-data,0.51)
+)
+
+/*
+sentence = 52
+uid = c3c548d7-b154-437e-9baf-541a1bbbab6e
+status = DONE
+text = ee aGica inikeGegi
+text_por = eu não estou feliz
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (PRO ee)
+    )
+    (NEG aG@)
+    (NP-PRD
+      (D @ica)
+      (N$ inikeGegi)
+    )
+  )
+  (ID van-data,0.52)
+)
+
+/*
+sentence = 53
+uid = c4d99cf1-e781-4efb-83ff-4a0ab873b7ec
+status = DONE
+text = ee aGidininitibeci
+text_por = eu não estou feliz
+*/
+(
+  (IP-MAT
+    (NP
+      (PRO ee)
+    )
+    (NEG aG@)
+    (VB @dininitibeci)
+  )
+  (ID van-data,0.53)
+)
+
+/*
+sentence = 54
+uid = 969ba2f3-88dc-417e-ad3f-16ce88b4c762
+status = DONE
+text = aGee eliodi niinikeGegi
+text_por = eu não estou muito feliz
+*/
+(
+  (IP-MAT
+    (NEG aG@)
+    (NP-SBJ
+      (D @ee)
+    )
+    (NP-PRD
+      (Q eliodi)
+      (N niinikeGegi)
+    )
+  )
+  (ID van-data,0.54)
+)
+
+/*
+sentence = 58
+uid = b3c03f67-7664-43b7-9de8-b5243321eeb7
+status = DONE
+text = ee idiwaaGadi
+text_por = eu sou pesado
+*/
+(
+  (IP-MAT
+    (NP
+      (PRO ee)
+    )
+    (VB idiwaaGadi)
+  )
+  (ID van-data,0.58)
+)
+
+/*
+sentence = 59
+uid = 6852927c-53de-411d-9ed9-e0f9d78309cd
+status = DONE
+text = ee jigipegitege
+text_por = estou perto dela
+*/
+(
+  (IP-MAT
+    (NP
+      (PRO ee)
+    )
+    (VB jigipegitege)
+  )
+  (ID van-data,0.59)
+)
+
+/*
+sentence = 60
+uid = 2b6a6bee-392e-49f9-97a9-0afbb0af2eff
+status = DONE
+text = ee jigipegitegi
+text_por = estou perto dele
+*/
+(
+  (IP-MAT
+    (NP
+      (PRO ee)
+    )
+    (VB jigipegitegi)
+  )
+  (ID van-data,0.60)
+)
+
+/*
+sentence = 61
+uid = 42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+status = DONE
+text = aGeewi mica iniKGigi
+text_por = não sou muito feliz (não é verdade que eu sou feliz)
+*/
+(
+  (IP-MAT
+    (NEG aG@)
+    (NP
+      (PRO @ee)
+    )
+    (ADJ @ewi)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (D @ica)
+          (N$ iniKGigi)
+        )
+      )
+    )
+  )
+  (ID van-data,0.61)
+)
+
+/*
+sentence = 62
+uid = 27d94732-46ea-4286-a1d4-b2861806a579
+status = DONE
+text = aGeyo mica inikGigi
+text_por = não sou muito feliz
+*/
+(
+  (IP-MAT
+    (NEG aG@)
+    (NP-SBJ
+      (PRO @eyo)
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (D @ica)
+          (N$ inikGigi)
+        )
+      )
+    )
+  )
+  (ID van-data,0.62)
+)
+
+/*
+sentence = 63
+uid = 651a68ed-90a0-45b7-9eb5-411bc2c189c7
+status = DONE
+text = JipecaGataGagi
+text_por = nós estamos perto de você
+*/
+(
+  (IP-MAT
+    (VBAPL JipecaGataGagi)
+  )
+  (ID van-data,0.63)
+)
+
+/*
+sentence = 64
+uid = d3952c8a-1ac1-4255-be0b-63978fdf368b
+status = DONE
+text = aGidedonaGa midi Godoigi
+text_por = nós não estamos na comunidade
+*/
+(
+  (IP-MAT
+    (NEG aG@)
+    (VB @idedonaGa)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (D @idi)
+          (N$ Godoigi)
+        )
+      )
+    )
+  )
+  (ID van-data,0.64)
+)
+
+/*
+sentence = 65
+uid = e9b78452-925e-458b-848a-d52ab76f6840
+status = DONE
+text = jipacaGataGagitiwaji
+text_por = estamos perto de vocês
+*/
+(
+  (IP-MAT
+    (VBAPL jipacaGataGagitiwaji)
+  )
+  (ID van-data,0.65)
+)
+
+/*
+sentence = 67
+uid = 6599689a-3fbe-4598-8827-78aceeff3931
+status = DONE
+text = ijo lemé Maria ipegitegi weiigi
+text_por = o avô da Maria está no rio
+*/
+(
+  (IP-MAT
+    (NP
+      (D ijo)
+      (N$ lemé)
+      (NP
+        (NPR Maria)
+      )
+    )
+    (VBAPL ipegitegi)
+    (NP-APL
+      (N weiigi)
+    )
+  )
+  (ID van-data,0.67)
+)
+
+/*
+sentence = 68
+uid = b8878027-73d2-4b11-bc18-cbdcf5637e55
+status = DONE
+text = biju dapico
+text_por = o beiju está quente
+*/
+(
+  (IP-MAT
+    (NP
+      (N biju)
+    )
+    (VB dapico)
+  )
+  (ID van-data,0.68)
+)
+
+/*
+sentence = 69
+uid = 30ef1810-38e0-4cef-8db3-4dda590faa09
+status = DONE
+text = libiwe niale ixagodi
+text_por = o galho da árvore é vermelho
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ libiwe)
+      (NP
+        (N niale)
+      )
+    )
+    (VB ixagodi)
+  )
+  (ID van-data,0.69)
+)
+
+/*
+sentence = 70
+uid = 444f95ae-8ed7-422e-84f1-aae6d4af2b6d
+status = DONE
+text = idiwa bejoli dapico
+text_por = os beijus estão quentes
+*/
+(
+  (IP-MAT
+    (NP
+      (D idiwa)
+      (N bejoli)
+    )
+    (VB dapico)
+  )
+  (ID van-data,0.70)
+)
+
+/*
+sentence = 71
+uid = f240dcfe-ca05-42aa-8644-07b9e3464e1a
+status = DONE
+text = idiwa leonigipi Maria libinienigipi
+text_por = os filhos da Maria são bonitos
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (Q idiwa)
+      (N$ leonigipi)
+      (NP
+        (NPR Maria)
+      )
+    )
+    (NP-PRD
+      (N$ libinienigipi)
+    )
+  )
+  (ID van-data,0.71)
+)
