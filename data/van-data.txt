@@ -255,7 +255,7 @@ Sentence 7
 path: $.pages[0].sentences[6]
 uid: ee540050-e6fa-424e-9252-fd0b9312769d
 text: lotaGa Gadodawa libinienaGa
-status: DONE
+status: REVIEW
 struct_status: None
 visible: None
 container_meta:
@@ -265,7 +265,8 @@ container_meta:
 translations:
   pt-br: a palavra do seu marido é bonita
 comments:
-  <none>
+  [1] 2026-07-28 01:31:43 — Leonel Figueiredo de Alencar — Mudança de status
+      Inadvertidamente, tinha classificado esta sentença como FINALIZADA. No entanto, apresenta a questão de dois nós N$ irmãos simétricos, como em diversas outras sentenças com status REVISAR.
 
 proto-conllu:
   <none>
@@ -636,7 +637,7 @@ Sentence 14
 path: $.pages[0].sentences[13]
 uid: 2386b5b5-57d0-4a1f-86c2-73f67561744c
 text: naGajo lomiigo nigaanigawaanigi manitaGa niwatece
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -646,9 +647,15 @@ container_meta:
 translations:
   pt-br: Aquele anzol do menino está na canoa.
 comments:
-  [1] 2026-07-11 15:26:50 — Leonel Figueiredo de Alencar — Versão portuguesa e idiomaticidade no kadiwéu
+  [1] 2026-07-29 14:28:07 — Leonel Figueiredo de Alencar — Mudança de status para FINALIZADO
+      Revendo a sentença, constatei que árvore é análoga a diversas outras classificadas com status FINALIZADO. Ver https://github.com/leoalenc/kadiweu/issues/139
+  [2] 2026-07-29 14:10:33 — Leonel Figueiredo de Alencar — Indicação de gênero não expresso morfologicamente
+      Estou usando experimentalmente a "Rule 6: Non-overt elements" de https://www.eva.mpg.de/lingua/resources/glossing-rules.php, glosando "anzol[F]", porque isso é extremamente relevante para a conversão para UD. Ajudaria também consultores do treebank menos familiarizados com o kadiwéu a reconstruir a concordância de gênero com o classificador numeral e até, eventualmente, a resolver ambiguidades de anexação sintática. Griffiths (2002): 
+>**lomiigo lomiigoli**  _subst fem_ **anzol**
+A indicação de gênero dos substantivos consta no léxico do kadiwéu e poderá, talvez, ser incluída nas glosas de forma automática no futuro.
+  [3] 2026-07-11 15:26:50 — Leonel Figueiredo de Alencar — Versão portuguesa e idiomaticidade no kadiwéu
       Estava: "aquele anzol do menino é na canoa". Isso foi dado à consultora para traduzir. Talvez verificar com a consultora se a sentença é gramatical e idiomática. 
-  [2] 2026-07-11 15:21:21 — Leonel Figueiredo de Alencar — Possível preposição?
+  [4] 2026-07-11 15:21:21 — Leonel Figueiredo de Alencar — Possível preposição?
       No documento original, consta:
 
 >aquele anzol do menino é na canoa
@@ -657,11 +664,11 @@ comments:
 >Possível preposição
 
 Deixo aqui registrado para investigação futura.
-  [3] 2026-06-15 13:42:34 — Filomena Sandalo
+  [5] 2026-06-15 13:42:34 — Filomena Sandalo
       OK
-  [4] 2026-06-15 13:42:27 — Filomena Sandalo
+  [6] 2026-06-15 13:42:27 — Filomena Sandalo
       Antes de /wV/, uma vogal tende a cair e e forma-se um novo ditongo com [oV]. Mas acho que a ortografia deve manter o fonêmico. 
-  [5] 2026-06-13 14:52:00 — Leonel Figueiredo de Alencar — Segmentação morfêmica de "nigaanigawaanigi"
+  [7] 2026-06-13 14:52:00 — Leonel Figueiredo de Alencar — Segmentação morfêmica de "nigaanigawaanigi"
       Segui literalmente Sena (2025, p. 83). Griffiths (2002, p. 133): nigaanigi nigaanigipi subst masc gurí
 niga-aanigi (fala da mulher)
 nigaana (forma fem)
@@ -669,7 +676,7 @@ menos de 10 anos, criança
 nigaanigipawaanigi criançada
 nigaanigawaanigi (forma dim)
 
-  [6] 2026-06-13 14:47:04 — Leonel Figueiredo de Alencar — A forma "noatece" e normalização ortográfica da senteną
+  [8] 2026-06-13 14:47:04 — Leonel Figueiredo de Alencar — A forma "noatece" e normalização ortográfica da sentença
       Não consta no léxico "noatece". Deve ser "typo" ou produto de alguma regra fonológica aplicada sobre a forma canônica "niwatece". Substituí. Também normalizei a escrita das demais palavras do original, que reza: nGajo lomigo niganigawaanigi manitaGa noatece.
 
 proto-conllu:
@@ -692,7 +699,7 @@ tokens:
   p=2   v='lomiigo'          t='N$'         l=1   gloss-br='anzol del(e|a)'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
-        [2] v='omiigo'     t='n'        gloss-br='anzol' fn=None idx=None
+        [2] v='omiigo'     t='n'        gloss-br='anzol[F]' fn=None idx=None
   p=3   v='nigaanigawaanigi' t='N'          l=2   gloss-br='menino'
       splits:
         [1] v='nigaa'      t='n'        gloss-br='criança' fn=None idx=None
@@ -2604,7 +2611,7 @@ Sentence 54
 path: $.pages[0].sentences[53]
 uid: 969ba2f3-88dc-417e-ad3f-16ce88b4c762
 text: aGee eliodi niinikeGegi
-status: DONE
+status: REVIEW
 struct_status: None
 visible: None
 container_meta:
@@ -2614,10 +2621,13 @@ container_meta:
 translations:
   pt-br: eu não estou muito feliz
 comments:
-  [1] 2026-06-11 13:58:19 — Filomena Sandalo
+  [1] 2026-07-29 14:44:46 — Leonel Figueiredo de Alencar — "ee": PRO ou D?
+      Mudei o status para REVISAR. Ver comentário em https://www.tycho.iel.unicamp.br/w/sentence/3f077b37-aa95-4012-9efb-a21630cdd6e9
+Com a correção ortográfica, as duas sentenças ficaram idênticas, salvo o "G' em vez de "G", algo irrelevante, uma vez que o primeiro grafema deverá ser substituído.
+  [2] 2026-06-11 13:58:19 — Filomena Sandalo
       Não existe a palavra elide e nem leodi, é eliodi.
 Erros de datilografia
-  [2] 2026-06-08 14:41:09 — Leonel Figueiredo de Alencar — erro de digitação?
+  [3] 2026-06-08 14:41:09 — Leonel Figueiredo de Alencar — erro de digitação?
       A sentença "aGee elide niinikeGegi" ('eu não estou muito feliz') ou "aGee elide niinikeGegi" não ocorre em "dados para gramática pedagógica.docx", base do conjunto VANDA DADOS. Em vez disso, ocorre esta sentença: 
 eu não estou muito feliz
 aGee leodi inikeGegi

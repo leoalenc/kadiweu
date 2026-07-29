@@ -4,6 +4,14 @@ This directory stores the **original downloaded exports** from the Tycho Brahe
 Platform after they have been processed by
 `src/refresh_kadiweu_jsons.sh`.
 
+The exports come from three documents belonging to the Tycho Brahe corpus
+*$TYCHO_CORPUS_TITLE*. The document titles are the human-readable titles
+currently shown on the platform; the repository document identifiers remain
+stable if those titles change.
+
+For a durable explanation of the corpus–document relationship and the history
+of the `ped-gramm` identifier, see `../README.md`.
+
 ## Directory names
 
 - `json/`: original JSON exports downloaded from the platform.
@@ -20,11 +28,11 @@ Downloaded files retain their opaque Tycho Brahe export names in this archive.
 The processing script creates stable, human-readable canonical names directly
 under `data/`:
 
-| Canonical base | Document UID | Downloaded JSON | Downloaded PSD | Archived JSON | Archived PSD | Canonical JSON | Canonical PSD |
-|---|---|---|---|---|---|---|---|
-| `ped-gramm` | `28eeb8a0-d923-4d75-aebe-599aadddfbbb` | `6a63e5f1b431b1358862e302.json` | `6a63e5fab431b1358862e303.psd` | `json/6a63e5f1b431b1358862e302.json` | `psd/6a63e5fab431b1358862e303.psd` | `../ped-gramm.json` | `../ped-gramm.psd` |
-| `hil-data` | `ffef8450-e302-4882-8306-e5998d31f584` | `6a63c4b7b431b1358862e2fe.json` | `6a63c4c4b431b1358862e2ff.psd` | `json/6a63c4b7b431b1358862e2fe.json` | `psd/6a63c4c4b431b1358862e2ff.psd` | `../hil-data.json` | `../hil-data.psd` |
-| `van-data` | `9d0f60a9-8c32-44c0-ac68-0b5d5b993db8` | `6a63e614b431b1358862e304.json` | `6a63e61cb431b1358862e305.psd` | `json/6a63e614b431b1358862e304.json` | `psd/6a63e61cb431b1358862e305.psd` | `../van-data.json` | `../van-data.psd` |
+| Repository document identifier | Tycho Brahe document title | Document UID | Downloaded JSON | Downloaded PSD | Archived JSON | Archived PSD | Canonical JSON | Canonical PSD |
+|---|---|---|---|---|---|---|---|---|
+| `ped-gramm` | Dados para a gramática do sintagma nominal | `28eeb8a0-d923-4d75-aebe-599aadddfbbb` | `6a6a30ba9b1ca800514c716e.json` | `6a6a30c29b1ca800514c716f.psd` | `json/6a6a30ba9b1ca800514c716e.json` | `psd/6a6a30c29b1ca800514c716f.psd` | `../ped-gramm.json` | `../ped-gramm.psd` |
+| `hil-data` | dados do Hilário abril de 2026 | `ffef8450-e302-4882-8306-e5998d31f584` | `6a6a309d9b1ca800514c716c.json` | `6a6a30a59b1ca800514c716d.psd` | `json/6a6a309d9b1ca800514c716c.json` | `psd/6a6a30a59b1ca800514c716d.psd` | `../hil-data.json` | `../hil-data.psd` |
+| `van-data` | Vanda dados | `9d0f60a9-8c32-44c0-ac68-0b5d5b993db8` | `6a6a30d89b1ca800514c7170.json` | `6a6a30e09b1ca800514c7171.psd` | `json/6a6a30d89b1ca800514c7170.json` | `psd/6a6a30e09b1ca800514c7171.psd` | `../van-data.json` | `../van-data.psd` |
 
 ## Pairing JSON and PSD exports
 
@@ -48,4 +56,4 @@ the canonical working copies:
 - canonical JSON: `ǥ` → `G`;
 - canonical PSD: `G` → `ǥ`.
 
-Generated: 2026-07-24T19:24:58-03:00
+Generated: 2026-07-29T14:22:11-03:00

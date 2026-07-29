@@ -136,14 +136,14 @@ Found 206 matching sentence(s).
  135  source=van-data   uid=d26cfc71-a117-4817-9f35-4a7d23fd1f88  status=DONE       struct=None       text=iwaalo ja libiniena
  136  source=van-data   uid=e3b84bb7-7e6e-474c-9ad6-c6a47b409a5a  status=DONE       struct=None       text=iwaalo ja ninitibeke
  137  source=van-data   uid=3e518fdb-d852-41e5-87a4-f8778597c2a1  status=REVIEW     struct=None       text=lotaGa GanaaginaGa libinienaGa
- 138  source=van-data   uid=ee540050-e6fa-424e-9252-fd0b9312769d  status=DONE       struct=None       text=lotaGa Gadodawa libinienaGa
+ 138  source=van-data   uid=ee540050-e6fa-424e-9252-fd0b9312769d  status=REVIEW     struct=None       text=lotaGa Gadodawa libinienaGa
  139  source=van-data   uid=947061b4-7b73-4612-8aa8-0af0e04cbc85  status=DONE       struct=None       text=niwatece iwaGadi noxilece lojetedi
  140  source=van-data   uid=2c026af9-b8a1-4389-b658-00113b070dee  status=REVIEW     struct=None       text=niwatece liwaGatena lodejedi etidi weiigi
  141  source=van-data   uid=0c38eab8-c6b0-4f02-bf05-27ea6285fe70  status=REVIEW     struct=None       text=Gawenigi eliodi me libinienigi
  142  source=van-data   uid=a85fda39-1575-4120-9432-8fb534ebdbd2  status=DONE       struct=None       text=niGida liwenigi libinienigi
  143  source=van-data   uid=a1e15803-1e5e-481f-8137-a84beac6cbcc  status=REVIEW     struct=None       text=niGida niwenigi daGaxa me dakake loojedi
  144  source=van-data   uid=e9806e26-701d-4f5f-9ca9-63216cccf3d0  status=DONE       struct=None       text=naGajo lomiigo Pedro idei niwatece
- 145  source=van-data   uid=2386b5b5-57d0-4a1f-86c2-73f67561744c  status=REVIEW     struct=None       text=naGajo lomiigo nigaanigawaanigi manitaGa niwatece
+ 145  source=van-data   uid=2386b5b5-57d0-4a1f-86c2-73f67561744c  status=DONE       struct=None       text=naGajo lomiigo nigaanigawaanigi manitaGa niwatece
  146  source=van-data   uid=4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7  status=REVIEW     struct=None       text=Ijo nigaanigawaanigi idei madi lomiigo niwatece
  147  source=van-data   uid=235440ba-548e-4df6-8d9e-214cc8714f8f  status=REVIEW     struct=None       text=niGijo nigaanigawaanigi manitaGa lomigo niwatece
  148  source=van-data   uid=86f5c128-e931-4443-90cc-2359748ed69f  status=DONE       struct=None       text=Eeyo nigotaGa
@@ -183,7 +183,7 @@ Found 206 matching sentence(s).
  182  source=van-data   uid=7aa17dd7-2c26-4df9-8f90-65d8d58e2c59  status=DONE       struct=None       text=etee minitaGa
  183  source=van-data   uid=c3c548d7-b154-437e-9baf-541a1bbbab6e  status=DONE       struct=None       text=ee aGica inikeGegi
  184  source=van-data   uid=c4d99cf1-e781-4efb-83ff-4a0ab873b7ec  status=DONE       struct=None       text=ee aGidininitibeci
- 185  source=van-data   uid=969ba2f3-88dc-417e-ad3f-16ce88b4c762  status=DONE       struct=None       text=aGee eliodi niinikeGegi
+ 185  source=van-data   uid=969ba2f3-88dc-417e-ad3f-16ce88b4c762  status=REVIEW     struct=None       text=aGee eliodi niinikeGegi
  186  source=van-data   uid=39925f76-d73f-423f-95cd-f88bd78f2a6e  status=REVIEW     struct=None       text=ee eliodi me aGidininitibeci
  187  source=van-data   uid=d3095a7e-477d-405e-9ea2-85bfdacad7d3  status=REVIEW     struct=None       text=aGica daGa jipegitege
  188  source=van-data   uid=813f2ad7-42fb-4fbd-84b4-1957c68aa4f9  status=REVIEW     struct=None       text=aGica daGa jipegitegi

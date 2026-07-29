@@ -2520,7 +2520,9 @@ container_meta:
 translations:
   pt-br: Eu não estou muito feliz
 comments:
-  [1] 2026-07-21 22:06:35 — Leonel Figueiredo de Alencar — aGee: NEG+D ou NEG+PRO?
+  [1] 2026-07-29 14:45:23 — Leonel Figueiredo de Alencar — Duplicata
+      Ver https://www.tycho.iel.unicamp.br/w/sentence/969ba2f3-88dc-417e-ad3f-16ce88b4c762
+  [2] 2026-07-21 22:06:35 — Leonel Figueiredo de Alencar — aGee: NEG+D ou NEG+PRO?
       O pronome "ee" está como PRO noutras sentenças.
 
 proto-conllu:

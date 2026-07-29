@@ -1808,9 +1808,11 @@ container_meta:
 translations:
   pt-br: Estes ovos da fotografia dela estão bonitos .
 comments:
-  [1] 2026-07-23 12:47:34 — Leonel Figueiredo de Alencar — Representação de "idi niwigo"
+  [1] 2026-07-28 14:02:53 — Filomena Sandalo
+      A tradução de midi deve ser que o e não consigo arrumar manualmente. Vou escrever para o Luiz. É relativa sim.
+  [2] 2026-07-23 12:47:34 — Leonel Figueiredo de Alencar — Representação de "idi niwigo"
       O determinante "idi" deve integrar, como nó filho, o NP cujo núcleo é "niwigo" e não o NP com núcleo "libinienaGa".
-  [2] 2026-07-23 12:02:14 — Leonel Figueiredo de Alencar — Relativa com me?
+  [3] 2026-07-23 12:02:14 — Leonel Figueiredo de Alencar — Relativa com me?
       A árvore não parece fazer muito sentido, comparando com a sentença em português. Seria possível associar a CP-me ao NP-SBJ como relativa? Ou seja, "os ovos que são da fotografia dela". O NP "libinienaGa" deveria ser NP-PRD, seguindo o modelo de outras sentenças nos mesmos moldes.
 
 proto-conllu:
@@ -1833,7 +1835,7 @@ tokens:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='getegi'     t='n'        gloss-br='ovo' fn=None idx=None
         [3] v='tedi'       t='Plu'      gloss-br='PL' fn=None idx=None
-  p=4   v='me@'              t='C'          l=1   gloss-br='para os'
+  p=4   v='me@'              t='C'          l=1   gloss-br='que o'
       split: {"v": "midi", "t": "C+D", "idx": 0}
       splits:
         [1] v='me'         t=None       gloss-br=None fn=True idx=None
@@ -1841,7 +1843,7 @@ tokens:
         [3] v='di'         t=None       gloss-br=None fn=None idx=None
   p=5   v='@idi'             t='D'          l=3   gloss-br=None
       split: {"idx": 1}
-  p=6   v='niwigo'           t='N'          l=4   gloss-br='fotografia'
+  p=6   v='niwigo'           t='N'          l=4   gloss-br='fotografia/espírito'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='wigo'       t='n'        gloss-br='espírito/fotografia' fn=None idx=None
@@ -1902,7 +1904,7 @@ tokens:
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='wigo'       t='n'        gloss-br='espírito/fotografia' fn=None idx=None
-  p=5   v='libinienaGa'      t='N$'         l=1   gloss-br='bonitas'
+  p=5   v='libinienaGa'      t='N$'         l=1   gloss-br='bonitos'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='binie'      t='n'        gloss-br='beleza' fn=None idx=None
