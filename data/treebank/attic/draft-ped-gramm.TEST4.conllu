@@ -1,5 +1,9 @@
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-1
 # sent_uid = ed98d4d1-638c-4377-8c6d-5511855636d1
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ajo liwatece ja iwaGadi.
 # text_orig = ajo liwatece ja iwaGadi
 # text_por_orig = A canoa dele/a é pesada
@@ -10,8 +14,12 @@
 4	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=16:23
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-2
 # sent_uid = ccb5ea37-b3ba-47a9-8d71-224f599ea7be
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ajo liwatece etadi weiigi.
 # text_orig = ajo liwatece etadi weiigi
 # text_por_orig = A canoa dele/a está no rio
@@ -24,8 +32,12 @@
 4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=19:25
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-3
 # sent_uid = 49347527-d19d-4689-bff1-ba3e497e7b1f
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ajo niwatece etadi digoida.
 # text_orig = ajo niwatece etadi digoida
 # text_por_orig = A canoa está lá
@@ -36,8 +48,12 @@
 4	digoida	digoida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	SpaceAfter=No|TokenRange=19:26
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-4
 # sent_uid = 69948fe6-81f6-4faa-a344-8f8c47486943
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = niwatece iwaGadi.
 # text_orig = niwatece iwaGadi
 # text_por_orig = A canoa está pesada
@@ -46,8 +62,12 @@
 2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=9:16
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-5
 # sent_uid = b2e3ea43-0d68-46ee-9f33-938610cc8aec
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = niwatece etadi weiigi.
 # text_orig = niwatece etadi weiigi
 # text_por_orig = A canoa está no rio
@@ -57,8 +77,12 @@
 3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=15:21
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=21:22
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-6
 # sent_uid = 1b99ecb9-5656-4c38-b60b-fbbe643708fb
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ajo niwatece ipegitege weiigi.
 # text_orig = ajo niwatece ipegitege weiigi
 # text_por_orig = A canoa está perto do rio
@@ -69,8 +93,12 @@
 4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=23:29
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-7
 # sent_uid = e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = liGeladi Maria aGipegetege.
 # text_orig = liGeladi Maria aGipegetege
 # text_por_orig = A casa de Maria não é perto dela
@@ -82,19 +110,27 @@
 4	ipegetege	pege	VERB	VBAPL	Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	_
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=26:27
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-8
 # sent_uid = 79a6cd4e-b585-437a-9084-1fa077dec3b6
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ica liGeladi ipegetege.
 # text_orig = ica liGeladi ipegetege
 # text_por_orig = A casa está perto dela
 # text_por = A casa está perto dela.
 1	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	TokenRange=4:12
-3	ipegetege	pege	VERB	VBAPL	Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=13:22
+3	ipegetege	pegi	VERB	VBAPL	Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|StandardForm=ipegitege|TokenRange=13:22
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-9
 # sent_uid = e9d6dfb6-656d-44aa-ba17-86289fd72268
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = liGeladi idei nigotaGa.
 # text_orig = liGeladi idei nigotaGa
 # text_por_orig = A casa fica perto da cidade
@@ -106,8 +142,12 @@
 3	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=14:22
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-10
 # sent_uid = 2fff1f23-4e6f-401c-8b74-6a17ff6a391a
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ica liGeladi ipegitegi.
 # text_orig = ica liGeladi ipegitegi
 # text_por_orig = a casa dela/dele fica perto dele 
@@ -117,8 +157,12 @@
 3	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=13:22
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-11
 # sent_uid = fef391af-9e63-419f-8f81-057459193f49
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ica Maria looligi alidi.
 # text_orig = ica Maria looligi alidi
 # text_por_orig = a comida da Maria não está deliciosa (a não gostosura da comida da Maria)
@@ -128,11 +172,15 @@
 3	looligi	ooligi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	TokenRange=10:17
 4-5	alidi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=18:23
 4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
-5	lidi	idi	NOUN	N$	_	0	root	_	_
+5	lidi	idi	NOUN	N$	Person[psor]=3	0	root	_	_
 6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=23:24
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-12
 # sent_uid = 070d221f-f72d-4055-9c82-ddc383743e6a
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ica looligi lidi.
 # text_orig = ica looligi lidi
 # text_por_orig = A comida está/é deliciosa (A gostosura da comida da Maria)
@@ -142,8 +190,12 @@
 3	lidi	idi	NOUN	N$	_	0	root	_	SpaceAfter=No|TokenRange=12:16
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=16:17
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-13
 # sent_uid = 68277d1f-c30b-4c4f-ba9e-c2883cc133af
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ica looligi dapico.
 # text_orig = ica looligi dapico
 # text_por_orig = A comida dela está quente
@@ -153,8 +205,12 @@
 3	dapico	apico	VERB	VB	Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=12:18
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-14
 # sent_uid = 5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ica looligi ja dapico.
 # text_orig = ica looligi ja dapico
 # text_por_orig = a comida dela está quente
@@ -165,8 +221,12 @@
 4	dapico	apico	VERB	VB	Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=15:21
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-15
 # sent_uid = c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ica looligi lideGegi.
 # text_orig = ica looligi lideGegi
 # text_por_orig = A comida é deliciosa (a gostosura da comida dela)
@@ -176,8 +236,12 @@
 3	lideGegi	idi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=12:20
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-16
 # sent_uid = 19cc39ce-fe03-4551-8097-9d163a38a3c0
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = loigipodi libinienigipi.
 # text_orig = loigipodi libinienigipi
 # text_por_orig = A comunidade dele/dela é bonita
@@ -186,8 +250,12 @@
 2	libinienigipi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=10:23
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=23:24
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-17
 # sent_uid = 12147353-b422-4ad7-9bef-1d20e70e2a74
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ica loigi ijo niganigi ipegitegi GanigotGa.
 # text_orig = ica loigi ijo niganigi ipegitegi GanigotGa
 # text_por_orig = A comunidade do menino é perto da cidade de vocês
@@ -200,8 +268,12 @@
 6	GanigotGa	nigota	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=2	5	obj	_	SpaceAfter=No|TokenRange=33:42
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=42:43
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-18
 # sent_uid = 582429f2-67d5-4077-b209-6deb7b5df54f
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ica lideGegi loligi idei liGeladi.
 # text_orig = ica lideGegi loligi idei liGeladi
 # text_por_orig = a deliciosa comida está na casa dela/dele
@@ -213,8 +285,12 @@
 5	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	4	obj	_	SpaceAfter=No|TokenRange=25:33
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=33:34
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-19
 # sent_uid = 0f478381-6858-463d-94cc-903e9dc879f9
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ica liwigo libinienigi.
 # text_orig = ica liwigo libinienigi
 # text_por_orig = a fotografia dela/dele é/está bonita
@@ -224,8 +300,12 @@
 3	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=11:22
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-20
 # sent_uid = 55551636-8ed3-4545-8510-d8dbfd817a1a
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ica niwigo libinienigi.
 # text_orig = ica niwigo libinienigi
 # text_por_orig = a fotografia é/está bonita
@@ -235,8 +315,12 @@
 3	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=11:22
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-21
 # sent_uid = 5d0b94bf-223d-4f09-8c6f-b951a70d6d0b
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ica nioladi Ganixoa.
 # text_orig = ica nioladi Ganixoa
 # text_por_orig = A língua do teu irmão 
@@ -246,8 +330,12 @@
 3	Ganixoa	nixoa	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=2	0	root	_	SpaceAfter=No|TokenRange=12:19
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=19:20
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-22
 # sent_uid = 881131dd-3f70-411a-ac7e-85557139d1e3
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ica nioladi nioxoa libinienigi.
 # text_orig = ica nioladi nioxoa libinienigi
 # text_por_orig = A língua do irmão dele/dela é bonita
@@ -258,8 +346,12 @@
 4	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=19:30
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-23
 # sent_uid = 95a7d135-4be0-463d-b443-76cc5828fc89
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ica nioladi lodawa libinienigi.
 # text_orig = ica nioladi lodawa libinienigi
 # text_por_orig = A língua do marido/esposa dele/dela é bonita
@@ -270,8 +362,12 @@
 4	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=19:30
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-24
 # sent_uid = 2f47b402-9fe7-4714-96e3-c6cbdf405472
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = iGeladi idei naigi anenapioi.
 # text_orig = iGeladi idei naigi anenapioi
 # text_por_orig = a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)
@@ -284,8 +380,12 @@
 5	napioi	napioi	ADJ	ADJ	_	2	dep	_	_
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-25
 # sent_uid = a4d33655-fe74-4df2-8d5e-b3c88fba5fd1
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = iGeladi idei naigi me napioi.
 # text_orig = iGeladi idei naigi me napioi
 # text_por_orig = minha casa suja fica naquela rua
@@ -297,8 +397,12 @@
 5	napioi	napioi	NOUN	N	_	2	dep	_	SpaceAfter=No|TokenRange=22:28
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-26
 # sent_uid = f081c545-c42b-463d-b57f-db87787f20e7
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = João liGeladi ane napioi.
 # text_orig = João liGeladi ane napioi
 # text_por_orig = a casa do João, que é suja
@@ -309,8 +413,12 @@
 4	napioi	napioi	NOUN	N	_	2	acl:relcl	_	SpaceAfter=No|TokenRange=18:24
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-27
 # sent_uid = 7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = iGeladi idei mijo naigi naGajo.
 # text_orig = iGeladi idei mijo naigi naGajo
 # text_por_orig = A minha casa fica naquela rua suja dela
@@ -324,25 +432,33 @@
 6	naGajo	niGijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	SpaceAfter=No|TokenRange=24:30
 7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-28
 # sent_uid = ee1a1190-7803-404c-83f6-49d3ccf63b0d
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi.
 # text_orig = Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi
 # text_por_orig = meu pai cuida da plantação de flores como filhas
 # text_por = meu pai cuida da plantação de flores como filhas.
-1	Eyodi	eyodi	NOUN	N$	_	2	dep	_	TokenRange=0:5
+1	Eyodi	eyodi	NOUN	N$	_	2	nsubj	_	TokenRange=0:5
 2	dowediteloco	dowediteloco	VERB	VBAPL	Mood=Ind|Person[erg]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=6:18
 3	naodigijedi	naodigijegi	NOUN	N	Gender=Masc|Number=Plur	2	obj	_	TokenRange=19:30
 4-5	micoataGa	_	_	_	_	_	_	_	TokenRange=31:40
 4	me	me	SCONJ	C	_	2	dep	_	_
-5	icawataGa	icawataGa	X	DAPL	_	2	dep	_	_
+5	icawataGa	icawataGa	X	DAPL	Number=Plur	2	dep	_	_
 6	daGa	daga	SCONJ	C	_	2	dep	_	TokenRange=41:45
 7	me	me	SCONJ	C	_	2	dep	_	TokenRange=46:48
-8	lionigipi	iona	NOUN	N$	Person[psor]=3	2	dep	_	SpaceAfter=No|TokenRange=49:58
+8	lionigipi	iona	NOUN	N$	Number=Plur|Person[psor]=3	2	dep	_	SpaceAfter=No|TokenRange=49:58
 9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=58:59
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-29
 # sent_uid = 4bdb4b8f-0176-4303-8a13-e313fbb6d7ad
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = Eyodi me niganaGacanajo.
 # text_orig = Eyodi me niganaGacanajo
 # text_por_orig = Meu pai que era cantor
@@ -352,8 +468,12 @@
 3	niganaGacanajo	niganaGacanajo	NOUN	N	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=9:23
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=23:24
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-30
 # sent_uid = 7b806584-75e5-4017-b9e2-ba97458903bd
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = Eyodi ane niganaGacanajo.
 # text_orig = Eyodi ane niganaGacanajo
 # text_por_orig = Meu pai que era cantor (explicativa)
@@ -363,8 +483,12 @@
 3	niganaGacanajo	niganaGacanajo	NOUN	N	Gender=Masc|Number=Sing	1	acl:relcl	_	SpaceAfter=No|TokenRange=10:24
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-31
 # sent_uid = 845b9d1d-ad7c-445a-bfbd-04fd9255ffc2
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = Eyodi daGa niganaGacanajo.
 # text_orig = Eyodi daGa niganaGacanajo
 # text_por_orig = Meu pai se fosse cantor
@@ -374,8 +498,12 @@
 3	niganaGacanajo	niganaGacanajo	NOUN	N	Gender=Masc|Number=Sing	1	dep	_	SpaceAfter=No|TokenRange=11:25
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-32
 # sent_uid = a4ccc755-a644-4b04-ab1b-698e7acea4cc
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = iGeladi idei digoida.
 # text_orig = iGeladi idei digoida
 # text_por_orig = minha casa está lá
@@ -385,8 +513,12 @@
 3	digoida	digoida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	SpaceAfter=No|TokenRange=13:20
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-33
 # sent_uid = 82117289-be52-45d0-886d-a5747eb20ea2
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = iGeladi ipegitaGagi.
 # text_orig = iGeladi ipegitaGagi
 # text_por_orig = Minha casa está perto de você
@@ -395,8 +527,12 @@
 2	ipegitaGagi	pegi	VERB	VBAPL	Mood=Ind|Number[obj]=Sing|Person[erg]=3|Person[obj]=2|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=8:19
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-34
 # sent_uid = 50f93fbc-14fa-48e7-b8ba-22f744109348
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = iGeladi ipegitegi liGeladi.
 # text_orig = iGeladi ipegitegi liGeladi
 # text_por_orig = Minha casa está perto de sua casa
@@ -406,8 +542,12 @@
 3	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No|TokenRange=18:26
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=26:27
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-35
 # sent_uid = 014fefb1-d5e3-48c8-9ac3-9e713a41407f
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = iGeladi ipegitegi naigi ane napioi.
 # text_orig = iGeladi ipegitegi naigi ane napioi
 # text_por_orig = Minha casa está perto desta rua suja (que está suja)
@@ -419,8 +559,12 @@
 5	napioi	napioi	NOUN	N	_	3	acl:relcl	_	SpaceAfter=No|TokenRange=28:34
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=34:35
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-36
 # sent_uid = bb8018ba-76b3-43f2-82ea-78b6009c1f90
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = iGeladi ipegitegi naigi me napioi.
 # text_orig = iGeladi ipegitegi naigi me napioi
 # text_por_orig = minha casa está perto da rua suja
@@ -432,8 +576,12 @@
 5	napioi	napioi	NOUN	N	_	2	dep	_	SpaceAfter=No|TokenRange=27:33
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=33:34
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-37
 # sent_uid = 1da1bf7a-7975-4baf-821b-9df5c75ac297
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = iGeladi aGipegitegi weiigi.
 # text_orig = iGeladi aGipegitegi weiigi
 # text_por_orig = Minha casa não fica perto do rio
@@ -445,31 +593,43 @@
 4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=20:26
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-38
 # sent_uid = 46bbf9a8-c650-4e4b-a44f-78bfe6c5d979
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ijo Gatodi etijo ida.
 # text_orig = ijo Gatodi etijo ida .
 # text_por_orig = O tucano está indo nele.
 # text_por = O tucano está indo nele.
 1	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	Gatodi	gatodi	NOUN	N	_	3	nsubj	_	TokenRange=4:10
-3	etijo	et	VERB	VB	_	0	root	_	TokenRange=11:16
-4	ida	da	PRON	PRO	_	3	obj	_	SpaceAfter=No|TokenRange=17:20
+3	etijo	et	VERB	VB	Gender=Masc|Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=11:16
+4	ida	da	PRON	PRO	Gender=Masc	3	obj	_	SpaceAfter=No|TokenRange=17:20
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-39
 # sent_uid = 4ffc2f68-0474-488f-a94e-4065f952482a
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ijotawece etidi akiidi.
 # text_orig = ijotawece etidi akiidi .
 # text_por_orig = Eles (todos) estão (deitados) no rio.
 # text_por = Eles (todos) estão (deitados) no rio.
-1	ijotawece	tawece	DET	D	_	3	det	_	TokenRange=0:9
-2	etidi	et	VERB	VB	_	0	root	_	TokenRange=10:15
+1	ijotawece	tawece	DET	D	Gender=Masc	3	det	_	TokenRange=0:9
+2	etidi	et	VERB	VB	Gender=Masc|Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=10:15
 3	akiidi	akiidi	NOUN	N	_	2	obj	_	SpaceAfter=No|TokenRange=16:22
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-40
 # sent_uid = 10e550d6-df13-4527-8aee-aa23e3f2fcdd
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = iGeladi digoida weiigi.
 # text_orig = iGeladi digoida weiigi .
 # text_por_orig = Minha casa é no rio.
@@ -479,8 +639,12 @@
 3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	1	dep	_	SpaceAfter=No|TokenRange=16:22
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=22:23
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-41
 # sent_uid = 874c123b-4c43-4001-bfce-8af4af0e5805
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = iGeladi idei weiigi.
 # text_orig = iGeladi idei weiigi .
 # text_por_orig = Minha casa é no rio.
@@ -490,8 +654,12 @@
 3	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=13:19
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-42
 # sent_uid = aad13f14-bd9a-462a-9a43-68ba69a81519
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = nigotaGa liGeladi ipegitegi weiigi.
 # text_orig = nigotaGa liGeladi ipegitegi weiigi .
 # text_por_orig = A cidade da casa dela é perto do rio.
@@ -502,8 +670,12 @@
 4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=28:34
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=34:35
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-43
 # sent_uid = 19401990-aa1d-4cf5-bea1-122254c6b77a
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = lotaGa GanaginaGa libinienaGa.
 # text_orig = lotaGa GanaginaGa libinienaGa .
 # text_por_orig = A palavra de seu (teu) irmão é bonita.
@@ -513,8 +685,12 @@
 3	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=18:29
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-44
 # sent_uid = 6d2a809e-0d32-4254-9489-f9e356e22493
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = nGida niwenigi daGaxa me dakake loojedi.
 # text_orig = nGida niwenigi daGaxa me dakake loojedi .
 # text_por_orig = Aquela comida é muito cara.
@@ -523,12 +699,16 @@
 2	niwenigi	wenigi	NOUN	N	Gender=Masc|Number=Sing	5	nsubj	_	TokenRange=6:14
 3	daGaxa	daGaxa	ADV	Q	_	5	advmod	_	TokenRange=15:21
 4	me	me	SCONJ	C	_	5	dep	_	TokenRange=22:24
-5	dakake	akake	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	TokenRange=25:31
+5	dakake	akake	VERB	VBU	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	TokenRange=25:31
 6	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	dep	_	SpaceAfter=No|TokenRange=32:39
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=39:40
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-45
 # sent_uid = c25b098d-6b0a-4416-a31d-6d7219685a63
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = João liGeladi napioi.
 # text_orig = João liGeladi napioi .
 # text_por_orig = A casa do João é suja.
@@ -538,8 +718,12 @@
 3	napioi	napioi	NOUN	N	_	2	dep	_	SpaceAfter=No|TokenRange=14:20
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-46
 # sent_uid = 4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = liGeladi João napioi.
 # text_orig = liGeladi João napioi .
 # text_por_orig = A casa do João é suja.
@@ -549,8 +733,12 @@
 3	napioi	napioi	NOUN	N$	_	0	root	_	SpaceAfter=No|TokenRange=14:20
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-47
 # sent_uid = ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = liGeladi ipegitege niweiigi nigotaGa.
 # text_orig = liGeladi ipegitege niweiigi nigotaGa .
 # text_por_orig = A casa dele/dela é perto da cidade da lagoa.
@@ -561,8 +749,12 @@
 4	nigotaGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing	2	dep	_	SpaceAfter=No|TokenRange=28:36
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=36:37
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-48
 # sent_uid = 8b1a9983-4dfd-49e8-9285-92c56c84b652
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = liGeladi ipegitegi niweiigi nigotaGa.
 # text_orig = liGeladi ipegitegi niweiigi nigotaGa .
 # text_por_orig = A casa dele/dela é perto da lagoa da cidade.
@@ -573,8 +765,12 @@
 4	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	2	dep	_	SpaceAfter=No|TokenRange=28:36
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=36:37
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-49
 # sent_uid = eeb42af3-fe5a-4b7d-97ea-b381ab589860
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = Niwatece iwaGadi codaa adakake loojedi.
 # text_orig = Niwatece iwaGadi codaa adakake loojedi .
 # text_por_orig = A canoa é pesada e seu preço é barato
@@ -588,8 +784,12 @@
 6	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No|TokenRange=31:38
 7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=38:39
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-50
 # sent_uid = 156fa9a4-4323-44f1-9cdc-ef5dc052b428
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = etee minitaGa.
 # text_orig = etee minitaGa
 # text_por_orig = Estou com ele
@@ -600,8 +800,12 @@
 3	initaGa	ini	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	1	dep	_	_
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-51
 # sent_uid = 3b45c470-6164-4fcf-a4d5-90be0f27eb1d
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = ee aGidininitibeci.
 # text_orig = ee aGidininitibeci
 # text_por_orig = Eu não estou feliz
@@ -609,20 +813,28 @@
 1	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
 2-3	aGidininitibeci	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=3:18
 2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
-3	idininitebeci	idininitebeci	VERB	VB	_	0	root	_	_
+3	idininitebeci	idininitebeci	VERB	VB	Mood=Ind|Person=1|VerbForm=Fin|Voice=Inv	0	root	_	_
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-52
 # sent_uid = d543f155-c01f-4b5e-add1-0533b8ac6e15
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = jipacaGataGagitiwaji.
 # text_orig = jipacaGataGagitiwaji
 # text_por_orig = Estamos perto de vocês.
 # text_por = Estamos perto de vocês.
-1	jipacaGataGagitiwaji	paca	VERB	VBAPL	Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:20
+1	jipacaGataGagitiwaji	paca	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Number=Plur|Person[erg]=1|Person[obj]=2|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:20
 2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-53
 # sent_uid = 3f077b37-aa95-4012-9efb-a21630cdd6e9
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = aGee eliodi niinikeGegi.
 # text_orig = aGee eliodi niinikeGegi
 # text_por_orig = Eu não estou muito feliz
@@ -634,19 +846,27 @@
 4	niinikeGegi	nini	NOUN	N	_	0	root	_	SpaceAfter=No|TokenRange=12:23
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-54
 # sent_uid = 74a76be1-d4b6-42e1-9100-6a436a7fa065
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = akaami oko jipacaGataGagitiwaji.
 # text_orig = akaami oko jipacaGataGagitiwaji
 # text_por_orig = Estamos perto de vocês.
 # text_por = Estamos perto de vocês.
-1	akaami	i	PRON	PRO	_	3	nsubj	_	TokenRange=0:6
+1	akaami	i	PRON	PRO	Number=Plur|PronType=Prs	3	nsubj	_	TokenRange=0:6
 2	oko	oko	PRON	PRO	_	3	dep	_	TokenRange=7:10
 3	jipacaGataGagitiwaji	jipacaGataGagitiwaji	VERB	VBAPL	Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=11:31
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=31:32
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-55
 # sent_uid = d3e098e5-4edd-4c24-81cf-78ff4a4d398c
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = niGidowa waca lotiidi dapikoGo.
 # text_orig = niGidowa waca lotiidi dapikoGo
 # text_por_orig = O leite da vaca está quente
@@ -654,11 +874,15 @@
 1	niGidowa	niGida	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	StandardForm=niGidoa|TokenRange=0:8
 2	waca	waca	NOUN	N	Gender=Fem|Number=Sing	4	nsubj	_	TokenRange=9:13
 3	lotiidi	otiidi	NOUN	N$	_	4	dep	_	TokenRange=14:21
-4	dapikoGo	apiko	VERB	VB	_	0	root	_	SpaceAfter=No|TokenRange=22:30
+4	dapikoGo	apiko	VERB	VB	Mood=Ind|Number=Plur|VerbForm=Fin|Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=22:30
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-56
 # sent_uid = edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = IiGeladi midi akiidi.
 # text_orig = IiGeladi midi akiidi
 # text_por_orig = A casa dele/dela é no rio.
@@ -666,12 +890,16 @@
 1	IiGeladi	Geladi	NOUN	N$	Person[psor]=3	4	nsubj	_	TokenRange=0:8
 2-3	midi	_	_	_	_	_	_	_	TokenRange=9:13
 2	me	me	SCONJ	C	_	4	dep	_	_
-3	idi	idi	DET	D	PronType=Dem	4	det	_	_
+3	idi	idi	DET	D	Gender=Masc|PronType=Dem	4	det	_	_
 4	akiidi	akiidi	NOUN	N	_	0	root	_	SpaceAfter=No|TokenRange=14:20
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=20:21
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-57
 # sent_uid = 2c0248b3-8f68-46e9-b41c-9f7807572c87
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = etogo aneiwaGadi adakake lojedi.
 # text_orig = etogo aneiwaGadi adakake lojedi .
 # text_por_orig = A pesada canoa está barata.
@@ -680,48 +908,70 @@
 2-3	aneiwaGadi	_	_	_	_	_	_	_	TokenRange=6:16
 2	ane	ane	PRON	WPRO	PronType=Rel	3	nsubj	_	_
 3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
-4	adakake	akake	PART	NEG+VB	_	3	dep	_	TokenRange=17:24
-5	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	xcomp	_	SpaceAfter=No|StandardForm=loojedi|TokenRange=25:31
-6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=31:32
+4-5	adakake	_	_	_	_	_	_	_	TokenRange=17:24
+4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
+5	dakake	akake	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	3	dep	_	_
+6	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	obj	_	SpaceAfter=No|StandardForm=loojedi|TokenRange=25:31
+7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=31:32
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-58
 # sent_uid = 73ceda1b-be14-4e75-9b1e-2a490d7df366
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = etogo adakake lojedi.
 # text_orig = etogo adakake lojedi
 1	etogo	etogo	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=0:5
-2	adakake	akake	PART	NEG+VB	_	3	dep	_	TokenRange=6:13
-3	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|StandardForm=loojedi|TokenRange=14:20
-4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+2-3	adakake	_	_	_	_	_	_	_	TokenRange=6:13
+2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
+3	dakake	akake	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	_
+4	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	obj	_	SpaceAfter=No|StandardForm=loojedi|TokenRange=14:20
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-59
 # sent_uid = bf632295-26f8-4ee6-979f-33f090ef0471
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = etogoli dakake lojetedi.
 # text_orig = etogoli dakake lojetedi
 # text_por_orig = As canoas (individualmente) são caras (cada uma com um preço caro)
 # text_por = As canoas (individualmente) são caras (cada uma com um preço caro).
-1	etogoli	etogo	NOUN	N	_	2	dep	_	TokenRange=0:7
+1	etogoli	etogo	NOUN	N	Number=Plur	2	dep	_	TokenRange=0:7
 2	dakake	akake	VERB	ADJ	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	TokenRange=8:14
 3	lojetedi	oojedi	NOUN	N$	Gender=Masc|Number=Plur|Person[psor]=3	2	xcomp	_	SpaceAfter=No|TokenRange=15:23
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=23:24
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-60
 # sent_uid = bbd6b80b-3236-4172-8bd5-ba3fb404049e
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = etogoli dakake loojedi.
 # text_orig = etogoli dakake loojedi
 # text_por_orig = as canoas (como classe/grupo) são caras 
 # text_por = as canoas (como classe/grupo) são caras.
-1	etogoli	etogo	NOUN	N	_	2	dep	_	TokenRange=0:7
+1	etogoli	etogo	NOUN	N	Number=Plur	2	dep	_	TokenRange=0:7
 2	dakake	akake	VERB	ADJ	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	TokenRange=8:14
 3	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	xcomp	_	SpaceAfter=No|TokenRange=15:22
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
 
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # sent_id = ped-gramm-61
 # sent_uid = 1ab7fa26-ed92-4d55-98d0-0d76396373f0
+# source_json_sha256 = 672520fe29b960d05eb7b3be3c0da053389179b8bb2ad920e5c96f61147b658c
+# generation_date = 2026-07-10
+# ud_review_status = TODO
 # text = Etogoli iwaGadi adakake lojetedi.
 # text_orig = Etogoli iwaGadi adakake lojetedi
-1	Etogoli	etogo	NOUN	N	_	2	nsubj	_	TokenRange=0:7
+1	Etogoli	etogo	NOUN	N	Number=Plur	2	nsubj	_	TokenRange=0:7
 2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=iwaaGadi|TokenRange=8:15
-3	adakake	akake	X	NEG+ADJ	_	2	dep	_	TokenRange=16:23
-4	lojetedi	oojedi	NOUN	N$	Gender=Masc|Number=Plur|Person[psor]=3	2	obj	_	SpaceAfter=No|TokenRange=24:32
-5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=32:33
+3-4	adakake	_	_	_	_	_	_	_	TokenRange=16:23
+3	aG	aG	PART	NEG	Polarity=Neg	2	advmod	_	_
+4	dakake	akake	ADJ	ADJ	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	2	dep	_	_
+5	lojetedi	oojedi	NOUN	N$	Gender=Masc|Number=Plur|Person[psor]=3	2	obj	_	SpaceAfter=No|TokenRange=24:32
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=32:33
 
