@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>71</sentences><tokens>306</tokens><words>318</words><fused>12</fused></total>
+  </size>
+  <lemmas unique="81" /><!-- ., Geladi, waGadi, binie, ica, me, dei, pegi, watece, ag, ijo, napioi, ane, naigi, ooligi -->
+  <forms unique="94" /><!-- ., iwaGadi, ica, me, iGeladi, idei, libinienigi, ane, liGeladi, aG, ipegitegi, niwatece, looligi, naigi, napioi -->
+  <fusions unique="10" /><!-- adakake, madi, aGipegetege, aGipegitegi, aidei, alidi, aneiwaGadi, anenapioi, meninitibeci, mijo -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="11">
+    <tag name="ADJ">6</tag><!-- napioi, akake, dakake -->
+    <tag name="ADV">4</tag><!-- digoida, eliodi -->
+    <tag name="AUX">2</tag><!-- jaG -->
+    <tag name="DET">34</tag><!-- ica, ijo, nagani, adi, da, eliodi, jo, naGana, wa -->
+    <tag name="NOUN">111</tag><!-- Geladi, binie, watece, naigi, ooligi, idi, weiigi, wetiga, eyodi, iwa -->
+    <tag name="PART">6</tag><!-- ag -->
+    <tag name="PRON">18</tag><!-- ane, di, jo, naGada, da, ee, iwaGadi, na, naGadi, napioi -->
+    <tag name="PROPN">4</tag><!-- maria, joão, pedilo -->
+    <tag name="PUNCT">71</tag><!-- . -->
+    <tag name="SCONJ">14</tag><!-- me, daga, taGa -->
+    <tag name="VERB">48</tag><!-- waGadi, dei, pegi, etidi, nitibece, apiko, nitibeci, pege, apicoGo, dowediteloco -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="31">
+    <feat name="AdvType" value="Loc" upos="ADV">2</feat><!-- digoida -->
+    <feat name="Aspect" value="Perf" upos="AUX">2</feat><!-- ja -->
+    <feat name="Degree" value="Dim" upos="NOUN">15</feat><!-- libinienigi, libiniena, libinienaGa, libinienigipi, niganigawanigi -->
+    <feat name="Deixis" value="Remt" upos="ADV">1</feat><!-- digoida -->
+    <feat name="Gender" value="Fem" upos="DET,NOUN,PRON,VERB">42</feat><!-- niwatece, ajo, adi, etadi, Etogo, Iwalo, NaGajo, libiniena, liwatece, lomigo -->
+    <feat name="Gender" value="Fem,Masc" upos="NOUN">2</feat><!-- Gadodawa, lodawa -->
+    <feat name="Gender" value="Masc" upos="DET,NOUN,PRON,PROPN">90</feat><!-- ica, iGeladi, libinienigi, liGeladi, looligi, naigi, weiigi, niganaGacanajo, nioladi, LotaGa -->
+    <feat name="Gender[obj]" value="Fem" upos="VERB">2</feat><!-- ipegetege -->
+    <feat name="Gender[obj]" value="Masc" upos="VERB">4</feat><!-- ipegitegi -->
+    <feat name="Mood" value="Ind" upos="VERB">42</feat><!-- iwaGadi, idei, ipegitegi, ninitibeci, ipegetege, DapicoGo, Ninitibigiwaji, Te, dowediteloco, ipegitaGagi -->
+    <feat name="Number" value="Plur" upos="NOUN,VERB">9</feat><!-- libinienaGa, libinienigipi, Iwalepodi, Ninitibigiwaji, lionigipi, loigipodi, naodigijedi -->
+    <feat name="Number" value="Sing" upos="DET,NOUN,PRON">123</feat><!-- ica, iGeladi, libinienigi, liGeladi, niwatece, looligi, naigi, ajo, weiigi, adi -->
+    <feat name="Number[obj]" value="Sing" upos="VERB">1</feat><!-- ipegitaGagi -->
+    <feat name="Number[psor]" value="Sing" upos="NOUN">11</feat><!-- iGeladi, eyodi -->
+    <feat name="Person" value="1" upos="PRON">1</feat><!-- ee -->
+    <feat name="Person" value="3" upos="VERB">25</feat><!-- iwaGadi, ninitibeci, etadi, DapicoGo, Ninitibigiwaji -->
+    <feat name="Person[erg]" value="3" upos="VERB">19</feat><!-- idei, ipegitegi, ipegetege, dowediteloco, ipegitaGagi, ipegitege -->
+    <feat name="Person[obj]" value="2" upos="VERB">1</feat><!-- ipegitaGagi -->
+    <feat name="Person[obj]" value="3" upos="VERB">9</feat><!-- ipegitegi, ipegetege, ipegitege -->
+    <feat name="Person[psor]" value="1" upos="NOUN">11</feat><!-- iGeladi, eyodi -->
+    <feat name="Person[psor]" value="2" upos="NOUN">5</feat><!-- Gadodawa, GanigotGa, Ganioxoa, Ganixoa, Gawenigi -->
+    <feat name="Person[psor]" value="3" upos="NOUN">50</feat><!-- libinienigi, liGeladi, looligi, nioladi, LotaGa, libiniena, libinienaGa, libinienigipi, lidGegi, lidi -->
+    <feat name="Polarity" value="Neg" upos="PART">6</feat><!-- aG -->
+    <feat name="Poss" value="Yes" upos="PRON">1</feat><!-- naGajo -->
+    <feat name="PronType" value="Dem" upos="ADV,DET,PRON">44</feat><!-- ica, ajo, NaGani, adi, NaGajo, NiGida, digoida, ijo, naGada, naGadi -->
+    <feat name="PronType" value="Ind" upos="ADV,DET">3</feat><!-- eliodi -->
+    <feat name="PronType" value="Prs" upos="PRON">1</feat><!-- ee -->
+    <feat name="PronType" value="Rel" upos="PRON">7</feat><!-- ane -->
+    <feat name="VerbForm" value="Fin" upos="VERB">42</feat><!-- iwaGadi, idei, ipegitegi, ninitibeci, ipegetege, DapicoGo, Ninitibigiwaji, Te, dowediteloco, ipegitaGagi -->
+    <feat name="Voice" value="Appl" upos="VERB">12</feat><!-- ipegitegi, ipegetege, dowediteloco, eniteloco, ipegitaGagi, ipegitege -->
+    <feat name="Voice" value="Inv" upos="VERB">2</feat><!-- dapiko -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="13">
+    <dep name="acl:relcl">9</dep>
+    <dep name="advcl">2</dep>
+    <dep name="advmod">10</dep>
+    <dep name="aux">2</dep>
+    <dep name="dep">4</dep>
+    <dep name="det">35</dep>
+    <dep name="dislocated">3</dep>
+    <dep name="mark">13</dep>
+    <dep name="nmod:poss">14</dep>
+    <dep name="nsubj">66</dep>
+    <dep name="obj">18</dep>
+    <dep name="punct">71</dep>
+    <dep name="root">71</dep>
+  </deps>
+</treebank>

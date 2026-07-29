@@ -1,0 +1,355 @@
+/*
+sentence = 3
+uid = 39f34955-a828-47d7-808d-b3b3565b42d6
+status = REVIEW
+text = LotaGa Ganioxoa libinienaGa
+text_por = A palavra de seu irmão é bonita .
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ LotaGa)
+      (N$ Ganioxoa)
+    )
+    (NP-PRD
+      (N$ libinienaGa)
+    )
+  )
+  (ID hil-data,0.3)
+)
+
+/*
+sentence = 4
+uid = d3ae6cfd-bec1-49f3-a0f9-4ca0744e3404
+status = REVIEW
+text = LotaGa Gadodawa libinienaGa
+text_por = A palavra do seu marido é bonita .
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ LotaGa)
+      (N$ Gadodawa)
+    )
+    (NP-PRD
+      (N$ libinienaGa)
+    )
+  )
+  (ID hil-data,0.4)
+)
+
+/*
+sentence = 6
+uid = 1d10c633-e74d-4e27-ac23-6b6b2dde9647
+status = REVIEW
+text = Etogo ane iwaGadi adakake loojedi
+text_por = A canoa pesada é barata .
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N Etogo)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VB iwaGadi)
+        )
+      )
+    )
+    (CNEG+VBU adakake)
+    (NP-PRD
+      (N$ loojedi)
+    )
+  )
+  (ID hil-data,0.6)
+)
+
+/*
+sentence = 7
+uid = 435e4b10-ab78-4ee3-84b0-7773dbe10bf7
+status = REVIEW
+text = Gawenigi eliodi me libinienigi
+text_por = A sua comida é muito bonita .
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ Gawenigi)
+    )
+    (CP-me-me
+      (Q eliodi)
+      (C me)
+      (NP
+        (N$ libinienigi)
+      )
+    )
+  )
+  (ID hil-data,0.7)
+)
+
+/*
+sentence = 9
+uid = 0ca977cd-2edf-45d9-b958-068648aebef9
+status = REVIEW
+text = NiGida niwenigi eliodi me dakake loojedi
+text_por = Aquela comida é muito cara .
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D NiGida)
+      (N$ niwenigi)
+    )
+    (CP-me
+      (Q eliodi)
+      (C me)
+      (IP-SUB
+        (VBU dakake)
+        (NP
+          (N$ loojedi)
+        )
+      )
+    )
+  )
+  (ID hil-data,0.9)
+)
+
+/*
+sentence = 11
+uid = 92838eda-ef9b-4f05-a5eb-38a4709c0337
+status = REVIEW
+text = NaGajo lomigo niganigawanigi madi niwatece
+text_por = Aquele anzol do menino é na canoa .
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D NaGajo)
+      (N$ lomigo)
+      (NP
+        (N niganigawanigi)
+      )
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (D @adi)
+          (N$ niwatece)
+        )
+      )
+    )
+  )
+  (ID hil-data,0.11)
+)
+
+/*
+sentence = 34
+uid = 64f2c803-b436-4202-b4c7-acf5c7205bc3
+status = REVIEW
+text = liwigo niganigawanigi libinienigi
+text_por = Esta fotografia da criança é bonita .
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ liwigo)
+      (N niganigawanigi)
+    )
+    (NP-PRD
+      (N$ libinienigi)
+    )
+  )
+  (ID hil-data,0.34)
+)
+
+/*
+sentence = 40
+uid = e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4
+status = REVIEW
+text = NaGani wetiGa , ane iwaGadi , eniteloco iGonagi
+text_por = Esta pedra , que é pesada , caiu no meu pé .
+*/
+(
+  (IP-MAT
+    (NP
+      (D NaGani)
+      (N wetiGa)
+    )
+    (PUNC ,)
+    (NP
+      (CP-FRL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VB iwaGadi)
+        )
+      )
+    )
+    (PUNC ,)
+    (VBAPL eniteloco)
+    (NP-APL
+      (N$ iGonagi)
+    )
+  )
+  (ID hil-data,0.40)
+)
+
+/*
+sentence = 42
+uid = 79cb0e55-9c06-4cb1-91b3-2b5233e1678f
+status = REVIEW
+text = nigidiwa okokodi ligetedi midi niwigo libinienaGa
+text_por = Estes ovos da fotografia dela estão bonitos .
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D nigidiwa)
+      (NP
+        (N okokodi)
+      )
+      (N$ ligetedi)
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (D @idi)
+          (NP
+            (N niwigo)
+          )
+          (N$ libinienaGa)
+        )
+      )
+    )
+  )
+  (ID hil-data,0.42)
+)
+
+/*
+sentence = 43
+uid = a74fea0a-dd87-4c4d-8670-9db66f5b5b16
+status = REVIEW
+text = niGidiwa okokodi ligetedi liwigo libinienaGa
+text_por = Estes ovos da fotografia estão bonitos .
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D niGidiwa)
+      (NP
+        (N okokodi)
+      )
+      (N$ ligetedi)
+      (N$ liwigo)
+    )
+    (NP-PRD
+      (N$ libinienaGa)
+    )
+  )
+  (ID hil-data,0.43)
+)
+
+/*
+sentence = 45
+uid = 07bfcd00-7901-474d-bfb8-bf470266aafa
+status = REVIEW
+text = Ee ite ee ina
+text_por = Eu estou aqui .
+*/
+(
+  (IP-MAT
+    (NP
+      (PRO Ee)
+    )
+    (VB ite)
+    (NP
+      (PRO ee)
+    )
+    (NP
+      (D ina)
+    )
+  )
+  (ID hil-data,0.45)
+)
+
+/*
+sentence = 46
+uid = 42671da9-e433-4319-86a0-2a2cb8777a40
+status = REVIEW
+text = Ite ee madataGa
+text_por = Eu estou com ela .
+*/
+(
+  (IP-MAT
+    (VB Ite)
+    (NP
+      (PRO ee)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (DAPL @adataGa)
+          )
+        )
+      )
+    )
+  )
+  (ID hil-data,0.46)
+)
+
+/*
+sentence = 47
+uid = e58e38a7-f117-48f1-8a17-9d896867fe60
+status = REVIEW
+text = Ite ee midataGa
+text_por = Eu estou com ele .
+*/
+(
+  (IP-MAT
+    (VB Ite)
+    (NP
+      (PRO ee)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (DAPL @idataGa)
+          )
+        )
+      )
+    )
+  )
+  (ID hil-data,0.47)
+)
+
+/*
+sentence = 68
+uid = 9527d53d-7184-4b08-8bb2-51b7fff1429d
+status = REVIEW
+text = nigotaGa liGeladi ipegitege akiidi
+text_por = A cidade da casa dela é perto do rio.
+*/
+(
+  (IP-MAT
+    (NP
+      (N nigotaGa)
+      (N$ liGeladi)
+    )
+    (VBAPL ipegitege)
+    (NP-APL
+      (N akiidi)
+    )
+  )
+  (ID hil-data,0.68)
+)

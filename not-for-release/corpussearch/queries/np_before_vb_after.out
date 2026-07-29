@@ -1,0 +1,41 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Fri Jul 10 00:09:58 BRT 2026
+
+command file:     queries/np_before_vb_after.q
+output file:      queries/np_before_vb_after.out
+
+node:   IP-MAT
+query:  ([1]NP iPrecedes  VB) 
+  AND  (VB iPrecedes  [2]NP) 
+  AND  ([1]NP iDominates  D) 
+  AND  ([1]NP domsWords  1) 
+*/
+/*
+HEADER:
+source file:  ped-gramm.psd
+*/
+
+/~*
+ijotawece etidi akiidi.
+*~/
+/*
+1 IP-MAT:  2 NP, 5 VB, 7 NP, 3 D
+*/
+( (IP-MAT (NP (D ijotawece))
+	  (VB etidi)
+	  (NP (N akiidi))
+	  (PUNC .)))
+/*
+FOOTER
+  source file, hits/tokens/total
+  ped-gramm.psd		1/1/56
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  ped-gramm.psd		1/1/56
+whole search, hits/tokens/total
+			1/1/56
+*/

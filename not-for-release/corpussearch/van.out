@@ -1,0 +1,32 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Wed Jul 29 00:23:56 BRT 2026
+
+command file:     queries/n_and_npr.q
+output file:      van.out
+
+node:   NP*
+query:  ((NP* iDoms  [1]N) 
+  AND  (NP* iDoms  [2]NPR) 
+  AND  ([1]N hasSister  [2]NPR)) 
+  OR  ((NP* iDoms  [1]N$) 
+  AND  (NP* iDoms  [2]NPR) 
+  AND  ([1]N$ hasSister  [2]NPR)) 
+*/
+/*
+HEADER:
+source file:  van-data.review.corpussearch.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  van-data.review.corpussearch.psd	0/0/21
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  van-data.review.corpussearch.psd	0/0/21
+whole search, hits/tokens/total
+		0/0/21
+*/

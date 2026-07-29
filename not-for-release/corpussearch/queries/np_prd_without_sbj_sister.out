@@ -1,0 +1,28 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Thu Jul 09 19:03:44 BRT 2026
+
+command file:     queries/np_prd_without_sbj_sister.q
+output file:      queries/np_prd_without_sbj_sister.out
+
+node:   IP*
+query:  (NP-PRD* exists) 
+  AND  NOT (NP-PRD* hasSister  NP-SBJ*) 
+*/
+/*
+HEADER:
+source file:  ped-gramm.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  ped-gramm.psd		0/0/56
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  ped-gramm.psd		0/0/56
+whole search, hits/tokens/total
+			0/0/56
+*/

@@ -1,0 +1,59 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Wed Jul 29 00:24:35 BRT 2026
+
+command file:     queries/n_and_npr.q
+output file:      ped.out
+
+node:   NP*
+query:  ((NP* iDoms  [1]N) 
+  AND  (NP* iDoms  [2]NPR) 
+  AND  ([1]N hasSister  [2]NPR)) 
+  OR  ((NP* iDoms  [1]N$) 
+  AND  (NP* iDoms  [2]NPR) 
+  AND  ([1]N$ hasSister  [2]NPR)) 
+*/
+/*
+HEADER:
+source file:  ped-gramm.review.corpussearch.psd
+*/
+
+/~*
+ica Maria looligi aG@ @lidi
+(ped-gramm,0.11)
+*~/
+/*
+2 NP-SBJ:  2 NP-SBJ, 7 N$, 5 NPR
+*/
+( (IP-MAT (NP-SBJ (D ica) (NPR Maria) (N$ looligi))
+	  (NEG aG@)
+	  (NP-PRD (N$ @lidi)))
+  (ID ped-gramm,0.11))
+
+/~*
+João liGeladi ane napioi
+(ped-gramm,0.26)
+*~/
+/*
+2 NP:  2 NP, 5 N$, 3 NPR
+*/
+
+( (IP-MAT (NP (NPR João)
+	      (N$ liGeladi)
+	      (CP-REL (WNP-1 (WPRO ane))
+		      (IP-SUB (NP-TRACE (-NONE- *T*-1))
+			      (NP (N napioi))))))
+  (ID ped-gramm,0.26))
+/*
+FOOTER
+  source file, hits/tokens/total
+  ped-gramm.review.corpussearch.psd	2/2/24
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  ped-gramm.review.corpussearch.psd	2/2/24
+whole search, hits/tokens/total
+		2/2/24
+*/

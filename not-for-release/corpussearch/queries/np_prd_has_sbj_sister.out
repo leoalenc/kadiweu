@@ -1,0 +1,188 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Thu Jul 09 19:09:53 BRT 2026
+
+command file:     queries/np_prd_has_sbj_sister.q
+output file:      queries/np_prd_has_sbj_sister.out
+
+node:   IP*
+query:  (NP-PRD* hasSister  NP-SBJ*) 
+*/
+/*
+HEADER:
+source file:  ped-gramm.psd
+*/
+
+/~*
+ica Maria looligi aG@ @lidi
+*~/
+/*
+1 IP-MAT:  11 NP-PRD, 2 NP-SBJ
+*/
+( (IP-MAT (NP-SBJ (D ica) (NPR Maria) (N$ looligi))
+	  (NEG aG@)
+	  (NP-PRD (N$ @lidi))))
+
+/~*
+ica looligi lidi
+*~/
+/*
+1 IP-MAT:  7 NP-PRD, 2 NP-SBJ
+*/
+
+( (IP-MAT (NP-SBJ (D ica) (N$ looligi))
+	  (NP-PRD (N$ lidi))))
+
+/~*
+ica looligi lideGegi
+*~/
+/*
+1 IP-MAT:  7 NP-PRD, 2 NP-SBJ
+*/
+
+( (IP-MAT (NP-SBJ (D ica) (N$ looligi))
+	  (NP-PRD (N$ lideGegi))))
+
+/~*
+loigipodi libinienigipi
+*~/
+/*
+1 IP-MAT:  5 NP-PRD, 2 NP-SBJ
+*/
+
+( (IP-MAT (NP-SBJ (N$ loigipodi))
+	  (NP-PRD (N$ libinienigipi))))
+
+/~*
+ica liwigo libinienigi
+*~/
+/*
+1 IP-MAT:  7 NP-PRD, 2 NP-SBJ
+*/
+
+( (IP-MAT (NP-SBJ (D ica) (N$ liwigo))
+	  (NP-PRD (N$ libinienigi))))
+
+/~*
+ica niwigo libinienigi
+*~/
+/*
+1 IP-MAT:  7 NP-PRD, 2 NP-SBJ
+*/
+
+( (IP-MAT (NP-SBJ (D ica) (N$ niwigo))
+	  (NP-PRD (N$ libinienigi))))
+
+/~*
+ica nioladi Ganixoa
+*~/
+/*
+1 IP-MAT:  8 NP-PRD, 2 NP-SBJ
+*/
+
+( (IP-MAT (NP-SBJ (D ica)
+		  (NP (N nioladi)))
+	  (NP-PRD (N$ Ganixoa))))
+
+/~*
+ica nioladi nioxoa libinienigi
+*~/
+/*
+1 IP-MAT:  10 NP-PRD, 2 NP-SBJ
+*/
+
+( (IP-MAT (NP-SBJ (D ica)
+		  (NP (N nioladi))
+		  (N$ nioxoa))
+	  (NP-PRD (N$ libinienigi))))
+
+/~*
+ica nioladi lodawa libinienigi
+*~/
+/*
+1 IP-MAT:  10 NP-PRD, 2 NP-SBJ
+*/
+
+( (IP-MAT (NP-SBJ (D ica)
+		  (NP (N nioladi))
+		  (N$ lodawa))
+	  (NP-PRD (N$ libinienigi))))
+
+/~*
+lotaǥa ǥanaginaǥa libinienaǥa.
+*~/
+/*
+1 IP-MAT:  7 NP-PRD, 2 NP-SBJ
+*/
+
+( (IP-MAT (NP-SBJ (N$ lotaǥa) (N$ ǥanaginaǥa))
+	  (NP-PRD (N$ libinienaǥa))
+	  (PUNC .)))
+
+/~*
+João liǥeladi napioi.
+*~/
+/*
+1 IP-MAT:  5 NP-PRD, 2 NP-SBJ
+*/
+
+( (IP-MAT (NP-SBJ (NPR João))
+	  (NP-PRD (N$ liǥeladi)
+		  (NP (N napioi)))
+	  (PUNC .)))
+
+/~*
+liǥeladi João napioi.
+*~/
+/*
+1 IP-MAT:  8 NP-PRD, 2 NP-SBJ
+*/
+
+( (IP-MAT (NP-SBJ (N$ liǥeladi)
+		  (NP (NPR João)))
+	  (NP-PRD (N$ napioi))
+	  (PUNC .)))
+
+/~*
+aG@ @ee eliodi niinikeGegi
+*~/
+/*
+1 IP-MAT:  7 NP-PRD, 4 NP-SBJ
+*/
+
+( (IP-MAT (NEG aG@)
+	  (NP-SBJ (D @ee))
+	  (NP-PRD (Q eliodi) (N niinikeGegi))))
+
+/~*
+etogoli dakake lojetedi
+*~/
+/*
+1 IP-MAT:  7 NP-PRD, 2 NP-SBJ
+*/
+
+( (IP-MAT (NP-SBJ (N etogoli) (ADJ dakake))
+	  (NP-PRD (N$ lojetedi))))
+
+/~*
+etogoli dakake loojedi
+*~/
+/*
+1 IP-MAT:  7 NP-PRD, 2 NP-SBJ
+*/
+
+( (IP-MAT (NP-SBJ (N etogoli) (ADJ dakake))
+	  (NP-PRD (N$ loojedi))))
+/*
+FOOTER
+  source file, hits/tokens/total
+  ped-gramm.psd		15/15/56
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  ped-gramm.psd		15/15/56
+whole search, hits/tokens/total
+			15/15/56
+*/

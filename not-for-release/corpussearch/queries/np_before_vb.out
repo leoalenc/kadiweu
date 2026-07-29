@@ -1,0 +1,190 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Thu Jul 09 23:18:38 BRT 2026
+
+command file:     queries/np_before_vb.q
+output file:      queries/np_before_vb.out
+
+node:   IP-MAT
+query:  (IP-MAT iDominates  {1}NP) 
+  AND  (IP-MAT iDominates  VB) 
+  AND  (NP iPrecedes  VB) 
+
+replace_label{1}: NP-SBJ
+*/
+/*
+HEADER:
+source file:  ped-gramm.TEST.psd
+*/
+
+/~*
+ajo liwatece etadi weiigi
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 7 VB
+*/
+( (IP-MAT (NP-SBJ (D ajo) (N$ liwatece))
+	  (VB etadi)
+	  (NP (N weiigi))))
+
+/~*
+ajo niwatece etadi digoida
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 7 VB
+*/
+
+( (IP-MAT (NP-SBJ (D ajo) (N$ niwatece))
+	  (VB etadi)
+	  (NP (D digoida))))
+
+/~*
+niwatece iwaGadi
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 VB
+*/
+
+( (IP-MAT (NP-SBJ (N$ niwatece))
+	  (VB iwaGadi)))
+
+/~*
+niwatece etadi weiigi
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 VB
+*/
+
+( (IP-MAT (NP-SBJ (N$ niwatece))
+	  (VB etadi)
+	  (NP (N weiigi))))
+
+/~*
+liGeladi idei nigotaGa
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 VB
+*/
+
+( (IP-MAT (NP-SBJ (N$ liGeladi))
+	  (VB idei)
+	  (NP (N nigotaGa))))
+
+/~*
+ica looligi dapico
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 7 VB
+*/
+
+( (IP-MAT (NP-SBJ (D ica) (N$ looligi))
+	  (VB dapico)))
+
+/~*
+iGeladi idei naigi me napioi
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 VB
+*/
+
+( (IP-MAT (NP-SBJ (N$ iGeladi))
+	  (VB idei)
+	  (NP (N naigi)
+	      (CP-me (C me)
+		     (IP-SUB (NP (N napioi)))))))
+
+/~*
+iGeladi idei me@ @ijo naigi naGajo
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 VB
+*/
+
+( (IP-MAT (NP-SBJ (N$ iGeladi))
+	  (VB idei)
+	  (CP-me (C me@)
+		 (IP-SUB (NP (D @ijo) (N naigi) (PRO$ naGajo))))))
+
+/~*
+iGeladi idei digoida
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 VB
+*/
+
+( (IP-MAT (NP-SBJ (N$ iGeladi))
+	  (VB idei)
+	  (NP (D digoida))))
+
+/~*
+ijo Gatodi etijo ida.
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 7 VB
+*/
+
+( (IP-MAT (NP-SBJ (D ijo) (N Gatodi))
+	  (VB etijo)
+	  (NP (PRO ida))
+	  (PUNC .)))
+
+/~*
+ijotawece etidi akiidi.
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 VB
+*/
+
+( (IP-MAT (NP-SBJ (D ijotawece))
+	  (VB etidi)
+	  (NP (N akiidi))
+	  (PUNC .)))
+
+/~*
+iGeladi idei weiigi.
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 VB
+*/
+
+( (IP-MAT (NP-SBJ (N$ iGeladi))
+	  (VB idei)
+	  (NP (N weiigi))
+	  (PUNC .)))
+
+/~*
+niGidowa waca lotiidi dapikoGo
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 10 VB
+*/
+
+( (IP-MAT (NP-SBJ (D niGidowa)
+		  (NP (N waca))
+		  (N$ lotiidi))
+	  (VB dapikoGo)))
+
+/~*
+Etogoli iwaGadi aG@ @dakake lojetedi
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 VB
+*/
+
+( (IP-MAT (NP-SBJ (N Etogoli))
+	  (VB iwaGadi)
+	  (NEG aG@)
+	  (NP (ADJ @dakake) (N$ lojetedi))))
+/*
+FOOTER
+  source file, hits/tokens/total
+  ped-gramm.TEST.psd	14/14/56
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  ped-gramm.TEST.psd	14/14/56
+whole search, hits/tokens/total
+		14/14/56
+*/

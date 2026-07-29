@@ -1,0 +1,32 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Wed Jul 29 00:23:00 BRT 2026
+
+command file:     queries/n_and_npr.q
+output file:      queries/n_and_npr.out
+
+node:   NP*
+query:  ((NP* iDoms  [1]N) 
+  AND  (NP* iDoms  [2]NPR) 
+  AND  ([1]N hasSister  [2]NPR)) 
+  OR  ((NP* iDoms  [1]N$) 
+  AND  (NP* iDoms  [2]NPR) 
+  AND  ([1]N$ hasSister  [2]NPR)) 
+*/
+/*
+HEADER:
+source file:  hil-data.review.corpussearch.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  hil-data.review.corpussearch.psd	0/0/14
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  hil-data.review.corpussearch.psd	0/0/14
+whole search, hits/tokens/total
+		0/0/14
+*/
