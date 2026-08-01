@@ -39,6 +39,26 @@ text_por = a palavra de seu irmão é bonita
 )
 
 /*
+sentence = 7
+uid = ee540050-e6fa-424e-9252-fd0b9312769d
+status = REVIEW
+text = lotaGa Gadodawa libinienaGa
+text_por = a palavra do seu marido é bonita
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ lotaGa)
+      (N$ Gadodawa)
+    )
+    (NP-PRD
+      (N$ libinienaGa)
+    )
+  )
+  (ID van-data,0.7)
+)
+
+/*
 sentence = 9
 uid = 2c026af9-b8a1-4389-b658-00113b070dee
 status = REVIEW
@@ -108,35 +128,6 @@ text_por = aquela comida é muito cara
     )
   )
   (ID van-data,0.12)
-)
-
-/*
-sentence = 14
-uid = 2386b5b5-57d0-4a1f-86c2-73f67561744c
-status = REVIEW
-text = naGajo lomiigo nigaanigawaanigi manitaGa niwatece
-text_por = Aquele anzol do menino está na canoa.
-*/
-(
-  (IP-MAT
-    (NP-SBJ
-      (D naGajo)
-      (N$ lomiigo)
-      (NP
-        (N nigaanigawaanigi)
-      )
-    )
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (DAPL @anitaGa)
-          (N niwatece)
-        )
-      )
-    )
-  )
-  (ID van-data,0.14)
 )
 
 /*
@@ -320,6 +311,27 @@ text_por = A fotografia dos ovos (da galinha) é bonita.
     (PUNC .)
   )
   (ID van-data,0.46)
+)
+
+/*
+sentence = 54
+uid = 969ba2f3-88dc-417e-ad3f-16ce88b4c762
+status = REVIEW
+text = aGee eliodi niinikeGegi
+text_por = eu não estou muito feliz
+*/
+(
+  (IP-MAT
+    (NEG aG@)
+    (NP-SBJ
+      (D @ee)
+    )
+    (NP-PRD
+      (Q eliodi)
+      (N niinikeGegi)
+    )
+  )
+  (ID van-data,0.54)
 )
 
 /*

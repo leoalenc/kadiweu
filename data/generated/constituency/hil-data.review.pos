@@ -1,0 +1,247 @@
+/*
+sentence = 3
+uid = 39f34955-a828-47d7-808d-b3b3565b42d6
+status = REVIEW
+text = LotaGa Ganioxoa libinienaGa
+text_por = A palavra de seu irmão é bonita .
+*/
+(
+  (IP-MAT
+    (N$ LotaGa)
+    (N$ Ganioxoa)
+    (N$ libinienaGa)
+  )
+  (ID hil-data,0.3)
+)
+
+/*
+sentence = 4
+uid = d3ae6cfd-bec1-49f3-a0f9-4ca0744e3404
+status = REVIEW
+text = LotaGa Gadodawa libinienaGa
+text_por = A palavra do seu marido é bonita .
+*/
+(
+  (IP-MAT
+    (N$ LotaGa)
+    (N$ Gadodawa)
+    (N$ libinienaGa)
+  )
+  (ID hil-data,0.4)
+)
+
+/*
+sentence = 6
+uid = 1d10c633-e74d-4e27-ac23-6b6b2dde9647
+status = REVIEW
+text = Etogo ane iwaGadi adakake loojedi
+text_por = A canoa pesada é barata .
+*/
+(
+  (IP-MAT
+    (N Etogo)
+    (WPRO ane)
+    (VB iwaGadi)
+    (CNEG+VBU adakake)
+    (N$ loojedi)
+  )
+  (ID hil-data,0.6)
+)
+
+/*
+sentence = 7
+uid = 435e4b10-ab78-4ee3-84b0-7773dbe10bf7
+status = REVIEW
+text = Gawenigi eliodi me libinienigi
+text_por = A sua comida é muito bonita .
+*/
+(
+  (IP-MAT
+    (N$ Gawenigi)
+    (Q eliodi)
+    (C me)
+    (N$ libinienigi)
+  )
+  (ID hil-data,0.7)
+)
+
+/*
+sentence = 9
+uid = 0ca977cd-2edf-45d9-b958-068648aebef9
+status = REVIEW
+text = NiGida niwenigi eliodi me dakake loojedi
+text_por = Aquela comida é muito cara .
+*/
+(
+  (IP-MAT
+    (D NiGida)
+    (N$ niwenigi)
+    (Q eliodi)
+    (C me)
+    (VBU dakake)
+    (N$ loojedi)
+  )
+  (ID hil-data,0.9)
+)
+
+/*
+sentence = 11
+uid = 92838eda-ef9b-4f05-a5eb-38a4709c0337
+status = REVIEW
+text = NaGajo lomigo niganigawanigi madi niwatece
+text_por = Aquele anzol do menino é na canoa .
+*/
+(
+  (IP-MAT
+    (D NaGajo)
+    (N$ lomigo)
+    (N niganigawanigi)
+    (C me@)
+    (D @adi)
+    (N$ niwatece)
+  )
+  (ID hil-data,0.11)
+)
+
+/*
+sentence = 34
+uid = 64f2c803-b436-4202-b4c7-acf5c7205bc3
+status = REVIEW
+text = liwigo niganigawanigi libinienigi
+text_por = Esta fotografia da criança é bonita .
+*/
+(
+  (IP-MAT
+    (N$ liwigo)
+    (N niganigawanigi)
+    (N$ libinienigi)
+  )
+  (ID hil-data,0.34)
+)
+
+/*
+sentence = 40
+uid = e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4
+status = REVIEW
+text = NaGani wetiGa , ane iwaGadi , eniteloco iGonagi
+text_por = Esta pedra , que é pesada , caiu no meu pé .
+*/
+(
+  (IP-MAT
+    (D NaGani)
+    (N wetiGa)
+    (PUNC ,)
+    (WPRO ane)
+    (VB iwaGadi)
+    (PUNC ,)
+    (VBAPL eniteloco)
+    (N$ iGonagi)
+  )
+  (ID hil-data,0.40)
+)
+
+/*
+sentence = 42
+uid = 79cb0e55-9c06-4cb1-91b3-2b5233e1678f
+status = REVIEW
+text = nigidiwa okokodi ligetedi midi niwigo libinienaGa
+text_por = Estes ovos da fotografia dela estão bonitos .
+*/
+(
+  (IP-MAT
+    (D nigidiwa)
+    (N okokodi)
+    (N$ ligetedi)
+    (C me@)
+    (D @idi)
+    (N niwigo)
+    (N$ libinienaGa)
+  )
+  (ID hil-data,0.42)
+)
+
+/*
+sentence = 43
+uid = a74fea0a-dd87-4c4d-8670-9db66f5b5b16
+status = REVIEW
+text = niGidiwa okokodi ligetedi liwigo libinienaGa
+text_por = Estes ovos da fotografia estão bonitos .
+*/
+(
+  (IP-MAT
+    (D niGidiwa)
+    (N okokodi)
+    (N$ ligetedi)
+    (N$ liwigo)
+    (N$ libinienaGa)
+  )
+  (ID hil-data,0.43)
+)
+
+/*
+sentence = 45
+uid = 07bfcd00-7901-474d-bfb8-bf470266aafa
+status = REVIEW
+text = Ee ite ee ina
+text_por = Eu estou aqui .
+*/
+(
+  (IP-MAT
+    (PRO Ee)
+    (VB ite)
+    (PRO ee)
+    (D ina)
+  )
+  (ID hil-data,0.45)
+)
+
+/*
+sentence = 46
+uid = 42671da9-e433-4319-86a0-2a2cb8777a40
+status = REVIEW
+text = Ite ee madataGa
+text_por = Eu estou com ela .
+*/
+(
+  (IP-MAT
+    (VB Ite)
+    (PRO ee)
+    (C me@)
+    (DAPL @adataGa)
+  )
+  (ID hil-data,0.46)
+)
+
+/*
+sentence = 47
+uid = e58e38a7-f117-48f1-8a17-9d896867fe60
+status = REVIEW
+text = Ite ee midataGa
+text_por = Eu estou com ele .
+*/
+(
+  (IP-MAT
+    (VB Ite)
+    (PRO ee)
+    (C me@)
+    (DAPL @idataGa)
+  )
+  (ID hil-data,0.47)
+)
+
+/*
+sentence = 68
+uid = 9527d53d-7184-4b08-8bb2-51b7fff1429d
+status = REVIEW
+text = nigotaGa liGeladi ipegitege akiidi
+text_por = A cidade da casa dela é perto do rio.
+*/
+(
+  (IP-MAT
+    (N nigotaGa)
+    (N$ liGeladi)
+    (VBAPL ipegitege)
+    (N akiidi)
+  )
+  (ID hil-data,0.68)
+)

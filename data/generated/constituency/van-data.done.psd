@@ -77,26 +77,6 @@ text_por = a mulher está feliz
 )
 
 /*
-sentence = 7
-uid = ee540050-e6fa-424e-9252-fd0b9312769d
-status = DONE
-text = lotaGa Gadodawa libinienaGa
-text_por = a palavra do seu marido é bonita
-*/
-(
-  (IP-MAT
-    (NP-SBJ
-      (N$ lotaGa)
-      (N$ Gadodawa)
-    )
-    (NP-PRD
-      (N$ libinienaGa)
-    )
-  )
-  (ID van-data,0.7)
-)
-
-/*
 sentence = 8
 uid = 947061b4-7b73-4612-8aa8-0af0e04cbc85
 status = DONE
@@ -161,6 +141,35 @@ text_por = aquele anzol do Pedro está na canoa
     )
   )
   (ID van-data,0.13)
+)
+
+/*
+sentence = 14
+uid = 2386b5b5-57d0-4a1f-86c2-73f67561744c
+status = DONE
+text = naGajo lomiigo nigaanigawaanigi manitaGa niwatece
+text_por = Aquele anzol do menino está na canoa.
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D naGajo)
+      (N$ lomiigo)
+      (NP
+        (N nigaanigawaanigi)
+      )
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (DAPL @anitaGa)
+          (N niwatece)
+        )
+      )
+    )
+  )
+  (ID van-data,0.14)
 )
 
 /*
@@ -837,27 +846,6 @@ text_por = eu não estou feliz
     (VB @dininitibeci)
   )
   (ID van-data,0.53)
-)
-
-/*
-sentence = 54
-uid = 969ba2f3-88dc-417e-ad3f-16ce88b4c762
-status = DONE
-text = aGee eliodi niinikeGegi
-text_por = eu não estou muito feliz
-*/
-(
-  (IP-MAT
-    (NEG aG@)
-    (NP-SBJ
-      (D @ee)
-    )
-    (NP-PRD
-      (Q eliodi)
-      (N niinikeGegi)
-    )
-  )
-  (ID van-data,0.54)
 )
 
 /*

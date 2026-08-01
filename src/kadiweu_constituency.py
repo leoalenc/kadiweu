@@ -134,6 +134,65 @@ class ConstituencyTree:
         for root in self.roots:
             yield from root.walk()
 
+    def word_pos_sequence(
+        self,
+        *,
+        include_empty_categories: bool = False,
+    ) -> list[tuple[str, str]]:
+        """Return the sentence yield as ``(word, POS)`` pairs.
+
+        Tokens are returned in their annotated surface order. Empty-category
+        terminals, such as traces, are excluded by default because they are
+        not overt words. Set ``include_empty_categories`` to ``True`` when
+        reproducing the complete terminal yield of an already parsed tree.
+
+        Raises:
+            TreeConstructionError: If a selected token has no POS tag.
+        """
+        sequence: list[tuple[str, str]] = []
+
+        for token in self.tokens:
+            if token.empty_category and not include_empty_categories:
+                continue
+            if token.tag is None:
+                raise TreeConstructionError(
+                    f"token {token.position} ({token.form!r}) has no POS tag"
+                )
+            sequence.append((token.form, token.tag))
+
+        return sequence
+
+    def to_corpussearch_pos(
+        self,
+        *,
+        indent: int = 2,
+        show_metadata: bool = True,
+    ) -> str:
+        """Return a flat POS-tagged IP-MAT record for parser-rule input."""
+        if indent < 0:
+            raise ValueError("indent must be non-negative")
+
+        outer_margin = " " * indent
+        terminal_margin = " " * (indent * 2)
+
+        terminals = "\n".join(
+            f"{terminal_margin}({tag} {form})"
+            for form, tag in self.word_pos_sequence()
+        )
+
+        record = (
+            "(\n"
+            f"{outer_margin}(IP-MAT\n"
+            f"{terminals}\n"
+            f"{outer_margin})\n"
+            f"{outer_margin}(ID {self.corpussearch_id()})\n"
+            ")"
+        )
+
+        if show_metadata:
+            return f"{self.corpussearch_metadata()}\n{record}"
+        return record
+    
     def pretty(
         self, *, show_spans: bool = False, show_positions: bool = False
     ) -> str:
@@ -603,7 +662,14 @@ def write_trees(
     for index, tree in enumerate(trees):
         if index:
             print(file=stream)
-        if output_format == "corpussearch":
+        if output_format == "corpussearch-pos":
+            print(
+                tree.to_corpussearch_pos(
+                    show_metadata=show_metadata,
+                ),
+                file=stream,
+            )
+        elif output_format == "corpussearch":
             print(
                 tree.to_corpussearch(
                     show_metadata=show_metadata,
@@ -634,6 +700,7 @@ OUTPUT_EXTENSIONS = {
     "pretty": ".txt",
     "lisp": ".lisp",
     "corpussearch": ".psd",
+    "corpussearch-pos": ".pos",
 }
 
 
@@ -783,7 +850,7 @@ def build_argument_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--format",
-        choices=("pretty", "lisp", "corpussearch"),
+        choices=("pretty", "lisp", "corpussearch", "corpussearch-pos"),
         default="pretty",
         help="output format (default: pretty)",
     )
