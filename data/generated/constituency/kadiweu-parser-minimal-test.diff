@@ -1,0 +1,35 @@
+--- expected/hil-data,0.5
++++ actual/hil-data,0.5
+@@ -1 +1 @@
+-( ( IP-MAT ( NP-1 ( N Etogo ) ( CP-REL ( WNP-2 ( WPRO ane@ ) ) ( IP-SUB ( NP-TRACE ( -NONE- *T*-2 ) ) ( VB @iwaGadi ) ) ) ) ( NEG aG@ ) ( VBU @dakake ) ( NP ( NP-GEN ( -NONE- *T*-1 ) ) ( N$ lojedi ) ) ) ( ID hil-data,0.5 ) )
++( ( IP-MAT ( NP-2 ( N Etogo ) ( CP-REL ( WNP-1 ( WPRO ane@ ) ) ( IP-SUB ( NP-TRACE *T*-1 ) ( VB @iwaGadi ) ) ) ) ( NEG aG@ ) ( VBU @dakake ) ( NP ( NP-GEN *T*-2 ) ( N$ lojedi ) ) ) ( ID hil-data,0.5 ) )
+--- expected/hil-data,0.6
++++ actual/hil-data,0.6
+@@ -1 +1 @@
+-( ( IP-MAT ( NP-SBJ ( N Etogo ) ( CP-REL ( WNP-1 ( WPRO ane ) ) ( IP-SUB ( NP-TRACE ( -NONE- *T*-1 ) ) ( VB iwaGadi ) ) ) ) ( CNEG+VBU adakake ) ( NP-PRD ( N$ loojedi ) ) ) ( ID hil-data,0.6 ) )
++( ( IP-MAT ( NP-SBJ ( N Etogo ) ( CP-REL ( WNP-1 ( WPRO ane ) ) ( IP-SUB ( NP-TRACE *T*-1 ) ( VB iwaGadi ) ) ) ) ( CNEG+VBU adakake ) ( NP-PRD ( N$ loojedi ) ) ) ( ID hil-data,0.6 ) )
+--- expected/ped-gramm,0.11
++++ actual/ped-gramm,0.11
+@@ -1 +1 @@
+-( ( IP-MAT ( NP-SBJ ( D ica ) ( NPR Maria ) ( N$ looligi ) ) ( NEG aG@ ) ( NP-PRD ( N$ @lidi ) ) ) ( ID ped-gramm,0.11 ) )
++( ( IP-MAT ( NP-SBJ ( D ica ) ( NPR Maria ) ) ( NP-SBJ-PRD ( N$ looligi ) ) ( NEG aG@ ) ( NP-PRD ( N$ @lidi ) ) ) ( ID ped-gramm,0.11 ) )
+--- expected/ped-gramm,0.26
++++ actual/ped-gramm,0.26
+@@ -1 +1 @@
+-( ( IP-MAT ( NP ( NPR João ) ( N$ liGeladi ) ( CP-REL ( WNP-1 ( WPRO ane ) ) ( IP-SUB ( NP-TRACE ( -NONE- *T*-1 ) ) ( NP ( N napioi ) ) ) ) ) ) ( ID ped-gramm,0.26 ) )
++( ( IP-MAT ( NP-SBJ ( NPR João ) ) ( NP-PRD ( N$ liGeladi ) ( CP-REL ( WNP-1 ( WPRO ane ) ) ( IP-SUB ( NP-TRACE *T*-1 ) ( NP ( N napioi ) ) ) ) ) ) ( ID ped-gramm,0.26 ) )
+--- expected/ped-gramm,0.35
++++ actual/ped-gramm,0.35
+@@ -1 +1 @@
+-( ( IP-MAT ( NP ( N$ iGeladi ) ) ( VBAPL ipegitegi ) ( NP-APL ( N naigi ) ( CP-REL ( WNP-1 ( WPRO ane ) ) ( IP-SUB ( NP-TRACE ( -NONE- *T*-1 ) ) ( NP ( N napioi ) ) ) ) ) ) ( ID ped-gramm,0.35 ) )
++( ( IP-MAT ( NP ( N$ iGeladi ) ) ( VBAPL ipegitegi ) ( NP-APL ( N naigi ) ( CP-REL ( WNP-1 ( WPRO ane ) ) ( IP-SUB ( NP-TRACE *T*-1 ) ( NP ( N napioi ) ) ) ) ) ) ( ID ped-gramm,0.35 ) )
+--- expected/van-data,0.31
++++ actual/van-data,0.31
+@@ -1 +1 @@
+-( ( IP-MAT ( NP-SBJ ( D ica ) ( N$ liwigo ) ( NP ( N niganigawanigi ) ) ) ( NP-PRD ( N$ libinienigi ) ) ) ( ID van-data,0.31 ) )
++( ( IP-MAT ( NP-SBJ ( D ica ) ( N$ liwigo ) ( N niganigawanigi ) ) ( NP-PRD ( N$ libinienigi ) ) ) ( ID van-data,0.31 ) )
+--- expected/van-data,0.38
++++ actual/van-data,0.38
+@@ -1 +1 @@
+-( ( IP-MAT ( NP ( D ani ) ( N wetiGa ) ( CP-REL ( WNP-1 ( WPRO ane ) ) ( IP-SUB ( NP-TRACE ( -NONE- *T*-1 ) ) ( VB iwaGadi ) ) ) ) ( VBAPL eniteloco ) ( NP-APL ( N$ iGonagi ) ) ) ( ID van-data,0.38 ) )
++( ( IP-MAT ( NP ( D ani ) ( N wetiGa ) ( CP-REL ( WNP-1 ( WPRO ane ) ) ( IP-SUB ( NP-TRACE *T*-1 ) ( VB iwaGadi ) ) ) ) ( VBAPL eniteloco ) ( NP-APL ( N$ iGonagi ) ) ) ( ID van-data,0.38 ) )
