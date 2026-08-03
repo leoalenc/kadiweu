@@ -20,6 +20,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import csv
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, Iterator, Sequence
@@ -47,6 +48,16 @@ class Rule:
 
 
 @dataclass(frozen=True)
+class ComparisonResult:
+    sentence_id: str
+    struct_status: str
+    result: str
+    details: str
+    expected_tree: str | None
+    actual_tree: str | None
+
+
+@dataclass(frozen=True)
 class Record:
     comment: str
     tree: str
@@ -60,6 +71,17 @@ class Record:
 RULE_HEADER = re.compile(r"(?m)^(\d+):\s*([^\r\n]+)\s*$")
 ID_RE = re.compile(r"\(ID\s+([^()\s]+)\s*\)")
 ATOM_RE = re.compile(r"[^()\s]+")
+
+STATUS_RE = re.compile(
+    r"(?im)^\s*status\s*=\s*([A-Za-z][A-Za-z0-9_-]*)\s*$"
+)
+
+COINDEXED_LABEL_RE = re.compile(r"^(.+)-([0-9]+)$")
+TRACE_ATOM_RE = re.compile(r"^(\*[A-Za-z]+\*)-([0-9]+)$")
+
+EXACT_MATCH = "EXACT_MATCH"
+TRACE_EQUIVALENT = "TRACE_EQUIVALENT"
+STRUCTURAL_DIFFERENCE = "STRUCTURAL_DIFFERENCE"
 
 
 def parse_rules(path: Path) -> list[Rule]:
@@ -420,43 +442,427 @@ def run_rules(
     return current
 
 
-def normalized_records(path: Path) -> dict[str, str]:
-    normalized: dict[str, str] = {}
+def records_by_id(path: Path) -> dict[str, Record]:
+    """Read a PSD file and index its records by sentence ID."""
+    indexed: dict[str, Record] = {}
 
     for record in read_records(path):
-        if record.sentence_id in normalized:
+        if record.sentence_id in indexed:
             raise RunnerError(
                 f"duplicate ID in {path}: {record.sentence_id}"
             )
-        normalized[record.sentence_id] = " ".join(
-            _sexpr_tokens(record.tree)
+        indexed[record.sentence_id] = record
+
+    return indexed
+
+
+def whitespace_normalized_tree(tree: str) -> str:
+    """Normalize formatting without changing tree notation."""
+    return " ".join(_sexpr_tokens(tree))
+
+
+def record_status(record: Record | None) -> str:
+    """Return struct_status from a record's metadata comment."""
+    if record is None:
+        return "UNKNOWN"
+
+    matches = STATUS_RE.findall(record.comment)
+
+    if not matches:
+        return "UNKNOWN"
+
+    statuses = {match.upper() for match in matches}
+
+    if len(statuses) != 1:
+        raise RunnerError(
+            f"{record.sentence_id} has conflicting status metadata: "
+            + ", ".join(sorted(statuses))
         )
 
-    return normalized
+    return statuses.pop()
 
 
-def compare_psd(actual_path: Path, expected_path: Path, diff_path: Path | None) -> bool:
-    actual = normalized_records(actual_path)
-    expected = normalized_records(expected_path)
-    ok = actual == expected
-    if ok:
-        print(f"PASS: all {len(expected)} trees are structurally identical", file=sys.stderr)
-        return True
-    lines: list[str] = []
+def _canonical_index(
+    original: str,
+    mapping: dict[str, str],
+) -> str:
+    """Alpha-normalize an arbitrary numerical coindex."""
+    if original not in mapping:
+        mapping[original] = str(len(mapping) + 1)
+
+    return mapping[original]
+
+
+def trace_normalized_tree(tree: str) -> str:
+    """Canonicalize trace notation while preserving trace structure.
+
+    The normalization treats these representations as equivalent:
+
+        (NP-TRACE (-NONE- *T*-1))
+        (NP-TRACE *T*-1)
+
+    It also alpha-normalizes consistently renamed coindices. It does not
+    remove trace-bearing nodes or ignore trace attachment.
+    """
+    root = parse_sexpr(tree)
+    coindices: dict[str, str] = {}
+
+    def normalize_atom(atom: str, *, label: bool = False) -> str:
+        pattern = COINDEXED_LABEL_RE if label else TRACE_ATOM_RE
+        match = pattern.fullmatch(atom)
+
+        if not match:
+            return atom
+
+        base, old_index = match.groups()
+        new_index = _canonical_index(old_index, coindices)
+        return f"{base}-{new_index}"
+
+    def normalize(node):
+        if not isinstance(node, list):
+            if isinstance(node, str):
+                return normalize_atom(node)
+            return node
+
+        if not node:
+            return []
+        
+        # A complete PSD record has an unlabeled outer list containing
+        # the syntactic tree and its ID node. Normalize every member of
+        # such a list instead of treating its first member as a label.
+        if not isinstance(node[0], str):
+            return [normalize(child) for child in node]
+
+        head = node[0]
+        normalized_head = (
+            normalize_atom(head, label=True)
+            if isinstance(head, str) and head != "ID"
+            else head
+        )
+
+        # Collapse the CorpusSearch empty-category wrapper while retaining
+        # the trace atom and the category that dominates it.
+        if (
+            len(node) == 2
+            and isinstance(node[1], list)
+            and len(node[1]) == 2
+            and node[1][0] == "-NONE-"
+            and isinstance(node[1][1], str)
+            and TRACE_ATOM_RE.fullmatch(node[1][1])
+        ):
+            return [
+                normalized_head,
+                normalize_atom(node[1][1]),
+            ]
+
+        normalized_children = []
+
+        for child in node[1:]:
+            if isinstance(child, list):
+                normalized_children.append(normalize(child))
+            elif isinstance(child, str) and normalized_head != "ID":
+                normalized_children.append(normalize_atom(child))
+            else:
+                normalized_children.append(child)
+
+        return [normalized_head, *normalized_children]
+
+    def serialize(node) -> str:
+        if isinstance(node, list):
+            return "( " + " ".join(serialize(item) for item in node) + " )"
+        return str(node)
+
+    return serialize(normalize(root))
+
+
+def classify_comparisons(
+    actual_path: Path,
+    expected_path: Path,
+) -> list[ComparisonResult]:
+    """Classify every sentence comparison."""
+    actual = records_by_id(actual_path)
+    expected = records_by_id(expected_path)
+    results: list[ComparisonResult] = []
+
     for sentence_id in sorted(set(actual) | set(expected)):
-        if actual.get(sentence_id) == expected.get(sentence_id):
+        actual_record = actual.get(sentence_id)
+        expected_record = expected.get(sentence_id)
+
+        # The expected tree supplies the reference struct_status. Fall back
+        # to the actual metadata only when the expected record is absent.
+        status = record_status(expected_record or actual_record)
+
+        if expected_record is None:
+            results.append(
+                ComparisonResult(
+                    sentence_id=sentence_id,
+                    struct_status=status,
+                    result=STRUCTURAL_DIFFERENCE,
+                    details="sentence absent from expected PSD",
+                    expected_tree=None,
+                    actual_tree=actual_record.tree,
+                )
+            )
             continue
-        lines.extend(difflib.unified_diff(
-            [expected.get(sentence_id, "<missing>") + "\n"],
-            [actual.get(sentence_id, "<missing>") + "\n"],
-            fromfile=f"expected/{sentence_id}", tofile=f"actual/{sentence_id}",
-        ))
+
+        if actual_record is None:
+            results.append(
+                ComparisonResult(
+                    sentence_id=sentence_id,
+                    struct_status=status,
+                    result=STRUCTURAL_DIFFERENCE,
+                    details="sentence absent from actual PSD",
+                    expected_tree=expected_record.tree,
+                    actual_tree=None,
+                )
+            )
+            continue
+
+        expected_exact = whitespace_normalized_tree(expected_record.tree)
+        actual_exact = whitespace_normalized_tree(actual_record.tree)
+
+        if expected_exact == actual_exact:
+            result = EXACT_MATCH
+            details = "trees are identical after whitespace normalization"
+        elif (
+            trace_normalized_tree(expected_record.tree)
+            == trace_normalized_tree(actual_record.tree)
+        ):
+            result = TRACE_EQUIVALENT
+            details = (
+                "equivalent after trace-notation and coindex "
+                "alpha-normalization"
+            )
+        else:
+            result = STRUCTURAL_DIFFERENCE
+            details = (
+                "validated-reference difference"
+                if status == "DONE"
+                else (
+                    "provisional-reference difference; "
+                    "manual adjudication required"
+                    if status == "REVIEW"
+                    else "tree structures differ"
+                )
+            )
+
+        results.append(
+            ComparisonResult(
+                sentence_id=sentence_id,
+                struct_status=status,
+                result=result,
+                details=details,
+                expected_tree=expected_record.tree,
+                actual_tree=actual_record.tree,
+            )
+        )
+
+    return results
+
+
+def write_comparison_report(
+    path: Path,
+    results: Sequence[ComparisonResult],
+) -> None:
+    """Write one TSV row for every compared sentence."""
+    with path.open("w", encoding="utf-8", newline="") as report:
+        writer = csv.writer(report, delimiter="\t", lineterminator="\n")
+        writer.writerow([
+            "sentence_id",
+            "struct_status",
+            "result",
+            "details",
+        ])
+
+        for item in results:
+            writer.writerow([
+                item.sentence_id,
+                item.struct_status,
+                item.result,
+                item.details,
+            ])
+
+
+def print_comparison_summary(
+    results: Sequence[ComparisonResult],
+) -> None:
+    """Print counts grouped by struct_status in aligned columns."""
+    preferred_statuses = ["DONE", "REVIEW"]
+    other_statuses = sorted(
+        {
+            item.struct_status
+            for item in results
+            if item.struct_status not in preferred_statuses
+        }
+    )
+
+    rows: list[tuple[str, int, int, int, int]] = []
+
+    for status in [*preferred_statuses, *other_statuses, "TOTAL"]:
+        selected = (
+            list(results)
+            if status == "TOTAL"
+            else [
+                item
+                for item in results
+                if item.struct_status == status
+            ]
+        )
+
+        if status != "TOTAL" and not selected:
+            continue
+
+        exact = sum(
+            item.result == EXACT_MATCH
+            for item in selected
+        )
+        trace_equivalent = sum(
+            item.result == TRACE_EQUIVALENT
+            for item in selected
+        )
+        structural_difference = sum(
+            item.result == STRUCTURAL_DIFFERENCE
+            for item in selected
+        )
+
+        rows.append(
+            (
+                status,
+                exact,
+                trace_equivalent,
+                structural_difference,
+                len(selected),
+            )
+        )
+
+    headers = (
+        "struct_status",
+        "exact",
+        "trace_equivalent",
+        "structural_difference",
+        "total",
+    )
+
+    status_width = max(
+        len(headers[0]),
+        *(len(row[0]) for row in rows),
+    )
+    exact_width = max(
+        len(headers[1]),
+        *(len(str(row[1])) for row in rows),
+    )
+    trace_width = max(
+        len(headers[2]),
+        *(len(str(row[2])) for row in rows),
+    )
+    structural_width = max(
+        len(headers[3]),
+        *(len(str(row[3])) for row in rows),
+    )
+    total_width = max(
+        len(headers[4]),
+        *(len(str(row[4])) for row in rows),
+    )
+
+    row_format = (
+        f"{{:<{status_width}}}  "
+        f"{{:>{exact_width}}}  "
+        f"{{:>{trace_width}}}  "
+        f"{{:>{structural_width}}}  "
+        f"{{:>{total_width}}}"
+    )
+
+    print("\nComparison summary:", file=sys.stderr)
+    print(row_format.format(*headers), file=sys.stderr)
+
+    for row in rows:
+        print(row_format.format(*row), file=sys.stderr)
+
+
+def compare_psd(
+    actual_path: Path,
+    expected_path: Path,
+    diff_path: Path | None,
+    report_path: Path | None,
+) -> bool:
+    """Compare PSD files and distinguish trace notation from structure."""
+    results = classify_comparisons(actual_path, expected_path)
+    print_comparison_summary(results)
+
+    if report_path:
+        write_comparison_report(report_path, results)
+        print(
+            f"comparison report written to {report_path}",
+            file=sys.stderr,
+        )
+
+    structural = [
+        item
+        for item in results
+        if item.result == STRUCTURAL_DIFFERENCE
+    ]
+
+    if not structural:
+        exact = sum(
+            item.result == EXACT_MATCH
+            for item in results
+        )
+        trace = sum(
+            item.result == TRACE_EQUIVALENT
+            for item in results
+        )
+        print(
+            f"PASS: {exact} exact matches and "
+            f"{trace} trace-equivalent matches; "
+            "no structural differences",
+            file=sys.stderr,
+        )
+
+        if diff_path:
+            diff_path.write_text("", encoding="utf-8")
+
+        return True
+
+    lines: list[str] = []
+
+    for item in structural:
+        expected_tree = (
+            whitespace_normalized_tree(item.expected_tree)
+            if item.expected_tree is not None
+            else "<missing>"
+        )
+        actual_tree = (
+            whitespace_normalized_tree(item.actual_tree)
+            if item.actual_tree is not None
+            else "<missing>"
+        )
+
+        lines.append(
+            f"# {item.sentence_id}\t"
+            f"status={item.struct_status}\t"
+            f"{item.details}\n"
+        )
+        lines.extend(
+            difflib.unified_diff(
+                [expected_tree + "\n"],
+                [actual_tree + "\n"],
+                fromfile=f"expected/{item.sentence_id}",
+                tofile=f"actual/{item.sentence_id}",
+            )
+        )
+
     diff = "".join(lines)
+
     if diff_path:
         diff_path.write_text(diff, encoding="utf-8")
-        print(f"FAIL: tree differences written to {diff_path}", file=sys.stderr)
+        print(
+            f"FAIL: {len(structural)} structural difference(s) "
+            f"written to {diff_path}",
+            file=sys.stderr,
+        )
     else:
         sys.stderr.write(diff)
+
     return False
 
 
@@ -471,7 +877,19 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--keep-intermediate", action="store_true")
     parser.add_argument("--log", type=Path, help="write TSV execution manifest")
     parser.add_argument("--expected", type=Path, help="compare final trees with this gold PSD")
-    parser.add_argument("--diff", type=Path, help="write structural comparison diff here")
+    parser.add_argument(
+        "--diff",
+        type=Path,
+        help="write genuine structural differences here",
+    )
+    parser.add_argument(
+        "--comparison-report",
+        type=Path,
+        help=(
+        "write per-sentence TSV classification as exact, "
+        "trace-equivalent, or structurally different"
+        ),
+    )
     parser.add_argument("--extract-from", type=Path, nargs="+", metavar="PSD", help="extract records from PSD files instead of running rules")
     parser.add_argument("--sentence-id", action="append", default=[], help="ID to extract; repeat in desired order")
     parser.add_argument("--gold-output", type=Path, help="write extracted gold PSD")
@@ -510,7 +928,12 @@ def main(argv: Sequence[str] | None = None) -> int:
             sys.stdout.write(final_text)
         comparison_ok = True
         if args.expected:
-            comparison_ok = compare_psd(final_path, args.expected, args.diff)
+            comparison_ok = compare_psd(
+            final_path,
+            args.expected,
+            args.diff,
+            args.comparison_report,
+        )
         if temporary is not None:
             temporary.cleanup()
         return 0 if comparison_ok else 1
