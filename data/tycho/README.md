@@ -30,9 +30,9 @@ under `data/`:
 
 | Repository document identifier | Tycho Brahe document title | Document UID | Downloaded JSON | Downloaded PSD | Archived JSON | Archived PSD | Canonical JSON | Canonical PSD |
 |---|---|---|---|---|---|---|---|---|
-| `ped-gramm` | Dados para a gramática do sintagma nominal | `28eeb8a0-d923-4d75-aebe-599aadddfbbb` | `6a6a30ba9b1ca800514c716e.json` | `6a6a30c29b1ca800514c716f.psd` | `json/6a6a30ba9b1ca800514c716e.json` | `psd/6a6a30c29b1ca800514c716f.psd` | `../ped-gramm.json` | `../ped-gramm.psd` |
-| `hil-data` | dados do Hilário abril de 2026 | `ffef8450-e302-4882-8306-e5998d31f584` | `6a6a309d9b1ca800514c716c.json` | `6a6a30a59b1ca800514c716d.psd` | `json/6a6a309d9b1ca800514c716c.json` | `psd/6a6a30a59b1ca800514c716d.psd` | `../hil-data.json` | `../hil-data.psd` |
-| `van-data` | Vanda dados | `9d0f60a9-8c32-44c0-ac68-0b5d5b993db8` | `6a6a30d89b1ca800514c7170.json` | `6a6a30e09b1ca800514c7171.psd` | `json/6a6a30d89b1ca800514c7170.json` | `psd/6a6a30e09b1ca800514c7171.psd` | `../van-data.json` | `../van-data.psd` |
+| `ped-gramm` | Dados para a gramática do sintagma nominal | `28eeb8a0-d923-4d75-aebe-599aadddfbbb` | `6a7156415ed58a65b6249791.json` | `6a7156495ed58a65b6249792.psd` | `json/6a7156415ed58a65b6249791.json` | `psd/6a7156495ed58a65b6249792.psd` | `../ped-gramm.json` | `../ped-gramm.psd` |
+| `hil-data` | dados do Hilário abril de 2026 | `ffef8450-e302-4882-8306-e5998d31f584` | `6a7156c05ed58a65b6249793.json` | `6a7156c85ed58a65b6249794.psd` | `json/6a7156c05ed58a65b6249793.json` | `psd/6a7156c85ed58a65b6249794.psd` | `../hil-data.json` | `../hil-data.psd` |
+| `van-data` | Vanda dados | `9d0f60a9-8c32-44c0-ac68-0b5d5b993db8` | `6a7144b55ed58a65b624978f.json` | `6a7144bd5ed58a65b6249790.psd` | `json/6a7144b55ed58a65b624978f.json` | `psd/6a7144bd5ed58a65b6249790.psd` | `../van-data.json` | `../van-data.psd` |
 
 ## Pairing JSON and PSD exports
 
@@ -56,4 +56,4 @@ the canonical working copies:
 - canonical JSON: `ǥ` → `G`;
 - canonical PSD: `G` → `ǥ`.
 
-Generated: 2026-07-29T14:22:11-03:00
+Generated: 2026-08-04T11:22:30-03:00

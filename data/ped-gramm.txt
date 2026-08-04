@@ -813,7 +813,7 @@ Sentence 18
 path: $.pages[0].sentences[17]
 uid: 582429f2-67d5-4077-b209-6deb7b5df54f
 text: ica lideGegi loligi idei liGeladi
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -823,7 +823,8 @@ container_meta:
 translations:
   pt-br: a deliciosa comida está na casa dela/dele
 comments:
-  <none>
+  [1] 2026-08-04 02:26:57 — Leonel Figueiredo de Alencar — Resolução de dois nós `N$` simétricos
+      Mais um exemplo resolvido pela regra adicionada em 30/07/26, que projeta um NP a partir de um segundo nó irmão `N$`. Sobre "delícia" como núcleo sintático em vez de "comida", talvez seja interessante comparar com Queixalós (2016, p. 11). 
 
 proto-conllu:
   <none>
@@ -831,6 +832,7 @@ proto-conllu:
 chunks:
   span=1-5 type=IP-MAT level=0
   span=1-3 type=NP level=1
+  span=3-3 type=NP level=2
   span=5-5 type=NP level=1
 
 tokens:
@@ -844,10 +846,10 @@ tokens:
         [2] v='idi'        t='n'        gloss-br=None fn=None idx=None
         [3] v='Ge'         t='Der'      gloss-br='nominalizador' fn=None idx=None
         [4] v='gi'         t='Gnr'      gloss-br='M' fn=None idx=None
-  p=3   v='loligi'           t='N$'         l=1   gloss-br='sua comida'
+  p=3   v='loligi'           t='N$'         l=2   gloss-br='sua comida'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
-        [2] v='oligi'      t='n'        gloss-br='comida' fn=None idx=None
+        [2] v='oligi'      t='n'        gloss-br='comida[M]' fn=None idx=None
   p=4   v='idei'             t='VB'         l=0   gloss-br='fica'
       splits:
         [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
@@ -1153,7 +1155,7 @@ tokens:
   p=4   v='ane@'             t='WPRO'       l=1   gloss-br=None
       split: {"v": "anenapioi", "t": "WPRO+ADJ", "idx": 0}
       splits:
-        [1] v='ane'        t='Wpro'     gloss-br=None fn=True idx=None
+        [1] v='ane'        t='Wpro'     gloss-br=None fn=None idx=None
         [2] v='napioi'     t='Adj'      gloss-br=None fn=None idx=None
   p=5   v='@napioi'          t='ADJ'        l=0   gloss-br=None
       split: {"idx": 1}
@@ -1229,7 +1231,9 @@ container_meta:
 translations:
   pt-br: a casa do João, que é suja
 comments:
-  [1] 2026-07-21 14:00:41 — Leonel Figueiredo de Alencar — NPR possuidor projetando NP?
+  [1] 2026-07-31 18:16:03 — Leonel Figueiredo de Alencar — NPR possuidor
+      Parece que deveríamos ter `NP` dominando imediatamente o `NPR` possuidor, seguindo o padrão geral para estruturas com possuidor (complemento) e *possessum* (núcleo).
+  [2] 2026-07-21 14:00:41 — Leonel Figueiredo de Alencar — NPR possuidor projetando NP?
       NPR possuidor projetando NP? Caso negativo, marcar análise como finalizada.
 
 proto-conllu:
@@ -1276,13 +1280,15 @@ container_meta:
 translations:
   pt-br: A minha casa fica naquela rua suja dela
 comments:
-  [1] 2026-07-21 14:03:50 — Leonel Figueiredo de Alencar — PRO$ possuidor projeta NP?
+  [1] 2026-08-04 02:37:57 — Leonel Figueiredo de Alencar — "naGajo" como D?
+      Talvez *naGajo* devesse ser um D dominado imediatamente por um nó NP, configurando a estrutura recorrente de *possessum* (núcleo) e possuidor (complemento). Por outro lado, estabeleceu-se que apenas elementos de primeira e segunda pessoa constituem pronomes com etiqueta `PRO`.
+  [2] 2026-07-21 14:03:50 — Leonel Figueiredo de Alencar — PRO$ possuidor projeta NP?
       Ver comentário sobre a sentença anterior.
-  [2] 2026-05-22 19:39:38 — Filomena Sandalo
+  [3] 2026-05-22 19:39:38 — Filomena Sandalo
       iGeeladi para mulher, não a...
-  [3] 2026-03-31 15:17:48 — raiz lexical da forma "iGeladi" 
+  [4] 2026-03-31 15:17:48 — raiz lexical da forma "iGeladi" 
       O lema ou raiz lexical da forma "iGeladi" é mesmo "geladi"? Noutras sentenças, temos "Geladi". O dicionário de Griffiths, apresenta os lemas -iGeladi (fala de homem) e -aGeeladi (fala de mulher).
-  [4] 2026-03-31 15:04:43 — Descompasso entre tradução e versão
+  [5] 2026-03-31 15:04:43 — Descompasso entre tradução e versão
       Parece que a ideia de "suja" não foi traduzida.
 
 proto-conllu:
@@ -1807,7 +1813,7 @@ Sentence 38
 path: $.pages[0].sentences[37]
 uid: 46bbf9a8-c650-4e4b-a44f-78bfe6c5d979
 text: ijo Gatodi etijo ida .
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -1839,7 +1845,7 @@ tokens:
         [1] v='et'         t='v'        gloss-br='está' fn=None idx=None
         [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
         [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
-  p=4   v='ida'              t='PRO'        l=1   gloss-br='nele'
+  p=4   v='ida'              t='D'          l=1   gloss-br='(n)ele'
       splits:
         [1] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
         [2] v='da'         t='Ncl'      gloss-br='em_pé' fn=None idx=None
@@ -1914,7 +1920,8 @@ container_meta:
 translations:
   pt-br: Minha casa é no rio.
 comments:
-  <none>
+  [1] 2026-08-03 19:08:27 — Leonel Figueiredo de Alencar — NP-PRD não identificado
+      O parser não reconheceu a estrutura sentencial bipartite, com o último N projetando NP-PRD.
 
 proto-conllu:
   <none>
@@ -1925,7 +1932,7 @@ chunks:
   span=1-1 type=NP level=2
 
 tokens:
-  p=1   v='iGeladi'          t='N$'         l=2   gloss-br=None
+  p=1   v='iGeladi'          t='N$'         l=2   gloss-br='minha casa'
       splits:
         [1] v='i'          t='Gen'      gloss-br='1' fn=None idx=None
         [2] v='Geladi'     t='n'        gloss-br='casa' fn=None idx=None
@@ -2001,7 +2008,8 @@ container_meta:
 translations:
   pt-br: A cidade da casa dela é perto do rio.
 comments:
-  <none>
+  [1] 2026-08-04 02:40:55 — Leonel Figueiredo de Alencar — Possuidor `N$` sem projetar `NP`
+      O possuidor "liGeladi" deveria estar envolvido num `NP`.
 
 proto-conllu:
   <none>
@@ -2036,7 +2044,7 @@ Sentence 43
 path: $.pages[0].sentences[42]
 uid: 19401990-aa1d-4cf5-bea1-122254c6b77a
 text: lotaGa GanaginaGa libinienaGa .
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -2055,6 +2063,7 @@ proto-conllu:
 chunks:
   span=1-4 type=IP-MAT level=0
   span=1-2 type=NP-SBJ level=1
+  span=2-2 type=NP level=2
   span=3-3 type=NP-PRD level=1
 
 tokens:
@@ -2062,7 +2071,7 @@ tokens:
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='otaGa'      t='n'        gloss-br=None fn=None idx=None
-  p=2   v='GanaginaGa'       t='N$'         l=1   gloss-br=None
+  p=2   v='GanaginaGa'       t='N$'         l=2   gloss-br=None
       splits:
         [1] v='Gad'        t='Gen'      gloss-br='2' fn=None idx=None
         [2] v='n'          t='Ant'      gloss-br=None fn=None idx=None
@@ -2235,7 +2244,9 @@ container_meta:
 translations:
   pt-br: A casa dele/dela é perto da cidade da lagoa.
 comments:
-  [1] 2026-04-15 17:45:28 — Leonel Figueiredo de Alencar — discrepância entre estímulo e elicitação
+  [1] 2026-08-04 02:58:55 — Leonel Figueiredo de Alencar — Concordância do aplicativo
+      Comparar com sentenças análogas em "Vanda dados".
+  [2] 2026-04-15 17:45:28 — Leonel Figueiredo de Alencar — discrepância entre estímulo e elicitação
       discrepância entre estímulo e elicitação: a casa dela é perto do rio da cidade
 
 
@@ -2246,6 +2257,7 @@ chunks:
   span=1-5 type=IP-MAT level=0
   span=1-1 type=NP level=1
   span=3-4 type=NP-APL level=1
+  span=4-4 type=NP level=2
 
 tokens:
   p=1   v='liGeladi'         t='N$'         l=1   gloss-br='casa dele/dela'
@@ -2257,11 +2269,11 @@ tokens:
         [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
         [2] v='pegi'       t='v'        gloss-br='aproximar' fn=None idx=None
         [3] v='tece'       t='Apl'      gloss-br='3F' fn=None idx=None
-  p=3   v='niweiigi'         t='N'          l=1   gloss-br='lagoa'
+  p=3   v='niweiigi'         t='N$'         l=1   gloss-br='lagoa'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
-        [2] v='weiigi'     t='n'        gloss-br='lagoa' fn=None idx=None
-  p=4   v='nigotaGa'         t='N$'         l=1   gloss-br='cidade'
+        [2] v='weiigi'     t='n'        gloss-br='lagoa[M]' fn=None idx=None
+  p=4   v='nigotaGa'         t='N$'         l=2   gloss-br='cidade'
       splits:
         [1] v=None         t=None       gloss-br=None fn=None idx=None
   p=5   v='.'                t='PUNC'       l=0   gloss-br=None
@@ -2275,7 +2287,7 @@ Sentence 48
 path: $.pages[0].sentences[47]
 uid: 8b1a9983-4dfd-49e8-9285-92c56c84b652
 text: liGeladi ipegitegi niweiigi nigotaGa .
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -2295,8 +2307,8 @@ proto-conllu:
 chunks:
   span=1-5 type=IP-MAT level=0
   span=1-1 type=NP level=1
-  span=3-3 type=NP-APL level=1
-  span=4-4 type=NP level=1
+  span=3-4 type=NP-APL level=1
+  span=4-4 type=NP level=2
 
 tokens:
   p=1   v='liGeladi'         t='N$'         l=1   gloss-br='casa dele/dela'
@@ -2308,11 +2320,11 @@ tokens:
         [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
         [2] v='pegi'       t='v'        gloss-br='ficar_perto' fn=None idx=None
         [3] v='tegi'       t='Apl'      gloss-br='3M' fn=None idx=None
-  p=3   v='niweiigi'         t='N'          l=1   gloss-br='lagoa'
+  p=3   v='niweiigi'         t='N$'         l=1   gloss-br='lagoa'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
-        [2] v='weiigi'     t='n'        gloss-br='lagoa' fn=None idx=None
-  p=4   v='nigotaGa'         t='N'          l=1   gloss-br='cidade'
+        [2] v='weiigi'     t='n'        gloss-br='lagoa[M]' fn=None idx=None
+  p=4   v='nigotaGa'         t='N'          l=2   gloss-br='cidade'
       splits:
         [1] v=None         t=None       gloss-br=None fn=None idx=None
   p=5   v='.'                t='PUNC'       l=0   gloss-br=None
@@ -2326,7 +2338,7 @@ Sentence 49
 path: $.pages[0].sentences[48]
 uid: eeb42af3-fe5a-4b7d-97ea-b381ab589860
 text: Niwatece iwaGadi codaa adakake loojedi .
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -2336,9 +2348,11 @@ container_meta:
 translations:
   pt-br: A canoa é pesada e seu preço é barato
 comments:
-  [1] 2026-07-03 12:17:12 — Leonel Figueiredo de Alencar — Extração de possuidor de dentro de oração coordenada?
+  [1] 2026-08-04 02:52:24 — Leonel Figueiredo de Alencar — Sem subida de possuidor
+      São duas orações coordenadas, cada uma com o seu sujeito. Alterei o status para FINALIZADO.
+  [2] 2026-07-03 12:17:12 — Leonel Figueiredo de Alencar — Extração de possuidor de dentro de oração coordenada?
       Verificar se, realmente, ocorre subida de possuidor de Y para X numa configuração X codaa Y, onde X e Y são orações finitas. Parece-me que não. Caso essa árvore não seja considerada correta, compreendo que talvez seja mais conveniente, no momento, deixar para o futuro a alteração da regra de subida do possuidor para restringir o escopo do movimento desse constituinte.
-  [2] 2026-07-03 12:06:41 — Leonel Figueiredo de Alencar — Origem da sentença
+  [3] 2026-07-03 12:06:41 — Leonel Figueiredo de Alencar — Origem da sentença
       Consultora Vanda via WhatsApp em 15/04/2026: Niwatece iwagadi codaa adakake lojedi. 
 
 proto-conllu:
@@ -2694,7 +2708,7 @@ Sentence 57
 path: $.pages[0].sentences[56]
 uid: 2c0248b3-8f68-46e9-b41c-9f7807572c87
 text: etogo aneiwaGadi adakake lojedi .
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -2704,22 +2718,25 @@ container_meta:
 translations:
   pt-br: A pesada canoa está barata.
 comments:
-  [1] 2026-07-02 15:16:15 — Leonel Figueiredo de Alencar — Exemplo de possível "regressão"
+  [1] 2026-08-04 02:48:19 — Leonel Figueiredo de Alencar — NEG+VB -> NEG+VBU
+      Fiz agora a correção e reapliquei o parser, obtendo a árvore esperada, mudando o status para FINALIZADO.
+  [2] 2026-07-02 15:16:15 — Leonel Figueiredo de Alencar — Exemplo de possível "regressão"
       O split parece que deixou de ser feito por conta da mudança de VB para VBU. este caso aparentemente constitui exemplo dfo que se chama "regressão" em engenharia de software (algo deixa de ser feito corretamente após introdução de updates no software), um fenômeno corriqueiro na vida do programador. Deixo registrado. Vou corrigir a análise depois.
-  [2] 2026-07-02 15:11:08 — Leonel Figueiredo de Alencar — Possível problema na árvore
+  [3] 2026-07-02 15:11:08 — Leonel Figueiredo de Alencar — Possível problema na árvore
       Marquei status REVISAR. Esta árvore não se conforma à análise mais recente envolvendo subida do possuidor. Tarefa talvez mais para longo prazo dada a possível complexidade da formulação das respectivas regras no parser.
 
 proto-conllu:
   <none>
 
 chunks:
-  span=1-8 type=IP-MAT level=0
+  span=1-9 type=IP-MAT level=0
   span=1-4 type=NP level=1
   span=2-4 type=CP-REL level=2
   span=2-2 type=WNP level=3
   span=3-4 type=IP-SUB level=3
-  span=7-7 type=NP level=1
+  span=7-8 type=NP level=1
   span=3-3 type=NP-TRACE level=4
+  span=7-7 type=NP-GEN level=2
 
 tokens:
   p=1   v='etogo'            t='N'          l=1   gloss-br='navio'
@@ -2733,21 +2750,21 @@ tokens:
   p=4   v='@iwaGadi'         t='VB'         l=3   gloss-br=None
       split: {"idx": 1}
   p=5   v='aG@'              t='NEG'        l=0   gloss-br='não duro'
-      split: {"v": "adakake", "t": "NEG+VB", "idx": 0}
+      split: {"v": "adakake", "t": "NEG+VBU", "idx": 0}
       splits:
-        [1] v='aG'         t=None       gloss-br=None fn=True idx=None
-        [2] v='d'          t='Inv'      gloss-br=None fn=None idx=None
-        [3] v='akake'      t='v'        gloss-br=None fn=None idx=None
-  p=6   v='@dakake'          t='VB'         l=0   gloss-br=None
+        [1] v='aG'         t='Neg'      gloss-br=None fn=None idx=None
+        [2] v='dakake'     t=None       gloss-br=None fn=None idx=None
+  p=6   v='@dakake'          t='VBU'        l=0   gloss-br=None
       split: {"idx": 1}
-  p=7   v='lojedi'           t='N$'         l=1   gloss-br='vingança/preço'
+  p=7   v='*T*'              t=None         l=2   gloss-br=None
+  p=8   v='lojedi'           t='N$'         l=1   gloss-br='vingança/preço'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='ojedi'      t='n'        gloss-br=None fn=None idx=None
-  p=8   v='.'                t='PUNC'       l=0   gloss-br=None
+  p=9   v='.'                t='PUNC'       l=0   gloss-br=None
 
 conllu/token count check:
-  tokens=8  proto-conllu=0
+  tokens=9  proto-conllu=0
 
 ================================================================================
 Sentence 58

@@ -210,7 +210,7 @@ Sentence 6
 path: $.pages[0].sentences[5]
 uid: 3e518fdb-d852-41e5-87a4-f8778597c2a1
 text: lotaGa GanaaginaGa libinienaGa
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -220,7 +220,8 @@ container_meta:
 translations:
   pt-br: a palavra de seu irmão é bonita
 comments:
-  <none>
+  [1] 2026-08-03 19:11:11 — Leonel Figueiredo de Alencar — Correção dos dois nós N$ simétricos
+      Problema corrigido com a regra incluída no parser em 320/07/26.
 
 proto-conllu:
   <none>
@@ -228,6 +229,7 @@ proto-conllu:
 chunks:
   span=1-3 type=IP-MAT level=0
   span=1-2 type=NP-SBJ level=1
+  span=2-2 type=NP level=2
   span=3-3 type=NP-PRD level=1
 
 tokens:
@@ -235,7 +237,7 @@ tokens:
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='otaGa'      t='n'        gloss-br='palavra' fn=None idx=None
-  p=2   v='GanaaginaGa'      t='N$'         l=1   gloss-br='teu irmão'
+  p=2   v='GanaaginaGa'      t='N$'         l=2   gloss-br='teu irmão'
       splits:
         [1] v='Ga'         t='Gen'      gloss-br='2' fn=None idx=None
         [2] v='n'          t='Ant'      gloss-br=None fn=None idx=None
@@ -255,7 +257,7 @@ Sentence 7
 path: $.pages[0].sentences[6]
 uid: ee540050-e6fa-424e-9252-fd0b9312769d
 text: lotaGa Gadodawa libinienaGa
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -265,7 +267,9 @@ container_meta:
 translations:
   pt-br: a palavra do seu marido é bonita
 comments:
-  [1] 2026-07-28 01:31:43 — Leonel Figueiredo de Alencar — Mudança de status
+  [1] 2026-08-03 19:12:53 — Leonel Figueiredo de Alencar — Configuração N$ N$ corrigida
+      Ver comentário de hoje sobre a sentença anterior.
+  [2] 2026-07-28 01:31:43 — Leonel Figueiredo de Alencar — Mudança de status
       Inadvertidamente, tinha classificado esta sentença como FINALIZADA. No entanto, apresenta a questão de dois nós N$ irmãos simétricos, como em diversas outras sentenças com status REVISAR.
 
 proto-conllu:
@@ -274,6 +278,7 @@ proto-conllu:
 chunks:
   span=1-3 type=IP-MAT level=0
   span=1-2 type=NP-SBJ level=1
+  span=2-2 type=NP level=2
   span=3-3 type=NP-PRD level=1
 
 tokens:
@@ -281,7 +286,7 @@ tokens:
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='otaGa'      t='n'        gloss-br='palavra' fn=None idx=None
-  p=2   v='Gadodawa'         t='N$'         l=1   gloss-br='seu marido'
+  p=2   v='Gadodawa'         t='N$'         l=2   gloss-br='seu marido'
       splits:
         [1] v='Gad'        t='Gen'      gloss-br='2' fn=None idx=None
         [2] v='odawa'      t='n'        gloss-br='marido|esposa' fn=None idx=None
@@ -403,6 +408,7 @@ proto-conllu:
 chunks:
   span=1-5 type=IP-MAT level=0
   span=1-3 type=NP level=1
+  span=3-3 type=NP level=2
   span=5-5 type=NP level=1
 
 tokens:
@@ -415,7 +421,7 @@ tokens:
         [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
         [2] v='iwaaGadi'   t='v'        gloss-br=None fn=None idx=None
         [3] v='tena'       t='Der'      gloss-br=None fn=None idx=None
-  p=3   v='lodejedi'         t='N$'         l=1   gloss-br='seu preço'
+  p=3   v='lodejedi'         t='N$'         l=2   gloss-br='seu preço'
   p=4   v='etidi'            t='VB'         l=0   gloss-br='está(horizontal) em'
   p=5   v='weiigi'           t='N'          l=1   gloss-br='lagoa'
 
@@ -1457,7 +1463,7 @@ Sentence 30
 ================================================================================
 path: $.pages[0].sentences[29]
 uid: 0c7e64fb-f070-4faa-a12a-c110cdf4bf16
-text: nGijo lodajo ajo lodowa aGica digoida liGeladi
+text: niGijo lodaajo ajo lodowa aGica digoida liGeladi
 status: REVIEW
 struct_status: None
 visible: None
@@ -1468,7 +1474,13 @@ container_meta:
 translations:
   pt-br: esta faca da esposa dele não está na casa
 comments:
-  [1] 2026-06-11 13:55:14 — Filomena Sandalo
+  [1] 2026-08-04 01:17:01 — Leonel Figueiredo de Alencar — Inversão possuidor - possessum na árvore?
+      Na árvore atual, o núcleo é "cônjuge" (ou melhor, "esposa", como podemos inferir do determinante feminino), que governa o NP complemento nucleado por "faca". Aparentemente, deveria ser o inverso. 
+  [2] 2026-08-04 01:12:38 — Leonel Figueiredo de Alencar — "lodajo" -> "lodaajo"
+      Normalizei a grafia seguindo Griffiths (2002).
+  [3] 2026-08-04 01:11:31 — Leonel Figueiredo de Alencar — Harmonização vocálica?
+      Griffiths (2002, p. 111) consigna apenas **_lodawa_**, de que parece derivar a forma *lodowa*, utilizada pela consultora, por harmonização vocálica.
+  [4] 2026-06-11 13:55:14 — Filomena Sandalo
       1. kadiwéu tem muitas estruturas com dois Ds em sequida. Analisamos o primeiro D como Q.
 2. O sintagma do sujeito não está bem formado. 
 
@@ -1482,11 +1494,15 @@ chunks:
   span=6-8 type=NP-PRD level=1
 
 tokens:
-  p=1   v='nGijo'            t='D'          l=2   gloss-br=None
-  p=2   v='lodajo'           t='N$'         l=2   gloss-br='faca del(e|a)'
+  p=1   v='niGijo'           t='D'          l=2   gloss-br='este'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=2   v='lodaajo'          t='N$'         l=2   gloss-br='faca del(e|a)'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
-        [2] v='odajo'      t='n'        gloss-br=None fn=None idx=None
+        [2] v='odajo'      t='n'        gloss-br='faca[M]' fn=None idx=None
   p=3   v='ajo'              t='D'          l=1   gloss-br='a'
       splits:
         [1] v='a'          t='Gnr'      gloss-br='Fem' fn=None idx=None
@@ -2102,6 +2118,10 @@ tokens:
         [3] v='nigi'       t='Dim'      gloss-br='masc' fn=None idx=None
   p=4   v='ijowa'            t='D'          l=1   gloss-br='o'
   p=5   v='nigetedi'         t='N$'         l=1   gloss-br='ovos'
+      splits:
+        [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
+        [2] v='getegi'     t='n'        gloss-br='ovo[M]' fn=None idx=None
+        [3] v='di'         t='Plu'      gloss-br=None fn=None idx=None
 
 conllu/token count check:
   tokens=5  proto-conllu=0
@@ -2245,8 +2265,8 @@ proto-conllu:
 
 chunks:
   span=1-5 type=IP-MAT level=0
-  span=1-3 type=NP-SBJ level=1
-  span=4-4 type=NP-PRD level=1
+  span=1-4 type=NP level=1
+  span=4-4 type=NP level=2
 
 tokens:
   p=1   v='liwigo'           t='N$'         l=1   gloss-br='espírito|fotografia del(e|a)'
@@ -2259,7 +2279,7 @@ tokens:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='getegi'     t='n'        gloss-br='ovo' fn=None idx=None
         [3] v='tedi'       t='Plu'      gloss-br='PL' fn=None idx=None
-  p=4   v='libinienigi'      t='N$'         l=1   gloss-br='beleza'
+  p=4   v='libinienigi'      t='N$'         l=2   gloss-br='beleza'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='binie'      t='n'        gloss-br='beleza' fn=None idx=None
@@ -2731,24 +2751,20 @@ proto-conllu:
   <none>
 
 chunks:
-  span=1-4 type=CP-D level=0
-  span=2-2 type=NP level=1
-  span=4-4 type=IP-SUB level=1
+  span=1-3 type=CP-D level=0
+  span=3-3 type=IP-SUB level=1
 
 tokens:
-  p=1   v='aG@'              t='NEG'        l=0   gloss-br='não ele'
-      split: {"v": "aGica", "t": "NEG+D", "idx": 0}
+  p=1   v='aGica'            t='NEG+D'      l=0   gloss-br='não ele'
       splits:
         [1] v='aG'         t='Neg'      gloss-br=None fn=True idx=None
         [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
         [3] v='ca'         t='Ncl'      gloss-br='ausente' fn=None idx=None
-  p=2   v='@ica'             t='D'          l=1   gloss-br=None
-      split: {"idx": 1}
-  p=3   v='daGa'             t='C'          l=0   gloss-br='irrealis'
-  p=4   v='jipegitege'       t='VBAPL'      l=1   gloss-br=None
+  p=2   v='daGa'             t='C'          l=0   gloss-br='irrealis'
+  p=3   v='jipegitege'       t='VBAPL'      l=1   gloss-br=None
 
 conllu/token count check:
-  tokens=4  proto-conllu=0
+  tokens=3  proto-conllu=0
 
 ================================================================================
 Sentence 57
@@ -3461,9 +3477,11 @@ container_meta:
 translations:
   pt-br: os filhos da mulher estão com ele
 comments:
-  [1] 2026-07-02 03:32:02 — Leonel Figueiredo de Alencar — Split de metaGa?
+  [1] 2026-08-04 00:50:51 — Leonel Figueiredo de Alencar — "metaGa" como C?
+      Estrutura difícil. No momento, a árvore aparentemente carece de diversas informações que constam de outras árvores com os mesmos elementos *me* e *taGa* envolvidos, como `APL` (aplicativo), `IP-SUB` e `CP-me`.
+  [2] 2026-07-02 03:32:02 — Leonel Figueiredo de Alencar — Split de metaGa?
       Noutros exemplos, o "me" é  separado. Seria o caso de fazer isso aqui também? Caso contrário, marcamos como análise finalizada?
-  [2] 2026-05-21 16:23:13 — Filomena Sandalo
+  [3] 2026-05-21 16:23:13 — Filomena Sandalo
       CAPL não existe no Parser, ocorre porque o idi Ncl com funçnao de pronome foi extraído ed o verbo é cpopular zero.
 
 proto-conllu:
@@ -3515,7 +3533,11 @@ container_meta:
 translations:
   pt-br: a casa dela é perto do rio da cidade
 comments:
-  [1] 2026-06-04 13:43:30 — Leonel Figueiredo de Alencar — sufixo de singulativo "Ga"
+  [1] 2026-08-04 01:29:50 — Leonel Figueiredo de Alencar — Concordância do aplicativo
+      Segundo parece, o verbo com aplicativo concorda em gênero com *nigotaGa* ('cidade'), palavra feminina. No entanto, o núcleo do NP-APL é a palavra masculina "niweiigi". Trata-se de aparente estrutura com possuidor pré-nominal, não abrangida pelo atual conjunto de regras. Seria um caso de ambiguidade estrutural de difícil modelação num parser determinístico. Possível solução prática: corrigir esta sentença manualmente, deixar a regra atual como default. Comparar com sentença análoga com aplicativo masculino.
+  [2] 2026-08-04 01:25:19 — Leonel Figueiredo de Alencar — Interpretação de "n(i)" em "niweiigi"
+      Griffiths (2002, p. 144) traduz *niweiigi* como "lagoa de ...". Consigna também o lema **_weiigi_**. Ver comentário sobre sentença análoga neste conjunto de dados (exemplo anterior ou seguinte).
+  [3] 2026-06-04 13:43:30 — Leonel Figueiredo de Alencar — sufixo de singulativo "Ga"
       Incluí a etiqueta Sgv para o sufixo de singulativo "Ga" na análise de "nigotaGa", conforme Sena (2025, p. 94).
 
 proto-conllu:
@@ -3525,6 +3547,7 @@ chunks:
   span=1-4 type=IP-MAT level=0
   span=1-1 type=NP level=1
   span=3-4 type=NP-APL level=1
+  span=4-4 type=NP level=2
 
 tokens:
   p=1   v='ligeladi'         t='N$'         l=1   gloss-br='casa del(e|a)'
@@ -3539,11 +3562,11 @@ tokens:
   p=3   v='niweiigi'         t='N$'         l=1   gloss-br='lagoa'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
-        [2] v='weiigi'     t='n'        gloss-br='lagoa' fn=None idx=None
-  p=4   v='nigotaGa'         t='N$'         l=1   gloss-br='cidade'
+        [2] v='weiigi'     t='n'        gloss-br='lagoa[M]' fn=None idx=None
+  p=4   v='nigotaGa'         t='N$'         l=2   gloss-br='cidade'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
-        [2] v='gota'       t='n'        gloss-br='cidade' fn=None idx=None
+        [2] v='gota'       t='n'        gloss-br='cidade[F]' fn=None idx=None
         [3] v='Ga'         t='Sgv'      gloss-br='SG' fn=None idx=None
 
 conllu/token count check:
@@ -3555,7 +3578,7 @@ Sentence 74
 path: $.pages[0].sentences[73]
 uid: ebff5ffa-8a9d-4f8b-9960-38f70b344c19
 text: ligeladi ipegitegi niweiigi nigotaGa
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -3565,7 +3588,10 @@ container_meta:
 translations:
   pt-br: a casa dele é perto do rio da cidade
 comments:
-  <none>
+  [1] 2026-08-04 01:39:08 — Leonel Figueiredo de Alencar — "niweiigi" como `N$`
+      Altero o status para FINALIZADO. Ver comentário sobre *niweiigi* na sentença anterior.
+  [2] 2026-08-04 01:01:23 — Leonel Figueiredo de Alencar — Nome com prefixo antipassivo como `N$`?
+      Neste exemplo, aparentemente, o rio está "possuído" pela cidade, numa relação de parte e todo. A árvore atualizada após regra de 30/07/26 expressa isso. A única dúvida é se "niweiigi" é mesmo N$. Por isso, mantenho o status REVISAR.
 
 proto-conllu:
   <none>
@@ -3574,6 +3600,7 @@ chunks:
   span=1-4 type=IP-MAT level=0
   span=1-1 type=NP level=1
   span=3-4 type=NP-APL level=1
+  span=4-4 type=NP level=2
 
 tokens:
   p=1   v='ligeladi'         t='N$'         l=1   gloss-br='casa del(e|a)'
@@ -3589,7 +3616,7 @@ tokens:
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='weiigi'     t='n'        gloss-br='lagoa' fn=None idx=None
-  p=4   v='nigotaGa'         t='N$'         l=1   gloss-br='cidade'
+  p=4   v='nigotaGa'         t='N$'         l=2   gloss-br='cidade'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='gota'       t='n'        gloss-br='cidade' fn=None idx=None
@@ -3604,7 +3631,7 @@ Sentence 75
 path: $.pages[0].sentences[74]
 uid: 81048a6f-e084-4b0a-965a-f41fb5c53ff7
 text: nigotaGa liGeladi ipegitegi weiigi
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -3614,7 +3641,8 @@ container_meta:
 translations:
   pt-br: a cidade da casa dela é perto do rio
 comments:
-  <none>
+  [1] 2026-08-04 00:55:39 — Leonel Figueiredo de Alencar — Projeção `N$ -> NP`
+      Mais um exemplo de sentença com status aprimorado de REVISAR para FINALIZADO após regra, adicionada em 30/07/26, que projeta NP possuidor numa configuração de dois nós `N$` simétricos. 
 
 proto-conllu:
   <none>
@@ -3622,6 +3650,7 @@ proto-conllu:
 chunks:
   span=1-4 type=IP-MAT level=0
   span=1-2 type=NP level=1
+  span=2-2 type=NP level=2
   span=4-4 type=NP-APL level=1
 
 tokens:
@@ -3630,7 +3659,7 @@ tokens:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='gota'       t='n'        gloss-br='cidade' fn=None idx=None
         [3] v='Ga'         t='Sgv'      gloss-br='SG' fn=None idx=None
-  p=2   v='liGeladi'         t='N$'         l=1   gloss-br='casa del(e|a)'
+  p=2   v='liGeladi'         t='N$'         l=2   gloss-br='casa del(e|a)'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='Geladi'     t='n'        gloss-br='casa' fn=None idx=None

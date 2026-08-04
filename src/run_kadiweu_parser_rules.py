@@ -50,6 +50,7 @@ class Rule:
 @dataclass(frozen=True)
 class ComparisonResult:
     sentence_id: str
+    dataset: str
     struct_status: str
     result: str
     details: str
@@ -460,6 +461,14 @@ def whitespace_normalized_tree(tree: str) -> str:
     """Normalize formatting without changing tree notation."""
     return " ".join(_sexpr_tokens(tree))
 
+def record_dataset(sentence_id: str) -> str:
+    """Return the dataset component of a CorpusSearch sentence ID."""
+    dataset, separator, _ = sentence_id.partition(",")
+
+    if not separator or not dataset:
+        return "UNKNOWN"
+
+    return dataset
 
 def record_status(record: Record | None) -> str:
     """Return struct_status from a record's metadata comment."""
@@ -591,6 +600,7 @@ def classify_comparisons(
         # The expected tree supplies the reference struct_status. Fall back
         # to the actual metadata only when the expected record is absent.
         status = record_status(expected_record or actual_record)
+        dataset = record_dataset(sentence_id)
 
         if expected_record is None:
             results.append(
@@ -601,6 +611,7 @@ def classify_comparisons(
                     details="sentence absent from expected PSD",
                     expected_tree=None,
                     actual_tree=actual_record.tree,
+                    dataset=dataset,
                 )
             )
             continue
@@ -614,6 +625,7 @@ def classify_comparisons(
                     details="sentence absent from actual PSD",
                     expected_tree=expected_record.tree,
                     actual_tree=None,
+                    dataset=dataset,
                 )
             )
             continue
@@ -654,6 +666,7 @@ def classify_comparisons(
                 details=details,
                 expected_tree=expected_record.tree,
                 actual_tree=actual_record.tree,
+                dataset=dataset,
             )
         )
 
@@ -669,6 +682,7 @@ def write_comparison_report(
         writer = csv.writer(report, delimiter="\t", lineterminator="\n")
         writer.writerow([
             "sentence_id",
+            "dataset",
             "struct_status",
             "result",
             "details",
@@ -677,6 +691,7 @@ def write_comparison_report(
         for item in results:
             writer.writerow([
                 item.sentence_id,
+                item.dataset,
                 item.struct_status,
                 item.result,
                 item.details,
@@ -779,6 +794,74 @@ def print_comparison_summary(
         print(row_format.format(*row), file=sys.stderr)
 
 
+def print_dataset_status_summary(
+    results: Sequence[ComparisonResult],
+) -> None:
+    """Print counts grouped by dataset and struct_status."""
+    groups = sorted(
+        {
+            (item.dataset, item.struct_status)
+            for item in results
+        }
+    )
+
+    rows: list[tuple[str, str, int, int, int, int]] = []
+
+    for dataset, status in groups:
+        selected = [
+            item
+            for item in results
+            if item.dataset == dataset
+            and item.struct_status == status
+        ]
+
+        rows.append((
+            dataset,
+            status,
+            sum(item.result == EXACT_MATCH for item in selected),
+            sum(item.result == TRACE_EQUIVALENT for item in selected),
+            sum(
+                item.result == STRUCTURAL_DIFFERENCE
+                for item in selected
+            ),
+            len(selected),
+        ))
+
+    headers = (
+        "dataset",
+        "struct_status",
+        "exact",
+        "trace_equivalent",
+        "structural_difference",
+        "total",
+    )
+
+    widths = [
+        max(len(header), *(len(str(row[index])) for row in rows))
+        for index, header in enumerate(headers)
+    ]
+
+    row_format = "  ".join(
+        [
+            f"{{:<{widths[0]}}}",
+            f"{{:<{widths[1]}}}",
+            f"{{:>{widths[2]}}}",
+            f"{{:>{widths[3]}}}",
+            f"{{:>{widths[4]}}}",
+            f"{{:>{widths[5]}}}",
+        ]
+    )
+
+    print(
+        "\nComparison summary by dataset × struct_status:",
+        file=sys.stderr,
+    )
+    print(row_format.format(*headers), file=sys.stderr)
+
+    for row in rows:
+        print(row_format.format(*row), file=sys.stderr)
+
+
 def compare_psd(
     actual_path: Path,
     expected_path: Path,
@@ -788,6 +871,7 @@ def compare_psd(
     """Compare PSD files and distinguish trace notation from structure."""
     results = classify_comparisons(actual_path, expected_path)
     print_comparison_summary(results)
+    print_dataset_status_summary(results)
 
     if report_path:
         write_comparison_report(report_path, results)
