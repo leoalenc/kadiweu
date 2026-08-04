@@ -1,0 +1,36 @@
+# hil-data,0.25	status=DONE	validated-reference difference
+--- expected/hil-data,0.25
++++ actual/hil-data,0.25
+@@ -1 +1 @@
+-( ( IP-MAT ( NP-SBJ ( D naGana ) ) ( CP-me ( Q eliodi ) ( C me@ ) ( IP-SUB ( VB @ninitibeci ) ) ) ) ( ID hil-data,0.25 ) )
++( ( IP-MAT ( NP ( D naGana ) ) ( CP ( Q eliodi ) ( C me@ ) ( IP-SUB ( VB @ninitibeci ) ) ) ) ( ID hil-data,0.25 ) )
+# hil-data,0.34	status=REVIEW	provisional-reference difference; manual adjudication required
+--- expected/hil-data,0.34
++++ actual/hil-data,0.34
+@@ -1 +1 @@
+-( ( IP-MAT ( NP-SBJ ( N$ liwigo ) ( N niganigawanigi ) ) ( NP-PRD ( N$ libinienigi ) ) ) ( ID hil-data,0.34 ) )
++( ( IP-MAT ( NP-SBJ ( N$ liwigo ) ( NP ( N niganigawanigi ) ) ) ( NP-PRD ( N$ libinienigi ) ) ) ( ID hil-data,0.34 ) )
+# hil-data,0.7	status=REVIEW	provisional-reference difference; manual adjudication required
+--- expected/hil-data,0.7
++++ actual/hil-data,0.7
+@@ -1 +1 @@
+-( ( IP-MAT ( NP ( N$ Gawenigi ) ) ( CP-me-me ( Q eliodi ) ( C me ) ( NP ( N$ libinienigi ) ) ) ) ( ID hil-data,0.7 ) )
++( ( IP-MAT ( NP-SBJ ( N$ Gawenigi ) ) ( CP-me ( Q eliodi ) ( C me ) ( IP-SUB ( NP ( N$ libinienigi ) ) ) ) ) ( ID hil-data,0.7 ) )
+# ped-gramm,0.28	status=REVIEW	provisional-reference difference; manual adjudication required
+--- expected/ped-gramm,0.28
++++ actual/ped-gramm,0.28
+@@ -1 +1 @@
+-( ( IP-MAT ( NP ( N$ Eyodi ) ) ( VBAPL dowediteloco ) ( NP-APL ( N naodigijedi ) ( CP-me ( C me@ ) ( IP-SUB ( NP ( DAPL @icawataGa ) ) ) ) ) ( CP-daGa ( C daGa ) ( CP-me ( C me ) ( IP-SUB ( NP ( N$ lionigipi ) ) ) ) ) ) ( ID ped-gramm,0.28 ) )
++( ( IP-MAT ( NP ( N$ Eyodi ) ) ( VBAPL dowediteloco ) ( NP-APL ( N naodigijedi ) ( CP-me ( C me@ ) ( IP-SUB ( NP ( DAPL @icawataGa ) ) ) ) ) ( C daGa ) ( CP-me ( C me ) ( IP-SUB ( NP ( N$ lionigipi ) ) ) ) ) ( ID ped-gramm,0.28 ) )
+# van-data,0.10	status=REVIEW	provisional-reference difference; manual adjudication required
+--- expected/van-data,0.10
++++ actual/van-data,0.10
+@@ -1 +1 @@
+-( ( IP-MAT ( NP ( N$ Gawenigi ) ) ( CP-me-me ( Q eliodi ) ( C me ) ( NP ( N$ libinienigi ) ) ) ) ( ID van-data,0.10 ) )
++( ( IP-MAT ( NP-SBJ ( N$ Gawenigi ) ) ( CP-me ( Q eliodi ) ( C me ) ( IP-SUB ( NP ( N$ libinienigi ) ) ) ) ) ( ID van-data,0.10 ) )
+# van-data,0.56	status=REVIEW	provisional-reference difference; manual adjudication required
+--- expected/van-data,0.56
++++ actual/van-data,0.56
+@@ -1 +1 @@
+-( ( CP-D ( NEG aG@ ) ( NP ( D @ica ) ) ( C daGa ) ( IP-SUB ( VBAPL jipegitege ) ) ) ( ID van-data,0.56 ) )
++( ( IP-MAT ( NEG aG@ ) ( NP ( D @ica ) ) ( CP ( C daGa ) ( IP-SUB ( VBAPL jipegitege ) ) ) ) ( ID van-data,0.56 ) )

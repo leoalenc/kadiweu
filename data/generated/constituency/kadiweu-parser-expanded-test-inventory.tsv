@@ -1,0 +1,37 @@
+sentence_id	dataset	struct_status	selection	construction	trace_presence	selection_rationale
+hil-data,0.1	hil-data	DONE	retained	Simple nominal predication: NP-SBJ plus NP-PRD	no	Retains the shortest validated nominal-predicate baseline from the original test.
+hil-data,0.5	hil-data	DONE	retained	Relative clause inside NP; matrix negation; VBU; NP-GEN	2 traces: NP-TRACE and NP-GEN	Retains the original complex validated case for relative-clause trace insertion and coindex alpha-normalization.
+hil-data,0.10	hil-data	DONE	added	Possessed NP with determiner and NPR possessor; verbal predicate plus CP-me	no	Adds validated coverage of nominal possession with a proper-name possessor and a me-complement.
+hil-data,0.25	hil-data	DONE	added	Interrogative subject NP followed by CP-me with Q and embedded VB	no	Adds validated interrogative and Q/CP-me coverage without a trace.
+hil-data,0.39	hil-data	DONE	added	Relative clause inside NP followed by VBAPL and NP-APL	1 NP-TRACE	Adds a validated relative-clause trace in an applicative matrix construction.
+hil-data,0.44	hil-data	DONE	added	Complex possessed NP; negative VBU; NP-GEN	1 NP-GEN trace	Adds a second trace type and tests genitive-gap insertion independently of a relative clause.
+hil-data,0.34	hil-data	REVIEW	retained	Nominal predication with adjacent N$ and N in NP-SBJ	no	Retains the provisional postnominal-possessor case that exposes the Rule 31 NP-projection difference.
+hil-data,0.6	hil-data	REVIEW	retained	Relative clause inside NP-SBJ; CNEG+VBU; NP-PRD	1 NP-TRACE	Retains the original provisional relative-clause trace case.
+hil-data,0.7	hil-data	REVIEW	added	NP followed by interrogative CP-me-me	no	Targets the known erroneous CP-me-me category and tests whether later rule revisions remove the overgeneration.
+hil-data,0.40	hil-data	REVIEW	added	Punctuated CP-FRL inside NP followed by VBAPL and NP-APL	1 NP-TRACE	Adds the only free-relative configuration in this cell and tests trace insertion with punctuation and applicative structure.
+hil-data,0.42	hil-data	REVIEW	added	Complex possessive NP-SBJ followed by CP-me	no	Adds deep provisional NP embedding together with a me-complement.
+hil-data,0.68	hil-data	REVIEW	added	N plus N$ sequence followed by VBAPL and NP-APL	no	Adds a provisional postnominal possessive sequence in an applicative clause, complementing hil-data,0.34.
+ped-gramm,0.1	ped-gramm	DONE	retained	Determiner plus possessed noun followed by T and VB	no	Retains the original validated determiner/possessed-noun and tense baseline.
+ped-gramm,0.35	ped-gramm	DONE	retained	VBAPL with NP-APL containing a relative clause	1 NP-TRACE	Retains the original validated applicative relative-clause trace case.
+ped-gramm,0.6	ped-gramm	DONE	added	Determiner plus possessed noun followed by VBAPL and NP-APL	no	Adds a validated non-trace applicative counterpart for comparison with trace-bearing applicative trees.
+ped-gramm,0.46	ped-gramm	DONE	added	Nominal predication with an NP-internal NPR possessor	no	Adds a validated postnominal proper-name possessor and nominal predicate.
+ped-gramm,0.58	ped-gramm	DONE	added	NP antecedent; negative VBU; NP-GEN	1 NP-GEN trace	Adds validated genitive-gap insertion with negation.
+ped-gramm,0.61	ped-gramm	DONE	added	Verbal matrix clause followed by IP-ADV with negative VBU	no	Adds validated adverbial-clause embedding and a multi-predicate structure without traces.
+ped-gramm,0.11	ped-gramm	REVIEW	retained	Prenominal NPR possessor inside NP-SBJ; negated nominal predication	no	Retains one of the two known provisional prenominal-possessor cases.
+ped-gramm,0.26	ped-gramm	REVIEW	retained	Prenominal NPR possessor plus possessed noun and relative clause	1 NP-TRACE	Retains the second known prenominal-possessor case and its relative-clause trace.
+ped-gramm,0.17	ped-gramm	REVIEW	added	Complex possessive NP with determiner, N$, and nominal possessor; VBAPL	no	Targets disputed internal constituency and determiner scope in a possessive NP.
+ped-gramm,0.28	ped-gramm	REVIEW	added	VBAPL plus NP-APL containing CP-me and nested CP-daGa	no	Adds the deepest complement configuration in this cell and interaction between two CP types.
+ped-gramm,0.49	ped-gramm	REVIEW	added	Verbal clause with CONJP coordination and negative VBU	no	Adds coordination coverage, absent from the original 12 sentences.
+ped-gramm,0.57	ped-gramm	REVIEW	added	Relative clause inside NP followed by negation and N$	1 NP-TRACE	Adds a provisional relative-clause trace with a different matrix continuation from ped-gramm,0.26.
+van-data,0.31	van-data	DONE	retained	Nominal predication with an embedded postnominal possessor NP	no	Retains the validated structural counterpart of hil-data,0.34 and the Rule 31 regression target.
+van-data,0.38	van-data	DONE	retained	Relative clause inside NP followed by VBAPL and NP-APL	1 NP-TRACE	Retains the original validated relative-clause and applicative trace case.
+van-data,0.24	van-data	DONE	added	NP with determiner followed by ADVP and VB	no	Adds validated adverb-phrase construction coverage.
+van-data,0.35	van-data	DONE	added	Interrogative NP-SBJ followed by CP-me with Q and embedded VB	no	Adds validated interrogative structure for cross-dataset comparison with hil-data,0.25.
+van-data,0.47	van-data	DONE	added	Complex NP antecedent; negative VBU; NP-GEN	1 NP-GEN trace	Adds validated genitive-gap insertion with a complex antecedent.
+van-data,0.71	van-data	DONE	added	Nominal predication with Q-marked N$ and embedded NPR possessor	no	Adds a validated proper-name possessor and unusual Q-marked nominal subject.
+van-data,0.14	van-data	REVIEW	retained	Complex possessive NP-SBJ followed by CP-me and DAPL	no	Retains the original provisional postnominal-possessor plus me-complement case.
+van-data,0.1	van-data	REVIEW	retained	Short NP containing N$, D, and N	no	Retains the original short provisional NP baseline.
+van-data,0.10	van-data	REVIEW	added	NP followed by interrogative CP-me-me	no	Targets the same known CP-me-me overgeneration as hil-data,0.7 in a second dataset.
+van-data,0.16	van-data	REVIEW	added	NP-SBJ followed by CP-me containing NP and DAPL; embedded N$	no	Adds deep me-complement embedding and possessor-related nominal material.
+van-data,0.56	van-data	REVIEW	added	CP-D root with negation, NP, complementizer, IP-SUB, and VBAPL	no	Adds a non-IP-MAT root and tests CP-D construction rules.
+van-data,0.66	van-data	REVIEW	added	Negated verbal matrix with EV, T, and CP-me complement	no	Adds evidential and tense material together with clausal embedding.
