@@ -5,12 +5,12 @@ status = REVIEW
 text = Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi
 text_por = meu pai cuida da plantação de flores como filhas
 */
-( (IP-MAT (CP-daGa (IP-SUB (NP (N$ Eyodi))
-			   (VBAPL dowediteloco)
-			   (NP-APL (N naodigijedi))
-			   (CP-me (C me@)
-				  (IP-SUB (NP (DAPL @icawataGa)))))
-		   (C daGa)
+( (IP-MAT (NP (N$ Eyodi))
+	  (VBAPL dowediteloco)
+	  (NP-APL (N naodigijedi)
+		  (CP-me (C me@)
+			 (IP-SUB (NP (DAPL @icawataGa)))))
+	  (CP-daGa (C daGa)
 		   (CP-me (C me)
 			  (IP-SUB (NP (N$ lionigipi))))))
   (ID ped-gramm,0.28))
