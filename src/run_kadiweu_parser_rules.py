@@ -361,7 +361,9 @@ def run_rules(
     query_dir.mkdir(exist_ok=True)
     current = work_dir / "000-input.pos"
     shutil.copyfile(input_path, current)
-    log_lines = ["execution\toriginal_tbp\tname\tstatus"]
+    log_lines = [
+        "execution\toriginal_tbp\tname\tstatus\ttransformed_records"
+    ]
     for execution, rule in enumerate(rules, start=1):
         safe_name = re.sub(r"[^A-Za-z0-9_.-]+", "-", rule.name).strip("-") or "rule"
         query = query_dir / f"{execution:03d}-tbp-{rule.original_number:03d}-{safe_name}.q"
@@ -432,12 +434,6 @@ def run_rules(
             produced.unlink()
 
         current = next_path
-        if not keep_intermediate and current.name != "000-input.pos":
-            current.unlink()
-        current = next_path
-        log_lines = [
-            "execution\toriginal_tbp\tname\tstatus\ttransformed_records"
-        ]
     if log_path:
         log_path.write_text("\n".join(log_lines) + "\n", encoding="utf-8")
     return current
@@ -959,6 +955,19 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--print-parses", action="store_true", help="print final PSD to stdout")
     parser.add_argument("--work-dir", type=Path, help="directory for queries and execution files")
     parser.add_argument("--keep-intermediate", action="store_true")
+    parser.add_argument(
+        "--skip-rule",
+        "--disable-rule",
+        dest="skip_rules",
+        action="append",
+        type=int,
+        default=[],
+        metavar="TBP_NUMBER",
+        help=(
+            "skip a rule by its original TBP number; repeat this option "
+            "to skip multiple rules"
+        ),
+    )
     parser.add_argument("--log", type=Path, help="write TSV execution manifest")
     parser.add_argument("--expected", type=Path, help="compare final trees with this gold PSD")
     parser.add_argument(
@@ -998,6 +1007,27 @@ def main(argv: Sequence[str] | None = None) -> int:
         if not args.output and not args.print_parses and not args.expected:
             raise RunnerError("request at least one of --output, --print-parses, or --expected")
         rules = parse_rules(args.rules)
+        if args.skip_rules:
+            requested = set(args.skip_rules)
+            available = {rule.original_number for rule in rules}
+            missing = sorted(requested - available)
+
+            if missing:
+                raise RunnerError(
+                    "cannot skip absent TBP rule number(s): "
+                    + ", ".join(map(str, missing))
+                )
+
+            rules = [
+                rule
+                for rule in rules
+                if rule.original_number not in requested
+            ]
+            print(
+                "skipping original TBP rule(s): "
+                + ", ".join(map(str, sorted(requested))),
+                file=sys.stderr,
+            )
         if args.work_dir:
             work_dir = args.work_dir
             temporary = None
