@@ -1,0 +1,20 @@
+/*
+sentence = 28
+uid = ee1a1190-7803-404c-83f6-49d3ccf63b0d
+status = REVIEW
+text = Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi
+text_por = meu pai cuida da plantação de flores como filhas
+*/
+(
+  (IP-MAT
+    (N$ Eyodi)
+    (VBAPL dowediteloco)
+    (N naodigijedi)
+    (C me@)
+    (DAPL @icawataGa)
+    (C daGa)
+    (C me)
+    (N$ lionigipi)
+  )
+  (ID ped-gramm,0.28)
+)

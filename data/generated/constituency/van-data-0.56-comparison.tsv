@@ -1,0 +1,2 @@
+sentence_id	dataset	struct_status	result	details
+van-data,0.56	van-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization

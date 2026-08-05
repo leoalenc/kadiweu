@@ -1,0 +1,6 @@
+# ped-gramm,0.28	status=REVIEW	provisional-reference difference; manual adjudication required
+--- expected/ped-gramm,0.28
++++ actual/ped-gramm,0.28
+@@ -1 +1 @@
+-( ( IP-MAT ( NP ( N$ Eyodi ) ) ( VBAPL dowediteloco ) ( NP-APL ( N naodigijedi ) ( CP-me ( C me@ ) ( IP-SUB ( NP ( DAPL @icawataGa ) ) ) ) ) ( CP-daGa ( C daGa ) ( CP-me ( C me ) ( IP-SUB ( NP ( N$ lionigipi ) ) ) ) ) ) ( ID ped-gramm,0.28 ) )
++( ( IP-MAT ( CP-daGa ( IP-SUB ( NP ( N$ Eyodi ) ) ( VBAPL dowediteloco ) ( NP-APL ( N naodigijedi ) ) ( CP-me ( C me@ ) ( IP-SUB ( NP ( DAPL @icawataGa ) ) ) ) ) ( C daGa ) ( CP-me ( C me ) ( IP-SUB ( NP ( N$ lionigipi ) ) ) ) ) ) ( ID ped-gramm,0.28 ) )

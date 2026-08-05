@@ -1,0 +1,12 @@
+/*
+sentence = 56
+uid = d3095a7e-477d-405e-9ea2-85bfdacad7d3
+status = REVIEW
+text = aGica daGa jipegitege
+text_por = eu não estou perto dela
+*/
+( (CP-D (NEG aG@)
+	(NP (D @ica))
+	(C daGa)
+	(IP-SUB (VBAPL jipegitege)))
+  (ID van-data,0.56))
