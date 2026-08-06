@@ -1,8 +1,8 @@
 sentence_id	dataset	struct_status	result	details
 hil-data,0.1	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 hil-data,0.10	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
-hil-data,0.25	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
-hil-data,0.34	hil-data	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
+hil-data,0.25	hil-data	DONE	EXACT_MATCH	trees are identical after Rule 119 compatibility correction (me|me@)
+hil-data,0.34	hil-data	REVIEW	STRUCTURAL_DIFFERENCE	ADJUDICATION: correct reference tree; accept parser output with possessor niganigawanigi projected as NP under NP-SBJ
 hil-data,0.39	hil-data	DONE	TRACE_EQUIVALENT	equivalent after trace-notation and coindex alpha-normalization
 hil-data,0.40	hil-data	REVIEW	TRACE_EQUIVALENT	equivalent after trace-notation and coindex alpha-normalization
 hil-data,0.42	hil-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
@@ -10,7 +10,7 @@ hil-data,0.44	hil-data	DONE	TRACE_EQUIVALENT	equivalent after trace-notation and
 hil-data,0.5	hil-data	DONE	TRACE_EQUIVALENT	equivalent after trace-notation and coindex alpha-normalization
 hil-data,0.6	hil-data	REVIEW	TRACE_EQUIVALENT	equivalent after trace-notation and coindex alpha-normalization
 hil-data,0.68	hil-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
-hil-data,0.7	hil-data	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
+hil-data,0.7	hil-data	REVIEW	STRUCTURAL_DIFFERENCE	ADJUDICATION: correct reference tree; accept parser output with NP-SBJ, CP-me (not CP-me-me), and IP-SUB around the predicate NP
 ped-gramm,0.1	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.11	ped-gramm	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.17	ped-gramm	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
@@ -24,7 +24,7 @@ ped-gramm,0.58	ped-gramm	DONE	TRACE_EQUIVALENT	equivalent after trace-notation a
 ped-gramm,0.6	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.61	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.1	van-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
-van-data,0.10	van-data	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
+van-data,0.10	van-data	REVIEW	STRUCTURAL_DIFFERENCE	ADJUDICATION: correct reference tree; same sentence and construction as hil-data,0.7, so accept NP-SBJ, CP-me, and IP-SUB from parser output
 van-data,0.14	van-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.16	van-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.24	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization

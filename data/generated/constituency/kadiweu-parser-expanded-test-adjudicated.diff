@@ -1,16 +1,16 @@
-# hil-data,0.34	status=REVIEW	provisional-reference difference; manual adjudication required
+# hil-data,0.34 status=REVIEW ADJUDICATION: correct reference tree; parser output is accepted because the nominal possessor niganigawanigi should project as NP
 --- expected/hil-data,0.34
 +++ actual/hil-data,0.34
 @@ -1 +1 @@
 -( ( IP-MAT ( NP-SBJ ( N$ liwigo ) ( N niganigawanigi ) ) ( NP-PRD ( N$ libinienigi ) ) ) ( ID hil-data,0.34 ) )
 +( ( IP-MAT ( NP-SBJ ( N$ liwigo ) ( NP ( N niganigawanigi ) ) ) ( NP-PRD ( N$ libinienigi ) ) ) ( ID hil-data,0.34 ) )
-# hil-data,0.7	status=REVIEW	provisional-reference difference; manual adjudication required
+# hil-data,0.7 status=REVIEW ADJUDICATION: correct reference tree; accept parser NP-SBJ, CP-me (not duplicated CP-me-me), and IP-SUB projection
 --- expected/hil-data,0.7
 +++ actual/hil-data,0.7
 @@ -1 +1 @@
 -( ( IP-MAT ( NP ( N$ Gawenigi ) ) ( CP-me-me ( Q eliodi ) ( C me ) ( NP ( N$ libinienigi ) ) ) ) ( ID hil-data,0.7 ) )
 +( ( IP-MAT ( NP-SBJ ( N$ Gawenigi ) ) ( CP-me ( Q eliodi ) ( C me ) ( IP-SUB ( NP ( N$ libinienigi ) ) ) ) ) ( ID hil-data,0.7 ) )
-# van-data,0.10	status=REVIEW	provisional-reference difference; manual adjudication required
+# van-data,0.10 status=REVIEW ADJUDICATION: correct reference tree; same sentence/construction as hil-data,0.7, so accept parser NP-SBJ, CP-me, and IP-SUB projection
 --- expected/van-data,0.10
 +++ actual/van-data,0.10
 @@ -1 +1 @@

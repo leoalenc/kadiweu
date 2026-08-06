@@ -45,10 +45,10 @@ status = DONE
 text = naGana eliodi meninitibeci
 text_por = Ela é muito feliz .
 */
-( (IP-MAT (NP (D naGana))
-	  (CP (Q eliodi)
-	      (C me@)
-	      (IP-SUB (VB @ninitibeci))))
+( (IP-MAT (NP-SBJ (D naGana))
+	  (CP-me (Q eliodi)
+		 (C me@)
+		 (IP-SUB (VB @ninitibeci))))
   (ID hil-data,0.25))
 /*
 sentence = 39
@@ -281,9 +281,9 @@ text_por = meu pai cuida da plantação de flores como filhas
 	  (NP-APL (N naodigijedi)
 		  (CP-me (C me@)
 			 (IP-SUB (NP (DAPL @icawataGa)))))
-	  (C daGa)
-	  (CP-me (C me)
-		 (IP-SUB (NP (N$ lionigipi)))))
+	  (CP-daGa (C daGa)
+		   (CP-me (C me)
+			  (IP-SUB (NP (N$ lionigipi))))))
   (ID ped-gramm,0.28))
 /*
 sentence = 49
@@ -449,10 +449,10 @@ status = REVIEW
 text = aGica daGa jipegitege
 text_por = eu não estou perto dela
 */
-( (IP-MAT (NEG aG@)
-	  (NP (D @ica))
-	  (CP (C daGa)
-	      (IP-SUB (VBAPL jipegitege))))
+( (CP-D (NEG aG@)
+	(NP (D @ica))
+	(C daGa)
+	(IP-SUB (VBAPL jipegitege)))
   (ID van-data,0.56))
 /*
 sentence = 66
