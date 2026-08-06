@@ -72,6 +72,9 @@ class Record:
 RULE_HEADER = re.compile(r"(?m)^(\d+):\s*([^\r\n]+)\s*$")
 ID_RE = re.compile(r"\(ID\s+([^()\s]+)\s*\)")
 ATOM_RE = re.compile(r"[^()\s]+")
+DEFINITION_RE = re.compile(
+    r"^\s*([A-Za-z_][A-Za-z0-9_-]*)\s*:\s*(.*?)\s*$"
+)
 
 STATUS_RE = re.compile(
     r"(?im)^\s*status\s*=\s*([A-Za-z][A-Za-z0-9_-]*)\s*$"
@@ -85,15 +88,109 @@ TRACE_EQUIVALENT = "TRACE_EQUIVALENT"
 STRUCTURAL_DIFFERENCE = "STRUCTURAL_DIFFERENCE"
 
 
-def parse_rules(path: Path) -> list[Rule]:
+def parse_definitions(path: Path) -> dict[str, str]:
+    """Read a TBP ``name: expansion`` definitions export."""
+    definitions: dict[str, str] = {}
+
+    for line_number, raw_line in enumerate(
+        path.read_text(encoding="utf-8").splitlines(),
+        start=1,
+    ):
+        line = raw_line.strip()
+
+        if not line or line.startswith("#") or line.startswith("//"):
+            continue
+
+        match = DEFINITION_RE.fullmatch(raw_line)
+
+        if not match:
+            raise RunnerError(
+                f"malformed definition at {path}:{line_number}: {raw_line!r}"
+            )
+
+        name, expansion = match.groups()
+
+        if not expansion:
+            raise RunnerError(
+                f"empty definition at {path}:{line_number}: {name}"
+            )
+
+        if name in definitions:
+            raise RunnerError(
+                f"duplicate definition at {path}:{line_number}: {name}"
+            )
+
+        definitions[name] = expansion
+
+    if not definitions:
+        raise RunnerError(f"no definitions found in {path}")
+
+    return definitions
+
+
+def expand_rule_definitions(
+    body: str,
+    definitions: dict[str, str],
+) -> tuple[str, set[str]]:
+    """Expand definition names in ``node`` and ``query`` declarations.
+
+    TBP exports use definitions as category/value macros. CorpusSearch expects
+    their raw alternation (for example ``PRO$|PRO$-*|N$``), without an extra
+    pair of parentheses. Actions and comments are deliberately left intact.
+    """
+    if not definitions:
+        return body, set()
+
+    names = sorted(definitions, key=len, reverse=True)
+    token = re.compile(
+        r"(?<![A-Za-z0-9_$-])(?:"
+        + "|".join(re.escape(name) for name in names)
+        + r")(?![A-Za-z0-9_$-])"
+    )
+    used: set[str] = set()
+    output: list[str] = []
+    active_declaration: str | None = None
+
+    for line in body.splitlines(keepends=True):
+        if re.match(
+            r"^\s*[A-Za-z_][A-Za-z0-9_-]*\s*\{.*\}\s*:",
+            line,
+        ):
+            active_declaration = None
+
+        declaration = re.match(r"^\s*([A-Za-z_][A-Za-z0-9_-]*)\s*:", line)
+
+        if declaration:
+            active_declaration = declaration.group(1).lower()
+
+        if active_declaration in {"node", "query"}:
+            def replace(match: re.Match[str]) -> str:
+                name = match.group(0)
+                used.add(name)
+                return definitions[name]
+
+            line = token.sub(replace, line)
+
+        output.append(line)
+
+    return "".join(output), used
+
+
+def parse_rules(
+    path: Path,
+    definitions: dict[str, str] | None = None,
+) -> tuple[list[Rule], set[str]]:
     text = path.read_text(encoding="utf-8")
     matches = list(RULE_HEADER.finditer(text))
     if not matches:
         raise RunnerError(f"no numbered rules found in {path}")
     rules: list[Rule] = []
+    used_definitions: set[str] = set()
     for index, match in enumerate(matches):
         end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
         body = text[match.end():end].strip()
+        body, used = expand_rule_definitions(body, definitions or {})
+        used_definitions.update(used)
         if not re.search(r"(?m)^\s*node\s*:", body):
             raise RunnerError(f"rule {match.group(1)} has no node declaration")
         if not re.search(r"(?m)^\s*query\s*:", body):
@@ -102,7 +199,7 @@ def parse_rules(path: Path) -> list[Rule]:
     numbers = [rule.original_number for rule in rules]
     if len(numbers) != len(set(numbers)):
         raise RunnerError("duplicate original rule numbers")
-    return rules
+    return rules, used_definitions
 
 def parse_corpussearch_results(text: str) -> list[Record]:
     """Extract ID-bearing trees from a CorpusSearch report."""
@@ -950,6 +1047,14 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("rules", type=Path, nargs="?", help="downloaded numbered TBP rule file")
     parser.add_argument("input", type=Path, nargs="?", help="flat CorpusSearch .pos input")
+    parser.add_argument(
+        "--definitions",
+        type=Path,
+        help=(
+            "TBP definitions export; expand named terms such as "
+            "'possessive' in rule node/query declarations"
+        ),
+    )
     parser.add_argument("--corpussearch", default="corpussearch", help="CorpusSearch command (default: corpussearch)")
     parser.add_argument("--output", type=Path, help="write final CorpusSearch PSD here")
     parser.add_argument("--print-parses", action="store_true", help="print final PSD to stdout")
@@ -1006,7 +1111,24 @@ def main(argv: Sequence[str] | None = None) -> int:
             raise RunnerError("RULES and INPUT are required unless --extract-from is used")
         if not args.output and not args.print_parses and not args.expected:
             raise RunnerError("request at least one of --output, --print-parses, or --expected")
-        rules = parse_rules(args.rules)
+        definitions = (
+            parse_definitions(args.definitions)
+            if args.definitions
+            else {}
+        )
+        rules, used_definitions = parse_rules(args.rules, definitions)
+
+        if args.definitions:
+            print(
+                f"loaded {len(definitions)} TBP definition(s) from "
+                f"{args.definitions}; used {len(used_definitions)}: "
+                + (
+                    ", ".join(sorted(used_definitions))
+                    if used_definitions
+                    else "none"
+                ),
+                file=sys.stderr,
+            )
         if args.skip_rules:
             requested = set(args.skip_rules)
             available = {rule.original_number for rule in rules}
