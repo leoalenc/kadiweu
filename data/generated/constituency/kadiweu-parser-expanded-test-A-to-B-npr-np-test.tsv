@@ -1,0 +1,3 @@
+sentence_id	dataset	struct_status	accepted_classification	candidate_classification	output_change_classification	transition	details
+ped-gramm,0.11	ped-gramm	REVIEW	EXACT_MATCH	STRUCTURAL_DIFFERENCE	STRUCTURAL_DIFFERENCE	EXACT_MATCH -> STRUCTURAL_DIFFERENCE	probable regression against validated reference; provisional until manual adjudication
+ped-gramm,0.26	ped-gramm	REVIEW	TRACE_EQUIVALENT	STRUCTURAL_DIFFERENCE	STRUCTURAL_DIFFERENCE	TRACE_EQUIVALENT -> STRUCTURAL_DIFFERENCE	probable regression against reference; provisional until manual adjudication

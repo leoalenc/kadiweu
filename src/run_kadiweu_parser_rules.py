@@ -59,6 +59,20 @@ class ComparisonResult:
 
 
 @dataclass(frozen=True)
+class TransitionResult:
+    """One sentence whose candidate output differs from the accepted output."""
+
+    sentence_id: str
+    dataset: str
+    struct_status: str
+    accepted_classification: str
+    candidate_classification: str
+    output_change_classification: str
+    transition: str
+    details: str
+
+
+@dataclass(frozen=True)
 class Record:
     comment: str
     tree: str
@@ -766,6 +780,154 @@ def classify_comparisons(
     return results
 
 
+def classify_transitions(
+    accepted_path: Path,
+    candidate_path: Path,
+    reference_path: Path,
+) -> list[TransitionResult]:
+    """Report every sentence changed from accepted output A to candidate B.
+
+    The A and B classifications are each calculated against the same reference
+    PSD.  The output-change classification applies the identical three-way
+    classifier directly to B versus A.  Exact A/B matches are omitted because
+    this is an impact report, not a second full-corpus comparison report.
+    """
+    accepted_vs_reference = {
+        item.sentence_id: item
+        for item in classify_comparisons(accepted_path, reference_path)
+    }
+    candidate_vs_reference = {
+        item.sentence_id: item
+        for item in classify_comparisons(candidate_path, reference_path)
+    }
+    candidate_vs_accepted = classify_comparisons(candidate_path, accepted_path)
+    transitions: list[TransitionResult] = []
+
+    for change in candidate_vs_accepted:
+        if change.result == EXACT_MATCH:
+            continue
+
+        accepted = accepted_vs_reference.get(change.sentence_id)
+        candidate = candidate_vs_reference.get(change.sentence_id)
+        accepted_classification = (
+            accepted.result if accepted else STRUCTURAL_DIFFERENCE
+        )
+        candidate_classification = (
+            candidate.result if candidate else STRUCTURAL_DIFFERENCE
+        )
+        status_source = candidate or accepted or change
+        transition = (
+            f"{accepted_classification} -> {candidate_classification}"
+        )
+
+        if change.result == TRACE_EQUIVALENT:
+            details = "output changed only in trace notation or coindex naming"
+        elif "absent from actual PSD" in (
+            candidate.details if candidate else ""
+        ):
+            details = "sentence absent from candidate output"
+        elif "absent from actual PSD" in (
+            accepted.details if accepted else ""
+        ):
+            details = "sentence newly present in candidate output"
+        elif transition == "EXACT_MATCH -> STRUCTURAL_DIFFERENCE":
+            details = "probable regression against validated reference"
+        elif transition in {
+            "STRUCTURAL_DIFFERENCE -> EXACT_MATCH",
+            "STRUCTURAL_DIFFERENCE -> TRACE_EQUIVALENT",
+        }:
+            details = "probable improvement against reference"
+        elif transition == "TRACE_EQUIVALENT -> STRUCTURAL_DIFFERENCE":
+            details = "probable regression against reference"
+        elif transition == "TRACE_EQUIVALENT -> EXACT_MATCH":
+            details = "normalization improvement against reference"
+        elif transition == "EXACT_MATCH -> TRACE_EQUIVALENT":
+            details = "reference equivalence retained; inspect notation change"
+        else:
+            details = "output changed; reference classification unchanged"
+
+        if status_source.struct_status == "REVIEW" and "probable" in details:
+            details += "; provisional until manual adjudication"
+
+        transitions.append(TransitionResult(
+            sentence_id=change.sentence_id,
+            dataset=status_source.dataset,
+            struct_status=status_source.struct_status,
+            accepted_classification=accepted_classification,
+            candidate_classification=candidate_classification,
+            output_change_classification=change.result,
+            transition=transition,
+            details=details,
+        ))
+
+    return transitions
+
+
+def write_transition_report(
+    path: Path,
+    results: Sequence[TransitionResult],
+) -> None:
+    """Write the A-to-B impact report; unchanged sentences are excluded."""
+    with path.open("w", encoding="utf-8", newline="") as report:
+        writer = csv.writer(report, delimiter="\t", lineterminator="\n")
+        writer.writerow([
+            "sentence_id",
+            "dataset",
+            "struct_status",
+            "accepted_classification",
+            "candidate_classification",
+            "output_change_classification",
+            "transition",
+            "details",
+        ])
+        for item in results:
+            writer.writerow([
+                item.sentence_id,
+                item.dataset,
+                item.struct_status,
+                item.accepted_classification,
+                item.candidate_classification,
+                item.output_change_classification,
+                item.transition,
+                item.details,
+            ])
+
+
+def compare_accepted_to_candidate(
+    accepted_path: Path,
+    candidate_path: Path,
+    reference_path: Path,
+    report_path: Path,
+) -> list[TransitionResult]:
+    """Compare accepted output A with candidate B and write changed rows."""
+    results = classify_transitions(
+        accepted_path,
+        candidate_path,
+        reference_path,
+    )
+    write_transition_report(report_path, results)
+
+    counts = {
+        TRACE_EQUIVALENT: sum(
+            item.output_change_classification == TRACE_EQUIVALENT
+            for item in results
+        ),
+        STRUCTURAL_DIFFERENCE: sum(
+            item.output_change_classification == STRUCTURAL_DIFFERENCE
+            for item in results
+        ),
+    }
+    print(
+        "\nAccepted A versus candidate B: "
+        f"{len(results)} changed sentence(s): "
+        f"{counts[TRACE_EQUIVALENT]} trace-equivalent, "
+        f"{counts[STRUCTURAL_DIFFERENCE]} structural; "
+        f"report written to {report_path}",
+        file=sys.stderr,
+    )
+    return results
+
+
 def write_comparison_report(
     path: Path,
     results: Sequence[ComparisonResult],
@@ -1088,6 +1250,23 @@ def build_parser() -> argparse.ArgumentParser:
         "trace-equivalent, or structurally different"
         ),
     )
+    parser.add_argument(
+        "--accepted-output",
+        type=Path,
+        help=(
+            "accepted parser output A; compare it automatically with the "
+            "candidate output produced by this run (requires --expected and "
+            "--transition-report)"
+        ),
+    )
+    parser.add_argument(
+        "--transition-report",
+        type=Path,
+        help=(
+            "write an A-to-B TSV containing every changed sentence and the "
+            "accepted/candidate classifications against --expected"
+        ),
+    )
     parser.add_argument("--extract-from", type=Path, nargs="+", metavar="PSD", help="extract records from PSD files instead of running rules")
     parser.add_argument("--sentence-id", action="append", default=[], help="ID to extract; repeat in desired order")
     parser.add_argument("--gold-output", type=Path, help="write extracted gold PSD")
@@ -1109,6 +1288,15 @@ def main(argv: Sequence[str] | None = None) -> int:
             return 0
         if not args.rules or not args.input:
             raise RunnerError("RULES and INPUT are required unless --extract-from is used")
+        if bool(args.accepted_output) != bool(args.transition_report):
+            raise RunnerError(
+                "--accepted-output and --transition-report must be used together"
+            )
+        if args.accepted_output and not args.expected:
+            raise RunnerError(
+                "--accepted-output requires --expected so A and B can be "
+                "classified against the same reference"
+            )
         if not args.output and not args.print_parses and not args.expected:
             raise RunnerError("request at least one of --output, --print-parses, or --expected")
         definitions = (
@@ -1170,6 +1358,13 @@ def main(argv: Sequence[str] | None = None) -> int:
             args.diff,
             args.comparison_report,
         )
+        if args.accepted_output:
+            compare_accepted_to_candidate(
+                args.accepted_output,
+                final_path,
+                args.expected,
+                args.transition_report,
+            )
         if temporary is not None:
             temporary.cleanup()
         return 0 if comparison_ok else 1
