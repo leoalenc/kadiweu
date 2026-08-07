@@ -1,0 +1,2 @@
+4c8ab2ee21691347a0166f7f110893dff7170e3a8f78cfbf68fad5b1e1ada2c3  kadiweu-parser-full-test.pos
+1af4c6792367564160bbd20980c43bd0540e8bd8c6350121fe3746c6b36ea8b7  kadiweu-parser-full-test.gold.psd
