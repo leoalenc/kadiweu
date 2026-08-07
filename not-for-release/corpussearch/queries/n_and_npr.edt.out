@@ -1,0 +1,84 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Thu Jul 30 09:36:18 BRT 2026
+
+command file:     n_and_npr.q
+output file:      n_and_npr.edt.out
+
+remark:  More verbose query: 
+  More verbose query: query: ((NP* iDoms [1]N) 
+  More verbose query: query: ((NP* iDoms [1]N) AND (NP* iDoms [2]NPR) 
+  More verbose query: query: ((NP* iDoms [1]N) AND (NP* iDoms [2]NPR) AND ([1]N hasSister [2]NPR)) 
+  More verbose query: query: ((NP* iDoms [1]N) AND (NP* iDoms [2]NPR) AND ([1]N hasSister [2]NPR)) OR 
+  More verbose query: query: ((NP* iDoms [1]N) AND (NP* iDoms [2]NPR) AND ([1]N hasSister [2]NPR)) OR ((NP* iDoms [1]N$) 
+  More verbose query: query: ((NP* iDoms [1]N) AND (NP* iDoms [2]NPR) AND ([1]N hasSister [2]NPR)) OR ((NP* iDoms [1]N$) AND (NP* iDoms [2]NPR) 
+  More verbose query: query: ((NP* iDoms [1]N) AND (NP* iDoms [2]NPR) AND ([1]N hasSister [2]NPR)) OR ((NP* iDoms [1]N$) AND (NP* iDoms [2]NPR) AND ([1]N$ hasSister [2]NPR)) 
+
+node:   NP*
+query:  (NP* iDoms  [1]N|N$) 
+  AND  ([1]N|N$ hasSister  [2]NPR) 
+*/
+/*
+HEADER:
+source file:  hil-data.review.corpussearch.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  hil-data.review.corpussearch.psd	0/0/14
+*/
+/*
+HEADER:
+source file:  ped-gramm.review.corpussearch.psd
+*/
+
+/~*
+ica Maria looligi aG@ @lidi
+(ped-gramm,0.11)
+*~/
+/*
+2 NP-SBJ:  2 NP-SBJ, 7 N$, 5 NPR
+*/
+( (IP-MAT (NP-SBJ (D ica) (NPR Maria) (N$ looligi))
+	  (NEG aG@)
+	  (NP-PRD (N$ @lidi)))
+  (ID ped-gramm,0.11))
+
+/~*
+João liGeladi ane napioi
+(ped-gramm,0.26)
+*~/
+/*
+2 NP:  2 NP, 5 N$, 3 NPR
+*/
+
+( (IP-MAT (NP (NPR João)
+	      (N$ liGeladi)
+	      (CP-REL (WNP-1 (WPRO ane))
+		      (IP-SUB (NP-TRACE (-NONE- *T*-1))
+			      (NP (N napioi))))))
+  (ID ped-gramm,0.26))
+/*
+FOOTER
+  source file, hits/tokens/total
+  ped-gramm.review.corpussearch.psd	2/2/24
+*/
+/*
+HEADER:
+source file:  van-data.review.corpussearch.psd
+*/
+/*
+FOOTER
+  source file, hits/tokens/total
+  van-data.review.corpussearch.psd	0/0/21
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  hil-data.review.corpussearch.psd	0/0/14
+  ped-gramm.review.corpussearch.psd	2/2/24
+  van-data.review.corpussearch.psd	0/0/21
+whole search, hits/tokens/total
+		2/2/59
+*/

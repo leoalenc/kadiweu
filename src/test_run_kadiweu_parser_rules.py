@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 
-RUNNER = Path(__file__).with_name("run_kadiweu_parser_rules(9).py")
+RUNNER = Path(__file__).with_name("run_kadiweu_parser_rules.py")
 SPEC = importlib.util.spec_from_file_location("runner", RUNNER)
 runner = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None
