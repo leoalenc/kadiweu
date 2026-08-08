@@ -5,7 +5,7 @@ Sentence 1
 path: $.pages[0].sentences[0]
 uid: a7e338a1-5403-40d4-b169-c840cf193aae
 text: iGeladi digoida weiigi
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -15,18 +15,21 @@ container_meta:
 translations:
   pt-br: Minha casa é no rio
 comments:
-  <none>
+  [1] 2026-08-07 15:52:22 — Leonel Figueiredo de Alencar — REVISAR -> FINALIZADO
+      Executei o parser agora, após modificações de hoje, e produziu a árvore esperada.
+  [2] 2026-08-04 14:43:37 — Filomena Sandalo
+      Deveria ter feito uma estrutura de predicativo. Verificar no parser a falha. 
 
 proto-conllu:
   <none>
 
 chunks:
   span=1-3 type=IP-MAT level=0
-  span=1-3 type=NP level=1
-  span=1-1 type=NP level=2
+  span=1-1 type=NP-SBJ level=1
+  span=2-3 type=NP-PRD level=1
 
 tokens:
-  p=1   v='iGeladi'          t='N$'         l=2   gloss-br='minha casa'
+  p=1   v='iGeladi'          t='N$'         l=1   gloss-br='minha casa'
       splits:
         [1] v='i'          t='Gen'      gloss-br='1s' fn=None idx=None
         [2] v='Geladi'     t='n'        gloss-br='casa' fn=None idx=None
@@ -400,7 +403,7 @@ comments:
   [2] 2026-06-11 14:18:30 — Filomena Sandalo
       Essa mais parece um NP recursivo: o peso do preço da canoa!! Discutir
   [3] 2026-06-10 22:15:34 — Leonel Figueiredo de Alencar — Tradução original
-      No documento original, consta como tradução: "a canoa pesada barata". Ou seja, seria apenas um NP "solto" e não uma sentença completa. Não se pode ser interpretada também como a sentença anterior.
+      No documento original, consta como tradução: "a canoa pesada barata". Ou seja, seria apenas um NP "solto" e não uma sentença completa. Não sei se pode ser interpretada também como a sentença anterior.
 
 proto-conllu:
   <none>
@@ -434,7 +437,7 @@ Sentence 10
 path: $.pages[0].sentences[9]
 uid: 0c38eab8-c6b0-4f02-bf05-27ea6285fe70
 text: Gawenigi eliodi me libinienigi
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -444,7 +447,9 @@ container_meta:
 translations:
   pt-br: a sua comida é muito bonita
 comments:
-  [1] 2026-07-04 14:25:57 — Filomena Sandalo
+  [1] 2026-08-04 14:45:48 — Filomena Sandalo
+      Corrigida
+  [2] 2026-07-04 14:25:57 — Filomena Sandalo
       me-me??
 
 proto-conllu:
@@ -452,15 +457,16 @@ proto-conllu:
 
 chunks:
   span=1-4 type=IP-MAT level=0
-  span=1-1 type=NP level=1
-  span=2-4 type=CP-me-me level=1
-  span=4-4 type=NP level=2
+  span=1-1 type=NP-SBJ level=1
+  span=2-4 type=CP-me level=1
+  span=4-4 type=IP-SUB level=2
+  span=4-4 type=NP level=3
 
 tokens:
   p=1   v='Gawenigi'         t='N$'         l=1   gloss-br=None
   p=2   v='eliodi'           t='Q'          l=1   gloss-br='grande'
   p=3   v='me'               t='C'          l=1   gloss-br='que'
-  p=4   v='libinienigi'      t='N$'         l=2   gloss-br='beleza'
+  p=4   v='libinienigi'      t='N$'         l=3   gloss-br='beleza'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='binie'      t='n'        gloss-br='beleza' fn=None idx=None
@@ -529,15 +535,19 @@ container_meta:
 translations:
   pt-br: aquela comida é muito cara
 comments:
-  [1] 2026-07-11 18:47:18 — Leonel Figueiredo de Alencar — Subida do possuidor
+  [1] 2026-08-04 17:08:19 — Filomena Sandalo
+      corrigida
+  [2] 2026-08-04 17:04:11 — Filomena Sandalo
+      corrigido
+  [3] 2026-07-11 18:47:18 — Leonel Figueiredo de Alencar — Subida do possuidor
       Comparar com outras árvores com subida do possuidor.
-  [2] 2026-06-12 21:28:20 — Filomena Sandalo
+  [4] 2026-06-12 21:28:20 — Filomena Sandalo
       Deplicidade. É quantificador. Kadiwéu tem um Q (muito) para contável e outro para incontável. Ver texto da LIV.
-  [3] 2026-06-12 13:43:14 — Leonel Figueiredo de Alencar — Classe de daGaxa
+  [5] 2026-06-12 13:43:14 — Leonel Figueiredo de Alencar — Classe de daGaxa
       No léxico, está também como Q. É advérbio para Griffiths, que adota uma terminologia tradicional. Trata-se de ambiguidade real ou duplicidade terminológica? Deixei o que já estava, ou seja, ADV,  
-  [4] 2026-06-12 13:37:33 — Leonel Figueiredo de Alencar — Classe de dakake
+  [6] 2026-06-12 13:37:33 — Leonel Figueiredo de Alencar — Classe de dakake
       Certo. Com base na minha experiência com nheengatu, tendo a preferir também a análise como verbo. Pelo menos naquela outra língua, orações com predicado não verbal têm-se mostrado mais difíceis de analisar automaticamente. 
-  [5] 2026-06-11 14:38:44 — Filomena Sandalo — CP-me
+  [7] 2026-06-11 14:38:44 — Filomena Sandalo — CP-me
       1. CP-me gerado errado
 2. Acho melhor considerar dakake verbo inacusativo, pois kad nnao é uma língua muito produtiva em adjetivos
 
@@ -545,11 +555,13 @@ proto-conllu:
   <none>
 
 chunks:
-  span=1-6 type=IP-MAT level=0
-  span=1-2 type=NP-SBJ level=1
-  span=3-6 type=CP-me level=1
-  span=5-6 type=IP-SUB level=2
-  span=6-6 type=NP level=3
+  span=1-8 type=IP-MAT level=0
+  span=1-3 type=NP level=1
+  span=4-8 type=CP-me level=1
+  span=6-8 type=IP-SUB level=2
+  span=7-8 type=NP level=3
+  span=2-2 type=NP-GEN level=2
+  span=7-7 type=NP-GEN level=4
 
 tokens:
   p=1   v='niGida'           t='D'          l=1   gloss-br='esse'
@@ -557,23 +569,25 @@ tokens:
         [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
         [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
         [3] v='da'         t='Ncl'      gloss-br='em_pé' fn=None idx=None
-  p=2   v='niwenigi'         t='N$'         l=1   gloss-br='comida'
+  p=2   v='*T*'              t=None         l=2   gloss-br=None
+  p=3   v='niwenigi'         t='N$'         l=1   gloss-br='comida'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='wenigi'     t='n'        gloss-br='comida' fn=None idx=None
-  p=3   v='daGaxa'           t='Q'          l=1   gloss-br='muito'
-  p=4   v='me'               t='C'          l=1   gloss-br='que'
-  p=5   v='dakake'           t='VB'         l=2   gloss-br='duro'
+  p=4   v='daGaxa'           t='Q'          l=1   gloss-br='muito'
+  p=5   v='me'               t='C'          l=1   gloss-br='que'
+  p=6   v='dakake'           t='VBU'        l=2   gloss-br='duro'
       splits:
         [1] v='d'          t='Inv'      gloss-br=None fn=None idx=None
         [2] v='akake'      t='v'        gloss-br=None fn=None idx=None
-  p=6   v='loojedi'          t='N$'         l=3   gloss-br='preço del(e|a)'
+  p=7   v='*T*'              t=None         l=4   gloss-br=None
+  p=8   v='loojedi'          t='N$'         l=3   gloss-br='preço del(e|a)'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='oojedi'     t='n'        gloss-br='preço' fn=None idx=None
 
 conllu/token count check:
-  tokens=6  proto-conllu=0
+  tokens=8  proto-conllu=0
 
 ================================================================================
 Sentence 13
@@ -746,19 +760,21 @@ container_meta:
 translations:
   pt-br: [?] O menino está na canoa do azol. 
 comments:
-  [1] 2026-07-11 15:12:18 — Leonel Figueiredo de Alencar — Arrumando tradução portuguesa
+  [1] 2026-08-07 16:00:09 — Leonel Figueiredo de Alencar — Discrepância entre árvore e tradução
+      Pela árvore, seria "anzol da canoa", uma vez que  "niwatece" ('anzol') constitui NP irmão de núcleo "lomiigo" ('anzol del(e|a)'). Hoje se perguntou ao Hilário pela tradução da sentença do kadiwéu e se faz sentido. TODO: Aguardando resposta do consultor indígena.
+  [2] 2026-07-11 15:12:18 — Leonel Figueiredo de Alencar — Arrumando tradução portuguesa
       Estava: "o menino está na canoa do anzol???". Estou indicando a dúvida sobre o teor da tradução por meio de "[?]" no início da sentença. 
-  [2] 2026-06-24 18:46:52 — Leonel Figueiredo de Alencar — Tradução e árvore
+  [3] 2026-06-24 18:46:52 — Leonel Figueiredo de Alencar — Tradução e árvore
       Deixei status "Revisar" porque fiquei em dúvida sobre a representação do NP possessivo.
-  [3] 2026-06-24 18:32:00 — Leonel Figueiredo de Alencar — Correção do texto em kadiwéu
+  [4] 2026-06-24 18:32:00 — Leonel Figueiredo de Alencar — Correção do texto em kadiwéu
       Atualizei a versão em kadiwéu conforme mensagem da Vanda enviada por Whattsapp em 19/06/26 e encaminhada para mim. Fiz as devidas noremalizaçòes  na sentença original "Ijo niganigawani idei Madi lomigo niwatece".
-  [4] 2026-06-19 14:43:03 — Filomena Sandalo
+  [5] 2026-06-19 14:43:03 — Filomena Sandalo
       estrutura errada feita pelo parser
-  [5] 2026-06-11 14:42:33 — Filomena Sandalo
+  [6] 2026-06-11 14:42:33 — Filomena Sandalo
       Manter sempre Griffiths para facilitar a conversa com o dicionário
-  [6] 2026-06-10 20:18:19 — Filomena Sandalo
+  [7] 2026-06-10 20:18:19 — Filomena Sandalo
       Manter as vogais longas 
-  [7] 2026-06-10 12:29:10 — Leonel Figueiredo de Alencar — niganigawaanigi ou nigaanigawaanigi?
+  [8] 2026-06-10 12:29:10 — Leonel Figueiredo de Alencar — niganigawaanigi ou nigaanigawaanigi?
       niganigawaanigi como está ou nigaanigawaanigi conforme Griffiths? De modo geral, como lidar com discrepâncias de grafia, especialmente no que tange à quantidade vocálica, entre sentenças redigidas pelos informantes e as formas dicionarizadas?
 
 proto-conllu:
@@ -770,6 +786,7 @@ chunks:
   span=4-7 type=CP-me level=1
   span=5-7 type=IP-SUB level=2
   span=5-7 type=NP level=3
+  span=7-7 type=NP level=4
 
 tokens:
   p=1   v='Ijo'              t='D'          l=1   gloss-br='o|a'
@@ -798,8 +815,8 @@ tokens:
   p=6   v='lomiigo'          t='N$'         l=3   gloss-br='anzol del(e|a)'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
-        [2] v='omiigo'     t='n'        gloss-br='anzol' fn=None idx=None
-  p=7   v='niwatece'         t='N$'         l=3   gloss-br='canoa'
+        [2] v='omiigo'     t='n'        gloss-br='anzol[F]' fn=None idx=None
+  p=7   v='niwatece'         t='N$'         l=4   gloss-br='canoa'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='watece'     t='n'        gloss-br='canoa' fn=None idx=None
@@ -823,7 +840,9 @@ container_meta:
 translations:
   pt-br: Aquele menino está na canoa do anzol.
 comments:
-  [1] 2026-07-11 15:18:42 — Leonel Figueiredo de Alencar — Tradução portuguesa. 
+  [1] 2026-08-07 16:04:56 — Leonel Figueiredo de Alencar — Discrepância entre árvore e tradução
+      Ver comentário sobre sentença anterior.
+  [2] 2026-07-11 15:18:42 — Leonel Figueiredo de Alencar — Tradução portuguesa. 
       Estava: "aquele menino é na canoa do anzol".
 
 proto-conllu:
@@ -850,7 +869,7 @@ tokens:
         [3] v='gi'         t='Gnr'      gloss-br='M' fn=None idx=None
         [4] v='awaana'     t='Dim'      gloss-br=None fn=None idx=None
         [5] v='gi'         t='Gnr'      gloss-br='M' fn=None idx=None
-  p=3   v='me@'              t='C'          l=1   gloss-br=None
+  p=3   v='me@'              t='C'          l=1   gloss-br='que com el(e|a)'
       split: {"v": "manitaGa", "t": "C+DAPL", "idx": 0}
       splits:
         [1] v='me'         t=None       gloss-br=None fn=True idx=None
@@ -1464,7 +1483,7 @@ Sentence 30
 path: $.pages[0].sentences[29]
 uid: 0c7e64fb-f070-4faa-a12a-c110cdf4bf16
 text: niGijo lodaajo ajo lodowa aGica digoida liGeladi
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -1490,24 +1509,24 @@ proto-conllu:
 chunks:
   span=1-8 type=IP-MAT level=0
   span=1-4 type=NP-SBJ level=1
-  span=1-2 type=NP level=2
+  span=3-4 type=NP level=2
   span=6-8 type=NP-PRD level=1
 
 tokens:
-  p=1   v='niGijo'           t='D'          l=2   gloss-br='este'
+  p=1   v='niGijo'           t='D'          l=1   gloss-br='este'
       splits:
         [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
         [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
         [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
-  p=2   v='lodaajo'          t='N$'         l=2   gloss-br='faca del(e|a)'
+  p=2   v='lodaajo'          t='N$'         l=1   gloss-br='faca del(e|a)'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='odajo'      t='n'        gloss-br='faca[M]' fn=None idx=None
-  p=3   v='ajo'              t='D'          l=1   gloss-br='a'
+  p=3   v='ajo'              t='D'          l=2   gloss-br='a'
       splits:
         [1] v='a'          t='Gnr'      gloss-br='Fem' fn=None idx=None
         [2] v='jo'         t='Ncl'      gloss-br='em_frente' fn=None idx=None
-  p=4   v='lodowa'           t='N$'         l=1   gloss-br='cônjuge del(e|a)'
+  p=4   v='lodowa'           t='N$'         l=2   gloss-br='cônjuge del(e|a)'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='odowa'      t='n'        gloss-br='cônjuge' fn=None idx=None
@@ -2041,9 +2060,11 @@ container_meta:
 translations:
   pt-br: estes ovos da fotografia dela estão bonitos
 comments:
-  [1] 2026-07-11 19:36:00 — Leonel Figueiredo de Alencar — ijowa -> ijoa
+  [1] 2026-08-07 16:12:18 — Leonel Figueiredo de Alencar — NP-PRD não formado
+      A nominalização "libinienaGa" deveria   ser o único constituinte e núcleo de NP-PRD, se levarmos em conta o provável sentido da sentença em kadiwéu, tal como expresso livremente na tradução em português. TODO: Em predicativas nominais do tipo inclusivo, é possível um outro nó nominal (v.g., N ou N$) além do núcleo N? Possível solução prática: N-NOM ou alguma coisa do tipo para nominalizações como "libinienaGa".
+  [2] 2026-07-11 19:36:00 — Leonel Figueiredo de Alencar — ijowa -> ijoa
       ijowa -> ijoa
-  [2] 2026-07-11 19:25:30 — Leonel Figueiredo de Alencar — Construção posessiva
+  [3] 2026-07-11 19:25:30 — Leonel Figueiredo de Alencar — Construção posessiva
       O NP complemento é "ovos" na árvore, mas parece que deveria ser fotografia. Por outro lado, o determinante refere-se a "ovos". Portanto, deveria constituir nó irmão com esse nome.
 
 proto-conllu:
@@ -2051,9 +2072,9 @@ proto-conllu:
 
 chunks:
   span=1-4 type=IP-MAT level=0
-  span=1-3 type=NP-SBJ level=1
+  span=1-4 type=NP level=1
   span=2-2 type=NP level=2
-  span=4-4 type=NP-PRD level=1
+  span=4-4 type=NP level=2
 
 tokens:
   p=1   v='ijoa'             t='D'          l=1   gloss-br='os|as'
@@ -2070,7 +2091,7 @@ tokens:
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='wigo'       t='n'        gloss-br='espírito/fotografia' fn=None idx=None
-  p=4   v='libinienaGa'      t='N$'         l=1   gloss-br=None
+  p=4   v='libinienaGa'      t='N$'         l=2   gloss-br=None
 
 conllu/token count check:
   tokens=4  proto-conllu=0
@@ -2091,23 +2112,24 @@ container_meta:
 translations:
   pt-br: estes ovos da fotografia dela estão bonitos
 comments:
-  <none>
+  [1] 2026-08-07 16:23:31 — Leonel Figueiredo de Alencar — Discrepância entre árvore e tradução
+      A árvore atual expressa: "a fotografia (o espírito)  da beleza (del(e|a)) são os ovos." Em vez disso, talvez tenhamos: "os ovos são a beleza da fotografia (del(e|a))", com inversão do sujeito. TODO: Oração predicativa equativa? Nessa hipótese, teríamos NP-PRD complexo, contrariamente ao que especulei noutro comentário.
 
 proto-conllu:
   <none>
 
 chunks:
   span=1-5 type=IP-MAT level=0
-  span=1-4 type=NP-SBJ level=1
-  span=1-3 type=NP level=2
-  span=5-5 type=NP-PRD level=1
+  span=1-3 type=NP-SBJ level=1
+  span=3-3 type=NP level=2
+  span=4-5 type=NP-PRD level=1
 
 tokens:
-  p=1   v='ijo'              t='D'          l=2   gloss-br='o'
+  p=1   v='ijo'              t='D'          l=1   gloss-br='o'
       splits:
         [1] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
         [2] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
-  p=2   v='niwigo'           t='N$'         l=2   gloss-br=None
+  p=2   v='niwigo'           t='N$'         l=1   gloss-br=None
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='wigo'       t='n'        gloss-br='espírito/fotografia' fn=None idx=None
@@ -2265,7 +2287,8 @@ proto-conllu:
 
 chunks:
   span=1-5 type=IP-MAT level=0
-  span=1-4 type=NP level=1
+  span=1-2 type=NP-SBJ level=1
+  span=3-4 type=NP-PRD level=1
   span=4-4 type=NP level=2
 
 tokens:
@@ -2745,26 +2768,33 @@ container_meta:
 translations:
   pt-br: eu não estou perto dela
 comments:
-  <none>
+  [1] 2026-08-04 15:15:45 — Leonel Figueiredo de Alencar — Split feito
+      Consertei. Sobre o status REVISAR mantido, ver comentário à sentença seguinte.
+  [2] 2026-08-04 15:09:11 — Leonel Figueiredo de Alencar — Falha no split de "aGica"
+      A negação parece marcada para split, no entanto, isso não se reflete na árvore.
 
 proto-conllu:
   <none>
 
 chunks:
-  span=1-3 type=CP-D level=0
-  span=3-3 type=IP-SUB level=1
+  span=1-4 type=CP-D level=0
+  span=2-2 type=NP level=1
+  span=4-4 type=IP-SUB level=1
 
 tokens:
-  p=1   v='aGica'            t='NEG+D'      l=0   gloss-br='não ele'
+  p=1   v='aG@'              t='NEG'        l=0   gloss-br='não ele'
+      split: {"v": "aGica", "t": "NEG+D", "idx": 0}
       splits:
-        [1] v='aG'         t='Neg'      gloss-br=None fn=True idx=None
+        [1] v='aG'         t='Neg'      gloss-br=None fn=None idx=None
         [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
         [3] v='ca'         t='Ncl'      gloss-br='ausente' fn=None idx=None
-  p=2   v='daGa'             t='C'          l=0   gloss-br='irrealis'
-  p=3   v='jipegitege'       t='VBAPL'      l=1   gloss-br=None
+  p=2   v='@ica'             t='D'          l=1   gloss-br=None
+      split: {"idx": 1}
+  p=3   v='daGa'             t='C'          l=0   gloss-br='irrealis'
+  p=4   v='jipegitege'       t='VBAPL'      l=1   gloss-br=None
 
 conllu/token count check:
-  tokens=3  proto-conllu=0
+  tokens=4  proto-conllu=0
 
 ================================================================================
 Sentence 57
@@ -2782,7 +2812,8 @@ container_meta:
 translations:
   pt-br: eu não estou perto dele
 comments:
-  <none>
+  [1] 2026-08-04 15:13:59 — Leonel Figueiredo de Alencar — Split de "aGica"
+      Consegui fazer o split de *aGica*, que não constatei na sentença anterior. Vou tenatr consertar isso lá. Mantenho aqui o status REVISAR porque não ficou clara para mim a motivação da categoria raiz CP-D. 
 
 proto-conllu:
   <none>
@@ -2796,7 +2827,7 @@ tokens:
   p=1   v='aG@'              t='NEG'        l=0   gloss-br='não ele'
       split: {"v": "aGica", "t": "NEG+D", "idx": 0}
       splits:
-        [1] v='aG'         t='Neg'      gloss-br=None fn=None idx=None
+        [1] v='aG'         t='Neg'      gloss-br=None fn=True idx=None
         [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
         [3] v='ca'         t='Ncl'      gloss-br='ausente' fn=None idx=None
   p=2   v='@ica'             t='D'          l=1   gloss-br=None
@@ -3481,7 +3512,7 @@ comments:
       Estrutura difícil. No momento, a árvore aparentemente carece de diversas informações que constam de outras árvores com os mesmos elementos *me* e *taGa* envolvidos, como `APL` (aplicativo), `IP-SUB` e `CP-me`.
   [2] 2026-07-02 03:32:02 — Leonel Figueiredo de Alencar — Split de metaGa?
       Noutros exemplos, o "me" é  separado. Seria o caso de fazer isso aqui também? Caso contrário, marcamos como análise finalizada?
-  [3] 2026-05-21 16:23:13 — Filomena Sandalo
+  [3] 2026-05-21 16:23:13 — Filomena Sandalo — Regra 56 não funcionou: rever a regra no parser
       CAPL não existe no Parser, ocorre porque o idi Ncl com funçnao de pronome foi extraído ed o verbo é cpopular zero.
 
 proto-conllu:
@@ -3509,7 +3540,7 @@ tokens:
       splits:
         [1] v='i'          t='Gnr'      gloss-br='masc' fn=None idx=None
         [2] v='di'         t='Ncl'      gloss-br='deitado' fn=None idx=None
-  p=5   v='metaGa'           t='C'          l=0   gloss-br='que com'
+  p=5   v='metaGa'           t='CAPL'       l=0   gloss-br='que com'
       splits:
         [1] v='me'         t='c'        gloss-br=None fn=False idx=None
         [2] v='taGa'       t='Apl'      gloss-br='3' fn=None idx=None

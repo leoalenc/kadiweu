@@ -135,6 +135,10 @@
 	  (VB @idei)
 	  (NP (N dineigi))))
 
+( (IP-MAT (NP-SBJ (N$ liwigo)
+		  (NP (N niganigawanigi)))
+	  (NP-PRD (N$ libinienigi))))
+
 ( (IP-MAT (NP-SBJ (D naǥani) (N wetiǥa))
 	  (CP-me (Q eliodi)
 		 (C me)
@@ -161,6 +165,12 @@
 	      (NP (N waca))
 	      (N$ lotiidi))
 	  (VB dapicoǥo)))
+
+( (IP-MAT (NP-SBJ (D niǥidiwa)
+		  (NP (N okokodi))
+		  (N$ ligetedi)
+		  (NP (N$ liwigo)))
+	  (NP-PRD (N$ libinienaǥa))))
 
 ( (IP-MAT (NP-1 (D Niǥidiwa)
 		(NP (N noǥojedi))

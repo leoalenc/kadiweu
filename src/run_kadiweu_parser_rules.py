@@ -1319,8 +1319,11 @@ def main(argv: Sequence[str] | None = None) -> int:
             )
         if args.skip_rules:
             requested = set(args.skip_rules)
-            available = {rule.original_number for rule in rules}
-            missing = sorted(requested - available)
+            rules_by_number = {
+                rule.original_number: rule
+                for rule in rules
+            }
+            missing = sorted(requested - rules_by_number.keys())
 
             if missing:
                 raise RunnerError(
@@ -1328,16 +1331,25 @@ def main(argv: Sequence[str] | None = None) -> int:
                     + ", ".join(map(str, missing))
                 )
 
+            skipped_rules = [
+                rules_by_number[number]
+                for number in sorted(requested)
+            ]
+
+            print(
+                "skipping original TBP rule(s): "
+                + ", ".join(
+                    f"{rule.original_number} ({rule.name})"
+                    for rule in skipped_rules
+                ),
+                file=sys.stderr,
+            )
+
             rules = [
                 rule
                 for rule in rules
                 if rule.original_number not in requested
             ]
-            print(
-                "skipping original TBP rule(s): "
-                + ", ".join(map(str, sorted(requested))),
-                file=sys.stderr,
-            )
         if args.work_dir:
             work_dir = args.work_dir
             temporary = None

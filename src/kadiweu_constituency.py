@@ -285,7 +285,7 @@ class ConstituencyTree:
         *,
         indent: int = 2,
         show_metadata: bool = True,
-        trace_format: str = "tycho",
+        trace_format: str = "corpussearch",
     ) -> str:
         """Return a Penn-style sentence record for CorpusSearch or Tycho.
 
@@ -656,7 +656,7 @@ def write_trees(
     show_metadata: bool = True,
     show_spans: bool = False,
     show_positions: bool = False,
-    trace_format: str = "tycho",
+    trace_format: str = "corpussearch",
 ) -> None:
     """Write one or more trees to a text stream."""
     for index, tree in enumerate(trees):
@@ -737,7 +737,7 @@ def derived_output_name(
     uids: Sequence[str] | None,
     select_all: bool,
     statuses: Sequence[str] | None,
-    trace_format: str = "tycho",
+    trace_format: str = "corpussearch",
 ) -> str:
     """Derive an unambiguous output filename from the input and selection."""
     try:
@@ -857,11 +857,11 @@ def build_argument_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--trace-format",
         choices=("tycho", "corpussearch"),
-        default="tycho",
+        default="corpussearch",
         help=(
             "representation of empty-category terminals in CorpusSearch output: "
             "'tycho' produces (NP-TRACE *T*-1), while 'corpussearch' produces "
-            "(NP-TRACE (-NONE- *T*-1)); default: tycho"
+            "(NP-TRACE (-NONE- *T*-1)); default: corpussearch"
         ),
     )
     destination = parser.add_mutually_exclusive_group()
@@ -889,9 +889,9 @@ def main(argv: Sequence[str] | None = None) -> int:
         _reject_duplicates(args.uids, "sentence UID")
         _reject_duplicates(args.statuses, "status")
 
-        if args.trace_format != "tycho" and args.format != "corpussearch":
+        if args.trace_format != "corpussearch" and args.format != "corpussearch":
             raise ValueError(
-                "--trace-format corpussearch requires --format corpussearch"
+                "--trace-format tycho requires --format corpussearch"
             )
 
         document = load_document(args.json_file)

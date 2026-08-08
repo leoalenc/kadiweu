@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Regenerate the CorpusSearch PSD files for the DONE and REVIEW sentences in
-# each KadiwÃ©u source dataset.
+# each Kadiwéu source dataset.
 
 set -Eeuo pipefail
 

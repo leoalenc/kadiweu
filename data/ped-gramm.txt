@@ -767,7 +767,7 @@ translations:
   pt-br: A comunidade do menino é perto da cidade de vocês
 comments:
   [1] 2026-07-21 13:25:07 — Leonel Figueiredo de Alencar — Corrigir estrutura possessiva
-      A árvore codifica uma relação de posse entre "menino" (possuidor) e "comunidade" (possessum), uma vez que este último substantivo integra NP filho do NP maior e irmão de "menino". Na verdade, o núcleo do NP maior deveria ser "comunidade". "menino" constituindo NP irmão desse núcleo. 
+      A árvore codifica uma relação de posse entre "menino" (possessum) e "comunidade" (possuidor), uma vez que este último substantivo integra NP filho do NP maior e irmão de "menino". Na verdade, o núcleo do NP maior deveria ser "comunidade". "menino" constituindo NP irmão desse núcleo. Temos nessa sentença a ordem possessum - possuidor, que parece ser mais frequente quando nome próprio não está envolvido.
   [2] 2026-03-25 18:40:36 — Filomena Sandalo
       tegi = aplicativo de terceira pessoa masculino, corrigir no corpus (concorda com o gênero do objeto indireto)
 
@@ -1008,7 +1008,7 @@ Sentence 22
 path: $.pages[0].sentences[21]
 uid: 881131dd-3f70-411a-ac7e-85557139d1e3
 text: ica nioladi nioxoa libinienigi
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -1018,9 +1018,11 @@ container_meta:
 translations:
   pt-br: A língua do irmão dele/dela é bonita
 comments:
-  [1] 2026-07-10 17:16:48 — Leonel Figueiredo de Alencar — Estrutura interna do NP com possuidor
+  [1] 2026-08-07 16:42:27 — Leonel Figueiredo de Alencar — REVISAR -> FINALIZADO
+      Ambiguidade de dois nós N$ irmãos resolvida com a nova regra `np-poss2`, o segundo agora constituindo núcleo do NP complemento (possuidor).
+  [2] 2026-07-10 17:16:48 — Leonel Figueiredo de Alencar — Estrutura interna do NP com possuidor
       A árvore não indica que "irmão" seja o possuidor. Provável ambiguidade estrutural, impossível de ser resolvida por um parser sintático baseado em regras, conforme a literatura clássica sobre o assunto. Deixo aqui o registro do fato. Talvez se possa heuristicamente determinar que o segundo N$ seja o possuidor, mas empiricamente isso pode vir a ser falseado (possuidor não necessariamente pós-nominal na língua). Possível mudança para FINALIZADO.
-  [2] 2026-07-10 17:08:19 — Leonel Figueiredo de Alencar — "libinienigi"
+  [3] 2026-07-10 17:08:19 — Leonel Figueiredo de Alencar — "libinienigi"
       V. comentários anteriores.
 
 proto-conllu:
@@ -1029,6 +1031,7 @@ proto-conllu:
 chunks:
   span=1-4 type=IP-MAT level=0
   span=1-3 type=NP-SBJ level=1
+  span=3-3 type=NP level=2
   span=4-4 type=NP-PRD level=1
 
 tokens:
@@ -1040,7 +1043,7 @@ tokens:
       splits:
         [1] v='n'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='ioladi'     t='n'        gloss-br='língua|boca' fn=None idx=None
-  p=3   v='nioxoa'           t='N$'         l=1   gloss-br='irmão dele'
+  p=3   v='nioxoa'           t='N$'         l=2   gloss-br='irmão dele'
       splits:
         [1] v='n'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='ioxoa'      t='n'        gloss-br='irmão' fn=None idx=None
@@ -1060,7 +1063,7 @@ Sentence 23
 path: $.pages[0].sentences[22]
 uid: 95a7d135-4be0-463d-b443-76cc5828fc89
 text: ica nioladi lodawa libinienigi
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -1070,9 +1073,11 @@ container_meta:
 translations:
   pt-br: A língua do marido/esposa dele/dela é bonita
 comments:
-  [1] 2026-07-21 13:51:27 — Leonel Figueiredo de Alencar — Ambiguidade estrutural
+  [1] 2026-08-07 16:45:17 — Leonel Figueiredo de Alencar — REVISAR -> FINALIZADO
+      Questão resolvida, ver comentário de hoje sobre a outra sentença de estrutura similar.
+  [2] 2026-07-21 13:51:27 — Leonel Figueiredo de Alencar — Ambiguidade estrutural
       Remover ambiguidade? Dos dois nós N$, um deles deveria projetar NP, constituindo complemento nominal (possuidor) do outro, se formos adotar o mesmo padrão para NPs possessivos.
-  [2] 2026-07-21 13:35:24 — Leonel Figueiredo de Alencar — Prefixo possessivo
+  [3] 2026-07-21 13:35:24 — Leonel Figueiredo de Alencar — Prefixo possessivo
       Seguindo Griffiths (2002), vou tratar o "n-" de "nioladi" como marca genitiva: 
 
 >nioladi niolatedi subst masc 1 boca dele
@@ -1087,6 +1092,7 @@ proto-conllu:
 chunks:
   span=1-4 type=IP-MAT level=0
   span=1-3 type=NP-SBJ level=1
+  span=3-3 type=NP level=2
   span=4-4 type=NP-PRD level=1
 
 tokens:
@@ -1098,7 +1104,7 @@ tokens:
       splits:
         [1] v='n'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='ioladi'     t='n'        gloss-br='língua|boca' fn=None idx=None
-  p=3   v='lodawa'           t='N$'         l=1   gloss-br='esposa'
+  p=3   v='lodawa'           t='N$'         l=2   gloss-br='esposa'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='odawa'      t='n'        gloss-br='marido|esposa' fn=None idx=None
@@ -1128,9 +1134,11 @@ container_meta:
 translations:
   pt-br: a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)
 comments:
-  [1] 2026-05-22 19:37:57 — Filomena Sandalo
+  [1] 2026-08-07 16:51:36 — Leonel Figueiredo de Alencar — "napioi": N?
+      *napioi* seria `N`? TODO: Comparar com outras sentenças com essa palavra.
+  [2] 2026-05-22 19:37:57 — Filomena Sandalo
       Sim, problemas com relativas a revisar nas próximas sessões
-  [2] 2026-04-13 17:09:33 — Leonel Figueiredo de Alencar — Estrutura sintagmática da relativa
+  [3] 2026-04-13 17:09:33 — Leonel Figueiredo de Alencar — Estrutura sintagmática da relativa
       O WNP não deveria formar um sintagma (oração relativa) com o ADJ, integrado ao NP? 
 
 proto-conllu:
@@ -1333,7 +1341,7 @@ Sentence 28
 ================================================================================
 path: $.pages[0].sentences[27]
 uid: ee1a1190-7803-404c-83f6-49d3ccf63b0d
-text: Eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi
+text: Eyodi dowediteloco nawodigijedi micoataGa daGa me lionigipi
 status: REVIEW
 struct_status: None
 visible: None
@@ -1344,17 +1352,21 @@ container_meta:
 translations:
   pt-br: meu pai cuida da plantação de flores como filhas
 comments:
-  [1] 2026-07-22 18:11:08 — Filomena Sandalo
+  [1] 2026-08-05 14:29:48 — Leonel Figueiredo de Alencar — Alterar regra(s) do parser
+      TODO: Alterar regra(s) do parser para gerar uma análise condizente com a tradução livre "meu pai cuida/olha pelas flores que elas parecem filhas", conforme o comentário abaixo.
+  [2] 2026-08-05 14:22:36 — Leonel Figueiredo de Alencar — naodigijedi -> nawodigijedi
+      Normalização realizada: naodigijedi -> nawodigijedi.
+  [3] 2026-07-22 18:11:08 — Filomena Sandalo
       acho que sim
-  [2] 2026-07-22 18:10:36 — Filomena Sandalo
+  [4] 2026-07-22 18:10:36 — Filomena Sandalo
       Acho que o erro é que o CP-daGa deveria ser irmão do NP do IP-SUB. O aplicativo é um benefactivo. E o primeiro CO-me que contém o CP-daGa é uma relativa adjunta ao NP do IP-SUB. A gente pode trabalhar em arrumar este erro na nossa volta às reuniões. Não acho que é uma oração independente que se inicia com o subordinador me. Seria algo como "meu pai cuida/olha pelas flores que elas parecem filhas". 
-  [3] 2026-07-22 14:24:16 — Leonel Figueiredo de Alencar — Integração sintática de "micoataGa"
+  [5] 2026-07-22 14:24:16 — Leonel Figueiredo de Alencar — Integração sintática de "micoataGa"
       Continuo tendendo a achar que "micoataGa" integra o sintagma que constitui o nó filho de IP-MAT, ou seja, algo como uma oração comparativa. TODO: Sugiro perguntar aos consultores se "Eyodi dowediteloco naodigijedi"('meu pai cuida da plantação de flores') é aceitável. Não vejo motivação para "micoataGa"  na árvore atual porque o verbo já tem aplicativo.
-  [4] 2026-07-04 13:53:05 — Filomena Sandalo
+  [6] 2026-07-04 13:53:05 — Filomena Sandalo
       A regra 76 estava gerando erro aqui também. Ficou bom impedir esta regra.
-  [5] 2026-06-11 14:11:20 — Filomena Sandalo
+  [7] 2026-06-11 14:11:20 — Filomena Sandalo
       Manter Griffiths, mas não sei o que seria correto fonemicamente
-  [6] 2026-06-02 17:44:29 — Leonel Figueiredo de Alencar — ortografia de "naodigijedi"
+  [8] 2026-06-02 17:44:29 — Leonel Figueiredo de Alencar — ortografia de "naodigijedi"
       Seria "nawodigijedi" em vez de "naodigijedi"? 
 Griffths (2002, p. 97):
 
@@ -1362,7 +1374,7 @@ lawodigijegi lawodigijedi subst masc
 planta dele
 lawodigije (forma fem)
 oodawodigijegi nossa planta
-  [7] 2026-05-21 15:52:40 — Filomena Sandalo
+  [9] 2026-05-21 15:52:40 — Filomena Sandalo
       corrigir porque o CP-daga está no lugar errado
 
 proto-conllu:
@@ -1383,7 +1395,7 @@ chunks:
 tokens:
   p=1   v='Eyodi'            t='N$'         l=1   gloss-br='meu pai'
   p=2   v='dowediteloco'     t='VBAPL'      l=0   gloss-br='cuida pela'
-  p=3   v='naodigijedi'      t='N'          l=1   gloss-br='plantação de flores'
+  p=3   v='nawodigijedi'     t='N'          l=1   gloss-br='plantação de flores'
   p=4   v='me@'              t='C'          l=2   gloss-br='que com elas'
       split: {"v": "micoataGa", "t": "C+DAPL", "idx": 0}
       splits:
@@ -1910,7 +1922,7 @@ Sentence 40
 path: $.pages[0].sentences[39]
 uid: 10e550d6-df13-4527-8aee-aa23e3f2fcdd
 text: iGeladi digoida weiigi .
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -1920,7 +1932,9 @@ container_meta:
 translations:
   pt-br: Minha casa é no rio.
 comments:
-  [1] 2026-08-03 19:08:27 — Leonel Figueiredo de Alencar — NP-PRD não identificado
+  [1] 2026-08-07 16:46:50 — Leonel Figueiredo de Alencar — REVISAR -> FINALIZADO
+      Resolvido.
+  [2] 2026-08-03 19:08:27 — Leonel Figueiredo de Alencar — NP-PRD não identificado
       O parser não reconheceu a estrutura sentencial bipartite, com o último N projetando NP-PRD.
 
 proto-conllu:
@@ -1928,11 +1942,11 @@ proto-conllu:
 
 chunks:
   span=1-4 type=IP-MAT level=0
-  span=1-3 type=NP level=1
-  span=1-1 type=NP level=2
+  span=1-1 type=NP-SBJ level=1
+  span=2-3 type=NP-PRD level=1
 
 tokens:
-  p=1   v='iGeladi'          t='N$'         l=2   gloss-br='minha casa'
+  p=1   v='iGeladi'          t='N$'         l=1   gloss-br='minha casa'
       splits:
         [1] v='i'          t='Gen'      gloss-br='1' fn=None idx=None
         [2] v='Geladi'     t='n'        gloss-br='casa' fn=None idx=None

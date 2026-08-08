@@ -66,6 +66,16 @@
 		  (NP (N niwigo)))
 	  (NP-PRD (N$ libinienigi))))
 
+( (IP-MAT (NP-SBJ (D ica)
+		  (N$ nioladi)
+		  (NP (N$ nioxoa)))
+	  (NP-PRD (N$ libinienigi))))
+
+( (IP-MAT (NP-SBJ (D ica)
+		  (N$ nioladi)
+		  (NP (N$ lodawa)))
+	  (NP-PRD (N$ libinienigi))))
+
 ( (IP-MAT (NP (N$ iǥeladi))
 	  (VB idei)
 	  (NP (N naigi)
@@ -109,6 +119,10 @@
 ( (IP-MAT (NP (D ijotawece))
 	  (VB etidi)
 	  (NP (N akiidi))
+	  (PUNC .)))
+
+( (IP-MAT (NP-SBJ (N$ iǥeladi))
+	  (NP-PRD (D digoida) (N weiigi))
 	  (PUNC .)))
 
 ( (IP-MAT (NP (N$ iǥeladi))
