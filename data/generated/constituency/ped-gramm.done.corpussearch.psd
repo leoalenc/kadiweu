@@ -291,6 +291,30 @@ text_por = A comunidade dele/dela é bonita
 )
 
 /*
+sentence = 18
+uid = 582429f2-67d5-4077-b209-6deb7b5df54f
+status = DONE
+text = ica lideGegi loligi idei liGeladi
+text_por = a deliciosa comida está na casa dela/dele
+*/
+(
+  (IP-MAT
+    (NP
+      (D ica)
+      (N$ lideGegi)
+      (NP
+        (N$ loligi)
+      )
+    )
+    (VB idei)
+    (NP
+      (N$ liGeladi)
+    )
+  )
+  (ID ped-gramm,0.18)
+)
+
+/*
 sentence = 19
 uid = 0f478381-6858-463d-94cc-903e9dc879f9
 status = DONE
@@ -330,6 +354,52 @@ text_por = a fotografia é/está bonita
     )
   )
   (ID ped-gramm,0.20)
+)
+
+/*
+sentence = 22
+uid = 881131dd-3f70-411a-ac7e-85557139d1e3
+status = DONE
+text = ica nioladi nioxoa libinienigi
+text_por = A língua do irmão dele/dela é bonita
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ica)
+      (N$ nioladi)
+      (NP
+        (N$ nioxoa)
+      )
+    )
+    (NP-PRD
+      (N$ libinienigi)
+    )
+  )
+  (ID ped-gramm,0.22)
+)
+
+/*
+sentence = 23
+uid = 95a7d135-4be0-463d-b443-76cc5828fc89
+status = DONE
+text = ica nioladi lodawa libinienigi
+text_por = A língua do marido/esposa dele/dela é bonita
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ica)
+      (N$ nioladi)
+      (NP
+        (N$ lodawa)
+      )
+    )
+    (NP-PRD
+      (N$ libinienigi)
+    )
+  )
+  (ID ped-gramm,0.23)
 )
 
 /*
@@ -500,6 +570,28 @@ text_por = Minha casa não fica perto do rio
 )
 
 /*
+sentence = 38
+uid = 46bbf9a8-c650-4e4b-a44f-78bfe6c5d979
+status = DONE
+text = ijo Gatodi etijo ida .
+text_por = O tucano está indo nele.
+*/
+(
+  (IP-MAT
+    (NP
+      (D ijo)
+      (N Gatodi)
+    )
+    (VB etijo)
+    (NP
+      (D ida)
+    )
+    (PUNC .)
+  )
+  (ID ped-gramm,0.38)
+)
+
+/*
 sentence = 39
 uid = 4ffc2f68-0474-488f-a94e-4065f952482a
 status = DONE
@@ -518,6 +610,27 @@ text_por = Eles (todos) estão (deitados) no rio.
     (PUNC .)
   )
   (ID ped-gramm,0.39)
+)
+
+/*
+sentence = 40
+uid = 10e550d6-df13-4527-8aee-aa23e3f2fcdd
+status = DONE
+text = iGeladi digoida weiigi .
+text_por = Minha casa é no rio.
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ iGeladi)
+    )
+    (NP-PRD
+      (D digoida)
+      (N weiigi)
+    )
+    (PUNC .)
+  )
+  (ID ped-gramm,0.40)
 )
 
 /*
@@ -542,6 +655,29 @@ text_por = Minha casa é no rio.
 )
 
 /*
+sentence = 43
+uid = 19401990-aa1d-4cf5-bea1-122254c6b77a
+status = DONE
+text = lotaGa GanaginaGa libinienaGa .
+text_por = A palavra de seu (teu) irmão é bonita.
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ lotaGa)
+      (NP
+        (N$ GanaginaGa)
+      )
+    )
+    (NP-PRD
+      (N$ libinienaGa)
+    )
+    (PUNC .)
+  )
+  (ID ped-gramm,0.43)
+)
+
+/*
 sentence = 46
 uid = 4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5
 status = DONE
@@ -562,6 +698,60 @@ text_por = A casa do João é suja.
     (PUNC .)
   )
   (ID ped-gramm,0.46)
+)
+
+/*
+sentence = 48
+uid = 8b1a9983-4dfd-49e8-9285-92c56c84b652
+status = DONE
+text = liGeladi ipegitegi niweiigi nigotaGa .
+text_por = A casa dele/dela é perto da lagoa da cidade.
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ liGeladi)
+    )
+    (VBAPL ipegitegi)
+    (NP-APL
+      (N$ niweiigi)
+      (NP
+        (N nigotaGa)
+      )
+    )
+    (PUNC .)
+  )
+  (ID ped-gramm,0.48)
+)
+
+/*
+sentence = 49
+uid = eeb42af3-fe5a-4b7d-97ea-b381ab589860
+status = DONE
+text = Niwatece iwaGadi codaa adakake loojedi .
+text_por = A canoa é pesada e seu preço é barato
+*/
+(
+  (IP-MAT
+    (IP-MAT
+      (NP
+        (N$ Niwatece)
+      )
+      (VB iwaGadi)
+    )
+    (CONJP
+      (CONJ codaa)
+      (IP-MAT
+        (NEG aG@)
+        (VBU @dakake)
+        (NP
+          (N$ loojedi)
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID ped-gramm,0.49)
 )
 
 /*
@@ -682,6 +872,42 @@ text_por = A casa dele/dela é no rio.
     )
   )
   (ID ped-gramm,0.56)
+)
+
+/*
+sentence = 57
+uid = 2c0248b3-8f68-46e9-b41c-9f7807572c87
+status = DONE
+text = etogo aneiwaGadi adakake lojedi .
+text_por = A pesada canoa está barata.
+*/
+(
+  (IP-MAT
+    (NP-1
+      (N etogo)
+      (CP-REL
+        (WNP-2
+          (WPRO ane@)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-2)
+          )
+          (VB @iwaGadi)
+        )
+      )
+    )
+    (NEG aG@)
+    (VBU @dakake)
+    (NP
+      (NP-GEN
+        (-NONE- *T*-1)
+      )
+      (N$ lojedi)
+    )
+    (PUNC .)
+  )
+  (ID ped-gramm,0.57)
 )
 
 /*

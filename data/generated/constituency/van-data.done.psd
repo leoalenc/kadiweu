@@ -1,4 +1,24 @@
 /*
+sentence = 1
+uid = a7e338a1-5403-40d4-b169-c840cf193aae
+status = DONE
+text = iGeladi digoida weiigi
+text_por = Minha casa é no rio
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ iGeladi)
+    )
+    (NP-PRD
+      (D digoida)
+      (N weiigi)
+    )
+  )
+  (ID van-data,0.1)
+)
+
+/*
 sentence = 2
 uid = d07f0db7-963e-47ab-ab3f-36614732bacd
 status = DONE
@@ -77,6 +97,50 @@ text_por = a mulher está feliz
 )
 
 /*
+sentence = 6
+uid = 3e518fdb-d852-41e5-87a4-f8778597c2a1
+status = DONE
+text = lotaGa GanaaginaGa libinienaGa
+text_por = a palavra de seu irmão é bonita
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ lotaGa)
+      (NP
+        (N$ GanaaginaGa)
+      )
+    )
+    (NP-PRD
+      (N$ libinienaGa)
+    )
+  )
+  (ID van-data,0.6)
+)
+
+/*
+sentence = 7
+uid = ee540050-e6fa-424e-9252-fd0b9312769d
+status = DONE
+text = lotaGa Gadodawa libinienaGa
+text_por = a palavra do seu marido é bonita
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ lotaGa)
+      (NP
+        (N$ Gadodawa)
+      )
+    )
+    (NP-PRD
+      (N$ libinienaGa)
+    )
+  )
+  (ID van-data,0.7)
+)
+
+/*
 sentence = 8
 uid = 947061b4-7b73-4612-8aa8-0af0e04cbc85
 status = DONE
@@ -97,6 +161,31 @@ text_por = a pesada canoa está barata
     )
   )
   (ID van-data,0.8)
+)
+
+/*
+sentence = 10
+uid = 0c38eab8-c6b0-4f02-bf05-27ea6285fe70
+status = DONE
+text = Gawenigi eliodi me libinienigi
+text_por = a sua comida é muito bonita
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ Gawenigi)
+    )
+    (CP-me
+      (Q eliodi)
+      (C me)
+      (IP-SUB
+        (NP
+          (N$ libinienigi)
+        )
+      )
+    )
+  )
+  (ID van-data,0.10)
 )
 
 /*
@@ -436,6 +525,33 @@ text_por = eles são felizes
     (VB ninitibigiwaji)
   )
   (ID van-data,0.29)
+)
+
+/*
+sentence = 30
+uid = 0c7e64fb-f070-4faa-a12a-c110cdf4bf16
+status = DONE
+text = niGijo lodaajo ajo lodowa aGica digoida liGeladi
+text_por = esta faca da esposa dele não está na casa
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D niGijo)
+      (N$ lodaajo)
+      (NP
+        (D ajo)
+        (N$ lodowa)
+      )
+    )
+    (NEG aG@)
+    (NP-PRD
+      (Q @ica)
+      (D digoida)
+      (N$ liGeladi)
+    )
+  )
+  (ID van-data,0.30)
 )
 
 /*
@@ -1104,4 +1220,50 @@ text_por = os filhos da Maria são bonitos
     )
   )
   (ID van-data,0.71)
+)
+
+/*
+sentence = 74
+uid = ebff5ffa-8a9d-4f8b-9960-38f70b344c19
+status = DONE
+text = ligeladi ipegitegi niweiigi nigotaGa
+text_por = a casa dele é perto do rio da cidade
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ ligeladi)
+    )
+    (VBAPL ipegitegi)
+    (NP-APL
+      (N$ niweiigi)
+      (NP
+        (N$ nigotaGa)
+      )
+    )
+  )
+  (ID van-data,0.74)
+)
+
+/*
+sentence = 75
+uid = 81048a6f-e084-4b0a-965a-f41fb5c53ff7
+status = DONE
+text = nigotaGa liGeladi ipegitegi weiigi
+text_por = a cidade da casa dela é perto do rio
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ nigotaGa)
+      (NP
+        (N$ liGeladi)
+      )
+    )
+    (VBAPL ipegitegi)
+    (NP-APL
+      (N weiigi)
+    )
+  )
+  (ID van-data,0.75)
 )
