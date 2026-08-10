@@ -817,6 +817,34 @@ text_por = Esta pedra que é pesada caiu no meu pé .
 )
 
 /*
+sentence = 40
+uid = e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4
+status = REVIEW
+text = NaGani wetiGa , ane iwaGadi , eniteloco iGonagi
+text_por = Esta pedra , que é pesada , caiu no meu pé .
+*/
+(
+  (IP-MAT
+    (NP
+      (NP
+        (D NaGani)
+        (N wetiGa))
+      (PUNC ,)
+      (CP-REL
+        (WNP-1
+          (WPRO ane))
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1))
+          (VB iwaGadi)))
+      (PUNC ,))
+    (VBAPL eniteloco)
+    (NP-APL
+      (N$ iGonagi)))
+  (ID hil-data,0.40)
+)
+
+/*
 sentence = 41
 uid = 8dda04f0-f7e8-46d6-b41d-b65dd214f01b
 status = DONE
@@ -1814,6 +1842,31 @@ text_por = A língua do marido/esposa dele/dela é bonita
 )
 
 /*
+sentence = 24
+uid = 2f47b402-9fe7-4714-96e3-c6cbdf405472
+status = REVIEW
+text = iGeladi idei naigi anenapioi
+text_por = a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ iGeladi))
+    (VB idei)
+    (NP
+      (N naigi)
+      (CP-REL
+        (WNP-1
+          (WPRO ane@))
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1))
+          (NP
+            (N @napioi))))))
+  (ID ped-gramm,0.24)
+)
+
+/*
 sentence = 25
 uid = a4d33655-fe74-4df2-8d5e-b3c88fba5fd1
 status = DONE
@@ -1839,6 +1892,78 @@ text_por = Minha casa fica na rua suja (na rua que é suja).
     )
   )
   (ID ped-gramm,0.25)
+)
+
+/*
+sentence = 26
+uid = f081c545-c42b-463d-b57f-db87787f20e7
+status = REVIEW
+text = João liGeladi ane napioi
+text_por = a casa do João, que é suja
+*/
+(
+  (IP-MAT
+    (NP
+      (NP
+        (NPR João))
+      (N$ liGeladi)
+      (CP-REL
+        (WNP-1
+          (WPRO ane))
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1))
+          (NP
+            (N napioi))))))
+  (ID ped-gramm,0.26)
+)
+
+/*
+sentence = 29
+uid = 4bdb4b8f-0176-4303-8a13-e313fbb6d7ad
+status = REVIEW
+text = Eyodi me niganaGacanajo
+text_por = Meu pai que era cantor
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ Eyodi)
+      (CP-me
+        (C me)
+        (IP-SUB
+          (NP
+            (N niganaGacanajo))))))
+  (ID ped-gramm,0.29)
+)
+
+/*
+sentence = 30
+uid = 7b806584-75e5-4017-b9e2-ba97458903bd
+status = REVIEW
+text = Eyodi ane niganaGacanajo
+text_por = Meu pai que era cantor (explicativa)
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ Eyodi)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (NP
+            (N niganaGacanajo)
+          )
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.30)
 )
 
 /*
@@ -2109,6 +2234,25 @@ text_por = A palavra de seu (teu) irmão é bonita.
 )
 
 /*
+sentence = 45
+uid = c25b098d-6b0a-4416-a31d-6d7219685a63
+status = REVIEW
+text = João liGeladi napioi .
+text_por = A casa do João é suja.
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (NP
+        (NPR João))
+      (N$ liGeladi))
+    (NP-PRD
+      (N napioi))
+    (PUNC .))
+  (ID ped-gramm,0.45)
+)
+
+/*
 sentence = 46
 uid = 4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5
 status = DONE
@@ -2129,6 +2273,27 @@ text_por = A casa do João é suja.
     (PUNC .)
   )
   (ID ped-gramm,0.46)
+)
+
+/*
+sentence = 47
+uid = ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec
+status = REVIEW
+text = liGeladi ipegitege niweiigi nigotaGa .
+text_por = A casa dele/dela é perto da cidade da lagoa.
+*/
+
+  (
+  (IP-MAT
+    (NP
+      (N$ liGeladi))
+    (VBAPL ipegitege)
+    (NP-APL
+      (NP
+        (N$ niweiigi))
+      (N$ nigotaGa))
+    (PUNC .))
+  (ID ped-gramm,0.47)
 )
 
 /*
