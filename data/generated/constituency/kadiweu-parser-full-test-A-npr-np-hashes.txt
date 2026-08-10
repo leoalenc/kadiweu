@@ -1,0 +1,13 @@
+aae745826f1ee4e174f5eb3a5584b9ff01a19604f92bae48d54073a5ce073b82  /home/leonel/Dropbox/projects/2025/post-doc/parser/kadiweu_parser_300726.pdt.npr-np-test.txt
+67765202a6721f4d2e269cbb5564cb4a676027a6218af05ef8f457f999d734ff  /home/leonel/Dropbox/projects/2025/post-doc/parser/kadiweu_parser_definitions_050726.txt
+4c8ab2ee21691347a0166f7f110893dff7170e3a8f78cfbf68fad5b1e1ada2c3  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test.pos
+1af4c6792367564160bbd20980c43bd0540e8bd8c6350121fe3746c6b36ea8b7  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test.gold.psd
+09a5c3a66a85bf55ce8bf640de33c30b79c5e8ae7cb2f83e0ea4238a098631c5  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A.psd
+a6cf1f65a17788040bd1c8efa104f1351aa045a0e715cd27cc4c5a5fa4a5f7c3  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A-npr-np.psd
+eba9cacc493e599ed1802492a3acf50f6226ed7c170a022ed5dea7eb0b0ff4a5  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A-npr-np-comparison.tsv
+3f9631b88ab5bb8b9d7b3019ae8478b77abf8f150b4f7d50d5a8a8498a5bcac1  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A-npr-np.diff
+f55cc15f17f1188800745e984d548b5c5d9a14218f2cda787962934e8e07795d  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A-npr-np-run.tsv
+9e5894bfc6852ca771ccd6ee942f0226f59a71cfc640ae3669666bfee0252a99  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A-npr-np-summary.tsv
+bc4c18d67500fb1627d093e31a008caf98ddd14a18168a76aee5cde363a2816d  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A-to-A-npr-np-transitions.tsv
+e664a8b52c32d0d3939172605e66bd416eaaeed62dc846eb44723fa4b702614e  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A-to-A-npr-np-summary.tsv
+d4ef4904b62e7d2bdf9ca4df0031f64c07a160b93c63a436d328dc32b73808e2  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A-npr-np-console.log
