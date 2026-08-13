@@ -924,9 +924,37 @@ container_meta:
 translations:
   pt-br: a fotografia é/está bonita
 comments:
-  [1] 2026-07-10 16:52:44 — Leonel Figueiredo de Alencar — Segmentação mais rica de "libinienigi"
+  [1] 2026-08-12 18:51:04 — Leonel Figueiredo de Alencar — REVISAR -> FINALIZADO
+      O parser atual produz a árvore esperada.
+  [2] 2026-08-12 18:49:44 — Leonel Figueiredo de Alencar — Erro de classificação 
+      Erroneamente, estava como finalizada com esta árvore, em que o núcleo do NP-SBJ projeta um NP espúrio: 
+```
+/*
+sentence = 20
+uid = 55551636-8ed3-4545-8510-d8dbfd817a1a
+status = DONE
+text = ica niwigo libinienigi
+text_por = a fotografia é/está bonita
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ica)
+      (NP
+        (N niwigo)
+      )
+    )
+    (NP-PRD
+      (N$ libinienigi)
+    )
+  )
+  (ID ped-gramm,0.20)
+)
+```
+
+  [3] 2026-07-10 16:52:44 — Leonel Figueiredo de Alencar — Segmentação mais rica de "libinienigi"
       Apliquei a entrada lexical mais rica (como em sentenças anteriores).
-  [2] 2026-07-10 16:47:40 — Leonel Figueiredo de Alencar — Corrigindo etiqueta de "niwigo"
+  [4] 2026-07-10 16:47:40 — Leonel Figueiredo de Alencar — Corrigindo etiqueta de "niwigo"
       Removendo da glosa para cá esta observação: retirapossuidor,fotosemdono. Correção feita: N$ -> N.
 
 proto-conllu:
@@ -935,7 +963,6 @@ proto-conllu:
 chunks:
   span=1-3 type=IP-MAT level=0
   span=1-2 type=NP-SBJ level=1
-  span=2-2 type=NP level=2
   span=3-3 type=NP-PRD level=1
 
 tokens:
@@ -943,7 +970,7 @@ tokens:
       splits:
         [1] v='i'          t='Gnr'      gloss-br='masc' fn=None idx=None
         [2] v='ca'         t='Ncl'      gloss-br='ausente' fn=None idx=None
-  p=2   v='niwigo'           t='N'          l=2   gloss-br='espírito/fotografia'
+  p=2   v='niwigo'           t='N'          l=1   gloss-br='espírito/fotografia'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='wigo'       t='n'        gloss-br='espírito/fotografia' fn=None idx=None
@@ -973,7 +1000,21 @@ container_meta:
 translations:
   pt-br: A língua do teu irmão 
 comments:
-  [1] 2026-07-10 16:57:23 — Leonel Figueiredo de Alencar — Fragmento
+  [1] 2026-08-09 15:48:04 — Leonel Figueiredo de Alencar — Mudar tradução?
+      A árvore expressa uma relação predicativa entre "a língua" e o possessivo "do teu irmão", correspondendo ao conteúdo proposicional da tradução livre "a língua é do teu irmão". No entanto, foi dada à consultora para traduzir a expressão *a língua do teu irmão*, como consta no campo reservado à tradução em português. TODO: Estrutura ambígua? Mudar árvore, se for apenas um NP solto, conforme comentário anterior? Proposta de árvore na hipótese de NP solto, abstraindo da questão da adequação do nó IP-MAT nesse caso:
+ 
+```lisp 
+(
+  (IP-MAT
+    (NP
+      (D ica)
+      (N$ nioladi)
+      (NP
+        (N$ Ganixoa))))
+  (ID ped-gramm,0.21)
+)
+```
+  [2] 2026-07-10 16:57:23 — Leonel Figueiredo de Alencar — Fragmento
       É só um NP solto (que poderia constituir uma resposta a uma pergunta de constituinte). 
 
 proto-conllu:
@@ -1124,7 +1165,7 @@ Sentence 24
 path: $.pages[0].sentences[23]
 uid: 2f47b402-9fe7-4714-96e3-c6cbdf405472
 text: iGeladi idei naigi anenapioi
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -1134,21 +1175,54 @@ container_meta:
 translations:
   pt-br: a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)
 comments:
-  [1] 2026-08-07 16:51:36 — Leonel Figueiredo de Alencar — "napioi": N?
+  [1] 2026-08-09 17:34:36 — Leonel Figueiredo de Alencar — REVISAR -> FINALIZADO
+      Refiz a análise da palavra fusionada *anenapioi* com o relativo, passando a analisar *napioi* como `N`. Com isso, o parser passou a construir a árvore com a estrutura esperada da relativa. A palavra *napioi* estava como `ADJ` e, por isso, o parser não construiu a árvore corretamente:
+```
+/*
+sentence = 24
+uid = 2f47b402-9fe7-4714-96e3-c6cbdf405472
+status = REVIEW
+text = iGeladi idei naigi anenapioi
+text_por = a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ iGeladi)
+    )
+    (VB idei)
+    (NP
+      (N naigi)
+    )
+    (WNP
+      (WPRO ane@)
+    )
+    (ADJ @napioi)
+  )
+  (ID ped-gramm,0.24)
+)
+```
+
+Possível exemplo de regressão do parser.
+  [2] 2026-08-07 16:51:36 — Leonel Figueiredo de Alencar — "napioi": N?
       *napioi* seria `N`? TODO: Comparar com outras sentenças com essa palavra.
-  [2] 2026-05-22 19:37:57 — Filomena Sandalo
+  [3] 2026-05-22 19:37:57 — Filomena Sandalo
       Sim, problemas com relativas a revisar nas próximas sessões
-  [3] 2026-04-13 17:09:33 — Leonel Figueiredo de Alencar — Estrutura sintagmática da relativa
+  [4] 2026-04-13 17:09:33 — Leonel Figueiredo de Alencar — Estrutura sintagmática da relativa
       O WNP não deveria formar um sintagma (oração relativa) com o ADJ, integrado ao NP? 
 
 proto-conllu:
   <none>
 
 chunks:
-  span=1-5 type=IP-MAT level=0
+  span=1-6 type=IP-MAT level=0
   span=1-1 type=NP level=1
-  span=3-3 type=NP level=1
-  span=4-4 type=WNP level=1
+  span=3-6 type=NP level=1
+  span=4-6 type=CP-REL level=2
+  span=4-4 type=WNP level=3
+  span=5-6 type=IP-SUB level=3
+  span=6-6 type=NP level=4
+  span=5-5 type=NP-TRACE level=4
 
 tokens:
   p=1   v='iGeladi'          t='N$'         l=1   gloss-br='minha casa'
@@ -1160,16 +1234,17 @@ tokens:
         [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
         [2] v='dei'        t='v'        gloss-br='ficar(permanente)' fn=None idx=None
   p=3   v='naigi'            t='N'          l=1   gloss-br='caminho'
-  p=4   v='ane@'             t='WPRO'       l=1   gloss-br=None
-      split: {"v": "anenapioi", "t": "WPRO+ADJ", "idx": 0}
+  p=4   v='ane@'             t='WPRO'       l=3   gloss-br='que (é) sujeira'
+      split: {"v": "anenapioi", "t": "WPRO+N", "idx": 0}
       splits:
-        [1] v='ane'        t='Wpro'     gloss-br=None fn=None idx=None
-        [2] v='napioi'     t='Adj'      gloss-br=None fn=None idx=None
-  p=5   v='@napioi'          t='ADJ'        l=0   gloss-br=None
+        [1] v='ane'        t='Wpro'     gloss-br=None fn=True idx=None
+        [2] v='napioi'     t='n'        gloss-br='sujeira' fn=None idx=None
+  p=5   v='*T*'              t=None         l=4   gloss-br=None
+  p=6   v='@napioi'          t='N'          l=4   gloss-br=None
       split: {"idx": 1}
 
 conllu/token count check:
-  tokens=5  proto-conllu=0
+  tokens=6  proto-conllu=0
 
 ================================================================================
 Sentence 25
@@ -2258,9 +2333,14 @@ container_meta:
 translations:
   pt-br: A casa dele/dela é perto da cidade da lagoa.
 comments:
-  [1] 2026-08-04 02:58:55 — Leonel Figueiredo de Alencar — Concordância do aplicativo
+  [1] 2026-08-11 16:48:30 — Filomena Sandalo
+      Deve ser N.
+  [2] 2026-08-11 11:35:05 — Leonel Figueiredo de Alencar — Etiqueta de "nigotaGa"
+      Atualmente, *nigotaGa* (*nigotaGa*) ocorre 9 vezes com a etiqueta `N` e 4 vezes com `N$`, inclusive nesta sentença (https://www.tycho.iel.unicamp.br/w/sentence/ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec). Seria um caso de ambiguidade ou um erro de anotação? Tendo a achar que deveria ser `N` apenas, pelo menos nos casos em que o prefixo *n-* está etiquetado como `Ant`. TODO: Verificar a etiqueta de classe de palavra de todas as palavras com `Ant`.
+Ver https://github.com/leoalenc/kadiweu/issues/72
+  [3] 2026-08-04 02:58:55 — Leonel Figueiredo de Alencar — Concordância do aplicativo
       Comparar com sentenças análogas em "Vanda dados".
-  [2] 2026-04-15 17:45:28 — Leonel Figueiredo de Alencar — discrepância entre estímulo e elicitação
+  [4] 2026-04-15 17:45:28 — Leonel Figueiredo de Alencar — discrepância entre estímulo e elicitação
       discrepância entre estímulo e elicitação: a casa dela é perto do rio da cidade
 
 
@@ -2538,7 +2618,7 @@ Sentence 53
 path: $.pages[0].sentences[52]
 uid: 3f077b37-aa95-4012-9efb-a21630cdd6e9
 text: aGee eliodi niinikeGegi
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -2548,9 +2628,12 @@ container_meta:
 translations:
   pt-br: Eu não estou muito feliz
 comments:
-  [1] 2026-07-29 14:45:23 — Leonel Figueiredo de Alencar — Duplicata
+  [1] 2026-08-10 19:43:22 — Filomena Sandalo
+      Dois tipos de Q na leingua, ver Sandalo em Linguistic Variation:
+https://benjamins.com/catalog/lv.00018.san
+  [2] 2026-07-29 14:45:23 — Leonel Figueiredo de Alencar — Duplicata
       Ver https://www.tycho.iel.unicamp.br/w/sentence/969ba2f3-88dc-417e-ad3f-16ce88b4c762
-  [2] 2026-07-21 22:06:35 — Leonel Figueiredo de Alencar — aGee: NEG+D ou NEG+PRO?
+  [3] 2026-07-21 22:06:35 — Leonel Figueiredo de Alencar — aGee: NEG+D ou NEG+PRO?
       O pronome "ee" está como PRO noutras sentenças.
 
 proto-conllu:
@@ -2563,18 +2646,18 @@ chunks:
 
 tokens:
   p=1   v='aG@'              t='NEG'        l=0   gloss-br='não eu'
-      split: {"v": "aGee", "t": "NEG+D", "idx": 0}
+      split: {"v": "aGee", "t": "NEG+PRO", "idx": 0}
       splits:
-        [1] v='aG'         t=None       gloss-br=None fn=True idx=None
-        [2] v='ee'         t=None       gloss-br=None fn=None idx=None
-  p=2   v='@ee'              t='D'          l=1   gloss-br=None
+        [1] v='aG'         t='Neg'      gloss-br=None fn=True idx=None
+        [2] v='ee'         t='Pro'      gloss-br='1SG (fala de homem)' fn=None idx=None
+  p=2   v='@ee'              t='PRO'        l=1   gloss-br=None
       split: {"idx": 1}
   p=3   v='eliodi'           t='Q'          l=1   gloss-br='muito'
   p=4   v='niinikeGegi'      t='N'          l=1   gloss-br='felicidade'
       splits:
         [1] v='nini'       t='v'        gloss-br=None fn=None idx=None
         [2] v='keGe'       t='Der'      gloss-br=None fn=None idx=None
-        [3] v='gi'         t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='gi'         t='Gnr'      gloss-br='M' fn=None idx=None
 
 conllu/token count check:
   tokens=4  proto-conllu=0

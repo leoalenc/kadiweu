@@ -36,6 +36,10 @@ tokens:
         [1] v='iwaa'       t='n'        gloss-br='mulher' fn=None idx=None
         [2] v='lo'         t='Cla'      gloss-br='cla' fn=None idx=None
   p=2   v='libiniena'        t='N$'         l=1   gloss-br='beleza'
+      splits:
+        [1] v='li'         t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='binie'      t='n'        gloss-br=None fn=None idx=None
+        [3] v='na'         t='Dim'      gloss-br='F' fn=None idx=None
 
 conllu/token count check:
   tokens=2  proto-conllu=0
@@ -1237,7 +1241,9 @@ container_meta:
 translations:
   pt-br: Ele está bonito .
 comments:
-  [1] 2026-07-22 18:26:08 — Leonel Figueiredo de Alencar — NP ou NP-PRD
+  [1] 2026-08-11 16:03:45 — Leonel Figueiredo de Alencar — Segmentação de "libiniena"
+      Aplicando a nova entrada construída hoje por Filomena Sandalo. Estava sem segmentação morfológica.
+  [2] 2026-07-22 18:26:08 — Leonel Figueiredo de Alencar — NP ou NP-PRD
       Não se trata de um mero fragmento constituído de um único NP, mas de uma sentença completa do tipo predicativo com sujeito não realizado foneticamente. TODO: Marcar como NP-PRD?
 
 proto-conllu:
@@ -1249,6 +1255,10 @@ chunks:
 
 tokens:
   p=1   v='libiniena'        t='N$'         l=1   gloss-br='beleza'
+      splits:
+        [1] v='li'         t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='binie'      t='n'        gloss-br=None fn=None idx=None
+        [3] v='na'         t='Dim'      gloss-br='F' fn=None idx=None
 
 conllu/token count check:
   tokens=1  proto-conllu=0
@@ -2132,7 +2142,11 @@ container_meta:
 translations:
   pt-br: Eu estou com ela .
 comments:
-  [1] 2026-07-23 13:00:05 — Leonel Figueiredo de Alencar — Corrigir árvore
+  [1] 2026-08-10 19:31:17 — Filomena Sandalo
+      Acho que está certo sou eu que (estou) com ela.
+  [2] 2026-08-10 18:28:02 — Leonel Figueiredo de Alencar — CP-me como relativa
+      A julgar pelo aparente sentido da sentença, CP-me não seria uma relativa, constituindo, antes, um nó filho de IP-MAT.
+  [3] 2026-07-23 13:00:05 — Leonel Figueiredo de Alencar — Corrigir árvore
       O PRO deveria ser filho de IP-MAT.
 
 proto-conllu:
@@ -2178,7 +2192,7 @@ translations:
   pt-br: Eu estou com ele .
 comments:
   [1] 2026-07-23 13:01:29 — Leonel Figueiredo de Alencar — Problema com V inicial
-      Ver comentário sobre sentença anterior.
+      Ver comentários sobre sentença anterior.
 
 proto-conllu:
   <none>

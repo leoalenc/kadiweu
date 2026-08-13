@@ -138,9 +138,11 @@ container_meta:
 translations:
   pt-br: a mulher está bonita
 comments:
-  [1] 2026-06-11 14:10:33 — Filomena Sandalo
+  [1] 2026-08-11 16:08:44 — Leonel Figueiredo de Alencar — Segmentação ausente
+      Corrigido conforme https://www.tycho.iel.unicamp.br/w/sentence/fcef38ed-be6b-4f2a-b5cf-fa4db625ecfb e https://www.tycho.iel.unicamp.br/w/sentence/fab37d81-bb9b-4e20-a8f5-3b3969ee86d1.
+  [2] 2026-06-11 14:10:33 — Filomena Sandalo
       Não acho muito produtivo se for de fato um morfema
-  [2] 2026-06-03 14:48:53 — Leonel Figueiredo de Alencar — glosa do sufixo "-lo"
+  [3] 2026-06-03 14:48:53 — Leonel Figueiredo de Alencar — glosa do sufixo "-lo"
       Sena (2025, p. 92) glosa "-lo" como "FEM". Nesse caso, a etiqueta não seria "Gnr"? Caso fique como "Cla", qual o valor desse atributo, i.e., classe nominal?
 
 proto-conllu:
@@ -160,6 +162,10 @@ tokens:
       splits:
         [1] v='jaG'        t='PFV'      gloss-br=None fn=None idx=None
   p=3   v='libiniena'        t='N$'         l=1   gloss-br='beleza'
+      splits:
+        [1] v='li'         t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='binie'      t='n'        gloss-br=None fn=None idx=None
+        [3] v='na'         t='Dim'      gloss-br='F' fn=None idx=None
 
 conllu/token count check:
   tokens=3  proto-conllu=0
@@ -1614,7 +1620,35 @@ container_meta:
 translations:
   pt-br: esta pedra está muito pesada
 comments:
-  [1] 2026-06-18 19:10:07 — Leonel Figueiredo de Alencar — Segmentação de liwaGatena
+  [1] 2026-08-12 19:07:57 — Leonel Figueiredo de Alencar — REVISAR -> FINALIZADO
+      Parser atual produz árvore esperada. A anterior tinha núcleo projetando NP intermediário. Constatei pelo menos um outro caso hoje desse tipo, também resolvido.
+  [2] 2026-08-12 19:04:29 — Leonel Figueiredo de Alencar — FINALIZADO -> REVISAR
+      Árvore errada (talvez gerada por versão anterior do parser após classificação como FINALIZADA ou erro meu de classificação):
+
+```
+/*
+sentence = 32
+uid = 46190f73-f21e-4073-b09c-8b2d17c6668e
+status = DONE
+text = naGani wetiGa liwaGatena
+text_por = esta pedra está muito pesada
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D naGani)
+      (NP
+        (N wetiGa)
+      )
+    )
+    (NP-PRD
+      (N$ liwaGatena)
+    )
+  )
+  (ID van-data,0.32)
+)
+```
+  [3] 2026-06-18 19:10:07 — Leonel Figueiredo de Alencar — Segmentação de liwaGatena
       O que seria o sufixo "-te" nesse caso? Ou isso faz parte da raiz verbal "iwaaGadi"? Analisei o "-na" final como Dim, morfema comum em construções predicativas desse tipo. 
 
 proto-conllu:
@@ -1623,7 +1657,6 @@ proto-conllu:
 chunks:
   span=1-3 type=IP-MAT level=0
   span=1-2 type=NP-SBJ level=1
-  span=2-2 type=NP level=2
   span=3-3 type=NP-PRD level=1
 
 tokens:
@@ -1632,7 +1665,7 @@ tokens:
         [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
         [2] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
         [3] v='ni'         t='Ncl'      gloss-br='sentad(o|a)' fn=None idx=None
-  p=2   v='wetiGa'           t='N'          l=2   gloss-br='pedra'
+  p=2   v='wetiGa'           t='N'          l=1   gloss-br='pedra'
   p=3   v='liwaGatena'       t='N$'         l=1   gloss-br='peso del(e|a)'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
@@ -2654,7 +2687,7 @@ Sentence 54
 path: $.pages[0].sentences[53]
 uid: 969ba2f3-88dc-417e-ad3f-16ce88b4c762
 text: aGee eliodi niinikeGegi
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -2664,13 +2697,17 @@ container_meta:
 translations:
   pt-br: eu não estou muito feliz
 comments:
-  [1] 2026-07-29 14:44:46 — Leonel Figueiredo de Alencar — "ee": PRO ou D?
+  [1] 2026-08-10 19:35:00 — Filomena Sandalo
+      A estrutura parece correta, mas Q = muito e não grande
+  [2] 2026-08-08 23:03:43 — Leonel Figueiredo de Alencar — Verificar a forma "niinikeGegi"
+      Fala de mulher a duplicação da vogal? Ver https://www.tycho.iel.unicamp.br/w/sentence/3f077b37-aa95-4012-9efb-a21630cdd6e9
+  [3] 2026-07-29 14:44:46 — Leonel Figueiredo de Alencar — "ee": PRO ou D?
       Mudei o status para REVISAR. Ver comentário em https://www.tycho.iel.unicamp.br/w/sentence/3f077b37-aa95-4012-9efb-a21630cdd6e9
 Com a correção ortográfica, as duas sentenças ficaram idênticas, salvo o "G' em vez de "G", algo irrelevante, uma vez que o primeiro grafema deverá ser substituído.
-  [2] 2026-06-11 13:58:19 — Filomena Sandalo
+  [4] 2026-06-11 13:58:19 — Filomena Sandalo
       Não existe a palavra elide e nem leodi, é eliodi.
 Erros de datilografia
-  [3] 2026-06-08 14:41:09 — Leonel Figueiredo de Alencar — erro de digitação?
+  [5] 2026-06-08 14:41:09 — Leonel Figueiredo de Alencar — erro de digitação?
       A sentença "aGee elide niinikeGegi" ('eu não estou muito feliz') ou "aGee elide niinikeGegi" não ocorre em "dados para gramática pedagógica.docx", base do conjunto VANDA DADOS. Em vez disso, ocorre esta sentença: 
 eu não estou muito feliz
 aGee leodi inikeGegi
@@ -2687,11 +2724,11 @@ chunks:
 
 tokens:
   p=1   v='aG@'              t='NEG'        l=0   gloss-br='não eu'
-      split: {"v": "aGee", "t": "NEG+D", "idx": 0}
+      split: {"v": "aGee", "t": "NEG+PRO", "idx": 0}
       splits:
-        [1] v='aG'         t='Neg'      gloss-br=None fn=True idx=None
+        [1] v='aG'         t='Neg'      gloss-br=None fn=None idx=None
         [2] v='ee'         t='Pro'      gloss-br='1SG (fala de homem)' fn=None idx=None
-  p=2   v='@ee'              t='D'          l=1   gloss-br=None
+  p=2   v='@ee'              t='PRO'        l=1   gloss-br=None
       split: {"idx": 1}
   p=3   v='eliodi'           t='Q'          l=1   gloss-br='grande'
   p=4   v='niinikeGegi'      t='N'          l=1   gloss-br='felicidade'
@@ -2709,7 +2746,7 @@ Sentence 55
 path: $.pages[0].sentences[54]
 uid: 39925f76-d73f-423f-95cd-f88bd78f2a6e
 text: ee eliodi me aGidininitibeci
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -2719,9 +2756,11 @@ container_meta:
 translations:
   pt-br: eu não estou muito feliz
 comments:
-  [1] 2026-07-02 03:08:22 — Leonel Figueiredo de Alencar — Estrutura alterada
+  [1] 2026-08-09 15:37:21 — Leonel Figueiredo de Alencar — Provável duplicidade de entradas
+      Passei a tratar *ee* como `PRO` em vez de `D`, seguindo a política atual para itens de primeira e segunda pessoa, que reserva `D` para a terceira pessoa. Com isso, promovi o status da sentença a FINALIZADO. Um aparente problema surgiu: ao corrigir uma sentença anterior nos mesmos moldes, o parser aplicou uma entrada de **ee** rica em informações. Agora ele aplicou essa entrada mais empobrecida. TODO: eliminar do léxico essas duplicatas e desenvolver procedimento para evitar criá-las.
+  [2] 2026-07-02 03:08:22 — Leonel Figueiredo de Alencar — Estrutura alterada
       A árvore mudou. Porém, como não tenho certeza se está correta, deixo com status de REVISAR. Troquei morfe "nini" por "inini" para evitar "dnini" na árvore. 
-  [2] 2026-06-11 14:51:31 — Filomena Sandalo
+  [3] 2026-06-11 14:51:31 — Filomena Sandalo
       CP-me mal formado
 
 proto-conllu:
@@ -2734,9 +2773,9 @@ chunks:
   span=4-5 type=IP-SUB level=2
 
 tokens:
-  p=1   v='ee'               t='D'          l=1   gloss-br='eu'
+  p=1   v='ee'               t='PRO'        l=1   gloss-br='eu'
       splits:
-        [1] v='ee'         t='Pro'      gloss-br='1SG' fn=None idx=None
+        [1] v='ee'         t='Pro'      gloss-br='1SG (fala masculina)' fn=None idx=None
   p=2   v='eliodi'           t='Q'          l=1   gloss-br='grande'
   p=3   v='me'               t='C'          l=1   gloss-br='que'
   p=4   v='aG@'              t='NEG'        l=2   gloss-br='não estou feliz'
@@ -3565,7 +3604,21 @@ translations:
   pt-br: a casa dela é perto do rio da cidade
 comments:
   [1] 2026-08-04 01:29:50 — Leonel Figueiredo de Alencar — Concordância do aplicativo
-      Segundo parece, o verbo com aplicativo concorda em gênero com *nigotaGa* ('cidade'), palavra feminina. No entanto, o núcleo do NP-APL é a palavra masculina "niweiigi". Trata-se de aparente estrutura com possuidor pré-nominal, não abrangida pelo atual conjunto de regras. Seria um caso de ambiguidade estrutural de difícil modelação num parser determinístico. Possível solução prática: corrigir esta sentença manualmente, deixar a regra atual como default. Comparar com sentença análoga com aplicativo masculino.
+      Aparentemente, o verbo com aplicativo concorda em gênero com *nigotaGa*, palavra feminina, conforme Griffiths (2002, p. 135), como indica a glosa `cidade[F]`. No entanto, na árvore atual, o núcleo do `NP-APL` é a palavra masculina *niweiigi*. Trata-se de aparente estrutura com possuidor pré-nominal, não abrangida pelo atual conjunto de regras para a configuração dada, i.e., que envolve dois nós irmãos `N$`. Seria um caso de ambiguidade estrutural de difícil modelação num parser determinístico sem checagem da concordância (por exemplo, via unificação de traços morfológicos). Possível solução prática: corrigir esta sentença manualmente e deixar a regra atual `48: np-poss2` como default, pois abrange o maior número de casos de dois nós `N$` irmãos. 
+
+Comparar com a sentença análoga com aplicativo masculino: 
+
+``` /* sentence = 48 uid = 8b1a9983-4dfd-49e8-9285-92c56c84b652 status = DONE text = liGeladi ipegitegi niweiigi nigotaGa . text_por = A casa dele/dela é perto da lagoa da cidade. */ ``` 
+```lisp 
+( (IP-MAT (NP (N$ liGeladi) ) (VBAPL ipegitegi) (NP-APL (N$ niweiigi) (NP (N nigotaGa) ) ) (PUNC .) ) (ID ped-gramm,0.48) ) ``` 
+
+Na árvore seguinte, que proponho como correção, o aplicativo feminino **tece** (superficializado como **tege** e glosado como `3F`) concorda com o núcleo do `NP-APL`, o substantivo feminino *nigotaGa*, que governa o possuidor anteposto *niweiigi*, ou seja, `rio[M]` ou `lagoa[M]`. A propósito, esta última é a única acepção dada por Griffiths (2002, p. 144,165) nos verbetes **niweiigi** ('lagoa de …') **weiigi** ('lagoa'). 
+
+``` /* sentence = 73 uid = c1b350df-ed1a-4e3b-89a8-a6fa9ca8382e status = REVIEW text = ligeladi ipegitege niweiigi nigotaGa text_por = a casa dela é perto do rio da cidade */ ``` 
+```lisp 
+( (IP-MAT (NP (N$ ligeladi)) (VBAPL ipegitege) (NP-APL (NP (N$ niweiigi)) (N$ nigotaGa))) (ID van-data,0.73) ) ```
+
+Em suma, a mesma sequência superficial *niweiigi nigotaGa* recebe estruturas distintas nas duas sentenças: em `ped-gramm,0.48`, *niweiigi* é o núcleo e *nigotaGa*, o possuidor posposto; em `van-data,0.73`, *niweiigi* é o possuidor anteposto e *nigotaGa*, o núcleo. A concordância de gênero do aplicativo fornece a evidência para a desambiguação.
   [2] 2026-08-04 01:25:19 — Leonel Figueiredo de Alencar — Interpretação de "n(i)" em "niweiigi"
       Griffiths (2002, p. 144) traduz *niweiigi* como "lagoa de ...". Consigna também o lema **_weiigi_**. Ver comentário sobre sentença análoga neste conjunto de dados (exemplo anterior ou seguinte).
   [3] 2026-06-04 13:43:30 — Leonel Figueiredo de Alencar — sufixo de singulativo "Ga"

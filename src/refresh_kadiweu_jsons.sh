@@ -9,7 +9,8 @@
 #    status is DONE against all PSD trees, in their original order;
 # 3. creates canonical JSON and PSD files directly under data/;
 # 4. normalizes canonical JSON files from "ǥ" to "G";
-# 5. normalizes canonical PSD files from "G" to "ǥ";
+# 5. preserves every downloaded PSD tree verbatim while adding, from the
+#    original JSON, a metadata comment and a stable sentence ID;
 # 6. regenerates the corresponding .txt and .jsonl inspection files;
 # 7. moves the original downloaded JSON and PSD files to data/tycho/json/ and
 #    data/tycho/psd/, respectively;
@@ -307,6 +308,185 @@ raise SystemExit(0)
 PY_ALIGNMENT
 }
 
+# Add JSON metadata and stable repository sentence IDs to an aligned TBP PSD.
+#
+# Each downloaded PSD tree is copied verbatim. The only additions are a comment
+# immediately before the tree and an (ID <base>,0.<position>) node immediately
+# before the tree's final closing parenthesis. Sentence positions refer to all
+# sentences in the original JSON document, not merely to its DONE subset.
+enrich_psd_from_json() {
+  local json_src="$1"
+  local psd_src="$2"
+  local psd_dest="$3"
+  local base="$4"
+
+  python3 - "$json_src" "$psd_src" "$psd_dest" "$base" <<'PY_ENRICH_PSD'
+import json
+import os
+import sys
+import tempfile
+
+json_path, psd_path, output_path, base = sys.argv[1:]
+
+
+def fail(message):
+    print(message, file=sys.stderr)
+    raise SystemExit(1)
+
+
+def iter_sentence_objects(obj):
+    if isinstance(obj, dict):
+        text = obj.get("text")
+        struct = obj.get("struct")
+
+        if (
+            isinstance(text, str)
+            and isinstance(struct, dict)
+            and isinstance(struct.get("tokens"), list)
+        ):
+            yield obj
+            return
+
+        for value in obj.values():
+            yield from iter_sentence_objects(value)
+
+    elif isinstance(obj, list):
+        for value in obj:
+            yield from iter_sentence_objects(value)
+
+
+def extract_psd_trees(content):
+    trees = []
+    start = None
+    depth = 0
+
+    for index, char in enumerate(content):
+        if char == "(":
+            if depth == 0:
+                start = index
+            depth += 1
+        elif char == ")":
+            if depth == 0:
+                fail(f"ERROR: unmatched closing parenthesis in PSD: {psd_path}")
+            depth -= 1
+            if depth == 0 and start is not None:
+                trees.append(content[start:index + 1])
+                start = None
+
+    if depth != 0:
+        fail(f"ERROR: unbalanced tree in PSD: {psd_path}")
+    if not trees:
+        fail(f"ERROR: no trees found in PSD: {psd_path}")
+    return trees
+
+
+def metadata_value(value, field, position):
+    if value is None:
+        return ""
+    if not isinstance(value, str):
+        fail(
+            f"ERROR: non-string {field} in JSON sentence {position}: "
+            f"{json_path}"
+        )
+    if "\n" in value or "\r" in value:
+        fail(
+            f"ERROR: newline in {field} in JSON sentence {position}: "
+            f"{json_path}"
+        )
+    if "*/" in value:
+        fail(
+            f"ERROR: comment terminator in {field} in JSON sentence "
+            f"{position}: {json_path}"
+        )
+    return value
+
+
+with open(json_path, encoding="utf-8") as stream:
+    data = json.load(stream)
+
+sentences = list(iter_sentence_objects(data))
+done_sentences = [
+    (position, sentence)
+    for position, sentence in enumerate(sentences, start=1)
+    if sentence.get("status") == "DONE"
+]
+
+with open(psd_path, encoding="utf-8") as stream:
+    source_content = stream.read()
+
+trees = extract_psd_trees(source_content)
+
+if len(done_sentences) != len(trees):
+    fail(
+        "\n".join(
+            [
+                "ERROR: cannot enrich unaligned JSON and PSD",
+                f"  JSON:       {json_path}",
+                f"  PSD:        {psd_path}",
+                f"  JSON DONE:  {len(done_sentences)}",
+                f"  PSD trees:  {len(trees)}",
+            ]
+        )
+    )
+
+records = []
+for (position, sentence), tree in zip(done_sentences, trees):
+    if "(ID " in tree:
+        fail(
+            f"ERROR: downloaded PSD tree already contains an ID node: "
+            f"tree for JSON sentence {position} in {psd_path}"
+        )
+
+    uid = metadata_value(sentence.get("uid"), "uid", position)
+    status = metadata_value(sentence.get("status"), "status", position)
+    text = metadata_value(sentence.get("text"), "text", position)
+    translations = sentence.get("translations") or {}
+    if not isinstance(translations, dict):
+        fail(
+            f"ERROR: non-object translations in JSON sentence {position}: "
+            f"{json_path}"
+        )
+    text_por = metadata_value(
+        translations.get("pt-br"), "text_por", position
+    )
+
+    comment = "\n".join(
+        [
+            "/*",
+            f"sentence = {position}",
+            f"uid = {uid}",
+            f"status = {status}",
+            f"text = {text}",
+            f"text_por = {text_por}",
+            "*/",
+        ]
+    )
+
+    # Preserve every character of the downloaded tree except for inserting
+    # the ID node immediately before its existing final closing parenthesis.
+    enriched_tree = tree[:-1] + f"\n  (ID {base},0.{position})\n)"
+    records.append(comment + "\n" + enriched_tree)
+
+output = "\n\n".join(records) + "\n"
+output_directory = os.path.dirname(os.path.abspath(output_path))
+fd, temporary_path = tempfile.mkstemp(
+    prefix=f".{os.path.basename(output_path)}.",
+    dir=output_directory,
+    text=True,
+)
+try:
+    with os.fdopen(fd, "w", encoding="utf-8", newline="") as stream:
+        stream.write(output)
+    os.replace(temporary_path, output_path)
+except BaseException:
+    try:
+        os.unlink(temporary_path)
+    except FileNotFoundError:
+        pass
+    raise
+PY_ENRICH_PSD
+}
+
 
 # PSD exports do not contain document UIDs, and their generated filenames are
 # unrelated to the JSON filenames. Retain only PSD files whose complete ordered
@@ -417,8 +597,9 @@ process_one() {
   cp "$json_src" "$json"
   sed -i 's/ǥ/G/g' "$json"
 
-  cp "$psd_src" "$psd"
-  sed -i 's/G/ǥ/g' "$psd"
+  # Preserve downloaded tree content and spelling; add only JSON metadata and
+  # stable sentence IDs to the canonical PSD.
+  enrich_psd_from_json "$json_src" "$psd_src" "$psd" "$base"
 
   "$INSPECT" "$json" --source-id "$base" --jsonl-out "$jsonl" > "$txt"
   sentences="$(sentence_count_from_txt "$txt")"
@@ -456,7 +637,7 @@ process_one() {
   echo
   echo "Actions:"
   echo "  created and normalized data/$base.json (ǥ -> G)"
-  echo "  created and normalized data/$base.psd (G -> ǥ)"
+  echo "  created data/$base.psd with verbatim TBP trees, JSON metadata, and IDs"
   echo "  generated data/$base.txt"
   echo "  generated data/$base.jsonl"
   echo "  moved original JSON to ${archived_json#"$REPO/"}"
@@ -533,13 +714,20 @@ Both the sentence counts and every ordered token sequence must agree. If
 several PSD downloads match completely, the newest one is selected and the
 alternatives are reported.
 
-## Normalization
+## Canonical working files
 
-The archived files are untouched originals. Normalization is applied only to
-the canonical working copies:
+The archived files are untouched originals. The canonical JSON continues to
+use the conversion pipeline's current normalization:
 
 - canonical JSON: \`ǥ\` → \`G\`;
-- canonical PSD: \`G\` → \`ǥ\`.
+
+The canonical PSD does not normalize spelling. Every downloaded TBP tree is
+preserved verbatim. The script adds only a metadata comment derived from the
+corresponding original JSON sentence and an \`(ID ...)\` node containing the
+stable repository sentence ID. Because TBP PSD exports contain only \`DONE\`
+sentences, the numeric component of each ID is the sentence's position among
+all sentences in the JSON document, not its position among only \`DONE\`
+sentences.
 
 Generated: $generated_at
 EOF_README

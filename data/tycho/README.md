@@ -30,9 +30,9 @@ under `data/`:
 
 | Repository document identifier | Tycho Brahe document title | Document UID | Downloaded JSON | Downloaded PSD | Archived JSON | Archived PSD | Canonical JSON | Canonical PSD |
 |---|---|---|---|---|---|---|---|---|
-| `ped-gramm` | Dados para a gramática do sintagma nominal | `28eeb8a0-d923-4d75-aebe-599aadddfbbb` | `6a760d805ed58a65b62497bc.json` | `6a760d895ed58a65b62497bd.psd` | `json/6a760d805ed58a65b62497bc.json` | `psd/6a760d895ed58a65b62497bd.psd` | `../ped-gramm.json` | `../ped-gramm.psd` |
-| `hil-data` | dados do Hilário abril de 2026 | `ffef8450-e302-4882-8306-e5998d31f584` | `6a7608755ed58a65b62497ba.json` | `6a76087c5ed58a65b62497bb.psd` | `json/6a7608755ed58a65b62497ba.json` | `psd/6a76087c5ed58a65b62497bb.psd` | `../hil-data.json` | `../hil-data.psd` |
-| `van-data` | Vanda dados | `9d0f60a9-8c32-44c0-ac68-0b5d5b993db8` | `6a7608115ed58a65b62497b8.json` | `6a7608185ed58a65b62497b9.psd` | `json/6a7608115ed58a65b62497b8.json` | `psd/6a7608185ed58a65b62497b9.psd` | `../van-data.json` | `../van-data.psd` |
+| `ped-gramm` | Dados para a gramática do sintagma nominal | `28eeb8a0-d923-4d75-aebe-599aadddfbbb` | `6a7df3dfff0fdef3f44457e6.json` | `6a7df3edff0fdef3f44457e7.psd` | `json/6a7df3dfff0fdef3f44457e6.json` | `psd/6a7df3edff0fdef3f44457e7.psd` | `../ped-gramm.json` | `../ped-gramm.psd` |
+| `hil-data` | dados do Hilário abril de 2026 | `ffef8450-e302-4882-8306-e5998d31f584` | `6a7df3b8ff0fdef3f44457e4.json` | `6a7df3c4ff0fdef3f44457e5.psd` | `json/6a7df3b8ff0fdef3f44457e4.json` | `psd/6a7df3c4ff0fdef3f44457e5.psd` | `../hil-data.json` | `../hil-data.psd` |
+| `van-data` | Vanda dados | `9d0f60a9-8c32-44c0-ac68-0b5d5b993db8` | `6a7df400ff0fdef3f44457e8.json` | `6a7df40dff0fdef3f44457e9.psd` | `json/6a7df400ff0fdef3f44457e8.json` | `psd/6a7df40dff0fdef3f44457e9.psd` | `../van-data.json` | `../van-data.psd` |
 
 ## Pairing JSON and PSD exports
 
@@ -48,12 +48,19 @@ Both the sentence counts and every ordered token sequence must agree. If
 several PSD downloads match completely, the newest one is selected and the
 alternatives are reported.
 
-## Normalization
+## Canonical working files
 
-The archived files are untouched originals. Normalization is applied only to
-the canonical working copies:
+The archived files are untouched originals. The canonical JSON continues to
+use the conversion pipeline's current normalization:
 
 - canonical JSON: `ǥ` → `G`;
-- canonical PSD: `G` → `ǥ`.
 
-Generated: 2026-08-07T19:18:37-03:00
+The canonical PSD does not normalize spelling. Every downloaded TBP tree is
+preserved verbatim. The script adds only a metadata comment derived from the
+corresponding original JSON sentence and an `(ID ...)` node containing the
+stable repository sentence ID. Because TBP PSD exports contain only `DONE`
+sentences, the numeric component of each ID is the sentence's position among
+all sentences in the JSON document, not its position among only `DONE`
+sentences.
+
+Generated: 2026-08-13T13:46:36-03:00

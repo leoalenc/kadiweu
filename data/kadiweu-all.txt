@@ -22,7 +22,7 @@ Found 206 matching sentence(s).
   21  source=ped-gramm  uid=5d0b94bf-223d-4f09-8c6f-b951a70d6d0b  status=REVIEW     struct=None       text=ica nioladi Ganixoa
   22  source=ped-gramm  uid=881131dd-3f70-411a-ac7e-85557139d1e3  status=DONE       struct=None       text=ica nioladi nioxoa libinienigi
   23  source=ped-gramm  uid=95a7d135-4be0-463d-b443-76cc5828fc89  status=DONE       struct=None       text=ica nioladi lodawa libinienigi
-  24  source=ped-gramm  uid=2f47b402-9fe7-4714-96e3-c6cbdf405472  status=REVIEW     struct=None       text=iGeladi idei naigi anenapioi
+  24  source=ped-gramm  uid=2f47b402-9fe7-4714-96e3-c6cbdf405472  status=DONE       struct=None       text=iGeladi idei naigi anenapioi
   25  source=ped-gramm  uid=a4d33655-fe74-4df2-8d5e-b3c88fba5fd1  status=DONE       struct=None       text=iGeladi idei naigi me napioi
   26  source=ped-gramm  uid=f081c545-c42b-463d-b57f-db87787f20e7  status=REVIEW     struct=None       text=João liGeladi ane napioi
   27  source=ped-gramm  uid=7b810df7-6ed0-4027-b2fe-72c64e9ca1dc  status=REVIEW     struct=None       text=iGeladi idei mijo naigi naGajo
@@ -51,7 +51,7 @@ Found 206 matching sentence(s).
   50  source=ped-gramm  uid=156fa9a4-4323-44f1-9cdc-ef5dc052b428  status=DONE       struct=None       text=etee minitaGa
   51  source=ped-gramm  uid=3b45c470-6164-4fcf-a4d5-90be0f27eb1d  status=DONE       struct=None       text=ee aGidininitibeci
   52  source=ped-gramm  uid=d543f155-c01f-4b5e-add1-0533b8ac6e15  status=DONE       struct=None       text=jipacaGataGagitiwaji
-  53  source=ped-gramm  uid=3f077b37-aa95-4012-9efb-a21630cdd6e9  status=REVIEW     struct=None       text=aGee eliodi niinikeGegi
+  53  source=ped-gramm  uid=3f077b37-aa95-4012-9efb-a21630cdd6e9  status=DONE       struct=None       text=aGee eliodi niinikeGegi
   54  source=ped-gramm  uid=74a76be1-d4b6-42e1-9100-6a436a7fa065  status=DONE       struct=None       text=akaami oko jipacaGataGagitiwaji
   55  source=ped-gramm  uid=d3e098e5-4edd-4c24-81cf-78ff4a4d398c  status=DONE       struct=None       text=niGidowa waca lotiidi dapikoGo
   56  source=ped-gramm  uid=edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded  status=DONE       struct=None       text=IiGeladi midi akiidi
@@ -183,8 +183,8 @@ Found 206 matching sentence(s).
  182  source=van-data   uid=7aa17dd7-2c26-4df9-8f90-65d8d58e2c59  status=DONE       struct=None       text=etee minitaGa
  183  source=van-data   uid=c3c548d7-b154-437e-9baf-541a1bbbab6e  status=DONE       struct=None       text=ee aGica inikeGegi
  184  source=van-data   uid=c4d99cf1-e781-4efb-83ff-4a0ab873b7ec  status=DONE       struct=None       text=ee aGidininitibeci
- 185  source=van-data   uid=969ba2f3-88dc-417e-ad3f-16ce88b4c762  status=REVIEW     struct=None       text=aGee eliodi niinikeGegi
- 186  source=van-data   uid=39925f76-d73f-423f-95cd-f88bd78f2a6e  status=REVIEW     struct=None       text=ee eliodi me aGidininitibeci
+ 185  source=van-data   uid=969ba2f3-88dc-417e-ad3f-16ce88b4c762  status=DONE       struct=None       text=aGee eliodi niinikeGegi
+ 186  source=van-data   uid=39925f76-d73f-423f-95cd-f88bd78f2a6e  status=DONE       struct=None       text=ee eliodi me aGidininitibeci
  187  source=van-data   uid=d3095a7e-477d-405e-9ea2-85bfdacad7d3  status=REVIEW     struct=None       text=aGica daGa jipegitege
  188  source=van-data   uid=813f2ad7-42fb-4fbd-84b4-1957c68aa4f9  status=REVIEW     struct=None       text=aGica daGa jipegitegi
  189  source=van-data   uid=b3c03f67-7664-43b7-9de8-b5243321eeb7  status=DONE       struct=None       text=ee idiwaaGadi
