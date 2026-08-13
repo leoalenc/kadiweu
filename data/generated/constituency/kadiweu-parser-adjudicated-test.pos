@@ -7,16 +7,11 @@ text_por = A mulher está bonita .
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N Iwaalo)
-    )
-    (NP-PRD
-      (N$ libiniena)
-    )
+    (N Iwaalo)
+    (N$ libiniena)
   )
   (ID hil-data,0.1)
 )
-
 /*
 sentence = 2
 uid = 31d3b4c0-4aab-4538-999b-b8ee85c34444
@@ -26,14 +21,11 @@ text_por = A mulher está feliz .
 */
 (
   (IP-MAT
-    (NP
-      (N Iwaalo)
-    )
+    (N Iwaalo)
     (VB ninitibeci)
   )
   (ID hil-data,0.2)
 )
-
 /*
 sentence = 3
 uid = 39f34955-a828-47d7-808d-b3b3565b42d6
@@ -43,19 +35,12 @@ text_por = A palavra de seu irmão é bonita .
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N$ LotaGa)
-      (NP
-        (N$ Ganioxoa)
-      )
-    )
-    (NP-PRD
-      (N$ libinienaGa)
-    )
+    (N$ LotaGa)
+    (N$ Ganioxoa)
+    (N$ libinienaGa)
   )
   (ID hil-data,0.3)
 )
-
 /*
 sentence = 4
 uid = d3ae6cfd-bec1-49f3-a0f9-4ca0744e3404
@@ -65,19 +50,12 @@ text_por = A palavra do seu marido é bonita .
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N$ LotaGa)
-      (NP
-        (N$ Gadodawa)
-      )
-    )
-    (NP-PRD
-      (N$ libinienaGa)
-    )
+    (N$ LotaGa)
+    (N$ Gadodawa)
+    (N$ libinienaGa)
   )
   (ID hil-data,0.4)
 )
-
 /*
 sentence = 5
 uid = e349508c-4d86-48b8-9918-057988755e77
@@ -87,32 +65,15 @@ text_por = A pesada canoa está barata .
 */
 (
   (IP-MAT
-    (NP-1
-      (N Etogo)
-      (CP-REL
-        (WNP-2
-          (WPRO ane@)
-        )
-        (IP-SUB
-          (NP-TRACE
-            (-NONE- *T*-2)
-          )
-          (VB @iwaGadi)
-        )
-      )
-    )
+    (N Etogo)
+    (WPRO ane@)
+    (VB @iwaGadi)
     (NEG aG@)
     (VBU @dakake)
-    (NP
-      (NP-GEN
-        (-NONE- *T*-1)
-      )
-      (N$ lojedi)
-    )
+    (N$ lojedi)
   )
   (ID hil-data,0.5)
 )
-
 /*
 sentence = 6
 uid = 1d10c633-e74d-4e27-ac23-6b6b2dde9647
@@ -122,32 +83,15 @@ text_por = A canoa pesada é barata .
 */
 (
   (IP-MAT
-    (NP-1
-      (N Etogo)
-      (CP-REL
-        (WNP-2
-          (WPRO ane)
-        )
-        (IP-SUB
-          (NP-TRACE
-            (-NONE- *T*-2)
-          )
-          (VB iwaGadi)
-        )
-      )
-    )
+    (N Etogo)
+    (WPRO ane)
+    (VB iwaGadi)
     (NEG aG@)
     (VBU @dakake)
-    (NP
-      (NP-GEN
-        (-NONE- *T*-1)
-      )
-      (N$ loojedi)
-    )
+    (N$ loojedi)
   )
   (ID hil-data,0.6)
 )
-
 /*
 sentence = 7
 uid = 435e4b10-ab78-4ee3-84b0-7773dbe10bf7
@@ -157,22 +101,13 @@ text_por = A sua comida é muito bonita .
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N$ Gawenigi)
-    )
-    (CP-me
-      (Q eliodi)
-      (C me)
-      (IP-SUB
-        (NP
-          (N$ libinienigi)
-        )
-      )
-    )
+    (N$ Gawenigi)
+    (Q eliodi)
+    (C me)
+    (N$ libinienigi)
   )
   (ID hil-data,0.7)
 )
-
 /*
 sentence = 8
 uid = cf44903e-0c33-44bc-a146-1fb8a4ccb973
@@ -182,17 +117,12 @@ text_por = Aquela comida dela é bonita .
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D NiGijo)
-      (N$ liwenigi)
-    )
-    (NP-PRD
-      (N$ libinienigi)
-    )
+    (D NiGijo)
+    (N$ liwenigi)
+    (N$ libinienigi)
   )
   (ID hil-data,0.8)
 )
-
 /*
 sentence = 9
 uid = 0ca977cd-2edf-45d9-b958-068648aebef9
@@ -202,30 +132,15 @@ text_por = Aquela comida é muito cara .
 */
 (
   (IP-MAT
-    (NP-1
-      (D NiGida)
-      (NP-GEN
-        (-NONE- *T*-1)
-      )
-      (N$ niwenigi)
-    )
-    (CP-me
-      (Q eliodi)
-      (C me)
-      (IP-SUB
-        (VBU dakake)
-        (NP
-          (NP-GEN
-            (-NONE- *T*-2)
-          )
-          (N$ loojedi)
-        )
-      )
-    )
+    (D NiGida)
+    (N$ niwenigi)
+    (Q eliodi)
+    (C me)
+    (VBU dakake)
+    (N$ loojedi)
   )
   (ID hil-data,0.9)
 )
-
 /*
 sentence = 10
 uid = 559ba85f-edfc-48dc-9bfb-0c3f8e5ad887
@@ -235,27 +150,16 @@ text_por = Aquele anzol do Pedro está na canoa .
 */
 (
   (IP-MAT
-    (NP
-      (D NaGajo)
-      (N$ lomigo)
-      (NP
-        (NPR Pedilo)
-      )
-    )
+    (D NaGajo)
+    (N$ lomigo)
+    (NPR Pedilo)
     (VB idei)
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (D @adi)
-          (N$ niwatece)
-        )
-      )
-    )
+    (C me@)
+    (D @adi)
+    (N$ niwatece)
   )
   (ID hil-data,0.10)
 )
-
 /*
 sentence = 11
 uid = 92838eda-ef9b-4f05-a5eb-38a4709c0337
@@ -265,26 +169,15 @@ text_por = Aquele anzol do menino é na canoa .
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D NaGajo)
-      (N$ lomigo)
-      (NP
-        (N niganigawanigi)
-      )
-    )
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (D @adi)
-          (N$ niwatece)
-        )
-      )
-    )
+    (D NaGajo)
+    (N$ lomigo)
+    (N niganigawanigi)
+    (C me@)
+    (D @adi)
+    (N$ niwatece)
   )
   (ID hil-data,0.11)
 )
-
 /*
 sentence = 12
 uid = 3a7e213b-323e-4694-bad9-47091f3533f5
@@ -295,16 +188,11 @@ text_por = Estou na cidade .
 (
   (IP-MAT
     (VB Te)
-    (NP
-      (PRO ee)
-    )
-    (NP
-      (N nigotaGa)
-    )
+    (PRO ee)
+    (N nigotaGa)
   )
   (ID hil-data,0.12)
 )
-
 /*
 sentence = 13
 uid = 0de3d311-348a-4107-a191-9fc3f960c249
@@ -314,26 +202,15 @@ text_por = Aqueles filhos da mulher estão com eles .
 */
 (
   (IP-MAT
-    (NP
-      (D niGijoa)
-      (N$ lionaGa)
-      (NP
-        (N iwaalo)
-      )
-    )
+    (D niGijoa)
+    (N$ lionaGa)
+    (N iwaalo)
     (VB idei)
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (DAPL @ijotaGa)
-        )
-      )
-    )
+    (C me@)
+    (DAPL @ijotaGa)
   )
   (ID hil-data,0.13)
 )
-
 /*
 sentence = 14
 uid = 4e9130da-80fd-4ac2-8665-956c95b299e2
@@ -343,22 +220,13 @@ text_por = As formigas estão nela .
 */
 (
   (IP-MAT
-    (NP
-      (N dibixodi)
-    )
+    (N dibixodi)
     (VB ideiticoaci)
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (DAPL @aditaGa)
-        )
-      )
-    )
+    (C me@)
+    (DAPL @aditaGa)
   )
   (ID hil-data,0.14)
 )
-
 /*
 sentence = 15
 uid = baccc279-f303-4b4f-a6d7-4404de699f4a
@@ -368,17 +236,12 @@ text_por = As mulheres estão bonitas .
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N Iwaalepodi)
-    )
-    (NP-PRD
-      (N$ libinienigipi)
-    )
+    (N Iwaalepodi)
+    (N$ libinienigipi)
     (PUNC .)
   )
   (ID hil-data,0.15)
 )
-
 /*
 sentence = 16
 uid = af474637-80f3-4001-884c-4d5f452fb573
@@ -393,7 +256,6 @@ text_por = Ela está feliz .
   )
   (ID hil-data,0.16)
 )
-
 /*
 sentence = 17
 uid = 8f297896-5ee6-461f-86e3-0d4d4ef5a661
@@ -404,13 +266,10 @@ text_por = Ela está feliz .
 (
   (IP-MAT
     (VB ninitibeci)
-    (NP
-      (D naGada)
-    )
+    (D naGada)
   )
   (ID hil-data,0.17)
 )
-
 /*
 sentence = 18
 uid = 4855882d-49f1-4035-bd12-73abf82df995
@@ -421,14 +280,11 @@ text_por = Ela está feliz .
 (
   (IP-MAT
     (VB Ninitibeci)
-    (NP
-      (D naGadi)
-    )
+    (D naGadi)
     (PUNC .)
   )
   (ID hil-data,0.18)
 )
-
 /*
 sentence = 19
 uid = d489d970-e6b1-42e3-add2-2221f2fb1fad
@@ -438,14 +294,11 @@ text_por = Ela está pesada
 */
 (
   (IP-MAT
-    (NP
-      (D naGada)
-    )
+    (D naGada)
     (VB iwaGadi)
   )
   (ID hil-data,0.19)
 )
-
 /*
 sentence = 20
 uid = 23b27bf4-3694-4053-8f74-b3c739fc8ee2
@@ -455,14 +308,11 @@ text_por = Ela está pesada.
 */
 (
   (IP-MAT
-    (NP
-      (D naGadi)
-    )
+    (D naGadi)
     (VB iwaGadi)
   )
   (ID hil-data,0.20)
 )
-
 /*
 sentence = 21
 uid = 85801af7-8128-4d85-a7bd-a182d5dc58a5
@@ -472,14 +322,11 @@ text_por = Ela está pesada.
 */
 (
   (IP-MAT
-    (NP
-      (D NaGana)
-    )
+    (D NaGana)
     (VB iwaGadi)
   )
   (ID hil-data,0.21)
 )
-
 /*
 sentence = 22
 uid = b9d77060-3ac9-4305-ba86-2723cc7cb70a
@@ -489,14 +336,11 @@ text_por = Ela está é pesada.
 */
 (
   (IP-MAT
-    (NP
-      (D Ada)
-    )
+    (D Ada)
     (VB iwaGadi)
   )
   (ID hil-data,0.22)
 )
-
 /*
 sentence = 23
 uid = 7521cd51-aa9b-4ff6-8d87-a5ce4ca92b6d
@@ -506,14 +350,11 @@ text_por = Ela está é pesada.
 */
 (
   (IP-MAT
-    (NP
-      (D Ani)
-    )
+    (D Ani)
     (VB iwaGadi)
   )
   (ID hil-data,0.23)
 )
-
 /*
 sentence = 24
 uid = 96687d35-46ae-4338-9398-ff66a3165b61
@@ -523,14 +364,11 @@ text_por = Ela está é pesada.
 */
 (
   (IP-MAT
-    (NP
-      (D Adi)
-    )
+    (D Adi)
     (VB iwaGadi)
   )
   (ID hil-data,0.24)
 )
-
 /*
 sentence = 25
 uid = 24a9e039-79d0-4026-8824-0d061c2b21ee
@@ -540,20 +378,13 @@ text_por = Ela é muito feliz .
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D naGana)
-    )
-    (CP-me
-      (Q eliodi)
-      (C me@)
-      (IP-SUB
-        (VB @ninitibeci)
-      )
-    )
+    (D naGana)
+    (Q eliodi)
+    (C me@)
+    (VB @ninitibeci)
   )
   (ID hil-data,0.25)
 )
-
 /*
 sentence = 26
 uid = fba05264-0e3c-4248-8211-3ac87c64c2e6
@@ -567,7 +398,6 @@ text_por = Ela é quente .
   )
   (ID hil-data,0.26)
 )
-
 /*
 sentence = 27
 uid = f9af3f8f-3b06-4756-8676-b5ffb2c24b44
@@ -581,7 +411,6 @@ text_por = Ela está quente .
   )
   (ID hil-data,0.27)
 )
-
 /*
 sentence = 28
 uid = fab37d81-bb9b-4e20-a8f5-3b3969ee86d1
@@ -591,13 +420,10 @@ text_por = Ele está bonito .
 */
 (
   (IP-MAT
-    (NP
-      (N$ libiniena)
-    )
+    (N$ libiniena)
   )
   (ID hil-data,0.28)
 )
-
 /*
 sentence = 29
 uid = 0b9bddcd-f6af-4281-80a9-cac2377d0af1
@@ -607,13 +433,10 @@ text_por = Ele é bonito.
 */
 (
   (IP-MAT
-    (NP
-      (N$ libinienigi)
-    )
+    (N$ libinienigi)
   )
   (ID hil-data,0.29)
 )
-
 /*
 sentence = 30
 uid = 38c689d8-332d-4406-b236-de4593e4853a
@@ -627,7 +450,6 @@ text_por = Ele é quente .
   )
   (ID hil-data,0.30)
 )
-
 /*
 sentence = 31
 uid = ea70209d-4f3c-4bf9-8d93-2d91fa0f928c
@@ -641,7 +463,6 @@ text_por = Ele está quente .
   )
   (ID hil-data,0.31)
 )
-
 /*
 sentence = 32
 uid = 4aed8aa8-bd36-4940-8020-8ba12122304e
@@ -651,14 +472,11 @@ text_por = Eles são felizes .
 */
 (
   (IP-MAT
-    (NP
-      (N Ninitibigiwaji)
-    )
+    (N Ninitibigiwaji)
     (PUNC .)
   )
   (ID hil-data,0.32)
 )
-
 /*
 sentence = 33
 uid = 3a27c7c6-ecd6-45c0-a71e-b4aa2a242a3d
@@ -668,22 +486,15 @@ text_por = Esta faca da esposa dele (do marido dela) não está na casa .
 */
 (
   (IP-MAT
-    (NP
-      (D NiGida)
-      (N$ lodajo)
-      (NP
-        (N lodawa)
-      )
-    )
+    (D NiGida)
+    (N$ lodajo)
+    (N lodawa)
     (NEG aG@)
     (VB @idei)
-    (NP
-      (N dineigi)
-    )
+    (N dineigi)
   )
   (ID hil-data,0.33)
 )
-
 /*
 sentence = 34
 uid = 64f2c803-b436-4202-b4c7-acf5c7205bc3
@@ -693,19 +504,12 @@ text_por = Esta fotografia da criança é bonita .
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N$ liwigo)
-      (NP
-        (N niganigawanigi)
-      )
-    )
-    (NP-PRD
-      (N$ libinienigi)
-    )
+    (N$ liwigo)
+    (N niganigawanigi)
+    (N$ libinienigi)
   )
   (ID hil-data,0.34)
 )
-
 /*
 sentence = 35
 uid = 8bad7bc3-f82f-46c0-9e63-c780104b11e2
@@ -715,21 +519,14 @@ text_por = Esta pedra está muito pesada .
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D naGani)
-      (N wetiGa)
-    )
-    (CP-me
-      (Q eliodi)
-      (C me)
-      (IP-SUB
-        (VB iwaGadi)
-      )
-    )
+    (D naGani)
+    (N wetiGa)
+    (Q eliodi)
+    (C me)
+    (VB iwaGadi)
   )
   (ID hil-data,0.35)
 )
-
 /*
 sentence = 36
 uid = 768a3635-dcaf-4210-b236-73568abadbdb
@@ -739,15 +536,12 @@ text_por = Esta pedra está pesada .
 */
 (
   (IP-MAT
-    (NP
-      (D NaGani)
-      (N wetiGa)
-    )
+    (D NaGani)
+    (N wetiGa)
     (VB iwaGadi)
   )
   (ID hil-data,0.36)
 )
-
 /*
 sentence = 37
 uid = e5f90fbc-14e8-4c6f-9e07-61fbf67d042f
@@ -757,15 +551,12 @@ text_por = Estas pedras estão pesadas .
 */
 (
   (IP-MAT
-    (NP
-      (D NiGinoa)
-      (N wetiadi)
-    )
+    (D NiGinoa)
+    (N wetiadi)
     (VB iwaGadi)
   )
   (ID hil-data,0.37)
 )
-
 /*
 sentence = 38
 uid = f4b854f9-c3c6-4e88-8a9b-ca73fcba8d46
@@ -775,15 +566,12 @@ text_por = Esta pedra é pesada .
 */
 (
   (IP-MAT
-    (NP
-      (D NaGani)
-      (N wetiGa)
-    )
+    (D NaGani)
+    (N wetiGa)
     (VB iwaGadi)
   )
   (ID hil-data,0.38)
 )
-
 /*
 sentence = 39
 uid = 38f73c1c-ddfb-4153-9310-d24214cd68e7
@@ -793,29 +581,15 @@ text_por = Esta pedra que é pesada caiu no meu pé .
 */
 (
   (IP-MAT
-    (NP
-      (D NaGani)
-      (N wetiGa)
-      (CP-REL
-        (WNP-1
-          (WPRO ane)
-        )
-        (IP-SUB
-          (NP-TRACE
-            (-NONE- *T*-1)
-          )
-          (VB iwaGadi)
-        )
-      )
-    )
+    (D NaGani)
+    (N wetiGa)
+    (WPRO ane)
+    (VB iwaGadi)
     (VBAPL eniteloco)
-    (NP-APL
-      (N$ iGonagi)
-    )
+    (N$ iGonagi)
   )
   (ID hil-data,0.39)
 )
-
 /*
 sentence = 40
 uid = e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4
@@ -825,25 +599,17 @@ text_por = Esta pedra , que é pesada , caiu no meu pé .
 */
 (
   (IP-MAT
-    (NP
-      (NP
-        (D NaGani)
-        (N wetiGa))
-      (PUNC ,)
-      (CP-REL
-        (WNP-1
-          (WPRO ane))
-        (IP-SUB
-          (NP-TRACE
-            (-NONE- *T*-1))
-          (VB iwaGadi)))
-      (PUNC ,))
+    (D NaGani)
+    (N wetiGa)
+    (PUNC ,)
+    (WPRO ane)
+    (VB iwaGadi)
+    (PUNC ,)
     (VBAPL eniteloco)
-    (NP-APL
-      (N$ iGonagi)))
+    (N$ iGonagi)
+  )
   (ID hil-data,0.40)
 )
-
 /*
 sentence = 41
 uid = 8dda04f0-f7e8-46d6-b41d-b65dd214f01b
@@ -853,18 +619,13 @@ text_por = Este leite está quente .
 */
 (
   (IP-MAT
-    (NP
-      (D NiGidoa)
-      (NP
-        (N waca)
-      )
-      (N$ lotiidi)
-    )
+    (D NiGidoa)
+    (N waca)
+    (N$ lotiidi)
     (VB dapicoGo)
   )
   (ID hil-data,0.41)
 )
-
 /*
 sentence = 43
 uid = a74fea0a-dd87-4c4d-8670-9db66f5b5b16
@@ -874,23 +635,14 @@ text_por = Estes ovos da fotografia estão bonitos .
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D niGidiwa)
-      (NP
-        (N okokodi)
-      )
-      (N$ ligetedi)
-      (NP
-        (N$ liwigo)
-      )
-    )
-    (NP-PRD
-      (N$ libinienaGa)
-    )
+    (D niGidiwa)
+    (N okokodi)
+    (N$ ligetedi)
+    (N$ liwigo)
+    (N$ libinienaGa)
   )
   (ID hil-data,0.43)
 )
-
 /*
 sentence = 44
 uid = 83fdcd4c-338f-4a9f-8545-da8539e67e9d
@@ -900,25 +652,15 @@ text_por = Estes peixes vermelhos estão baratos .
 */
 (
   (IP-MAT
-    (NP-1
-      (D NiGidiwa)
-      (NP
-        (N noGojedi)
-      )
-      (N$ lixagotaGaGa)
-    )
+    (D NiGidiwa)
+    (N noGojedi)
+    (N$ lixagotaGaGa)
     (NEG aG@)
     (VBU @dakake)
-    (NP
-      (NP-GEN
-        (-NONE- *T*-1)
-      )
-      (N$ loojedi)
-    )
+    (N$ loojedi)
   )
   (ID hil-data,0.44)
 )
-
 /*
 sentence = 48
 uid = 4242d34b-9096-45a2-a666-502a2cb9ca49
@@ -928,16 +670,13 @@ text_por = Eu não estou feliz .
 */
 (
   (IP-MAT
-    (NP
-      (PRO Ee)
-    )
+    (PRO Ee)
     (NEG aG@)
     (VB @idinitibeci)
     (PUNC .)
   )
   (ID hil-data,0.48)
 )
-
 /*
 sentence = 49
 uid = 1e9df213-90da-4674-8889-4ac858df72fe
@@ -947,21 +686,14 @@ text_por = Eu não estou muito feliz .
 */
 (
   (IP-MAT
-    (NP
-      (PRO Ee)
-    )
+    (PRO Ee)
     (NEG aG@)
-    (CP-me
-      (Q @eliodi)
-      (C me)
-      (IP-SUB
-        (VB idinitibeci)
-      )
-    )
+    (Q @eliodi)
+    (C me)
+    (VB idinitibeci)
   )
   (ID hil-data,0.49)
 )
-
 /*
 sentence = 50
 uid = c4302bef-3de9-4f3c-b762-f6b77183f263
@@ -971,15 +703,12 @@ text_por = Eu não estou perto dela .
 */
 (
   (IP-MAT
-    (NP
-      (PRO Ee)
-    )
+    (PRO Ee)
     (NEG aG@)
     (VBAPL @jipegitege)
   )
   (ID hil-data,0.50)
 )
-
 /*
 sentence = 51
 uid = 5bc48b27-0755-475f-813e-7a259f3c3c9e
@@ -989,15 +718,12 @@ text_por = Eu não estou perto dele .
 */
 (
   (IP-MAT
-    (NP
-      (PRO Ee)
-    )
+    (PRO Ee)
     (NEG aG@)
     (VBAPL @jipegitege)
   )
   (ID hil-data,0.51)
 )
-
 /*
 sentence = 52
 uid = 1e1fafc0-29c6-41d4-a0d2-4c825d9af376
@@ -1007,14 +733,11 @@ text_por = Eu sou pesado .
 */
 (
   (IP-MAT
-    (NP
-      (PRO ee)
-    )
+    (PRO ee)
     (VB idiwaGadi)
   )
   (ID hil-data,0.52)
 )
-
 /*
 sentence = 53
 uid = 71aff593-7b38-4c17-9563-4503985dbd03
@@ -1028,7 +751,6 @@ text_por = Estou perto dela .
   )
   (ID hil-data,0.53)
 )
-
 /*
 sentence = 54
 uid = f4f18c18-728c-4d6b-b7dd-2df62c4a829a
@@ -1042,7 +764,6 @@ text_por = Estou perto dele .
   )
   (ID hil-data,0.54)
 )
-
 /*
 sentence = 55
 uid = 90ca38d8-e063-4c98-af51-4b9022ade506
@@ -1053,18 +774,13 @@ text_por = Não sou muito feliz .
 (
   (IP-MAT
     (NEG aG@)
-    (CP-me
-      (Q @eliodi)
-      (C me)
-      (IP-SUB
-        (VB idinitibeci)
-      )
-    )
+    (Q @eliodi)
+    (C me)
+    (VB idinitibeci)
     (PUNC .)
   )
   (ID hil-data,0.55)
 )
-
 /*
 sentence = 56
 uid = 82bfae64-45e7-403f-bcd0-190e00f4520f
@@ -1079,7 +795,6 @@ text_por = Nós estamos perto de você .
   )
   (ID hil-data,0.56)
 )
-
 /*
 sentence = 57
 uid = 341bf09a-2ef8-455a-8b6b-88373c617dae
@@ -1089,24 +804,15 @@ text_por = Nós não estamos na comunidade .
 */
 (
   (IP-MAT
-    (NP
-      (N oko)
-    )
+    (N oko)
     (NEG aG@)
     (VB @idejonaGa)
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (D @idi)
-          (N$ Godoigi)
-        )
-      )
-    )
+    (C me@)
+    (D @idi)
+    (N$ Godoigi)
   )
   (ID hil-data,0.57)
 )
-
 /*
 sentence = 58
 uid = 9a136412-a636-4e5e-aa54-ac684ae7bed3
@@ -1121,7 +827,6 @@ text_por = Estamos perto de vocês .
   )
   (ID hil-data,0.58)
 )
-
 /*
 sentence = 59
 uid = dff00f05-7be1-4d62-b3ed-b8a8870851e9
@@ -1133,19 +838,12 @@ text_por = Não estamos na comunidade.
   (IP-MAT
     (NEG aG@)
     (VB @idejonaGa)
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (D @idi)
-          (N$ Godoigi)
-        )
-      )
-    )
+    (C me@)
+    (D @idi)
+    (N$ Godoigi)
   )
   (ID hil-data,0.59)
 )
-
 /*
 sentence = 60
 uid = 3ab5703a-eb5c-48d2-b75b-992da5e60dd6
@@ -1155,27 +853,16 @@ text_por = O avô da Maria está no rio .
 */
 (
   (IP-MAT
-    (NP
-      (D niGijo)
-      (N$ nelokodi)
-      (NP
-        (NPR Maria)
-      )
-    )
+    (D niGijo)
+    (N$ nelokodi)
+    (NPR Maria)
     (VB idei)
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (D @idi)
-          (N akiidi)
-        )
-      )
-    )
+    (C me@)
+    (D @idi)
+    (N akiidi)
   )
   (ID hil-data,0.60)
 )
-
 /*
 sentence = 61
 uid = f0c7c722-031a-4c6e-ad7e-739402475c99
@@ -1185,15 +872,12 @@ text_por = O beiju está quente .
 */
 (
   (IP-MAT
-    (NP
-      (D NiGijo)
-      (N bijo)
-    )
+    (D NiGijo)
+    (N bijo)
     (VB dapicoGo)
   )
   (ID hil-data,0.61)
 )
-
 /*
 sentence = 62
 uid = d5dcd2bf-a3d0-4074-a241-f706b153134f
@@ -1203,18 +887,13 @@ text_por = O galho da árvore é vermelho .
 */
 (
   (IP-MAT
-    (NP
-      (D NaGada)
-      (N$ libiwe)
-      (NP
-        (N niale)
-      )
-    )
+    (D NaGada)
+    (N$ libiwe)
+    (N niale)
     (VB ixagodi)
   )
   (ID hil-data,0.62)
 )
-
 /*
 sentence = 63
 uid = c3225d86-7037-4f8c-9981-8e92b6a081d6
@@ -1224,15 +903,12 @@ text_por = Os beijus estão quentes .
 */
 (
   (IP-MAT
-    (NP
-      (D nigidiwa)
-      (N bijotedi)
-    )
+    (D nigidiwa)
+    (N bijotedi)
     (VB dapicoGo)
   )
   (ID hil-data,0.63)
 )
-
 /*
 sentence = 64
 uid = d0cb9423-93bb-4b45-a02a-fee23a6dd8bb
@@ -1242,20 +918,13 @@ text_por = Os filhos da Maria são bonitos .
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D Nigijoa)
-      (N$ lianaGa)
-      (NP
-        (NPR Maria)
-      )
-    )
-    (NP-PRD
-      (N$ libinienigipi)
-    )
+    (D Nigijoa)
+    (N$ lianaGa)
+    (NPR Maria)
+    (N$ libinienigipi)
   )
   (ID hil-data,0.64)
 )
-
 /*
 sentence = 65
 uid = 13f012b0-ef62-4477-b4bd-00e000484874
@@ -1265,26 +934,15 @@ text_por = Os filhos da mulher estão comigo .
 */
 (
   (IP-MAT
-    (NP
-      (D NiGidi)
-      (N$ lionaGa)
-      (NP
-        (N iwaalo)
-      )
-    )
+    (D NiGidi)
+    (N$ lionaGa)
+    (N iwaalo)
     (VB etidi)
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (DAPL @eetaGa)
-        )
-      )
-    )
+    (C me@)
+    (DAPL @eetaGa)
   )
   (ID hil-data,0.65)
 )
-
 /*
 sentence = 66
 uid = 55fe3cf7-0293-48e6-aa78-44822f50347e
@@ -1294,20 +952,13 @@ text_por = A casa dela é perto do rio da cidade .
 */
 (
   (IP-MAT
-    (NP
-      (N$ liGeladi)
-    )
+    (N$ liGeladi)
     (VBAPL ipegitege)
-    (NP-APL
-      (N$ nakidi)
-      (NP
-        (N nigotaGa)
-      )
-    )
+    (N$ nakidi)
+    (N nigotaGa)
   )
   (ID hil-data,0.66)
 )
-
 /*
 sentence = 67
 uid = c0441856-b259-4d76-a88e-33a7e211b208
@@ -1317,20 +968,13 @@ text_por = A casa dele é perto do rio da cidade .
 */
 (
   (IP-MAT
-    (NP
-      (N$ liGeladi)
-    )
+    (N$ liGeladi)
     (VBAPL ipegitege)
-    (NP-APL
-      (N$ nakidi)
-      (NP
-        (N nigotaGa)
-      )
-    )
+    (N$ nakidi)
+    (N nigotaGa)
   )
   (ID hil-data,0.67)
 )
-
 /*
 sentence = 68
 uid = 9527d53d-7184-4b08-8bb2-51b7fff1429d
@@ -1340,16 +984,13 @@ text_por = A cidade da casa dela é perto do rio.
 */
 (
   (IP-MAT
-    (NP
-      (N nigotaGa)
-      (NP
-        (N$ liGeladi)))
+    (N$ nigotaGa)
+    (N$ liGeladi)
     (VBAPL ipegitege)
-    (NP-APL
-      (N akiidi)))
+    (N akiidi)
+  )
   (ID hil-data,0.68)
 )
-
 /*
 sentence = 69
 uid = 9669b093-f0a2-4187-9063-cec9ba4c0196
@@ -1359,20 +1000,13 @@ text_por = Menino está na canoa do Pedro.
 */
 (
   (IP-MAT
-    (NP
-      (N Nigaanigawaanigi)
-    )
+    (N Nigaanigawaanigi)
     (VB etini)
-    (NP
-      (N$ liwatece)
-      (NP
-        (NPR Pedilo)
-      )
-    )
+    (N$ liwatece)
+    (NPR Pedilo)
   )
   (ID hil-data,0.69)
 )
-
 /*
 sentence = 70
 uid = 529c167b-b3a7-40cc-af76-c7522719c6d4
@@ -1382,17 +1016,11 @@ text_por = Aquele menino está na canoa da lagoinha.
 */
 (
   (IP-MAT
-    (NP
-      (D NiGijo)
-      (N nigaanigawaanigi)
-    )
+    (D NiGijo)
+    (N nigaanigawaanigi)
     (VB etini)
-    (NP
-      (N$ liwatece)
-      (NP
-        (N ideloGole)
-      )
-    )
+    (N$ liwatece)
+    (N ideloGole)
   )
   (ID hil-data,0.70)
 )
@@ -1405,16 +1033,13 @@ text_por = A canoa dele/a é pesada
 */
 (
   (IP-MAT
-    (NP
-      (D ajo)
-      (N$ liwatece)
-    )
+    (D ajo)
+    (N$ liwatece)
     (T ja)
     (VB iwaGadi)
   )
   (ID ped-gramm,0.1)
 )
-
 /*
 sentence = 2
 uid = ccb5ea37-b3ba-47a9-8d71-224f599ea7be
@@ -1424,18 +1049,13 @@ text_por = A canoa dele/a está no rio
 */
 (
   (IP-MAT
-    (NP
-      (D ajo)
-      (N$ liwatece)
-    )
+    (D ajo)
+    (N$ liwatece)
     (VB etadi)
-    (NP
-      (N weiigi)
-    )
+    (N weiigi)
   )
   (ID ped-gramm,0.2)
 )
-
 /*
 sentence = 3
 uid = 49347527-d19d-4689-bff1-ba3e497e7b1f
@@ -1445,18 +1065,13 @@ text_por = A canoa está lá
 */
 (
   (IP-MAT
-    (NP
-      (D ajo)
-      (N$ niwatece)
-    )
+    (D ajo)
+    (N$ niwatece)
     (VB etadi)
-    (NP
-      (D digoida)
-    )
+    (D digoida)
   )
   (ID ped-gramm,0.3)
 )
-
 /*
 sentence = 4
 uid = 69948fe6-81f6-4faa-a344-8f8c47486943
@@ -1466,14 +1081,11 @@ text_por = A canoa está pesada
 */
 (
   (IP-MAT
-    (NP
-      (N$ niwatece)
-    )
+    (N$ niwatece)
     (VB iwaGadi)
   )
   (ID ped-gramm,0.4)
 )
-
 /*
 sentence = 5
 uid = b2e3ea43-0d68-46ee-9f33-938610cc8aec
@@ -1483,17 +1095,12 @@ text_por = A canoa está no rio
 */
 (
   (IP-MAT
-    (NP
-      (N$ niwatece)
-    )
+    (N$ niwatece)
     (VB etadi)
-    (NP
-      (N weiigi)
-    )
+    (N weiigi)
   )
   (ID ped-gramm,0.5)
 )
-
 /*
 sentence = 6
 uid = 1b99ecb9-5656-4c38-b60b-fbbe643708fb
@@ -1503,18 +1110,13 @@ text_por = A canoa está perto do rio
 */
 (
   (IP-MAT
-    (NP
-      (D ajo)
-      (N$ niwatece)
-    )
+    (D ajo)
+    (N$ niwatece)
     (VBAPL ipegitege)
-    (NP-APL
-      (N weiigi)
-    )
+    (N weiigi)
   )
   (ID ped-gramm,0.6)
 )
-
 /*
 sentence = 7
 uid = e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9
@@ -1524,18 +1126,13 @@ text_por = A casa de Maria não é perto dela
 */
 (
   (IP-MAT
-    (NP
-      (N$ liGeladi)
-      (NP
-        (NPR Maria)
-      )
-    )
+    (N$ liGeladi)
+    (NPR Maria)
     (NEG aG@)
     (VBAPL @ipegetege)
   )
   (ID ped-gramm,0.7)
 )
-
 /*
 sentence = 8
 uid = 79a6cd4e-b585-437a-9084-1fa077dec3b6
@@ -1545,15 +1142,12 @@ text_por = A casa está perto dela
 */
 (
   (IP-MAT
-    (NP
-      (D ica)
-      (N$ liGeladi)
-    )
+    (D ica)
+    (N$ liGeladi)
     (VBAPL ipegetege)
   )
   (ID ped-gramm,0.8)
 )
-
 /*
 sentence = 9
 uid = e9d6dfb6-656d-44aa-ba17-86289fd72268
@@ -1563,17 +1157,12 @@ text_por = A casa fica perto da cidade
 */
 (
   (IP-MAT
-    (NP
-      (N$ liGeladi)
-    )
+    (N$ liGeladi)
     (VB idei)
-    (NP
-      (N nigotaGa)
-    )
+    (N nigotaGa)
   )
   (ID ped-gramm,0.9)
 )
-
 /*
 sentence = 10
 uid = 2fff1f23-4e6f-401c-8b74-6a17ff6a391a
@@ -1583,15 +1172,12 @@ text_por = a casa dela/dele fica perto dele
 */
 (
   (IP-MAT
-    (NP
-      (D ica)
-      (N$ liGeladi)
-    )
+    (D ica)
+    (N$ liGeladi)
     (VBAPL ipegitegi)
   )
   (ID ped-gramm,0.10)
 )
-
 /*
 sentence = 11
 uid = fef391af-9e63-419f-8f81-057459193f49
@@ -1601,17 +1187,14 @@ text_por = a comida da Maria não está deliciosa (a não gostosura da comida da
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D ica)
-      (NP
-        (NPR Maria))
-      (N$ looligi))
+    (D ica)
+    (NPR Maria)
+    (N$ looligi)
     (NEG aG@)
-    (NP-PRD
-      (N$ @lidi)))
+    (N$ @lidi)
+  )
   (ID ped-gramm,0.11)
 )
-
 /*
 sentence = 12
 uid = 070d221f-f72d-4055-9c82-ddc383743e6a
@@ -1621,17 +1204,12 @@ text_por = A comida está/é deliciosa (A gostosura da comida da Maria)
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D ica)
-      (N$ looligi)
-    )
-    (NP-PRD
-      (N$ lidi)
-    )
+    (D ica)
+    (N$ looligi)
+    (N$ lidi)
   )
   (ID ped-gramm,0.12)
 )
-
 /*
 sentence = 13
 uid = 68277d1f-c30b-4c4f-ba9e-c2883cc133af
@@ -1641,15 +1219,12 @@ text_por = A comida dela está quente
 */
 (
   (IP-MAT
-    (NP
-      (D ica)
-      (N$ looligi)
-    )
+    (D ica)
+    (N$ looligi)
     (VB dapico)
   )
   (ID ped-gramm,0.13)
 )
-
 /*
 sentence = 14
 uid = 5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5
@@ -1659,16 +1234,13 @@ text_por = a comida dela está quente
 */
 (
   (IP-MAT
-    (NP
-      (D ica)
-      (N$ looligi)
-    )
+    (D ica)
+    (N$ looligi)
     (T ja)
     (VB dapico)
   )
   (ID ped-gramm,0.14)
 )
-
 /*
 sentence = 15
 uid = c5bd2cb2-e53b-40e4-9159-6dacde49c1b6
@@ -1678,17 +1250,12 @@ text_por = A comida é deliciosa (a gostosura da comida dela)
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D ica)
-      (N$ looligi)
-    )
-    (NP-PRD
-      (N$ lideGegi)
-    )
+    (D ica)
+    (N$ looligi)
+    (N$ lideGegi)
   )
   (ID ped-gramm,0.15)
 )
-
 /*
 sentence = 16
 uid = 19cc39ce-fe03-4551-8097-9d163a38a3c0
@@ -1698,16 +1265,11 @@ text_por = A comunidade dele/dela é bonita
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N$ loigipodi)
-    )
-    (NP-PRD
-      (N$ libinienigipi)
-    )
+    (N$ loigipodi)
+    (N$ libinienigipi)
   )
   (ID ped-gramm,0.16)
 )
-
 /*
 sentence = 17
 uid = 12147353-b422-4ad7-9bef-1d20e70e2a74
@@ -1717,18 +1279,15 @@ text_por = A comunidade do menino é perto da cidade de vocês
 */
 (
   (IP-MAT
-    (NP
-      (D ica)
-      (N$ loigi)
-      (NP
-        (D ijo)
-        (N niganigi)))
+    (D ica)
+    (N$ loigi)
+    (D ijo)
+    (N niganigi)
     (VBAPL ipegitegi)
-    (NP-APL
-      (N$ GanigotGa)))
+    (N$ GanigotGa)
+  )
   (ID ped-gramm,0.17)
 )
-
 /*
 sentence = 18
 uid = 582429f2-67d5-4077-b209-6deb7b5df54f
@@ -1738,21 +1297,14 @@ text_por = a deliciosa comida está na casa dela/dele
 */
 (
   (IP-MAT
-    (NP
-      (D ica)
-      (N$ lideGegi)
-      (NP
-        (N$ loligi)
-      )
-    )
+    (D ica)
+    (N$ lideGegi)
+    (N$ loligi)
     (VB idei)
-    (NP
-      (N$ liGeladi)
-    )
+    (N$ liGeladi)
   )
   (ID ped-gramm,0.18)
 )
-
 /*
 sentence = 19
 uid = 0f478381-6858-463d-94cc-903e9dc879f9
@@ -1762,17 +1314,12 @@ text_por = a fotografia dela/dele é/está bonita
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D ica)
-      (N$ liwigo)
-    )
-    (NP-PRD
-      (N$ libinienigi)
-    )
+    (D ica)
+    (N$ liwigo)
+    (N$ libinienigi)
   )
   (ID ped-gramm,0.19)
 )
-
 /*
 sentence = 20
 uid = 55551636-8ed3-4545-8510-d8dbfd817a1a
@@ -1782,19 +1329,12 @@ text_por = a fotografia é/está bonita
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D ica)
-      (NP
-        (N niwigo)
-      )
-    )
-    (NP-PRD
-      (N$ libinienigi)
-    )
+    (D ica)
+    (N niwigo)
+    (N$ libinienigi)
   )
   (ID ped-gramm,0.20)
 )
-
 /*
 sentence = 22
 uid = 881131dd-3f70-411a-ac7e-85557139d1e3
@@ -1804,20 +1344,13 @@ text_por = A língua do irmão dele/dela é bonita
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D ica)
-      (N$ nioladi)
-      (NP
-        (N$ nioxoa)
-      )
-    )
-    (NP-PRD
-      (N$ libinienigi)
-    )
+    (D ica)
+    (N$ nioladi)
+    (N$ nioxoa)
+    (N$ libinienigi)
   )
   (ID ped-gramm,0.22)
 )
-
 /*
 sentence = 23
 uid = 95a7d135-4be0-463d-b443-76cc5828fc89
@@ -1827,20 +1360,13 @@ text_por = A língua do marido/esposa dele/dela é bonita
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D ica)
-      (N$ nioladi)
-      (NP
-        (N$ lodawa)
-      )
-    )
-    (NP-PRD
-      (N$ libinienigi)
-    )
+    (D ica)
+    (N$ nioladi)
+    (N$ lodawa)
+    (N$ libinienigi)
   )
   (ID ped-gramm,0.23)
 )
-
 /*
 sentence = 24
 uid = 2f47b402-9fe7-4714-96e3-c6cbdf405472
@@ -1850,22 +1376,14 @@ text_por = a minha casa está naquela suja rua (=minha casa fica no caminho que 
 */
 (
   (IP-MAT
-    (NP
-      (N$ iGeladi))
+    (N$ iGeladi)
     (VB idei)
-    (NP
-      (N naigi)
-      (CP-REL
-        (WNP-1
-          (WPRO ane@))
-        (IP-SUB
-          (NP-TRACE
-            (-NONE- *T*-1))
-          (NP
-            (N @napioi))))))
+    (N naigi)
+    (WPRO ane@)
+    (N @napioi)
+  )
   (ID ped-gramm,0.24)
 )
-
 /*
 sentence = 25
 uid = a4d33655-fe74-4df2-8d5e-b3c88fba5fd1
@@ -1875,25 +1393,14 @@ text_por = Minha casa fica na rua suja (na rua que é suja).
 */
 (
   (IP-MAT
-    (NP
-      (N$ iGeladi)
-    )
+    (N$ iGeladi)
     (VB idei)
-    (NP
-      (N naigi)
-      (CP-me
-        (C me)
-        (IP-SUB
-          (NP
-            (N napioi)
-          )
-        )
-      )
-    )
+    (N naigi)
+    (C me)
+    (N napioi)
   )
   (ID ped-gramm,0.25)
 )
-
 /*
 sentence = 26
 uid = f081c545-c42b-463d-b57f-db87787f20e7
@@ -1903,21 +1410,13 @@ text_por = a casa do João, que é suja
 */
 (
   (IP-MAT
-    (NP
-      (NP
-        (NPR João))
-      (N$ liGeladi)
-      (CP-REL
-        (WNP-1
-          (WPRO ane))
-        (IP-SUB
-          (NP-TRACE
-            (-NONE- *T*-1))
-          (NP
-            (N napioi))))))
+    (NPR João)
+    (N$ liGeladi)
+    (WPRO ane)
+    (N napioi)
+  )
   (ID ped-gramm,0.26)
 )
-
 /*
 sentence = 29
 uid = 4bdb4b8f-0176-4303-8a13-e313fbb6d7ad
@@ -1927,16 +1426,12 @@ text_por = Meu pai que era cantor
 */
 (
   (IP-MAT
-    (NP
-      (N$ Eyodi)
-      (CP-me
-        (C me)
-        (IP-SUB
-          (NP
-            (N niganaGacanajo))))))
+    (N$ Eyodi)
+    (C me)
+    (N niganaGacanajo)
+  )
   (ID ped-gramm,0.29)
 )
-
 /*
 sentence = 30
 uid = 7b806584-75e5-4017-b9e2-ba97458903bd
@@ -1946,26 +1441,12 @@ text_por = Meu pai que era cantor (explicativa)
 */
 (
   (IP-MAT
-    (NP
-      (N$ Eyodi)
-      (CP-REL
-        (WNP-1
-          (WPRO ane)
-        )
-        (IP-SUB
-          (NP-TRACE
-            (-NONE- *T*-1)
-          )
-          (NP
-            (N niganaGacanajo)
-          )
-        )
-      )
-    )
+    (N$ Eyodi)
+    (WPRO ane)
+    (N niganaGacanajo)
   )
   (ID ped-gramm,0.30)
 )
-
 /*
 sentence = 32
 uid = a4ccc755-a644-4b04-ab1b-698e7acea4cc
@@ -1975,17 +1456,12 @@ text_por = minha casa está lá
 */
 (
   (IP-MAT
-    (NP
-      (N$ iGeladi)
-    )
+    (N$ iGeladi)
     (VB idei)
-    (NP
-      (D digoida)
-    )
+    (D digoida)
   )
   (ID ped-gramm,0.32)
 )
-
 /*
 sentence = 33
 uid = 82117289-be52-45d0-886d-a5747eb20ea2
@@ -1995,14 +1471,11 @@ text_por = Minha casa está perto de você
 */
 (
   (IP-MAT
-    (NP
-      (N$ iGeladi)
-    )
+    (N$ iGeladi)
     (VBAPL ipegitaGagi)
   )
   (ID ped-gramm,0.33)
 )
-
 /*
 sentence = 34
 uid = 50f93fbc-14fa-48e7-b8ba-22f744109348
@@ -2012,17 +1485,12 @@ text_por = Minha casa está perto de sua casa
 */
 (
   (IP-MAT
-    (NP
-      (N$ iGeladi)
-    )
+    (N$ iGeladi)
     (VBAPL ipegitegi)
-    (NP-APL
-      (N$ liGeladi)
-    )
+    (N$ liGeladi)
   )
   (ID ped-gramm,0.34)
 )
-
 /*
 sentence = 35
 uid = 014fefb1-d5e3-48c8-9ac3-9e713a41407f
@@ -2032,30 +1500,14 @@ text_por = Minha casa está perto desta rua suja (que está suja)
 */
 (
   (IP-MAT
-    (NP
-      (N$ iGeladi)
-    )
+    (N$ iGeladi)
     (VBAPL ipegitegi)
-    (NP-APL
-      (N naigi)
-      (CP-REL
-        (WNP-1
-          (WPRO ane)
-        )
-        (IP-SUB
-          (NP-TRACE
-            (-NONE- *T*-1)
-          )
-          (NP
-            (N napioi)
-          )
-        )
-      )
-    )
+    (N naigi)
+    (WPRO ane)
+    (N napioi)
   )
   (ID ped-gramm,0.35)
 )
-
 /*
 sentence = 36
 uid = bb8018ba-76b3-43f2-82ea-78b6009c1f90
@@ -2065,25 +1517,14 @@ text_por = minha casa está perto da rua suja
 */
 (
   (IP-MAT
-    (NP
-      (N$ iGeladi)
-    )
+    (N$ iGeladi)
     (VBAPL ipegitegi)
-    (NP-APL
-      (N naigi)
-      (CP-me
-        (C me)
-        (IP-SUB
-          (NP
-            (N napioi)
-          )
-        )
-      )
-    )
+    (N naigi)
+    (C me)
+    (N napioi)
   )
   (ID ped-gramm,0.36)
 )
-
 /*
 sentence = 37
 uid = 1da1bf7a-7975-4baf-821b-9df5c75ac297
@@ -2093,18 +1534,13 @@ text_por = Minha casa não fica perto do rio
 */
 (
   (IP-MAT
-    (NP
-      (N$ iGeladi)
-    )
+    (N$ iGeladi)
     (NEG aG@)
     (VBAPL @ipegitegi)
-    (NP-APL
-      (N weiigi)
-    )
+    (N weiigi)
   )
   (ID ped-gramm,0.37)
 )
-
 /*
 sentence = 38
 uid = 46bbf9a8-c650-4e4b-a44f-78bfe6c5d979
@@ -2114,19 +1550,14 @@ text_por = O tucano está indo nele.
 */
 (
   (IP-MAT
-    (NP
-      (D ijo)
-      (N Gatodi)
-    )
+    (D ijo)
+    (N Gatodi)
     (VB etijo)
-    (NP
-      (D ida)
-    )
+    (D ida)
     (PUNC .)
   )
   (ID ped-gramm,0.38)
 )
-
 /*
 sentence = 39
 uid = 4ffc2f68-0474-488f-a94e-4065f952482a
@@ -2136,18 +1567,13 @@ text_por = Eles (todos) estão (deitados) no rio.
 */
 (
   (IP-MAT
-    (NP
-      (D ijotawece)
-    )
+    (D ijotawece)
     (VB etidi)
-    (NP
-      (N akiidi)
-    )
+    (N akiidi)
     (PUNC .)
   )
   (ID ped-gramm,0.39)
 )
-
 /*
 sentence = 40
 uid = 10e550d6-df13-4527-8aee-aa23e3f2fcdd
@@ -2157,18 +1583,13 @@ text_por = Minha casa é no rio.
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N$ iGeladi)
-    )
-    (NP-PRD
-      (D digoida)
-      (N weiigi)
-    )
+    (N$ iGeladi)
+    (D digoida)
+    (N weiigi)
     (PUNC .)
   )
   (ID ped-gramm,0.40)
 )
-
 /*
 sentence = 41
 uid = 874c123b-4c43-4001-bfce-8af4af0e5805
@@ -2178,18 +1599,13 @@ text_por = Minha casa é no rio.
 */
 (
   (IP-MAT
-    (NP
-      (N$ iGeladi)
-    )
+    (N$ iGeladi)
     (VB idei)
-    (NP
-      (N weiigi)
-    )
+    (N weiigi)
     (PUNC .)
   )
   (ID ped-gramm,0.41)
 )
-
 /*
 sentence = 42
 uid = aad13f14-bd9a-462a-9a43-68ba69a81519
@@ -2199,17 +1615,14 @@ text_por = A cidade da casa dela é perto do rio.
 */
 (
   (IP-MAT
-    (NP
-      (N$ nigotaGa)
-      (NP
-        (N$ liGeladi)))
+    (N$ nigotaGa)
+    (N$ liGeladi)
     (VBAPL ipegitegi)
-    (NP-APL
-      (N weiigi))
-    (PUNC .))
+    (N weiigi)
+    (PUNC .)
+  )
   (ID ped-gramm,0.42)
 )
-
 /*
 sentence = 43
 uid = 19401990-aa1d-4cf5-bea1-122254c6b77a
@@ -2219,20 +1632,13 @@ text_por = A palavra de seu (teu) irmão é bonita.
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N$ lotaGa)
-      (NP
-        (N$ GanaginaGa)
-      )
-    )
-    (NP-PRD
-      (N$ libinienaGa)
-    )
+    (N$ lotaGa)
+    (N$ GanaginaGa)
+    (N$ libinienaGa)
     (PUNC .)
   )
   (ID ped-gramm,0.43)
 )
-
 /*
 sentence = 45
 uid = c25b098d-6b0a-4416-a31d-6d7219685a63
@@ -2242,16 +1648,13 @@ text_por = A casa do João é suja.
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (NP
-        (NPR João))
-      (N$ liGeladi))
-    (NP-PRD
-      (N napioi))
-    (PUNC .))
+    (NPR João)
+    (N$ liGeladi)
+    (N napioi)
+    (PUNC .)
+  )
   (ID ped-gramm,0.45)
 )
-
 /*
 sentence = 46
 uid = 4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5
@@ -2261,20 +1664,13 @@ text_por = A casa do João é suja.
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N$ liGeladi)
-      (NP
-        (NPR João)
-      )
-    )
-    (NP-PRD
-      (N$ napioi)
-    )
+    (N$ liGeladi)
+    (NPR João)
+    (N$ napioi)
     (PUNC .)
   )
   (ID ped-gramm,0.46)
 )
-
 /*
 sentence = 47
 uid = ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec
@@ -2282,20 +1678,16 @@ status = REVIEW
 text = liGeladi ipegitege niweiigi nigotaGa .
 text_por = A casa dele/dela é perto da cidade da lagoa.
 */
-
-  (
+(
   (IP-MAT
-    (NP
-      (N$ liGeladi))
+    (N$ liGeladi)
     (VBAPL ipegitege)
-    (NP-APL
-      (NP
-        (N$ niweiigi))
-      (N$ nigotaGa))
-    (PUNC .))
+    (N$ niweiigi)
+    (N$ nigotaGa)
+    (PUNC .)
+  )
   (ID ped-gramm,0.47)
 )
-
 /*
 sentence = 48
 uid = 8b1a9983-4dfd-49e8-9285-92c56c84b652
@@ -2305,21 +1697,14 @@ text_por = A casa dele/dela é perto da lagoa da cidade.
 */
 (
   (IP-MAT
-    (NP
-      (N$ liGeladi)
-    )
+    (N$ liGeladi)
     (VBAPL ipegitegi)
-    (NP-APL
-      (N$ niweiigi)
-      (NP
-        (N nigotaGa)
-      )
-    )
+    (N$ niweiigi)
+    (N nigotaGa)
     (PUNC .)
   )
   (ID ped-gramm,0.48)
 )
-
 /*
 sentence = 49
 uid = eeb42af3-fe5a-4b7d-97ea-b381ab589860
@@ -2329,27 +1714,16 @@ text_por = A canoa é pesada e seu preço é barato
 */
 (
   (IP-MAT
-    (IP-MAT
-      (NP
-        (N$ Niwatece)
-      )
-      (VB iwaGadi)
-    )
-    (CONJP
-      (CONJ codaa)
-      (IP-MAT
-        (NEG aG@)
-        (VBU @dakake)
-        (NP
-          (N$ loojedi)
-        )
-      )
-    )
+    (N$ Niwatece)
+    (VB iwaGadi)
+    (CONJ codaa)
+    (NEG aG@)
+    (VBU @dakake)
+    (N$ loojedi)
     (PUNC .)
   )
   (ID ped-gramm,0.49)
 )
-
 /*
 sentence = 50
 uid = 156fa9a4-4323-44f1-9cdc-ef5dc052b428
@@ -2360,18 +1734,11 @@ text_por = Estou com ele
 (
   (IP-MAT
     (VB etee)
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (DAPL @initaGa)
-        )
-      )
-    )
+    (C me@)
+    (DAPL @initaGa)
   )
   (ID ped-gramm,0.50)
 )
-
 /*
 sentence = 51
 uid = 3b45c470-6164-4fcf-a4d5-90be0f27eb1d
@@ -2381,15 +1748,12 @@ text_por = Eu não estou feliz
 */
 (
   (IP-MAT
-    (NP
-      (PRO ee)
-    )
+    (PRO ee)
     (NEG aG@)
     (VB @idininitebeci)
   )
   (ID ped-gramm,0.51)
 )
-
 /*
 sentence = 52
 uid = d543f155-c01f-4b5e-add1-0533b8ac6e15
@@ -2403,7 +1767,6 @@ text_por = Estamos perto de vocês.
   )
   (ID ped-gramm,0.52)
 )
-
 /*
 sentence = 54
 uid = 74a76be1-d4b6-42e1-9100-6a436a7fa065
@@ -2413,17 +1776,12 @@ text_por = Estamos perto de vocês.
 */
 (
   (IP-MAT
-    (NP
-      (PRO akaami)
-    )
-    (NP
-      (PRO oko)
-    )
+    (PRO akaami)
+    (PRO oko)
     (VBAPL jipacaGataGagitiwaji)
   )
   (ID ped-gramm,0.54)
 )
-
 /*
 sentence = 55
 uid = d3e098e5-4edd-4c24-81cf-78ff4a4d398c
@@ -2433,18 +1791,13 @@ text_por = O leite da vaca está quente
 */
 (
   (IP-MAT
-    (NP
-      (D niGidowa)
-      (NP
-        (N waca)
-      )
-      (N$ lotiidi)
-    )
+    (D niGidowa)
+    (N waca)
+    (N$ lotiidi)
     (VB dapikoGo)
   )
   (ID ped-gramm,0.55)
 )
-
 /*
 sentence = 56
 uid = edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded
@@ -2454,22 +1807,13 @@ text_por = A casa dele/dela é no rio.
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N$ IiGeladi)
-    )
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (D @idi)
-          (N akiidi)
-        )
-      )
-    )
+    (N$ IiGeladi)
+    (C me@)
+    (D @idi)
+    (N akiidi)
   )
   (ID ped-gramm,0.56)
 )
-
 /*
 sentence = 57
 uid = 2c0248b3-8f68-46e9-b41c-9f7807572c87
@@ -2479,33 +1823,16 @@ text_por = A pesada canoa está barata.
 */
 (
   (IP-MAT
-    (NP-1
-      (N etogo)
-      (CP-REL
-        (WNP-2
-          (WPRO ane@)
-        )
-        (IP-SUB
-          (NP-TRACE
-            (-NONE- *T*-2)
-          )
-          (VB @iwaGadi)
-        )
-      )
-    )
+    (N etogo)
+    (WPRO ane@)
+    (VB @iwaGadi)
     (NEG aG@)
     (VBU @dakake)
-    (NP
-      (NP-GEN
-        (-NONE- *T*-1)
-      )
-      (N$ lojedi)
-    )
+    (N$ lojedi)
     (PUNC .)
   )
   (ID ped-gramm,0.57)
 )
-
 /*
 sentence = 58
 uid = 73ceda1b-be14-4e75-9b1e-2a490d7df366
@@ -2515,21 +1842,13 @@ text_por = A canoa está barata.
 */
 (
   (IP-MAT
-    (NP-1
-      (N etogo)
-    )
+    (N etogo)
     (NEG aG@)
     (VBU @dakake)
-    (NP
-      (NP-GEN
-        (-NONE- *T*-1)
-      )
-      (N$ lojedi)
-    )
+    (N$ lojedi)
   )
   (ID ped-gramm,0.58)
 )
-
 /*
 sentence = 59
 uid = bf632295-26f8-4ee6-979f-33f090ef0471
@@ -2539,20 +1858,12 @@ text_por = As canoas (individualmente) são caras (cada uma com um preço caro)
 */
 (
   (IP-MAT
-    (NP-1
-      (N etogoli)
-    )
+    (N etogoli)
     (VBU dakake)
-    (NP
-      (NP-GEN
-        (-NONE- *T*-1)
-      )
-      (N$ lojetedi)
-    )
+    (N$ lojetedi)
   )
   (ID ped-gramm,0.59)
 )
-
 /*
 sentence = 60
 uid = bbd6b80b-3236-4172-8bd5-ba3fb404049e
@@ -2562,20 +1873,12 @@ text_por = as canoas (como classe/grupo) são caras
 */
 (
   (IP-MAT
-    (NP-1
-      (N etogoli)
-    )
+    (N etogoli)
     (VBU dakake)
-    (NP
-      (NP-GEN
-        (-NONE- *T*-1)
-      )
-      (N$ loojedi)
-    )
+    (N$ loojedi)
   )
   (ID ped-gramm,0.60)
 )
-
 /*
 sentence = 61
 uid = 1ab7fa26-ed92-4d55-98d0-0d76396373f0
@@ -2584,17 +1887,11 @@ text = Etogoli iwaGadi adakake lojetedi
 */
 (
   (IP-MAT
-    (NP
-      (N Etogoli)
-    )
+    (N Etogoli)
     (VB iwaGadi)
-    (IP-ADV
-      (NEG aG@)
-      (VBU @dakake)
-      (NP
-        (N$ lojetedi)
-      )
-    )
+    (NEG aG@)
+    (VBU @dakake)
+    (N$ lojetedi)
   )
   (ID ped-gramm,0.61)
 )
@@ -2607,17 +1904,12 @@ text_por = Minha casa é no rio
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N$ iGeladi)
-    )
-    (NP-PRD
-      (D digoida)
-      (N weiigi)
-    )
+    (N$ iGeladi)
+    (D digoida)
+    (N weiigi)
   )
   (ID van-data,0.1)
 )
-
 /*
 sentence = 2
 uid = d07f0db7-963e-47ab-ab3f-36614732bacd
@@ -2627,17 +1919,12 @@ text_por = Minha casa é no rio
 */
 (
   (IP-MAT
-    (NP
-      (N$ iGeladi)
-    )
+    (N$ iGeladi)
     (VB idei)
-    (NP
-      (N weiigi)
-    )
+    (N weiigi)
   )
   (ID van-data,0.2)
 )
-
 /*
 sentence = 3
 uid = f50b632e-fc1a-4ec0-b8b3-610dab7be736
@@ -2647,17 +1934,12 @@ text_por = Minha casa é no rio
 */
 (
   (IP-MAT
-    (NP
-      (N$ iGeladi)
-    )
+    (N$ iGeladi)
     (VB ideaGi)
-    (NP
-      (N weiigi)
-    )
+    (N weiigi)
   )
   (ID van-data,0.3)
 )
-
 /*
 sentence = 4
 uid = d26cfc71-a117-4817-9f35-4a7d23fd1f88
@@ -2667,17 +1949,12 @@ text_por = a mulher está bonita
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N iwaalo)
-    )
+    (N iwaalo)
     (T ja)
-    (NP-PRD
-      (N$ libiniena)
-    )
+    (N$ libiniena)
   )
   (ID van-data,0.4)
 )
-
 /*
 sentence = 5
 uid = e3b84bb7-7e6e-474c-9ad6-c6a47b409a5a
@@ -2687,15 +1964,12 @@ text_por = a mulher está feliz
 */
 (
   (IP-MAT
-    (NP
-      (N iwaalo)
-    )
+    (N iwaalo)
     (T ja)
     (VB ninitibeke)
   )
   (ID van-data,0.5)
 )
-
 /*
 sentence = 6
 uid = 3e518fdb-d852-41e5-87a4-f8778597c2a1
@@ -2705,19 +1979,12 @@ text_por = a palavra de seu irmão é bonita
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N$ lotaGa)
-      (NP
-        (N$ GanaaginaGa)
-      )
-    )
-    (NP-PRD
-      (N$ libinienaGa)
-    )
+    (N$ lotaGa)
+    (N$ GanaaginaGa)
+    (N$ libinienaGa)
   )
   (ID van-data,0.6)
 )
-
 /*
 sentence = 7
 uid = ee540050-e6fa-424e-9252-fd0b9312769d
@@ -2727,19 +1994,12 @@ text_por = a palavra do seu marido é bonita
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N$ lotaGa)
-      (NP
-        (N$ Gadodawa)
-      )
-    )
-    (NP-PRD
-      (N$ libinienaGa)
-    )
+    (N$ lotaGa)
+    (N$ Gadodawa)
+    (N$ libinienaGa)
   )
   (ID van-data,0.7)
 )
-
 /*
 sentence = 8
 uid = 947061b4-7b73-4612-8aa8-0af0e04cbc85
@@ -2749,20 +2009,13 @@ text_por = a pesada canoa está barata
 */
 (
   (IP-MAT
-    (NP
-      (N$ niwatece)
-    )
+    (N$ niwatece)
     (VB iwaGadi)
-    (IP-ADV
-      (VB noxilece)
-      (NP
-        (N$ lojetedi)
-      )
-    )
+    (VB noxilece)
+    (N$ lojetedi)
   )
   (ID van-data,0.8)
 )
-
 /*
 sentence = 10
 uid = 0c38eab8-c6b0-4f02-bf05-27ea6285fe70
@@ -2772,22 +2025,13 @@ text_por = a sua comida é muito bonita
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N$ Gawenigi)
-    )
-    (CP-me
-      (Q eliodi)
-      (C me)
-      (IP-SUB
-        (NP
-          (N$ libinienigi)
-        )
-      )
-    )
+    (N$ Gawenigi)
+    (Q eliodi)
+    (C me)
+    (N$ libinienigi)
   )
   (ID van-data,0.10)
 )
-
 /*
 sentence = 11
 uid = a85fda39-1575-4120-9432-8fb534ebdbd2
@@ -2797,17 +2041,12 @@ text_por = aquela comida dela é bonita
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D niGida)
-      (N$ liwenigi)
-    )
-    (NP-PRD
-      (N$ libinienigi)
-    )
+    (D niGida)
+    (N$ liwenigi)
+    (N$ libinienigi)
   )
   (ID van-data,0.11)
 )
-
 /*
 sentence = 13
 uid = e9806e26-701d-4f5f-9ca9-63216cccf3d0
@@ -2817,21 +2056,14 @@ text_por = aquele anzol do Pedro está na canoa
 */
 (
   (IP-MAT
-    (NP
-      (D naGajo)
-      (N$ lomiigo)
-      (NP
-        (NPR Pedro)
-      )
-    )
+    (D naGajo)
+    (N$ lomiigo)
+    (NPR Pedro)
     (VB idei)
-    (NP
-      (N niwatece)
-    )
+    (N niwatece)
   )
   (ID van-data,0.13)
 )
-
 /*
 sentence = 14
 uid = 2386b5b5-57d0-4a1f-86c2-73f67561744c
@@ -2841,26 +2073,15 @@ text_por = Aquele anzol do menino está na canoa.
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D naGajo)
-      (N$ lomiigo)
-      (NP
-        (N nigaanigawaanigi)
-      )
-    )
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (DAPL @anitaGa)
-          (N niwatece)
-        )
-      )
-    )
+    (D naGajo)
+    (N$ lomiigo)
+    (N nigaanigawaanigi)
+    (C me@)
+    (DAPL @anitaGa)
+    (N niwatece)
   )
   (ID van-data,0.14)
 )
-
 /*
 sentence = 17
 uid = 86f5c128-e931-4443-90cc-2359748ed69f
@@ -2870,16 +2091,11 @@ text_por = Estou na cidade
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (PRO Eeyo)
-    )
-    (NP-PRD
-      (N nigotaGa)
-    )
+    (PRO Eeyo)
+    (N nigotaGa)
   )
   (ID van-data,0.17)
 )
-
 /*
 sentence = 18
 uid = d021bede-064b-4fd5-bb33-6c7cd4279c1b
@@ -2889,22 +2105,13 @@ text_por = Estou na cidade
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (PRO Eyo)
-    )
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (DAPL @anitaGa)
-          (N nigotaGa)
-        )
-      )
-    )
+    (PRO Eyo)
+    (C me@)
+    (DAPL @anitaGa)
+    (N nigotaGa)
   )
   (ID van-data,0.18)
 )
-
 /*
 sentence = 19
 uid = e5c65dad-8b04-46da-b965-4921887cbca4
@@ -2914,26 +2121,15 @@ text_por = aqueles filhos da mulher estão com eles
 */
 (
   (IP-MAT
-    (NP
-      (D niGijoa)
-      (N$ lionigipi)
-      (NP
-        (N iwaalo)
-      )
-    )
+    (D niGijoa)
+    (N$ lionigipi)
+    (N iwaalo)
     (VB idei)
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (DAPL @initaGa)
-        )
-      )
-    )
+    (C me@)
+    (DAPL @initaGa)
   )
   (ID van-data,0.19)
 )
-
 /*
 sentence = 20
 uid = 8c5dd09c-d010-4c48-9601-9d3b14c61119
@@ -2943,22 +2139,13 @@ text_por = as formigas estão nela
 */
 (
   (IP-MAT
-    (NP
-      (N dibixodi)
-    )
+    (N dibixodi)
     (VB idei)
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (DAPL @anitaGa)
-        )
-      )
-    )
+    (C me@)
+    (DAPL @anitaGa)
   )
   (ID van-data,0.20)
 )
-
 /*
 sentence = 21
 uid = 9b107abc-b49f-4ce2-9c43-30c7e5b5f8b2
@@ -2968,17 +2155,12 @@ text_por = as mulheres estão bonitas
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (N iwalepodi)
-    )
+    (N iwalepodi)
     (T ja)
-    (NP-PRD
-      (N$ libinienigipi)
-    )
+    (N$ libinienigipi)
   )
   (ID van-data,0.21)
 )
-
 /*
 sentence = 22
 uid = 0d6cdbcf-9d99-4eff-8615-149ec22fec5f
@@ -2988,14 +2170,11 @@ text_por = ela está feliz
 */
 (
   (IP-MAT
-    (NP
-      (D ajo)
-    )
+    (D ajo)
     (VB ninitibeci)
   )
   (ID van-data,0.22)
 )
-
 /*
 sentence = 23
 uid = 05676093-36c9-4e30-959a-e850447f32a5
@@ -3005,14 +2184,11 @@ text_por = ela está pesada / é pesada
 */
 (
   (IP-MAT
-    (NP
-      (D ajo)
-    )
+    (D ajo)
     (VB iwaGadi)
   )
   (ID van-data,0.23)
 )
-
 /*
 sentence = 24
 uid = 661c62a7-3c8c-4609-b989-017deaae82c6
@@ -3022,17 +2198,12 @@ text_por = ela é muito feliz
 */
 (
   (IP-MAT
-    (NP
-      (D ajo)
-    )
-    (ADVP
-      (ADV daGaxa)
-    )
+    (D ajo)
+    (ADV daGaxa)
     (VB ninitibeci)
   )
   (ID van-data,0.24)
 )
-
 /*
 sentence = 25
 uid = abe20c80-8394-478c-92eb-feef1512e5ed
@@ -3042,17 +2213,12 @@ text_por = ela é muito feliz
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D ajo)
-    )
-    (NP-PRD
-      (Q eliodi)
-      (N$ linikeGegi)
-    )
+    (D ajo)
+    (Q eliodi)
+    (N$ linikeGegi)
   )
   (ID van-data,0.25)
 )
-
 /*
 sentence = 26
 uid = 0575dd46-865a-4ba4-bd49-ed6db054eeb4
@@ -3062,16 +2228,11 @@ text_por = ela é / está quente
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D ajo)
-    )
-    (NP-PRD
-      (N$ lapicaGa)
-    )
+    (D ajo)
+    (N$ lapicaGa)
   )
   (ID van-data,0.26)
 )
-
 /*
 sentence = 27
 uid = 3aba0004-0ce2-4392-a334-ef814428ec0d
@@ -3081,16 +2242,11 @@ text_por = ele está / é bonito
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D ijo)
-    )
-    (NP-PRD
-      (N$ libinienigi)
-    )
+    (D ijo)
+    (N$ libinienigi)
   )
   (ID van-data,0.27)
 )
-
 /*
 sentence = 28
 uid = d369088d-7d87-44b9-a956-2d5bd5f955e1
@@ -3100,16 +2256,11 @@ text_por = ele é / está quente
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D ijo)
-    )
-    (NP-PRD
-      (N$ lapicaGigi)
-    )
+    (D ijo)
+    (N$ lapicaGigi)
   )
   (ID van-data,0.28)
 )
-
 /*
 sentence = 29
 uid = a0ab1cad-f01e-49bb-8f31-5edf4fa4c102
@@ -3119,14 +2270,11 @@ text_por = eles são felizes
 */
 (
   (IP-MAT
-    (NP
-      (D niGijo)
-    )
+    (D niGijo)
     (VB ninitibigiwaji)
   )
   (ID van-data,0.29)
 )
-
 /*
 sentence = 30
 uid = 0c7e64fb-f070-4faa-a12a-c110cdf4bf16
@@ -3136,24 +2284,17 @@ text_por = esta faca da esposa dele não está na casa
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D niGijo)
-      (N$ lodaajo)
-      (NP
-        (D ajo)
-        (N$ lodowa)
-      )
-    )
+    (D niGijo)
+    (N$ lodaajo)
+    (D ajo)
+    (N$ lodowa)
     (NEG aG@)
-    (NP-PRD
-      (Q @ica)
-      (D digoida)
-      (N$ liGeladi)
-    )
+    (Q @ica)
+    (D digoida)
+    (N$ liGeladi)
   )
   (ID van-data,0.30)
 )
-
 /*
 sentence = 31
 uid = 5d76c7ee-51ce-47b0-a85d-ddc7f7d33f5f
@@ -3163,20 +2304,13 @@ text_por = esta fotografia da criança é bonita
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D ica)
-      (N$ liwigo)
-      (NP
-        (N niganigawanigi)
-      )
-    )
-    (NP-PRD
-      (N$ libinienigi)
-    )
+    (D ica)
+    (N$ liwigo)
+    (N niganigawanigi)
+    (N$ libinienigi)
   )
   (ID van-data,0.31)
 )
-
 /*
 sentence = 32
 uid = 46190f73-f21e-4073-b09c-8b2d17c6668e
@@ -3186,19 +2320,12 @@ text_por = esta pedra está muito pesada
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D naGani)
-      (NP
-        (N wetiGa)
-      )
-    )
-    (NP-PRD
-      (N$ liwaGatena)
-    )
+    (D naGani)
+    (N wetiGa)
+    (N$ liwaGatena)
   )
   (ID van-data,0.32)
 )
-
 /*
 sentence = 33
 uid = a0bb1280-1040-4dff-9311-a1a31049b6f8
@@ -3208,15 +2335,12 @@ text_por = esta pedra está pesada
 */
 (
   (IP-MAT
-    (NP
-      (D naGani)
-      (N wetiGa)
-    )
+    (D naGani)
+    (N wetiGa)
     (VB iwaGadi)
   )
   (ID van-data,0.33)
 )
-
 /*
 sentence = 34
 uid = e1acd124-849e-40dc-bbb0-a8b6ed281592
@@ -3226,15 +2350,12 @@ text_por = estas pedras estão pesadas
 */
 (
   (IP-MAT
-    (NP
-      (D niGidiwa)
-      (N wetiadi)
-    )
+    (D niGidiwa)
+    (N wetiadi)
     (VB iwaGadi)
   )
   (ID van-data,0.34)
 )
-
 /*
 sentence = 35
 uid = 675ef4d4-ebe8-4601-bf42-908deb0df82b
@@ -3244,21 +2365,14 @@ text_por = esta pedra está muito pesada
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D ani)
-      (N wetiGa)
-    )
-    (CP-me
-      (Q eliodi)
-      (C me)
-      (IP-SUB
-        (VB iwaGadi)
-      )
-    )
+    (D ani)
+    (N wetiGa)
+    (Q eliodi)
+    (C me)
+    (VB iwaGadi)
   )
   (ID van-data,0.35)
 )
-
 /*
 sentence = 36
 uid = 42b65fc9-cec4-40a9-8aec-cdeec3731df8
@@ -3268,15 +2382,12 @@ text_por = esta pedra é pesada
 */
 (
   (IP-MAT
-    (NP
-      (D ani)
-      (N wetiGa)
-    )
+    (D ani)
+    (N wetiGa)
     (VB iwaGadi)
   )
   (ID van-data,0.36)
 )
-
 /*
 sentence = 37
 uid = ba34b659-bcb8-4aa2-b9f4-b969ba786b12
@@ -3286,24 +2397,15 @@ text_por = esta pedra que é pesada caiu no meu pé
 */
 (
   (IP-MAT
-    (NP
-      (D ani)
-      (N wetiGa)
-      (CP-me
-        (C me)
-        (IP-SUB
-          (VB iwaGadi)
-        )
-      )
-    )
+    (D ani)
+    (N wetiGa)
+    (C me)
+    (VB iwaGadi)
     (VBAPL eniteloco)
-    (NP-APL
-      (N$ iGonagi)
-    )
+    (N$ iGonagi)
   )
   (ID van-data,0.37)
 )
-
 /*
 sentence = 38
 uid = 61da4017-2140-4577-82e4-d5108efae675
@@ -3313,29 +2415,15 @@ text_por = esta pedra , que é pesada , caiu no meu pé
 */
 (
   (IP-MAT
-    (NP
-      (D ani)
-      (N wetiGa)
-      (CP-REL
-        (WNP-1
-          (WPRO ane)
-        )
-        (IP-SUB
-          (NP-TRACE
-            (-NONE- *T*-1)
-          )
-          (VB iwaGadi)
-        )
-      )
-    )
+    (D ani)
+    (N wetiGa)
+    (WPRO ane)
+    (VB iwaGadi)
     (VBAPL eniteloco)
-    (NP-APL
-      (N$ iGonagi)
-    )
+    (N$ iGonagi)
   )
   (ID van-data,0.38)
 )
-
 /*
 sentence = 39
 uid = 6459c008-b2ad-4517-8227-b525616b720d
@@ -3345,15 +2433,12 @@ text_por = estas pedras estão pesadas
 */
 (
   (IP-MAT
-    (NP
-      (D idiwa)
-      (N wetiadi)
-    )
+    (D idiwa)
+    (N wetiadi)
     (VB iwaGadi)
   )
   (ID van-data,0.39)
 )
-
 /*
 sentence = 40
 uid = b4e1df8d-6590-4ce9-9f72-c0b054398c89
@@ -3363,18 +2448,13 @@ text_por = este leite está quente
 */
 (
   (IP-MAT
-    (NP
-      (D niGidowa)
-      (NP
-        (N waca)
-      )
-      (N$ lotiidi)
-    )
+    (D niGidowa)
+    (N waca)
+    (N$ lotiidi)
     (VB dapicoGo)
   )
   (ID van-data,0.40)
 )
-
 /*
 sentence = 41
 uid = 278e4c5c-aaab-4ca3-8f5e-277610fb80c2
@@ -3384,18 +2464,13 @@ text_por = este leite está quente
 */
 (
   (IP-MAT
-    (NP
-      (D idowa)
-      (NP
-        (N waca)
-      )
-      (N$ lotiidi)
-    )
+    (D idowa)
+    (N waca)
+    (N$ lotiidi)
     (VB dapicoGo)
   )
   (ID van-data,0.41)
 )
-
 /*
 sentence = 44
 uid = 075356e6-f89c-4d83-b001-435d13b319dc
@@ -3405,20 +2480,13 @@ text_por = estes ovos da fotografia estão bonitos
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D ijoa)
-      (N nigetedi)
-      (NP
-        (N niwigo)
-      )
-    )
-    (NP-PRD
-      (N$ libinienigipi)
-    )
+    (D ijoa)
+    (N nigetedi)
+    (N niwigo)
+    (N$ libinienigipi)
   )
   (ID van-data,0.44)
 )
-
 /*
 sentence = 47
 uid = fad6e8d3-1e9f-451c-aaa7-fd28aecfd967
@@ -3428,25 +2496,15 @@ text_por = estes peixes vermelhos estão baratos
 */
 (
   (IP-MAT
-    (NP-1
-      (D idiwa)
-      (NP
-        (N noGojedi)
-      )
-      (N$ lixagotaGaGa)
-    )
+    (D idiwa)
+    (N noGojedi)
+    (N$ lixagotaGaGa)
     (NEG aG@)
     (VBU @dakake)
-    (NP
-      (NP-GEN
-        (-NONE- *T*-1)
-      )
-      (N$ loojedi)
-    )
+    (N$ loojedi)
   )
   (ID van-data,0.47)
 )
-
 /*
 sentence = 48
 uid = e189be3e-9290-4d1c-b343-74d3858ce7cd
@@ -3457,13 +2515,10 @@ text_por = eu estou aqui
 (
   (IP-MAT
     (VB etee)
-    (NP
-      (D ina)
-    )
+    (D ina)
   )
   (ID van-data,0.48)
 )
-
 /*
 sentence = 49
 uid = 889846ee-66df-4c8f-88d1-e89d3619eb1e
@@ -3474,13 +2529,10 @@ text_por = eu estou aqui
 (
   (IP-MAT
     (VB eteyo)
-    (NP
-      (D ina)
-    )
+    (D ina)
   )
   (ID van-data,0.49)
 )
-
 /*
 sentence = 50
 uid = e7f4ab65-14d7-44f5-a197-c99c4ab173cd
@@ -3491,18 +2543,11 @@ text_por = eu estou com ela
 (
   (IP-MAT
     (VB etee)
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (DAPL @anitaGa)
-        )
-      )
-    )
+    (C me@)
+    (DAPL @anitaGa)
   )
   (ID van-data,0.50)
 )
-
 /*
 sentence = 51
 uid = 7aa17dd7-2c26-4df9-8f90-65d8d58e2c59
@@ -3513,18 +2558,11 @@ text_por = eu estou com ele
 (
   (IP-MAT
     (VB etee)
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (DAPL @initaGa)
-        )
-      )
-    )
+    (C me@)
+    (DAPL @initaGa)
   )
   (ID van-data,0.51)
 )
-
 /*
 sentence = 52
 uid = c3c548d7-b154-437e-9baf-541a1bbbab6e
@@ -3534,18 +2572,13 @@ text_por = eu não estou feliz
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (PRO ee)
-    )
+    (PRO ee)
     (NEG aG@)
-    (NP-PRD
-      (D @ica)
-      (N$ inikeGegi)
-    )
+    (D @ica)
+    (N$ inikeGegi)
   )
   (ID van-data,0.52)
 )
-
 /*
 sentence = 53
 uid = c4d99cf1-e781-4efb-83ff-4a0ab873b7ec
@@ -3555,15 +2588,12 @@ text_por = eu não estou feliz
 */
 (
   (IP-MAT
-    (NP
-      (PRO ee)
-    )
+    (PRO ee)
     (NEG aG@)
     (VB @dininitibeci)
   )
   (ID van-data,0.53)
 )
-
 /*
 sentence = 58
 uid = b3c03f67-7664-43b7-9de8-b5243321eeb7
@@ -3573,14 +2603,11 @@ text_por = eu sou pesado
 */
 (
   (IP-MAT
-    (NP
-      (PRO ee)
-    )
+    (PRO ee)
     (VB idiwaaGadi)
   )
   (ID van-data,0.58)
 )
-
 /*
 sentence = 59
 uid = 6852927c-53de-411d-9ed9-e0f9d78309cd
@@ -3590,14 +2617,11 @@ text_por = estou perto dela
 */
 (
   (IP-MAT
-    (NP
-      (PRO ee)
-    )
+    (PRO ee)
     (VB jigipegitege)
   )
   (ID van-data,0.59)
 )
-
 /*
 sentence = 60
 uid = 2b6a6bee-392e-49f9-97a9-0afbb0af2eff
@@ -3607,14 +2631,11 @@ text_por = estou perto dele
 */
 (
   (IP-MAT
-    (NP
-      (PRO ee)
-    )
+    (PRO ee)
     (VB jigipegitegi)
   )
   (ID van-data,0.60)
 )
-
 /*
 sentence = 61
 uid = 42df6a83-6ae1-49b2-bd99-fbed7e2a083b
@@ -3625,23 +2646,14 @@ text_por = não sou muito feliz (não é verdade que eu sou feliz)
 (
   (IP-MAT
     (NEG aG@)
-    (NP
-      (PRO @ee)
-    )
+    (PRO @ee)
     (ADJ @ewi)
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (D @ica)
-          (N$ iniKGigi)
-        )
-      )
-    )
+    (C me@)
+    (D @ica)
+    (N$ iniKGigi)
   )
   (ID van-data,0.61)
 )
-
 /*
 sentence = 62
 uid = 27d94732-46ea-4286-a1d4-b2861806a579
@@ -3652,22 +2664,13 @@ text_por = não sou muito feliz
 (
   (IP-MAT
     (NEG aG@)
-    (NP-SBJ
-      (PRO @eyo)
-    )
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (D @ica)
-          (N$ inikGigi)
-        )
-      )
-    )
+    (PRO @eyo)
+    (C me@)
+    (D @ica)
+    (N$ inikGigi)
   )
   (ID van-data,0.62)
 )
-
 /*
 sentence = 63
 uid = 651a68ed-90a0-45b7-9eb5-411bc2c189c7
@@ -3681,7 +2684,6 @@ text_por = nós estamos perto de você
   )
   (ID van-data,0.63)
 )
-
 /*
 sentence = 64
 uid = d3952c8a-1ac1-4255-be0b-63978fdf368b
@@ -3693,19 +2695,12 @@ text_por = nós não estamos na comunidade
   (IP-MAT
     (NEG aG@)
     (VB @idedonaGa)
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (D @idi)
-          (N$ Godoigi)
-        )
-      )
-    )
+    (C me@)
+    (D @idi)
+    (N$ Godoigi)
   )
   (ID van-data,0.64)
 )
-
 /*
 sentence = 65
 uid = e9b78452-925e-458b-848a-d52ab76f6840
@@ -3719,7 +2714,6 @@ text_por = estamos perto de vocês
   )
   (ID van-data,0.65)
 )
-
 /*
 sentence = 67
 uid = 6599689a-3fbe-4598-8827-78aceeff3931
@@ -3729,21 +2723,14 @@ text_por = o avô da Maria está no rio
 */
 (
   (IP-MAT
-    (NP
-      (D ijo)
-      (N$ lemé)
-      (NP
-        (NPR Maria)
-      )
-    )
+    (D ijo)
+    (N$ lemé)
+    (NPR Maria)
     (VBAPL ipegitegi)
-    (NP-APL
-      (N weiigi)
-    )
+    (N weiigi)
   )
   (ID van-data,0.67)
 )
-
 /*
 sentence = 68
 uid = b8878027-73d2-4b11-bc18-cbdcf5637e55
@@ -3753,14 +2740,11 @@ text_por = o beiju está quente
 */
 (
   (IP-MAT
-    (NP
-      (N biju)
-    )
+    (N biju)
     (VB dapico)
   )
   (ID van-data,0.68)
 )
-
 /*
 sentence = 69
 uid = 30ef1810-38e0-4cef-8db3-4dda590faa09
@@ -3770,17 +2754,12 @@ text_por = o galho da árvore é vermelho
 */
 (
   (IP-MAT
-    (NP
-      (N$ libiwe)
-      (NP
-        (N niale)
-      )
-    )
+    (N$ libiwe)
+    (N niale)
     (VB ixagodi)
   )
   (ID van-data,0.69)
 )
-
 /*
 sentence = 70
 uid = 444f95ae-8ed7-422e-84f1-aae6d4af2b6d
@@ -3790,15 +2769,12 @@ text_por = os beijus estão quentes
 */
 (
   (IP-MAT
-    (NP
-      (D idiwa)
-      (N bejoli)
-    )
+    (D idiwa)
+    (N bejoli)
     (VB dapico)
   )
   (ID van-data,0.70)
 )
-
 /*
 sentence = 71
 uid = f240dcfe-ca05-42aa-8644-07b9e3464e1a
@@ -3808,20 +2784,13 @@ text_por = os filhos da Maria são bonitos
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (Q idiwa)
-      (N$ leonigipi)
-      (NP
-        (NPR Maria)
-      )
-    )
-    (NP-PRD
-      (N$ libinienigipi)
-    )
+    (Q idiwa)
+    (N$ leonigipi)
+    (NPR Maria)
+    (N$ libinienigipi)
   )
   (ID van-data,0.71)
 )
-
 /*
 sentence = 73
 uid = c1b350df-ed1a-4e3b-89a8-a6fa9ca8382e
@@ -3831,16 +2800,13 @@ text_por = a casa dela é perto do rio da cidade
 */
 (
   (IP-MAT
-    (NP
-      (N$ ligeladi))
+    (N$ ligeladi)
     (VBAPL ipegitege)
-    (NP-APL
-      (NP
-        (N$ niweiigi))
-      (N$ nigotaGa)))
+    (N$ niweiigi)
+    (N$ nigotaGa)
+  )
   (ID van-data,0.73)
 )
-
 /*
 sentence = 74
 uid = ebff5ffa-8a9d-4f8b-9960-38f70b344c19
@@ -3850,20 +2816,13 @@ text_por = a casa dele é perto do rio da cidade
 */
 (
   (IP-MAT
-    (NP
-      (N$ ligeladi)
-    )
+    (N$ ligeladi)
     (VBAPL ipegitegi)
-    (NP-APL
-      (N$ niweiigi)
-      (NP
-        (N$ nigotaGa)
-      )
-    )
+    (N$ niweiigi)
+    (N$ nigotaGa)
   )
   (ID van-data,0.74)
 )
-
 /*
 sentence = 75
 uid = 81048a6f-e084-4b0a-965a-f41fb5c53ff7
@@ -3873,16 +2832,10 @@ text_por = a cidade da casa dela é perto do rio
 */
 (
   (IP-MAT
-    (NP
-      (N$ nigotaGa)
-      (NP
-        (N$ liGeladi)
-      )
-    )
+    (N$ nigotaGa)
+    (N$ liGeladi)
     (VBAPL ipegitegi)
-    (NP-APL
-      (N weiigi)
-    )
+    (N weiigi)
   )
   (ID van-data,0.75)
 )

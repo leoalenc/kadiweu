@@ -1,0 +1,2 @@
+a0409cfb8f4acd1b2610db2135b8ee8855b5bd7bb35b592982cb9384ac096985  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test.gold.psd
+b7848ee1c9bbfb34f1d73405754d5095393c6a41b23c0e6269164eb2599109bd  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test.pos

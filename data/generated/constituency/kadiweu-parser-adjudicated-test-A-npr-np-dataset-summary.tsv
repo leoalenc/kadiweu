@@ -1,0 +1,7 @@
+dataset	struct_status	exact	trace_equivalent	structural_difference	total
+hil-data	DONE	58	5	1	64
+hil-data	REVIEW	1	0	1	2
+ped-gramm	DONE	36	5	5	46
+ped-gramm	REVIEW	2	3	4	9
+van-data	DONE	53	2	5	60
+van-data	REVIEW	0	0	1	1

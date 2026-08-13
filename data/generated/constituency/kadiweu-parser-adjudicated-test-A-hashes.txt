@@ -1,0 +1,11 @@
+94397f3831c3aed551914763ba5c32c9284beb321e01e62e560fd3f15f4ce085  /home/leonel/Dropbox/projects/2025/post-doc/parser/kadiweu_parser_300726.pdt.txt
+67765202a6721f4d2e269cbb5564cb4a676027a6218af05ef8f457f999d734ff  /home/leonel/Dropbox/projects/2025/post-doc/parser/kadiweu_parser_definitions_050726.txt
+a0409cfb8f4acd1b2610db2135b8ee8855b5bd7bb35b592982cb9384ac096985  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test.gold.psd
+b7848ee1c9bbfb34f1d73405754d5095393c6a41b23c0e6269164eb2599109bd  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test.pos
+7422997fc4b174d119efcc7c87b066837c111551687068744358f4799b1f4c90  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A.psd
+20f8608c831c7dbbc6d69d8b6b7e390e93ff849effa6f0c04f254b5504343302  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A-comparison.tsv
+0867df242c107e29664abd4968ab5da48fcf39eb704368749e5863bb6c0026c2  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A.diff
+7bc5a26fa1efd03ca0a9c3d519a79ed19bba56d94d787e6c168c7b095ff893c4  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A-run.tsv
+0fec1917c37fdc1605a06ac5aa30dd1c62bd9c8053eb13cf7a507e08b6c1443e  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A-summary.tsv
+a47b7d7276a2b64006e30636c64dce71231a0347cf7079b278c7edff916028a4  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A-dataset-summary.tsv
+90f65159572b7180da48099eac11c9df0659a2b61138d35dca8c9137fd623de9  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A-console.log

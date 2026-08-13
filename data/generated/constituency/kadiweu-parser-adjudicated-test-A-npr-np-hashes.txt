@@ -1,0 +1,15 @@
+aae745826f1ee4e174f5eb3a5584b9ff01a19604f92bae48d54073a5ce073b82  /home/leonel/Dropbox/projects/2025/post-doc/parser/kadiweu_parser_300726.pdt.npr-np-test.txt
+67765202a6721f4d2e269cbb5564cb4a676027a6218af05ef8f457f999d734ff  /home/leonel/Dropbox/projects/2025/post-doc/parser/kadiweu_parser_definitions_050726.txt
+a0409cfb8f4acd1b2610db2135b8ee8855b5bd7bb35b592982cb9384ac096985  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test.gold.psd
+b7848ee1c9bbfb34f1d73405754d5095393c6a41b23c0e6269164eb2599109bd  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test.pos
+7422997fc4b174d119efcc7c87b066837c111551687068744358f4799b1f4c90  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A.psd
+20f8608c831c7dbbc6d69d8b6b7e390e93ff849effa6f0c04f254b5504343302  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A-comparison.tsv
+918dc45b56879b1acb61bc678276ce275567a9409d2a1aee4f355378a7cc8057  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A-npr-np.psd
+b0c9c8a310054ee98b6970ca50e3b3036e243f97b76e819f7a15b1e65f212a64  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A-npr-np-comparison.tsv
+0e7384e47f00b8b6de32fc2b32c4696e3323b0ae9fa9593697d08ff2c8664c19  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A-npr-np.diff
+e69e977445227fb592fbf8938fb2868d4cae6fdb32162d554da297f40adb4bc0  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A-npr-np-run.tsv
+742f0551395fffe30ff852c8fb9b7ab653e7bf9e5d83530cb0226ebf2d199d15  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A-npr-np-summary.tsv
+6453590fd8247b43e28587f02147e441c8ecc38e62062afbafd9c8c46804f947  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A-npr-np-dataset-summary.tsv
+4d5eba4ffc09824a55114d1ff6a70e3163fc887dcd0b48201fe1a07db5da9874  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A-to-A-npr-np-transitions.tsv
+ea102fe2e84efac3ce7c11f53f584bd7aecbd56d44c58c7e19f8f304c9932127  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A-to-A-npr-np-summary.tsv
+ad153229e554d58f91ddf20545e72cb193a170a40f7b78a6aeaae2e24d718262  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-adjudicated-test-A-npr-np-console.log
