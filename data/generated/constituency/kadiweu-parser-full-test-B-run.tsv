@@ -15,9 +15,9 @@ execution	original_tbp	name	status	transformed_records
 14	14	Nbar-N$	OK	50
 15	15	N-bar-poss	OK	27
 16	16	Nbar-poss2	OK	18
-17	17	N-bar-D	OK	38
+17	17	N-bar-D	OK	35
 18	18	nbar2	OK	0
-19	19	nbar3	OK	158
+19	19	nbar3	OK	159
 20	20	Nbar-T	OK	0
 21	21	nbar4.2	OK	4
 22	22	nbar4.6	OK	86
@@ -92,7 +92,7 @@ execution	original_tbp	name	status	transformed_records
 91	93	ip-mat4-PRED	OK	23
 92	94	prune-np	OK	15
 93	95	cp1-rec-CHECK	OK	0
-94	96	cp2	OK	9
+94	96	cp2	OK	10
 95	97	W-CP	OK	0
 96	98	cp-que1	OK	0
 97	99	prune-cp	OK	6
@@ -105,10 +105,10 @@ execution	original_tbp	name	status	transformed_records
 104	106	cp-ip	OK	0
 105	107	cp4	OK	0
 106	108	np-cp-me-CHECK	OK	5
-107	109	np-cp2	OK	9
+107	109	np-cp2	OK	10
 108	110	prune-cp	OK	0
 109	111	prune-cp	OK	0
-110	112	cp-rel	OK	9
+110	112	cp-rel	OK	10
 111	113	cp-adv1	OK	0
 112	114	CP-rel-verbless	OK	0
 113	115	CP-frl	OK	1
@@ -127,7 +127,7 @@ execution	original_tbp	name	status	transformed_records
 126	129	adjp-cp-cmp	OK	0
 127	130	xp-cp-cmp	OK	0
 128	131	ip-sub	OK	18
-129	132	ip-sub2	OK	38
+129	132	ip-sub2	OK	39
 130	133	cp-frl1	OK	0
 131	134	cp-frl-q	OK	0
 132	135	cp-frl3	OK	0
@@ -139,7 +139,7 @@ execution	original_tbp	name	status	transformed_records
 138	141	ip-adv	OK	2
 139	142	temp	OK	0
 140	143	add-wh-trace-advp	OK	0
-141	144	add-wh-trace-np	OK	9
+141	144	add-wh-trace-np	OK	10
 142	145	add-wh-trace-pp	OK	0
 143	146	add-wh-trace-advp-msr1	OK	0
 144	147	add-wh-trace-advp-msr2	OK	0

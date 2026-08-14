@@ -1400,6 +1400,23 @@ text_por = A língua do marido/esposa dele/dela é bonita
   (ID ped-gramm,0.23)
 )
 /*
+sentence = 24
+uid = 2f47b402-9fe7-4714-96e3-c6cbdf405472
+status = DONE
+text = iGeladi idei naigi anenapioi
+text_por = a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)
+*/
+(
+  (IP-MAT
+    (N$ iGeladi)
+    (VB idei)
+    (N naigi)
+    (WPRO ane@)
+    (N @napioi)
+  )
+  (ID ped-gramm,0.24)
+)
+/*
 sentence = 25
 uid = a4d33655-fe74-4df2-8d5e-b3c88fba5fd1
 status = DONE
@@ -1687,6 +1704,22 @@ text_por = Estamos perto de vocês.
   (ID ped-gramm,0.52)
 )
 /*
+sentence = 53
+uid = 3f077b37-aa95-4012-9efb-a21630cdd6e9
+status = DONE
+text = aGee eliodi niinikeGegi
+text_por = Eu não estou muito feliz
+*/
+(
+  (IP-MAT
+    (NEG aG@)
+    (PRO @ee)
+    (Q eliodi)
+    (N niinikeGegi)
+  )
+  (ID ped-gramm,0.53)
+)
+/*
 sentence = 54
 uid = 74a76be1-d4b6-42e1-9100-6a436a7fa065
 status = DONE
@@ -1865,23 +1898,6 @@ text_por = A língua do teu irmão
   (ID ped-gramm,0.21)
 )
 /*
-sentence = 24
-uid = 2f47b402-9fe7-4714-96e3-c6cbdf405472
-status = REVIEW
-text = iGeladi idei naigi anenapioi
-text_por = a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)
-*/
-(
-  (IP-MAT
-    (N$ iGeladi)
-    (VB idei)
-    (N naigi)
-    (WPRO ane@)
-    (ADJ @napioi)
-  )
-  (ID ped-gramm,0.24)
-)
-/*
 sentence = 26
 uid = f081c545-c42b-463d-b57f-db87787f20e7
 status = REVIEW
@@ -2048,22 +2064,6 @@ text_por = A casa dele/dela é perto da cidade da lagoa.
     (PUNC .)
   )
   (ID ped-gramm,0.47)
-)
-/*
-sentence = 53
-uid = 3f077b37-aa95-4012-9efb-a21630cdd6e9
-status = REVIEW
-text = aGee eliodi niinikeGegi
-text_por = Eu não estou muito feliz
-*/
-(
-  (IP-MAT
-    (NEG aG@)
-    (D @ee)
-    (Q eliodi)
-    (N niinikeGegi)
-  )
-  (ID ped-gramm,0.53)
 )
 /*
 sentence = 1
@@ -2765,6 +2765,39 @@ text_por = eu não estou feliz
   (ID van-data,0.53)
 )
 /*
+sentence = 54
+uid = 969ba2f3-88dc-417e-ad3f-16ce88b4c762
+status = DONE
+text = aGee eliodi niinikeGegi
+text_por = eu não estou muito feliz
+*/
+(
+  (IP-MAT
+    (NEG aG@)
+    (PRO @ee)
+    (Q eliodi)
+    (N niinikeGegi)
+  )
+  (ID van-data,0.54)
+)
+/*
+sentence = 55
+uid = 39925f76-d73f-423f-95cd-f88bd78f2a6e
+status = DONE
+text = ee eliodi me aGidininitibeci
+text_por = eu não estou muito feliz
+*/
+(
+  (IP-MAT
+    (PRO ee)
+    (Q eliodi)
+    (C me)
+    (NEG aG@)
+    (VB @dininitibeci)
+  )
+  (ID van-data,0.55)
+)
+/*
 sentence = 58
 uid = b3c03f67-7664-43b7-9de8-b5243321eeb7
 status = DONE
@@ -3133,39 +3166,6 @@ text_por = A fotografia dos ovos (da galinha) é bonita.
     (PUNC .)
   )
   (ID van-data,0.46)
-)
-/*
-sentence = 54
-uid = 969ba2f3-88dc-417e-ad3f-16ce88b4c762
-status = REVIEW
-text = aGee eliodi niinikeGegi
-text_por = eu não estou muito feliz
-*/
-(
-  (IP-MAT
-    (NEG aG@)
-    (D @ee)
-    (Q eliodi)
-    (N niinikeGegi)
-  )
-  (ID van-data,0.54)
-)
-/*
-sentence = 55
-uid = 39925f76-d73f-423f-95cd-f88bd78f2a6e
-status = REVIEW
-text = ee eliodi me aGidininitibeci
-text_por = eu não estou muito feliz
-*/
-(
-  (IP-MAT
-    (D ee)
-    (Q eliodi)
-    (C me)
-    (NEG aG@)
-    (VB @dininitibeci)
-  )
-  (ID van-data,0.55)
 )
 /*
 sentence = 56

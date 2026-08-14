@@ -216,51 +216,6 @@ text_por = A fotografia dos ovos (da galinha) é bonita.
 )
 
 /*
-sentence = 54
-uid = 969ba2f3-88dc-417e-ad3f-16ce88b4c762
-status = REVIEW
-text = aGee eliodi niinikeGegi
-text_por = eu não estou muito feliz
-*/
-(
-  (IP-MAT
-    (NEG aG@)
-    (NP-SBJ
-      (D @ee)
-    )
-    (NP-PRD
-      (Q eliodi)
-      (N niinikeGegi)
-    )
-  )
-  (ID van-data,0.54)
-)
-
-/*
-sentence = 55
-uid = 39925f76-d73f-423f-95cd-f88bd78f2a6e
-status = REVIEW
-text = ee eliodi me aGidininitibeci
-text_por = eu não estou muito feliz
-*/
-(
-  (IP-MAT
-    (NP-SBJ
-      (D ee)
-    )
-    (CP-me
-      (Q eliodi)
-      (C me)
-      (IP-SUB
-        (NEG aG@)
-        (VB @dininitibeci)
-      )
-    )
-  )
-  (ID van-data,0.55)
-)
-
-/*
 sentence = 56
 uid = d3095a7e-477d-405e-9ea2-85bfdacad7d3
 status = REVIEW

@@ -26,7 +26,7 @@ hil-data,0.30	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace nor
 hil-data,0.31	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 hil-data,0.32	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 hil-data,0.33	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
-hil-data,0.34	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+hil-data,0.34	hil-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
 hil-data,0.35	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 hil-data,0.36	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 hil-data,0.37	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
@@ -34,10 +34,10 @@ hil-data,0.38	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace nor
 hil-data,0.39	hil-data	DONE	TRACE_EQUIVALENT	equivalent after trace-notation and coindex alpha-normalization
 hil-data,0.4	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 hil-data,0.40	hil-data	REVIEW	TRACE_EQUIVALENT	equivalent after trace-notation and coindex alpha-normalization
-hil-data,0.41	hil-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
-hil-data,0.42	hil-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
+hil-data,0.41	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+hil-data,0.42	hil-data	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
 hil-data,0.43	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
-hil-data,0.44	hil-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
+hil-data,0.44	hil-data	DONE	TRACE_EQUIVALENT	equivalent after trace-notation and coindex alpha-normalization
 hil-data,0.45	hil-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
 hil-data,0.46	hil-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
 hil-data,0.47	hil-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
@@ -81,8 +81,8 @@ ped-gramm,0.17	ped-gramm	REVIEW	EXACT_MATCH	trees are identical after whitespace
 ped-gramm,0.18	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.19	ped-gramm	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
 ped-gramm,0.2	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
-ped-gramm,0.20	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
-ped-gramm,0.21	ped-gramm	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
+ped-gramm,0.20	ped-gramm	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
+ped-gramm,0.21	ped-gramm	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.22	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.23	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.24	ped-gramm	DONE	TRACE_EQUIVALENT	equivalent after trace-notation and coindex alpha-normalization
@@ -103,7 +103,7 @@ ped-gramm,0.37	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace n
 ped-gramm,0.38	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.39	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.4	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
-ped-gramm,0.40	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+ped-gramm,0.40	ped-gramm	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
 ped-gramm,0.41	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.42	ped-gramm	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.43	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
@@ -119,7 +119,7 @@ ped-gramm,0.51	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace n
 ped-gramm,0.52	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.53	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.54	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
-ped-gramm,0.55	ped-gramm	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
+ped-gramm,0.55	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.56	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.57	ped-gramm	DONE	TRACE_EQUIVALENT	equivalent after trace-notation and coindex alpha-normalization
 ped-gramm,0.58	ped-gramm	DONE	TRACE_EQUIVALENT	equivalent after trace-notation and coindex alpha-normalization
@@ -130,7 +130,7 @@ ped-gramm,0.61	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace n
 ped-gramm,0.7	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.8	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.9	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
-van-data,0.1	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+van-data,0.1	van-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
 van-data,0.10	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.11	van-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
 van-data,0.12	van-data	REVIEW	TRACE_EQUIVALENT	equivalent after trace-notation and coindex alpha-normalization
@@ -154,8 +154,8 @@ van-data,0.28	van-data	DONE	EXACT_MATCH	trees are identical after whitespace nor
 van-data,0.29	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.3	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.30	van-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
-van-data,0.31	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
-van-data,0.32	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+van-data,0.31	van-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
+van-data,0.32	van-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
 van-data,0.33	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.34	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.35	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
@@ -164,14 +164,14 @@ van-data,0.37	van-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
 van-data,0.38	van-data	DONE	TRACE_EQUIVALENT	equivalent after trace-notation and coindex alpha-normalization
 van-data,0.39	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.4	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
-van-data,0.40	van-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
-van-data,0.41	van-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
-van-data,0.42	van-data	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
-van-data,0.43	van-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
+van-data,0.40	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+van-data,0.41	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+van-data,0.42	van-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
+van-data,0.43	van-data	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
 van-data,0.44	van-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
-van-data,0.45	van-data	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
+van-data,0.45	van-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.46	van-data	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
-van-data,0.47	van-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
+van-data,0.47	van-data	DONE	TRACE_EQUIVALENT	equivalent after trace-notation and coindex alpha-normalization
 van-data,0.48	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.49	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.5	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization

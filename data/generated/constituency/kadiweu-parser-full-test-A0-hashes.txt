@@ -1,0 +1,10 @@
+0f1b403144a6b2ea7d08ae252341da3ba1c0bc93e937ae7c5d6180da32879752  /home/leonel/Dropbox/projects/2025/post-doc/parser/kadiweu_parser_300726.pdt-compat-lex-baseline.txt
+67765202a6721f4d2e269cbb5564cb4a676027a6218af05ef8f457f999d734ff  /home/leonel/Dropbox/projects/2025/post-doc/parser/kadiweu_parser_definitions_050726.txt
+acb93ea82752273e67709518f8740603ac585bf635321e1a2e7dafe931f1170b  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test.pos
+5d719980d1276ff6239938f1073416b009b91507b5f12716887ec0fff26d572a  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test.gold.psd
+7881634e7637bf400360a77d3a4364df39740ae80a6833b6f39c7833aa733a72  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A0.psd
+453800508522f190611f664d0371a77ceb2135afb348bc39875372753f40436b  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A0-comparison.tsv
+020f026c121e2d5bb931066dddfc18d9e40ace090d64ced0fc57d62e4246c94a  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A0.diff
+062f7b2e0a6c1eddc867700cb420200b586b3bd34b2c5a9cf67696d9a3abd1ab  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A0-run.tsv
+6bc1d0219c2014d310bdfa7cf002cb79689ffb7cf561e835169561113da65573  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A0-summary.tsv
+de67d3997c28ddaadb1936bf0f7a0074bb327a02413f9e88d697e2854be4a6e7  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A0-console.log

@@ -588,9 +588,7 @@ text_por = esta pedra está muito pesada
   (IP-MAT
     (NP-SBJ
       (D naGani)
-      (NP
-        (N wetiGa)
-      )
+      (N wetiGa)
     )
     (NP-PRD
       (N$ liwaGatena)
@@ -962,6 +960,51 @@ text_por = eu não estou feliz
     (VB @dininitibeci)
   )
   (ID van-data,0.53)
+)
+
+/*
+sentence = 54
+uid = 969ba2f3-88dc-417e-ad3f-16ce88b4c762
+status = DONE
+text = aGee eliodi niinikeGegi
+text_por = eu não estou muito feliz
+*/
+(
+  (IP-MAT
+    (NEG aG@)
+    (NP-SBJ
+      (PRO @ee)
+    )
+    (NP-PRD
+      (Q eliodi)
+      (N niinikeGegi)
+    )
+  )
+  (ID van-data,0.54)
+)
+
+/*
+sentence = 55
+uid = 39925f76-d73f-423f-95cd-f88bd78f2a6e
+status = DONE
+text = ee eliodi me aGidininitibeci
+text_por = eu não estou muito feliz
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (PRO ee)
+    )
+    (CP-me
+      (Q eliodi)
+      (C me)
+      (IP-SUB
+        (NEG aG@)
+        (VB @dininitibeci)
+      )
+    )
+  )
+  (ID van-data,0.55)
 )
 
 /*

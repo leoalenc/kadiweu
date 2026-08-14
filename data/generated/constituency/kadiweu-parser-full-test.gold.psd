@@ -1768,9 +1768,7 @@ text_por = a fotografia é/está bonita
   (IP-MAT
     (NP-SBJ
       (D ica)
-      (NP
-        (N niwigo)
-      )
+      (N niwigo)
     )
     (NP-PRD
       (N$ libinienigi)
@@ -1821,6 +1819,38 @@ text_por = A língua do marido/esposa dele/dela é bonita
     )
   )
   (ID ped-gramm,0.23)
+)
+/*
+sentence = 24
+uid = 2f47b402-9fe7-4714-96e3-c6cbdf405472
+status = DONE
+text = iGeladi idei naigi anenapioi
+text_por = a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ iGeladi)
+    )
+    (VB idei)
+    (NP
+      (N naigi)
+      (CP-REL
+        (WNP-1
+          (WPRO ane@)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (NP
+            (N @napioi)
+          )
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.24)
 )
 /*
 sentence = 25
@@ -2211,6 +2241,26 @@ text_por = Estamos perto de vocês.
   (ID ped-gramm,0.52)
 )
 /*
+sentence = 53
+uid = 3f077b37-aa95-4012-9efb-a21630cdd6e9
+status = DONE
+text = aGee eliodi niinikeGegi
+text_por = Eu não estou muito feliz
+*/
+(
+  (IP-MAT
+    (NEG aG@)
+    (NP-SBJ
+      (PRO @ee)
+    )
+    (NP-PRD
+      (Q eliodi)
+      (N niinikeGegi)
+    )
+  )
+  (ID ped-gramm,0.53)
+)
+/*
 sentence = 54
 uid = 74a76be1-d4b6-42e1-9100-6a436a7fa065
 status = DONE
@@ -2462,29 +2512,6 @@ text_por = A língua do teu irmão
     )
   )
   (ID ped-gramm,0.21)
-)
-/*
-sentence = 24
-uid = 2f47b402-9fe7-4714-96e3-c6cbdf405472
-status = REVIEW
-text = iGeladi idei naigi anenapioi
-text_por = a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)
-*/
-(
-  (IP-MAT
-    (NP
-      (N$ iGeladi)
-    )
-    (VB idei)
-    (NP
-      (N naigi)
-    )
-    (WNP
-      (WPRO ane@)
-    )
-    (ADJ @napioi)
-  )
-  (ID ped-gramm,0.24)
 )
 /*
 sentence = 26
@@ -2745,26 +2772,6 @@ text_por = A casa dele/dela é perto da cidade da lagoa.
     (PUNC .)
   )
   (ID ped-gramm,0.47)
-)
-/*
-sentence = 53
-uid = 3f077b37-aa95-4012-9efb-a21630cdd6e9
-status = REVIEW
-text = aGee eliodi niinikeGegi
-text_por = Eu não estou muito feliz
-*/
-(
-  (IP-MAT
-    (NEG aG@)
-    (NP-SBJ
-      (D @ee)
-    )
-    (NP-PRD
-      (Q eliodi)
-      (N niinikeGegi)
-    )
-  )
-  (ID ped-gramm,0.53)
 )
 /*
 sentence = 1
@@ -3329,9 +3336,7 @@ text_por = esta pedra está muito pesada
   (IP-MAT
     (NP-SBJ
       (D naGani)
-      (NP
-        (N wetiGa)
-      )
+      (N wetiGa)
     )
     (NP-PRD
       (N$ liwaGatena)
@@ -3686,6 +3691,49 @@ text_por = eu não estou feliz
     (VB @dininitibeci)
   )
   (ID van-data,0.53)
+)
+/*
+sentence = 54
+uid = 969ba2f3-88dc-417e-ad3f-16ce88b4c762
+status = DONE
+text = aGee eliodi niinikeGegi
+text_por = eu não estou muito feliz
+*/
+(
+  (IP-MAT
+    (NEG aG@)
+    (NP-SBJ
+      (PRO @ee)
+    )
+    (NP-PRD
+      (Q eliodi)
+      (N niinikeGegi)
+    )
+  )
+  (ID van-data,0.54)
+)
+/*
+sentence = 55
+uid = 39925f76-d73f-423f-95cd-f88bd78f2a6e
+status = DONE
+text = ee eliodi me aGidininitibeci
+text_por = eu não estou muito feliz
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (PRO ee)
+    )
+    (CP-me
+      (Q eliodi)
+      (C me)
+      (IP-SUB
+        (NEG aG@)
+        (VB @dininitibeci)
+      )
+    )
+  )
+  (ID van-data,0.55)
 )
 /*
 sentence = 58
@@ -4184,49 +4232,6 @@ text_por = A fotografia dos ovos (da galinha) é bonita.
     (PUNC .)
   )
   (ID van-data,0.46)
-)
-/*
-sentence = 54
-uid = 969ba2f3-88dc-417e-ad3f-16ce88b4c762
-status = REVIEW
-text = aGee eliodi niinikeGegi
-text_por = eu não estou muito feliz
-*/
-(
-  (IP-MAT
-    (NEG aG@)
-    (NP-SBJ
-      (D @ee)
-    )
-    (NP-PRD
-      (Q eliodi)
-      (N niinikeGegi)
-    )
-  )
-  (ID van-data,0.54)
-)
-/*
-sentence = 55
-uid = 39925f76-d73f-423f-95cd-f88bd78f2a6e
-status = REVIEW
-text = ee eliodi me aGidininitibeci
-text_por = eu não estou muito feliz
-*/
-(
-  (IP-MAT
-    (NP-SBJ
-      (D ee)
-    )
-    (CP-me
-      (Q eliodi)
-      (C me)
-      (IP-SUB
-        (NEG aG@)
-        (VB @dininitibeci)
-      )
-    )
-  )
-  (ID van-data,0.55)
 )
 /*
 sentence = 56

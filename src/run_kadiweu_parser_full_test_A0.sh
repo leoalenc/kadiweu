@@ -1,31 +1,33 @@
 #!/usr/bin/env bash
-# Run Stage 4: accepted compatible parser version A over the frozen full test.
+# Run Parser A0 (compatibility-and-lexicon baseline) over the frozen full test.
 
 set -euo pipefail
 
-readonly EXPECTED_RULES_SHA256="94397f3831c3aed551914763ba5c32c9284beb321e01e62e560fd3f15f4ce085"
+readonly EXPECTED_RULES_SHA256="0f1b403144a6b2ea7d08ae252341da3ba1c0bc93e937ae7c5d6180da32879752"
 readonly EXPECTED_DEFINITIONS_SHA256="67765202a6721f4d2e269cbb5564cb4a676027a6218af05ef8f457f999d734ff"
 readonly EXPECTED_SENTENCES=206
+readonly EXPECTED_DONE_SENTENCES=174
+readonly EXPECTED_REVIEW_SENTENCES=32
 readonly EXPECTED_EXECUTED_RULES=168
 
 PROJECT_ROOT="${KADIWEU_ROOT:-$HOME/kadiweu}"
 SRC_DIR="$PROJECT_ROOT/src"
 OUT_DIR="$PROJECT_ROOT/data/generated/constituency"
 RUNNER="${RUNNER:-$SRC_DIR/run_kadiweu_parser_rules.py}"
-RULES_A="${RULES_A:-$HOME/Dropbox/projects/2025/post-doc/parser/kadiweu_parser_300726.pdt.txt}"
+RULES_A0="${RULES_A0:-$HOME/Dropbox/projects/2025/post-doc/parser/kadiweu_parser_300726.pdt-compat-lex-baseline.txt}"
 DEFINITIONS="${DEFINITIONS:-$HOME/Dropbox/projects/2025/post-doc/parser/kadiweu_parser_definitions_050726.txt}"
 CORPUSSEARCH="${CORPUSSEARCH:-corpussearch}"
 
 INPUT="$OUT_DIR/kadiweu-parser-full-test.pos"
 GOLD="$OUT_DIR/kadiweu-parser-full-test.gold.psd"
 INPUT_HASHES="$OUT_DIR/kadiweu-parser-full-test-input-hashes.txt"
-OUTPUT="$OUT_DIR/kadiweu-parser-full-test-A.psd"
-COMPARISON="$OUT_DIR/kadiweu-parser-full-test-A-comparison.tsv"
-DIFF="$OUT_DIR/kadiweu-parser-full-test-A.diff"
-RULE_LOG="$OUT_DIR/kadiweu-parser-full-test-A-run.tsv"
-SUMMARY="$OUT_DIR/kadiweu-parser-full-test-A-summary.tsv"
-HASHES="$OUT_DIR/kadiweu-parser-full-test-A-hashes.txt"
-CONSOLE_LOG="$OUT_DIR/kadiweu-parser-full-test-A-console.log"
+OUTPUT="$OUT_DIR/kadiweu-parser-full-test-A0.psd"
+COMPARISON="$OUT_DIR/kadiweu-parser-full-test-A0-comparison.tsv"
+DIFF="$OUT_DIR/kadiweu-parser-full-test-A0.diff"
+RULE_LOG="$OUT_DIR/kadiweu-parser-full-test-A0-run.tsv"
+SUMMARY="$OUT_DIR/kadiweu-parser-full-test-A0-summary.tsv"
+HASHES="$OUT_DIR/kadiweu-parser-full-test-A0-hashes.txt"
+CONSOLE_LOG="$OUT_DIR/kadiweu-parser-full-test-A0-console.log"
 
 die() {
     printf 'ERROR: %s\n' "$*" >&2
@@ -47,7 +49,7 @@ done
 command -v "$CORPUSSEARCH" >/dev/null 2>&1 \
     || die "CorpusSearch command not found: $CORPUSSEARCH"
 
-for required in "$RUNNER" "$RULES_A" "$DEFINITIONS" "$INPUT" "$GOLD" "$INPUT_HASHES"; do
+for required in "$RUNNER" "$RULES_A0" "$DEFINITIONS" "$INPUT" "$GOLD" "$INPUT_HASHES"; do
     require_file "$required"
 done
 
@@ -57,21 +59,21 @@ printf 'Verifying frozen full-test inputs...\n'
     sha256sum -c "$(basename "$INPUT_HASHES")"
 ) || die "the frozen full-test inputs do not match their recorded hashes"
 
-rules_hash="$(actual_sha256 "$RULES_A")"
+rules_hash="$(actual_sha256 "$RULES_A0")"
 definitions_hash="$(actual_sha256 "$DEFINITIONS")"
 [[ "$rules_hash" == "$EXPECTED_RULES_SHA256" ]] \
-    || die "rules A hash mismatch: expected $EXPECTED_RULES_SHA256; found $rules_hash"
+    || die "rules A0 hash mismatch: expected $EXPECTED_RULES_SHA256; found $rules_hash"
 [[ "$definitions_hash" == "$EXPECTED_DEFINITIONS_SHA256" ]] \
     || die "definitions hash mismatch: expected $EXPECTED_DEFINITIONS_SHA256; found $definitions_hash"
-printf 'Rules A and definitions hashes: OK\n'
+printf 'Rules A0 and definitions hashes: OK\n'
 
 # mktemp creates a new, empty directory, as required by the emulator.
-RUN_DIR="$(mktemp -d "$OUT_DIR/kadiweu-parser-full-test-A-run-XXXXXXXX")"
+RUN_DIR="$(mktemp -d "$OUT_DIR/kadiweu-parser-full-test-A0-run-XXXXXXXX")"
 printf 'Intermediate run directory: %s\n' "$RUN_DIR"
 
 set +e
 python3 -u "$RUNNER" \
-    "$RULES_A" \
+    "$RULES_A0" \
     "$INPUT" \
     --definitions "$DEFINITIONS" \
     --corpussearch "$CORPUSSEARCH" \
@@ -114,7 +116,7 @@ rule_rows="$(awk 'END {print NR - 1}' "$RULE_LOG")"
 [[ "$rule_rows" -eq "$EXPECTED_EXECUTED_RULES" ]] \
     || die "expected $EXPECTED_EXECUTED_RULES executed-rule rows; found $rule_rows"
 
-python3 - "$COMPARISON" "$SUMMARY" "$EXPECTED_SENTENCES" <<'PY'
+python3 - "$COMPARISON" "$SUMMARY" "$EXPECTED_SENTENCES" "$EXPECTED_DONE_SENTENCES" "$EXPECTED_REVIEW_SENTENCES" <<'PY'
 import csv
 import sys
 from collections import Counter
@@ -123,6 +125,8 @@ from pathlib import Path
 comparison = Path(sys.argv[1])
 summary = Path(sys.argv[2])
 expected = int(sys.argv[3])
+expected_done = int(sys.argv[4])
+expected_review = int(sys.argv[5])
 
 with comparison.open(encoding="utf-8", newline="") as stream:
     rows = list(csv.DictReader(stream, delimiter="\t"))
@@ -135,6 +139,12 @@ if len(rows) != expected:
 ids = [row["sentence_id"] for row in rows]
 if len(set(ids)) != expected:
     raise SystemExit("comparison report does not contain the expected number of unique IDs")
+
+status_counts = Counter(row["struct_status"] for row in rows)
+if status_counts["DONE"] != expected_done:
+    raise SystemExit(f"expected {expected_done} DONE rows; found {status_counts['DONE']}")
+if status_counts["REVIEW"] != expected_review:
+    raise SystemExit(f"expected {expected_review} REVIEW rows; found {status_counts['REVIEW']}")
 
 statuses = [status for status in ("DONE", "REVIEW") if any(r["struct_status"] == status for r in rows)]
 statuses.extend(sorted({r["struct_status"] for r in rows} - set(statuses)))
@@ -156,12 +166,22 @@ for status in [*statuses, "TOTAL"]:
     )
 
 summary.write_text("\n".join(lines) + "\n", encoding="utf-8")
-print("\nStage 4 comparison summary:")
-print(summary.read_text(encoding="utf-8"), end="")
+
+table = [line.split("\t") for line in lines]
+widths = [max(len(row[column]) for row in table) for column in range(len(table[0]))]
+
+print("\nParser A0 comparison summary:")
+for row_number, row in enumerate(table):
+    formatted = [row[0].ljust(widths[0])]
+    formatted.extend(
+        value.ljust(widths[column]) if row_number == 0 else value.rjust(widths[column])
+        for column, value in enumerate(row[1:], start=1)
+    )
+    print("  ".join(formatted))
 PY
 
 sha256sum \
-    "$RULES_A" \
+    "$RULES_A0" \
     "$DEFINITIONS" \
     "$INPUT" \
     "$GOLD" \
@@ -173,10 +193,12 @@ sha256sum \
     "$CONSOLE_LOG" \
     > "$HASHES"
 
-printf '\nStage 4 completed successfully.\n'
+printf '\nParser A0 full test completed successfully.\n'
 printf '  Emulator exit status: %s\n' "$runner_status"
 printf '  Executed rules: %s (TBP rules 77 and 122 skipped)\n' "$rule_rows"
 printf '  Compared sentences: %s\n' "$comparison_rows"
+printf '  Expected status totals: DONE=%s; REVIEW=%s\n' \
+    "$EXPECTED_DONE_SENTENCES" "$EXPECTED_REVIEW_SENTENCES"
 printf '  Run directory: %s\n' "$RUN_DIR"
 printf '  Output: %s\n' "$OUTPUT"
 printf '  Comparison: %s\n' "$COMPARISON"

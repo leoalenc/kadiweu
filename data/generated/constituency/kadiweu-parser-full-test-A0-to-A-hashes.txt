@@ -1,0 +1,4 @@
+453800508522f190611f664d0371a77ceb2135afb348bc39875372753f40436b  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A0-comparison.tsv
+fcb2d435ca423b9b57b7b1d1bbf1e54d0c3ed51fc7b95f684e621f9f384ea562  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A-comparison.tsv
+83736e9145076d6a8d2f463c7baba77d6d05c17c9cecf6070725de4eb24d8459  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A0-to-A-transitions.tsv
+a759f4c01977c90f42ca9a0008477b1a89f2850fb52970c5c397158520996d86  /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A0-to-A-summary.tsv

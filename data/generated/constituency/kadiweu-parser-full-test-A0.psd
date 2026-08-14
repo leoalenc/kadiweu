@@ -373,8 +373,7 @@ status = DONE
 text = liwigo niganigawanigi libinienigi
 text_por = Esta fotografia da criança é bonita .
 */
-( (IP-MAT (NP-SBJ (N$ liwigo)
-		  (NP (N niganigawanigi)))
+( (IP-MAT (NP-SBJ (N$ liwigo) (N niganigawanigi))
 	  (NP-PRD (N$ libinienigi)))
   (ID hil-data,0.34))
 /*
@@ -1822,9 +1821,7 @@ status = DONE
 text = ica liwigo niganigawanigi libinienigi
 text_por = esta fotografia da criança é bonita
 */
-( (IP-MAT (NP-SBJ (D ica)
-		  (N$ liwigo)
-		  (NP (N niganigawanigi)))
+( (IP-MAT (NP-SBJ (D ica) (N$ liwigo) (N niganigawanigi))
 	  (NP-PRD (N$ libinienigi)))
   (ID van-data,0.31))
 /*
@@ -2321,8 +2318,7 @@ status = REVIEW
 text = liwigo okokodi ligetedi libinienigi .
 text_por = A fotografia dos ovos (da galinha) é bonita.
 */
-( (IP-MAT (NP (NP (N$ liwigo)
-		  (NP (N okokodi)))
+( (IP-MAT (NP (NP (N$ liwigo) (N okokodi))
 	      (N$ ligetedi)
 	      (NP (N$ libinienigi)))
 	  (PUNC .))

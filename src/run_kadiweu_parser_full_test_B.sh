@@ -74,7 +74,7 @@ RUN_DIR="$(mktemp -d "$OUT_DIR/kadiweu-parser-full-test-B-run-XXXXXXXX")"
 printf 'Intermediate run directory: %s\n' "$RUN_DIR"
 
 set +e
-python3 "$RUNNER" \
+python3 -u "$RUNNER" \
     "$RULES_B" \
     "$INPUT" \
     --definitions "$DEFINITIONS_B" \
