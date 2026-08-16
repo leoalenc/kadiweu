@@ -351,6 +351,298 @@ class ConstituencyTree:
             return f"{self.corpussearch_metadata()}\n{record}"
         return record
 
+
+@dataclass
+class PsdRecord:
+    """One CorpusSearch/Penn PSD record with metadata and a tree object."""
+
+    tree: ConstituencyTree
+    metadata: dict[str, str]
+    corpussearch_id: str | None = None
+    raw_comment: str | None = None
+
+
+def _parse_psd_atom(text: str, index: int) -> tuple[str, int]:
+    """Read one non-whitespace, non-parenthesis PSD atom."""
+    n = len(text)
+    while index < n and text[index].isspace():
+        index += 1
+    start = index
+    while index < n and not text[index].isspace() and text[index] not in "()":
+        index += 1
+    if start == index:
+        raise TreeConstructionError(f"expected PSD atom at offset {index}")
+    return text[start:index], index
+
+
+def _split_indexed_label(value: str) -> tuple[str, tuple[int, ...]]:
+    """Split trailing numeric coindices, preserving labels such as NP-SBJ."""
+    parts = value.split("-")
+    indices: list[int] = []
+    while parts and parts[-1].isdigit():
+        indices.append(int(parts.pop()))
+    indices.reverse()
+    return "-".join(parts), tuple(indices)
+
+
+def _parse_psd_sexpr(text: str, index: int = 0) -> tuple[Any, int]:
+    """Parse the small S-expression subset used by the project PSD files."""
+    n = len(text)
+    while index < n and text[index].isspace():
+        index += 1
+    if index >= n:
+        raise TreeConstructionError("unexpected end of PSD record")
+    if text[index] != "(":
+        return _parse_psd_atom(text, index)
+    index += 1
+    items: list[Any] = []
+    while True:
+        while index < n and text[index].isspace():
+            index += 1
+        if index >= n:
+            raise TreeConstructionError("unclosed parenthesis in PSD record")
+        if text[index] == ")":
+            return items, index + 1
+        item, index = _parse_psd_sexpr(text, index)
+        items.append(item)
+
+
+def _metadata_from_comment(comment: str | None) -> dict[str, str]:
+    metadata: dict[str, str] = {}
+    if not comment:
+        return metadata
+    body = comment[2:-2] if comment.startswith("/*") and comment.endswith("*/") else comment
+    for line in body.splitlines():
+        if "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key = key.strip()
+        if key:
+            metadata[key] = value.strip()
+    return metadata
+
+
+def _iter_psd_record_texts(text: str) -> Iterator[tuple[str | None, str]]:
+    """Yield ``(preceding_comment, balanced_record_text)`` from a PSD document."""
+    i = 0
+    n = len(text)
+    pending_comment: str | None = None
+    while i < n:
+        if text.startswith("/*", i):
+            end = text.find("*/", i + 2)
+            if end < 0:
+                raise TreeConstructionError("unclosed block comment in PSD file")
+            pending_comment = text[i:end + 2]
+            i = end + 2
+            continue
+        if text[i].isspace():
+            i += 1
+            continue
+        if text[i] != "(":
+            # Tolerate harmless non-record text between records.
+            i += 1
+            continue
+        start = i
+        depth = 0
+        while i < n:
+            if text.startswith("/*", i):
+                end = text.find("*/", i + 2)
+                if end < 0:
+                    raise TreeConstructionError("unclosed block comment inside PSD record")
+                i = end + 2
+                continue
+            ch = text[i]
+            if ch == "(":
+                depth += 1
+            elif ch == ")":
+                depth -= 1
+                if depth == 0:
+                    i += 1
+                    yield pending_comment, text[start:i]
+                    pending_comment = None
+                    break
+            i += 1
+        else:
+            raise TreeConstructionError("unclosed PSD record")
+
+
+def tree_from_psd_record(record_text: str, *, metadata: Mapping[str, str] | None = None) -> tuple[ConstituencyTree, str | None]:
+    """Build a :class:`ConstituencyTree` from one project PSD record."""
+    sexpr, end = _parse_psd_sexpr(record_text)
+    if record_text[end:].strip():
+        raise TreeConstructionError("unexpected text after PSD record")
+    if not isinstance(sexpr, list):
+        raise TreeConstructionError("PSD record must be a list")
+
+    # CorpusSearch records have an unlabeled outer wrapper containing one or
+    # more roots and a final (ID ...).
+    children = sexpr
+    corpussearch_id: str | None = None
+    root_exprs: list[Any] = []
+    for child in children:
+        if isinstance(child, list) and len(child) >= 2 and child[0] == "ID":
+            corpussearch_id = str(child[1])
+        else:
+            root_exprs.append(child)
+    if not root_exprs:
+        raise TreeConstructionError("PSD record has no syntactic root")
+
+    position = 0
+    tokens: list[TokenNode] = []
+
+    def convert(expr: Any, level: int) -> ConstituentNode:
+        nonlocal position
+        if not isinstance(expr, list) or not expr:
+            raise TreeConstructionError(f"invalid constituent expression: {expr!r}")
+        raw_label = str(expr[0])
+        label, coindex = _split_indexed_label(raw_label)
+        node = ConstituentNode(label=label, start=0, end=0, level=level, coindex=coindex)
+        children_expr = expr[1:]
+
+        # Tycho trace shorthand: (NP-TRACE *T*-1).  Keep the dominating NP
+        # and represent the trace as an empty terminal.
+        if len(children_expr) == 1 and isinstance(children_expr[0], str) and str(children_expr[0]).startswith("*"):
+            position += 1
+            form, token_coindex = _split_indexed_label(str(children_expr[0]))
+            token = TokenNode(position=position, form=form, tag=None, level=level, empty_category=True, coindex=token_coindex)
+            token.parent = node
+            node.children.append(token)
+            tokens.append(token)
+            node.start = node.end = position
+            return node
+
+        # Preterminal: (N word), including punctuation tags.
+        if len(children_expr) == 1 and isinstance(children_expr[0], str):
+            position += 1
+            form, token_coindex = _split_indexed_label(str(children_expr[0]))
+            token = TokenNode(position=position, form=form, tag=label, level=level, coindex=token_coindex)
+            token.parent = node
+            node.children.append(token)
+            tokens.append(token)
+            node.start = node.end = position
+            return node
+
+        for child_expr in children_expr:
+            if not isinstance(child_expr, list):
+                raise TreeConstructionError(f"unexpected bare atom under {raw_label}: {child_expr!r}")
+            # CorpusSearch trace form: (-NONE- *T*-1).  Attach only the empty
+            # terminal, not an artificial -NONE- constituent.
+            if len(child_expr) == 2 and child_expr[0] == "-NONE-" and isinstance(child_expr[1], str):
+                position += 1
+                form, token_coindex = _split_indexed_label(str(child_expr[1]))
+                token = TokenNode(position=position, form=form, tag=None, level=level + 1, empty_category=True, coindex=token_coindex)
+                token.parent = node
+                node.children.append(token)
+                tokens.append(token)
+                continue
+            # Ordinary PSD preterminal, e.g. (N wetiGa), becomes a TokenNode
+            # directly. This matches JSON-derived trees, where POS tags are
+            # terminal labels rather than an extra constituent layer.
+            if len(child_expr) == 2 and isinstance(child_expr[0], str) and isinstance(child_expr[1], str):
+                position += 1
+                token_label, label_coindex = _split_indexed_label(str(child_expr[0]))
+                form, token_coindex = _split_indexed_label(str(child_expr[1]))
+                token = TokenNode(
+                    position=position,
+                    form=form,
+                    tag=token_label,
+                    level=level + 1,
+                    coindex=token_coindex or label_coindex,
+                )
+                token.parent = node
+                node.children.append(token)
+                tokens.append(token)
+                continue
+            child = convert(child_expr, level + 1)
+            child.parent = node
+            node.children.append(child)
+
+        spans = [child.span for child in node.children]
+        if not spans:
+            raise TreeConstructionError(f"empty constituent in PSD record: {raw_label}")
+        node.start = min(start for start, _ in spans)
+        node.end = max(end for _, end in spans)
+        return node
+
+    roots = [convert(expr, 0) for expr in root_exprs]
+    md = dict(metadata or {})
+    sent_number = None
+    if md.get("sentence"):
+        try:
+            sent_number = int(md["sentence"])
+        except ValueError:
+            pass
+    source_name = None
+    if corpussearch_id and "," in corpussearch_id:
+        source_name = corpussearch_id.split(",", 1)[0]
+    tree = ConstituencyTree(
+        roots=roots,
+        tokens=tokens,
+        sentence_uid=md.get("uid"),
+        sentence_number=sent_number,
+        source_name=source_name,
+        text=md.get("text"),
+        text_por=md.get("text_por"),
+        status=md.get("status"),
+    )
+    return tree, corpussearch_id
+
+
+def iter_psd_records(path: str | Path) -> Iterator[PsdRecord]:
+    """Read project PSD records without altering their original file."""
+    text = Path(path).read_text(encoding="utf-8")
+    for comment, record_text in _iter_psd_record_texts(text):
+        metadata = _metadata_from_comment(comment)
+        tree, corpussearch_id = tree_from_psd_record(record_text, metadata=metadata)
+        yield PsdRecord(tree=tree, metadata=metadata, corpussearch_id=corpussearch_id, raw_comment=comment)
+
+
+def render_tree_text(
+    tree: ConstituencyTree,
+    *,
+    style: str = "unicode",
+    show_spans: bool = False,
+    show_positions: bool = False,
+) -> str:
+    """Render a compact line-oriented tree for terminals or PSD comments.
+
+    ``unicode`` uses box-drawing characters. ``ascii`` is deliberately plain
+    so generated PSD files remain friendly to conservative command-line tools.
+    """
+    if style not in {"unicode", "ascii"}:
+        raise ValueError("style must be 'unicode' or 'ascii'")
+    lines: list[str] = []
+    if style == "unicode":
+        tee, elbow, pipe, blank = "├── ", "└── ", "│   ", "    "
+    else:
+        tee, elbow, pipe, blank = "+-- ", "`-- ", "|   ", "    "
+
+    def label_for(node: TreeNode) -> str:
+        if isinstance(node, ConstituentNode):
+            return node.display_label(show_spans=show_spans)
+        if node.empty_category:
+            value = node.form + "".join(f"-{i}" for i in node.coindex)
+            label = f"-NONE- {value}"
+            return f"{node.position}: {label}" if show_positions else label
+        label = f"{node.label} {node.form}"
+        if node.coindex:
+            label += "-" + ",".join(map(str, node.coindex))
+        if show_positions:
+            label = f"{node.position}: {label}"
+        return label
+
+    def visit(node: TreeNode, prefix: str, last: bool, top: bool) -> None:
+        lines.append(prefix + ("" if top else (elbow if last else tee)) + label_for(node))
+        if not isinstance(node, ConstituentNode):
+            return
+        next_prefix = prefix if top else prefix + (blank if last else pipe)
+        for i, child in enumerate(node.children):
+            visit(child, next_prefix, i == len(node.children) - 1, False)
+
+    for i, root in enumerate(tree.roots):
+        visit(root, "", i == len(tree.roots) - 1, True)
+    return "\n".join(lines)
+
 def _coindex(item: JsonObject) -> tuple[int, ...]:
     value = item.get("coidx", ())
     if value is None:

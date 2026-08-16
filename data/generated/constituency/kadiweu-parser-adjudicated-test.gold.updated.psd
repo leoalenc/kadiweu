@@ -1386,7 +1386,7 @@ text_por = A cidade da casa dela é perto do rio.
 (
   (IP-MAT
     (NP
-      (N nigotaGa)
+      (N$ nigotaGa)
       (NP
         (N$ liGeladi)))
     (VBAPL ipegitege)
