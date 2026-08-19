@@ -838,6 +838,30 @@ text_por = Este leite está quente .
 )
 
 /*
+sentence = 42
+uid = 79cb0e55-9c06-4cb1-91b3-2b5233e1678f
+status = REVIEW
+text = nigidiwa okokodi ligetedi midi niwigo libinienaGa
+text_por = Estes ovos da fotografia dela estão bonitos .
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D nigidiwa)
+      (N okokodi)
+      (N$ ligetedi)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (D @idi)
+            (N niwigo)))))
+    (NP-PRD
+      (N$ libinienaGa)))
+  (ID hil-data,0.42)
+)
+
+/*
 sentence = 43
 uid = a74fea0a-dd87-4c4d-8670-9db66f5b5b16
 status = DONE
@@ -3442,6 +3466,36 @@ text_por = estes ovos da fotografia estão bonitos
     )
   )
   (ID van-data,0.44)
+)
+
+/*
+sentence = 45
+uid = 5739aca1-95fc-4584-9550-d7bd73c3c361
+status = REVIEW
+text = okokodi ligetedi midi niwigo libinienaGa .
+text_por = Os ovos da fotografia são bonitos. (Os ovos de galinha que estão na fotografia são bonitos.)
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N okokodi)
+      (N$ ligetedi)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (D @idi)
+            (N niwigo)
+          )
+        )
+      )
+    )
+    (NP-PRD
+      (N$ libinienaGa)
+    )
+    (PUNC .)
+  )
+  (ID van-data,0.45)
 )
 
 /*
