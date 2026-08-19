@@ -1,0 +1,51 @@
+loaded 21 TBP definition(s) from /home/leonel/Dropbox/projects/2025/post-doc/parser/kadiweu_parser_definitions_050726.txt; used 9: adverbialC, complexC, finiteVerb, noun, numeral, possessive, unmodifiable-noun, vb_et, vb_unacc
+skipping original TBP rule(s): 77 (ip-xp), 122 (CP-D)
+stopping after original TBP rule 31 (nbar12a)
+[001/031] TBP 1: conj-1
+[002/031] TBP 2: adj-conj-adj
+[003/031] TBP 3: adv-conj-adv
+[004/031] TBP 4: posspro-conj-posspro
+[005/031] TBP 5: num-conj-num
+[006/031] TBP 6: q-conj-q
+[007/031] TBP 7: noun-conj-noun-conj-noun
+[008/031] TBP 8: noun-conj-noun
+[009/031] TBP 9: wadjp
+[010/031] TBP 10: advp1
+[011/031] TBP 11: advp3
+[012/031] TBP 12: wadvp
+[013/031] TBP 13: T-N
+[014/031] TBP 14: Nbar-N$
+[015/031] TBP 15: N-bar-poss
+[016/031] TBP 16: Nbar-poss2
+[017/031] TBP 17: N-bar-D
+[018/031] TBP 18: nbar2
+[019/031] TBP 19: nbar3
+[020/031] TBP 20: Nbar-T
+[021/031] TBP 21: nbar4.2
+[022/031] TBP 22: nbar4.6
+[023/031] TBP 23: nbar4.6
+[024/031] TBP 24: nbar4.1
+[025/031] TBP 25: n-adj
+[026/031] TBP 26: nbar4.3
+[027/031] TBP 27: nbar4.5
+[028/031] TBP 28: nbar5
+[029/031] TBP 29: nbar6
+[030/031] TBP 30: nbar10
+[031/031] TBP 31: nbar12a
+
+Comparison summary:
+struct_status  exact  trace_equivalent  structural_difference  total
+DONE              12                 0                    162    174
+REVIEW             0                 0                     32     32
+TOTAL             12                 0                    194    206
+
+Comparison summary by dataset × struct_status:
+dataset    struct_status  exact  trace_equivalent  structural_difference  total
+hil-data   DONE               9                 0                     55     64
+hil-data   REVIEW             0                 0                      6      6
+ped-gramm  DONE               1                 0                     47     48
+ped-gramm  REVIEW             0                 0                     13     13
+van-data   DONE               2                 0                     60     62
+van-data   REVIEW             0                 0                     13     13
+comparison report written to /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A0-through-rule-31-comparison.tsv
+FAIL: 194 structural difference(s) written to /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-A0-through-rule-31.diff
