@@ -219,13 +219,27 @@ def inject_tree_comments(
 
 
 def add_selectors(parser: argparse.ArgumentParser) -> None:
-    parser.add_argument("--number", type=int, nargs="+", metavar="N",
-                        help="1-based record number(s) within the current selection; after --status filtering")
-    parser.add_argument("--uid", nargs="+", metavar="UID", help="sentence UID(s)")
-    parser.add_argument("--id", dest="ids", nargs="+", metavar="ID",
-                        help="CorpusSearch ID(s), e.g. van-data,0.38")
-    parser.add_argument("--status", dest="statuses", nargs="+", metavar="STATUS",
-                        help="filter by status, e.g. REVIEW or DONE; applied before NUMBER")
+    # Use repeatable single-value options rather than nargs="+".  A greedy
+    # nargs option placed before FILE consumes the file name as another value,
+    # making natural commands such as ``show --uid UID FILE.psd`` fail with
+    # "the following arguments are required: FILE".
+    parser.add_argument(
+        "--number", type=int, action="append", metavar="N",
+        help=("1-based record number within the current selection; repeat "
+              "--number to select more than one"),
+    )
+    parser.add_argument(
+        "--uid", action="append", metavar="UID",
+        help="sentence UID; repeat --uid to select more than one",
+    )
+    parser.add_argument(
+        "--id", dest="ids", action="append", metavar="ID",
+        help="CorpusSearch ID, e.g. van-data,0.38; repeat --id to select more than one",
+    )
+    parser.add_argument(
+        "--status", dest="statuses", action="append", metavar="STATUS",
+        help="filter by status, e.g. REVIEW or DONE; repeat --status for more than one",
+    )
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -252,6 +266,12 @@ def build_parser() -> argparse.ArgumentParser:
 
   %(prog)s FILE.psd --id hil-data,0.5
       Select by CorpusSearch ID.
+
+  %(prog)s --uid 5739aca1-95fc-4584-9550-d7bd73c3c361 FILE.psd
+      Select by UID with the option before the file path.
+
+  %(prog)s FILE.psd --uid UID1 --uid UID2
+      Select more than one UID by repeating the option.
 
   %(prog)s FILE.psd --status REVIEW
       Show all REVIEW records.

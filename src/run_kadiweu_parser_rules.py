@@ -1204,6 +1204,43 @@ def compare_psd(
 
     return False
 
+def positive_rule_number(value: str) -> int:
+    """Parse a positive original TBP rule number."""
+    try:
+        number = int(value)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError(
+            f"invalid rule number: {value!r}"
+        ) from exc
+
+    if number < 1:
+        raise argparse.ArgumentTypeError(
+            "rule numbers must be positive integers"
+        )
+
+    return number
+
+
+def parse_rule_range(value: str) -> tuple[int, int]:
+    """Parse an inclusive FIRST-LAST rule-number range."""
+    match = re.fullmatch(r"([1-9]\d*)-([1-9]\d*)", value)
+
+    if not match:
+        raise argparse.ArgumentTypeError(
+            f"invalid rule range {value!r}; expected FIRST-LAST, "
+            "for example 10-29"
+        )
+
+    first = int(match.group(1))
+    last = int(match.group(2))
+
+    if first > last:
+        raise argparse.ArgumentTypeError(
+            f"invalid rule range {value!r}: FIRST must not be greater "
+            "than LAST"
+        )
+
+    return first, last
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
@@ -1225,14 +1262,35 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--skip-rule",
         "--disable-rule",
-        dest="skip_rules",
+        dest="skip_rule_numbers",
         action="append",
-        type=int,
+        type=positive_rule_number,
         default=[],
-        metavar="TBP_NUMBER",
+        metavar="NUMBER",
         help=(
-            "skip a rule by its original TBP number; repeat this option "
-            "to skip multiple rules"
+        "skip one rule by its original TBP number; repeat this option "
+        "to skip multiple rules"
+        ),
+    )
+    parser.add_argument(
+        "--skip-rules",
+        dest="skip_rule_ranges",
+        action="append",
+        type=parse_rule_range,
+        default=[],
+        metavar="FIRST-LAST",
+        help=(
+        "skip an inclusive range of original TBP rule numbers; "
+        "repeat this option to skip multiple ranges"
+        ),
+    )
+    parser.add_argument(
+        "--stop-after-rule",
+        type=positive_rule_number,
+        metavar="NUMBER",
+        help=(
+        "process rules through this original TBP rule number, inclusive, "
+        "and skip all subsequent rules"
         ),
     )
     parser.add_argument("--log", type=Path, help="write TSV execution manifest")
@@ -1317,23 +1375,57 @@ def main(argv: Sequence[str] | None = None) -> int:
                 ),
                 file=sys.stderr,
             )
-        if args.skip_rules:
-            requested = set(args.skip_rules)
-            rules_by_number = {
-                rule.original_number: rule
-                for rule in rules
-            }
-            missing = sorted(requested - rules_by_number.keys())
+        rules_by_number = {
+            rule.original_number: rule
+            for rule in rules
+        }
+        available_numbers = set(rules_by_number)
 
-            if missing:
+        # Preserve the existing behavior of rejecting individually specified
+        # rule numbers that are absent from the rule file.
+        individual_skips = set(args.skip_rule_numbers)
+        missing = sorted(individual_skips - available_numbers)
+
+        if missing:
+            raise RunnerError(
+                "cannot skip absent TBP rule number(s): "
+                + ", ".join(map(str, missing))
+            )
+
+        # A stopping point must name an existing rule because that rule is
+        # supposed to be the last one processed.
+        if (
+            args.stop_after_rule is not None
+            and args.stop_after_rule not in available_numbers
+        ):
+            raise RunnerError(
+                "--stop-after-rule refers to absent TBP rule "
+                f"{args.stop_after_rule}"
+            )
+
+        range_skips: set[int] = set()
+
+        for first, last in args.skip_rule_ranges:
+            matching = {
+                number
+                for number in available_numbers
+                if first <= number <= last
+            }
+
+            if not matching:
                 raise RunnerError(
-                    "cannot skip absent TBP rule number(s): "
-                    + ", ".join(map(str, missing))
+                    f"--skip-rules {first}-{last} does not match any "
+                    "available TBP rule"
                 )
 
+            range_skips.update(matching)
+
+        requested_skips = individual_skips | range_skips
+
+        if requested_skips:
             skipped_rules = [
                 rules_by_number[number]
-                for number in sorted(requested)
+                for number in sorted(requested_skips)
             ]
 
             print(
@@ -1345,11 +1437,24 @@ def main(argv: Sequence[str] | None = None) -> int:
                 file=sys.stderr,
             )
 
-            rules = [
-                rule
-                for rule in rules
-                if rule.original_number not in requested
-            ]
+        if args.stop_after_rule is not None:
+            stop_rule = rules_by_number[args.stop_after_rule]
+
+            print(
+                "stopping after original TBP rule "
+                f"{stop_rule.original_number} ({stop_rule.name})",
+                file=sys.stderr,
+            )
+
+        rules = [
+            rule
+            for rule in rules
+            if rule.original_number not in requested_skips
+            and (
+                args.stop_after_rule is None
+                or rule.original_number <= args.stop_after_rule
+            )
+        ]
         if args.work_dir:
             work_dir = args.work_dir
             temporary = None
