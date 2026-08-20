@@ -196,7 +196,7 @@ text_por = Aquela comida dela é bonita .
 /*
 sentence = 9
 uid = 0ca977cd-2edf-45d9-b958-068648aebef9
-status = DONE
+status = REVIEW
 text = NiGida niwenigi eliodi me dakake loojedi
 text_por = Aquela comida é muito cara .
 */
@@ -204,11 +204,7 @@ text_por = Aquela comida é muito cara .
   (IP-MAT
     (NP-1
       (D NiGida)
-      (NP-GEN
-        (-NONE- *T*-1)
-      )
-      (N$ niwenigi)
-    )
+      (N niwenigi))
     (CP-me
       (Q eliodi)
       (C me)
@@ -216,13 +212,8 @@ text_por = Aquela comida é muito cara .
         (VBU dakake)
         (NP
           (NP-GEN
-            (-NONE- *T*-2)
-          )
-          (N$ loojedi)
-        )
-      )
-    )
-  )
+            (-NONE- *T*-1))
+          (N$ loojedi)))))
   (ID hil-data,0.9)
 )
 
@@ -2130,6 +2121,31 @@ text_por = A palavra de seu (teu) irmão é bonita.
 )
 
 /*
+sentence = 44
+uid = 6d2a809e-0d32-4254-9489-f9e356e22493
+status = REVIEW
+text = nGida niwenigi daGaxa me dakake loojedi .
+text_por = Aquela comida é muito cara.
+*/
+(
+  (IP-MAT
+    (NP-1
+      (D nGida)
+      (N niwenigi))
+    (CP-me
+      (Q daGaxa)
+      (C me)
+      (IP-SUB
+        (VBU dakake)
+        (NP
+          (NP-GEN
+            (-NONE- *T*-1))
+          (N$ loojedi))))
+    (PUNC .))
+  (ID ped-gramm,0.44)
+)
+
+/*
 sentence = 46
 uid = 4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5
 status = DONE
@@ -2857,6 +2873,30 @@ text_por = aquela comida dela é bonita
     )
   )
   (ID van-data,0.11)
+)
+
+/*
+sentence = 12
+uid = a1e15803-1e5e-481f-8137-a84beac6cbcc
+status = REVIEW
+text = niGida niwenigi daGaxa me dakake loojedi
+text_por = aquela comida é muito cara
+*/
+(
+  (IP-MAT
+    (NP-1
+      (D niGida)
+      (N niwenigi))
+    (CP-me
+      (Q daGaxa)
+      (C me)
+      (IP-SUB
+        (VBU dakake)
+        (NP
+          (NP-GEN
+            (-NONE- *T*-1))
+          (N$ loojedi)))))
+  (ID van-data,0.12)
 )
 
 /*
