@@ -2,10 +2,10 @@
 """Run exported Tycho Brahe parser rules sequentially with CorpusSearch.
 
 The input is a CorpusSearch-readable ``.pos`` file whose records contain a
-flat sequence of POS preterminals inside ``IP-MAT``.  Every numbered rule from
-the Tycho Brahe text export is written to a separate query file and applied to
-the preceding rule's output.  Diagnostics go to stderr; final trees may be
-written to a PSD file and/or printed to stdout.
+flat sequence of POS preterminals inside ``IP-MAT``.  Every rule from a Tycho
+Brahe JSON export or legacy numbered text export is written to a separate
+query file and applied to the preceding rule's output.  Diagnostics go to
+stderr; final trees may be written to a PSD file and/or printed to stdout.
 
 The program can also extract selected records from gold PSD files, derive the
 corresponding flat POS input, and compare parsed output with a gold PSD file.
@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import difflib
+import json
 import re
 import shutil
 import subprocess
@@ -23,7 +24,7 @@ import tempfile
 import csv
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable, Iterator, Sequence
+from typing import Any, Iterable, Iterator, Sequence
 
 
 class RunnerError(RuntimeError):
@@ -35,6 +36,7 @@ class Rule:
     original_number: int
     name: str
     body: str
+    recursive: bool = False
 
     def query_text(self, execution_number: int) -> str:
         return (
@@ -193,8 +195,13 @@ def expand_rule_definitions(
 def parse_rules(
     path: Path,
     definitions: dict[str, str] | None = None,
-) -> tuple[list[Rule], set[str]]:
+) -> tuple[list[Rule], set[str], set[int]]:
+    """Read rules from either the legacy numbered text export or TBP JSON."""
     text = path.read_text(encoding="utf-8")
+
+    if path.suffix.lower() == ".json" or text.lstrip().startswith("["):
+        return parse_json_rules(path, text, definitions or {})
+
     matches = list(RULE_HEADER.finditer(text))
     if not matches:
         raise RunnerError(f"no numbered rules found in {path}")
@@ -213,7 +220,104 @@ def parse_rules(
     numbers = [rule.original_number for rule in rules]
     if len(numbers) != len(set(numbers)):
         raise RunnerError("duplicate original rule numbers")
-    return rules, used_definitions
+    return rules, used_definitions, set()
+
+
+def parse_json_rules(
+    path: Path,
+    text: str,
+    definitions: dict[str, str],
+) -> tuple[list[Rule], set[str], set[int]]:
+    """Convert a TBP JSON rule export to CorpusSearch declarations.
+
+    A rule's original TBP number is its one-based position in the JSON array.
+    ``ignore: true`` rules are reported as embedded skips.
+    """
+    try:
+        data: Any = json.loads(text)
+    except json.JSONDecodeError as exc:
+        raise RunnerError(
+            f"malformed JSON rules file {path}:{exc.lineno}:{exc.colno}: "
+            f"{exc.msg}"
+        ) from exc
+
+    if not isinstance(data, list) or not data:
+        raise RunnerError(f"JSON rules file {path} must contain a non-empty array")
+
+    rules: list[Rule] = []
+    ignored: set[int] = set()
+    used_definitions: set[str] = set()
+
+    for number, item in enumerate(data, start=1):
+        if not isinstance(item, dict):
+            raise RunnerError(f"JSON rule {number} in {path} is not an object")
+
+        name = item.get("label")
+        # TBP JSON serializes the TXT export's ``node: undefined`` as null.
+        node_value = item.get("node")
+        node = "undefined" if node_value is None else node_value
+        query = item.get("value")
+        operations = item.get("operations")
+
+        if not isinstance(name, str) or not name.strip():
+            raise RunnerError(f"JSON rule {number} in {path} has no label")
+        if not isinstance(node, str) or not node.strip():
+            raise RunnerError(f"JSON rule {number} ({name}) has no node")
+        if not isinstance(query, str) or not query.strip():
+            raise RunnerError(f"JSON rule {number} ({name}) has no query value")
+        if not isinstance(operations, list) or not operations:
+            raise RunnerError(f"JSON rule {number} ({name}) has no operations")
+        if "ignore" in item and not isinstance(item["ignore"], bool):
+            raise RunnerError(f"JSON rule {number} ({name}) has non-boolean ignore")
+        if "recursive" in item and not isinstance(item["recursive"], bool):
+            raise RunnerError(f"JSON rule {number} ({name}) has non-boolean recursive")
+
+        declarations = [f"node: {node.strip()}", f"query: {query.strip()}"]
+
+        for operation_number, operation in enumerate(operations, start=1):
+            if not isinstance(operation, dict):
+                raise RunnerError(
+                    f"JSON rule {number} ({name}) operation "
+                    f"{operation_number} is not an object"
+                )
+            operation_type = operation.get("type")
+            flags = operation.get("flags")
+            value = operation.get("value")
+            if not isinstance(operation_type, str) or not operation_type.strip():
+                raise RunnerError(
+                    f"JSON rule {number} ({name}) operation "
+                    f"{operation_number} has no type"
+                )
+            if not isinstance(flags, str) or not flags.strip():
+                raise RunnerError(
+                    f"JSON rule {number} ({name}) operation "
+                    f"{operation_number} has no flags"
+                )
+            declaration = f"{operation_type.strip()}{{{flags.strip()}}}"
+            if value is not None:
+                if not isinstance(value, str) or not value.strip():
+                    raise RunnerError(
+                        f"JSON rule {number} ({name}) operation "
+                        f"{operation_number} has an invalid value"
+                    )
+                declaration += f": {value.strip()}"
+            else:
+                declaration += ":"
+            declarations.append(declaration)
+
+        body, used = expand_rule_definitions("\n".join(declarations), definitions)
+        used_definitions.update(used)
+        rules.append(Rule(
+            number,
+            name.strip(),
+            body,
+            recursive=item.get("recursive", False),
+        ))
+
+        if item.get("ignore", False):
+            ignored.add(number)
+
+    return rules, used_definitions, ignored
 
 def parse_corpussearch_results(text: str) -> list[Record]:
     """Extract ID-bearing trees from a CorpusSearch report."""
@@ -473,78 +577,93 @@ def run_rules(
     current = work_dir / "000-input.pos"
     shutil.copyfile(input_path, current)
     log_lines = [
-        "execution\toriginal_tbp\tname\tstatus\ttransformed_records"
+        "execution\toriginal_tbp\tname\tstatus\ttransformed_records\titerations"
     ]
     for execution, rule in enumerate(rules, start=1):
         safe_name = re.sub(r"[^A-Za-z0-9_.-]+", "-", rule.name).strip("-") or "rule"
-        query = query_dir / f"{execution:03d}-tbp-{rule.original_number:03d}-{safe_name}.q"
-        query.write_text(rule.query_text(execution), encoding="utf-8")
-        print(f"[{execution:03d}/{len(rules):03d}] TBP {rule.original_number}: {rule.name}", file=sys.stderr)
-        expected_output = query.with_suffix(".out")
-        if expected_output.exists():
-            expected_output.unlink()
-        completed = subprocess.run(
-            [
-                corpussearch,
-                str(query.resolve()),
-                str(current.resolve()),
-            ],
-            cwd=work_dir,
-            stdin=subprocess.DEVNULL,
-            text=True,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
+        print(
+            f"[{execution:03d}/{len(rules):03d}] TBP "
+            f"{rule.original_number}: {rule.name}"
+            + (" (recursive)" if rule.recursive else ""),
+            file=sys.stderr,
         )
-        transcript = completed.stdout or ""
-        transcript_path = (
-            work_dir
-            / f"{execution:03d}-tbp-"
-                f"{rule.original_number:03d}-{safe_name}.log"
-        )
-        transcript_path.write_text(transcript, encoding="utf-8")
-        if completed.returncode != 0 or re.search(r"(?im)^\s*(ERROR|FATAL)", transcript):
-            (work_dir / f"{execution:03d}-failure.log").write_text(transcript, encoding="utf-8")
-            raise RunnerError(
-                f"CorpusSearch failed at execution rule {execution} "
-                f"(original TBP {rule.original_number}: {rule.name}); "
-                f"see {work_dir / f'{execution:03d}-failure.log'}"
+        iteration = 0
+        total_changed = 0
+
+        while True:
+            iteration += 1
+            if iteration > 1000:
+                raise RunnerError(
+                    f"recursive TBP rule {rule.original_number} ({rule.name}) "
+                    "did not reach a fixed point after 1000 iterations"
+                )
+            iteration_suffix = (
+                f"-iteration-{iteration:03d}" if rule.recursive else ""
             )
-        produced = corpussearch_output(query)
+            stem = (
+                f"{execution:03d}-tbp-{rule.original_number:03d}-"
+                f"{safe_name}{iteration_suffix}"
+            )
+            query = query_dir / f"{stem}.q"
+            query.write_text(rule.query_text(execution), encoding="utf-8")
+            expected_output = query.with_suffix(".out")
+            if expected_output.exists():
+                expected_output.unlink()
+            completed = subprocess.run(
+                [corpussearch, str(query.resolve()), str(current.resolve())],
+                cwd=work_dir,
+                stdin=subprocess.DEVNULL,
+                text=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+            )
+            transcript = completed.stdout or ""
+            transcript_path = work_dir / f"{stem}.log"
+            transcript_path.write_text(transcript, encoding="utf-8")
+            if completed.returncode != 0 or re.search(
+                r"(?im)^\s*(ERROR|FATAL)", transcript
+            ):
+                failure_path = work_dir / f"{stem}-failure.log"
+                failure_path.write_text(transcript, encoding="utf-8")
+                raise RunnerError(
+                    f"CorpusSearch failed at execution rule {execution} "
+                    f"(original TBP {rule.original_number}: {rule.name}); "
+                    f"see {failure_path}"
+                )
+            produced = corpussearch_output(query)
+            current_records = read_records(current)
+            result_text = produced.read_text(encoding="utf-8", errors="replace")
+            transformed_records = parse_corpussearch_results(result_text)
+            merged_records, changed_count = merge_transformed_records(
+                current_records, transformed_records
+            )
+            total_changed += changed_count
+            next_path = work_dir / f"{stem}.psd"
+            write_records(next_path, merged_records)
 
-        current_records = read_records(current)
-        result_text = produced.read_text(encoding="utf-8", errors="replace")
-        transformed_records = parse_corpussearch_results(result_text)
+            if len(merged_records) != len(current_records):
+                raise RunnerError(
+                    f"rule {execution} changed the corpus size from "
+                    f"{len(current_records)} to {len(merged_records)}"
+                )
+            if not keep_intermediate and current.name != "000-input.pos":
+                current.unlink()
+            if not keep_intermediate:
+                produced.unlink()
+            current = next_path
 
-        merged_records, changed_count = merge_transformed_records(
-        current_records,
-        transformed_records,
-        )
-
-        next_path = (
-            work_dir
-        /   f"{execution:03d}-tbp-"
-            f"{rule.original_number:03d}-{safe_name}.psd"
-        )
-        write_records(next_path, merged_records)
-
-        if len(merged_records) != len(current_records):
-            raise RunnerError(
-                f"rule {execution} changed the corpus size from "
-                f"{len(current_records)} to {len(merged_records)}"
+            if not rule.recursive or changed_count == 0:
+                break
+            print(
+                f"  recursive iteration {iteration}: "
+                f"{changed_count} record(s) changed",
+                file=sys.stderr,
             )
 
         log_lines.append(
-            f"{execution}\t{rule.original_number}\t"
-            f"{rule.name}\tOK\t{changed_count}"
+            f"{execution}\t{rule.original_number}\t{rule.name}\tOK\t"
+            f"{total_changed}\t{iteration}"
         )
-
-        if not keep_intermediate and current.name != "000-input.pos":
-            current.unlink()
-
-        if not keep_intermediate:
-            produced.unlink()
-
-        current = next_path
     if log_path:
         log_path.write_text("\n".join(log_lines) + "\n", encoding="utf-8")
     return current
@@ -1244,7 +1363,10 @@ def parse_rule_range(value: str) -> tuple[int, int]:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("rules", type=Path, nargs="?", help="downloaded numbered TBP rule file")
+    parser.add_argument(
+        "rules", type=Path, nargs="?",
+        help="TBP rules export (.json or legacy numbered .txt)",
+    )
     parser.add_argument("input", type=Path, nargs="?", help="flat CorpusSearch .pos input")
     parser.add_argument(
         "--definitions",
@@ -1362,7 +1484,9 @@ def main(argv: Sequence[str] | None = None) -> int:
             if args.definitions
             else {}
         )
-        rules, used_definitions = parse_rules(args.rules, definitions)
+        rules, used_definitions, embedded_skips = parse_rules(
+            args.rules, definitions
+        )
 
         if args.definitions:
             print(
@@ -1420,7 +1544,7 @@ def main(argv: Sequence[str] | None = None) -> int:
 
             range_skips.update(matching)
 
-        requested_skips = individual_skips | range_skips
+        requested_skips = embedded_skips | individual_skips | range_skips
 
         if requested_skips:
             skipped_rules = [
