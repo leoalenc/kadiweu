@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 """Constituency-tree utilities for Tycho Brahe Platform JSON exports.
 
-This first version reconstructs tree objects from ``struct.chunks`` and
-``struct.tokens`` and pretty-prints individual sentences.  It deliberately
-keeps the original chunk/token mappings available on every node so that later
-versions can add head rules, dependency relations, and JSON enrichment without
-having to parse the source again.
+This module reconstructs tree objects from ``struct.chunks`` and
+``struct.tokens``, provides text and Graphviz renderers, and keeps the original
+chunk/token mappings available on every node for later processing.
 """
 
 from __future__ import annotations
@@ -13,6 +11,8 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import shutil
+import subprocess
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -642,6 +642,123 @@ def render_tree_text(
     for i, root in enumerate(tree.roots):
         visit(root, "", i == len(tree.roots) - 1, True)
     return "\n".join(lines)
+
+
+GRAPHVIZ_FORMATS = {"pdf", "png", "svg", "dot"}
+
+
+def tree_to_graphviz_dot(
+    tree: ConstituencyTree,
+    *,
+    comments: str | None = None,
+) -> str:
+    """Return a Graphviz DOT representation of one constituency tree.
+
+    When supplied, ``comments`` is printed as a left-aligned metadata heading
+    above the tree.  The caller decides whether comment delimiters are kept.
+    """
+    lines = [
+        "digraph constituency_tree {",
+        '  graph [rankdir=TB, ordering=out, bgcolor="white", margin="0.15"];',
+        '  node [fontname="DejaVu Sans", fontsize=11, shape=box, '
+        'style="rounded", margin="0.08,0.04"];',
+        '  edge [color="#555555", penwidth=0.8, arrowsize=0];',
+    ]
+    if comments is not None:
+        heading = comments.strip("\n")
+        lines.extend([
+            f"  label={json.dumps(heading, ensure_ascii=False)};",
+            '  labelloc="t";',
+            '  labeljust="l";',
+            '  fontname="DejaVu Sans Mono";',
+            "  fontsize=10;",
+        ])
+    next_id = 0
+
+    def add_node(node: TreeNode) -> str:
+        nonlocal next_id
+        node_id = f"n{next_id}"
+        next_id += 1
+        if isinstance(node, ConstituentNode):
+            label = node.label
+            if node.coindex:
+                label += "-" + ",".join(map(str, node.coindex))
+            attributes = f"label={json.dumps(label, ensure_ascii=False)}"
+        else:
+            form = node.form + "".join(f"-{i}" for i in node.coindex)
+            tag = "-NONE-" if node.empty_category else node.label
+            label = f"{tag}\n{form}"
+            attributes = (
+                f"label={json.dumps(label, ensure_ascii=False)}, "
+                'shape=plaintext, style=""'
+            )
+        lines.append(f"  {node_id} [{attributes}];")
+        if isinstance(node, ConstituentNode):
+            child_ids = [add_node(child) for child in node.children]
+            for child_id in child_ids:
+                lines.append(f"  {node_id} -> {child_id};")
+            for left, right in zip(child_ids, child_ids[1:]):
+                lines.append(
+                    f"  {left} -> {right} "
+                    '[style=invis, weight=10, constraint=false];'
+                )
+        return node_id
+
+    root_ids = [add_node(root) for root in tree.roots]
+    for left, right in zip(root_ids, root_ids[1:]):
+        lines.append(
+            f"  {left} -> {right} [style=invis, weight=10, constraint=false];"
+        )
+    lines.append("}")
+    return "\n".join(lines) + "\n"
+
+
+def render_tree_graphviz(
+    tree: ConstituencyTree,
+    output_path: str | Path,
+    *,
+    output_format: str = "pdf",
+    dot_command: str = "dot",
+    comments: str | None = None,
+) -> Path:
+    """Render one tree with Graphviz to PDF, PNG, SVG, or DOT."""
+    if output_format not in GRAPHVIZ_FORMATS:
+        supported = ", ".join(sorted(GRAPHVIZ_FORMATS))
+        raise ValueError(
+            f"unsupported Graphviz format {output_format!r}; choose: {supported}"
+        )
+    path = Path(output_path)
+    if not path.parent.exists():
+        raise ValueError(f"output parent directory does not exist: {path.parent}")
+    if path.exists() and path.is_dir():
+        raise ValueError(f"output path is a directory: {path}")
+    dot_source = tree_to_graphviz_dot(tree, comments=comments)
+    if output_format == "dot":
+        path.write_text(dot_source, encoding="utf-8", newline="\n")
+        return path
+    executable = shutil.which(dot_command)
+    if executable is None:
+        raise TreeConstructionError(
+            f"Graphviz executable {dot_command!r} was not found; "
+            "install Graphviz (on Ubuntu: sudo apt install graphviz)"
+        )
+    try:
+        subprocess.run(
+            [executable, f"-T{output_format}", "-o", str(path)],
+            input=dot_source,
+            text=True,
+            encoding="utf-8",
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+    except subprocess.CalledProcessError as error:
+        detail = (error.stderr or "").strip()
+        raise TreeConstructionError(
+            f"Graphviz failed to render {output_format}"
+            + (f": {detail}" if detail else "")
+        ) from error
+    return path
 
 def _coindex(item: JsonObject) -> tuple[int, ...]:
     value = item.get("coidx", ())

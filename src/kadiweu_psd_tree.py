@@ -3,7 +3,8 @@
 
 This is the PSD-facing command-line companion to ``kadiweu_constituency.py``.
 It deliberately keeps rendering in the library module so JSON-derived and
-PSD-derived trees share the same tree object and the same text renderer.
+PSD-derived trees share the same tree object and the same text and Graphviz
+renderers.
 
 Examples
 --------
@@ -29,6 +30,11 @@ Annotate only REVIEW records::
     python3 kadiweu_psd_tree.py inject data/example.psd \\
         -o data/example.review-trees.psd --status REVIEW
 
+Export one PSD tree as a printable PDF (Graphviz required)::
+
+    python3 kadiweu_psd_tree.py export data/example.psd \\
+        --id van-data,0.43 --format pdf -o van-data-0.43.pdf
+
 The ``inject`` operation does not reserialize the Lisp tree. It modifies only
 the preceding ``/* ... */`` metadata comment, so the parse itself and its trace
 notation remain byte-for-byte unchanged.
@@ -47,6 +53,7 @@ from kadiweu_constituency import (
     PsdRecord,
     TreeConstructionError,
     iter_psd_records,
+    render_tree_graphviz,
     render_tree_text,
 )
 
@@ -245,7 +252,8 @@ def add_selectors(parser: argparse.ArgumentParser) -> None:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Inspect and annotate Kadiwéu CorpusSearch/Penn PSD constituency trees.",
-        epilog="Use `%(prog)s show --help` or `%(prog)s inject --help` for command-specific examples.",
+        epilog=("Use `%(prog)s show --help`, `%(prog)s inject --help`, or "
+                "`%(prog)s export --help` for command-specific examples."),
     )
     sub = parser.add_subparsers(dest="command", required=True)
 
@@ -318,6 +326,45 @@ def build_parser() -> argparse.ArgumentParser:
     destination.add_argument("-o", "--output", type=Path, help="write annotated copy to this file")
     destination.add_argument("--in-place", action="store_true",
                              help="replace the input file atomically (destructive)")
+
+    export = sub.add_parser(
+        "export",
+        help="export one PSD tree graphically with Graphviz",
+        description=("Export one selected PSD constituency tree as PDF, PNG, SVG, "
+                     "or Graphviz DOT. PDF is the default."),
+        epilog="""examples:
+  %(prog)s FILE.psd --id van-data,0.43 -o van-data-0.43.pdf
+      Export one tree to printable PDF.
+
+  %(prog)s FILE.psd --status REVIEW 3 --format png -o review-3.png
+      Export the third REVIEW tree as PNG.
+
+  %(prog)s FILE.psd --id van-data,0.43 --format dot -o tree.dot
+      Write DOT source without invoking Graphviz.
+
+  %(prog)s FILE.psd --id van-data,0.43 --comments -o tree.pdf
+      Print the PSD metadata comment above the graphical tree.
+""",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    export.add_argument("psd_file", type=Path, metavar="FILE")
+    export.add_argument("positional_number", type=int, nargs="?", metavar="NUMBER",
+                        help="1-based record number; after --status filtering if supplied")
+    add_selectors(export)
+    export.add_argument(
+        "--format", choices=("pdf", "png", "svg", "dot"), default="pdf",
+        help="graphical output format (default: pdf)",
+    )
+    export.add_argument("-o", "--output", type=Path, required=True,
+                        help="output file")
+    export.add_argument(
+        "--comments", action="store_true",
+        help="print everything inside the PSD /* ... */ comment above the tree",
+    )
+    export.add_argument(
+        "--dot-command", default="dot", metavar="COMMAND",
+        help="Graphviz dot executable (default: dot)",
+    )
     return parser
 
 
@@ -326,7 +373,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     try:
         records = list(iter_psd_records(args.psd_file))
         numbers = args.number
-        if args.command == "show" and args.positional_number is not None:
+        if args.command in {"show", "export"} and args.positional_number is not None:
             if args.number:
                 raise ValueError("use either positional NUMBER or --number, not both")
             numbers = [args.positional_number]
@@ -350,6 +397,25 @@ def main(argv: Sequence[str] | None = None) -> int:
                     show_spans=args.show_spans,
                     show_positions=args.show_positions,
                 ))
+            return 0
+
+        if args.command == "export":
+            if len(selected) != 1:
+                raise ValueError(
+                    f"export requires exactly one PSD tree; selection contains {len(selected)}"
+                )
+            render_tree_graphviz(
+                selected[0][1].tree,
+                args.output,
+                output_format=args.format,
+                dot_command=args.dot_command,
+                comments=(
+                    selected[0][1].raw_comment[2:-2]
+                    if args.comments and selected[0][1].raw_comment is not None
+                    else None
+                ),
+            )
+            print(args.output)
             return 0
 
         original = args.psd_file.read_text(encoding="utf-8")
