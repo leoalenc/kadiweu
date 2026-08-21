@@ -3505,6 +3505,26 @@ text_por = estes ovos da fotografia dela estão bonitos
 )
 
 /*
+sentence = 43
+uid = a2910ce3-a0d2-4eac-bcc3-2da15db88b90
+status = REVIEW
+text = ijo niwigo libinienigi ijowa nigetedi
+text_por = Os ovos são a beleza da fotografia dele/dela.
+*/
+(
+  (IP-MAT
+    (NP-PRD
+      (NP
+        (D ijo)
+        (N$ niwigo))
+      (N$ libinienigi))
+    (NP-SBJ
+      (D ijowa)
+      (N$ nigetedi)))
+  (ID van-data,0.43)
+)
+
+/*
 sentence = 44
 uid = 075356e6-f89c-4d83-b001-435d13b319dc
 status = DONE
