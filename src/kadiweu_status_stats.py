@@ -45,7 +45,12 @@ from typing import Any, Iterable, Mapping, Sequence
 
 
 DEFAULT_MISSING_LABEL = "MISSING"
-DEFAULT_OUTDIR = Path("data/reports/status")
+
+# Resolve generated reports from the repository, rather than from the shell's
+# current working directory.  This script normally lives in REPOSITORY_ROOT/src,
+# so it writes to REPOSITORY_ROOT/data even when invoked from inside src/.
+REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
+DEFAULT_OUTDIR = REPOSITORY_ROOT / "data" / "reports" / "status"
 
 # Known statuses retain the same color in every figure. Additional statuses
 # receive colors deterministically from matplotlib's tab20 palette.

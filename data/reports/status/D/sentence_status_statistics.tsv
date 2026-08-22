@@ -1,0 +1,9 @@
+corpus	constituency_status	count	percentage	total
+ped-gramm	DONE	49	80.33	61
+ped-gramm	REVIEW	12	19.67	61
+hil-data	DONE	65	92.86	70
+hil-data	REVIEW	5	7.14	70
+van-data	DONE	69	92.00	75
+van-data	REVIEW	6	8.00	75
+ALL	DONE	183	88.83	206
+ALL	REVIEW	23	11.17	206

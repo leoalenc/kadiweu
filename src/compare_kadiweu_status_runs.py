@@ -35,6 +35,11 @@ REQUIRED_COLUMNS = {
 }
 MISSING_UID_VALUES = {"", "MISSING"}
 
+# Resolve generated reports from the repository, rather than from the shell's
+# current working directory.  This script normally lives in REPOSITORY_ROOT/src.
+REPOSITORY_ROOT = Path(__file__).resolve().parent.parent
+DEFAULT_STATUS_DIR = REPOSITORY_ROOT / "data" / "reports" / "status"
+
 
 @dataclass(frozen=True)
 class SentenceRow:
@@ -340,7 +345,14 @@ def build_argparser() -> argparse.ArgumentParser:
     parser.add_argument("run_b", type=Path, metavar="RUN_B_TSV")
     parser.add_argument("--label-a", default="A", help="display label for state A")
     parser.add_argument("--label-b", default="B", help="display label for state B")
-    parser.add_argument("--outdir", type=Path, default=Path("data/reports/status/A-to-B"))
+    parser.add_argument(
+        "--outdir",
+        type=Path,
+        help=(
+            "output directory (default: the repository's "
+            "data/reports/status/LABEL_A-to-LABEL_B directory)"
+        ),
+    )
     parser.add_argument(
         "--normalize-status", action="store_true",
         help="convert statuses to uppercase before comparison",
@@ -367,13 +379,17 @@ def run(args: argparse.Namespace) -> list[Path]:
             "--strict-integrity to report them and compare valid rows"
         )
     comparisons = compare_runs(index_a, index_b)
-    args.outdir.mkdir(parents=True, exist_ok=True)
+    outdir = args.outdir or (
+        DEFAULT_STATUS_DIR
+        / f"{safe_label(args.label_a)}-to-{safe_label(args.label_b)}"
+    )
+    outdir.mkdir(parents=True, exist_ok=True)
     stem = f"sentence_status_{safe_label(args.label_a)}_to_{safe_label(args.label_b)}"
     outputs = [
-        args.outdir / f"{stem}.tsv",
-        args.outdir / f"{stem}_statistics.tsv",
-        args.outdir / f"{stem}_summary.md",
-        args.outdir / f"{stem}_integrity.tsv",
+        outdir / f"{stem}.tsv",
+        outdir / f"{stem}_statistics.tsv",
+        outdir / f"{stem}_summary.md",
+        outdir / f"{stem}_integrity.tsv",
     ]
     write_comparison(comparisons, outputs[0])
     write_statistics(comparisons, outputs[1])
