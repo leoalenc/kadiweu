@@ -89,11 +89,11 @@ ped-gramm,0.24	ped-gramm	DONE	TRACE_EQUIVALENT	equivalent after trace-notation a
 ped-gramm,0.25	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.26	ped-gramm	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
 ped-gramm,0.27	ped-gramm	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
-ped-gramm,0.28	ped-gramm	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
+ped-gramm,0.28	ped-gramm	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.29	ped-gramm	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.3	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.30	ped-gramm	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
-ped-gramm,0.31	ped-gramm	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
+ped-gramm,0.31	ped-gramm	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.32	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.33	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 ped-gramm,0.34	ped-gramm	DONE	EXACT_MATCH	trees are identical after whitespace normalization
@@ -181,8 +181,8 @@ van-data,0.52	van-data	DONE	EXACT_MATCH	trees are identical after whitespace nor
 van-data,0.53	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.54	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.55	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
-van-data,0.56	van-data	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
-van-data,0.57	van-data	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
+van-data,0.56	van-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
+van-data,0.57	van-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.58	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.59	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 van-data,0.6	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization

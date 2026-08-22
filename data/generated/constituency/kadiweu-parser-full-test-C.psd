@@ -1421,9 +1421,9 @@ text_por = meu pai cuida da plantação de flores como filhas
 	  (NP-APL (N nawodigijedi)
 		  (CP-me (C me@)
 			 (IP-SUB (NP (DAPL @icawataGa)))))
-	  (C daGa)
-	  (CP-me (C me)
-		 (IP-SUB (NP (N$ lionigipi)))))
+	  (CP-daGa (C daGa)
+		   (CP-me (C me)
+			  (IP-SUB (NP (N$ lionigipi))))))
   (ID ped-gramm,0.28))
 /*
 sentence = 29
@@ -1455,9 +1455,9 @@ status = REVIEW
 text = Eyodi daGa niganaGacanajo
 text_por = Meu pai se fosse cantor
 */
-( (IP-MAT (NP-SBJ (N$ Eyodi))
-	  (C daGa)
-	  (NP-PRD (N niganaGacanajo)))
+( (IP-MAT (NP (N$ Eyodi))
+	  (CP-daGa (C daGa)
+		   (IP-SUB (NP (N niganaGacanajo)))))
   (ID ped-gramm,0.31))
 /*
 sentence = 42
@@ -2307,10 +2307,10 @@ status = REVIEW
 text = aGica daGa jipegitege
 text_por = eu não estou perto dela
 */
-( (IP-MAT (NEG aG@)
-	  (NP (D @ica))
-	  (CP (C daGa)
-	      (IP-SUB (VBAPL jipegitege))))
+( (CP-D (NEG aG@)
+	(NP (D @ica))
+	(C daGa)
+	(IP-SUB (VBAPL jipegitege)))
   (ID van-data,0.56))
 /*
 sentence = 57
@@ -2319,10 +2319,10 @@ status = REVIEW
 text = aGica daGa jipegitegi
 text_por = eu não estou perto dele
 */
-( (IP-MAT (NEG aG@)
-	  (NP (D @ica))
-	  (CP (C daGa)
-	      (IP-SUB (VBAPL jipegitegi))))
+( (CP-D (NEG aG@)
+	(NP (D @ica))
+	(C daGa)
+	(IP-SUB (VBAPL jipegitegi)))
   (ID van-data,0.57))
 /*
 sentence = 66

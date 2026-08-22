@@ -175,16 +175,16 @@ skipping original TBP rule(s): 30 (nbar10), 78 (ip-xp), 123 (CP-D)
 Comparison summary:
 struct_status  exact  trace_equivalent  structural_difference  total
 DONE             148                10                     16    174
-REVIEW            18                 2                     12     32
-TOTAL            166                12                     28    206
+REVIEW            22                 2                      8     32
+TOTAL            170                12                     24    206
 
 Comparison summary by dataset × struct_status:
 dataset    struct_status  exact  trace_equivalent  structural_difference  total
 hil-data   DONE              57                 4                      3     64
 hil-data   REVIEW             5                 1                      0      6
 ped-gramm  DONE              37                 5                      6     48
-ped-gramm  REVIEW             7                 0                      6     13
+ped-gramm  REVIEW             9                 0                      4     13
 van-data   DONE              54                 1                      7     62
-van-data   REVIEW             6                 1                      6     13
+van-data   REVIEW             8                 1                      4     13
 comparison report written to /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-C-comparison.tsv
-FAIL: 28 structural difference(s) written to /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-C.diff
+FAIL: 24 structural difference(s) written to /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-C.diff

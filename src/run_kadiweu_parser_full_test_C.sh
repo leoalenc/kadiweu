@@ -3,7 +3,7 @@
 
 set -euo pipefail
 
-readonly EXPECTED_RULES_SHA256="edb8bcd324ede05e9e5acaa290e9316ad3a5accd52fc48a9aa1bbf117cadbb76"
+readonly EXPECTED_RULES_SHA256="14a08d4ca577c986a2df69aaf43727fbb706b5b764ff8d059e479cbd89b28ffb"
 readonly EXPECTED_DEFINITIONS_SHA256="46b3e1fb5512747d4c20aa5bdcf600af6ac6a6d6b639d9debe2155470a050222"
 readonly EXPECTED_SENTENCES=206
 readonly EXPECTED_EXECUTED_RULES=168
@@ -12,7 +12,7 @@ PROJECT_ROOT="${KADIWEU_ROOT:-$HOME/kadiweu}"
 SRC_DIR="$PROJECT_ROOT/src"
 OUT_DIR="$PROJECT_ROOT/data/generated/constituency"
 RUNNER="${RUNNER:-$SRC_DIR/run_kadiweu_parser_rules.py}"
-RULES_C="${RULES_C:-$HOME/Dropbox/projects/2025/post-doc/parser/Kadiw-u-190826.json}"
+RULES_C="${RULES_C:-$HOME/Dropbox/projects/2025/post-doc/parser/Kadiw-u-190826.compat.json}"
 DEFINITIONS_C="${DEFINITIONS_C:-$HOME/Dropbox/projects/2025/post-doc/parser/kadiweu_parser_definitions_070726.txt}"
 CORPUSSEARCH="${CORPUSSEARCH:-corpussearch}"
 
