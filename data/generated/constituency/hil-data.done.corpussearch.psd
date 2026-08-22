@@ -204,10 +204,7 @@ text_por = Aquela comida é muito cara .
   (IP-MAT
     (NP-1
       (D NiGida)
-      (NP-GEN
-        (-NONE- *T*-1)
-      )
-      (N$ niwenigi)
+      (N niwenigi)
     )
     (CP-me
       (Q eliodi)
@@ -216,7 +213,7 @@ text_por = Aquela comida é muito cara .
         (VBU dakake)
         (NP
           (NP-GEN
-            (-NONE- *T*-2)
+            (-NONE- *T*-1)
           )
           (N$ loojedi)
         )
@@ -1301,6 +1298,29 @@ text_por = A casa dele é perto do rio da cidade .
     )
   )
   (ID hil-data,0.67)
+)
+
+/*
+sentence = 68
+uid = 9527d53d-7184-4b08-8bb2-51b7fff1429d
+status = DONE
+text = nigotaGa liGeladi ipegitege akiidi
+text_por = A cidade da casa dela é perto do rio.
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ nigotaGa)
+      (NP
+        (N$ liGeladi)
+      )
+    )
+    (VBAPL ipegitege)
+    (NP-APL
+      (N akiidi)
+    )
+  )
+  (ID hil-data,0.68)
 )
 
 /*

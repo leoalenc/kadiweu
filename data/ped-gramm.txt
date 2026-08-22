@@ -1314,9 +1314,11 @@ container_meta:
 translations:
   pt-br: a casa do João, que é suja
 comments:
-  [1] 2026-07-31 18:16:03 — Leonel Figueiredo de Alencar — NPR possuidor
+  [1] 2026-08-21 22:09:02 — Leonel Figueiredo de Alencar — CP-REL -> CP-FRL
+      Uma versão anterior produzia CP-REL. A não projeção do NP do possuidor persiste na atual versão.
+  [2] 2026-07-31 18:16:03 — Leonel Figueiredo de Alencar — NPR possuidor
       Parece que deveríamos ter `NP` dominando imediatamente o `NPR` possuidor, seguindo o padrão geral para estruturas com possuidor (complemento) e *possessum* (núcleo).
-  [2] 2026-07-21 14:00:41 — Leonel Figueiredo de Alencar — NPR possuidor projetando NP?
+  [3] 2026-07-21 14:00:41 — Leonel Figueiredo de Alencar — NPR possuidor projetando NP?
       NPR possuidor projetando NP? Caso negativo, marcar análise como finalizada.
 
 proto-conllu:
@@ -1324,8 +1326,9 @@ proto-conllu:
 
 chunks:
   span=1-5 type=IP-MAT level=0
-  span=1-5 type=NP level=1
-  span=3-5 type=CP-REL level=2
+  span=1-2 type=NP-SBJ level=1
+  span=3-5 type=NP-PRD level=1
+  span=3-5 type=CP-FRL level=2
   span=3-3 type=WNP level=3
   span=4-5 type=IP-SUB level=3
   span=5-5 type=NP level=4
@@ -1553,8 +1556,9 @@ proto-conllu:
 
 chunks:
   span=1-4 type=IP-MAT level=0
-  span=1-4 type=NP level=1
-  span=2-4 type=CP-REL level=2
+  span=1-1 type=NP-SBJ level=1
+  span=2-4 type=NP-PRD level=1
+  span=2-4 type=CP-FRL level=2
   span=2-2 type=WNP level=3
   span=3-4 type=IP-SUB level=3
   span=4-4 type=NP level=4
@@ -2323,7 +2327,7 @@ Sentence 47
 path: $.pages[0].sentences[46]
 uid: ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec
 text: liGeladi ipegitege niweiigi nigotaGa .
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -2333,14 +2337,16 @@ container_meta:
 translations:
   pt-br: A casa dele/dela é perto da cidade da lagoa.
 comments:
-  [1] 2026-08-11 16:48:30 — Filomena Sandalo
+  [1] 2026-08-21 22:15:05 — Leonel Figueiredo de Alencar — REVISAR -> FINALIZADO
+      Etiqueta `N$` de *niweiigi* trocada por `N`. Árvore agora correta. Sentença idêntica ou quase idêntica no conjunto "VANDA DADOS".
+  [2] 2026-08-11 16:48:30 — Filomena Sandalo
       Deve ser N.
-  [2] 2026-08-11 11:35:05 — Leonel Figueiredo de Alencar — Etiqueta de "nigotaGa"
+  [3] 2026-08-11 11:35:05 — Leonel Figueiredo de Alencar — Etiqueta de "nigotaGa"
       Atualmente, *nigotaGa* (*nigotaGa*) ocorre 9 vezes com a etiqueta `N` e 4 vezes com `N$`, inclusive nesta sentença (https://www.tycho.iel.unicamp.br/w/sentence/ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec). Seria um caso de ambiguidade ou um erro de anotação? Tendo a achar que deveria ser `N` apenas, pelo menos nos casos em que o prefixo *n-* está etiquetado como `Ant`. TODO: Verificar a etiqueta de classe de palavra de todas as palavras com `Ant`.
 Ver https://github.com/leoalenc/kadiweu/issues/72
-  [3] 2026-08-04 02:58:55 — Leonel Figueiredo de Alencar — Concordância do aplicativo
+  [4] 2026-08-04 02:58:55 — Leonel Figueiredo de Alencar — Concordância do aplicativo
       Comparar com sentenças análogas em "Vanda dados".
-  [4] 2026-04-15 17:45:28 — Leonel Figueiredo de Alencar — discrepância entre estímulo e elicitação
+  [5] 2026-04-15 17:45:28 — Leonel Figueiredo de Alencar — discrepância entre estímulo e elicitação
       discrepância entre estímulo e elicitação: a casa dela é perto do rio da cidade
 
 
@@ -2351,7 +2357,7 @@ chunks:
   span=1-5 type=IP-MAT level=0
   span=1-1 type=NP level=1
   span=3-4 type=NP-APL level=1
-  span=4-4 type=NP level=2
+  span=3-3 type=NP level=2
 
 tokens:
   p=1   v='liGeladi'         t='N$'         l=1   gloss-br='casa dele/dela'
@@ -2363,11 +2369,11 @@ tokens:
         [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
         [2] v='pegi'       t='v'        gloss-br='aproximar' fn=None idx=None
         [3] v='tece'       t='Apl'      gloss-br='3F' fn=None idx=None
-  p=3   v='niweiigi'         t='N$'         l=1   gloss-br='lagoa'
+  p=3   v='niweiigi'         t='N'          l=2   gloss-br='lagoa'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='weiigi'     t='n'        gloss-br='lagoa[M]' fn=None idx=None
-  p=4   v='nigotaGa'         t='N$'         l=2   gloss-br='cidade'
+  p=4   v='nigotaGa'         t='N$'         l=1   gloss-br='cidade'
       splits:
         [1] v=None         t=None       gloss-br=None fn=None idx=None
   p=5   v='.'                t='PUNC'       l=0   gloss-br=None

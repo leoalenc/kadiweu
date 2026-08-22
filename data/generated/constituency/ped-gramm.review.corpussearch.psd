@@ -76,10 +76,12 @@ text_por = a casa do João, que é suja
 */
 (
   (IP-MAT
-    (NP
+    (NP-SBJ
       (NPR João)
       (N$ liGeladi)
-      (CP-REL
+    )
+    (NP-PRD
+      (CP-FRL
         (WNP-1
           (WPRO ane)
         )
@@ -196,9 +198,11 @@ text_por = Meu pai que era cantor (explicativa)
 */
 (
   (IP-MAT
-    (NP
+    (NP-SBJ
       (N$ Eyodi)
-      (CP-REL
+    )
+    (NP-PRD
+      (CP-FRL
         (WNP-1
           (WPRO ane)
         )
@@ -311,28 +315,4 @@ text_por = A casa do João é suja.
     (PUNC .)
   )
   (ID ped-gramm,0.45)
-)
-
-/*
-sentence = 47
-uid = ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec
-status = REVIEW
-text = liGeladi ipegitege niweiigi nigotaGa .
-text_por = A casa dele/dela é perto da cidade da lagoa.
-*/
-(
-  (IP-MAT
-    (NP
-      (N$ liGeladi)
-    )
-    (VBAPL ipegitege)
-    (NP-APL
-      (N$ niweiigi)
-      (NP
-        (N$ nigotaGa)
-      )
-    )
-    (PUNC .)
-  )
-  (ID ped-gramm,0.47)
 )

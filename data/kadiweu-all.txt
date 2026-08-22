@@ -45,7 +45,7 @@ Found 206 matching sentence(s).
   44  source=ped-gramm  uid=6d2a809e-0d32-4254-9489-f9e356e22493  status=REVIEW     struct=None       text=nGida niwenigi daGaxa me dakake loojedi .
   45  source=ped-gramm  uid=c25b098d-6b0a-4416-a31d-6d7219685a63  status=REVIEW     struct=None       text=João liGeladi napioi .
   46  source=ped-gramm  uid=4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5  status=DONE       struct=None       text=liGeladi João napioi .
-  47  source=ped-gramm  uid=ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec  status=REVIEW     struct=None       text=liGeladi ipegitege niweiigi nigotaGa .
+  47  source=ped-gramm  uid=ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec  status=DONE       struct=None       text=liGeladi ipegitege niweiigi nigotaGa .
   48  source=ped-gramm  uid=8b1a9983-4dfd-49e8-9285-92c56c84b652  status=DONE       struct=None       text=liGeladi ipegitegi niweiigi nigotaGa .
   49  source=ped-gramm  uid=eeb42af3-fe5a-4b7d-97ea-b381ab589860  status=DONE       struct=None       text=Niwatece iwaGadi codaa adakake loojedi .
   50  source=ped-gramm  uid=156fa9a4-4323-44f1-9cdc-ef5dc052b428  status=DONE       struct=None       text=etee minitaGa
@@ -101,7 +101,7 @@ Found 206 matching sentence(s).
  100  source=hil-data   uid=38f73c1c-ddfb-4153-9310-d24214cd68e7  status=DONE       struct=None       text=NaGani wetiGa ane iwaGadi eniteloco iGonagi
  101  source=hil-data   uid=e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4  status=REVIEW     struct=None       text=NaGani wetiGa , ane iwaGadi , eniteloco iGonagi
  102  source=hil-data   uid=8dda04f0-f7e8-46d6-b41d-b65dd214f01b  status=DONE       struct=None       text=NiGidoa waca lotiidi dapicoGo
- 103  source=hil-data   uid=79cb0e55-9c06-4cb1-91b3-2b5233e1678f  status=REVIEW     struct=None       text=nigidiwa okokodi ligetedi midi niwigo libinienaGa
+ 103  source=hil-data   uid=79cb0e55-9c06-4cb1-91b3-2b5233e1678f  status=REVIEW     struct=None       text=niGidiwa okokodi ligetedi midi niwigo libinienaGa
  104  source=hil-data   uid=a74fea0a-dd87-4c4d-8670-9db66f5b5b16  status=DONE       struct=None       text=niGidiwa okokodi ligetedi liwigo libinienaGa
  105  source=hil-data   uid=83fdcd4c-338f-4a9f-8545-da8539e67e9d  status=DONE       struct=None       text=NiGidiwa noGojedi lixagotaGaGa adakake loojedi
  106  source=hil-data   uid=07bfcd00-7901-474d-bfb8-bf470266aafa  status=REVIEW     struct=None       text=Ee ite ee ina
@@ -127,7 +127,7 @@ Found 206 matching sentence(s).
  126  source=hil-data   uid=13f012b0-ef62-4477-b4bd-00e000484874  status=DONE       struct=None       text=NiGidi lionaGa iwaalo etidi meetaGa
  127  source=hil-data   uid=55fe3cf7-0293-48e6-aa78-44822f50347e  status=DONE       struct=None       text=liGeladi ipegitege nakidi nigotaGa
  128  source=hil-data   uid=c0441856-b259-4d76-a88e-33a7e211b208  status=DONE       struct=None       text=liGeladi ipegitege nakidi nigotaGa
- 129  source=hil-data   uid=9527d53d-7184-4b08-8bb2-51b7fff1429d  status=REVIEW     struct=None       text=nigotaGa liGeladi ipegitege akiidi
+ 129  source=hil-data   uid=9527d53d-7184-4b08-8bb2-51b7fff1429d  status=DONE       struct=None       text=nigotaGa liGeladi ipegitege akiidi
  130  source=hil-data   uid=9669b093-f0a2-4187-9063-cec9ba4c0196  status=DONE       struct=None       text=Nigaanigawaanigi etini liwatece Pedilo
  131  source=hil-data   uid=529c167b-b3a7-40cc-af76-c7522719c6d4  status=DONE       struct=None       text=NiGijo nigaanigawaanigi etini liwatece ideloGole
  132  source=van-data   uid=a7e338a1-5403-40d4-b169-c840cf193aae  status=DONE       struct=None       text=iGeladi digoida weiigi
@@ -141,10 +141,10 @@ Found 206 matching sentence(s).
  140  source=van-data   uid=2c026af9-b8a1-4389-b658-00113b070dee  status=REVIEW     struct=None       text=niwatece liwaGatena lodejedi etidi weiigi
  141  source=van-data   uid=0c38eab8-c6b0-4f02-bf05-27ea6285fe70  status=DONE       struct=None       text=Gawenigi eliodi me libinienigi
  142  source=van-data   uid=a85fda39-1575-4120-9432-8fb534ebdbd2  status=DONE       struct=None       text=niGida liwenigi libinienigi
- 143  source=van-data   uid=a1e15803-1e5e-481f-8137-a84beac6cbcc  status=REVIEW     struct=None       text=niGida niwenigi daGaxa me dakake loojedi
+ 143  source=van-data   uid=a1e15803-1e5e-481f-8137-a84beac6cbcc  status=DONE       struct=None       text=niGida niwenigi daGaxa me dakake loojedi
  144  source=van-data   uid=e9806e26-701d-4f5f-9ca9-63216cccf3d0  status=DONE       struct=None       text=naGajo lomiigo Pedro idei niwatece
  145  source=van-data   uid=2386b5b5-57d0-4a1f-86c2-73f67561744c  status=DONE       struct=None       text=naGajo lomiigo nigaanigawaanigi manitaGa niwatece
- 146  source=van-data   uid=4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7  status=REVIEW     struct=None       text=Ijo nigaanigawaanigi idei madi lomiigo niwatece
+ 146  source=van-data   uid=4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7  status=REVIEW     struct=None       text=Nigaanigawaanigi idei madi niwatece ane adi nomiigo
  147  source=van-data   uid=235440ba-548e-4df6-8d9e-214cc8714f8f  status=REVIEW     struct=None       text=niGijo nigaanigawaanigi manitaGa lomigo niwatece
  148  source=van-data   uid=86f5c128-e931-4443-90cc-2359748ed69f  status=DONE       struct=None       text=Eeyo nigotaGa
  149  source=van-data   uid=d021bede-064b-4fd5-bb33-6c7cd4279c1b  status=DONE       struct=None       text=Eyo manitaGa nigotaGa
@@ -172,7 +172,7 @@ Found 206 matching sentence(s).
  171  source=van-data   uid=b4e1df8d-6590-4ce9-9f72-c0b054398c89  status=DONE       struct=None       text=niGidowa waca lotiidi dapicoGo
  172  source=van-data   uid=278e4c5c-aaab-4ca3-8f5e-277610fb80c2  status=DONE       struct=None       text=idowa waca lotiidi dapicoGo
  173  source=van-data   uid=44646324-eb90-42f0-b944-21f0452109e2  status=REVIEW     struct=None       text=ijoa nigetedi liwigo libinienaGa
- 174  source=van-data   uid=a2910ce3-a0d2-4eac-bcc3-2da15db88b90  status=REVIEW     struct=None       text=ijo niwigo libinienigi ijowa nigetedi
+ 174  source=van-data   uid=a2910ce3-a0d2-4eac-bcc3-2da15db88b90  status=DONE       struct=None       text=ijo niwigo libinienigi ijowa nigetedi
  175  source=van-data   uid=075356e6-f89c-4d83-b001-435d13b319dc  status=DONE       struct=None       text=ijoa nigetedi niwigo libinienigipi
  176  source=van-data   uid=5739aca1-95fc-4584-9550-d7bd73c3c361  status=REVIEW     struct=None       text=okokodi ligetedi midi niwigo libinienaGa .
  177  source=van-data   uid=83a62eb4-5a9e-43b0-b6b4-bded8dbd8ffe  status=REVIEW     struct=None       text=liwigo okokodi ligetedi libinienigi .
@@ -185,8 +185,8 @@ Found 206 matching sentence(s).
  184  source=van-data   uid=c4d99cf1-e781-4efb-83ff-4a0ab873b7ec  status=DONE       struct=None       text=ee aGidininitibeci
  185  source=van-data   uid=969ba2f3-88dc-417e-ad3f-16ce88b4c762  status=DONE       struct=None       text=aGee eliodi niinikeGegi
  186  source=van-data   uid=39925f76-d73f-423f-95cd-f88bd78f2a6e  status=DONE       struct=None       text=ee eliodi me aGidininitibeci
- 187  source=van-data   uid=d3095a7e-477d-405e-9ea2-85bfdacad7d3  status=REVIEW     struct=None       text=aGica daGa jipegitege
- 188  source=van-data   uid=813f2ad7-42fb-4fbd-84b4-1957c68aa4f9  status=REVIEW     struct=None       text=aGica daGa jipegitegi
+ 187  source=van-data   uid=d3095a7e-477d-405e-9ea2-85bfdacad7d3  status=DONE       struct=None       text=aGica daGa jipegitege
+ 188  source=van-data   uid=813f2ad7-42fb-4fbd-84b4-1957c68aa4f9  status=DONE       struct=None       text=aGica daGa jipegitegi
  189  source=van-data   uid=b3c03f67-7664-43b7-9de8-b5243321eeb7  status=DONE       struct=None       text=ee idiwaaGadi
  190  source=van-data   uid=6852927c-53de-411d-9ed9-e0f9d78309cd  status=DONE       struct=None       text=ee jigipegitege
  191  source=van-data   uid=2b6a6bee-392e-49f9-97a9-0afbb0af2eff  status=DONE       struct=None       text=ee jigipegitegi
@@ -195,14 +195,14 @@ Found 206 matching sentence(s).
  194  source=van-data   uid=651a68ed-90a0-45b7-9eb5-411bc2c189c7  status=DONE       struct=None       text=JipecaGataGagi
  195  source=van-data   uid=d3952c8a-1ac1-4255-be0b-63978fdf368b  status=DONE       struct=None       text=aGidedonaGa midi Godoigi
  196  source=van-data   uid=e9b78452-925e-458b-848a-d52ab76f6840  status=DONE       struct=None       text=jipacaGataGagitiwaji
- 197  source=van-data   uid=fbae0277-3aad-4812-9229-94179b5a97a0  status=REVIEW     struct=None       text=aGide jonaGa midi Godoigi
+ 197  source=van-data   uid=fbae0277-3aad-4812-9229-94179b5a97a0  status=DONE       struct=None       text=aGidejonaGa midi Godoigi
  198  source=van-data   uid=6599689a-3fbe-4598-8827-78aceeff3931  status=DONE       struct=None       text=ijo lemé Maria ipegitegi weiigi
  199  source=van-data   uid=b8878027-73d2-4b11-bc18-cbdcf5637e55  status=DONE       struct=None       text=biju dapico
  200  source=van-data   uid=30ef1810-38e0-4cef-8db3-4dda590faa09  status=DONE       struct=None       text=libiwe niale ixagodi
  201  source=van-data   uid=444f95ae-8ed7-422e-84f1-aae6d4af2b6d  status=DONE       struct=None       text=idiwa bejoli dapico
  202  source=van-data   uid=f240dcfe-ca05-42aa-8644-07b9e3464e1a  status=DONE       struct=None       text=idiwa leonigipi Maria libinienigipi
- 203  source=van-data   uid=b97e5b2f-d0da-4238-8ee6-2c64ded91f76  status=REVIEW     struct=None       text=ijowa leonigipi iwaalo idi metaGa
- 204  source=van-data   uid=c1b350df-ed1a-4e3b-89a8-a6fa9ca8382e  status=REVIEW     struct=None       text=ligeladi ipegitege niweiigi nigotaGa
+ 203  source=van-data   uid=b97e5b2f-d0da-4238-8ee6-2c64ded91f76  status=DONE       struct=None       text=ijowa leonigipi iwaalo idi metaGa
+ 204  source=van-data   uid=c1b350df-ed1a-4e3b-89a8-a6fa9ca8382e  status=DONE       struct=None       text=ligeladi ipegitege niweiigi nigotaGa
  205  source=van-data   uid=ebff5ffa-8a9d-4f8b-9960-38f70b344c19  status=DONE       struct=None       text=ligeladi ipegitegi niweiigi nigotaGa
  206  source=van-data   uid=81048a6f-e084-4b0a-965a-f41fb5c53ff7  status=DONE       struct=None       text=nigotaGa liGeladi ipegitegi weiigi
 Wrote JSONL to: /home/leonel/kadiweu/data/kadiweu-all.jsonl

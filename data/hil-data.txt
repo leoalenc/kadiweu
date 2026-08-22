@@ -401,20 +401,23 @@ container_meta:
 translations:
   pt-br: Aquela comida é muito cara .
 comments:
-  [1] 2026-07-22 15:27:43 — Leonel Figueiredo de Alencar — Extração de dentro de CP?
+  [1] 2026-08-21 21:59:15 — Leonel Figueiredo de Alencar — REVISAR -> FINALIZADO
+      Árvore correta gerada ao trocar `N$` por `N` em *niwenigi*. Desapareceu o vestígio espúrio com índice 2.
+  [2] 2026-08-19 19:52:08 — Leonel Figueiredo de Alencar — FINALIZADO -> REVISAR
+      Dois vestígios de movimento? Em estruturas análogas, só temos um. Além disso, o vestígio 2 não tem antecedente.
+  [3] 2026-07-22 15:27:43 — Leonel Figueiredo de Alencar — Extração de dentro de CP?
       Marquei para REVISAR porque o NP-SBJ não é sujeito do VBU, cujo sujeito já concordamos que é "loojedi". Esta ȧrvore não representa a subida do possuidor como outras sem o "eliodi", que deflagra CP-me.
 
 proto-conllu:
   <none>
 
 chunks:
-  span=1-8 type=IP-MAT level=0
-  span=1-3 type=NP level=1
-  span=4-8 type=CP-me level=1
-  span=6-8 type=IP-SUB level=2
-  span=7-8 type=NP level=3
-  span=2-2 type=NP-GEN level=2
-  span=7-7 type=NP-GEN level=4
+  span=1-7 type=IP-MAT level=0
+  span=1-2 type=NP level=1
+  span=3-7 type=CP-me level=1
+  span=5-7 type=IP-SUB level=2
+  span=6-7 type=NP level=3
+  span=6-6 type=NP-GEN level=4
 
 tokens:
   p=1   v='NiGida'           t='D'          l=1   gloss-br='este'
@@ -422,25 +425,24 @@ tokens:
         [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
         [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
         [3] v='da'         t='Ncl'      gloss-br='em_pé' fn=None idx=None
-  p=2   v='*T*'              t=None         l=2   gloss-br=None
-  p=3   v='niwenigi'         t='N$'         l=1   gloss-br='comida'
+  p=2   v='niwenigi'         t='N'          l=1   gloss-br='comida'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='wenigi'     t='n'        gloss-br='comida' fn=None idx=None
-  p=4   v='eliodi'           t='Q'          l=1   gloss-br='muito'
-  p=5   v='me'               t='C'          l=1   gloss-br='que'
-  p=6   v='dakake'           t='VBU'        l=2   gloss-br='duro'
+  p=3   v='eliodi'           t='Q'          l=1   gloss-br='muito'
+  p=4   v='me'               t='C'          l=1   gloss-br='que'
+  p=5   v='dakake'           t='VBU'        l=2   gloss-br='duro'
       splits:
         [1] v='d'          t='Inv'      gloss-br=None fn=None idx=None
         [2] v='akake'      t='v'        gloss-br=None fn=None idx=None
-  p=7   v='*T*'              t=None         l=4   gloss-br=None
-  p=8   v='loojedi'          t='N$'         l=3   gloss-br='vingança/preço'
+  p=6   v='*T*'              t=None         l=4   gloss-br=None
+  p=7   v='loojedi'          t='N$'         l=3   gloss-br='vingança/preço'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='oojedi'     t='n'        gloss-br='preço' fn=None idx=None
 
 conllu/token count check:
-  tokens=8  proto-conllu=0
+  tokens=7  proto-conllu=0
 
 ================================================================================
 Sentence 10
@@ -1872,7 +1874,7 @@ Sentence 42
 ================================================================================
 path: $.pages[0].sentences[41]
 uid: 79cb0e55-9c06-4cb1-91b3-2b5233e1678f
-text: nigidiwa okokodi ligetedi midi niwigo libinienaGa
+text: niGidiwa okokodi ligetedi midi niwigo libinienaGa
 status: REVIEW
 struct_status: None
 visible: None
@@ -1883,13 +1885,73 @@ container_meta:
 translations:
   pt-br: Estes ovos da fotografia dela estão bonitos .
 comments:
-  [1] 2026-08-04 14:40:03 — Filomena Sandalo
+  [1] 2026-08-19 15:03:43 — Leonel Figueiredo de Alencar — nigidiwa -> niGidiwa
+      Corrigido para *niGidiwa*.
+  [2] 2026-08-19 14:57:11 — Leonel Figueiredo de Alencar — Prposta de árvore
+      Aplicando o que foi dito no comentário anterior:
+```
+/*
+sentence = 42
+uid = 79cb0e55-9c06-4cb1-91b3-2b5233e1678f
+status = REVIEW
+text = nigidiwa okokodi ligetedi midi niwigo libinienaGa
+text_por = Estes ovos da fotografia dela estão bonitos .
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D nigidiwa)
+      (N okokodi)
+      (N$ ligetedi)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (D @idi)
+            (N niwigo)))))
+    (NP-PRD
+      (N$ libinienaGa)))
+  (ID hil-data,0.42)
+)
+```
+  [3] 2026-08-04 14:40:03 — Filomena Sandalo
       Erro: CP-me deveria estar conacatenado com ovos da galinha (i.e ovos da galinha da fotografia, CP-me).
-  [2] 2026-08-03 18:36:12 — Leonel Figueiredo de Alencar — Relativa restritiva não construída
-      Conforme a explicação na reunião de 30/07/26, "midi liwigo" ('que estão na fotografia', em tradução livre) deveria constituir uma relativa modificando o NP sujeito. A nominalização "libienaGa", por sua vez, deveria figurar como NP-PRD.
-  [3] 2026-07-23 12:47:34 — Leonel Figueiredo de Alencar — Representação de "idi niwigo"
+  [4] 2026-08-03 18:36:12 — Leonel Figueiredo de Alencar — Relativa restritiva não construída
+      Conforme a explicação na reunião de 30/07/26, "midi liwigo" ('que estão na fotografia', em tradução livre) deveria constituir uma relativa modificando o NP sujeito. A nominalização "libienaGa", por sua vez, deveria figurar como NP-PRD. Parece, então, que a árvore seria esta: 
+``` 
+/*
+sentence = 45
+uid = 5739aca1-95fc-4584-9550-d7bd73c3c361
+status = REVIEW
+text = okokodi ligetedi midi niwigo libinienaGa .
+text_por = Os ovos da fotografia são bonitos. (Os ovos de galinha que estão na fotografia são bonitos.)
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N okokodi)
+      (N$ ligetedi)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (D @idi)
+            (N niwigo)
+          )
+        )
+      )
+    )
+    (NP-PRD
+      (N$ libinienaGa)
+    )
+    (PUNC .)
+  )
+  (ID van-data,0.45)
+)
+```
+  [5] 2026-07-23 12:47:34 — Leonel Figueiredo de Alencar — Representação de "idi niwigo"
       O determinante "idi" deve integrar, como nó filho, o NP cujo núcleo é "niwigo" e não o NP com núcleo "libinienaGa".
-  [4] 2026-07-23 12:02:14 — Leonel Figueiredo de Alencar — Relativa com me?
+  [6] 2026-07-23 12:02:14 — Leonel Figueiredo de Alencar — Relativa com me?
       A árvore não parece fazer muito sentido, comparando com a sentença em português. Seria possível associar a CP-me ao NP-SBJ como relativa? Ou seja, "os ovos que são da fotografia dela". O NP "libinienaGa" deveria ser NP-PRD, seguindo o modelo de outras sentenças nos mesmos moldes.
 
 proto-conllu:
@@ -1897,32 +1959,40 @@ proto-conllu:
 
 chunks:
   span=1-7 type=IP-MAT level=0
-  span=1-3 type=NP-SBJ level=1
-  span=4-7 type=CP-me level=1
-  span=5-7 type=IP-SUB level=2
-  span=5-7 type=NP level=3
+  span=1-3 type=NP level=1
+  span=2-2 type=NP level=2
+  span=4-7 type=CP level=1
+  span=4-7 type=CP-me level=2
+  span=5-7 type=IP-SUB level=3
+  span=5-7 type=NP level=4
+  span=6-6 type=NP level=5
 
 tokens:
-  p=1   v='nigidiwa'         t='D'          l=1   gloss-br='aqueles'
-  p=2   v='okokodi'          t='N'          l=1   gloss-br='galinha'
+  p=1   v='niGidiwa'         t='D'          l=1   gloss-br='est(e|a)s'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='di'         t='Ncl'      gloss-br='deitad(o|a)' fn=None idx=None
+        [4] v='wa'         t='Plu'      gloss-br=None fn=None idx=None
+  p=2   v='okokodi'          t='N'          l=2   gloss-br='galinha'
   p=3   v='ligetedi'         t='N$'         l=1   gloss-br='ovo'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='getegi'     t='n'        gloss-br='ovo' fn=None idx=None
         [3] v='tedi'       t='Plu'      gloss-br='PL' fn=None idx=None
-  p=4   v='me@'              t='C'          l=1   gloss-br='que o'
+  p=4   v='me@'              t='C'          l=2   gloss-br='que o'
       split: {"v": "midi", "t": "C+D", "idx": 0}
       splits:
         [1] v='me'         t=None       gloss-br=None fn=True idx=None
         [2] v='i'          t=None       gloss-br=None fn=None idx=None
         [3] v='di'         t=None       gloss-br=None fn=None idx=None
-  p=5   v='@idi'             t='D'          l=3   gloss-br=None
+  p=5   v='@idi'             t='D'          l=4   gloss-br=None
       split: {"idx": 1}
-  p=6   v='niwigo'           t='N'          l=3   gloss-br='fotografia/espírito'
+  p=6   v='niwigo'           t='N'          l=5   gloss-br='fotografia/espírito'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='wigo'       t='n'        gloss-br='espírito/fotografia' fn=None idx=None
-  p=7   v='libinienaGa'      t='N$'         l=3   gloss-br='bonitas'
+  p=7   v='libinienaGa'      t='N$'         l=4   gloss-br='bonitas'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='binie'      t='n'        gloss-br='beleza' fn=None idx=None
@@ -3092,7 +3162,7 @@ Sentence 68
 path: $.pages[0].sentences[67]
 uid: 9527d53d-7184-4b08-8bb2-51b7fff1429d
 text: nigotaGa liGeladi ipegitege akiidi
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -3102,7 +3172,9 @@ container_meta:
 translations:
   pt-br: A cidade da casa dela é perto do rio.
 comments:
-  [1] 2026-07-23 13:17:11 — Leonel Figueiredo de Alencar — Possuidor como N$ em vez de NP
+  [1] 2026-08-21 21:54:42 — Leonel Figueiredo de Alencar — REVISAR -> FINALIZADO
+      O parser produziu a árvore esperada quando mudei a etiqueta de `N` para `N$`, conforme decisão formulada em outro comentário de hoje sobre sentença do conjunto de dados da Vanda com a mesma palavra *nigotaGa*. A etiqueta `N$` é a adequada neste caso por se tratar de coisa possuída. 
+  [2] 2026-07-23 13:17:11 — Leonel Figueiredo de Alencar — Possuidor como N$ em vez de NP
       O possuidor deveria constituir projeção máxima.
 
 proto-conllu:
@@ -3111,13 +3183,14 @@ proto-conllu:
 chunks:
   span=1-4 type=IP-MAT level=0
   span=1-2 type=NP level=1
+  span=2-2 type=NP level=2
   span=4-4 type=NP-APL level=1
 
 tokens:
-  p=1   v='nigotaGa'         t='N'          l=1   gloss-br='cidade'
+  p=1   v='nigotaGa'         t='N$'         l=1   gloss-br='cidade'
       splits:
         [1] v=None         t=None       gloss-br=None fn=None idx=None
-  p=2   v='liGeladi'         t='N$'         l=1   gloss-br='casa dele/dela'
+  p=2   v='liGeladi'         t='N$'         l=2   gloss-br='casa dele/dela'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='Geladi'     t='n'        gloss-br='casa' fn=None idx=None

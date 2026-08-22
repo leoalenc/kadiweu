@@ -732,6 +732,30 @@ text_por = A casa do João é suja.
 )
 
 /*
+sentence = 47
+uid = ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec
+status = DONE
+text = liGeladi ipegitege niweiigi nigotaGa .
+text_por = A casa dele/dela é perto da cidade da lagoa.
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ liGeladi)
+    )
+    (VBAPL ipegitege)
+    (NP-APL
+      (NP
+        (N niweiigi)
+      )
+      (N$ nigotaGa)
+    )
+    (PUNC .)
+  )
+  (ID ped-gramm,0.47)
+)
+
+/*
 sentence = 48
 uid = 8b1a9983-4dfd-49e8-9285-92c56c84b652
 status = DONE

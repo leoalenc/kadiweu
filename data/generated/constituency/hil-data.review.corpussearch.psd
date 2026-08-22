@@ -38,23 +38,29 @@ text_por = Esta pedra , que é pesada , caiu no meu pé .
 sentence = 42
 uid = 79cb0e55-9c06-4cb1-91b3-2b5233e1678f
 status = REVIEW
-text = nigidiwa okokodi ligetedi midi niwigo libinienaGa
+text = niGidiwa okokodi ligetedi midi niwigo libinienaGa
 text_por = Estes ovos da fotografia dela estão bonitos .
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (D nigidiwa)
-      (N okokodi)
+    (NP
+      (D niGidiwa)
+      (NP
+        (N okokodi)
+      )
       (N$ ligetedi)
     )
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (D @idi)
-          (N niwigo)
-          (N$ libinienaGa)
+    (CP
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (D @idi)
+            (NP
+              (N niwigo)
+            )
+            (N$ libinienaGa)
+          )
         )
       )
     )
@@ -133,25 +139,4 @@ text_por = Eu estou com ele .
     )
   )
   (ID hil-data,0.47)
-)
-
-/*
-sentence = 68
-uid = 9527d53d-7184-4b08-8bb2-51b7fff1429d
-status = REVIEW
-text = nigotaGa liGeladi ipegitege akiidi
-text_por = A cidade da casa dela é perto do rio.
-*/
-(
-  (IP-MAT
-    (NP
-      (N nigotaGa)
-      (N$ liGeladi)
-    )
-    (VBAPL ipegitege)
-    (NP-APL
-      (N akiidi)
-    )
-  )
-  (ID hil-data,0.68)
 )
