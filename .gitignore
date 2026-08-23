@@ -1,0 +1,9 @@
+# Temporary parser workspaces retained by --keep-intermediate
+/data/generated/constituency/kadiweu-parser-*-run-*/
+
+# Temporary toy-parser workspaces retained by --keep-intermediate
+/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-*-run-*/
+
+# Python bytecode and cache directories
+__pycache__/
+*.py[cod]
