@@ -12,6 +12,7 @@ import argparse
 import csv
 import io
 import math
+import re
 import subprocess
 import sys
 from dataclasses import dataclass
@@ -19,9 +20,9 @@ from pathlib import Path
 from typing import Sequence
 
 
-DEFAULT_FILE = "data/reports/status/sentence_status_individual.tsv"
-DEFAULT_OUTPUT = "data/reports/status/done_history.svg"
-DEFAULT_TABLE = "data/reports/status/done_history.tsv"
+DEFAULT_FILE = Path("data/reports/status/sentence_status_individual.tsv")
+DEFAULT_OUTPUT = Path("data/reports/status/done_history.svg")
+DEFAULT_TABLE = Path("data/reports/status/done_history.tsv")
 STATUS_COLUMNS = ("constituency_status", "status")
 
 
@@ -109,9 +110,14 @@ def commits_for_file(repo: Path, tracked_file: str) -> list[tuple[str, str, str,
         if fields[0].startswith("R") and len(fields) == 3:
             old_path, new_path = fields[1], fields[2]
             # At the rename commit the blob already has new_path.  Record that
-            # commit first, then use old_path for all older revisions.
+            # commit first, then use old_path for all older revisions.  A
+            # similarity score of 100 means that the contents did not change,
+            # so the commit is only a relocation and not a new observation.
             if current_path == new_path:
-                finish_pending()
+                if fields[0] == "R100":
+                    pending = None
+                else:
+                    finish_pending()
                 current_path = old_path
 
     finish_pending()
@@ -155,15 +161,15 @@ def count_done(tsv_text: str, commit: str) -> tuple[int, int]:
 
 
 def stage_from_path(path: str) -> str:
-    """Use an A/B/C parent directory as the stage label when present."""
+    """Use a single-letter status-state parent as the stage label."""
     parent = Path(path).parent.name
-    return parent if parent in {"A", "B", "C"} else ""
+    return parent if re.fullmatch(r"[A-Z]", parent) else ""
 
 
 def read_historical_files(
     repo: Path, commit: str, expected_path: str, tracked_file: str
 ) -> list[tuple[str, str, str]]:
-    """Read one revision, expanding A/B/C JSON stages into separate snapshots.
+    """Read one revision, expanding lettered status states into snapshots.
 
     Each returned tuple contains ``(stage, contents, source_path)``.
     """
@@ -202,7 +208,7 @@ def read_historical_files(
             ).splitlines()
         )
         changed_stages = [(stage, path) for stage, path in staged if path in changed_paths]
-        # A/B/C are successive saved JSON stages. Files retained unchanged in
+        # Lettered directories are successive saved status states. Files retained unchanged in
         # a later commit are not new observations and must not be plotted again.
         if changed_stages:
             staged = changed_stages
@@ -246,6 +252,60 @@ def collect_history(repo: Path, tracked_file: str) -> list[HistoryPoint]:
         groups.append(group)
     groups.reverse()
     return [point for group in groups for point in group]
+
+
+def collect_current_stages(repo: Path, basename: str) -> list[HistoryPoint]:
+    """Collect every committed lettered state currently present in the tree."""
+    status_root = Path("data/reports/status")
+    tree_paths = run_git(
+        repo, ["ls-tree", "-r", "--name-only", "HEAD", "--", status_root.as_posix()]
+    ).splitlines()
+    stage_paths = [
+        path
+        for path in tree_paths
+        if Path(path).name == basename
+        and Path(path).parent.parent == status_root
+        and stage_from_path(path)
+    ]
+    points: list[HistoryPoint] = []
+    for path in sorted(stage_paths, key=stage_from_path):
+        metadata = run_git(
+            repo, ["log", "-1", "--format=%H%x09%cI%x09%s", "--", path]
+        ).strip()
+        if not metadata:
+            continue
+        commit, committed_at, subject = metadata.split("\t", 2)
+        contents = run_git(repo, ["show", f"{commit}:{path}"])
+        done, total = count_done(contents, commit)
+        points.append(
+            HistoryPoint(
+                commit=commit,
+                short_commit=commit[:7],
+                committed_at=committed_at,
+                date=committed_at[:10],
+                done=done,
+                total=total,
+                subject=subject,
+                stage=stage_from_path(path),
+                source_path=path,
+            )
+        )
+    return points
+
+
+def merge_history_points(
+    historical: Sequence[HistoryPoint], current_stages: Sequence[HistoryPoint]
+) -> list[HistoryPoint]:
+    """Merge legacy history with current states without plotting duplicates."""
+    by_identity: dict[tuple[str, str], HistoryPoint] = {
+        (point.commit, point.source_path): point for point in historical
+    }
+    for point in current_stages:
+        by_identity[(point.commit, point.source_path)] = point
+    return sorted(
+        by_identity.values(),
+        key=lambda point: (point.committed_at, point.stage, point.source_path),
+    )
 
 
 def write_table(points: Sequence[HistoryPoint], output: Path) -> None:
@@ -330,25 +390,25 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--file",
         type=Path,
-        default=Path(DEFAULT_FILE),
+        default=None,
         help=f"tracked TSV file (default: {DEFAULT_FILE})",
     )
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path(DEFAULT_OUTPUT),
+        default=None,
         help=f"chart path; format follows its extension (default: {DEFAULT_OUTPUT})",
     )
     parser.add_argument(
         "--table",
         type=Path,
-        default=Path(DEFAULT_TABLE),
+        default=None,
         help=f"historical TSV output (default: {DEFAULT_TABLE})",
     )
     parser.add_argument(
         "--repo",
         type=Path,
-        help="repository directory (default: detect from the current directory)",
+        help="repository directory (default: detect from the script location)",
     )
     parser.add_argument("--show", action="store_true", help="display the chart interactively")
     return parser
@@ -357,18 +417,24 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: Sequence[str] | None = None) -> int:
     arguments = build_parser().parse_args(argv)
     try:
-        repo = find_repo((arguments.repo or Path.cwd()).resolve())
-        tracked_file = repo_relative_path(repo, arguments.file)
-        points = collect_history(repo, tracked_file)
-        write_table(points, arguments.table)
-        plot_history(points, arguments.output, arguments.show)
+        repo_start = arguments.repo or Path(__file__).resolve().parent
+        repo = find_repo(repo_start.resolve())
+        requested_file = arguments.file or (repo / DEFAULT_FILE)
+        output = arguments.output or (repo / DEFAULT_OUTPUT)
+        table = arguments.table or (repo / DEFAULT_TABLE)
+        tracked_file = repo_relative_path(repo, requested_file)
+        historical = collect_history(repo, tracked_file)
+        current_stages = collect_current_stages(repo, Path(tracked_file).name)
+        points = merge_history_points(historical, current_stages)
+        write_table(points, table)
+        plot_history(points, output, arguments.show)
     except HistoryError as error:
         print(f"ERROR: {error}", file=sys.stderr)
         return 1
 
     print(f"Processed {len(points)} committed version(s) of {tracked_file}.")
-    print(f"Wrote {arguments.table}")
-    print(f"Wrote {arguments.output}")
+    print(f"Wrote {table}")
+    print(f"Wrote {output}")
     return 0
 
 

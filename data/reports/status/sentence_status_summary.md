@@ -1,0 +1,20 @@
+# Constituency-tree sentence status statistics
+
+The status is read from the sentence-level `status` field in each Tycho Brahe JSON export.
+
+| Corpus | Constituency status | Count | Percentage | Total |
+|---|---|---:|---:|---:|
+| ped-gramm | DONE | 48 | 78.69% | 61 |
+| ped-gramm | REVIEW | 13 | 21.31% | 61 |
+| hil-data | DONE | 64 | 91.43% | 70 |
+| hil-data | REVIEW | 6 | 8.57% | 70 |
+| van-data | DONE | 62 | 82.67% | 75 |
+| van-data | REVIEW | 13 | 17.33% | 75 |
+| ALL | DONE | 174 | 84.47% | 206 |
+| ALL | REVIEW | 32 | 15.53% | 206 |
+
+## Sources
+
+- `ped-gramm`: `../data/ped-gramm.json`
+- `hil-data`: `../data/hil-data.json`
+- `van-data`: `../data/van-data.json`

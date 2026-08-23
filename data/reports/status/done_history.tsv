@@ -1,0 +1,8 @@
+date	committed_at	commit	stage	done	total	source_path	subject
+2026-07-24	2026-07-24T23:21:52-03:00	1996029636f6fd9c143a539aea65c5c292d8bab7		147	206	data/reports/status/sentence_status_individual.tsv	Improve script for computing statistics and its results #133
+2026-08-01	2026-08-01T12:59:45-03:00	140c8a87bd3af299049ebfc40aeff028845b13f7		146	206	data/reports/status/sentence_status_individual.tsv	#142 #141 #133, closes #139
+2026-08-07	2026-08-07T19:13:26-03:00	5ba8fea2da69dc8be7e6099be797f6d807bddd11	A	146	206	data/reports/status/A/sentence_status_individual.tsv	#149 #150
+2026-08-07	2026-08-07T19:13:26-03:00	5ba8fea2da69dc8be7e6099be797f6d807bddd11	B	162	206	data/reports/status/B/sentence_status_individual.tsv	#149 #150
+2026-08-08	2026-08-08T14:30:26-03:00	a1e169597b48461ad5f2086bc271454f92680b49	C	170	206	data/reports/status/C/sentence_status_individual.tsv	Test TBP's parser rules of 070826, closes #151, refs #149
+2026-08-13	2026-08-13T20:30:29-03:00	a80ca84bad3894e725d1a6b71a1ff5ce36544716		174	206	src/data/reports/status/sentence_status_individual.tsv	Update DONE and REVIEW stats #156
+2026-08-22	2026-08-22T15:59:18-03:00	87bceedd234cdc0817a8972912d7aac5d45bf008	D	183	206	data/reports/status/D/sentence_status_individual.tsv	Update status reports
