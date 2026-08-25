@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>DONE Parser Improvements and Regressions</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="kadiweu-parser-report.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">DONE Parser Improvements and Regressions</h1>
+</header>
+<h1 id="introduction">1. Introduction</h1>
+<p>This document compares parser A (BEFORE) with parser C (AFTER) for DONE sentences whose classification changed. It contains every improvement and regression recorded in the transition TSV, with both parser trees shown in LISP and graphical formats for human inspection.</p>
+<p><strong>DONE improvements:</strong> 5.<br />
+<strong>DONE regressions:</strong> 9.</p>
+<h1 id="done-improvements">2. DONE improvements</h1>
+<div style="page-break-before: always;">
+
+</div>
+<h3 id="ped-gramm0.40">ped-gramm,0.40</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset</td>
+<td>ped-gramm</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>DONE</td>
+</tr>
+<tr class="odd">
+<td>Text</td>
+<td>iGeladi digoida weiigi .</td>
+</tr>
+<tr class="even">
+<td>Portuguese</td>
+<td>Minha casa é no rio.</td>
+</tr>
+<tr class="odd">
+<td>A result</td>
+<td>STRUCTURAL_DIFFERENCE</td>
+</tr>
+<tr class="even">
+<td>C result</td>
+<td>EXACT_MATCH</td>
+</tr>
+</tbody>
+</table>
+<h4 id="before-parser-a-lisp">BEFORE — parser A — LISP</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb1-1" title="1">(</a>
+<a class="sourceLine" id="cb1-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb1-3" title="3">    (NP</a>
+<a class="sourceLine" id="cb1-4" title="4">      (NP</a>
+<a class="sourceLine" id="cb1-5" title="5">        (N$ iGeladi))</a>
+<a class="sourceLine" id="cb1-6" title="6">      (D digoida)</a>
+<a class="sourceLine" id="cb1-7" title="7">      (N weiigi))</a>
+<a class="sourceLine" id="cb1-8" title="8">    (PUNC .))</a>
+<a class="sourceLine" id="cb1-9" title="9">  (ID ped-gramm,<span class="fl">0.40</span>))</a></code></pre></div>
+<h4 id="before-parser-a-graphical-tree">BEFORE — parser A — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/ped-gramm-0.40.before.svg" alt="BEFORE tree for ped-gramm,0.40" /><figcaption>BEFORE tree for ped-gramm,0.40</figcaption>
+</figure>
+<h4 id="after-parser-c-lisp">AFTER — parser C — LISP</h4>
+<div class="sourceCode" id="cb2"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb2-1" title="1">(</a>
+<a class="sourceLine" id="cb2-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb2-3" title="3">    (NP-SBJ</a>
+<a class="sourceLine" id="cb2-4" title="4">      (N$ iGeladi))</a>
+<a class="sourceLine" id="cb2-5" title="5">    (NP-PRD</a>
+<a class="sourceLine" id="cb2-6" title="6">      (D digoida)</a>
+<a class="sourceLine" id="cb2-7" title="7">      (N weiigi))</a>
+<a class="sourceLine" id="cb2-8" title="8">    (PUNC .))</a>
+<a class="sourceLine" id="cb2-9" title="9">  (ID ped-gramm,<span class="fl">0.40</span>))</a></code></pre></div>
+<h4 id="after-parser-c-graphical-tree">AFTER — parser C — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/ped-gramm-0.40.after.svg" alt="AFTER tree for ped-gramm,0.40" /><figcaption>AFTER tree for ped-gramm,0.40</figcaption>
+</figure>
+<div style="page-break-before: always;">
+
+</div>
+<h3 id="ped-gramm0.47">ped-gramm,0.47</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset</td>
+<td>ped-gramm</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>DONE</td>
+</tr>
+<tr class="odd">
+<td>Text</td>
+<td>liGeladi ipegitege niweiigi nigotaGa .</td>
+</tr>
+<tr class="even">
+<td>Portuguese</td>
+<td>A casa dele/dela é perto da cidade da lagoa.</td>
+</tr>
+<tr class="odd">
+<td>A result</td>
+<td>STRUCTURAL_DIFFERENCE</td>
+</tr>
+<tr class="even">
+<td>C result</td>
+<td>EXACT_MATCH</td>
+</tr>
+</tbody>
+</table>
+<h4 id="before-parser-a-lisp-1">BEFORE — parser A — LISP</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb3-1" title="1">(</a>
+<a class="sourceLine" id="cb3-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb3-3" title="3">    (NP</a>
+<a class="sourceLine" id="cb3-4" title="4">      (N$ liGeladi))</a>
+<a class="sourceLine" id="cb3-5" title="5">    (VBAPL ipegitege)</a>
+<a class="sourceLine" id="cb3-6" title="6">    (NP-APL</a>
+<a class="sourceLine" id="cb3-7" title="7">      (N niweiigi)</a>
+<a class="sourceLine" id="cb3-8" title="8">      (N$ nigotaGa))</a>
+<a class="sourceLine" id="cb3-9" title="9">    (PUNC .))</a>
+<a class="sourceLine" id="cb3-10" title="10">  (ID ped-gramm,<span class="fl">0.47</span>))</a></code></pre></div>
+<h4 id="before-parser-a-graphical-tree-1">BEFORE — parser A — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/ped-gramm-0.47.before.svg" alt="BEFORE tree for ped-gramm,0.47" /><figcaption>BEFORE tree for ped-gramm,0.47</figcaption>
+</figure>
+<h4 id="after-parser-c-lisp-1">AFTER — parser C — LISP</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb4-1" title="1">(</a>
+<a class="sourceLine" id="cb4-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb4-3" title="3">    (NP</a>
+<a class="sourceLine" id="cb4-4" title="4">      (N$ liGeladi))</a>
+<a class="sourceLine" id="cb4-5" title="5">    (VBAPL ipegitege)</a>
+<a class="sourceLine" id="cb4-6" title="6">    (NP-APL</a>
+<a class="sourceLine" id="cb4-7" title="7">      (NP</a>
+<a class="sourceLine" id="cb4-8" title="8">        (N niweiigi))</a>
+<a class="sourceLine" id="cb4-9" title="9">      (N$ nigotaGa))</a>
+<a class="sourceLine" id="cb4-10" title="10">    (PUNC .))</a>
+<a class="sourceLine" id="cb4-11" title="11">  (ID ped-gramm,<span class="fl">0.47</span>))</a></code></pre></div>
+<h4 id="after-parser-c-graphical-tree-1">AFTER — parser C — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/ped-gramm-0.47.after.svg" alt="AFTER tree for ped-gramm,0.47" /><figcaption>AFTER tree for ped-gramm,0.47</figcaption>
+</figure>
+<div style="page-break-before: always;">
+
+</div>
+<h3 id="van-data0.1">van-data,0.1</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset</td>
+<td>van-data</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>DONE</td>
+</tr>
+<tr class="odd">
+<td>Text</td>
+<td>iGeladi digoida weiigi</td>
+</tr>
+<tr class="even">
+<td>Portuguese</td>
+<td>Minha casa é no rio</td>
+</tr>
+<tr class="odd">
+<td>A result</td>
+<td>STRUCTURAL_DIFFERENCE</td>
+</tr>
+<tr class="even">
+<td>C result</td>
+<td>EXACT_MATCH</td>
+</tr>
+</tbody>
+</table>
+<h4 id="before-parser-a-lisp-2">BEFORE — parser A — LISP</h4>
+<div class="sourceCode" id="cb5"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb5-1" title="1">(</a>
+<a class="sourceLine" id="cb5-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb5-3" title="3">    (NP</a>
+<a class="sourceLine" id="cb5-4" title="4">      (NP</a>
+<a class="sourceLine" id="cb5-5" title="5">        (N$ iGeladi))</a>
+<a class="sourceLine" id="cb5-6" title="6">      (D digoida)</a>
+<a class="sourceLine" id="cb5-7" title="7">      (N weiigi)))</a>
+<a class="sourceLine" id="cb5-8" title="8">  (ID van-data,<span class="fl">0.1</span>))</a></code></pre></div>
+<h4 id="before-parser-a-graphical-tree-2">BEFORE — parser A — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.1.before.svg" alt="BEFORE tree for van-data,0.1" /><figcaption>BEFORE tree for van-data,0.1</figcaption>
+</figure>
+<h4 id="after-parser-c-lisp-2">AFTER — parser C — LISP</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb6-1" title="1">(</a>
+<a class="sourceLine" id="cb6-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb6-3" title="3">    (NP-SBJ</a>
+<a class="sourceLine" id="cb6-4" title="4">      (N$ iGeladi))</a>
+<a class="sourceLine" id="cb6-5" title="5">    (NP-PRD</a>
+<a class="sourceLine" id="cb6-6" title="6">      (D digoida)</a>
+<a class="sourceLine" id="cb6-7" title="7">      (N weiigi)))</a>
+<a class="sourceLine" id="cb6-8" title="8">  (ID van-data,<span class="fl">0.1</span>))</a></code></pre></div>
+<h4 id="after-parser-c-graphical-tree-2">AFTER — parser C — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.1.after.svg" alt="AFTER tree for van-data,0.1" /><figcaption>AFTER tree for van-data,0.1</figcaption>
+</figure>
+<div style="page-break-before: always;">
+
+</div>
+<h3 id="van-data0.43">van-data,0.43</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset</td>
+<td>van-data</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>DONE</td>
+</tr>
+<tr class="odd">
+<td>Text</td>
+<td>ijo niwigo libinienigi ijowa nigetedi</td>
+</tr>
+<tr class="even">
+<td>Portuguese</td>
+<td>estes ovos da fotografia dela estão bonitos</td>
+</tr>
+<tr class="odd">
+<td>A result</td>
+<td>STRUCTURAL_DIFFERENCE</td>
+</tr>
+<tr class="even">
+<td>C result</td>
+<td>EXACT_MATCH</td>
+</tr>
+</tbody>
+</table>
+<h4 id="before-parser-a-lisp-3">BEFORE — parser A — LISP</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb7-1" title="1">(</a>
+<a class="sourceLine" id="cb7-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb7-3" title="3">    (NP-SBJ</a>
+<a class="sourceLine" id="cb7-4" title="4">      (NP</a>
+<a class="sourceLine" id="cb7-5" title="5">        (D ijo)</a>
+<a class="sourceLine" id="cb7-6" title="6">        (NP</a>
+<a class="sourceLine" id="cb7-7" title="7">          (N niwigo))</a>
+<a class="sourceLine" id="cb7-8" title="8">        (N$ libinienigi))</a>
+<a class="sourceLine" id="cb7-9" title="9">      (D ijowa))</a>
+<a class="sourceLine" id="cb7-10" title="10">    (NP-PRD</a>
+<a class="sourceLine" id="cb7-11" title="11">      (N$ nigetedi)))</a>
+<a class="sourceLine" id="cb7-12" title="12">  (ID van-data,<span class="fl">0.43</span>))</a></code></pre></div>
+<h4 id="before-parser-a-graphical-tree-3">BEFORE — parser A — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.43.before.svg" alt="BEFORE tree for van-data,0.43" /><figcaption>BEFORE tree for van-data,0.43</figcaption>
+</figure>
+<h4 id="after-parser-c-lisp-3">AFTER — parser C — LISP</h4>
+<div class="sourceCode" id="cb8"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb8-1" title="1">(</a>
+<a class="sourceLine" id="cb8-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb8-3" title="3">    (NP-SBJ</a>
+<a class="sourceLine" id="cb8-4" title="4">      (D ijo)</a>
+<a class="sourceLine" id="cb8-5" title="5">      (NP</a>
+<a class="sourceLine" id="cb8-6" title="6">        (N niwigo))</a>
+<a class="sourceLine" id="cb8-7" title="7">      (N$ libinienigi))</a>
+<a class="sourceLine" id="cb8-8" title="8">    (NP-PRD</a>
+<a class="sourceLine" id="cb8-9" title="9">      (D ijowa)</a>
+<a class="sourceLine" id="cb8-10" title="10">      (N$ nigetedi)))</a>
+<a class="sourceLine" id="cb8-11" title="11">  (ID van-data,<span class="fl">0.43</span>))</a></code></pre></div>
+<h4 id="after-parser-c-graphical-tree-3">AFTER — parser C — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.43.after.svg" alt="AFTER tree for van-data,0.43" /><figcaption>AFTER tree for van-data,0.43</figcaption>
+</figure>
+<div style="page-break-before: always;">
+
+</div>
+<h3 id="van-data0.73">van-data,0.73</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset</td>
+<td>van-data</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>DONE</td>
+</tr>
+<tr class="odd">
+<td>Text</td>
+<td>ligeladi ipegitege niweiigi nigotaGa</td>
+</tr>
+<tr class="even">
+<td>Portuguese</td>
+<td>a casa dela é perto da cidade do rio</td>
+</tr>
+<tr class="odd">
+<td>A result</td>
+<td>STRUCTURAL_DIFFERENCE</td>
+</tr>
+<tr class="even">
+<td>C result</td>
+<td>EXACT_MATCH</td>
+</tr>
+</tbody>
+</table>
+<h4 id="before-parser-a-lisp-4">BEFORE — parser A — LISP</h4>
+<div class="sourceCode" id="cb9"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb9-1" title="1">(</a>
+<a class="sourceLine" id="cb9-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb9-3" title="3">    (NP</a>
+<a class="sourceLine" id="cb9-4" title="4">      (N$ ligeladi))</a>
+<a class="sourceLine" id="cb9-5" title="5">    (VBAPL ipegitege)</a>
+<a class="sourceLine" id="cb9-6" title="6">    (NP-APL</a>
+<a class="sourceLine" id="cb9-7" title="7">      (N niweiigi)</a>
+<a class="sourceLine" id="cb9-8" title="8">      (N$ nigotaGa)))</a>
+<a class="sourceLine" id="cb9-9" title="9">  (ID van-data,<span class="fl">0.73</span>))</a></code></pre></div>
+<h4 id="before-parser-a-graphical-tree-4">BEFORE — parser A — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.73.before.svg" alt="BEFORE tree for van-data,0.73" /><figcaption>BEFORE tree for van-data,0.73</figcaption>
+</figure>
+<h4 id="after-parser-c-lisp-4">AFTER — parser C — LISP</h4>
+<div class="sourceCode" id="cb10"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb10-1" title="1">(</a>
+<a class="sourceLine" id="cb10-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb10-3" title="3">    (NP</a>
+<a class="sourceLine" id="cb10-4" title="4">      (N$ ligeladi))</a>
+<a class="sourceLine" id="cb10-5" title="5">    (VBAPL ipegitege)</a>
+<a class="sourceLine" id="cb10-6" title="6">    (NP-APL</a>
+<a class="sourceLine" id="cb10-7" title="7">      (NP</a>
+<a class="sourceLine" id="cb10-8" title="8">        (N niweiigi))</a>
+<a class="sourceLine" id="cb10-9" title="9">      (N$ nigotaGa)))</a>
+<a class="sourceLine" id="cb10-10" title="10">  (ID van-data,<span class="fl">0.73</span>))</a></code></pre></div>
+<h4 id="after-parser-c-graphical-tree-4">AFTER — parser C — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.73.after.svg" alt="AFTER tree for van-data,0.73" /><figcaption>AFTER tree for van-data,0.73</figcaption>
+</figure>
+<h1 id="done-regressions">3. DONE regressions</h1>
+<div style="page-break-before: always;">
+
+</div>
+<h3 id="hil-data0.11">hil-data,0.11</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset</td>
+<td>hil-data</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>DONE</td>
+</tr>
+<tr class="odd">
+<td>Text</td>
+<td>NaGajo lomigo niganigawanigi madi niwatece</td>
+</tr>
+<tr class="even">
+<td>Portuguese</td>
+<td>Aquele anzol do menino é na canoa .</td>
+</tr>
+<tr class="odd">
+<td>A result</td>
+<td>EXACT_MATCH</td>
+</tr>
+<tr class="even">
+<td>C result</td>
+<td>STRUCTURAL_DIFFERENCE</td>
+</tr>
+</tbody>
+</table>
+<h4 id="before-parser-a-lisp-5">BEFORE — parser A — LISP</h4>
+<div class="sourceCode" id="cb11"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb11-1" title="1">(</a>
+<a class="sourceLine" id="cb11-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb11-3" title="3">    (NP-SBJ</a>
+<a class="sourceLine" id="cb11-4" title="4">      (D NaGajo)</a>
+<a class="sourceLine" id="cb11-5" title="5">      (N$ lomigo)</a>
+<a class="sourceLine" id="cb11-6" title="6">      (NP</a>
+<a class="sourceLine" id="cb11-7" title="7">        (N niganigawanigi)))</a>
+<a class="sourceLine" id="cb11-8" title="8">    (CP-me</a>
+<a class="sourceLine" id="cb11-9" title="9">      (C me@)</a>
+<a class="sourceLine" id="cb11-10" title="10">      (IP-SUB</a>
+<a class="sourceLine" id="cb11-11" title="11">        (NP</a>
+<a class="sourceLine" id="cb11-12" title="12">          (D @adi)</a>
+<a class="sourceLine" id="cb11-13" title="13">          (N$ niwatece)))))</a>
+<a class="sourceLine" id="cb11-14" title="14">  (ID hil-data,<span class="fl">0.11</span>))</a></code></pre></div>
+<h4 id="before-parser-a-graphical-tree-5">BEFORE — parser A — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/hil-data-0.11.before.svg" alt="BEFORE tree for hil-data,0.11" /><figcaption>BEFORE tree for hil-data,0.11</figcaption>
+</figure>
+<h4 id="after-parser-c-lisp-5">AFTER — parser C — LISP</h4>
+<div class="sourceCode" id="cb12"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb12-1" title="1">(</a>
+<a class="sourceLine" id="cb12-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb12-3" title="3">    (NP</a>
+<a class="sourceLine" id="cb12-4" title="4">      (D NaGajo)</a>
+<a class="sourceLine" id="cb12-5" title="5">      (N$ lomigo)</a>
+<a class="sourceLine" id="cb12-6" title="6">      (NP</a>
+<a class="sourceLine" id="cb12-7" title="7">        (N niganigawanigi)))</a>
+<a class="sourceLine" id="cb12-8" title="8">    (CP</a>
+<a class="sourceLine" id="cb12-9" title="9">      (CP-me</a>
+<a class="sourceLine" id="cb12-10" title="10">        (C me@)</a>
+<a class="sourceLine" id="cb12-11" title="11">        (IP-SUB</a>
+<a class="sourceLine" id="cb12-12" title="12">          (NP</a>
+<a class="sourceLine" id="cb12-13" title="13">            (D @adi)</a>
+<a class="sourceLine" id="cb12-14" title="14">            (N$ niwatece))))))</a>
+<a class="sourceLine" id="cb12-15" title="15">  (ID hil-data,<span class="fl">0.11</span>))</a></code></pre></div>
+<h4 id="after-parser-c-graphical-tree-5">AFTER — parser C — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/hil-data-0.11.after.svg" alt="AFTER tree for hil-data,0.11" /><figcaption>AFTER tree for hil-data,0.11</figcaption>
+</figure>
+<div style="page-break-before: always;">
+
+</div>
+<h3 id="hil-data0.7">hil-data,0.7</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset</td>
+<td>hil-data</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>DONE</td>
+</tr>
+<tr class="odd">
+<td>Text</td>
+<td>Gawenigi eliodi me libinienigi</td>
+</tr>
+<tr class="even">
+<td>Portuguese</td>
+<td>A sua comida é muito bonita .</td>
+</tr>
+<tr class="odd">
+<td>A result</td>
+<td>EXACT_MATCH</td>
+</tr>
+<tr class="even">
+<td>C result</td>
+<td>STRUCTURAL_DIFFERENCE</td>
+</tr>
+</tbody>
+</table>
+<h4 id="before-parser-a-lisp-6">BEFORE — parser A — LISP</h4>
+<div class="sourceCode" id="cb13"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb13-1" title="1">(</a>
+<a class="sourceLine" id="cb13-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb13-3" title="3">    (NP-SBJ</a>
+<a class="sourceLine" id="cb13-4" title="4">      (N$ Gawenigi))</a>
+<a class="sourceLine" id="cb13-5" title="5">    (CP-me</a>
+<a class="sourceLine" id="cb13-6" title="6">      (Q eliodi)</a>
+<a class="sourceLine" id="cb13-7" title="7">      (C me)</a>
+<a class="sourceLine" id="cb13-8" title="8">      (IP-SUB</a>
+<a class="sourceLine" id="cb13-9" title="9">        (NP</a>
+<a class="sourceLine" id="cb13-10" title="10">          (N$ libinienigi)))))</a>
+<a class="sourceLine" id="cb13-11" title="11">  (ID hil-data,<span class="fl">0.7</span>))</a></code></pre></div>
+<h4 id="before-parser-a-graphical-tree-6">BEFORE — parser A — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/hil-data-0.7.before.svg" alt="BEFORE tree for hil-data,0.7" /><figcaption>BEFORE tree for hil-data,0.7</figcaption>
+</figure>
+<h4 id="after-parser-c-lisp-6">AFTER — parser C — LISP</h4>
+<div class="sourceCode" id="cb14"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb14-1" title="1">(</a>
+<a class="sourceLine" id="cb14-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb14-3" title="3">    (NP</a>
+<a class="sourceLine" id="cb14-4" title="4">      (N$ Gawenigi))</a>
+<a class="sourceLine" id="cb14-5" title="5">    (CP</a>
+<a class="sourceLine" id="cb14-6" title="6">      (CP-me</a>
+<a class="sourceLine" id="cb14-7" title="7">        (Q eliodi)</a>
+<a class="sourceLine" id="cb14-8" title="8">        (C me)</a>
+<a class="sourceLine" id="cb14-9" title="9">        (IP-SUB</a>
+<a class="sourceLine" id="cb14-10" title="10">          (NP</a>
+<a class="sourceLine" id="cb14-11" title="11">            (N$ libinienigi))))))</a>
+<a class="sourceLine" id="cb14-12" title="12">  (ID hil-data,<span class="fl">0.7</span>))</a></code></pre></div>
+<h4 id="after-parser-c-graphical-tree-6">AFTER — parser C — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/hil-data-0.7.after.svg" alt="AFTER tree for hil-data,0.7" /><figcaption>AFTER tree for hil-data,0.7</figcaption>
+</figure>
+<div style="page-break-before: always;">
+
+</div>
+<h3 id="ped-gramm0.35">ped-gramm,0.35</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset</td>
+<td>ped-gramm</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>DONE</td>
+</tr>
+<tr class="odd">
+<td>Text</td>
+<td>iGeladi ipegitegi naigi ane napioi</td>
+</tr>
+<tr class="even">
+<td>Portuguese</td>
+<td>Minha casa está perto desta rua suja (que está suja)</td>
+</tr>
+<tr class="odd">
+<td>A result</td>
+<td>TRACE_EQUIVALENT</td>
+</tr>
+<tr class="even">
+<td>C result</td>
+<td>STRUCTURAL_DIFFERENCE</td>
+</tr>
+</tbody>
+</table>
+<h4 id="before-parser-a-lisp-7">BEFORE — parser A — LISP</h4>
+<div class="sourceCode" id="cb15"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb15-1" title="1">(</a>
+<a class="sourceLine" id="cb15-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb15-3" title="3">    (NP</a>
+<a class="sourceLine" id="cb15-4" title="4">      (N$ iGeladi))</a>
+<a class="sourceLine" id="cb15-5" title="5">    (VBAPL ipegitegi)</a>
+<a class="sourceLine" id="cb15-6" title="6">    (NP-APL</a>
+<a class="sourceLine" id="cb15-7" title="7">      (N naigi)</a>
+<a class="sourceLine" id="cb15-8" title="8">      (CP-REL</a>
+<a class="sourceLine" id="cb15-9" title="9">        (WNP<span class="dv">-1</span></a>
+<a class="sourceLine" id="cb15-10" title="10">          (WPRO ane))</a>
+<a class="sourceLine" id="cb15-11" title="11">        (IP-SUB</a>
+<a class="sourceLine" id="cb15-12" title="12">          (NP-TRACE *T*-<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb15-13" title="13">          (NP</a>
+<a class="sourceLine" id="cb15-14" title="14">            (N napioi))))))</a>
+<a class="sourceLine" id="cb15-15" title="15">  (ID ped-gramm,<span class="fl">0.35</span>))</a></code></pre></div>
+<h4 id="before-parser-a-graphical-tree-7">BEFORE — parser A — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/ped-gramm-0.35.before.svg" alt="BEFORE tree for ped-gramm,0.35" /><figcaption>BEFORE tree for ped-gramm,0.35</figcaption>
+</figure>
+<h4 id="after-parser-c-lisp-7">AFTER — parser C — LISP</h4>
+<div class="sourceCode" id="cb16"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb16-1" title="1">(</a>
+<a class="sourceLine" id="cb16-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb16-3" title="3">    (NP</a>
+<a class="sourceLine" id="cb16-4" title="4">      (N$ iGeladi))</a>
+<a class="sourceLine" id="cb16-5" title="5">    (VBAPL ipegitegi)</a>
+<a class="sourceLine" id="cb16-6" title="6">    (NP-APL</a>
+<a class="sourceLine" id="cb16-7" title="7">      (N naigi))</a>
+<a class="sourceLine" id="cb16-8" title="8">    (NP</a>
+<a class="sourceLine" id="cb16-9" title="9">      (CP-FRL</a>
+<a class="sourceLine" id="cb16-10" title="10">        (WNP<span class="dv">-1</span></a>
+<a class="sourceLine" id="cb16-11" title="11">          (WPRO ane))</a>
+<a class="sourceLine" id="cb16-12" title="12">        (IP-SUB</a>
+<a class="sourceLine" id="cb16-13" title="13">          (NP-TRACE *T*-<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb16-14" title="14">          (NP</a>
+<a class="sourceLine" id="cb16-15" title="15">            (N napioi))))))</a>
+<a class="sourceLine" id="cb16-16" title="16">  (ID ped-gramm,<span class="fl">0.35</span>))</a></code></pre></div>
+<h4 id="after-parser-c-graphical-tree-7">AFTER — parser C — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/ped-gramm-0.35.after.svg" alt="AFTER tree for ped-gramm,0.35" /><figcaption>AFTER tree for ped-gramm,0.35</figcaption>
+</figure>
+<div style="page-break-before: always;">
+
+</div>
+<h3 id="ped-gramm0.56">ped-gramm,0.56</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset</td>
+<td>ped-gramm</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>DONE</td>
+</tr>
+<tr class="odd">
+<td>Text</td>
+<td>IiGeladi midi akiidi</td>
+</tr>
+<tr class="even">
+<td>Portuguese</td>
+<td>A casa dele/dela é no rio.</td>
+</tr>
+<tr class="odd">
+<td>A result</td>
+<td>EXACT_MATCH</td>
+</tr>
+<tr class="even">
+<td>C result</td>
+<td>STRUCTURAL_DIFFERENCE</td>
+</tr>
+</tbody>
+</table>
+<h4 id="before-parser-a-lisp-8">BEFORE — parser A — LISP</h4>
+<div class="sourceCode" id="cb17"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb17-1" title="1">(</a>
+<a class="sourceLine" id="cb17-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb17-3" title="3">    (NP-SBJ</a>
+<a class="sourceLine" id="cb17-4" title="4">      (N$ IiGeladi))</a>
+<a class="sourceLine" id="cb17-5" title="5">    (CP-me</a>
+<a class="sourceLine" id="cb17-6" title="6">      (C me@)</a>
+<a class="sourceLine" id="cb17-7" title="7">      (IP-SUB</a>
+<a class="sourceLine" id="cb17-8" title="8">        (NP</a>
+<a class="sourceLine" id="cb17-9" title="9">          (D @idi)</a>
+<a class="sourceLine" id="cb17-10" title="10">          (N akiidi)))))</a>
+<a class="sourceLine" id="cb17-11" title="11">  (ID ped-gramm,<span class="fl">0.56</span>))</a></code></pre></div>
+<h4 id="before-parser-a-graphical-tree-8">BEFORE — parser A — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/ped-gramm-0.56.before.svg" alt="BEFORE tree for ped-gramm,0.56" /><figcaption>BEFORE tree for ped-gramm,0.56</figcaption>
+</figure>
+<h4 id="after-parser-c-lisp-8">AFTER — parser C — LISP</h4>
+<div class="sourceCode" id="cb18"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb18-1" title="1">(</a>
+<a class="sourceLine" id="cb18-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb18-3" title="3">    (NP</a>
+<a class="sourceLine" id="cb18-4" title="4">      (N$ IiGeladi))</a>
+<a class="sourceLine" id="cb18-5" title="5">    (CP</a>
+<a class="sourceLine" id="cb18-6" title="6">      (CP-me</a>
+<a class="sourceLine" id="cb18-7" title="7">        (C me@)</a>
+<a class="sourceLine" id="cb18-8" title="8">        (IP-SUB</a>
+<a class="sourceLine" id="cb18-9" title="9">          (NP</a>
+<a class="sourceLine" id="cb18-10" title="10">            (D @idi)</a>
+<a class="sourceLine" id="cb18-11" title="11">            (N akiidi))))))</a>
+<a class="sourceLine" id="cb18-12" title="12">  (ID ped-gramm,<span class="fl">0.56</span>))</a></code></pre></div>
+<h4 id="after-parser-c-graphical-tree-8">AFTER — parser C — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/ped-gramm-0.56.after.svg" alt="AFTER tree for ped-gramm,0.56" /><figcaption>AFTER tree for ped-gramm,0.56</figcaption>
+</figure>
+<div style="page-break-before: always;">
+
+</div>
+<h3 id="van-data0.10">van-data,0.10</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset</td>
+<td>van-data</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>DONE</td>
+</tr>
+<tr class="odd">
+<td>Text</td>
+<td>Gawenigi eliodi me libinienigi</td>
+</tr>
+<tr class="even">
+<td>Portuguese</td>
+<td>a sua comida é muito bonita</td>
+</tr>
+<tr class="odd">
+<td>A result</td>
+<td>EXACT_MATCH</td>
+</tr>
+<tr class="even">
+<td>C result</td>
+<td>STRUCTURAL_DIFFERENCE</td>
+</tr>
+</tbody>
+</table>
+<h4 id="before-parser-a-lisp-9">BEFORE — parser A — LISP</h4>
+<div class="sourceCode" id="cb19"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb19-1" title="1">(</a>
+<a class="sourceLine" id="cb19-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb19-3" title="3">    (NP-SBJ</a>
+<a class="sourceLine" id="cb19-4" title="4">      (N$ Gawenigi))</a>
+<a class="sourceLine" id="cb19-5" title="5">    (CP-me</a>
+<a class="sourceLine" id="cb19-6" title="6">      (Q eliodi)</a>
+<a class="sourceLine" id="cb19-7" title="7">      (C me)</a>
+<a class="sourceLine" id="cb19-8" title="8">      (IP-SUB</a>
+<a class="sourceLine" id="cb19-9" title="9">        (NP</a>
+<a class="sourceLine" id="cb19-10" title="10">          (N$ libinienigi)))))</a>
+<a class="sourceLine" id="cb19-11" title="11">  (ID van-data,<span class="fl">0.10</span>))</a></code></pre></div>
+<h4 id="before-parser-a-graphical-tree-9">BEFORE — parser A — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.10.before.svg" alt="BEFORE tree for van-data,0.10" /><figcaption>BEFORE tree for van-data,0.10</figcaption>
+</figure>
+<h4 id="after-parser-c-lisp-9">AFTER — parser C — LISP</h4>
+<div class="sourceCode" id="cb20"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb20-1" title="1">(</a>
+<a class="sourceLine" id="cb20-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb20-3" title="3">    (NP</a>
+<a class="sourceLine" id="cb20-4" title="4">      (N$ Gawenigi))</a>
+<a class="sourceLine" id="cb20-5" title="5">    (CP</a>
+<a class="sourceLine" id="cb20-6" title="6">      (CP-me</a>
+<a class="sourceLine" id="cb20-7" title="7">        (Q eliodi)</a>
+<a class="sourceLine" id="cb20-8" title="8">        (C me)</a>
+<a class="sourceLine" id="cb20-9" title="9">        (IP-SUB</a>
+<a class="sourceLine" id="cb20-10" title="10">          (NP</a>
+<a class="sourceLine" id="cb20-11" title="11">            (N$ libinienigi))))))</a>
+<a class="sourceLine" id="cb20-12" title="12">  (ID van-data,<span class="fl">0.10</span>))</a></code></pre></div>
+<h4 id="after-parser-c-graphical-tree-9">AFTER — parser C — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.10.after.svg" alt="AFTER tree for van-data,0.10" /><figcaption>AFTER tree for van-data,0.10</figcaption>
+</figure>
+<div style="page-break-before: always;">
+
+</div>
+<h3 id="van-data0.14">van-data,0.14</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset</td>
+<td>van-data</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>DONE</td>
+</tr>
+<tr class="odd">
+<td>Text</td>
+<td>naGajo lomiigo nigaanigawaanigi manitaGa niwatece</td>
+</tr>
+<tr class="even">
+<td>Portuguese</td>
+<td>Aquele anzol do menino está na canoa.</td>
+</tr>
+<tr class="odd">
+<td>A result</td>
+<td>EXACT_MATCH</td>
+</tr>
+<tr class="even">
+<td>C result</td>
+<td>STRUCTURAL_DIFFERENCE</td>
+</tr>
+</tbody>
+</table>
+<h4 id="before-parser-a-lisp-10">BEFORE — parser A — LISP</h4>
+<div class="sourceCode" id="cb21"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb21-1" title="1">(</a>
+<a class="sourceLine" id="cb21-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb21-3" title="3">    (NP-SBJ</a>
+<a class="sourceLine" id="cb21-4" title="4">      (D naGajo)</a>
+<a class="sourceLine" id="cb21-5" title="5">      (N$ lomiigo)</a>
+<a class="sourceLine" id="cb21-6" title="6">      (NP</a>
+<a class="sourceLine" id="cb21-7" title="7">        (N nigaanigawaanigi)))</a>
+<a class="sourceLine" id="cb21-8" title="8">    (CP-me</a>
+<a class="sourceLine" id="cb21-9" title="9">      (C me@)</a>
+<a class="sourceLine" id="cb21-10" title="10">      (IP-SUB</a>
+<a class="sourceLine" id="cb21-11" title="11">        (NP</a>
+<a class="sourceLine" id="cb21-12" title="12">          (DAPL @anitaGa)</a>
+<a class="sourceLine" id="cb21-13" title="13">          (N niwatece)))))</a>
+<a class="sourceLine" id="cb21-14" title="14">  (ID van-data,<span class="fl">0.14</span>))</a></code></pre></div>
+<h4 id="before-parser-a-graphical-tree-10">BEFORE — parser A — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.14.before.svg" alt="BEFORE tree for van-data,0.14" /><figcaption>BEFORE tree for van-data,0.14</figcaption>
+</figure>
+<h4 id="after-parser-c-lisp-10">AFTER — parser C — LISP</h4>
+<div class="sourceCode" id="cb22"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb22-1" title="1">(</a>
+<a class="sourceLine" id="cb22-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb22-3" title="3">    (NP</a>
+<a class="sourceLine" id="cb22-4" title="4">      (D naGajo)</a>
+<a class="sourceLine" id="cb22-5" title="5">      (N$ lomiigo)</a>
+<a class="sourceLine" id="cb22-6" title="6">      (NP</a>
+<a class="sourceLine" id="cb22-7" title="7">        (N nigaanigawaanigi)))</a>
+<a class="sourceLine" id="cb22-8" title="8">    (CP</a>
+<a class="sourceLine" id="cb22-9" title="9">      (CP-me</a>
+<a class="sourceLine" id="cb22-10" title="10">        (C me@)</a>
+<a class="sourceLine" id="cb22-11" title="11">        (IP-SUB</a>
+<a class="sourceLine" id="cb22-12" title="12">          (NP</a>
+<a class="sourceLine" id="cb22-13" title="13">            (DAPL @anitaGa)</a>
+<a class="sourceLine" id="cb22-14" title="14">            (N niwatece))))))</a>
+<a class="sourceLine" id="cb22-15" title="15">  (ID van-data,<span class="fl">0.14</span>))</a></code></pre></div>
+<h4 id="after-parser-c-graphical-tree-10">AFTER — parser C — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.14.after.svg" alt="AFTER tree for van-data,0.14" /><figcaption>AFTER tree for van-data,0.14</figcaption>
+</figure>
+<div style="page-break-before: always;">
+
+</div>
+<h3 id="van-data0.18">van-data,0.18</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset</td>
+<td>van-data</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>DONE</td>
+</tr>
+<tr class="odd">
+<td>Text</td>
+<td>Eyo manitaGa nigotaGa</td>
+</tr>
+<tr class="even">
+<td>Portuguese</td>
+<td>Estou na cidade</td>
+</tr>
+<tr class="odd">
+<td>A result</td>
+<td>EXACT_MATCH</td>
+</tr>
+<tr class="even">
+<td>C result</td>
+<td>STRUCTURAL_DIFFERENCE</td>
+</tr>
+</tbody>
+</table>
+<h4 id="before-parser-a-lisp-11">BEFORE — parser A — LISP</h4>
+<div class="sourceCode" id="cb23"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb23-1" title="1">(</a>
+<a class="sourceLine" id="cb23-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb23-3" title="3">    (NP-SBJ</a>
+<a class="sourceLine" id="cb23-4" title="4">      (PRO Eyo))</a>
+<a class="sourceLine" id="cb23-5" title="5">    (CP-me</a>
+<a class="sourceLine" id="cb23-6" title="6">      (C me@)</a>
+<a class="sourceLine" id="cb23-7" title="7">      (IP-SUB</a>
+<a class="sourceLine" id="cb23-8" title="8">        (NP</a>
+<a class="sourceLine" id="cb23-9" title="9">          (DAPL @anitaGa)</a>
+<a class="sourceLine" id="cb23-10" title="10">          (N nigotaGa)))))</a>
+<a class="sourceLine" id="cb23-11" title="11">  (ID van-data,<span class="fl">0.18</span>))</a></code></pre></div>
+<h4 id="before-parser-a-graphical-tree-11">BEFORE — parser A — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.18.before.svg" alt="BEFORE tree for van-data,0.18" /><figcaption>BEFORE tree for van-data,0.18</figcaption>
+</figure>
+<h4 id="after-parser-c-lisp-11">AFTER — parser C — LISP</h4>
+<div class="sourceCode" id="cb24"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb24-1" title="1">(</a>
+<a class="sourceLine" id="cb24-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb24-3" title="3">    (NP</a>
+<a class="sourceLine" id="cb24-4" title="4">      (PRO Eyo))</a>
+<a class="sourceLine" id="cb24-5" title="5">    (CP</a>
+<a class="sourceLine" id="cb24-6" title="6">      (CP-me</a>
+<a class="sourceLine" id="cb24-7" title="7">        (C me@)</a>
+<a class="sourceLine" id="cb24-8" title="8">        (IP-SUB</a>
+<a class="sourceLine" id="cb24-9" title="9">          (NP</a>
+<a class="sourceLine" id="cb24-10" title="10">            (DAPL @anitaGa)</a>
+<a class="sourceLine" id="cb24-11" title="11">            (N nigotaGa))))))</a>
+<a class="sourceLine" id="cb24-12" title="12">  (ID van-data,<span class="fl">0.18</span>))</a></code></pre></div>
+<h4 id="after-parser-c-graphical-tree-11">AFTER — parser C — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.18.after.svg" alt="AFTER tree for van-data,0.18" /><figcaption>AFTER tree for van-data,0.18</figcaption>
+</figure>
+<div style="page-break-before: always;">
+
+</div>
+<h3 id="van-data0.61">van-data,0.61</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset</td>
+<td>van-data</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>DONE</td>
+</tr>
+<tr class="odd">
+<td>Text</td>
+<td>aGeewi mica iniKGigi</td>
+</tr>
+<tr class="even">
+<td>Portuguese</td>
+<td>não sou muito feliz (não é verdade que eu sou feliz)</td>
+</tr>
+<tr class="odd">
+<td>A result</td>
+<td>EXACT_MATCH</td>
+</tr>
+<tr class="even">
+<td>C result</td>
+<td>STRUCTURAL_DIFFERENCE</td>
+</tr>
+</tbody>
+</table>
+<h4 id="before-parser-a-lisp-12">BEFORE — parser A — LISP</h4>
+<div class="sourceCode" id="cb25"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb25-1" title="1">(</a>
+<a class="sourceLine" id="cb25-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb25-3" title="3">    (NEG aG@)</a>
+<a class="sourceLine" id="cb25-4" title="4">    (NP</a>
+<a class="sourceLine" id="cb25-5" title="5">      (PRO @ee))</a>
+<a class="sourceLine" id="cb25-6" title="6">    (ADJ @ewi)</a>
+<a class="sourceLine" id="cb25-7" title="7">    (CP-me</a>
+<a class="sourceLine" id="cb25-8" title="8">      (C me@)</a>
+<a class="sourceLine" id="cb25-9" title="9">      (IP-SUB</a>
+<a class="sourceLine" id="cb25-10" title="10">        (NP</a>
+<a class="sourceLine" id="cb25-11" title="11">          (D @ica)</a>
+<a class="sourceLine" id="cb25-12" title="12">          (N$ iniKGigi)))))</a>
+<a class="sourceLine" id="cb25-13" title="13">  (ID van-data,<span class="fl">0.61</span>))</a></code></pre></div>
+<h4 id="before-parser-a-graphical-tree-12">BEFORE — parser A — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.61.before.svg" alt="BEFORE tree for van-data,0.61" /><figcaption>BEFORE tree for van-data,0.61</figcaption>
+</figure>
+<h4 id="after-parser-c-lisp-12">AFTER — parser C — LISP</h4>
+<div class="sourceCode" id="cb26"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb26-1" title="1">(</a>
+<a class="sourceLine" id="cb26-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb26-3" title="3">    (NEG aG@)</a>
+<a class="sourceLine" id="cb26-4" title="4">    (NP</a>
+<a class="sourceLine" id="cb26-5" title="5">      (PRO @ee))</a>
+<a class="sourceLine" id="cb26-6" title="6">    (ADJ @ewi)</a>
+<a class="sourceLine" id="cb26-7" title="7">    (CP</a>
+<a class="sourceLine" id="cb26-8" title="8">      (CP-me</a>
+<a class="sourceLine" id="cb26-9" title="9">        (C me@)</a>
+<a class="sourceLine" id="cb26-10" title="10">        (IP-SUB</a>
+<a class="sourceLine" id="cb26-11" title="11">          (NP</a>
+<a class="sourceLine" id="cb26-12" title="12">            (D @ica)</a>
+<a class="sourceLine" id="cb26-13" title="13">            (N$ iniKGigi))))))</a>
+<a class="sourceLine" id="cb26-14" title="14">  (ID van-data,<span class="fl">0.61</span>))</a></code></pre></div>
+<h4 id="after-parser-c-graphical-tree-12">AFTER — parser C — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.61.after.svg" alt="AFTER tree for van-data,0.61" /><figcaption>AFTER tree for van-data,0.61</figcaption>
+</figure>
+<div style="page-break-before: always;">
+
+</div>
+<h3 id="van-data0.62">van-data,0.62</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset</td>
+<td>van-data</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>DONE</td>
+</tr>
+<tr class="odd">
+<td>Text</td>
+<td>aGeyo mica inikGigi</td>
+</tr>
+<tr class="even">
+<td>Portuguese</td>
+<td>não sou muito feliz</td>
+</tr>
+<tr class="odd">
+<td>A result</td>
+<td>EXACT_MATCH</td>
+</tr>
+<tr class="even">
+<td>C result</td>
+<td>STRUCTURAL_DIFFERENCE</td>
+</tr>
+</tbody>
+</table>
+<h4 id="before-parser-a-lisp-13">BEFORE — parser A — LISP</h4>
+<div class="sourceCode" id="cb27"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb27-1" title="1">(</a>
+<a class="sourceLine" id="cb27-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb27-3" title="3">    (NEG aG@)</a>
+<a class="sourceLine" id="cb27-4" title="4">    (NP-SBJ</a>
+<a class="sourceLine" id="cb27-5" title="5">      (PRO @eyo))</a>
+<a class="sourceLine" id="cb27-6" title="6">    (CP-me</a>
+<a class="sourceLine" id="cb27-7" title="7">      (C me@)</a>
+<a class="sourceLine" id="cb27-8" title="8">      (IP-SUB</a>
+<a class="sourceLine" id="cb27-9" title="9">        (NP</a>
+<a class="sourceLine" id="cb27-10" title="10">          (D @ica)</a>
+<a class="sourceLine" id="cb27-11" title="11">          (N$ inikGigi)))))</a>
+<a class="sourceLine" id="cb27-12" title="12">  (ID van-data,<span class="fl">0.62</span>))</a></code></pre></div>
+<h4 id="before-parser-a-graphical-tree-13">BEFORE — parser A — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.62.before.svg" alt="BEFORE tree for van-data,0.62" /><figcaption>BEFORE tree for van-data,0.62</figcaption>
+</figure>
+<h4 id="after-parser-c-lisp-13">AFTER — parser C — LISP</h4>
+<div class="sourceCode" id="cb28"><pre class="sourceCode lisp"><code class="sourceCode commonlisp"><a class="sourceLine" id="cb28-1" title="1">(</a>
+<a class="sourceLine" id="cb28-2" title="2">  (IP-MAT</a>
+<a class="sourceLine" id="cb28-3" title="3">    (NEG aG@)</a>
+<a class="sourceLine" id="cb28-4" title="4">    (NP</a>
+<a class="sourceLine" id="cb28-5" title="5">      (PRO @eyo))</a>
+<a class="sourceLine" id="cb28-6" title="6">    (CP</a>
+<a class="sourceLine" id="cb28-7" title="7">      (CP-me</a>
+<a class="sourceLine" id="cb28-8" title="8">        (C me@)</a>
+<a class="sourceLine" id="cb28-9" title="9">        (IP-SUB</a>
+<a class="sourceLine" id="cb28-10" title="10">          (NP</a>
+<a class="sourceLine" id="cb28-11" title="11">            (D @ica)</a>
+<a class="sourceLine" id="cb28-12" title="12">            (N$ inikGigi))))))</a>
+<a class="sourceLine" id="cb28-13" title="13">  (ID van-data,<span class="fl">0.62</span>))</a></code></pre></div>
+<h4 id="after-parser-c-graphical-tree-13">AFTER — parser C — graphical tree</h4>
+<figure>
+<img src="kadiweu-parser-full-test-A-to-C-DONE-review.assets/van-data-0.62.after.svg" alt="AFTER tree for van-data,0.62" /><figcaption>AFTER tree for van-data,0.62</figcaption>
+</figure>
+</body>
+</html>
