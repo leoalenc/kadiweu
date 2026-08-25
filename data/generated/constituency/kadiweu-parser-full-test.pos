@@ -133,7 +133,7 @@ text_por = Aquela comida é muito cara .
 (
   (IP-MAT
     (D NiGida)
-    (N$ niwenigi)
+    (N niwenigi)
     (Q eliodi)
     (C me)
     (VBU dakake)
@@ -956,6 +956,22 @@ text_por = A casa dele é perto do rio da cidade .
   (ID hil-data,0.67)
 )
 /*
+sentence = 68
+uid = 9527d53d-7184-4b08-8bb2-51b7fff1429d
+status = DONE
+text = nigotaGa liGeladi ipegitege akiidi
+text_por = A cidade da casa dela é perto do rio.
+*/
+(
+  (IP-MAT
+    (N$ nigotaGa)
+    (N$ liGeladi)
+    (VBAPL ipegitege)
+    (N akiidi)
+  )
+  (ID hil-data,0.68)
+)
+/*
 sentence = 69
 uid = 9669b093-f0a2-4187-9063-cec9ba4c0196
 status = DONE
@@ -1012,12 +1028,12 @@ text_por = Esta pedra , que é pesada , caiu no meu pé .
 sentence = 42
 uid = 79cb0e55-9c06-4cb1-91b3-2b5233e1678f
 status = REVIEW
-text = nigidiwa okokodi ligetedi midi niwigo libinienaGa
+text = niGidiwa okokodi ligetedi midi niwigo libinienaGa
 text_por = Estes ovos da fotografia dela estão bonitos .
 */
 (
   (IP-MAT
-    (D nigidiwa)
+    (D niGidiwa)
     (N okokodi)
     (N$ ligetedi)
     (C me@)
@@ -1074,22 +1090,6 @@ text_por = Eu estou com ele .
     (DAPL @idataGa)
   )
   (ID hil-data,0.47)
-)
-/*
-sentence = 68
-uid = 9527d53d-7184-4b08-8bb2-51b7fff1429d
-status = REVIEW
-text = nigotaGa liGeladi ipegitege akiidi
-text_por = A cidade da casa dela é perto do rio.
-*/
-(
-  (IP-MAT
-    (N nigotaGa)
-    (N$ liGeladi)
-    (VBAPL ipegitege)
-    (N akiidi)
-  )
-  (ID hil-data,0.68)
 )
 /*
 sentence = 1
@@ -1625,6 +1625,23 @@ text_por = A casa do João é suja.
   (ID ped-gramm,0.46)
 )
 /*
+sentence = 47
+uid = ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec
+status = DONE
+text = liGeladi ipegitege niweiigi nigotaGa .
+text_por = A casa dele/dela é perto da cidade da lagoa.
+*/
+(
+  (IP-MAT
+    (N$ liGeladi)
+    (VBAPL ipegitege)
+    (N niweiigi)
+    (N$ nigotaGa)
+    (PUNC .)
+  )
+  (ID ped-gramm,0.47)
+)
+/*
 sentence = 48
 uid = 8b1a9983-4dfd-49e8-9285-92c56c84b652
 status = DONE
@@ -2049,23 +2066,6 @@ text_por = A casa do João é suja.
   (ID ped-gramm,0.45)
 )
 /*
-sentence = 47
-uid = ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec
-status = REVIEW
-text = liGeladi ipegitege niweiigi nigotaGa .
-text_por = A casa dele/dela é perto da cidade da lagoa.
-*/
-(
-  (IP-MAT
-    (N$ liGeladi)
-    (VBAPL ipegitege)
-    (N$ niweiigi)
-    (N$ nigotaGa)
-    (PUNC .)
-  )
-  (ID ped-gramm,0.47)
-)
-/*
 sentence = 1
 uid = a7e338a1-5403-40d4-b169-c840cf193aae
 status = DONE
@@ -2216,6 +2216,24 @@ text_por = aquela comida dela é bonita
     (N$ libinienigi)
   )
   (ID van-data,0.11)
+)
+/*
+sentence = 12
+uid = a1e15803-1e5e-481f-8137-a84beac6cbcc
+status = DONE
+text = niGida niwenigi daGaxa me dakake loojedi
+text_por = aquela comida é muito cara
+*/
+(
+  (IP-MAT
+    (D niGida)
+    (N niwenigi)
+    (Q daGaxa)
+    (C me)
+    (VBU dakake)
+    (N$ loojedi)
+  )
+  (ID van-data,0.12)
 )
 /*
 sentence = 13
@@ -2642,6 +2660,23 @@ text_por = este leite está quente
   (ID van-data,0.41)
 )
 /*
+sentence = 43
+uid = a2910ce3-a0d2-4eac-bcc3-2da15db88b90
+status = DONE
+text = ijo niwigo libinienigi ijowa nigetedi
+text_por = estes ovos da fotografia dela estão bonitos
+*/
+(
+  (IP-MAT
+    (D ijo)
+    (N niwigo)
+    (N$ libinienigi)
+    (D ijowa)
+    (N$ nigetedi)
+  )
+  (ID van-data,0.43)
+)
+/*
 sentence = 44
 uid = 075356e6-f89c-4d83-b001-435d13b319dc
 status = DONE
@@ -2798,6 +2833,38 @@ text_por = eu não estou muito feliz
   (ID van-data,0.55)
 )
 /*
+sentence = 56
+uid = d3095a7e-477d-405e-9ea2-85bfdacad7d3
+status = DONE
+text = aGica daGa jipegitege
+text_por = eu não estou perto dela
+*/
+(
+  (IP-MAT
+    (NEG aG@)
+    (D @ica)
+    (C daGa)
+    (VBAPL jipegitege)
+  )
+  (ID van-data,0.56)
+)
+/*
+sentence = 57
+uid = 813f2ad7-42fb-4fbd-84b4-1957c68aa4f9
+status = DONE
+text = aGica daGa jipegitegi
+text_por = eu não estou perto dele
+*/
+(
+  (IP-MAT
+    (NEG aG@)
+    (D @ica)
+    (C daGa)
+    (VBAPL jipegitegi)
+  )
+  (ID van-data,0.57)
+)
+/*
 sentence = 58
 uid = b3c03f67-7664-43b7-9de8-b5243321eeb7
 status = DONE
@@ -2918,6 +2985,23 @@ text_por = estamos perto de vocês
   (ID van-data,0.65)
 )
 /*
+sentence = 66
+uid = fbae0277-3aad-4812-9229-94179b5a97a0
+status = DONE
+text = aGidejonaGa midi Godoigi
+text_por = não estamos na comunidade
+*/
+(
+  (IP-MAT
+    (NEG aG@)
+    (VB @idejonaGa)
+    (C me@)
+    (D @idi)
+    (N$ Godoigi)
+  )
+  (ID van-data,0.66)
+)
+/*
 sentence = 67
 uid = 6599689a-3fbe-4598-8827-78aceeff3931
 status = DONE
@@ -2995,6 +3079,39 @@ text_por = os filhos da Maria são bonitos
   (ID van-data,0.71)
 )
 /*
+sentence = 72
+uid = b97e5b2f-d0da-4238-8ee6-2c64ded91f76
+status = DONE
+text = ijowa leonigipi iwaalo idi metaGa
+text_por = os filhos da mulher estão com ele
+*/
+(
+  (IP-MAT
+    (D ijowa)
+    (N$ leonigipi)
+    (N iwaalo)
+    (D idi)
+    (CAPL metaGa)
+  )
+  (ID van-data,0.72)
+)
+/*
+sentence = 73
+uid = c1b350df-ed1a-4e3b-89a8-a6fa9ca8382e
+status = DONE
+text = ligeladi ipegitege niweiigi nigotaGa
+text_por = a casa dela é perto da cidade do rio
+*/
+(
+  (IP-MAT
+    (N$ ligeladi)
+    (VBAPL ipegitege)
+    (N niweiigi)
+    (N$ nigotaGa)
+  )
+  (ID van-data,0.73)
+)
+/*
 sentence = 74
 uid = ebff5ffa-8a9d-4f8b-9960-38f70b344c19
 status = DONE
@@ -3006,7 +3123,7 @@ text_por = a casa dele é perto do rio da cidade
     (N$ ligeladi)
     (VBAPL ipegitegi)
     (N$ niweiigi)
-    (N$ nigotaGa)
+    (N nigotaGa)
   )
   (ID van-data,0.74)
 )
@@ -3044,39 +3161,22 @@ text_por = a canoa pesada barata está na lagoa
   (ID van-data,0.9)
 )
 /*
-sentence = 12
-uid = a1e15803-1e5e-481f-8137-a84beac6cbcc
-status = REVIEW
-text = niGida niwenigi daGaxa me dakake loojedi
-text_por = aquela comida é muito cara
-*/
-(
-  (IP-MAT
-    (D niGida)
-    (N$ niwenigi)
-    (Q daGaxa)
-    (C me)
-    (VBU dakake)
-    (N$ loojedi)
-  )
-  (ID van-data,0.12)
-)
-/*
 sentence = 15
 uid = 4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7
 status = REVIEW
-text = Ijo nigaanigawaanigi idei madi lomiigo niwatece
-text_por = [?] O menino está na canoa do azol.
+text = Nigaanigawaanigi idei madi niwatece ane adi nomiigo
+text_por = O menino está na canoa que (tem) o anzol
 */
 (
   (IP-MAT
-    (D Ijo)
-    (N nigaanigawaanigi)
+    (N Nigaanigawaanigi)
     (VB idei)
     (C me@)
     (D @adi)
-    (N$ lomiigo)
     (N$ niwatece)
+    (WPRO ane)
+    (D adi)
+    (N nomiigo)
   )
   (ID van-data,0.15)
 )
@@ -3115,23 +3215,6 @@ text_por = estes ovos da fotografia dela estão bonitos
   (ID van-data,0.42)
 )
 /*
-sentence = 43
-uid = a2910ce3-a0d2-4eac-bcc3-2da15db88b90
-status = REVIEW
-text = ijo niwigo libinienigi ijowa nigetedi
-text_por = estes ovos da fotografia dela estão bonitos
-*/
-(
-  (IP-MAT
-    (D ijo)
-    (N$ niwigo)
-    (N$ libinienigi)
-    (D ijowa)
-    (N$ nigetedi)
-  )
-  (ID van-data,0.43)
-)
-/*
 sentence = 45
 uid = 5739aca1-95fc-4584-9550-d7bd73c3c361
 status = REVIEW
@@ -3166,88 +3249,4 @@ text_por = A fotografia dos ovos (da galinha) é bonita.
     (PUNC .)
   )
   (ID van-data,0.46)
-)
-/*
-sentence = 56
-uid = d3095a7e-477d-405e-9ea2-85bfdacad7d3
-status = REVIEW
-text = aGica daGa jipegitege
-text_por = eu não estou perto dela
-*/
-(
-  (IP-MAT
-    (NEG aG@)
-    (D @ica)
-    (C daGa)
-    (VBAPL jipegitege)
-  )
-  (ID van-data,0.56)
-)
-/*
-sentence = 57
-uid = 813f2ad7-42fb-4fbd-84b4-1957c68aa4f9
-status = REVIEW
-text = aGica daGa jipegitegi
-text_por = eu não estou perto dele
-*/
-(
-  (IP-MAT
-    (NEG aG@)
-    (D @ica)
-    (C daGa)
-    (VBAPL jipegitegi)
-  )
-  (ID van-data,0.57)
-)
-/*
-sentence = 66
-uid = fbae0277-3aad-4812-9229-94179b5a97a0
-status = REVIEW
-text = aGide jonaGa midi Godoigi
-text_por = não estamos na comunidade
-*/
-(
-  (IP-MAT
-    (NEG aG@)
-    (VB @idedonaGa)
-    (EV one@)
-    (T @jaGa)
-    (C me@)
-    (D @idi)
-    (N$ Godoigi)
-  )
-  (ID van-data,0.66)
-)
-/*
-sentence = 72
-uid = b97e5b2f-d0da-4238-8ee6-2c64ded91f76
-status = REVIEW
-text = ijowa leonigipi iwaalo idi metaGa
-text_por = os filhos da mulher estão com ele
-*/
-(
-  (IP-MAT
-    (D ijowa)
-    (N$ leonigipi)
-    (N iwaalo)
-    (D idi)
-    (CAPL metaGa)
-  )
-  (ID van-data,0.72)
-)
-/*
-sentence = 73
-uid = c1b350df-ed1a-4e3b-89a8-a6fa9ca8382e
-status = REVIEW
-text = ligeladi ipegitege niweiigi nigotaGa
-text_por = a casa dela é perto do rio da cidade
-*/
-(
-  (IP-MAT
-    (N$ ligeladi)
-    (VBAPL ipegitege)
-    (N$ niweiigi)
-    (N$ nigotaGa)
-  )
-  (ID van-data,0.73)
 )

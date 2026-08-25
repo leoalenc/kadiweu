@@ -1,0 +1,20 @@
+stopping after original TBP rule 6 (np-prenominal-possessor-determiner)
+[001/006] TBP 1: np-prenominal-possessor-noun
+[002/006] TBP 2: np-d-n
+[003/006] TBP 3: np-bare-noun
+[004/006] TBP 4: np-postnominal-possessor
+[005/006] TBP 5: np-prenominal-possessor
+[006/006] TBP 6: np-prenominal-possessor-determiner
+
+Comparison summary:
+struct_status  exact  trace_equivalent  structural_difference  total
+DONE              53                 0                    130    183
+TOTAL             53                 0                    130    183
+
+Comparison summary by dataset × struct_status:
+dataset    struct_status  exact  trace_equivalent  structural_difference  total
+hil-data   DONE              23                 0                     42     65
+ped-gramm  DONE              15                 0                     34     49
+van-data   DONE              15                 0                     54     69
+comparison report written to /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-done-kadiweu_toy_parser_rules_possession_v2-through-rule-6-comparison.tsv
+FAIL: 130 structural difference(s) written to /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-done-kadiweu_toy_parser_rules_possession_v2-through-rule-6.diff

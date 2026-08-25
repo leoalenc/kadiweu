@@ -1,0 +1,9 @@
+203cbbd8b22e623a2ce6b52284e68793874c6d425b4a27ca5c28b793aac4533a  ../tests/corpussearch-toy-parser/kadiweu_toy_parser_rules_root.txt
+30bb0817699d6d839ac5c7547a698915dcf55c7cc4af6e981f86daaaca6bfb5b  /home/leonel/kadiweu/tests/corpussearch-toy-parser/kadiweu-toy-parser.pos
+f23053f856cb3b9061f4828821108590d1c399b443e08004cece733a70b2df03  /home/leonel/kadiweu/tests/corpussearch-toy-parser/kadiweu-toy-parser.gold.psd
+bf9cf092da6f17407b88d2b8b637c8e8db2174a93225190a2046c5d96a14a332  /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-kadiweu_toy_parser_rules_root-through-rule-3.psd
+3f64ebce1fa78b1a4d834a1a140bc655582dd0df7b11fe95894bc8979f63224a  /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-kadiweu_toy_parser_rules_root-through-rule-3-comparison.tsv
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-kadiweu_toy_parser_rules_root-through-rule-3.diff
+863e5f12869d35146516fe3ca1f8d2e49723cf9a4024b7f05b6f83782958220e  /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-kadiweu_toy_parser_rules_root-through-rule-3-run.tsv
+08c509095fcb04d69968d1d232a8c6ec7e36bb8d3508adeaec66282f5f410704  /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-kadiweu_toy_parser_rules_root-through-rule-3-summary.tsv
+8840bc9a700958775eb2dd6d43530750a588744d44083ffd130a4c8d6c439c13  /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-kadiweu_toy_parser_rules_root-through-rule-3-console.log

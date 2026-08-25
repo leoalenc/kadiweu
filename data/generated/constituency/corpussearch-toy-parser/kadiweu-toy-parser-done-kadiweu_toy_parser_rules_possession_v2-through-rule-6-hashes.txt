@@ -1,0 +1,9 @@
+5e9086559410488875d874469151b4497f7528cfdcddb23e8241a90b15a90fbd  ../tests/corpussearch-toy-parser/kadiweu_toy_parser_rules_possession_v2.txt
+5fbe0fbd83d9abc788664a32ad087f8ef5d79ea49316f7fa5aa635ef7f3b9eac  ../data/generated/constituency/kadiweu-parser-done.pos
+7bfd691f34215abffe3dd0e1fe3d68ec2c21fef46130cc08b59d7a2dbf0dface  ../data/generated/constituency/kadiweu-parser-done.gold.psd
+09279c15f2ae89393aca74416f34cca4fcaeb5d8ba3bacbef06b0c5bb4dbc140  /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-done-kadiweu_toy_parser_rules_possession_v2-through-rule-6.psd
+4cf77913b6688a195df95bdd483eca1fa5a3983ae21de849d48e2ca13c0dc37e  /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-done-kadiweu_toy_parser_rules_possession_v2-through-rule-6-comparison.tsv
+9d3b16c4d7c626b547f5fab3b0d768e2c1c95ee40819a5de370e91e184d15901  /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-done-kadiweu_toy_parser_rules_possession_v2-through-rule-6.diff
+9d5bd725689f1a0beb4a3aa6366624cdbd51b14673a01da8dc97fc786ebeba51  /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-done-kadiweu_toy_parser_rules_possession_v2-through-rule-6-run.tsv
+fc3b453f065b321681e7c80a3b85cd466323111152dfd94162228ac5b74801d3  /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-done-kadiweu_toy_parser_rules_possession_v2-through-rule-6-summary.tsv
+733ae6be06ee163c1dbb8c92244d0c4d1da3a69a49195b6143b41ef08e3f76a0  /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-done-kadiweu_toy_parser_rules_possession_v2-through-rule-6-console.log

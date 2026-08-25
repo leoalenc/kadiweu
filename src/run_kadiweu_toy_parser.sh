@@ -12,7 +12,7 @@ readonly EXPECTED_REVIEW_SENTENCES=0
 
 usage() {
     cat >&2 <<EOF
-Usage: ${0##*/} [--rules FILE] [all|LAST_RULE]
+Usage: ${0##*/} [--rules FILE] [--input FILE] [--gold FILE] [all|LAST_RULE]
 
 Run the toy parser through LAST_RULE:
   ${0##*/}                         run all rules from the default file
@@ -21,9 +21,13 @@ Run the toy parser through LAST_RULE:
   ${0##*/} 1                       run only rule 1 from the default file
   ${0##*/} --rules FILE all        run all rules from FILE
   ${0##*/} --rules FILE 2          run rules 1 and 2 from FILE
+  ${0##*/} --input POS --gold PSD all
+                                    run all rules on another aligned corpus
 
 Options:
   -r, --rules FILE   use an alternative toy-parser rule file
+  -i, --input FILE   use an alternative flat POS input file
+  -g, --gold FILE    compare with an alternative aligned gold PSD file
   -h, --help         show this help
 EOF
 }
@@ -40,6 +44,10 @@ OUT_DIR="$PROJECT_ROOT/data/generated/constituency/corpussearch-toy-parser"
 DEFAULT_RULES="$TEST_DIR/kadiweu_toy_parser_rules.txt"
 
 RULES="${RULES:-$DEFAULT_RULES}"
+DEFAULT_INPUT="$TEST_DIR/kadiweu-toy-parser.pos"
+DEFAULT_GOLD="$TEST_DIR/kadiweu-toy-parser.gold.psd"
+INPUT="${INPUT:-$DEFAULT_INPUT}"
+GOLD="${GOLD:-$DEFAULT_GOLD}"
 requested_run="all"
 run_argument_seen=false
 
@@ -53,6 +61,26 @@ while [[ "$#" -gt 0 ]]; do
         --rules=*)
             RULES="${1#*=}"
             [[ -n "$RULES" ]] || die "--rules requires a nonempty file path"
+            shift
+            ;;
+        -i|--input)
+            [[ "$#" -ge 2 ]] || die "$1 requires a file path"
+            INPUT="$2"
+            shift 2
+            ;;
+        --input=*)
+            INPUT="${1#*=}"
+            [[ -n "$INPUT" ]] || die "--input requires a nonempty file path"
+            shift
+            ;;
+        -g|--gold)
+            [[ "$#" -ge 2 ]] || die "$1 requires a file path"
+            GOLD="$2"
+            shift 2
+            ;;
+        --gold=*)
+            GOLD="${1#*=}"
+            [[ -n "$GOLD" ]] || die "--gold requires a nonempty file path"
             shift
             ;;
         -h|--help)
@@ -98,8 +126,6 @@ fi
 readonly STOP_AFTER_RULE
 
 RUNNER="${RUNNER:-$SRC_DIR/run_kadiweu_parser_rules.py}"
-INPUT="${INPUT:-$TEST_DIR/kadiweu-toy-parser.pos}"
-GOLD="${GOLD:-$TEST_DIR/kadiweu-toy-parser.gold.psd}"
 CORPUSSEARCH="${CORPUSSEARCH:-corpussearch}"
 
 rules_filename="${RULES##*/}"
@@ -107,11 +133,20 @@ rules_stem="${rules_filename%.*}"
 rules_label="$(printf '%s' "$rules_stem" | tr -cs '[:alnum:]_.-' '-')"
 [[ -n "$rules_label" ]] || rules_label="rules"
 
-if [[ "$RULES" == "$DEFAULT_RULES" ]]; then
-    ARTIFACT_PREFIX="$OUT_DIR/kadiweu-toy-parser-through-rule-$STOP_AFTER_RULE"
+input_filename="${INPUT##*/}"
+input_stem="${input_filename%.pos}"
+if [[ "$INPUT" == "$DEFAULT_INPUT" ]]; then
+    corpus_label=""
 else
-    ARTIFACT_PREFIX="$OUT_DIR/kadiweu-toy-parser-$rules_label-through-rule-$STOP_AFTER_RULE"
+    corpus_label="${input_stem#kadiweu-parser-}"
+    corpus_label="$(printf '%s' "$corpus_label" | tr -cs '[:alnum:]_.-' '-')"
+    [[ -n "$corpus_label" ]] || corpus_label="custom-input"
 fi
+
+ARTIFACT_PREFIX="$OUT_DIR/kadiweu-toy-parser"
+[[ -z "$corpus_label" ]] || ARTIFACT_PREFIX+="-$corpus_label"
+[[ "$RULES" == "$DEFAULT_RULES" ]] || ARTIFACT_PREFIX+="-$rules_label"
+ARTIFACT_PREFIX+="-through-rule-$STOP_AFTER_RULE"
 OUTPUT="$ARTIFACT_PREFIX.psd"
 COMPARISON="$ARTIFACT_PREFIX-comparison.tsv"
 DIFF="$ARTIFACT_PREFIX.diff"
@@ -148,11 +183,29 @@ else
     printf 'Experimental rules: %s\n' "$RULES"
     printf 'Experimental rules SHA-256: %s\n' "$rules_hash"
 fi
-[[ "$(actual_sha256 "$INPUT")" == "$EXPECTED_INPUT_SHA256" ]] \
-    || die "toy-parser POS input hash mismatch"
-[[ "$(actual_sha256 "$GOLD")" == "$EXPECTED_GOLD_SHA256" ]] \
-    || die "toy-parser gold hash mismatch"
-printf 'Toy-parser POS input and gold hashes: OK\n'
+if [[ "$INPUT" == "$DEFAULT_INPUT" && "$GOLD" == "$DEFAULT_GOLD" ]]; then
+    [[ "$(actual_sha256 "$INPUT")" == "$EXPECTED_INPUT_SHA256" ]] \
+        || die "toy-parser POS input hash mismatch"
+    [[ "$(actual_sha256 "$GOLD")" == "$EXPECTED_GOLD_SHA256" ]] \
+        || die "toy-parser gold hash mismatch"
+    EXPECTED_SENTENCE_COUNT="$EXPECTED_SENTENCES"
+    printf 'Toy-parser POS input and gold hashes: OK\n'
+else
+    input_hash="$(actual_sha256 "$INPUT")"
+    gold_hash="$(actual_sha256 "$GOLD")"
+    EXPECTED_SENTENCE_COUNT="$(awk '/\(ID[[:space:]]/ {count++} END {print count + 0}' "$GOLD")"
+    [[ "$EXPECTED_SENTENCE_COUNT" -gt 0 ]] \
+        || die "no (ID ...) records found in gold file: $GOLD"
+    input_sentence_count="$(awk '/\(ID[[:space:]]/ {count++} END {print count + 0}' "$INPUT")"
+    [[ "$input_sentence_count" -eq "$EXPECTED_SENTENCE_COUNT" ]] \
+        || die "input/gold record-count mismatch: $input_sentence_count versus $EXPECTED_SENTENCE_COUNT"
+    printf 'Alternative POS input: %s\n' "$INPUT"
+    printf 'Alternative POS SHA-256: %s\n' "$input_hash"
+    printf 'Alternative gold: %s\n' "$GOLD"
+    printf 'Alternative gold SHA-256: %s\n' "$gold_hash"
+    printf 'Aligned records: %s\n' "$EXPECTED_SENTENCE_COUNT"
+fi
+readonly EXPECTED_SENTENCE_COUNT
 
 if ! EXPECTED_EXECUTED_RULES="$(
     python3 - "$RULES" "$STOP_AFTER_RULE" <<'PY'
@@ -219,12 +272,12 @@ done
 
 comparison_rows="$(awk 'END {print NR - 1}' "$COMPARISON")"
 rule_rows="$(awk 'END {print NR - 1}' "$RULE_LOG")"
-[[ "$comparison_rows" -eq "$EXPECTED_SENTENCES" ]] \
-    || die "expected $EXPECTED_SENTENCES comparison rows; found $comparison_rows"
+[[ "$comparison_rows" -eq "$EXPECTED_SENTENCE_COUNT" ]] \
+    || die "expected $EXPECTED_SENTENCE_COUNT comparison rows; found $comparison_rows"
 [[ "$rule_rows" -eq "$EXPECTED_EXECUTED_RULES" ]] \
     || die "expected $EXPECTED_EXECUTED_RULES executed-rule rows; found $rule_rows"
 
-python3 - "$COMPARISON" "$SUMMARY" "$EXPECTED_SENTENCES" "$STOP_AFTER_RULE" <<'PY'
+python3 - "$COMPARISON" "$SUMMARY" "$EXPECTED_SENTENCE_COUNT" "$STOP_AFTER_RULE" <<'PY'
 import csv
 import sys
 from collections import Counter
@@ -244,15 +297,19 @@ if not rows or not required.issubset(rows[0]):
 if len(rows) != expected:
     raise SystemExit(f"expected {expected} comparison rows; found {len(rows)}")
 if len({row["sentence_id"] for row in rows}) != expected:
-    raise SystemExit("comparison report does not contain six unique IDs")
-if any(row["struct_status"] != "DONE" for row in rows):
-    raise SystemExit("all toy-suite records must have status DONE")
+    raise SystemExit(f"comparison report does not contain {expected} unique IDs")
 
+status_counts = Counter(row["struct_status"] for row in rows)
 counts = Counter(row["result"] for row in rows)
+status_label = (
+    next(iter(status_counts))
+    if len(status_counts) == 1
+    else "+".join(f"{status}={count}" for status, count in sorted(status_counts.items()))
+)
 lines = [
     "struct_status\texact\ttrace_equivalent\tstructural_difference\ttotal",
     "\t".join(map(str, (
-        "DONE",
+        status_label,
         counts["EXACT_MATCH"],
         counts["TRACE_EQUIVALENT"],
         counts["STRUCTURAL_DIFFERENCE"],
@@ -289,8 +346,12 @@ sha256sum \
 printf '\nToy parser through rule %s completed successfully.\n' "$STOP_AFTER_RULE"
 printf '  Emulator exit status: %s\n' "$runner_status"
 printf '  Executed rules: %s\n' "$rule_rows"
-printf '  Compared sentences: %s (DONE=%s; REVIEW=%s)\n' \
-    "$comparison_rows" "$EXPECTED_DONE_SENTENCES" "$EXPECTED_REVIEW_SENTENCES"
+if [[ "$INPUT" == "$DEFAULT_INPUT" && "$GOLD" == "$DEFAULT_GOLD" ]]; then
+    printf '  Compared sentences: %s (DONE=%s; REVIEW=%s)\n' \
+        "$comparison_rows" "$EXPECTED_DONE_SENTENCES" "$EXPECTED_REVIEW_SENTENCES"
+else
+    printf '  Compared sentences: %s\n' "$comparison_rows"
+fi
 printf '  Run directory: %s\n' "$RUN_DIR"
 printf '  Output: %s\n' "$OUTPUT"
 printf '  Comparison: %s\n' "$COMPARISON"

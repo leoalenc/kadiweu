@@ -1,0 +1,15 @@
+stopping after original TBP rule 1 (np-d-n)
+[001/001] TBP 1: np-d-n
+
+Comparison summary:
+struct_status  exact  trace_equivalent  structural_difference  total
+DONE               2                 0                      4      6
+TOTAL              2                 0                      4      6
+
+Comparison summary by dataset × struct_status:
+dataset    struct_status  exact  trace_equivalent  structural_difference  total
+hil-data   DONE               1                 0                      0      1
+ped-gramm  DONE               0                 0                      2      2
+van-data   DONE               1                 0                      2      3
+comparison report written to /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-kadiweu_toy_parser_rules_root-through-rule-1-comparison.tsv
+FAIL: 4 structural difference(s) written to /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-kadiweu_toy_parser_rules_root-through-rule-1.diff

@@ -1,0 +1,217 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Mon Aug 24 22:26:16 BRT 2026
+
+command file:     kadiweu-npsbj-d-nposs.q
+output file:      kadiweu-npsbj-d-nposs.out
+
+node:   NP-SBJ*
+query:  (D hasSister  N$) 
+*/
+/*
+HEADER:
+source file:  kadiweu-parser-done.gold.psd
+*/
+
+/~*
+NiGijo liwenigi libinienigi
+(hil-data,0.8)
+*~/
+/*
+2 NP-SBJ:  3 D, 5 N$
+*/
+( (IP-MAT (NP-SBJ (D NiGijo) (N$ liwenigi))
+	  (NP-PRD (N$ libinienigi)))
+  (ID hil-data,0.8))
+
+/~*
+NaGajo lomigo niganigawanigi me@ @adi niwatece
+(hil-data,0.11)
+*~/
+/*
+2 NP-SBJ:  3 D, 5 N$
+*/
+
+( (IP-MAT (NP-SBJ (D NaGajo)
+		  (N$ lomigo)
+		  (NP (N niganigawanigi)))
+	  (CP-me (C me@)
+		 (IP-SUB (NP (D @adi) (N$ niwatece)))))
+  (ID hil-data,0.11))
+
+/~*
+niGidiwa okokodi ligetedi liwigo libinienaGa
+(hil-data,0.43)
+*~/
+/*
+2 NP-SBJ:  3 D, 8 N$
+*/
+
+( (IP-MAT (NP-SBJ (D niGidiwa)
+		  (NP (N okokodi))
+		  (N$ ligetedi)
+		  (NP (N$ liwigo)))
+	  (NP-PRD (N$ libinienaGa)))
+  (ID hil-data,0.43))
+
+/~*
+Nigijoa lianaGa Maria libinienigipi
+(hil-data,0.64)
+*~/
+/*
+2 NP-SBJ:  3 D, 5 N$
+*/
+
+( (IP-MAT (NP-SBJ (D Nigijoa)
+		  (N$ lianaGa)
+		  (NP (NPR Maria)))
+	  (NP-PRD (N$ libinienigipi)))
+  (ID hil-data,0.64))
+
+/~*
+ica looligi lidi
+(ped-gramm,0.12)
+*~/
+/*
+2 NP-SBJ:  3 D, 5 N$
+*/
+
+( (IP-MAT (NP-SBJ (D ica) (N$ looligi))
+	  (NP-PRD (N$ lidi)))
+  (ID ped-gramm,0.12))
+
+/~*
+ica looligi lideGegi
+(ped-gramm,0.15)
+*~/
+/*
+2 NP-SBJ:  3 D, 5 N$
+*/
+
+( (IP-MAT (NP-SBJ (D ica) (N$ looligi))
+	  (NP-PRD (N$ lideGegi)))
+  (ID ped-gramm,0.15))
+
+/~*
+ica liwigo libinienigi
+(ped-gramm,0.19)
+*~/
+/*
+2 NP-SBJ:  3 D, 5 N$
+*/
+
+( (IP-MAT (NP-SBJ (D ica) (N$ liwigo))
+	  (NP-PRD (N$ libinienigi)))
+  (ID ped-gramm,0.19))
+
+/~*
+ica nioladi nioxoa libinienigi
+(ped-gramm,0.22)
+*~/
+/*
+2 NP-SBJ:  3 D, 5 N$
+*/
+
+( (IP-MAT (NP-SBJ (D ica)
+		  (N$ nioladi)
+		  (NP (N$ nioxoa)))
+	  (NP-PRD (N$ libinienigi)))
+  (ID ped-gramm,0.22))
+
+/~*
+ica nioladi lodawa libinienigi
+(ped-gramm,0.23)
+*~/
+/*
+2 NP-SBJ:  3 D, 5 N$
+*/
+
+( (IP-MAT (NP-SBJ (D ica)
+		  (N$ nioladi)
+		  (NP (N$ lodawa)))
+	  (NP-PRD (N$ libinienigi)))
+  (ID ped-gramm,0.23))
+
+/~*
+niGida liwenigi libinienigi
+(van-data,0.11)
+*~/
+/*
+2 NP-SBJ:  3 D, 5 N$
+*/
+
+( (IP-MAT (NP-SBJ (D niGida) (N$ liwenigi))
+	  (NP-PRD (N$ libinienigi)))
+  (ID van-data,0.11))
+
+/~*
+naGajo lomiigo nigaanigawaanigi me@ @anitaGa niwatece
+(van-data,0.14)
+*~/
+/*
+2 NP-SBJ:  3 D, 5 N$
+*/
+
+( (IP-MAT (NP-SBJ (D naGajo)
+		  (N$ lomiigo)
+		  (NP (N nigaanigawaanigi)))
+	  (CP-me (C me@)
+		 (IP-SUB (NP (DAPL @anitaGa) (N niwatece)))))
+  (ID van-data,0.14))
+
+/~*
+niGijo lodaajo ajo lodowa aG@ @ica digoida liGeladi
+(van-data,0.30)
+*~/
+/*
+2 NP-SBJ:  3 D, 5 N$
+2 NP-SBJ:  8 D, 10 N$
+*/
+
+( (IP-MAT (NP-SBJ (D niGijo)
+		  (N$ lodaajo)
+		  (NP (D ajo) (N$ lodowa)))
+	  (NEG aG@)
+	  (NP-PRD (Q @ica) (D digoida) (N$ liGeladi)))
+  (ID van-data,0.30))
+
+/~*
+ica liwigo niganigawanigi libinienigi
+(van-data,0.31)
+*~/
+/*
+2 NP-SBJ:  3 D, 5 N$
+*/
+
+( (IP-MAT (NP-SBJ (D ica)
+		  (N$ liwigo)
+		  (NP (N niganigawanigi)))
+	  (NP-PRD (N$ libinienigi)))
+  (ID van-data,0.31))
+
+/~*
+ijo niwigo libinienigi ijowa nigetedi
+(van-data,0.43)
+*~/
+/*
+2 NP-SBJ:  3 D, 8 N$
+*/
+
+( (IP-MAT (NP-SBJ (D ijo)
+		  (NP (N niwigo))
+		  (N$ libinienigi))
+	  (NP-PRD (D ijowa) (N$ nigetedi)))
+  (ID van-data,0.43))
+/*
+FOOTER
+  source file, hits/tokens/total
+  kadiweu-parser-done.gold.psd	14/14/183
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  kadiweu-parser-done.gold.psd	14/14/183
+whole search, hits/tokens/total
+		14/14/183
+*/

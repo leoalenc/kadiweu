@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run Stage 4: accepted compatible parser version A over the frozen full test.
+# Run parser A over the frozen full test.
 
 set -euo pipefail
 
@@ -156,8 +156,16 @@ for status in [*statuses, "TOTAL"]:
     )
 
 summary.write_text("\n".join(lines) + "\n", encoding="utf-8")
-print("\nStage 4 comparison summary:")
-print(summary.read_text(encoding="utf-8"), end="")
+
+table = [line.split("\t") for line in lines]
+widths = [max(len(row[column]) for row in table) for column in range(len(table[0]))]
+
+print("\nParser A comparison with gold:")
+for row in table:
+    print("  ".join(
+        value.ljust(widths[column]) if column == 0 else value.rjust(widths[column])
+        for column, value in enumerate(row)
+    ))
 PY
 
 sha256sum \
@@ -173,7 +181,7 @@ sha256sum \
     "$CONSOLE_LOG" \
     > "$HASHES"
 
-printf '\nStage 4 completed successfully.\n'
+printf '\nParser A experiment completed successfully.\n'
 printf '  Emulator exit status: %s\n' "$runner_status"
 printf '  Executed rules: %s (TBP rules 77 and 122 skipped)\n' "$rule_rows"
 printf '  Compared sentences: %s\n' "$comparison_rows"

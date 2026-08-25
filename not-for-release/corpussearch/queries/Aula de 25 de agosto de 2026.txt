@@ -1,0 +1,22 @@
+Aula de 25 de agosto de 2026
+
+CorpusSearch
+
+Por que usar o CorpusSearch no terminal?
+
+- CLI: command-line interface (interface textual): FOSS (free open-source software) de LC & NLP - terminal (shell, por exemplo, (Unix) bash shell)
+
+- processamento em lote (automatização): scripts (Python + bash)
+
+comando1 | comando2 | comando3 ... | comando_n > output.txt (output.tsv)
+
+| pipe
+
+pipeline 
+
+NP
+NP-APL
+NP-SBJ
+NP-ACC
+
+JSON

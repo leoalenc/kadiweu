@@ -1,0 +1,172 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Mon Aug 24 22:31:35 BRT 2026
+
+command file:     kadiweu-cp-me.q
+output file:      kadiweu-cp-me.out
+
+node:   CP-me
+query:  (D hasSister  N*) 
+*/
+/*
+HEADER:
+source file:  kadiweu-parser-done.gold.psd
+*/
+
+/~*
+NaGajo lomigo Pedilo idei me@ @adi niwatece
+(hil-data,0.10)
+*~/
+/*
+12 CP-me:  17 D, 19 N$
+*/
+( (IP-MAT (NP (D NaGajo)
+	      (N$ lomigo)
+	      (NP (NPR Pedilo)))
+	  (VB idei)
+	  (CP-me (C me@)
+		 (IP-SUB (NP (D @adi) (N$ niwatece)))))
+  (ID hil-data,0.10))
+
+/~*
+NaGajo lomigo niganigawanigi me@ @adi niwatece
+(hil-data,0.11)
+*~/
+/*
+10 CP-me:  15 D, 17 N$
+*/
+
+( (IP-MAT (NP-SBJ (D NaGajo)
+		  (N$ lomigo)
+		  (NP (N niganigawanigi)))
+	  (CP-me (C me@)
+		 (IP-SUB (NP (D @adi) (N$ niwatece)))))
+  (ID hil-data,0.11))
+
+/~*
+oko aG@ @idejonaGa me@ @idi Godoigi
+(hil-data,0.57)
+*~/
+/*
+9 CP-me:  14 D, 16 N$
+*/
+
+( (IP-MAT (NP (N oko))
+	  (NEG aG@)
+	  (VB @idejonaGa)
+	  (CP-me (C me@)
+		 (IP-SUB (NP (D @idi) (N$ Godoigi)))))
+  (ID hil-data,0.57))
+
+/~*
+aG@ @idejonaGa me@ @idi Godoigi
+(hil-data,0.59)
+*~/
+/*
+6 CP-me:  11 D, 13 N$
+*/
+
+( (IP-MAT (NEG aG@)
+	  (VB @idejonaGa)
+	  (CP-me (C me@)
+		 (IP-SUB (NP (D @idi) (N$ Godoigi)))))
+  (ID hil-data,0.59))
+
+/~*
+niGijo nelokodi Maria idei me@ @idi akiidi
+(hil-data,0.60)
+*~/
+/*
+12 CP-me:  17 D, 19 N
+*/
+
+( (IP-MAT (NP (D niGijo)
+	      (N$ nelokodi)
+	      (NP (NPR Maria)))
+	  (VB idei)
+	  (CP-me (C me@)
+		 (IP-SUB (NP (D @idi) (N akiidi)))))
+  (ID hil-data,0.60))
+
+/~*
+IiGeladi me@ @idi akiidi
+(ped-gramm,0.56)
+*~/
+/*
+5 CP-me:  10 D, 12 N
+*/
+
+( (IP-MAT (NP-SBJ (N$ IiGeladi))
+	  (CP-me (C me@)
+		 (IP-SUB (NP (D @idi) (N akiidi)))))
+  (ID ped-gramm,0.56))
+
+/~*
+aG@ @ee @ewi me@ @ica iniKGigi
+(van-data,0.61)
+*~/
+/*
+9 CP-me:  14 D, 16 N$
+*/
+
+( (IP-MAT (NEG aG@)
+	  (NP (PRO @ee))
+	  (ADJ @ewi)
+	  (CP-me (C me@)
+		 (IP-SUB (NP (D @ica) (N$ iniKGigi)))))
+  (ID van-data,0.61))
+
+/~*
+aG@ @eyo me@ @ica inikGigi
+(van-data,0.62)
+*~/
+/*
+7 CP-me:  12 D, 14 N$
+*/
+
+( (IP-MAT (NEG aG@)
+	  (NP-SBJ (PRO @eyo))
+	  (CP-me (C me@)
+		 (IP-SUB (NP (D @ica) (N$ inikGigi)))))
+  (ID van-data,0.62))
+
+/~*
+aG@ @idedonaGa me@ @idi Godoigi
+(van-data,0.64)
+*~/
+/*
+6 CP-me:  11 D, 13 N$
+*/
+
+( (IP-MAT (NEG aG@)
+	  (VB @idedonaGa)
+	  (CP-me (C me@)
+		 (IP-SUB (NP (D @idi) (N$ Godoigi)))))
+  (ID van-data,0.64))
+
+/~*
+aG@ @idejonaGa me@ @idi Godoigi
+(van-data,0.66)
+*~/
+/*
+6 CP-me:  11 D, 13 N$
+*/
+
+( (IP-MAT (NEG aG@)
+	  (VB @idejonaGa)
+	  (CP-me (C me@)
+		 (IP-SUB (NP (D @idi) (N$ Godoigi)))))
+  (ID van-data,0.66))
+/*
+FOOTER
+  source file, hits/tokens/total
+  kadiweu-parser-done.gold.psd	10/10/183
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  kadiweu-parser-done.gold.psd	10/10/183
+whole search, hits/tokens/total
+		10/10/183
+*/

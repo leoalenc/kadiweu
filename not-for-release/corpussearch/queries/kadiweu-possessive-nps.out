@@ -1,0 +1,827 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Tue Aug 25 10:21:29 BRT 2026
+
+command file:     kadiweu-possessive-nps.q
+output file:      kadiweu-possessive-nps.out
+
+node:   IP-MAT
+query:  (IP-MAT doms  [1]NP*) 
+  AND  ([1]NP* iDoms  N$) 
+  AND  ([1]NP* iDoms  NP*) 
+*/
+/*
+HEADER:
+source file:  kadiweu-parser-done.gold.psd
+*/
+
+/~*
+LotaGa Ganioxoa libinienaGa
+(hil-data,0.3)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 3 N$, 5 NP
+*/
+( (IP-MAT (NP-SBJ (N$ LotaGa)
+		  (NP (N$ Ganioxoa)))
+	  (NP-PRD (N$ libinienaGa)))
+  (ID hil-data,0.3))
+
+/~*
+LotaGa Gadodawa libinienaGa
+(hil-data,0.4)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 3 N$, 5 NP
+*/
+
+( (IP-MAT (NP-SBJ (N$ LotaGa)
+		  (NP (N$ Gadodawa)))
+	  (NP-PRD (N$ libinienaGa)))
+  (ID hil-data,0.4))
+
+/~*
+Etogo ane@ @iwaGadi aG@ @dakake lojedi
+(hil-data,0.5)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 19 NP, 23 N$, 20 NP-GEN
+*/
+
+( (IP-MAT (NP-1 (N Etogo)
+		(CP-REL (WNP-2 (WPRO ane@))
+			(IP-SUB (NP-TRACE (-NONE- *T*-2))
+				(VB @iwaGadi))))
+	  (NEG aG@)
+	  (VBU @dakake)
+	  (NP (NP-GEN (-NONE- *T*-1))
+	      (N$ lojedi)))
+  (ID hil-data,0.5))
+
+/~*
+Etogo ane iwaGadi aG@ @dakake loojedi
+(hil-data,0.6)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 19 NP, 23 N$, 20 NP-GEN
+*/
+
+( (IP-MAT (NP-1 (N Etogo)
+		(CP-REL (WNP-2 (WPRO ane))
+			(IP-SUB (NP-TRACE (-NONE- *T*-2))
+				(VB iwaGadi))))
+	  (NEG aG@)
+	  (VBU @dakake)
+	  (NP (NP-GEN (-NONE- *T*-1))
+	      (N$ loojedi)))
+  (ID hil-data,0.6))
+
+/~*
+NiGida niwenigi eliodi me dakake loojedi
+(hil-data,0.9)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 15 NP, 19 N$, 16 NP-GEN
+*/
+
+( (IP-MAT (NP-1 (D NiGida) (N niwenigi))
+	  (CP-me (Q eliodi)
+		 (C me)
+		 (IP-SUB (VBU dakake)
+			 (NP (NP-GEN (-NONE- *T*-1))
+			     (N$ loojedi)))))
+  (ID hil-data,0.9))
+
+/~*
+NaGajo lomigo Pedilo idei me@ @adi niwatece
+(hil-data,0.10)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP (D NaGajo)
+	      (N$ lomigo)
+	      (NP (NPR Pedilo)))
+	  (VB idei)
+	  (CP-me (C me@)
+		 (IP-SUB (NP (D @adi) (N$ niwatece)))))
+  (ID hil-data,0.10))
+
+/~*
+NaGajo lomigo niganigawanigi me@ @adi niwatece
+(hil-data,0.11)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP-SBJ (D NaGajo)
+		  (N$ lomigo)
+		  (NP (N niganigawanigi)))
+	  (CP-me (C me@)
+		 (IP-SUB (NP (D @adi) (N$ niwatece)))))
+  (ID hil-data,0.11))
+
+/~*
+niGijoa lionaGa iwaalo idei me@ @ijotaGa
+(hil-data,0.13)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP (D niGijoa)
+	      (N$ lionaGa)
+	      (NP (N iwaalo)))
+	  (VB idei)
+	  (CP-me (C me@)
+		 (IP-SUB (NP (DAPL @ijotaGa)))))
+  (ID hil-data,0.13))
+
+/~*
+NiGida lodajo lodawa aG@ @idei dineigi
+(hil-data,0.33)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP (D NiGida)
+	      (N$ lodajo)
+	      (NP (N lodawa)))
+	  (NEG aG@)
+	  (VB @idei)
+	  (NP (N dineigi)))
+  (ID hil-data,0.33))
+
+/~*
+liwigo niganigawanigi libinienigi
+(hil-data,0.34)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 3 N$, 5 NP
+*/
+
+( (IP-MAT (NP-SBJ (N$ liwigo)
+		  (NP (N niganigawanigi)))
+	  (NP-PRD (N$ libinienigi)))
+  (ID hil-data,0.34))
+
+/~*
+NiGidoa waca lotiidi dapicoGo
+(hil-data,0.41)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 8 N$, 5 NP
+*/
+
+( (IP-MAT (NP (D NiGidoa)
+	      (NP (N waca))
+	      (N$ lotiidi))
+	  (VB dapicoGo))
+  (ID hil-data,0.41))
+
+/~*
+niGidiwa okokodi ligetedi liwigo libinienaGa
+(hil-data,0.43)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 8 N$, 5 NP
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 8 N$, 10 NP
+*/
+
+( (IP-MAT (NP-SBJ (D niGidiwa)
+		  (NP (N okokodi))
+		  (N$ ligetedi)
+		  (NP (N$ liwigo)))
+	  (NP-PRD (N$ libinienaGa)))
+  (ID hil-data,0.43))
+
+/~*
+NiGidiwa noGojedi lixagotaGaGa aG@ @dakake loojedi
+(hil-data,0.44)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-1, 8 N$, 5 NP
+1 IP-MAT:  1 IP-MAT, 14 NP, 18 N$, 15 NP-GEN
+*/
+
+( (IP-MAT (NP-1 (D NiGidiwa)
+		(NP (N noGojedi))
+		(N$ lixagotaGaGa))
+	  (NEG aG@)
+	  (VBU @dakake)
+	  (NP (NP-GEN (-NONE- *T*-1))
+	      (N$ loojedi)))
+  (ID hil-data,0.44))
+
+/~*
+niGijo nelokodi Maria idei me@ @idi akiidi
+(hil-data,0.60)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP (D niGijo)
+	      (N$ nelokodi)
+	      (NP (NPR Maria)))
+	  (VB idei)
+	  (CP-me (C me@)
+		 (IP-SUB (NP (D @idi) (N akiidi)))))
+  (ID hil-data,0.60))
+
+/~*
+NaGada libiwe niale ixagodi
+(hil-data,0.62)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP (D NaGada)
+	      (N$ libiwe)
+	      (NP (N niale)))
+	  (VB ixagodi))
+  (ID hil-data,0.62))
+
+/~*
+Nigijoa lianaGa Maria libinienigipi
+(hil-data,0.64)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP-SBJ (D Nigijoa)
+		  (N$ lianaGa)
+		  (NP (NPR Maria)))
+	  (NP-PRD (N$ libinienigipi)))
+  (ID hil-data,0.64))
+
+/~*
+NiGidi lionaGa iwaalo etidi me@ @eetaGa
+(hil-data,0.65)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP (D NiGidi)
+	      (N$ lionaGa)
+	      (NP (N iwaalo)))
+	  (VB etidi)
+	  (CP-me (C me@)
+		 (IP-SUB (NP (DAPL @eetaGa)))))
+  (ID hil-data,0.65))
+
+/~*
+liGeladi ipegitege nakidi nigotaGa
+(hil-data,0.66)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 7 NP-APL, 8 N$, 10 NP
+*/
+
+( (IP-MAT (NP (N$ liGeladi))
+	  (VBAPL ipegitege)
+	  (NP-APL (N$ nakidi)
+		  (NP (N nigotaGa))))
+  (ID hil-data,0.66))
+
+/~*
+liGeladi ipegitege nakidi nigotaGa
+(hil-data,0.67)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 7 NP-APL, 8 N$, 10 NP
+*/
+
+( (IP-MAT (NP (N$ liGeladi))
+	  (VBAPL ipegitege)
+	  (NP-APL (N$ nakidi)
+		  (NP (N nigotaGa))))
+  (ID hil-data,0.67))
+
+/~*
+nigotaGa liGeladi ipegitege akiidi
+(hil-data,0.68)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 3 N$, 5 NP
+*/
+
+( (IP-MAT (NP (N$ nigotaGa)
+	      (NP (N$ liGeladi)))
+	  (VBAPL ipegitege)
+	  (NP-APL (N akiidi)))
+  (ID hil-data,0.68))
+
+/~*
+Nigaanigawaanigi etini liwatece Pedilo
+(hil-data,0.69)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 7 NP, 8 N$, 10 NP
+*/
+
+( (IP-MAT (NP (N Nigaanigawaanigi))
+	  (VB etini)
+	  (NP (N$ liwatece)
+	      (NP (NPR Pedilo))))
+  (ID hil-data,0.69))
+
+/~*
+NiGijo nigaanigawaanigi etini liwatece ideloGole
+(hil-data,0.70)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 9 NP, 10 N$, 12 NP
+*/
+
+( (IP-MAT (NP (D NiGijo) (N nigaanigawaanigi))
+	  (VB etini)
+	  (NP (N$ liwatece)
+	      (NP (N ideloGole))))
+  (ID hil-data,0.70))
+
+/~*
+liGeladi Maria aG@ @ipegetege
+(ped-gramm,0.7)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 3 N$, 5 NP
+*/
+
+( (IP-MAT (NP (N$ liGeladi)
+	      (NP (NPR Maria)))
+	  (NEG aG@)
+	  (VBAPL @ipegetege))
+  (ID ped-gramm,0.7))
+
+/~*
+ica lideGegi loligi idei liGeladi
+(ped-gramm,0.18)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP (D ica)
+	      (N$ lideGegi)
+	      (NP (N$ loligi)))
+	  (VB idei)
+	  (NP (N$ liGeladi)))
+  (ID ped-gramm,0.18))
+
+/~*
+ica nioladi nioxoa libinienigi
+(ped-gramm,0.22)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP-SBJ (D ica)
+		  (N$ nioladi)
+		  (NP (N$ nioxoa)))
+	  (NP-PRD (N$ libinienigi)))
+  (ID ped-gramm,0.22))
+
+/~*
+ica nioladi lodawa libinienigi
+(ped-gramm,0.23)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP-SBJ (D ica)
+		  (N$ nioladi)
+		  (NP (N$ lodawa)))
+	  (NP-PRD (N$ libinienigi)))
+  (ID ped-gramm,0.23))
+
+/~*
+lotaGa GanaginaGa libinienaGa.
+(ped-gramm,0.43)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 3 N$, 5 NP
+*/
+
+( (IP-MAT (NP-SBJ (N$ lotaGa)
+		  (NP (N$ GanaginaGa)))
+	  (NP-PRD (N$ libinienaGa))
+	  (PUNC .))
+  (ID ped-gramm,0.43))
+
+/~*
+liGeladi João napioi.
+(ped-gramm,0.46)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 3 N$, 5 NP
+*/
+
+( (IP-MAT (NP-SBJ (N$ liGeladi)
+		  (NP (NPR João)))
+	  (NP-PRD (N$ napioi))
+	  (PUNC .))
+  (ID ped-gramm,0.46))
+
+/~*
+liGeladi ipegitege niweiigi nigotaGa.
+(ped-gramm,0.47)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 7 NP-APL, 11 N$, 8 NP
+*/
+
+( (IP-MAT (NP (N$ liGeladi))
+	  (VBAPL ipegitege)
+	  (NP-APL (NP (N niweiigi))
+		  (N$ nigotaGa))
+	  (PUNC .))
+  (ID ped-gramm,0.47))
+
+/~*
+liGeladi ipegitegi niweiigi nigotaGa.
+(ped-gramm,0.48)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 7 NP-APL, 8 N$, 10 NP
+*/
+
+( (IP-MAT (NP (N$ liGeladi))
+	  (VBAPL ipegitegi)
+	  (NP-APL (N$ niweiigi)
+		  (NP (N nigotaGa)))
+	  (PUNC .))
+  (ID ped-gramm,0.48))
+
+/~*
+niGidowa waca lotiidi dapikoGo
+(ped-gramm,0.55)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 8 N$, 5 NP
+*/
+
+( (IP-MAT (NP (D niGidowa)
+	      (NP (N waca))
+	      (N$ lotiidi))
+	  (VB dapikoGo))
+  (ID ped-gramm,0.55))
+
+/~*
+etogo ane@ @iwaGadi aG@ @dakake lojedi.
+(ped-gramm,0.57)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 19 NP, 23 N$, 20 NP-GEN
+*/
+
+( (IP-MAT (NP-1 (N etogo)
+		(CP-REL (WNP-2 (WPRO ane@))
+			(IP-SUB (NP-TRACE (-NONE- *T*-2))
+				(VB @iwaGadi))))
+	  (NEG aG@)
+	  (VBU @dakake)
+	  (NP (NP-GEN (-NONE- *T*-1))
+	      (N$ lojedi))
+	  (PUNC .))
+  (ID ped-gramm,0.57))
+
+/~*
+etogo aG@ @dakake lojedi
+(ped-gramm,0.58)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 9 NP, 13 N$, 10 NP-GEN
+*/
+
+( (IP-MAT (NP-1 (N etogo))
+	  (NEG aG@)
+	  (VBU @dakake)
+	  (NP (NP-GEN (-NONE- *T*-1))
+	      (N$ lojedi)))
+  (ID ped-gramm,0.58))
+
+/~*
+etogoli dakake lojetedi
+(ped-gramm,0.59)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 7 NP, 11 N$, 8 NP-GEN
+*/
+
+( (IP-MAT (NP-1 (N etogoli))
+	  (VBU dakake)
+	  (NP (NP-GEN (-NONE- *T*-1))
+	      (N$ lojetedi)))
+  (ID ped-gramm,0.59))
+
+/~*
+etogoli dakake loojedi
+(ped-gramm,0.60)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 7 NP, 11 N$, 8 NP-GEN
+*/
+
+( (IP-MAT (NP-1 (N etogoli))
+	  (VBU dakake)
+	  (NP (NP-GEN (-NONE- *T*-1))
+	      (N$ loojedi)))
+  (ID ped-gramm,0.60))
+
+/~*
+lotaGa GanaaginaGa libinienaGa
+(van-data,0.6)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 3 N$, 5 NP
+*/
+
+( (IP-MAT (NP-SBJ (N$ lotaGa)
+		  (NP (N$ GanaaginaGa)))
+	  (NP-PRD (N$ libinienaGa)))
+  (ID van-data,0.6))
+
+/~*
+lotaGa Gadodawa libinienaGa
+(van-data,0.7)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 3 N$, 5 NP
+*/
+
+( (IP-MAT (NP-SBJ (N$ lotaGa)
+		  (NP (N$ Gadodawa)))
+	  (NP-PRD (N$ libinienaGa)))
+  (ID van-data,0.7))
+
+/~*
+niGida niwenigi daGaxa me dakake loojedi
+(van-data,0.12)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 15 NP, 19 N$, 16 NP-GEN
+*/
+
+( (IP-MAT (NP-1 (D niGida) (N niwenigi))
+	  (CP-me (Q daGaxa)
+		 (C me)
+		 (IP-SUB (VBU dakake)
+			 (NP (NP-GEN (-NONE- *T*-1))
+			     (N$ loojedi)))))
+  (ID van-data,0.12))
+
+/~*
+naGajo lomiigo Pedro idei niwatece
+(van-data,0.13)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP (D naGajo)
+	      (N$ lomiigo)
+	      (NP (NPR Pedro)))
+	  (VB idei)
+	  (NP (N niwatece)))
+  (ID van-data,0.13))
+
+/~*
+naGajo lomiigo nigaanigawaanigi me@ @anitaGa niwatece
+(van-data,0.14)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP-SBJ (D naGajo)
+		  (N$ lomiigo)
+		  (NP (N nigaanigawaanigi)))
+	  (CP-me (C me@)
+		 (IP-SUB (NP (DAPL @anitaGa) (N niwatece)))))
+  (ID van-data,0.14))
+
+/~*
+niGijoa lionigipi iwaalo idei me@ @initaGa
+(van-data,0.19)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP (D niGijoa)
+	      (N$ lionigipi)
+	      (NP (N iwaalo)))
+	  (VB idei)
+	  (CP-me (C me@)
+		 (IP-SUB (NP (DAPL @initaGa)))))
+  (ID van-data,0.19))
+
+/~*
+niGijo lodaajo ajo lodowa aG@ @ica digoida liGeladi
+(van-data,0.30)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP-SBJ (D niGijo)
+		  (N$ lodaajo)
+		  (NP (D ajo) (N$ lodowa)))
+	  (NEG aG@)
+	  (NP-PRD (Q @ica) (D digoida) (N$ liGeladi)))
+  (ID van-data,0.30))
+
+/~*
+ica liwigo niganigawanigi libinienigi
+(van-data,0.31)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP-SBJ (D ica)
+		  (N$ liwigo)
+		  (NP (N niganigawanigi)))
+	  (NP-PRD (N$ libinienigi)))
+  (ID van-data,0.31))
+
+/~*
+niGidowa waca lotiidi dapicoGo
+(van-data,0.40)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 8 N$, 5 NP
+*/
+
+( (IP-MAT (NP (D niGidowa)
+	      (NP (N waca))
+	      (N$ lotiidi))
+	  (VB dapicoGo))
+  (ID van-data,0.40))
+
+/~*
+idowa waca lotiidi dapicoGo
+(van-data,0.41)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 8 N$, 5 NP
+*/
+
+( (IP-MAT (NP (D idowa)
+	      (NP (N waca))
+	      (N$ lotiidi))
+	  (VB dapicoGo))
+  (ID van-data,0.41))
+
+/~*
+ijo niwigo libinienigi ijowa nigetedi
+(van-data,0.43)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 8 N$, 5 NP
+*/
+
+( (IP-MAT (NP-SBJ (D ijo)
+		  (NP (N niwigo))
+		  (N$ libinienigi))
+	  (NP-PRD (D ijowa) (N$ nigetedi)))
+  (ID van-data,0.43))
+
+/~*
+idiwa noGojedi lixagotaGaGa aG@ @dakake loojedi
+(van-data,0.47)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-1, 8 N$, 5 NP
+1 IP-MAT:  1 IP-MAT, 14 NP, 18 N$, 15 NP-GEN
+*/
+
+( (IP-MAT (NP-1 (D idiwa)
+		(NP (N noGojedi))
+		(N$ lixagotaGaGa))
+	  (NEG aG@)
+	  (VBU @dakake)
+	  (NP (NP-GEN (-NONE- *T*-1))
+	      (N$ loojedi)))
+  (ID van-data,0.47))
+
+/~*
+ijo lemé Maria ipegitegi weiigi
+(van-data,0.67)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP (D ijo)
+	      (N$ lemé)
+	      (NP (NPR Maria)))
+	  (VBAPL ipegitegi)
+	  (NP-APL (N weiigi)))
+  (ID van-data,0.67))
+
+/~*
+libiwe niale ixagodi
+(van-data,0.69)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 3 N$, 5 NP
+*/
+
+( (IP-MAT (NP (N$ libiwe)
+	      (NP (N niale)))
+	  (VB ixagodi))
+  (ID van-data,0.69))
+
+/~*
+idiwa leonigipi Maria libinienigipi
+(van-data,0.71)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP-SBJ, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP-SBJ (Q idiwa)
+		  (N$ leonigipi)
+		  (NP (NPR Maria)))
+	  (NP-PRD (N$ libinienigipi)))
+  (ID van-data,0.71))
+
+/~*
+ijowa leonigipi iwaalo idi metaGa
+(van-data,0.72)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 5 N$, 7 NP
+*/
+
+( (IP-MAT (NP (D ijowa)
+	      (N$ leonigipi)
+	      (NP (N iwaalo)))
+	  (CP (NP (D idi))
+	      (CAPL metaGa)))
+  (ID van-data,0.72))
+
+/~*
+ligeladi ipegitege niweiigi nigotaGa
+(van-data,0.73)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 7 NP-APL, 11 N$, 8 NP
+*/
+
+( (IP-MAT (NP (N$ ligeladi))
+	  (VBAPL ipegitege)
+	  (NP-APL (NP (N niweiigi))
+		  (N$ nigotaGa)))
+  (ID van-data,0.73))
+
+/~*
+ligeladi ipegitegi niweiigi nigotaGa
+(van-data,0.74)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 7 NP-APL, 8 N$, 10 NP
+*/
+
+( (IP-MAT (NP (N$ ligeladi))
+	  (VBAPL ipegitegi)
+	  (NP-APL (N$ niweiigi)
+		  (NP (N nigotaGa))))
+  (ID van-data,0.74))
+
+/~*
+nigotaGa liGeladi ipegitegi weiigi
+(van-data,0.75)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 NP, 3 N$, 5 NP
+*/
+
+( (IP-MAT (NP (N$ nigotaGa)
+	      (NP (N$ liGeladi)))
+	  (VBAPL ipegitegi)
+	  (NP-APL (N weiigi)))
+  (ID van-data,0.75))
+/*
+FOOTER
+  source file, hits/tokens/total
+  kadiweu-parser-done.gold.psd	54/54/183
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  kadiweu-parser-done.gold.psd	54/54/183
+whole search, hits/tokens/total
+		54/54/183
+*/

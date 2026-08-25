@@ -1,0 +1,59 @@
+1: np-prenominal-possessor-noun
+node: $METAROOT
+
+query: (IP-MAT iDoms [1]{1}D)
+    AND (IP-MAT iDoms [2]{2}N|N$|NPR)
+    AND (IP-MAT iDoms [3]N$)
+    AND ([1]D iPrecedes [2]N|N$|NPR)
+    AND ([2]N|N$|NPR iPrecedes [3]N$)
+
+add_internal_node{2, 2}: NP
+
+2: np-d-n
+node: $METAROOT
+
+query: (IP-MAT iDoms [1]{1}D)
+    AND (IP-MAT iDoms [2]{2}N|N$|NPR)
+    AND ([1]D iPrecedes [2]N|N$|NPR)
+
+add_internal_node{1, 2}: NP
+
+3: np-bare-noun
+node: $METAROOT
+
+query: (IP-MAT iDoms {1}N|N$|NPR)
+
+add_internal_node{1, 1}: NP
+
+4: np-postnominal-possessor
+node: $METAROOT
+
+query: (IP-MAT iDoms [1]{1}NP)
+    AND (IP-MAT iDoms [2]{2}NP)
+    AND ([1]NP iDoms N$)
+    AND ([2]NP iDoms N|N$|NPR)
+    AND ([1]NP iPrecedes [2]NP)
+
+extend_span{1, 2}:
+
+5: np-prenominal-possessor
+node: $METAROOT
+
+query: (IP-MAT iDoms [1]{1}NP)
+    AND (IP-MAT iDoms [2]{2}NP)
+    AND ([1]NP iDoms N|N$|NPR)
+    AND ([2]NP iDoms N$)
+    AND ([1]NP iPrecedes [2]NP)
+
+extend_span{2, 1}:
+
+6: np-prenominal-possessor-determiner
+node: $METAROOT
+
+query: (IP-MAT iDoms [1]{1}D)
+    AND (IP-MAT iDoms [2]{2}NP)
+    AND ([2]NP iDoms N$)
+    AND ([2]NP iDoms NP)
+    AND ([1]D iPrecedes [2]NP)
+
+extend_span{2, 1}:

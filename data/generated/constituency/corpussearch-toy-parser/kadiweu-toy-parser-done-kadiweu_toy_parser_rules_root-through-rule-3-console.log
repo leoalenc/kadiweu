@@ -1,0 +1,17 @@
+stopping after original TBP rule 3 (np-possessor-complement)
+[001/003] TBP 1: np-d-n
+[002/003] TBP 2: np-bare-noun
+[003/003] TBP 3: np-possessor-complement
+
+Comparison summary:
+struct_status  exact  trace_equivalent  structural_difference  total
+DONE              46                 0                    137    183
+TOTAL             46                 0                    137    183
+
+Comparison summary by dataset × struct_status:
+dataset    struct_status  exact  trace_equivalent  structural_difference  total
+hil-data   DONE              21                 0                     44     65
+ped-gramm  DONE              13                 0                     36     49
+van-data   DONE              12                 0                     57     69
+comparison report written to /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-done-kadiweu_toy_parser_rules_root-through-rule-3-comparison.tsv
+FAIL: 137 structural difference(s) written to /home/leonel/kadiweu/data/generated/constituency/corpussearch-toy-parser/kadiweu-toy-parser-done-kadiweu_toy_parser_rules_root-through-rule-3.diff

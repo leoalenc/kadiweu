@@ -1,0 +1,7 @@
+sentence_id	dataset	struct_status	result	details
+hil-data,0.26	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+ped-gramm,0.4	ped-gramm	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
+ped-gramm,0.5	ped-gramm	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
+van-data,0.33	van-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+van-data,0.68	van-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
+van-data,0.69	van-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
