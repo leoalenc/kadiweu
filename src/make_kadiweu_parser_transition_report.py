@@ -3,7 +3,8 @@
 
 The report includes every DONE improvement and regression found in a parser
 transition TSV, with the corresponding BEFORE and AFTER PSD trees in both
-LISP and graphical form.
+LISP and graphical form. When a gold PSD is supplied, the report also includes
+DONE persistent structural cases with GOLD, BEFORE, and AFTER trees.
 """
 
 from __future__ import annotations
@@ -36,17 +37,29 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
             "Extract DONE improvements and regressions from a transition TSV "
-            "and create a Markdown report with BEFORE/AFTER PSD trees."
+            "and create a Markdown report with BEFORE/AFTER PSD trees. With "
+            "--gold-psd, also include persistent structural cases."
         )
     )
     parser.add_argument("transitions", type=Path, help="parser transition TSV")
     parser.add_argument("before_psd", type=Path, help="BEFORE parser PSD")
     parser.add_argument("after_psd", type=Path, help="AFTER parser PSD")
     parser.add_argument(
+        "--gold-psd",
+        type=Path,
+        help=(
+            "gold PSD; when supplied, add DONE persistent structural cases "
+            "with GOLD, BEFORE, and AFTER trees"
+        ),
+    )
+    parser.add_argument(
         "-o", "--output", type=Path, required=True, help="output Markdown file"
     )
     parser.add_argument("--before-label", help="display label, e.g. A")
     parser.add_argument("--after-label", help="display label, e.g. C")
+    parser.add_argument(
+        "--gold-label", default="GOLD", help="gold-tree display label (default: GOLD)"
+    )
     parser.add_argument(
         "--assets-dir",
         type=Path,
@@ -59,7 +72,7 @@ def parse_args() -> argparse.Namespace:
         help="Graphviz output format (default: svg)",
     )
     parser.add_argument(
-        "--title", default="DONE Parser Improvements and Regressions"
+        "--title", default="DONE Parser Transition Report"
     )
     return parser.parse_args()
 
@@ -278,6 +291,8 @@ def infer_result_columns(fieldnames: Sequence[str]) -> tuple[str, str, str, str]
 
 def transition_kind(value: str) -> str | None:
     normalized = value.strip().upper()
+    if normalized.endswith("PERSISTENT_STRUCTURAL"):
+        return "persistent"
     if normalized.endswith("IMPROVEMENT"):
         return "improvement"
     if normalized.endswith("REGRESSION"):
@@ -362,9 +377,108 @@ def append_transition(
     )
 
 
+def append_tree_representation(
+    output: list[str],
+    record: PsdRecord,
+    role: str,
+    label: str,
+    image: Path,
+    sentence_id: str,
+    markdown_path: Path,
+    image_format: str,
+) -> None:
+    render_tree(record.tree, image, image_format)
+    escaped_role = markdown_escape(role)
+    escaped_label = markdown_escape(label)
+    escaped_id = markdown_escape(sentence_id)
+    output.extend(
+        [
+            f"#### {escaped_role} — {escaped_label} — LISP",
+            "",
+            "```lisp",
+            pretty_sexpression(record.expression),
+            "```",
+            "",
+            f"#### {escaped_role} — {escaped_label} — graphical tree",
+            "",
+            f"![{escaped_role} tree for {escaped_id}]({relative_link(image, markdown_path)})",
+            "",
+        ]
+    )
+
+
+def append_persistent_transition(
+    output: list[str],
+    row: dict[str, str],
+    gold: PsdRecord,
+    before: PsdRecord,
+    after: PsdRecord,
+    before_column: str,
+    after_column: str,
+    gold_label: str,
+    before_label: str,
+    after_label: str,
+    assets_dir: Path,
+    markdown_path: Path,
+    image_format: str,
+) -> None:
+    sentence_id = row["sentence_id"]
+    stem = safe_stem(sentence_id)
+    output.extend(
+        [
+            '<div style="page-break-before: always;"></div>',
+            "",
+            f"### {markdown_escape(sentence_id)}",
+            "",
+            "| Field | Value |",
+            "|---|---|",
+            f"| Dataset | {markdown_escape(row.get('dataset', ''))} |",
+            f"| Status | {markdown_escape(row.get('struct_status', ''))} |",
+            f"| Text | {markdown_escape(metadata_value(before, after, 'text'))} |",
+            f"| Portuguese | {markdown_escape(metadata_value(before, after, 'text_por'))} |",
+            f"| {markdown_escape(before_label)} result | {markdown_escape(row[before_column])} |",
+            f"| {markdown_escape(after_label)} result | {markdown_escape(row[after_column])} |",
+            "",
+        ]
+    )
+    append_tree_representation(
+        output,
+        gold,
+        "REFERENCE",
+        gold_label,
+        assets_dir / f"{stem}.gold.{image_format}",
+        sentence_id,
+        markdown_path,
+        image_format,
+    )
+    append_tree_representation(
+        output,
+        before,
+        "BEFORE",
+        f"parser {before_label}",
+        assets_dir / f"{stem}.before.{image_format}",
+        sentence_id,
+        markdown_path,
+        image_format,
+    )
+    append_tree_representation(
+        output,
+        after,
+        "AFTER",
+        f"parser {after_label}",
+        assets_dir / f"{stem}.after.{image_format}",
+        sentence_id,
+        markdown_path,
+        image_format,
+    )
+
+
 def main() -> int:
     args = parse_args()
-    for path in (args.transitions, args.before_psd, args.after_psd):
+    required_paths = [args.transitions, args.before_psd, args.after_psd]
+    if args.gold_psd is not None:
+        required_paths.append(args.gold_psd)
+    for path in required_paths:
         require_file(path)
     if shutil.which("dot") is None:
         fail("Graphviz 'dot' was not found; install the graphviz package")
@@ -387,16 +501,20 @@ def main() -> int:
     selected: dict[str, list[dict[str, str]]] = {
         "improvement": [],
         "regression": [],
+        "persistent": [],
     }
     for row in rows:
         if row["struct_status"].strip().upper() != "DONE":
             continue
         kind = transition_kind(row["classification"])
-        if kind:
+        if kind in ("improvement", "regression"):
+            selected[kind].append(row)
+        elif kind == "persistent" and args.gold_psd is not None:
             selected[kind].append(row)
 
     before_records = read_psd(args.before_psd)
     after_records = read_psd(args.after_psd)
+    gold_records = read_psd(args.gold_psd) if args.gold_psd is not None else {}
     selected_ids = {
         row["sentence_id"] for group in selected.values() for row in group
     }
@@ -405,6 +523,8 @@ def main() -> int:
             fail(f"sentence {sentence_id!r} is missing from BEFORE PSD")
         if sentence_id not in after_records:
             fail(f"sentence {sentence_id!r} is missing from AFTER PSD")
+        if args.gold_psd is not None and sentence_id not in gold_records:
+            fail(f"sentence {sentence_id!r} is missing from GOLD PSD")
 
     output_path = args.output.expanduser().resolve()
     assets_dir = (
@@ -415,6 +535,23 @@ def main() -> int:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     assets_dir.mkdir(parents=True, exist_ok=True)
 
+    if args.gold_psd is None:
+        introduction = (
+            f"This document compares parser {before_label} (BEFORE) with parser "
+            f"{after_label} (AFTER) for DONE sentences whose classification changed. "
+            "It contains every improvement and regression recorded in the transition "
+            "TSV, with both parser trees shown in LISP and graphical formats for human inspection."
+        )
+    else:
+        introduction = (
+            f"This document compares parser {before_label} (BEFORE) with parser "
+            f"{after_label} (AFTER) for DONE sentences. It contains every improvement, "
+            "regression, and persistent structural case recorded in the transition TSV. "
+            "Improvement and regression sections show both parser trees; the persistent "
+            "section shows the gold reference together with both parser trees. All trees "
+            "are provided in LISP and graphical formats for human inspection."
+        )
+
     markdown = [
         "---",
         f'title: "{args.title.replace(chr(34), chr(39))}"',
@@ -424,12 +561,7 @@ def main() -> int:
         "",
         "# 1. Introduction",
         "",
-        (
-            f"This document compares parser {before_label} (BEFORE) with parser "
-            f"{after_label} (AFTER) for DONE sentences whose classification changed. "
-            "It contains every improvement and regression recorded in the transition "
-            "TSV, with both parser trees shown in LISP and graphical formats for human inspection."
-        ),
+        introduction,
         "",
         f"**DONE improvements:** {len(selected['improvement'])}.  ",
         f"**DONE regressions:** {len(selected['regression'])}.",
@@ -472,9 +604,43 @@ def main() -> int:
             args.image_format,
         )
 
+    if args.gold_psd is not None:
+        markdown.extend(
+            [
+                "# 4. DONE persistent structural cases",
+                "",
+                (
+                    "In these cases, both parsers remain structurally different from "
+                    "the gold tree. The A and C outputs may nevertheless be identical "
+                    "to or different from one another."
+                ),
+                "",
+            ]
+        )
+        if not selected["persistent"]:
+            markdown.extend(["No DONE persistent structural cases were recorded.", ""])
+        for row in selected["persistent"]:
+            append_persistent_transition(
+                markdown,
+                row,
+                gold_records[row["sentence_id"]],
+                before_records[row["sentence_id"]],
+                after_records[row["sentence_id"]],
+                before_column,
+                after_column,
+                args.gold_label,
+                before_label,
+                after_label,
+                assets_dir,
+                output_path,
+                args.image_format,
+            )
+
     output_path.write_text("\n".join(markdown).rstrip() + "\n", encoding="utf-8")
     print(f"DONE improvements: {len(selected['improvement'])}")
     print(f"DONE regressions: {len(selected['regression'])}")
+    if args.gold_psd is not None:
+        print(f"DONE persistent structural cases: {len(selected['persistent'])}")
     print(f"Markdown report: {output_path}")
     print(f"Tree images: {assets_dir}")
     return 0
