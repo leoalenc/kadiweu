@@ -42,7 +42,7 @@ POSSESSOR_RULE = "possessive-np-possessor"
 DETERMINER_RULE = "possessive-np-determiner"
 
 
-@dataclass(frozen=True, slots=True)
+@dataclass(frozen=True)
 class DependencyAssignment:
     """One certain dependency expressed in source-token positions."""
 
