@@ -1,0 +1,195 @@
+sent_id	dependent_position	dependent	head_position	head	deprel	rule	gold_sent_id	sent_uid	gold_dependent_id	gold_dependent	gold_head_id	gold_head	gold_deprel	comparison	token_alignment
+hil-data,0.3	2	Ganioxoa	1	LotaGa	nmod:poss	possessive-np-possessor	hil-data-3	39f34955-a828-47d7-808d-b3b3565b42d6	2	Ganioxoa	1	LotaGa	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.4	2	Gadodawa	1	LotaGa	nmod:poss	possessive-np-possessor	hil-data-4	d3ae6cfd-bec1-49f3-a0f9-4ca0744e3404	2	Gadodawa	1	LotaGa	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.7	2	eliodi	4	libinienigi	det	nominal-np-determiner	hil-data-7	435e4b10-ab78-4ee3-84b0-7773dbe10bf7	2	eliodi	4	libinienigi	advmod	TREE_ONLY_GOLD_OTHER	FINAL_PUNCT_IGNORED
+hil-data,0.7	3	me	4	libinienigi	mark	complementizer-mark	hil-data-7	435e4b10-ab78-4ee3-84b0-7773dbe10bf7	3	me	4	libinienigi	mark	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.8	1	NiGijo	2	liwenigi	det	nominal-np-determiner	hil-data-8	cf44903e-0c33-44bc-a146-1fb8a4ccb973	1	NiGijo	2	liwenigi	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.9	1	NiGida	2	niwenigi	det	nominal-np-determiner	hil-data-9	0ca977cd-2edf-45d9-b958-068648aebef9	1	NiGida	2	niwenigi	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.9	4	me	5	dakake	mark	complementizer-mark	hil-data-9	0ca977cd-2edf-45d9-b958-068648aebef9	4	me	5	dakake	mark	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.10	1	NaGajo	2	lomigo	det	nominal-np-determiner	hil-data-10	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887	1	NaGajo	2	lomigo	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.10	3	Pedilo	2	lomigo	nmod:poss	possessive-np-possessor	hil-data-10	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887	3	Pedilo	2	lomigo	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.10	5	me@	7	niwatece	mark	complementizer-mark	hil-data-10	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887	5	me	7	niwatece	mark	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.10	6	@adi	7	niwatece	det	nominal-np-determiner	hil-data-10	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887	6	adi	7	niwatece	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.11	1	NaGajo	2	lomigo	det	nominal-np-determiner	hil-data-11	92838eda-ef9b-4f05-a5eb-38a4709c0337	1	NaGajo	2	lomigo	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.11	3	niganigawanigi	2	lomigo	nmod:poss	possessive-np-possessor	hil-data-11	92838eda-ef9b-4f05-a5eb-38a4709c0337	3	niganigawanigi	2	lomigo	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.11	4	me@	6	niwatece	mark	complementizer-mark	hil-data-11	92838eda-ef9b-4f05-a5eb-38a4709c0337	4	me	6	niwatece	mark	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.11	5	@adi	6	niwatece	det	nominal-np-determiner	hil-data-11	92838eda-ef9b-4f05-a5eb-38a4709c0337	5	adi	6	niwatece	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.13	1	niGijoa	2	lionaGa	det	nominal-np-determiner		0de3d311-348a-4107-a191-9fc3f960c249						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.13	3	iwaalo	2	lionaGa	nmod:poss	possessive-np-possessor		0de3d311-348a-4107-a191-9fc3f960c249						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.13	5	me@	6	@ijotaGa	mark	complementizer-mark		0de3d311-348a-4107-a191-9fc3f960c249						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.14	3	me@	4	@aditaGa	mark	complementizer-mark		4e9130da-80fd-4ac2-8665-956c95b299e2						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.25	3	me@	4	@ninitibeci	mark	complementizer-mark	hil-data-25	24a9e039-79d0-4026-8824-0d061c2b21ee	3	me	4	ninitibeci	mark	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.33	1	NiGida	2	lodajo	det	nominal-np-determiner	hil-data-33	3a27c7c6-ecd6-45c0-a71e-b4aa2a242a3d	1	NiGida	2	lodajo	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.33	3	lodawa	2	lodajo	nmod:poss	possessive-np-possessor	hil-data-33	3a27c7c6-ecd6-45c0-a71e-b4aa2a242a3d	3	lodawa	2	lodajo	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.34	2	niganigawanigi	1	liwigo	nmod:poss	possessive-np-possessor	hil-data-34	64f2c803-b436-4202-b4c7-acf5c7205bc3	2	niganigawanigi	1	liwigo	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.35	1	naGani	2	wetiGa	det	nominal-np-determiner	hil-data-35	8bad7bc3-f82f-46c0-9e63-c780104b11e2	1	naGani	2	wetiGa	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.35	4	me	5	iwaGadi	mark	complementizer-mark	hil-data-35	8bad7bc3-f82f-46c0-9e63-c780104b11e2	4	me	5	iwaGadi	mark	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.36	1	NaGani	2	wetiGa	det	nominal-np-determiner	hil-data-36	768a3635-dcaf-4210-b236-73568abadbdb	1	NaGani	2	wetiGa	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.37	1	NiGinoa	2	wetiadi	det	nominal-np-determiner	hil-data-37	e5f90fbc-14e8-4c6f-9e07-61fbf67d042f	1	NiGinoa	2	wetiadi	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.38	1	NaGani	2	wetiGa	det	nominal-np-determiner	hil-data-38	f4b854f9-c3c6-4e88-8a9b-ca73fcba8d46	1	NaGani	2	wetiGa	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.39	1	NaGani	2	wetiGa	det	nominal-np-determiner	hil-data-39	38f73c1c-ddfb-4153-9310-d24214cd68e7	1	NaGani	2	wetiGa	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.41	1	NiGidoa	3	lotiidi	det	nominal-np-determiner	hil-data-41	8dda04f0-f7e8-46d6-b41d-b65dd214f01b	1	NiGidoa	3	lotiidi	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.41	2	waca	3	lotiidi	nmod:poss	possessive-np-possessor	hil-data-41	8dda04f0-f7e8-46d6-b41d-b65dd214f01b	2	waca	3	lotiidi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.43	1	niGidiwa	3	ligetedi	det	nominal-np-determiner		a74fea0a-dd87-4c4d-8670-9db66f5b5b16						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.44	1	NiGidiwa	3	lixagotaGaGa	det	nominal-np-determiner	hil-data-44	83fdcd4c-338f-4a9f-8545-da8539e67e9d	1	NiGidiwa	2	noGojedi	det	HEAD_MISMATCH	FINAL_PUNCT_IGNORED
+hil-data,0.44	2	noGojedi	3	lixagotaGaGa	nmod:poss	possessive-np-possessor	hil-data-44	83fdcd4c-338f-4a9f-8545-da8539e67e9d	2	noGojedi	3	lixagotaGaGa	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.49	4	me	5	idinitibeci	mark	complementizer-mark		1e9df213-90da-4674-8889-4ac858df72fe						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.55	3	me	4	idinitibeci	mark	complementizer-mark		90ca38d8-e063-4c98-af51-4b9022ade506						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.57	4	me@	6	Godoigi	mark	complementizer-mark		341bf09a-2ef8-455a-8b6b-88373c617dae						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.57	5	@idi	6	Godoigi	det	nominal-np-determiner		341bf09a-2ef8-455a-8b6b-88373c617dae						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.59	3	me@	5	Godoigi	mark	complementizer-mark		dff00f05-7be1-4d62-b3ed-b8a8870851e9						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.59	4	@idi	5	Godoigi	det	nominal-np-determiner		dff00f05-7be1-4d62-b3ed-b8a8870851e9						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.60	1	niGijo	2	nelokodi	det	nominal-np-determiner	hil-data-60	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	1	niGijo	2	nelokodi	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.60	3	Maria	2	nelokodi	nmod:poss	possessive-np-possessor	hil-data-60	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	3	Maria	2	nelokodi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.60	5	me@	7	akiidi	mark	complementizer-mark	hil-data-60	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	5	me	7	akiidi	mark	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.60	6	@idi	7	akiidi	det	nominal-np-determiner	hil-data-60	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	6	idi	7	akiidi	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.61	1	NiGijo	2	bijo	det	nominal-np-determiner		f0c7c722-031a-4c6e-ad7e-739402475c99						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.62	1	NaGada	2	libiwe	det	nominal-np-determiner	hil-data-62	d5dcd2bf-a3d0-4074-a241-f706b153134f	1	NaGada	2	libiwe	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.62	3	niale	2	libiwe	nmod:poss	possessive-np-possessor	hil-data-62	d5dcd2bf-a3d0-4074-a241-f706b153134f	3	niale	2	libiwe	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.63	1	nigidiwa	2	bijotedi	det	nominal-np-determiner		c3225d86-7037-4f8c-9981-8e92b6a081d6						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.64	1	Nigijoa	2	lianaGa	det	nominal-np-determiner	hil-data-64	d0cb9423-93bb-4b45-a02a-fee23a6dd8bb	1	Nigijoa	2	lianaGa	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.64	3	Maria	2	lianaGa	nmod:poss	possessive-np-possessor	hil-data-64	d0cb9423-93bb-4b45-a02a-fee23a6dd8bb	3	Maria	2	lianaGa	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.65	1	NiGidi	2	lionaGa	det	nominal-np-determiner		13f012b0-ef62-4477-b4bd-00e000484874						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.65	3	iwaalo	2	lionaGa	nmod:poss	possessive-np-possessor		13f012b0-ef62-4477-b4bd-00e000484874						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.65	5	me@	6	@eetaGa	mark	complementizer-mark		13f012b0-ef62-4477-b4bd-00e000484874						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.66	4	nigotaGa	3	nakidi	nmod:poss	possessive-np-possessor		55fe3cf7-0293-48e6-aa78-44822f50347e						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.67	4	nigotaGa	3	nakidi	nmod:poss	possessive-np-possessor		c0441856-b259-4d76-a88e-33a7e211b208						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.68	2	liGeladi	1	nigotaGa	nmod:poss	possessive-np-possessor	hil-data-68	9527d53d-7184-4b08-8bb2-51b7fff1429d	2	liGeladi	1	nigotaGa	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.69	4	Pedilo	3	liwatece	nmod:poss	possessive-np-possessor		9669b093-f0a2-4187-9063-cec9ba4c0196						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.70	1	NiGijo	2	nigaanigawaanigi	det	nominal-np-determiner		529c167b-b3a7-40cc-af76-c7522719c6d4						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.70	5	ideloGole	4	liwatece	nmod:poss	possessive-np-possessor		529c167b-b3a7-40cc-af76-c7522719c6d4						NO_GOLD_SENTENCE	NOT_ALIGNED
+ped-gramm,0.1	1	ajo	2	liwatece	det	nominal-np-determiner	ped-gramm-1	ed98d4d1-638c-4377-8c6d-5511855636d1	1	ajo	2	liwatece	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.2	1	ajo	2	liwatece	det	nominal-np-determiner	ped-gramm-2	ccb5ea37-b3ba-47a9-8d71-224f599ea7be	1	ajo	2	liwatece	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.3	1	ajo	2	niwatece	det	nominal-np-determiner	ped-gramm-3	49347527-d19d-4689-bff1-ba3e497e7b1f	1	ajo	2	niwatece	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.6	1	ajo	2	niwatece	det	nominal-np-determiner	ped-gramm-6	1b99ecb9-5656-4c38-b60b-fbbe643708fb	1	ajo	2	niwatece	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.7	2	Maria	1	liGeladi	nmod:poss	possessive-np-possessor	ped-gramm-7	e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9	2	Maria	1	liGeladi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.8	1	ica	2	liGeladi	det	nominal-np-determiner	ped-gramm-8	79a6cd4e-b585-437a-9084-1fa077dec3b6	1	ica	2	liGeladi	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.10	1	ica	2	liGeladi	det	nominal-np-determiner	ped-gramm-10	2fff1f23-4e6f-401c-8b74-6a17ff6a391a	1	ica	2	liGeladi	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.12	1	ica	2	looligi	det	nominal-np-determiner	ped-gramm-12	070d221f-f72d-4055-9c82-ddc383743e6a	1	ica	2	looligi	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.13	1	ica	2	looligi	det	nominal-np-determiner	ped-gramm-13	68277d1f-c30b-4c4f-ba9e-c2883cc133af	1	ica	2	looligi	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.14	1	ica	2	looligi	det	nominal-np-determiner	ped-gramm-14	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5	1	ica	2	looligi	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.15	1	ica	2	looligi	det	nominal-np-determiner	ped-gramm-15	c5bd2cb2-e53b-40e4-9159-6dacde49c1b6	1	ica	2	looligi	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.18	1	ica	2	lideGegi	det	nominal-np-determiner	ped-gramm-18	582429f2-67d5-4077-b209-6deb7b5df54f	1	ica	2	lideGegi	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.18	3	loligi	2	lideGegi	nmod:poss	possessive-np-possessor	ped-gramm-18	582429f2-67d5-4077-b209-6deb7b5df54f	3	loligi	2	lideGegi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.19	1	ica	2	liwigo	det	nominal-np-determiner	ped-gramm-19	0f478381-6858-463d-94cc-903e9dc879f9	1	ica	2	liwigo	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.20	1	ica	2	niwigo	det	nominal-np-determiner	ped-gramm-20	55551636-8ed3-4545-8510-d8dbfd817a1a	1	ica	2	niwigo	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.22	1	ica	2	nioladi	det	nominal-np-determiner	ped-gramm-22	881131dd-3f70-411a-ac7e-85557139d1e3	1	ica	2	nioladi	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.22	3	nioxoa	2	nioladi	nmod:poss	possessive-np-possessor	ped-gramm-22	881131dd-3f70-411a-ac7e-85557139d1e3	3	nioxoa	2	nioladi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.23	1	ica	2	nioladi	det	nominal-np-determiner	ped-gramm-23	95a7d135-4be0-463d-b443-76cc5828fc89	1	ica	2	nioladi	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.23	3	lodawa	2	nioladi	nmod:poss	possessive-np-possessor	ped-gramm-23	95a7d135-4be0-463d-b443-76cc5828fc89	3	lodawa	2	nioladi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.25	4	me	5	napioi	mark	complementizer-mark	ped-gramm-25	a4d33655-fe74-4df2-8d5e-b3c88fba5fd1	4	me	5	napioi	mark	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.36	4	me	5	napioi	mark	complementizer-mark	ped-gramm-36	bb8018ba-76b3-43f2-82ea-78b6009c1f90	4	me	5	napioi	mark	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.38	1	ijo	2	Gatodi	det	nominal-np-determiner	ped-gramm-38	46bbf9a8-c650-4e4b-a44f-78bfe6c5d979	1	ijo	2	Gatodi	det	MATCH	OK
+ped-gramm,0.40	2	digoida	3	weiigi	det	nominal-np-determiner	ped-gramm-40	10e550d6-df13-4527-8aee-aa23e3f2fcdd	2	digoida	3	weiigi	det	MATCH	OK
+ped-gramm,0.43	2	GanaginaGa	1	lotaGa	nmod:poss	possessive-np-possessor	ped-gramm-43	19401990-aa1d-4cf5-bea1-122254c6b77a	2	GanaginaGa	1	lotaGa	nmod:poss	MATCH	OK
+ped-gramm,0.46	2	João	1	liGeladi	nmod:poss	possessive-np-possessor	ped-gramm-46	4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5	2	João	1	liGeladi	nmod:poss	MATCH	OK
+ped-gramm,0.47	3	niweiigi	4	nigotaGa	nmod:poss	possessive-np-possessor	ped-gramm-47	ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec	3	niweiigi	4	nigotaGa	nmod:poss	MATCH	OK
+ped-gramm,0.48	4	nigotaGa	3	niweiigi	nmod:poss	possessive-np-possessor	ped-gramm-48	8b1a9983-4dfd-49e8-9285-92c56c84b652	4	nigotaGa	3	niweiigi	nmod:poss	MATCH	OK
+ped-gramm,0.50	2	me@	3	@initaGa	mark	complementizer-mark		156fa9a4-4323-44f1-9cdc-ef5dc052b428						NO_GOLD_SENTENCE	NOT_ALIGNED
+ped-gramm,0.53	3	eliodi	4	niinikeGegi	det	nominal-np-determiner		3f077b37-aa95-4012-9efb-a21630cdd6e9						NO_GOLD_SENTENCE	NOT_ALIGNED
+ped-gramm,0.55	1	niGidowa	3	lotiidi	det	nominal-np-determiner	ped-gramm-55	d3e098e5-4edd-4c24-81cf-78ff4a4d398c	1	niGidowa	3	lotiidi	det	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.55	2	waca	3	lotiidi	nmod:poss	possessive-np-possessor	ped-gramm-55	d3e098e5-4edd-4c24-81cf-78ff4a4d398c	2	waca	3	lotiidi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.56	2	me@	4	akiidi	mark	complementizer-mark		edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded						NO_GOLD_SENTENCE	NOT_ALIGNED
+ped-gramm,0.56	3	@idi	4	akiidi	det	nominal-np-determiner		edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.1	2	digoida	3	weiigi	det	nominal-np-determiner	van-data-1	a7e338a1-5403-40d4-b169-c840cf193aae	2	digoida	3	weiigi	det	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.6	2	GanaaginaGa	1	lotaGa	nmod:poss	possessive-np-possessor	van-data-6	3e518fdb-d852-41e5-87a4-f8778597c2a1	2	GanaaginaGa	1	lotaGa	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.7	2	Gadodawa	1	lotaGa	nmod:poss	possessive-np-possessor	van-data-7	ee540050-e6fa-424e-9252-fd0b9312769d	2	Gadodawa	1	lotaGa	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.10	2	eliodi	4	libinienigi	det	nominal-np-determiner	van-data-10	0c38eab8-c6b0-4f02-bf05-27ea6285fe70	2	eliodi	4	libinienigi	det	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.10	3	me	4	libinienigi	mark	complementizer-mark	van-data-10	0c38eab8-c6b0-4f02-bf05-27ea6285fe70	3	me	4	libinienigi	mark	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.11	1	niGida	2	liwenigi	det	nominal-np-determiner	van-data-11	a85fda39-1575-4120-9432-8fb534ebdbd2	1	niGida	2	liwenigi	det	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.12	1	niGida	2	niwenigi	det	nominal-np-determiner	van-data-12	a1e15803-1e5e-481f-8137-a84beac6cbcc	1	niGida	2	niwenigi	det	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.12	4	me	5	dakake	mark	complementizer-mark	van-data-12	a1e15803-1e5e-481f-8137-a84beac6cbcc	4	me	5	dakake	mark	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.13	1	naGajo	2	lomiigo	det	nominal-np-determiner	van-data-13	e9806e26-701d-4f5f-9ca9-63216cccf3d0	1	naGajo	2	lomigo	det	MATCH	FINAL_PUNCT_IGNORED;FORM_MISMATCHES=2
+van-data,0.13	3	Pedro	2	lomiigo	nmod:poss	possessive-np-possessor	van-data-13	e9806e26-701d-4f5f-9ca9-63216cccf3d0	3	Pedro	2	lomigo	nmod:poss	MATCH	FINAL_PUNCT_IGNORED;FORM_MISMATCHES=2
+van-data,0.14	1	naGajo	2	lomiigo	det	nominal-np-determiner	van-data-14	2386b5b5-57d0-4a1f-86c2-73f67561744c	1	naGajo	2	lomiigo	det	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.14	3	nigaanigawaanigi	2	lomiigo	nmod:poss	possessive-np-possessor	van-data-14	2386b5b5-57d0-4a1f-86c2-73f67561744c	3	nigaanigawaanigi	2	lomiigo	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.14	4	me@	6	niwatece	mark	complementizer-mark	van-data-14	2386b5b5-57d0-4a1f-86c2-73f67561744c	4	me	6	niwatece	mark	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.14	5	@anitaGa	6	niwatece	det	nominal-np-determiner	van-data-14	2386b5b5-57d0-4a1f-86c2-73f67561744c	5	anitaGa	6	niwatece	det	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.18	2	me@	4	nigotaGa	mark	complementizer-mark	van-data-18	d021bede-064b-4fd5-bb33-6c7cd4279c1b	2	me	4	nigotaGa	mark	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.18	3	@anitaGa	4	nigotaGa	det	nominal-np-determiner	van-data-18	d021bede-064b-4fd5-bb33-6c7cd4279c1b	3	anitaGa	4	nigotaGa	det	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.19	1	niGijoa	2	lionigipi	det	nominal-np-determiner	van-data-19	e5c65dad-8b04-46da-b965-4921887cbca4	1	niGijoa	2	lionigipi	det	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.19	3	iwaalo	2	lionigipi	nmod:poss	possessive-np-possessor	van-data-19	e5c65dad-8b04-46da-b965-4921887cbca4	3	iwaalo	2	lionigipi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.19	5	me@	6	@initaGa	mark	complementizer-mark	van-data-19	e5c65dad-8b04-46da-b965-4921887cbca4	5	me	6	initaGa	mark	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.20	3	me@	4	@anitaGa	mark	complementizer-mark	van-data-20	8c5dd09c-d010-4c48-9601-9d3b14c61119	3	me	4	anitaGa	mark	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.25	2	eliodi	3	linikeGegi	det	nominal-np-determiner		abe20c80-8394-478c-92eb-feef1512e5ed						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.30	1	niGijo	2	lodaajo	det	nominal-np-determiner	van-data-30	0c7e64fb-f070-4faa-a12a-c110cdf4bf16	1	niGijo	2	lodajo	det	MATCH	FINAL_PUNCT_IGNORED;FORM_MISMATCHES=1
+van-data,0.30	3	ajo	4	lodowa	det	nominal-np-determiner	van-data-30	0c7e64fb-f070-4faa-a12a-c110cdf4bf16	3	ajo	4	lodowa	det	MATCH	FINAL_PUNCT_IGNORED;FORM_MISMATCHES=1
+van-data,0.30	4	lodowa	2	lodaajo	nmod:poss	possessive-np-possessor	van-data-30	0c7e64fb-f070-4faa-a12a-c110cdf4bf16	4	lodowa	2	lodajo	nmod:poss	MATCH	FINAL_PUNCT_IGNORED;FORM_MISMATCHES=1
+van-data,0.30	6	@ica	8	liGeladi	det	nominal-np-determiner	van-data-30	0c7e64fb-f070-4faa-a12a-c110cdf4bf16	6	ica	8	liGeladi	det	MATCH	FINAL_PUNCT_IGNORED;FORM_MISMATCHES=1
+van-data,0.30	7	digoida	8	liGeladi	det	nominal-np-determiner	van-data-30	0c7e64fb-f070-4faa-a12a-c110cdf4bf16	7	digoida	8	liGeladi	det	MATCH	FINAL_PUNCT_IGNORED;FORM_MISMATCHES=1
+van-data,0.31	1	ica	2	liwigo	det	nominal-np-determiner	van-data-31	5d76c7ee-51ce-47b0-a85d-ddc7f7d33f5f	1	ica	2	liwigo	det	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.31	3	niganigawanigi	2	liwigo	nmod:poss	possessive-np-possessor	van-data-31	5d76c7ee-51ce-47b0-a85d-ddc7f7d33f5f	3	niganigawanigi	2	liwigo	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.32	1	naGani	2	wetiGa	det	nominal-np-determiner		46190f73-f21e-4073-b09c-8b2d17c6668e						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.33	1	naGani	2	wetiGa	det	nominal-np-determiner		a0bb1280-1040-4dff-9311-a1a31049b6f8						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.34	1	niGidiwa	2	wetiadi	det	nominal-np-determiner	van-data-34	e1acd124-849e-40dc-bbb0-a8b6ed281592	1	niGidiwa	2	wetiadi	det	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.35	1	ani	2	wetiGa	det	nominal-np-determiner		675ef4d4-ebe8-4601-bf42-908deb0df82b						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.35	4	me	5	iwaGadi	mark	complementizer-mark		675ef4d4-ebe8-4601-bf42-908deb0df82b						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.36	1	ani	2	wetiGa	det	nominal-np-determiner		42b65fc9-cec4-40a9-8aec-cdeec3731df8						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.37	1	ani	2	wetiGa	det	nominal-np-determiner		ba34b659-bcb8-4aa2-b9f4-b969ba786b12						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.37	3	me	4	iwaGadi	mark	complementizer-mark		ba34b659-bcb8-4aa2-b9f4-b969ba786b12						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.38	1	ani	2	wetiGa	det	nominal-np-determiner		61da4017-2140-4577-82e4-d5108efae675						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.39	1	idiwa	2	wetiadi	det	nominal-np-determiner	van-data-39	6459c008-b2ad-4517-8227-b525616b720d	1	idiwa	2	wetiadi	det	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.40	1	niGidowa	3	lotiidi	det	nominal-np-determiner	van-data-40	b4e1df8d-6590-4ce9-9f72-c0b054398c89	1	niGidowa	3	lotiidi	det	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.40	2	waca	3	lotiidi	nmod:poss	possessive-np-possessor	van-data-40	b4e1df8d-6590-4ce9-9f72-c0b054398c89	2	waca	3	lotiidi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.41	1	idowa	3	lotiidi	det	nominal-np-determiner	van-data-41	278e4c5c-aaab-4ca3-8f5e-277610fb80c2	1	idowa	3	lotiidi	det	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.41	2	waca	3	lotiidi	nmod:poss	possessive-np-possessor	van-data-41	278e4c5c-aaab-4ca3-8f5e-277610fb80c2	2	waca	3	lotiidi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.43	1	ijo	3	libinienigi	det	nominal-np-determiner		a2910ce3-a0d2-4eac-bcc3-2da15db88b90						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.43	2	niwigo	3	libinienigi	nmod:poss	possessive-np-possessor		a2910ce3-a0d2-4eac-bcc3-2da15db88b90						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.43	4	ijowa	5	nigetedi	det	nominal-np-determiner		a2910ce3-a0d2-4eac-bcc3-2da15db88b90						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.44	1	ijoa	2	nigetedi	det	nominal-np-determiner		075356e6-f89c-4d83-b001-435d13b319dc						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.47	1	idiwa	3	lixagotaGaGa	det	nominal-np-determiner	van-data-47	fad6e8d3-1e9f-451c-aaa7-fd28aecfd967	1	idiwa	2	noGojedi	det	HEAD_MISMATCH	FINAL_PUNCT_IGNORED
+van-data,0.47	2	noGojedi	3	lixagotaGaGa	nmod:poss	possessive-np-possessor	van-data-47	fad6e8d3-1e9f-451c-aaa7-fd28aecfd967	2	noGojedi	3	lixagotaGaGa	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.50	2	me@	3	@anitaGa	mark	complementizer-mark	van-data-50	e7f4ab65-14d7-44f5-a197-c99c4ab173cd	2	me	3	anitaGa	mark	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.51	2	me@	3	@initaGa	mark	complementizer-mark	van-data-51	7aa17dd7-2c26-4df9-8f90-65d8d58e2c59	2	me	3	initaGa	mark	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.52	3	@ica	4	inikeGegi	det	nominal-np-determiner		c3c548d7-b154-437e-9baf-541a1bbbab6e						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.54	3	eliodi	4	niinikeGegi	det	nominal-np-determiner		969ba2f3-88dc-417e-ad3f-16ce88b4c762						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.55	3	me	5	@dininitibeci	mark	complementizer-mark		39925f76-d73f-423f-95cd-f88bd78f2a6e						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.56	3	daGa	4	jipegitege	mark	complementizer-mark		d3095a7e-477d-405e-9ea2-85bfdacad7d3						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.57	3	daGa	4	jipegitegi	mark	complementizer-mark		813f2ad7-42fb-4fbd-84b4-1957c68aa4f9						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.61	4	me@	6	iniKGigi	mark	complementizer-mark		42df6a83-6ae1-49b2-bd99-fbed7e2a083b						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.61	5	@ica	6	iniKGigi	det	nominal-np-determiner		42df6a83-6ae1-49b2-bd99-fbed7e2a083b						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.62	3	me@	5	inikGigi	mark	complementizer-mark		27d94732-46ea-4286-a1d4-b2861806a579						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.62	4	@ica	5	inikGigi	det	nominal-np-determiner		27d94732-46ea-4286-a1d4-b2861806a579						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.64	3	me@	5	Godoigi	mark	complementizer-mark		d3952c8a-1ac1-4255-be0b-63978fdf368b						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.64	4	@idi	5	Godoigi	det	nominal-np-determiner		d3952c8a-1ac1-4255-be0b-63978fdf368b						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.66	3	me@	5	Godoigi	mark	complementizer-mark		fbae0277-3aad-4812-9229-94179b5a97a0						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.66	4	@idi	5	Godoigi	det	nominal-np-determiner		fbae0277-3aad-4812-9229-94179b5a97a0						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.67	1	ijo	2	lemé	det	nominal-np-determiner	van-data-67	6599689a-3fbe-4598-8827-78aceeff3931	1	ijo	2	lemé	det	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.67	3	Maria	2	lemé	nmod:poss	possessive-np-possessor	van-data-67	6599689a-3fbe-4598-8827-78aceeff3931	3	Maria	2	lemé	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.69	2	niale	1	libiwe	nmod:poss	possessive-np-possessor		30ef1810-38e0-4cef-8db3-4dda590faa09						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.70	1	idiwa	2	bejoli	det	nominal-np-determiner		444f95ae-8ed7-422e-84f1-aae6d4af2b6d						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.71	1	idiwa	2	leonigipi	det	nominal-np-determiner		f240dcfe-ca05-42aa-8644-07b9e3464e1a						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.71	3	Maria	2	leonigipi	nmod:poss	possessive-np-possessor		f240dcfe-ca05-42aa-8644-07b9e3464e1a						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.72	1	ijowa	2	leonigipi	det	nominal-np-determiner		b97e5b2f-d0da-4238-8ee6-2c64ded91f76						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.72	3	iwaalo	2	leonigipi	nmod:poss	possessive-np-possessor		b97e5b2f-d0da-4238-8ee6-2c64ded91f76						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.73	3	niweiigi	4	nigotaGa	nmod:poss	possessive-np-possessor	van-data-73	c1b350df-ed1a-4e3b-89a8-a6fa9ca8382e	3	niweiigi	4	nigotaGa	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.74	4	nigotaGa	3	niweiigi	nmod:poss	possessive-np-possessor	van-data-74	ebff5ffa-8a9d-4f8b-9960-38f70b344c19	4	nigotaGa	3	niweiigi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.75	2	liGeladi	1	nigotaGa	nmod:poss	possessive-np-possessor		81048a6f-e084-4b0a-965a-f41fb5c53ff7						NO_GOLD_SENTENCE	NOT_ALIGNED
+							ped-gramm-11	fef391af-9e63-419f-8f81-057459193f49	1	ica	3	looligi	det	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-11	fef391af-9e63-419f-8f81-057459193f49	2	Maria	3	looligi	nmod:poss	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-17	12147353-b422-4ad7-9bef-1d20e70e2a74	1	ica	2	loigi	det	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-17	12147353-b422-4ad7-9bef-1d20e70e2a74	3	ijo	4	niganigi	det	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-17	12147353-b422-4ad7-9bef-1d20e70e2a74	4	niganigi	2	loigi	nmod:poss	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-21	5d0b94bf-223d-4f09-8c6f-b951a70d6d0b	1	ica	2	nioladi	det	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-21	5d0b94bf-223d-4f09-8c6f-b951a70d6d0b	3	Ganixoa	2	nioladi	nmod:poss	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-26	f081c545-c42b-463d-b57f-db87787f20e7	1	João	2	liGeladi	nmod:poss	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-27	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc	3	me	5	naigi	mark	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-27	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc	4	ijo	5	naigi	det	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-27	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc	6	naGajo	5	naigi	nmod:poss	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-28	ee1a1190-7803-404c-83f6-49d3ccf63b0d	4	micoataGa	7	lionigipi	mark	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-28	ee1a1190-7803-404c-83f6-49d3ccf63b0d	5	daGa	7	lionigipi	mark	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-28	ee1a1190-7803-404c-83f6-49d3ccf63b0d	6	me	7	lionigipi	mark	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-29	4bdb4b8f-0176-4303-8a13-e313fbb6d7ad	2	me	1	eyodi	mark	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-31	845b9d1d-ad7c-445a-bfbd-04fd9255ffc2	2	daGa	3	niganaGacanajo	mark	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-42	aad13f14-bd9a-462a-9a43-68ba69a81519	2	liGeladi	1	nigotaGa	nmod:poss	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-44	6d2a809e-0d32-4254-9489-f9e356e22493	1	nGida	2	niwenigi	det	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-44	6d2a809e-0d32-4254-9489-f9e356e22493	4	me	5	dakake	mark	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-45	c25b098d-6b0a-4416-a31d-6d7219685a63	1	João	2	liGeladi	nmod:poss	NO_DONE_TREE	NOT_ALIGNED
+							van-data-15	4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7	1	niGijo	2	niganigawaanigi	det	NO_DONE_TREE	NOT_ALIGNED
+							van-data-15	4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7	3	lomigo	4	niwatece	nmod:poss	NO_DONE_TREE	NOT_ALIGNED
+							van-data-16	235440ba-548e-4df6-8d9e-214cc8714f8f	1	niGijo	2	nigaanigawaanigi	det	NO_DONE_TREE	NOT_ALIGNED
+							van-data-16	235440ba-548e-4df6-8d9e-214cc8714f8f	3	me	6	niwatece	mark	NO_DONE_TREE	NOT_ALIGNED
+							van-data-16	235440ba-548e-4df6-8d9e-214cc8714f8f	4	anitaGa	6	niwatece	det	NO_DONE_TREE	NOT_ALIGNED
+							van-data-16	235440ba-548e-4df6-8d9e-214cc8714f8f	5	lomigo	6	niwatece	nmod:poss	NO_DONE_TREE	NOT_ALIGNED
+							van-data-42	44646324-eb90-42f0-b944-21f0452109e2	1	ijowa	2	nigetedi	det	NO_DONE_TREE	NOT_ALIGNED
+							van-data-42	44646324-eb90-42f0-b944-21f0452109e2	3	liwigo	2	nigetedi	nmod:poss	NO_DONE_TREE	NOT_ALIGNED
