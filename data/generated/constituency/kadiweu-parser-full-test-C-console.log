@@ -1,192 +1,193 @@
 loaded 21 TBP definition(s) from /home/leonel/Dropbox/projects/2025/post-doc/parser/kadiweu_parser_definitions_070726.txt; used 9: adverbialC, complexC, finiteVerb, noun, numeral, possessive, unmodifiable-noun, vb_et, vb_unacc
-skipping original TBP rule(s): 30 (nbar10), 79 (ip-xp), 125 (CP-D)
-[001/170] TBP 1: conj-1
-[002/170] TBP 2: adj-conj-adj
-[003/170] TBP 3: adv-conj-adv
-[004/170] TBP 4: posspro-conj-posspro
-[005/170] TBP 5: num-conj-num
-[006/170] TBP 6: q-conj-q
-[007/170] TBP 7: noun-conj-noun-conj-noun
-[008/170] TBP 8: noun-conj-noun
-[009/170] TBP 9: wadjp
-[010/170] TBP 10: advp1
-[011/170] TBP 11: advp3
-[012/170] TBP 12: wadvp
-[013/170] TBP 13: T-N
-[014/170] TBP 14: Nbar-N$
-[015/170] TBP 15: N-bar-poss
-[016/170] TBP 16: Nbar-poss2
-[017/170] TBP 17: N-bar-D
-[018/170] TBP 18: nbar2
-[019/170] TBP 19: nbar3
-[020/170] TBP 20: Nbar-T
-[021/170] TBP 21: nbar4.2
-[022/170] TBP 22: nbar4.6
-[023/170] TBP 23: nbar4.6
-[024/170] TBP 24: nbar4.1
-[025/170] TBP 25: n-adj
-[026/170] TBP 26: nbar4.3
-[027/170] TBP 27: nbar4.5
-[028/170] TBP 28: nbar5
-[029/170] TBP 29: nbar6
-[030/170] TBP 31: np-pos-complex
-[031/170] TBP 32: nbar15
-[032/170] TBP 33: nbar12c
-[033/170] TBP 34: nbar13
-[034/170] TBP 35: wnp1
-[035/170] TBP 36: wnp2
-[036/170] TBP 37: replace-nbar
-[037/170] TBP 38: np-poss
-[038/170] TBP 39: NP-rec
-[039/170] TBP 40: adjp-conjp1
-[040/170] TBP 41: adjp-conjp2
-[041/170] TBP 42: NAPL
-[042/170] TBP 43: N$-Nbar-TEST
-[043/170] TBP 44: np-poss-n$
-[044/170] TBP 45: N$-NP3
-[045/170] TBP 46: np-adjp2
-[046/170] TBP 47: np-poss
-[047/170] TBP 48: np-poss2
-[048/170] TBP 49: NP-poss-núcleo2
-[049/170] TBP 50: Nbar-poss3-núcleo
-[050/170] TBP 51: np-poss3-d
-[051/170] TBP 52: np-conjp1
-[052/170] TBP 53: np-conjp2
-[053/170] TBP 54: np-conjp3
-[054/170] TBP 55: vbar-apl1
-[055/170] TBP 56: IP-APL-1
-[056/170] TBP 57: vbar (recursive)
+skipping original TBP rule(s): 30 (nbar10), 125 (CP-D)
+[001/171] TBP 1: conj-1
+[002/171] TBP 2: adj-conj-adj
+[003/171] TBP 3: adv-conj-adv
+[004/171] TBP 4: posspro-conj-posspro
+[005/171] TBP 5: num-conj-num
+[006/171] TBP 6: q-conj-q
+[007/171] TBP 7: noun-conj-noun-conj-noun
+[008/171] TBP 8: noun-conj-noun
+[009/171] TBP 9: wadjp
+[010/171] TBP 10: advp1
+[011/171] TBP 11: advp3
+[012/171] TBP 12: wadvp
+[013/171] TBP 13: T-N
+[014/171] TBP 14: Nbar-N$
+[015/171] TBP 15: N-bar-poss
+[016/171] TBP 16: Nbar-poss2
+[017/171] TBP 17: N-bar-D
+[018/171] TBP 18: nbar2
+[019/171] TBP 19: nbar3
+[020/171] TBP 20: Nbar-T
+[021/171] TBP 21: nbar4.2
+[022/171] TBP 22: nbar4.6
+[023/171] TBP 23: nbar4.6
+[024/171] TBP 24: nbar4.1
+[025/171] TBP 25: n-adj
+[026/171] TBP 26: nbar4.3
+[027/171] TBP 27: nbar4.5
+[028/171] TBP 28: nbar5
+[029/171] TBP 29: nbar6
+[030/171] TBP 31: np-pos-complex
+[031/171] TBP 32: nbar15
+[032/171] TBP 33: nbar12c
+[033/171] TBP 34: nbar13
+[034/171] TBP 35: wnp1
+[035/171] TBP 36: wnp2
+[036/171] TBP 37: replace-nbar
+[037/171] TBP 38: np-poss
+[038/171] TBP 39: NP-rec
+[039/171] TBP 40: adjp-conjp1
+[040/171] TBP 41: adjp-conjp2
+[041/171] TBP 42: NAPL
+[042/171] TBP 43: N$-Nbar-TEST
+[043/171] TBP 44: np-poss-n$
+[044/171] TBP 45: N$-NP3
+[045/171] TBP 46: np-adjp2
+[046/171] TBP 47: np-poss
+[047/171] TBP 48: np-poss2
+[048/171] TBP 49: NP-poss-núcleo2
+[049/171] TBP 50: Nbar-poss3-núcleo
+[050/171] TBP 51: np-poss3-d
+[051/171] TBP 52: np-conjp1
+[052/171] TBP 53: np-conjp2
+[053/171] TBP 54: np-conjp3
+[054/171] TBP 55: vbar-apl1
+[055/171] TBP 56: IP-APL-1
+[056/171] TBP 57: vbar (recursive)
   recursive iteration 1: 111 record(s) changed
-[057/170] TBP 58: cp-me1
-[058/170] TBP 59: vbar-apl2.1
-[059/170] TBP 60: vbar-apl2.2
-[060/170] TBP 61: vbar-apl2.3
-[061/170] TBP 62: neg-vbar
-[062/170] TBP 63: vbar-xp
-[063/170] TBP 64: vbar-xp-rec
-[064/170] TBP 65: vbar3
-[065/170] TBP 66: xp-vbar
-[066/170] TBP 67: xp-vbar
-[067/170] TBP 68: CP-ADV-verbless (recursive)
-[068/170] TBP 69: CP-verbless-NP
-[069/170] TBP 70: replace-vbar
-[070/170] TBP 71: cp-d-daǥa
-[071/170] TBP 72: cp-daGa
-[072/170] TBP 73: neg-ip
-[073/170] TBP 74: cp1
-[074/170] TBP 75: xp-ip
-[075/170] TBP 76: cp-c-final
-[076/170] TBP 77: cp1.1
-[077/170] TBP 78: cp-c-only
-[078/170] TBP 80: xp-ip (recursive)
+[057/171] TBP 58: cp-me1
+[058/171] TBP 59: vbar-apl2.1
+[059/171] TBP 60: vbar-apl2.2
+[060/171] TBP 61: vbar-apl2.3
+[061/171] TBP 62: neg-vbar
+[062/171] TBP 63: vbar-xp
+[063/171] TBP 64: vbar-xp-rec
+[064/171] TBP 65: vbar3
+[065/171] TBP 66: xp-vbar
+[066/171] TBP 67: xp-vbar
+[067/171] TBP 68: CP-ADV-verbless (recursive)
+[068/171] TBP 69: CP-verbless-NP
+[069/171] TBP 70: replace-vbar
+[070/171] TBP 71: cp-d-daǥa
+[071/171] TBP 72: cp-daGa
+[072/171] TBP 73: neg-ip
+[073/171] TBP 74: cp1
+[074/171] TBP 75: xp-ip
+[075/171] TBP 76: cp-c-final
+[076/171] TBP 77: cp1.1
+[077/171] TBP 78: cp-c-only
+[078/171] TBP 79: ip-xp
+[079/171] TBP 80: xp-ip (recursive)
   recursive iteration 1: 8 record(s) changed
   recursive iteration 2: 7 record(s) changed
-[079/170] TBP 81: ip-conjp2
-[080/170] TBP 82: conjp-codaa
-[081/170] TBP 83: ip-conjp
-[082/170] TBP 84: ip-xp
-[083/170] TBP 85: xp-ip
-[084/170] TBP 86: ip-xp
-[085/170] TBP 87: prune-ip
-[086/170] TBP 88: prune-ip
-[087/170] TBP 89: prune-IP-serial
-[088/170] TBP 90: prune-IP-serial2
-[089/170] TBP 91: prune-ip3
-[090/170] TBP 92: prune-IP-serial3
-[091/170] TBP 93: IP-APL-2
-[092/170] TBP 94: ip-mat4-PRED
-[093/170] TBP 95: prune-np
-[094/170] TBP 96: cp1-rec-CHECK
-[095/170] TBP 97: cp-metaGa
-[096/170] TBP 98: cp2
-[097/170] TBP 99: W-CP
-[098/170] TBP 100: cp-que1
-[099/170] TBP 101: prune-cp
-[100/170] TBP 102: prune-cp
-[101/170] TBP 103: ip-xp
-[102/170] TBP 104: cp-ip2
-[103/170] TBP 105: advp-ip
-[104/170] TBP 106: ip-xp
-[105/170] TBP 107: cp3
-[106/170] TBP 108: cp-ip
-[107/170] TBP 109: cp4
-[108/170] TBP 110: np-cp-me-CHECK
-[109/170] TBP 111: np-cp2
-[110/170] TBP 112: prune-cp
-[111/170] TBP 113: prune-cp
-[112/170] TBP 114: cp-rel
-[113/170] TBP 115: cp-adv1
-[114/170] TBP 116: CP-rel-verbless
-[115/170] TBP 117: CP-frl
-[116/170] TBP 118: CP-rel-verbless2
-[117/170] TBP 119: cp-tht1
-[118/170] TBP 120: ip-xp-rec
-[119/170] TBP 121: Q-C
-[120/170] TBP 122: cp-me-q
-[121/170] TBP 123: cp-me
-[122/170] TBP 124: cp-me2
-[123/170] TBP 126: cp-que2
-[124/170] TBP 127: cp-que3
-[125/170] TBP 128: cp-que4
-[126/170] TBP 129: cp-que5
-[127/170] TBP 130: cp-que-6
-[128/170] TBP 131: adjp-cp-cmp
-[129/170] TBP 132: xp-cp-cmp
-[130/170] TBP 133: ip-sub
-[131/170] TBP 134: ip-sub2
-[132/170] TBP 135: cp-frl1
-[133/170] TBP 136: cp-frl-q
-[134/170] TBP 137: cp-frl3
-[135/170] TBP 138: adv-cp-adv
-[136/170] TBP 139: cp-adv2
-[137/170] TBP 140: cp-adv3
-[138/170] TBP 141: ip-sub
-[139/170] TBP 142: ip-mat3
-[140/170] TBP 143: ip-adv
-[141/170] TBP 144: temp
-[142/170] TBP 145: add-wh-trace-advp
-[143/170] TBP 146: add-wh-trace-np
-[144/170] TBP 147: add-wh-trace-pp
-[145/170] TBP 148: add-wh-trace-advp-msr1
-[146/170] TBP 149: add-wh-trace-advp-msr2
-[147/170] TBP 150: np-apl
-[148/170] TBP 151: np-apl2
-[149/170] TBP 152: np-sbj1
-[150/170] TBP 153: np-sbj2-PRED
-[151/170] TBP 154: pred-neg
-[152/170] TBP 155: np-voc
-[153/170] TBP 156: np-gen
-[154/170] TBP 157: np-gen2
-[155/170] TBP 158: np-sub-PREDcp
-[156/170] TBP 159: np-acc-sbj1
-[157/170] TBP 160: np-acc-sbj2
-[158/170] TBP 161: np-acc3
-[159/170] TBP 162: np-sbj-exp1
-[160/170] TBP 163: np-sbj-exp2
-[161/170] TBP 164: np-sbj-exp3
-[162/170] TBP 165: np-sbj-exp4
-[163/170] TBP 166: remaining-clitics
-[164/170] TBP 167: fix-dash-tags1
-[165/170] TBP 168: adj-n
-[166/170] TBP 169: add-cc-trace-np-acc
-[167/170] TBP 170: add-cc-trace-np-dat
-[168/170] TBP 171: add-cc-trace-np-se
-[169/170] TBP 172: add-cc-trace-np-xxx
-[170/170] TBP 173: np_sbj_et
+[080/171] TBP 81: ip-conjp2
+[081/171] TBP 82: conjp-codaa
+[082/171] TBP 83: ip-conjp
+[083/171] TBP 84: ip-xp
+[084/171] TBP 85: xp-ip
+[085/171] TBP 86: ip-xp
+[086/171] TBP 87: prune-ip
+[087/171] TBP 88: prune-ip
+[088/171] TBP 89: prune-IP-serial
+[089/171] TBP 90: prune-IP-serial2
+[090/171] TBP 91: prune-ip3
+[091/171] TBP 92: prune-IP-serial3
+[092/171] TBP 93: IP-APL-2
+[093/171] TBP 94: ip-mat4-PRED
+[094/171] TBP 95: prune-np
+[095/171] TBP 96: cp1-rec-CHECK
+[096/171] TBP 97: cp-metaGa
+[097/171] TBP 98: cp2
+[098/171] TBP 99: W-CP
+[099/171] TBP 100: cp-que1
+[100/171] TBP 101: prune-cp
+[101/171] TBP 102: prune-cp
+[102/171] TBP 103: ip-xp
+[103/171] TBP 104: cp-ip2
+[104/171] TBP 105: advp-ip
+[105/171] TBP 106: ip-xp
+[106/171] TBP 107: cp3
+[107/171] TBP 108: cp-ip
+[108/171] TBP 109: cp4
+[109/171] TBP 110: np-cp-me-CHECK
+[110/171] TBP 111: np-cp2
+[111/171] TBP 112: prune-cp
+[112/171] TBP 113: prune-cp
+[113/171] TBP 114: cp-rel
+[114/171] TBP 115: cp-adv1
+[115/171] TBP 116: CP-rel-verbless
+[116/171] TBP 117: CP-rel-verbless2
+[117/171] TBP 118: CP-frl
+[118/171] TBP 119: cp-tht1
+[119/171] TBP 120: ip-xp-rec
+[120/171] TBP 121: Q-C
+[121/171] TBP 122: cp-me-q
+[122/171] TBP 123: cp-me
+[123/171] TBP 124: cp-me2
+[124/171] TBP 126: cp-que2
+[125/171] TBP 127: cp-que3
+[126/171] TBP 128: cp-que4
+[127/171] TBP 129: cp-que5
+[128/171] TBP 130: cp-que-6
+[129/171] TBP 131: adjp-cp-cmp
+[130/171] TBP 132: xp-cp-cmp
+[131/171] TBP 133: ip-sub
+[132/171] TBP 134: ip-sub2
+[133/171] TBP 135: cp-frl1
+[134/171] TBP 136: cp-frl-q
+[135/171] TBP 137: cp-frl3
+[136/171] TBP 138: adv-cp-adv
+[137/171] TBP 139: cp-adv2
+[138/171] TBP 140: cp-adv3
+[139/171] TBP 141: ip-sub
+[140/171] TBP 142: ip-mat3
+[141/171] TBP 143: ip-adv
+[142/171] TBP 144: temp
+[143/171] TBP 145: add-wh-trace-advp
+[144/171] TBP 146: add-wh-trace-np
+[145/171] TBP 147: add-wh-trace-pp
+[146/171] TBP 148: add-wh-trace-advp-msr1
+[147/171] TBP 149: add-wh-trace-advp-msr2
+[148/171] TBP 150: np-apl
+[149/171] TBP 151: np-apl2
+[150/171] TBP 152: np-sbj1
+[151/171] TBP 153: np-sbj2-PRED
+[152/171] TBP 154: pred-neg
+[153/171] TBP 155: np-voc
+[154/171] TBP 156: np-gen
+[155/171] TBP 157: np-gen2
+[156/171] TBP 158: np-sub-PREDcp
+[157/171] TBP 159: np-acc-sbj1
+[158/171] TBP 160: np-acc-sbj2
+[159/171] TBP 161: np-acc3
+[160/171] TBP 162: np-sbj-exp1
+[161/171] TBP 163: np-sbj-exp2
+[162/171] TBP 164: np-sbj-exp3
+[163/171] TBP 165: np-sbj-exp4
+[164/171] TBP 166: remaining-clitics
+[165/171] TBP 167: fix-dash-tags1
+[166/171] TBP 168: adj-n
+[167/171] TBP 169: add-cc-trace-np-acc
+[168/171] TBP 170: add-cc-trace-np-dat
+[169/171] TBP 171: add-cc-trace-np-se
+[170/171] TBP 172: add-cc-trace-np-xxx
+[171/171] TBP 173: np_sbj_et
 
 Comparison summary:
 struct_status  exact  trace_equivalent  structural_difference  total
-DONE             149                13                     21    183
-REVIEW            14                 4                      5     23
-TOTAL            163                17                     26    206
+DONE             140                12                     31    183
+REVIEW             7                 1                     15     23
+TOTAL            147                13                     46    206
 
 Comparison summary by dataset × struct_status:
 dataset    struct_status  exact  trace_equivalent  structural_difference  total
-hil-data   DONE              57                 5                      3     65
-hil-data   REVIEW             4                 1                      0      5
-ped-gramm  DONE              37                 5                      7     49
-ped-gramm  REVIEW             5                 2                      5     12
-van-data   DONE              55                 3                     11     69
-van-data   REVIEW             5                 1                      0      6
+hil-data   DONE              48                 4                     13     65
+hil-data   REVIEW             3                 0                      2      5
+ped-gramm  DONE              39                 6                      4     49
+ped-gramm  REVIEW             4                 0                      8     12
+van-data   DONE              53                 2                     14     69
+van-data   REVIEW             0                 1                      5      6
 comparison report written to /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-C-comparison.tsv
-FAIL: 26 structural difference(s) written to /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-C.diff
+FAIL: 46 structural difference(s) written to /home/leonel/kadiweu/data/generated/constituency/kadiweu-parser-full-test-C.diff

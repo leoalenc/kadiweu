@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tests for certain constituency-derived Kadiwéu dependencies."""
+"""Tests using only structures and terminals attested in DONE sentences."""
 
 from __future__ import annotations
 
@@ -8,58 +8,84 @@ import unittest
 from kadiweu_constituency import tree_from_psd_record
 from kadiweu_constituency_dependencies import (
     DETERMINER_RULE,
+    MARK_RULE,
     POSSESSOR_RULE,
     infer_dependencies,
     lexical_head,
+    ud_head,
 )
 
 
-def parse_tree(tree_text: str):
-    tree, _ = tree_from_psd_record(f"({tree_text} (ID test,0.1))")
+def parse_tree(tree_text: str, sent_id: str):
+    """Parse a literal subtree copied from the named DONE sentence."""
+    tree, _ = tree_from_psd_record(f"({tree_text} (ID {sent_id}))")
     return tree
 
 
-def assignment_tuples(tree_text: str):
+def assignment_tuples(tree_text: str, sent_id: str):
     return [
         (a.dependent_position, a.head_position, a.deprel, a.rule)
-        for a in infer_dependencies(parse_tree(tree_text))
+        for a in infer_dependencies(parse_tree(tree_text, sent_id))
     ]
 
 
 class LexicalHeadTests(unittest.TestCase):
-    def test_determiner_can_be_sole_np_head(self):
-        tree = parse_tree("(NP (D idi))")
-        self.assertEqual(lexical_head(tree.root).form, "idi")
+    def test_determiner_can_be_sole_np_head_hil_017(self):
+        tree = parse_tree("(NP (D naGada))", "hil-data,0.17")
+        self.assertEqual(lexical_head(tree.root).form, "naGada")
 
-    def test_pronoun_can_be_sole_np_head(self):
-        tree = parse_tree("(NP (PRO jema))")
-        self.assertEqual(lexical_head(tree.root).form, "jema")
+    def test_pronoun_can_be_sole_np_head_hil_012(self):
+        tree = parse_tree("(NP (PRO ee))", "hil-data,0.12")
+        self.assertEqual(lexical_head(tree.root).form, "ee")
 
-    def test_simple_d_n_np_is_headed_by_n(self):
-        tree = parse_tree("(NP (D idi) (N niweiigi))")
-        self.assertEqual(lexical_head(tree.root).form, "niweiigi")
+    def test_d_n_np_is_headed_by_n_hil_009(self):
+        tree = parse_tree(
+            "(NP (D NiGida) (N niwenigi))",
+            "hil-data,0.9",
+        )
+        self.assertEqual(lexical_head(tree.root).form, "niwenigi")
 
-    def test_ambiguous_np_has_no_guessed_head(self):
-        tree = parse_tree("(NP (N one) (N two))")
+    def test_proper_noun_heads_np_hil_060(self):
+        tree = parse_tree("(NP (NPR Maria))", "hil-data,0.60")
+        self.assertEqual(lexical_head(tree.root).form, "Maria")
+
+    def test_noun_heads_np_with_relative_clause_hil_005(self):
+        tree = parse_tree(
+            "(NP (N Etogo) (CP-REL (C ane@) "
+            "(IP-SUB (NP-TRACE (-NONE- *T*-1)) (VB @iwaGadi))))",
+            "hil-data,0.5",
+        )
+        self.assertEqual(lexical_head(tree.root).form, "Etogo")
+
+    def test_two_nominal_head_candidates_are_ambiguous(self):
+        # Negative robustness test: uppercase forms are metavariables, not
+        # purported Kadiwéu words.
+        tree = parse_tree(
+            "(NP (N NOUN_ONE) (N NOUN_TWO))",
+            "negative-test,0.1",
+        )
         self.assertIsNone(lexical_head(tree.root))
 
 
 class PossessiveNPTests(unittest.TestCase):
-    def test_possessum_precedes_possessor(self):
+    def test_possessum_precedes_possessor_hil_003(self):
         actual = assignment_tuples(
-            "(NP-SBJ (N$ LotaGa) (NP (N$ Ganioxoa)))"
+            "(NP-SBJ (N$ LotaGa) (NP (N$ Ganioxoa)))",
+            "hil-data,0.3",
         )
         self.assertEqual(actual, [(2, 1, "nmod:poss", POSSESSOR_RULE)])
 
-    def test_possessor_precedes_possessum(self):
+    def test_possessor_precedes_possessum_ped_047(self):
         actual = assignment_tuples(
-            "(NP-APL (NP (N niweiigi)) (N$ nigotaGa))"
+            "(NP-APL (NP (N niweiigi)) (N$ nigotaGa))",
+            "ped-gramm,0.47",
         )
         self.assertEqual(actual, [(1, 2, "nmod:poss", POSSESSOR_RULE)])
 
-    def test_determiner_with_possessum_possessor_order(self):
+    def test_determiner_possessum_possessor_van_031(self):
         actual = assignment_tuples(
-            "(NP (D ijo) (N$ ligetedi) (NP (N$ liwigo)))"
+            "(NP-SBJ (D ica) (N$ liwigo) (NP (N niganigawanigi)))",
+            "van-data,0.31",
         )
         self.assertEqual(
             actual,
@@ -69,9 +95,10 @@ class PossessiveNPTests(unittest.TestCase):
             ],
         )
 
-    def test_determiner_with_possessor_possessum_order(self):
+    def test_determiner_possessor_possessum_hil_041(self):
         actual = assignment_tuples(
-            "(NP (D NiGidoa) (NP (N waca)) (N$ lotiidi))"
+            "(NP (D NiGidoa) (NP (N waca)) (N$ lotiidi))",
+            "hil-data,0.41",
         )
         self.assertEqual(
             actual,
@@ -81,13 +108,62 @@ class PossessiveNPTests(unittest.TestCase):
             ],
         )
 
-    def test_determiner_can_head_possessor_np(self):
-        actual = assignment_tuples("(NP (N$ LotaGa) (NP (D idi)))")
+    def test_two_np_daughters_are_unresolved_hil_043(self):
+        actual = assignment_tuples(
+            "(NP-SBJ (D niGidiwa) (NP (N okokodi)) "
+            "(N$ ligetedi) (NP (N$ liwigo)))",
+            "hil-data,0.43",
+        )
+        # Possession is unresolved, but the immediate D and unique N$ still
+        # establish a certain determiner dependency.
+        self.assertEqual(actual, [(1, 3, "det", DETERMINER_RULE)])
+
+    def test_q_modifier_with_possession_van_071(self):
+        actual = assignment_tuples(
+            "(NP-SBJ (Q idiwa) (N$ leonigipi) (NP (NPR Maria)))",
+            "van-data,0.71",
+        )
+        self.assertEqual(
+            actual,
+            [
+                (1, 2, "det", DETERMINER_RULE),
+                (3, 2, "nmod:poss", POSSESSOR_RULE),
+            ],
+        )
+
+    def test_relative_clause_is_not_a_possessor_hil_005(self):
+        actual = assignment_tuples(
+            "(NP (N Etogo) (CP-REL (C ane@) "
+            "(IP-SUB (NP-TRACE (-NONE- *T*-1)) (VB @iwaGadi))))",
+            "hil-data,0.5",
+        )
+        self.assertEqual(actual, [])
+
+    def test_two_possessum_candidates_are_unresolved(self):
+        # Negative robustness test: uppercase forms are metavariables, not
+        # purported Kadiwéu words.
+        actual = assignment_tuples(
+            "(NP (N$ POSSESSUM_ONE) (NP (N POSSESSOR)) "
+            "(N$ POSSESSUM_TWO))",
+            "negative-test,0.2",
+        )
+        self.assertEqual(actual, [])
+
+    def test_determiner_only_np_can_be_a_possessor(self):
+        # Prospective compositional test.  The components are attested in DONE:
+        # (N$ LotaGa) in hil-data,0.3 and (NP (D naGada)) in hil-data,0.17.
+        actual = assignment_tuples(
+            "(NP (N$ LotaGa) (NP (D naGada)))",
+            "prospective-test,0.1",
+        )
         self.assertEqual(actual, [(2, 1, "nmod:poss", POSSESSOR_RULE)])
 
     def test_recursive_possession(self):
+        # Prospective compositional test.  LotaGa and Ganioxoa occur in the
+        # possessive NP in hil-data,0.3; (NP (PRO ee)) occurs in hil-data,0.12.
         actual = assignment_tuples(
-            "(NP (N$ outer) (NP (N$ inner) (NP (PRO possessor))))"
+            "(NP (N$ LotaGa) (NP (N$ Ganioxoa) (NP (PRO ee))))",
+            "prospective-test,0.2",
         )
         self.assertEqual(
             actual,
@@ -97,25 +173,124 @@ class PossessiveNPTests(unittest.TestCase):
             ],
         )
 
-    def test_two_np_daughters_are_left_unresolved(self):
+
+class GeneralDeterminerTests(unittest.TestCase):
+    def test_nonpossessive_determiner_hil_009(self):
         actual = assignment_tuples(
-            "(NP (NP (N first)) (N$ head) (NP (N second)))"
+            "(NP (D NiGida) (N niwenigi))",
+            "hil-data,0.9",
+        )
+        self.assertEqual(actual, [(1, 2, "det", DETERMINER_RULE)])
+
+    def test_nonpossessive_determiner_hil_060(self):
+        actual = assignment_tuples(
+            "(NP (D @idi) (N akiidi))",
+            "hil-data,0.60",
+        )
+        self.assertEqual(actual, [(1, 2, "det", DETERMINER_RULE)])
+
+    def test_determiner_only_np_does_not_license_det_hil_017(self):
+        actual = assignment_tuples("(NP (D naGada))", "hil-data,0.17")
+        self.assertEqual(actual, [])
+
+    def test_determiner_plus_proper_noun_is_not_generalized(self):
+        # Negative prospective test: uppercase forms are category
+        # metavariables, not purported Kadiwéu words.
+        actual = assignment_tuples(
+            "(NP (D DETERMINER) (NPR PROPER_NOUN))",
+            "negative-test,0.3",
         )
         self.assertEqual(actual, [])
 
-    def test_two_possessum_candidates_are_left_unresolved(self):
-        actual = assignment_tuples("(NP (N$ one) (NP (N poss)) (N$ two))")
-        self.assertEqual(actual, [])
-
-    def test_additional_unrecognized_daughter_is_left_unresolved(self):
+    def test_dapl_modifies_overt_noun_van_014(self):
         actual = assignment_tuples(
-            "(NP (Q two) (N$ head) (NP (N possessor)))"
+            "(NP (DAPL @anitaGa) (N niwatece))",
+            "van-data,0.14",
+        )
+        self.assertEqual(actual, [(1, 2, "det", DETERMINER_RULE)])
+
+    def test_q_and_d_both_modify_np_head_van_030(self):
+        actual = assignment_tuples(
+            "(NP-PRD (Q @ica) (D digoida) (N$ liGeladi))",
+            "van-data,0.30",
+        )
+        self.assertEqual(
+            actual,
+            [
+                (1, 3, "det", DETERMINER_RULE),
+                (2, 3, "det", DETERMINER_RULE),
+            ],
+        )
+
+    def test_dapl_only_np_does_not_license_det_van_019(self):
+        actual = assignment_tuples(
+            "(NP (DAPL @initaGa))",
+            "van-data,0.19",
         )
         self.assertEqual(actual, [])
 
-    def test_relative_clause_is_not_mistaken_for_possessor(self):
+
+class FunctionalHeadTests(unittest.TestCase):
+    def test_ip_sub_with_nominal_predicate_hil_007(self):
+        tree = parse_tree(
+            "(IP-SUB (NP (N$ libinienigi)))",
+            "hil-data,0.7",
+        )
+        self.assertEqual(ud_head(tree.root).form, "libinienigi")
+
+    def test_ip_sub_with_verbal_predicate_hil_025(self):
+        tree = parse_tree(
+            "(IP-SUB (VB @ninitibeci))",
+            "hil-data,0.25",
+        )
+        self.assertEqual(ud_head(tree.root).form, "@ninitibeci")
+
+    def test_complementizer_marks_nominal_predicate_hil_060(self):
         actual = assignment_tuples(
-            "(NP (N head) (CP-REL (IP-SUB (VB predicate))))"
+            "(CP-me (C me@) (IP-SUB (NP (D @idi) (N akiidi))))",
+            "hil-data,0.60",
+        )
+        self.assertEqual(
+            actual,
+            [
+                (1, 3, "mark", MARK_RULE),
+                (2, 3, "det", DETERMINER_RULE),
+            ],
+        )
+
+    def test_complementizer_marks_verbal_predicate_hil_025(self):
+        actual = assignment_tuples(
+            "(CP-me (Q eliodi) (C me@) (IP-SUB (VB @ninitibeci)))",
+            "hil-data,0.25",
+        )
+        self.assertEqual(actual, [(2, 3, "mark", MARK_RULE)])
+
+    def test_q_modifies_ip_sub_head_van_010(self):
+        actual = assignment_tuples(
+            "(CP-me (Q eliodi) (C me) "
+            "(IP-SUB (NP (N$ libinienigi))))",
+            "van-data,0.10",
+        )
+        self.assertEqual(
+            actual,
+            [
+                (1, 3, "det", DETERMINER_RULE),
+                (2, 3, "mark", MARK_RULE),
+            ],
+        )
+
+    def test_complementizer_marks_sole_dapl_van_019(self):
+        actual = assignment_tuples(
+            "(CP-me (C me@) (IP-SUB (NP (DAPL @initaGa))))",
+            "van-data,0.19",
+        )
+        self.assertEqual(actual, [(1, 2, "mark", MARK_RULE)])
+
+    def test_relative_wnp_without_immediate_c_is_unresolved_hil_005(self):
+        actual = assignment_tuples(
+            "(CP-REL (WNP-1 (C ane@)) "
+            "(IP-SUB (NP-TRACE (-NONE- *T*-1)) (VB @iwaGadi)))",
+            "hil-data,0.5",
         )
         self.assertEqual(actual, [])
 

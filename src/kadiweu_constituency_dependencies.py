@@ -6,8 +6,19 @@ the constituency configuration determines both the dependency head and the
 relation.  Unresolved terminals are left for later rules or for the existing
 JSON-to-CoNLL-U converter.
 
-First implemented regularity
-----------------------------
+Implemented regularities
+------------------------
+Nominal projections treat ``N``, possessively inflected ``N$``, and proper
+``NPR`` as members of the same head-selection class.  Immediate ``D``,
+``DAPL``, and ``Q`` modifiers are licensed with the empirically attested
+common-noun tags ``N`` and ``N$``::
+
+    NP -> ... D/DAPL/Q ... N/N$ ...
+
+Each modifier depends on the nominal head as ``det``.  When no overt noun is
+present, a sole D, DAPL, or PRO represents the NP and does not license a
+``det`` assignment.
+
 Possessive NPs license both orders::
 
     NP -> (D) N$ NP
@@ -15,8 +26,13 @@ Possessive NPs license both orders::
 
 The immediate N$ is the possessum and the head of the outer NP.  The lexical
 head of the immediate NP daughter is the possessor and depends on the
-possessum as ``nmod:poss``.  An immediate D, when present, depends on the same
-head as ``det``.
+possessum as ``nmod:poss``.
+
+For a functional CP headed by an immediate C with an ``IP-SUB`` complement,
+UD promotes the content-word head of ``IP-SUB`` and attaches C to it as
+``mark``.  CP-relative structures without an immediate C are deliberately
+left for a later rule.  An immediate Q modifier of CP-me attaches as ``det``
+when the promoted content-word head is nominal.
 """
 
 from __future__ import annotations
@@ -39,7 +55,14 @@ from kadiweu_constituency import (
 
 
 POSSESSOR_RULE = "possessive-np-possessor"
-DETERMINER_RULE = "possessive-np-determiner"
+DETERMINER_RULE = "nominal-np-determiner"
+MARK_RULE = "complementizer-mark"
+
+NP_HEAD_TAGS = frozenset({"N", "N$", "NPR"})
+ELLIPTICAL_NP_HEAD_TAGS = frozenset({"D", "DAPL", "PRO"})
+NOMINAL_MODIFIER_TAGS = frozenset({"D", "DAPL", "Q"})
+DET_MODIFIABLE_NOUN_TAGS = frozenset({"N", "N$"})
+VERBAL_HEAD_TAGS = frozenset({"VB", "VBU", "VBAPL"})
 
 
 @dataclass(frozen=True)
@@ -70,6 +93,14 @@ def is_np(node: TreeNode) -> bool:
     )
 
 
+def is_ip_sub(node: TreeNode) -> bool:
+    """Return whether *node* is a subordinate IP projection."""
+
+    return isinstance(node, ConstituentNode) and (
+        node.label == "IP-SUB" or node.label.startswith("IP-SUB-")
+    )
+
+
 def lexical_head(node: TreeNode) -> TokenNode | None:
     """Return a conservatively identifiable lexical head.
 
@@ -77,9 +108,9 @@ def lexical_head(node: TreeNode) -> TokenNode | None:
     covers only the configurations needed by the first dependency rule:
 
     * a terminal is its own head;
-    * a possessive NP's unique immediate N$ is its head;
-    * in a simple NP, a unique immediate N/N$/NPR/PRO is its head;
-    * D is the head when it is the sole terminal realization of an NP;
+    * an NP's unique immediate N/N$/NPR is its head;
+    * D, DAPL, or PRO is the head when it is the sole terminal realization
+      of an NP;
     * a unary phrasal projection inherits its daughter's head.
 
     Ambiguity returns ``None`` rather than selecting by linear position.
@@ -96,35 +127,96 @@ def lexical_head(node: TreeNode) -> TokenNode | None:
         if isinstance(child, TokenNode) and not child.empty_category
     ]
     np_children = [child for child in node.children if is_np(child)]
-    possessums = [token for token in overt_tokens if token.tag == "N$"]
+    nominal_heads = [token for token in overt_tokens if token.tag in NP_HEAD_TAGS]
 
-    # The two licensed possessive orders share this order-independent head.
-    if len(possessums) == 1 and len(np_children) == 1:
-        permitted_ids = {id(possessums[0]), id(np_children[0])}
-        permitted_ids.update(id(token) for token in overt_tokens if token.tag == "D")
-        if all(
-            id(child) in permitted_ids
-            for child in node.children
-        ):
-            return possessums[0]
+    # X-bar generalization: a unique immediately dominated noun heads NP,
+    # independently of its position and of phrasal dependents/modifiers.
+    if len(nominal_heads) == 1:
+        return nominal_heads[0]
 
-    lexical = [
-        token for token in overt_tokens
-        if token.tag in {"N", "N$", "NPR", "PRO"}
-    ]
-    if len(lexical) == 1 and all(
-        child is lexical[0]
-        or (isinstance(child, TokenNode) and child.tag == "D")
-        for child in node.children
+    if (
+        len(overt_tokens) == 1
+        and overt_tokens[0].tag in ELLIPTICAL_NP_HEAD_TAGS
     ):
-        return lexical[0]
-
-    if len(overt_tokens) == 1 and overt_tokens[0].tag in {"D", "PRO"}:
         return overt_tokens[0]
 
     if not overt_tokens and len(np_children) == 1 and len(node.children) == 1:
         return lexical_head(np_children[0])
     return None
+
+
+def ud_head(node: TreeNode) -> TokenNode | None:
+    """Return a conservatively identifiable UD content-word head.
+
+    Unlike ``lexical_head``, this function implements functional-head reversal
+    for the currently supported IP-SUB configurations.
+    """
+
+    if isinstance(node, TokenNode):
+        return None if node.empty_category else node
+    if is_np(node):
+        return lexical_head(node)
+    if not is_ip_sub(node):
+        return None
+
+    verbal_heads = [
+        child
+        for child in node.children
+        if isinstance(child, TokenNode)
+        and not child.empty_category
+        and child.tag in VERBAL_HEAD_TAGS
+    ]
+    if len(verbal_heads) == 1:
+        return verbal_heads[0]
+    if verbal_heads:
+        return None
+
+    np_heads = [
+        head
+        for child in node.children
+        if is_np(child)
+        for head in [lexical_head(child)]
+        if head is not None
+    ]
+    if len(np_heads) == 1:
+        return np_heads[0]
+    return None
+
+
+def nominal_determiner_assignments(
+    node: ConstituentNode,
+) -> list[DependencyAssignment]:
+    """Attach immediate D/DAPL/Q modifiers to a common-noun NP head.
+
+    NPR participates in NP head selection but is excluded here because the
+    DONE data do not establish D as a modifier of a proper noun in Kadiwéu.
+    """
+
+    if not is_np(node):
+        return []
+    modifiers = [
+        child
+        for child in node.children
+        if isinstance(child, TokenNode)
+        and not child.empty_category
+        and child.tag in NOMINAL_MODIFIER_TAGS
+    ]
+    head = lexical_head(node)
+    if (
+        not modifiers
+        or head is None
+        or head.tag not in DET_MODIFIABLE_NOUN_TAGS
+    ):
+        return []
+    return [
+        DependencyAssignment(
+            dependent_position=modifier.position,
+            head_position=head.position,
+            deprel="det",
+            rule=DETERMINER_RULE,
+        )
+        for modifier in modifiers
+    ]
 
 
 def possessive_np_assignments(node: ConstituentNode) -> list[DependencyAssignment]:
@@ -146,21 +238,21 @@ def possessive_np_assignments(node: ConstituentNode) -> list[DependencyAssignmen
         and child.tag == "N$"
     ]
     possessors = [child for child in node.children if is_np(child)]
-    determiners = [
+    modifiers = [
         child
         for child in node.children
         if isinstance(child, TokenNode)
         and not child.empty_category
-        and child.tag == "D"
+        and child.tag in NOMINAL_MODIFIER_TAGS
     ]
 
-    if len(possessums) != 1 or len(possessors) != 1 or len(determiners) > 1:
+    if len(possessums) != 1 or len(possessors) != 1:
         return []
 
     permitted_ids = {
         id(possessums[0]),
         id(possessors[0]),
-        *(id(determiner) for determiner in determiners),
+        *(id(modifier) for modifier in modifiers),
     }
     if any(id(child) not in permitted_ids for child in node.children):
         return []
@@ -170,7 +262,7 @@ def possessive_np_assignments(node: ConstituentNode) -> list[DependencyAssignmen
         return []
     possessum = possessums[0]
 
-    assignments = [
+    return [
         DependencyAssignment(
             dependent_position=possessor_head.position,
             head_position=possessum.position,
@@ -178,16 +270,72 @@ def possessive_np_assignments(node: ConstituentNode) -> list[DependencyAssignmen
             rule=POSSESSOR_RULE,
         )
     ]
-    assignments.extend(
+
+
+def complementizer_assignments(
+    node: ConstituentNode,
+) -> list[DependencyAssignment]:
+    """Apply UD functional-head reversal to an unambiguous C + IP-SUB CP."""
+
+    # CP-REL is excluded: its relative element requires a separate UD
+    # analysis and is not licensed as ``mark`` by this rule.
+    if node.label not in {"CP-me", "CP-D"}:
+        return []
+    complementizers = [
+        child
+        for child in node.children
+        if isinstance(child, TokenNode)
+        and not child.empty_category
+        and child.tag == "C"
+    ]
+    complements = [child for child in node.children if is_ip_sub(child)]
+    if len(complementizers) != 1 or len(complements) != 1:
+        return []
+    complement_head = ud_head(complements[0])
+    if complement_head is None:
+        return []
+    return [
         DependencyAssignment(
-            dependent_position=determiner.position,
-            head_position=possessum.position,
+            dependent_position=complementizers[0].position,
+            head_position=complement_head.position,
+            deprel="mark",
+            rule=MARK_RULE,
+        )
+    ]
+
+
+def cp_modifier_assignments(
+    node: ConstituentNode,
+) -> list[DependencyAssignment]:
+    """Attach an immediate CP-me Q to a promoted nominal IP-SUB head."""
+
+    if node.label != "CP-me":
+        return []
+    modifiers = [
+        child
+        for child in node.children
+        if isinstance(child, TokenNode)
+        and not child.empty_category
+        and child.tag == "Q"
+    ]
+    complements = [child for child in node.children if is_ip_sub(child)]
+    if not modifiers or len(complements) != 1:
+        return []
+    complement_head = ud_head(complements[0])
+    if (
+        complement_head is None
+        or complement_head.tag not in DET_MODIFIABLE_NOUN_TAGS
+    ):
+        return []
+    return [
+        DependencyAssignment(
+            dependent_position=modifier.position,
+            head_position=complement_head.position,
             deprel="det",
             rule=DETERMINER_RULE,
         )
-        for determiner in determiners
-    )
-    return assignments
+        for modifier in modifiers
+    ]
 
 
 def _add_assignment(
@@ -217,7 +365,13 @@ def infer_dependencies(tree: ConstituencyTree) -> list[DependencyAssignment]:
     for node in tree.walk():
         if not isinstance(node, ConstituentNode):
             continue
+        for assignment in nominal_determiner_assignments(node):
+            _add_assignment(by_dependent, assignment)
         for assignment in possessive_np_assignments(node):
+            _add_assignment(by_dependent, assignment)
+        for assignment in complementizer_assignments(node):
+            _add_assignment(by_dependent, assignment)
+        for assignment in cp_modifier_assignments(node):
             _add_assignment(by_dependent, assignment)
     return [by_dependent[position] for position in sorted(by_dependent)]
 

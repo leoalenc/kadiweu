@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create emulator-compatible Kadiweu TBP rules and a pinned test runner."""
+"""Archive TBP parser exports and create emulator-compatible rules."""
 
 from __future__ import annotations
 
@@ -27,6 +27,8 @@ COMPAT_CONDITION = "(C iDoms daǥa|daGa)"
 FILENAME_RE = re.compile(
     r"^(?P<stem>.+)-(?P<date>\d{6})-(?P<time>\d{4})\.json$"
 )
+HISTORY_TIMESTAMP_RE = re.compile(r"^(?P<stamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})\t")
+DEFAULT_BASENAME = "Kadiw-u"
 
 
 class GeneratorError(RuntimeError):
@@ -72,6 +74,36 @@ def publication_from_filename(path: Path) -> Publication:
             f"invalid Brazilian date/time in filename {path.name}: {exc}"
         ) from exc
     return Publication(date_code, time_code, instant)
+
+
+def publication_from_history(path: Path) -> Publication:
+    """Return the newest TBP publication recorded in a tab-separated history."""
+    if not path.is_file():
+        raise GeneratorError(f"TBP history file not found: {path}")
+    publications: list[datetime] = []
+    for line_number, line in enumerate(
+        path.read_text(encoding="utf-8-sig").splitlines(), start=1
+    ):
+        if not line.strip() or line.startswith("Histórico") or line.startswith("Data\t"):
+            continue
+        fields = line.split("\t")
+        match = HISTORY_TIMESTAMP_RE.match(line)
+        if len(fields) < 3 or not match:
+            raise GeneratorError(
+                f"malformed TBP history row in {path}:{line_number}: {line!r}"
+            )
+        if fields[2].strip() != "Publicação":
+            continue
+        try:
+            publications.append(datetime.strptime(match.group("stamp"), "%Y-%m-%d %H:%M:%S"))
+        except ValueError as exc:
+            raise GeneratorError(
+                f"invalid publication timestamp in {path}:{line_number}: {exc}"
+            ) from exc
+    if not publications:
+        raise GeneratorError(f"no publication rows found in TBP history: {path}")
+    instant = max(publications)
+    return Publication(instant.strftime("%d%m%y"), instant.strftime("%H%M"), instant)
 
 
 def load_json_array(text: str, path: Path) -> list[dict[str, Any]]:
@@ -150,6 +182,22 @@ def atomic_write(path: Path, content: str, mode: int, force: bool) -> None:
             temporary.unlink()
 
 
+def atomic_write_bytes(path: Path, content: bytes, mode: int, force: bool) -> None:
+    if path.exists() and not force:
+        raise GeneratorError(f"output already exists: {path}; use --force to replace it")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    descriptor, temporary_name = tempfile.mkstemp(prefix=f".{path.name}.", dir=path.parent)
+    temporary = Path(temporary_name)
+    try:
+        with os.fdopen(descriptor, "wb") as stream:
+            stream.write(content)
+        os.chmod(temporary, mode)
+        os.replace(temporary, path)
+    finally:
+        if temporary.exists():
+            temporary.unlink()
+
+
 def render_runner(
     template_text: str,
     template_path: Path,
@@ -218,17 +266,28 @@ def default_template() -> Path:
     return Path.home() / "kadiweu/src/run_kadiweu_parser_full_test_C.sh"
 
 
+def default_archive_dir() -> Path:
+    return Path.home() / "Dropbox/projects/2025/post-doc/parser"
+
+
+def default_downloads_dir() -> Path:
+    return Path.home() / "Downloads"
+
+
 def parse_arguments(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Create a .compat.json copy of TBP rules by adding daGa to the two "
-            "daǥa rules, then generate a hash-pinned Parser C full-test runner."
+            "With a JSON argument, preserve the original compatibility-generator "
+            "workflow. With no JSON argument, archive Kadiw-u.txt and Kadiw-u.json "
+            "from ~/Downloads under a publication-dated name first."
         )
     )
     parser.add_argument(
         "rules_json",
+        nargs="?",
         type=Path,
-        help="TBP JSON export named like Kadiw-u-DDMMYY-HHMM.json",
+        help=("already archived TBP JSON named like Kadiw-u-DDMMYY-HHMM.json; "
+              "omit to archive the latest downloads"),
     )
     parser.add_argument(
         "--template",
@@ -245,6 +304,23 @@ def parse_arguments(argv: Sequence[str] | None = None) -> argparse.Namespace:
         ),
     )
     parser.add_argument(
+        "--downloads-dir",
+        type=Path,
+        default=default_downloads_dir(),
+        help="directory containing undated Kadiw-u.txt/json exports (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--archive-dir",
+        type=Path,
+        default=default_archive_dir(),
+        help="destination for dated parser versions (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--history",
+        type=Path,
+        help="TBP histórico.txt (archive mode default: DOWNLOADS_DIR/histórico.txt)",
+    )
+    parser.add_argument(
         "--force",
         action="store_true",
         help="replace existing generated files",
@@ -254,16 +330,39 @@ def parse_arguments(argv: Sequence[str] | None = None) -> argparse.Namespace:
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = parse_arguments(argv)
-    source = args.rules_json.expanduser().resolve()
     template = args.template.expanduser().resolve()
-    if not source.is_file():
-        raise GeneratorError(f"rules file not found: {source}")
     if not template.is_file():
         raise GeneratorError(f"runner template not found: {template}")
-    if source.name.endswith(".compat.json"):
-        raise GeneratorError("input must be the original JSON, not a .compat.json file")
 
-    publication = publication_from_filename(source)
+    archived_txt: Path | None = None
+    downloaded_txt: Path | None = None
+    if args.rules_json is not None:
+        source = args.rules_json.expanduser().resolve()
+        if not source.is_file():
+            raise GeneratorError(f"rules file not found: {source}")
+        if source.name.endswith(".compat.json"):
+            raise GeneratorError("input must be the original JSON, not a .compat.json file")
+        publication = publication_from_filename(source)
+        source_text = source.read_text(encoding="utf-8")
+    else:
+        downloads = args.downloads_dir.expanduser().resolve()
+        archive_dir = args.archive_dir.expanduser().resolve()
+        history = (
+            args.history.expanduser().resolve()
+            if args.history
+            else downloads / "histórico.txt"
+        )
+        publication = publication_from_history(history)
+        downloaded_json = downloads / f"{DEFAULT_BASENAME}.json"
+        downloaded_txt = downloads / f"{DEFAULT_BASENAME}.txt"
+        missing = [str(path) for path in (downloaded_txt, downloaded_json) if not path.is_file()]
+        if missing:
+            raise GeneratorError("downloaded parser export(s) not found: " + ", ".join(missing))
+        dated_stem = f"{DEFAULT_BASENAME}-{publication.identifier}"
+        source = archive_dir / f"{dated_stem}.json"
+        archived_txt = archive_dir / f"{dated_stem}.txt"
+        source_text = downloaded_json.read_text(encoding="utf-8")
+
     compat = source.with_name(source.stem + ".compat.json")
     runner = (
         args.runner_output.expanduser().resolve()
@@ -276,7 +375,6 @@ def main(argv: Sequence[str] | None = None) -> int:
     if compat == runner:
         raise GeneratorError("compatibility JSON and runner output paths must differ")
 
-    source_text = source.read_text(encoding="utf-8")
     compat_text, changed_rules = make_compat_text(source_text, source)
 
     # Write to a temporary sibling first so the runner can be pinned to the
@@ -300,10 +398,23 @@ def main(argv: Sequence[str] | None = None) -> int:
         ignored_rules,
     )
 
-    # Validate both outputs before modifying either destination.
+    # Validate every output and collision before modifying any destination.
     load_json_array(compat_text, compat)
     if not runner_text.startswith("#!/usr/bin/env bash\n"):
         raise GeneratorError("generated runner has an unexpected shebang")
+    outputs = [compat, runner]
+    if archived_txt is not None:
+        outputs = [archived_txt, source, *outputs]
+    if not args.force:
+        collisions = [str(path) for path in outputs if path.exists()]
+        if collisions:
+            raise GeneratorError(
+                "output already exists: " + ", ".join(collisions) + "; use --force to replace it"
+            )
+
+    if archived_txt is not None and downloaded_txt is not None:
+        atomic_write_bytes(archived_txt, downloaded_txt.read_bytes(), 0o664, args.force)
+        atomic_write_bytes(source, source_text.encode("utf-8"), 0o664, args.force)
 
     atomic_write(compat, compat_text, 0o600, args.force)
     try:
@@ -316,6 +427,9 @@ def main(argv: Sequence[str] | None = None) -> int:
         raise
 
     print(f"TBP publication: {publication.display} America/Fortaleza")
+    if archived_txt is not None:
+        print(f"Archived TXT: {archived_txt}")
+        print(f"Archived JSON: {source}")
     print("Changed rules: " + ", ".join(map(str, changed_rules)))
     print(f"Compatibility JSON: {compat}")
     print(f"Compatibility SHA-256: {sha256(compat)}")
