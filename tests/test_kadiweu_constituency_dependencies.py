@@ -10,6 +10,8 @@ from kadiweu_constituency_dependencies import (
     DETERMINER_RULE,
     MARK_RULE,
     POSSESSOR_RULE,
+    RELATIVE_CLAUSE_RULE,
+    RELATIVE_PRONOUN_RULE,
     infer_dependencies,
     lexical_head,
     ud_head,
@@ -51,7 +53,7 @@ class LexicalHeadTests(unittest.TestCase):
 
     def test_noun_heads_np_with_relative_clause_hil_005(self):
         tree = parse_tree(
-            "(NP (N Etogo) (CP-REL (C ane@) "
+            "(NP (N Etogo) (CP-REL (WNP-1 (WPRO ane@)) "
             "(IP-SUB (NP-TRACE (-NONE- *T*-1)) (VB @iwaGadi))))",
             "hil-data,0.5",
         )
@@ -133,11 +135,11 @@ class PossessiveNPTests(unittest.TestCase):
 
     def test_relative_clause_is_not_a_possessor_hil_005(self):
         actual = assignment_tuples(
-            "(NP (N Etogo) (CP-REL (C ane@) "
+            "(NP (N Etogo) (CP-REL (WNP-1 (WPRO ane@)) "
             "(IP-SUB (NP-TRACE (-NONE- *T*-1)) (VB @iwaGadi))))",
             "hil-data,0.5",
         )
-        self.assertEqual(actual, [])
+        self.assertNotIn("nmod:poss", [assignment[2] for assignment in actual])
 
     def test_two_possessum_candidates_are_unresolved(self):
         # Negative robustness test: uppercase forms are metavariables, not
@@ -286,11 +288,97 @@ class FunctionalHeadTests(unittest.TestCase):
         )
         self.assertEqual(actual, [(1, 2, "mark", MARK_RULE)])
 
-    def test_relative_wnp_without_immediate_c_is_unresolved_hil_005(self):
+    def test_relative_c_instead_of_wpro_is_unresolved(self):
         actual = assignment_tuples(
             "(CP-REL (WNP-1 (C ane@)) "
             "(IP-SUB (NP-TRACE (-NONE- *T*-1)) (VB @iwaGadi)))",
+            "negative-test,0.4",
+        )
+        self.assertEqual(actual, [])
+
+
+class RelativeClauseTests(unittest.TestCase):
+    def test_ane_subject_relative_hil_039(self):
+        actual = assignment_tuples(
+            "(NP (D NaGani) (N wetiGa) "
+            "(CP-REL (WNP-1 (WPRO ane)) "
+            "(IP-SUB (NP-TRACE (-NONE- *T*-1)) (VB iwaGadi))))",
+            "hil-data,0.39",
+        )
+        self.assertEqual(
+            actual,
+            [
+                (1, 2, "det", DETERMINER_RULE),
+                (3, 5, "nsubj", RELATIVE_PRONOUN_RULE),
+                (5, 2, "acl:relcl", RELATIVE_CLAUSE_RULE),
+            ],
+        )
+
+    def test_fused_ane_subject_relative_hil_005(self):
+        actual = assignment_tuples(
+            "(NP (N Etogo) (CP-REL (WNP-2 (WPRO ane@)) "
+            "(IP-SUB (NP-TRACE (-NONE- *T*-2)) (VB @iwaGadi))))",
             "hil-data,0.5",
+        )
+        self.assertEqual(
+            actual,
+            [
+                (2, 4, "nsubj", RELATIVE_PRONOUN_RULE),
+                (4, 1, "acl:relcl", RELATIVE_CLAUSE_RULE),
+            ],
+        )
+
+    def test_ane_with_nominal_predicate_ped_024(self):
+        actual = assignment_tuples(
+            "(NP (N naigi) (CP-REL (WNP-1 (WPRO ane@)) "
+            "(IP-SUB (NP-TRACE (-NONE- *T*-1)) "
+            "(NP (N @napioi)))))",
+            "ped-gramm,0.24",
+        )
+        self.assertEqual(
+            actual,
+            [
+                (2, 4, "nsubj", RELATIVE_PRONOUN_RULE),
+                (4, 1, "acl:relcl", RELATIVE_CLAUSE_RULE),
+            ],
+        )
+
+    def test_me_restrictive_relative_ped_025(self):
+        actual = assignment_tuples(
+            "(NP (N naigi) "
+            "(CP-me (C me) (IP-SUB (NP (N napioi)))))",
+            "ped-gramm,0.25",
+        )
+        self.assertEqual(
+            actual,
+            [
+                (2, 3, "mark", MARK_RULE),
+                (3, 1, "acl:relcl", RELATIVE_CLAUSE_RULE),
+            ],
+        )
+
+    def test_clause_level_me_is_not_relative_hil_007(self):
+        actual = assignment_tuples(
+            "(IP-MAT (NP-SBJ (N$ Gawenigi)) "
+            "(CP-me (Q eliodi) (C me) "
+            "(IP-SUB (NP (N$ libinienigi)))))",
+            "hil-data,0.7",
+        )
+        self.assertNotIn("acl:relcl", [assignment[2] for assignment in actual])
+
+    def test_mismatched_ane_trace_is_unresolved(self):
+        actual = assignment_tuples(
+            "(NP (N Etogo) (CP-REL (WNP-1 (WPRO ane)) "
+            "(IP-SUB (NP-TRACE (-NONE- *T*-2)) (VB iwaGadi))))",
+            "negative-test,0.5",
+        )
+        self.assertEqual(actual, [])
+
+    def test_free_relative_is_unresolved(self):
+        actual = assignment_tuples(
+            "(NP (CP-FRL (WNP-1 (WPRO ane)) "
+            "(IP-SUB (NP-TRACE (-NONE- *T*-1)) (VB iwaGadi))))",
+            "negative-test,0.6",
         )
         self.assertEqual(actual, [])
 

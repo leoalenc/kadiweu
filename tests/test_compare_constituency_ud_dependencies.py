@@ -16,7 +16,7 @@ from compare_constituency_ud_dependencies import (
 )
 
 
-RELATIONS = {"nmod:poss", "det", "mark"}
+RELATIONS = {"nmod:poss", "det", "mark", "acl:relcl", "nsubj"}
 
 
 def psd_record(tree_text: str, sent_id: str, sent_uid: str) -> PsdRecord:
@@ -50,6 +50,58 @@ class ConlluParsingTests(unittest.TestCase):
 
 
 class ComparisonTests(unittest.TestCase):
+    def test_match_ane_relative_hil_039(self):
+        uid = "38f73c1c-ddfb-4153-9310-d24214cd68e7"
+        record = psd_record(
+            "(IP-MAT (NP (D NaGani) (N wetiGa) "
+            "(CP-REL (WNP-1 (WPRO ane)) "
+            "(IP-SUB (NP-TRACE (-NONE- *T*-1)) (VB iwaGadi)))) "
+            "(VBAPL eniteloco) (NP-APL (N$ iGonagi)))",
+            "hil-data,0.39",
+            uid,
+        )
+        gold = conllu_sentence(
+            f"""
+# sent_id = hil-data-39
+# sent_uid = {uid}
+1\tNaGani\t_\tDET\tD\t_\t2\tdet\t_\t_
+2\twetiGa\t_\tNOUN\tN\t_\t5\tnsubj\t_\t_
+3\tane\t_\tPRON\tWPRO\tPronType=Rel\t4\tnsubj\t_\t_
+4\tiwaGadi\t_\tVERB\tVB\t_\t2\tacl:relcl\t_\t_
+5\teniteloco\t_\tVERB\tVBAPL\t_\t0\troot\t_\t_
+6\tiGonagi\t_\tNOUN\tN$\t_\t5\tobj\t_\t_
+            """
+        )
+        rows = list(comparison_rows([record], [gold], RELATIONS))
+        by_dependent = {row["gold_dependent"]: row for row in rows}
+        self.assertEqual(by_dependent["ane"]["comparison"], "MATCH")
+        self.assertEqual(by_dependent["iwaGadi"]["comparison"], "MATCH")
+        self.assertNotIn("wetiGa", by_dependent)
+
+    def test_match_me_relative_ped_025(self):
+        uid = "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1"
+        record = psd_record(
+            "(IP-MAT (NP (N$ iGeladi)) (VB idei) "
+            "(NP (N naigi) "
+            "(CP-me (C me) (IP-SUB (NP (N napioi))))))",
+            "ped-gramm,0.25",
+            uid,
+        )
+        gold = conllu_sentence(
+            f"""
+# sent_id = ped-gramm-25
+# sent_uid = {uid}
+1\tiGeladi\t_\tNOUN\tN$\t_\t2\tnsubj\t_\t_
+2\tidei\t_\tVERB\tVB\t_\t0\troot\t_\t_
+3\tnaigi\t_\tNOUN\tN\t_\t2\tobj\t_\t_
+4\tme\t_\tSCONJ\tC\t_\t5\tmark\t_\t_
+5\tnapioi\t_\tNOUN\tN\t_\t3\tacl:relcl\t_\t_
+            """
+        )
+        rows = list(comparison_rows([record], [gold], RELATIONS))
+        self.assertEqual(len(rows), 2)
+        self.assertTrue(all(row["comparison"] == "MATCH" for row in rows))
+
     def test_attested_match_hil_003(self):
         uid = "39f34955-a828-47d7-808d-b3b3565b42d6"
         record = psd_record(

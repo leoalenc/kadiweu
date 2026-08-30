@@ -30,9 +30,16 @@ possessum as ``nmod:poss``.
 
 For a functional CP headed by an immediate C with an ``IP-SUB`` complement,
 UD promotes the content-word head of ``IP-SUB`` and attaches C to it as
-``mark``.  CP-relative structures without an immediate C are deliberately
-left for a later rule.  An immediate Q modifier of CP-me attaches as ``det``
-when the promoted content-word head is nominal.
+``mark``.  An immediate Q modifier of CP-me attaches as ``det`` when the
+promoted content-word head is nominal.
+
+Adnominal relative clauses promote the content-word head of ``IP-SUB`` and
+attach it to the head of the containing NP as ``acl:relcl``.  In ``CP-REL``,
+``WPRO ane`` is an overt relative pronoun rather than a marker: its WNP
+coindex must match a unique ``*T*`` trace in ``IP-SUB``.  The subject-trace
+configuration attested in DONE licenses ``ane`` as ``nsubj`` of the promoted
+clause head.  In an adnominal ``CP-me``, the existing complementizer rule
+attaches ``me`` to that same head as ``mark``.
 """
 
 from __future__ import annotations
@@ -57,6 +64,8 @@ from kadiweu_constituency import (
 POSSESSOR_RULE = "possessive-np-possessor"
 DETERMINER_RULE = "nominal-np-determiner"
 MARK_RULE = "complementizer-mark"
+RELATIVE_CLAUSE_RULE = "adnominal-relative-clause"
+RELATIVE_PRONOUN_RULE = "relative-pronoun-trace"
 
 NP_HEAD_TAGS = frozenset({"N", "N$", "NPR"})
 ELLIPTICAL_NP_HEAD_TAGS = frozenset({"D", "DAPL", "PRO"})
@@ -99,6 +108,12 @@ def is_ip_sub(node: TreeNode) -> bool:
     return isinstance(node, ConstituentNode) and (
         node.label == "IP-SUB" or node.label.startswith("IP-SUB-")
     )
+
+
+def _normalized_form(form: str) -> str:
+    """Return a lexical form without TBP fusion-boundary markers."""
+
+    return form.replace("@", "").casefold()
 
 
 def lexical_head(node: TreeNode) -> TokenNode | None:
@@ -338,6 +353,143 @@ def cp_modifier_assignments(
     ]
 
 
+def _unique_ip_sub(node: ConstituentNode) -> ConstituentNode | None:
+    complements = [child for child in node.children if is_ip_sub(child)]
+    return complements[0] if len(complements) == 1 else None
+
+
+def _unique_relative_ane(
+    node: ConstituentNode,
+) -> tuple[TokenNode, tuple[int, ...]] | None:
+    """Return the unique immediate WNP's ``ane`` and its coindex."""
+
+    candidates: list[tuple[TokenNode, tuple[int, ...]]] = []
+    for child in node.children:
+        if not isinstance(child, ConstituentNode) or child.label != "WNP":
+            continue
+        relative_words = [
+            descendant
+            for descendant in child.walk()
+            if isinstance(descendant, TokenNode)
+            and not descendant.empty_category
+            and descendant.tag == "WPRO"
+            and _normalized_form(descendant.form) == "ane"
+        ]
+        if len(relative_words) == 1 and child.coindex:
+            candidates.append((relative_words[0], child.coindex))
+    return candidates[0] if len(candidates) == 1 else None
+
+
+def _uniquely_coindexed_trace(
+    clause: ConstituentNode,
+    coindex: tuple[int, ...],
+) -> TokenNode | None:
+    traces = [
+        descendant
+        for descendant in clause.walk()
+        if isinstance(descendant, TokenNode)
+        and descendant.empty_category
+        and descendant.form == "*T*"
+        and descendant.coindex == coindex
+    ]
+    return traces[0] if len(traces) == 1 else None
+
+
+def _attested_trace_relation(
+    trace: TokenNode,
+    clause: ConstituentNode,
+    clause_head: TokenNode,
+) -> str | None:
+    """Return the role licensed by a currently attested trace configuration.
+
+    All DONE ``ane`` relatives have an immediate, preverbal/prepredicative
+    ``NP-TRACE`` daughter of IP-SUB and no overt subject projection.  This
+    configuration realizes the relative pronoun as ``nsubj``.  Other trace
+    positions remain unresolved until an authoritative example establishes
+    their mapping; coindexation alone does not identify grammatical function.
+    """
+
+    projection = trace.parent
+    if (
+        projection is None
+        or projection.label != "NP-TRACE"
+        or projection.parent is not clause
+        or trace.position >= clause_head.position
+    ):
+        return None
+    overt_subjects = [
+        child
+        for child in clause.children
+        if isinstance(child, ConstituentNode)
+        and child.label.startswith("NP-SBJ")
+        and lexical_head(child) is not None
+    ]
+    return None if overt_subjects else "nsubj"
+
+
+def relative_clause_assignments(
+    node: ConstituentNode,
+) -> list[DependencyAssignment]:
+    """Infer Basic UD dependencies for an unambiguous adnominal relative.
+
+    ``CP-REL`` requires a unique coindexed ``WNP ... WPRO ane`` / ``*T*``
+    chain.  ``CP-me`` requires an immediate ``C me``; its ``mark`` assignment
+    is supplied by ``complementizer_assignments``.  Free relatives are outside
+    this rule because they have no overt nominal antecedent.
+    """
+
+    if node.label not in {"CP-REL", "CP-me"}:
+        return []
+    parent = node.parent
+    if parent is None or not is_np(parent):
+        return []
+    antecedent = lexical_head(parent)
+    clause = _unique_ip_sub(node)
+    if antecedent is None or clause is None:
+        return []
+    clause_head = ud_head(clause)
+    if clause_head is None:
+        return []
+
+    clause_assignment = DependencyAssignment(
+        dependent_position=clause_head.position,
+        head_position=antecedent.position,
+        deprel="acl:relcl",
+        rule=RELATIVE_CLAUSE_RULE,
+    )
+
+    if node.label == "CP-me":
+        markers = [
+            child
+            for child in node.children
+            if isinstance(child, TokenNode)
+            and not child.empty_category
+            and child.tag == "C"
+            and _normalized_form(child.form) == "me"
+        ]
+        return [clause_assignment] if len(markers) == 1 else []
+
+    relative = _unique_relative_ane(node)
+    if relative is None:
+        return []
+    ane, coindex = relative
+    trace = _uniquely_coindexed_trace(clause, coindex)
+    if trace is None:
+        return []
+    trace_relation = _attested_trace_relation(trace, clause, clause_head)
+    if trace_relation is None:
+        return []
+    return [
+        DependencyAssignment(
+            dependent_position=ane.position,
+            head_position=clause_head.position,
+            deprel=trace_relation,
+            rule=RELATIVE_PRONOUN_RULE,
+        ),
+        clause_assignment,
+    ]
+
+
 def _add_assignment(
     assignments: dict[int, DependencyAssignment],
     assignment: DependencyAssignment,
@@ -372,6 +524,8 @@ def infer_dependencies(tree: ConstituencyTree) -> list[DependencyAssignment]:
         for assignment in complementizer_assignments(node):
             _add_assignment(by_dependent, assignment)
         for assignment in cp_modifier_assignments(node):
+            _add_assignment(by_dependent, assignment)
+        for assignment in relative_clause_assignments(node):
             _add_assignment(by_dependent, assignment)
     return [by_dependent[position] for position in sorted(by_dependent)]
 

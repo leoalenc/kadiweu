@@ -24,13 +24,19 @@ from kadiweu_constituency import PsdRecord, TokenNode, iter_psd_records
 from kadiweu_constituency_dependencies import DependencyAssignment, infer_dependencies
 
 
-DEFAULT_RELATIONS = frozenset({"nmod:poss", "det", "mark"})
+DEFAULT_RELATIONS = frozenset(
+    {"nmod:poss", "det", "mark", "acl:relcl", "nsubj"}
+)
+RELATIVE_ARGUMENT_RELATIONS = frozenset({"nsubj", "obj", "obl"})
 
 
 @dataclass(frozen=True)
 class ConlluToken:
     id: int
     form: str
+    upos: str
+    xpos: str
+    feats: str
     head: int
     deprel: str
 
@@ -91,7 +97,15 @@ def iter_conllu_sentences(path: Path) -> Iterator[ConlluSentence]:
                     f"{path}:{line_number}: invalid integer ID or HEAD"
                 ) from error
             sentence.tokens.append(
-                ConlluToken(integer_id, columns[1], head, columns[7])
+                ConlluToken(
+                    integer_id,
+                    columns[1],
+                    columns[3],
+                    columns[4],
+                    columns[5],
+                    head,
+                    columns[7],
+                )
             )
     if sentence.metadata or sentence.tokens:
         yield sentence
@@ -161,6 +175,22 @@ def _tree_assignment_by_gold_dependent(
             raise ValueError(f"multiple tree assignments for aligned token {gold_id}")
         result[gold_id] = assignment
     return result
+
+
+def _is_target_gold_token(token: ConlluToken, relations: Set[str]) -> bool:
+    """Return whether a gold dependency belongs to the audited rule scope.
+
+    Core-argument relations are widespread in the treebank but the current
+    predictor emits them only for overt relative pronouns.  Restricting
+    gold-only argument rows to WPRO/PronType=Rel prevents every ordinary
+    subject from being reported as a missing relative-clause prediction.
+    """
+
+    if token.deprel not in relations:
+        return False
+    if token.deprel not in RELATIVE_ARGUMENT_RELATIONS:
+        return True
+    return token.xpos == "WPRO" or "PronType=Rel" in token.feats.split("|")
 
 
 OUTPUT_COLUMNS = [
@@ -258,7 +288,7 @@ def comparison_rows(
             assert gold is not None
             tokens_by_id = {token.id: token for token in gold.tokens}
             for token in gold.tokens:
-                if token.deprel not in relations:
+                if not _is_target_gold_token(token, relations):
                     continue
                 row = _empty_row()
                 _fill_gold_fields(row, gold, token, tokens_by_id)
@@ -298,7 +328,7 @@ def comparison_rows(
                 yield row
             tokens_by_id = {token.id: token for token in gold.tokens}
             for token in gold.tokens:
-                if token.deprel not in relations:
+                if not _is_target_gold_token(token, relations):
                     continue
                 row = _empty_row()
                 _fill_gold_fields(row, gold, token, tokens_by_id)
@@ -316,7 +346,9 @@ def comparison_rows(
             tree_assignments, alignment, relations
         )
         gold_target_ids = {
-            token.id for token in alignment.gold_tokens if token.deprel in relations
+            token.id
+            for token in alignment.gold_tokens
+            if _is_target_gold_token(token, relations)
         }
         dependent_ids = sorted(set(tree_by_gold_id) | gold_target_ids)
         gold_tokens_by_id = {token.id: token for token in gold.tokens}
@@ -334,7 +366,9 @@ def comparison_rows(
             )
             if assignment is not None:
                 _fill_tree_fields(row, record, assignment)
-            if gold_token.deprel in relations:
+            if assignment is not None or _is_target_gold_token(
+                gold_token, relations
+            ):
                 _fill_gold_fields(row, gold, gold_token, gold_tokens_by_id)
 
             if assignment is None:
@@ -386,7 +420,10 @@ def build_argument_parser() -> argparse.ArgumentParser:
         "--relations",
         type=parse_relations,
         default=set(DEFAULT_RELATIONS),
-        help="comma-separated relations; default: nmod:poss,det,mark",
+        help=(
+            "comma-separated relations; default: "
+            "nmod:poss,det,mark,acl:relcl,nsubj"
+        ),
     )
     return parser
 
