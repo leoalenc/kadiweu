@@ -1,7 +1,11 @@
 sent_id	dependent_position	dependent	head_position	head	deprel	rule	gold_sent_id	sent_uid	gold_dependent_id	gold_dependent	gold_head_id	gold_head	gold_deprel	comparison	token_alignment
 hil-data,0.3	2	Ganioxoa	1	LotaGa	nmod:poss	possessive-np-possessor	hil-data-3	39f34955-a828-47d7-808d-b3b3565b42d6	2	Ganioxoa	1	LotaGa	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.4	2	Gadodawa	1	LotaGa	nmod:poss	possessive-np-possessor	hil-data-4	d3ae6cfd-bec1-49f3-a0f9-4ca0744e3404	2	Gadodawa	1	LotaGa	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
-hil-data,0.7	2	eliodi	4	libinienigi	det	nominal-np-determiner	hil-data-7	435e4b10-ab78-4ee3-84b0-7773dbe10bf7	2	eliodi	4	libinienigi	advmod	TREE_ONLY_GOLD_OTHER	FINAL_PUNCT_IGNORED
+hil-data,0.5	2	ane@	4	@iwaGadi	nsubj	relative-pronoun-trace	hil-data-5	e349508c-4d86-48b8-9918-057988755e77	2	ane	3	iwaGadi	nsubj	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.5	4	@iwaGadi	1	Etogo	acl:relcl	adnominal-relative-clause	hil-data-5	e349508c-4d86-48b8-9918-057988755e77	3	iwaGadi	1	Etogo	acl:relcl	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.6	2	ane	4	iwaGadi	nsubj	relative-pronoun-trace	hil-data-6	1d10c633-e74d-4e27-ac23-6b6b2dde9647	2	ane	3	iwaGadi	nsubj	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.6	4	iwaGadi	1	Etogo	acl:relcl	adnominal-relative-clause	hil-data-6	1d10c633-e74d-4e27-ac23-6b6b2dde9647	3	iwaGadi	1	Etogo	acl:relcl	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.7	2	eliodi	4	libinienigi	det	nominal-np-determiner	hil-data-7	435e4b10-ab78-4ee3-84b0-7773dbe10bf7	2	eliodi	4	libinienigi	det	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.7	3	me	4	libinienigi	mark	complementizer-mark	hil-data-7	435e4b10-ab78-4ee3-84b0-7773dbe10bf7	3	me	4	libinienigi	mark	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.8	1	NiGijo	2	liwenigi	det	nominal-np-determiner	hil-data-8	cf44903e-0c33-44bc-a146-1fb8a4ccb973	1	NiGijo	2	liwenigi	det	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.9	1	NiGida	2	niwenigi	det	nominal-np-determiner	hil-data-9	0ca977cd-2edf-45d9-b958-068648aebef9	1	NiGida	2	niwenigi	det	MATCH	FINAL_PUNCT_IGNORED
@@ -28,10 +32,12 @@ hil-data,0.36	1	NaGani	2	wetiGa	det	nominal-np-determiner	hil-data-36	768a3635-d
 hil-data,0.37	1	NiGinoa	2	wetiadi	det	nominal-np-determiner	hil-data-37	e5f90fbc-14e8-4c6f-9e07-61fbf67d042f	1	NiGinoa	2	wetiadi	det	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.38	1	NaGani	2	wetiGa	det	nominal-np-determiner	hil-data-38	f4b854f9-c3c6-4e88-8a9b-ca73fcba8d46	1	NaGani	2	wetiGa	det	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.39	1	NaGani	2	wetiGa	det	nominal-np-determiner	hil-data-39	38f73c1c-ddfb-4153-9310-d24214cd68e7	1	NaGani	2	wetiGa	det	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.39	3	ane	5	iwaGadi	nsubj	relative-pronoun-trace	hil-data-39	38f73c1c-ddfb-4153-9310-d24214cd68e7	3	ane	4	iwaGadi	nsubj	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.39	5	iwaGadi	2	wetiGa	acl:relcl	adnominal-relative-clause	hil-data-39	38f73c1c-ddfb-4153-9310-d24214cd68e7	4	iwaGadi	2	wetiGa	acl:relcl	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.41	1	NiGidoa	3	lotiidi	det	nominal-np-determiner	hil-data-41	8dda04f0-f7e8-46d6-b41d-b65dd214f01b	1	NiGidoa	3	lotiidi	det	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.41	2	waca	3	lotiidi	nmod:poss	possessive-np-possessor	hil-data-41	8dda04f0-f7e8-46d6-b41d-b65dd214f01b	2	waca	3	lotiidi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.43	1	niGidiwa	3	ligetedi	det	nominal-np-determiner		a74fea0a-dd87-4c4d-8670-9db66f5b5b16						NO_GOLD_SENTENCE	NOT_ALIGNED
-hil-data,0.44	1	NiGidiwa	3	lixagotaGaGa	det	nominal-np-determiner	hil-data-44	83fdcd4c-338f-4a9f-8545-da8539e67e9d	1	NiGidiwa	2	noGojedi	det	HEAD_MISMATCH	FINAL_PUNCT_IGNORED
+hil-data,0.44	1	NiGidiwa	3	lixagotaGaGa	det	nominal-np-determiner	hil-data-44	83fdcd4c-338f-4a9f-8545-da8539e67e9d	1	NiGidiwa	3	lixagotaGaGa	det	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.44	2	noGojedi	3	lixagotaGaGa	nmod:poss	possessive-np-possessor	hil-data-44	83fdcd4c-338f-4a9f-8545-da8539e67e9d	2	noGojedi	3	lixagotaGaGa	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.49	4	me	5	idinitibeci	mark	complementizer-mark		1e9df213-90da-4674-8889-4ac858df72fe						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.55	3	me	4	idinitibeci	mark	complementizer-mark		90ca38d8-e063-4c98-af51-4b9022ade506						NO_GOLD_SENTENCE	NOT_ALIGNED
@@ -77,8 +83,14 @@ ped-gramm,0.22	1	ica	2	nioladi	det	nominal-np-determiner	ped-gramm-22	881131dd-3
 ped-gramm,0.22	3	nioxoa	2	nioladi	nmod:poss	possessive-np-possessor	ped-gramm-22	881131dd-3f70-411a-ac7e-85557139d1e3	3	nioxoa	2	nioladi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.23	1	ica	2	nioladi	det	nominal-np-determiner	ped-gramm-23	95a7d135-4be0-463d-b443-76cc5828fc89	1	ica	2	nioladi	det	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.23	3	lodawa	2	nioladi	nmod:poss	possessive-np-possessor	ped-gramm-23	95a7d135-4be0-463d-b443-76cc5828fc89	3	lodawa	2	nioladi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.24	4	ane@	6	@napioi	nsubj	relative-pronoun-trace	ped-gramm-24	2f47b402-9fe7-4714-96e3-c6cbdf405472	4	ane	5	napioi	nsubj	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.24	6	@napioi	3	naigi	acl:relcl	adnominal-relative-clause	ped-gramm-24	2f47b402-9fe7-4714-96e3-c6cbdf405472	5	napioi	3	naigi	acl:relcl	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.25	4	me	5	napioi	mark	complementizer-mark	ped-gramm-25	a4d33655-fe74-4df2-8d5e-b3c88fba5fd1	4	me	5	napioi	mark	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.25	5	napioi	3	naigi	acl:relcl	adnominal-relative-clause	ped-gramm-25	a4d33655-fe74-4df2-8d5e-b3c88fba5fd1	5	napioi	3	naigi	acl:relcl	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.35	4	ane	6	napioi	nsubj	relative-pronoun-trace	ped-gramm-35	014fefb1-d5e3-48c8-9ac3-9e713a41407f	4	ane	5	napioi	nsubj	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.35	6	napioi	3	naigi	acl:relcl	adnominal-relative-clause	ped-gramm-35	014fefb1-d5e3-48c8-9ac3-9e713a41407f	5	napioi	3	naigi	acl:relcl	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.36	4	me	5	napioi	mark	complementizer-mark	ped-gramm-36	bb8018ba-76b3-43f2-82ea-78b6009c1f90	4	me	5	napioi	mark	MATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.36	5	napioi	3	naigi	acl:relcl	adnominal-relative-clause	ped-gramm-36	bb8018ba-76b3-43f2-82ea-78b6009c1f90	5	napioi	3	naigi	acl:relcl	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.38	1	ijo	2	Gatodi	det	nominal-np-determiner	ped-gramm-38	46bbf9a8-c650-4e4b-a44f-78bfe6c5d979	1	ijo	2	Gatodi	det	MATCH	OK
 ped-gramm,0.40	2	digoida	3	weiigi	det	nominal-np-determiner	ped-gramm-40	10e550d6-df13-4527-8aee-aa23e3f2fcdd	2	digoida	3	weiigi	det	MATCH	OK
 ped-gramm,0.43	2	GanaginaGa	1	lotaGa	nmod:poss	possessive-np-possessor	ped-gramm-43	19401990-aa1d-4cf5-bea1-122254c6b77a	2	GanaginaGa	1	lotaGa	nmod:poss	MATCH	OK
@@ -91,6 +103,8 @@ ped-gramm,0.55	1	niGidowa	3	lotiidi	det	nominal-np-determiner	ped-gramm-55	d3e09
 ped-gramm,0.55	2	waca	3	lotiidi	nmod:poss	possessive-np-possessor	ped-gramm-55	d3e098e5-4edd-4c24-81cf-78ff4a4d398c	2	waca	3	lotiidi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.56	2	me@	4	akiidi	mark	complementizer-mark		edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded						NO_GOLD_SENTENCE	NOT_ALIGNED
 ped-gramm,0.56	3	@idi	4	akiidi	det	nominal-np-determiner		edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded						NO_GOLD_SENTENCE	NOT_ALIGNED
+ped-gramm,0.57	2	ane@	4	@iwaGadi	nsubj	relative-pronoun-trace		2c0248b3-8f68-46e9-b41c-9f7807572c87						NO_GOLD_SENTENCE	NOT_ALIGNED
+ped-gramm,0.57	4	@iwaGadi	1	etogo	acl:relcl	adnominal-relative-clause		2c0248b3-8f68-46e9-b41c-9f7807572c87						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.1	2	digoida	3	weiigi	det	nominal-np-determiner	van-data-1	a7e338a1-5403-40d4-b169-c840cf193aae	2	digoida	3	weiigi	det	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.6	2	GanaaginaGa	1	lotaGa	nmod:poss	possessive-np-possessor	van-data-6	3e518fdb-d852-41e5-87a4-f8778597c2a1	2	GanaaginaGa	1	lotaGa	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.7	2	Gadodawa	1	lotaGa	nmod:poss	possessive-np-possessor	van-data-7	ee540050-e6fa-424e-9252-fd0b9312769d	2	Gadodawa	1	lotaGa	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
@@ -127,7 +141,10 @@ van-data,0.35	4	me	5	iwaGadi	mark	complementizer-mark		675ef4d4-ebe8-4601-bf42-9
 van-data,0.36	1	ani	2	wetiGa	det	nominal-np-determiner		42b65fc9-cec4-40a9-8aec-cdeec3731df8						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.37	1	ani	2	wetiGa	det	nominal-np-determiner		ba34b659-bcb8-4aa2-b9f4-b969ba786b12						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.37	3	me	4	iwaGadi	mark	complementizer-mark		ba34b659-bcb8-4aa2-b9f4-b969ba786b12						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.37	4	iwaGadi	2	wetiGa	acl:relcl	adnominal-relative-clause		ba34b659-bcb8-4aa2-b9f4-b969ba786b12						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.38	1	ani	2	wetiGa	det	nominal-np-determiner		61da4017-2140-4577-82e4-d5108efae675						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.38	3	ane	5	iwaGadi	nsubj	relative-pronoun-trace		61da4017-2140-4577-82e4-d5108efae675						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.38	5	iwaGadi	2	wetiGa	acl:relcl	adnominal-relative-clause		61da4017-2140-4577-82e4-d5108efae675						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.39	1	idiwa	2	wetiadi	det	nominal-np-determiner	van-data-39	6459c008-b2ad-4517-8227-b525616b720d	1	idiwa	2	wetiadi	det	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.40	1	niGidowa	3	lotiidi	det	nominal-np-determiner	van-data-40	b4e1df8d-6590-4ce9-9f72-c0b054398c89	1	niGidowa	3	lotiidi	det	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.40	2	waca	3	lotiidi	nmod:poss	possessive-np-possessor	van-data-40	b4e1df8d-6590-4ce9-9f72-c0b054398c89	2	waca	3	lotiidi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
@@ -137,7 +154,7 @@ van-data,0.43	1	ijo	3	libinienigi	det	nominal-np-determiner		a2910ce3-a0d2-4eac-
 van-data,0.43	2	niwigo	3	libinienigi	nmod:poss	possessive-np-possessor		a2910ce3-a0d2-4eac-bcc3-2da15db88b90						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.43	4	ijowa	5	nigetedi	det	nominal-np-determiner		a2910ce3-a0d2-4eac-bcc3-2da15db88b90						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.44	1	ijoa	2	nigetedi	det	nominal-np-determiner		075356e6-f89c-4d83-b001-435d13b319dc						NO_GOLD_SENTENCE	NOT_ALIGNED
-van-data,0.47	1	idiwa	3	lixagotaGaGa	det	nominal-np-determiner	van-data-47	fad6e8d3-1e9f-451c-aaa7-fd28aecfd967	1	idiwa	2	noGojedi	det	HEAD_MISMATCH	FINAL_PUNCT_IGNORED
+van-data,0.47	1	idiwa	3	lixagotaGaGa	det	nominal-np-determiner	van-data-47	fad6e8d3-1e9f-451c-aaa7-fd28aecfd967	1	idiwa	3	lixagotaGaGa	det	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.47	2	noGojedi	3	lixagotaGaGa	nmod:poss	possessive-np-possessor	van-data-47	fad6e8d3-1e9f-451c-aaa7-fd28aecfd967	2	noGojedi	3	lixagotaGaGa	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.50	2	me@	3	@anitaGa	mark	complementizer-mark	van-data-50	e7f4ab65-14d7-44f5-a197-c99c4ab173cd	2	me	3	anitaGa	mark	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.51	2	me@	3	@initaGa	mark	complementizer-mark	van-data-51	7aa17dd7-2c26-4df9-8f90-65d8d58e2c59	2	me	3	initaGa	mark	MATCH	FINAL_PUNCT_IGNORED
@@ -173,6 +190,8 @@ van-data,0.75	2	liGeladi	1	nigotaGa	nmod:poss	possessive-np-possessor		81048a6f-
 							ped-gramm-21	5d0b94bf-223d-4f09-8c6f-b951a70d6d0b	1	ica	2	nioladi	det	NO_DONE_TREE	NOT_ALIGNED
 							ped-gramm-21	5d0b94bf-223d-4f09-8c6f-b951a70d6d0b	3	Ganixoa	2	nioladi	nmod:poss	NO_DONE_TREE	NOT_ALIGNED
 							ped-gramm-26	f081c545-c42b-463d-b57f-db87787f20e7	1	João	2	liGeladi	nmod:poss	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-26	f081c545-c42b-463d-b57f-db87787f20e7	3	ane	4	napioi	nsubj	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-26	f081c545-c42b-463d-b57f-db87787f20e7	4	napioi	2	liGeladi	acl:relcl	NO_DONE_TREE	NOT_ALIGNED
 							ped-gramm-27	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc	3	me	5	naigi	mark	NO_DONE_TREE	NOT_ALIGNED
 							ped-gramm-27	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc	4	ijo	5	naigi	det	NO_DONE_TREE	NOT_ALIGNED
 							ped-gramm-27	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc	6	naGajo	5	naigi	nmod:poss	NO_DONE_TREE	NOT_ALIGNED
@@ -180,6 +199,9 @@ van-data,0.75	2	liGeladi	1	nigotaGa	nmod:poss	possessive-np-possessor		81048a6f-
 							ped-gramm-28	ee1a1190-7803-404c-83f6-49d3ccf63b0d	5	daGa	7	lionigipi	mark	NO_DONE_TREE	NOT_ALIGNED
 							ped-gramm-28	ee1a1190-7803-404c-83f6-49d3ccf63b0d	6	me	7	lionigipi	mark	NO_DONE_TREE	NOT_ALIGNED
 							ped-gramm-29	4bdb4b8f-0176-4303-8a13-e313fbb6d7ad	2	me	1	eyodi	mark	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-29	4bdb4b8f-0176-4303-8a13-e313fbb6d7ad	3	niganaGacanajo	1	eyodi	acl:relcl	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-30	7b806584-75e5-4017-b9e2-ba97458903bd	2	ane	3	niganaGacanajo	nsubj	NO_DONE_TREE	NOT_ALIGNED
+							ped-gramm-30	7b806584-75e5-4017-b9e2-ba97458903bd	3	niganaGacanajo	1	eyodi	acl:relcl	NO_DONE_TREE	NOT_ALIGNED
 							ped-gramm-31	845b9d1d-ad7c-445a-bfbd-04fd9255ffc2	2	daGa	3	niganaGacanajo	mark	NO_DONE_TREE	NOT_ALIGNED
 							ped-gramm-42	aad13f14-bd9a-462a-9a43-68ba69a81519	2	liGeladi	1	nigotaGa	nmod:poss	NO_DONE_TREE	NOT_ALIGNED
 							ped-gramm-44	6d2a809e-0d32-4254-9489-f9e356e22493	1	nGida	2	niwenigi	det	NO_DONE_TREE	NOT_ALIGNED
