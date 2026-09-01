@@ -12,7 +12,7 @@ readonly EXPECTED_REVIEW_SENTENCES=0
 
 usage() {
     cat >&2 <<EOF
-Usage: ${0##*/} [--rules FILE] [--input FILE] [--gold FILE] [all|LAST_RULE]
+Usage: ${0##*/} [--rules FILE] [--input FILE] [--gold FILE] [--tree-format FORMAT] [all|LAST_RULE]
 
 Run the toy parser through LAST_RULE:
   ${0##*/}                         run all rules from the default file
@@ -28,7 +28,34 @@ Options:
   -r, --rules FILE   use an alternative toy-parser rule file
   -i, --input FILE   use an alternative flat POS input file
   -g, --gold FILE    compare with an alternative aligned gold PSD file
+  --tree-format FORMAT
+                    additional tree output: psd, pdf, svg, png, or dot
+                    repeat to generate several formats; disabled by default
+                    psd: tree displays inside metadata comments
+                    graphics: one numbered file per sentence, with metadata
+  --pdf-layout LAYOUT
+                    separate (default), combined, or both; requires --tree-format pdf
+                    combined: one multipage PDF in PSD record order
+                    both: retain individual PDFs and the combined PDF
+                    combined/both require pdfunite (Ubuntu: poppler-utils)
+  --tree-style STYLE
+                    text-tree style for annotated PSD: ascii (default), unicode
+  --tree-script FILE
+                    path to kadiweu_psd_tree.py (default: project src directory)
   -h, --help         show this help
+
+Examples:
+  ${0##*/} --tree-format psd all
+  ${0##*/} --tree-format pdf 2
+  ${0##*/} --tree-format psd --tree-format pdf all
+
+The ordinary PSD and existing reports are always generated as before.
+Additional files use the same output directory and run prefix:
+  PREFIX-trees.pdf (combined PDF)
+  PREFIX.with-trees.psd
+  PREFIX-trees/000001.pdf, 000002.pdf, ... (in PSD record order)
+Graphical output requires kadiweu_constituency.py and Graphviz (except DOT).
+Annotated PSD requires kadiweu_constituency.py but not Graphviz.
 EOF
 }
 
@@ -50,6 +77,11 @@ INPUT="${INPUT:-$DEFAULT_INPUT}"
 GOLD="${GOLD:-$DEFAULT_GOLD}"
 requested_run="all"
 run_argument_seen=false
+TREE_FORMATS=()
+PDF_LAYOUT="separate"
+pdf_layout_seen=false
+TREE_STYLE="ascii"
+TREE_SCRIPT="$SRC_DIR/kadiweu_psd_tree.py"
 
 while [[ "$#" -gt 0 ]]; do
     case "$1" in
@@ -83,6 +115,44 @@ while [[ "$#" -gt 0 ]]; do
             [[ -n "$GOLD" ]] || die "--gold requires a nonempty file path"
             shift
             ;;
+        --pdf-layout|--pdf-layout=*|--tree-format|--tree-style|--tree-script|--tree-format=*|--tree-style=*|--tree-script=*)
+            option="${1%%=*}"
+            if [[ "$1" == *=* ]]; then
+                value="${1#*=}"
+                shift
+            else
+                [[ "$#" -ge 2 ]] || die "$1 requires a value"
+                value="$2"
+                shift 2
+            fi
+            [[ -n "$value" && "$value" != --* ]] || die "$option requires a value"
+            case "$option" in
+                --tree-format)
+                    case "$value" in
+                        psd|pdf|svg|png|dot) ;;
+                        *) die "unsupported tree format: $value (use psd, pdf, svg, png, or dot)" ;;
+                    esac
+                    # Ignore repeats of the same format.
+                    if [[ " ${TREE_FORMATS[*]-} " != *" $value "* ]]; then
+                        TREE_FORMATS+=("$value")
+                    fi
+                    ;;
+                --pdf-layout)
+                    case "$value" in
+                        separate|combined|both) PDF_LAYOUT="$value" ;;
+                        *) die "unsupported PDF layout: $value (use separate, combined, or both)" ;;
+                    esac
+                    pdf_layout_seen=true
+                    ;;
+                --tree-style)
+                    case "$value" in
+                        ascii|unicode) TREE_STYLE="$value" ;;
+                        *) die "unsupported tree style: $value (use ascii or unicode)" ;;
+                    esac
+                    ;;
+                --tree-script) TREE_SCRIPT="$value" ;;
+            esac
+            ;;
         -h|--help)
             usage
             exit 0
@@ -108,6 +178,10 @@ while [[ "$#" -gt 0 ]]; do
             ;;
     esac
 done
+
+if [[ "$pdf_layout_seen" == true && " ${TREE_FORMATS[*]-} " != *" pdf "* ]]; then
+    die "--pdf-layout requires --tree-format pdf"
+fi
 
 [[ -f "$RULES" ]] || die "rule file not found: $RULES"
 last_available_rule="$(awk -F: '/^[0-9]+:/ {number = $1} END {print number}' "$RULES")"
@@ -173,6 +247,24 @@ command -v "$CORPUSSEARCH" >/dev/null 2>&1 \
 for required in "$RUNNER" "$RULES" "$INPUT" "$GOLD"; do
     require_file "$required"
 done
+
+# Check optional rendering dependencies before the potentially long parser run.
+if [[ "${#TREE_FORMATS[@]}" -gt 0 ]]; then
+    if [[ "$PDF_LAYOUT" != separate ]]; then
+        command -v pdfunite >/dev/null 2>&1 \
+            || die "combined PDF output requires pdfunite (Ubuntu: sudo apt install poppler-utils)"
+    fi
+    require_file "$TREE_SCRIPT"
+    python3 "$TREE_SCRIPT" --help >/dev/null \
+        || die "cannot load tree script and its kadiweu_constituency.py dependency: $TREE_SCRIPT"
+    for tree_format in "${TREE_FORMATS[@]}"; do
+        case "$tree_format" in
+            pdf|svg|png)
+                command -v dot >/dev/null 2>&1 || die "Graphviz dot is required for $tree_format output"
+                ;;
+        esac
+    done
+fi
 
 rules_hash="$(actual_sha256 "$RULES")"
 if [[ "$RULES" == "$DEFAULT_RULES" ]]; then
@@ -359,3 +451,60 @@ printf '  Structural diff: %s\n' "$DIFF"
 printf '  Rule log: %s\n' "$RULE_LOG"
 printf '  Summary: %s\n' "$SUMMARY"
 printf '  Provenance hashes: %s\n' "$HASHES"
+
+# Render the parser output, never the gold trees. Comparison differences (runner
+# status 1) are valid results and therefore also receive requested tree displays.
+if [[ "${#TREE_FORMATS[@]}" -gt 0 ]]; then
+    # Remove only temporary files created by this invocation, even on failure.
+    pdf_temp_dir=""
+    trap 'if [[ -n "$pdf_temp_dir" ]]; then rm -rf -- "$pdf_temp_dir"; fi' EXIT
+    sha256sum "$TREE_SCRIPT" >> "$HASHES"
+    for tree_format in "${TREE_FORMATS[@]}"; do
+        if [[ "$tree_format" == psd ]]; then
+            tree_output="$ARTIFACT_PREFIX.with-trees.psd"
+            python3 "$TREE_SCRIPT" inject "$OUTPUT" \
+                --style "$TREE_STYLE" -o "$tree_output" \
+                || die "annotated PSD generation failed; ordinary parser output remains at $OUTPUT"
+            sha256sum "$tree_output" >> "$HASHES"
+            printf '  Annotated PSD: %s\n' "$tree_output"
+        else
+            tree_dir="$ARTIFACT_PREFIX-trees"
+            if [[ "$tree_format" == pdf && "$PDF_LAYOUT" != separate ]]; then
+                pdf_temp_dir="$(mktemp -d "$ARTIFACT_PREFIX-pdf-XXXXXXXX")"
+                if [[ "$PDF_LAYOUT" == combined ]]; then
+                    tree_dir="$pdf_temp_dir"
+                fi
+            fi
+            mkdir -p "$tree_dir"
+            pdf_pages=()
+            for ((tree_number=1; tree_number<=EXPECTED_SENTENCE_COUNT; tree_number++)); do
+                printf -v tree_output '%s/%06d.%s' "$tree_dir" "$tree_number" "$tree_format"
+                python3 "$TREE_SCRIPT" export "$OUTPUT" --number "$tree_number" \
+                    --format "$tree_format" --comments -o "$tree_output" \
+                    || die "tree $tree_number export failed; ordinary parser output remains at $OUTPUT"
+                if [[ "$tree_format" == pdf ]]; then
+                    pdf_pages+=("$tree_output")
+                fi
+                if [[ "$tree_format" != pdf || "$PDF_LAYOUT" != combined ]]; then
+                    sha256sum "$tree_output" >> "$HASHES"
+                fi
+            done
+            if [[ "$tree_format" == pdf && "$PDF_LAYOUT" != separate ]]; then
+                # Explicit array excludes stale PDFs and preserves numeric record order.
+                # Merge first, then atomically replace any previous combined output.
+                combined_pdf="$ARTIFACT_PREFIX-trees.pdf"
+                pdfunite "${pdf_pages[@]}" "$pdf_temp_dir/combined.pdf" \
+                    || die "PDF consolidation failed; ordinary parser output remains at $OUTPUT"
+                mv -- "$pdf_temp_dir/combined.pdf" "$combined_pdf"
+                sha256sum "$combined_pdf" >> "$HASHES"
+                printf '  Combined PDF: %s\n' "$combined_pdf"
+                rm -rf -- "$pdf_temp_dir"
+                pdf_temp_dir=""
+            fi
+            if [[ "$tree_format" == pdf && "$PDF_LAYOUT" == combined ]]; then
+                continue
+            fi
+            printf '  Graphical trees (%s): %s\n' "$tree_format" "$tree_dir"
+        fi
+    done
+fi

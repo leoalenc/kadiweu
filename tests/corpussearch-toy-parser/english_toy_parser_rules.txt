@@ -1,0 +1,26 @@
+1: n-bar2
+node: $ROOT
+
+query: (IP-MAT iDoms [1]{1}Color)
+AND (IP-MAT iDoms [2]{2}N)
+
+add_internal_node{1, 2}: N-BAR1
+
+
+
+2: n-bar2
+node: $ROOT
+
+query: (IP-MAT iDoms [1]{1}Adj)
+AND (IP-MAT iDoms [2]{2}N-BAR1)
+
+add_internal_node{1, 2}: N-BAR2
+
+
+3: NP
+node: $ROOT
+
+query: (IP-MAT iDoms [1]{1}D)
+AND (IP-MAT iDoms [2]{2}N-BAR2)
+
+add_internal_node{1, 2}: NP
