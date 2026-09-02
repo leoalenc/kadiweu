@@ -1,0 +1,44 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Tue Sep 01 22:35:27 BRT 2026
+
+command file:     /home/leonel/kadiweu/tests/corpussearch-toy-parser/results/kadiweu/kadiweu-toy-parser-through-rule-3-run-0KKjySbl/queries/001-tbp-001-np-d-n.q
+input file:       /home/leonel/kadiweu/tests/corpussearch-toy-parser/results/kadiweu/kadiweu-toy-parser-through-rule-3-run-0KKjySbl/000-input.pos
+output file:      /home/leonel/kadiweu/tests/corpussearch-toy-parser/results/kadiweu/kadiweu-toy-parser-through-rule-3-run-0KKjySbl/queries/001-tbp-001-np-d-n.out
+
+node:   $ROOT
+query:  (IP-MAT iDoms  [1]{1}D) 
+  AND  (IP-MAT iDoms  [2]{2}N|N$) 
+  AND  ([1]D iPrecedes  [2]N|N$) 
+  AND  ([1]D hasSister  [2]N|N$) 
+
+add_internal_node{1,2}: NP
+*/
+/*
+HEADER:
+source file:  000-input.pos
+*/
+
+/~*
+naGani wetiGa iwaGadi
+(van-data,0.33)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 D, 4 N
+*/
+( (IP-MAT (NP (D naGani) (N wetiGa))
+	  (VB iwaGadi))
+  (ID van-data,0.33))
+/*
+FOOTER
+  source file, hits/tokens/total
+  000-input.pos		1/1/6
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  000-input.pos		1/1/6
+whole search, hits/tokens/total
+			1/1/6
+*/

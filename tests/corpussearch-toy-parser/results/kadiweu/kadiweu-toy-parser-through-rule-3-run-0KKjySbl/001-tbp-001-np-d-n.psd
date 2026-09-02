@@ -1,0 +1,55 @@
+/*
+sentence = 26
+status = DONE
+text = DapicoGo
+text_por = Ela é quente .
+*/
+( (IP-MAT (VB DapicoGo))
+  (ID hil-data,0.26))
+/*
+sentence = 68
+status = DONE
+text = biju dapico
+text_por = o beiju está quente
+*/
+( (IP-MAT (N biju)
+            (VB dapico))
+  (ID van-data,0.68))
+/*
+sentence = 33
+status = DONE
+text = naGani wetiGa iwaGadi
+text_por = esta pedra está pesada
+*/
+( (IP-MAT (NP (D naGani) (N wetiGa))
+	  (VB iwaGadi))
+  (ID van-data,0.33))
+/*
+sentence = 4
+status = DONE
+text = niwatece iwaGadi
+text_por = A canoa está pesada
+*/
+( (IP-MAT (N$ niwatece)
+            (VB iwaGadi))
+  (ID ped-gramm,0.4))
+/*
+sentence = 5
+status = DONE
+text = niwatece etadi weiigi
+text_por = A canoa está no rio
+*/
+( (IP-MAT (N$ niwatece)
+            (VB etadi)
+            (N weiigi))
+  (ID ped-gramm,0.5))
+/*
+sentence = 69
+status = DONE
+text = libiwe niale ixagodi
+text_por = o galho da árvore é vermelho
+*/
+( (IP-MAT (N$ libiwe)
+            (N niale)
+            (VB ixagodi))
+  (ID van-data,0.69))

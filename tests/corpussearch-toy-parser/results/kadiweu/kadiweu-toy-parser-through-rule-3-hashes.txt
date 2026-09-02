@@ -1,0 +1,11 @@
+203cbbd8b22e623a2ce6b52284e68793874c6d425b4a27ca5c28b793aac4533a  /home/leonel/kadiweu/tests/corpussearch-toy-parser/kadiweu_toy_parser_rules_root.txt
+30bb0817699d6d839ac5c7547a698915dcf55c7cc4af6e981f86daaaca6bfb5b  /home/leonel/kadiweu/tests/corpussearch-toy-parser/kadiweu-toy-parser.pos
+f23053f856cb3b9061f4828821108590d1c399b443e08004cece733a70b2df03  /home/leonel/kadiweu/tests/corpussearch-toy-parser/kadiweu-toy-parser.gold.psd
+bf9cf092da6f17407b88d2b8b637c8e8db2174a93225190a2046c5d96a14a332  /home/leonel/kadiweu/tests/corpussearch-toy-parser/results/kadiweu/kadiweu-toy-parser-through-rule-3.psd
+3f64ebce1fa78b1a4d834a1a140bc655582dd0df7b11fe95894bc8979f63224a  /home/leonel/kadiweu/tests/corpussearch-toy-parser/results/kadiweu/kadiweu-toy-parser-through-rule-3-comparison.tsv
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /home/leonel/kadiweu/tests/corpussearch-toy-parser/results/kadiweu/kadiweu-toy-parser-through-rule-3.diff
+863e5f12869d35146516fe3ca1f8d2e49723cf9a4024b7f05b6f83782958220e  /home/leonel/kadiweu/tests/corpussearch-toy-parser/results/kadiweu/kadiweu-toy-parser-through-rule-3-run.tsv
+08c509095fcb04d69968d1d232a8c6ec7e36bb8d3508adeaec66282f5f410704  /home/leonel/kadiweu/tests/corpussearch-toy-parser/results/kadiweu/kadiweu-toy-parser-through-rule-3-summary.tsv
+9c05cd843954c9e0eff70f02634b42fa21610462d369a74aa1d1e177f395138e  /home/leonel/kadiweu/tests/corpussearch-toy-parser/results/kadiweu/kadiweu-toy-parser-through-rule-3-console.log
+70423cc915cd4a79a1667e8d73f8ac970c0bd433346f9b5dacee892ea202f2d9  /home/leonel/kadiweu/src/kadiweu_psd_tree.py
+3530d3178770804c833b7fcf982fa66e1049ea62aeb357865bca00bf71d66cdf  /home/leonel/kadiweu/tests/corpussearch-toy-parser/results/kadiweu/kadiweu-toy-parser-through-rule-3-trees.pdf
