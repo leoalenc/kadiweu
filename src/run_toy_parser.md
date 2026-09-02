@@ -20,7 +20,7 @@ This is a separate, general-purpose wrapper based on `run_kadiweu_toy_parser.sh`
 
 Bash, Python 3 compatible with the project scripts, standard Unix utilities, and a working CorpusSearch installation with Java. Install the wrapper in the project's `src/`, alongside `run_kadiweu_parser_rules.py` and its dependencies.
 
-Optional displays use `kadiweu_psd_tree.py` and `kadiweu_constituency.py`. These existing dependency filenames are retained; they do not impose a Kadiwéu output prefix. PDF, SVG, and PNG require Graphviz (`dot`); combined PDFs also require `pdfunite` (`poppler-utils` on Ubuntu). Annotated PSD and DOT do not require Graphviz. Annotated PSD requires metadata comments preceding the trees.
+Optional displays use `kadiweu_psd_tree.py` and the full PSD/Graphviz version of `kadiweu_constituency.py`. Check their imports with `python3 kadiweu_psd_tree.py --help` from `src/`; early JSON-only versions of the module do not provide the required functions. These existing dependency filenames are retained; they do not impose a Kadiwéu output prefix. PDF, SVG, and PNG require Graphviz (`dot`); combined PDFs also require `pdfunite` (`poppler-utils` on Ubuntu). Annotated PSD and DOT do not require Graphviz. Annotated PSD requires metadata comments preceding the trees.
 
 ## OPTIONS
 
@@ -29,7 +29,7 @@ Optional displays use `kadiweu_psd_tree.py` and `kadiweu_constituency.py`. These
 | `-r`, `--rules FILE` | Numbered rule file; required. |
 | `-i`, `--input FILE` | Flat POS corpus; required. |
 | `-g`, `--gold FILE` | Gold PSD corpus; required. |
-| `-o`, `--output-dir DIR` | Destination directory. |
+| `-o`, `--output-dir DIR` | Directory for generated files; created if necessary. Does not move existing results or select input files. |
 | `--name NAME` | Override the output basename, before `-through-rule-N`. Use letters, digits, underscores, dots, and hyphens; start with a letter, digit, or underscore. |
 | `--runner FILE` | Override the Python parser runner. |
 | `--corpussearch COMMAND` | CorpusSearch executable name or path, without additional arguments. |
@@ -41,7 +41,7 @@ Optional displays use `kadiweu_psd_tree.py` and `kadiweu_constituency.py`. These
 
 Long options accept `--option=value` as well as `--option value`. Omitted `all|LAST_RULE` means `all`.
 
-## EXAMPLE
+## EXAMPLES
 
 From `tests/corpussearch-toy-parser/`:
 
@@ -50,18 +50,36 @@ bash ../../src/run_toy_parser.sh \
   --rules russian_toy_parser_rules.txt \
   --input russian-toy-parser.pos \
   --gold russian-toy-parser.gold.psd \
+  --output-dir ./results/russian \
   --tree-format pdf --pdf-layout combined all
 ```
 
-Use the corresponding English, Terena, or other filenames for another language. Supply `--name russian-np-exercise` to choose an explicit experiment name.
+From `src/`, use an input-directory variable and a separate output path:
+
+```bash
+DIR="../tests/corpussearch-toy-parser"
+bash ./run_toy_parser.sh \
+  --rules "$DIR/terena_toy_parser_rules_root.txt" \
+  --input "$DIR/terena-toy-parser.pos" \
+  --gold "$DIR/terena-toy-parser.gold.psd" \
+  --output-dir "$DIR/results/terena" \
+  --name terena-toy-parser \
+  --tree-format pdf --pdf-layout combined all
+```
+
+`DIR` points to the rules and source corpora, not to a results directory. Relative paths are resolved from the shell's current directory. Quote variable expansions as shown. For an absolute path, use `DIR="$HOME/kadiweu/tests/corpussearch-toy-parser"`.
+
+`--name terena-toy-parser` keeps the output basename short despite the `_root` rule variant. Omit it to retain the automatic rule-variant label. Both `--name` and `--output-dir` affect saved filenames and locations, not parsing or evaluation.
 
 ## FILES
 
-By default, outputs go to `data/generated/constituency/corpussearch-toy-parser/` under the parent of the script's directory. `TOY_PARSER_ROOT` overrides that project root; `--output-dir` overrides the destination directly.
+For these teaching experiments, use `--output-dir` to keep outputs in `tests/corpussearch-toy-parser/results/english/`, `results/russian/`, or `results/terena/`. This is a chosen directory layout, not a change to the script default.
+
+Without `--output-dir`, outputs go to `data/generated/constituency/corpussearch-toy-parser/` under the parent of the script's directory. `TOY_PARSER_ROOT` overrides that project root; `--output-dir` overrides the destination directly.
 
 The output basename comes from the POS filename, removing trailing `.txt` and then `.pos`. When the rules filename matches the conventional stem (`russian_toy_parser_rules.txt` for `russian-toy-parser.pos`), it is not repeated. Other rules filenames add a label to distinguish variants. `--name` overrides this automatic basename.
 
-For the example above with four rules:
+For the Russian example with four rules, the following files appear in `results/russian/`:
 
 ```text
 russian-toy-parser-through-rule-4.psd
