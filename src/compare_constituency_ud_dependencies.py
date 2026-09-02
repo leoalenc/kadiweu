@@ -25,9 +25,9 @@ from kadiweu_constituency_dependencies import DependencyAssignment, infer_depend
 
 
 DEFAULT_RELATIONS = frozenset(
-    {"nmod:poss", "det", "mark", "acl:relcl", "nsubj"}
+    {"nmod:poss", "det", "mark", "acl:relcl", "nsubj", "root", "conj", "cc", "advmod", "punct"}
 )
-RELATIVE_ARGUMENT_RELATIONS = frozenset({"nsubj", "obj", "obl"})
+RELATIVE_ARGUMENT_RELATIONS = frozenset({"obj", "obl"})
 
 
 @dataclass(frozen=True)
@@ -180,10 +180,9 @@ def _tree_assignment_by_gold_dependent(
 def _is_target_gold_token(token: ConlluToken, relations: Set[str]) -> bool:
     """Return whether a gold dependency belongs to the audited rule scope.
 
-    Core-argument relations are widespread in the treebank but the current
-    predictor emits them only for overt relative pronouns.  Restricting
-    gold-only argument rows to WPRO/PronType=Rel prevents every ordinary
-    subject from being reported as a missing relative-clause prediction.
+    All nsubj rows are now audited, including ordinary subjects left unresolved
+    by the partial rules. Object/oblique audits retain the historical relative-
+    pronoun restriction. GOLD_ONLY measures coverage, not necessarily error.
     """
 
     if token.deprel not in relations:
@@ -229,7 +228,7 @@ def _fill_tree_fields(
             "dependent_position": assignment.dependent_position,
             "dependent": tokens[assignment.dependent_position].form,
             "head_position": assignment.head_position,
-            "head": tokens[assignment.head_position].form,
+            "head": "ROOT" if assignment.head_position == 0 else tokens[assignment.head_position].form,
             "deprel": assignment.deprel,
             "rule": assignment.rule,
         }
@@ -377,7 +376,8 @@ def comparison_rows(
                 comparison = "TREE_ONLY_GOLD_OTHER"
                 _fill_gold_fields(row, gold, gold_token, gold_tokens_by_id)
             else:
-                tree_head_id = alignment.psd_to_gold.get(assignment.head_position)
+                tree_head_id = (0 if assignment.head_position == 0 else
+                                alignment.psd_to_gold.get(assignment.head_position))
                 if assignment.deprel != gold_token.deprel:
                     comparison = "DEPREL_MISMATCH"
                 elif tree_head_id != gold_token.head:
@@ -422,7 +422,7 @@ def build_argument_parser() -> argparse.ArgumentParser:
         default=set(DEFAULT_RELATIONS),
         help=(
             "comma-separated relations; default: "
-            "nmod:poss,det,mark,acl:relcl,nsubj"
+            "nmod:poss,det,mark,acl:relcl,nsubj,root,conj,cc,advmod,punct"
         ),
     )
     return parser

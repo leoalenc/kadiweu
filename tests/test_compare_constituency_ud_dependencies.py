@@ -6,10 +6,13 @@ from __future__ import annotations
 import tempfile
 import textwrap
 import unittest
+import csv
+import io
 from pathlib import Path
 
 from kadiweu_constituency import PsdRecord, tree_from_psd_record
 from compare_constituency_ud_dependencies import (
+    DEFAULT_RELATIONS,
     align_tokens,
     comparison_rows,
     iter_conllu_sentences,
@@ -76,7 +79,7 @@ class ComparisonTests(unittest.TestCase):
         by_dependent = {row["gold_dependent"]: row for row in rows}
         self.assertEqual(by_dependent["ane"]["comparison"], "MATCH")
         self.assertEqual(by_dependent["iwaGadi"]["comparison"], "MATCH")
-        self.assertNotIn("wetiGa", by_dependent)
+        self.assertEqual(by_dependent["wetiGa"]["comparison"], "GOLD_ONLY")
 
     def test_match_me_relative_ped_025(self):
         uid = "a4d33655-fe74-4df2-8d5e-b3c88fba5fd1"
@@ -99,8 +102,8 @@ class ComparisonTests(unittest.TestCase):
             """
         )
         rows = list(comparison_rows([record], [gold], RELATIONS))
-        self.assertEqual(len(rows), 2)
-        self.assertTrue(all(row["comparison"] == "MATCH" for row in rows))
+        self.assertEqual(len(rows), 3)
+        self.assertEqual([r["comparison"] for r in rows], ["GOLD_ONLY", "MATCH", "MATCH"])
 
     def test_attested_match_hil_003(self):
         uid = "39f34955-a828-47d7-808d-b3b3565b42d6"
@@ -121,7 +124,7 @@ class ComparisonTests(unittest.TestCase):
             """
         )
         rows = list(comparison_rows([record], [gold], RELATIONS))
-        self.assertEqual(len(rows), 1)
+        self.assertEqual(len(rows), 2)
         self.assertEqual(rows[0]["comparison"], "MATCH")
         self.assertEqual(rows[0]["token_alignment"], "FINAL_PUNCT_IGNORED")
 
@@ -191,7 +194,7 @@ class ComparisonTests(unittest.TestCase):
             """
         )
         rows = list(comparison_rows([record], [gold], RELATIONS))
-        self.assertEqual(len(rows), 1)
+        self.assertEqual(len(rows), 2)
         self.assertEqual(rows[0]["comparison"], "MATCH")
 
     def test_match_q_and_mark_with_nominal_ip_van_010(self):
@@ -266,6 +269,79 @@ class ComparisonTests(unittest.TestCase):
         alignment = align_tokens(record, gold)
         self.assertEqual(alignment.status, "ERROR")
         self.assertIn("TOKEN_COUNT_MISMATCH", alignment.error)
+
+
+class ClauseComparisonTests(unittest.TestCase):
+    def test_root_zero_matches_and_serializes(self):
+        from kadiweu_constituency_dependencies import write_tsv
+        from compare_constituency_ud_dependencies import write_comparison
+        record = psd_record("(IP-MAT (NP (N$ libiniena)))", "hil-data,0.28",
+                            "fab37d81-bb9b-4e20-a8f5-3b3969ee86d1")
+        gold = conllu_sentence("# sent_id = hil-data-28\n# sent_uid = "
+                               + record.tree.sentence_uid + "\n"
+                               "1\tlibiniena\t_\tNOUN\tN$\t_\t0\troot\t_\t_")
+        rows = list(comparison_rows([record], [gold], set(DEFAULT_RELATIONS)))
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["comparison"], "MATCH")
+        self.assertEqual((rows[0]["head"], rows[0]["gold_head"]), ("ROOT", "ROOT"))
+        for writer, data in [(write_tsv, [record]), (write_comparison, rows)]:
+            output = io.StringIO()
+            writer(data, output)
+            row = list(csv.DictReader(io.StringIO(output.getvalue()), delimiter="\t"))[0]
+            self.assertEqual((row["head_position"], row["head"]), ("0", "ROOT"))
+
+    def test_attested_coordination_matches_reviewed_ped_049(self):
+        # Source: DONE ped-gramm,0.49 and reviewed kbc_unicamp-ud-test(2).
+        record = psd_record(
+            "(IP-MAT (IP-MAT (NP (N$ Niwatece)) (VB iwaGadi)) "
+            "(CONJP (CONJ codaa) (IP-MAT (NEG aG@) (VBU @dakake) "
+            "(NP (N$ loojedi)))) (PUNC .))", "ped-gramm,0.49",
+            "eeb42af3-fe5a-4b7d-97ea-b381ab589860")
+        gold = conllu_sentence("""
+# sent_id = ped-gramm-49
+# sent_uid = eeb42af3-fe5a-4b7d-97ea-b381ab589860
+1\tNiwatece\twatece\tNOUN\tN$\t_\t2\tnsubj\t_\t_
+2\tiwaGadi\twaaGadi\tVERB\tVB\t_\t0\troot\t_\t_
+3\tcodaa\tcodaa\tCCONJ\tCONJ\t_\t5\tcc\t_\t_
+4-5\tadakake\t_\t_\t_\t_\t_\t_\t_\t_
+4\taG\taG\tPART\tNEG\t_\t5\tadvmod\t_\t_
+5\tdakake\takake\tVERB\tVBU\t_\t2\tconj\t_\t_
+6\tloojedi\toojedi\tNOUN\tN$\t_\t5\tnsubj\t_\t_
+7\t.\t.\tPUNCT\tPUNCT\t_\t2\tpunct\t_\t_
+        """)
+        rows = list(comparison_rows([record], [gold], set(DEFAULT_RELATIONS)))
+        self.assertEqual([r["comparison"] for r in rows],
+                         ["GOLD_ONLY", "MATCH", "MATCH", "MATCH", "MATCH", "GOLD_ONLY", "MATCH"])
+        filtered = list(comparison_rows([record], [gold], {"root", "conj", "cc"}))
+        self.assertEqual(len(filtered), 3)
+        self.assertTrue(all(r["comparison"] == "MATCH" for r in filtered))
+
+    def test_root_with_missing_reference(self):
+        record = psd_record("(IP-MAT (NP (N$ libiniena)))", "hil-data,0.28", "missing")
+        rows = list(comparison_rows([record], [], {"root"}))
+        self.assertEqual(rows[0]["comparison"], "NO_GOLD_SENTENCE")
+        self.assertEqual(rows[0]["head"], "ROOT")
+
+    def test_root_reference_head_mismatch(self):
+        # Artificial negative reference; not a proposed linguistic annotation.
+        record = psd_record("(IP-MAT (NP (N placeholder)))", "negative", "negative")
+        gold = conllu_sentence("# sent_uid = negative\n"
+                               "1\tplaceholder\t_\tNOUN\tN\t_\t1\troot\t_\t_")
+        self.assertEqual(list(comparison_rows([record], [gold], {"root"}))[0]["comparison"],
+                         "HEAD_MISMATCH")
+
+    def test_root_with_trace_positions_and_final_punctuation(self):
+        # Mechanical perturbation: trace adds a source position, not a UD word.
+        record = psd_record("(IP-MAT (NP-TRACE (-NONE- *T*-1)) (VB placeholder))",
+                            "negative", "negative")
+        gold = conllu_sentence("# sent_uid = negative\n"
+                               "1\tplaceholder\t_\tVERB\tVB\t_\t0\troot\t_\t_\n"
+                               "2\t.\t_\tPUNCT\tPUNC\t_\t1\tpunct\t_\t_")
+        rows = list(comparison_rows([record], [gold], {"root"}))
+        self.assertEqual(rows[0]["dependent_position"], 2)
+        self.assertEqual(rows[0]["gold_dependent_id"], 1)
+        self.assertEqual(rows[0]["comparison"], "MATCH")
+        self.assertEqual(rows[0]["token_alignment"], "FINAL_PUNCT_IGNORED")
 
 
 if __name__ == "__main__":

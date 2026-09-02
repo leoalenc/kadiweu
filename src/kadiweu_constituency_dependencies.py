@@ -40,6 +40,15 @@ coindex must match a unique ``*T*`` trace in ``IP-SUB``.  The subject-trace
 configuration attested in DONE licenses ``ane`` as ``nsubj`` of the promoted
 clause head.  In an adnominal ``CP-me``, the existing complementizer rule
 attaches ``me`` to that same head as ``mark``.
+
+Sentence heads are inherited from an overt verb, NP-PRD, CP-me predicate,
+or a sole overt daughter (ignoring punctuation/empty projections). A
+sentence-level CP-D promotes its IP-SUB head. The attested verbless
+CP -> NP CAPL promotes the NP head and attaches CAPL as mark. Coordination
+IP-MAT -> IP-MAT (CONJP CONJ IP-MAT)+ promotes the first conjunct; later
+heads attach as conj and their coordinators as cc. Only the sentence-level
+head receives HEAD=0/root. Labelled NP-SBJ, local IP negation, and immediate
+sentence punctuation are supported; bare verbal argument roles remain open.
 """
 
 from __future__ import annotations
@@ -163,14 +172,35 @@ def lexical_head(node: TreeNode) -> TokenNode | None:
 def ud_head(node: TreeNode) -> TokenNode | None:
     """Return a conservatively identifiable UD content-word head.
 
-    Unlike ``lexical_head``, this function implements functional-head reversal
-    for the currently supported IP-SUB configurations.
+    This selects a head, not its external dependency. In particular, nested
+    matrix clauses do not receive root here. Ambiguity is not resolved by
+    discarding unresolved candidate phrases.
     """
 
     if isinstance(node, TokenNode):
         return None if node.empty_category else node
     if is_np(node):
         return lexical_head(node)
+    if isinstance(node, ConstituentNode) and node.label in {"CP", "CP-me", "CP-D"}:
+        complement = cp_complement(node)
+        return ud_head(complement) if complement is not None else None
+    if is_ip_mat(node):
+        coordination = coordination_parts(node)
+        if coordination is not None:
+            return ud_head(coordination[0])
+        verbs = [c for c in node.children if isinstance(c, TokenNode)
+                 and not c.empty_category and c.tag in VERBAL_HEAD_TAGS]
+        if verbs:
+            return verbs[0] if len(verbs) == 1 else None
+        predicates = [c for c in node.children if has_function(c, "NP", "PRD")]
+        if predicates:
+            return ud_head(predicates[0]) if len(predicates) == 1 else None
+        cps = [c for c in node.children if isinstance(c, ConstituentNode)
+               and (c.label == "CP-me" or verbless_capl_np(c) is not None)]
+        if cps:
+            return ud_head(cps[0]) if len(cps) == 1 else None
+        children = overt_children(node)
+        return ud_head(children[0]) if len(children) == 1 else None
     if not is_ip_sub(node):
         return None
 
@@ -186,16 +216,110 @@ def ud_head(node: TreeNode) -> TokenNode | None:
     if verbal_heads:
         return None
 
-    np_heads = [
-        head
-        for child in node.children
-        if is_np(child)
-        for head in [lexical_head(child)]
-        if head is not None
-    ]
-    if len(np_heads) == 1:
-        return np_heads[0]
+    predicates = [c for c in node.children if has_function(c, "NP", "PRD")]
+    candidates = predicates or [c for c in node.children if is_np(c)]
+    if len(candidates) == 1:
+        return lexical_head(candidates[0])
     return None
+
+
+def has_function(node: TreeNode, category: str, function: str) -> bool:
+    return (isinstance(node, ConstituentNode)
+            and node.label.split("-")[0] == category
+            and function in node.label.split("-")[1:])
+
+
+def is_ip_mat(node: TreeNode) -> bool:
+    return has_function(node, "IP", "MAT")
+
+
+def overt_children(node: ConstituentNode) -> list[TreeNode]:
+    """Ignore punctuation and wholly empty projections, not unresolved phrases."""
+    return [c for c in node.children
+            if not (isinstance(c, TokenNode) and c.tag in {"PUNC", "PUNCT", ".", ","})
+            and any(isinstance(t, TokenNode) and not t.empty_category
+                    for t in ([c] if isinstance(c, TokenNode) else c.walk()))]
+
+
+def verbless_capl_np(node: TreeNode) -> ConstituentNode | None:
+    """The attested CP -> NP CAPL construction; morphology adds no UD word."""
+    if not isinstance(node, ConstituentNode) or node.label != "CP":
+        return None
+    children = overt_children(node)
+    nps = [c for c in children if is_np(c)]
+    markers = [c for c in children if isinstance(c, TokenNode) and c.tag == "CAPL"]
+    if len(children) == 2 and len(nps) == len(markers) == 1:
+        return nps[0]
+    return None
+
+
+def cp_complement(node: ConstituentNode) -> ConstituentNode | None:
+    if node.label == "CP":
+        return verbless_capl_np(node)
+    if node.label not in {"CP-me", "CP-D"}:
+        return None
+    clauses = [c for c in node.children if is_ip_sub(c)]
+    return clauses[0] if len(clauses) == 1 else None
+
+
+def coordination_parts(
+    node: ConstituentNode,
+) -> tuple[ConstituentNode, list[tuple[TokenNode, ConstituentNode]]] | None:
+    """Recognize IP-MAT -> IP-MAT (CONJP CONJ IP-MAT)+, locally."""
+    if not is_ip_mat(node):
+        return None
+    children = overt_children(node)
+    if len(children) < 2 or not is_ip_mat(children[0]):
+        return None
+    subsequent = []
+    for wrapper in children[1:]:
+        if not isinstance(wrapper, ConstituentNode) or wrapper.label != "CONJP":
+            return None
+        parts = overt_children(wrapper)
+        clauses = [c for c in parts if is_ip_mat(c)]
+        markers = [c for c in parts if isinstance(c, TokenNode) and c.tag == "CONJ"]
+        if len(parts) != 2 or len(clauses) != 1 or len(markers) != 1:
+            return None
+        subsequent.append((markers[0], clauses[0]))
+    return children[0], subsequent
+
+
+def clause_assignments(node: ConstituentNode) -> list[DependencyAssignment]:
+    """Local edges only: root is assigned separately, once per sentence.
+
+    Unlabelled NPs beside verbs are deliberately not inferred as subjects.
+    The NP + verbless CAPL-CP predicate construction is an explicit exception.
+    """
+    result = []
+    head = ud_head(node)
+    if head is None:
+        return result
+    coordination = coordination_parts(node)
+    if coordination is not None:
+        for marker, clause in coordination[1]:
+            other = ud_head(clause)
+            if other is not None:
+                result.extend([
+                    DependencyAssignment(other.position, head.position, "conj", "clause-coordination"),
+                    DependencyAssignment(marker.position, other.position, "cc", "clause-coordinator"),
+                ])
+    if is_ip_mat(node) or is_ip_sub(node):
+        subjects = [c for c in node.children if has_function(c, "NP", "SBJ")]
+        # van-data,0.72: require exactly NP + the attested verbless CP.
+        children = overt_children(node)
+        if (not subjects and is_ip_mat(node) and len(children) == 2
+                and sum(verbless_capl_np(c) is not None for c in children) == 1):
+            subjects = [c for c in children if is_np(c)]
+        if len(subjects) == 1:
+            subject = lexical_head(subjects[0])
+            if subject is not None and subject.position != head.position:
+                result.append(DependencyAssignment(subject.position, head.position,
+                                                   "nsubj", "clause-subject"))
+        for child in node.children:
+            if isinstance(child, TokenNode) and not child.empty_category and child.tag == "NEG":
+                result.append(DependencyAssignment(child.position, head.position,
+                                                   "advmod", "clause-negation"))
+    return result
 
 
 def nominal_determiner_assignments(
@@ -290,23 +414,23 @@ def possessive_np_assignments(node: ConstituentNode) -> list[DependencyAssignmen
 def complementizer_assignments(
     node: ConstituentNode,
 ) -> list[DependencyAssignment]:
-    """Apply UD functional-head reversal to an unambiguous C + IP-SUB CP."""
+    """Promote IP-SUB, or the NP in the attested verbless CAPL construction."""
 
     # CP-REL is excluded: its relative element requires a separate UD
     # analysis and is not licensed as ``mark`` by this rule.
-    if node.label not in {"CP-me", "CP-D"}:
+    if node.label not in {"CP-me", "CP-D", "CP"}:
         return []
     complementizers = [
         child
         for child in node.children
         if isinstance(child, TokenNode)
         and not child.empty_category
-        and child.tag == "C"
+        and child.tag in {"C", "CAPL"}
     ]
-    complements = [child for child in node.children if is_ip_sub(child)]
-    if len(complementizers) != 1 or len(complements) != 1:
+    complement = cp_complement(node)
+    if len(complementizers) != 1 or complement is None:
         return []
-    complement_head = ud_head(complements[0])
+    complement_head = ud_head(complement)
     if complement_head is None:
         return []
     return [
@@ -514,9 +638,22 @@ def infer_dependencies(tree: ConstituencyTree) -> list[DependencyAssignment]:
     """Return all certain assignments currently licensed for *tree*."""
 
     by_dependent: dict[int, DependencyAssignment] = {}
+    if len(tree.roots) == 1:
+        root = tree.root
+        if is_ip_mat(root) or root.label in {"CP", "CP-me", "CP-D"}:
+            head = ud_head(root)
+            if head is not None:
+                _add_assignment(by_dependent, DependencyAssignment(
+                    head.position, 0, "root", "sentence-root"))
+                for child in root.children:
+                    if isinstance(child, TokenNode) and child.tag in {"PUNC", "PUNCT", ".", ","}:
+                        _add_assignment(by_dependent, DependencyAssignment(
+                            child.position, head.position, "punct", "sentence-punctuation"))
     for node in tree.walk():
         if not isinstance(node, ConstituentNode):
             continue
+        for assignment in clause_assignments(node):
+            _add_assignment(by_dependent, assignment)
         for assignment in nominal_determiner_assignments(node):
             _add_assignment(by_dependent, assignment)
         for assignment in possessive_np_assignments(node):
@@ -555,7 +692,7 @@ def write_tsv(records: Iterable[PsdRecord], stream: TextIO) -> None:
                 assignment.dependent_position,
                 by_position[assignment.dependent_position].form,
                 assignment.head_position,
-                by_position[assignment.head_position].form,
+                "ROOT" if assignment.head_position == 0 else by_position[assignment.head_position].form,
                 assignment.deprel,
                 assignment.rule,
             ]

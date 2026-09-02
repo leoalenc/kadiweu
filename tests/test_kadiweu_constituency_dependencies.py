@@ -25,9 +25,12 @@ def parse_tree(tree_text: str, sent_id: str):
 
 
 def assignment_tuples(tree_text: str, sent_id: str):
+    # Historical subtree tests assert local rules; sentence roots are tested
+    # separately below with the complete, unfiltered assignment list.
     return [
         (a.dependent_position, a.head_position, a.deprel, a.rule)
         for a in infer_dependencies(parse_tree(tree_text, sent_id))
+        if a.deprel != "root"
     ]
 
 
@@ -381,6 +384,111 @@ class RelativeClauseTests(unittest.TestCase):
             "negative-test,0.6",
         )
         self.assertEqual(actual, [])
+
+
+PED_049 = """(IP-MAT
+  (IP-MAT (NP (N$ Niwatece)) (VB iwaGadi))
+  (CONJP (CONJ codaa)
+    (IP-MAT (NEG aG@) (VBU @dakake) (NP (N$ loojedi))))
+  (PUNC .))"""
+
+
+class ClauseStructureTests(unittest.TestCase):
+    def edges(self, text, sent_id="synthetic-negative"):
+        tree = parse_tree(text, sent_id)
+        return {(a.dependent_position, a.head_position, a.deprel)
+                for a in infer_dependencies(tree)}
+
+    def test_coordination_ped_049(self):
+        self.assertEqual(self.edges(PED_049, "ped-gramm,0.49"), {
+            (2, 0, "root"), (3, 5, "cc"), (5, 2, "conj"),
+            (4, 5, "advmod"), (7, 2, "punct")})
+
+    def test_single_nominal_matrix_hil_028_029(self):
+        for number, word in [(28, "libiniena"), (29, "libinienigi")]:
+            with self.subTest(number=number):
+                self.assertEqual(self.edges(f"(IP-MAT (NP (N$ {word})))",
+                                           f"hil-data,0.{number}"), {(1, 0, "root")})
+
+    def test_single_np_with_punctuation_hil_032(self):
+        self.assertEqual(self.edges("(IP-MAT (NP (N Ninitibigiwaji)) (PUNC .))",
+                                    "hil-data,0.32"), {(1, 0, "root"), (2, 1, "punct")})
+
+    def test_predicate_and_subject_hil_003(self):
+        self.assertEqual(self.edges("(IP-MAT (NP-SBJ (N$ LotaGa) (NP (N$ Ganioxoa))) "
+                                    "(NP-PRD (N$ libinienaGa)))", "hil-data,0.3"),
+                         {(1, 3, "nsubj"), (2, 1, "nmod:poss"), (3, 0, "root")})
+
+    def test_cp_me_matrix_predicate_hil_025(self):
+        self.assertEqual(self.edges("(IP-MAT (NP-SBJ (D naGana)) "
+                                    "(CP-me (Q eliodi) (C me@) (IP-SUB (VB @ninitibeci))))",
+                                    "hil-data,0.25"),
+                         {(1, 4, "nsubj"), (3, 4, "mark"), (4, 0, "root")})
+
+    def test_cp_d_sentence_root_van_056_057(self):
+        for number, word in [(56, "jipegitege"), (57, "jipegitegi")]:
+            with self.subTest(number=number):
+                self.assertEqual(self.edges("(CP-D (NEG aG@) (NP (D @ica)) "
+                                           f"(C daGa) (IP-SUB (VBAPL {word})))",
+                                           f"van-data,0.{number}"),
+                                 {(3, 4, "mark"), (4, 0, "root")})
+
+    def test_verbless_capl_predicate_van_072(self):
+        text = "(IP-MAT (NP (D ijowa) (N$ leonigipi) (NP (N iwaalo))) "
+        text += "(CP (NP (D idi)) (CAPL metaGa)))"
+        self.assertEqual(self.edges(text, "van-data,0.72"), {
+            (1, 2, "det"), (2, 4, "nsubj"), (3, 2, "nmod:poss"),
+            (4, 0, "root"), (5, 4, "mark")})
+
+    # Deliberately artificial structures below test abstention/mechanics,
+    # not additional Kadiwéu constructions or lexical attestations.
+    def test_no_root_for_ambiguous_single_np(self):
+        self.assertEqual(self.edges("(IP-MAT (NP (N first) (N second)))"), set())
+
+    def test_no_root_for_two_verbs(self):
+        self.assertEqual(self.edges("(IP-MAT (VB first) (VB second))"), set())
+
+    def test_no_root_for_multiple_predicates(self):
+        self.assertEqual(self.edges("(IP-MAT (NP-PRD (N first)) (NP-PRD (N second)))"), set())
+
+    def test_ambiguous_np_not_discarded_when_resolving_ip_sub(self):
+        tree = parse_tree("(IP-SUB (NP (N first)) (NP (N second) (N third)))", "negative")
+        self.assertIsNone(ud_head(tree.root))
+
+    def test_no_mark_for_capl_without_np(self):
+        self.assertEqual(self.edges("(CP (CAPL marker))"), set())
+
+    def test_no_capl_fallback_with_two_nps(self):
+        self.assertEqual(self.edges("(CP (NP (D first)) (NP (D second)) (CAPL marker))"), set())
+
+    def test_no_capl_fallback_with_overt_verb(self):
+        self.assertEqual(self.edges("(CP (NP (D first)) (CAPL marker) (VB verb))"), set())
+
+    def test_no_unlabelled_subject_guess(self):
+        self.assertEqual(self.edges("(IP-MAT (NP (N noun)) (VB verb))"), {(2, 0, "root")})
+
+    def test_nested_coordination_keeps_local_edges(self):
+        text = "(IP-MAT (IP-MAT (VB first)) (CONJP (CONJ and) "
+        text += "(IP-MAT (IP-MAT (VB second)) (CONJP (CONJ and) (IP-MAT (VB third))))))"
+        self.assertEqual(self.edges(text), {(1, 0, "root"), (2, 3, "cc"),
+                                          (3, 1, "conj"), (4, 5, "cc"), (5, 3, "conj")})
+
+    def test_malformed_coordination_does_not_pick_first(self):
+        self.assertEqual(self.edges("(IP-MAT (IP-MAT (VB first)) "
+                                    "(CONJP (CONJ and) (CONJ or) (IP-MAT (VB second))))"), set())
+
+    def test_embedded_ip_mat_does_not_get_root(self):
+        self.assertEqual(self.edges("(IP-MAT (VB outer) (CP-OTHER (IP-MAT (VB inner))))"),
+                         {(1, 0, "root")})
+
+    def test_empty_trace_never_becomes_root(self):
+        self.assertEqual(self.edges("(IP-MAT (NP-TRACE (-NONE- *T*-1)))"), set())
+
+    def test_modifier_rules_apply_inside_second_conjunct(self):
+        text = "(IP-MAT (IP-MAT (VB first)) (CONJP (CONJ and) "
+        text += "(IP-MAT (NP-SBJ (D the) (N noun)) (NP-PRD (N predicate)))))"
+        self.assertEqual(self.edges(text), {(1, 0, "root"), (2, 5, "cc"),
+                                          (3, 4, "det"), (4, 5, "nsubj"), (5, 1, "conj")})
 
 
 if __name__ == "__main__":
