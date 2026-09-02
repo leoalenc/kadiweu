@@ -1,0 +1,126 @@
+/*
+sentence = 1
+status = DONE
+text = tamúku
+text_por = cachorro
+*/
+( (IP-MAT (NP (N tamúku)))
+  (ID terena,0.1))
+/*
+sentence = 2
+status = DONE
+text = ndamúkuna
+text_por = meu cachorro
+*/
+( (IP-MAT (NP (N$ ndamúkuna)))
+  (ID terena,0.2))
+/*
+sentence = 3
+status = DONE
+text = temúkuna
+text_por = teu cachorro
+*/
+( (IP-MAT (NP (N$ temúkuna)))
+  (ID terena,0.3))
+/*
+sentence = 4
+status = DONE
+text = tamúkuna
+text_por = cachorro dele
+*/
+( (IP-MAT (NP (N$ tamúkuna)))
+  (ID terena,0.4))
+/*
+sentence = 5
+status = DONE
+text = tamúkuna ûti
+text_por = nosso cachorro
+*/
+( (IP-MAT (NP (N$ tamúkuna)
+	      (NP (D ûti))))
+  (ID terena,0.5))
+/*
+sentence = 6
+status = DONE
+text = temúkuna noe
+text_por = vosso cachorro
+*/
+( (IP-MAT (NP (N$ temúkuna)
+	      (NP (D noe))))
+  (ID terena,0.6))
+/*
+sentence = 7
+status = DONE
+text = tamúkunahiko
+text_por = cachorro deles
+*/
+( (IP-MAT (NP (N$ tamúkunahiko)))
+  (ID terena,0.7))
+/*
+sentence = 8
+status = DONE
+text = tamúkuna marâ'o
+text_por = cachorro do José
+*/
+( (IP-MAT (NP (N$ tamúkuna)
+	      (NP (N marâ'o))))
+  (ID terena,0.8))
+/*
+sentence = 9
+status = DONE
+text = kavo
+text_por = sabão
+*/
+( (IP-MAT (NP (N kavo)))
+  (ID terena,0.9))
+/*
+sentence = 10
+status = DONE
+text = ngavona
+text_por = meu sabão
+*/
+( (IP-MAT (NP (N$ ngavona)))
+  (ID terena,0.10))
+/*
+sentence = 11
+status = DONE
+text = kevona
+text_por = teu sabão
+*/
+( (IP-MAT (NP (N$ kevona)))
+  (ID terena,0.11))
+/*
+sentence = 12
+status = DONE
+text = kavona ûti
+text_por = nosso sabão
+*/
+( (IP-MAT (NP (N$ kavona)
+	      (NP (D ûti))))
+  (ID terena,0.12))
+/*
+sentence = 13
+status = DONE
+text = kevona noe
+text_por = vosso sabão
+*/
+( (IP-MAT (NP (N$ kevona)
+	      (NP (D noe))))
+  (ID terena,0.13))
+/*
+sentence = 14
+status = DONE
+text = kavona yûse
+text_por = sabão do José
+*/
+( (IP-MAT (NP (N$ kavona)
+	      (NP (N yûse))))
+  (ID terena,0.14))
+/*
+sentence = 15
+status = DONE
+text = kavonahiko
+text_por = sabão deles
+*/
+( (IP-MAT (NP (N$ kavonahiko)))
+  (ID terena,0.15))

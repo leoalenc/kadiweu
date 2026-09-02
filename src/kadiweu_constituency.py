@@ -656,6 +656,8 @@ def tree_to_graphviz_dot(
 
     When supplied, ``comments`` is printed as a left-aligned metadata heading
     above the tree.  The caller decides whether comment delimiters are kept.
+    Token tags and forms are drawn as separate preterminal and terminal nodes;
+    this graphical expansion does not modify the underlying tree objects.
     """
     lines = [
         "digraph constituency_tree {",
@@ -687,12 +689,20 @@ def tree_to_graphviz_dot(
         else:
             form = node.form + "".join(f"-{i}" for i in node.coindex)
             tag = "-NONE-" if node.empty_category else node.label
-            label = f"{tag}\n{form}"
+            label = tag
             attributes = (
                 f"label={json.dumps(label, ensure_ascii=False)}, "
                 'shape=plaintext, style=""'
             )
         lines.append(f"  {node_id} [{attributes}];")
+        if isinstance(node, TokenNode):
+            terminal_id = f"n{next_id}"
+            next_id += 1
+            lines.append(
+                f"  {terminal_id} [label={json.dumps(form, ensure_ascii=False)}, "
+                'shape=plaintext, style=""];'
+            )
+            lines.append(f"  {node_id} -> {terminal_id};")
         if isinstance(node, ConstituentNode):
             child_ids = [add_node(child) for child in node.children]
             for child_id in child_ids:
@@ -734,7 +744,8 @@ def render_tree_graphviz(
         raise ValueError(f"output path is a directory: {path}")
     dot_source = tree_to_graphviz_dot(tree, comments=comments)
     if output_format == "dot":
-        path.write_text(dot_source, encoding="utf-8", newline="\n")
+        with path.open("w", encoding="utf-8", newline="\n") as stream:
+            stream.write(dot_source)
         return path
     executable = shutil.which(dot_command)
     if executable is None:

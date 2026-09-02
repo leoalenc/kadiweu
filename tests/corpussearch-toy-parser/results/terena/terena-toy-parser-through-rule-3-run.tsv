@@ -1,0 +1,4 @@
+execution	original_tbp	name	status	transformed_records	iterations
+1	1	np-bare-noun	OK	15	1
+2	2	np-bare-d	OK	4	1
+3	3	np-possessor-complement	OK	6	1

@@ -1,0 +1,55 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Tue Sep 01 20:36:58 BRT 2026
+
+command file:     /home/leonel/kadiweu/tests/results/russian/russian-toy-parser-through-rule-4-run-U3Xdf1PC/queries/003-tbp-003-np-adj-n.q
+output file:      /home/leonel/kadiweu/tests/results/russian/russian-toy-parser-through-rule-4-run-U3Xdf1PC/queries/003-tbp-003-np-adj-n.out
+
+node:   $ROOT
+query:  (IP-MAT iDoms  [1]{1}ADJ) 
+  AND  (IP-MAT iDoms  [2]{2}N) 
+  AND  ([1]ADJ iPrecedes  [2]N) 
+  AND  ([1]ADJ hasSister  [2]N) 
+
+add_internal_node{1,2}: NP
+*/
+/*
+HEADER:
+source file:  002-tbp-002-np-dem-n.psd
+*/
+
+/~*
+dvunogiy parser stradaet
+(rus-data,0.7)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 ADJ, 4 N
+*/
+( (IP-MAT (NP (ADJ dvunogiy) (N parser))
+	  (VB stradaet))
+  (ID rus-data,0.7))
+
+/~*
+igrushechnaya kapibara rabotaet
+(rus-data,0.8)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 ADJ, 4 N
+*/
+
+( (IP-MAT (NP (ADJ igrushechnaya) (N kapibara))
+	  (VB rabotaet))
+  (ID rus-data,0.8))
+/*
+FOOTER
+  source file, hits/tokens/total
+  002-tbp-002-np-dem-n.psd	2/2/8
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  002-tbp-002-np-dem-n.psd	2/2/8
+whole search, hits/tokens/total
+		2/2/8
+*/

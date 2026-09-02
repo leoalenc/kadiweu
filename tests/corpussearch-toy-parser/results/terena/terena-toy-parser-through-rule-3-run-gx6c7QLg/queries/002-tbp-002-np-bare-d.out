@@ -1,0 +1,76 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Tue Sep 01 20:37:18 BRT 2026
+
+command file:     /home/leonel/kadiweu/tests/results/terena/terena-toy-parser-through-rule-3-run-gx6c7QLg/queries/002-tbp-002-np-bare-d.q
+output file:      /home/leonel/kadiweu/tests/results/terena/terena-toy-parser-through-rule-3-run-gx6c7QLg/queries/002-tbp-002-np-bare-d.out
+
+node:   $METAROOT
+query:  (IP-MAT iDoms  {1}D) 
+
+add_internal_node{1,1}: NP
+*/
+/*
+HEADER:
+source file:  001-tbp-001-np-bare-noun.psd
+*/
+
+/~*
+tamúkuna ûti
+(terena,0.5)
+*~/
+/*
+0 :  1 IP-MAT, 5 D
+*/
+( (IP-MAT (NP (N$ tamúkuna))
+	  (NP (D ûti)))
+  (ID terena,0.5))
+
+/~*
+temúkuna noe
+(terena,0.6)
+*~/
+/*
+0 :  1 IP-MAT, 5 D
+*/
+
+( (IP-MAT (NP (N$ temúkuna))
+	  (NP (D noe)))
+  (ID terena,0.6))
+
+/~*
+kavona ûti
+(terena,0.12)
+*~/
+/*
+0 :  1 IP-MAT, 5 D
+*/
+
+( (IP-MAT (NP (N$ kavona))
+	  (NP (D ûti)))
+  (ID terena,0.12))
+
+/~*
+kevona noe
+(terena,0.13)
+*~/
+/*
+0 :  1 IP-MAT, 5 D
+*/
+
+( (IP-MAT (NP (N$ kevona))
+	  (NP (D noe)))
+  (ID terena,0.13))
+/*
+FOOTER
+  source file, hits/tokens/total
+  001-tbp-001-np-bare-noun.psd	4/4/15
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  001-tbp-001-np-bare-noun.psd	4/4/15
+whole search, hits/tokens/total
+		4/4/15
+*/

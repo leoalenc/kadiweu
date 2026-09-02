@@ -1,0 +1,72 @@
+/*
+sentence = 1
+status = DONE
+text = parser rabotaet
+text_por = O parser funciona.
+*/
+( (IP-MAT (NP (N parser))
+	  (VB rabotaet))
+  (ID rus-data,0.1))
+/*
+sentence = 2
+status = DONE
+text = kapibara stradaet
+text_por = A capivara sofre.
+*/
+( (IP-MAT (NP (N kapibara))
+	  (VB stradaet))
+  (ID rus-data,0.2))
+/*
+sentence = 3
+status = DONE
+text = etot parser stradaet
+text_por = Este parser sofre.
+*/
+( (IP-MAT (NP (DEM etot) (N parser))
+	  (VB stradaet))
+  (ID rus-data,0.3))
+/*
+sentence = 4
+status = DONE
+text = eta kapibara rabotaet
+text_por = Esta capivara funciona.
+*/
+( (IP-MAT (NP (DEM eta) (N kapibara))
+	  (VB rabotaet))
+  (ID rus-data,0.4))
+/*
+sentence = 5
+status = DONE
+text = etot igrushechny parser rabotaet
+text_por = Este toy parser funciona.
+*/
+( (IP-MAT (NP (DEM etot) (ADJ igrushechny) (N parser))
+	  (VB rabotaet))
+  (ID rus-data,0.5))
+/*
+sentence = 6
+status = DONE
+text = eta dvunogaya kapibara rabotaet
+text_por = Esta capivara bípede funciona.
+*/
+( (IP-MAT (NP (DEM eta) (ADJ dvunogaya) (N kapibara))
+	  (VB rabotaet))
+  (ID rus-data,0.6))
+/*
+sentence = 7
+status = DONE
+text = dvunogiy parser stradaet
+text_por = O parser bípede sofre.
+*/
+( (IP-MAT (NP (ADJ dvunogiy) (N parser))
+	  (VB stradaet))
+  (ID rus-data,0.7))
+/*
+sentence = 8
+status = DONE
+text = igrushechnaya kapibara rabotaet
+text_por = A toy capibara funciona.
+*/
+( (IP-MAT (NP (ADJ igrushechnaya) (N kapibara))
+	  (VB rabotaet))
+  (ID rus-data,0.8))

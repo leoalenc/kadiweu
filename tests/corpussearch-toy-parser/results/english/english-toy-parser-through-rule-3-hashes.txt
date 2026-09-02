@@ -1,0 +1,11 @@
+d33312a9df1a797712c989f2f5832119ebf5a6181150d6f70d8134d4b32f14d7  /home/leonel/kadiweu/tests/corpussearch-toy-parser/english_toy_parser_rules.txt
+e8eb7d9ab6fa161d1cd6e4d5ac8452c98df4acd4c0a29a47d1b37eb95f1423e4  /home/leonel/kadiweu/tests/corpussearch-toy-parser/english-toy-parser.pos
+560f1518c4e4d33d03662c3d9839cf88143920caba033e1b20c8e53464e7eb92  /home/leonel/kadiweu/tests/corpussearch-toy-parser/english-toy-parser.gold.psd
+0dc868305151723cc2d2e04fbe99a1ebc2ada9d4a0af290b4d8828ca54864495  ../tests/results/english/english-toy-parser-through-rule-3.psd
+6b622b87df69ed4f9952c1e21d8d82c1fc31d788d5992cc19b05088d457f9c5a  ../tests/results/english/english-toy-parser-through-rule-3-comparison.tsv
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ../tests/results/english/english-toy-parser-through-rule-3.diff
+1339c7736733c6bf4d6e83d6f78ee26091a61ce15fcf2b66f1d647a76e5ac5a3  ../tests/results/english/english-toy-parser-through-rule-3-run.tsv
+a6354974a63818237f1e374c0fdc3ff40230fc3d2319040d871c037be097a1bc  ../tests/results/english/english-toy-parser-through-rule-3-summary.tsv
+c9abf25fa71e23f124a308cad32b061a88a56d9289ec452b59f2301979eaa9f1  ../tests/results/english/english-toy-parser-through-rule-3-console.log
+70423cc915cd4a79a1667e8d73f8ac970c0bd433346f9b5dacee892ea202f2d9  /home/leonel/kadiweu/src/kadiweu_psd_tree.py
+c28b66deb60688aee79db72204118378ff0fdbe09857527a9fae0a0719342998  ../tests/results/english/english-toy-parser-through-rule-3-trees.pdf

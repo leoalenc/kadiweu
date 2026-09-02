@@ -1,0 +1,11 @@
+fe87c831b734bee8ab8635d03c485937be8e10c4fcfa0a4c9e89eae2d42c6e91  /home/leonel/kadiweu/tests/corpussearch-toy-parser/russian_toy_parser_rules.txt
+af32bb7d4a945383c826c7d78b36a782af31bb5720a432e92fc86e894c7ee76d  /home/leonel/kadiweu/tests/corpussearch-toy-parser/russian-toy-parser.pos
+640f14b68b874c5e8c42ab6b67171f9685cfbfe03694df8805c23a3249a29549  /home/leonel/kadiweu/tests/corpussearch-toy-parser/russian-toy-parser.gold.psd
+b89b9e06544fb12375a4018bb73d6fd8324d452804067d4f592e50581d8dcaa7  ../tests/results/russian/russian-toy-parser-through-rule-4.psd
+3107f171be4b9f9f7863c2889ff422d13ff2ca2aeec5690d624c98f24dba0285  ../tests/results/russian/russian-toy-parser-through-rule-4-comparison.tsv
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ../tests/results/russian/russian-toy-parser-through-rule-4.diff
+9e656fc07b296168c26087fc4e5e617b1880cd96ef3ccd19cbabc29e9ca8afdd  ../tests/results/russian/russian-toy-parser-through-rule-4-run.tsv
+3cb150c44c5ccf8997ef5ea5c5a581973de6850e8c586f834df21bc6b5c344e9  ../tests/results/russian/russian-toy-parser-through-rule-4-summary.tsv
+a8c08775b22e945c888c23e5a9922c7c91818a34fe48b3e1cdbbf62cee75f4cc  ../tests/results/russian/russian-toy-parser-through-rule-4-console.log
+70423cc915cd4a79a1667e8d73f8ac970c0bd433346f9b5dacee892ea202f2d9  /home/leonel/kadiweu/src/kadiweu_psd_tree.py
+cb356e8488fd96162a890777f48a46be4c0636a35807f376aa8c09121f1173b3  ../tests/results/russian/russian-toy-parser-through-rule-4-trees.pdf

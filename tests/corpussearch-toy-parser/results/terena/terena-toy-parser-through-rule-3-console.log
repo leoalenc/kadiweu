@@ -1,0 +1,15 @@
+stopping after original TBP rule 3 (np-possessor-complement)
+[001/003] TBP 1: np-bare-noun
+[002/003] TBP 2: np-bare-d
+[003/003] TBP 3: np-possessor-complement
+
+Comparison summary:
+struct_status  exact  trace_equivalent  structural_difference  total
+DONE              15                 0                      0     15
+TOTAL             15                 0                      0     15
+
+Comparison summary by dataset × struct_status:
+dataset  struct_status  exact  trace_equivalent  structural_difference  total
+terena   DONE              15                 0                      0     15
+comparison report written to ../tests/results/terena/terena-toy-parser-through-rule-3-comparison.tsv
+PASS: 15 exact matches and 0 trace-equivalent matches; no structural differences

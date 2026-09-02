@@ -1,0 +1,9 @@
+sentence_id	dataset	struct_status	result	details
+rus-data,0.1	rus-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+rus-data,0.2	rus-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+rus-data,0.3	rus-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+rus-data,0.4	rus-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+rus-data,0.5	rus-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+rus-data,0.6	rus-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+rus-data,0.7	rus-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+rus-data,0.8	rus-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization

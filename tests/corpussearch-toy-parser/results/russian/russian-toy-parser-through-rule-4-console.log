@@ -1,0 +1,16 @@
+stopping after original TBP rule 4 (np-bare-noun)
+[001/004] TBP 1: np-dem-adj-n
+[002/004] TBP 2: np-dem-n
+[003/004] TBP 3: np-adj-n
+[004/004] TBP 4: np-bare-noun
+
+Comparison summary:
+struct_status  exact  trace_equivalent  structural_difference  total
+DONE               8                 0                      0      8
+TOTAL              8                 0                      0      8
+
+Comparison summary by dataset × struct_status:
+dataset   struct_status  exact  trace_equivalent  structural_difference  total
+rus-data  DONE               8                 0                      0      8
+comparison report written to ../tests/results/russian/russian-toy-parser-through-rule-4-comparison.tsv
+PASS: 8 exact matches and 0 trace-equivalent matches; no structural differences

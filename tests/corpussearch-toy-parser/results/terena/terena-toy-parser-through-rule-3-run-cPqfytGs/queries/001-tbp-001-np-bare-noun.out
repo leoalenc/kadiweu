@@ -1,0 +1,202 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Tue Sep 01 20:08:03 BRT 2026
+
+command file:     /home/leonel/kadiweu/tests/results/terena/terena-toy-parser-through-rule-3-run-cPqfytGs/queries/001-tbp-001-np-bare-noun.q
+input file:       /home/leonel/kadiweu/tests/results/terena/terena-toy-parser-through-rule-3-run-cPqfytGs/000-input.pos
+output file:      /home/leonel/kadiweu/tests/results/terena/terena-toy-parser-through-rule-3-run-cPqfytGs/queries/001-tbp-001-np-bare-noun.out
+
+node:   $METAROOT
+query:  (IP-MAT iDoms  {1}N|N$) 
+
+add_internal_node{1,1}: NP
+*/
+/*
+HEADER:
+source file:  000-input.pos
+*/
+
+/~*
+tamúku
+(terena,0.1)
+*~/
+/*
+0 :  1 IP-MAT, 2 N
+*/
+( (IP-MAT (NP (N tamúku)))
+  (ID terena,0.1))
+
+/~*
+ndamúkuna
+(terena,0.2)
+*~/
+/*
+0 :  1 IP-MAT, 2 N$
+*/
+
+( (IP-MAT (NP (N$ ndamúkuna)))
+  (ID terena,0.2))
+
+/~*
+temúkuna
+(terena,0.3)
+*~/
+/*
+0 :  1 IP-MAT, 2 N$
+*/
+
+( (IP-MAT (NP (N$ temúkuna)))
+  (ID terena,0.3))
+
+/~*
+tamúkuna
+(terena,0.4)
+*~/
+/*
+0 :  1 IP-MAT, 2 N$
+*/
+
+( (IP-MAT (NP (N$ tamúkuna)))
+  (ID terena,0.4))
+
+/~*
+tamúkuna ûti
+(terena,0.5)
+*~/
+/*
+0 :  1 IP-MAT, 2 N$
+*/
+
+( (IP-MAT (NP (N$ tamúkuna))
+	  (D ûti))
+  (ID terena,0.5))
+
+/~*
+temúkuna noe
+(terena,0.6)
+*~/
+/*
+0 :  1 IP-MAT, 2 N$
+*/
+
+( (IP-MAT (NP (N$ temúkuna))
+	  (D noe))
+  (ID terena,0.6))
+
+/~*
+tamúkunahiko
+(terena,0.7)
+*~/
+/*
+0 :  1 IP-MAT, 2 N$
+*/
+
+( (IP-MAT (NP (N$ tamúkunahiko)))
+  (ID terena,0.7))
+
+/~*
+tamúkuna marâ'o
+(terena,0.8)
+*~/
+/*
+0 :  1 IP-MAT, 2 N$
+0 :  1 IP-MAT, 4 N
+*/
+
+( (IP-MAT (NP (N$ tamúkuna))
+	  (NP (N marâ'o)))
+  (ID terena,0.8))
+
+/~*
+kavo
+(terena,0.9)
+*~/
+/*
+0 :  1 IP-MAT, 2 N
+*/
+
+( (IP-MAT (NP (N kavo)))
+  (ID terena,0.9))
+
+/~*
+ngavona
+(terena,0.10)
+*~/
+/*
+0 :  1 IP-MAT, 2 N$
+*/
+
+( (IP-MAT (NP (N$ ngavona)))
+  (ID terena,0.10))
+
+/~*
+kevona
+(terena,0.11)
+*~/
+/*
+0 :  1 IP-MAT, 2 N$
+*/
+
+( (IP-MAT (NP (N$ kevona)))
+  (ID terena,0.11))
+
+/~*
+kavona ûti
+(terena,0.12)
+*~/
+/*
+0 :  1 IP-MAT, 2 N$
+*/
+
+( (IP-MAT (NP (N$ kavona))
+	  (D ûti))
+  (ID terena,0.12))
+
+/~*
+kevona noe
+(terena,0.13)
+*~/
+/*
+0 :  1 IP-MAT, 2 N$
+*/
+
+( (IP-MAT (NP (N$ kevona))
+	  (D noe))
+  (ID terena,0.13))
+
+/~*
+kavona yûse
+(terena,0.14)
+*~/
+/*
+0 :  1 IP-MAT, 2 N$
+0 :  1 IP-MAT, 4 N
+*/
+
+( (IP-MAT (NP (N$ kavona))
+	  (NP (N yûse)))
+  (ID terena,0.14))
+
+/~*
+kavonahiko
+(terena,0.15)
+*~/
+/*
+0 :  1 IP-MAT, 2 N$
+*/
+
+( (IP-MAT (NP (N$ kavonahiko)))
+  (ID terena,0.15))
+/*
+FOOTER
+  source file, hits/tokens/total
+  000-input.pos		15/15/15
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  000-input.pos		15/15/15
+whole search, hits/tokens/total
+			15/15/15
+*/

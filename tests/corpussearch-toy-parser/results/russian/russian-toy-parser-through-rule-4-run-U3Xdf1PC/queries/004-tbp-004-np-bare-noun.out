@@ -1,0 +1,52 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Tue Sep 01 20:36:58 BRT 2026
+
+command file:     /home/leonel/kadiweu/tests/results/russian/russian-toy-parser-through-rule-4-run-U3Xdf1PC/queries/004-tbp-004-np-bare-noun.q
+output file:      /home/leonel/kadiweu/tests/results/russian/russian-toy-parser-through-rule-4-run-U3Xdf1PC/queries/004-tbp-004-np-bare-noun.out
+
+node:   $ROOT
+query:  (IP-MAT iDoms  {1}N) 
+
+add_internal_node{1,1}: NP
+*/
+/*
+HEADER:
+source file:  003-tbp-003-np-adj-n.psd
+*/
+
+/~*
+parser rabotaet
+(rus-data,0.1)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 N
+*/
+( (IP-MAT (NP (N parser))
+	  (VB rabotaet))
+  (ID rus-data,0.1))
+
+/~*
+kapibara stradaet
+(rus-data,0.2)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 N
+*/
+
+( (IP-MAT (NP (N kapibara))
+	  (VB stradaet))
+  (ID rus-data,0.2))
+/*
+FOOTER
+  source file, hits/tokens/total
+  003-tbp-003-np-adj-n.psd	2/2/8
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  003-tbp-003-np-adj-n.psd	2/2/8
+whole search, hits/tokens/total
+		2/2/8
+*/

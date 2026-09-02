@@ -1,0 +1,55 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Tue Sep 01 20:09:03 BRT 2026
+
+command file:     /home/leonel/kadiweu/tests/results/russian/russian-toy-parser-through-rule-4-run-X9BFrjtP/queries/002-tbp-002-np-dem-n.q
+output file:      /home/leonel/kadiweu/tests/results/russian/russian-toy-parser-through-rule-4-run-X9BFrjtP/queries/002-tbp-002-np-dem-n.out
+
+node:   $ROOT
+query:  (IP-MAT iDoms  [1]{1}DEM) 
+  AND  (IP-MAT iDoms  [2]{2}N) 
+  AND  ([1]DEM iPrecedes  [2]N) 
+  AND  ([1]DEM hasSister  [2]N) 
+
+add_internal_node{1,2}: NP
+*/
+/*
+HEADER:
+source file:  001-tbp-001-np-dem-adj-n.psd
+*/
+
+/~*
+etot parser stradaet
+(rus-data,0.3)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 DEM, 4 N
+*/
+( (IP-MAT (NP (DEM etot) (N parser))
+	  (VB stradaet))
+  (ID rus-data,0.3))
+
+/~*
+eta kapibara rabotaet
+(rus-data,0.4)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 2 DEM, 4 N
+*/
+
+( (IP-MAT (NP (DEM eta) (N kapibara))
+	  (VB rabotaet))
+  (ID rus-data,0.4))
+/*
+FOOTER
+  source file, hits/tokens/total
+  001-tbp-001-np-dem-adj-n.psd	2/2/8
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  001-tbp-001-np-dem-adj-n.psd	2/2/8
+whole search, hits/tokens/total
+		2/2/8
+*/

@@ -1,0 +1,16 @@
+sentence_id	dataset	struct_status	result	details
+terena,0.1	terena	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+terena,0.10	terena	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+terena,0.11	terena	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+terena,0.12	terena	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+terena,0.13	terena	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+terena,0.14	terena	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+terena,0.15	terena	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+terena,0.2	terena	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+terena,0.3	terena	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+terena,0.4	terena	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+terena,0.5	terena	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+terena,0.6	terena	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+terena,0.7	terena	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+terena,0.8	terena	DONE	EXACT_MATCH	trees are identical after whitespace normalization
+terena,0.9	terena	DONE	EXACT_MATCH	trees are identical after whitespace normalization

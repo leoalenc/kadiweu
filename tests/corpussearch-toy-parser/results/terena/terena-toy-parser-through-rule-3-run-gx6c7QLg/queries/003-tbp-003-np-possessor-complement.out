@@ -1,0 +1,104 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Tue Sep 01 20:37:18 BRT 2026
+
+command file:     /home/leonel/kadiweu/tests/results/terena/terena-toy-parser-through-rule-3-run-gx6c7QLg/queries/003-tbp-003-np-possessor-complement.q
+output file:      /home/leonel/kadiweu/tests/results/terena/terena-toy-parser-through-rule-3-run-gx6c7QLg/queries/003-tbp-003-np-possessor-complement.out
+
+node:   $METAROOT
+query:  (IP-MAT iDoms  [1]{1}NP) 
+  AND  (IP-MAT iDoms  [2]{2}NP) 
+  AND  ([1]NP iDoms  N$) 
+  AND  ([2]NP iDoms  D|N) 
+  AND  ([1]NP iPrecedes  [2]NP) 
+
+extend_span{1,2}:
+*/
+/*
+HEADER:
+source file:  002-tbp-002-np-bare-d.psd
+*/
+
+/~*
+tamúkuna ûti
+(terena,0.5)
+*~/
+/*
+0 :  1 IP-MAT, 2 NP, 5 NP, 3 N$, 6 D
+*/
+( (IP-MAT (NP (N$ tamúkuna)
+	      (NP (D ûti))))
+  (ID terena,0.5))
+
+/~*
+temúkuna noe
+(terena,0.6)
+*~/
+/*
+0 :  1 IP-MAT, 2 NP, 5 NP, 3 N$, 6 D
+*/
+
+( (IP-MAT (NP (N$ temúkuna)
+	      (NP (D noe))))
+  (ID terena,0.6))
+
+/~*
+tamúkuna marâ'o
+(terena,0.8)
+*~/
+/*
+0 :  1 IP-MAT, 2 NP, 5 NP, 3 N$, 6 N
+*/
+
+( (IP-MAT (NP (N$ tamúkuna)
+	      (NP (N marâ'o))))
+  (ID terena,0.8))
+
+/~*
+kavona ûti
+(terena,0.12)
+*~/
+/*
+0 :  1 IP-MAT, 2 NP, 5 NP, 3 N$, 6 D
+*/
+
+( (IP-MAT (NP (N$ kavona)
+	      (NP (D ûti))))
+  (ID terena,0.12))
+
+/~*
+kevona noe
+(terena,0.13)
+*~/
+/*
+0 :  1 IP-MAT, 2 NP, 5 NP, 3 N$, 6 D
+*/
+
+( (IP-MAT (NP (N$ kevona)
+	      (NP (D noe))))
+  (ID terena,0.13))
+
+/~*
+kavona yûse
+(terena,0.14)
+*~/
+/*
+0 :  1 IP-MAT, 2 NP, 5 NP, 3 N$, 6 N
+*/
+
+( (IP-MAT (NP (N$ kavona)
+	      (NP (N yûse))))
+  (ID terena,0.14))
+/*
+FOOTER
+  source file, hits/tokens/total
+  002-tbp-002-np-bare-d.psd	6/6/15
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  002-tbp-002-np-bare-d.psd	6/6/15
+whole search, hits/tokens/total
+		6/6/15
+*/

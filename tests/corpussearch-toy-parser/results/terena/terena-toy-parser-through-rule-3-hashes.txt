@@ -1,0 +1,11 @@
+8df9e4f99f2c4674c75674d8740d4a3ebeb1fd8a8c93155f40c9f6a228a238a3  /home/leonel/kadiweu/tests/corpussearch-toy-parser/terena_toy_parser_rules.txt
+f80cf9c3141b26ec3a2ddadb8daa8a996f0e4773fc07afb542f486f21c420778  /home/leonel/kadiweu/tests/corpussearch-toy-parser/terena-toy-parser.pos
+833a9ee0dd3f540e97b7d3de1aec05d2ef2df232749021f2754dc16d0d7389dc  /home/leonel/kadiweu/tests/corpussearch-toy-parser/terena-toy-parser.gold.psd
+6263ea6f0f382dbfae55119e95884f0d03267466673a62953365393d73e42da5  ../tests/results/terena/terena-toy-parser-through-rule-3.psd
+4940666024b72af7acb4b2c7e7fd278d24f2a8778a6ba9af39cfebff78d2d938  ../tests/results/terena/terena-toy-parser-through-rule-3-comparison.tsv
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ../tests/results/terena/terena-toy-parser-through-rule-3.diff
+01149d0c7e9fcd1db324a9f5f575ae58157871e8630f26aed38e88e014a22c35  ../tests/results/terena/terena-toy-parser-through-rule-3-run.tsv
+9e3487b408f9b2c3c278149e97167409d8a511637926c2125b68ec6a6d87b3bf  ../tests/results/terena/terena-toy-parser-through-rule-3-summary.tsv
+cecbba8ed064854bd23bfb7f43dfc145731f6ddedb92ef2560a7f02048b38fc1  ../tests/results/terena/terena-toy-parser-through-rule-3-console.log
+70423cc915cd4a79a1667e8d73f8ac970c0bd433346f9b5dacee892ea202f2d9  /home/leonel/kadiweu/src/kadiweu_psd_tree.py
+65c7f6afe12db1143ce4e720b2e8e8f54c260cb03139867caa096f16d3dd1256  ../tests/results/terena/terena-toy-parser-through-rule-3-trees.pdf

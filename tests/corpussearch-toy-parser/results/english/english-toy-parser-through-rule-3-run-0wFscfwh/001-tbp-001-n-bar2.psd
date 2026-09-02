@@ -1,0 +1,10 @@
+/*
+sentence = 68
+status = DONE
+text = That stupid red ballon
+text_por = Aquele balão vermelho estúpido
+*/
+( (IP-MAT (D That)
+	  (Adj stupid)
+	  (N-BAR1 (Color red) (N ballon)))
+  (ID van-data,0.68))

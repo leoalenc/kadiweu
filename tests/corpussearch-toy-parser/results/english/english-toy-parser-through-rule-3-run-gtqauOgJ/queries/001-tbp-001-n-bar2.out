@@ -1,0 +1,43 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Tue Sep 01 20:09:38 BRT 2026
+
+command file:     /home/leonel/kadiweu/tests/results/english/english-toy-parser-through-rule-3-run-gtqauOgJ/queries/001-tbp-001-n-bar2.q
+input file:       /home/leonel/kadiweu/tests/results/english/english-toy-parser-through-rule-3-run-gtqauOgJ/000-input.pos
+output file:      /home/leonel/kadiweu/tests/results/english/english-toy-parser-through-rule-3-run-gtqauOgJ/queries/001-tbp-001-n-bar2.out
+
+node:   $ROOT
+query:  (IP-MAT iDoms  [1]{1}Color) 
+  AND  (IP-MAT iDoms  [2]{2}N) 
+
+add_internal_node{1,2}: N-BAR1
+*/
+/*
+HEADER:
+source file:  000-input.pos
+*/
+
+/~*
+That stupid red ballon
+(van-data,0.68)
+*~/
+/*
+1 IP-MAT:  1 IP-MAT, 6 Color, 8 N
+*/
+( (IP-MAT (D That)
+	  (Adj stupid)
+	  (N-BAR1 (Color red) (N ballon)))
+  (ID van-data,0.68))
+/*
+FOOTER
+  source file, hits/tokens/total
+  000-input.pos		1/1/1
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  000-input.pos		1/1/1
+whole search, hits/tokens/total
+			1/1/1
+*/
