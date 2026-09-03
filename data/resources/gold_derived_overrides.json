@@ -1,56 +1,35 @@
 {
   "form_feat_overrides": {
     "aG": "Polarity=Neg",
-    "ada": "Gender=Fem|Number=Sing",
     "adi": "Gender=Fem|Number=Sing",
     "ajo": "Gender=Fem|Number=Sing",
     "ane": "_",
-    "ani": "Gender=Fem|Number=Sing",
     "anitaGa": "Gender=Fem|Number=Sing",
     "daGa": "_",
     "daGaxa": "_",
     "dakake": "Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv",
     "dapico": "Voice=Inv",
-    "dibixodi": "Gender=Masc|Number=Plur",
     "digoida": "Gender=Masc|Number=Sing",
-    "dineigi": "_",
-    "dowediteloco": "Mood=Ind|Person[erg]=3|VerbForm=Fin|Voice=Appl",
     "ee": "Gender=Masc|Number=Sing|Person=1",
     "eeyo": "Gender=Fem|Number=Sing|Person=1",
     "eliodi": "_",
-    "eniteloco": "Voice=Appl",
     "etadi": "Gender=Fem|Person=3",
     "etee": "Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin",
-    "eteeyo": "Gender=Fem|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin",
-    "eteyo": "Gender=Fem|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin",
     "etogo": "Gender=Fem|Number=Sing",
     "eyo": "Gender=Fem|Number=Sing|Person=1",
     "gadodawa": "Gender=Fem,Masc|Number=Sing|Person[psor]=2",
-    "ganaaginaGa": "Number=Sing|Person[psor]=2",
-    "ganigotGa": "Gender=Fem|Number=Sing|Person[psor]=2",
-    "ganioxoa": "Gender=Masc|Number=Sing|Person[psor]=2",
-    "ganixoa": "Gender=Masc|Number=Sing|Person[psor]=2",
     "gawenigi": "Gender=Masc|Number=Sing|Person[psor]=2",
     "iGeladi": "Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1",
-    "iGonagi": "Number=Sing|Number[psor]=Sing|Person[psor]=1",
     "ica": "Gender=Masc|Number=Sing",
-    "ideaGi": "_",
     "idei": "Mood=Ind|Person[erg]=3|VerbForm=Fin",
     "idiwa": "Gender=Masc|Number=Plur",
-    "idoa": "Gender=Masc|Number=Plur",
-    "idowa": "Gender=Masc|Number=Plur",
     "ijo": "Gender=Masc|Number=Sing",
-    "ijoa": "Gender=Masc|Number=Plur",
-    "ijowa": "Gender=Masc|Number=Plur",
     "ina": "Gender=Masc|Number=Sing",
     "initaGa": "Gender=Masc|Number=Sing",
     "ipegetege": "Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
-    "ipegitaGagi": "Mood=Ind|Number[obj]=Sing|Person[erg]=3|Person[obj]=2|VerbForm=Fin|Voice=Appl",
-    "ipegitege": "Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
     "iwaGadi": "Mood=Ind|Person=3|VerbForm=Fin",
     "iwaaGadi": "Mood=Ind|Person=3|VerbForm=Fin",
     "iwaalo": "Gender=Fem|Number=Sing",
-    "iwalepodi": "_",
     "ja": "Aspect=Perf",
     "joão": "Gender=Masc",
     "liGeladi": "Gender=Masc|Number=Sing|Person[psor]=3",
@@ -63,59 +42,35 @@
     "liwenigi": "Gender=Masc|Number=Sing|Person[psor]=3",
     "liwigo": "Gender=Masc|Number=Sing|Person[psor]=3",
     "lixagotaGaGa": "Number=Plur",
-    "lodaajo": "Gender=Masc|Number=Sing|Person[psor]=3",
     "lodajo": "Gender=Masc|Number=Sing|Person[psor]=3",
     "lodawa": "Gender=Fem,Masc|Number=Sing|Person[psor]=3",
-    "lodowa": "Gender=Fem,Masc|Number=Sing|Person[psor]=3",
-    "loigi": "Gender=Masc|Number=Sing|Person[psor]=3",
-    "loigipodi": "Gender=Masc|Number=Plur|Person[psor]=3",
-    "lojedi": "Gender=Masc|Number=Sing|Person[psor]=3",
-    "lojetedi": "Gender=Masc|Number=Plur|Person[psor]=3",
-    "loligi": "Gender=Masc|Number=Sing|Person[psor]=3",
     "lomigo": "Gender=Fem|Number=Sing|Person[psor]=3",
     "loojedi": "Gender=Masc|Number=Sing|Person[psor]=3",
     "looligi": "Gender=Masc|Number=Sing|Person[psor]=3",
-    "lotaGa": "Gender=Masc|Number=Sing|Person[psor]=3",
     "maria": "_",
     "me": "_",
-    "micoataGa": "_",
     "naGada": "Gender=Fem|Number=Sing",
     "naGadi": "Gender=Fem|Number=Sing",
     "naGajo": "Gender=Fem|Number=Sing",
     "naGana": "Gender=Fem|Number=Sing",
     "naGani": "Gender=Fem|Number=Sing",
     "naigi": "Gender=Masc|Number=Sing",
-    "naodigijedi": "Gender=Masc|Number=Plur",
     "napioi": "_",
     "niGida": "Gender=Masc|Number=Sing",
     "niGidiwa": "Gender=Masc|Number=Plur",
     "niGidoa": "Gender=Masc|Number=Plur",
     "niGidowa": "Gender=Masc|Number=Plur",
     "niGijo": "Gender=Masc|Number=Sing",
-    "niGijoa": "Gender=Masc|Number=Plur",
-    "niGinoa": "Number=Plur",
     "nigaanigawaanigi": "Degree=Dim|Gender=Masc|Number=Sing",
     "niganaGacanajo": "Gender=Masc|Number=Sing",
-    "niganigawaanigi": "Degree=Dim|Gender=Masc|Number=Sing",
     "niganigawanigi": "Degree=Dim|Gender=Masc|Number=Sing",
-    "niganigi": "Gender=Masc|Number=Sing",
-    "nigetedi": "Gender=Masc|Number=Plur",
     "nigotaGa": "Gender=Fem|Number=Sing",
     "ninitibece": "Mood=Ind|Person=3|VerbForm=Fin",
     "ninitibeci": "Mood=Ind|Person=3|VerbForm=Fin",
-    "ninitibeke": "Mood=Ind|Person=3|VerbForm=Fin",
-    "ninitibigiwaji": "Mood=Ind|Number=Plur|Person=3|VerbForm=Fin",
     "nioladi": "Gender=Masc|Number=Sing|Person[psor]=3",
-    "nioxoa": "Gender=Masc|Number=Sing|Person[psor]=3",
     "niwatece": "Gender=Fem|Number=Sing",
     "niwenigi": "Gender=Masc|Number=Sing",
-    "niwigo": "Gender=Masc|Number=Sing",
     "noGojedi": "Gender=Masc|Number=Plur",
-    "noatece": "Gender=Fem|Number=Sing",
-    "noxilece": "Mood=Ind|Person[erg]=3|VerbForm=Fin",
-    "pedilo": "_",
-    "pedro": "_",
-    "te": "Mood=Ind|VerbForm=Fin",
     "waca": "Gender=Fem|Number=Sing",
     "weiigi": "Gender=Masc|Number=Sing",
     "wetiGa": "Gender=Fem|Number=Sing",
@@ -123,299 +78,106 @@
   },
   "form_to_upos": {
     "aG": "PART",
-    "ada": "PRON",
     "ajo": "DET",
     "ane": "PRON",
-    "ani": "PRON",
-    "daGa": "SCONJ",
-    "daGaxa": "ADV",
+    "anitaGa": "DET",
     "dakake": "VERB",
-    "dapico": "VERB",
-    "dapicoGo": "VERB",
-    "dibixodi": "NOUN",
-    "dineigi": "NOUN",
-    "dowediteloco": "VERB",
-    "ee": "PRON",
-    "eeyo": "PRON",
-    "eniteloco": "VERB",
-    "etadi": "VERB",
-    "etee": "VERB",
-    "eteeyo": "VERB",
-    "eteyo": "VERB",
-    "etogo": "NOUN",
-    "eyo": "PRON",
-    "eyodi": "NOUN",
-    "gadodawa": "NOUN",
-    "ganaaginaGa": "NOUN",
-    "ganigotGa": "NOUN",
-    "ganioxoa": "NOUN",
-    "ganixoa": "NOUN",
-    "gawenigi": "NOUN",
+    "digoida": "DET",
     "iGeladi": "NOUN",
-    "iGonagi": "NOUN",
     "ica": "DET",
-    "ideaGi": "VERB",
     "idei": "VERB",
-    "idiwa": "DET",
-    "idoa": "DET",
-    "idowa": "DET",
-    "ijo": "DET",
-    "ijoa": "DET",
-    "ijowa": "DET",
-    "ina": "PRON",
-    "initaGa": "PRON",
-    "ipegetege": "VERB",
-    "ipegitaGagi": "VERB",
     "ipegitege": "VERB",
     "ipegitegi": "VERB",
     "iwaGadi": "VERB",
     "iwaaGadi": "VERB",
-    "iwaalepodi": "NOUN",
     "iwaalo": "NOUN",
-    "iwalepodi": "NOUN",
     "ja": "AUX",
-    "joão": "PROPN",
     "liGeladi": "NOUN",
-    "libiniena": "NOUN",
     "libinienaGa": "NOUN",
     "libinienigi": "NOUN",
-    "libinienigipi": "NOUN",
-    "lideGegi": "NOUN",
-    "lidi": "NOUN",
-    "lionigipi": "NOUN",
-    "liwatece": "NOUN",
-    "liwenigi": "NOUN",
-    "liwigo": "NOUN",
-    "lixagotaGaGa": "NOUN",
-    "lodaajo": "NOUN",
-    "lodajo": "NOUN",
-    "lodawa": "NOUN",
-    "lodowa": "NOUN",
-    "loigi": "NOUN",
-    "loigipodi": "NOUN",
-    "lojedi": "NOUN",
-    "lojetedi": "NOUN",
-    "loligi": "NOUN",
     "lomigo": "NOUN",
-    "lomiigo": "NOUN",
     "loojedi": "NOUN",
     "looligi": "NOUN",
     "lotaGa": "NOUN",
-    "lotiidi": "NOUN",
     "maria": "PROPN",
     "me": "SCONJ",
-    "micoataGa": "SCONJ",
-    "naGada": "PRON",
-    "naGadi": "PRON",
-    "naGani": "DET",
+    "naGajo": "DET",
     "naigi": "NOUN",
-    "naodigijedi": "NOUN",
     "niGida": "DET",
-    "niGidiwa": "DET",
-    "niGidoa": "DET",
-    "niGidowa": "DET",
     "niGijo": "DET",
-    "niGijoa": "DET",
-    "niGinoa": "DET",
     "nigaanigawaanigi": "NOUN",
-    "niganaGacanajo": "NOUN",
-    "niganigawaanigi": "NOUN",
-    "niganigawanigi": "NOUN",
-    "niganigi": "NOUN",
-    "nigetedi": "NOUN",
     "nigotaGa": "NOUN",
     "ninitibece": "VERB",
     "ninitibeci": "VERB",
-    "ninitibeke": "VERB",
-    "ninitibigiwaji": "VERB",
-    "nioladi": "NOUN",
-    "nioxoa": "NOUN",
     "niwatece": "NOUN",
-    "niwenigi": "NOUN",
-    "niwigo": "NOUN",
-    "noGojedi": "NOUN",
-    "noatece": "NOUN",
-    "noxilece": "VERB",
-    "pedilo": "PROPN",
-    "pedro": "PROPN",
-    "te": "VERB",
-    "waca": "NOUN",
-    "weiigi": "NOUN",
-    "wetiGa": "NOUN",
-    "wetiadi": "NOUN"
+    "weiigi": "NOUN"
   },
   "form_to_xpos": {
     "aG": "NEG",
-    "ada": "D",
-    "adi": "D",
     "ajo": "D",
     "ane": "WPRO",
-    "ani": "D",
     "anitaGa": "DAPL",
-    "daGa": "C",
-    "dapico": "VB",
-    "dapicoGo": "VB",
-    "dibixodi": "N",
-    "dineigi": "N",
-    "dowediteloco": "VBAPL",
-    "ee": "PRO",
-    "eeyo": "PRO",
-    "eniteloco": "VBAPL",
-    "etadi": "VB",
-    "etee": "VB",
-    "eteeyo": "VB",
-    "eteyo": "VB",
-    "etogo": "N",
-    "eyo": "PRO",
-    "eyodi": "N$",
-    "gadodawa": "N$",
-    "ganaaginaGa": "N$",
-    "ganigotGa": "N$",
-    "ganioxoa": "N$",
-    "ganixoa": "N$",
-    "gawenigi": "N$",
+    "digoida": "D",
+    "eliodi": "Q",
     "iGeladi": "N$",
-    "iGonagi": "N$",
     "ica": "D",
-    "ideaGi": "VB",
     "idei": "VB",
-    "idoa": "D",
-    "idowa": "D",
-    "ijo": "D",
-    "ijoa": "D",
-    "ijowa": "D",
-    "ina": "D",
-    "initaGa": "DAPL",
-    "ipegetege": "VBAPL",
-    "ipegitaGagi": "VBAPL",
     "ipegitege": "VBAPL",
     "ipegitegi": "VBAPL",
     "iwaGadi": "VB",
     "iwaaGadi": "VB",
-    "iwaalepodi": "N",
     "iwaalo": "N",
-    "iwalepodi": "N",
     "ja": "T",
-    "joão": "NPR",
     "liGeladi": "N$",
-    "libiniena": "N$",
     "libinienaGa": "N$",
     "libinienigi": "N$",
-    "libinienigipi": "N$",
-    "lideGegi": "N$",
-    "lidi": "N$",
-    "lionigipi": "N$",
-    "liwatece": "N$",
-    "liwenigi": "N$",
-    "liwigo": "N$",
-    "lixagotaGaGa": "N$",
-    "lodaajo": "N$",
-    "lodajo": "N$",
-    "lodawa": "N$",
-    "lodowa": "N$",
-    "loigi": "N$",
-    "loigipodi": "N$",
-    "lojedi": "N$",
-    "lojetedi": "N$",
-    "loligi": "N$",
     "lomigo": "N$",
-    "lomiigo": "N$",
     "loojedi": "N$",
     "looligi": "N$",
     "lotaGa": "N$",
-    "lotiidi": "N$",
     "maria": "NPR",
     "me": "C",
-    "micoataGa": "CD",
-    "naGada": "D",
-    "naGadi": "D",
-    "naGana": "D",
-    "naGani": "D",
     "naigi": "N",
-    "naodigijedi": "N",
     "niGida": "D",
-    "niGidiwa": "D",
-    "niGidoa": "D",
-    "niGidowa": "D",
     "niGijo": "D",
-    "niGijoa": "D",
-    "niGinoa": "D",
-    "niganaGacanajo": "N",
-    "niganigawaanigi": "N",
-    "niganigi": "N",
-    "nigetedi": "N",
-    "nigotaGa": "N",
     "ninitibece": "VB",
     "ninitibeci": "VB",
-    "ninitibeke": "VB",
-    "ninitibigiwaji": "X",
-    "nioxoa": "N$",
-    "niwenigi": "N$",
-    "niwigo": "N$",
-    "noGojedi": "N",
-    "noatece": "N$",
-    "noxilece": "VB",
-    "pedilo": "NPR",
-    "pedro": "NPR",
-    "te": "VB",
-    "waca": "N",
-    "weiigi": "N",
-    "wetiGa": "N",
-    "wetiadi": "N"
+    "weiigi": "N"
   },
   "lemma_overrides": {
     "aG": "aG",
-    "ada": "ida",
     "adi": "idi",
     "ajo": "ijo",
+    "akiidi": "akiidi",
     "ane": "ane",
-    "ani": "ini",
     "anitaGa": "ini",
     "daGa": "daga",
     "daGaxa": "daGaxa",
     "dakake": "akake",
     "dapico": "apico",
     "dapicoGo": "apicoGo",
-    "dibixodi": "dibixoGo",
     "digoida": "digoida",
-    "dineigi": "dineigi",
-    "dowediteloco": "dowediteloco",
     "ee": "ee",
     "eliodi": "eliodi",
-    "eniteloco": "eniteloco",
     "etadi": "etidi",
     "etee": "et",
-    "eteeyo": "et",
-    "eteyo": "et",
     "etogo": "etogo",
     "gadodawa": "odawa",
-    "ganaaginaGa": "aaginaGa",
-    "ganigotGa": "nigota",
-    "ganioxoa": "nioxoa",
-    "ganixoa": "nixoa",
     "gawenigi": "wenigi",
     "iGeladi": "Geladi",
-    "iGonagi": "Gonagi",
     "ica": "ica",
-    "ideaGi": "dei",
     "idei": "dei",
     "idiwa": "idi",
-    "idoa": "ida",
-    "idowa": "ida",
     "ijo": "ijo",
-    "ijoa": "ijo",
-    "ijowa": "ijo",
     "ina": "ina",
     "initaGa": "ini",
-    "ipegetege": "pege",
-    "ipegitaGagi": "pegi",
+    "ipegetege": "pegi",
     "ipegitege": "pegi",
     "ipegitegi": "pegi",
     "iwaGadi": "waaGadi",
     "iwaaGadi": "waaGadi",
     "iwaalepodi": "iwaalo",
     "iwaalo": "iwaalo",
-    "iwalepodi": "iwaalo",
     "ja": "jaG",
     "joão": "joão",
     "liGeladi": "Geladi",
@@ -425,18 +187,12 @@
     "libinienigipi": "binie",
     "lideGegi": "idi",
     "lidi": "idi",
+    "ligeladi": "Geladi",
     "lionigipi": "iona",
     "liwatece": "watece",
     "liwigo": "wigo",
     "lixagotaGaGa": "ixagodi",
-    "lodaajo": "odaajo",
     "lodawa": "odawa",
-    "lodowa": "odawa",
-    "loigi": "oigi",
-    "loigipodi": "oigi",
-    "lojedi": "oojedi",
-    "lojetedi": "oojedi",
-    "loligi": "oligi",
     "lomiigo": "omiigo",
     "loojedi": "oojedi",
     "looligi": "ooligi",
@@ -444,59 +200,41 @@
     "lotiidi": "otiidi",
     "maria": "maria",
     "me": "me",
-    "micoataGa": "taGa",
     "naGada": "niGida",
     "naGadi": "niGidi",
     "naGajo": "niGijo",
     "naGana": "niGina",
     "naGani": "niGini",
     "naigi": "naigi",
-    "naodigijedi": "naodigijegi",
     "napioi": "napioi",
     "niGida": "niGida",
     "niGidiwa": "niGidi",
     "niGidoa": "niGida",
     "niGidowa": "niGida",
     "niGijo": "niGijo",
-    "niGijoa": "niGijo",
-    "niGinoa": "niGina",
     "nigaanigawaanigi": "nigaanigi",
-    "niganigawaanigi": "nigaanigi",
     "niganigawanigi": "nigaanigi",
-    "niganigi": "niganigi",
-    "nigetedi": "getegi",
     "nigotaGa": "nigotaGa",
     "ninitibece": "initibece",
     "ninitibeci": "initibece",
-    "ninitibeke": "initibece",
-    "ninitibigiwaji": "initibece",
     "nioladi": "nioladi",
-    "nioxoa": "nioxoa",
     "niwatece": "watece",
-    "niwigo": "wigo",
+    "niweiigi": "weiigi",
     "noGojedi": "noGojegi",
-    "noatece": "watece",
-    "noxilece": "oxilece",
-    "pedilo": "pedilo",
-    "pedro": "pedro",
-    "te": "te",
     "waca": "waca",
     "weiigi": "weiigi",
     "wetiadi": "wetiGa"
   },
   "lemma_prontype_overrides": {
-    "digoida\tADV": "Dem",
-    "ina\tPRON": "Dem",
-    "ini\tPRON": "Dem",
-    "niGida\tPRON": "Dem",
-    "niGidi\tPRON": "Dem",
-    "niGijo\tPRON": "Dem"
+    "digoida\tDET": "Dem",
+    "ina\tDET": "Dem",
+    "ini\tDET": "Dem"
   },
   "metadata": {
-    "aligned_sentence_count": 101,
-    "alignment_rejected_sentence_count": 3,
-    "gold_file": "/home/leonel/kadiweu/data/treebank/kbc_unicamp-ud-test.conllu",
-    "gold_sentence_count": 104,
+    "aligned_sentence_count": 127,
+    "alignment_rejected_sentence_count": 2,
+    "gold_file": "../data/treebank/kbc_unicamp-ud-test.conllu",
+    "gold_sentence_count": 129,
     "json_files": [
       "../data/ped-gramm.json",
       "../data/hil-data.json",
@@ -504,28 +242,23 @@
     ],
     "json_sentence_count": 206,
     "thresholds": {
-      "feats_min_count": 1,
+      "feats_min_count": 2,
       "feats_min_share": 0.9,
-      "lemma_min_count": 1,
+      "lemma_min_count": 2,
       "lemma_min_share": 0.8,
-      "pron_min_count": 1,
+      "pron_min_count": 2,
       "pron_min_share": 0.9,
-      "tag_pron_min_count": 1,
+      "tag_pron_min_count": 5,
       "tag_pron_min_share": 0.9
     },
-    "uid_matched_sentence_count": 104,
-    "usable_aligned_sentence_count": 101
+    "uid_matched_sentence_count": 129,
+    "usable_aligned_sentence_count": 127
   },
   "prontype_overrides": {
-    "ada\tPRON": "Dem",
     "adi\tDET": "Dem",
-    "adi\tPRON": "Dem",
     "ajo\tDET": "Dem",
     "ane\tPRON": "Rel",
-    "ani\tPRON": "Dem",
     "anitaGa\tDET": "Dem",
-    "anitaGa\tPRON": "Dem",
-    "digoida\tADV": "Dem",
     "digoida\tDET": "Dem",
     "ee\tPRON": "Prs",
     "eeyo\tPRON": "Prs",
@@ -534,64 +267,57 @@
     "eyo\tPRON": "Prs",
     "ica\tDET": "Dem",
     "idiwa\tDET": "Dem",
-    "idoa\tDET": "Dem",
-    "idowa\tDET": "Dem",
     "ijo\tDET": "Dem",
-    "ijoa\tDET": "Dem",
-    "ijowa\tDET": "Dem",
-    "ina\tPRON": "Dem",
-    "initaGa\tPRON": "Dem",
-    "naGada\tPRON": "Dem",
-    "naGadi\tPRON": "Dem",
+    "ina\tDET": "Dem",
+    "initaGa\tDET": "Dem",
+    "naGada\tDET": "Dem",
+    "naGadi\tDET": "Dem",
     "naGajo\tDET": "Dem",
-    "naGajo\tPRON": "Dem",
     "naGana\tDET": "Dem",
-    "naGana\tPRON": "Dem",
     "naGani\tDET": "Dem",
     "niGida\tDET": "Dem",
     "niGidiwa\tDET": "Dem",
     "niGidoa\tDET": "Dem",
     "niGidowa\tDET": "Dem",
-    "niGijo\tDET": "Dem",
-    "niGijoa\tDET": "Dem",
-    "niGinoa\tDET": "Dem"
+    "niGijo\tDET": "Dem"
   },
   "review": {
     "ambiguous_feats": [
+      {
+        "best": "_",
+        "best_count": 2,
+        "counts": {
+          "Gender=Masc|Number=Sing": 1,
+          "_": 2
+        },
+        "form": "akiidi",
+        "share": 0.6667,
+        "total": 3,
+        "upos": "NOUN"
+      },
       {
         "best": "Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Inv",
         "best_count": 2,
         "counts": {
           "Mood=Ind|Number=Sing|Person=3|VerbForm=Fin": 1,
-          "Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Inv": 2
+          "Mood=Ind|Number=Sing|Person=3|VerbForm=Fin|Voice=Inv": 2,
+          "Mood=Ind|VerbForm=Fin|Voice=Inv": 1
         },
         "form": "dapicoGo",
-        "share": 0.6667,
-        "total": 3,
+        "share": 0.5,
+        "total": 4,
         "upos": "VERB"
       },
       {
-        "best": "AdvType=Loc|PronType=Dem",
-        "best_count": 1,
-        "counts": {
-          "AdvType=Loc|Deixis=Remt|PronType=Dem": 1,
-          "AdvType=Loc|PronType=Dem": 1
-        },
-        "form": "digoida",
-        "share": 0.5,
-        "total": 2,
-        "upos": "ADV"
-      },
-      {
-        "best": "_",
+        "best": "PronType=Ind",
         "best_count": 2,
         "counts": {
           "PronType=Ind": 2,
-          "_": 2
+          "_": 1
         },
         "form": "eliodi",
-        "share": 0.5,
-        "total": 4,
+        "share": 0.6667,
+        "total": 3,
         "upos": "ADV"
       },
       {
@@ -607,15 +333,27 @@
         "upos": "NOUN"
       },
       {
-        "best": "Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
+        "best": "Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
         "best_count": 4,
         "counts": {
-          "Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl": 4,
+          "Gender[obj]=Fem|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl": 4,
+          "Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl": 2
+        },
+        "form": "ipegitege",
+        "share": 0.6667,
+        "total": 6,
+        "upos": "VERB"
+      },
+      {
+        "best": "Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl",
+        "best_count": 8,
+        "counts": {
+          "Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl": 8,
           "Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl": 2
         },
         "form": "ipegitegi",
-        "share": 0.6667,
-        "total": 6,
+        "share": 0.8,
+        "total": 10,
         "upos": "VERB"
       },
       {
@@ -638,6 +376,18 @@
           "Person[psor]=3": 1
         },
         "form": "lidi",
+        "share": 0.5,
+        "total": 2,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Person[psor]=3|Typo=Yes",
+        "best_count": 1,
+        "counts": {
+          "Person[psor]=3": 1,
+          "Person[psor]=3|Typo=Yes": 1
+        },
+        "form": "ligeladi",
         "share": 0.5,
         "total": 2,
         "upos": "NOUN"
@@ -667,152 +417,78 @@
         "upos": "NOUN"
       },
       {
-        "best": "Number=Plur|Person[psor]=3",
-        "best_count": 1,
+        "best": "Gender=Masc|Number=Sing|Person[psor]=3",
+        "best_count": 4,
+        "counts": {
+          "Gender=Masc|Number=Sing|Person[psor]=3": 4,
+          "Number=Sing|Person[psor]=3": 1
+        },
+        "form": "lotaGa",
+        "share": 0.8,
+        "total": 5,
+        "upos": "NOUN"
+      },
+      {
+        "best": "_",
+        "best_count": 2,
         "counts": {
           "Number=Plur|Person[psor]=3": 1,
-          "_": 1
+          "Person[psor]=3": 1,
+          "_": 2
         },
         "form": "lotiidi",
         "share": 0.5,
-        "total": 2,
+        "total": 4,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing",
+        "best_count": 2,
+        "counts": {
+          "Gender=Masc|Number=Sing": 2,
+          "_": 2
+        },
+        "form": "niweiigi",
+        "share": 0.5,
+        "total": 4,
         "upos": "NOUN"
       }
     ],
     "ambiguous_form_to_upos": [
       {
-        "best": "DET",
-        "best_count": 2,
-        "counts": {
-          "DET": 2,
-          "PRON": 1
-        },
-        "form": "adi",
-        "share": 0.6667,
-        "total": 3
-      },
-      {
-        "best": "DET",
+        "best": "ADV",
         "best_count": 3,
         "counts": {
-          "DET": 3,
-          "PRON": 2
-        },
-        "form": "anitaGa",
-        "share": 0.6,
-        "total": 5
-      },
-      {
-        "best": "ADV",
-        "best_count": 2,
-        "counts": {
-          "ADV": 2,
+          "ADV": 3,
           "DET": 2
         },
-        "form": "digoida",
-        "share": 0.5,
-        "total": 4
-      },
-      {
-        "best": "ADV",
-        "best_count": 4,
-        "counts": {
-          "ADV": 4,
-          "DET": 1
-        },
         "form": "eliodi",
-        "share": 0.8,
-        "total": 5
-      },
-      {
-        "best": "DET",
-        "best_count": 4,
-        "counts": {
-          "DET": 4,
-          "PRON": 1
-        },
-        "form": "naGajo",
-        "share": 0.8,
-        "total": 5
-      },
-      {
-        "best": "PRON",
-        "best_count": 1,
-        "counts": {
-          "DET": 1,
-          "PRON": 1
-        },
-        "form": "naGana",
-        "share": 0.5,
-        "total": 2
-      },
-      {
-        "best": "ADJ",
-        "best_count": 3,
-        "counts": {
-          "ADJ": 3,
-          "NOUN": 2
-        },
-        "form": "napioi",
         "share": 0.6,
         "total": 5
+      },
+      {
+        "best": "NOUN",
+        "best_count": 4,
+        "counts": {
+          "ADJ": 3,
+          "NOUN": 4
+        },
+        "form": "napioi",
+        "share": 0.5714,
+        "total": 7
       }
     ],
     "ambiguous_form_to_xpos": [
       {
-        "best": "Q",
-        "best_count": 1,
-        "counts": {
-          "ADV": 1,
-          "Q": 1
-        },
-        "form": "daGaxa",
-        "share": 0.5,
-        "total": 2
-      },
-      {
         "best": "VB",
-        "best_count": 1,
+        "best_count": 5,
         "counts": {
-          "VB": 1,
-          "VBU": 1
+          "VB": 5,
+          "VBU": 3
         },
         "form": "dakake",
-        "share": 0.5,
-        "total": 2
-      },
-      {
-        "best": "ADV",
-        "best_count": 2,
-        "counts": {
-          "ADV": 2,
-          "D": 2
-        },
-        "form": "digoida",
-        "share": 0.5,
-        "total": 4
-      },
-      {
-        "best": "Q",
-        "best_count": 4,
-        "counts": {
-          "ADJ": 1,
-          "Q": 4
-        },
-        "form": "eliodi",
-        "share": 0.8,
-        "total": 5
-      },
-      {
-        "best": "Q",
-        "best_count": 1,
-        "counts": {
-          "D": 1,
-          "Q": 1
-        },
-        "form": "idiwa",
-        "share": 0.5,
-        "total": 2
+        "share": 0.625,
+        "total": 8
       },
       {
         "best": "D",
@@ -830,55 +506,45 @@
         "best_count": 3,
         "counts": {
           "ADJ": 3,
-          "N": 2
+          "N": 3,
+          "N$": 1
         },
         "form": "napioi",
-        "share": 0.6,
-        "total": 5
+        "share": 0.4286,
+        "total": 7
       },
       {
         "best": "N",
-        "best_count": 4,
+        "best_count": 5,
         "counts": {
-          "N": 4,
+          "N": 5,
           "N$": 1
         },
         "form": "nigaanigawaanigi",
-        "share": 0.8,
-        "total": 5
+        "share": 0.8333,
+        "total": 6
       },
       {
-        "best": "N$",
-        "best_count": 1,
+        "best": "N",
+        "best_count": 7,
         "counts": {
-          "N": 1,
-          "N$": 1
+          "N": 7,
+          "N$": 3
         },
-        "form": "niganigawanigi",
-        "share": 0.5,
-        "total": 2
+        "form": "nigotaGa",
+        "share": 0.7,
+        "total": 10
       },
       {
         "best": "N$",
-        "best_count": 2,
-        "counts": {
-          "N": 1,
-          "N$": 2
-        },
-        "form": "nioladi",
-        "share": 0.6667,
-        "total": 3
-      },
-      {
-        "best": "N$",
-        "best_count": 9,
+        "best_count": 10,
         "counts": {
           "N": 2,
-          "N$": 9
+          "N$": 10
         },
         "form": "niwatece",
-        "share": 0.8182,
-        "total": 11
+        "share": 0.8333,
+        "total": 12
       }
     ],
     "ambiguous_lemma_prontype": [],
@@ -969,15 +635,15 @@
         "upos": "NOUN"
       },
       {
-        "best": "enigi",
-        "best_count": 1,
+        "best": "wenigi",
+        "best_count": 2,
         "counts": {
           "enigi": 1,
-          "wenigi": 1
+          "wenigi": 2
         },
         "form": "niwenigi",
-        "share": 0.5,
-        "total": 2,
+        "share": 0.6667,
+        "total": 3,
         "upos": "NOUN"
       },
       {
@@ -994,128 +660,44 @@
       }
     ],
     "ambiguous_prontype": [],
-    "ambiguous_tag_to_prontype": [
-      {
-        "best": "Ind",
-        "best_count": 1,
-        "counts": {
-          "Dem": 1,
-          "Ind": 1
-        },
-        "raw_tag": "Q",
-        "share": 0.5,
-        "total": 2,
-        "upos": "DET"
-      }
-    ],
+    "ambiguous_tag_to_prontype": [],
     "ambiguous_tag_to_upos": [
       {
-        "best": "DET",
-        "best_count": 51,
-        "counts": {
-          "ADV": 2,
-          "DET": 51,
-          "PRON": 9
-        },
-        "raw_tag": "D",
-        "share": 0.8226,
-        "total": 62
-      },
-      {
-        "best": "PRON",
-        "best_count": 4,
-        "counts": {
-          "DET": 3,
-          "PRON": 4
-        },
-        "raw_tag": "DAPL",
-        "share": 0.5714,
-        "total": 7
-      },
-      {
         "best": "ADV",
-        "best_count": 4,
+        "best_count": 5,
         "counts": {
-          "ADV": 4,
-          "DET": 2
+          "ADV": 5,
+          "DET": 3
         },
         "raw_tag": "Q",
-        "share": 0.6667,
-        "total": 6
+        "share": 0.625,
+        "total": 8
       }
     ],
     "ambiguous_upos": [
-      {
-        "best": "DET",
-        "best_count": 2,
-        "counts": {
-          "DET": 2,
-          "PRON": 1
-        },
-        "form": "adi",
-        "raw_tag": "D",
-        "share": 0.6667,
-        "total": 3
-      },
-      {
-        "best": "DET",
-        "best_count": 3,
-        "counts": {
-          "DET": 3,
-          "PRON": 2
-        },
-        "form": "anitaGa",
-        "raw_tag": "DAPL",
-        "share": 0.6,
-        "total": 5
-      },
-      {
-        "best": "ADV",
-        "best_count": 2,
-        "counts": {
-          "ADV": 2,
-          "DET": 2
-        },
-        "form": "digoida",
-        "raw_tag": "D",
-        "share": 0.5,
-        "total": 4
-      },
       {
         "best": "ADV",
         "best_count": 3,
         "counts": {
           "ADV": 3,
-          "DET": 1
+          "DET": 2
         },
         "form": "eliodi",
         "raw_tag": "Q",
-        "share": 0.75,
-        "total": 4
-      },
-      {
-        "best": "PRON",
-        "best_count": 1,
-        "counts": {
-          "DET": 1,
-          "PRON": 1
-        },
-        "form": "naGana",
-        "raw_tag": "D",
-        "share": 0.5,
-        "total": 2
+        "share": 0.6,
+        "total": 5
       },
       {
         "best": "ADJ",
-        "best_count": 2,
+        "best_count": 3,
         "counts": {
-          "ADJ": 2,
-          "NOUN": 2
+          "ADJ": 3,
+          "NOUN": 3
         },
         "form": "napioi",
         "raw_tag": "N",
         "share": 0.5,
-        "total": 4
+        "total": 6
       }
     ],
     "json_alignment_issues": [
@@ -1134,7 +716,7 @@
         "json_forms": [
           "Eyodi",
           "dowediteloco",
-          "naodigijedi",
+          "nawodigijedi",
           "me@",
           "@icawataGa",
           "daGa",
@@ -1145,56 +727,6 @@
         "sent_id": "ped-gramm-28",
         "sent_uid": "ee1a1190-7803-404c-83f6-49d3ccf63b0d",
         "source_file": "../data/ped-gramm.json",
-        "type": "token_count_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[4]",
-        "mismatches": [
-          [
-            "aG",
-            "adakake"
-          ]
-        ],
-        "sent_id": "hil-data-5",
-        "sent_uid": "e349508c-4d86-48b8-9918-057988755e77",
-        "source_file": "../data/hil-data.json",
-        "type": "token_form_mismatch"
-      },
-      {
-        "json_path": "$.pages[0].sentences[5]",
-        "mismatches": [
-          [
-            "aG",
-            "adakake"
-          ]
-        ],
-        "sent_id": "hil-data-6",
-        "sent_uid": "1d10c633-e74d-4e27-ac23-6b6b2dde9647",
-        "source_file": "../data/hil-data.json",
-        "type": "token_form_mismatch"
-      },
-      {
-        "gold_count": 5,
-        "gold_forms": [
-          "NiGida",
-          "niwenigi",
-          "eliodi",
-          "me",
-          "loojedi"
-        ],
-        "json_count": 6,
-        "json_forms": [
-          "NiGida",
-          "niwenigi",
-          "eliodi",
-          "me",
-          "dakake",
-          "loojedi"
-        ],
-        "json_path": "$.pages[0].sentences[8]",
-        "sent_id": "hil-data-9",
-        "sent_uid": "0ca977cd-2edf-45d9-b958-068648aebef9",
-        "source_file": "../data/hil-data.json",
         "type": "token_count_mismatch"
       },
       {
@@ -1222,15 +754,16 @@
           "lomigo",
           "niwatece"
         ],
-        "json_count": 7,
+        "json_count": 8,
         "json_forms": [
-          "Ijo",
-          "nigaanigawaanigi",
+          "Nigaanigawaanigi",
           "idei",
           "me@",
           "@adi",
-          "lomiigo",
-          "niwatece"
+          "niwatece",
+          "ane",
+          "adi",
+          "nomiigo"
         ],
         "json_path": "$.pages[0].sentences[14]",
         "sent_id": "van-data-15",
@@ -1239,48 +772,5395 @@
         "type": "token_count_mismatch"
       },
       {
+        "json_path": "$.pages[0].sentences[16]",
+        "mismatches": [
+          [
+            "Eyo",
+            "Eeyo"
+          ]
+        ],
+        "sent_id": "van-data-17",
+        "sent_uid": "86f5c128-e931-4443-90cc-2359748ed69f",
+        "source_file": "../data/van-data.json",
+        "type": "token_form_mismatch"
+      },
+      {
         "json_path": "$.pages[0].sentences[29]",
         "mismatches": [
           [
-            "niGijo",
-            "nGijo"
+            "lodajo",
+            "lodaajo"
           ]
         ],
         "sent_id": "van-data-30",
         "sent_uid": "0c7e64fb-f070-4faa-a12a-c110cdf4bf16",
         "source_file": "../data/van-data.json",
         "type": "token_form_mismatch"
+      },
+      {
+        "json_path": "$.pages[0].sentences[41]",
+        "mismatches": [
+          [
+            "ijowa",
+            "ijoa"
+          ]
+        ],
+        "sent_id": "van-data-42",
+        "sent_uid": "44646324-eb90-42f0-b944-21f0452109e2",
+        "source_file": "../data/van-data.json",
+        "type": "token_form_mismatch"
       }
     ],
-    "low_evidence_feats": [],
-    "low_evidence_lemma_prontype": [],
-    "low_evidence_lemmas": [],
-    "low_evidence_prontype": [],
-    "low_evidence_tag_to_prontype": []
+    "low_evidence_feats": [
+      {
+        "best": "Gender=Fem|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Number=Sing|PronType=Dem": 1
+        },
+        "form": "ada",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Gender=Fem|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Number=Sing|PronType=Dem": 1
+        },
+        "form": "ani",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "_": 1
+        },
+        "form": "codaa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "CCONJ"
+      },
+      {
+        "best": "Mood=Ind|Number=Plur|VerbForm=Fin|Voice=Inv",
+        "best_count": 1,
+        "counts": {
+          "Mood=Ind|Number=Plur|VerbForm=Fin|Voice=Inv": 1
+        },
+        "form": "dapikoGo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur": 1
+        },
+        "form": "dibixodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "_": 1
+        },
+        "form": "dineigi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Mood=Ind|Person[erg]=3|VerbForm=Fin|Voice=Appl",
+        "best_count": 1,
+        "counts": {
+          "Mood=Ind|Person[erg]=3|VerbForm=Fin|Voice=Appl": 1
+        },
+        "form": "dowediteloco",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "Voice=Appl",
+        "best_count": 1,
+        "counts": {
+          "Voice=Appl": 1
+        },
+        "form": "eniteloco",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "Gender=Fem|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin": 1
+        },
+        "form": "eteeyo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "Gender=Fem|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin": 1
+        },
+        "form": "eteyo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Mood=Ind|Number=Sing|Person=3|VerbForm=Fin": 1
+        },
+        "form": "etidi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "Gender=Masc|Mood=Ind|Number=Sing|Person=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Mood=Ind|Number=Sing|Person=3": 1
+        },
+        "form": "etijo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing|Person[psor]=2",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|Person[psor]=2": 1
+        },
+        "form": "gaanaginaGa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Number=Sing|Person[psor]=2",
+        "best_count": 1,
+        "counts": {
+          "Number=Sing|Person[psor]=2": 1
+        },
+        "form": "ganaaginaGa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing|Person[psor]=2",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|Person[psor]=2": 1
+        },
+        "form": "ganaginaGa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Fem|Number=Sing|Person[psor]=2",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Number=Sing|Person[psor]=2": 1
+        },
+        "form": "ganigotGa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing|Person[psor]=2",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|Person[psor]=2": 1
+        },
+        "form": "ganioxoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing|Person[psor]=2",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|Person[psor]=2": 1
+        },
+        "form": "ganixoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing": 1
+        },
+        "form": "gatodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Number=Sing|Number[psor]=Sing|Person[psor]=1",
+        "best_count": 1,
+        "counts": {
+          "Number=Sing|Number[psor]=Sing|Person[psor]=1": 1
+        },
+        "form": "iGonagi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|PronType=Dem": 1
+        },
+        "form": "ida",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "_": 1
+        },
+        "form": "ideaGi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "PronType=Dem": 1
+        },
+        "form": "idi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Mood=Ind|Number=Sing|Person=1|VerbForm=Fin|Voice=Inv",
+        "best_count": 1,
+        "counts": {
+          "Mood=Ind|Number=Sing|Person=1|VerbForm=Fin|Voice=Inv": 1
+        },
+        "form": "idininitebeci",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "Mood=Ind|Number=Sing|Person=1|VerbForm=Fin|Voice=Inv",
+        "best_count": 1,
+        "counts": {
+          "Mood=Ind|Number=Sing|Person=1|VerbForm=Fin|Voice=Inv": 1
+        },
+        "form": "idinitibece",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|PronType=Dem": 1
+        },
+        "form": "idoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|PronType=Dem": 1
+        },
+        "form": "idowa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|PronType=Dem": 1
+        },
+        "form": "ijoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|PronType=Dem": 1
+        },
+        "form": "ijotawece",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|PronType=Dem": 1
+        },
+        "form": "ijowa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Mood=Ind|Number[obj]=Sing|Person[erg]=3|Person[obj]=2|VerbForm=Fin|Voice=Appl",
+        "best_count": 1,
+        "counts": {
+          "Mood=Ind|Number[obj]=Sing|Person[erg]=3|Person[obj]=2|VerbForm=Fin|Voice=Appl": 1
+        },
+        "form": "ipegitaGagi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "_": 1
+        },
+        "form": "ite",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "_": 1
+        },
+        "form": "iwalepodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "_": 1
+        },
+        "form": "ixagodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "_": 1
+        },
+        "form": "lemé",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "_": 1
+        },
+        "form": "lianaGa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Fem|Number=Sing|Person[psor]=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Number=Sing|Person[psor]=3": 1
+        },
+        "form": "libiwe",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing|Person[psor]=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|Person[psor]=3": 1
+        },
+        "form": "lodaajo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Fem,Masc|Number=Sing|Person[psor]=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem,Masc|Number=Sing|Person[psor]=3": 1
+        },
+        "form": "lodowa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing|Person[psor]=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|Person[psor]=3": 1
+        },
+        "form": "loigi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur|Person[psor]=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|Person[psor]=3": 1
+        },
+        "form": "loigipodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing|Person[psor]=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|Person[psor]=3": 1
+        },
+        "form": "lojedi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur|Person[psor]=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|Person[psor]=3": 1
+        },
+        "form": "lojetedi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing|Person[psor]=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|Person[psor]=3": 1
+        },
+        "form": "loligi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "_": 1
+        },
+        "form": "micoataGa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "SCONJ"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|PronType=Dem": 1
+        },
+        "form": "nGida",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur": 1
+        },
+        "form": "naodigijedi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "_": 1
+        },
+        "form": "nelokodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|PronType=Dem": 1
+        },
+        "form": "niGijoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Number=Plur|PronType=Dem": 1
+        },
+        "form": "niGinoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "_": 1
+        },
+        "form": "niale",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Degree=Dim|Gender=Masc|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Degree=Dim|Gender=Masc|Number=Sing": 1
+        },
+        "form": "niganigawaanigi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing": 1
+        },
+        "form": "niganigi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur": 1
+        },
+        "form": "nigetedi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Plur|Typo=Yes",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Plur|PronType=Dem|Typo=Yes": 1
+        },
+        "form": "nigijoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Mood=Ind|Person=3|VerbForm=Fin",
+        "best_count": 1,
+        "counts": {
+          "Mood=Ind|Person=3|VerbForm=Fin": 1
+        },
+        "form": "ninitibeke",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "Mood=Ind|Number=Plur|Person=3|VerbForm=Fin",
+        "best_count": 1,
+        "counts": {
+          "Mood=Ind|Number=Plur|Person=3|VerbForm=Fin": 1
+        },
+        "form": "ninitibigiwaji",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing|Person[psor]=3",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing|Person[psor]=3": 1
+        },
+        "form": "nioxoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Masc|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Masc|Number=Sing": 1
+        },
+        "form": "niwigo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gender=Fem|Number=Sing",
+        "best_count": 1,
+        "counts": {
+          "Gender=Fem|Number=Sing": 1
+        },
+        "form": "noatece",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Mood=Ind|Person[erg]=3|VerbForm=Fin",
+        "best_count": 1,
+        "counts": {
+          "Mood=Ind|Person[erg]=3|VerbForm=Fin": 1
+        },
+        "form": "noxilece",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "_": 1
+        },
+        "form": "pedilo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "PROPN"
+      },
+      {
+        "best": "_",
+        "best_count": 1,
+        "counts": {
+          "_": 1
+        },
+        "form": "pedro",
+        "share": 1.0,
+        "total": 1,
+        "upos": "PROPN"
+      },
+      {
+        "best": "Mood=Ind|VerbForm=Fin",
+        "best_count": 1,
+        "counts": {
+          "Mood=Ind|VerbForm=Fin": 1
+        },
+        "form": "te",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      }
+    ],
+    "low_evidence_form_to_upos": [
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "ada",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 3,
+        "counts": {
+          "DET": 3
+        },
+        "form": "adi",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "akiidi",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "ani",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "CCONJ",
+        "best_count": 1,
+        "counts": {
+          "CCONJ": 1
+        },
+        "form": "codaa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "SCONJ",
+        "best_count": 2,
+        "counts": {
+          "SCONJ": 2
+        },
+        "form": "daGa",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "ADV",
+        "best_count": 3,
+        "counts": {
+          "ADV": 3
+        },
+        "form": "daGaxa",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "VERB",
+        "best_count": 2,
+        "counts": {
+          "VERB": 2
+        },
+        "form": "dapico",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VERB",
+        "best_count": 4,
+        "counts": {
+          "VERB": 4
+        },
+        "form": "dapicoGo",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "dapikoGo",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "dibixodi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "dineigi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "dowediteloco",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "PRON",
+        "best_count": 4,
+        "counts": {
+          "PRON": 4
+        },
+        "form": "ee",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "PRON",
+        "best_count": 2,
+        "counts": {
+          "PRON": 2
+        },
+        "form": "eeyo",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "eniteloco",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 3,
+        "counts": {
+          "VERB": 3
+        },
+        "form": "etadi",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "VERB",
+        "best_count": 2,
+        "counts": {
+          "VERB": 2
+        },
+        "form": "etee",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "eteeyo",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "eteyo",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "etidi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "etijo",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "etogo",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "PRON",
+        "best_count": 2,
+        "counts": {
+          "PRON": 2
+        },
+        "form": "eyo",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 4,
+        "counts": {
+          "NOUN": 4
+        },
+        "form": "eyodi",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "gaanaginaGa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "gadodawa",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "ganaaginaGa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "ganaginaGa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "ganigotGa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "ganioxoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "ganixoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "gatodi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "gawenigi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "iGonagi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "ida",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "ideaGi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "idi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "idininitebeci",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "idinitibece",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 2,
+        "counts": {
+          "DET": 2
+        },
+        "form": "idiwa",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "idoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "idowa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 4,
+        "counts": {
+          "DET": 4
+        },
+        "form": "ijo",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "ijoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "ijotawece",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "ijowa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 2,
+        "counts": {
+          "DET": 2
+        },
+        "form": "ina",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "DET",
+        "best_count": 2,
+        "counts": {
+          "DET": 2
+        },
+        "form": "initaGa",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VERB",
+        "best_count": 2,
+        "counts": {
+          "VERB": 2
+        },
+        "form": "ipegetege",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "ipegitaGagi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "ite",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "iwaalepodi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "iwalepodi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "ixagodi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "PROPN",
+        "best_count": 3,
+        "counts": {
+          "PROPN": 3
+        },
+        "form": "joão",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lemé",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lianaGa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "libiniena",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 4,
+        "counts": {
+          "NOUN": 4
+        },
+        "form": "libinienigipi",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "libiwe",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "lideGegi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "lidi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "ligeladi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "lionigipi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "liwatece",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "liwenigi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 4,
+        "counts": {
+          "NOUN": 4
+        },
+        "form": "liwigo",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "lixagotaGaGa",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lodaajo",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "lodajo",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "lodawa",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lodowa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "loigi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "loigipodi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lojedi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lojetedi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "loligi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "lomiigo",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 4,
+        "counts": {
+          "NOUN": 4
+        },
+        "form": "lotiidi",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "SCONJ",
+        "best_count": 1,
+        "counts": {
+          "SCONJ": 1
+        },
+        "form": "micoataGa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "nGida",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 3,
+        "counts": {
+          "DET": 3
+        },
+        "form": "naGada",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "DET",
+        "best_count": 2,
+        "counts": {
+          "DET": 2
+        },
+        "form": "naGadi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "DET",
+        "best_count": 2,
+        "counts": {
+          "DET": 2
+        },
+        "form": "naGana",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "DET",
+        "best_count": 4,
+        "counts": {
+          "DET": 4
+        },
+        "form": "naGani",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "naodigijedi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "nelokodi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 2,
+        "counts": {
+          "DET": 2
+        },
+        "form": "niGidiwa",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "DET",
+        "best_count": 3,
+        "counts": {
+          "DET": 3
+        },
+        "form": "niGidoa",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "DET",
+        "best_count": 2,
+        "counts": {
+          "DET": 2
+        },
+        "form": "niGidowa",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "niGijoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "niGinoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "niale",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "niganaGacanajo",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "niganigawaanigi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "niganigawanigi",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "niganigi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "nigetedi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "nigijoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "ninitibeke",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "ninitibigiwaji",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "nioladi",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "nioxoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 4,
+        "counts": {
+          "NOUN": 4
+        },
+        "form": "niweiigi",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "niwenigi",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "niwigo",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "noGojedi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "noatece",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "noxilece",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "PROPN",
+        "best_count": 1,
+        "counts": {
+          "PROPN": 1
+        },
+        "form": "pedilo",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "PROPN",
+        "best_count": 1,
+        "counts": {
+          "PROPN": 1
+        },
+        "form": "pedro",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "te",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 4,
+        "counts": {
+          "NOUN": 4
+        },
+        "form": "waca",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "NOUN",
+        "best_count": 4,
+        "counts": {
+          "NOUN": 4
+        },
+        "form": "wetiGa",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "wetiadi",
+        "share": 1.0,
+        "total": 3
+      }
+    ],
+    "low_evidence_form_to_xpos": [
+      {
+        "best": "D",
+        "best_count": 1,
+        "counts": {
+          "D": 1
+        },
+        "form": "ada",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "D",
+        "best_count": 3,
+        "counts": {
+          "D": 3
+        },
+        "form": "adi",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "N",
+        "best_count": 3,
+        "counts": {
+          "N": 3
+        },
+        "form": "akiidi",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "D",
+        "best_count": 1,
+        "counts": {
+          "D": 1
+        },
+        "form": "ani",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "CONJ",
+        "best_count": 1,
+        "counts": {
+          "CONJ": 1
+        },
+        "form": "codaa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "C",
+        "best_count": 2,
+        "counts": {
+          "C": 2
+        },
+        "form": "daGa",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "Q",
+        "best_count": 2,
+        "counts": {
+          "ADV": 1,
+          "Q": 2
+        },
+        "form": "daGaxa",
+        "share": 0.6667,
+        "total": 3
+      },
+      {
+        "best": "VB",
+        "best_count": 2,
+        "counts": {
+          "VB": 2
+        },
+        "form": "dapico",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VB",
+        "best_count": 4,
+        "counts": {
+          "VB": 4
+        },
+        "form": "dapicoGo",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "VB",
+        "best_count": 1,
+        "counts": {
+          "VB": 1
+        },
+        "form": "dapikoGo",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N",
+        "best_count": 1,
+        "counts": {
+          "N": 1
+        },
+        "form": "dibixodi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N",
+        "best_count": 1,
+        "counts": {
+          "N": 1
+        },
+        "form": "dineigi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VBAPL",
+        "best_count": 1,
+        "counts": {
+          "VBAPL": 1
+        },
+        "form": "dowediteloco",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "PRO",
+        "best_count": 4,
+        "counts": {
+          "PRO": 4
+        },
+        "form": "ee",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "PRO",
+        "best_count": 2,
+        "counts": {
+          "PRO": 2
+        },
+        "form": "eeyo",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VBAPL",
+        "best_count": 1,
+        "counts": {
+          "VBAPL": 1
+        },
+        "form": "eniteloco",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VB",
+        "best_count": 3,
+        "counts": {
+          "VB": 3
+        },
+        "form": "etadi",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "VB",
+        "best_count": 2,
+        "counts": {
+          "VB": 2
+        },
+        "form": "etee",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VB",
+        "best_count": 1,
+        "counts": {
+          "VB": 1
+        },
+        "form": "eteeyo",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VB",
+        "best_count": 1,
+        "counts": {
+          "VB": 1
+        },
+        "form": "eteyo",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VB",
+        "best_count": 1,
+        "counts": {
+          "VB": 1
+        },
+        "form": "etidi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VB",
+        "best_count": 1,
+        "counts": {
+          "VB": 1
+        },
+        "form": "etijo",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N",
+        "best_count": 2,
+        "counts": {
+          "N": 2
+        },
+        "form": "etogo",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "PRO",
+        "best_count": 2,
+        "counts": {
+          "PRO": 2
+        },
+        "form": "eyo",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "N$",
+        "best_count": 4,
+        "counts": {
+          "N$": 4
+        },
+        "form": "eyodi",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "gaanaginaGa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 2,
+        "counts": {
+          "N$": 2
+        },
+        "form": "gadodawa",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "ganaaginaGa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "ganaginaGa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "ganigotGa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "ganioxoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "ganixoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N",
+        "best_count": 1,
+        "counts": {
+          "N": 1
+        },
+        "form": "gatodi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 2,
+        "counts": {
+          "N$": 2
+        },
+        "form": "gawenigi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "iGonagi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "PRO",
+        "best_count": 1,
+        "counts": {
+          "PRO": 1
+        },
+        "form": "ida",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VB",
+        "best_count": 1,
+        "counts": {
+          "VB": 1
+        },
+        "form": "ideaGi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "D",
+        "best_count": 1,
+        "counts": {
+          "D": 1
+        },
+        "form": "idi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VB",
+        "best_count": 1,
+        "counts": {
+          "VB": 1
+        },
+        "form": "idininitebeci",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VB",
+        "best_count": 1,
+        "counts": {
+          "VB": 1
+        },
+        "form": "idinitibece",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "Q",
+        "best_count": 1,
+        "counts": {
+          "D": 1,
+          "Q": 1
+        },
+        "form": "idiwa",
+        "share": 0.5,
+        "total": 2
+      },
+      {
+        "best": "D",
+        "best_count": 1,
+        "counts": {
+          "D": 1
+        },
+        "form": "idoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "D",
+        "best_count": 1,
+        "counts": {
+          "D": 1
+        },
+        "form": "idowa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "D",
+        "best_count": 4,
+        "counts": {
+          "D": 4
+        },
+        "form": "ijo",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "D",
+        "best_count": 1,
+        "counts": {
+          "D": 1
+        },
+        "form": "ijoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "D",
+        "best_count": 1,
+        "counts": {
+          "D": 1
+        },
+        "form": "ijotawece",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "D",
+        "best_count": 1,
+        "counts": {
+          "D": 1
+        },
+        "form": "ijowa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "D",
+        "best_count": 2,
+        "counts": {
+          "D": 2
+        },
+        "form": "ina",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "DAPL",
+        "best_count": 2,
+        "counts": {
+          "DAPL": 2
+        },
+        "form": "initaGa",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VBAPL",
+        "best_count": 2,
+        "counts": {
+          "VBAPL": 2
+        },
+        "form": "ipegetege",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VBAPL",
+        "best_count": 1,
+        "counts": {
+          "VBAPL": 1
+        },
+        "form": "ipegitaGagi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VB",
+        "best_count": 1,
+        "counts": {
+          "VB": 1
+        },
+        "form": "ite",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N",
+        "best_count": 2,
+        "counts": {
+          "N": 2
+        },
+        "form": "iwaalepodi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "N",
+        "best_count": 1,
+        "counts": {
+          "N": 1
+        },
+        "form": "iwalepodi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VB",
+        "best_count": 1,
+        "counts": {
+          "VB": 1
+        },
+        "form": "ixagodi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NPR",
+        "best_count": 3,
+        "counts": {
+          "NPR": 3
+        },
+        "form": "joão",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "lemé",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "lianaGa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 3,
+        "counts": {
+          "N$": 3
+        },
+        "form": "libiniena",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "N$",
+        "best_count": 4,
+        "counts": {
+          "N$": 4
+        },
+        "form": "libinienigipi",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "libiwe",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 2,
+        "counts": {
+          "N$": 2
+        },
+        "form": "lideGegi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "N$",
+        "best_count": 2,
+        "counts": {
+          "N$": 2
+        },
+        "form": "lidi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "N$",
+        "best_count": 2,
+        "counts": {
+          "N$": 2
+        },
+        "form": "ligeladi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "N$",
+        "best_count": 2,
+        "counts": {
+          "N$": 2
+        },
+        "form": "lionigipi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "N$",
+        "best_count": 2,
+        "counts": {
+          "N$": 2
+        },
+        "form": "liwatece",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "N$",
+        "best_count": 2,
+        "counts": {
+          "N$": 2
+        },
+        "form": "liwenigi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "N$",
+        "best_count": 4,
+        "counts": {
+          "N$": 4
+        },
+        "form": "liwigo",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "N$",
+        "best_count": 2,
+        "counts": {
+          "N$": 2
+        },
+        "form": "lixagotaGaGa",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "lodaajo",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 2,
+        "counts": {
+          "N$": 2
+        },
+        "form": "lodajo",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "N$",
+        "best_count": 3,
+        "counts": {
+          "N$": 3
+        },
+        "form": "lodawa",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "lodowa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "loigi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "loigipodi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "lojedi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "lojetedi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "loligi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 3,
+        "counts": {
+          "N$": 3
+        },
+        "form": "lomiigo",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "N$",
+        "best_count": 4,
+        "counts": {
+          "N$": 4
+        },
+        "form": "lotiidi",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "CD",
+        "best_count": 1,
+        "counts": {
+          "CD": 1
+        },
+        "form": "micoataGa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "D",
+        "best_count": 1,
+        "counts": {
+          "D": 1
+        },
+        "form": "nGida",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "D",
+        "best_count": 3,
+        "counts": {
+          "D": 3
+        },
+        "form": "naGada",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "D",
+        "best_count": 2,
+        "counts": {
+          "D": 2
+        },
+        "form": "naGadi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "D",
+        "best_count": 2,
+        "counts": {
+          "D": 2
+        },
+        "form": "naGana",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "D",
+        "best_count": 4,
+        "counts": {
+          "D": 4
+        },
+        "form": "naGani",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "N",
+        "best_count": 1,
+        "counts": {
+          "N": 1
+        },
+        "form": "naodigijedi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "nelokodi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "D",
+        "best_count": 2,
+        "counts": {
+          "D": 2
+        },
+        "form": "niGidiwa",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "D",
+        "best_count": 3,
+        "counts": {
+          "D": 3
+        },
+        "form": "niGidoa",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "D",
+        "best_count": 2,
+        "counts": {
+          "D": 2
+        },
+        "form": "niGidowa",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "D",
+        "best_count": 1,
+        "counts": {
+          "D": 1
+        },
+        "form": "niGijoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "D",
+        "best_count": 1,
+        "counts": {
+          "D": 1
+        },
+        "form": "niGinoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N",
+        "best_count": 1,
+        "counts": {
+          "N": 1
+        },
+        "form": "niale",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N",
+        "best_count": 3,
+        "counts": {
+          "N": 3
+        },
+        "form": "niganaGacanajo",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "N",
+        "best_count": 1,
+        "counts": {
+          "N": 1
+        },
+        "form": "niganigawaanigi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N",
+        "best_count": 2,
+        "counts": {
+          "N": 2,
+          "N$": 1
+        },
+        "form": "niganigawanigi",
+        "share": 0.6667,
+        "total": 3
+      },
+      {
+        "best": "N",
+        "best_count": 1,
+        "counts": {
+          "N": 1
+        },
+        "form": "niganigi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N",
+        "best_count": 1,
+        "counts": {
+          "N": 1
+        },
+        "form": "nigetedi",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "D",
+        "best_count": 1,
+        "counts": {
+          "D": 1
+        },
+        "form": "nigijoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VB",
+        "best_count": 1,
+        "counts": {
+          "VB": 1
+        },
+        "form": "ninitibeke",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "X",
+        "best_count": 1,
+        "counts": {
+          "X": 1
+        },
+        "form": "ninitibigiwaji",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N$",
+        "best_count": 2,
+        "counts": {
+          "N": 1,
+          "N$": 2
+        },
+        "form": "nioladi",
+        "share": 0.6667,
+        "total": 3
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "nioxoa",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N",
+        "best_count": 3,
+        "counts": {
+          "N": 3,
+          "N$": 1
+        },
+        "form": "niweiigi",
+        "share": 0.75,
+        "total": 4
+      },
+      {
+        "best": "N$",
+        "best_count": 2,
+        "counts": {
+          "N": 1,
+          "N$": 2
+        },
+        "form": "niwenigi",
+        "share": 0.6667,
+        "total": 3
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "niwigo",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N",
+        "best_count": 2,
+        "counts": {
+          "N": 2
+        },
+        "form": "noGojedi",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "N$",
+        "best_count": 1,
+        "counts": {
+          "N$": 1
+        },
+        "form": "noatece",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VB",
+        "best_count": 1,
+        "counts": {
+          "VB": 1
+        },
+        "form": "noxilece",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NPR",
+        "best_count": 1,
+        "counts": {
+          "NPR": 1
+        },
+        "form": "pedilo",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NPR",
+        "best_count": 1,
+        "counts": {
+          "NPR": 1
+        },
+        "form": "pedro",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VB",
+        "best_count": 1,
+        "counts": {
+          "VB": 1
+        },
+        "form": "te",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "N",
+        "best_count": 4,
+        "counts": {
+          "N": 4
+        },
+        "form": "waca",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "N",
+        "best_count": 4,
+        "counts": {
+          "N": 4
+        },
+        "form": "wetiGa",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "N",
+        "best_count": 3,
+        "counts": {
+          "N": 3
+        },
+        "form": "wetiadi",
+        "share": 1.0,
+        "total": 3
+      }
+    ],
+    "low_evidence_lemma_prontype": [
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "lemma": "ida",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "lemma": "niGida",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "lemma": "niGidi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "lemma": "niGijo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      }
+    ],
+    "low_evidence_lemmas": [
+      {
+        "best": "ida",
+        "best_count": 1,
+        "counts": {
+          "ida": 1
+        },
+        "form": "ada",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "ini",
+        "best_count": 1,
+        "counts": {
+          "ini": 1
+        },
+        "form": "ani",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "codaa",
+        "best_count": 1,
+        "counts": {
+          "codaa": 1
+        },
+        "form": "codaa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "CCONJ"
+      },
+      {
+        "best": "apiko",
+        "best_count": 1,
+        "counts": {
+          "apiko": 1
+        },
+        "form": "dapikoGo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "dibixoGo",
+        "best_count": 1,
+        "counts": {
+          "dibixoGo": 1
+        },
+        "form": "dibixodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "dineigi",
+        "best_count": 1,
+        "counts": {
+          "dineigi": 1
+        },
+        "form": "dineigi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "dowediteloco",
+        "best_count": 1,
+        "counts": {
+          "dowediteloco": 1
+        },
+        "form": "dowediteloco",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "eniteloco",
+        "best_count": 1,
+        "counts": {
+          "eniteloco": 1
+        },
+        "form": "eniteloco",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "et",
+        "best_count": 1,
+        "counts": {
+          "et": 1
+        },
+        "form": "eteeyo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "et",
+        "best_count": 1,
+        "counts": {
+          "et": 1
+        },
+        "form": "eteyo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "et",
+        "best_count": 1,
+        "counts": {
+          "et": 1
+        },
+        "form": "etidi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "et",
+        "best_count": 1,
+        "counts": {
+          "et": 1
+        },
+        "form": "etijo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "aaginaGa",
+        "best_count": 1,
+        "counts": {
+          "aaginaGa": 1
+        },
+        "form": "gaanaginaGa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "aaginaGa",
+        "best_count": 1,
+        "counts": {
+          "aaginaGa": 1
+        },
+        "form": "ganaaginaGa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "aaginaGa",
+        "best_count": 1,
+        "counts": {
+          "aaginaGa": 1
+        },
+        "form": "ganaginaGa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "nigotaGa",
+        "best_count": 1,
+        "counts": {
+          "nigotaGa": 1
+        },
+        "form": "ganigotGa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "nioxoa",
+        "best_count": 1,
+        "counts": {
+          "nioxoa": 1
+        },
+        "form": "ganioxoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "nixoa",
+        "best_count": 1,
+        "counts": {
+          "nixoa": 1
+        },
+        "form": "ganixoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gatodi",
+        "best_count": 1,
+        "counts": {
+          "Gatodi": 1
+        },
+        "form": "gatodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "Gonagi",
+        "best_count": 1,
+        "counts": {
+          "Gonagi": 1
+        },
+        "form": "iGonagi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "ida",
+        "best_count": 1,
+        "counts": {
+          "ida": 1
+        },
+        "form": "ida",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "dei",
+        "best_count": 1,
+        "counts": {
+          "dei": 1
+        },
+        "form": "ideaGi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "idi",
+        "best_count": 1,
+        "counts": {
+          "idi": 1
+        },
+        "form": "idi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "initibece",
+        "best_count": 1,
+        "counts": {
+          "initibece": 1
+        },
+        "form": "idininitebeci",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "initibece",
+        "best_count": 1,
+        "counts": {
+          "initibece": 1
+        },
+        "form": "idinitibece",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "ida",
+        "best_count": 1,
+        "counts": {
+          "ida": 1
+        },
+        "form": "idoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "ida",
+        "best_count": 1,
+        "counts": {
+          "ida": 1
+        },
+        "form": "idowa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "ijo",
+        "best_count": 1,
+        "counts": {
+          "ijo": 1
+        },
+        "form": "ijoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "ijo",
+        "best_count": 1,
+        "counts": {
+          "ijo": 1
+        },
+        "form": "ijotawece",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "ijo",
+        "best_count": 1,
+        "counts": {
+          "ijo": 1
+        },
+        "form": "ijowa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "pegi",
+        "best_count": 1,
+        "counts": {
+          "pegi": 1
+        },
+        "form": "ipegitaGagi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "ite",
+        "best_count": 1,
+        "counts": {
+          "ite": 1
+        },
+        "form": "ite",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "iwaalo",
+        "best_count": 1,
+        "counts": {
+          "iwaalo": 1
+        },
+        "form": "iwalepodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "ixagodi",
+        "best_count": 1,
+        "counts": {
+          "ixagodi": 1
+        },
+        "form": "ixagodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "emé",
+        "best_count": 1,
+        "counts": {
+          "emé": 1
+        },
+        "form": "lemé",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "lianaGa",
+        "best_count": 1,
+        "counts": {
+          "lianaGa": 1
+        },
+        "form": "lianaGa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "ibiwe",
+        "best_count": 1,
+        "counts": {
+          "ibiwe": 1
+        },
+        "form": "libiwe",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "odaajo",
+        "best_count": 1,
+        "counts": {
+          "odaajo": 1
+        },
+        "form": "lodaajo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "odawa",
+        "best_count": 1,
+        "counts": {
+          "odawa": 1
+        },
+        "form": "lodowa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "oigi",
+        "best_count": 1,
+        "counts": {
+          "oigi": 1
+        },
+        "form": "loigi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "oigi",
+        "best_count": 1,
+        "counts": {
+          "oigi": 1
+        },
+        "form": "loigipodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "oojedi",
+        "best_count": 1,
+        "counts": {
+          "oojedi": 1
+        },
+        "form": "lojedi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "oojedi",
+        "best_count": 1,
+        "counts": {
+          "oojedi": 1
+        },
+        "form": "lojetedi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "oligi",
+        "best_count": 1,
+        "counts": {
+          "oligi": 1
+        },
+        "form": "loligi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "taGa",
+        "best_count": 1,
+        "counts": {
+          "taGa": 1
+        },
+        "form": "micoataGa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "SCONJ"
+      },
+      {
+        "best": "niGida",
+        "best_count": 1,
+        "counts": {
+          "niGida": 1
+        },
+        "form": "nGida",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "naodigijegi",
+        "best_count": 1,
+        "counts": {
+          "naodigijegi": 1
+        },
+        "form": "naodigijedi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "nelokodi",
+        "best_count": 1,
+        "counts": {
+          "nelokodi": 1
+        },
+        "form": "nelokodi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "niGijo",
+        "best_count": 1,
+        "counts": {
+          "niGijo": 1
+        },
+        "form": "niGijoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "niGina",
+        "best_count": 1,
+        "counts": {
+          "niGina": 1
+        },
+        "form": "niGinoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "niale",
+        "best_count": 1,
+        "counts": {
+          "niale": 1
+        },
+        "form": "niale",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "nigaanigi",
+        "best_count": 1,
+        "counts": {
+          "nigaanigi": 1
+        },
+        "form": "niganigawaanigi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "niganigi",
+        "best_count": 1,
+        "counts": {
+          "niganigi": 1
+        },
+        "form": "niganigi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "getegi",
+        "best_count": 1,
+        "counts": {
+          "getegi": 1
+        },
+        "form": "nigetedi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "niGijo",
+        "best_count": 1,
+        "counts": {
+          "niGijo": 1
+        },
+        "form": "nigijoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "initibece",
+        "best_count": 1,
+        "counts": {
+          "initibece": 1
+        },
+        "form": "ninitibeke",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "initibece",
+        "best_count": 1,
+        "counts": {
+          "initibece": 1
+        },
+        "form": "ninitibigiwaji",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "nioxoa",
+        "best_count": 1,
+        "counts": {
+          "nioxoa": 1
+        },
+        "form": "nioxoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "wigo",
+        "best_count": 1,
+        "counts": {
+          "wigo": 1
+        },
+        "form": "niwigo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "watece",
+        "best_count": 1,
+        "counts": {
+          "watece": 1
+        },
+        "form": "noatece",
+        "share": 1.0,
+        "total": 1,
+        "upos": "NOUN"
+      },
+      {
+        "best": "oxilece",
+        "best_count": 1,
+        "counts": {
+          "oxilece": 1
+        },
+        "form": "noxilece",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      },
+      {
+        "best": "pedilo",
+        "best_count": 1,
+        "counts": {
+          "pedilo": 1
+        },
+        "form": "pedilo",
+        "share": 1.0,
+        "total": 1,
+        "upos": "PROPN"
+      },
+      {
+        "best": "pedro",
+        "best_count": 1,
+        "counts": {
+          "pedro": 1
+        },
+        "form": "pedro",
+        "share": 1.0,
+        "total": 1,
+        "upos": "PROPN"
+      },
+      {
+        "best": "te",
+        "best_count": 1,
+        "counts": {
+          "te": 1
+        },
+        "form": "te",
+        "share": 1.0,
+        "total": 1,
+        "upos": "VERB"
+      }
+    ],
+    "low_evidence_prontype": [
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "form": "ada",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "form": "ani",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "form": "ida",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "form": "idi",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "form": "idoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "form": "idowa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "form": "ijoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "form": "ijotawece",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "form": "ijowa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "form": "nGida",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "form": "niGijoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "form": "niGinoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "form": "nigijoa",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      }
+    ],
+    "low_evidence_tag_to_prontype": [
+      {
+        "best": "Dem",
+        "best_count": 1,
+        "counts": {
+          "Dem": 1
+        },
+        "raw_tag": "PRO$",
+        "share": 1.0,
+        "total": 1,
+        "upos": "DET"
+      },
+      {
+        "best": "Ind",
+        "best_count": 2,
+        "counts": {
+          "Ind": 2
+        },
+        "raw_tag": "Q",
+        "share": 1.0,
+        "total": 2,
+        "upos": "ADV"
+      },
+      {
+        "best": "Ind",
+        "best_count": 2,
+        "counts": {
+          "Dem": 1,
+          "Ind": 2
+        },
+        "raw_tag": "Q",
+        "share": 0.6667,
+        "total": 3,
+        "upos": "DET"
+      }
+    ],
+    "low_evidence_tag_to_upos": [
+      {
+        "best": "ADV",
+        "best_count": 1,
+        "counts": {
+          "ADV": 1
+        },
+        "raw_tag": "ADV",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "CCONJ",
+        "best_count": 1,
+        "counts": {
+          "CCONJ": 1
+        },
+        "raw_tag": "CONJ",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "raw_tag": "PRO$",
+        "share": 1.0,
+        "total": 1
+      }
+    ],
+    "low_evidence_upos": [
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "ada",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 3,
+        "counts": {
+          "DET": 3
+        },
+        "form": "adi",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "akiidi",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "ani",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "CCONJ",
+        "best_count": 1,
+        "counts": {
+          "CCONJ": 1
+        },
+        "form": "codaa",
+        "raw_tag": "CONJ",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "SCONJ",
+        "best_count": 1,
+        "counts": {
+          "SCONJ": 1
+        },
+        "form": "daGa",
+        "raw_tag": "C",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "ADV",
+        "best_count": 1,
+        "counts": {
+          "ADV": 1
+        },
+        "form": "daGaxa",
+        "raw_tag": "ADV",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "ADV",
+        "best_count": 2,
+        "counts": {
+          "ADV": 2
+        },
+        "form": "daGaxa",
+        "raw_tag": "Q",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VERB",
+        "best_count": 2,
+        "counts": {
+          "VERB": 2
+        },
+        "form": "dapico",
+        "raw_tag": "VB",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VERB",
+        "best_count": 4,
+        "counts": {
+          "VERB": 4
+        },
+        "form": "dapicoGo",
+        "raw_tag": "VB",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "dapikoGo",
+        "raw_tag": "VB",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "dibixodi",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "dineigi",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "PRON",
+        "best_count": 4,
+        "counts": {
+          "PRON": 4
+        },
+        "form": "ee",
+        "raw_tag": "PRO",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "PRON",
+        "best_count": 1,
+        "counts": {
+          "PRON": 1
+        },
+        "form": "eeyo",
+        "raw_tag": "PRO",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "eniteloco",
+        "raw_tag": "VBAPL",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 3,
+        "counts": {
+          "VERB": 3
+        },
+        "form": "etadi",
+        "raw_tag": "VB",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "VERB",
+        "best_count": 2,
+        "counts": {
+          "VERB": 2
+        },
+        "form": "etee",
+        "raw_tag": "VB",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "eteyo",
+        "raw_tag": "VB",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "etidi",
+        "raw_tag": "VB",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "etijo",
+        "raw_tag": "VB",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "etogo",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "PRON",
+        "best_count": 1,
+        "counts": {
+          "PRON": 1
+        },
+        "form": "eyo",
+        "raw_tag": "PRO",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "eyodi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "gadodawa",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "ganaaginaGa",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "ganaginaGa",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "ganigotGa",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "ganioxoa",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "ganixoa",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "gatodi",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "gawenigi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "iGonagi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "ica",
+        "raw_tag": "Q",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "ida",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "ideaGi",
+        "raw_tag": "VB",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "idi",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "idininitebeci",
+        "raw_tag": "VB",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 2,
+        "counts": {
+          "DET": 2
+        },
+        "form": "idiwa",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "idowa",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 4,
+        "counts": {
+          "DET": 4
+        },
+        "form": "ijo",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "ijoa",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "ijotawece",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 2,
+        "counts": {
+          "DET": 2
+        },
+        "form": "ina",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "DET",
+        "best_count": 2,
+        "counts": {
+          "DET": 2
+        },
+        "form": "initaGa",
+        "raw_tag": "DAPL",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VERB",
+        "best_count": 2,
+        "counts": {
+          "VERB": 2
+        },
+        "form": "ipegetege",
+        "raw_tag": "VBAPL",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "ipegitaGagi",
+        "raw_tag": "VBAPL",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 4,
+        "counts": {
+          "VERB": 4
+        },
+        "form": "ipegitege",
+        "raw_tag": "VBAPL",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "ite",
+        "raw_tag": "VB",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "iwaalepodi",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "iwalepodi",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "ixagodi",
+        "raw_tag": "VB",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "PROPN",
+        "best_count": 3,
+        "counts": {
+          "PROPN": 3
+        },
+        "form": "joão",
+        "raw_tag": "NPR",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lemé",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lianaGa",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "libiniena",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 4,
+        "counts": {
+          "NOUN": 4
+        },
+        "form": "libinienigipi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "libiwe",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "lideGegi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "lidi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "ligeladi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lionigipi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "liwatece",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "liwenigi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 4,
+        "counts": {
+          "NOUN": 4
+        },
+        "form": "liwigo",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "lixagotaGaGa",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lodaajo",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lodajo",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lodawa",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lodawa",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lodowa",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "loigi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "loigipodi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lojedi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "lojetedi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "loligi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "lomigo",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "lomiigo",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 4,
+        "counts": {
+          "NOUN": 4
+        },
+        "form": "lotiidi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "nGida",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 3,
+        "counts": {
+          "DET": 3
+        },
+        "form": "naGada",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "DET",
+        "best_count": 2,
+        "counts": {
+          "DET": 2
+        },
+        "form": "naGadi",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "DET",
+        "best_count": 4,
+        "counts": {
+          "DET": 4
+        },
+        "form": "naGajo",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "naGajo",
+        "raw_tag": "PRO$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 2,
+        "counts": {
+          "DET": 2
+        },
+        "form": "naGana",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "DET",
+        "best_count": 4,
+        "counts": {
+          "DET": 4
+        },
+        "form": "naGani",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "napioi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "nelokodi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 4,
+        "counts": {
+          "DET": 4
+        },
+        "form": "niGida",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "DET",
+        "best_count": 2,
+        "counts": {
+          "DET": 2
+        },
+        "form": "niGidiwa",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "niGidoa",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 2,
+        "counts": {
+          "DET": 2
+        },
+        "form": "niGidowa",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "DET",
+        "best_count": 4,
+        "counts": {
+          "DET": 4
+        },
+        "form": "niGijo",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "niGijoa",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "niGinoa",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "niale",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "nigaanigawaanigi",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "niganaGacanajo",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "niganigawanigi",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "niganigi",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "nigetedi",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "DET",
+        "best_count": 1,
+        "counts": {
+          "DET": 1
+        },
+        "form": "nigijoa",
+        "raw_tag": "D",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "nigotaGa",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "ninitibeke",
+        "raw_tag": "VB",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "ninitibigiwaji",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "nioladi",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "nioladi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "nioxoa",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "niwatece",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "niweiigi",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "niweiigi",
+        "raw_tag": "N$",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "niwenigi",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 3
+      },
+      {
+        "best": "NOUN",
+        "best_count": 1,
+        "counts": {
+          "NOUN": 1
+        },
+        "form": "niwigo",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 2,
+        "counts": {
+          "NOUN": 2
+        },
+        "form": "noGojedi",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 2
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "noxilece",
+        "raw_tag": "VB",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "PROPN",
+        "best_count": 1,
+        "counts": {
+          "PROPN": 1
+        },
+        "form": "pedilo",
+        "raw_tag": "NPR",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "PROPN",
+        "best_count": 1,
+        "counts": {
+          "PROPN": 1
+        },
+        "form": "pedro",
+        "raw_tag": "NPR",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "VERB",
+        "best_count": 1,
+        "counts": {
+          "VERB": 1
+        },
+        "form": "te",
+        "raw_tag": "VB",
+        "share": 1.0,
+        "total": 1
+      },
+      {
+        "best": "NOUN",
+        "best_count": 4,
+        "counts": {
+          "NOUN": 4
+        },
+        "form": "waca",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "NOUN",
+        "best_count": 4,
+        "counts": {
+          "NOUN": 4
+        },
+        "form": "wetiGa",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 4
+      },
+      {
+        "best": "NOUN",
+        "best_count": 3,
+        "counts": {
+          "NOUN": 3
+        },
+        "form": "wetiadi",
+        "raw_tag": "N",
+        "share": 1.0,
+        "total": 3
+      }
+    ]
   },
   "tag_to_default_prontype": {
-    "D\tADV": "Dem",
     "D\tDET": "Dem",
-    "D\tPRON": "Dem",
     "DAPL\tDET": "Dem",
-    "DAPL\tPRON": "Dem",
     "PRO\tPRON": "Prs",
-    "PRO$\tPRON": "Dem",
-    "Q\tADV": "Ind",
     "WPRO\tPRON": "Rel"
   },
   "tag_to_upos": {
-    "ADJ": "ADJ",
-    "ADV": "ADV",
     "C": "SCONJ",
-    "CNEG+VB": "PART",
+    "D": "DET",
+    "DAPL": "DET",
     "N": "NOUN",
     "N$": "NOUN",
     "NEG": "PART",
-    "NEG+VB": "PART",
     "NPR": "PROPN",
     "PRO": "PRON",
-    "PRO$": "PRON",
     "T": "AUX",
     "VB": "VERB",
     "VBAPL": "VERB",
@@ -1289,122 +6169,30 @@
   },
   "upos_overrides": {
     "aG\tNEG": "PART",
-    "ada\tD": "PRON",
-    "adakake\tCNEG+VB": "PART",
-    "adakake\tNEG+VB": "PART",
     "ajo\tD": "DET",
     "ane\tWPRO": "PRON",
-    "ani\tD": "PRON",
-    "daGa\tC": "SCONJ",
-    "daGaxa\tADV": "ADV",
-    "daGaxa\tQ": "ADV",
-    "dakake\tVB": "VERB",
+    "anitaGa\tDAPL": "DET",
     "dakake\tVBU": "VERB",
-    "dapico\tVB": "VERB",
-    "dapicoGo\tVB": "VERB",
-    "dibixodi\tN": "NOUN",
-    "dineigi\tN": "NOUN",
-    "ee\tPRO": "PRON",
-    "eniteloco\tVBAPL": "VERB",
-    "etadi\tVB": "VERB",
-    "etee\tVB": "VERB",
-    "etogo\tN": "NOUN",
-    "eyo\tPRO": "PRON",
-    "eyodi\tN$": "NOUN",
-    "gadodawa\tN$": "NOUN",
-    "ganaaginaGa\tN$": "NOUN",
-    "ganigotGa\tN$": "NOUN",
-    "ganioxoa\tN$": "NOUN",
-    "ganixoa\tN$": "NOUN",
-    "gawenigi\tN$": "NOUN",
+    "digoida\tD": "DET",
     "iGeladi\tN$": "NOUN",
-    "iGonagi\tN$": "NOUN",
     "ica\tD": "DET",
-    "ica\tQ": "DET",
-    "ideaGi\tVB": "VERB",
     "idei\tVB": "VERB",
-    "idiwa\tD": "DET",
-    "idowa\tD": "DET",
-    "ijo\tD": "DET",
-    "ijowa\tD": "DET",
-    "ina\tD": "PRON",
-    "initaGa\tDAPL": "PRON",
-    "ipegetege\tVBAPL": "VERB",
-    "ipegitaGagi\tVBAPL": "VERB",
-    "ipegitege\tVBAPL": "VERB",
     "ipegitegi\tVBAPL": "VERB",
     "iwaGadi\tVB": "VERB",
-    "iwaalepodi\tN": "NOUN",
     "iwaalo\tN": "NOUN",
-    "iwalepodi\tN": "NOUN",
     "ja\tT": "AUX",
-    "joão\tNPR": "PROPN",
     "liGeladi\tN$": "NOUN",
-    "libiniena\tN$": "NOUN",
     "libinienaGa\tN$": "NOUN",
     "libinienigi\tN$": "NOUN",
-    "libinienigipi\tN$": "NOUN",
-    "lideGegi\tN$": "NOUN",
-    "lidi\tN$": "NOUN",
-    "lionigipi\tN$": "NOUN",
-    "liwatece\tN$": "NOUN",
-    "liwenigi\tN$": "NOUN",
-    "liwigo\tN$": "NOUN",
-    "lixagotaGaGa\tN$": "NOUN",
-    "lodajo\tN$": "NOUN",
-    "lodawa\tN": "NOUN",
-    "lodawa\tN$": "NOUN",
-    "lodowa\tN$": "NOUN",
-    "loigi\tN$": "NOUN",
-    "loigipodi\tN$": "NOUN",
-    "lojedi\tN$": "NOUN",
-    "lojetedi\tN$": "NOUN",
-    "loligi\tN$": "NOUN",
-    "lomigo\tN$": "NOUN",
-    "lomiigo\tN$": "NOUN",
     "loojedi\tN$": "NOUN",
     "looligi\tN$": "NOUN",
     "lotaGa\tN$": "NOUN",
-    "lotiidi\tN$": "NOUN",
     "maria\tNPR": "PROPN",
     "me\tC": "SCONJ",
-    "nGijo\tD": "DET",
-    "naGada\tD": "PRON",
-    "naGadi\tD": "PRON",
-    "naGajo\tD": "DET",
-    "naGajo\tPRO$": "PRON",
-    "naGani\tD": "DET",
     "naigi\tN": "NOUN",
-    "napioi\tADJ": "ADJ",
-    "niGida\tD": "DET",
-    "niGidiwa\tD": "DET",
-    "niGidowa\tD": "DET",
-    "niGijo\tD": "DET",
-    "niGijoa\tD": "DET",
-    "niGinoa\tD": "DET",
-    "nigaanigawaanigi\tN": "NOUN",
-    "niganaGacanajo\tN": "NOUN",
-    "niganigawanigi\tN": "NOUN",
-    "niganigi\tN": "NOUN",
-    "nigetedi\tN": "NOUN",
     "nigotaGa\tN": "NOUN",
     "ninitibeci\tVB": "VERB",
-    "ninitibeke\tVB": "VERB",
-    "ninitibigiwaji\tN": "VERB",
-    "nioladi\tN": "NOUN",
-    "nioxoa\tN$": "NOUN",
-    "niwatece\tN": "NOUN",
     "niwatece\tN$": "NOUN",
-    "niwenigi\tN$": "NOUN",
-    "niwigo\tN$": "NOUN",
-    "noGojedi\tN": "NOUN",
-    "noxilece\tVB": "VERB",
-    "pedilo\tNPR": "PROPN",
-    "pedro\tNPR": "PROPN",
-    "te\tVB": "VERB",
-    "waca\tN": "NOUN",
-    "weiigi\tN": "NOUN",
-    "wetiGa\tN": "NOUN",
-    "wetiadi\tN": "NOUN"
+    "weiigi\tN": "NOUN"
   }
 }

@@ -697,6 +697,7 @@ def convert_sentence(
     source_document_uid: str,
     project_git_commit: str,
     generation_timestamp: str,
+    dependency_predictions: str = "done",
 ) -> str:
     text_orig = str(sentence.get("text", "")).strip()
     text = normalize_text_ground_truth(text_orig) or text_orig
@@ -716,6 +717,21 @@ def convert_sentence(
 
     original_tokens = get_tokens(sentence)
     original_chunks = get_chunks(sentence)
+
+    # Only reviewed source trees opt into the prediction layer by default.
+    # REVIEW/missing status and explicit off retain the complete legacy path.
+    predictions = []
+    if dependency_predictions not in {"done", "off"}:
+        raise ValueError("dependency_predictions must be done or off")
+    # Current TBP JSON stores review status on the sentence, not struct.
+    # Do not change the legacy metadata writer as part of HEAD/DEPREL work.
+    prediction_status = sentence.get("status", source_struct_status)
+    if dependency_predictions == "done" and prediction_status == "DONE":
+        from kadiweu_prediction_bridge import predict
+        try:
+            predictions = predict(sentence)
+        except ValueError as exc:
+            print(f"PREDICTIONS {sent_uid}: tree rejected ({exc}); legacy fallback", file=sys.stderr)
 
     empty_resolution = resolve_empty_categories(original_tokens, original_chunks)
     tokens = empty_resolution.tokens
@@ -953,6 +969,30 @@ def convert_sentence(
     # -----------------------------------------------------------------
     chunk_infos = build_chunk_infos(tokens, chunks, draft_tokens)
     root_idx = pick_root_index(draft_tokens, chunk_infos)
+    locked_predictions = {}
+    if predictions:
+        from kadiweu_prediction_bridge import align_predictions
+        try:
+            locked_predictions = align_predictions(predictions, draft_tokens)
+            predicted_roots = [i for i, t in enumerate(draft_tokens)
+                               if locked_predictions.get(t.id, (None,))[0] == 0]
+            if predicted_roots:
+                root_idx = predicted_roots[0]
+            elif root_idx is not None and draft_tokens[root_idx].id in locked_predictions:
+                raise ValueError("fallback root conflicts with a predicted non-root")
+        except ValueError as exc:
+            locked_predictions = {}
+            print(f"PREDICTIONS {sent_uid}: alignment rejected ({exc}); legacy fallback", file=sys.stderr)
+        for dt in draft_tokens:
+            if dt.id not in locked_predictions:
+                continue
+            head, relation, rule = locked_predictions[dt.id]
+            if dt.locked_deprel:
+                old_head = source_pos_to_dt.get(dt.forced_head_source_pos)
+                if dt.deprel != relation or (old_head.id if old_head else None) != head:
+                    print(f"PREDICTIONS {sent_uid}: word {dt.id}: {rule} supersedes legacy trace hint", file=sys.stderr)
+            dt.deprel = relation
+            dt.locked_deprel = True
     root_id: Optional[int] = None
     root_upos: Optional[str] = None
 
@@ -1121,13 +1161,17 @@ def convert_sentence(
         for extra in obj_indices[1:]:
             draft_tokens[extra].deprel = "dep"
 
-    demote_extra_core_dependents()
+    if not locked_predictions:
+        demote_extra_core_dependents()
 
 
     # -----------------------------------------------------------------
     # Head assignment
     # -----------------------------------------------------------------
     for idx, dt in enumerate(draft_tokens):
+        if dt.id in locked_predictions:
+            dt.head, dt.deprel, _ = locked_predictions[dt.id]
+            continue
         if dt.deprel == "root":
             dt.head = 0
             continue
@@ -1183,6 +1227,20 @@ def convert_sentence(
         dt.head = root_id or 0
 
     # -----------------------------------------------------------------
+    # Validate the mixed graph before writing. A failed merge falls back
+    # atomically to the old converter; never silently repair a locked edge.
+    if locked_predictions:
+        from kadiweu_prediction_bridge import demote_unlocked_duplicates, graph_problem
+        demote_unlocked_duplicates(draft_tokens)
+        problem = graph_problem(draft_tokens)
+        if problem:
+            print(f"PREDICTIONS {sent_uid}: {problem}; sentence restored to legacy output", file=sys.stderr)
+            return convert_sentence(sentence, sent_index, sent_id_prefix,
+                                    source_document_uid, project_git_commit,
+                                    generation_timestamp, dependency_predictions="off")
+        print(f"PREDICTIONS {sent_uid}: applied={len(locked_predictions)} "
+              f"fallback={len(draft_tokens) - len(locked_predictions)}", file=sys.stderr)
+
     # Clean metadata/writer block (REPLACEMENT)
     # -----------------------------------------------------------------
 
@@ -1453,6 +1511,8 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
             "Defaults to data/import-json-history.tsv."
         ),
     )
+    parser.add_argument("--dependency-predictions", choices=("done", "off"), default="done",
+                        help="Apply tree HEAD/DEPREL predictions to DONE sentences (default); off reproduces legacy conversion.")
     return parser.parse_args(argv)
 
 
@@ -1460,6 +1520,7 @@ def main(
     json_path: str,
     overrides_path: Optional[Path] = None,
     import_history_path: Path = DEFAULT_IMPORT_HISTORY_PATH,
+    dependency_predictions: str = "done",
 ) -> int:
     """
     Convert one Tycho Brahe JSON document into a draft UD CoNLL-U treebank.
@@ -1546,6 +1607,7 @@ def main(
                     source_document_uid=source_document_uid,
                     project_git_commit=project_git_commit,
                     generation_timestamp=generation_timestamp,
+                    dependency_predictions=dependency_predictions,
                 )
             )
             sent_index += 1
@@ -1560,5 +1622,6 @@ if __name__ == "__main__":
             json_path=args.json_path,
             overrides_path=args.overrides_path,
             import_history_path=args.import_history,
+            dependency_predictions=args.dependency_predictions,
         )
     )

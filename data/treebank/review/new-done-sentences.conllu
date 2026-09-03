@@ -1,0 +1,1111 @@
+# sent_id = ped-gramm-50
+# sent_uid = 156fa9a4-4323-44f1-9cdc-ef5dc052b428
+# text = etee minitaGa.
+# text_orig = etee minitaGa
+# text_por_orig = Estou com ele
+# text_por = Estou com ele.
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+2-3	minitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
+2	me	me	SCONJ	C	_	3	mark	_	_
+3	initaGa	ini	DET	DAPL	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
+
+# sent_id = ped-gramm-52
+# sent_uid = d543f155-c01f-4b5e-add1-0533b8ac6e15
+# text = jipacaGataGagitiwaji.
+# text_orig = jipacaGataGagitiwaji
+# text_por_orig = Estamos perto de vocês.
+# text_por = Estamos perto de vocês.
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	jipacaGataGagitiwaji	paca	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Number=Plur|Person[erg]=1|Person[obj]=2|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:20
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = ped-gramm-53
+# sent_uid = 3f077b37-aa95-4012-9efb-a21630cdd6e9
+# text = aGee eliodi niinikeGegi.
+# text_orig = aGee eliodi niinikeGegi
+# text_por_orig = Eu não estou muito feliz
+# text_por = Eu não estou muito feliz.
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1-2	aGee	_	_	_	_	_	_	_	TokenRange=0:4
+1	aG	aG	PART	NEG	Polarity=Neg	4	advmod	_	_
+2	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	eliodi	eliodi	DET	Q	PronType=Ind	4	det	_	TokenRange=5:11
+4	niinikeGegi	nini	NOUN	N	Gender=Masc	0	root	_	SpaceAfter=No|TokenRange=12:23
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = ped-gramm-54
+# sent_uid = 74a76be1-d4b6-42e1-9100-6a436a7fa065
+# text = akaami oko jipacaGataGagitiwaji.
+# text_orig = akaami oko jipacaGataGagitiwaji
+# text_por_orig = Estamos perto de vocês.
+# text_por = Estamos perto de vocês.
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	akaami	i	PRON	PRO	Number=Plur|PronType=Prs	3	nsubj	_	TokenRange=0:6
+2	oko	oko	PRON	PRO	_	3	dep	_	TokenRange=7:10
+3	jipacaGataGagitiwaji	jipacaGataGagitiwaji	VERB	VBAPL	Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=11:31
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=31:32
+
+# sent_id = ped-gramm-56
+# sent_uid = edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded
+# text = IiGeladi midi akiidi.
+# text_orig = IiGeladi midi akiidi
+# text_por_orig = A casa dele/dela é no rio.
+# text_por = A casa dele/dela é no rio.
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	IiGeladi	Geladi	NOUN	N$	Person[psor]=3	4	nsubj	_	TokenRange=0:8
+2-3	midi	_	_	_	_	_	_	_	TokenRange=9:13
+2	me	me	SCONJ	C	_	4	mark	_	_
+3	idi	idi	DET	D	Gender=Masc|PronType=Dem	4	det	_	_
+4	akiidi	akiidi	NOUN	N	_	0	root	_	SpaceAfter=No|TokenRange=14:20
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = ped-gramm-57
+# sent_uid = 2c0248b3-8f68-46e9-b41c-9f7807572c87
+# text = etogo aneiwaGadi adakake lojedi.
+# text_orig = etogo aneiwaGadi adakake lojedi .
+# text_por_orig = A pesada canoa está barata.
+# text_por = A pesada canoa está barata.
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	etogo	etogo	NOUN	N	Gender=Fem|Number=Sing	5	dislocated	_	TokenRange=0:5
+2-3	aneiwaGadi	_	_	_	_	_	_	_	TokenRange=6:16
+2	ane	ane	PRON	WPRO	PronType=Rel	3	nsubj	_	_
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	_
+4-5	adakake	_	_	_	_	_	_	_	TokenRange=17:24
+4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
+5	dakake	akake	VERB	VBU	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	_
+6	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	SpaceAfter=No|StandardForm=loojedi|TokenRange=25:31
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=31:32
+
+# sent_id = ped-gramm-58
+# sent_uid = 73ceda1b-be14-4e75-9b1e-2a490d7df366
+# text = etogo adakake lojedi.
+# text_orig = etogo adakake lojedi
+# text_por_orig = A canoa está barata.
+# text_por = A canoa está barata.
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	etogo	etogo	NOUN	N	Gender=Fem|Number=Sing	3	dislocated	_	TokenRange=0:5
+2-3	adakake	_	_	_	_	_	_	_	TokenRange=6:13
+2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
+3	dakake	akake	VERB	VBU	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	_
+4	lojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	3	nsubj	_	SpaceAfter=No|StandardForm=loojedi|TokenRange=14:20
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = ped-gramm-59
+# sent_uid = bf632295-26f8-4ee6-979f-33f090ef0471
+# text = etogoli dakake lojetedi.
+# text_orig = etogoli dakake lojetedi
+# text_por_orig = As canoas (individualmente) são caras (cada uma com um preço caro)
+# text_por = As canoas (individualmente) são caras (cada uma com um preço caro).
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	etogoli	etogo	NOUN	N	Number=Plur	2	dislocated	_	TokenRange=0:7
+2	dakake	akake	VERB	VBU	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	TokenRange=8:14
+3	lojetedi	oojedi	NOUN	N$	Number=Plur|Person[psor]=3	2	nsubj	_	SpaceAfter=No|TokenRange=15:23
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = ped-gramm-60
+# sent_uid = bbd6b80b-3236-4172-8bd5-ba3fb404049e
+# text = etogoli dakake loojedi.
+# text_orig = etogoli dakake loojedi
+# text_por_orig = as canoas (como classe/grupo) são caras 
+# text_por = as canoas (como classe/grupo) são caras.
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	etogoli	etogo	NOUN	N	Number=Plur	2	dislocated	_	TokenRange=0:7
+2	dakake	akake	VERB	VBU	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	0	root	_	TokenRange=8:14
+3	loojedi	oojedi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nsubj	_	SpaceAfter=No|TokenRange=15:22
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = ped-gramm-61
+# sent_uid = 1ab7fa26-ed92-4d55-98d0-0d76396373f0
+# text = Etogoli iwaGadi adakake lojetedi.
+# text_orig = Etogoli iwaGadi adakake lojetedi
+# source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	Etogoli	etogo	NOUN	N	Number=Plur	2	nsubj	_	TokenRange=0:7
+2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=iwaaGadi|TokenRange=8:15
+3-4	adakake	_	_	_	_	_	_	_	TokenRange=16:23
+3	aG	aG	PART	NEG	Polarity=Neg	4	advmod	_	_
+4	dakake	akake	VERB	VBU	Mood=Ind|Person=3|VerbForm=Fin|Voice=Inv	2	parataxis	_	_
+5	lojetedi	oojedi	NOUN	N$	Number=Plur|Person[psor]=3	4	nsubj	_	SpaceAfter=No|TokenRange=24:32
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=32:33
+
+# sent_id = hil-data-13
+# sent_uid = 0de3d311-348a-4107-a191-9fc3f960c249
+# text = niGijoa lionaGa iwaalo idei mijotaGa.
+# text_orig = niGijoa lionaGa iwaalo idei mijotaGa
+# text_por_orig = Aqueles filhos da mulher estão com eles .
+# text_por = Aqueles filhos da mulher estão com eles.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	niGijoa	niGijo	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:7
+2	lionaGa	ion	NOUN	N$	Number=Plur	4	nsubj	_	TokenRange=8:15
+3	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	2	nmod:poss	_	TokenRange=16:22
+4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=23:27
+5-6	mijotaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=28:36
+5	me	me	SCONJ	C	_	6	mark	_	_
+6	ijotaGa	ijotaGa	DET	DAPL	_	4	obj	_	_
+7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=36:37
+
+# sent_id = hil-data-14
+# sent_uid = 4e9130da-80fd-4ac2-8665-956c95b299e2
+# text = dibixodi ideiticoaci maditaGa.
+# text_orig = dibixodi ideiticoaci maditaGa
+# text_por_orig = As formigas estão nela .
+# text_por = As formigas estão nela.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	dibixodi	dibixodi	NOUN	N	_	2	nsubj	_	TokenRange=0:8
+2	ideiticoaci	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=9:20
+3-4	maditaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=21:29
+3	me	me	SCONJ	C	_	4	mark	_	_
+4	aditaGa	aditaGa	DET	DAPL	_	2	obj	_	_
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=29:30
+
+# sent_id = hil-data-27
+# sent_uid = f9af3f8f-3b06-4756-8676-b5ffb2c24b44
+# text = DapipocoGo.
+# text_orig = DapipocoGo
+# text_por_orig = Ela está quente .
+# text_por = Ela está quente.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	DapipocoGo	dapipocoGo	VERB	VB	_	0	root	_	SpaceAfter=No|TokenRange=0:10
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=10:11
+
+# sent_id = hil-data-30
+# sent_uid = 38c689d8-332d-4406-b236-de4593e4853a
+# text = DapicoGo.
+# text_orig = DapicoGo
+# text_por_orig = Ele é quente .
+# text_por = Ele é quente.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	DapicoGo	apicoGo	VERB	VB	Mood=Ind|VerbForm=Fin|Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=0:8
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=8:9
+
+# sent_id = hil-data-31
+# sent_uid = ea70209d-4f3c-4bf9-8d93-2d91fa0f928c
+# text = DapicoGo.
+# text_orig = DapicoGo
+# text_por_orig = Ele está quente .
+# text_por = Ele está quente.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	DapicoGo	apicoGo	VERB	VB	Mood=Ind|VerbForm=Fin|Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=0:8
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=8:9
+
+# sent_id = hil-data-43
+# sent_uid = a74fea0a-dd87-4c4d-8670-9db66f5b5b16
+# text = niGidiwa okokodi ligetedi liwigo libinienaGa.
+# text_orig = niGidiwa okokodi ligetedi liwigo libinienaGa
+# text_por_orig = Estes ovos da fotografia estão bonitos .
+# text_por = Estes ovos da fotografia estão bonitos.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	niGidiwa	niGidi	DET	D	Gender=Masc|Number=Plur|PronType=Dem	3	det	_	TokenRange=0:8
+2	okokodi	okokodi	NOUN	N	_	5	dep	_	TokenRange=9:16
+3	ligetedi	getegi	NOUN	N$	Number=Plur|Person[psor]=3	5	nsubj	_	TokenRange=17:25
+4	liwigo	wigo	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	5	nmod:poss	_	TokenRange=26:32
+5	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=33:44
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=44:45
+
+# sent_id = hil-data-48
+# sent_uid = 4242d34b-9096-45a2-a666-502a2cb9ca49
+# text = Ee aidinitibeci.
+# text_orig = Ee aidinitibeci .
+# text_por_orig = Eu não estou feliz .
+# text_por = Eu não estou feliz.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	Ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
+2-3	aidinitibeci	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=3:15
+2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
+3	idinitibeci	idinitibeci	VERB	VB	_	0	root	_	_
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=15:16
+
+# sent_id = hil-data-49
+# sent_uid = 1e9df213-90da-4674-8889-4ac858df72fe
+# text = Ee ageliodi me idinitibeci.
+# text_orig = Ee ageliodi me idinitibeci
+# text_por_orig = Eu não estou muito feliz .
+# text_por = Eu não estou muito feliz.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	Ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	TokenRange=0:2
+2-3	ageliodi	_	_	_	_	_	_	_	TokenRange=3:11
+2	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
+3	eliodi	eliodi	DET	Q	PronType=Ind	5	advmod	_	_
+4	me	me	SCONJ	C	_	5	mark	_	TokenRange=12:14
+5	idinitibeci	ini	VERB	VB	Mood=Ind|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=15:26
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = hil-data-50
+# sent_uid = c4302bef-3de9-4f3c-b762-f6b77183f263
+# text = Ee ajipegitege.
+# text_orig = Ee ajipegitege
+# text_por_orig = Eu não estou perto dela .
+# text_por = Eu não estou perto dela.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	Ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
+2-3	ajipegitege	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=3:14
+2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
+3	jipegitege	jipegitege	VERB	VBAPL	Voice=Appl	0	root	_	_
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = hil-data-51
+# sent_uid = 5bc48b27-0755-475f-813e-7a259f3c3c9e
+# text = Ee ajipegitege.
+# text_orig = Ee ajipegitege
+# text_por_orig = Eu não estou perto dele .
+# text_por = Eu não estou perto dele.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	Ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
+2-3	ajipegitege	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=3:14
+2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
+3	jipegitege	jipegitege	VERB	VBAPL	Voice=Appl	0	root	_	_
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = hil-data-52
+# sent_uid = 1e1fafc0-29c6-41d4-a0d2-4c825d9af376
+# text = ee idiwaGadi.
+# text_orig = ee idiwaGadi
+# text_por_orig = Eu sou pesado .
+# text_por = Eu sou pesado.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	idiwaGadi	iwaGadi	VERB	VB	_	0	root	_	SpaceAfter=No|TokenRange=3:12
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
+
+# sent_id = hil-data-53
+# sent_uid = 71aff593-7b38-4c17-9563-4503985dbd03
+# text = jipegitege.
+# text_orig = jipegitege
+# text_por_orig = Estou perto dela .
+# text_por = Estou perto dela.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	jipegitege	jipegitege	VERB	VBAPL	Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:10
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=10:11
+
+# sent_id = hil-data-54
+# sent_uid = f4f18c18-728c-4d6b-b7dd-2df62c4a829a
+# text = jipegitege.
+# text_orig = jipegitege
+# text_por_orig = Estou perto dele .
+# text_por = Estou perto dele.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	jipegitege	jipegitege	VERB	VBAPL	Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:10
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=10:11
+
+# sent_id = hil-data-55
+# sent_uid = 90ca38d8-e063-4c98-af51-4b9022ade506
+# text = aGeliodi me idinitibeci.
+# text_orig = aGeliodi me idinitibeci .
+# text_por_orig = Não sou muito feliz .
+# text_por = Não sou muito feliz.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1-2	aGeliodi	_	_	_	_	_	_	_	TokenRange=0:8
+1	aG	aG	PART	NEG	Polarity=Neg	4	advmod	_	_
+2	eliodi	eliodi	DET	Q	PronType=Ind	4	advmod	_	_
+3	me	me	SCONJ	C	_	4	mark	_	TokenRange=9:11
+4	idinitibeci	ini	VERB	VB	Mood=Ind|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=12:23
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = hil-data-56
+# sent_uid = 82bfae64-45e7-403f-bcd0-190e00f4520f
+# text = jipecaGataGagi.
+# text_orig = jipecaGataGagi .
+# text_por_orig = Nós estamos perto de você .
+# text_por = Nós estamos perto de você.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	jipecaGataGagi	taGagi	VERB	VBAPL	Mood=Ind|Number=Plur|Person[erg]=1|Person[obj]=2|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:14
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = hil-data-57
+# sent_uid = 341bf09a-2ef8-455a-8b6b-88373c617dae
+# text = oko aidejonaGa midi Godoigi.
+# text_orig = oko aidejonaGa midi Godoigi
+# text_por_orig = Nós não estamos na comunidade .
+# text_por = Nós não estamos na comunidade.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	oko	oko	NOUN	N	_	3	nsubj	_	TokenRange=0:3
+2-3	aidejonaGa	_	_	_	_	_	_	_	TokenRange=4:14
+2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
+3	idejonaGa	idejonaGa	VERB	VB	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin|Voice=Inv	0	root	_	_
+4-5	midi	_	_	_	_	_	_	_	TokenRange=15:19
+4	me	me	SCONJ	C	_	6	mark	_	_
+5	idi	idi	DET	D	PronType=Dem	6	det	_	_
+6	Godoigi	godoigi	NOUN	N$	_	3	obj	_	SpaceAfter=No|TokenRange=20:27
+7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = hil-data-58
+# sent_uid = 9a136412-a636-4e5e-aa54-ac684ae7bed3
+# text = jipecaGataGagitiwaji.
+# text_orig = jipecaGataGagitiwaji .
+# text_por_orig = Estamos perto de vocês .
+# text_por = Estamos perto de vocês.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	jipecaGataGagitiwaji	pegi	VERB	VBAPL	Gender=Masc|Mood=Ind|Number=Plur|Person[erg]=1|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:20
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = hil-data-59
+# sent_uid = dff00f05-7be1-4d62-b3ed-b8a8870851e9
+# text = aidejonaGa midi Godoigi.
+# text_orig = aidejonaGa midi Godoigi
+# text_por_orig = Não estamos na comunidade.
+# text_por = Não estamos na comunidade.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1-2	aidejonaGa	_	_	_	_	_	_	_	TokenRange=0:10
+1	aG	aG	PART	NEG	Polarity=Neg	2	advmod	_	_
+2	idejonaGa	idejonaGa	VERB	VB	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin|Voice=Inv	0	root	_	_
+3-4	midi	_	_	_	_	_	_	_	TokenRange=11:15
+3	me	me	SCONJ	C	_	5	mark	_	_
+4	idi	idi	DET	D	PronType=Dem	5	det	_	_
+5	Godoigi	godoigi	NOUN	N$	_	2	obj	_	SpaceAfter=No|TokenRange=16:23
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = hil-data-61
+# sent_uid = f0c7c722-031a-4c6e-ad7e-739402475c99
+# text = NiGijo bijo dapicoGo.
+# text_orig = NiGijo bijo dapicoGo
+# text_por_orig = O beiju está quente .
+# text_por = O beiju está quente.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	NiGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	StandardForm=niGijo|TokenRange=0:6
+2	bijo	bijo	NOUN	N	_	3	nsubj	_	TokenRange=7:11
+3	dapicoGo	apicoGo	VERB	VB	Mood=Ind|VerbForm=Fin|Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=12:20
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = hil-data-63
+# sent_uid = c3225d86-7037-4f8c-9981-8e92b6a081d6
+# text = nigidiwa bijotedi dapicoGo.
+# text_orig = nigidiwa bijotedi dapicoGo
+# text_por_orig = Os beijus estão quentes .
+# text_por = Os beijus estão quentes.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	nigidiwa	niGidi	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	StandardForm=niGidiwa|TokenRange=0:8
+2	bijotedi	bijotedi	NOUN	N	_	3	nsubj	_	TokenRange=9:17
+3	dapicoGo	apicoGo	VERB	VB	Mood=Ind|VerbForm=Fin|Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=18:26
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = hil-data-65
+# sent_uid = 13f012b0-ef62-4477-b4bd-00e000484874
+# text = NiGidi lionaGa iwaalo etidi meetaGa.
+# text_orig = NiGidi lionaGa iwaalo etidi meetaGa
+# text_por_orig = Os filhos da mulher estão comigo .
+# text_por = Os filhos da mulher estão comigo.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	NiGidi	niGidi	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	StandardForm=niGidi|TokenRange=0:6
+2	lionaGa	iona	NOUN	N$	Number=Plur|Person[psor]=3	4	nsubj	_	TokenRange=7:14
+3	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	2	nmod:poss	_	TokenRange=15:21
+4	etidi	et	VERB	VB	Gender=Masc|Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=22:27
+5-6	meetaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=28:35
+5	me	me	SCONJ	C	_	6	mark	_	_
+6	eetaGa	eetaGa	DET	DAPL	Person=1|PronType=Prs	4	obj	_	_
+7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=35:36
+
+# sent_id = hil-data-66
+# sent_uid = 55fe3cf7-0293-48e6-aa78-44822f50347e
+# text = liGeladi ipegitege nakidi nigotaGa.
+# text_orig = liGeladi ipegitege nakidi nigotaGa
+# text_por_orig = A casa dela é perto do rio da cidade .
+# text_por = A casa dela é perto do rio da cidade.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nsubj	_	TokenRange=0:8
+2	ipegitege	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=9:18
+3	nakidi	nakidi	NOUN	N$	_	2	obj	_	TokenRange=19:25
+4	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	3	nmod:poss	_	SpaceAfter=No|TokenRange=26:34
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# sent_id = hil-data-67
+# sent_uid = c0441856-b259-4d76-a88e-33a7e211b208
+# text = liGeladi ipegitege nakidi nigotaGa.
+# text_orig = liGeladi ipegitege nakidi nigotaGa
+# text_por_orig = A casa dele é perto do rio da cidade .
+# text_por = A casa dele é perto do rio da cidade.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nsubj	_	TokenRange=0:8
+2	ipegitege	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=9:18
+3	nakidi	nakidi	NOUN	N$	_	2	obj	_	TokenRange=19:25
+4	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	3	nmod:poss	_	SpaceAfter=No|TokenRange=26:34
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# sent_id = hil-data-69
+# sent_uid = 9669b093-f0a2-4187-9063-cec9ba4c0196
+# text = Nigaanigawaanigi etini liwatece Pedilo.
+# text_orig = Nigaanigawaanigi etini liwatece Pedilo
+# text_por_orig = Menino está na canoa do Pedro.
+# text_por = Menino está na canoa do Pedro.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	Nigaanigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	2	nsubj	_	TokenRange=0:16
+2	etini	et	VERB	VB	Gender=Masc|Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=17:22
+3	liwatece	watece	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	2	obj	_	TokenRange=23:31
+4	Pedilo	pedilo	PROPN	NPR	_	3	nmod:poss	_	SpaceAfter=No|TokenRange=32:38
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=38:39
+
+# sent_id = hil-data-70
+# sent_uid = 529c167b-b3a7-40cc-af76-c7522719c6d4
+# text = NiGijo nigaanigawaanigi etini liwatece ideloGole.
+# text_orig = NiGijo nigaanigawaanigi etini liwatece ideloGole
+# text_por_orig = Aquele menino está na canoa da lagoinha.
+# text_por = Aquele menino está na canoa da lagoinha.
+# source_document_uid = ffef8450-e302-4882-8306-e5998d31f584
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	NiGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	StandardForm=niGijo|TokenRange=0:6
+2	nigaanigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	3	nsubj	_	TokenRange=7:23
+3	etini	et	VERB	VB	Gender=Masc|Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=24:29
+4	liwatece	watece	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	3	obj	_	TokenRange=30:38
+5	ideloGole	ideloGole	NOUN	N	_	4	nmod:poss	_	SpaceAfter=No|TokenRange=39:48
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=48:49
+
+# sent_id = van-data-25
+# sent_uid = abe20c80-8394-478c-92eb-feef1512e5ed
+# text = ajo eliodi linikeGegi.
+# text_orig = ajo eliodi linikeGegi
+# text_por_orig = ela é muito feliz
+# text_por = ela é muito feliz.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	3	nsubj	_	TokenRange=0:3
+2	eliodi	eliodi	DET	Q	PronType=Ind	3	det	_	TokenRange=4:10
+3	linikeGegi	ni	NOUN	N$	Gender=Masc|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=11:21
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = van-data-26
+# sent_uid = 0575dd46-865a-4ba4-bd49-ed6db054eeb4
+# text = ajo lapicaGa.
+# text_orig = ajo lapicaGa
+# text_por_orig = ela é / está quente
+# text_por = ela é / está quente.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
+2	lapicaGa	apica	NOUN	N$	Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=4:12
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
+
+# sent_id = van-data-27
+# sent_uid = 3aba0004-0ce2-4392-a334-ef814428ec0d
+# text = ijo libinienigi.
+# text_orig = ijo libinienigi
+# text_por_orig = ele está / é bonito
+# text_por = ele está / é bonito.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
+2	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=4:15
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
+
+# sent_id = van-data-28
+# sent_uid = d369088d-7d87-44b9-a956-2d5bd5f955e1
+# text = ijo lapicaGigi.
+# text_orig = ijo lapicaGigi
+# text_por_orig = ele é / está quente
+# text_por = ele é / está quente.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
+2	lapicaGigi	apico	NOUN	N$	Gender=Masc|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=4:14
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = van-data-29
+# sent_uid = a0ab1cad-f01e-49bb-8f31-5edf4fa4c102
+# text = niGijo ninitibigiwaji.
+# text_orig = niGijo ninitibigiwaji
+# text_por_orig = eles são felizes
+# text_por = eles são felizes.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	niGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:6
+2	ninitibigiwaji	ni	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:21
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = van-data-32
+# sent_uid = 46190f73-f21e-4073-b09c-8b2d17c6668e
+# text = naGani wetiGa liwaGatena.
+# text_orig = naGani wetiGa liwaGatena
+# text_por_orig = esta pedra está muito pesada
+# text_por = esta pedra está muito pesada.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	naGani	niGini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=7:13
+3	liwaGatena	iwaaGa	NOUN	N$	Degree=Dim|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=14:24
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = van-data-33
+# sent_uid = a0bb1280-1040-4dff-9311-a1a31049b6f8
+# text = naGani wetiGa iwaGadi.
+# text_orig = naGani wetiGa iwaGadi
+# text_por_orig = esta pedra está pesada
+# text_por = esta pedra está pesada.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	naGani	niGini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=7:13
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=14:21
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = van-data-35
+# sent_uid = 675ef4d4-ebe8-4601-bf42-908deb0df82b
+# text = ani wetiGa eliodi me iwaGadi.
+# text_orig = ani wetiGa eliodi me iwaGadi
+# text_por_orig = esta pedra está muito pesada
+# text_por = esta pedra está muito pesada.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ani	ni	DET	D	Gender=Fem|PronType=Dem	2	det	_	TokenRange=0:3
+2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	5	nsubj	_	TokenRange=4:10
+3	eliodi	eliodi	DET	Q	PronType=Ind	5	advmod	_	TokenRange=11:17
+4	me	me	SCONJ	C	_	5	mark	_	TokenRange=18:20
+5	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=21:28
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=28:29
+
+# sent_id = van-data-36
+# sent_uid = 42b65fc9-cec4-40a9-8aec-cdeec3731df8
+# text = ani wetiGa iwaGadi.
+# text_orig = ani wetiGa iwaGadi
+# text_por_orig = esta pedra é pesada
+# text_por = esta pedra é pesada.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ani	ni	DET	D	Gender=Fem|PronType=Dem	2	det	_	TokenRange=0:3
+2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=4:10
+3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=11:18
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
+
+# sent_id = van-data-37
+# sent_uid = ba34b659-bcb8-4aa2-b9f4-b969ba786b12
+# text = ani wetiGa me iwaGadi eniteloco iGonagi.
+# text_orig = ani wetiGa me iwaGadi eniteloco iGonagi
+# text_por_orig = esta pedra que é pesada caiu no meu pé
+# text_por = esta pedra que é pesada caiu no meu pé.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ani	ni	DET	D	Gender=Fem|PronType=Dem	2	det	_	TokenRange=0:3
+2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	5	nsubj	_	TokenRange=4:10
+3	me	me	SCONJ	C	_	4	mark	_	TokenRange=11:13
+4	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	2	acl:relcl	_	StandardForm=iwaaGadi|TokenRange=14:21
+5	eniteloco	ani	VERB	VBAPL	Mood=Ind|Person[erg]=1|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=22:31
+6	iGonagi	iGonagi	NOUN	N$	_	5	obj	_	SpaceAfter=No|TokenRange=32:39
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=39:40
+
+# sent_id = van-data-38
+# sent_uid = 61da4017-2140-4577-82e4-d5108efae675
+# text = ani wetiGa ane iwaGadi eniteloco iGonagi.
+# text_orig = ani wetiGa ane iwaGadi eniteloco iGonagi
+# text_por_orig = esta pedra , que é pesada , caiu no meu pé
+# text_por = esta pedra , que é pesada , caiu no meu pé.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ani	ni	DET	D	Gender=Fem|PronType=Dem	2	det	_	TokenRange=0:3
+2	wetiGa	wetiGa	NOUN	N	Gender=Fem|Number=Sing	5	nsubj	_	TokenRange=4:10
+3	ane	ane	PRON	WPRO	PronType=Rel	4	nsubj	_	TokenRange=11:14
+4	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	2	acl:relcl	_	StandardForm=iwaaGadi|TokenRange=15:22
+5	eniteloco	ani	VERB	VBAPL	Mood=Ind|Person[erg]=1|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=23:32
+6	iGonagi	iGonagi	NOUN	N$	_	5	obj	_	SpaceAfter=No|TokenRange=33:40
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=40:41
+
+# sent_id = van-data-43
+# sent_uid = a2910ce3-a0d2-4eac-bcc3-2da15db88b90
+# text = ijo niwigo libinienigi ijowa nigetedi.
+# text_orig = ijo niwigo libinienigi ijowa nigetedi
+# text_por_orig = estes ovos da fotografia dela estão bonitos
+# text_por = estes ovos da fotografia dela estão bonitos.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	TokenRange=0:3
+2	niwigo	wigo	NOUN	N	_	3	nmod:poss	_	TokenRange=4:10
+3	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	TokenRange=11:22
+4	ijowa	ijowa	DET	D	_	5	det	_	TokenRange=23:28
+5	nigetedi	getegi	NOUN	N$	Number=Plur	0	root	_	SpaceAfter=No|TokenRange=29:37
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=37:38
+
+# sent_id = van-data-44
+# sent_uid = 075356e6-f89c-4d83-b001-435d13b319dc
+# text = ijoa nigetedi niwigo libinienigipi.
+# text_orig = ijoa nigetedi niwigo libinienigipi
+# text_por_orig = estes ovos da fotografia estão bonitos
+# text_por = estes ovos da fotografia estão bonitos.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ijoa	wa	DET	D	Gender=Masc|Number=Plur	2	det	_	TokenRange=0:4
+2	nigetedi	getegi	NOUN	N	Number=Plur	4	nsubj	_	TokenRange=5:13
+3	niwigo	wigo	NOUN	N	_	4	dep	_	TokenRange=14:20
+4	libinienigipi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=21:34
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# sent_id = van-data-48
+# sent_uid = e189be3e-9290-4d1c-b343-74d3858ce7cd
+# text = etee ina.
+# text_orig = etee ina
+# text_por_orig = eu estou aqui
+# text_por = eu estou aqui.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+2	ina	ina	DET	D	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	SpaceAfter=No|TokenRange=5:8
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=8:9
+
+# sent_id = van-data-52
+# sent_uid = c3c548d7-b154-437e-9baf-541a1bbbab6e
+# text = ee aGica inikeGegi.
+# text_orig = ee aGica inikeGegi
+# text_por_orig = eu não estou feliz
+# text_por = eu não estou feliz.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	TokenRange=0:2
+2-3	aGica	_	_	_	_	_	_	_	TokenRange=3:8
+2	aG	aG	PART	NEG	Polarity=Neg	4	advmod	_	_
+3	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
+4	inikeGegi	nike	NOUN	N$	Gender=Masc|Person[psor]=1	0	root	_	SpaceAfter=No|TokenRange=9:18
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=18:19
+
+# sent_id = van-data-53
+# sent_uid = c4d99cf1-e781-4efb-83ff-4a0ab873b7ec
+# text = ee aGidininitibeci.
+# text_orig = ee aGidininitibeci
+# text_por_orig = eu não estou feliz
+# text_por = eu não estou feliz.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
+2-3	aGidininitibeci	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=3:18
+2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
+3	dininitibeci	dininitibeci	VERB	VB	Mood=Ind|VerbForm=Fin|Voice=Inv	0	root	_	_
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
+
+# sent_id = van-data-54
+# sent_uid = 969ba2f3-88dc-417e-ad3f-16ce88b4c762
+# text = aGee eliodi niinikeGegi.
+# text_orig = aGee eliodi niinikeGegi
+# text_por_orig = eu não estou muito feliz
+# text_por = eu não estou muito feliz.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1-2	aGee	_	_	_	_	_	_	_	TokenRange=0:4
+1	aG	aG	PART	NEG	Polarity=Neg	4	advmod	_	_
+2	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	eliodi	eliodi	DET	Q	PronType=Ind	4	det	_	TokenRange=5:11
+4	niinikeGegi	nini	NOUN	N	Gender=Masc	0	root	_	SpaceAfter=No|TokenRange=12:23
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = van-data-55
+# sent_uid = 39925f76-d73f-423f-95cd-f88bd78f2a6e
+# text = ee eliodi me aGidininitibeci.
+# text_orig = ee eliodi me aGidininitibeci
+# text_por_orig = eu não estou muito feliz
+# text_por = eu não estou muito feliz.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	TokenRange=0:2
+2	eliodi	eliodi	DET	Q	PronType=Ind	5	advmod	_	TokenRange=3:9
+3	me	me	SCONJ	C	_	5	mark	_	TokenRange=10:12
+4-5	aGidininitibeci	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=13:28
+4	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
+5	dininitibeci	dininitibeci	VERB	VB	Mood=Ind|VerbForm=Fin|Voice=Inv	0	root	_	_
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=28:29
+
+# sent_id = van-data-56
+# sent_uid = d3095a7e-477d-405e-9ea2-85bfdacad7d3
+# text = aGica daGa jipegitege.
+# text_orig = aGica daGa jipegitege
+# text_por_orig = eu não estou perto dela
+# text_por = eu não estou perto dela.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1-2	aGica	_	_	_	_	_	_	_	TokenRange=0:5
+1	aG	aG	PART	NEG	Polarity=Neg	4	advmod	_	_
+2	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
+3	daGa	daga	SCONJ	C	_	4	mark	_	TokenRange=6:10
+4	jipegitege	jipegitege	VERB	VBAPL	Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=11:21
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = van-data-57
+# sent_uid = 813f2ad7-42fb-4fbd-84b4-1957c68aa4f9
+# text = aGica daGa jipegitegi.
+# text_orig = aGica daGa jipegitegi
+# text_por_orig = eu não estou perto dele
+# text_por = eu não estou perto dele.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1-2	aGica	_	_	_	_	_	_	_	TokenRange=0:5
+1	aG	aG	PART	NEG	Polarity=Neg	4	advmod	_	_
+2	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
+3	daGa	daga	SCONJ	C	_	4	mark	_	TokenRange=6:10
+4	jipegitegi	jipegitegi	VERB	VBAPL	Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=11:21
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = van-data-58
+# sent_uid = b3c03f67-7664-43b7-9de8-b5243321eeb7
+# text = ee idiwaaGadi.
+# text_orig = ee idiwaaGadi
+# text_por_orig = eu sou pesado
+# text_por = eu sou pesado.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	idiwaaGadi	waaGadi	VERB	VB	Mood=Ind|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=3:13
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
+
+# sent_id = van-data-59
+# sent_uid = 6852927c-53de-411d-9ed9-e0f9d78309cd
+# text = ee jigipegitege.
+# text_orig = ee jigipegitege
+# text_por_orig = estou perto dela
+# text_por = estou perto dela.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	jigipegitege	pegi	VERB	VB	Gender[obj]=Fem|Mood=Ind|Person[erg]=1|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=3:15
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
+
+# sent_id = van-data-60
+# sent_uid = 2b6a6bee-392e-49f9-97a9-0afbb0af2eff
+# text = ee jigipegitegi.
+# text_orig = ee jigipegitegi
+# text_por_orig = estou perto dele
+# text_por = estou perto dele.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	jigipegitegi	pegi	VERB	VB	Gender[obj]=Masc|Mood=Ind|Person[erg]=1|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=3:15
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
+
+# sent_id = van-data-61
+# sent_uid = 42df6a83-6ae1-49b2-bd99-fbed7e2a083b
+# text = aGeewi mica iniKGigi.
+# text_orig = aGeewi mica iniKGigi
+# text_por_orig = não sou muito feliz (não é verdade que eu sou feliz)
+# text_por = não sou muito feliz (não é verdade que eu sou feliz).
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1-3	aGeewi	_	_	_	_	_	_	_	TokenRange=0:6
+1	aG	aG	PART	NEG	Polarity=Neg	6	advmod	_	_
+2	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+3	ewi	ewi	ADJ	ADJ	PronType=Prs	6	dep	_	_
+4-5	mica	_	_	_	_	_	_	_	TokenRange=7:11
+4	me	me	SCONJ	C	_	6	mark	_	_
+5	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	6	det	_	_
+6	iniKGigi	gi	NOUN	N$	_	0	root	_	SpaceAfter=No|TokenRange=12:20
+7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = van-data-62
+# sent_uid = 27d94732-46ea-4286-a1d4-b2861806a579
+# text = aGeyo mica inikGigi.
+# text_orig = aGeyo mica inikGigi
+# text_por_orig = não sou muito feliz
+# text_por = não sou muito feliz.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1-2	aGeyo	_	_	_	_	_	_	_	TokenRange=0:5
+1	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
+2	eyo	eyo	PRON	PRO	Gender=Fem|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+3-4	mica	_	_	_	_	_	_	_	TokenRange=6:10
+3	me	me	SCONJ	C	_	5	mark	_	_
+4	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_
+5	inikGigi	gi	NOUN	N$	_	0	root	_	SpaceAfter=No|TokenRange=11:19
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = van-data-63
+# sent_uid = 651a68ed-90a0-45b7-9eb5-411bc2c189c7
+# text = JipecaGataGagi.
+# text_orig = JipecaGataGagi
+# text_por_orig = nós estamos perto de você
+# text_por = nós estamos perto de você.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	JipecaGataGagi	pegi	VERB	VBAPL	Mood=Ind|Number=Plur|Person[erg]=1|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:14
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = van-data-64
+# sent_uid = d3952c8a-1ac1-4255-be0b-63978fdf368b
+# text = aGidedonaGa midi Godoigi.
+# text_orig = aGidedonaGa midi Godoigi
+# text_por_orig = nós não estamos na comunidade
+# text_por = nós não estamos na comunidade.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1-2	aGidedonaGa	_	_	_	_	_	_	_	TokenRange=0:11
+1	aG	aG	PART	NEG	Polarity=Neg	2	advmod	_	_
+2	idedonaGa	idedonaGa	VERB	VB	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin|Voice=Inv	0	root	_	_
+3-4	midi	_	_	_	_	_	_	_	TokenRange=12:16
+3	me	me	SCONJ	C	_	5	mark	_	_
+4	idi	idi	DET	D	PronType=Dem	5	det	_	_
+5	Godoigi	godoigi	NOUN	N$	_	2	obj	_	SpaceAfter=No|TokenRange=17:24
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = van-data-65
+# sent_uid = e9b78452-925e-458b-848a-d52ab76f6840
+# text = jipacaGataGagitiwaji.
+# text_orig = jipacaGataGagitiwaji
+# text_por_orig = estamos perto de vocês
+# text_por = estamos perto de vocês.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	jipacaGataGagitiwaji	pegi	VERB	VBAPL	Gender=Masc|Mood=Ind|Number=Plur|Person[erg]=1|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:20
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = van-data-66
+# sent_uid = fbae0277-3aad-4812-9229-94179b5a97a0
+# text = aGidejonaGa midi Godoigi.
+# text_orig = aGidejonaGa midi Godoigi
+# text_por_orig = não estamos na comunidade
+# text_por = não estamos na comunidade.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1-2	aGidejonaGa	_	_	_	_	_	_	_	TokenRange=0:11
+1	aG	aG	PART	NEG	Polarity=Neg	2	advmod	_	_
+2	idejonaGa	idejonaGa	VERB	VB	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin|Voice=Inv	0	root	_	_
+3-4	midi	_	_	_	_	_	_	_	TokenRange=12:16
+3	me	me	SCONJ	C	_	5	mark	_	_
+4	idi	idi	DET	D	PronType=Dem	5	det	_	_
+5	Godoigi	oigi	NOUN	N$	Person[psor]=1	2	obj	_	SpaceAfter=No|TokenRange=17:24
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = van-data-68
+# sent_uid = b8878027-73d2-4b11-bc18-cbdcf5637e55
+# text = biju dapico.
+# text_orig = biju dapico
+# text_por_orig = o beiju está quente
+# text_por = o beiju está quente.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	biju	biju	NOUN	N	_	2	nsubj	_	TokenRange=0:4
+2	dapico	apico	VERB	VB	Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=5:11
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
+
+# sent_id = van-data-69
+# sent_uid = 30ef1810-38e0-4cef-8db3-4dda590faa09
+# text = libiwe niale ixagodi.
+# text_orig = libiwe niale ixagodi
+# text_por_orig = o galho da árvore é vermelho
+# text_por = o galho da árvore é vermelho.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	libiwe	ibiwe	NOUN	N$	Person[psor]=3	3	nsubj	_	TokenRange=0:6
+2	niale	niale	NOUN	N	_	1	nmod:poss	_	TokenRange=7:12
+3	ixagodi	ixagodi	VERB	VB	_	0	root	_	SpaceAfter=No|TokenRange=13:20
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = van-data-70
+# sent_uid = 444f95ae-8ed7-422e-84f1-aae6d4af2b6d
+# text = idiwa bejoli dapico.
+# text_orig = idiwa bejoli dapico
+# text_por_orig = os beijus estão quentes
+# text_por = os beijus estão quentes.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	idiwa	idi	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:5
+2	bejoli	biju	NOUN	N	Number=Plur	3	nsubj	_	TokenRange=6:12
+3	dapico	apico	VERB	VB	Voice=Inv	0	root	_	SpaceAfter=No|TokenRange=13:19
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = van-data-71
+# sent_uid = f240dcfe-ca05-42aa-8644-07b9e3464e1a
+# text = idiwa leonigipi Maria libinienigipi.
+# text_orig = idiwa leonigipi Maria libinienigipi
+# text_por_orig = os filhos da Maria são bonitos
+# text_por = os filhos da Maria são bonitos.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	idiwa	idi	DET	Q	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:5
+2	leonigipi	eoni	NOUN	N$	Number=Plur	4	nsubj	_	TokenRange=6:15
+3	Maria	maria	PROPN	NPR	_	2	nmod:poss	_	TokenRange=16:21
+4	libinienigipi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=22:35
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=35:36
+
+# sent_id = van-data-72
+# sent_uid = b97e5b2f-d0da-4238-8ee6-2c64ded91f76
+# text = ijowa leonigipi iwaalo idi metaGa.
+# text_orig = ijowa leonigipi iwaalo idi metaGa
+# text_por_orig = os filhos da mulher estão com ele
+# text_por = os filhos da mulher estão com ele.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	ijowa	ijowa	DET	D	_	2	det	_	TokenRange=0:5
+2	leonigipi	eoni	NOUN	N$	Number=Plur	4	nsubj	_	TokenRange=6:15
+3	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	2	nmod:poss	_	TokenRange=16:22
+4	idi	di	DET	D	Gender=Masc|PronType=Dem	0	root	_	TokenRange=23:26
+5	metaGa	taGa	X	CAPL	Person[obj]=3|Voice=Appl	4	mark	_	SpaceAfter=No|TokenRange=27:33
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=33:34
+
+# sent_id = van-data-75
+# sent_uid = 81048a6f-e084-4b0a-965a-f41fb5c53ff7
+# text = nigotaGa liGeladi ipegitegi weiigi.
+# text_orig = nigotaGa liGeladi ipegitegi weiigi
+# text_por_orig = a cidade da casa dela é perto do rio
+# text_por = a cidade da casa dela é perto do rio.
+# source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
+# project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
+# generation_timestamp = 2026-09-03 12:38
+# ud_review_status = TODO
+1	nigotaGa	nigotaGa	NOUN	N$	Gender=Fem|Number=Sing	3	nsubj	_	TokenRange=0:8
+2	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	1	nmod:poss	_	TokenRange=9:17
+3	ipegitegi	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=18:27
+4	weiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=28:34
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=34:35
+

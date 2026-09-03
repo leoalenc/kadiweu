@@ -1,0 +1,302 @@
+/*
+sentence = 10
+uid = 559ba85f-edfc-48dc-9bfb-0c3f8e5ad887
+status = DONE
+text = NaGajo lomigo Pedilo idei madi niwatece
+text_por = Aquele anzol do Pedro está na canoa .
+*/
+(
+  (IP-MAT
+    (NP
+      (D NaGajo)
+      (N$ lomigo)
+      (NP
+        (NPR Pedilo)
+      )
+    )
+    (VB idei)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (D @adi)
+          (N$ niwatece)
+        )
+      )
+    )
+  )
+  (ID hil-data,0.10)
+)
+
+/*
+sentence = 12
+uid = 3a7e213b-323e-4694-bad9-47091f3533f5
+status = DONE
+text = Te ee nigotaGa
+text_por = Estou na cidade .
+*/
+(
+  (IP-MAT
+    (VB Te)
+    (NP
+      (PRO ee)
+    )
+    (NP
+      (N nigotaGa)
+    )
+  )
+  (ID hil-data,0.12)
+)
+
+/*
+sentence = 17
+uid = 8f297896-5ee6-461f-86e3-0d4d4ef5a661
+status = DONE
+text = ninitibeci naGada
+text_por = Ela está feliz .
+*/
+(
+  (IP-MAT
+    (VB ninitibeci)
+    (NP
+      (D naGada)
+    )
+  )
+  (ID hil-data,0.17)
+)
+
+/*
+sentence = 18
+uid = 4855882d-49f1-4035-bd12-73abf82df995
+status = DONE
+text = Ninitibeci naGadi .
+text_por = Ela está feliz .
+*/
+(
+  (IP-MAT
+    (VB Ninitibeci)
+    (NP
+      (D naGadi)
+    )
+    (PUNC .)
+  )
+  (ID hil-data,0.18)
+)
+
+/*
+sentence = 60
+uid = 3ab5703a-eb5c-48d2-b75b-992da5e60dd6
+status = DONE
+text = niGijo nelokodi Maria idei midi akiidi
+text_por = O avô da Maria está no rio .
+*/
+(
+  (IP-MAT
+    (NP
+      (D niGijo)
+      (N$ nelokodi)
+      (NP
+        (NPR Maria)
+      )
+    )
+    (VB idei)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (D @idi)
+          (N akiidi)
+        )
+      )
+    )
+  )
+  (ID hil-data,0.60)
+)
+
+/*
+sentence = 8
+uid = 947061b4-7b73-4612-8aa8-0af0e04cbc85
+status = DONE
+text = niwatece iwaGadi noxilece lojetedi
+text_por = a pesada canoa está barata
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ niwatece)
+    )
+    (VB iwaGadi)
+    (IP-ADV
+      (VB noxilece)
+      (NP
+        (N$ lojetedi)
+      )
+    )
+  )
+  (ID van-data,0.8)
+)
+
+/*
+sentence = 12
+uid = a1e15803-1e5e-481f-8137-a84beac6cbcc
+status = DONE
+text = niGida niwenigi daGaxa me dakake loojedi
+text_por = aquela comida é muito cara
+*/
+(
+  (IP-MAT
+    (NP-1
+      (D niGida)
+      (N niwenigi)
+    )
+    (CP-me
+      (Q daGaxa)
+      (C me)
+      (IP-SUB
+        (VBU dakake)
+        (NP
+          (NP-GEN
+            (-NONE- *T*-1)
+          )
+          (N$ loojedi)
+        )
+      )
+    )
+  )
+  (ID van-data,0.12)
+)
+
+/*
+sentence = 19
+uid = e5c65dad-8b04-46da-b965-4921887cbca4
+status = DONE
+text = niGijoa lionigipi iwaalo idei minitaGa
+text_por = aqueles filhos da mulher estão com eles
+*/
+(
+  (IP-MAT
+    (NP
+      (D niGijoa)
+      (N$ lionigipi)
+      (NP
+        (N iwaalo)
+      )
+    )
+    (VB idei)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (DAPL @initaGa)
+        )
+      )
+    )
+  )
+  (ID van-data,0.19)
+)
+
+/*
+sentence = 20
+uid = 8c5dd09c-d010-4c48-9601-9d3b14c61119
+status = DONE
+text = dibixodi idei manitaGa
+text_por = as formigas estão nela
+*/
+(
+  (IP-MAT
+    (NP
+      (N dibixodi)
+    )
+    (VB idei)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (DAPL @anitaGa)
+        )
+      )
+    )
+  )
+  (ID van-data,0.20)
+)
+
+/*
+sentence = 24
+uid = 661c62a7-3c8c-4609-b989-017deaae82c6
+status = DONE
+text = ajo daGaxa ninitibeci
+text_por = ela é muito feliz
+*/
+(
+  (IP-MAT
+    (NP
+      (D ajo)
+    )
+    (ADVP
+      (ADV daGaxa)
+    )
+    (VB ninitibeci)
+  )
+  (ID van-data,0.24)
+)
+
+/*
+sentence = 49
+uid = 889846ee-66df-4c8f-88d1-e89d3619eb1e
+status = DONE
+text = eteyo ina
+text_por = eu estou aqui
+*/
+(
+  (IP-MAT
+    (VB eteyo)
+    (NP
+      (D ina)
+    )
+  )
+  (ID van-data,0.49)
+)
+
+/*
+sentence = 50
+uid = e7f4ab65-14d7-44f5-a197-c99c4ab173cd
+status = DONE
+text = etee manitaGa
+text_por = eu estou com ela
+*/
+(
+  (IP-MAT
+    (VB etee)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (DAPL @anitaGa)
+        )
+      )
+    )
+  )
+  (ID van-data,0.50)
+)
+
+/*
+sentence = 51
+uid = 7aa17dd7-2c26-4df9-8f90-65d8d58e2c59
+status = DONE
+text = etee minitaGa
+text_por = eu estou com ele
+*/
+(
+  (IP-MAT
+    (VB etee)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (DAPL @initaGa)
+        )
+      )
+    )
+  )
+  (ID van-data,0.51)
+)
