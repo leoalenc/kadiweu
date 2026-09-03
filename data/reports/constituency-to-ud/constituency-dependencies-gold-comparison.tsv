@@ -227,7 +227,7 @@ ped-gramm,0.2	4	weiigi	3	etadi	obj	clause-svo-object	ped-gramm-2	ccb5ea37-b3ba-4
 ped-gramm,0.3	1	ajo	2	niwatece	det	nominal-np-determiner	ped-gramm-3	49347527-d19d-4689-bff1-ba3e497e7b1f	1	ajo	2	niwatece	det	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.3	2	niwatece	3	etadi	nsubj	clause-svo-subject	ped-gramm-3	49347527-d19d-4689-bff1-ba3e497e7b1f	2	niwatece	3	etadi	nsubj	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.3	3	etadi	0	ROOT	root	sentence-root	ped-gramm-3	49347527-d19d-4689-bff1-ba3e497e7b1f	3	etadi	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
-ped-gramm,0.3	4	digoida	3	etadi	obj	clause-svo-object	ped-gramm-3	49347527-d19d-4689-bff1-ba3e497e7b1f	4	digoida	3	etadi	advmod	DEPREL_MISMATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.3	4	digoida	3	etadi	obj	clause-svo-object	ped-gramm-3	49347527-d19d-4689-bff1-ba3e497e7b1f	4	digoida	3	etadi	obj	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.4	1	niwatece	2	iwaGadi	nsubj	clause-single-np-subject	ped-gramm-4	69948fe6-81f6-4faa-a344-8f8c47486943	1	niwatece	2	iwaGadi	nsubj	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.4	2	iwaGadi	0	ROOT	root	sentence-root	ped-gramm-4	69948fe6-81f6-4faa-a344-8f8c47486943	2	iwaGadi	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.5	1	niwatece	2	etadi	nsubj	clause-svo-subject	ped-gramm-5	b2e3ea43-0d68-46ee-9f33-938610cc8aec	1	niwatece	2	etadi	nsubj	MATCH	FINAL_PUNCT_IGNORED
@@ -295,7 +295,7 @@ ped-gramm,0.25	4	me	5	napioi	mark	complementizer-mark	ped-gramm-25	a4d33655-fe74
 ped-gramm,0.25	5	napioi	3	naigi	acl:relcl	adnominal-relative-clause	ped-gramm-25	a4d33655-fe74-4df2-8d5e-b3c88fba5fd1	5	napioi	3	naigi	acl:relcl	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.32	1	iGeladi	2	idei	nsubj	clause-svo-subject	ped-gramm-32	a4ccc755-a644-4b04-ab1b-698e7acea4cc	1	iGeladi	2	idei	nsubj	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.32	2	idei	0	ROOT	root	sentence-root	ped-gramm-32	a4ccc755-a644-4b04-ab1b-698e7acea4cc	2	idei	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
-ped-gramm,0.32	3	digoida	2	idei	obj	clause-svo-object	ped-gramm-32	a4ccc755-a644-4b04-ab1b-698e7acea4cc	3	digoida	2	idei	advmod	DEPREL_MISMATCH	FINAL_PUNCT_IGNORED
+ped-gramm,0.32	3	digoida	2	idei	obj	clause-svo-object	ped-gramm-32	a4ccc755-a644-4b04-ab1b-698e7acea4cc	3	digoida	2	idei	obj	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.33	1	iGeladi	2	ipegitaGagi	nsubj	clause-single-np-subject	ped-gramm-33	82117289-be52-45d0-886d-a5747eb20ea2	1	iGeladi	2	ipegitaGagi	nsubj	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.33	2	ipegitaGagi	0	ROOT	root	sentence-root	ped-gramm-33	82117289-be52-45d0-886d-a5747eb20ea2	2	ipegitaGagi	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.34	1	iGeladi	2	ipegitegi	nsubj	clause-single-np-subject	ped-gramm-34	50f93fbc-14fa-48e7-b8ba-22f744109348	1	iGeladi	2	ipegitegi	nsubj	MATCH	FINAL_PUNCT_IGNORED
