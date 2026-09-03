@@ -48,7 +48,10 @@ CP -> NP CAPL promotes the NP head and attaches CAPL as mark. Coordination
 IP-MAT -> IP-MAT (CONJP CONJ IP-MAT)+ promotes the first conjunct; later
 heads attach as conj and their coordinators as cc. Only the sentence-level
 head receives HEAD=0/root. Labelled NP-SBJ, local IP negation, and immediate
-sentence punctuation are supported; bare verbal argument roles remain open.
+sentence punctuation are supported. Clause-local argument defaults use VBU,
+one-NP and NP-V-NP configurations after explicit labels and trace rules.
+NP-APL maps provisionally to obj. Coindexed possessor raising through NP-GEN
+maps to dislocated under the reference treebank's Basic UD convention.
 """
 
 from __future__ import annotations
@@ -81,6 +84,7 @@ ELLIPTICAL_NP_HEAD_TAGS = frozenset({"D", "DAPL", "PRO"})
 NOMINAL_MODIFIER_TAGS = frozenset({"D", "DAPL", "Q"})
 DET_MODIFIABLE_NOUN_TAGS = frozenset({"N", "N$"})
 VERBAL_HEAD_TAGS = frozenset({"VB", "VBU", "VBAPL"})
+APPLICATIVE_RELATION = "obj"  # Provisional project policy; retain rule provenance.
 
 
 @dataclass(frozen=True)
@@ -287,8 +291,8 @@ def coordination_parts(
 def clause_assignments(node: ConstituentNode) -> list[DependencyAssignment]:
     """Local edges only: root is assigned separately, once per sentence.
 
-    Unlabelled NPs beside verbs are deliberately not inferred as subjects.
-    The NP + verbless CAPL-CP predicate construction is an explicit exception.
+    Bare verbal arguments are handled later by argument_assignments, after
+    trace dependencies are established. This pass handles explicit structure.
     """
     result = []
     head = ud_head(node)
@@ -319,6 +323,120 @@ def clause_assignments(node: ConstituentNode) -> list[DependencyAssignment]:
             if isinstance(child, TokenNode) and not child.empty_category and child.tag == "NEG":
                 result.append(DependencyAssignment(child.position, head.position,
                                                    "advmod", "clause-negation"))
+    return result
+
+
+def possessor_raising_assignments(tree: ConstituencyTree) -> list[DependencyAssignment]:
+    """Attested Basic UD: raised NP -> predicate (dislocated).
+
+    Match a unique overt NP-i and NP-GEN/*T*-i inside an N$ projection.
+    Restrict to local VBU predication, allowing the attested intervening
+    CP-me/IP-SUB. Do not emit the trace or an additional Basic UD possessor
+    edge. Unknown, duplicate and nonlocal chains remain unresolved.
+    """
+    result = []
+    for trace in tree.tokens:
+        projection = trace.parent
+        if (not trace.empty_category or trace.form != "*T*"
+                or len(trace.coindex) != 1 or projection is None
+                or projection.label != "NP-GEN" or len(projection.children) != 1):
+            continue
+        possessum_np = projection.parent
+        if possessum_np is None or not is_np(possessum_np):
+            continue
+        possessum = lexical_head(possessum_np)
+        clause = possessum_np.parent
+        if (possessum is None or possessum.tag != "N$" or clause is None
+                or not (is_ip_mat(clause) or is_ip_sub(clause))):
+            continue
+        predicate = ud_head(clause)
+        if predicate is None or predicate.tag != "VBU":
+            continue
+        scope = clause
+        if is_ip_sub(clause):
+            cp = clause.parent
+            if cp is None or cp.label != "CP-me" or cp.parent is None or not is_ip_mat(cp.parent):
+                continue
+            scope = cp.parent
+        matching_traces = [t for t in scope.walk() if isinstance(t, TokenNode)
+                           and t.empty_category and t.coindex == trace.coindex]
+        candidates = [n for n in scope.walk() if is_np(n)
+                      and n.coindex == trace.coindex and lexical_head(n) is not None]
+        if len(matching_traces) != 1 or len(candidates) != 1:
+            continue
+        raised = candidates[0]
+        raised_head = lexical_head(raised)
+        if (raised.parent is not scope or raised is possessum_np
+                or raised_head.position >= predicate.position
+                or has_function(raised, "NP", "SBJ") or has_function(raised, "NP", "APL")):
+            continue
+        result.append(DependencyAssignment(raised_head.position, predicate.position,
+                                          "dislocated", "possessor-raising-trace"))
+    return result
+
+
+def argument_assignments(
+    node: ConstituentNode, established: dict[int, DependencyAssignment],
+) -> list[DependencyAssignment]:
+    """Clause-local defaults, subordinate to explicit labels and trace rules.
+
+    Coindexed NPs and unclassified functional NPs are not bare arguments.
+    VBU licenses a sole NP subject regardless of order, never an SVO object.
+    Other verbal predicates use one-NP and strict NP-V-NP defaults. These
+    defaults are provisional, not a general claim about Kadiwéu word order.
+    """
+    if not (is_ip_mat(node) or is_ip_sub(node)):
+        return []
+    predicate = ud_head(node)
+    # Arguments belong to this immediate predicate, not a promoted CP head
+    # or a verb found inside a different conjunct.
+    if (predicate is None or predicate.tag not in VERBAL_HEAD_TAGS
+            or predicate.parent is not node):
+        return []
+    result = []
+    apls = [n for n in node.children if has_function(n, "NP", "APL")]
+    objects = [a for a in established.values()
+               if a.head_position == predicate.position and a.deprel == APPLICATIVE_RELATION]
+    if len(apls) == 1 and not objects and predicate.tag != "VBU":
+        head = lexical_head(apls[0])
+        if head is not None and head.position not in established:
+            result.append(DependencyAssignment(head.position, predicate.position,
+                                              APPLICATIVE_RELATION, "applicative-argument"))
+            objects = result[:]
+    # Count unresolved bare NPs too: ambiguity must not turn two NPs into one.
+    bare = [n for n in node.children if is_np(n) and n.label == "NP"
+            and not n.coindex and any(isinstance(t, TokenNode) and not t.empty_category
+                                      for t in n.walk())]
+    heads = [lexical_head(n) for n in bare]
+    if any(h is None for h in heads):
+        return result
+    heads = [h for h in heads if h.position not in established]
+    subjects = [a for a in established.values()
+                if a.head_position == predicate.position and a.deprel == "nsubj"]
+    # A local subject label or movement gap blocks subject guessing even if
+    # the corresponding lexical/relative resolution failed.
+    subject_slot = bool(subjects) or any(
+        has_function(n, "NP", "SBJ") or
+        (isinstance(n, ConstituentNode) and n.label == "NP-TRACE")
+        for n in node.children)
+    if predicate.tag == "VBU":
+        if len(heads) == 1 and not subject_slot and not apls:
+            result.append(DependencyAssignment(heads[0].position, predicate.position,
+                                              "nsubj", "unaccusative-subject"))
+        return result
+    if len(heads) == 1 and not subject_slot:
+        result.append(DependencyAssignment(heads[0].position, predicate.position,
+                                          "nsubj", "clause-single-np-subject"))
+    elif (len(heads) == 2 and not subject_slot and not apls and not objects
+          and heads[0].position < predicate.position < heads[1].position):
+        result.extend([
+            DependencyAssignment(heads[0].position, predicate.position, "nsubj", "clause-svo-subject"),
+            DependencyAssignment(heads[1].position, predicate.position, "obj", "clause-svo-object"),
+        ])
+    elif (len(heads) == 1 and subjects and not apls and not objects
+          and heads[0].position > predicate.position):
+        result.append(DependencyAssignment(heads[0].position, predicate.position,
+                                          "obj", "clause-postverbal-object"))
     return result
 
 
@@ -446,7 +564,7 @@ def complementizer_assignments(
 def cp_modifier_assignments(
     node: ConstituentNode,
 ) -> list[DependencyAssignment]:
-    """Attach an immediate CP-me Q to a promoted nominal IP-SUB head."""
+    """Attach CP-me Q to a nominal head, or eliodi to a verbal head."""
 
     if node.label != "CP-me":
         return []
@@ -461,10 +579,14 @@ def cp_modifier_assignments(
     if not modifiers or len(complements) != 1:
         return []
     complement_head = ud_head(complements[0])
-    if (
-        complement_head is None
-        or complement_head.tag not in DET_MODIFIABLE_NOUN_TAGS
-    ):
+    if complement_head is None:
+        return []
+    if complement_head.tag in VERBAL_HEAD_TAGS:
+        # Only eliodi's agreed contextual mapping; do not generalize every Q.
+        return [DependencyAssignment(m.position, complement_head.position,
+                                     "advmod", "eliodi-verbal-modifier")
+                for m in modifiers if _normalized_form(m.form) == "eliodi"]
+    if complement_head.tag not in DET_MODIFIABLE_NOUN_TAGS:
         return []
     return [
         DependencyAssignment(
@@ -664,6 +786,12 @@ def infer_dependencies(tree: ConstituencyTree) -> list[DependencyAssignment]:
             _add_assignment(by_dependent, assignment)
         for assignment in relative_clause_assignments(node):
             _add_assignment(by_dependent, assignment)
+    for assignment in possessor_raising_assignments(tree):
+        _add_assignment(by_dependent, assignment)
+    for node in tree.walk():
+        if isinstance(node, ConstituentNode):
+            for assignment in argument_assignments(node, by_dependent):
+                _add_assignment(by_dependent, assignment)
     return [by_dependent[position] for position in sorted(by_dependent)]
 
 

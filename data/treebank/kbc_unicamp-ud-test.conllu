@@ -38,7 +38,7 @@
 1	ajo	ijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	3	nsubj	_	Gloss=canoe|MSeg=ni-watece|MGloss=ANT-canoe|TokenRange=4:12
 3	etadi	etidi	VERB	VB	Gender=Fem|Person=3	0	root	_	TokenRange=13:18
-4	digoida	digoida	ADV	ADV	AdvType=Loc|PronType=Dem	3	advmod	_	SpaceAfter=No|TokenRange=19:26
+4	digoida	digoida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	3	obj	_	SpaceAfter=No|TokenRange=19:26
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = ped-gramm-4
@@ -398,7 +398,7 @@
 # text_por = Minha casa está lá.
 1	iGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	TokenRange=0:7
 2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
-3	digoida	digoida	ADV	ADV	AdvType=Loc|Deixis=Remt|PronType=Dem	2	advmod	_	SpaceAfter=No|TokenRange=13:20
+3	digoida	digoida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	obj	_	SpaceAfter=No|TokenRange=13:20
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = ped-gramm-33
@@ -697,7 +697,7 @@
 # text_por_orig = A sua comida é muito bonita .
 # text_por = A sua comida é muito bonita.
 1	Gawenigi	wenigi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=2	4	nsubj	_	TokenRange=0:8
-2	eliodi	eliodi	DET	Q	_	4	det	_	TokenRange=9:15
+2	eliodi	eliodi	DET	Q	PronType=Ind	4	det	_	TokenRange=9:15
 3	me	me	SCONJ	C	_	4	mark	_	TokenRange=16:18
 4	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No|TokenRange=19:30
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
@@ -1408,7 +1408,7 @@
 # text_por_orig = eu estou aqui
 # text_por = eu estou aqui.
 1	eteyo	et	VERB	VB	Gender=Fem|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	StandardForm=eteeyo|TokenRange=0:5
-2	ina	ina	PRON	D	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	SpaceAfter=No|TokenRange=6:9
+2	ina	ina	DET	D	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	SpaceAfter=No|TokenRange=6:9
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=9:10
 
 # sent_id = van-data-50

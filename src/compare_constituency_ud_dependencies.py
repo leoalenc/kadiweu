@@ -25,9 +25,9 @@ from kadiweu_constituency_dependencies import DependencyAssignment, infer_depend
 
 
 DEFAULT_RELATIONS = frozenset(
-    {"nmod:poss", "det", "mark", "acl:relcl", "nsubj", "root", "conj", "cc", "advmod", "punct"}
+    {"nmod:poss", "det", "mark", "acl:relcl", "nsubj", "obj", "dislocated", "root", "conj", "cc", "advmod", "punct"}
 )
-RELATIVE_ARGUMENT_RELATIONS = frozenset({"obj", "obl"})
+RELATIVE_ARGUMENT_RELATIONS = frozenset({"obl"})
 
 
 @dataclass(frozen=True)
@@ -180,8 +180,8 @@ def _tree_assignment_by_gold_dependent(
 def _is_target_gold_token(token: ConlluToken, relations: Set[str]) -> bool:
     """Return whether a gold dependency belongs to the audited rule scope.
 
-    All nsubj rows are now audited, including ordinary subjects left unresolved
-    by the partial rules. Object/oblique audits retain the historical relative-
+    All nsubj and obj rows are audited, including arguments left unresolved
+    by the partial rules. Oblique audits retain the historical relative-
     pronoun restriction. GOLD_ONLY measures coverage, not necessarily error.
     """
 
@@ -422,7 +422,7 @@ def build_argument_parser() -> argparse.ArgumentParser:
         default=set(DEFAULT_RELATIONS),
         help=(
             "comma-separated relations; default: "
-            "nmod:poss,det,mark,acl:relcl,nsubj,root,conj,cc,advmod,punct"
+            "nmod:poss,det,mark,acl:relcl,nsubj,obj,dislocated,root,conj,cc,advmod,punct"
         ),
     )
     return parser

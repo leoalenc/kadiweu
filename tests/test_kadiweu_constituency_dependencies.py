@@ -268,7 +268,8 @@ class FunctionalHeadTests(unittest.TestCase):
             "(CP-me (Q eliodi) (C me@) (IP-SUB (VB @ninitibeci)))",
             "hil-data,0.25",
         )
-        self.assertEqual(actual, [(2, 3, "mark", MARK_RULE)])
+        self.assertEqual(actual, [(1, 3, "advmod", "eliodi-verbal-modifier"),
+                                  (2, 3, "mark", MARK_RULE)])
 
     def test_q_modifies_ip_sub_head_van_010(self):
         actual = assignment_tuples(
@@ -402,7 +403,7 @@ class ClauseStructureTests(unittest.TestCase):
     def test_coordination_ped_049(self):
         self.assertEqual(self.edges(PED_049, "ped-gramm,0.49"), {
             (2, 0, "root"), (3, 5, "cc"), (5, 2, "conj"),
-            (4, 5, "advmod"), (7, 2, "punct")})
+            (4, 5, "advmod"), (7, 2, "punct"), (1, 2, "nsubj"), (6, 5, "nsubj")})
 
     def test_single_nominal_matrix_hil_028_029(self):
         for number, word in [(28, "libiniena"), (29, "libinienigi")]:
@@ -423,7 +424,7 @@ class ClauseStructureTests(unittest.TestCase):
         self.assertEqual(self.edges("(IP-MAT (NP-SBJ (D naGana)) "
                                     "(CP-me (Q eliodi) (C me@) (IP-SUB (VB @ninitibeci))))",
                                     "hil-data,0.25"),
-                         {(1, 4, "nsubj"), (3, 4, "mark"), (4, 0, "root")})
+                         {(1, 4, "nsubj"), (2, 4, "advmod"), (3, 4, "mark"), (4, 0, "root")})
 
     def test_cp_d_sentence_root_van_056_057(self):
         for number, word in [(56, "jipegitege"), (57, "jipegitegi")]:
@@ -464,8 +465,9 @@ class ClauseStructureTests(unittest.TestCase):
     def test_no_capl_fallback_with_overt_verb(self):
         self.assertEqual(self.edges("(CP (NP (D first)) (CAPL marker) (VB verb))"), set())
 
-    def test_no_unlabelled_subject_guess(self):
-        self.assertEqual(self.edges("(IP-MAT (NP (N noun)) (VB verb))"), {(2, 0, "root")})
+    def test_single_np_subject_default(self):
+        self.assertEqual(self.edges("(IP-MAT (NP (N noun)) (VB verb))"),
+                         {(2, 0, "root"), (1, 2, "nsubj")})
 
     def test_nested_coordination_keeps_local_edges(self):
         text = "(IP-MAT (IP-MAT (VB first)) (CONJP (CONJ and) "
@@ -489,6 +491,87 @@ class ClauseStructureTests(unittest.TestCase):
         text += "(IP-MAT (NP-SBJ (D the) (N noun)) (NP-PRD (N predicate)))))"
         self.assertEqual(self.edges(text), {(1, 0, "root"), (2, 5, "cc"),
                                           (3, 4, "det"), (4, 5, "nsubj"), (5, 1, "conj")})
+
+
+class ArgumentAndRaisingTests(unittest.TestCase):
+    # Attested minimal complete raising example: DONE ped-gramm,0.58.
+    RAISING = "(IP-MAT (NP-1 (N etogo)) (NEG aG@) (VBU @dakake) " \
+              "(NP (NP-GEN (-NONE- *T*-1)) (N$ lojedi)))"
+
+    def assignments(self, text):
+        return infer_dependencies(parse_tree(text, "test"))
+
+    def test_raising_ped_058(self):
+        aa = self.assignments(self.RAISING)
+        self.assertEqual({(a.dependent_position, a.head_position, a.deprel) for a in aa},
+                         {(1, 3, "dislocated"), (2, 3, "advmod"), (3, 0, "root"), (5, 3, "nsubj")})
+        self.assertEqual(next(a.rule for a in aa if a.deprel == "nsubj"), "unaccusative-subject")
+
+    def test_cross_cp_raising_hil_009(self):
+        text = "(IP-MAT (NP-1 (D NiGida) (N niwenigi)) (CP-me (Q eliodi) "
+        text += "(C me) (IP-SUB (VBU dakake) (NP (NP-GEN (-NONE- *T*-1)) (N$ loojedi)))))"
+        aa = self.assignments(text)
+        self.assertIn((2, 5, "dislocated"), [(a.dependent_position,a.head_position,a.deprel) for a in aa])
+        self.assertIn((7, 5, "nsubj"), [(a.dependent_position,a.head_position,a.deprel) for a in aa])
+        self.assertEqual(sum(a.deprel == "nsubj" for a in aa), 1)
+
+    def test_relative_and_genitive_traces_hil_005(self):
+        text = "(IP-MAT (NP-1 (N Etogo) (CP-REL (WNP-2 (WPRO ane@)) "
+        text += "(IP-SUB (NP-TRACE (-NONE- *T*-2)) (VB @iwaGadi)))) "
+        text += "(NEG aG@) (VBU @dakake) (NP (NP-GEN (-NONE- *T*-1)) (N$ lojedi)))"
+        edges = {(a.dependent_position,a.head_position,a.deprel) for a in self.assignments(text)}
+        self.assertTrue({(1,6,"dislocated"),(2,4,"nsubj"),(4,1,"acl:relcl"),(8,6,"nsubj")} <= edges)
+        self.assertFalse(any(d in {3,7} or h in {3,7} for d,h,_ in edges))
+
+    def test_svo_ped_002(self):
+        aa = self.assignments("(IP-MAT (NP (D ajo) (N$ liwatece)) (VB etadi) (NP (N weiigi)))")
+        self.assertTrue({(2,3,"nsubj"),(4,3,"obj")} <=
+                        {(a.dependent_position,a.head_position,a.deprel) for a in aa})
+
+    # Explicitly artificial structural boundary tests; no claimed attestations.
+    def test_vbu_never_uses_svo_object_default(self):
+        aa = self.assignments("(IP-MAT (NP (N first)) (VBU predicate) (NP (N second)))")
+        self.assertFalse(any(a.deprel in {"obj","nsubj"} for a in aa))
+
+    def test_apl_not_promoted_to_subject(self):
+        aa = self.assignments("(IP-MAT (VBAPL predicate) (NP-APL (N argument)))")
+        self.assertEqual([(a.deprel,a.rule) for a in aa if a.dependent_position == 2],
+                         [("obj","applicative-argument")])
+
+    def test_single_subject_plus_apl(self):
+        aa = self.assignments("(IP-MAT (NP (N subject)) (VBAPL predicate) (NP-APL (N applied)))")
+        self.assertTrue({(1,2,"nsubj"),(3,2,"obj")} <=
+                        {(a.dependent_position,a.head_position,a.deprel) for a in aa})
+
+    def test_ambiguous_np_blocks_single_argument_guess(self):
+        aa = self.assignments("(IP-MAT (NP (N one) (N two)) (VB verb) (NP (N three)))")
+        self.assertFalse(any(a.deprel in {"nsubj","obj"} for a in aa))
+
+    def test_mismatched_genitive_index_abstains(self):
+        aa = self.assignments(self.RAISING.replace('*T*-1','*T*-2'))
+        self.assertFalse(any(a.deprel == "dislocated" for a in aa))
+        self.assertFalse(any(a.dependent_position == 1 for a in aa))
+
+    def test_duplicate_antecedents_abstain(self):
+        aa = self.assignments(self.RAISING.replace('(NEG aG@)', '(NP-1 (N duplicate)) (NEG aG@)'))
+        self.assertFalse(any(a.deprel == "dislocated" for a in aa))
+
+    def test_duplicate_traces_abstain(self):
+        aa = self.assignments(self.RAISING.replace('(N$ lojedi)', '(NP-GEN (-NONE- *T*-1)) (N$ lojedi)'))
+        self.assertFalse(any(a.deprel == "dislocated" for a in aa))
+
+    def test_nonpossessive_head_abstains(self):
+        aa = self.assignments(self.RAISING.replace('(N$ lojedi)', '(N placeholder)'))
+        self.assertFalse(any(a.deprel == "dislocated" for a in aa))
+
+    def test_unrelated_clause_index_not_reused(self):
+        text = "(IP-MAT (IP-MAT (NP-1 (N first)) (VB predicate)) "
+        text += "(CONJP (CONJ and) (IP-MAT (VBU other) (NP (NP-GEN (-NONE- *T*-1)) (N$ possessed)))))"
+        self.assertFalse(any(a.deprel == "dislocated" for a in self.assignments(text)))
+
+    def test_unknown_q_not_generalized(self):
+        aa = self.assignments("(CP-me (Q unknown) (C marker) (IP-SUB (VB verb)))")
+        self.assertFalse(any(a.deprel == "advmod" for a in aa))
 
 
 if __name__ == "__main__":
