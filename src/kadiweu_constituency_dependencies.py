@@ -205,7 +205,7 @@ def ud_head(node: TreeNode) -> TokenNode | None:
             return ud_head(cps[0]) if len(cps) == 1 else None
         children = overt_children(node)
         return ud_head(children[0]) if len(children) == 1 else None
-    if not is_ip_sub(node):
+    if not (is_ip_sub(node) or has_function(node, "IP", "ADV")):
         return None
 
     verbal_heads = [
@@ -307,7 +307,7 @@ def clause_assignments(node: ConstituentNode) -> list[DependencyAssignment]:
                     DependencyAssignment(other.position, head.position, "conj", "clause-coordination"),
                     DependencyAssignment(marker.position, other.position, "cc", "clause-coordinator"),
                 ])
-    if is_ip_mat(node) or is_ip_sub(node):
+    if is_ip_mat(node) or is_ip_sub(node) or has_function(node, "IP", "ADV"):
         subjects = [c for c in node.children if has_function(c, "NP", "SBJ")]
         # van-data,0.72: require exactly NP + the attested verbless CP.
         children = overt_children(node)
@@ -323,6 +323,53 @@ def clause_assignments(node: ConstituentNode) -> list[DependencyAssignment]:
             if isinstance(child, TokenNode) and not child.empty_category and child.tag == "NEG":
                 result.append(DependencyAssignment(child.position, head.position,
                                                    "advmod", "clause-negation"))
+    return result
+
+
+def complement_and_adjunct_assignments(node: ConstituentNode) -> list[DependencyAssignment]:
+    """Project conventions for local nominal CP complements and juxtaposition.
+
+    No overt copula or applicative morpheme is inserted as a UD token.
+    IP-ADV is paratactic only in the agreed unmarked juxtaposition with
+    IP-MAT; this is not a claim that all clauses without markers are paratactic.
+    """
+    if not (is_ip_mat(node) or is_ip_sub(node) or has_function(node, "IP", "ADV")):
+        return []
+    head = ud_head(node)
+    if head is None or head.parent is not node or head.tag not in VERBAL_HEAD_TAGS:
+        return []
+    result = []
+    cps = [c for c in node.children if isinstance(c, ConstituentNode) and c.label == "CP-me"]
+    # The six attested complements have a single NP as the overt IP-SUB.
+    # A verbal CP, an adnominal relative, or a CP predicate is not an obj here.
+    if len(cps) == 1 and head.tag != "VBU":
+        clause = cp_complement(cps[0])
+        parts = overt_children(clause) if clause is not None else []
+        markers = [c for c in cps[0].children if isinstance(c, TokenNode) and c.tag == "C"]
+        if len(parts) == 1 and is_np(parts[0]) and len(markers) == 1:
+            nominal = ud_head(parts[0])
+            if nominal is not None:
+                result.append(DependencyAssignment(nominal.position, head.position,
+                                                   "obj", "nominal-cp-complement"))
+    if is_ip_mat(node):
+        for clause in node.children:
+            if not has_function(clause, "IP", "ADV"):
+                continue
+            if any(isinstance(c, TokenNode) and c.tag in {"C", "CAPL", "CONJ"}
+                   for c in list(node.children) + list(clause.children)):
+                continue
+            other = ud_head(clause)
+            if other is not None:
+                result.append(DependencyAssignment(other.position, head.position,
+                                                   "parataxis", "juxtaposed-ip-adv"))
+    for phrase in node.children:
+        if not isinstance(phrase, ConstituentNode) or phrase.label != "ADVP":
+            continue
+        parts = overt_children(phrase)
+        if (len(parts) == 1 and isinstance(parts[0], TokenNode)
+                and parts[0].tag == "ADV" and _normalized_form(parts[0].form) == "dagaxa"):
+            result.append(DependencyAssignment(parts[0].position, head.position,
+                                               "advmod", "dagaxa-adverbial-phrase"))
     return result
 
 
@@ -385,7 +432,7 @@ def argument_assignments(
     Other verbal predicates use one-NP and strict NP-V-NP defaults. These
     defaults are provisional, not a general claim about Kadiwéu word order.
     """
-    if not (is_ip_mat(node) or is_ip_sub(node)):
+    if not (is_ip_mat(node) or is_ip_sub(node) or has_function(node, "IP", "ADV")):
         return []
     predicate = ud_head(node)
     # Arguments belong to this immediate predicate, not a promoted CP head
@@ -424,6 +471,30 @@ def argument_assignments(
             result.append(DependencyAssignment(heads[0].position, predicate.position,
                                               "nsubj", "unaccusative-subject"))
         return result
+    # Attested V-PRO-NP order (hil-data,0.12). Only the known pronoun ee
+    # licenses this fallback; do not identify arbitrary postverbal NPs as S.
+    if (len(heads) == 2 and not subject_slot and not apls and not objects
+            and predicate.position < heads[0].position < heads[1].position
+            and heads[0].tag == "PRO" and _normalized_form(heads[0].form) == "ee"
+            and heads[1].tag in {"N", "N$", "NPR"}):
+        return result + [
+            DependencyAssignment(heads[0].position, predicate.position, "nsubj", "ee-postverbal-subject"),
+            DependencyAssignment(heads[1].position, predicate.position, "obj", "ee-following-object"),
+        ]
+    if (len(heads) == 1 and len(bare) == 1 and not subject_slot and not apls
+            and predicate.tag == "VB" and heads[0].position > predicate.position):
+        parts = overt_children(bare[0])
+        determiner_only = len(parts) == 1 and isinstance(parts[0], TokenNode) and parts[0].tag == "D"
+        if determiner_only or (has_function(node, "IP", "ADV") and heads[0].tag in {"N", "N$", "NPR"}):
+            # Heuristic: a postverbal determiner-only NP denotes a third-person
+            # argument and is treated as an object of VB in this configuration.
+            # A subject may be unexpressed. Explicit labels and trace-based
+            # assignments take precedence. This does not apply to VBU/VBAPL.
+            # The full-noun extension is restricted to the agreed IP-ADV case.
+            if not objects:
+                rule = "vb-postverbal-determiner-object" if determiner_only else "ip-adv-postverbal-object"
+                result.append(DependencyAssignment(heads[0].position, predicate.position, "obj", rule))
+            return result
     if len(heads) == 1 and not subject_slot:
         result.append(DependencyAssignment(heads[0].position, predicate.position,
                                           "nsubj", "clause-single-np-subject"))
@@ -564,7 +635,7 @@ def complementizer_assignments(
 def cp_modifier_assignments(
     node: ConstituentNode,
 ) -> list[DependencyAssignment]:
-    """Attach CP-me Q to a nominal head, or eliodi to a verbal head."""
+    """Attach CP-me Q to a nominal head, or attested degree Q to a verb."""
 
     if node.label != "CP-me":
         return []
@@ -582,10 +653,10 @@ def cp_modifier_assignments(
     if complement_head is None:
         return []
     if complement_head.tag in VERBAL_HEAD_TAGS:
-        # Only eliodi's agreed contextual mapping; do not generalize every Q.
+        # Lexically bounded contextual mapping; not every Q is an adverb.
         return [DependencyAssignment(m.position, complement_head.position,
-                                     "advmod", "eliodi-verbal-modifier")
-                for m in modifiers if _normalized_form(m.form) == "eliodi"]
+                                     "advmod", _normalized_form(m.form) + "-verbal-modifier")
+                for m in modifiers if _normalized_form(m.form) in {"eliodi", "dagaxa"}]
     if complement_head.tag not in DET_MODIFIABLE_NOUN_TAGS:
         return []
     return [
@@ -757,7 +828,7 @@ def _add_assignment(
 
 
 def infer_dependencies(tree: ConstituencyTree) -> list[DependencyAssignment]:
-    """Return all certain assignments currently licensed for *tree*."""
+    """Return structural predictions and explicitly named heuristic assignments."""
 
     by_dependent: dict[int, DependencyAssignment] = {}
     if len(tree.roots) == 1:
@@ -775,6 +846,8 @@ def infer_dependencies(tree: ConstituencyTree) -> list[DependencyAssignment]:
         if not isinstance(node, ConstituentNode):
             continue
         for assignment in clause_assignments(node):
+            _add_assignment(by_dependent, assignment)
+        for assignment in complement_and_adjunct_assignments(node):
             _add_assignment(by_dependent, assignment)
         for assignment in nominal_determiner_assignments(node):
             _add_assignment(by_dependent, assignment)

@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import unittest
+from pathlib import Path
+from kadiweu_constituency import iter_psd_records
 
 from kadiweu_constituency import tree_from_psd_record
 from kadiweu_constituency_dependencies import (
@@ -32,6 +34,90 @@ def assignment_tuples(tree_text: str, sent_id: str):
         for a in infer_dependencies(parse_tree(tree_text, sent_id))
         if a.deprel != "root"
     ]
+
+
+class ComplementRuleTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.records = {r.corpussearch_id: r for r in iter_psd_records(
+            Path(__file__).parent / "fixtures" / "complement_rules.psd")}
+
+    def edges(self, sent_id):
+        tree = self.records[sent_id].tree
+        forms = {t.position: t.form.replace("@", "") for t in tree.tokens}
+        return {(forms[a.dependent_position], forms.get(a.head_position, "ROOT"), a.deprel)
+                for a in infer_dependencies(tree)}
+
+    def test_six_attested_nominal_cp_objects(self):
+        for sid, dep, head in [("hil-data,0.10", "niwatece", "idei"),
+                               ("hil-data,0.60", "akiidi", "idei"),
+                               ("van-data,0.19", "initaGa", "idei"),
+                               ("van-data,0.20", "anitaGa", "idei"),
+                               ("van-data,0.50", "anitaGa", "etee"),
+                               ("van-data,0.51", "initaGa", "etee")]:
+            with self.subTest(sentence=sid):
+                self.assertIn((dep, head, "obj"), self.edges(sid))
+                self.assertIn(("me", dep, "mark"), self.edges(sid))
+
+    def test_attested_ee_subject_and_object(self):
+        edges = self.edges("hil-data,0.12")
+        self.assertIn(("ee", "Te", "nsubj"), edges)
+        self.assertIn(("nigotaGa", "Te", "obj"), edges)
+
+    def test_attested_parataxis_and_local_arguments(self):
+        edges = self.edges("van-data,0.8")
+        self.assertIn(("noxilece", "iwaGadi", "parataxis"), edges)
+        self.assertIn(("lojetedi", "noxilece", "obj"), edges)
+        self.assertIn(("niwatece", "iwaGadi", "nsubj"), edges)
+        self.assertEqual([e for e in edges if e[2] == "root"], [("iwaGadi", "ROOT", "root")])
+
+    def test_attested_dagaxa_contexts(self):
+        self.assertIn(("daGaxa", "dakake", "advmod"), self.edges("van-data,0.12"))
+        self.assertIn(("daGaxa", "ninitibeci", "advmod"), self.edges("van-data,0.24"))
+
+    def test_attested_ina_heuristic(self):
+        self.assertIn(("ina", "eteyo", "obj"), self.edges("van-data,0.49"))
+
+    def test_determiner_heuristic_known_reference_disagreements(self):
+        # Regression evidence, NOT an assertion that the gold nsubj is wrong.
+        for sid in ("hil-data,0.17", "hil-data,0.18"):
+            with self.subTest(sentence=sid):
+                self.assertTrue(any(e[2] == "obj" for e in self.edges(sid)))
+
+    def test_synthetic_guards(self):
+        # Explicit English placeholders: these are structural negative tests,
+        # not purported Kadiweu examples or additional DONE attestations.
+        cases = [
+            ("(IP-MAT (VBU verb) (NP (D determiner)))", "obj"),
+            ("(IP-MAT (VBAPL verb) (NP (D determiner)))", "obj"),
+            ("(IP-MAT (VB verb) (NP-SBJ (D determiner)))", "obj"),
+            ("(IP-MAT (VB verb) (NP (PRO unknown)) (NP (N noun)))", "nsubj"),
+            ("(IP-MAT (VB verb) (CP-me (C marker) (IP-SUB (VB embedded))))", "obj"),
+            ("(IP-MAT (CP-me (C marker) (IP-SUB (NP (N noun)))))", "obj"),
+            ("(IP-MAT (VB verb) (NP (N noun) (CP-me (C marker) (IP-SUB (NP (N other))))))", "obj"),
+            ("(IP-MAT (VB verb) (IP-ADV (C marker) (VB other)))", "parataxis"),
+            ("(IP-MAT (VB verb) (CONJ coordinator) (IP-ADV (VB other)))", "parataxis"),
+            ("(IP-MAT (VB verb) (ADVP (ADV unknown)))", "advmod"),
+            ("(IP-MAT (VB verb) (NP-TRACE (-NONE- *T*-1)) (NP (D determiner)))", "obj"),
+            ("(IP-MAT (VB verb) (CP-me (C marker) (IP-SUB (NP (N first)) (NP (N second)))))", "obj"),
+            ("(IP-MAT (VB verb) (CP-me (C marker) (IP-SUB (NP (N first)))) (CP-me (C marker) (IP-SUB (NP (N second)))))", "obj"),
+        ]
+        for source, forbidden in cases:
+            with self.subTest(source=source):
+                self.assertFalse(any(a.deprel == forbidden for a in infer_dependencies(parse_tree(source, "synthetic"))))
+
+    def test_no_second_object_from_determiner_heuristic(self):
+        tree = parse_tree("(IP-MAT (VB verb) (NP (D determiner)) (CP-me (C marker) (IP-SUB (NP (N noun)))))", "synthetic")
+        assignments = infer_dependencies(tree)
+        self.assertEqual(sum(a.deprel == "obj" for a in assignments), 1)
+        self.assertFalse(any(a.dependent_position == 2 for a in assignments))
+
+    def test_vbu_inside_ip_adv_retains_subject_rule(self):
+        # Structural contrast to the attested VB case; English placeholders.
+        tree = parse_tree("(IP-MAT (VB outer) (IP-ADV (VBU inner) (NP (N nominal))))", "synthetic")
+        edges = {(a.dependent_position, a.head_position, a.deprel) for a in infer_dependencies(tree)}
+        self.assertIn((3, 2, "nsubj"), edges)
+        self.assertNotIn((3, 2, "obj"), edges)
 
 
 class LexicalHeadTests(unittest.TestCase):

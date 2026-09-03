@@ -40,7 +40,7 @@ hil-data,0.10	3	Pedilo	2	lomigo	nmod:poss	possessive-np-possessor	hil-data-10	55
 hil-data,0.10	4	idei	0	ROOT	root	sentence-root	hil-data-10	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887	4	idei	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.10	5	me@	7	niwatece	mark	complementizer-mark	hil-data-10	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887	5	me	7	niwatece	mark	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.10	6	@adi	7	niwatece	det	nominal-np-determiner	hil-data-10	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887	6	adi	7	niwatece	det	MATCH	FINAL_PUNCT_IGNORED
-hil-data,0.10							hil-data-10	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887	7	niwatece	4	idei	obj	GOLD_ONLY	FINAL_PUNCT_IGNORED
+hil-data,0.10	7	niwatece	4	idei	obj	nominal-cp-complement	hil-data-10	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887	7	niwatece	4	idei	obj	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.11	1	NaGajo	2	lomigo	det	nominal-np-determiner	hil-data-11	92838eda-ef9b-4f05-a5eb-38a4709c0337	1	NaGajo	2	lomigo	det	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.11	2	lomigo	6	niwatece	nsubj	clause-subject	hil-data-11	92838eda-ef9b-4f05-a5eb-38a4709c0337	2	lomigo	6	niwatece	nsubj	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.11	3	niganigawanigi	2	lomigo	nmod:poss	possessive-np-possessor	hil-data-11	92838eda-ef9b-4f05-a5eb-38a4709c0337	3	niganigawanigi	2	lomigo	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
@@ -48,25 +48,27 @@ hil-data,0.11	4	me@	6	niwatece	mark	complementizer-mark	hil-data-11	92838eda-ef9
 hil-data,0.11	5	@adi	6	niwatece	det	nominal-np-determiner	hil-data-11	92838eda-ef9b-4f05-a5eb-38a4709c0337	5	adi	6	niwatece	det	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.11	6	niwatece	0	ROOT	root	sentence-root	hil-data-11	92838eda-ef9b-4f05-a5eb-38a4709c0337	6	niwatece	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.12	1	Te	0	ROOT	root	sentence-root	hil-data-12	3a7e213b-323e-4694-bad9-47091f3533f5	1	Te	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
-hil-data,0.12							hil-data-12	3a7e213b-323e-4694-bad9-47091f3533f5	2	ee	1	Te	nsubj	GOLD_ONLY	FINAL_PUNCT_IGNORED
-hil-data,0.12							hil-data-12	3a7e213b-323e-4694-bad9-47091f3533f5	3	nigotaGa	1	Te	obj	GOLD_ONLY	FINAL_PUNCT_IGNORED
+hil-data,0.12	2	ee	1	Te	nsubj	ee-postverbal-subject	hil-data-12	3a7e213b-323e-4694-bad9-47091f3533f5	2	ee	1	Te	nsubj	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.12	3	nigotaGa	1	Te	obj	ee-following-object	hil-data-12	3a7e213b-323e-4694-bad9-47091f3533f5	3	nigotaGa	1	Te	obj	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.13	1	niGijoa	2	lionaGa	det	nominal-np-determiner		0de3d311-348a-4107-a191-9fc3f960c249						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.13	2	lionaGa	4	idei	nsubj	clause-single-np-subject		0de3d311-348a-4107-a191-9fc3f960c249						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.13	3	iwaalo	2	lionaGa	nmod:poss	possessive-np-possessor		0de3d311-348a-4107-a191-9fc3f960c249						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.13	4	idei	0	ROOT	root	sentence-root		0de3d311-348a-4107-a191-9fc3f960c249						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.13	5	me@	6	@ijotaGa	mark	complementizer-mark		0de3d311-348a-4107-a191-9fc3f960c249						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.13	6	@ijotaGa	4	idei	obj	nominal-cp-complement		0de3d311-348a-4107-a191-9fc3f960c249						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.14	1	dibixodi	2	ideiticoaci	nsubj	clause-single-np-subject		4e9130da-80fd-4ac2-8665-956c95b299e2						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.14	2	ideiticoaci	0	ROOT	root	sentence-root		4e9130da-80fd-4ac2-8665-956c95b299e2						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.14	3	me@	4	@aditaGa	mark	complementizer-mark		4e9130da-80fd-4ac2-8665-956c95b299e2						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.14	4	@aditaGa	2	ideiticoaci	obj	nominal-cp-complement		4e9130da-80fd-4ac2-8665-956c95b299e2						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.15	1	Iwaalepodi	2	libinienigipi	nsubj	clause-subject	hil-data-15	baccc279-f303-4b4f-a6d7-4404de699f4a	1	Iwaalepodi	2	libinienigipi	nsubj	MATCH	OK
 hil-data,0.15	2	libinienigipi	0	ROOT	root	sentence-root	hil-data-15	baccc279-f303-4b4f-a6d7-4404de699f4a	2	libinienigipi	0	ROOT	root	MATCH	OK
 hil-data,0.15	3	.	2	libinienigipi	punct	sentence-punctuation	hil-data-15	baccc279-f303-4b4f-a6d7-4404de699f4a	3	.	2	libinienigipi	punct	MATCH	OK
 hil-data,0.16	1	Ninitibeci	0	ROOT	root	sentence-root	hil-data-16	af474637-80f3-4001-884c-4d5f452fb573	1	Ninitibeci	0	ROOT	root	MATCH	OK
 hil-data,0.16	2	.	1	Ninitibeci	punct	sentence-punctuation	hil-data-16	af474637-80f3-4001-884c-4d5f452fb573	2	.	1	Ninitibeci	punct	MATCH	OK
 hil-data,0.17	1	ninitibeci	0	ROOT	root	sentence-root	hil-data-17	8f297896-5ee6-461f-86e3-0d4d4ef5a661	1	Ninitibeci	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
-hil-data,0.17	2	naGada	1	ninitibeci	nsubj	clause-single-np-subject	hil-data-17	8f297896-5ee6-461f-86e3-0d4d4ef5a661	2	naGada	1	Ninitibeci	nsubj	MATCH	FINAL_PUNCT_IGNORED
+hil-data,0.17	2	naGada	1	ninitibeci	obj	vb-postverbal-determiner-object	hil-data-17	8f297896-5ee6-461f-86e3-0d4d4ef5a661	2	naGada	1	Ninitibeci	nsubj	DEPREL_MISMATCH	FINAL_PUNCT_IGNORED
 hil-data,0.18	1	Ninitibeci	0	ROOT	root	sentence-root	hil-data-18	4855882d-49f1-4035-bd12-73abf82df995	1	Ninitibeci	0	ROOT	root	MATCH	OK
-hil-data,0.18	2	naGadi	1	Ninitibeci	nsubj	clause-single-np-subject	hil-data-18	4855882d-49f1-4035-bd12-73abf82df995	2	naGadi	1	Ninitibeci	nsubj	MATCH	OK
+hil-data,0.18	2	naGadi	1	Ninitibeci	obj	vb-postverbal-determiner-object	hil-data-18	4855882d-49f1-4035-bd12-73abf82df995	2	naGadi	1	Ninitibeci	nsubj	DEPREL_MISMATCH	OK
 hil-data,0.18	3	.	1	Ninitibeci	punct	sentence-punctuation	hil-data-18	4855882d-49f1-4035-bd12-73abf82df995	3	.	1	Ninitibeci	punct	MATCH	OK
 hil-data,0.19	1	naGada	2	iwaGadi	nsubj	clause-single-np-subject	hil-data-19	d489d970-e6b1-42e3-add2-2221f2fb1fad	1	naGada	2	iwaGadi	nsubj	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.19	2	iwaGadi	0	ROOT	root	sentence-root	hil-data-19	d489d970-e6b1-42e3-add2-2221f2fb1fad	2	iwaGadi	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
@@ -164,19 +166,21 @@ hil-data,0.57	2	aG@	3	@idejonaGa	advmod	clause-negation		341bf09a-2ef8-455a-8b6b
 hil-data,0.57	3	@idejonaGa	0	ROOT	root	sentence-root		341bf09a-2ef8-455a-8b6b-88373c617dae						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.57	4	me@	6	Godoigi	mark	complementizer-mark		341bf09a-2ef8-455a-8b6b-88373c617dae						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.57	5	@idi	6	Godoigi	det	nominal-np-determiner		341bf09a-2ef8-455a-8b6b-88373c617dae						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.57	6	Godoigi	3	@idejonaGa	obj	nominal-cp-complement		341bf09a-2ef8-455a-8b6b-88373c617dae						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.58	1	jipecaGataGagitiwaji	0	ROOT	root	sentence-root		9a136412-a636-4e5e-aa54-ac684ae7bed3						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.58	2	.	1	jipecaGataGagitiwaji	punct	sentence-punctuation		9a136412-a636-4e5e-aa54-ac684ae7bed3						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.59	1	aG@	2	@idejonaGa	advmod	clause-negation		dff00f05-7be1-4d62-b3ed-b8a8870851e9						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.59	2	@idejonaGa	0	ROOT	root	sentence-root		dff00f05-7be1-4d62-b3ed-b8a8870851e9						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.59	3	me@	5	Godoigi	mark	complementizer-mark		dff00f05-7be1-4d62-b3ed-b8a8870851e9						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.59	4	@idi	5	Godoigi	det	nominal-np-determiner		dff00f05-7be1-4d62-b3ed-b8a8870851e9						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.59	5	Godoigi	2	@idejonaGa	obj	nominal-cp-complement		dff00f05-7be1-4d62-b3ed-b8a8870851e9						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.60	1	niGijo	2	nelokodi	det	nominal-np-determiner	hil-data-60	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	1	niGijo	2	nelokodi	det	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.60	2	nelokodi	4	idei	nsubj	clause-single-np-subject	hil-data-60	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	2	nelokodi	4	idei	nsubj	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.60	3	Maria	2	nelokodi	nmod:poss	possessive-np-possessor	hil-data-60	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	3	Maria	2	nelokodi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.60	4	idei	0	ROOT	root	sentence-root	hil-data-60	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	4	idei	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.60	5	me@	7	akiidi	mark	complementizer-mark	hil-data-60	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	5	me	7	akiidi	mark	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.60	6	@idi	7	akiidi	det	nominal-np-determiner	hil-data-60	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	6	idi	7	akiidi	det	MATCH	FINAL_PUNCT_IGNORED
-hil-data,0.60							hil-data-60	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	7	akiidi	4	idei	obj	GOLD_ONLY	FINAL_PUNCT_IGNORED
+hil-data,0.60	7	akiidi	4	idei	obj	nominal-cp-complement	hil-data-60	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	7	akiidi	4	idei	obj	MATCH	FINAL_PUNCT_IGNORED
 hil-data,0.61	1	NiGijo	2	bijo	det	nominal-np-determiner		f0c7c722-031a-4c6e-ad7e-739402475c99						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.61	2	bijo	3	dapicoGo	nsubj	clause-single-np-subject		f0c7c722-031a-4c6e-ad7e-739402475c99						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.61	3	dapicoGo	0	ROOT	root	sentence-root		f0c7c722-031a-4c6e-ad7e-739402475c99						NO_GOLD_SENTENCE	NOT_ALIGNED
@@ -196,6 +200,7 @@ hil-data,0.65	2	lionaGa	4	etidi	nsubj	clause-single-np-subject		13f012b0-ef62-44
 hil-data,0.65	3	iwaalo	2	lionaGa	nmod:poss	possessive-np-possessor		13f012b0-ef62-4477-b4bd-00e000484874						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.65	4	etidi	0	ROOT	root	sentence-root		13f012b0-ef62-4477-b4bd-00e000484874						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.65	5	me@	6	@eetaGa	mark	complementizer-mark		13f012b0-ef62-4477-b4bd-00e000484874						NO_GOLD_SENTENCE	NOT_ALIGNED
+hil-data,0.65	6	@eetaGa	4	etidi	obj	nominal-cp-complement		13f012b0-ef62-4477-b4bd-00e000484874						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.66	1	liGeladi	2	ipegitege	nsubj	clause-single-np-subject		55fe3cf7-0293-48e6-aa78-44822f50347e						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.66	2	ipegitege	0	ROOT	root	sentence-root		55fe3cf7-0293-48e6-aa78-44822f50347e						NO_GOLD_SENTENCE	NOT_ALIGNED
 hil-data,0.66	3	nakidi	2	ipegitege	obj	applicative-argument		55fe3cf7-0293-48e6-aa78-44822f50347e						NO_GOLD_SENTENCE	NOT_ALIGNED
@@ -320,7 +325,7 @@ ped-gramm,0.38	2	Gatodi	3	etijo	nsubj	clause-svo-subject	ped-gramm-38	46bbf9a8-c
 ped-gramm,0.38	3	etijo	0	ROOT	root	sentence-root	ped-gramm-38	46bbf9a8-c650-4e4b-a44f-78bfe6c5d979	3	etijo	0	ROOT	root	MATCH	OK
 ped-gramm,0.38	4	ida	3	etijo	obj	clause-svo-object	ped-gramm-38	46bbf9a8-c650-4e4b-a44f-78bfe6c5d979	4	ida	3	etijo	obj	MATCH	OK
 ped-gramm,0.38	5	.	3	etijo	punct	sentence-punctuation	ped-gramm-38	46bbf9a8-c650-4e4b-a44f-78bfe6c5d979	5	.	3	etijo	punct	MATCH	OK
-ped-gramm,0.39	1	ijotawece	2	etidi	nsubj	clause-svo-subject	ped-gramm-39	4ffc2f68-0474-488f-a94e-4065f952482a	1	ijotawece	3	akiidi	nsubj	HEAD_MISMATCH	OK
+ped-gramm,0.39	1	ijotawece	2	etidi	nsubj	clause-svo-subject	ped-gramm-39	4ffc2f68-0474-488f-a94e-4065f952482a	1	ijotawece	2	etidi	nsubj	MATCH	OK
 ped-gramm,0.39	2	etidi	0	ROOT	root	sentence-root	ped-gramm-39	4ffc2f68-0474-488f-a94e-4065f952482a	2	etidi	0	ROOT	root	MATCH	OK
 ped-gramm,0.39	3	akiidi	2	etidi	obj	clause-svo-object	ped-gramm-39	4ffc2f68-0474-488f-a94e-4065f952482a	3	akiidi	2	etidi	obj	MATCH	OK
 ped-gramm,0.39	4	.	2	etidi	punct	sentence-punctuation	ped-gramm-39	4ffc2f68-0474-488f-a94e-4065f952482a	4	.	2	etidi	punct	MATCH	OK
@@ -359,6 +364,7 @@ ped-gramm,0.49	6	loojedi	5	@dakake	nsubj	unaccusative-subject	ped-gramm-49	eeb42
 ped-gramm,0.49	7	.	2	iwaGadi	punct	sentence-punctuation	ped-gramm-49	eeb42af3-fe5a-4b7d-97ea-b381ab589860	7	.	2	iwaGadi	punct	MATCH	OK
 ped-gramm,0.50	1	etee	0	ROOT	root	sentence-root		156fa9a4-4323-44f1-9cdc-ef5dc052b428						NO_GOLD_SENTENCE	NOT_ALIGNED
 ped-gramm,0.50	2	me@	3	@initaGa	mark	complementizer-mark		156fa9a4-4323-44f1-9cdc-ef5dc052b428						NO_GOLD_SENTENCE	NOT_ALIGNED
+ped-gramm,0.50	3	@initaGa	1	etee	obj	nominal-cp-complement		156fa9a4-4323-44f1-9cdc-ef5dc052b428						NO_GOLD_SENTENCE	NOT_ALIGNED
 ped-gramm,0.51	1	ee	3	@idininitebeci	nsubj	clause-single-np-subject	ped-gramm-51	3b45c470-6164-4fcf-a4d5-90be0f27eb1d	1	ee	3	idininitebeci	nsubj	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.51	2	aG@	3	@idininitebeci	advmod	clause-negation	ped-gramm-51	3b45c470-6164-4fcf-a4d5-90be0f27eb1d	2	aG	3	idininitebeci	advmod	MATCH	FINAL_PUNCT_IGNORED
 ped-gramm,0.51	3	@idininitebeci	0	ROOT	root	sentence-root	ped-gramm-51	3b45c470-6164-4fcf-a4d5-90be0f27eb1d	3	idininitebeci	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
@@ -395,6 +401,9 @@ ped-gramm,0.60	2	dakake	0	ROOT	root	sentence-root		bbd6b80b-3236-4172-8bd5-ba3fb
 ped-gramm,0.60	4	loojedi	2	dakake	nsubj	unaccusative-subject		bbd6b80b-3236-4172-8bd5-ba3fb404049e						NO_GOLD_SENTENCE	NOT_ALIGNED
 ped-gramm,0.61	1	Etogoli	2	iwaGadi	nsubj	clause-single-np-subject		1ab7fa26-ed92-4d55-98d0-0d76396373f0						NO_GOLD_SENTENCE	NOT_ALIGNED
 ped-gramm,0.61	2	iwaGadi	0	ROOT	root	sentence-root		1ab7fa26-ed92-4d55-98d0-0d76396373f0						NO_GOLD_SENTENCE	NOT_ALIGNED
+ped-gramm,0.61	3	aG@	4	@dakake	advmod	clause-negation		1ab7fa26-ed92-4d55-98d0-0d76396373f0						NO_GOLD_SENTENCE	NOT_ALIGNED
+ped-gramm,0.61	4	@dakake	2	iwaGadi	parataxis	juxtaposed-ip-adv		1ab7fa26-ed92-4d55-98d0-0d76396373f0						NO_GOLD_SENTENCE	NOT_ALIGNED
+ped-gramm,0.61	5	lojetedi	4	@dakake	nsubj	unaccusative-subject		1ab7fa26-ed92-4d55-98d0-0d76396373f0						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.1	1	iGeladi	3	weiigi	nsubj	clause-subject	van-data-1	a7e338a1-5403-40d4-b169-c840cf193aae	1	iGeladi	3	weiigi	nsubj	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.1	2	digoida	3	weiigi	det	nominal-np-determiner	van-data-1	a7e338a1-5403-40d4-b169-c840cf193aae	2	digoida	3	weiigi	det	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.1	3	weiigi	0	ROOT	root	sentence-root	van-data-1	a7e338a1-5403-40d4-b169-c840cf193aae	3	weiigi	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
@@ -416,7 +425,8 @@ van-data,0.7	2	Gadodawa	1	lotaGa	nmod:poss	possessive-np-possessor	van-data-7	ee
 van-data,0.7	3	libinienaGa	0	ROOT	root	sentence-root	van-data-7	ee540050-e6fa-424e-9252-fd0b9312769d	3	libinienaGa	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.8	1	niwatece	2	iwaGadi	nsubj	clause-single-np-subject	van-data-8	947061b4-7b73-4612-8aa8-0af0e04cbc85	1	niwatece	2	iwaGadi	nsubj	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.8	2	iwaGadi	0	ROOT	root	sentence-root	van-data-8	947061b4-7b73-4612-8aa8-0af0e04cbc85	2	iwaGadi	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
-van-data,0.8							van-data-8	947061b4-7b73-4612-8aa8-0af0e04cbc85	4	lojetedi	3	noxilece	nsubj	GOLD_ONLY	FINAL_PUNCT_IGNORED
+van-data,0.8	3	noxilece	2	iwaGadi	parataxis	juxtaposed-ip-adv	van-data-8	947061b4-7b73-4612-8aa8-0af0e04cbc85	3	noxilece	2	iwaGadi	parataxis	MATCH	FINAL_PUNCT_IGNORED
+van-data,0.8	4	lojetedi	3	noxilece	obj	ip-adv-postverbal-object	van-data-8	947061b4-7b73-4612-8aa8-0af0e04cbc85	4	lojetedi	3	noxilece	obj	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.10	1	Gawenigi	4	libinienigi	nsubj	clause-subject	van-data-10	0c38eab8-c6b0-4f02-bf05-27ea6285fe70	1	Gawenigi	4	libinienigi	nsubj	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.10	2	eliodi	4	libinienigi	det	nominal-np-determiner	van-data-10	0c38eab8-c6b0-4f02-bf05-27ea6285fe70	2	eliodi	4	libinienigi	det	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.10	3	me	4	libinienigi	mark	complementizer-mark	van-data-10	0c38eab8-c6b0-4f02-bf05-27ea6285fe70	3	me	4	libinienigi	mark	MATCH	FINAL_PUNCT_IGNORED
@@ -426,7 +436,7 @@ van-data,0.11	2	liwenigi	3	libinienigi	nsubj	clause-subject	van-data-11	a85fda39
 van-data,0.11	3	libinienigi	0	ROOT	root	sentence-root	van-data-11	a85fda39-1575-4120-9432-8fb534ebdbd2	3	libinienigi	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.12	1	niGida	2	niwenigi	det	nominal-np-determiner	van-data-12	a1e15803-1e5e-481f-8137-a84beac6cbcc	1	niGida	2	niwenigi	det	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.12	2	niwenigi	5	dakake	dislocated	possessor-raising-trace	van-data-12	a1e15803-1e5e-481f-8137-a84beac6cbcc	2	niwenigi	5	dakake	dislocated	MATCH	FINAL_PUNCT_IGNORED
-van-data,0.12							van-data-12	a1e15803-1e5e-481f-8137-a84beac6cbcc	3	daGaxa	5	dakake	advmod	GOLD_ONLY	FINAL_PUNCT_IGNORED
+van-data,0.12	3	daGaxa	5	dakake	advmod	dagaxa-verbal-modifier	van-data-12	a1e15803-1e5e-481f-8137-a84beac6cbcc	3	daGaxa	5	dakake	advmod	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.12	4	me	5	dakake	mark	complementizer-mark	van-data-12	a1e15803-1e5e-481f-8137-a84beac6cbcc	4	me	5	dakake	mark	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.12	5	dakake	0	ROOT	root	sentence-root	van-data-12	a1e15803-1e5e-481f-8137-a84beac6cbcc	5	dakake	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.12	7	loojedi	5	dakake	nsubj	unaccusative-subject	van-data-12	a1e15803-1e5e-481f-8137-a84beac6cbcc	6	loojedi	5	dakake	nsubj	MATCH	FINAL_PUNCT_IGNORED
@@ -452,11 +462,11 @@ van-data,0.19	2	lionigipi	4	idei	nsubj	clause-single-np-subject	van-data-19	e5c6
 van-data,0.19	3	iwaalo	2	lionigipi	nmod:poss	possessive-np-possessor	van-data-19	e5c65dad-8b04-46da-b965-4921887cbca4	3	iwaalo	2	lionigipi	nmod:poss	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.19	4	idei	0	ROOT	root	sentence-root	van-data-19	e5c65dad-8b04-46da-b965-4921887cbca4	4	idei	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.19	5	me@	6	@initaGa	mark	complementizer-mark	van-data-19	e5c65dad-8b04-46da-b965-4921887cbca4	5	me	6	initaGa	mark	MATCH	FINAL_PUNCT_IGNORED
-van-data,0.19							van-data-19	e5c65dad-8b04-46da-b965-4921887cbca4	6	initaGa	4	idei	obj	GOLD_ONLY	FINAL_PUNCT_IGNORED
+van-data,0.19	6	@initaGa	4	idei	obj	nominal-cp-complement	van-data-19	e5c65dad-8b04-46da-b965-4921887cbca4	6	initaGa	4	idei	obj	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.20	1	dibixodi	2	idei	nsubj	clause-single-np-subject	van-data-20	8c5dd09c-d010-4c48-9601-9d3b14c61119	1	dibixodi	2	idei	nsubj	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.20	2	idei	0	ROOT	root	sentence-root	van-data-20	8c5dd09c-d010-4c48-9601-9d3b14c61119	2	idei	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.20	3	me@	4	@anitaGa	mark	complementizer-mark	van-data-20	8c5dd09c-d010-4c48-9601-9d3b14c61119	3	me	4	anitaGa	mark	MATCH	FINAL_PUNCT_IGNORED
-van-data,0.20							van-data-20	8c5dd09c-d010-4c48-9601-9d3b14c61119	4	anitaGa	2	idei	obj	GOLD_ONLY	FINAL_PUNCT_IGNORED
+van-data,0.20	4	@anitaGa	2	idei	obj	nominal-cp-complement	van-data-20	8c5dd09c-d010-4c48-9601-9d3b14c61119	4	anitaGa	2	idei	obj	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.21	1	iwalepodi	3	libinienigipi	nsubj	clause-subject	van-data-21	9b107abc-b49f-4ce2-9c43-30c7e5b5f8b2	1	iwalepodi	3	libinienigipi	nsubj	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.21	3	libinienigipi	0	ROOT	root	sentence-root	van-data-21	9b107abc-b49f-4ce2-9c43-30c7e5b5f8b2	3	libinienigipi	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.22	1	ajo	2	ninitibeci	nsubj	clause-single-np-subject	van-data-22	0d6cdbcf-9d99-4eff-8615-149ec22fec5f	1	ajo	2	ninitibeci	nsubj	MATCH	FINAL_PUNCT_IGNORED
@@ -464,7 +474,7 @@ van-data,0.22	2	ninitibeci	0	ROOT	root	sentence-root	van-data-22	0d6cdbcf-9d99-4
 van-data,0.23	1	ajo	2	iwaGadi	nsubj	clause-single-np-subject	van-data-23	05676093-36c9-4e30-959a-e850447f32a5	1	ajo	2	iwaGadi	nsubj	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.23	2	iwaGadi	0	ROOT	root	sentence-root	van-data-23	05676093-36c9-4e30-959a-e850447f32a5	2	iwaGadi	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.24	1	ajo	3	ninitibeci	nsubj	clause-single-np-subject	van-data-24	661c62a7-3c8c-4609-b989-017deaae82c6	1	ajo	3	ninitibeci	nsubj	MATCH	FINAL_PUNCT_IGNORED
-van-data,0.24							van-data-24	661c62a7-3c8c-4609-b989-017deaae82c6	2	daGaxa	3	ninitibeci	advmod	GOLD_ONLY	FINAL_PUNCT_IGNORED
+van-data,0.24	2	daGaxa	3	ninitibeci	advmod	dagaxa-adverbial-phrase	van-data-24	661c62a7-3c8c-4609-b989-017deaae82c6	2	daGaxa	3	ninitibeci	advmod	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.24	3	ninitibeci	0	ROOT	root	sentence-root	van-data-24	661c62a7-3c8c-4609-b989-017deaae82c6	3	ninitibeci	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.25	1	ajo	3	linikeGegi	nsubj	clause-subject		abe20c80-8394-478c-92eb-feef1512e5ed						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.25	2	eliodi	3	linikeGegi	det	nominal-np-determiner		abe20c80-8394-478c-92eb-feef1512e5ed						NO_GOLD_SENTENCE	NOT_ALIGNED
@@ -544,15 +554,15 @@ van-data,0.47	4	aG@	5	@dakake	advmod	clause-negation	van-data-47	fad6e8d3-1e9f-4
 van-data,0.47	5	@dakake	0	ROOT	root	sentence-root	van-data-47	fad6e8d3-1e9f-451c-aaa7-fd28aecfd967	5	dakake	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.47	7	loojedi	5	@dakake	nsubj	unaccusative-subject	van-data-47	fad6e8d3-1e9f-451c-aaa7-fd28aecfd967	6	loojedi	5	dakake	nsubj	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.48	1	etee	0	ROOT	root	sentence-root		e189be3e-9290-4d1c-b343-74d3858ce7cd						NO_GOLD_SENTENCE	NOT_ALIGNED
-van-data,0.48	2	ina	1	etee	nsubj	clause-single-np-subject		e189be3e-9290-4d1c-b343-74d3858ce7cd						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.48	2	ina	1	etee	obj	vb-postverbal-determiner-object		e189be3e-9290-4d1c-b343-74d3858ce7cd						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.49	1	eteyo	0	ROOT	root	sentence-root	van-data-49	889846ee-66df-4c8f-88d1-e89d3619eb1e	1	eteyo	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
-van-data,0.49	2	ina	1	eteyo	nsubj	clause-single-np-subject	van-data-49	889846ee-66df-4c8f-88d1-e89d3619eb1e	2	ina	1	eteyo	obj	DEPREL_MISMATCH	FINAL_PUNCT_IGNORED
+van-data,0.49	2	ina	1	eteyo	obj	vb-postverbal-determiner-object	van-data-49	889846ee-66df-4c8f-88d1-e89d3619eb1e	2	ina	1	eteyo	obj	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.50	1	etee	0	ROOT	root	sentence-root	van-data-50	e7f4ab65-14d7-44f5-a197-c99c4ab173cd	1	etee	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.50	2	me@	3	@anitaGa	mark	complementizer-mark	van-data-50	e7f4ab65-14d7-44f5-a197-c99c4ab173cd	2	me	3	anitaGa	mark	MATCH	FINAL_PUNCT_IGNORED
-van-data,0.50							van-data-50	e7f4ab65-14d7-44f5-a197-c99c4ab173cd	3	anitaGa	1	etee	obj	GOLD_ONLY	FINAL_PUNCT_IGNORED
+van-data,0.50	3	@anitaGa	1	etee	obj	nominal-cp-complement	van-data-50	e7f4ab65-14d7-44f5-a197-c99c4ab173cd	3	anitaGa	1	etee	obj	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.51	1	etee	0	ROOT	root	sentence-root	van-data-51	7aa17dd7-2c26-4df9-8f90-65d8d58e2c59	1	etee	0	ROOT	root	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.51	2	me@	3	@initaGa	mark	complementizer-mark	van-data-51	7aa17dd7-2c26-4df9-8f90-65d8d58e2c59	2	me	3	initaGa	mark	MATCH	FINAL_PUNCT_IGNORED
-van-data,0.51							van-data-51	7aa17dd7-2c26-4df9-8f90-65d8d58e2c59	3	initaGa	1	etee	obj	GOLD_ONLY	FINAL_PUNCT_IGNORED
+van-data,0.51	3	@initaGa	1	etee	obj	nominal-cp-complement	van-data-51	7aa17dd7-2c26-4df9-8f90-65d8d58e2c59	3	initaGa	1	etee	obj	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.52	1	ee	4	inikeGegi	nsubj	clause-subject		c3c548d7-b154-437e-9baf-541a1bbbab6e						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.52	2	aG@	4	inikeGegi	advmod	clause-negation		c3c548d7-b154-437e-9baf-541a1bbbab6e						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.52	3	@ica	4	inikeGegi	det	nominal-np-determiner		c3c548d7-b154-437e-9baf-541a1bbbab6e						NO_GOLD_SENTENCE	NOT_ALIGNED
@@ -593,11 +603,13 @@ van-data,0.64	1	aG@	2	@idedonaGa	advmod	clause-negation		d3952c8a-1ac1-4255-be0b
 van-data,0.64	2	@idedonaGa	0	ROOT	root	sentence-root		d3952c8a-1ac1-4255-be0b-63978fdf368b						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.64	3	me@	5	Godoigi	mark	complementizer-mark		d3952c8a-1ac1-4255-be0b-63978fdf368b						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.64	4	@idi	5	Godoigi	det	nominal-np-determiner		d3952c8a-1ac1-4255-be0b-63978fdf368b						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.64	5	Godoigi	2	@idedonaGa	obj	nominal-cp-complement		d3952c8a-1ac1-4255-be0b-63978fdf368b						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.65	1	jipacaGataGagitiwaji	0	ROOT	root	sentence-root		e9b78452-925e-458b-848a-d52ab76f6840						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.66	1	aG@	2	@idejonaGa	advmod	clause-negation		fbae0277-3aad-4812-9229-94179b5a97a0						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.66	2	@idejonaGa	0	ROOT	root	sentence-root		fbae0277-3aad-4812-9229-94179b5a97a0						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.66	3	me@	5	Godoigi	mark	complementizer-mark		fbae0277-3aad-4812-9229-94179b5a97a0						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.66	4	@idi	5	Godoigi	det	nominal-np-determiner		fbae0277-3aad-4812-9229-94179b5a97a0						NO_GOLD_SENTENCE	NOT_ALIGNED
+van-data,0.66	5	Godoigi	2	@idejonaGa	obj	nominal-cp-complement		fbae0277-3aad-4812-9229-94179b5a97a0						NO_GOLD_SENTENCE	NOT_ALIGNED
 van-data,0.67	1	ijo	2	lemé	det	nominal-np-determiner	van-data-67	6599689a-3fbe-4598-8827-78aceeff3931	1	ijo	2	lemé	det	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.67	2	lemé	4	ipegitegi	nsubj	clause-single-np-subject	van-data-67	6599689a-3fbe-4598-8827-78aceeff3931	2	lemé	4	ipegitegi	nsubj	MATCH	FINAL_PUNCT_IGNORED
 van-data,0.67	3	Maria	2	lemé	nmod:poss	possessive-np-possessor	van-data-67	6599689a-3fbe-4598-8827-78aceeff3931	3	Maria	2	lemé	nmod:poss	MATCH	FINAL_PUNCT_IGNORED

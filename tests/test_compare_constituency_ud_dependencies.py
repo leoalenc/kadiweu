@@ -11,6 +11,7 @@ import io
 from pathlib import Path
 
 from kadiweu_constituency import PsdRecord, tree_from_psd_record
+from kadiweu_constituency import iter_psd_records
 from compare_constituency_ud_dependencies import (
     DEFAULT_RELATIONS,
     align_tokens,
@@ -34,6 +35,20 @@ def conllu_sentence(text: str):
         path = Path(directory) / "fixture.conllu"
         path.write_text(textwrap.dedent(text).strip() + "\n\n", encoding="utf-8")
         return list(iter_conllu_sentences(path))[0]
+
+
+class NewRulesReferenceTests(unittest.TestCase):
+    def test_attested_reference_comparison_and_known_disagreements(self):
+        fixtures = Path(__file__).parent / "fixtures"
+        rows = list(comparison_rows(list(iter_psd_records(fixtures / "complement_rules.psd")),
+                                   list(iter_conllu_sentences(fixtures / "complement_rules.conllu")),
+                                   set(DEFAULT_RELATIONS)))
+        self.assertIn("parataxis", DEFAULT_RELATIONS)
+        self.assertFalse(any(r["comparison"] == "GOLD_ONLY" for r in rows))
+        mismatches = {(r["sent_id"], r["comparison"]) for r in rows if r["comparison"] != "MATCH"}
+        self.assertEqual(mismatches, {("hil-data,0.17", "DEPREL_MISMATCH"),
+                                     ("hil-data,0.18", "DEPREL_MISMATCH")})
+        self.assertTrue(any(r["deprel"] == "parataxis" and r["comparison"] == "MATCH" for r in rows))
 
 
 class ConlluParsingTests(unittest.TestCase):

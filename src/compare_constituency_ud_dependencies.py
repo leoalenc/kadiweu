@@ -25,7 +25,7 @@ from kadiweu_constituency_dependencies import DependencyAssignment, infer_depend
 
 
 DEFAULT_RELATIONS = frozenset(
-    {"nmod:poss", "det", "mark", "acl:relcl", "nsubj", "obj", "dislocated", "root", "conj", "cc", "advmod", "punct"}
+    {"nmod:poss", "det", "mark", "acl:relcl", "nsubj", "obj", "dislocated", "root", "conj", "cc", "advmod", "punct", "parataxis"}
 )
 RELATIVE_ARGUMENT_RELATIONS = frozenset({"obl"})
 
@@ -422,7 +422,7 @@ def build_argument_parser() -> argparse.ArgumentParser:
         default=set(DEFAULT_RELATIONS),
         help=(
             "comma-separated relations; default: "
-            "nmod:poss,det,mark,acl:relcl,nsubj,obj,dislocated,root,conj,cc,advmod,punct"
+            "nmod:poss,det,mark,acl:relcl,nsubj,obj,dislocated,root,conj,cc,advmod,punct,parataxis"
         ),
     )
     return parser
