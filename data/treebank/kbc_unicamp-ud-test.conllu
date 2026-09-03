@@ -339,7 +339,7 @@
 3	me	me	SCONJ	C	_	5	mark	_	_
 4	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	_
 5	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	TokenRange=18:23
-6	naGajo	niGijo	PRON	PRO$	Gender=Fem|Number=Sing|PronType=Dem	5	nmod:poss	_	Poss=Yes|SpaceAfter=No|TokenRange=24:30
+6	naGajo	niGijo	DET	PRO$	Gender=Fem|Number=Sing|PronType=Dem	5	nmod:poss	_	Poss=Yes|SpaceAfter=No|TokenRange=24:30
 7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = ped-gramm-28
@@ -471,7 +471,7 @@
 1	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	Gatodi	Gatodi	NOUN	N	Gender=Masc|Number=Sing	3	nsubj	_	TokenRange=4:10
 3	etijo	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=3	0	root	_	TokenRange=11:16
-4	ida	ida	PRON	PRO	Gender=Masc|Number=Sing|PronType=Dem	3	obj	_	SpaceAfter=No|TokenRange=17:20
+4	ida	ida	DET	PRO	Gender=Masc|Number=Sing|PronType=Dem	3	obj	_	SpaceAfter=No|TokenRange=17:20
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = ped-gramm-39
@@ -796,7 +796,7 @@
 # text_por_orig = Ela está feliz .
 # text_por = Ela está feliz.
 1	Ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=ninitibece|TokenRange=0:10
-2	naGada	niGida	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No|TokenRange=11:17
+2	naGada	niGida	DET	D	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No|TokenRange=11:17
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=17:18
 
 # sent_id = hil-data-18
@@ -806,7 +806,7 @@
 # text_por_orig = Ela está feliz .
 # text_por = Ela está feliz.
 1	Ninitibeci	initibece	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	StandardForm=Ninitibece|TokenRange=0:10
-2	naGadi	niGidi	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No|TokenRange=11:17
+2	naGadi	niGidi	DET	D	Gender=Fem|Number=Sing|PronType=Dem	1	nsubj	_	SpaceAfter=No|TokenRange=11:17
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=17:18
 
 # sent_id = hil-data-19
@@ -815,7 +815,7 @@
 # text_orig = naGada iwaGadi
 # text_por_orig = Ela está pesada
 # text_por = Ela está pesada.
-1	naGada	niGida	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:6
+1	naGada	niGida	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:6
 2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=7:14
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
@@ -825,7 +825,7 @@
 # text_orig = naGadi iwaGadi
 # text_por_orig = Ela está pesada.
 # text_por = Ela está pesada.
-1	naGadi	niGidi	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:6
+1	naGadi	niGidi	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:6
 2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=7:14
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
@@ -835,7 +835,7 @@
 # text_orig = NaGana iwaGadi
 # text_por_orig = Ela está pesada.
 # text_por = Ela está pesada.
-1	NaGana	niGina	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:6
+1	NaGana	niGina	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:6
 2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=7:14
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
@@ -845,7 +845,7 @@
 # text_orig = Ada iwaGadi
 # text_por_orig = Ela está é pesada.
 # text_por = Ela está é pesada.
-1	Ada	ida	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
+1	Ada	ida	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
 2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=4:11
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
@@ -855,7 +855,7 @@
 # text_orig = Ani iwaGadi
 # text_por_orig = Ela está é pesada.
 # text_por = Ela está é pesada.
-1	Ani	ini	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
+1	Ani	ini	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
 2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=4:11
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
@@ -865,7 +865,7 @@
 # text_orig = Adi iwaGadi
 # text_por_orig = Ela está é pesada.
 # text_por = Ela está é pesada.
-1	Adi	idi	PRON	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
+1	Adi	idi	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:3
 2	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=4:11
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
@@ -1034,7 +1034,7 @@
 1	Ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	ite	ite	VERB	VB	_	0	root	_	TokenRange=3:6
 3	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	2	expl	_	TokenRange=7:9
-4	ina	ina	PRON	D	Gender=Masc|Number=Sing|PronType=Dem	2	obj	_	SpaceAfter=No|TokenRange=10:13
+4	ina	ina	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	obj	_	SpaceAfter=No|TokenRange=10:13
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
 
 # sent_id = van-data-1
@@ -1253,7 +1253,7 @@
 4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=25:29
 5-6	minitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=30:38
 5	me	me	SCONJ	C	_	6	mark	_	_
-6	initaGa	ini	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	4	obj	_	Case=Com|NumClass=Sitting
+6	initaGa	ini	DET	DAPL	Gender=Masc|Number=Sing|PronType=Dem	4	obj	_	Case=Com|NumClass=Sitting
 7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=38:39
 
 # sent_id = van-data-20
@@ -1266,7 +1266,7 @@
 2	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=9:13
 3-4	manitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=14:22
 3	me	me	SCONJ	C	_	4	mark	_	_
-4	anitaGa	ini	PRON	DAPL	Gender=Fem|Number=Sing|PronType=Dem	2	obj	_	Case=Com|NumClass=Sitting
+4	anitaGa	ini	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	2	obj	_	Case=Com|NumClass=Sitting
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
 
 # sent_id = van-data-21
@@ -1420,7 +1420,7 @@
 1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
 2-3	manitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
 2	me	me	SCONJ	C	_	3	mark	_	_
-3	anitaGa	ini	PRON	DAPL	Gender=Fem|Number=Sing|PronType=Dem	1	obj	_	Case=Com
+3	anitaGa	ini	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	1	obj	_	Case=Com
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
 
 # sent_id = van-data-51
@@ -1432,7 +1432,7 @@
 1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
 2-3	minitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
 2	me	me	SCONJ	C	_	3	mark	_	_
-3	initaGa	ini	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	Case=Com
+3	initaGa	ini	DET	DAPL	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	Case=Com
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
 
 # sent_id = ped-gramm-55

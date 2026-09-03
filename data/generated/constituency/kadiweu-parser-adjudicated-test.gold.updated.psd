@@ -1874,6 +1874,35 @@ text_por = Minha casa fica na rua suja (na rua que é suja).
 )
 
 /*
+sentence = 27
+uid = 7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+status = REVIEW
+text = iGeladi idei mijo naigi naGajo
+text_por = A minha casa fica naquela rua suja dela
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ iGeladi)
+    )
+    (VB idei)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (D @ijo)
+          (N$ naigi)
+          (NP
+            (D naGajo)
+          )
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.27)
+)
+
+/*
 sentence = 32
 uid = a4ccc755-a644-4b04-ab1b-698e7acea4cc
 status = DONE
