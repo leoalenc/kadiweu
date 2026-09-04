@@ -651,13 +651,17 @@ def tree_to_graphviz_dot(
     tree: ConstituencyTree,
     *,
     comments: str | None = None,
+    no_boxes: bool = False,
 ) -> str:
     """Return a Graphviz DOT representation of one constituency tree.
 
     When supplied, ``comments`` is printed as a left-aligned metadata heading
     above the tree.  The caller decides whether comment delimiters are kept.
+    Set ``no_boxes`` to draw constituent labels without enclosing boxes.
     Token tags and forms are drawn as separate preterminal and terminal nodes;
     this graphical expansion does not modify the underlying tree objects.
+    Unboxed labels use text-sized nodes with a small clearance so branches
+    do not stop at Graphviz's default invisible minimum-size rectangles.
     """
     lines = [
         "digraph constituency_tree {",
@@ -686,13 +690,15 @@ def tree_to_graphviz_dot(
             if node.coindex:
                 label += "-" + ",".join(map(str, node.coindex))
             attributes = f"label={json.dumps(label, ensure_ascii=False)}"
+            if no_boxes:
+                attributes += ', shape=plaintext, style="", width=0, height=0, margin="0.02,0.02"'
         else:
             form = node.form + "".join(f"-{i}" for i in node.coindex)
             tag = "-NONE-" if node.empty_category else node.label
             label = tag
             attributes = (
                 f"label={json.dumps(label, ensure_ascii=False)}, "
-                'shape=plaintext, style=""'
+                'shape=plaintext, style="", width=0, height=0, margin="0.02,0.02"'
             )
         lines.append(f"  {node_id} [{attributes}];")
         if isinstance(node, TokenNode):
@@ -700,7 +706,7 @@ def tree_to_graphviz_dot(
             next_id += 1
             lines.append(
                 f"  {terminal_id} [label={json.dumps(form, ensure_ascii=False)}, "
-                'shape=plaintext, style=""];'
+                'shape=plaintext, style="", width=0, height=0, margin="0.02,0.02"];'
             )
             lines.append(f"  {node_id} -> {terminal_id};")
         if isinstance(node, ConstituentNode):
@@ -730,6 +736,7 @@ def render_tree_graphviz(
     output_format: str = "pdf",
     dot_command: str = "dot",
     comments: str | None = None,
+    no_boxes: bool = False,
 ) -> Path:
     """Render one tree with Graphviz to PDF, PNG, SVG, or DOT."""
     if output_format not in GRAPHVIZ_FORMATS:
@@ -742,7 +749,7 @@ def render_tree_graphviz(
         raise ValueError(f"output parent directory does not exist: {path.parent}")
     if path.exists() and path.is_dir():
         raise ValueError(f"output path is a directory: {path}")
-    dot_source = tree_to_graphviz_dot(tree, comments=comments)
+    dot_source = tree_to_graphviz_dot(tree, comments=comments, no_boxes=no_boxes)
     if output_format == "dot":
         with path.open("w", encoding="utf-8", newline="\n") as stream:
             stream.write(dot_source)

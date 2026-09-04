@@ -7,7 +7,7 @@
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
-# ud_review_status = TODO
+# ud_review_status = DONE
 1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
 2-3	minitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
 2	me	me	SCONJ	C	_	3	mark	_	_
@@ -23,7 +23,7 @@
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
-# ud_review_status = TODO
+# ud_review_status = DONE
 1	jipacaGataGagitiwaji	paca	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Number=Plur|Person[erg]=1|Person[obj]=2|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:20
 2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
 
@@ -36,7 +36,7 @@
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
-# ud_review_status = TODO
+# ud_review_status = DONE
 1-2	aGee	_	_	_	_	_	_	_	TokenRange=0:4
 1	aG	aG	PART	NEG	Polarity=Neg	4	advmod	_	_
 2	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
@@ -54,9 +54,9 @@
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
 # ud_review_status = TODO
-1	akaami	i	PRON	PRO	Number=Plur|PronType=Prs	3	nsubj	_	TokenRange=0:6
-2	oko	oko	PRON	PRO	_	3	dep	_	TokenRange=7:10
-3	jipacaGataGagitiwaji	jipacaGataGagitiwaji	VERB	VBAPL	Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=11:31
+1	akaami	akaami	PRON	PRO	Number=Plur|PronType=Prs	3	obj	_	TokenRange=0:6
+2	oko	oko	PRON	PRO	_	3	nsubj	_	TokenRange=7:10
+3	jipacaGataGagitiwaji	jipacaGataGagitiwaji	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Number=Plur|Person[erg]=1|Person[obj]=2|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=11:31
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = ped-gramm-56

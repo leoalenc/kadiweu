@@ -358,6 +358,10 @@ def build_parser() -> argparse.ArgumentParser:
     export.add_argument("-o", "--output", type=Path, required=True,
                         help="output file")
     export.add_argument(
+        "--no-boxes", action="store_true",
+        help="draw constituent labels without enclosing boxes",
+    )
+    export.add_argument(
         "--comments", action="store_true",
         help="print everything inside the PSD /* ... */ comment above the tree",
     )
@@ -408,6 +412,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 selected[0][1].tree,
                 args.output,
                 output_format=args.format,
+                no_boxes=args.no_boxes,
                 dot_command=args.dot_command,
                 comments=(
                     selected[0][1].raw_comment[2:-2]
