@@ -6,3 +6,4 @@ date	committed_at	commit	stage	done	total	source_path	subject
 2026-08-08	2026-08-08T14:30:26-03:00	a1e169597b48461ad5f2086bc271454f92680b49	C	170	206	data/reports/status/C/sentence_status_individual.tsv	Test TBP's parser rules of 070826, closes #151, refs #149
 2026-08-13	2026-08-13T20:30:29-03:00	a80ca84bad3894e725d1a6b71a1ff5ce36544716		174	206	src/data/reports/status/sentence_status_individual.tsv	Update DONE and REVIEW stats #156
 2026-08-22	2026-08-22T15:59:18-03:00	87bceedd234cdc0817a8972912d7aac5d45bf008	D	183	206	data/reports/status/D/sentence_status_individual.tsv	Update status reports
+2026-09-16	2026-09-16T18:48:10-03:00	dd6c27721dbf6924d7f0feab026c6c2d2e6b4f06	E	188	206	data/reports/status/E/sentence_status_individual.tsv	Add status snapshot E

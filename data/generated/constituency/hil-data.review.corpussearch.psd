@@ -43,24 +43,22 @@ text_por = Estes ovos da fotografia dela estão bonitos .
 */
 (
   (IP-MAT
-    (NP
-      (D niGidiwa)
+    (NP-SBJ
       (NP
+        (D niGidiwa)
         (N okokodi)
       )
       (N$ ligetedi)
     )
-    (CP
-      (CP-me
-        (C me@)
-        (IP-SUB
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
           (NP
             (D @idi)
-            (NP
-              (N niwigo)
-            )
-            (N$ libinienaGa)
+            (N niwigo)
           )
+          (N$ libinienaGa)
         )
       )
     )

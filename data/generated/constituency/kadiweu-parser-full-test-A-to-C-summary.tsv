@@ -1,4 +1,4 @@
 struct_status	A_structural	C_structural	improvements	regressions	persistent	net_improvement	total
-DONE	17	31	10	24	7	-14	183
-REVIEW	10	15	1	6	9	-5	23
-TOTAL	27	46	11	30	16	-19	206
+DONE	20	14	9	3	11	6	188
+REVIEW	8	8	2	2	6	0	18
+TOTAL	28	22	11	5	17	6	206

@@ -1349,24 +1349,22 @@ text_por = Estes ovos da fotografia dela estão bonitos .
 */
 (
   (IP-MAT
-    (NP
-      (D niGidiwa)
+    (NP-SBJ
       (NP
+        (D niGidiwa)
         (N okokodi)
       )
       (N$ ligetedi)
     )
-    (CP
-      (CP-me
-        (C me@)
-        (IP-SUB
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
           (NP
             (D @idi)
-            (NP
-              (N niwigo)
-            )
-            (N$ libinienaGa)
+            (N niwigo)
           )
+          (N$ libinienaGa)
         )
       )
     )
@@ -1630,6 +1628,29 @@ text_por = a casa dela/dele fica perto dele
   (ID ped-gramm,0.10)
 )
 /*
+sentence = 11
+uid = fef391af-9e63-419f-8f81-057459193f49
+status = DONE
+text = ica Maria looligi alidi
+text_por = a comida da Maria não está deliciosa (a não gostosura da comida da Maria)
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (NP
+        (D ica)
+        (NPR Maria)
+      )
+      (N$ looligi)
+    )
+    (NEG aG@)
+    (NP-PRD
+      (N$ @lidi)
+    )
+  )
+  (ID ped-gramm,0.11)
+)
+/*
 sentence = 12
 uid = 070d221f-f72d-4055-9c82-ddc383743e6a
 status = DONE
@@ -1719,6 +1740,30 @@ text_por = A comunidade dele/dela é bonita
     )
   )
   (ID ped-gramm,0.16)
+)
+/*
+sentence = 17
+uid = 12147353-b422-4ad7-9bef-1d20e70e2a74
+status = DONE
+text = ica loigi ijo niganigi ipegitegi GanigotGa
+text_por = A comunidade do menino é perto da cidade de vocês
+*/
+(
+  (IP-MAT
+    (NP
+      (D ica)
+      (N$ loigi)
+      (NP
+        (D ijo)
+        (N niganigi)
+      )
+    )
+    (VBAPL ipegitegi)
+    (NP-APL
+      (N$ GanigotGa)
+    )
+  )
+  (ID ped-gramm,0.17)
 )
 /*
 sentence = 18
@@ -1883,6 +1928,65 @@ text_por = Minha casa fica na rua suja (na rua que é suja).
     )
   )
   (ID ped-gramm,0.25)
+)
+/*
+sentence = 26
+uid = f081c545-c42b-463d-b57f-db87787f20e7
+status = DONE
+text = João liGeladi ane napioi
+text_por = a casa do João, que é suja
+*/
+(
+  (IP-MAT
+    (NP
+      (NP
+        (NPR João)
+      )
+      (N$ liGeladi)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (NP
+            (N napioi)
+          )
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.26)
+)
+/*
+sentence = 30
+uid = 7b806584-75e5-4017-b9e2-ba97458903bd
+status = DONE
+text = Eyodi ane niganaGacanajo
+text_por = Meu pai que era cantor (explicativa)
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ Eyodi)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (NP
+            (N niganaGacanajo)
+          )
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.30)
 )
 /*
 sentence = 32
@@ -2119,6 +2223,36 @@ text_por = A palavra de seu (teu) irmão é bonita.
     (PUNC .)
   )
   (ID ped-gramm,0.43)
+)
+/*
+sentence = 44
+uid = 6d2a809e-0d32-4254-9489-f9e356e22493
+status = DONE
+text = nGida niwenigi daGaxa me dakake loojedi .
+text_por = Aquela comida é muito cara.
+*/
+(
+  (IP-MAT
+    (NP-1
+      (D nGida)
+      (N niwenigi)
+    )
+    (CP-me
+      (Q daGaxa)
+      (C me)
+      (IP-SUB
+        (VBU dakake)
+        (NP
+          (NP-GEN
+            (-NONE- *T*-1)
+          )
+          (N$ loojedi)
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID ped-gramm,0.44)
 )
 /*
 sentence = 46
@@ -2476,51 +2610,6 @@ text = Etogoli iwaGadi adakake lojetedi
   (ID ped-gramm,0.61)
 )
 /*
-sentence = 11
-uid = fef391af-9e63-419f-8f81-057459193f49
-status = REVIEW
-text = ica Maria looligi alidi
-text_por = a comida da Maria não está deliciosa (a não gostosura da comida da Maria)
-*/
-(
-  (IP-MAT
-    (NP-SBJ
-      (D ica)
-      (NPR Maria)
-      (N$ looligi)
-    )
-    (NEG aG@)
-    (NP-PRD
-      (N$ @lidi)
-    )
-  )
-  (ID ped-gramm,0.11)
-)
-/*
-sentence = 17
-uid = 12147353-b422-4ad7-9bef-1d20e70e2a74
-status = REVIEW
-text = ica loigi ijo niganigi ipegitegi GanigotGa
-text_por = A comunidade do menino é perto da cidade de vocês
-*/
-(
-  (IP-MAT
-    (NP
-      (NP
-        (D ica)
-        (N$ loigi)
-      )
-      (D ijo)
-      (N niganigi)
-    )
-    (VBAPL ipegitegi)
-    (NP-APL
-      (N$ GanigotGa)
-    )
-  )
-  (ID ped-gramm,0.17)
-)
-/*
 sentence = 21
 uid = 5d0b94bf-223d-4f09-8c6f-b951a70d6d0b
 status = REVIEW
@@ -2540,37 +2629,6 @@ text_por = A língua do teu irmão
     )
   )
   (ID ped-gramm,0.21)
-)
-/*
-sentence = 26
-uid = f081c545-c42b-463d-b57f-db87787f20e7
-status = REVIEW
-text = João liGeladi ane napioi
-text_por = a casa do João, que é suja
-*/
-(
-  (IP-MAT
-    (NP-SBJ
-      (NPR João)
-      (N$ liGeladi)
-    )
-    (NP-PRD
-      (CP-FRL
-        (WNP-1
-          (WPRO ane)
-        )
-        (IP-SUB
-          (NP-TRACE
-            (-NONE- *T*-1)
-          )
-          (NP
-            (N napioi)
-          )
-        )
-      )
-    )
-  )
-  (ID ped-gramm,0.26)
 )
 /*
 sentence = 27
@@ -2660,36 +2718,6 @@ text_por = Meu pai que era cantor
   (ID ped-gramm,0.29)
 )
 /*
-sentence = 30
-uid = 7b806584-75e5-4017-b9e2-ba97458903bd
-status = REVIEW
-text = Eyodi ane niganaGacanajo
-text_por = Meu pai que era cantor (explicativa)
-*/
-(
-  (IP-MAT
-    (NP-SBJ
-      (N$ Eyodi)
-    )
-    (NP-PRD
-      (CP-FRL
-        (WNP-1
-          (WPRO ane)
-        )
-        (IP-SUB
-          (NP-TRACE
-            (-NONE- *T*-1)
-          )
-          (NP
-            (N niganaGacanajo)
-          )
-        )
-      )
-    )
-  )
-  (ID ped-gramm,0.30)
-)
-/*
 sentence = 31
 uid = 845b9d1d-ad7c-445a-bfbd-04fd9255ffc2
 status = REVIEW
@@ -2722,7 +2750,9 @@ text_por = A cidade da casa dela é perto do rio.
 (
   (IP-MAT
     (NP
-      (N nigotaGa)
+      (NP
+        (N nigotaGa)
+      )
       (N$ liGeladi)
     )
     (VBAPL ipegitegi)
@@ -2734,33 +2764,6 @@ text_por = A cidade da casa dela é perto do rio.
   (ID ped-gramm,0.42)
 )
 /*
-sentence = 44
-uid = 6d2a809e-0d32-4254-9489-f9e356e22493
-status = REVIEW
-text = nGida niwenigi daGaxa me dakake loojedi .
-text_por = Aquela comida é muito cara.
-*/
-(
-  (IP-MAT
-    (NP-SBJ
-      (D nGida)
-      (N niwenigi)
-    )
-    (CP-me
-      (Q daGaxa)
-      (C me)
-      (IP-SUB
-        (VBU dakake)
-        (NP
-          (N$ loojedi)
-        )
-      )
-    )
-    (PUNC .)
-  )
-  (ID ped-gramm,0.44)
-)
-/*
 sentence = 45
 uid = c25b098d-6b0a-4416-a31d-6d7219685a63
 status = REVIEW
@@ -2769,10 +2772,10 @@ text_por = A casa do João é suja.
 */
 (
   (IP-MAT
-    (NP-SBJ
-      (NPR João)
-    )
-    (NP-PRD
+    (NP
+      (NP
+        (NPR João)
+      )
       (N$ liGeladi)
       (NP
         (N napioi)
@@ -4270,20 +4273,18 @@ text_por = Aquele menino está na canoa do anzol.
 */
 (
   (IP-MAT
-    (NP
+    (NP-SBJ
       (D niGijo)
       (N nigaanigawaanigi)
     )
-    (CP
-      (CP-me
-        (C me@)
-        (IP-SUB
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (DAPL @anitaGa)
+          (N$ lomigo)
           (NP
-            (DAPL @anitaGa)
-            (N$ lomigo)
-            (NP
-              (N niwatece)
-            )
+            (N niwatece)
           )
         )
       )

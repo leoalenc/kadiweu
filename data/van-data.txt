@@ -155,9 +155,6 @@ chunks:
 
 tokens:
   p=1   v='iwaalo'           t='N'          l=1   gloss-br='mulher'
-      splits:
-        [1] v='iwaa'       t='n'        gloss-br='mulher' fn=None idx=None
-        [2] v='lo'         t='Cla'      gloss-br='Fem' fn=None idx=None
   p=2   v='ja'               t='T'          l=0   gloss-br='já'
       splits:
         [1] v='jaG'        t='PFV'      gloss-br=None fn=None idx=None
@@ -202,9 +199,6 @@ chunks:
 
 tokens:
   p=1   v='iwaalo'           t='N'          l=1   gloss-br='mulher'
-      splits:
-        [1] v='iwaa'       t='n'        gloss-br='mulher' fn=None idx=None
-        [2] v='lo'         t='Cla'      gloss-br='cla' fn=None idx=None
   p=2   v='ja'               t='T'          l=0   gloss-br='já'
       splits:
         [1] v='jaG'        t='PFV'      gloss-br=None fn=None idx=None
@@ -881,12 +875,11 @@ proto-conllu:
 
 chunks:
   span=1-6 type=IP-MAT level=0
-  span=1-2 type=NP level=1
-  span=3-6 type=CP level=1
-  span=3-6 type=CP-me level=2
-  span=4-6 type=IP-SUB level=3
-  span=4-6 type=NP level=4
-  span=6-6 type=NP level=5
+  span=1-2 type=NP-SBJ level=1
+  span=3-6 type=CP-me level=1
+  span=4-6 type=IP-SUB level=2
+  span=4-6 type=NP level=3
+  span=6-6 type=NP level=4
 
 tokens:
   p=1   v='niGijo'           t='D'          l=1   gloss-br=None
@@ -901,17 +894,17 @@ tokens:
         [3] v='gi'         t='Gnr'      gloss-br='M' fn=None idx=None
         [4] v='awaana'     t='Dim'      gloss-br=None fn=None idx=None
         [5] v='gi'         t='Gnr'      gloss-br='M' fn=None idx=None
-  p=3   v='me@'              t='C'          l=2   gloss-br='que com el(e|a)'
+  p=3   v='me@'              t='C'          l=1   gloss-br='que com el(e|a)'
       split: {"v": "manitaGa", "t": "C+DAPL", "idx": 0}
       splits:
         [1] v='me'         t=None       gloss-br=None fn=True idx=None
         [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
         [3] v='ni'         t='Ncl'      gloss-br=None fn=None idx=None
         [4] v='taGa'       t='Apl'      gloss-br='3' fn=None idx=None
-  p=4   v='@anitaGa'         t='DAPL'       l=4   gloss-br=None
+  p=4   v='@anitaGa'         t='DAPL'       l=3   gloss-br=None
       split: {"idx": 1}
-  p=5   v='lomigo'           t='N$'         l=4   gloss-br='anzol'
-  p=6   v='niwatece'         t='N'          l=5   gloss-br='canoa'
+  p=5   v='lomigo'           t='N$'         l=3   gloss-br='anzol'
+  p=6   v='niwatece'         t='N'          l=4   gloss-br='canoa'
       splits:
         [1] v='n'          t='Ant'      gloss-br=None fn=None idx=None
         [2] v='watece'     t='n'        gloss-br='canoa' fn=None idx=None
@@ -1047,8 +1040,7 @@ tokens:
         [3] v='pi'         t='Plu'      gloss-br=None fn=None idx=None
   p=3   v='iwaalo'           t='N'          l=2   gloss-br='mulher'
       splits:
-        [1] v='iwaa'       t='n'        gloss-br='mulher' fn=None idx=None
-        [2] v='lo'         t='Cla'      gloss-br='cla' fn=None idx=None
+        [1] v='iwaalo'     t='n'        gloss-br='mulher' fn=None idx=None
   p=4   v='idei'             t='VB'         l=0   gloss-br='fica'
       splits:
         [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
@@ -3225,8 +3217,7 @@ tokens:
         [1] v='j'          t='Erg'      gloss-br='1' fn=None idx=None
         [2] v='pegi'       t='v'        gloss-br='estar_perto' fn=None idx=None
         [3] v='Ga'         t='Plu'      gloss-br='1|3' fn=None idx=None
-        [4] v='taGa'       t='Apl'      gloss-br='COM' fn=None idx=None
-        [5] v='gi'         t='Gnr'      gloss-br='M??' fn=None idx=None
+        [4] v='taGagi'     t='Apl'      gloss-br='2' fn=None idx=None
 
 conllu/token count check:
   tokens=1  proto-conllu=0
@@ -3315,10 +3306,8 @@ tokens:
         [1] v='j'          t='Erg'      gloss-br='1' fn=None idx=None
         [2] v='pegi'       t='v'        gloss-br='estar_perto' fn=None idx=None
         [3] v='Ga'         t='Plu'      gloss-br='1|3' fn=None idx=None
-        [4] v='taGa'       t='Apl'      gloss-br='COM' fn=None idx=None
-        [5] v='gi'         t='Gnr'      gloss-br='M' fn=None idx=None
-        [6] v='ti'         t=None       gloss-br=None fn=None idx=None
-        [7] v='waji'       t='Tot'      gloss-br=None fn=None idx=None
+        [4] v='taGagi'     t='Apl'      gloss-br='2' fn=None idx=None
+        [5] v='tiwaji'     t='Tot'      gloss-br=None fn=None idx=None
 
 conllu/token count check:
   tokens=1  proto-conllu=0
@@ -3626,11 +3615,32 @@ container_meta:
 translations:
   pt-br: os filhos da mulher estão com ele
 comments:
-  [1] 2026-08-04 00:50:51 — Leonel Figueiredo de Alencar — "metaGa" como C?
+  [1] 2026-08-27 19:16:32 — Leonel Figueiredo de Alencar — Substantivo "iwaalo" como palavra monomorfêmica
+      Eliminado o falso morfema *lo* e restaurada a natureza monomorfêmica de *iwaalo* em todos os três documentos do corpus. TODO: Verificar léxico.
+  [2] 2026-08-26 11:10:50 — Leonel Figueiredo de Alencar — FINALIZADO -> REVISAR?
+      Árvore desatualizada? TODO: Ver casos de teste. O parser atual produz: 
+# sentence = 72
+# id = van-data,0.72
+# uid = b97e5b2f-d0da-4238-8ee6-2c64ded91f76
+# status = DONE
+# text = ijowa leonigipi iwaalo idi metaGa
+# text_por = os filhos da mulher estão com ele
+IP-MAT
+├── NP-SBJ
+│   ├── D ijowa
+│   ├── N$ leonigipi
+│   └── NP
+│       └── N iwaalo
+├── NP-PRD
+│   └── D idi
+└── CP
+    └── CAPL metaGa
+
+  [3] 2026-08-04 00:50:51 — Leonel Figueiredo de Alencar — "metaGa" como C?
       Estrutura difícil. No momento, a árvore aparentemente carece de diversas informações que constam de outras árvores com os mesmos elementos *me* e *taGa* envolvidos, como `APL` (aplicativo), `IP-SUB` e `CP-me`.
-  [2] 2026-07-02 03:32:02 — Leonel Figueiredo de Alencar — Split de metaGa?
+  [4] 2026-07-02 03:32:02 — Leonel Figueiredo de Alencar — Split de metaGa?
       Noutros exemplos, o "me" é  separado. Seria o caso de fazer isso aqui também? Caso contrário, marcamos como análise finalizada?
-  [3] 2026-05-21 16:23:13 — Filomena Sandalo — Regra 56 não funcionou: rever a regra no parser
+  [5] 2026-05-21 16:23:13 — Filomena Sandalo — Regra 56 não funcionou: rever a regra no parser
       CAPL não existe no Parser, ocorre porque o idi Ncl com funçnao de pronome foi extraído ed o verbo é cpopular zero.
 
 proto-conllu:
@@ -3653,8 +3663,7 @@ tokens:
         [4] v='pi'         t='Plu'      gloss-br=None fn=None idx=None
   p=3   v='iwaalo'           t='N'          l=2   gloss-br='mulher'
       splits:
-        [1] v='iwaa'       t='n'        gloss-br='mulher' fn=None idx=None
-        [2] v='lo'         t='Cla'      gloss-br='cla' fn=None idx=None
+        [1] v='iwaalo'     t='n'        gloss-br='mulher' fn=None idx=None
   p=4   v='idi'              t='D'          l=2   gloss-br='ele'
       splits:
         [1] v='i'          t='Gnr'      gloss-br='masc' fn=None idx=None

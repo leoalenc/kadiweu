@@ -195,6 +195,30 @@ text_por = a casa dela/dele fica perto dele
 )
 
 /*
+sentence = 11
+uid = fef391af-9e63-419f-8f81-057459193f49
+status = DONE
+text = ica Maria looligi alidi
+text_por = a comida da Maria não está deliciosa (a não gostosura da comida da Maria)
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (NP
+        (D ica)
+        (NPR Maria)
+      )
+      (N$ looligi)
+    )
+    (NEG aG@)
+    (NP-PRD
+      (N$ @lidi)
+    )
+  )
+  (ID ped-gramm,0.11)
+)
+
+/*
 sentence = 12
 uid = 070d221f-f72d-4055-9c82-ddc383743e6a
 status = DONE
@@ -288,6 +312,31 @@ text_por = A comunidade dele/dela é bonita
     )
   )
   (ID ped-gramm,0.16)
+)
+
+/*
+sentence = 17
+uid = 12147353-b422-4ad7-9bef-1d20e70e2a74
+status = DONE
+text = ica loigi ijo niganigi ipegitegi GanigotGa
+text_por = A comunidade do menino é perto da cidade de vocês
+*/
+(
+  (IP-MAT
+    (NP
+      (D ica)
+      (N$ loigi)
+      (NP
+        (D ijo)
+        (N niganigi)
+      )
+    )
+    (VBAPL ipegitegi)
+    (NP-APL
+      (N$ GanigotGa)
+    )
+  )
+  (ID ped-gramm,0.17)
 )
 
 /*
@@ -459,6 +508,67 @@ text_por = Minha casa fica na rua suja (na rua que é suja).
     )
   )
   (ID ped-gramm,0.25)
+)
+
+/*
+sentence = 26
+uid = f081c545-c42b-463d-b57f-db87787f20e7
+status = DONE
+text = João liGeladi ane napioi
+text_por = a casa do João, que é suja
+*/
+(
+  (IP-MAT
+    (NP
+      (NP
+        (NPR João)
+      )
+      (N$ liGeladi)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (NP
+            (N napioi)
+          )
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.26)
+)
+
+/*
+sentence = 30
+uid = 7b806584-75e5-4017-b9e2-ba97458903bd
+status = DONE
+text = Eyodi ane niganaGacanajo
+text_por = Meu pai que era cantor (explicativa)
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ Eyodi)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (NP
+            (N niganaGacanajo)
+          )
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.30)
 )
 
 /*
@@ -706,6 +816,37 @@ text_por = A palavra de seu (teu) irmão é bonita.
     (PUNC .)
   )
   (ID ped-gramm,0.43)
+)
+
+/*
+sentence = 44
+uid = 6d2a809e-0d32-4254-9489-f9e356e22493
+status = DONE
+text = nGida niwenigi daGaxa me dakake loojedi .
+text_por = Aquela comida é muito cara.
+*/
+(
+  (IP-MAT
+    (NP-1
+      (D nGida)
+      (N niwenigi)
+    )
+    (CP-me
+      (Q daGaxa)
+      (C me)
+      (IP-SUB
+        (VBU dakake)
+        (NP
+          (NP-GEN
+            (-NONE- *T*-1)
+          )
+          (N$ loojedi)
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID ped-gramm,0.44)
 )
 
 /*

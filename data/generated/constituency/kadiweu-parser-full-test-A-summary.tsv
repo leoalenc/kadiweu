@@ -1,4 +1,4 @@
 struct_status	exact	trace_equivalent	structural_difference	total
-DONE	152	14	17	183
-REVIEW	12	1	10	23
-TOTAL	164	15	27	206
+DONE	152	16	20	188
+REVIEW	9	1	8	18
+TOTAL	161	17	28	206

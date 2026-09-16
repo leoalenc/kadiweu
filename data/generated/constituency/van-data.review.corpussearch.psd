@@ -75,20 +75,18 @@ text_por = Aquele menino está na canoa do anzol.
 */
 (
   (IP-MAT
-    (NP
+    (NP-SBJ
       (D niGijo)
       (N nigaanigawaanigi)
     )
-    (CP
-      (CP-me
-        (C me@)
-        (IP-SUB
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (DAPL @anitaGa)
+          (N$ lomigo)
           (NP
-            (DAPL @anitaGa)
-            (N$ lomigo)
-            (NP
-              (N niwatece)
-            )
+            (N niwatece)
           )
         )
       )

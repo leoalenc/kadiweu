@@ -480,7 +480,7 @@ Sentence 11
 path: $.pages[0].sentences[10]
 uid: fef391af-9e63-419f-8f81-057459193f49
 text: ica Maria looligi alidi
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -501,14 +501,15 @@ proto-conllu:
 chunks:
   span=1-5 type=IP-MAT level=0
   span=1-3 type=NP-SBJ level=1
+  span=1-2 type=NP level=2
   span=5-5 type=NP-PRD level=1
 
 tokens:
-  p=1   v='ica'              t='D'          l=1   gloss-br='a'
+  p=1   v='ica'              t='D'          l=2   gloss-br='a'
       splits:
         [1] v='i'          t='Gnr'      gloss-br='Masc' fn=None idx=None
         [2] v='ca'         t='Ncl'      gloss-br='ausente' fn=None idx=None
-  p=2   v='Maria'            t='NPR'        l=1   gloss-br='Maria'
+  p=2   v='Maria'            t='NPR'        l=2   gloss-br='Maria'
   p=3   v='looligi'          t='N$'         l=1   gloss-br='sua comida'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
@@ -756,7 +757,7 @@ Sentence 17
 path: $.pages[0].sentences[16]
 uid: 12147353-b422-4ad7-9bef-1d20e70e2a74
 text: ica loigi ijo niganigi ipegitegi GanigotGa
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -777,23 +778,23 @@ proto-conllu:
 chunks:
   span=1-6 type=IP-MAT level=0
   span=1-4 type=NP level=1
-  span=1-2 type=NP level=2
+  span=3-4 type=NP level=2
   span=6-6 type=NP-APL level=1
 
 tokens:
-  p=1   v='ica'              t='D'          l=2   gloss-br='a'
+  p=1   v='ica'              t='D'          l=1   gloss-br='a'
       splits:
         [1] v='i'          t='Gnr'      gloss-br='masc' fn=None idx=None
         [2] v='ca'         t='Ncl'      gloss-br='ausente' fn=None idx=None
-  p=2   v='loigi'            t='N$'         l=2   gloss-br='comunidade dele'
+  p=2   v='loigi'            t='N$'         l=1   gloss-br='comunidade dele'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='oigi'       t='n'        gloss-br='comunidade' fn=None idx=None
-  p=3   v='ijo'              t='D'          l=1   gloss-br='o'
+  p=3   v='ijo'              t='D'          l=2   gloss-br='o'
       splits:
         [1] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
         [2] v='jo'         t='Ncl'      gloss-br='emfrente' fn=None idx=None
-  p=4   v='niganigi'         t='N'          l=1   gloss-br='menino'
+  p=4   v='niganigi'         t='N'          l=2   gloss-br='menino'
   p=5   v='ipegitegi'        t='VBAPL'      l=0   gloss-br='fica próxima de'
       splits:
         [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
@@ -1304,7 +1305,7 @@ Sentence 26
 path: $.pages[0].sentences[25]
 uid: f081c545-c42b-463d-b57f-db87787f20e7
 text: João liGeladi ane napioi
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -1326,16 +1327,16 @@ proto-conllu:
 
 chunks:
   span=1-5 type=IP-MAT level=0
-  span=1-2 type=NP-SBJ level=1
-  span=3-5 type=NP-PRD level=1
-  span=3-5 type=CP-FRL level=2
+  span=1-5 type=NP level=1
+  span=1-1 type=NP level=2
+  span=3-5 type=CP-REL level=2
   span=3-3 type=WNP level=3
   span=4-5 type=IP-SUB level=3
   span=5-5 type=NP level=4
   span=4-4 type=NP-TRACE level=4
 
 tokens:
-  p=1   v='João'             t='NPR'        l=1   gloss-br=None
+  p=1   v='João'             t='NPR'        l=2   gloss-br=None
   p=2   v='liGeladi'         t='N$'         l=1   gloss-br='casa'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
@@ -1366,15 +1367,39 @@ container_meta:
 translations:
   pt-br: A minha casa fica naquela rua suja dela
 comments:
-  [1] 2026-08-04 02:37:57 — Leonel Figueiredo de Alencar — "naGajo" como D?
+  [1] 2026-09-09 13:37:42 — Filomena Sandalo
+      Os Ncl podem ser modificadores do nome ou podem ser um NP (neste caso seria na verdade D e nome vazio). Mas não são exatamente D, mas classificadores numerais, uma categoria mais baica que artigos. Kadiwéu não tem artigos. 
+  [2] 2026-09-03 14:48:02 — Leonel Figueiredo de Alencar — Proposta de árvore
+      # sentence = 27
+# id = ped-gramm,0.27
+# uid = 7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+# status = REVIEW
+# text = iGeladi idei mijo naigi naGajo
+# text_por = A minha casa fica naquela rua suja dela
+IP-MAT
+├── NP
+│   └── N$ iGeladi
+├── VB idei
+└── CP-me
+    ├── C me@
+    └── IP-SUB
+        └── NP
+            ├── D @ijo
+            ├── N$ naigi
+            └── NP
+                └── D naGajo
+Ver casos de teste.
+  [3] 2026-09-03 14:09:47 — Leonel Figueiredo de Alencar — Significado do sufixo $
+      Parece que `$` tem sido usado para designar categorias, como, por exemplo, `N`, que possuem morfologia de possessivo, ou seja, um prefixo que se refere ao possuidor. Desse modo, `N$` realiza o papel *possessum*, como em *iGeladi* 'minha casa' nesta mesma sentença. TODO: Envolver *naGajo* num NP, visto que funciona como possuidor. A estrutura arbórea seria (NP (D naGajo)). 
+  [4] 2026-08-04 02:37:57 — Leonel Figueiredo de Alencar — "naGajo" como D?
       Talvez *naGajo* devesse ser um D dominado imediatamente por um nó NP, configurando a estrutura recorrente de *possessum* (núcleo) e possuidor (complemento). Por outro lado, estabeleceu-se que apenas elementos de primeira e segunda pessoa constituem pronomes com etiqueta `PRO`.
-  [2] 2026-07-21 14:03:50 — Leonel Figueiredo de Alencar — PRO$ possuidor projeta NP?
+  [5] 2026-07-21 14:03:50 — Leonel Figueiredo de Alencar — PRO$ possuidor projeta NP?
       Ver comentário sobre a sentença anterior.
-  [3] 2026-05-22 19:39:38 — Filomena Sandalo
+  [6] 2026-05-22 19:39:38 — Filomena Sandalo
       iGeeladi para mulher, não a...
-  [4] 2026-03-31 15:17:48 — raiz lexical da forma "iGeladi" 
+  [7] 2026-03-31 15:17:48 — raiz lexical da forma "iGeladi" 
       O lema ou raiz lexical da forma "iGeladi" é mesmo "geladi"? Noutras sentenças, temos "Geladi". O dicionário de Griffiths, apresenta os lemas -iGeladi (fala de homem) e -aGeeladi (fala de mulher).
-  [5] 2026-03-31 15:04:43 — Descompasso entre tradução e versão
+  [8] 2026-03-31 15:04:43 — Descompasso entre tradução e versão
       Parece que a ideia de "suja" não foi traduzida.
 
 proto-conllu:
@@ -1538,7 +1563,7 @@ Sentence 30
 path: $.pages[0].sentences[29]
 uid: 7b806584-75e5-4017-b9e2-ba97458903bd
 text: Eyodi ane niganaGacanajo
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -1556,9 +1581,8 @@ proto-conllu:
 
 chunks:
   span=1-4 type=IP-MAT level=0
-  span=1-1 type=NP-SBJ level=1
-  span=2-4 type=NP-PRD level=1
-  span=2-4 type=CP-FRL level=2
+  span=1-4 type=NP level=1
+  span=2-4 type=CP-REL level=2
   span=2-2 type=WNP level=3
   span=3-4 type=IP-SUB level=3
   span=4-4 type=NP level=4
@@ -1689,8 +1713,7 @@ tokens:
       splits:
         [1] v='i'          t='Erg'      gloss-br=None fn=None idx=None
         [2] v='pegi'       t='v'        gloss-br='ficar_perto' fn=None idx=None
-        [3] v='taGa'       t='OBL'      gloss-br='2' fn=None idx=None
-        [4] v='gi'         t='Apl'      gloss-br=None fn=None idx=None
+        [3] v='taGagi'     t='Apl'      gloss-br='2' fn=None idx=None
 
 conllu/token count check:
   tokens=2  proto-conllu=0
@@ -2110,10 +2133,11 @@ proto-conllu:
 chunks:
   span=1-5 type=IP-MAT level=0
   span=1-2 type=NP level=1
+  span=1-1 type=NP level=2
   span=4-4 type=NP-APL level=1
 
 tokens:
-  p=1   v='nigotaGa'         t='N'          l=1   gloss-br='cidade'
+  p=1   v='nigotaGa'         t='N'          l=2   gloss-br='cidade'
   p=2   v='liGeladi'         t='N$'         l=1   gloss-br='casa dela'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
@@ -2185,7 +2209,7 @@ Sentence 44
 path: $.pages[0].sentences[43]
 uid: 6d2a809e-0d32-4254-9489-f9e356e22493
 text: nGida niwenigi daGaxa me dakake loojedi .
-status: REVIEW
+status: DONE
 struct_status: None
 visible: None
 container_meta:
@@ -2208,11 +2232,12 @@ proto-conllu:
   <none>
 
 chunks:
-  span=1-7 type=IP-MAT level=0
-  span=1-2 type=NP-SBJ level=1
-  span=3-6 type=CP-me level=1
-  span=5-6 type=IP-SUB level=2
-  span=6-6 type=NP level=3
+  span=1-8 type=IP-MAT level=0
+  span=1-2 type=NP level=1
+  span=3-7 type=CP-me level=1
+  span=5-7 type=IP-SUB level=2
+  span=6-7 type=NP level=3
+  span=6-6 type=NP-GEN level=4
 
 tokens:
   p=1   v='nGida'            t='D'          l=1   gloss-br=None
@@ -2226,14 +2251,15 @@ tokens:
       splits:
         [1] v='d'          t='Inv'      gloss-br=None fn=None idx=None
         [2] v='akake'      t='v'        gloss-br='(ser|estar)_(duro|caro)' fn=None idx=None
-  p=6   v='loojedi'          t='N$'         l=3   gloss-br='preço del(e|a)'
+  p=6   v='*T*'              t=None         l=4   gloss-br=None
+  p=7   v='loojedi'          t='N$'         l=3   gloss-br='preço del(e|a)'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
         [2] v='oojedi'     t='n'        gloss-br='preço' fn=None idx=None
-  p=7   v='.'                t='PUNC'       l=0   gloss-br=None
+  p=8   v='.'                t='PUNC'       l=0   gloss-br=None
 
 conllu/token count check:
-  tokens=7  proto-conllu=0
+  tokens=8  proto-conllu=0
 
 ================================================================================
 Sentence 45
@@ -2259,12 +2285,12 @@ proto-conllu:
 
 chunks:
   span=1-4 type=IP-MAT level=0
-  span=1-1 type=NP-SBJ level=1
-  span=2-3 type=NP-PRD level=1
+  span=1-3 type=NP level=1
+  span=1-1 type=NP level=2
   span=3-3 type=NP level=2
 
 tokens:
-  p=1   v='João'             t='NPR'        l=1   gloss-br=None
+  p=1   v='João'             t='NPR'        l=2   gloss-br=None
   p=2   v='liGeladi'         t='N$'         l=1   gloss-br='casa dele/dela'
       splits:
         [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
@@ -2596,7 +2622,9 @@ container_meta:
 translations:
   pt-br: Estamos perto de vocês.
 comments:
-  [1] 2026-06-16 01:18:49 — Leonel Figueiredo de Alencar — Análise alternativa
+  [1] 2026-09-14 18:29:12 — Leonel Figueiredo de Alencar
+      TODO: Comparar com a raiz lexical do Hilário, que não sofre ensurdecimento.
+  [2] 2026-06-16 01:18:49 — Leonel Figueiredo de Alencar — Análise alternativa
       Aqui se fez uma segmentação diferente da realizada  nos exemplos análogos dos dados da Vanda e do Hilário.
 
 proto-conllu:
@@ -2611,9 +2639,8 @@ tokens:
         [1] v='j'          t='Erg'      gloss-br='1' fn=None idx=None
         [2] v='paca'       t='v'        gloss-br='ficarperto' fn=None idx=None
         [3] v='Ga'         t='Plu'      gloss-br='1pl' fn=None idx=None
-        [4] v='ta'         t='Hon'      gloss-br=None fn=None idx=None
-        [5] v='Gagi'       t='Apl'      gloss-br='2M' fn=None idx=None
-        [6] v='tiwaji'     t='Coll'     gloss-br=None fn=None idx=None
+        [4] v='taGagi'     t='Apl'      gloss-br='2' fn=None idx=None
+        [5] v='tiwaji'     t='Tot'      gloss-br=None fn=None idx=None
 
 conllu/token count check:
   tokens=1  proto-conllu=0
@@ -2684,7 +2711,16 @@ container_meta:
 translations:
   pt-br: Estamos perto de vocês.
 comments:
-  <none>
+  [1] 2026-09-14 18:33:10 — Leonel Figueiredo de Alencar
+      A raiz lexical *pegi* sofre ensurdecimento e harmonia vocálica. Adotar nomrmalização *pegi* em todos os casos de *paca*.
+  [2] 2026-09-09 13:35:16 — Filomena Sandalo
+      Sim, o escopo é do objeto, eu acho que é um quantificador. 
+  [3] 2026-09-09 13:25:21 — Leonel Figueiredo de Alencar
+      ###### Parece que o primeiro morfema de plural se refere ao sujeito e o segundo, *tiwaji*, aparentemente tem escopo sobre o objeto indireto (ou aplicado). **TODO**: Eu tinha levantado a hipótese, em comentário anterior, de que *tiwaji* constituiria instância do que na literatura tipológica se tem chamado de "totalitative" (*TOT*). O uso do *tiwaji* parece motividao pela necessidade de desambiguar a referência de *akaami*, a exemplo do que ocorre em inglês, que se vale de *all* (*you all* e *y'all*) e outras estratégias (*you guys* etc.).
+  [4] 2026-09-04 17:15:48 — Filomena Sandalo
+      Isso mesmo, mas a segunda pessoa é sempre pluralizada (como you em inglês que é sempre plural). 
+  [5] 2026-09-04 14:30:04 — Leonel Figueiredo de Alencar — Morfema de plural "-i"?
+      O pronome *akaami* está segmentado como *akaam*+ *-i*, sendo este último classificado como plural. TODO: É isso mesmo? Seria interessante também segmentar o verbo. Sentença OSV, onde O é o objeto aplicado (objeto indireto).
 
 proto-conllu:
   <none>
@@ -2701,6 +2737,12 @@ tokens:
         [2] v='i'          t='Plu'      gloss-br=None fn=None idx=None
   p=2   v='oko'              t='PRO'        l=1   gloss-br='nós'
   p=3   v='jipacaGataGagitiwaji' t='VBAPL'      l=0   gloss-br=None
+      splits:
+        [1] v='j'          t='Erg'      gloss-br='1' fn=None idx=None
+        [2] v='pegi'       t=None       gloss-br=None fn=None idx=None
+        [3] v='Ga'         t='Plu'      gloss-br='1' fn=None idx=None
+        [4] v='taGagi'     t='Apl'      gloss-br='2' fn=None idx=None
+        [5] v='tiwaji'     t='Plu'      gloss-br=None fn=None idx=None
 
 conllu/token count check:
   tokens=3  proto-conllu=0
