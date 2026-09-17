@@ -9,7 +9,9 @@ fontsize: 10pt
 This document compares parser A (BEFORE) with parser C (AFTER) for DONE sentences. It contains every improvement, regression, and persistent structural case recorded in the transition TSV. Improvement and regression sections show both parser trees; the persistent section shows the gold reference together with both parser trees. All trees are provided in LISP and graphical formats for human inspection.
 
 **DONE improvements:** 9.  
-**DONE regressions:** 3.
+**DONE regressions:** 3.  
+**DONE persistent structural cases:** 11.  
+**Total DONE cases documented:** 23.
 
 # 2. DONE improvements
 
