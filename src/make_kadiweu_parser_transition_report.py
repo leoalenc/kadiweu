@@ -552,6 +552,23 @@ def main() -> int:
             "are provided in LISP and graphical formats for human inspection."
         )
 
+    documented_total = (
+        len(selected["improvement"])
+        + len(selected["regression"])
+        + len(selected["persistent"])
+    )
+    count_lines = [
+        f"**DONE improvements:** {len(selected['improvement'])}.  ",
+        f"**DONE regressions:** {len(selected['regression'])}.  ",
+    ]
+    if args.gold_psd is not None:
+        count_lines.extend(
+            [
+                f"**DONE persistent structural cases:** {len(selected['persistent'])}.  ",
+                f"**Total DONE cases documented:** {documented_total}.",
+            ]
+        )
+
     markdown = [
         "---",
         f'title: "{args.title.replace(chr(34), chr(39))}"',
@@ -563,8 +580,7 @@ def main() -> int:
         "",
         introduction,
         "",
-        f"**DONE improvements:** {len(selected['improvement'])}.  ",
-        f"**DONE regressions:** {len(selected['regression'])}.",
+        *count_lines,
         "",
         "# 2. DONE improvements",
         "",
