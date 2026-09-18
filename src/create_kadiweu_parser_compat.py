@@ -29,6 +29,7 @@ FILENAME_RE = re.compile(
 )
 HISTORY_TIMESTAMP_RE = re.compile(r"^(?P<stamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})\t")
 DEFAULT_BASENAME = "Kadiw-u"
+DOWNLOAD_STEM_RE = re.compile(r"^Kadiw-u(?: \(\d+\)|\.\d{6}-\d{4})?$")
 
 
 class GeneratorError(RuntimeError):
@@ -274,12 +275,46 @@ def default_downloads_dir() -> Path:
     return Path.home() / "Downloads"
 
 
+def newest_download_pair(downloads: Path) -> tuple[Path, Path]:
+    """Return the newest complete, same-stem TBP TXT/JSON export pair.
+
+    Browsers commonly preserve an older download by naming a newer pair
+    ``Kadiw-u (1).json`` and ``Kadiw-u (1).txt``.  Previously archived,
+    timestamped downloads are accepted too.  Compatibility JSON files and
+    incomplete pairs are ignored.
+    """
+    candidates: list[tuple[int, int, str, Path, Path]] = []
+    for json_path in downloads.glob(f"{DEFAULT_BASENAME}*.json"):
+        stem = json_path.stem
+        if stem.endswith(".compat") or not DOWNLOAD_STEM_RE.fullmatch(stem):
+            continue
+        txt_path = json_path.with_suffix(".txt")
+        if not txt_path.is_file():
+            continue
+        json_mtime = json_path.stat().st_mtime_ns
+        txt_mtime = txt_path.stat().st_mtime_ns
+        # Rank primarily by the older file in each pair. This prevents one
+        # newly replaced member from making a stale/mixed pair look newest.
+        candidates.append(
+            (min(json_mtime, txt_mtime), max(json_mtime, txt_mtime), stem,
+             txt_path, json_path)
+        )
+
+    if not candidates:
+        raise GeneratorError(
+            f"no complete {DEFAULT_BASENAME} TXT/JSON export pair found in {downloads}"
+        )
+    _, _, _, txt_path, json_path = max(candidates, key=lambda item: item[:3])
+    return txt_path, json_path
+
+
 def parse_arguments(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
             "With a JSON argument, preserve the original compatibility-generator "
-            "workflow. With no JSON argument, archive Kadiw-u.txt and Kadiw-u.json "
-            "from ~/Downloads under a publication-dated name first."
+            "workflow. With no JSON argument, find the newest complete Kadiw-u "
+            "TXT/JSON export pair in ~/Downloads (including browser suffixes such "
+            "as ' (1)') and archive it under a publication-dated name first."
         )
     )
     parser.add_argument(
@@ -307,7 +342,7 @@ def parse_arguments(argv: Sequence[str] | None = None) -> argparse.Namespace:
         "--downloads-dir",
         type=Path,
         default=default_downloads_dir(),
-        help="directory containing undated Kadiw-u.txt/json exports (default: %(default)s)",
+        help="directory containing Kadiw-u TXT/JSON exports (default: %(default)s)",
     )
     parser.add_argument(
         "--archive-dir",
@@ -353,11 +388,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             else downloads / "histórico.txt"
         )
         publication = publication_from_history(history)
-        downloaded_json = downloads / f"{DEFAULT_BASENAME}.json"
-        downloaded_txt = downloads / f"{DEFAULT_BASENAME}.txt"
-        missing = [str(path) for path in (downloaded_txt, downloaded_json) if not path.is_file()]
-        if missing:
-            raise GeneratorError("downloaded parser export(s) not found: " + ", ".join(missing))
+        downloaded_txt, downloaded_json = newest_download_pair(downloads)
         dated_stem = f"{DEFAULT_BASENAME}-{publication.identifier}"
         source = archive_dir / f"{dated_stem}.json"
         archived_txt = archive_dir / f"{dated_stem}.txt"
@@ -428,6 +459,8 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     print(f"TBP publication: {publication.display} America/Fortaleza")
     if archived_txt is not None:
+        print(f"Selected TXT: {downloaded_txt}")
+        print(f"Selected JSON: {downloaded_json}")
         print(f"Archived TXT: {archived_txt}")
         print(f"Archived JSON: {source}")
     print("Changed rules: " + ", ".join(map(str, changed_rules)))
