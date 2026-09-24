@@ -1,0 +1,145 @@
+document_uid: d1590857-cb85-458c-9ccd-47ae7a7332ff
+title: Momeucaua mɨura receuára
+reference: tale_14.txt
+source_json: 6ab5544a0d7977bbad0e89f8.json
+
+sentence: 1
+uid: bded6e95-3f4c-4875-b173-f17ce7a2002b
+text: Momeucaua mɨura receuára
+text_por: Lendas da raposa acerca
+tokens: [{"p": 1, "v": "Momeucaua"}, {"p": 2, "v": "mɨura"}, {"p": 3, "v": "receuára"}]
+chunks: [{"i": 1, "f": 3, "t": "IP-MAT"}]
+
+sentence: 2
+uid: 99dc27d5-c77f-4785-b766-32f74814b7c6
+text: Intí rẹmunhã catú auá çupé intí rẹquáu.
+text_por: Não faças bem quem a não conheces.
+tokens: [{"p": 1, "v": "Intí"}, {"p": 2, "v": "rẹmunhã"}, {"p": 3, "v": "catú"}, {"p": 4, "v": "auá"}, {"p": 5, "v": "çupé"}, {"p": 6, "v": "intí"}, {"bid": "bid#1", "p": 7, "v": "rẹquáu."}]
+chunks: [{"i": 1, "f": 7, "t": "IP-MAT"}]
+
+sentence: 3
+uid: 4059d5f1-df66-40a3-a6cf-60f8d752d60a
+text: Oiepé ára ọpé mɨcúra, uatá ramé oikộ, ocenõ cururúca iaué: um... um ... um... — Mãháta nhahã será?
+text_por: Um dia em a raposa, andando quando estava, ouviu um ronco assim: um... um ... um... — O que aquilo é?
+tokens: [{"p": 1, "v": "Oiepé"}, {"p": 2, "v": "ára"}, {"p": 3, "v": "ọpé"}, {"p": 4, "v": "mɨcúra,"}, {"p": 5, "v": "uatá"}, {"p": 6, "v": "ramé"}, {"p": 7, "v": "oikộ,"}, {"p": 8, "v": "ocenõ"}, {"p": 9, "v": "cururúca"}, {"p": 10, "v": "iaué:"}, {"p": 11, "v": "um..."}, {"p": 12, "v": "um"}, {"p": 13, "v": "..."}, {"p": 14, "v": "um..."}, {"p": 15, "v": "—"}, {"p": 16, "v": "Mãháta"}, {"p": 17, "v": "nhahã"}, {"bid": "bid#1", "p": 18, "v": "será?"}]
+chunks: [{"i": 1, "f": 18, "t": "IP-MAT"}]
+
+sentence: 4
+uid: 8fdbeea9-1894-4723-9861-f10b126b8cb7
+text: xa çộ mahã.
+text_por: eu vou ver.
+tokens: [{"p": 1, "v": "xa"}, {"p": 2, "v": "çộ"}, {"bid": "bid#1", "p": 3, "v": "mahã."}]
+chunks: [{"i": 1, "f": 3, "t": "IP-MAT"}]
+
+sentence: 5
+uid: e53a4c0e-b5c7-46ab-a738-dfabea9d037a
+text: Iauaratẹ omahã ramé ahé, onhehẽ: — Xa iumunhã quahá itá quára opé; xa iumuturuçú ãna, intí xa cema quáu.
+text_por: A onça viu quando ela, disse: — Eu fui feita neste de pedra buraco em; eu cresci, e não sair posso.
+tokens: [{"p": 1, "v": "Iauaratẹ"}, {"p": 2, "v": "omahã"}, {"p": 3, "v": "ramé"}, {"p": 4, "v": "ahé,"}, {"p": 5, "v": "onhehẽ:"}, {"p": 6, "v": "—"}, {"p": 7, "v": "Xa"}, {"p": 8, "v": "iumunhã"}, {"p": 9, "v": "quahá"}, {"p": 10, "v": "itá"}, {"p": 11, "v": "quára"}, {"p": 12, "v": "opé;"}, {"p": 13, "v": "xa"}, {"p": 14, "v": "iumuturuçú"}, {"p": 15, "v": "ãna,"}, {"p": 16, "v": "intí"}, {"p": 17, "v": "xa"}, {"p": 18, "v": "cema"}, {"bid": "bid#1", "p": 19, "v": "quáu."}]
+chunks: [{"i": 1, "f": 19, "t": "IP-MAT"}]
+
+sentence: 6
+uid: b06e8f9d-28a2-44e5-97b1-542a8b5bb5fd
+text: Rẹpitɨmũ será xa iuúca quahá itá?
+text_por: Tu me ajudas a tirar esta pedra?
+tokens: [{"p": 1, "v": "Rẹpitɨmũ"}, {"p": 2, "v": "será"}, {"p": 3, "v": "xa"}, {"p": 4, "v": "iuúca"}, {"p": 5, "v": "quahá"}, {"bid": "bid#1", "p": 6, "v": "itá?"}]
+chunks: [{"i": 1, "f": 6, "t": "IP-MAT"}]
+
+sentence: 7
+uid: b9feeb05-59e8-4aca-ac74-3e764c80dab0
+text: Mɨcúra opɨtɨmũ ahé; iauaraté ocệma; mɨcúra opuranũ i xuí: — Mãháta rẹmehẽ ixệ arãma cẹcuiára?
+text_por: A raposa ajudou-a; a onça saiu; a raposa perguntou a ela: — O que tu dás eu a em paga?
+tokens: [{"p": 1, "v": "Mɨcúra"}, {"p": 2, "v": "opɨtɨmũ"}, {"p": 3, "v": "ahé;"}, {"p": 4, "v": "iauaraté"}, {"p": 5, "v": "ocệma;"}, {"p": 6, "v": "mɨcúra"}, {"p": 7, "v": "opuranũ"}, {"p": 8, "v": "i"}, {"p": 9, "v": "xuí:"}, {"p": 10, "v": "—"}, {"p": 11, "v": "Mãháta"}, {"p": 12, "v": "rẹmehẽ"}, {"p": 13, "v": "ixệ"}, {"p": 14, "v": "arãma"}, {"bid": "bid#1", "p": 15, "v": "cẹcuiára?"}]
+chunks: [{"i": 1, "f": 15, "t": "IP-MAT"}]
+
+sentence: 8
+uid: e41e2850-aa62-43b9-aed2-37bfe038e9fb
+text: Iauaratệ, oiumacɨ oikộ uahá, oçuaxàra: — Xa ço xa u indệ.
+text_por: A onça, faminta estava que, respondeu: — Eu vou comer você.
+tokens: [{"p": 1, "v": "Iauaratệ,"}, {"p": 2, "v": "oiumacɨ"}, {"p": 3, "v": "oikộ"}, {"p": 4, "v": "uahá,"}, {"p": 5, "v": "oçuaxàra:"}, {"p": 6, "v": "—"}, {"p": 7, "v": "Xa"}, {"p": 8, "v": "ço"}, {"p": 9, "v": "xa"}, {"p": 10, "v": "u"}, {"bid": "bid#1", "p": 11, "v": "indệ."}]
+chunks: [{"i": 1, "f": 11, "t": "IP-MAT"}]
+
+sentence: 9
+uid: 34e6698b-b6da-4c30-ad14-eae7a20d65f1
+text: Opicɨca ãna mɨcúra, opuranú: — Mãháta míra omehẽ auá çupé omunhã catú, rẹcuiára?
+text_por: Agarrou a raposa, e perguntou: — O que se dá quem a faz bem, em paga?
+tokens: [{"p": 1, "v": "Opicɨca"}, {"p": 2, "v": "ãna"}, {"p": 3, "v": "mɨcúra,"}, {"p": 4, "v": "opuranú:"}, {"p": 5, "v": "—"}, {"p": 6, "v": "Mãháta"}, {"p": 7, "v": "míra"}, {"p": 8, "v": "omehẽ"}, {"p": 9, "v": "auá"}, {"p": 10, "v": "çupé"}, {"p": 11, "v": "omunhã"}, {"p": 12, "v": "catú,"}, {"bid": "bid#1", "p": 13, "v": "rẹcuiára?"}]
+chunks: [{"i": 1, "f": 13, "t": "IP-MAT"}]
+
+sentence: 10
+uid: 5a6d92e7-53bb-4af1-9ea2-56a0b6caafb9
+text: Mɨcura oçuaxára: — Auá çupé omunhã catú, recuiára, míra omehẽ omunhã catú.
+text_por: A raposa respondeu: — A quem faz bem, em paga, se dá o fazer bem.
+tokens: [{"p": 1, "v": "Mɨcura"}, {"p": 2, "v": "oçuaxára:"}, {"p": 3, "v": "—"}, {"p": 4, "v": "Auá"}, {"p": 5, "v": "çupé"}, {"p": 6, "v": "omunhã"}, {"p": 7, "v": "catú,"}, {"p": 8, "v": "recuiára,"}, {"p": 9, "v": "míra"}, {"p": 10, "v": "omehẽ"}, {"p": 11, "v": "omunhã"}, {"bid": "bid#1", "p": 12, "v": "catú."}]
+chunks: [{"i": 1, "f": 12, "t": "IP-MAT"}]
+
+sentence: 11
+uid: 4c6b4a98-62c3-4938-b694-644c04f4f7f7
+text: Ikệ nhộte (iunto) oikộ oiépé apgáua, oquáu uahá opaɨ mahã; iaçộ iapuranú ixuí.
+text_por: Aqui perto mora um homem, sabe que todas as casas; vamos perguntou a ele.
+tokens: [{"p": 1, "v": "Ikệ"}, {"p": 2, "v": "nhộte"}, {"p": 3, "v": "(iunto)"}, {"p": 4, "v": "oikộ"}, {"p": 5, "v": "oiépé"}, {"p": 6, "v": "apgáua,"}, {"p": 7, "v": "oquáu"}, {"p": 8, "v": "uahá"}, {"p": 9, "v": "opaɨ"}, {"p": 10, "v": "mahã;"}, {"p": 11, "v": "iaçộ"}, {"p": 12, "v": "iapuranú"}, {"bid": "bid#1", "p": 13, "v": "ixuí."}]
+chunks: [{"i": 1, "f": 13, "t": "IP-MAT"}]
+
+sentence: 12
+uid: 4ceffa80-1a4f-4360-aa62-ee96b4a74b53
+text: Aitá oiaçáu oiepé cãpuũ-mirĩ kẹtệ, mɨcúra ombẽu apgáua çupé, ahé oiuúca uahá iauaraté itá quára cuí, iauaraté óú putári ahé.
+text_por: Elas atravessaram uma ilha pequena para, a raposa narrou homem ao, ela tirara que a onça de pedra buraco do, a onça comer queria ela.
+tokens: [{"p": 1, "v": "Aitá"}, {"p": 2, "v": "oiaçáu"}, {"p": 3, "v": "oiepé"}, {"p": 4, "v": "cãpuũ-mirĩ"}, {"p": 5, "v": "kẹtệ,"}, {"p": 6, "v": "mɨcúra"}, {"p": 7, "v": "ombẽu"}, {"p": 8, "v": "apgáua"}, {"p": 9, "v": "çupé,"}, {"p": 10, "v": "ahé"}, {"p": 11, "v": "oiuúca"}, {"p": 12, "v": "uahá"}, {"p": 13, "v": "iauaraté"}, {"p": 14, "v": "itá"}, {"p": 15, "v": "quára"}, {"p": 16, "v": "cuí,"}, {"p": 17, "v": "iauaraté"}, {"p": 18, "v": "óú"}, {"p": 19, "v": "putári"}, {"bid": "bid#1", "p": 20, "v": "ahé."}]
+chunks: [{"i": 1, "f": 20, "t": "IP-MAT"}]
+
+sentence: 13
+uid: 3f535285-02cd-4c75-857b-4f040e7fa282
+text: Iauaraté onhehẽ: — Xá u putári ahé, maharecệ míra omehẽ omunhã puxí rẹcuiára omunhã catú.
+text_por: A onça disse: — Eu comer quero ela, porque a gente dá o mal em troco do bem.
+tokens: [{"p": 1, "v": "Iauaraté"}, {"p": 2, "v": "onhehẽ:"}, {"p": 3, "v": "—"}, {"p": 4, "v": "Xá"}, {"p": 5, "v": "u"}, {"p": 6, "v": "putári"}, {"p": 7, "v": "ahé,"}, {"p": 8, "v": "maharecệ"}, {"p": 9, "v": "míra"}, {"p": 10, "v": "omehẽ"}, {"p": 11, "v": "omunhã"}, {"p": 12, "v": "puxí"}, {"p": 13, "v": "rẹcuiára"}, {"p": 14, "v": "omunhã"}, {"bid": "bid#1", "p": 15, "v": "catú."}]
+chunks: [{"i": 1, "f": 15, "t": "IP-MAT"}]
+
+sentence: 14
+uid: 641963fd-b07d-4663-acf3-e9623745a2cc
+text: Apgauá onhehẽ: — Intí çupí.
+text_por: O homem disse: — Não é certo.
+tokens: [{"p": 1, "v": "Apgauá"}, {"p": 2, "v": "onhehẽ:"}, {"p": 3, "v": "—"}, {"p": 4, "v": "Intí"}, {"bid": "bid#1", "p": 5, "v": "çupí."}]
+chunks: [{"i": 1, "f": 5, "t": "IP-MAT"}]
+
+sentence: 15
+uid: 7eca3cea-6e7e-4198-914c-396b63a658fc
+text: Iaçộ iamahã arãma nẹ róca.
+text_por: Vamos ver para tua cova.
+tokens: [{"p": 1, "v": "Iaçộ"}, {"p": 2, "v": "iamahã"}, {"p": 3, "v": "arãma"}, {"p": 4, "v": "nẹ"}, {"bid": "bid#1", "p": 5, "v": "róca."}]
+chunks: [{"i": 1, "f": 5, "t": "IP-MAT"}]
+
+sentence: 16
+uid: 96a584ad-6db4-41e4-a67c-790625c728ac
+text: Aitá muçapɨre oçộãna omahã arãma.
+text_por: Eles três foram ver para.
+tokens: [{"p": 1, "v": "Aitá"}, {"p": 2, "v": "muçapɨre"}, {"p": 3, "v": "oçộãna"}, {"p": 4, "v": "omahã"}, {"bid": "bid#1", "p": 5, "v": "arãma."}]
+chunks: [{"i": 1, "f": 5, "t": "IP-MAT"}]
+
+sentence: 17
+uid: 14b668bb-51fa-4bf7-9af3-02006fc67f46
+text: Aitá ocɨka ramé, apgáua onhehẽ iauaraté çupé: — Rẹiumundệo iuɨre xa mahã arãma maí rẹikộãna.
+text_por: Eles chegaram quando, o homem disse onça a: — Encova-te de novo eu ver para como tu estavas.
+tokens: [{"p": 1, "v": "Aitá"}, {"p": 2, "v": "ocɨka"}, {"p": 3, "v": "ramé,"}, {"p": 4, "v": "apgáua"}, {"p": 5, "v": "onhehẽ"}, {"p": 6, "v": "iauaraté"}, {"p": 7, "v": "çupé:"}, {"p": 8, "v": "—"}, {"p": 9, "v": "Rẹiumundệo"}, {"p": 10, "v": "iuɨre"}, {"p": 11, "v": "xa"}, {"p": 12, "v": "mahã"}, {"p": 13, "v": "arãma"}, {"p": 14, "v": "maí"}, {"bid": "bid#1", "p": 15, "v": "rẹikộãna."}]
+chunks: [{"i": 1, "f": 15, "t": "IP-MAT"}]
+
+sentence: 18
+uid: 476354c6-3d3a-4677-a1c1-3f47294d99e3
+text: Iauaraté oiumunệo; opgáua omuieréo itá árupí; iauáraté intí oçệma quáu.
+text_por: A onça encovou-se; o homem rolou a pedra ela sobre; a onça não sair pộde.
+tokens: [{"p": 1, "v": "Iauaraté"}, {"p": 2, "v": "oiumunệo;"}, {"p": 3, "v": "opgáua"}, {"p": 4, "v": "omuieréo"}, {"p": 5, "v": "itá"}, {"p": 6, "v": "árupí;"}, {"p": 7, "v": "iauáraté"}, {"p": 8, "v": "intí"}, {"p": 9, "v": "oçệma"}, {"bid": "bid#1", "p": 10, "v": "quáu."}]
+chunks: [{"i": 1, "f": 10, "t": "IP-MAT"}]
+
+sentence: 19
+uid: bd0bfd0d-c195-410e-9219-adeae632cccc
+text: Araméãna apgáua onhehẽ: — Cuhɨre rẹquáu rameãma: míra omehẽ munhã catú rẹcuiára munhã catú.
+text_por: Então o homem disse: — Agora tu sabendo ficastes: a gente dá o bem em troco do bem.
+tokens: [{"p": 1, "v": "Araméãna"}, {"p": 2, "v": "apgáua"}, {"p": 3, "v": "onhehẽ:"}, {"p": 4, "v": "—"}, {"p": 5, "v": "Cuhɨre"}, {"p": 6, "v": "rẹquáu"}, {"p": 7, "v": "rameãma:"}, {"p": 8, "v": "míra"}, {"p": 9, "v": "omehẽ"}, {"p": 10, "v": "munhã"}, {"p": 11, "v": "catú"}, {"p": 12, "v": "rẹcuiára"}, {"p": 13, "v": "munhã"}, {"bid": "bid#1", "p": 14, "v": "catú."}]
+chunks: [{"i": 1, "f": 14, "t": "IP-MAT"}]
+
+sentence: 20
+uid: 5a8bcc6c-4447-4694-8b0c-5f09f950058b
+text: Iauaraté opɨtá ápe; amũ itá oçộãna.
+text_por: A onça ficou lá; os outros foram-se.
+tokens: [{"p": 1, "v": "Iauaraté"}, {"p": 2, "v": "opɨtá"}, {"p": 3, "v": "ápe;"}, {"p": 4, "v": "amũ"}, {"p": 5, "v": "itá"}, {"bid": "bid#1", "p": 6, "v": "oçộãna."}]
+chunks: [{"i": 1, "f": 6, "t": "IP-MAT"}]
+

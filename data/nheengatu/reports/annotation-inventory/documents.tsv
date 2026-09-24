@@ -1,0 +1,14 @@
+document_uid	reference	document_title	source_json	exports_found	sentences	pos_complete	pos_partial	pos_none	with_chunks	with_multiple_chunks	tree_reconstructable	tree_failed	with_proto_conllu	with_parsed_marker	with_translation
+305b1d99-8900-44a4-99ef-2f43646f3f87	tale_03.txt	Iauti iauraete	6ab546820d7977bbad0e89e7.json	1	11	0	0	11	11	0	0	11	2	0	11
+8d24a63e-8478-409b-8d3a-61239aee89c4	tale_05.txt	Iauti oiuiuanti macacaitá irumo	6ab553b50d7977bbad0e89f1.json	1	8	0	0	8	8	0	0	8	1	0	8
+0c5b28f2-d5af-4b5e-8869-8754c41496dc	tale_06.txt	Iauti iuiri iauaraeté	6ab549a40d7977bbad0e89ee.json	1	11	0	0	11	11	0	0	11	1	0	11
+5fff7ab6-d724-49e6-a5e6-b75f9d5e2f0b	tale_12a.txt	Çuaçu iauareté	6ab545c80d7977bbad0e89e2.json	1	31	0	0	31	31	0	0	31	3	0	30
+a1a2b07d-b997-462e-879b-0e5992a233a9	tale_12b.txt	Çuaçu iauareté II	6ab545d80d7977bbad0e89e3.json	1	15	0	0	15	15	0	0	15	1	0	15
+34ac4b6c-3636-40f3-bb22-3e385163f87a	tale_13a.txt	Cunhã mucu oço uahá ocicári mena	6ab5460f0d7977bbad0e89e5.json	1	19	0	0	19	19	0	0	19	2	0	19
+19484983-fa7f-4b69-996b-b97e1c6afda3	tale_13b.txt	Cunhã mucu oço uahá ocicári mena	6ab545f20d7977bbad0e89e4.json	1	13	0	0	13	13	0	0	13	1	0	13
+36aed259-d913-47d0-b4c8-0b67f328a8fd	tale_13c.txt	Cunhã mucu oço uahá ocicári mena	6ab5465e0d7977bbad0e89e6.json	1	17	0	0	17	17	0	0	17	1	0	17
+d1590857-cb85-458c-9ccd-47ae7a7332ff	tale_14.txt	Momeucaua mɨura receuára	6ab5544a0d7977bbad0e89f8.json	1	20	0	0	20	20	0	0	20	1	0	20
+77674088-b3a4-4082-80d1-674b925ae35d	tale_16.txt	Micura iauaraté	6ab554210d7977bbad0e89f6.json	1	10	0	0	10	10	0	0	10	2	0	10
+1274c422-d60f-43fe-a9e4-94a361f130e1	tale_17.txt	Jauarate' cupii'	6ab553c60d7977bbad0e89f2.json	1	6	0	1	5	6	0	0	6	1	0	6
+34b33feb-72ba-41c3-821c-ace7a80d5ae0	tale_20.txt	Micura iauaraté	6ab554360d7977bbad0e89f7.json	1	8	0	0	8	8	0	0	8	1	0	8
+e3f48105-26ea-4fc2-97c3-ba3fdb6c0e65	tale_22.txt	Amu' momẹuçau mɨcura rẹcẹuậra	6ab5496c0d7977bbad0e89ed.json	1	28	1	8	19	28	1	1	27	0	28	28

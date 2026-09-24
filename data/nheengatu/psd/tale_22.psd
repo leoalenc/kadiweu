@@ -1,0 +1,7 @@
+/*
+sentence = 2
+uid = 0ef3226a-1063-4ddd-9fbd-bb677f1c7d63
+text = Mɨcura raɨíra oiumẽndári cinimũ.
+text_por = Da raposa a filha casa-se com o sinimbú.
+*/
+(IP-MAT (NP (N$ Mɨcura) (NP (N raɨíra))) (VB oiumẽndári) (NP (NPR cinimũ.)) (ID tale_22,0.2))

@@ -1,0 +1,138 @@
+document_uid: 34ac4b6c-3636-40f3-bb22-3e385163f87a
+title: Cunhã mucu oço uahá ocicári mena
+reference: tale_13a.txt
+source_json: 6ab5460f0d7977bbad0e89e5.json
+
+sentence: 1
+uid: 789f4bf5-790b-470f-a27f-c2c09ef7664e
+text: Cunhã mucu oço uahá ocucári mena
+text_por: A moça vai que procurar marido
+tokens: [{"p": 1, "v": "Cunhã"}, {"p": 2, "v": "mucu"}, {"p": 3, "v": "oço"}, {"p": 4, "v": "uahá"}, {"p": 5, "v": "ocucári"}, {"p": 6, "v": "mena"}]
+chunks: [{"i": 1, "f": 6, "t": "IP-MAT"}]
+
+sentence: 2
+uid: 17cb346d-9cbe-4fbd-8f6d-3f82e3929f13
+text: Cunhã-mucu mɨcura
+text_por: A moça e o gambá
+tokens: [{"p": 1, "v": "Cunhã-mucu"}, {"p": 2, "v": "mɨcura"}]
+chunks: [{"i": 1, "f": 2, "t": "IP-MAT"}]
+
+sentence: 3
+uid: 00cb7a2e-77d7-4a54-b7e7-72c5c6318c20
+text: Oiepé cunhã mucú onhehẽ i cɨ çupé: — Xa çộ xa cicári cẹ mẽna, xa purarári rẹtệ iúmacɨ.
+text_por: Uma moça disse sua mãe à: — Eu vou procurar um marido, eu estou padecendo muito de fome.
+tokens: [{"p": 1, "v": "Oiepé"}, {"p": 2, "v": "cunhã"}, {"p": 3, "v": "mucú"}, {"p": 4, "v": "onhehẽ"}, {"p": 5, "v": "i"}, {"p": 6, "v": "cɨ"}, {"p": 7, "v": "çupé:"}, {"p": 8, "v": "—"}, {"p": 9, "v": "Xa"}, {"p": 10, "v": "çộ"}, {"p": 11, "v": "xa"}, {"p": 12, "v": "cicári"}, {"p": 13, "v": "cẹ"}, {"p": 14, "v": "mẽna,"}, {"p": 15, "v": "xa"}, {"p": 16, "v": "purarári"}, {"p": 17, "v": "rẹtệ"}, {"bid": "bid#1", "p": 18, "v": "iúmacɨ."}]
+chunks: [{"i": 1, "f": 18, "t": "IP-MAT"}]
+
+sentence: 4
+uid: 1c3c95e6-7802-4101-a680-953faf0d2add
+text: Ahé oçộ ãna, ocɨka uãna mamé oikộ moçapɨra pé, opuranú: — Mãháta inaié pé?
+text_por: Ela foi-se, chegou aonde havia três caminhos, perguntou: — Qual será do inajé o caminho?
+tokens: [{"p": 1, "v": "Ahé"}, {"p": 2, "v": "oçộ"}, {"p": 3, "v": "ãna,"}, {"p": 4, "v": "ocɨka"}, {"p": 5, "v": "uãna"}, {"p": 6, "v": "mamé"}, {"p": 7, "v": "oikộ"}, {"p": 8, "v": "moçapɨra"}, {"p": 9, "v": "pé,"}, {"p": 10, "v": "opuranú:"}, {"p": 11, "v": "—"}, {"p": 12, "v": "Mãháta"}, {"p": 13, "v": "inaié"}, {"bid": "bid#1", "p": 14, "v": "pé?"}]
+chunks: [{"i": 1, "f": 14, "t": "IP-MAT"}]
+
+sentence: 5
+uid: 332cd27d-d6fc-487e-ab11-e41afe8dd541
+text: Oiepé pé upé, ahé omahã inambú ráua; aramé ahé omaité uãna: — Quahá inaié pé.
+text_por: Um caminho em, ela viu de inambús penas; então ela pensou: — Este é do inajé o caminho.
+tokens: [{"p": 1, "v": "Oiepé"}, {"p": 2, "v": "pé"}, {"p": 3, "v": "upé,"}, {"p": 4, "v": "ahé"}, {"p": 5, "v": "omahã"}, {"p": 6, "v": "inambú"}, {"p": 7, "v": "ráua;"}, {"p": 8, "v": "aramé"}, {"p": 9, "v": "ahé"}, {"p": 10, "v": "omaité"}, {"p": 11, "v": "uãna:"}, {"p": 12, "v": "—"}, {"p": 13, "v": "Quahá"}, {"p": 14, "v": "inaié"}, {"bid": "bid#1", "p": 15, "v": "pé."}]
+chunks: [{"i": 1, "f": 15, "t": "IP-MAT"}]
+
+sentence: 6
+uid: a3e04694-44fb-4e07-8d93-5a4d04860870
+text: Oçộ uậna ahé rupí.
+text_por: Foi-se ele sobre.
+tokens: [{"p": 1, "v": "Oçộ"}, {"p": 2, "v": "uậna"}, {"p": 3, "v": "ahé"}, {"bid": "bid#1", "p": 4, "v": "rupí."}]
+chunks: [{"i": 1, "f": 4, "t": "IP-MAT"}]
+
+sentence: 7
+uid: c8b81219-1deb-47db-a2f1-575bd994ae50
+text: Opauçápe oiúiúantí ộca mamé oikộ oiepé uáimɨ uapɨca oikộ uahá tatá remehɨpe, onhehẽ: — Inệ será inaié cɨ?
+text_por: No fim encontrou casa onde estava uma velha sentada, estava que do fogo na beira, disse: — Vocệ é do inajé mãe?
+tokens: [{"p": 1, "v": "Opauçápe"}, {"p": 2, "v": "oiúiúantí"}, {"p": 3, "v": "ộca"}, {"p": 4, "v": "mamé"}, {"p": 5, "v": "oikộ"}, {"p": 6, "v": "oiepé"}, {"p": 7, "v": "uáimɨ"}, {"p": 8, "v": "uapɨca"}, {"p": 9, "v": "oikộ"}, {"p": 10, "v": "uahá"}, {"p": 11, "v": "tatá"}, {"p": 12, "v": "remehɨpe,"}, {"p": 13, "v": "onhehẽ:"}, {"p": 14, "v": "—"}, {"p": 15, "v": "Inệ"}, {"p": 16, "v": "será"}, {"p": 17, "v": "inaié"}, {"bid": "bid#1", "p": 18, "v": "cɨ?"}]
+chunks: [{"i": 1, "f": 18, "t": "IP-MAT"}]
+
+sentence: 8
+uid: 64cb1254-d2ef-4f0e-bcac-4af64867a9f9
+text: Uáimĩ oçuaxára: — Ixệ ahé tenhẽ.
+text_por: A velha respondeu: — Eu sou ela mesma.
+tokens: [{"p": 1, "v": "Uáimĩ"}, {"p": 2, "v": "oçuaxára:"}, {"p": 3, "v": "—"}, {"p": 4, "v": "Ixệ"}, {"p": 5, "v": "ahé"}, {"bid": "bid#1", "p": 6, "v": "tenhẽ."}]
+chunks: [{"i": 1, "f": 6, "t": "IP-MAT"}]
+
+sentence: 9
+uid: 8372b926-78a6-4c5b-ab5a-f41e766bdcd0
+text: Cunhã mucú onhehẽ: — Xa iúre ahé pɨre xa mendári arãma ahé irúmo.
+text_por: A moça disse: — Eu venho ele a eu casar para ele com.
+tokens: [{"p": 1, "v": "Cunhã"}, {"p": 2, "v": "mucú"}, {"p": 3, "v": "onhehẽ:"}, {"p": 4, "v": "—"}, {"p": 5, "v": "Xa"}, {"p": 6, "v": "iúre"}, {"p": 7, "v": "ahé"}, {"p": 8, "v": "pɨre"}, {"p": 9, "v": "xa"}, {"p": 10, "v": "mendári"}, {"p": 11, "v": "arãma"}, {"p": 12, "v": "ahé"}, {"bid": "bid#1", "p": 13, "v": "irúmo."}]
+chunks: [{"i": 1, "f": 13, "t": "IP-MAT"}]
+
+sentence: 10
+uid: 84247d89-f0bd-4702-a0b4-184d908aefc2
+text: Uáimĩ onhehẽ: — Cẹ mbɨra míra puxí rẹtệ ahé; aarệcệ xa çó xa iumími inệ.
+text_por: A velha disse: — Meu filho é gente brava muito ele; por isso eu vou eu esconder você.
+tokens: [{"p": 1, "v": "Uáimĩ"}, {"p": 2, "v": "onhehẽ:"}, {"p": 3, "v": "—"}, {"p": 4, "v": "Cẹ"}, {"p": 5, "v": "mbɨra"}, {"p": 6, "v": "míra"}, {"p": 7, "v": "puxí"}, {"p": 8, "v": "rẹtệ"}, {"p": 9, "v": "ahé;"}, {"p": 10, "v": "aarệcệ"}, {"p": 11, "v": "xa"}, {"p": 12, "v": "çó"}, {"p": 13, "v": "xa"}, {"p": 14, "v": "iumími"}, {"bid": "bid#1", "p": 15, "v": "inệ."}]
+chunks: [{"i": 1, "f": 15, "t": "IP-MAT"}]
+
+sentence: 11
+uid: c59155da-4174-4981-bb28-43d61e3b57f5
+text: Quahá uáimĩ intí inaié cɨ; mɨcúra cɨ ahé.
+text_por: Esta velha não era do inajé mãe; do gambá era mãe ela.
+tokens: [{"p": 1, "v": "Quahá"}, {"p": 2, "v": "uáimĩ"}, {"p": 3, "v": "intí"}, {"p": 4, "v": "inaié"}, {"p": 5, "v": "cɨ;"}, {"p": 6, "v": "mɨcúra"}, {"p": 7, "v": "cɨ"}, {"bid": "bid#1", "p": 8, "v": "ahé."}]
+chunks: [{"i": 1, "f": 8, "t": "IP-MAT"}]
+
+sentence: 12
+uid: de2cf387-e11f-4f38-9d45-456fba4cc2f7
+text: Caarúka ramé i embɨra ocɨka uãna, orúri uãna ximiára, uirá itá.
+text_por: Tarde à seu filho chegou, trouxe sua caça, pássaros.
+tokens: [{"p": 1, "v": "Caarúka"}, {"p": 2, "v": "ramé"}, {"p": 3, "v": "i"}, {"p": 4, "v": "embɨra"}, {"p": 5, "v": "ocɨka"}, {"p": 6, "v": "uãna,"}, {"p": 7, "v": "orúri"}, {"p": 8, "v": "uãna"}, {"p": 9, "v": "ximiára,"}, {"p": 10, "v": "uirá"}, {"bid": "bid#1", "p": 11, "v": "itá."}]
+chunks: [{"i": 1, "f": 11, "t": "IP-MAT"}]
+
+sentence: 13
+uid: 43c29af7-1384-406a-8b24-6200738b5c96
+text: I cɨ omungaturú aitá óú arãma.
+text_por: Sua mãe aprontou eles comerem para.
+tokens: [{"p": 1, "v": "I"}, {"p": 2, "v": "cɨ"}, {"p": 3, "v": "omungaturú"}, {"p": 4, "v": "aitá"}, {"p": 5, "v": "óú"}, {"bid": "bid#1", "p": 6, "v": "arãma."}]
+chunks: [{"i": 1, "f": 6, "t": "IP-MAT"}]
+
+sentence: 14
+uid: e69dafc8-9696-4c1d-82c6-1f0c8c11457f
+text: Aitá óú oikộ ramé i cɨ opuranú ixuí: — Ocɨka ramé oiepé amú tẹtãma uára, mãi tahá rệrekộ ahé?
+text_por: Eles comendo estavam quando sua mãe perguntou a ele: — Chegasse se um de outra pátria habitante, como é que tu terias (tratarias) ele?
+tokens: [{"p": 1, "v": "Aitá"}, {"p": 2, "v": "óú"}, {"p": 3, "v": "oikộ"}, {"p": 4, "v": "ramé"}, {"p": 5, "v": "i"}, {"p": 6, "v": "cɨ"}, {"p": 7, "v": "opuranú"}, {"p": 8, "v": "ixuí:"}, {"p": 9, "v": "—"}, {"p": 10, "v": "Ocɨka"}, {"p": 11, "v": "ramé"}, {"p": 12, "v": "oiepé"}, {"p": 13, "v": "amú"}, {"p": 14, "v": "tẹtãma"}, {"p": 15, "v": "uára,"}, {"p": 16, "v": "mãi"}, {"p": 17, "v": "tahá"}, {"p": 18, "v": "rệrekộ"}, {"bid": "bid#1", "p": 19, "v": "ahé?"}]
+chunks: [{"i": 1, "f": 19, "t": "IP-MAT"}]
+
+sentence: 15
+uid: e833da9b-433a-44c4-b867-da313b944a6d
+text: Mɨcúra oçuaxára: — Xa cenõĩ ahé óú arãma ianẹ irúmo.
+text_por: O gambá respondeu: — Eu chamava ele comer para nós com.
+tokens: [{"p": 1, "v": "Mɨcúra"}, {"p": 2, "v": "oçuaxára:"}, {"p": 3, "v": "—"}, {"p": 4, "v": "Xa"}, {"p": 5, "v": "cenõĩ"}, {"p": 6, "v": "ahé"}, {"p": 7, "v": "óú"}, {"p": 8, "v": "arãma"}, {"p": 9, "v": "ianẹ"}, {"bid": "bid#1", "p": 10, "v": "irúmo."}]
+chunks: [{"i": 1, "f": 10, "t": "IP-MAT"}]
+
+sentence: 16
+uid: cecbb87a-1e6f-4b3d-a85d-8e02234983c9
+text: Aramé uáimĩ ocenõĩ cunhã mucú oiumími oikộ uahá.
+text_por: Então a velha chamou a moça escondida estava que.
+tokens: [{"p": 1, "v": "Aramé"}, {"p": 2, "v": "uáimĩ"}, {"p": 3, "v": "ocenõĩ"}, {"p": 4, "v": "cunhã"}, {"p": 5, "v": "mucú"}, {"p": 6, "v": "oiumími"}, {"p": 7, "v": "oikộ"}, {"bid": "bid#1", "p": 8, "v": "uahá."}]
+chunks: [{"i": 1, "f": 8, "t": "IP-MAT"}]
+
+sentence: 17
+uid: cae8d625-b131-402a-8105-80998d879443
+text: Cunhã mucú óú ãna aitá irúmo; mɨcúra çộrí oikộ maharẹcệ cunhã mucú purãnga rẹtệ.
+text_por: A moça comeu eles com, o gambá alegre estava porque a moça formosa era muito.
+tokens: [{"p": 1, "v": "Cunhã"}, {"p": 2, "v": "mucú"}, {"p": 3, "v": "óú"}, {"p": 4, "v": "ãna"}, {"p": 5, "v": "aitá"}, {"p": 6, "v": "irúmo;"}, {"p": 7, "v": "mɨcúra"}, {"p": 8, "v": "çộrí"}, {"p": 9, "v": "oikộ"}, {"p": 10, "v": "maharẹcệ"}, {"p": 11, "v": "cunhã"}, {"p": 12, "v": "mucú"}, {"p": 13, "v": "purãnga"}, {"bid": "bid#1", "p": 14, "v": "rẹtệ."}]
+chunks: [{"i": 1, "f": 14, "t": "IP-MAT"}]
+
+sentence: 18
+uid: 3dcc7c8b-b770-4899-9311-95a953350057
+text: Pitúna opé, mɨcúra oçộ ramé okệri arãma cunhã mucú irúmo, ahé ompúãna ahé, onhehẽ: — Intí xa ienõ putári nẹ irúmo, maharecè inệma rẹtệ-inẹ!
+text_por: Noite em, o gambá foi quando dormir para moça com, ela enxotou a ele, disse: — Não eu deitar quero tu com, porque catinguento muito é você!
+tokens: [{"p": 1, "v": "Pitúna"}, {"p": 2, "v": "opé,"}, {"p": 3, "v": "mɨcúra"}, {"p": 4, "v": "oçộ"}, {"p": 5, "v": "ramé"}, {"p": 6, "v": "okệri"}, {"p": 7, "v": "arãma"}, {"p": 8, "v": "cunhã"}, {"p": 9, "v": "mucú"}, {"p": 10, "v": "irúmo,"}, {"p": 11, "v": "ahé"}, {"p": 12, "v": "ompúãna"}, {"p": 13, "v": "ahé,"}, {"p": 14, "v": "onhehẽ:"}, {"p": 15, "v": "—"}, {"p": 16, "v": "Intí"}, {"p": 17, "v": "xa"}, {"p": 18, "v": "ienõ"}, {"p": 19, "v": "putári"}, {"p": 20, "v": "nẹ"}, {"p": 21, "v": "irúmo,"}, {"p": 22, "v": "maharecè"}, {"p": 23, "v": "inệma"}, {"bid": "bid#1", "p": 24, "v": "rẹtệ-inẹ!"}]
+chunks: [{"i": 1, "f": 24, "t": "IP-MAT"}]
+
+sentence: 19
+uid: 6023cb3e-fdeb-42b8-86c0-34b02a8bd02b
+text: Coẽma ramé, uáimĩ omundú ramé cunhã mucú oiuúca iepeá, cunhã mucú oiauáu ãna.
+text_por: Manhã em, a velha mandou quando a moça tirar lenha, a moça fugiu.
+tokens: [{"p": 1, "v": "Coẽma"}, {"p": 2, "v": "ramé,"}, {"p": 3, "v": "uáimĩ"}, {"p": 4, "v": "omundú"}, {"p": 5, "v": "ramé"}, {"p": 6, "v": "cunhã"}, {"p": 7, "v": "mucú"}, {"p": 8, "v": "oiuúca"}, {"p": 9, "v": "iepeá,"}, {"p": 10, "v": "cunhã"}, {"p": 11, "v": "mucú"}, {"p": 12, "v": "oiauáu"}, {"bid": "bid#1", "p": 13, "v": "ãna."}]
+chunks: [{"i": 1, "f": 13, "t": "IP-MAT"}]
+

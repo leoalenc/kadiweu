@@ -1,0 +1,110 @@
+document_uid: a1a2b07d-b997-462e-879b-0e5992a233a9
+title: Çuaçu iauareté II
+reference: tale_12b.txt
+source_json: 6ab545d80d7977bbad0e89e3.json
+
+sentence: 1
+uid: e5bf6d37-1358-40db-96d3-5704c03e02ec
+text: Çuaçu iauareté II
+text_por: O vendo e a onça II
+tokens: [{"tid": "Wn1D", "p": 1, "v": "Çuaçu"}, {"tid": "o2wn", "p": 2, "v": "iauareté"}, {"tid": "6ZnO", "p": 3, "v": "II"}]
+chunks: [{"i": 1, "f": 3, "t": "IP-MAT"}]
+
+sentence: 2
+uid: d438f9ce-8a1f-4908-b401-48307a3deda1
+text: Çuaçú oçộ opɨtá arãma iauára róca upé.
+text_por: O veado foi morar em companhia do cachorro.
+tokens: [{"p": 1, "v": "Çuaçú"}, {"p": 2, "v": "oçộ"}, {"p": 3, "v": "opɨtá"}, {"p": 4, "v": "arãma"}, {"p": 5, "v": "iauára"}, {"p": 6, "v": "róca"}, {"bid": "bid#1", "p": 7, "v": "upé."}]
+chunks: [{"i": 1, "f": 7, "t": "IP-MAT"}]
+
+sentence: 3
+uid: fcfb9d4f-7e92-486c-822c-e9437b880993
+text: Amú acaiú upé, iauáratệ ocɨka iúɨri iauára róça úpe, opɨtậ arãma ahé irúmo.
+text_por: Passado muito tempo, a onça também foi morar lá, porque o veado já havia esquecido dela.
+tokens: [{"p": 1, "v": "Amú"}, {"p": 2, "v": "acaiú"}, {"p": 3, "v": "upé,"}, {"p": 4, "v": "iauáratệ"}, {"p": 5, "v": "ocɨka"}, {"p": 6, "v": "iúɨri"}, {"p": 7, "v": "iauára"}, {"p": 8, "v": "róça"}, {"p": 9, "v": "úpe,"}, {"p": 10, "v": "opɨtậ"}, {"p": 11, "v": "arãma"}, {"p": 12, "v": "ahé"}, {"bid": "bid#1", "p": 13, "v": "irúmo."}]
+chunks: [{"i": 1, "f": 13, "t": "IP-MAT"}]
+
+sentence: 4
+uid: b21afa5e-e019-4345-9f1e-b7c3db715bc8
+text: A itá oçộ cahamunũ.
+text_por: No outro dia foram caçar.
+tokens: [{"p": 1, "v": "A"}, {"p": 2, "v": "itá"}, {"p": 3, "v": "oçộ"}, {"bid": "bid#1", "p": 4, "v": "cahamunũ."}]
+chunks: [{"i": 1, "f": 4, "t": "IP-MAT"}]
+
+sentence: 5
+uid: f318b8f8-bf34-41c3-bb91-4241fd01acdd
+text: Iauaratệ opɨcɨka putári iauára, oiucá arãma áhé.
+text_por: A onça queria pegar o cachorro.
+tokens: [{"p": 1, "v": "Iauaratệ"}, {"p": 2, "v": "opɨcɨka"}, {"p": 3, "v": "putári"}, {"p": 4, "v": "iauára,"}, {"p": 5, "v": "oiucá"}, {"p": 6, "v": "arãma"}, {"bid": "bid#1", "p": 7, "v": "áhé."}]
+chunks: [{"i": 1, "f": 7, "t": "IP-MAT"}]
+
+sentence: 6
+uid: 3446ea59-7603-4460-b318-771615d13b0a
+text: Iauára oiuɨre ramé, caarúca ramé, orúri ximiára-mirĩ-itá: acutí, páca, tatú, inanbú.
+text_por: O cachorro de tarde, quando voltou, trouxe caça pequena, cutia, paca, tatu e inhambu.
+tokens: [{"p": 1, "v": "Iauára"}, {"p": 2, "v": "oiuɨre"}, {"p": 3, "v": "ramé,"}, {"p": 4, "v": "caarúca"}, {"p": 5, "v": "ramé,"}, {"p": 6, "v": "orúri"}, {"p": 7, "v": "ximiára-mirĩ-itá:"}, {"p": 8, "v": "acutí,"}, {"p": 9, "v": "páca,"}, {"p": 10, "v": "tatú,"}, {"bid": "bid#1", "p": 11, "v": "inanbú."}]
+chunks: [{"i": 1, "f": 11, "t": "IP-MAT"}]
+
+sentence: 7
+uid: a8a5c8bd-6615-40f4-9aad-d1fd38d38bc2
+text: Aitá óú ãna, ariré aitá oçộ ouímuçaraĩ.
+text_por: Jantaram e depois de jantar foram jogar.
+tokens: [{"p": 1, "v": "Aitá"}, {"p": 2, "v": "óú"}, {"p": 3, "v": "ãna,"}, {"p": 4, "v": "ariré"}, {"p": 5, "v": "aitá"}, {"p": 6, "v": "oçộ"}, {"bid": "bid#1", "p": 7, "v": "ouímuçaraĩ."}]
+chunks: [{"i": 1, "f": 7, "t": "IP-MAT"}]
+
+sentence: 8
+uid: b8913d2e-e658-4501-bd60-860967ae5a10
+text: Iauaratệ oíumuçaráĩ ramé, onhehẽ: — Intí xa pɨcɨka quáu mahã xa cahamunũ xa ikộ.
+text_por: A onça jogava e dizia: — O que eu cacei não pude pegar.
+tokens: [{"p": 1, "v": "Iauaratệ"}, {"p": 2, "v": "oíumuçaráĩ"}, {"p": 3, "v": "ramé,"}, {"p": 4, "v": "onhehẽ:"}, {"p": 5, "v": "—"}, {"p": 6, "v": "Intí"}, {"p": 7, "v": "xa"}, {"p": 8, "v": "pɨcɨka"}, {"p": 9, "v": "quáu"}, {"p": 10, "v": "mahã"}, {"p": 11, "v": "xa"}, {"p": 12, "v": "cahamunũ"}, {"p": 13, "v": "xa"}, {"bid": "bid#1", "p": 14, "v": "ikộ."}]
+chunks: [{"i": 1, "f": 14, "t": "IP-MAT"}]
+
+sentence: 9
+uid: 6e962ed6-1a30-49ae-9adc-27b1529c8501
+text: Iauára oiumuçaraĩ ramé, onhehẽ: — Auá orekộ cetimã iatúca intí cahamunũ quáu.
+text_por: O cachorro jogava e dizia: — Quem tem perna curta não deve caçar.
+tokens: [{"p": 1, "v": "Iauára"}, {"p": 2, "v": "oiumuçaraĩ"}, {"p": 3, "v": "ramé,"}, {"p": 4, "v": "onhehẽ:"}, {"p": 5, "v": "—"}, {"p": 6, "v": "Auá"}, {"p": 7, "v": "orekộ"}, {"p": 8, "v": "cetimã"}, {"p": 9, "v": "iatúca"}, {"p": 10, "v": "intí"}, {"p": 11, "v": "cahamunũ"}, {"bid": "bid#1", "p": 12, "v": "quáu."}]
+chunks: [{"i": 1, "f": 12, "t": "IP-MAT"}]
+
+sentence: 10
+uid: 44efd5a9-92a4-4e8b-9c94-14b81ff52d82
+text: Aitá omuçaraĩ ramé iaué, iauaratệ opúri iauára rẹcệ; iauára, çuaçú, oiauáu ãna; iauaratệ opicɨka ramé çuaçú, quahá oiệrệo itá arãma.
+text_por: Assim jogaram até que a onça saltou no cachorro, o cachorro e o veado fugiram, a onça seguiu atrás e, quando pegou o veado, este virou pedra.
+tokens: [{"p": 1, "v": "Aitá"}, {"p": 2, "v": "omuçaraĩ"}, {"p": 3, "v": "ramé"}, {"p": 4, "v": "iaué,"}, {"p": 5, "v": "iauaratệ"}, {"p": 6, "v": "opúri"}, {"p": 7, "v": "iauára"}, {"p": 8, "v": "rẹcệ;"}, {"p": 9, "v": "iauára,"}, {"p": 10, "v": "çuaçú,"}, {"p": 11, "v": "oiauáu"}, {"p": 12, "v": "ãna;"}, {"p": 13, "v": "iauaratệ"}, {"p": 14, "v": "opicɨka"}, {"p": 15, "v": "ramé"}, {"p": 16, "v": "çuaçú,"}, {"p": 17, "v": "quahá"}, {"p": 18, "v": "oiệrệo"}, {"p": 19, "v": "itá"}, {"bid": "bid#1", "p": 20, "v": "arãma."}]
+chunks: [{"i": 1, "f": 20, "t": "IP-MAT"}]
+
+sentence: 11
+uid: 60698338-8320-46dc-a5e2-545e33aac424
+text: Iauára oiaçáu çuá indá kẹtệ, onhehẽ iauaratệ çupé: — Rệu putári ramé ixệ, rẹiapí nhahã itá cẹ rẹcệ.
+text_por: O cachorro atravessou um rio, e disse para a onça: — Agora se queres me pegar, só se me jogares uma pedra.
+tokens: [{"p": 1, "v": "Iauára"}, {"p": 2, "v": "oiaçáu"}, {"p": 3, "v": "çuá"}, {"p": 4, "v": "indá"}, {"p": 5, "v": "kẹtệ,"}, {"p": 6, "v": "onhehẽ"}, {"p": 7, "v": "iauaratệ"}, {"p": 8, "v": "çupé:"}, {"p": 9, "v": "—"}, {"p": 10, "v": "Rệu"}, {"p": 11, "v": "putári"}, {"p": 12, "v": "ramé"}, {"p": 13, "v": "ixệ,"}, {"p": 14, "v": "rẹiapí"}, {"p": 15, "v": "nhahã"}, {"p": 16, "v": "itá"}, {"p": 17, "v": "cẹ"}, {"bid": "bid#1", "p": 18, "v": "rẹcệ."}]
+chunks: [{"i": 1, "f": 18, "t": "IP-MAT"}]
+
+sentence: 12
+uid: 07e58c80-8dc6-44d3-8997-4386e6d11f0c
+text: Iauaratệ opɨcɨka itá; oiapí iauára rẹcệ.
+text_por: A onça agarrou na pedra e jogou.
+tokens: [{"p": 1, "v": "Iauaratệ"}, {"p": 2, "v": "opɨcɨka"}, {"p": 3, "v": "itá;"}, {"p": 4, "v": "oiapí"}, {"p": 5, "v": "iauára"}, {"bid": "bid#1", "p": 6, "v": "rẹcệ."}]
+chunks: [{"i": 1, "f": 6, "t": "IP-MAT"}]
+
+sentence: 13
+uid: 4d729d0c-edeb-49e7-b634-88da4365264a
+text: Itá oári ramé amú çuaxára ápe, oçaçẽma: — Mé!...
+text_por: Quando a pedra caiu na outra banda gritou: — Mé!...
+tokens: [{"p": 1, "v": "Itá"}, {"p": 2, "v": "oári"}, {"p": 3, "v": "ramé"}, {"p": 4, "v": "amú"}, {"p": 5, "v": "çuaxára"}, {"p": 6, "v": "ápe,"}, {"p": 7, "v": "oçaçẽma:"}, {"p": 8, "v": "—"}, {"bid": "bid#1", "p": 9, "v": "Mé!..."}]
+chunks: [{"i": 1, "f": 9, "t": "IP-MAT"}]
+
+sentence: 14
+uid: cc198d1e-735e-48b1-a2a1-31174a3ec225
+text: Oiệrệo iuɨre çuaçú arãma.
+text_por: E virou outra vez em veado.
+tokens: [{"p": 1, "v": "Oiệrệo"}, {"p": 2, "v": "iuɨre"}, {"p": 3, "v": "çuaçú"}, {"bid": "bid#1", "p": 4, "v": "arãma."}]
+chunks: [{"i": 1, "f": 4, "t": "IP-MAT"}]
+
+sentence: 15
+uid: 635e116a-6175-482b-b46e-09dd6c293954
+text: A çui iauára opɨtá iauraté ruãĩậna arãma.
+text_por: Foi daí que gerou-se a raiva do cachorro contra a onça.
+tokens: [{"p": 1, "v": "A"}, {"p": 2, "v": "çui"}, {"p": 3, "v": "iauára"}, {"p": 4, "v": "opɨtá"}, {"p": 5, "v": "iauraté"}, {"p": 6, "v": "ruãĩậna"}, {"bid": "bid#1", "p": 7, "v": "arãma."}]
+chunks: [{"i": 1, "f": 7, "t": "IP-MAT"}]
+

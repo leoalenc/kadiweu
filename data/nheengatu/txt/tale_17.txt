@@ -1,0 +1,47 @@
+document_uid: 1274c422-d60f-43fe-a9e4-94a361f130e1
+title: Jauarate' cupii'
+reference: tale_17.txt
+source_json: 6ab553c60d7977bbad0e89f2.json
+
+sentence: 1
+uid: 25967aa5-7645-4d96-a198-f55c27ad9451
+text: Jauarate ' cupii '
+text_por: A onça e os Cupins
+tokens: [{"p": 1, "v": "Jauarate"}, {"p": 2, "v": "'", "t": "PUNC"}, {"p": 3, "v": "cupii"}, {"p": 4, "v": "'", "t": "PUNC"}]
+chunks: [{"i": 1, "f": 4, "t": "IP-MAT"}]
+
+sentence: 2
+uid: be219c40-5a18-42a2-a3ef-641c8091b42d
+text: A'ra pucũ riré, cupií itá ourí ãna mamé iauaraté oiupucuári uahá oikộ, oiupirú ãna omunhã çóca xipó rẹcệ.
+text_por: Tempo longo depois, os cupins vieram onde a onça amarrada que estava, principiaram a fazer sua casa cipó sobre.
+tokens: [{"p": 1, "v": "A'ra"}, {"p": 2, "v": "pucũ"}, {"p": 3, "v": "riré,"}, {"p": 4, "v": "cupií"}, {"p": 5, "v": "itá"}, {"p": 6, "v": "ourí"}, {"p": 7, "v": "ãna"}, {"p": 8, "v": "mamé"}, {"p": 9, "v": "iauaraté"}, {"p": 10, "v": "oiupucuári"}, {"p": 11, "v": "uahá"}, {"p": 12, "v": "oikộ,"}, {"p": 13, "v": "oiupirú"}, {"p": 14, "v": "ãna"}, {"p": 15, "v": "omunhã"}, {"p": 16, "v": "çóca"}, {"p": 17, "v": "xipó"}, {"bid": "bid#1", "p": 18, "v": "rẹcệ."}]
+chunks: [{"i": 1, "f": 18, "t": "IP-MAT"}]
+
+sentence: 3
+uid: 514df497-c611-4faf-84b8-53bcc7ae005f
+text: Iauaraté onhehẽ: — Ah!
+text_por: A onça disse: — Ah!
+tokens: [{"p": 1, "v": "Iauaraté"}, {"p": 2, "v": "onhehẽ:"}, {"p": 3, "v": "—"}, {"bid": "bid#1", "p": 4, "v": "Ah!"}]
+chunks: [{"i": 1, "f": 4, "t": "IP-MAT"}]
+
+sentence: 4
+uid: f623bf8f-e3fe-4a99-aa8f-a5d8a3af63f4
+text: Cupií, penhẽ pe apgáua ramé curí, pẹuãna curutện quahá xipó, oiumupucuári ixệ arãma.
+text_por: Cupins, vocês machos se fossem, comiam depressa este cipó, desamarrar eu para.
+tokens: [{"p": 1, "v": "Cupií,"}, {"p": 2, "v": "penhẽ"}, {"p": 3, "v": "pe"}, {"p": 4, "v": "apgáua"}, {"p": 5, "v": "ramé"}, {"p": 6, "v": "curí,"}, {"p": 7, "v": "pẹuãna"}, {"p": 8, "v": "curutện"}, {"p": 9, "v": "quahá"}, {"p": 10, "v": "xipó,"}, {"p": 11, "v": "oiumupucuári"}, {"p": 12, "v": "ixệ"}, {"bid": "bid#1", "p": 13, "v": "arãma."}]
+chunks: [{"i": 1, "f": 13, "t": "IP-MAT"}]
+
+sentence: 5
+uid: ee92cabe-ae3d-4497-8944-773dad3e8d7f
+text: A'ra pitúna pucuçáua cupií-itá oçuú çuú xipó.
+text_por: Do dia e da noite o espaço os cupins roendo estavam o cipó.
+tokens: [{"p": 1, "v": "A'ra"}, {"p": 2, "v": "pitúna"}, {"p": 3, "v": "pucuçáua"}, {"p": 4, "v": "cupií-itá"}, {"p": 5, "v": "oçuú"}, {"p": 6, "v": "çuú"}, {"bid": "bid#1", "p": 7, "v": "xipó."}]
+chunks: [{"i": 1, "f": 7, "t": "IP-MAT"}]
+
+sentence: 6
+uid: f2d7c997-6c73-4919-a099-dc75714da01b
+text: Iauaraté océma ramé, óúãna opaɨ aitá.
+text_por: A onça saiu quando, comeu todos eles.
+tokens: [{"p": 1, "v": "Iauaraté"}, {"p": 2, "v": "océma"}, {"p": 3, "v": "ramé,"}, {"p": 4, "v": "óúãna"}, {"p": 5, "v": "opaɨ"}, {"bid": "bid#1", "p": 6, "v": "aitá."}]
+chunks: [{"i": 1, "f": 6, "t": "IP-MAT"}]
+

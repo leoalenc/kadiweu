@@ -1,0 +1,61 @@
+document_uid: 34b33feb-72ba-41c3-821c-ace7a80d5ae0
+title: Micura iauaraté
+reference: tale_20.txt
+source_json: 6ab554360d7977bbad0e89f7.json
+
+sentence: 1
+uid: f715c8e2-eb1f-4c80-bf6e-6fe3155ebdc9
+text: MICURA IAUARETÉ
+text_por: A raposa e a onça
+tokens: [{"p": 1, "v": "MICURA"}, {"bid": "bid#1", "p": 2, "v": "IAUARETÉ"}]
+chunks: [{"i": 1, "f": 2, "t": "IP-MAT"}]
+
+sentence: 2
+uid: 85fbe3c4-3521-4b49-af08-fe855af2b434
+text: Mɨcúra iuɨri ɨ ceí ãna oikộ.
+text_por: A raposa de novo com sede já estava.
+tokens: [{"p": 1, "v": "Mɨcúra"}, {"p": 2, "v": "iuɨri"}, {"p": 3, "v": "ɨ"}, {"p": 4, "v": "ceí"}, {"p": 5, "v": "ãna"}, {"bid": "bid#1", "p": 6, "v": "oikộ."}]
+chunks: [{"i": 1, "f": 6, "t": "IP-MAT"}]
+
+sentence: 3
+uid: df33aa64-bf38-4443-8c04-9d4a6bd41e91
+text: Opetệca iepé cumã ɨua, oiumutuúma rẹtệ cicaãtã cumã ɨua rẹcệ, oierệ ierệo cahá xiríca rẹcệ, oçộ ɨ quára kẹtệ.
+text_por: Bateu uma de sorva árvore, besuntou-se bem resina de sorveira com, e espojou-se folhas secas em, e foi da água poço a.
+tokens: [{"p": 1, "v": "Opetệca"}, {"p": 2, "v": "iepé"}, {"p": 3, "v": "cumã"}, {"p": 4, "v": "ɨua,"}, {"p": 5, "v": "oiumutuúma"}, {"p": 6, "v": "rẹtệ"}, {"p": 7, "v": "cicaãtã"}, {"p": 8, "v": "cumã"}, {"p": 9, "v": "ɨua"}, {"p": 10, "v": "rẹcệ,"}, {"p": 11, "v": "oierệ"}, {"p": 12, "v": "ierệo"}, {"p": 13, "v": "cahá"}, {"p": 14, "v": "xiríca"}, {"p": 15, "v": "rẹcệ,"}, {"p": 16, "v": "oçộ"}, {"p": 17, "v": "ɨ"}, {"p": 18, "v": "quára"}, {"bid": "bid#1", "p": 19, "v": "kẹtệ."}]
+chunks: [{"i": 1, "f": 19, "t": "IP-MAT"}]
+
+sentence: 4
+uid: 3b04f004-4e53-43af-b64c-7f2512d08d20
+text: Iauaraté oxipía ramé nhahã çoộ, onhehẽ: — Auáta indệ?
+text_por: A onça viu quando aquele animal, disse: — Quem é você?
+tokens: [{"p": 1, "v": "Iauaraté"}, {"p": 2, "v": "oxipía"}, {"p": 3, "v": "ramé"}, {"p": 4, "v": "nhahã"}, {"p": 5, "v": "çoộ,"}, {"p": 6, "v": "onhehẽ:"}, {"p": 7, "v": "—"}, {"p": 8, "v": "Auáta"}, {"bid": "bid#1", "p": 9, "v": "indệ?"}]
+chunks: [{"i": 1, "f": 9, "t": "IP-MAT"}]
+
+sentence: 5
+uid: d0f8ae60-7cb8-4a62-b72c-54bf43e44d38
+text: — Ixệ çọộ cahá xiríca.
+text_por: — Eu sou o bicho folha seca. 
+tokens: [{"p": 1, "v": "—"}, {"p": 2, "v": "Ixệ"}, {"p": 3, "v": "çọộ"}, {"p": 4, "v": "cahá"}, {"bid": "bid#1", "p": 5, "v": "xiríca."}]
+chunks: [{"i": 1, "f": 5, "t": "IP-MAT"}]
+
+sentence: 6
+uid: e8b09519-4c42-4783-81f8-ae16d7b6130f
+text: Iauaraté onhehẽ: — Rẹ ú tenoné, repúri ɨ pupé, xa mahã arãma intí uíri ramé nẹ pirệra.
+text_por: A onça disse: — De beber antes, tu pules d'água dentro, eu ver para não boia se teu couro.
+tokens: [{"p": 1, "v": "Iauaraté"}, {"p": 2, "v": "onhehẽ:"}, {"p": 3, "v": "—"}, {"p": 4, "v": "Rẹ"}, {"p": 5, "v": "ú"}, {"p": 6, "v": "tenoné,"}, {"p": 7, "v": "repúri"}, {"p": 8, "v": "ɨ"}, {"p": 9, "v": "pupé,"}, {"p": 10, "v": "xa"}, {"p": 11, "v": "mahã"}, {"p": 12, "v": "arãma"}, {"p": 13, "v": "intí"}, {"p": 14, "v": "uíri"}, {"p": 15, "v": "ramé"}, {"p": 16, "v": "nẹ"}, {"bid": "bid#1", "p": 17, "v": "pirệra."}]
+chunks: [{"i": 1, "f": 17, "t": "IP-MAT"}]
+
+sentence: 7
+uid: 9ef6c8c6-7488-4312-9f65-b6c251fdb389
+text: Ahé opúri ãna; i pirệra intí uíri ãna, cecệ; cicãtã intí oiüticú ɨ pupé.
+text_por: Ela pulou; seu couro não boiou, porque resina não se derreteu dágua dentro.
+tokens: [{"p": 1, "v": "Ahé"}, {"p": 2, "v": "opúri"}, {"p": 3, "v": "ãna;"}, {"p": 4, "v": "i"}, {"p": 5, "v": "pirệra"}, {"p": 6, "v": "intí"}, {"p": 7, "v": "uíri"}, {"p": 8, "v": "ãna,"}, {"p": 9, "v": "cecệ;"}, {"p": 10, "v": "cicãtã"}, {"p": 11, "v": "intí"}, {"p": 12, "v": "oiüticú"}, {"p": 13, "v": "ɨ"}, {"bid": "bid#1", "p": 14, "v": "pupé."}]
+chunks: [{"i": 1, "f": 14, "t": "IP-MAT"}]
+
+sentence: 8
+uid: c76abf99-ca1f-4527-a1da-34959c2bf7bb
+text: Iaué tenhẽ mɨcúra óú quáu ɨ, amãna ára ocɨka catú ramệ.
+text_por: Dessa forma a raposa beber pôde água, da chuva o tempo chegou até quando.
+tokens: [{"p": 1, "v": "Iaué"}, {"p": 2, "v": "tenhẽ"}, {"p": 3, "v": "mɨcúra"}, {"p": 4, "v": "óú"}, {"p": 5, "v": "quáu"}, {"p": 6, "v": "ɨ,"}, {"p": 7, "v": "amãna"}, {"p": 8, "v": "ára"}, {"p": 9, "v": "ocɨka"}, {"p": 10, "v": "catú"}, {"bid": "bid#1", "p": 11, "v": "ramệ."}]
+chunks: [{"i": 1, "f": 11, "t": "IP-MAT"}]
+
