@@ -21,7 +21,10 @@ In order, the script:
    creates the compatibility JSON and dated parser C runner;
 8. runs parser C and generates its comparison, diff, summary, transition, log,
    and provenance files; and
-9. prints an authoritative DONE-only accuracy and A-to-C transition summary.
+9. prints an authoritative DONE-only accuracy and A-to-C transition summary;
+10. generates the illustrated DONE-only A-to-C transition report in Markdown;
+    and
+11. converts that report to PDF with Pandoc and WeasyPrint.
 
 The dependency chain is:
 
@@ -52,10 +55,12 @@ build_kadiweu_parser_full_test.sh
 run_kadiweu_parser_full_test_A.sh
 create_kadiweu_parser_compat.py
 run_kadiweu_parser_rules.py
+make_kadiweu_parser_transition_report.py
 ```
 
 CorpusSearch must be available as `corpussearch` on `PATH` when the A and C
-runners execute.
+runners execute. PDF production additionally requires `pandoc` and
+`weasyprint` on `PATH`.
 
 For a complete default run, the downloads directory must contain fresh JSON and
 PSD exports for all three TBP documents and a complete same-stem parser-rule
@@ -155,6 +160,28 @@ only as descriptive agreement changes. For this reason, the final summary
 printed by the orchestration script reports accuracy and improvements/regressions
 only for DONE sentences.
 
+## Transition report and PDF
+
+After parser C finishes, the pipeline passes the A-to-C transition table and
+the A, C, and gold PSD files to
+`make_kadiweu_parser_transition_report.py`. The report generator selects DONE
+sentences and includes corrections, new structural differences, and persistent
+structural differences. REVIEW sentences are not treated as improvements or
+regressions.
+
+The runner timestamp determines the output names. For example, runner
+`run_kadiweu_parser_full_test_C_250926_1055.sh` produces:
+
+```text
+kadiweu-parser-full-test-A-to-C-250926-1055-DONE-review-svg.md
+kadiweu-parser-full-test-A-to-C-250926-1055-DONE-review.pdf
+```
+
+SVG images are used in the intermediate Markdown because they render reliably
+and remain sharp in the PDF. Pandoc performs the conversion with
+`--pdf-engine=weasyprint` from inside the output directory so that the relative
+image paths resolve correctly.
+
 ## Principal outputs
 
 The generated evaluation files are stored under
@@ -174,6 +201,8 @@ kadiweu-parser-full-test-A-to-C-transitions.tsv
 kadiweu-parser-full-test-A-to-C-summary.tsv
 kadiweu-parser-full-test-C-hashes.txt
 kadiweu-parser-full-test-C-console.log
+kadiweu-parser-full-test-A-to-C-DDMMYY-HHMM-DONE-review-svg.md
+kadiweu-parser-full-test-A-to-C-DDMMYY-HHMM-DONE-review.pdf
 ```
 
 The original TBP document exports are archived under `data/tycho/`. Original
@@ -188,4 +217,3 @@ internally report `FAIL` and emulator status `1` when structural differences
 against gold are found; its dated wrapper handles that expected comparison
 outcome and still completes successfully. Status `2` indicates an execution or
 configuration failure and stops the pipeline.
-
