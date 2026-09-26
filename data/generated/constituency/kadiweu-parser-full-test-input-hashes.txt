@@ -1,2 +1,2 @@
-cd28c771534c566acb671a8f80c9b7054e15875c83e07edd0037df58ba2b937d  kadiweu-parser-full-test.pos
-4494d42eaaf75d2b256dd28e375e3a63ee69f615cbec5308572105076bba6a7d  kadiweu-parser-full-test.gold.psd
+c93fd84431c9362c2c724dba0f323f9b849bae0b5e4e8822ce42055ecee9668d  kadiweu-parser-full-test.pos
+edd115cacfcc6ed713cd12d3db6378bd00be1078ed47f2311937883817454f6f  kadiweu-parser-full-test.gold.psd

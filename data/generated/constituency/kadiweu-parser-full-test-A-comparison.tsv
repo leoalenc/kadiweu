@@ -35,7 +35,7 @@ hil-data,0.39	hil-data	DONE	TRACE_EQUIVALENT	equivalent after trace-notation and
 hil-data,0.4	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 hil-data,0.40	hil-data	REVIEW	TRACE_EQUIVALENT	equivalent after trace-notation and coindex alpha-normalization
 hil-data,0.41	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
-hil-data,0.42	hil-data	REVIEW	STRUCTURAL_DIFFERENCE	provisional-reference difference; manual adjudication required
+hil-data,0.42	hil-data	DONE	STRUCTURAL_DIFFERENCE	validated-reference difference
 hil-data,0.43	hil-data	DONE	EXACT_MATCH	trees are identical after whitespace normalization
 hil-data,0.44	hil-data	DONE	TRACE_EQUIVALENT	equivalent after trace-notation and coindex alpha-normalization
 hil-data,0.45	hil-data	REVIEW	EXACT_MATCH	trees are identical after whitespace normalization

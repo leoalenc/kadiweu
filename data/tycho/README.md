@@ -30,9 +30,9 @@ under `data/`:
 
 | Repository document identifier | Tycho Brahe document title | Document UID | Downloaded JSON | Downloaded PSD | Archived JSON | Archived PSD | Canonical JSON | Canonical PSD |
 |---|---|---|---|---|---|---|---|---|
-| `ped-gramm` | Dados para a gramática do sintagma nominal | `28eeb8a0-d923-4d75-aebe-599aadddfbbb` | `6aab05b57b74f6a6132d5629.json` | `6aab05c17b74f6a6132d562a.psd` | `json/6aab05b57b74f6a6132d5629.json` | `psd/6aab05c17b74f6a6132d562a.psd` | `../ped-gramm.json` | `../ped-gramm.psd` |
-| `hil-data` | dados do Hilário abril de 2026 | `ffef8450-e302-4882-8306-e5998d31f584` | `6aab05937b74f6a6132d5627.json` | `6aab059f7b74f6a6132d5628.psd` | `json/6aab05937b74f6a6132d5627.json` | `psd/6aab059f7b74f6a6132d5628.psd` | `../hil-data.json` | `../hil-data.psd` |
-| `van-data` | Vanda dados | `9d0f60a9-8c32-44c0-ac68-0b5d5b993db8` | `6aab05d87b74f6a6132d562b.json` | `6aab05e27b74f6a6132d562c.psd` | `json/6aab05d87b74f6a6132d562b.json` | `psd/6aab05e27b74f6a6132d562c.psd` | `../van-data.json` | `../van-data.psd` |
+| `ped-gramm` | Dados para a gramática do sintagma nominal | `28eeb8a0-d923-4d75-aebe-599aadddfbbb` | `6ab68a5ba80c26ab9ee2f332.json` | `6ab68a67a80c26ab9ee2f333.psd` | `json/6ab68a5ba80c26ab9ee2f332.json` | `psd/6ab68a67a80c26ab9ee2f333.psd` | `../ped-gramm.json` | `../ped-gramm.psd` |
+| `hil-data` | dados do Hilário abril de 2026 | `ffef8450-e302-4882-8306-e5998d31f584` | `6ab68a19a80c26ab9ee2f32e.json` | `6ab68a26a80c26ab9ee2f32f.psd` | `json/6ab68a19a80c26ab9ee2f32e.json` | `psd/6ab68a26a80c26ab9ee2f32f.psd` | `../hil-data.json` | `../hil-data.psd` |
+| `van-data` | Vanda dados | `9d0f60a9-8c32-44c0-ac68-0b5d5b993db8` | `6ab68a7da80c26ab9ee2f334.json` | `6ab68a85a80c26ab9ee2f335.psd` | `json/6ab68a7da80c26ab9ee2f334.json` | `psd/6ab68a85a80c26ab9ee2f335.psd` | `../van-data.json` | `../van-data.psd` |
 
 ## Pairing JSON and PSD exports
 
@@ -63,4 +63,4 @@ sentences, the numeric component of each ID is the sentence's position among
 all sentences in the JSON document, not its position among only `DONE`
 sentences.
 
-Generated: 2026-09-16T18:13:42-03:00
+Generated: 2026-09-25T11:52:55-03:00

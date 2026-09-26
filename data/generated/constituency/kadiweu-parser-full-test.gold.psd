@@ -795,6 +795,37 @@ text_por = Este leite está quente .
   (ID hil-data,0.41)
 )
 /*
+sentence = 42
+uid = 79cb0e55-9c06-4cb1-91b3-2b5233e1678f
+status = DONE
+text = niGidiwa okokodi ligetedi midi niwigo libinienaGa
+text_por = Estes ovos da fotografia dela estão bonitos .
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D niGidiwa)
+      (NP
+        (N okokodi)
+      )
+      (N$ ligetedi)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (D @idi)
+            (N niwigo)
+          )
+        )
+      )
+    )
+    (NP-PRD
+      (N$ libinienaGa)
+    )
+  )
+  (ID hil-data,0.42)
+)
+/*
 sentence = 43
 uid = a74fea0a-dd87-4c4d-8670-9db66f5b5b16
 status = DONE
@@ -1341,37 +1372,6 @@ text_por = Esta pedra , que é pesada , caiu no meu pé .
   (ID hil-data,0.40)
 )
 /*
-sentence = 42
-uid = 79cb0e55-9c06-4cb1-91b3-2b5233e1678f
-status = REVIEW
-text = niGidiwa okokodi ligetedi midi niwigo libinienaGa
-text_por = Estes ovos da fotografia dela estão bonitos .
-*/
-(
-  (IP-MAT
-    (NP-SBJ
-      (NP
-        (D niGidiwa)
-        (N okokodi)
-      )
-      (N$ ligetedi)
-    )
-    (CP-me
-      (C me@)
-      (IP-SUB
-        (NP
-          (NP
-            (D @idi)
-            (N niwigo)
-          )
-          (N$ libinienaGa)
-        )
-      )
-    )
-  )
-  (ID hil-data,0.42)
-)
-/*
 sentence = 45
 uid = 07bfcd00-7901-474d-bfb8-bf470266aafa
 status = REVIEW
@@ -1637,8 +1637,8 @@ text_por = a comida da Maria não está deliciosa (a não gostosura da comida da
 (
   (IP-MAT
     (NP-SBJ
+      (D ica)
       (NP
-        (D ica)
         (NPR Maria)
       )
       (N$ looligi)

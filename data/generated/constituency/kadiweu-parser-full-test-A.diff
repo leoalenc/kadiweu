@@ -1,8 +1,8 @@
-# hil-data,0.42	status=REVIEW	provisional-reference difference; manual adjudication required
+# hil-data,0.42	status=DONE	validated-reference difference
 --- expected/hil-data,0.42
 +++ actual/hil-data,0.42
 @@ -1 +1 @@
--( ( IP-MAT ( NP-SBJ ( NP ( D niGidiwa ) ( N okokodi ) ) ( N$ ligetedi ) ) ( CP-me ( C me@ ) ( IP-SUB ( NP ( NP ( D @idi ) ( N niwigo ) ) ( N$ libinienaGa ) ) ) ) ) ( ID hil-data,0.42 ) )
+-( ( IP-MAT ( NP-SBJ ( D niGidiwa ) ( NP ( N okokodi ) ) ( N$ ligetedi ) ( CP-me ( C me@ ) ( IP-SUB ( NP ( D @idi ) ( N niwigo ) ) ) ) ) ( NP-PRD ( N$ libinienaGa ) ) ) ( ID hil-data,0.42 ) )
 +( ( IP-MAT ( NP-SBJ ( D niGidiwa ) ( NP ( N okokodi ) ) ( N$ ligetedi ) ) ( CP-me ( C me@ ) ( IP-SUB ( NP ( D @idi ) ( NP ( N niwigo ) ) ( N$ libinienaGa ) ) ) ) ) ( ID hil-data,0.42 ) )
 # hil-data,0.8	status=DONE	validated-reference difference
 --- expected/hil-data,0.8
@@ -14,7 +14,7 @@
 --- expected/ped-gramm,0.11
 +++ actual/ped-gramm,0.11
 @@ -1 +1 @@
--( ( IP-MAT ( NP-SBJ ( NP ( D ica ) ( NPR Maria ) ) ( N$ looligi ) ) ( NEG aG@ ) ( NP-PRD ( N$ @lidi ) ) ) ( ID ped-gramm,0.11 ) )
+-( ( IP-MAT ( NP-SBJ ( D ica ) ( NP ( NPR Maria ) ) ( N$ looligi ) ) ( NEG aG@ ) ( NP-PRD ( N$ @lidi ) ) ) ( ID ped-gramm,0.11 ) )
 +( ( IP-MAT ( NP-SBJ ( D ica ) ( NPR Maria ) ( N$ looligi ) ) ( NEG aG@ ) ( NP-PRD ( N$ @lidi ) ) ) ( ID ped-gramm,0.11 ) )
 # ped-gramm,0.12	status=DONE	validated-reference difference
 --- expected/ped-gramm,0.12

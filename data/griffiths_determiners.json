@@ -1,0 +1,2608 @@
+{
+  "metadata": {
+    "title": "Dicionário da Língua Kadiwéu: Kadiwéu–Português / Português–Kadiwéu",
+    "author": "Glyn Griffiths",
+    "year": 2002,
+    "publisher": "Sociedade Internacional de Lingüística",
+    "source_file": "10-KDDict.pdf",
+    "source_sha256": "95c5b4b6c9a4f8fd09a5df6b2caefd88cd4a09856c200c4aa802325eea6aaaf0",
+    "pdf_pages": 348,
+    "kadiweu_portuguese_last_pdf_page": 175,
+    "model_sources": [
+      {
+        "file": "kadiweu-ncl(3).xfst",
+        "coverage": "simple singular gender + classifier combinations; no plural layer"
+      },
+      {
+        "file": "kadiweu-anaphoric-optional(2).xfst",
+        "coverage": "singular anaphoric forms with optional gender-vowel copying; no plural layer"
+      },
+      {
+        "source": "prior discussion plus dictionary headwords",
+        "coverage": "plural allomorphs and the gender-syncretic plural hypothesis"
+      }
+    ],
+    "orthography_normalization": {
+      "º": "ǥ",
+      "°": "ǥ",
+      "G": "ǥ"
+    },
+    "classification": {
+      "headword": "The exact form occurs in an entry header, detected from the PDF's larger bold Kadiwéu font.",
+      "mentioned_only": "The exact form occurs in the Kadiwéu–Portuguese entry section but not as a detected headword.",
+      "absent_from_dictionary_entries": "No exact-form headword or in-entry mention was found after orthographic normalization."
+    }
+  },
+  "summary": {
+    "all_candidates": {
+      "absent_from_dictionary_entries": 20,
+      "headword": 35
+    },
+    "canonical_simple_and_copied_anaphoric": {
+      "absent_from_dictionary_entries": 1,
+      "headword": 35
+    },
+    "optional_uncopied_series": {
+      "absent_from_dictionary_entries": 18
+    },
+    "canonical_inventory_exhaustively_headworded": false
+  },
+  "entries": [
+    {
+      "form": "ida",
+      "series": "simple",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "da",
+      "feature_tag": "ST",
+      "root_meaning": "standing/vertically extended",
+      "candidate_basis": "morphotactics",
+      "pos": "D",
+      "dictionary_spelling": "ida",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 72,
+            "printed_page": "67",
+            "excerpt_raw": "ida idoa dem aquele lá, aí",
+            "excerpt_normalized": "ida idoa dem aquele lá, aí"
+          },
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 73,
+            "printed_page": "68",
+            "excerpt_raw": "ida anejitege vt 1 tenho parte com ele",
+            "excerpt_normalized": "ida anejitege vt 1 tenho parte com ele"
+          },
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 73,
+            "printed_page": "68",
+            "excerpt_raw": "ida anenitege vt você pertence a ele,",
+            "excerpt_normalized": "ida anenitege vt você pertence a ele,"
+          },
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 73,
+            "printed_page": "68",
+            "excerpt_raw": "(ida) ane-(e-)(tege) adv frase",
+            "excerpt_normalized": "(ida) ane-(e-)(tege) adv frase"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 23,
+            "printed_page": "18",
+            "excerpt_raw": "ida aneetege ter parte com ele,",
+            "excerpt_normalized": "ida aneetege ter parte com ele,"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 39,
+            "printed_page": "34",
+            "excerpt_raw": "ida lá",
+            "excerpt_normalized": "ida lá"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 73,
+            "printed_page": "68",
+            "excerpt_raw": "ida ane-eji-tege",
+            "excerpt_normalized": "ida ane-eji-tege"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 73,
+            "printed_page": "68",
+            "excerpt_raw": "ida aneetege ele pertence a ele",
+            "excerpt_normalized": "ida aneetege ele pertence a ele"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 73,
+            "printed_page": "68",
+            "excerpt_raw": "ida anejitege pertenço a ele",
+            "excerpt_normalized": "ida anejitege pertenço a ele"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 139,
+            "printed_page": "134",
+            "excerpt_raw": "nige ida nigica se tiver",
+            "excerpt_normalized": "nige ida nigica se tiver"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 182,
+            "printed_page": "177",
+            "excerpt_raw": "aquele lá, aí  ida",
+            "excerpt_normalized": "aquele lá, aí  ida"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 221,
+            "printed_page": "216",
+            "excerpt_raw": "pertencer a  ida anejitege",
+            "excerpt_normalized": "pertencer a  ida anejitege"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 221,
+            "printed_page": "216",
+            "excerpt_raw": "pertencer a  (ida) ane-(e-)(tege)",
+            "excerpt_normalized": "pertencer a  (ida) ane-(e-)(tege)"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 234,
+            "printed_page": "229",
+            "excerpt_raw": "tenho parte com ele  ida anejitege",
+            "excerpt_normalized": "tenho parte com ele  ida anejitege"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 235,
+            "printed_page": "230",
+            "excerpt_raw": "ter parte com  (ida) ane-(e-)(tege)",
+            "excerpt_normalized": "ter parte com  (ida) ane-(e-)(tege)"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 286,
+            "printed_page": "281",
+            "excerpt_raw": "ida ane  -e(tege)                      ter parte com,",
+            "excerpt_normalized": "ida ane  -e(tege)                      ter parte com,"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 286,
+            "printed_page": "281",
+            "excerpt_raw": "ida ane ejitege     ->      ideji",
+            "excerpt_normalized": "ida ane ejitege     ->      ideji"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 286,
+            "printed_page": "281",
+            "excerpt_raw": "ida ane enitege              ideni",
+            "excerpt_normalized": "ida ane enitege              ideni"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 286,
+            "printed_page": "281",
+            "excerpt_raw": "ida ane eetege               idee   ...",
+            "excerpt_normalized": "ida ane eetege               idee   ..."
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 286,
+            "printed_page": "281",
+            "excerpt_raw": "ida ane ejinaºatege",
+            "excerpt_normalized": "ida ane ejinaǥatege"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 286,
+            "printed_page": "281",
+            "excerpt_raw": "ida ane enitegetiwaji",
+            "excerpt_normalized": "ida ane enitegetiwaji"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 286,
+            "printed_page": "281",
+            "excerpt_raw": "ida ane oditege",
+            "excerpt_normalized": "ida ane oditege"
+          }
+        ]
+      }
+    },
+    {
+      "form": "ada",
+      "series": "simple",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "da",
+      "feature_tag": "ST",
+      "root_meaning": "standing/vertically extended",
+      "candidate_basis": "morphotactics",
+      "pos": "D",
+      "dictionary_spelling": "ada",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "idoa",
+      "series": "simple",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "da",
+      "feature_tag": "ST",
+      "root_meaning": "standing/vertically extended",
+      "candidate_basis": "dictionary_and_prior_paradigm",
+      "pos": "D",
+      "dictionary_spelling": "idoa",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 72,
+            "printed_page": "67",
+            "excerpt_raw": "ida idoa dem aquele lá, aí",
+            "excerpt_normalized": "ida idoa dem aquele lá, aí"
+          }
+        ],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "niǥida",
+      "series": "anaphoric_copied",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "da",
+      "feature_tag": "ST",
+      "root_meaning": "standing/vertically extended",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "niºida",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "niºida niºidoa dem  masc esse",
+            "excerpt_normalized": "niǥida niǥidoa dem  masc esse"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 72,
+            "printed_page": "67",
+            "excerpt_raw": "niºida aquele",
+            "excerpt_normalized": "niǥida aquele"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 125,
+            "printed_page": "120",
+            "excerpt_raw": "niºida (forma masc)",
+            "excerpt_normalized": "niǥida (forma masc)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 199,
+            "printed_page": "194",
+            "excerpt_raw": "niºida",
+            "excerpt_normalized": "niǥida"
+          }
+        ]
+      }
+    },
+    {
+      "form": "naǥada",
+      "series": "anaphoric_copied",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "da",
+      "feature_tag": "ST",
+      "root_meaning": "standing/vertically extended",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "naºada",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 125,
+            "printed_page": "120",
+            "excerpt_raw": "naºada niºidoa dem  fem essa",
+            "excerpt_normalized": "naǥada niǥidoa dem  fem essa"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "naºada (forma fem)",
+            "excerpt_normalized": "naǥada (forma fem)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 199,
+            "printed_page": "194",
+            "excerpt_raw": "naºada",
+            "excerpt_normalized": "naǥada"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 347,
+            "printed_page": "342",
+            "excerpt_raw": "naºa -da    naºada niale      “aquela árvore”",
+            "excerpt_normalized": "naǥa -da    naǥada niale      “aquela árvore”"
+          }
+        ]
+      }
+    },
+    {
+      "form": "niǥidoa",
+      "series": "anaphoric_copied",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "da",
+      "feature_tag": "ST",
+      "root_meaning": "standing/vertically extended",
+      "candidate_basis": "dictionary_and_prior_paradigm",
+      "pos": "D",
+      "dictionary_spelling": "niºidoa",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 125,
+            "printed_page": "120",
+            "excerpt_raw": "naºada niºidoa dem  fem essa",
+            "excerpt_normalized": "naǥada niǥidoa dem  fem essa"
+          },
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "niºida niºidoa dem  masc esse",
+            "excerpt_normalized": "niǥida niǥidoa dem  masc esse"
+          }
+        ],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥida",
+      "series": "anaphoric_uncopied",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "da",
+      "feature_tag": "ST",
+      "root_meaning": "standing/vertically extended",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºida",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥada",
+      "series": "anaphoric_uncopied",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "da",
+      "feature_tag": "ST",
+      "root_meaning": "standing/vertically extended",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºada",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥidoa",
+      "series": "anaphoric_uncopied",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "da",
+      "feature_tag": "ST",
+      "root_meaning": "standing/vertically extended",
+      "candidate_basis": "extrapolated_from_optional_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºidoa",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "ini",
+      "series": "simple",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "ni",
+      "feature_tag": "SI",
+      "root_meaning": "sitting/non-extended",
+      "candidate_basis": "morphotactics",
+      "pos": "D",
+      "dictionary_spelling": "ini",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 84,
+            "printed_page": "79",
+            "excerpt_raw": "ini iniwa dem masc este",
+            "excerpt_normalized": "ini iniwa dem masc este"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 24,
+            "printed_page": "19",
+            "excerpt_raw": "ini (forma masc)",
+            "excerpt_normalized": "ini (forma masc)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 200,
+            "printed_page": "195",
+            "excerpt_raw": "ini",
+            "excerpt_normalized": "ini"
+          }
+        ]
+      }
+    },
+    {
+      "form": "ani",
+      "series": "simple",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "ni",
+      "feature_tag": "SI",
+      "root_meaning": "sitting/non-extended",
+      "candidate_basis": "morphotactics",
+      "pos": "D",
+      "dictionary_spelling": "ani",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 24,
+            "printed_page": "19",
+            "excerpt_raw": "ani dem fem aquela",
+            "excerpt_normalized": "ani dem fem aquela"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 84,
+            "printed_page": "79",
+            "excerpt_raw": "ani (forma fem)",
+            "excerpt_normalized": "ani (forma fem)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 181,
+            "printed_page": "176",
+            "excerpt_raw": "ani",
+            "excerpt_normalized": "ani"
+          }
+        ]
+      }
+    },
+    {
+      "form": "iniwa",
+      "series": "simple",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "ni",
+      "feature_tag": "SI",
+      "root_meaning": "sitting/non-extended",
+      "candidate_basis": "dictionary_and_prior_paradigm",
+      "pos": "D",
+      "dictionary_spelling": "iniwa",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 84,
+            "printed_page": "79",
+            "excerpt_raw": "ini iniwa dem masc este",
+            "excerpt_normalized": "ini iniwa dem masc este"
+          }
+        ],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "niǥini",
+      "series": "anaphoric_copied",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "ni",
+      "feature_tag": "SI",
+      "root_meaning": "sitting/non-extended",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "niºini",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "niºini niºiniwa dem  masc este",
+            "excerpt_normalized": "niǥini niǥiniwa dem  masc este"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 84,
+            "printed_page": "79",
+            "excerpt_raw": "niºini este",
+            "excerpt_normalized": "niǥini este"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 126,
+            "printed_page": "121",
+            "excerpt_raw": "niºini (forma masc)",
+            "excerpt_normalized": "niǥini (forma masc)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 200,
+            "printed_page": "195",
+            "excerpt_raw": "niºini",
+            "excerpt_normalized": "niǥini"
+          }
+        ]
+      }
+    },
+    {
+      "form": "naǥani",
+      "series": "anaphoric_copied",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "ni",
+      "feature_tag": "SI",
+      "root_meaning": "sitting/non-extended",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "naºani",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 126,
+            "printed_page": "121",
+            "excerpt_raw": "naºani niºiniwa dem  fem esta",
+            "excerpt_normalized": "naǥani niǥiniwa dem  fem esta"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 24,
+            "printed_page": "19",
+            "excerpt_raw": "naºani aquela",
+            "excerpt_normalized": "naǥani aquela"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "naºani (forma fem)",
+            "excerpt_normalized": "naǥani (forma fem)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 181,
+            "printed_page": "176",
+            "excerpt_raw": "naºani",
+            "excerpt_normalized": "naǥani"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 200,
+            "printed_page": "195",
+            "excerpt_raw": "naºani",
+            "excerpt_normalized": "naǥani"
+          }
+        ]
+      }
+    },
+    {
+      "form": "niǥiniwa",
+      "series": "anaphoric_copied",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "ni",
+      "feature_tag": "SI",
+      "root_meaning": "sitting/non-extended",
+      "candidate_basis": "dictionary_and_prior_paradigm",
+      "pos": "D",
+      "dictionary_spelling": "niºiniwa",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 126,
+            "printed_page": "121",
+            "excerpt_raw": "naºani niºiniwa dem  fem esta",
+            "excerpt_normalized": "naǥani niǥiniwa dem  fem esta"
+          },
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "niºini niºiniwa dem  masc este",
+            "excerpt_normalized": "niǥini niǥiniwa dem  masc este"
+          }
+        ],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥini",
+      "series": "anaphoric_uncopied",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "ni",
+      "feature_tag": "SI",
+      "root_meaning": "sitting/non-extended",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºini",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥani",
+      "series": "anaphoric_uncopied",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "ni",
+      "feature_tag": "SI",
+      "root_meaning": "sitting/non-extended",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºani",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥiniwa",
+      "series": "anaphoric_uncopied",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "ni",
+      "feature_tag": "SI",
+      "root_meaning": "sitting/non-extended",
+      "candidate_basis": "extrapolated_from_optional_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºiniwa",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "ina",
+      "series": "simple",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "na",
+      "feature_tag": "CO",
+      "root_meaning": "coming/approaching",
+      "candidate_basis": "morphotactics",
+      "pos": "D",
+      "dictionary_spelling": "ina",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 84,
+            "printed_page": "79",
+            "excerpt_raw": "ina inoa loc, dem esse, aqui",
+            "excerpt_normalized": "ina inoa loc, dem esse, aqui"
+          },
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 84,
+            "printed_page": "79",
+            "excerpt_raw": "ina natigide adv temp agora",
+            "excerpt_normalized": "ina natigide adv temp agora"
+          },
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 84,
+            "printed_page": "79",
+            "excerpt_raw": "ina noko adv temp hoje",
+            "excerpt_normalized": "ina noko adv temp hoje"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 22,
+            "printed_page": "17",
+            "excerpt_raw": "ina (forma masc)",
+            "excerpt_normalized": "ina (forma masc)"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 71,
+            "printed_page": "66",
+            "excerpt_raw": "ica ina parece que ...",
+            "excerpt_normalized": "ica ina parece que ..."
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 84,
+            "printed_page": "79",
+            "excerpt_raw": "ina noko hoje",
+            "excerpt_normalized": "ina noko hoje"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 84,
+            "printed_page": "79",
+            "excerpt_raw": "ina este",
+            "excerpt_normalized": "ina este"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 179,
+            "printed_page": "174",
+            "excerpt_raw": "ina natigide",
+            "excerpt_normalized": "ina natigide"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 182,
+            "printed_page": "177",
+            "excerpt_raw": "ina",
+            "excerpt_normalized": "ina"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 199,
+            "printed_page": "194",
+            "excerpt_raw": "ina",
+            "excerpt_normalized": "ina"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 206,
+            "printed_page": "201",
+            "excerpt_raw": "ina noko",
+            "excerpt_normalized": "ina noko"
+          }
+        ]
+      }
+    },
+    {
+      "form": "ana",
+      "series": "simple",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "na",
+      "feature_tag": "CO",
+      "root_meaning": "coming/approaching",
+      "candidate_basis": "morphotactics",
+      "pos": "D",
+      "dictionary_spelling": "ana",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 22,
+            "printed_page": "17",
+            "excerpt_raw": "ana dem loc fem está aqui",
+            "excerpt_normalized": "ana dem loc fem está aqui"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 84,
+            "printed_page": "79",
+            "excerpt_raw": "ana (forma fem)",
+            "excerpt_normalized": "ana (forma fem)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 200,
+            "printed_page": "195",
+            "excerpt_raw": "está aqui  ana",
+            "excerpt_normalized": "está aqui  ana"
+          }
+        ]
+      }
+    },
+    {
+      "form": "inoa",
+      "series": "simple",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "na",
+      "feature_tag": "CO",
+      "root_meaning": "coming/approaching",
+      "candidate_basis": "dictionary_and_prior_paradigm",
+      "pos": "D",
+      "dictionary_spelling": "inoa",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 84,
+            "printed_page": "79",
+            "excerpt_raw": "ina inoa loc, dem esse, aqui",
+            "excerpt_normalized": "ina inoa loc, dem esse, aqui"
+          }
+        ],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "niǥina",
+      "series": "anaphoric_copied",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "na",
+      "feature_tag": "CO",
+      "root_meaning": "coming/approaching",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "niºina",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "niºina niºinoa dem  masc esse",
+            "excerpt_normalized": "niǥina niǥinoa dem  masc esse"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 21,
+            "printed_page": "16",
+            "excerpt_raw": "niºina este",
+            "excerpt_normalized": "niǥina este"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 22,
+            "printed_page": "17",
+            "excerpt_raw": "niºina este",
+            "excerpt_normalized": "niǥina este"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 84,
+            "printed_page": "79",
+            "excerpt_raw": "niºina esse",
+            "excerpt_normalized": "niǥina esse"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 84,
+            "printed_page": "79",
+            "excerpt_raw": "niºina natigide agora",
+            "excerpt_normalized": "niǥina natigide agora"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 84,
+            "printed_page": "79",
+            "excerpt_raw": "niºina noko hoje (forma alternativa)",
+            "excerpt_normalized": "niǥina noko hoje (forma alternativa)"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 126,
+            "printed_page": "121",
+            "excerpt_raw": "niºina (forma masc)",
+            "excerpt_normalized": "niǥina (forma masc)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 199,
+            "printed_page": "194",
+            "excerpt_raw": "niºina",
+            "excerpt_normalized": "niǥina"
+          }
+        ]
+      }
+    },
+    {
+      "form": "naǥana",
+      "series": "anaphoric_copied",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "na",
+      "feature_tag": "CO",
+      "root_meaning": "coming/approaching",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "naºana",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 126,
+            "printed_page": "121",
+            "excerpt_raw": "naºana niºinoa dem  fem essa",
+            "excerpt_normalized": "naǥana niǥinoa dem  fem essa"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "naºana (forma fem)",
+            "excerpt_normalized": "naǥana (forma fem)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 199,
+            "printed_page": "194",
+            "excerpt_raw": "naºana",
+            "excerpt_normalized": "naǥana"
+          }
+        ]
+      }
+    },
+    {
+      "form": "niǥinoa",
+      "series": "anaphoric_copied",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "na",
+      "feature_tag": "CO",
+      "root_meaning": "coming/approaching",
+      "candidate_basis": "dictionary_and_prior_paradigm",
+      "pos": "D",
+      "dictionary_spelling": "niºinoa",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 126,
+            "printed_page": "121",
+            "excerpt_raw": "naºana niºinoa dem  fem essa",
+            "excerpt_normalized": "naǥana niǥinoa dem  fem essa"
+          },
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "niºina niºinoa dem  masc esse",
+            "excerpt_normalized": "niǥina niǥinoa dem  masc esse"
+          }
+        ],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥina",
+      "series": "anaphoric_uncopied",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "na",
+      "feature_tag": "CO",
+      "root_meaning": "coming/approaching",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºina",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥana",
+      "series": "anaphoric_uncopied",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "na",
+      "feature_tag": "CO",
+      "root_meaning": "coming/approaching",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºana",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥinoa",
+      "series": "anaphoric_uncopied",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "na",
+      "feature_tag": "CO",
+      "root_meaning": "coming/approaching",
+      "candidate_basis": "extrapolated_from_optional_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºinoa",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "idi",
+      "series": "simple",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "di",
+      "feature_tag": "LY",
+      "root_meaning": "lying/horizontally extended",
+      "candidate_basis": "morphotactics",
+      "pos": "D",
+      "dictionary_spelling": "idi",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 74,
+            "printed_page": "69",
+            "excerpt_raw": "idi idiwa dem este",
+            "excerpt_normalized": "idi idiwa dem este"
+          },
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 74,
+            "printed_page": "69",
+            "excerpt_raw": "idi -a(te) vt 1 colocar num lugar",
+            "excerpt_normalized": "idi -a(te) vt 1 colocar num lugar"
+          },
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 74,
+            "printed_page": "69",
+            "excerpt_raw": "idi ejo vi eu estou, fico ou fiquei lá",
+            "excerpt_normalized": "idi ejo vi eu estou, fico ou fiquei lá"
+          },
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 74,
+            "printed_page": "69",
+            "excerpt_raw": "idi -o(te) vi ficar ou estar lá",
+            "excerpt_normalized": "idi -o(te) vi ficar ou estar lá"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 12,
+            "printed_page": "7",
+            "excerpt_raw": "idi  (forma masc)",
+            "excerpt_normalized": "idi  (forma masc)"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 21,
+            "printed_page": "16",
+            "excerpt_raw": "idi este",
+            "excerpt_normalized": "idi este"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 26,
+            "printed_page": "21",
+            "excerpt_raw": "idi -a(te) colocar em certo lugar",
+            "excerpt_normalized": "idi -a(te) colocar em certo lugar"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 29,
+            "printed_page": "24",
+            "excerpt_raw": "idi -a(te) (forma mais completa)",
+            "excerpt_normalized": "idi -a(te) (forma mais completa)"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 47,
+            "printed_page": "42",
+            "excerpt_raw": "idi -a(te) colocar num lugar, começar a  ...",
+            "excerpt_normalized": "idi -a(te) colocar num lugar, começar a  ..."
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 47,
+            "printed_page": "42",
+            "excerpt_raw": "idi -a(te) colocar num lugar",
+            "excerpt_normalized": "idi -a(te) colocar num lugar"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 73,
+            "printed_page": "68",
+            "excerpt_raw": "idi -a(te) colocar num lugar",
+            "excerpt_normalized": "idi -a(te) colocar num lugar"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 74,
+            "printed_page": "69",
+            "excerpt_raw": "idi ejate coloquei num lugar, comecei  a",
+            "excerpt_normalized": "idi ejate coloquei num lugar, comecei  a"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 74,
+            "printed_page": "69",
+            "excerpt_raw": "idi -o(te) ficar lá, estar ali",
+            "excerpt_normalized": "idi -o(te) ficar lá, estar ali"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 74,
+            "printed_page": "69",
+            "excerpt_raw": "idi ejote fico ou fiquei lá, estou ou  estava lá",
+            "excerpt_normalized": "idi ejote fico ou fiquei lá, estou ou  estava lá"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 189,
+            "printed_page": "184",
+            "excerpt_raw": "colocar num lugar  (idi) -a(te)",
+            "excerpt_normalized": "colocar num lugar  (idi) -a(te)"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 190,
+            "printed_page": "185",
+            "excerpt_raw": "idi -a(te)",
+            "excerpt_normalized": "idi -a(te)"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 200,
+            "printed_page": "195",
+            "excerpt_raw": "idi",
+            "excerpt_normalized": "idi"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 200,
+            "printed_page": "195",
+            "excerpt_raw": "estar ali  idi -o(te)",
+            "excerpt_normalized": "estar ali  idi -o(te)"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 203,
+            "printed_page": "198",
+            "excerpt_raw": "ficar ou estar lá  idi -o(te)",
+            "excerpt_normalized": "ficar ou estar lá  idi -o(te)"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 261,
+            "printed_page": "256",
+            "excerpt_raw": "idi -a(te)                             colocar num lugar,",
+            "excerpt_normalized": "idi -a(te)                             colocar num lugar,"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 261,
+            "printed_page": "256",
+            "excerpt_raw": "idi ejate   ->  idejate    jiºidaa ejate  começo a",
+            "excerpt_normalized": "idi ejate   ->  idejate    jiǥidaa ejate  começo a"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 261,
+            "printed_page": "256",
+            "excerpt_raw": "idi eyate           (passado,     eyate = presente)",
+            "excerpt_normalized": "idi eyate           (passado,     eyate = presente)"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 261,
+            "printed_page": "256",
+            "excerpt_raw": "idi ejanaºate",
+            "excerpt_normalized": "idi ejanaǥate"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 286,
+            "printed_page": "281",
+            "excerpt_raw": "idi a(te)                  colocar num lugar, começar a",
+            "excerpt_normalized": "idi a(te)                  colocar num lugar, começar a"
+          }
+        ]
+      }
+    },
+    {
+      "form": "adi",
+      "series": "simple",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "di",
+      "feature_tag": "LY",
+      "root_meaning": "lying/horizontally extended",
+      "candidate_basis": "morphotactics",
+      "pos": "D",
+      "dictionary_spelling": "adi",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 12,
+            "printed_page": "7",
+            "excerpt_raw": "adi dem  fem aquela (deitada)",
+            "excerpt_normalized": "adi dem  fem aquela (deitada)"
+          }
+        ],
+        "in_entry_mention": [],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 181,
+            "printed_page": "176",
+            "excerpt_raw": "aquela (deitada)  adi",
+            "excerpt_normalized": "aquela (deitada)  adi"
+          }
+        ]
+      }
+    },
+    {
+      "form": "idiwa",
+      "series": "simple",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "di",
+      "feature_tag": "LY",
+      "root_meaning": "lying/horizontally extended",
+      "candidate_basis": "dictionary_and_prior_paradigm",
+      "pos": "D",
+      "dictionary_spelling": "idiwa",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 74,
+            "printed_page": "69",
+            "excerpt_raw": "idi idiwa dem este",
+            "excerpt_normalized": "idi idiwa dem este"
+          }
+        ],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "niǥidi",
+      "series": "anaphoric_copied",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "di",
+      "feature_tag": "LY",
+      "root_meaning": "lying/horizontally extended",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "niºidi",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "niºidi niºidiwa dem  masc aquele",
+            "excerpt_normalized": "niǥidi niǥidiwa dem  masc aquele"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 74,
+            "printed_page": "69",
+            "excerpt_raw": "niºidi este",
+            "excerpt_normalized": "niǥidi este"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 125,
+            "printed_page": "120",
+            "excerpt_raw": "niºidi  (forma masc)",
+            "excerpt_normalized": "niǥidi  (forma masc)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 182,
+            "printed_page": "177",
+            "excerpt_raw": "niºidi",
+            "excerpt_normalized": "niǥidi"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 347,
+            "printed_page": "342",
+            "excerpt_raw": "niºi -di       niºidi akiidi        “aquele rio”",
+            "excerpt_normalized": "niǥi -di       niǥidi akiidi        “aquele rio”"
+          }
+        ]
+      }
+    },
+    {
+      "form": "naǥadi",
+      "series": "anaphoric_copied",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "di",
+      "feature_tag": "LY",
+      "root_meaning": "lying/horizontally extended",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "naºadi",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 125,
+            "printed_page": "120",
+            "excerpt_raw": "naºadi niºidiwa dem  fem aquela",
+            "excerpt_normalized": "naǥadi niǥidiwa dem  fem aquela"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "naºadi (forma fem)",
+            "excerpt_normalized": "naǥadi (forma fem)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 181,
+            "printed_page": "176",
+            "excerpt_raw": "naºadi",
+            "excerpt_normalized": "naǥadi"
+          }
+        ]
+      }
+    },
+    {
+      "form": "niǥidiwa",
+      "series": "anaphoric_copied",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "di",
+      "feature_tag": "LY",
+      "root_meaning": "lying/horizontally extended",
+      "candidate_basis": "dictionary_and_prior_paradigm",
+      "pos": "D",
+      "dictionary_spelling": "niºidiwa",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 125,
+            "printed_page": "120",
+            "excerpt_raw": "naºadi niºidiwa dem  fem aquela",
+            "excerpt_normalized": "naǥadi niǥidiwa dem  fem aquela"
+          },
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "niºidi niºidiwa dem  masc aquele",
+            "excerpt_normalized": "niǥidi niǥidiwa dem  masc aquele"
+          }
+        ],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥidi",
+      "series": "anaphoric_uncopied",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "di",
+      "feature_tag": "LY",
+      "root_meaning": "lying/horizontally extended",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºidi",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥadi",
+      "series": "anaphoric_uncopied",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "di",
+      "feature_tag": "LY",
+      "root_meaning": "lying/horizontally extended",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºadi",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥidiwa",
+      "series": "anaphoric_uncopied",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "di",
+      "feature_tag": "LY",
+      "root_meaning": "lying/horizontally extended",
+      "candidate_basis": "extrapolated_from_optional_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºidiwa",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "ijo",
+      "series": "simple",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "jo",
+      "feature_tag": "GO",
+      "root_meaning": "going away",
+      "candidate_basis": "morphotactics",
+      "pos": "D",
+      "dictionary_spelling": "ijo",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 57,
+            "printed_page": "52",
+            "excerpt_raw": "gaantaºa ijo pro frase quem ou que",
+            "excerpt_normalized": "gaantaǥa ijo pro frase quem ou que"
+          },
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 80,
+            "printed_page": "75",
+            "excerpt_raw": "ijo ijoa dem aquele",
+            "excerpt_normalized": "ijo ijoa dem aquele"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 16,
+            "printed_page": "11",
+            "excerpt_raw": "ijo (forma masc)",
+            "excerpt_normalized": "ijo (forma masc)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 182,
+            "printed_page": "177",
+            "excerpt_raw": "ijo",
+            "excerpt_normalized": "ijo"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 227,
+            "printed_page": "222",
+            "excerpt_raw": "gaantaºa ijo",
+            "excerpt_normalized": "gaantaǥa ijo"
+          }
+        ]
+      }
+    },
+    {
+      "form": "ajo",
+      "series": "simple",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "jo",
+      "feature_tag": "GO",
+      "root_meaning": "going away",
+      "candidate_basis": "morphotactics",
+      "pos": "D",
+      "dictionary_spelling": "ajo",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 16,
+            "printed_page": "11",
+            "excerpt_raw": "ajo dem fem aquela",
+            "excerpt_normalized": "ajo dem fem aquela"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 16,
+            "printed_page": "11",
+            "excerpt_raw": "ajo aquela",
+            "excerpt_normalized": "ajo aquela"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 17,
+            "printed_page": "12",
+            "excerpt_raw": "ajo aquela",
+            "excerpt_normalized": "ajo aquela"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 80,
+            "printed_page": "75",
+            "excerpt_raw": "ajo (forma fem)",
+            "excerpt_normalized": "ajo (forma fem)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 181,
+            "printed_page": "176",
+            "excerpt_raw": "ajo",
+            "excerpt_normalized": "ajo"
+          }
+        ]
+      }
+    },
+    {
+      "form": "ijoa",
+      "series": "simple",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "jo",
+      "feature_tag": "GO",
+      "root_meaning": "going away",
+      "candidate_basis": "dictionary_and_prior_paradigm",
+      "pos": "D",
+      "dictionary_spelling": "ijoa",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 80,
+            "printed_page": "75",
+            "excerpt_raw": "ijo ijoa dem aquele",
+            "excerpt_normalized": "ijo ijoa dem aquele"
+          }
+        ],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "niǥijo",
+      "series": "anaphoric_copied",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "jo",
+      "feature_tag": "GO",
+      "root_meaning": "going away",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "niºijo",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "niºijo niºijoa dem  masc aquele",
+            "excerpt_normalized": "niǥijo niǥijoa dem  masc aquele"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 21,
+            "printed_page": "16",
+            "excerpt_raw": "niºijo aquele",
+            "excerpt_normalized": "niǥijo aquele"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 80,
+            "printed_page": "75",
+            "excerpt_raw": "niºijo aquele",
+            "excerpt_normalized": "niǥijo aquele"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 125,
+            "printed_page": "120",
+            "excerpt_raw": "niºijo (forma masc)",
+            "excerpt_normalized": "niǥijo (forma masc)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 182,
+            "printed_page": "177",
+            "excerpt_raw": "niºijo",
+            "excerpt_normalized": "niǥijo"
+          }
+        ]
+      }
+    },
+    {
+      "form": "naǥajo",
+      "series": "anaphoric_copied",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "jo",
+      "feature_tag": "GO",
+      "root_meaning": "going away",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "naºajo",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 125,
+            "printed_page": "120",
+            "excerpt_raw": "naºajo niºijoa dem  fem aquela",
+            "excerpt_normalized": "naǥajo niǥijoa dem  fem aquela"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 16,
+            "printed_page": "11",
+            "excerpt_raw": "naºajo aquela",
+            "excerpt_normalized": "naǥajo aquela"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "naºajo (forma fem)",
+            "excerpt_normalized": "naǥajo (forma fem)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 181,
+            "printed_page": "176",
+            "excerpt_raw": "naºajo",
+            "excerpt_normalized": "naǥajo"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 347,
+            "printed_page": "342",
+            "excerpt_raw": "naºa -jo     naºajo iwaalo    “aquela mulher (indo embora)”",
+            "excerpt_normalized": "naǥa -jo     naǥajo iwaalo    “aquela mulher (indo embora)”"
+          }
+        ]
+      }
+    },
+    {
+      "form": "niǥijoa",
+      "series": "anaphoric_copied",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "jo",
+      "feature_tag": "GO",
+      "root_meaning": "going away",
+      "candidate_basis": "dictionary_and_prior_paradigm",
+      "pos": "D",
+      "dictionary_spelling": "niºijoa",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 125,
+            "printed_page": "120",
+            "excerpt_raw": "naºajo niºijoa dem  fem aquela",
+            "excerpt_normalized": "naǥajo niǥijoa dem  fem aquela"
+          },
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "niºijo niºijoa dem  masc aquele",
+            "excerpt_normalized": "niǥijo niǥijoa dem  masc aquele"
+          }
+        ],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥijo",
+      "series": "anaphoric_uncopied",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "jo",
+      "feature_tag": "GO",
+      "root_meaning": "going away",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºijo",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥajo",
+      "series": "anaphoric_uncopied",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "jo",
+      "feature_tag": "GO",
+      "root_meaning": "going away",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºajo",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥijoa",
+      "series": "anaphoric_uncopied",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "jo",
+      "feature_tag": "GO",
+      "root_meaning": "going away",
+      "candidate_basis": "extrapolated_from_optional_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºijoa",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "ica",
+      "series": "simple",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "ca",
+      "feature_tag": "AB",
+      "root_meaning": "absent/out of sight",
+      "candidate_basis": "morphotactics",
+      "pos": "D",
+      "dictionary_spelling": "ica",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 71,
+            "printed_page": "66",
+            "excerpt_raw": "ica icoa dem esse, tem, há",
+            "excerpt_normalized": "ica icoa dem esse, tem, há"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 11,
+            "printed_page": "6",
+            "excerpt_raw": "ica (forma masc)",
+            "excerpt_normalized": "ica (forma masc)"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 15,
+            "printed_page": "10",
+            "excerpt_raw": "aº-ica ica tem, este",
+            "excerpt_normalized": "aǥ-ica ica tem, este"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 17,
+            "printed_page": "12",
+            "excerpt_raw": "akaaº(ica) antes deste",
+            "excerpt_normalized": "akaaǥ(ica) antes deste"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 29,
+            "printed_page": "24",
+            "excerpt_raw": "ate ica",
+            "excerpt_normalized": "ate ica"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 55,
+            "printed_page": "50",
+            "excerpt_raw": "ica tem, está",
+            "excerpt_normalized": "ica tem, está"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 71,
+            "printed_page": "66",
+            "excerpt_raw": "ica ina parece que ...",
+            "excerpt_normalized": "ica ina parece que ..."
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 72,
+            "printed_page": "67",
+            "excerpt_raw": "ica esse, tem",
+            "excerpt_normalized": "ica esse, tem"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 72,
+            "printed_page": "67",
+            "excerpt_raw": "ica tem, esse",
+            "excerpt_normalized": "ica tem, esse"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 72,
+            "printed_page": "67",
+            "excerpt_raw": "ica esse",
+            "excerpt_normalized": "ica esse"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 200,
+            "printed_page": "195",
+            "excerpt_raw": "ica",
+            "excerpt_normalized": "ica"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 206,
+            "printed_page": "201",
+            "excerpt_raw": "ica",
+            "excerpt_normalized": "ica"
+          },
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 234,
+            "printed_page": "229",
+            "excerpt_raw": "ica",
+            "excerpt_normalized": "ica"
+          }
+        ]
+      }
+    },
+    {
+      "form": "aca",
+      "series": "simple",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "ca",
+      "feature_tag": "AB",
+      "root_meaning": "absent/out of sight",
+      "candidate_basis": "morphotactics",
+      "pos": "D",
+      "dictionary_spelling": "aca",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 11,
+            "printed_page": "6",
+            "excerpt_raw": "aca dem  fem tem, tinha",
+            "excerpt_normalized": "aca dem  fem tem, tinha"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 24,
+            "printed_page": "19",
+            "excerpt_raw": "aca tem",
+            "excerpt_normalized": "aca tem"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 234,
+            "printed_page": "229",
+            "excerpt_raw": "aca",
+            "excerpt_normalized": "aca"
+          }
+        ]
+      }
+    },
+    {
+      "form": "icoa",
+      "series": "simple",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "ca",
+      "feature_tag": "AB",
+      "root_meaning": "absent/out of sight",
+      "candidate_basis": "dictionary_and_prior_paradigm",
+      "pos": "D",
+      "dictionary_spelling": "icoa",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 71,
+            "printed_page": "66",
+            "excerpt_raw": "ica icoa dem esse, tem, há",
+            "excerpt_normalized": "ica icoa dem esse, tem, há"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 72,
+            "printed_page": "67",
+            "excerpt_raw": "icoa esses",
+            "excerpt_normalized": "icoa esses"
+          }
+        ],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "niǥica",
+      "series": "anaphoric_copied",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "ca",
+      "feature_tag": "AB",
+      "root_meaning": "absent/out of sight",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "niºica",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "niºica niºicoa dem  masc esse",
+            "excerpt_normalized": "niǥica niǥicoa dem  masc esse"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 125,
+            "printed_page": "120",
+            "excerpt_raw": "niºica (forma masc)",
+            "excerpt_normalized": "niǥica (forma masc)"
+          },
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "niºica esse",
+            "excerpt_normalized": "niǥica esse"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 199,
+            "printed_page": "194",
+            "excerpt_raw": "niºica",
+            "excerpt_normalized": "niǥica"
+          }
+        ]
+      }
+    },
+    {
+      "form": "naǥaca",
+      "series": "anaphoric_copied",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "ca",
+      "feature_tag": "AB",
+      "root_meaning": "absent/out of sight",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "naºaca",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": true,
+      "mentioned_elsewhere_in_pdf": true,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 125,
+            "printed_page": "120",
+            "excerpt_raw": "naºaca dem fem essa",
+            "excerpt_normalized": "naǥaca dem fem essa"
+          }
+        ],
+        "in_entry_mention": [
+          {
+            "kind": "in_entry_mention",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "naºaca (forma fem)",
+            "excerpt_normalized": "naǥaca (forma fem)"
+          }
+        ],
+        "other_section_mention": [
+          {
+            "kind": "other_section_mention",
+            "section": "other_material",
+            "pdf_page": 199,
+            "printed_page": "194",
+            "excerpt_raw": "naºaca",
+            "excerpt_normalized": "naǥaca"
+          }
+        ]
+      }
+    },
+    {
+      "form": "niǥicoa",
+      "series": "anaphoric_copied",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "ca",
+      "feature_tag": "AB",
+      "root_meaning": "absent/out of sight",
+      "candidate_basis": "dictionary_and_prior_paradigm",
+      "pos": "D",
+      "dictionary_spelling": "niºicoa",
+      "status": "headword",
+      "has_headword": true,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [
+          {
+            "kind": "headword",
+            "section": "kadiweu_portuguese_dictionary",
+            "pdf_page": 141,
+            "printed_page": "136",
+            "excerpt_raw": "niºica niºicoa dem  masc esse",
+            "excerpt_normalized": "niǥica niǥicoa dem  masc esse"
+          }
+        ],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥica",
+      "series": "anaphoric_uncopied",
+      "gender": "masculine",
+      "number": "singular",
+      "root": "ca",
+      "feature_tag": "AB",
+      "root_meaning": "absent/out of sight",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºica",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥaca",
+      "series": "anaphoric_uncopied",
+      "gender": "feminine",
+      "number": "singular",
+      "root": "ca",
+      "feature_tag": "AB",
+      "root_meaning": "absent/out of sight",
+      "candidate_basis": "optional_copy_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºaca",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "nǥicoa",
+      "series": "anaphoric_uncopied",
+      "gender": "syncretic",
+      "number": "plural",
+      "root": "ca",
+      "feature_tag": "AB",
+      "root_meaning": "absent/out of sight",
+      "candidate_basis": "extrapolated_from_optional_rule",
+      "pos": "D",
+      "dictionary_spelling": "nºicoa",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    },
+    {
+      "form": "ifo",
+      "series": "user_supplied_variant",
+      "gender": "masculine",
+      "number": "singular",
+      "root": null,
+      "feature_tag": null,
+      "root_meaning": null,
+      "candidate_basis": "user_example",
+      "pos": "D",
+      "dictionary_spelling": "ifo",
+      "status": "absent_from_dictionary_entries",
+      "has_headword": false,
+      "mentioned_inside_other_entries": false,
+      "mentioned_elsewhere_in_pdf": false,
+      "evidence": {
+        "headword": [],
+        "in_entry_mention": [],
+        "other_section_mention": []
+      }
+    }
+  ]
+}

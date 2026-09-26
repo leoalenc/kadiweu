@@ -835,6 +835,38 @@ text_por = Este leite está quente .
 )
 
 /*
+sentence = 42
+uid = 79cb0e55-9c06-4cb1-91b3-2b5233e1678f
+status = DONE
+text = niGidiwa okokodi ligetedi midi niwigo libinienaGa
+text_por = Estes ovos da fotografia dela estão bonitos .
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D niGidiwa)
+      (NP
+        (N okokodi)
+      )
+      (N$ ligetedi)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (D @idi)
+            (N niwigo)
+          )
+        )
+      )
+    )
+    (NP-PRD
+      (N$ libinienaGa)
+    )
+  )
+  (ID hil-data,0.42)
+)
+
+/*
 sentence = 43
 uid = a74fea0a-dd87-4c4d-8670-9db66f5b5b16
 status = DONE

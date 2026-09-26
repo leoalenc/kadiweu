@@ -129,11 +129,11 @@ status = DONE
 text = NaGajo lomigo niganigawanigi madi niwatece
 text_por = Aquele anzol do menino é na canoa .
 */
-( (IP-MAT (NP-SBJ (D NaGajo)
-		  (N$ lomigo)
-		  (NP (N niganigawanigi)))
-	  (CP-me (C me@)
-		 (IP-SUB (NP (D @adi) (N$ niwatece)))))
+( (IP-MAT (NP (D NaGajo)
+	      (N$ lomigo)
+	      (NP (N niganigawanigi))
+	      (CP-me (C me@)
+		     (IP-SUB (NP (D @adi) (N$ niwatece))))))
   (ID hil-data,0.11))
 /*
 sentence = 12
@@ -444,16 +444,30 @@ text_por = Este leite está quente .
 	  (VB dapicoGo))
   (ID hil-data,0.41))
 /*
+sentence = 42
+uid = 79cb0e55-9c06-4cb1-91b3-2b5233e1678f
+status = DONE
+text = niGidiwa okokodi ligetedi midi niwigo libinienaGa
+text_por = Estes ovos da fotografia dela estão bonitos .
+*/
+( (IP-MAT (NP-SBJ (D niGidiwa)
+		  (NP (N okokodi))
+		  (N$ ligetedi)
+		  (CP-me (C me@)
+			 (IP-SUB (NP (D @idi) (N niwigo)))))
+	  (NP-PRD (N$ libinienaGa)))
+  (ID hil-data,0.42))
+/*
 sentence = 43
 uid = a74fea0a-dd87-4c4d-8670-9db66f5b5b16
 status = DONE
 text = niGidiwa okokodi ligetedi liwigo libinienaGa
 text_por = Estes ovos da fotografia estão bonitos .
 */
-( (IP-MAT (NP-SBJ (NP (D niGidiwa)
-		      (NP (N okokodi))
-		      (N$ ligetedi))
-		  (N$ liwigo))
+( (IP-MAT (NP-SBJ (D niGidiwa)
+		  (NP (N okokodi))
+		  (N$ ligetedi)
+		  (NP (N$ liwigo)))
 	  (NP-PRD (N$ libinienaGa)))
   (ID hil-data,0.43))
 /*
@@ -463,12 +477,12 @@ status = DONE
 text = NiGidiwa noGojedi lixagotaGaGa adakake loojedi
 text_por = Estes peixes vermelhos estão baratos .
 */
-( (IP-MAT (NP-1 (D NiGidiwa) (N noGojedi))
-	  (NP-3 (NP-GEN *T*-1)
+( (IP-MAT (NP-1 (D NiGidiwa)
+		(NP (N noGojedi))
 		(N$ lixagotaGaGa))
 	  (NEG aG@)
 	  (VBU @dakake)
-	  (NP (NP-GEN *T*-2)
+	  (NP (NP-GEN *T*-1)
 	      (N$ loojedi)))
   (ID hil-data,0.44))
 /*
@@ -752,19 +766,6 @@ text_por = Esta pedra , que é pesada , caiu no meu pé .
 	  (NP-APL (N$ iGonagi)))
   (ID hil-data,0.40))
 /*
-sentence = 42
-uid = 79cb0e55-9c06-4cb1-91b3-2b5233e1678f
-status = REVIEW
-text = niGidiwa okokodi ligetedi midi niwigo libinienaGa
-text_por = Estes ovos da fotografia dela estão bonitos .
-*/
-( (IP-MAT (NP-SBJ (D niGidiwa) (N okokodi))
-	  (NP-SBJ-PRD (N$ ligetedi))
-	  (CP-me (C me@)
-		 (IP-SUB (NP (D @idi) (N niwigo))))
-	  (NP-PRD (N$ libinienaGa)))
-  (ID hil-data,0.42))
-/*
 sentence = 45
 uid = 07bfcd00-7901-474d-bfb8-bf470266aafa
 status = REVIEW
@@ -915,8 +916,9 @@ status = DONE
 text = ica Maria looligi alidi
 text_por = a comida da Maria não está deliciosa (a não gostosura da comida da Maria)
 */
-( (IP-MAT (NP-SBJ (D ica) (NPR Maria))
-	  (NP-SBJ-PRD (N$ looligi))
+( (IP-MAT (NP-SBJ (D ica)
+		  (NP (NPR Maria))
+		  (N$ looligi))
 	  (NEG aG@)
 	  (NP-PRD (N$ @lidi)))
   (ID ped-gramm,0.11))
@@ -1014,7 +1016,8 @@ status = DONE
 text = ica niwigo libinienigi
 text_por = a fotografia é/está bonita
 */
-( (IP-MAT (NP-SBJ (D ica) (N niwigo))
+( (IP-MAT (NP-SBJ (D ica)
+		  (NP (N niwigo)))
 	  (NP-PRD (N$ libinienigi)))
   (ID ped-gramm,0.20))
 /*
@@ -1195,8 +1198,8 @@ status = DONE
 text = iGeladi digoida weiigi .
 text_por = Minha casa é no rio.
 */
-( (IP-MAT (NP (N$ iGeladi)
-	      (NP (D digoida) (N weiigi)))
+( (IP-MAT (NP-SBJ (N$ iGeladi))
+	  (NP-PRD (D digoida) (N weiigi))
 	  (PUNC .))
   (ID ped-gramm,0.40))
 /*
@@ -1363,9 +1366,9 @@ status = DONE
 text = IiGeladi midi akiidi
 text_por = A casa dele/dela é no rio.
 */
-( (IP-MAT (NP-SBJ (N$ IiGeladi))
-	  (CP-me (C me@)
-		 (IP-SUB (NP (D @idi) (N akiidi)))))
+( (IP-MAT (NP (N$ IiGeladi)
+	      (CP-me (C me@)
+		     (IP-SUB (NP (D @idi) (N akiidi))))))
   (ID ped-gramm,0.56))
 /*
 sentence = 57
@@ -1440,7 +1443,8 @@ status = REVIEW
 text = ica nioladi Ganixoa
 text_por = A língua do teu irmão
 */
-( (IP-MAT (NP-SBJ (D ica) (N nioladi))
+( (IP-MAT (NP-SBJ (D ica)
+		  (NP (N nioladi)))
 	  (NP-PRD (N$ Ganixoa)))
   (ID ped-gramm,0.21))
 /*
@@ -1478,9 +1482,9 @@ status = REVIEW
 text = Eyodi me niganaGacanajo
 text_por = Meu pai que era cantor
 */
-( (IP-MAT (NP-SBJ (N$ Eyodi))
-	  (CP-me (C me)
-		 (IP-SUB (NP (N niganaGacanajo)))))
+( (IP-MAT (NP (N$ Eyodi)
+	      (CP-me (C me)
+		     (IP-SUB (NP (N niganaGacanajo))))))
   (ID ped-gramm,0.29))
 /*
 sentence = 31
@@ -1525,8 +1529,8 @@ status = DONE
 text = iGeladi digoida weiigi
 text_por = Minha casa é no rio
 */
-( (IP-MAT (NP (N$ iGeladi)
-	      (NP (D digoida) (N weiigi))))
+( (IP-MAT (NP-SBJ (N$ iGeladi))
+	  (NP-PRD (D digoida) (N weiigi)))
   (ID van-data,0.1))
 /*
 sentence = 2
@@ -1662,11 +1666,11 @@ status = DONE
 text = naGajo lomiigo nigaanigawaanigi manitaGa niwatece
 text_por = Aquele anzol do menino está na canoa.
 */
-( (IP-MAT (NP-SBJ (D naGajo)
-		  (N$ lomiigo)
-		  (NP (N nigaanigawaanigi)))
-	  (CP-me (C me@)
-		 (IP-SUB (NP (DAPL @anitaGa) (N niwatece)))))
+( (IP-MAT (NP (D naGajo)
+	      (N$ lomiigo)
+	      (NP (N nigaanigawaanigi))
+	      (CP-me (C me@)
+		     (IP-SUB (NP (DAPL @anitaGa) (N niwatece))))))
   (ID van-data,0.14))
 /*
 sentence = 17
@@ -1685,9 +1689,9 @@ status = DONE
 text = Eyo manitaGa nigotaGa
 text_por = Estou na cidade
 */
-( (IP-MAT (NP-SBJ (PRO Eyo))
-	  (CP-me (C me@)
-		 (IP-SUB (NP (DAPL @anitaGa) (N nigotaGa)))))
+( (IP-MAT (NP (PRO Eyo)
+	      (CP-me (C me@)
+		     (IP-SUB (NP (DAPL @anitaGa) (N nigotaGa))))))
   (ID van-data,0.18))
 /*
 sentence = 19
@@ -1838,7 +1842,8 @@ status = DONE
 text = naGani wetiGa liwaGatena
 text_por = esta pedra está muito pesada
 */
-( (IP-MAT (NP-SBJ (D naGani) (N wetiGa))
+( (IP-MAT (NP-SBJ (D naGani)
+		  (NP (N wetiGa)))
 	  (NP-PRD (N$ liwaGatena)))
   (ID van-data,0.32))
 /*
@@ -1952,8 +1957,9 @@ status = DONE
 text = ijo niwigo libinienigi ijowa nigetedi
 text_por = estes ovos da fotografia dela estão bonitos
 */
-( (IP-MAT (NP-SBJ (D ijo) (N niwigo))
-	  (NP-SBJ-PRD (N$ libinienigi))
+( (IP-MAT (NP-SBJ (D ijo)
+		  (NP (N niwigo))
+		  (N$ libinienigi))
 	  (NP-PRD (D ijowa) (N$ nigetedi)))
   (ID van-data,0.43))
 /*
@@ -1974,12 +1980,12 @@ status = DONE
 text = idiwa noGojedi lixagotaGaGa adakake loojedi
 text_por = estes peixes vermelhos estão baratos
 */
-( (IP-MAT (NP-1 (D idiwa) (N noGojedi))
-	  (NP-3 (NP-GEN *T*-1)
+( (IP-MAT (NP-1 (D idiwa)
+		(NP (N noGojedi))
 		(N$ lixagotaGaGa))
 	  (NEG aG@)
 	  (VBU @dakake)
-	  (NP (NP-GEN *T*-2)
+	  (NP (NP-GEN *T*-1)
 	      (N$ loojedi)))
   (ID van-data,0.47))
 /*
@@ -2144,9 +2150,9 @@ text = aGeyo mica inikGigi
 text_por = não sou muito feliz
 */
 ( (IP-MAT (NEG aG@)
-	  (NP-SBJ (PRO @eyo))
-	  (CP-me (C me@)
-		 (IP-SUB (NP (D @ica) (N$ inikGigi)))))
+	  (NP (PRO @eyo)
+	      (CP-me (C me@)
+		     (IP-SUB (NP (D @ica) (N$ inikGigi))))))
   (ID van-data,0.62))
 /*
 sentence = 63
@@ -2330,11 +2336,12 @@ status = REVIEW
 text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
 text_por = Aquele menino está na canoa do anzol.
 */
-( (IP-MAT (NP-SBJ (D niGijo) (N nigaanigawaanigi))
-	  (CP-me (C me@)
-		 (IP-SUB (NP (DAPL @anitaGa)
-			     (N$ lomigo)
-			     (NP (N niwatece))))))
+( (IP-MAT (NP (D niGijo)
+	      (N nigaanigawaanigi)
+	      (CP-me (C me@)
+		     (IP-SUB (NP (DAPL @anitaGa)
+				 (N$ lomigo)
+				 (NP (N niwatece)))))))
   (ID van-data,0.16))
 /*
 sentence = 42
@@ -2356,9 +2363,9 @@ text = okokodi ligetedi midi niwigo libinienaGa .
 text_por = Os ovos da fotografia são bonitos. (Os ovos de galinha que estão na fotografia são bonitos.)
 */
 ( (IP-MAT (NP-SBJ (N okokodi))
-	  (NP-SBJ-PRD (N$ ligetedi))
-	  (CP-me (C me@)
-		 (IP-SUB (NP (D @idi) (N niwigo))))
+	  (NP-SBJ-PRD (N$ ligetedi)
+		      (CP-me (C me@)
+			     (IP-SUB (NP (D @idi) (N niwigo)))))
 	  (NP-PRD (N$ libinienaGa))
 	  (PUNC .))
   (ID van-data,0.45))

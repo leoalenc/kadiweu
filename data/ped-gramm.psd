@@ -146,7 +146,8 @@ text_por = a comida da Maria não está deliciosa (a não gostosura da comida da
 */
 (IP-MAT
   (NP-SBJ
-    (NP (D ica) (NPR Maria))
+    (D ica)
+    (NP (NPR Maria))
     (N$ looligi))
   (NEG aG@)
   (NP-PRD (N$ @lidi))

@@ -101,7 +101,7 @@ Found 206 matching sentence(s).
  100  source=hil-data   uid=38f73c1c-ddfb-4153-9310-d24214cd68e7  status=DONE       struct=None       text=NaGani wetiGa ane iwaGadi eniteloco iGonagi
  101  source=hil-data   uid=e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4  status=REVIEW     struct=None       text=NaGani wetiGa , ane iwaGadi , eniteloco iGonagi
  102  source=hil-data   uid=8dda04f0-f7e8-46d6-b41d-b65dd214f01b  status=DONE       struct=None       text=NiGidoa waca lotiidi dapicoGo
- 103  source=hil-data   uid=79cb0e55-9c06-4cb1-91b3-2b5233e1678f  status=REVIEW     struct=None       text=niGidiwa okokodi ligetedi midi niwigo libinienaGa
+ 103  source=hil-data   uid=79cb0e55-9c06-4cb1-91b3-2b5233e1678f  status=DONE       struct=None       text=niGidiwa okokodi ligetedi midi niwigo libinienaGa
  104  source=hil-data   uid=a74fea0a-dd87-4c4d-8670-9db66f5b5b16  status=DONE       struct=None       text=niGidiwa okokodi ligetedi liwigo libinienaGa
  105  source=hil-data   uid=83fdcd4c-338f-4a9f-8545-da8539e67e9d  status=DONE       struct=None       text=NiGidiwa noGojedi lixagotaGaGa adakake loojedi
  106  source=hil-data   uid=07bfcd00-7901-474d-bfb8-bf470266aafa  status=REVIEW     struct=None       text=Ee ite ee ina
