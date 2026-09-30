@@ -1,0 +1,91 @@
+source	source_index	uid	status	kadiweu	kadiweu_portuguese	rank	grammyep_sent_id	nheengatu	grammyep_portuguese	combined_score	char_score	token_jaccard	manual_decision	manual_comment
+van	1	a7e338a1-5403-40d4-b169-c840cf193aae	DONE	iGeladi digoida weiigi	Minha casa é no rio	1	118	se ruka paranã upé	a minha casa é no rio	0.920833	0.950000	0.833333		
+van	1	a7e338a1-5403-40d4-b169-c840cf193aae	DONE	iGeladi digoida weiigi	Minha casa é no rio	2	116	se ruka niti paranã upé	a minha casa não é no rio	0.826299	0.863636	0.714286		
+van	1	a7e338a1-5403-40d4-b169-c840cf193aae	DONE	iGeladi digoida weiigi	Minha casa é no rio	3	122	se ruka ti paranã upé	a minha casa não é no rio	0.826299	0.863636	0.714286		
+van	2	d07f0db7-963e-47ab-ab3f-36614732bacd	DONE	iGeladi idei weiigi	Minha casa é no rio	1	118	se ruka paranã upé	a minha casa é no rio	0.920833	0.950000	0.833333		
+van	2	d07f0db7-963e-47ab-ab3f-36614732bacd	DONE	iGeladi idei weiigi	Minha casa é no rio	2	116	se ruka niti paranã upé	a minha casa não é no rio	0.826299	0.863636	0.714286		
+van	2	d07f0db7-963e-47ab-ab3f-36614732bacd	DONE	iGeladi idei weiigi	Minha casa é no rio	3	122	se ruka ti paranã upé	a minha casa não é no rio	0.826299	0.863636	0.714286		
+van	3	f50b632e-fc1a-4ec0-b8b3-610dab7be736	DONE	iGeladi ideaGi weiigi	Minha casa é no rio	1	118	se ruka paranã upé	a minha casa é no rio	0.920833	0.950000	0.833333		
+van	3	f50b632e-fc1a-4ec0-b8b3-610dab7be736	DONE	iGeladi ideaGi weiigi	Minha casa é no rio	2	116	se ruka niti paranã upé	a minha casa não é no rio	0.826299	0.863636	0.714286		
+van	3	f50b632e-fc1a-4ec0-b8b3-610dab7be736	DONE	iGeladi ideaGi weiigi	Minha casa é no rio	3	122	se ruka ti paranã upé	a minha casa não é no rio	0.826299	0.863636	0.714286		
+van	6	3e518fdb-d852-41e5-87a4-f8778597c2a1	DONE	lotaGa GanaaginaGa libinienaGa	a palavra de seu irmão é bonita	1	98	ne kiuíra nheenga puranga	a palavra do seu irmão é bonita	0.913306	0.967742	0.750000		
+van	6	3e518fdb-d852-41e5-87a4-f8778597c2a1	DONE	lotaGa GanaaginaGa libinienaGa	a palavra de seu irmão é bonita	2	27	ne kiuíra ta nheenga puranga	a delea palavra do seu irmão é bonita	0.828431	0.882353	0.666667		
+van	6	3e518fdb-d852-41e5-87a4-f8778597c2a1	DONE	lotaGa GanaaginaGa libinienaGa	a palavra de seu irmão é bonita	3	97	ne kiuíra aintá nheenga puranga	a delea palavra do seu irmão é bonita	0.828431	0.882353	0.666667		
+van	14	2386b5b5-57d0-4a1f-86c2-73f67561744c	DONE	naGajo lomiigo nigaanigawaanigi manitaGa niwatece	Aquele anzol do menino está na canoa.	1	31	nhaã kurumĩ pindá igara pupé	aquele anzol do menino é na canoa	0.883152	0.927536	0.750000		
+van	14	2386b5b5-57d0-4a1f-86c2-73f67561744c	DONE	naGajo lomiigo nigaanigawaanigi manitaGa niwatece	Aquele anzol do menino está na canoa.	2	30	nhaã Pedro pindá uiku igara kuara upé	aquele anzol do Pedro está na canoa	0.863556	0.901408	0.750000		
+van	16	235440ba-548e-4df6-8d9e-214cc8714f8f	REVIEW	niGijo nigaanigawaanigi manitaGa lomigo niwatece	Aquele menino está na canoa do anzol.	1	31	nhaã kurumĩ pindá igara pupé	aquele menino é na canoa do anzol	0.883152	0.927536	0.750000		
+van	30	0c7e64fb-f070-4faa-a12a-c110cdf4bf16	DONE	niGijo lodaajo ajo lodowa aGica digoida liGeladi	esta faca da esposa dele não está na casa	1	23	nhaã ximiriku kisé ti uiku uka pupé	aquela faca da esposa dele não está na casa	0.896429	0.928571	0.800000		
+van	30	0c7e64fb-f070-4faa-a12a-c110cdf4bf16	DONE	niGijo lodaajo ajo lodowa aGica digoida liGeladi	esta faca da esposa dele não está na casa	2	23	nhaã ximiriku kisé ti uiku uka pupé	aquela faca da esposa dela não está na casa	0.837662	0.904762	0.636364		
+van	47	fad6e8d3-1e9f-451c-aaa7-fd28aecfd967	DONE	idiwa noGojedi lixagotaGaGa adakake loojedi	estes peixes vermelhos estão baratos	1	21	kuá pirá-itá piranga sepiasuíma uiku	estes vermelhos peixes estão baratos	0.854167	0.805556	1.000000		
+van	47	fad6e8d3-1e9f-451c-aaa7-fd28aecfd967	DONE	idiwa noGojedi lixagotaGaGa adakake loojedi	estes peixes vermelhos estão baratos	2	24	kuá-itá pirá piranga sepiasuíma uiku	estes vermelhos peixes estão baratos	0.854167	0.805556	1.000000		
+van	59	6852927c-53de-411d-9ed9-e0f9d78309cd	DONE	ee jigipegitege	estou perto dela	1	14	ixé aiku suaki	eu estou perto dela	0.873214	0.914286	0.750000		
+van	59	6852927c-53de-411d-9ed9-e0f9d78309cd	DONE	ee jigipegitege	estou perto dela	2	50	aiku suaki	eu estou perto dela	0.873214	0.914286	0.750000		
+van	59	6852927c-53de-411d-9ed9-e0f9d78309cd	DONE	ee jigipegitege	estou perto dela	3	64	ixé aiku suaki	eu estou perto dela	0.873214	0.914286	0.750000		
+van	60	2b6a6bee-392e-49f9-97a9-0afbb0af2eff	DONE	ee jigipegitegi	estou perto dele	1	14	ixé aiku suaki	eu estou perto dele	0.873214	0.914286	0.750000		
+van	60	2b6a6bee-392e-49f9-97a9-0afbb0af2eff	DONE	ee jigipegitegi	estou perto dele	2	50	aiku suaki	eu estou perto dele	0.873214	0.914286	0.750000		
+van	60	2b6a6bee-392e-49f9-97a9-0afbb0af2eff	DONE	ee jigipegitegi	estou perto dele	3	64	ixé aiku suaki	eu estou perto dele	0.873214	0.914286	0.750000		
+van	62	27d94732-46ea-4286-a1d4-b2861806a579	DONE	aGeyo mica inikGigi	não sou muito feliz	1	68	ixé niti se ruri retana	eu não sou muito feliz	0.895122	0.926829	0.800000		
+van	63	651a68ed-90a0-45b7-9eb5-411bc2c189c7	DONE	JipecaGataGagi	nós estamos perto de você	1	57	iaiku pe ruaki	nós estamos perto de vocês	0.901961	0.980392	0.666667		
+van	65	e9b78452-925e-458b-848a-d52ab76f6840	DONE	jipacaGataGagitiwaji	estamos perto de vocês	1	57	iaiku pe ruaki	nós estamos perto de vocês	0.887500	0.916667	0.800000		
+van	66	fbae0277-3aad-4812-9229-94179b5a97a0	DONE	aGidejonaGa midi Godoigi	não estamos na comunidade	1	9	iandé ti iaiku tendaua upé	nós não estamos na comunidade	0.894444	0.925926	0.800000		
+van	66	fbae0277-3aad-4812-9229-94179b5a97a0	DONE	aGidejonaGa midi Godoigi	não estamos na comunidade	2	40	ti iaiku tendaua upé	nós não estamos na comunidade	0.894444	0.925926	0.800000		
+van	72	b97e5b2f-d0da-4238-8ee6-2c64ded91f76	DONE	ijowa leonigipi iwaalo idi metaGa	os filhos da mulher estão com ele	1	75	kunhã mimbira-itá uiku se irũmu	os filhos da mulher estão comigo	0.825481	0.892308	0.625000		
+van	72	b97e5b2f-d0da-4238-8ee6-2c64ded91f76	DONE	ijowa leonigipi iwaalo idi metaGa	os filhos da mulher estão com ele	2	101	nhaã kunhã mimbira-itá uiku aintá irũmu	aqueles filhos da mulher estão com eles	0.805556	0.888889	0.555556		
+van	73	c1b350df-ed1a-4e3b-89a8-a6fa9ca8382e	DONE	ligeladi ipegitege niweiigi nigotaGa	a casa dela é perto da cidade do rio	1	132	suka taua paranã ruaki	a casa dela é perto do rio da cidade	0.854167	0.805556	1.000000		
+hil	3	39f34955-a828-47d7-808d-b3b3565b42d6	DONE	LotaGa Ganioxoa libinienaGa	A palavra de seu irmão é bonita .	1	98	ne kiuíra nheenga puranga	a palavra do seu irmão é bonita	0.913306	0.967742	0.750000		
+hil	3	39f34955-a828-47d7-808d-b3b3565b42d6	DONE	LotaGa Ganioxoa libinienaGa	A palavra de seu irmão é bonita .	2	27	ne kiuíra ta nheenga puranga	a delea palavra do seu irmão é bonita	0.828431	0.882353	0.666667		
+hil	3	39f34955-a828-47d7-808d-b3b3565b42d6	DONE	LotaGa Ganioxoa libinienaGa	A palavra de seu irmão é bonita .	3	97	ne kiuíra aintá nheenga puranga	a delea palavra do seu irmão é bonita	0.828431	0.882353	0.666667		
+hil	22	b9d77060-3ac9-4305-ba86-2723cc7cb70a	DONE	Ada iwaGadi	Ela está é pesada.	1	56	i pusé uiku	ela está pesada	0.890625	0.937500	0.750000		
+hil	22	b9d77060-3ac9-4305-ba86-2723cc7cb70a	DONE	Ada iwaGadi	Ela está é pesada.	2	3	aé i pusé	ela é pesada	0.808190	0.827586	0.750000		
+hil	22	b9d77060-3ac9-4305-ba86-2723cc7cb70a	DONE	Ada iwaGadi	Ela está é pesada.	3	55	i pusé	ela é pesada	0.808190	0.827586	0.750000		
+hil	23	7521cd51-aa9b-4ff6-8d87-a5ce4ca92b6d	DONE	Ani iwaGadi	Ela está é pesada.	1	56	i pusé uiku	ela está pesada	0.890625	0.937500	0.750000		
+hil	23	7521cd51-aa9b-4ff6-8d87-a5ce4ca92b6d	DONE	Ani iwaGadi	Ela está é pesada.	2	3	aé i pusé	ela é pesada	0.808190	0.827586	0.750000		
+hil	23	7521cd51-aa9b-4ff6-8d87-a5ce4ca92b6d	DONE	Ani iwaGadi	Ela está é pesada.	3	55	i pusé	ela é pesada	0.808190	0.827586	0.750000		
+hil	24	96687d35-46ae-4338-9398-ff66a3165b61	DONE	Adi iwaGadi	Ela está é pesada.	1	56	i pusé uiku	ela está pesada	0.890625	0.937500	0.750000		
+hil	24	96687d35-46ae-4338-9398-ff66a3165b61	DONE	Adi iwaGadi	Ela está é pesada.	2	3	aé i pusé	ela é pesada	0.808190	0.827586	0.750000		
+hil	24	96687d35-46ae-4338-9398-ff66a3165b61	DONE	Adi iwaGadi	Ela está é pesada.	3	55	i pusé	ela é pesada	0.808190	0.827586	0.750000		
+hil	44	83fdcd4c-338f-4a9f-8545-da8539e67e9d	DONE	NiGidiwa noGojedi lixagotaGaGa adakake loojedi	Estes peixes vermelhos estão baratos .	1	21	kuá pirá-itá piranga sepiasuíma uiku	estes vermelhos peixes estão baratos	0.854167	0.805556	1.000000		
+hil	44	83fdcd4c-338f-4a9f-8545-da8539e67e9d	DONE	NiGidiwa noGojedi lixagotaGaGa adakake loojedi	Estes peixes vermelhos estão baratos .	2	24	kuá-itá pirá piranga sepiasuíma uiku	estes vermelhos peixes estão baratos	0.854167	0.805556	1.000000		
+hil	53	71aff593-7b38-4c17-9563-4503985dbd03	DONE	jipegitege	Estou perto dela .	1	14	ixé aiku suaki	eu estou perto dela	0.873214	0.914286	0.750000		
+hil	53	71aff593-7b38-4c17-9563-4503985dbd03	DONE	jipegitege	Estou perto dela .	2	50	aiku suaki	eu estou perto dela	0.873214	0.914286	0.750000		
+hil	53	71aff593-7b38-4c17-9563-4503985dbd03	DONE	jipegitege	Estou perto dela .	3	64	ixé aiku suaki	eu estou perto dela	0.873214	0.914286	0.750000		
+hil	54	f4f18c18-728c-4d6b-b7dd-2df62c4a829a	DONE	jipegitege	Estou perto dele .	1	14	ixé aiku suaki	eu estou perto dele	0.873214	0.914286	0.750000		
+hil	54	f4f18c18-728c-4d6b-b7dd-2df62c4a829a	DONE	jipegitege	Estou perto dele .	2	50	aiku suaki	eu estou perto dele	0.873214	0.914286	0.750000		
+hil	54	f4f18c18-728c-4d6b-b7dd-2df62c4a829a	DONE	jipegitege	Estou perto dele .	3	64	ixé aiku suaki	eu estou perto dele	0.873214	0.914286	0.750000		
+hil	55	90ca38d8-e063-4c98-af51-4b9022ade506	DONE	aGeliodi me idinitibeci .	Não sou muito feliz .	1	68	ixé niti se ruri retana	eu não sou muito feliz	0.895122	0.926829	0.800000		
+hil	56	82bfae64-45e7-403f-bcd0-190e00f4520f	DONE	jipecaGataGagi .	Nós estamos perto de você .	1	57	iaiku pe ruaki	nós estamos perto de vocês	0.901961	0.980392	0.666667		
+hil	58	9a136412-a636-4e5e-aa54-ac684ae7bed3	DONE	jipecaGataGagitiwaji .	Estamos perto de vocês .	1	57	iaiku pe ruaki	nós estamos perto de vocês	0.887500	0.916667	0.800000		
+hil	59	dff00f05-7be1-4d62-b3ed-b8a8870851e9	DONE	aidejonaGa midi Godoigi	Não estamos na comunidade.	1	9	iandé ti iaiku tendaua upé	nós não estamos na comunidade	0.894444	0.925926	0.800000		
+hil	59	dff00f05-7be1-4d62-b3ed-b8a8870851e9	DONE	aidejonaGa midi Godoigi	Não estamos na comunidade.	2	40	ti iaiku tendaua upé	nós não estamos na comunidade	0.894444	0.925926	0.800000		
+ped	1	ed98d4d1-638c-4377-8c6d-5511855636d1	DONE	ajo liwatece ja iwaGadi	A canoa dele/a é pesada	1	7	i igara i pusé uiku	a canoa dele está pesada	0.804965	0.851064	0.666667		
+ped	2	ccb5ea37-b3ba-47a9-8d71-224f599ea7be	DONE	ajo liwatece etadi weiigi	A canoa dele/a está no rio	1	8	i igara paranã upé	a canoa dele é no rio	0.816869	0.851064	0.714286		
+ped	5	b2e3ea43-0d68-46ee-9f33-938610cc8aec	DONE	niwatece etadi weiigi	A canoa está no rio	1	60	igara paranã upé	a canoa é no rio	0.809524	0.857143	0.666667		
+ped	6	1b99ecb9-5656-4c38-b60b-fbbe643708fb	DONE	ajo niwatece ipegitege weiigi	A canoa está perto do rio	1	58	igara paranã ruaki	a canoa é perto do rio	0.848784	0.893617	0.714286		
+ped	7	e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9	DONE	liGeladi Maria aGipegetege	A casa de Maria não é perto dela	1	1	Maria ruka ti suaki	a casa da Maria não é perto dela	0.921007	0.968750	0.777778		
+ped	7	e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9	DONE	liGeladi Maria aGipegetege	A casa de Maria não é perto dela	2	1	Maria ruka ti suaki	a casa da Maria não é perto dele	0.853125	0.937500	0.600000		
+ped	8	79a6cd4e-b585-437a-9084-1fa077dec3b6	DONE	ica liGeladi ipegetege	A casa está perto dela	1	133	suka uiku suaki	a casa dela está perto dela	0.923469	0.897959	1.000000		
+ped	8	79a6cd4e-b585-437a-9084-1fa077dec3b6	DONE	ica liGeladi ipegetege	A casa está perto dela	2	133	suka uiku suaki	a casa dele está perto dela	0.881803	0.897959	0.833333		
+ped	8	79a6cd4e-b585-437a-9084-1fa077dec3b6	DONE	ica liGeladi ipegetege	A casa está perto dela	3	128	se ruka uiku suaki	a minha casa está perto dela	0.868333	0.880000	0.833333		
+ped	8	79a6cd4e-b585-437a-9084-1fa077dec3b6	DONE	ica liGeladi ipegetege	A casa está perto dela	4	133	suka uiku suaki	a casa dela está perto dele	0.851190	0.857143	0.833333		
+ped	8	79a6cd4e-b585-437a-9084-1fa077dec3b6	DONE	ica liGeladi ipegetege	A casa está perto dela	5	133	suka uiku suaki	a casa dele está perto dele	0.809524	0.857143	0.666667		
+ped	13	68277d1f-c30b-4c4f-ba9e-c2883cc133af	DONE	ica looligi dapico	A comida dela está quente	1	43	ximbiú saku	a comida dela é quente	0.836879	0.893617	0.666667		
+ped	14	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5	DONE	ica looligi ja dapico	a comida dela está quente	1	43	ximbiú saku	a comida dela é quente	0.836879	0.893617	0.666667		
+ped	16	19cc39ce-fe03-4551-8097-9d163a38a3c0	DONE	loigipodi libinienigipi	A comunidade dele/dela é bonita	1	37	sendaua puranga	a comunidade dela é bonita	0.892544	0.912281	0.833333		
+ped	16	19cc39ce-fe03-4551-8097-9d163a38a3c0	DONE	loigipodi libinienigipi	A comunidade dele/dela é bonita	2	37	sendaua puranga	a comunidade dele é bonita	0.892544	0.912281	0.833333		
+ped	18	582429f2-67d5-4077-b209-6deb7b5df54f	DONE	ica lideGegi loligi idei liGeladi	a deliciosa comida está na casa dela/dele	1	140	timbiú sé uiku suka upé	a deliciosa comida está na casa dela	0.920049	0.935065	0.875000		
+ped	18	582429f2-67d5-4077-b209-6deb7b5df54f	DONE	ica lideGegi loligi idei liGeladi	a deliciosa comida está na casa dela/dele	2	140	timbiú sé uiku suka upé	a deliciosa comida está na casa dele	0.920049	0.935065	0.875000		
+ped	27	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc	REVIEW	iGeladi idei mijo naigi naGajo	A minha casa fica naquela rua suja dela	1	114	se ruka nhaã kiá sapé upé	a minha casa é naquela suja rua dela	0.814444	0.826667	0.777778		
+ped	33	82117289-be52-45d0-886d-a5747eb20ea2	DONE	iGeladi ipegitaGagi	Minha casa está perto de você	1	125	se ruka uiku ne ruaki	a minha casa está perto de ti	0.802802	0.862069	0.625000		
+ped	37	1da1bf7a-7975-4baf-821b-9df5c75ac297	DONE	iGeladi aGipegitegi weiigi	Minha casa não fica perto do rio	1	115	se ruka niti paranã ruaki	a minha casa não é perto do rio	0.833333	0.888889	0.666667		
+ped	37	1da1bf7a-7975-4baf-821b-9df5c75ac297	DONE	iGeladi aGipegitegi weiigi	Minha casa não fica perto do rio	2	121	se ruka ti paranã ruaki	a minha casa não é perto do rio	0.833333	0.888889	0.666667		
+ped	40	10e550d6-df13-4527-8aee-aa23e3f2fcdd	DONE	iGeladi digoida weiigi .	Minha casa é no rio.	1	118	se ruka paranã upé	a minha casa é no rio	0.920833	0.950000	0.833333		
+ped	40	10e550d6-df13-4527-8aee-aa23e3f2fcdd	DONE	iGeladi digoida weiigi .	Minha casa é no rio.	2	116	se ruka niti paranã upé	a minha casa não é no rio	0.826299	0.863636	0.714286		
+ped	40	10e550d6-df13-4527-8aee-aa23e3f2fcdd	DONE	iGeladi digoida weiigi .	Minha casa é no rio.	3	122	se ruka ti paranã upé	a minha casa não é no rio	0.826299	0.863636	0.714286		
+ped	41	874c123b-4c43-4001-bfce-8af4af0e5805	DONE	iGeladi idei weiigi .	Minha casa é no rio.	1	118	se ruka paranã upé	a minha casa é no rio	0.920833	0.950000	0.833333		
+ped	41	874c123b-4c43-4001-bfce-8af4af0e5805	DONE	iGeladi idei weiigi .	Minha casa é no rio.	2	116	se ruka niti paranã upé	a minha casa não é no rio	0.826299	0.863636	0.714286		
+ped	41	874c123b-4c43-4001-bfce-8af4af0e5805	DONE	iGeladi idei weiigi .	Minha casa é no rio.	3	122	se ruka ti paranã upé	a minha casa não é no rio	0.826299	0.863636	0.714286		
+ped	43	19401990-aa1d-4cf5-bea1-122254c6b77a	DONE	lotaGa GanaginaGa libinienaGa .	A palavra de seu (teu) irmão é bonita.	1	98	ne kiuíra nheenga puranga	a palavra do seu irmão é bonita	0.828431	0.882353	0.666667		
+ped	50	156fa9a4-4323-44f1-9cdc-ef5dc052b428	DONE	etee minitaGa	Estou com ele	1	48	aiku i irũmu	eu estou com ele	0.859914	0.896552	0.750000		
+ped	52	d543f155-c01f-4b5e-add1-0533b8ac6e15	DONE	jipacaGataGagitiwaji	Estamos perto de vocês.	1	57	iaiku pe ruaki	nós estamos perto de vocês	0.887500	0.916667	0.800000		
+ped	54	74a76be1-d4b6-42e1-9100-6a436a7fa065	DONE	akaami oko jipacaGataGagitiwaji	Estamos perto de vocês.	1	57	iaiku pe ruaki	nós estamos perto de vocês	0.887500	0.916667	0.800000		
+ped	58	73ceda1b-be14-4e75-9b1e-2a490d7df366	DONE	etogo adakake lojedi	A canoa está barata.	1	11	igara pusé sepiasuíma uiku	a pesada canoa está barata	0.833333	0.844444	0.800000		

@@ -1,0 +1,143 @@
+sent_id	nheengatu	portuguese_equivalents	covered_exact_or_normalized	sources
+1	Maria ruka ti suaki	a casa da Maria não é perto dele || a casa da Maria não é perto dela	no	
+2	aiku iké	eu estou aqui	yes	hil,van
+3	aé i pusé	ele é pesado || ela é pesada	no	
+4	aé puranga	ele é bonito || ela é bonita	yes	hil
+5	aé saku	ele é quente || ela é quente	yes	hil
+6	aé suri	ele é feliz || ela é feliz	no	
+7	i igara i pusé uiku	a canoa dela está pesada || a canoa dele está pesada	no	
+8	i igara paranã upé	a canoa dela é no rio || a canoa dele é no rio	no	
+9	iandé ti iaiku tendaua upé	nós não estamos na comunidade	yes	hil,van
+10	igara i pusé uiku	a canoa está pesada	yes	ped
+11	igara pusé sepiasuíma uiku	a pesada canoa está barata	yes	hil,ped,van
+12	indé ti ne ruri reiku	tu não estás feliz	no	
+13	ixé aiku iké	eu estou aqui	yes	hil,van
+14	ixé aiku suaki	eu estou perto dele || eu estou perto dela	no	
+15	ixé se pusé	eu sou pesado	yes	hil,van
+16	ixé se ruri aiku	eu estou feliz	no	
+17	kunhã puranga uiku	a mulher está bonita	yes	hil,van
+18	kunhã-itá puranga uiku	as mulheres estão bonitas	yes	hil,van
+19	kurumĩ rendaua pe taua ruaki	a comunidade do menino é perto da cidade de vocês	yes	ped
+20	kuá kambi saku uiku	este leite está quente	yes	hil,van
+21	kuá pirá-itá piranga sepiasuíma uiku	estes vermelhos peixes estão baratos	no	
+22	kuá taína rangaua puranga	este retrato da criança é bonito	no	
+23	nhaã ximiriku kisé ti uiku uka pupé	aquela faca da esposa dela não está na casa || aquela faca da esposa dele não está na casa	no	
+24	kuá-itá pirá piranga sepiasuíma uiku	estes vermelhos peixes estão baratos	no	
+25	meiú-itá ta raku uiku	os beijus estão quentes	yes	hil,van
+26	mirá rakanga piranga	o galho da árvore é vermelho	yes	hil,van
+27	ne kiuíra ta nheenga puranga	a delea língua do seu irmão é bonita || a delea palavra do seu irmão é bonita	no	
+28	ne mena nheenga puranga	a língua do seu marido é bonita || a palavra do seu marido é bonita	yes	hil,van
+29	ne rimbiú puranga retana	a sua comida é muito bonita	yes	hil,van
+30	nhaã Pedro pindá uiku igara kuara upé	aquele anzol do Pedro está na canoa	yes	hil,van
+31	nhaã kurumĩ pindá igara pupé	aquele menino é na canoa do anzol || aquele anzol do menino é na canoa	yes	hil
+32	nhaã timbiú sepiasu retana	aquela comida é muito cara	yes	hil,ped,van
+33	nhaã ximbiú puranga	aquela comida dela é bonita || aquela comida dele é bonita	yes	hil,van
+34	se pusé	eu sou pesado	yes	hil,van
+35	se pusé aiku	eu estou pesado	no	
+36	se ruri aiku	eu estou feliz	no	
+37	sendaua puranga	a comunidade dela é bonita || a comunidade dele é bonita	no	
+38	suka taua upé	a casa dela é na cidade || a casa dele é na cidade	no	
+39	suri	ele é feliz || ela é feliz	no	
+40	ti iaiku tendaua upé	nós não estamos na comunidade	yes	hil,van
+41	ti ne ruri reiku	tu não estás feliz	no	
+42	tukandira-itá uiku i upé	as formigas estão nele || as formigas estão nela	yes	hil,van
+43	ximbiú saku	a comida dela é quente || a comida dele é quente	no	
+44	Maria mimbira-itá puranga	as filhas da Maria são bonitas || os filhos da Maria são bonitos	yes	hil,van
+45	Maria ramunha uiku paranã upé	o avô da Maria está no rio	yes	hil,van
+46	Maria rimbiú ti sé	a comida da Maria não é deliciosa	no	
+47	Maria rimbiú ti sé uiku	a comida da Maria não está deliciosa	no	
+48	aiku i irũmu	eu estou com ele || eu estou com ela	yes	hil,van
+49	aiku iké	eu estou aqui	yes	hil,van
+50	aiku suaki	eu estou perto dele || eu estou perto dela	no	
+51	aintá ruri	eles são felizes	yes	hil,van
+52	aintá ta ruri	eles são felizes	yes	hil,van
+53	aé suri	ele é feliz || ela é feliz	no	
+54	aé suri uiku	ele está feliz || ela está feliz	yes	hil,van
+55	i pusé	ele é pesado || ela é pesada	no	
+56	i pusé uiku	ele está pesado || ela está pesada	yes	hil
+57	iaiku pe ruaki	nós estamos perto de vocês	no	
+58	igara paranã ruaki	a canoa é perto do rio	no	
+59	igara paranã suaki	o rio da canoa é perto dele || o rio da canoa é perto dela	no	
+60	igara paranã upé	a canoa é no rio	no	
+61	igara uiku ape	a canoa está lá	yes	ped
+62	indé ne ruri	tu és feliz	no	
+63	indé ne ruri reiku	tu estás feliz	no	
+64	ixé aiku suaki	eu estou perto dele || eu estou perto dela	no	
+65	ixé aiku suka ruaki	eu estou perto da casa dela || eu estou perto da casa dele	no	
+66	ixé niti se ruri	eu não sou feliz	no	
+67	ixé niti se ruri aiku	eu não estou feliz	yes	hil,ped,van
+68	ixé niti se ruri retana	eu não sou muito feliz	no	
+69	ixé niti se ruri retana aiku	eu não estou muito feliz	yes	hil,ped,van
+70	ixé se ruri	eu sou feliz	no	
+71	ixé se ruri aiku	eu estou feliz	no	
+72	ixé ti aiku suaki	eu não estou perto dele || eu não estou perto dela	yes	hil,van
+73	ixé ti se ruri	eu não sou feliz	no	
+74	ixé ti se ruri aiku	eu não estou feliz	yes	hil,ped,van
+75	kunhã mimbira-itá uiku se irũmu	as filhas da mulher estão comigo || os filhos da mulher estão comigo	yes	hil
+76	kunhã suri uiku	a mulher está feliz	yes	hil,van
+77	kuá itá i pusé	esta pedra é pesada	yes	hil,van
+78	kuá itá i pusé retana	esta pedra é muito pesada	no	
+79	kuá itá i pusé retana uiku	esta pedra está muito pesada	yes	hil,van
+80	kuá itá i pusé uiku	esta pedra está pesada	yes	hil,van
+81	kuá itá-itá aintá pusé	estas pedras são pesadas	no	
+82	kuá itá-itá aintá pusé uiku	estas pedras estão pesadas	yes	hil,van
+83	kuá itá-itá ta pusé	estas pedras são pesadas	no	
+84	kuá itá-itá ta pusé uiku	estas pedras estão pesadas	yes	hil,van
+85	kuá supiá-itá rangaua puranga	este retrato dos ovos é bonito || este retrato dos ovos dela é bonito || este retrato dos ovos dele é bonito	no	
+86	kuá supiá-itá rangaua puranga uiku	este retrato dos ovos está bonito || este retrato dos ovos dela está bonito || este retrato dos ovos dele está bonito	no	
+87	kuá supiá-itá sangaua puranga	este retrato dela dos ovos é bonito || este retrato dele dos ovos é bonito || este retrato dela dos ovos dela é bonito || este retrato dele dos ovos dela é bonito || este retrato dela dos ovos dele é bonito || este retrato dele dos ovos dele é bonito	no	
+88	kuá supiá-itá sangaua puranga uiku	este retrato dela dos ovos está bonito || este retrato dele dos ovos está bonito || este retrato dela dos ovos dela está bonito || este retrato dele dos ovos dela está bonito || este retrato dela dos ovos dele está bonito || este retrato dele dos ovos dele está bonito	no	
+89	kuá-itá itá aintá pusé	estas pedras são pesadas	no	
+90	kuá-itá itá aintá pusé uiku	estas pedras estão pesadas	yes	hil,van
+91	kuá-itá itá ta pusé	estas pedras são pesadas	no	
+92	kuá-itá itá ta pusé uiku	estas pedras estão pesadas	yes	hil,van
+93	kuá-itá sangaua rupiá puranga	estes ovos do retrato são bonitos || estes ovos do retrato dela são bonitos || estes ovos do retrato dele são bonitos	no	
+94	kuá-itá sangaua rupiá puranga uiku	estes ovos do retrato estão bonitos || estes ovos do retrato dela estão bonitos || estes ovos do retrato dele estão bonitos	no	
+95	meiú saku uiku	o beiju está quente	yes	hil,van
+96	meiú-itá aintá raku uiku	os beijus estão quentes	yes	hil,van
+97	ne kiuíra aintá nheenga puranga	a delea língua do seu irmão é bonita || a delea palavra do seu irmão é bonita	no	
+98	ne kiuíra nheenga puranga	a língua do seu irmão é bonita || a palavra do seu irmão é bonita	no	
+99	ne ruri	tu és feliz	no	
+100	ne ruri reiku	tu estás feliz	no	
+101	nhaã kunhã mimbira-itá uiku aintá irũmu	aquelas filhas da mulher estão com eles || aqueles filhos da mulher estão com eles	yes	hil,van
+102	nhaã se igara uiku paranã upé	aquela minha canoa está no rio	no	
+103	niti se ruri	eu não sou feliz	no	
+104	pe ruri peiku	vocês estão felizes	no	
+105	sangaua puranga	o retrato é bonito || o retrato dela é bonito || o retrato dele é bonito	no	
+106	sangaua puranga uiku	o retrato está bonito || o retrato dela está bonito || o retrato dele está bonito	no	
+107	se rimbiú sé	a minha comida é deliciosa	no	
+108	se ruka i upé	a minha casa é nele || a minha casa é nela	no	
+109	se ruka kuá kiá pé ruaki	a minha casa é perto deste sujo caminho || a minha casa é perto desta suja rua	no	
+110	se ruka kuá kiá sapé ruaki	a minha casa é perto deste sujo caminho dela || a minha casa é perto desta suja rua dela || a minha casa é perto deste sujo caminho dele || a minha casa é perto desta suja rua dele	no	
+111	se ruka ne ruaki	a minha casa é perto de ti	no	
+112	se ruka ne ruka ruaki	a minha casa é perto da sua casa	no	
+113	se ruka nhaã kiá pé upé	a minha casa é naquele sujo caminho || a minha casa é naquela suja rua	no	
+114	se ruka nhaã kiá sapé upé	a minha casa é naquele sujo caminho dela || a minha casa é naquela suja rua dela || a minha casa é naquele sujo caminho dele || a minha casa é naquela suja rua dele	no	
+115	se ruka niti paranã ruaki	a minha casa não é perto do rio	no	
+116	se ruka niti paranã upé	a minha casa não é no rio	no	
+117	se ruka paranã ruaki	a minha casa é perto do rio	no	
+118	se ruka paranã upé	a minha casa é no rio	no	
+119	se ruka suaki	a minha casa é perto dele || a minha casa é perto dela	no	
+120	se ruka suka ruaki	a minha casa é perto da casa dela || a minha casa é perto da casa dele	no	
+121	se ruka ti paranã ruaki	a minha casa não é perto do rio	no	
+122	se ruka ti paranã upé	a minha casa não é no rio	no	
+123	se ruka uiku i upé	a minha casa está nele || a minha casa está nela	no	
+124	se ruka uiku kuá kiá pé ruaki	a minha casa está perto deste sujo caminho || a minha casa está perto desta suja rua	no	
+125	se ruka uiku ne ruaki	a minha casa está perto de ti	no	
+126	se ruka uiku nhaã kiá pé upé	a minha casa está naquele sujo caminho || a minha casa está naquela suja rua	no	
+127	se ruka uiku nhaã kiá sapé upé	a minha casa está naquele sujo caminho dela || a minha casa está naquela suja rua dela || a minha casa está naquele sujo caminho dele || a minha casa está naquela suja rua dele	no	
+128	se ruka uiku suaki	a minha casa está perto dele || a minha casa está perto dela	no	
+129	se ruri	eu sou feliz	no	
+130	se ruri aiku	eu estou feliz	no	
+131	suka suaki	a casa dela é perto dele || a casa dela é perto dela || a casa dele é perto dele || a casa dele é perto dela	no	
+132	suka taua paranã ruaki	a casa dela é perto do rio da cidade || a casa dele é perto do rio da cidade || a cidade da casa dela é perto do rio || a cidade da casa dele é perto do rio	yes	hil,ped,van
+133	suka uiku suaki	a casa dela está perto dele || a casa dela está perto dela || a casa dele está perto dele || a casa dele está perto dela	no	
+134	suri	ele é feliz || ela é feliz	no	
+135	suri retana	ele é muito feliz || ela é muito feliz	yes	hil,van
+136	suri uiku	ele está feliz || ela está feliz	yes	hil,van
+137	ti aiku suaki	eu não estou perto dele || eu não estou perto dela	yes	hil,van
+138	ti se ruri	eu não sou feliz	no	
+139	timbiú sé	a comida é deliciosa	no	
+140	timbiú sé uiku suka upé	a deliciosa comida está na casa dela || a deliciosa comida está na casa dele	no	
+141	ximbiú sé	a comida dela é deliciosa || a comida dele é deliciosa	no	
+142	ximbiú sé uiku	a comida dela está deliciosa || a comida dele está deliciosa	no	
