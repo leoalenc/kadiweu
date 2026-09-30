@@ -1,8 +1,8 @@
-sent_id	nheengatu	portuguese_equivalents	covered_exact_or_normalized	sources
+sent_id	nheengatu	portuguese_equivalents	covered_by_normalization_layers	sources
 1	Maria ruka ti suaki	a casa da Maria não é perto dele || a casa da Maria não é perto dela	no	
 2	aiku iké	eu estou aqui	yes	hil,van
-3	aé i pusé	ele é pesado || ela é pesada	no	
-4	aé puranga	ele é bonito || ela é bonita	yes	hil
+3	aé i pusé	ele é pesado || ela é pesada	yes	ped
+4	aé puranga	ele é bonito || ela é bonita	yes	hil,ped
 5	aé saku	ele é quente || ela é quente	yes	hil
 6	aé suri	ele é feliz || ela é feliz	no	
 7	i igara i pusé uiku	a canoa dela está pesada || a canoa dele está pesada	no	
@@ -21,7 +21,7 @@ sent_id	nheengatu	portuguese_equivalents	covered_exact_or_normalized	sources
 20	kuá kambi saku uiku	este leite está quente	yes	hil,van
 21	kuá pirá-itá piranga sepiasuíma uiku	estes vermelhos peixes estão baratos	no	
 22	kuá taína rangaua puranga	este retrato da criança é bonito	no	
-23	nhaã ximiriku kisé ti uiku uka pupé	aquela faca da esposa dela não está na casa || aquela faca da esposa dele não está na casa	no	
+23	nhaã ximiriku kisé ti uiku uka pupé	aquela faca da esposa dela não está na casa || aquela faca da esposa dele não está na casa	yes	hil
 24	kuá-itá pirá piranga sepiasuíma uiku	estes vermelhos peixes estão baratos	no	
 25	meiú-itá ta raku uiku	os beijus estão quentes	yes	hil,van
 26	mirá rakanga piranga	o galho da árvore é vermelho	yes	hil,van
@@ -45,7 +45,7 @@ sent_id	nheengatu	portuguese_equivalents	covered_exact_or_normalized	sources
 44	Maria mimbira-itá puranga	as filhas da Maria são bonitas || os filhos da Maria são bonitos	yes	hil,van
 45	Maria ramunha uiku paranã upé	o avô da Maria está no rio	yes	hil,van
 46	Maria rimbiú ti sé	a comida da Maria não é deliciosa	no	
-47	Maria rimbiú ti sé uiku	a comida da Maria não está deliciosa	no	
+47	Maria rimbiú ti sé uiku	a comida da Maria não está deliciosa	yes	ped
 48	aiku i irũmu	eu estou com ele || eu estou com ela	yes	hil,van
 49	aiku iké	eu estou aqui	yes	hil,van
 50	aiku suaki	eu estou perto dele || eu estou perto dela	no	
@@ -54,7 +54,7 @@ sent_id	nheengatu	portuguese_equivalents	covered_exact_or_normalized	sources
 53	aé suri	ele é feliz || ela é feliz	no	
 54	aé suri uiku	ele está feliz || ela está feliz	yes	hil,van
 55	i pusé	ele é pesado || ela é pesada	no	
-56	i pusé uiku	ele está pesado || ela está pesada	yes	hil
+56	i pusé uiku	ele está pesado || ela está pesada	yes	hil,van
 57	iaiku pe ruaki	nós estamos perto de vocês	no	
 58	igara paranã ruaki	a canoa é perto do rio	no	
 59	igara paranã suaki	o rio da canoa é perto dele || o rio da canoa é perto dela	no	
@@ -66,7 +66,7 @@ sent_id	nheengatu	portuguese_equivalents	covered_exact_or_normalized	sources
 65	ixé aiku suka ruaki	eu estou perto da casa dela || eu estou perto da casa dele	no	
 66	ixé niti se ruri	eu não sou feliz	no	
 67	ixé niti se ruri aiku	eu não estou feliz	yes	hil,ped,van
-68	ixé niti se ruri retana	eu não sou muito feliz	no	
+68	ixé niti se ruri retana	eu não sou muito feliz	yes	van
 69	ixé niti se ruri retana aiku	eu não estou muito feliz	yes	hil,ped,van
 70	ixé se ruri	eu sou feliz	no	
 71	ixé se ruri aiku	eu estou feliz	no	
@@ -96,7 +96,7 @@ sent_id	nheengatu	portuguese_equivalents	covered_exact_or_normalized	sources
 95	meiú saku uiku	o beiju está quente	yes	hil,van
 96	meiú-itá aintá raku uiku	os beijus estão quentes	yes	hil,van
 97	ne kiuíra aintá nheenga puranga	a delea língua do seu irmão é bonita || a delea palavra do seu irmão é bonita	no	
-98	ne kiuíra nheenga puranga	a língua do seu irmão é bonita || a palavra do seu irmão é bonita	no	
+98	ne kiuíra nheenga puranga	a língua do seu irmão é bonita || a palavra do seu irmão é bonita	yes	ped
 99	ne ruri	tu és feliz	no	
 100	ne ruri reiku	tu estás feliz	no	
 101	nhaã kunhã mimbira-itá uiku aintá irũmu	aquelas filhas da mulher estão com eles || aqueles filhos da mulher estão com eles	yes	hil,van
@@ -122,9 +122,9 @@ sent_id	nheengatu	portuguese_equivalents	covered_exact_or_normalized	sources
 121	se ruka ti paranã ruaki	a minha casa não é perto do rio	no	
 122	se ruka ti paranã upé	a minha casa não é no rio	no	
 123	se ruka uiku i upé	a minha casa está nele || a minha casa está nela	no	
-124	se ruka uiku kuá kiá pé ruaki	a minha casa está perto deste sujo caminho || a minha casa está perto desta suja rua	no	
+124	se ruka uiku kuá kiá pé ruaki	a minha casa está perto deste sujo caminho || a minha casa está perto desta suja rua	yes	ped
 125	se ruka uiku ne ruaki	a minha casa está perto de ti	no	
-126	se ruka uiku nhaã kiá pé upé	a minha casa está naquele sujo caminho || a minha casa está naquela suja rua	no	
+126	se ruka uiku nhaã kiá pé upé	a minha casa está naquele sujo caminho || a minha casa está naquela suja rua	yes	ped
 127	se ruka uiku nhaã kiá sapé upé	a minha casa está naquele sujo caminho dela || a minha casa está naquela suja rua dela || a minha casa está naquele sujo caminho dele || a minha casa está naquela suja rua dele	no	
 128	se ruka uiku suaki	a minha casa está perto dele || a minha casa está perto dela	no	
 129	se ruri	eu sou feliz	no	
@@ -137,7 +137,7 @@ sent_id	nheengatu	portuguese_equivalents	covered_exact_or_normalized	sources
 136	suri uiku	ele está feliz || ela está feliz	yes	hil,van
 137	ti aiku suaki	eu não estou perto dele || eu não estou perto dela	yes	hil,van
 138	ti se ruri	eu não sou feliz	no	
-139	timbiú sé	a comida é deliciosa	no	
-140	timbiú sé uiku suka upé	a deliciosa comida está na casa dela || a deliciosa comida está na casa dele	no	
+139	timbiú sé	a comida é deliciosa	yes	ped
+140	timbiú sé uiku suka upé	a deliciosa comida está na casa dela || a deliciosa comida está na casa dele	yes	ped
 141	ximbiú sé	a comida dela é deliciosa || a comida dele é deliciosa	no	
 142	ximbiú sé uiku	a comida dela está deliciosa || a comida dele está deliciosa	no	

@@ -1,207 +1,207 @@
-source	source_index	uid	status	kadiweu	portuguese	match_type	grammyep_sent_ids	normalized_portuguese
-van	1	a7e338a1-5403-40d4-b169-c840cf193aae	DONE	iGeladi digoida weiigi	Minha casa é no rio	NO_MATCH		minha casa é no rio
-van	2	d07f0db7-963e-47ab-ab3f-36614732bacd	DONE	iGeladi idei weiigi	Minha casa é no rio	NO_MATCH		minha casa é no rio
-van	3	f50b632e-fc1a-4ec0-b8b3-610dab7be736	DONE	iGeladi ideaGi weiigi	Minha casa é no rio	NO_MATCH		minha casa é no rio
-van	4	d26cfc71-a117-4817-9f35-4a7d23fd1f88	DONE	iwaalo ja libiniena	a mulher está bonita	EXACT_RAW	17	a mulher está bonita
-van	5	e3b84bb7-7e6e-474c-9ad6-c6a47b409a5a	DONE	iwaalo ja ninitibeke	a mulher está feliz	EXACT_RAW	76	a mulher está feliz
-van	6	3e518fdb-d852-41e5-87a4-f8778597c2a1	DONE	lotaGa GanaaginaGa libinienaGa	a palavra de seu irmão é bonita	NO_MATCH		a palavra de seu irmão é bonita
-van	7	ee540050-e6fa-424e-9252-fd0b9312769d	DONE	lotaGa Gadodawa libinienaGa	a palavra do seu marido é bonita	EXACT_RAW	28	a palavra do seu marido é bonita
-van	8	947061b4-7b73-4612-8aa8-0af0e04cbc85	DONE	niwatece iwaGadi noxilece lojetedi	a pesada canoa está barata	EXACT_RAW	11	a pesada canoa está barata
-van	9	2c026af9-b8a1-4389-b658-00113b070dee	REVIEW	niwatece liwaGatena lodejedi etidi weiigi	a canoa pesada barata está na lagoa	NO_MATCH		a canoa pesada barata está na lagoa
-van	10	0c38eab8-c6b0-4f02-bf05-27ea6285fe70	DONE	Gawenigi eliodi me libinienigi	a sua comida é muito bonita	EXACT_RAW	29	a sua comida é muito bonita
-van	11	a85fda39-1575-4120-9432-8fb534ebdbd2	DONE	niGida liwenigi libinienigi	aquela comida dela é bonita	EXACT_RAW	33	aquela comida dela é bonita
-van	12	a1e15803-1e5e-481f-8137-a84beac6cbcc	DONE	niGida niwenigi daGaxa me dakake loojedi	aquela comida é muito cara	EXACT_RAW	32	aquela comida é muito cara
-van	13	e9806e26-701d-4f5f-9ca9-63216cccf3d0	DONE	naGajo lomiigo Pedro idei niwatece	aquele anzol do Pedro está na canoa	EXACT_RAW	30	aquele anzol do pedro está na canoa
-van	14	2386b5b5-57d0-4a1f-86c2-73f67561744c	DONE	naGajo lomiigo nigaanigawaanigi manitaGa niwatece	Aquele anzol do menino está na canoa.	NO_MATCH		aquele anzol do menino está na canoa
-van	15	4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7	REVIEW	Nigaanigawaanigi idei madi niwatece ane adi nomiigo	O menino está na canoa que (tem) o anzol	NO_MATCH		o menino está na canoa que (tem) o anzol
-van	16	235440ba-548e-4df6-8d9e-214cc8714f8f	REVIEW	niGijo nigaanigawaanigi manitaGa lomigo niwatece	Aquele menino está na canoa do anzol.	NO_MATCH		aquele menino está na canoa do anzol
-van	17	86f5c128-e931-4443-90cc-2359748ed69f	DONE	Eeyo nigotaGa	Estou na cidade	NO_MATCH		estou na cidade
-van	18	d021bede-064b-4fd5-bb33-6c7cd4279c1b	DONE	Eyo manitaGa nigotaGa	Estou na cidade	NO_MATCH		estou na cidade
-van	19	e5c65dad-8b04-46da-b965-4921887cbca4	DONE	niGijoa lionigipi iwaalo idei minitaGa	aqueles filhos da mulher estão com eles	EXACT_RAW	101	aqueles filhos da mulher estão com eles
-van	20	8c5dd09c-d010-4c48-9601-9d3b14c61119	DONE	dibixodi idei manitaGa	as formigas estão nela	EXACT_RAW	42	as formigas estão nela
-van	21	9b107abc-b49f-4ce2-9c43-30c7e5b5f8b2	DONE	iwalepodi ja libinienigipi	as mulheres estão bonitas	EXACT_RAW	18	as mulheres estão bonitas
-van	22	0d6cdbcf-9d99-4eff-8615-149ec22fec5f	DONE	ajo ninitibeci	ela está feliz	EXACT_RAW	54,136	ela está feliz
-van	23	05676093-36c9-4e30-959a-e850447f32a5	DONE	ajo iwaGadi	ela está pesada / é pesada	NO_MATCH		ela está pesada / é pesada
-van	24	661c62a7-3c8c-4609-b989-017deaae82c6	DONE	ajo daGaxa ninitibeci	ela é muito feliz	EXACT_RAW	135	ela é muito feliz
-van	25	abe20c80-8394-478c-92eb-feef1512e5ed	DONE	ajo eliodi linikeGegi	ela é muito feliz	EXACT_RAW	135	ela é muito feliz
-van	26	0575dd46-865a-4ba4-bd49-ed6db054eeb4	DONE	ajo lapicaGa	ela é / está quente	NO_MATCH		ela é / está quente
-van	27	3aba0004-0ce2-4392-a334-ef814428ec0d	DONE	ijo libinienigi	ele está / é bonito	NO_MATCH		ele está / é bonito
-van	28	d369088d-7d87-44b9-a956-2d5bd5f955e1	DONE	ijo lapicaGigi	ele é / está quente	NO_MATCH		ele é / está quente
-van	29	a0ab1cad-f01e-49bb-8f31-5edf4fa4c102	DONE	niGijo ninitibigiwaji	eles são felizes	EXACT_RAW	51,52	eles são felizes
-van	30	0c7e64fb-f070-4faa-a12a-c110cdf4bf16	DONE	niGijo lodaajo ajo lodowa aGica digoida liGeladi	esta faca da esposa dele não está na casa	NO_MATCH		esta faca da esposa dele não está na casa
-van	31	5d76c7ee-51ce-47b0-a85d-ddc7f7d33f5f	DONE	ica liwigo niganigawanigi libinienigi	esta fotografia da criança é bonita	NO_MATCH		esta fotografia da criança é bonita
-van	32	46190f73-f21e-4073-b09c-8b2d17c6668e	DONE	naGani wetiGa liwaGatena	esta pedra está muito pesada	EXACT_RAW	79	esta pedra está muito pesada
-van	33	a0bb1280-1040-4dff-9311-a1a31049b6f8	DONE	naGani wetiGa iwaGadi	esta pedra está pesada	EXACT_RAW	80	esta pedra está pesada
-van	34	e1acd124-849e-40dc-bbb0-a8b6ed281592	DONE	niGidiwa wetiadi iwaGadi	estas pedras estão pesadas	EXACT_RAW	82,84,90,92	estas pedras estão pesadas
-van	35	675ef4d4-ebe8-4601-bf42-908deb0df82b	DONE	ani wetiGa eliodi me iwaGadi	esta pedra está muito pesada	EXACT_RAW	79	esta pedra está muito pesada
-van	36	42b65fc9-cec4-40a9-8aec-cdeec3731df8	DONE	ani wetiGa iwaGadi	esta pedra é pesada	EXACT_RAW	77	esta pedra é pesada
-van	37	ba34b659-bcb8-4aa2-b9f4-b969ba786b12	DONE	ani wetiGa me iwaGadi eniteloco iGonagi	esta pedra que é pesada caiu no meu pé	NO_MATCH		esta pedra que é pesada caiu no meu pé
-van	38	61da4017-2140-4577-82e4-d5108efae675	DONE	ani wetiGa ane iwaGadi eniteloco iGonagi	esta pedra , que é pesada , caiu no meu pé	NO_MATCH		esta pedra, que é pesada, caiu no meu pé
-van	39	6459c008-b2ad-4517-8227-b525616b720d	DONE	idiwa wetiadi iwaGadi	estas pedras estão pesadas	EXACT_RAW	82,84,90,92	estas pedras estão pesadas
-van	40	b4e1df8d-6590-4ce9-9f72-c0b054398c89	DONE	niGidowa waca lotiidi dapicoGo	este leite está quente	EXACT_RAW	20	este leite está quente
-van	41	278e4c5c-aaab-4ca3-8f5e-277610fb80c2	DONE	idowa waca lotiidi dapicoGo	este leite está quente	EXACT_RAW	20	este leite está quente
-van	42	44646324-eb90-42f0-b944-21f0452109e2	REVIEW	ijoa nigetedi liwigo libinienaGa	estes ovos da fotografia dela estão bonitos	NO_MATCH		estes ovos da fotografia dela estão bonitos
-van	43	a2910ce3-a0d2-4eac-bcc3-2da15db88b90	DONE	ijo niwigo libinienigi ijowa nigetedi	estes ovos da fotografia dela estão bonitos	NO_MATCH		estes ovos da fotografia dela estão bonitos
-van	44	075356e6-f89c-4d83-b001-435d13b319dc	DONE	ijoa nigetedi niwigo libinienigipi	estes ovos da fotografia estão bonitos	NO_MATCH		estes ovos da fotografia estão bonitos
-van	45	5739aca1-95fc-4584-9550-d7bd73c3c361	REVIEW	okokodi ligetedi midi niwigo libinienaGa .	Os ovos da fotografia são bonitos. (Os ovos de galinha que estão na fotografia são bonitos.)	NO_MATCH		os ovos da fotografia são bonitos. (os ovos de galinha que estão na fotografia são bonitos.)
-van	46	83a62eb4-5a9e-43b0-b6b4-bded8dbd8ffe	REVIEW	liwigo okokodi ligetedi libinienigi .	A fotografia dos ovos (da galinha) é bonita.	NO_MATCH		a fotografia dos ovos (da galinha) é bonita
-van	47	fad6e8d3-1e9f-451c-aaa7-fd28aecfd967	DONE	idiwa noGojedi lixagotaGaGa adakake loojedi	estes peixes vermelhos estão baratos	NO_MATCH		estes peixes vermelhos estão baratos
-van	48	e189be3e-9290-4d1c-b343-74d3858ce7cd	DONE	etee ina	eu estou aqui	EXACT_RAW	2,13,49	eu estou aqui
-van	49	889846ee-66df-4c8f-88d1-e89d3619eb1e	DONE	eteyo ina	eu estou aqui	EXACT_RAW	2,13,49	eu estou aqui
-van	50	e7f4ab65-14d7-44f5-a197-c99c4ab173cd	DONE	etee manitaGa	eu estou com ela	EXACT_RAW	48	eu estou com ela
-van	51	7aa17dd7-2c26-4df9-8f90-65d8d58e2c59	DONE	etee minitaGa	eu estou com ele	EXACT_RAW	48	eu estou com ele
-van	52	c3c548d7-b154-437e-9baf-541a1bbbab6e	DONE	ee aGica inikeGegi	eu não estou feliz	EXACT_RAW	67,74	eu não estou feliz
-van	53	c4d99cf1-e781-4efb-83ff-4a0ab873b7ec	DONE	ee aGidininitibeci	eu não estou feliz	EXACT_RAW	67,74	eu não estou feliz
-van	54	969ba2f3-88dc-417e-ad3f-16ce88b4c762	DONE	aGee eliodi niinikeGegi	eu não estou muito feliz	EXACT_RAW	69	eu não estou muito feliz
-van	55	39925f76-d73f-423f-95cd-f88bd78f2a6e	DONE	ee eliodi me aGidininitibeci	eu não estou muito feliz	EXACT_RAW	69	eu não estou muito feliz
-van	56	d3095a7e-477d-405e-9ea2-85bfdacad7d3	DONE	aGica daGa jipegitege	eu não estou perto dela	EXACT_RAW	72,137	eu não estou perto dela
-van	57	813f2ad7-42fb-4fbd-84b4-1957c68aa4f9	DONE	aGica daGa jipegitegi	eu não estou perto dele	EXACT_RAW	72,137	eu não estou perto dele
-van	58	b3c03f67-7664-43b7-9de8-b5243321eeb7	DONE	ee idiwaaGadi	eu sou pesado	EXACT_RAW	15,34	eu sou pesado
-van	59	6852927c-53de-411d-9ed9-e0f9d78309cd	DONE	ee jigipegitege	estou perto dela	NO_MATCH		estou perto dela
-van	60	2b6a6bee-392e-49f9-97a9-0afbb0af2eff	DONE	ee jigipegitegi	estou perto dele	NO_MATCH		estou perto dele
-van	61	42df6a83-6ae1-49b2-bd99-fbed7e2a083b	DONE	aGeewi mica iniKGigi	não sou muito feliz (não é verdade que eu sou feliz)	NO_MATCH		não sou muito feliz (não é verdade que eu sou feliz)
-van	62	27d94732-46ea-4286-a1d4-b2861806a579	DONE	aGeyo mica inikGigi	não sou muito feliz	NO_MATCH		não sou muito feliz
-van	63	651a68ed-90a0-45b7-9eb5-411bc2c189c7	DONE	JipecaGataGagi	nós estamos perto de você	NO_MATCH		nós estamos perto de você
-van	64	d3952c8a-1ac1-4255-be0b-63978fdf368b	DONE	aGidedonaGa midi Godoigi	nós não estamos na comunidade	EXACT_RAW	9,40	nós não estamos na comunidade
-van	65	e9b78452-925e-458b-848a-d52ab76f6840	DONE	jipacaGataGagitiwaji	estamos perto de vocês	NO_MATCH		estamos perto de vocês
-van	66	fbae0277-3aad-4812-9229-94179b5a97a0	DONE	aGidejonaGa midi Godoigi	não estamos na comunidade	NO_MATCH		não estamos na comunidade
-van	67	6599689a-3fbe-4598-8827-78aceeff3931	DONE	ijo lemé Maria ipegitegi weiigi	o avô da Maria está no rio	EXACT_RAW	45	o avô da maria está no rio
-van	68	b8878027-73d2-4b11-bc18-cbdcf5637e55	DONE	biju dapico	o beiju está quente	EXACT_RAW	95	o beiju está quente
-van	69	30ef1810-38e0-4cef-8db3-4dda590faa09	DONE	libiwe niale ixagodi	o galho da árvore é vermelho	EXACT_RAW	26	o galho da árvore é vermelho
-van	70	444f95ae-8ed7-422e-84f1-aae6d4af2b6d	DONE	idiwa bejoli dapico	os beijus estão quentes	EXACT_RAW	25,96	os beijus estão quentes
-van	71	f240dcfe-ca05-42aa-8644-07b9e3464e1a	DONE	idiwa leonigipi Maria libinienigipi	os filhos da Maria são bonitos	EXACT_RAW	44	os filhos da maria são bonitos
-van	72	b97e5b2f-d0da-4238-8ee6-2c64ded91f76	DONE	ijowa leonigipi iwaalo idi metaGa	os filhos da mulher estão com ele	NO_MATCH		os filhos da mulher estão com ele
-van	73	c1b350df-ed1a-4e3b-89a8-a6fa9ca8382e	DONE	ligeladi ipegitege niweiigi nigotaGa	a casa dela é perto da cidade do rio	NO_MATCH		a casa dela é perto da cidade do rio
-van	74	ebff5ffa-8a9d-4f8b-9960-38f70b344c19	DONE	ligeladi ipegitegi niweiigi nigotaGa	a casa dele é perto do rio da cidade	EXACT_RAW	132	a casa dele é perto do rio da cidade
-van	75	81048a6f-e084-4b0a-965a-f41fb5c53ff7	DONE	nigotaGa liGeladi ipegitegi weiigi	a cidade da casa dela é perto do rio	EXACT_RAW	132	a cidade da casa dela é perto do rio
-hil	1	fcef38ed-be6b-4f2a-b5cf-fa4db625ecfb	DONE	Iwaalo libiniena	A mulher está bonita .	EXACT_NORMALIZED	17	a mulher está bonita
-hil	2	31d3b4c0-4aab-4538-999b-b8ee85c34444	DONE	Iwaalo ninitibeci	A mulher está feliz .	EXACT_NORMALIZED	76	a mulher está feliz
-hil	3	39f34955-a828-47d7-808d-b3b3565b42d6	DONE	LotaGa Ganioxoa libinienaGa	A palavra de seu irmão é bonita .	NO_MATCH		a palavra de seu irmão é bonita
-hil	4	d3ae6cfd-bec1-49f3-a0f9-4ca0744e3404	DONE	LotaGa Gadodawa libinienaGa	A palavra do seu marido é bonita .	EXACT_NORMALIZED	28	a palavra do seu marido é bonita
-hil	5	e349508c-4d86-48b8-9918-057988755e77	DONE	Etogo aneiwaGadi adakake lojedi	A pesada canoa está barata .	EXACT_NORMALIZED	11	a pesada canoa está barata
-hil	6	1d10c633-e74d-4e27-ac23-6b6b2dde9647	DONE	Etogo ane iwaGadi adakake loojedi	A canoa pesada é barata .	NO_MATCH		a canoa pesada é barata
-hil	7	435e4b10-ab78-4ee3-84b0-7773dbe10bf7	DONE	Gawenigi eliodi me libinienigi	A sua comida é muito bonita .	EXACT_NORMALIZED	29	a sua comida é muito bonita
-hil	8	cf44903e-0c33-44bc-a146-1fb8a4ccb973	DONE	NiGijo liwenigi libinienigi	Aquela comida dela é bonita .	EXACT_NORMALIZED	33	aquela comida dela é bonita
-hil	9	0ca977cd-2edf-45d9-b958-068648aebef9	DONE	NiGida niwenigi eliodi me dakake loojedi	Aquela comida é muito cara .	EXACT_NORMALIZED	32	aquela comida é muito cara
-hil	10	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887	DONE	NaGajo lomigo Pedilo idei madi niwatece	Aquele anzol do Pedro está na canoa .	EXACT_NORMALIZED	30	aquele anzol do pedro está na canoa
-hil	11	92838eda-ef9b-4f05-a5eb-38a4709c0337	DONE	NaGajo lomigo niganigawanigi madi niwatece	Aquele anzol do menino é na canoa .	EXACT_NORMALIZED	31	aquele anzol do menino é na canoa
-hil	12	3a7e213b-323e-4694-bad9-47091f3533f5	DONE	Te ee nigotaGa	Estou na cidade .	NO_MATCH		estou na cidade
-hil	13	0de3d311-348a-4107-a191-9fc3f960c249	DONE	niGijoa lionaGa iwaalo idei mijotaGa	Aqueles filhos da mulher estão com eles .	EXACT_NORMALIZED	101	aqueles filhos da mulher estão com eles
-hil	14	4e9130da-80fd-4ac2-8665-956c95b299e2	DONE	dibixodi ideiticoaci maditaGa	As formigas estão nela .	EXACT_NORMALIZED	42	as formigas estão nela
-hil	15	baccc279-f303-4b4f-a6d7-4404de699f4a	DONE	Iwaalepodi libinienigipi .	As mulheres estão bonitas .	EXACT_NORMALIZED	18	as mulheres estão bonitas
-hil	16	af474637-80f3-4001-884c-4d5f452fb573	DONE	Ninitibeci .	Ela está feliz .	EXACT_NORMALIZED	54,136	ela está feliz
-hil	17	8f297896-5ee6-461f-86e3-0d4d4ef5a661	DONE	ninitibeci naGada	Ela está feliz .	EXACT_NORMALIZED	54,136	ela está feliz
-hil	18	4855882d-49f1-4035-bd12-73abf82df995	DONE	Ninitibeci naGadi .	Ela está feliz .	EXACT_NORMALIZED	54,136	ela está feliz
-hil	19	d489d970-e6b1-42e3-add2-2221f2fb1fad	DONE	naGada iwaGadi	Ela está pesada	EXACT_NORMALIZED	56	ela está pesada
-hil	20	23b27bf4-3694-4053-8f74-b3c739fc8ee2	DONE	naGadi iwaGadi	Ela está pesada.	EXACT_NORMALIZED	56	ela está pesada
-hil	21	85801af7-8128-4d85-a7bd-a182d5dc58a5	DONE	NaGana iwaGadi	Ela está pesada.	EXACT_NORMALIZED	56	ela está pesada
-hil	22	b9d77060-3ac9-4305-ba86-2723cc7cb70a	DONE	Ada iwaGadi	Ela está é pesada.	NO_MATCH		ela está é pesada
-hil	23	7521cd51-aa9b-4ff6-8d87-a5ce4ca92b6d	DONE	Ani iwaGadi	Ela está é pesada.	NO_MATCH		ela está é pesada
-hil	24	96687d35-46ae-4338-9398-ff66a3165b61	DONE	Adi iwaGadi	Ela está é pesada.	NO_MATCH		ela está é pesada
-hil	25	24a9e039-79d0-4026-8824-0d061c2b21ee	DONE	naGana eliodi meninitibeci	Ela é muito feliz .	EXACT_NORMALIZED	135	ela é muito feliz
-hil	26	fba05264-0e3c-4248-8211-3ac87c64c2e6	DONE	DapicoGo	Ela é quente .	EXACT_NORMALIZED	5	ela é quente
-hil	27	f9af3f8f-3b06-4756-8676-b5ffb2c24b44	DONE	DapipocoGo	Ela está quente .	NO_MATCH		ela está quente
-hil	28	fab37d81-bb9b-4e20-a8f5-3b3969ee86d1	DONE	libiniena	Ele está bonito .	NO_MATCH		ele está bonito
-hil	29	0b9bddcd-f6af-4281-80a9-cac2377d0af1	DONE	libinienigi	Ele é bonito.	EXACT_NORMALIZED	4	ele é bonito
-hil	30	38c689d8-332d-4406-b236-de4593e4853a	DONE	DapicoGo	Ele é quente .	EXACT_NORMALIZED	5	ele é quente
-hil	31	ea70209d-4f3c-4bf9-8d93-2d91fa0f928c	DONE	DapicoGo	Ele está quente .	NO_MATCH		ele está quente
-hil	32	4aed8aa8-bd36-4940-8020-8ba12122304e	DONE	Ninitibigiwaji .	Eles são felizes .	EXACT_NORMALIZED	51,52	eles são felizes
-hil	33	3a27c7c6-ecd6-45c0-a71e-b4aa2a242a3d	DONE	NiGida lodajo lodawa aidei dineigi	Esta faca da esposa dele (do marido dela) não está na casa .	NO_MATCH		esta faca da esposa dele (do marido dela) não está na casa
-hil	34	64f2c803-b436-4202-b4c7-acf5c7205bc3	DONE	liwigo niganigawanigi libinienigi	Esta fotografia da criança é bonita .	NO_MATCH		esta fotografia da criança é bonita
-hil	35	8bad7bc3-f82f-46c0-9e63-c780104b11e2	DONE	naGani wetiGa eliodi me iwaGadi	Esta pedra está muito pesada .	EXACT_NORMALIZED	79	esta pedra está muito pesada
-hil	36	768a3635-dcaf-4210-b236-73568abadbdb	DONE	NaGani wetiGa iwaGadi	Esta pedra está pesada .	EXACT_NORMALIZED	80	esta pedra está pesada
-hil	37	e5f90fbc-14e8-4c6f-9e07-61fbf67d042f	DONE	NiGinoa wetiadi iwaGadi	Estas pedras estão pesadas .	EXACT_NORMALIZED	82,84,90,92	estas pedras estão pesadas
-hil	38	f4b854f9-c3c6-4e88-8a9b-ca73fcba8d46	DONE	NaGani wetiGa iwaGadi	Esta pedra é pesada .	EXACT_NORMALIZED	77	esta pedra é pesada
-hil	39	38f73c1c-ddfb-4153-9310-d24214cd68e7	DONE	NaGani wetiGa ane iwaGadi eniteloco iGonagi	Esta pedra que é pesada caiu no meu pé .	NO_MATCH		esta pedra que é pesada caiu no meu pé
-hil	40	e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4	REVIEW	NaGani wetiGa , ane iwaGadi , eniteloco iGonagi	Esta pedra , que é pesada , caiu no meu pé .	NO_MATCH		esta pedra, que é pesada, caiu no meu pé
-hil	41	8dda04f0-f7e8-46d6-b41d-b65dd214f01b	DONE	NiGidoa waca lotiidi dapicoGo	Este leite está quente .	EXACT_NORMALIZED	20	este leite está quente
-hil	42	79cb0e55-9c06-4cb1-91b3-2b5233e1678f	DONE	niGidiwa okokodi ligetedi midi niwigo libinienaGa	Estes ovos da fotografia dela estão bonitos .	NO_MATCH		estes ovos da fotografia dela estão bonitos
-hil	43	a74fea0a-dd87-4c4d-8670-9db66f5b5b16	DONE	niGidiwa okokodi ligetedi liwigo libinienaGa	Estes ovos da fotografia estão bonitos .	NO_MATCH		estes ovos da fotografia estão bonitos
-hil	44	83fdcd4c-338f-4a9f-8545-da8539e67e9d	DONE	NiGidiwa noGojedi lixagotaGaGa adakake loojedi	Estes peixes vermelhos estão baratos .	NO_MATCH		estes peixes vermelhos estão baratos
-hil	45	07bfcd00-7901-474d-bfb8-bf470266aafa	REVIEW	Ee ite ee ina	Eu estou aqui .	EXACT_NORMALIZED	2,13,49	eu estou aqui
-hil	46	42671da9-e433-4319-86a0-2a2cb8777a40	REVIEW	Ite ee madataGa	Eu estou com ela .	EXACT_NORMALIZED	48	eu estou com ela
-hil	47	e58e38a7-f117-48f1-8a17-9d896867fe60	REVIEW	Ite ee midataGa	Eu estou com ele .	EXACT_NORMALIZED	48	eu estou com ele
-hil	48	4242d34b-9096-45a2-a666-502a2cb9ca49	DONE	Ee aidinitibeci .	Eu não estou feliz .	EXACT_NORMALIZED	67,74	eu não estou feliz
-hil	49	1e9df213-90da-4674-8889-4ac858df72fe	DONE	Ee ageliodi me idinitibeci	Eu não estou muito feliz .	EXACT_NORMALIZED	69	eu não estou muito feliz
-hil	50	c4302bef-3de9-4f3c-b762-f6b77183f263	DONE	Ee ajipegitege	Eu não estou perto dela .	EXACT_NORMALIZED	72,137	eu não estou perto dela
-hil	51	5bc48b27-0755-475f-813e-7a259f3c3c9e	DONE	Ee ajipegitege	Eu não estou perto dele .	EXACT_NORMALIZED	72,137	eu não estou perto dele
-hil	52	1e1fafc0-29c6-41d4-a0d2-4c825d9af376	DONE	ee idiwaGadi	Eu sou pesado .	EXACT_NORMALIZED	15,34	eu sou pesado
-hil	53	71aff593-7b38-4c17-9563-4503985dbd03	DONE	jipegitege	Estou perto dela .	NO_MATCH		estou perto dela
-hil	54	f4f18c18-728c-4d6b-b7dd-2df62c4a829a	DONE	jipegitege	Estou perto dele .	NO_MATCH		estou perto dele
-hil	55	90ca38d8-e063-4c98-af51-4b9022ade506	DONE	aGeliodi me idinitibeci .	Não sou muito feliz .	NO_MATCH		não sou muito feliz
-hil	56	82bfae64-45e7-403f-bcd0-190e00f4520f	DONE	jipecaGataGagi .	Nós estamos perto de você .	NO_MATCH		nós estamos perto de você
-hil	57	341bf09a-2ef8-455a-8b6b-88373c617dae	DONE	oko aidejonaGa midi Godoigi	Nós não estamos na comunidade .	EXACT_NORMALIZED	9,40	nós não estamos na comunidade
-hil	58	9a136412-a636-4e5e-aa54-ac684ae7bed3	DONE	jipecaGataGagitiwaji .	Estamos perto de vocês .	NO_MATCH		estamos perto de vocês
-hil	59	dff00f05-7be1-4d62-b3ed-b8a8870851e9	DONE	aidejonaGa midi Godoigi	Não estamos na comunidade.	NO_MATCH		não estamos na comunidade
-hil	60	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	DONE	niGijo nelokodi Maria idei midi akiidi	O avô da Maria está no rio .	EXACT_NORMALIZED	45	o avô da maria está no rio
-hil	61	f0c7c722-031a-4c6e-ad7e-739402475c99	DONE	NiGijo bijo dapicoGo	O beiju está quente .	EXACT_NORMALIZED	95	o beiju está quente
-hil	62	d5dcd2bf-a3d0-4074-a241-f706b153134f	DONE	NaGada libiwe niale ixagodi	O galho da árvore é vermelho .	EXACT_NORMALIZED	26	o galho da árvore é vermelho
-hil	63	c3225d86-7037-4f8c-9981-8e92b6a081d6	DONE	nigidiwa bijotedi dapicoGo	Os beijus estão quentes .	EXACT_NORMALIZED	25,96	os beijus estão quentes
-hil	64	d0cb9423-93bb-4b45-a02a-fee23a6dd8bb	DONE	Nigijoa lianaGa Maria libinienigipi	Os filhos da Maria são bonitos .	EXACT_NORMALIZED	44	os filhos da maria são bonitos
-hil	65	13f012b0-ef62-4477-b4bd-00e000484874	DONE	NiGidi lionaGa iwaalo etidi meetaGa	Os filhos da mulher estão comigo .	EXACT_NORMALIZED	75	os filhos da mulher estão comigo
-hil	66	55fe3cf7-0293-48e6-aa78-44822f50347e	DONE	liGeladi ipegitege nakidi nigotaGa	A casa dela é perto do rio da cidade .	EXACT_NORMALIZED	132	a casa dela é perto do rio da cidade
-hil	67	c0441856-b259-4d76-a88e-33a7e211b208	DONE	liGeladi ipegitege nakidi nigotaGa	A casa dele é perto do rio da cidade .	EXACT_NORMALIZED	132	a casa dele é perto do rio da cidade
-hil	68	9527d53d-7184-4b08-8bb2-51b7fff1429d	DONE	nigotaGa liGeladi ipegitege akiidi	A cidade da casa dela é perto do rio.	EXACT_NORMALIZED	132	a cidade da casa dela é perto do rio
-hil	69	9669b093-f0a2-4187-9063-cec9ba4c0196	DONE	Nigaanigawaanigi etini liwatece Pedilo	Menino está na canoa do Pedro.	NO_MATCH		menino está na canoa do pedro
-hil	70	529c167b-b3a7-40cc-af76-c7522719c6d4	DONE	NiGijo nigaanigawaanigi etini liwatece ideloGole	Aquele menino está na canoa da lagoinha.	NO_MATCH		aquele menino está na canoa da lagoinha
-ped	1	ed98d4d1-638c-4377-8c6d-5511855636d1	DONE	ajo liwatece ja iwaGadi	A canoa dele/a é pesada	NO_MATCH		a canoa dele/a é pesada
-ped	2	ccb5ea37-b3ba-47a9-8d71-224f599ea7be	DONE	ajo liwatece etadi weiigi	A canoa dele/a está no rio	NO_MATCH		a canoa dele/a está no rio
-ped	3	49347527-d19d-4689-bff1-ba3e497e7b1f	DONE	ajo niwatece etadi digoida	A canoa está lá	EXACT_NORMALIZED	61	a canoa está lá
-ped	4	69948fe6-81f6-4faa-a344-8f8c47486943	DONE	niwatece iwaGadi	A canoa está pesada	EXACT_NORMALIZED	10	a canoa está pesada
-ped	5	b2e3ea43-0d68-46ee-9f33-938610cc8aec	DONE	niwatece etadi weiigi	A canoa está no rio	NO_MATCH		a canoa está no rio
-ped	6	1b99ecb9-5656-4c38-b60b-fbbe643708fb	DONE	ajo niwatece ipegitege weiigi	A canoa está perto do rio	NO_MATCH		a canoa está perto do rio
-ped	7	e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9	DONE	liGeladi Maria aGipegetege	A casa de Maria não é perto dela	NO_MATCH		a casa de maria não é perto dela
-ped	8	79a6cd4e-b585-437a-9084-1fa077dec3b6	DONE	ica liGeladi ipegetege	A casa está perto dela	NO_MATCH		a casa está perto dela
-ped	9	e9d6dfb6-656d-44aa-ba17-86289fd72268	DONE	liGeladi idei nigotaGa	A casa fica perto da cidade	NO_MATCH		a casa fica perto da cidade
-ped	10	2fff1f23-4e6f-401c-8b74-6a17ff6a391a	DONE	ica liGeladi ipegitegi	a casa dela/dele fica perto dele 	NO_MATCH		a casa dela/dele fica perto dele
-ped	11	fef391af-9e63-419f-8f81-057459193f49	DONE	ica Maria looligi alidi	a comida da Maria não está deliciosa (a não gostosura da comida da Maria)	NO_MATCH		a comida da maria não está deliciosa (a não gostosura da comida da maria)
-ped	12	070d221f-f72d-4055-9c82-ddc383743e6a	DONE	ica looligi lidi	A comida está/é deliciosa (A gostosura da comida da Maria)	NO_MATCH		a comida está/é deliciosa (a gostosura da comida da maria)
-ped	13	68277d1f-c30b-4c4f-ba9e-c2883cc133af	DONE	ica looligi dapico	A comida dela está quente	NO_MATCH		a comida dela está quente
-ped	14	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5	DONE	ica looligi ja dapico	a comida dela está quente	NO_MATCH		a comida dela está quente
-ped	15	c5bd2cb2-e53b-40e4-9159-6dacde49c1b6	DONE	ica looligi lideGegi	A comida é deliciosa (a gostosura da comida dela)	NO_MATCH		a comida é deliciosa (a gostosura da comida dela)
-ped	16	19cc39ce-fe03-4551-8097-9d163a38a3c0	DONE	loigipodi libinienigipi	A comunidade dele/dela é bonita	NO_MATCH		a comunidade dele/dela é bonita
-ped	17	12147353-b422-4ad7-9bef-1d20e70e2a74	DONE	ica loigi ijo niganigi ipegitegi GanigotGa	A comunidade do menino é perto da cidade de vocês	EXACT_NORMALIZED	19	a comunidade do menino é perto da cidade de vocês
-ped	18	582429f2-67d5-4077-b209-6deb7b5df54f	DONE	ica lideGegi loligi idei liGeladi	a deliciosa comida está na casa dela/dele	NO_MATCH		a deliciosa comida está na casa dela/dele
-ped	19	0f478381-6858-463d-94cc-903e9dc879f9	DONE	ica liwigo libinienigi	a fotografia dela/dele é/está bonita	NO_MATCH		a fotografia dela/dele é/está bonita
-ped	20	55551636-8ed3-4545-8510-d8dbfd817a1a	DONE	ica niwigo libinienigi	a fotografia é/está bonita	NO_MATCH		a fotografia é/está bonita
-ped	21	5d0b94bf-223d-4f09-8c6f-b951a70d6d0b	REVIEW	ica nioladi Ganixoa	A língua do teu irmão 	NO_MATCH		a língua do teu irmão
-ped	22	881131dd-3f70-411a-ac7e-85557139d1e3	DONE	ica nioladi nioxoa libinienigi	A língua do irmão dele/dela é bonita	NO_MATCH		a língua do irmão dele/dela é bonita
-ped	23	95a7d135-4be0-463d-b443-76cc5828fc89	DONE	ica nioladi lodawa libinienigi	A língua do marido/esposa dele/dela é bonita	NO_MATCH		a língua do marido/esposa dele/dela é bonita
-ped	24	2f47b402-9fe7-4714-96e3-c6cbdf405472	DONE	iGeladi idei naigi anenapioi	a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)	NO_MATCH		a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)
-ped	25	a4d33655-fe74-4df2-8d5e-b3c88fba5fd1	DONE	iGeladi idei naigi me napioi	Minha casa fica na rua suja (na rua que é suja).	NO_MATCH		minha casa fica na rua suja (na rua que é suja)
-ped	26	f081c545-c42b-463d-b57f-db87787f20e7	DONE	João liGeladi ane napioi	a casa do João, que é suja	NO_MATCH		a casa do joão, que é suja
-ped	27	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc	REVIEW	iGeladi idei mijo naigi naGajo	A minha casa fica naquela rua suja dela	NO_MATCH		a minha casa fica naquela rua suja dela
-ped	28	ee1a1190-7803-404c-83f6-49d3ccf63b0d	REVIEW	Eyodi dowediteloco nawodigijedi micoataGa daGa me lionigipi	meu pai cuida da plantação de flores como filhas	NO_MATCH		meu pai cuida da plantação de flores como filhas
-ped	29	4bdb4b8f-0176-4303-8a13-e313fbb6d7ad	REVIEW	Eyodi me niganaGacanajo	Meu pai que era cantor	NO_MATCH		meu pai que era cantor
-ped	30	7b806584-75e5-4017-b9e2-ba97458903bd	DONE	Eyodi ane niganaGacanajo	Meu pai que era cantor (explicativa)	NO_MATCH		meu pai que era cantor (explicativa)
-ped	31	845b9d1d-ad7c-445a-bfbd-04fd9255ffc2	REVIEW	Eyodi daGa niganaGacanajo	Meu pai se fosse cantor	NO_MATCH		meu pai se fosse cantor
-ped	32	a4ccc755-a644-4b04-ab1b-698e7acea4cc	DONE	iGeladi idei digoida	minha casa está lá	NO_MATCH		minha casa está lá
-ped	33	82117289-be52-45d0-886d-a5747eb20ea2	DONE	iGeladi ipegitaGagi	Minha casa está perto de você	NO_MATCH		minha casa está perto de você
-ped	34	50f93fbc-14fa-48e7-b8ba-22f744109348	DONE	iGeladi ipegitegi liGeladi	Minha casa está perto de sua casa	NO_MATCH		minha casa está perto de sua casa
-ped	35	014fefb1-d5e3-48c8-9ac3-9e713a41407f	DONE	iGeladi ipegitegi naigi ane napioi	Minha casa está perto desta rua suja (que está suja)	NO_MATCH		minha casa está perto desta rua suja (que está suja)
-ped	36	bb8018ba-76b3-43f2-82ea-78b6009c1f90	DONE	iGeladi ipegitegi naigi me napioi	minha casa está perto da rua suja	NO_MATCH		minha casa está perto da rua suja
-ped	37	1da1bf7a-7975-4baf-821b-9df5c75ac297	DONE	iGeladi aGipegitegi weiigi	Minha casa não fica perto do rio	NO_MATCH		minha casa não fica perto do rio
-ped	38	46bbf9a8-c650-4e4b-a44f-78bfe6c5d979	DONE	ijo Gatodi etijo ida .	O tucano está indo nele.	NO_MATCH		o tucano está indo nele
-ped	39	4ffc2f68-0474-488f-a94e-4065f952482a	DONE	ijotawece etidi akiidi .	Eles (todos) estão (deitados) no rio.	NO_MATCH		eles (todos) estão (deitados) no rio
-ped	40	10e550d6-df13-4527-8aee-aa23e3f2fcdd	DONE	iGeladi digoida weiigi .	Minha casa é no rio.	NO_MATCH		minha casa é no rio
-ped	41	874c123b-4c43-4001-bfce-8af4af0e5805	DONE	iGeladi idei weiigi .	Minha casa é no rio.	NO_MATCH		minha casa é no rio
-ped	42	aad13f14-bd9a-462a-9a43-68ba69a81519	REVIEW	nigotaGa liGeladi ipegitegi weiigi .	A cidade da casa dela é perto do rio.	EXACT_NORMALIZED	132	a cidade da casa dela é perto do rio
-ped	43	19401990-aa1d-4cf5-bea1-122254c6b77a	DONE	lotaGa GanaginaGa libinienaGa .	A palavra de seu (teu) irmão é bonita.	NO_MATCH		a palavra de seu (teu) irmão é bonita
-ped	44	6d2a809e-0d32-4254-9489-f9e356e22493	DONE	nGida niwenigi daGaxa me dakake loojedi .	Aquela comida é muito cara.	EXACT_NORMALIZED	32	aquela comida é muito cara
-ped	45	c25b098d-6b0a-4416-a31d-6d7219685a63	REVIEW	João liGeladi napioi .	A casa do João é suja.	NO_MATCH		a casa do joão é suja
-ped	46	4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5	DONE	liGeladi João napioi .	A casa do João é suja.	NO_MATCH		a casa do joão é suja
-ped	47	ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec	DONE	liGeladi ipegitege niweiigi nigotaGa .	A casa dele/dela é perto da cidade da lagoa.	NO_MATCH		a casa dele/dela é perto da cidade da lagoa
-ped	48	8b1a9983-4dfd-49e8-9285-92c56c84b652	DONE	liGeladi ipegitegi niweiigi nigotaGa .	A casa dele/dela é perto da lagoa da cidade.	NO_MATCH		a casa dele/dela é perto da lagoa da cidade
-ped	49	eeb42af3-fe5a-4b7d-97ea-b381ab589860	DONE	Niwatece iwaGadi codaa adakake loojedi .	A canoa é pesada e seu preço é barato	NO_MATCH		a canoa é pesada e seu preço é barato
-ped	50	156fa9a4-4323-44f1-9cdc-ef5dc052b428	DONE	etee minitaGa	Estou com ele	NO_MATCH		estou com ele
-ped	51	3b45c470-6164-4fcf-a4d5-90be0f27eb1d	DONE	ee aGidininitibeci	Eu não estou feliz	EXACT_NORMALIZED	67,74	eu não estou feliz
-ped	52	d543f155-c01f-4b5e-add1-0533b8ac6e15	DONE	jipacaGataGagitiwaji	Estamos perto de vocês.	NO_MATCH		estamos perto de vocês
-ped	53	3f077b37-aa95-4012-9efb-a21630cdd6e9	DONE	aGee eliodi niinikeGegi	Eu não estou muito feliz	EXACT_NORMALIZED	69	eu não estou muito feliz
-ped	54	74a76be1-d4b6-42e1-9100-6a436a7fa065	DONE	akaami oko jipacaGataGagitiwaji	Estamos perto de vocês.	NO_MATCH		estamos perto de vocês
-ped	55	d3e098e5-4edd-4c24-81cf-78ff4a4d398c	DONE	niGidowa waca lotiidi dapikoGo	O leite da vaca está quente	NO_MATCH		o leite da vaca está quente
-ped	56	edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded	DONE	IiGeladi midi akiidi	A casa dele/dela é no rio.	NO_MATCH		a casa dele/dela é no rio
-ped	57	2c0248b3-8f68-46e9-b41c-9f7807572c87	DONE	etogo aneiwaGadi adakake lojedi .	A pesada canoa está barata.	EXACT_NORMALIZED	11	a pesada canoa está barata
-ped	58	73ceda1b-be14-4e75-9b1e-2a490d7df366	DONE	etogo adakake lojedi	A canoa está barata.	NO_MATCH		a canoa está barata
-ped	59	bf632295-26f8-4ee6-979f-33f090ef0471	DONE	etogoli dakake lojetedi	As canoas (individualmente) são caras (cada uma com um preço caro)	NO_MATCH		as canoas (individualmente) são caras (cada uma com um preço caro)
-ped	60	bbd6b80b-3236-4172-8bd5-ba3fb404049e	DONE	etogoli dakake loojedi	as canoas (como classe/grupo) são caras 	NO_MATCH		as canoas (como classe/grupo) são caras
-ped	61	1ab7fa26-ed92-4d55-98d0-0d76396373f0	DONE	Etogoli iwaGadi adakake lojetedi		NO_PORTUGUESE		
+source	source_index	uid	status	kadiweu	portuguese	match_type	has_slash	has_parenthetical	diagnostic_best_strategy	diagnostic_best_form	diagnostic_best_sent_id	diagnostic_best_portuguese	diagnostic_best_combined_score	diagnostic_best_char_score	diagnostic_best_token_jaccard	grammyep_sent_ids	normalized_portuguese
+van	1	a7e338a1-5403-40d4-b169-c840cf193aae	DONE	iGeladi digoida weiigi	Minha casa é no rio	NO_MATCH	no	no									minha casa é no rio
+van	2	d07f0db7-963e-47ab-ab3f-36614732bacd	DONE	iGeladi idei weiigi	Minha casa é no rio	NO_MATCH	no	no									minha casa é no rio
+van	3	f50b632e-fc1a-4ec0-b8b3-610dab7be736	DONE	iGeladi ideaGi weiigi	Minha casa é no rio	NO_MATCH	no	no									minha casa é no rio
+van	4	d26cfc71-a117-4817-9f35-4a7d23fd1f88	DONE	iwaalo ja libiniena	a mulher está bonita	EXACT_RAW	no	no								17	a mulher está bonita
+van	5	e3b84bb7-7e6e-474c-9ad6-c6a47b409a5a	DONE	iwaalo ja ninitibeke	a mulher está feliz	EXACT_RAW	no	no								76	a mulher está feliz
+van	6	3e518fdb-d852-41e5-87a4-f8778597c2a1	DONE	lotaGa GanaaginaGa libinienaGa	a palavra de seu irmão é bonita	NO_MATCH	no	no									a palavra de seu irmão é bonita
+van	7	ee540050-e6fa-424e-9252-fd0b9312769d	DONE	lotaGa Gadodawa libinienaGa	a palavra do seu marido é bonita	EXACT_RAW	no	no								28	a palavra do seu marido é bonita
+van	8	947061b4-7b73-4612-8aa8-0af0e04cbc85	DONE	niwatece iwaGadi noxilece lojetedi	a pesada canoa está barata	EXACT_RAW	no	no								11	a pesada canoa está barata
+van	9	2c026af9-b8a1-4389-b658-00113b070dee	REVIEW	niwatece liwaGatena lodejedi etidi weiigi	a canoa pesada barata está na lagoa	NO_MATCH	no	no									a canoa pesada barata está na lagoa
+van	10	0c38eab8-c6b0-4f02-bf05-27ea6285fe70	DONE	Gawenigi eliodi me libinienigi	a sua comida é muito bonita	EXACT_RAW	no	no								29	a sua comida é muito bonita
+van	11	a85fda39-1575-4120-9432-8fb534ebdbd2	DONE	niGida liwenigi libinienigi	aquela comida dela é bonita	EXACT_RAW	no	no								33	aquela comida dela é bonita
+van	12	a1e15803-1e5e-481f-8137-a84beac6cbcc	DONE	niGida niwenigi daGaxa me dakake loojedi	aquela comida é muito cara	EXACT_RAW	no	no								32	aquela comida é muito cara
+van	13	e9806e26-701d-4f5f-9ca9-63216cccf3d0	DONE	naGajo lomiigo Pedro idei niwatece	aquele anzol do Pedro está na canoa	EXACT_RAW	no	no								30	aquele anzol do pedro está na canoa
+van	14	2386b5b5-57d0-4a1f-86c2-73f67561744c	DONE	naGajo lomiigo nigaanigawaanigi manitaGa niwatece	Aquele anzol do menino está na canoa.	NO_MATCH	no	no									aquele anzol do menino está na canoa
+van	15	4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7	REVIEW	Nigaanigawaanigi idei madi niwatece ane adi nomiigo	O menino está na canoa que (tem) o anzol	NO_MATCH	no	yes	PARENTHETICAL_STRIPPED	o menino está na canoa que o anzol	31	aquele menino é na canoa do anzol	0.659701	0.746269	0.400000		o menino está na canoa que (tem) o anzol
+van	16	235440ba-548e-4df6-8d9e-214cc8714f8f	REVIEW	niGijo nigaanigawaanigi manitaGa lomigo niwatece	Aquele menino está na canoa do anzol.	NO_MATCH	no	no									aquele menino está na canoa do anzol
+van	17	86f5c128-e931-4443-90cc-2359748ed69f	DONE	Eeyo nigotaGa	Estou na cidade	NO_MATCH	no	no									estou na cidade
+van	18	d021bede-064b-4fd5-bb33-6c7cd4279c1b	DONE	Eyo manitaGa nigotaGa	Estou na cidade	NO_MATCH	no	no									estou na cidade
+van	19	e5c65dad-8b04-46da-b965-4921887cbca4	DONE	niGijoa lionigipi iwaalo idei minitaGa	aqueles filhos da mulher estão com eles	EXACT_RAW	no	no								101	aqueles filhos da mulher estão com eles
+van	20	8c5dd09c-d010-4c48-9601-9d3b14c61119	DONE	dibixodi idei manitaGa	as formigas estão nela	EXACT_RAW	no	no								42	as formigas estão nela
+van	21	9b107abc-b49f-4ce2-9c43-30c7e5b5f8b2	DONE	iwalepodi ja libinienigipi	as mulheres estão bonitas	EXACT_RAW	no	no								18	as mulheres estão bonitas
+van	22	0d6cdbcf-9d99-4eff-8615-149ec22fec5f	DONE	ajo ninitibeci	ela está feliz	EXACT_RAW	no	no								54,136	ela está feliz
+van	23	05676093-36c9-4e30-959a-e850447f32a5	DONE	ajo iwaGadi	ela está pesada / é pesada	EDITORIAL_NORMALIZED_EXACT	yes	no	SLASH_ALTERNATIVE	ela está pesada	56	ela está pesada	1.000000	1.000000	1.000000	56	ela está pesada / é pesada
+van	24	661c62a7-3c8c-4609-b989-017deaae82c6	DONE	ajo daGaxa ninitibeci	ela é muito feliz	EXACT_RAW	no	no								135	ela é muito feliz
+van	25	abe20c80-8394-478c-92eb-feef1512e5ed	DONE	ajo eliodi linikeGegi	ela é muito feliz	EXACT_RAW	no	no								135	ela é muito feliz
+van	26	0575dd46-865a-4ba4-bd49-ed6db054eeb4	DONE	ajo lapicaGa	ela é / está quente	NO_MATCH	yes	no	SLASH_ALTERNATIVE	está quente	95	o beiju está quente	0.675000	0.733333	0.500000		ela é / está quente
+van	27	3aba0004-0ce2-4392-a334-ef814428ec0d	DONE	ijo libinienigi	ele está / é bonito	NO_MATCH	yes	no	SLASH_ALTERNATIVE	é bonito	4	ele é bonito	0.766667	0.800000	0.666667		ele está / é bonito
+van	28	d369088d-7d87-44b9-a956-2d5bd5f955e1	DONE	ijo lapicaGigi	ele é / está quente	NO_MATCH	yes	no	SLASH_ALTERNATIVE	está quente	95	o beiju está quente	0.675000	0.733333	0.500000		ele é / está quente
+van	29	a0ab1cad-f01e-49bb-8f31-5edf4fa4c102	DONE	niGijo ninitibigiwaji	eles são felizes	EXACT_RAW	no	no								51,52	eles são felizes
+van	30	0c7e64fb-f070-4faa-a12a-c110cdf4bf16	DONE	niGijo lodaajo ajo lodowa aGica digoida liGeladi	esta faca da esposa dele não está na casa	NO_MATCH	no	no									esta faca da esposa dele não está na casa
+van	31	5d76c7ee-51ce-47b0-a85d-ddc7f7d33f5f	DONE	ica liwigo niganigawanigi libinienigi	esta fotografia da criança é bonita	NO_MATCH	no	no									esta fotografia da criança é bonita
+van	32	46190f73-f21e-4073-b09c-8b2d17c6668e	DONE	naGani wetiGa liwaGatena	esta pedra está muito pesada	EXACT_RAW	no	no								79	esta pedra está muito pesada
+van	33	a0bb1280-1040-4dff-9311-a1a31049b6f8	DONE	naGani wetiGa iwaGadi	esta pedra está pesada	EXACT_RAW	no	no								80	esta pedra está pesada
+van	34	e1acd124-849e-40dc-bbb0-a8b6ed281592	DONE	niGidiwa wetiadi iwaGadi	estas pedras estão pesadas	EXACT_RAW	no	no								82,84,90,92	estas pedras estão pesadas
+van	35	675ef4d4-ebe8-4601-bf42-908deb0df82b	DONE	ani wetiGa eliodi me iwaGadi	esta pedra está muito pesada	EXACT_RAW	no	no								79	esta pedra está muito pesada
+van	36	42b65fc9-cec4-40a9-8aec-cdeec3731df8	DONE	ani wetiGa iwaGadi	esta pedra é pesada	EXACT_RAW	no	no								77	esta pedra é pesada
+van	37	ba34b659-bcb8-4aa2-b9f4-b969ba786b12	DONE	ani wetiGa me iwaGadi eniteloco iGonagi	esta pedra que é pesada caiu no meu pé	NO_MATCH	no	no									esta pedra que é pesada caiu no meu pé
+van	38	61da4017-2140-4577-82e4-d5108efae675	DONE	ani wetiGa ane iwaGadi eniteloco iGonagi	esta pedra , que é pesada , caiu no meu pé	NO_MATCH	no	no									esta pedra, que é pesada, caiu no meu pé
+van	39	6459c008-b2ad-4517-8227-b525616b720d	DONE	idiwa wetiadi iwaGadi	estas pedras estão pesadas	EXACT_RAW	no	no								82,84,90,92	estas pedras estão pesadas
+van	40	b4e1df8d-6590-4ce9-9f72-c0b054398c89	DONE	niGidowa waca lotiidi dapicoGo	este leite está quente	EXACT_RAW	no	no								20	este leite está quente
+van	41	278e4c5c-aaab-4ca3-8f5e-277610fb80c2	DONE	idowa waca lotiidi dapicoGo	este leite está quente	EXACT_RAW	no	no								20	este leite está quente
+van	42	44646324-eb90-42f0-b944-21f0452109e2	REVIEW	ijoa nigetedi liwigo libinienaGa	estes ovos da fotografia dela estão bonitos	NO_MATCH	no	no									estes ovos da fotografia dela estão bonitos
+van	43	a2910ce3-a0d2-4eac-bcc3-2da15db88b90	DONE	ijo niwigo libinienigi ijowa nigetedi	estes ovos da fotografia dela estão bonitos	NO_MATCH	no	no									estes ovos da fotografia dela estão bonitos
+van	44	075356e6-f89c-4d83-b001-435d13b319dc	DONE	ijoa nigetedi niwigo libinienigipi	estes ovos da fotografia estão bonitos	NO_MATCH	no	no									estes ovos da fotografia estão bonitos
+van	45	5739aca1-95fc-4584-9550-d7bd73c3c361	REVIEW	okokodi ligetedi midi niwigo libinienaGa .	Os ovos da fotografia são bonitos. (Os ovos de galinha que estão na fotografia são bonitos.)	NO_MATCH	no	yes	PARENTHETICAL_STRIPPED	os ovos da fotografia são bonitos	44	os filhos da Maria são bonitos	0.696429	0.761905	0.500000		os ovos da fotografia são bonitos. (os ovos de galinha que estão na fotografia são bonitos.)
+van	46	83a62eb4-5a9e-43b0-b6b4-bded8dbd8ffe	REVIEW	liwigo okokodi ligetedi libinienigi .	A fotografia dos ovos (da galinha) é bonita.	NO_MATCH	no	yes	PARENTHETICAL_STRIPPED	a fotografia dos ovos é bonita	85	este retrato dos ovos é bonito	0.583333	0.666667	0.333333		a fotografia dos ovos (da galinha) é bonita
+van	47	fad6e8d3-1e9f-451c-aaa7-fd28aecfd967	DONE	idiwa noGojedi lixagotaGaGa adakake loojedi	estes peixes vermelhos estão baratos	NO_MATCH	no	no									estes peixes vermelhos estão baratos
+van	48	e189be3e-9290-4d1c-b343-74d3858ce7cd	DONE	etee ina	eu estou aqui	EXACT_RAW	no	no								2,13,49	eu estou aqui
+van	49	889846ee-66df-4c8f-88d1-e89d3619eb1e	DONE	eteyo ina	eu estou aqui	EXACT_RAW	no	no								2,13,49	eu estou aqui
+van	50	e7f4ab65-14d7-44f5-a197-c99c4ab173cd	DONE	etee manitaGa	eu estou com ela	EXACT_RAW	no	no								48	eu estou com ela
+van	51	7aa17dd7-2c26-4df9-8f90-65d8d58e2c59	DONE	etee minitaGa	eu estou com ele	EXACT_RAW	no	no								48	eu estou com ele
+van	52	c3c548d7-b154-437e-9baf-541a1bbbab6e	DONE	ee aGica inikeGegi	eu não estou feliz	EXACT_RAW	no	no								67,74	eu não estou feliz
+van	53	c4d99cf1-e781-4efb-83ff-4a0ab873b7ec	DONE	ee aGidininitibeci	eu não estou feliz	EXACT_RAW	no	no								67,74	eu não estou feliz
+van	54	969ba2f3-88dc-417e-ad3f-16ce88b4c762	DONE	aGee eliodi niinikeGegi	eu não estou muito feliz	EXACT_RAW	no	no								69	eu não estou muito feliz
+van	55	39925f76-d73f-423f-95cd-f88bd78f2a6e	DONE	ee eliodi me aGidininitibeci	eu não estou muito feliz	EXACT_RAW	no	no								69	eu não estou muito feliz
+van	56	d3095a7e-477d-405e-9ea2-85bfdacad7d3	DONE	aGica daGa jipegitege	eu não estou perto dela	EXACT_RAW	no	no								72,137	eu não estou perto dela
+van	57	813f2ad7-42fb-4fbd-84b4-1957c68aa4f9	DONE	aGica daGa jipegitegi	eu não estou perto dele	EXACT_RAW	no	no								72,137	eu não estou perto dele
+van	58	b3c03f67-7664-43b7-9de8-b5243321eeb7	DONE	ee idiwaaGadi	eu sou pesado	EXACT_RAW	no	no								15,34	eu sou pesado
+van	59	6852927c-53de-411d-9ed9-e0f9d78309cd	DONE	ee jigipegitege	estou perto dela	NO_MATCH	no	no									estou perto dela
+van	60	2b6a6bee-392e-49f9-97a9-0afbb0af2eff	DONE	ee jigipegitegi	estou perto dele	NO_MATCH	no	no									estou perto dele
+van	61	42df6a83-6ae1-49b2-bd99-fbed7e2a083b	DONE	aGeewi mica iniKGigi	não sou muito feliz (não é verdade que eu sou feliz)	EDITORIAL_NORMALIZED_SIMILAR	no	yes	PARENTHETICAL_STRIPPED	não sou muito feliz	68	eu não sou muito feliz	0.895122	0.926829	0.800000	68	não sou muito feliz (não é verdade que eu sou feliz)
+van	62	27d94732-46ea-4286-a1d4-b2861806a579	DONE	aGeyo mica inikGigi	não sou muito feliz	NO_MATCH	no	no									não sou muito feliz
+van	63	651a68ed-90a0-45b7-9eb5-411bc2c189c7	DONE	JipecaGataGagi	nós estamos perto de você	NO_MATCH	no	no									nós estamos perto de você
+van	64	d3952c8a-1ac1-4255-be0b-63978fdf368b	DONE	aGidedonaGa midi Godoigi	nós não estamos na comunidade	EXACT_RAW	no	no								9,40	nós não estamos na comunidade
+van	65	e9b78452-925e-458b-848a-d52ab76f6840	DONE	jipacaGataGagitiwaji	estamos perto de vocês	NO_MATCH	no	no									estamos perto de vocês
+van	66	fbae0277-3aad-4812-9229-94179b5a97a0	DONE	aGidejonaGa midi Godoigi	não estamos na comunidade	NO_MATCH	no	no									não estamos na comunidade
+van	67	6599689a-3fbe-4598-8827-78aceeff3931	DONE	ijo lemé Maria ipegitegi weiigi	o avô da Maria está no rio	EXACT_RAW	no	no								45	o avô da maria está no rio
+van	68	b8878027-73d2-4b11-bc18-cbdcf5637e55	DONE	biju dapico	o beiju está quente	EXACT_RAW	no	no								95	o beiju está quente
+van	69	30ef1810-38e0-4cef-8db3-4dda590faa09	DONE	libiwe niale ixagodi	o galho da árvore é vermelho	EXACT_RAW	no	no								26	o galho da árvore é vermelho
+van	70	444f95ae-8ed7-422e-84f1-aae6d4af2b6d	DONE	idiwa bejoli dapico	os beijus estão quentes	EXACT_RAW	no	no								25,96	os beijus estão quentes
+van	71	f240dcfe-ca05-42aa-8644-07b9e3464e1a	DONE	idiwa leonigipi Maria libinienigipi	os filhos da Maria são bonitos	EXACT_RAW	no	no								44	os filhos da maria são bonitos
+van	72	b97e5b2f-d0da-4238-8ee6-2c64ded91f76	DONE	ijowa leonigipi iwaalo idi metaGa	os filhos da mulher estão com ele	NO_MATCH	no	no									os filhos da mulher estão com ele
+van	73	c1b350df-ed1a-4e3b-89a8-a6fa9ca8382e	DONE	ligeladi ipegitege niweiigi nigotaGa	a casa dela é perto da cidade do rio	NO_MATCH	no	no									a casa dela é perto da cidade do rio
+van	74	ebff5ffa-8a9d-4f8b-9960-38f70b344c19	DONE	ligeladi ipegitegi niweiigi nigotaGa	a casa dele é perto do rio da cidade	EXACT_RAW	no	no								132	a casa dele é perto do rio da cidade
+van	75	81048a6f-e084-4b0a-965a-f41fb5c53ff7	DONE	nigotaGa liGeladi ipegitegi weiigi	a cidade da casa dela é perto do rio	EXACT_RAW	no	no								132	a cidade da casa dela é perto do rio
+hil	1	fcef38ed-be6b-4f2a-b5cf-fa4db625ecfb	DONE	Iwaalo libiniena	A mulher está bonita .	EXACT_NORMALIZED	no	no								17	a mulher está bonita
+hil	2	31d3b4c0-4aab-4538-999b-b8ee85c34444	DONE	Iwaalo ninitibeci	A mulher está feliz .	EXACT_NORMALIZED	no	no								76	a mulher está feliz
+hil	3	39f34955-a828-47d7-808d-b3b3565b42d6	DONE	LotaGa Ganioxoa libinienaGa	A palavra de seu irmão é bonita .	NO_MATCH	no	no									a palavra de seu irmão é bonita
+hil	4	d3ae6cfd-bec1-49f3-a0f9-4ca0744e3404	DONE	LotaGa Gadodawa libinienaGa	A palavra do seu marido é bonita .	EXACT_NORMALIZED	no	no								28	a palavra do seu marido é bonita
+hil	5	e349508c-4d86-48b8-9918-057988755e77	DONE	Etogo aneiwaGadi adakake lojedi	A pesada canoa está barata .	EXACT_NORMALIZED	no	no								11	a pesada canoa está barata
+hil	6	1d10c633-e74d-4e27-ac23-6b6b2dde9647	DONE	Etogo ane iwaGadi adakake loojedi	A canoa pesada é barata .	NO_MATCH	no	no									a canoa pesada é barata
+hil	7	435e4b10-ab78-4ee3-84b0-7773dbe10bf7	DONE	Gawenigi eliodi me libinienigi	A sua comida é muito bonita .	EXACT_NORMALIZED	no	no								29	a sua comida é muito bonita
+hil	8	cf44903e-0c33-44bc-a146-1fb8a4ccb973	DONE	NiGijo liwenigi libinienigi	Aquela comida dela é bonita .	EXACT_NORMALIZED	no	no								33	aquela comida dela é bonita
+hil	9	0ca977cd-2edf-45d9-b958-068648aebef9	DONE	NiGida niwenigi eliodi me dakake loojedi	Aquela comida é muito cara .	EXACT_NORMALIZED	no	no								32	aquela comida é muito cara
+hil	10	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887	DONE	NaGajo lomigo Pedilo idei madi niwatece	Aquele anzol do Pedro está na canoa .	EXACT_NORMALIZED	no	no								30	aquele anzol do pedro está na canoa
+hil	11	92838eda-ef9b-4f05-a5eb-38a4709c0337	DONE	NaGajo lomigo niganigawanigi madi niwatece	Aquele anzol do menino é na canoa .	EXACT_NORMALIZED	no	no								31	aquele anzol do menino é na canoa
+hil	12	3a7e213b-323e-4694-bad9-47091f3533f5	DONE	Te ee nigotaGa	Estou na cidade .	NO_MATCH	no	no									estou na cidade
+hil	13	0de3d311-348a-4107-a191-9fc3f960c249	DONE	niGijoa lionaGa iwaalo idei mijotaGa	Aqueles filhos da mulher estão com eles .	EXACT_NORMALIZED	no	no								101	aqueles filhos da mulher estão com eles
+hil	14	4e9130da-80fd-4ac2-8665-956c95b299e2	DONE	dibixodi ideiticoaci maditaGa	As formigas estão nela .	EXACT_NORMALIZED	no	no								42	as formigas estão nela
+hil	15	baccc279-f303-4b4f-a6d7-4404de699f4a	DONE	Iwaalepodi libinienigipi .	As mulheres estão bonitas .	EXACT_NORMALIZED	no	no								18	as mulheres estão bonitas
+hil	16	af474637-80f3-4001-884c-4d5f452fb573	DONE	Ninitibeci .	Ela está feliz .	EXACT_NORMALIZED	no	no								54,136	ela está feliz
+hil	17	8f297896-5ee6-461f-86e3-0d4d4ef5a661	DONE	ninitibeci naGada	Ela está feliz .	EXACT_NORMALIZED	no	no								54,136	ela está feliz
+hil	18	4855882d-49f1-4035-bd12-73abf82df995	DONE	Ninitibeci naGadi .	Ela está feliz .	EXACT_NORMALIZED	no	no								54,136	ela está feliz
+hil	19	d489d970-e6b1-42e3-add2-2221f2fb1fad	DONE	naGada iwaGadi	Ela está pesada	EXACT_NORMALIZED	no	no								56	ela está pesada
+hil	20	23b27bf4-3694-4053-8f74-b3c739fc8ee2	DONE	naGadi iwaGadi	Ela está pesada.	EXACT_NORMALIZED	no	no								56	ela está pesada
+hil	21	85801af7-8128-4d85-a7bd-a182d5dc58a5	DONE	NaGana iwaGadi	Ela está pesada.	EXACT_NORMALIZED	no	no								56	ela está pesada
+hil	22	b9d77060-3ac9-4305-ba86-2723cc7cb70a	DONE	Ada iwaGadi	Ela está é pesada.	NO_MATCH	no	no									ela está é pesada
+hil	23	7521cd51-aa9b-4ff6-8d87-a5ce4ca92b6d	DONE	Ani iwaGadi	Ela está é pesada.	NO_MATCH	no	no									ela está é pesada
+hil	24	96687d35-46ae-4338-9398-ff66a3165b61	DONE	Adi iwaGadi	Ela está é pesada.	NO_MATCH	no	no									ela está é pesada
+hil	25	24a9e039-79d0-4026-8824-0d061c2b21ee	DONE	naGana eliodi meninitibeci	Ela é muito feliz .	EXACT_NORMALIZED	no	no								135	ela é muito feliz
+hil	26	fba05264-0e3c-4248-8211-3ac87c64c2e6	DONE	DapicoGo	Ela é quente .	EXACT_NORMALIZED	no	no								5	ela é quente
+hil	27	f9af3f8f-3b06-4756-8676-b5ffb2c24b44	DONE	DapipocoGo	Ela está quente .	NO_MATCH	no	no									ela está quente
+hil	28	fab37d81-bb9b-4e20-a8f5-3b3969ee86d1	DONE	libiniena	Ele está bonito .	NO_MATCH	no	no									ele está bonito
+hil	29	0b9bddcd-f6af-4281-80a9-cac2377d0af1	DONE	libinienigi	Ele é bonito.	EXACT_NORMALIZED	no	no								4	ele é bonito
+hil	30	38c689d8-332d-4406-b236-de4593e4853a	DONE	DapicoGo	Ele é quente .	EXACT_NORMALIZED	no	no								5	ele é quente
+hil	31	ea70209d-4f3c-4bf9-8d93-2d91fa0f928c	DONE	DapicoGo	Ele está quente .	NO_MATCH	no	no									ele está quente
+hil	32	4aed8aa8-bd36-4940-8020-8ba12122304e	DONE	Ninitibigiwaji .	Eles são felizes .	EXACT_NORMALIZED	no	no								51,52	eles são felizes
+hil	33	3a27c7c6-ecd6-45c0-a71e-b4aa2a242a3d	DONE	NiGida lodajo lodawa aidei dineigi	Esta faca da esposa dele (do marido dela) não está na casa .	EDITORIAL_NORMALIZED_SIMILAR	no	yes	PARENTHETICAL_STRIPPED	esta faca da esposa dele não está na casa	23	aquela faca da esposa dele não está na casa	0.896429	0.928571	0.800000	23	esta faca da esposa dele (do marido dela) não está na casa
+hil	34	64f2c803-b436-4202-b4c7-acf5c7205bc3	DONE	liwigo niganigawanigi libinienigi	Esta fotografia da criança é bonita .	NO_MATCH	no	no									esta fotografia da criança é bonita
+hil	35	8bad7bc3-f82f-46c0-9e63-c780104b11e2	DONE	naGani wetiGa eliodi me iwaGadi	Esta pedra está muito pesada .	EXACT_NORMALIZED	no	no								79	esta pedra está muito pesada
+hil	36	768a3635-dcaf-4210-b236-73568abadbdb	DONE	NaGani wetiGa iwaGadi	Esta pedra está pesada .	EXACT_NORMALIZED	no	no								80	esta pedra está pesada
+hil	37	e5f90fbc-14e8-4c6f-9e07-61fbf67d042f	DONE	NiGinoa wetiadi iwaGadi	Estas pedras estão pesadas .	EXACT_NORMALIZED	no	no								82,84,90,92	estas pedras estão pesadas
+hil	38	f4b854f9-c3c6-4e88-8a9b-ca73fcba8d46	DONE	NaGani wetiGa iwaGadi	Esta pedra é pesada .	EXACT_NORMALIZED	no	no								77	esta pedra é pesada
+hil	39	38f73c1c-ddfb-4153-9310-d24214cd68e7	DONE	NaGani wetiGa ane iwaGadi eniteloco iGonagi	Esta pedra que é pesada caiu no meu pé .	NO_MATCH	no	no									esta pedra que é pesada caiu no meu pé
+hil	40	e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4	REVIEW	NaGani wetiGa , ane iwaGadi , eniteloco iGonagi	Esta pedra , que é pesada , caiu no meu pé .	NO_MATCH	no	no									esta pedra, que é pesada, caiu no meu pé
+hil	41	8dda04f0-f7e8-46d6-b41d-b65dd214f01b	DONE	NiGidoa waca lotiidi dapicoGo	Este leite está quente .	EXACT_NORMALIZED	no	no								20	este leite está quente
+hil	42	79cb0e55-9c06-4cb1-91b3-2b5233e1678f	DONE	niGidiwa okokodi ligetedi midi niwigo libinienaGa	Estes ovos da fotografia dela estão bonitos .	NO_MATCH	no	no									estes ovos da fotografia dela estão bonitos
+hil	43	a74fea0a-dd87-4c4d-8670-9db66f5b5b16	DONE	niGidiwa okokodi ligetedi liwigo libinienaGa	Estes ovos da fotografia estão bonitos .	NO_MATCH	no	no									estes ovos da fotografia estão bonitos
+hil	44	83fdcd4c-338f-4a9f-8545-da8539e67e9d	DONE	NiGidiwa noGojedi lixagotaGaGa adakake loojedi	Estes peixes vermelhos estão baratos .	NO_MATCH	no	no									estes peixes vermelhos estão baratos
+hil	45	07bfcd00-7901-474d-bfb8-bf470266aafa	REVIEW	Ee ite ee ina	Eu estou aqui .	EXACT_NORMALIZED	no	no								2,13,49	eu estou aqui
+hil	46	42671da9-e433-4319-86a0-2a2cb8777a40	REVIEW	Ite ee madataGa	Eu estou com ela .	EXACT_NORMALIZED	no	no								48	eu estou com ela
+hil	47	e58e38a7-f117-48f1-8a17-9d896867fe60	REVIEW	Ite ee midataGa	Eu estou com ele .	EXACT_NORMALIZED	no	no								48	eu estou com ele
+hil	48	4242d34b-9096-45a2-a666-502a2cb9ca49	DONE	Ee aidinitibeci .	Eu não estou feliz .	EXACT_NORMALIZED	no	no								67,74	eu não estou feliz
+hil	49	1e9df213-90da-4674-8889-4ac858df72fe	DONE	Ee ageliodi me idinitibeci	Eu não estou muito feliz .	EXACT_NORMALIZED	no	no								69	eu não estou muito feliz
+hil	50	c4302bef-3de9-4f3c-b762-f6b77183f263	DONE	Ee ajipegitege	Eu não estou perto dela .	EXACT_NORMALIZED	no	no								72,137	eu não estou perto dela
+hil	51	5bc48b27-0755-475f-813e-7a259f3c3c9e	DONE	Ee ajipegitege	Eu não estou perto dele .	EXACT_NORMALIZED	no	no								72,137	eu não estou perto dele
+hil	52	1e1fafc0-29c6-41d4-a0d2-4c825d9af376	DONE	ee idiwaGadi	Eu sou pesado .	EXACT_NORMALIZED	no	no								15,34	eu sou pesado
+hil	53	71aff593-7b38-4c17-9563-4503985dbd03	DONE	jipegitege	Estou perto dela .	NO_MATCH	no	no									estou perto dela
+hil	54	f4f18c18-728c-4d6b-b7dd-2df62c4a829a	DONE	jipegitege	Estou perto dele .	NO_MATCH	no	no									estou perto dele
+hil	55	90ca38d8-e063-4c98-af51-4b9022ade506	DONE	aGeliodi me idinitibeci .	Não sou muito feliz .	NO_MATCH	no	no									não sou muito feliz
+hil	56	82bfae64-45e7-403f-bcd0-190e00f4520f	DONE	jipecaGataGagi .	Nós estamos perto de você .	NO_MATCH	no	no									nós estamos perto de você
+hil	57	341bf09a-2ef8-455a-8b6b-88373c617dae	DONE	oko aidejonaGa midi Godoigi	Nós não estamos na comunidade .	EXACT_NORMALIZED	no	no								9,40	nós não estamos na comunidade
+hil	58	9a136412-a636-4e5e-aa54-ac684ae7bed3	DONE	jipecaGataGagitiwaji .	Estamos perto de vocês .	NO_MATCH	no	no									estamos perto de vocês
+hil	59	dff00f05-7be1-4d62-b3ed-b8a8870851e9	DONE	aidejonaGa midi Godoigi	Não estamos na comunidade.	NO_MATCH	no	no									não estamos na comunidade
+hil	60	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	DONE	niGijo nelokodi Maria idei midi akiidi	O avô da Maria está no rio .	EXACT_NORMALIZED	no	no								45	o avô da maria está no rio
+hil	61	f0c7c722-031a-4c6e-ad7e-739402475c99	DONE	NiGijo bijo dapicoGo	O beiju está quente .	EXACT_NORMALIZED	no	no								95	o beiju está quente
+hil	62	d5dcd2bf-a3d0-4074-a241-f706b153134f	DONE	NaGada libiwe niale ixagodi	O galho da árvore é vermelho .	EXACT_NORMALIZED	no	no								26	o galho da árvore é vermelho
+hil	63	c3225d86-7037-4f8c-9981-8e92b6a081d6	DONE	nigidiwa bijotedi dapicoGo	Os beijus estão quentes .	EXACT_NORMALIZED	no	no								25,96	os beijus estão quentes
+hil	64	d0cb9423-93bb-4b45-a02a-fee23a6dd8bb	DONE	Nigijoa lianaGa Maria libinienigipi	Os filhos da Maria são bonitos .	EXACT_NORMALIZED	no	no								44	os filhos da maria são bonitos
+hil	65	13f012b0-ef62-4477-b4bd-00e000484874	DONE	NiGidi lionaGa iwaalo etidi meetaGa	Os filhos da mulher estão comigo .	EXACT_NORMALIZED	no	no								75	os filhos da mulher estão comigo
+hil	66	55fe3cf7-0293-48e6-aa78-44822f50347e	DONE	liGeladi ipegitege nakidi nigotaGa	A casa dela é perto do rio da cidade .	EXACT_NORMALIZED	no	no								132	a casa dela é perto do rio da cidade
+hil	67	c0441856-b259-4d76-a88e-33a7e211b208	DONE	liGeladi ipegitege nakidi nigotaGa	A casa dele é perto do rio da cidade .	EXACT_NORMALIZED	no	no								132	a casa dele é perto do rio da cidade
+hil	68	9527d53d-7184-4b08-8bb2-51b7fff1429d	DONE	nigotaGa liGeladi ipegitege akiidi	A cidade da casa dela é perto do rio.	EXACT_NORMALIZED	no	no								132	a cidade da casa dela é perto do rio
+hil	69	9669b093-f0a2-4187-9063-cec9ba4c0196	DONE	Nigaanigawaanigi etini liwatece Pedilo	Menino está na canoa do Pedro.	NO_MATCH	no	no									menino está na canoa do pedro
+hil	70	529c167b-b3a7-40cc-af76-c7522719c6d4	DONE	NiGijo nigaanigawaanigi etini liwatece ideloGole	Aquele menino está na canoa da lagoinha.	NO_MATCH	no	no									aquele menino está na canoa da lagoinha
+ped	1	ed98d4d1-638c-4377-8c6d-5511855636d1	DONE	ajo liwatece ja iwaGadi	A canoa dele/a é pesada	EDITORIAL_NORMALIZED_SIMILAR	yes	no	SLASH_ALTERNATIVE	a é pesada	3	ela é pesada	0.806818	0.909091	0.500000	3	a canoa dele/a é pesada
+ped	2	ccb5ea37-b3ba-47a9-8d71-224f599ea7be	DONE	ajo liwatece etadi weiigi	A canoa dele/a está no rio	NO_MATCH	yes	no	SLASH_ALTERNATIVE	a canoa dele	8	a canoa dele é no rio	0.670455	0.727273	0.500000		a canoa dele/a está no rio
+ped	3	49347527-d19d-4689-bff1-ba3e497e7b1f	DONE	ajo niwatece etadi digoida	A canoa está lá	EXACT_NORMALIZED	no	no								61	a canoa está lá
+ped	4	69948fe6-81f6-4faa-a344-8f8c47486943	DONE	niwatece iwaGadi	A canoa está pesada	EXACT_NORMALIZED	no	no								10	a canoa está pesada
+ped	5	b2e3ea43-0d68-46ee-9f33-938610cc8aec	DONE	niwatece etadi weiigi	A canoa está no rio	NO_MATCH	no	no									a canoa está no rio
+ped	6	1b99ecb9-5656-4c38-b60b-fbbe643708fb	DONE	ajo niwatece ipegitege weiigi	A canoa está perto do rio	NO_MATCH	no	no									a canoa está perto do rio
+ped	7	e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9	DONE	liGeladi Maria aGipegetege	A casa de Maria não é perto dela	NO_MATCH	no	no									a casa de maria não é perto dela
+ped	8	79a6cd4e-b585-437a-9084-1fa077dec3b6	DONE	ica liGeladi ipegetege	A casa está perto dela	NO_MATCH	no	no									a casa está perto dela
+ped	9	e9d6dfb6-656d-44aa-ba17-86289fd72268	DONE	liGeladi idei nigotaGa	A casa fica perto da cidade	NO_MATCH	no	no									a casa fica perto da cidade
+ped	10	2fff1f23-4e6f-401c-8b74-6a17ff6a391a	DONE	ica liGeladi ipegitegi	a casa dela/dele fica perto dele 	NO_MATCH	yes	no	SLASH_ALTERNATIVE	dele fica perto dele	131	a casa dele é perto dele	0.628788	0.727273	0.333333		a casa dela/dele fica perto dele
+ped	11	fef391af-9e63-419f-8f81-057459193f49	DONE	ica Maria looligi alidi	a comida da Maria não está deliciosa (a não gostosura da comida da Maria)	EDITORIAL_NORMALIZED_EXACT	no	yes	PARENTHETICAL_STRIPPED	a comida da maria não está deliciosa	47	a comida da Maria não está deliciosa	1.000000	1.000000	1.000000	47	a comida da maria não está deliciosa (a não gostosura da comida da maria)
+ped	12	070d221f-f72d-4055-9c82-ddc383743e6a	DONE	ica looligi lidi	A comida está/é deliciosa (A gostosura da comida da Maria)	EDITORIAL_NORMALIZED_SIMILAR	yes	yes	PARENTHETICAL_STRIPPED	a comida está/é deliciosa	139	a comida é deliciosa	0.866667	0.888889	0.800000	139	a comida está/é deliciosa (a gostosura da comida da maria)
+ped	13	68277d1f-c30b-4c4f-ba9e-c2883cc133af	DONE	ica looligi dapico	A comida dela está quente	NO_MATCH	no	no									a comida dela está quente
+ped	14	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5	DONE	ica looligi ja dapico	a comida dela está quente	NO_MATCH	no	no									a comida dela está quente
+ped	15	c5bd2cb2-e53b-40e4-9159-6dacde49c1b6	DONE	ica looligi lideGegi	A comida é deliciosa (a gostosura da comida dela)	EDITORIAL_NORMALIZED_EXACT	no	yes	PARENTHETICAL_STRIPPED	a comida é deliciosa	139	a comida é deliciosa	1.000000	1.000000	1.000000	139	a comida é deliciosa (a gostosura da comida dela)
+ped	16	19cc39ce-fe03-4551-8097-9d163a38a3c0	DONE	loigipodi libinienigipi	A comunidade dele/dela é bonita	EDITORIAL_NORMALIZED_SIMILAR	yes	no	SLASH_ALTERNATIVE	dela é bonita	4	ela é bonita	0.845000	0.960000	0.500000	4	a comunidade dele/dela é bonita
+ped	17	12147353-b422-4ad7-9bef-1d20e70e2a74	DONE	ica loigi ijo niganigi ipegitegi GanigotGa	A comunidade do menino é perto da cidade de vocês	EXACT_NORMALIZED	no	no								19	a comunidade do menino é perto da cidade de vocês
+ped	18	582429f2-67d5-4077-b209-6deb7b5df54f	DONE	ica lideGegi loligi idei liGeladi	a deliciosa comida está na casa dela/dele	EDITORIAL_NORMALIZED_EXACT	yes	no	SLASH_ALTERNATIVE	a deliciosa comida está na casa dela	140	a deliciosa comida está na casa dela	1.000000	1.000000	1.000000	140	a deliciosa comida está na casa dela/dele
+ped	19	0f478381-6858-463d-94cc-903e9dc879f9	DONE	ica liwigo libinienigi	a fotografia dela/dele é/está bonita	NO_MATCH	yes	no	SLASH_ALTERNATIVE	está bonita	17	a mulher está bonita	0.657258	0.709677	0.500000		a fotografia dela/dele é/está bonita
+ped	20	55551636-8ed3-4545-8510-d8dbfd817a1a	DONE	ica niwigo libinienigi	a fotografia é/está bonita	NO_MATCH	yes	no	SLASH_ALTERNATIVE	está bonita	17	a mulher está bonita	0.657258	0.709677	0.500000		a fotografia é/está bonita
+ped	21	5d0b94bf-223d-4f09-8c6f-b951a70d6d0b	REVIEW	ica nioladi Ganixoa	A língua do teu irmão 	NO_MATCH	no	no									a língua do teu irmão
+ped	22	881131dd-3f70-411a-ac7e-85557139d1e3	DONE	ica nioladi nioxoa libinienigi	A língua do irmão dele/dela é bonita	EDITORIAL_NORMALIZED_SIMILAR	yes	no	SLASH_ALTERNATIVE	dela é bonita	4	ela é bonita	0.845000	0.960000	0.500000	4	a língua do irmão dele/dela é bonita
+ped	23	95a7d135-4be0-463d-b443-76cc5828fc89	DONE	ica nioladi lodawa libinienigi	A língua do marido/esposa dele/dela é bonita	EDITORIAL_NORMALIZED_SIMILAR	yes	no	SLASH_ALTERNATIVE	dela é bonita	4	ela é bonita	0.845000	0.960000	0.500000	4	a língua do marido/esposa dele/dela é bonita
+ped	24	2f47b402-9fe7-4714-96e3-c6cbdf405472	DONE	iGeladi idei naigi anenapioi	a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)	EDITORIAL_NORMALIZED_EXACT	no	yes	PARENTHETICAL_STRIPPED	a minha casa está naquela suja rua	126	a minha casa está naquela suja rua	1.000000	1.000000	1.000000	126	a minha casa está naquela suja rua (=minha casa fica no caminho que é sujo)
+ped	25	a4d33655-fe74-4df2-8d5e-b3c88fba5fd1	DONE	iGeladi idei naigi me napioi	Minha casa fica na rua suja (na rua que é suja).	NO_MATCH	no	yes	PARENTHETICAL_STRIPPED	minha casa fica na rua suja	113	a minha casa é naquela suja rua	0.654215	0.724138	0.444444		minha casa fica na rua suja (na rua que é suja)
+ped	26	f081c545-c42b-463d-b57f-db87787f20e7	DONE	João liGeladi ane napioi	a casa do João, que é suja	NO_MATCH	no	no									a casa do joão, que é suja
+ped	27	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc	REVIEW	iGeladi idei mijo naigi naGajo	A minha casa fica naquela rua suja dela	NO_MATCH	no	no									a minha casa fica naquela rua suja dela
+ped	28	ee1a1190-7803-404c-83f6-49d3ccf63b0d	REVIEW	Eyodi dowediteloco nawodigijedi micoataGa daGa me lionigipi	meu pai cuida da plantação de flores como filhas	NO_MATCH	no	no									meu pai cuida da plantação de flores como filhas
+ped	29	4bdb4b8f-0176-4303-8a13-e313fbb6d7ad	REVIEW	Eyodi me niganaGacanajo	Meu pai que era cantor	NO_MATCH	no	no									meu pai que era cantor
+ped	30	7b806584-75e5-4017-b9e2-ba97458903bd	DONE	Eyodi ane niganaGacanajo	Meu pai que era cantor (explicativa)	NO_MATCH	no	yes	PARENTHETICAL_STRIPPED	meu pai que era cantor	102	aquela minha canoa está no rio	0.375000	0.500000	0.000000		meu pai que era cantor (explicativa)
+ped	31	845b9d1d-ad7c-445a-bfbd-04fd9255ffc2	REVIEW	Eyodi daGa niganaGacanajo	Meu pai se fosse cantor	NO_MATCH	no	no									meu pai se fosse cantor
+ped	32	a4ccc755-a644-4b04-ab1b-698e7acea4cc	DONE	iGeladi idei digoida	minha casa está lá	NO_MATCH	no	no									minha casa está lá
+ped	33	82117289-be52-45d0-886d-a5747eb20ea2	DONE	iGeladi ipegitaGagi	Minha casa está perto de você	NO_MATCH	no	no									minha casa está perto de você
+ped	34	50f93fbc-14fa-48e7-b8ba-22f744109348	DONE	iGeladi ipegitegi liGeladi	Minha casa está perto de sua casa	NO_MATCH	no	no									minha casa está perto de sua casa
+ped	35	014fefb1-d5e3-48c8-9ac3-9e713a41407f	DONE	iGeladi ipegitegi naigi ane napioi	Minha casa está perto desta rua suja (que está suja)	EDITORIAL_NORMALIZED_SIMILAR	no	yes	PARENTHETICAL_STRIPPED	minha casa está perto desta rua suja	124	a minha casa está perto desta suja rua	0.867399	0.864865	0.875000	124	minha casa está perto desta rua suja (que está suja)
+ped	36	bb8018ba-76b3-43f2-82ea-78b6009c1f90	DONE	iGeladi ipegitegi naigi me napioi	minha casa está perto da rua suja	NO_MATCH	no	no									minha casa está perto da rua suja
+ped	37	1da1bf7a-7975-4baf-821b-9df5c75ac297	DONE	iGeladi aGipegitegi weiigi	Minha casa não fica perto do rio	NO_MATCH	no	no									minha casa não fica perto do rio
+ped	38	46bbf9a8-c650-4e4b-a44f-78bfe6c5d979	DONE	ijo Gatodi etijo ida .	O tucano está indo nele.	NO_MATCH	no	no									o tucano está indo nele
+ped	39	4ffc2f68-0474-488f-a94e-4065f952482a	DONE	ijotawece etidi akiidi .	Eles (todos) estão (deitados) no rio.	NO_MATCH	no	yes	PARENTHETICAL_STRIPPED	eles estão no rio	8	a canoa dele é no rio	0.496711	0.578947	0.250000		eles (todos) estão (deitados) no rio
+ped	40	10e550d6-df13-4527-8aee-aa23e3f2fcdd	DONE	iGeladi digoida weiigi .	Minha casa é no rio.	NO_MATCH	no	no									minha casa é no rio
+ped	41	874c123b-4c43-4001-bfce-8af4af0e5805	DONE	iGeladi idei weiigi .	Minha casa é no rio.	NO_MATCH	no	no									minha casa é no rio
+ped	42	aad13f14-bd9a-462a-9a43-68ba69a81519	REVIEW	nigotaGa liGeladi ipegitegi weiigi .	A cidade da casa dela é perto do rio.	EXACT_NORMALIZED	no	no								132	a cidade da casa dela é perto do rio
+ped	43	19401990-aa1d-4cf5-bea1-122254c6b77a	DONE	lotaGa GanaginaGa libinienaGa .	A palavra de seu (teu) irmão é bonita.	EDITORIAL_NORMALIZED_SIMILAR	no	yes	PARENTHETICAL_STRIPPED	a palavra de seu irmão é bonita	98	a palavra do seu irmão é bonita	0.913306	0.967742	0.750000	98	a palavra de seu (teu) irmão é bonita
+ped	44	6d2a809e-0d32-4254-9489-f9e356e22493	DONE	nGida niwenigi daGaxa me dakake loojedi .	Aquela comida é muito cara.	EXACT_NORMALIZED	no	no								32	aquela comida é muito cara
+ped	45	c25b098d-6b0a-4416-a31d-6d7219685a63	REVIEW	João liGeladi napioi .	A casa do João é suja.	NO_MATCH	no	no									a casa do joão é suja
+ped	46	4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5	DONE	liGeladi João napioi .	A casa do João é suja.	NO_MATCH	no	no									a casa do joão é suja
+ped	47	ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec	DONE	liGeladi ipegitege niweiigi nigotaGa .	A casa dele/dela é perto da cidade da lagoa.	NO_MATCH	yes	no	SLASH_ALTERNATIVE	a casa dele	131	a casa dele é perto dele	0.621429	0.628571	0.600000		a casa dele/dela é perto da cidade da lagoa
+ped	48	8b1a9983-4dfd-49e8-9285-92c56c84b652	DONE	liGeladi ipegitegi niweiigi nigotaGa .	A casa dele/dela é perto da lagoa da cidade.	NO_MATCH	yes	no	SLASH_ALTERNATIVE	dela é perto da lagoa da cidade	132	a casa dela é perto do rio da cidade	0.707090	0.776119	0.500000		a casa dele/dela é perto da lagoa da cidade
+ped	49	eeb42af3-fe5a-4b7d-97ea-b381ab589860	DONE	Niwatece iwaGadi codaa adakake loojedi .	A canoa é pesada e seu preço é barato	NO_MATCH	no	no									a canoa é pesada e seu preço é barato
+ped	50	156fa9a4-4323-44f1-9cdc-ef5dc052b428	DONE	etee minitaGa	Estou com ele	NO_MATCH	no	no									estou com ele
+ped	51	3b45c470-6164-4fcf-a4d5-90be0f27eb1d	DONE	ee aGidininitibeci	Eu não estou feliz	EXACT_NORMALIZED	no	no								67,74	eu não estou feliz
+ped	52	d543f155-c01f-4b5e-add1-0533b8ac6e15	DONE	jipacaGataGagitiwaji	Estamos perto de vocês.	NO_MATCH	no	no									estamos perto de vocês
+ped	53	3f077b37-aa95-4012-9efb-a21630cdd6e9	DONE	aGee eliodi niinikeGegi	Eu não estou muito feliz	EXACT_NORMALIZED	no	no								69	eu não estou muito feliz
+ped	54	74a76be1-d4b6-42e1-9100-6a436a7fa065	DONE	akaami oko jipacaGataGagitiwaji	Estamos perto de vocês.	NO_MATCH	no	no									estamos perto de vocês
+ped	55	d3e098e5-4edd-4c24-81cf-78ff4a4d398c	DONE	niGidowa waca lotiidi dapikoGo	O leite da vaca está quente	NO_MATCH	no	no									o leite da vaca está quente
+ped	56	edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded	DONE	IiGeladi midi akiidi	A casa dele/dela é no rio.	NO_MATCH	yes	no	SLASH_ALTERNATIVE	dela é no rio	8	a canoa dela é no rio	0.740196	0.764706	0.666667		a casa dele/dela é no rio
+ped	57	2c0248b3-8f68-46e9-b41c-9f7807572c87	DONE	etogo aneiwaGadi adakake lojedi .	A pesada canoa está barata.	EXACT_NORMALIZED	no	no								11	a pesada canoa está barata
+ped	58	73ceda1b-be14-4e75-9b1e-2a490d7df366	DONE	etogo adakake lojedi	A canoa está barata.	NO_MATCH	no	no									a canoa está barata
+ped	59	bf632295-26f8-4ee6-979f-33f090ef0471	DONE	etogoli dakake lojetedi	As canoas (individualmente) são caras (cada uma com um preço caro)	NO_MATCH	no	yes	PARENTHETICAL_STRIPPED	as canoas são caras	81	estas pedras são pesadas	0.489203	0.604651	0.142857		as canoas (individualmente) são caras (cada uma com um preço caro)
+ped	60	bbd6b80b-3236-4172-8bd5-ba3fb404049e	DONE	etogoli dakake loojedi	as canoas (como classe/grupo) são caras 	NO_MATCH	yes	yes	PARENTHETICAL_STRIPPED	as canoas são caras	81	estas pedras são pesadas	0.489203	0.604651	0.142857		as canoas (como classe/grupo) são caras
+ped	61	1ab7fa26-ed92-4d55-98d0-0d76396373f0	DONE	Etogoli iwaGadi adakake lojetedi		NO_PORTUGUESE	no	no									

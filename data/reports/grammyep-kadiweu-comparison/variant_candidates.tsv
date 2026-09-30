@@ -57,7 +57,6 @@ hil	56	82bfae64-45e7-403f-bcd0-190e00f4520f	DONE	jipecaGataGagi .	Nós estamos p
 hil	58	9a136412-a636-4e5e-aa54-ac684ae7bed3	DONE	jipecaGataGagitiwaji .	Estamos perto de vocês .	1	57	iaiku pe ruaki	nós estamos perto de vocês	0.887500	0.916667	0.800000		
 hil	59	dff00f05-7be1-4d62-b3ed-b8a8870851e9	DONE	aidejonaGa midi Godoigi	Não estamos na comunidade.	1	9	iandé ti iaiku tendaua upé	nós não estamos na comunidade	0.894444	0.925926	0.800000		
 hil	59	dff00f05-7be1-4d62-b3ed-b8a8870851e9	DONE	aidejonaGa midi Godoigi	Não estamos na comunidade.	2	40	ti iaiku tendaua upé	nós não estamos na comunidade	0.894444	0.925926	0.800000		
-ped	1	ed98d4d1-638c-4377-8c6d-5511855636d1	DONE	ajo liwatece ja iwaGadi	A canoa dele/a é pesada	1	7	i igara i pusé uiku	a canoa dele está pesada	0.804965	0.851064	0.666667		
 ped	2	ccb5ea37-b3ba-47a9-8d71-224f599ea7be	DONE	ajo liwatece etadi weiigi	A canoa dele/a está no rio	1	8	i igara paranã upé	a canoa dele é no rio	0.816869	0.851064	0.714286		
 ped	5	b2e3ea43-0d68-46ee-9f33-938610cc8aec	DONE	niwatece etadi weiigi	A canoa está no rio	1	60	igara paranã upé	a canoa é no rio	0.809524	0.857143	0.666667		
 ped	6	1b99ecb9-5656-4c38-b60b-fbbe643708fb	DONE	ajo niwatece ipegitege weiigi	A canoa está perto do rio	1	58	igara paranã ruaki	a canoa é perto do rio	0.848784	0.893617	0.714286		
@@ -70,10 +69,6 @@ ped	8	79a6cd4e-b585-437a-9084-1fa077dec3b6	DONE	ica liGeladi ipegetege	A casa es
 ped	8	79a6cd4e-b585-437a-9084-1fa077dec3b6	DONE	ica liGeladi ipegetege	A casa está perto dela	5	133	suka uiku suaki	a casa dele está perto dele	0.809524	0.857143	0.666667		
 ped	13	68277d1f-c30b-4c4f-ba9e-c2883cc133af	DONE	ica looligi dapico	A comida dela está quente	1	43	ximbiú saku	a comida dela é quente	0.836879	0.893617	0.666667		
 ped	14	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5	DONE	ica looligi ja dapico	a comida dela está quente	1	43	ximbiú saku	a comida dela é quente	0.836879	0.893617	0.666667		
-ped	16	19cc39ce-fe03-4551-8097-9d163a38a3c0	DONE	loigipodi libinienigipi	A comunidade dele/dela é bonita	1	37	sendaua puranga	a comunidade dela é bonita	0.892544	0.912281	0.833333		
-ped	16	19cc39ce-fe03-4551-8097-9d163a38a3c0	DONE	loigipodi libinienigipi	A comunidade dele/dela é bonita	2	37	sendaua puranga	a comunidade dele é bonita	0.892544	0.912281	0.833333		
-ped	18	582429f2-67d5-4077-b209-6deb7b5df54f	DONE	ica lideGegi loligi idei liGeladi	a deliciosa comida está na casa dela/dele	1	140	timbiú sé uiku suka upé	a deliciosa comida está na casa dela	0.920049	0.935065	0.875000		
-ped	18	582429f2-67d5-4077-b209-6deb7b5df54f	DONE	ica lideGegi loligi idei liGeladi	a deliciosa comida está na casa dela/dele	2	140	timbiú sé uiku suka upé	a deliciosa comida está na casa dele	0.920049	0.935065	0.875000		
 ped	27	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc	REVIEW	iGeladi idei mijo naigi naGajo	A minha casa fica naquela rua suja dela	1	114	se ruka nhaã kiá sapé upé	a minha casa é naquela suja rua dela	0.814444	0.826667	0.777778		
 ped	33	82117289-be52-45d0-886d-a5747eb20ea2	DONE	iGeladi ipegitaGagi	Minha casa está perto de você	1	125	se ruka uiku ne ruaki	a minha casa está perto de ti	0.802802	0.862069	0.625000		
 ped	37	1da1bf7a-7975-4baf-821b-9df5c75ac297	DONE	iGeladi aGipegitegi weiigi	Minha casa não fica perto do rio	1	115	se ruka niti paranã ruaki	a minha casa não é perto do rio	0.833333	0.888889	0.666667		
@@ -84,7 +79,6 @@ ped	40	10e550d6-df13-4527-8aee-aa23e3f2fcdd	DONE	iGeladi digoida weiigi .	Minha 
 ped	41	874c123b-4c43-4001-bfce-8af4af0e5805	DONE	iGeladi idei weiigi .	Minha casa é no rio.	1	118	se ruka paranã upé	a minha casa é no rio	0.920833	0.950000	0.833333		
 ped	41	874c123b-4c43-4001-bfce-8af4af0e5805	DONE	iGeladi idei weiigi .	Minha casa é no rio.	2	116	se ruka niti paranã upé	a minha casa não é no rio	0.826299	0.863636	0.714286		
 ped	41	874c123b-4c43-4001-bfce-8af4af0e5805	DONE	iGeladi idei weiigi .	Minha casa é no rio.	3	122	se ruka ti paranã upé	a minha casa não é no rio	0.826299	0.863636	0.714286		
-ped	43	19401990-aa1d-4cf5-bea1-122254c6b77a	DONE	lotaGa GanaginaGa libinienaGa .	A palavra de seu (teu) irmão é bonita.	1	98	ne kiuíra nheenga puranga	a palavra do seu irmão é bonita	0.828431	0.882353	0.666667		
 ped	50	156fa9a4-4323-44f1-9cdc-ef5dc052b428	DONE	etee minitaGa	Estou com ele	1	48	aiku i irũmu	eu estou com ele	0.859914	0.896552	0.750000		
 ped	52	d543f155-c01f-4b5e-add1-0533b8ac6e15	DONE	jipacaGataGagitiwaji	Estamos perto de vocês.	1	57	iaiku pe ruaki	nós estamos perto de vocês	0.887500	0.916667	0.800000		
 ped	54	74a76be1-d4b6-42e1-9100-6a436a7fa065	DONE	akaami oko jipacaGataGagitiwaji	Estamos perto de vocês.	1	57	iaiku pe ruaki	nós estamos perto de vocês	0.887500	0.916667	0.800000		

@@ -3,7 +3,7 @@
 compare_grammyep_kadiweu.py
 
 Reproducible comparison between the Portuguese stimuli/equivalents in
-GrammYEP (Alencar 2021) and Portuguese translations/prompts in the
+GrammYEP (Alencar 2021) and Portuguese text_por backtranslations/annotations in the
 Kadiwéu Tycho Brahe JSON exports.
 
 The script deliberately distinguishes:
@@ -78,6 +78,53 @@ def normalize_pt(text: str) -> str:
 
 def token_set(text: str) -> set[str]:
     return set(re.findall(r"\w+", normalize_pt(text), flags=re.UNICODE))
+
+
+def strip_parenthetical(text: str) -> str:
+    """Diagnostic form without parenthetical text; never an EXACT normalization."""
+    previous = None
+    current = text
+    while previous != current:
+        previous = current
+        current = re.sub(r"\([^()]*\)", " ", current)
+    return normalize_pt(current)
+
+
+def slash_variants(text: str) -> list[str]:
+    """Diagnostic alternatives for slash notation; source text is preserved."""
+    if "/" not in text:
+        return []
+    full = normalize_pt(text)
+    parts = [normalize_pt(x) for x in text.split("/") if normalize_pt(x)]
+    out = list(parts)
+    if len(parts) == 2:
+        left, right = parts
+        lt, rt = left.split(), right.split()
+        if len(lt) >= 2 and 0 < len(rt) < len(lt):
+            k = 0
+            while k < min(len(lt), len(rt)) and lt[-1-k] == rt[-1-k]:
+                k += 1
+            if k > 0:
+                right_nonshared = rt[:-k]
+                prefix_len = max(0, len(lt) - k - max(1, len(right_nonshared)))
+                candidate = normalize_pt(" ".join(lt[:prefix_len] + rt))
+                if candidate:
+                    out.append(candidate)
+    return list(dict.fromkeys(x for x in out if x and x != full))
+
+
+def diagnostic_forms(text: str) -> list[tuple[str, str]]:
+    """Extra retrieval forms; never used to assign EXACT_* status."""
+    forms = []
+    stripped = strip_parenthetical(text)
+    if stripped and stripped != normalize_pt(text):
+        forms.append(("PARENTHETICAL_STRIPPED", stripped))
+    for v in slash_variants(text):
+        forms.append(("SLASH_ALTERNATIVE", v))
+        sv = strip_parenthetical(v)
+        if sv and sv != v:
+            forms.append(("SLASH_ALTERNATIVE+PARENTHETICAL_STRIPPED", sv))
+    return list(dict.fromkeys(forms))
 
 
 def similarity(a: str, b: str) -> tuple[float, float, float]:
@@ -197,6 +244,8 @@ def main() -> None:
     ap.add_argument("--outdir", type=Path, default=Path("grammyep-kadiweu-comparison"))
     ap.add_argument("--variant-threshold", type=float, default=0.80,
                     help="Minimum combined score for VARIANT_CANDIDATE (default: 0.80)")
+    ap.add_argument("--editorial-threshold", type=float, default=0.80,
+                    help="Minimum transformed-form score for slash/parenthetical provenance normalization (default: 0.80)")
     ap.add_argument("--top-k", type=int, default=5,
                     help="Number of variant candidates retained per unmatched Kadiwéu record")
     args = ap.parse_args()
@@ -275,14 +324,60 @@ def main() -> None:
             coverage_by_source[rec["source"]].add(sid)
             coverage_all.add(sid)
 
+        # Second provenance-normalization layer. GrammYEP itself contains no
+        # slash notation or parenthetical additions of this kind. We preserve
+        # text_por unchanged, but compare controlled forms that remove these
+        # later devices. A sufficiently strong transformed-form relationship
+        # is classified separately from ordinary fuzzy matching and does not
+        # require open-ended adjudication.
+        diagnostic_best = None
+        if pt:
+            for strategy, form in diagnostic_forms(pt):
+                for grow in gram_pt_rows:
+                    combined_d, char_d, jac_d = similarity(form, grow["portuguese"])
+                    item = (combined_d, char_d, jac_d, strategy, form, grow)
+                    if diagnostic_best is None or item[:3] > diagnostic_best[:3]:
+                        diagnostic_best = item
+
+        editorial_match = False
+        editorial_match_type = ""
+        editorial_ids = set()
+        if match_type == "NO_MATCH" and diagnostic_best is not None:
+            dscore, _, _, dstrategy, dform, drow = diagnostic_best
+            exact_transformed_ids = norm_index.get(normalize_pt(dform), set())
+            if exact_transformed_ids:
+                editorial_match = True
+                editorial_match_type = "EDITORIAL_NORMALIZED_EXACT"
+                editorial_ids = set(exact_transformed_ids)
+            elif dscore >= args.editorial_threshold:
+                editorial_match = True
+                editorial_match_type = "EDITORIAL_NORMALIZED_SIMILAR"
+                editorial_ids = {drow["sent_id"]}
+
+        if editorial_match:
+            match_type = editorial_match_type
+            ids = editorial_ids
+            for sid in ids:
+                coverage_by_source[rec["source"]].add(sid)
+                coverage_all.add(sid)
+
         match_rows.append({
             **rec,
             "match_type": match_type,
+            "has_slash": "yes" if "/" in pt else "no",
+            "has_parenthetical": "yes" if re.search(r"\([^()]*\)", pt) else "no",
+            "diagnostic_best_strategy": "" if diagnostic_best is None else diagnostic_best[3],
+            "diagnostic_best_form": "" if diagnostic_best is None else diagnostic_best[4],
+            "diagnostic_best_sent_id": "" if diagnostic_best is None else diagnostic_best[5]["sent_id"],
+            "diagnostic_best_portuguese": "" if diagnostic_best is None else diagnostic_best[5]["portuguese"],
+            "diagnostic_best_combined_score": "" if diagnostic_best is None else f"{diagnostic_best[0]:.6f}",
+            "diagnostic_best_char_score": "" if diagnostic_best is None else f"{diagnostic_best[1]:.6f}",
+            "diagnostic_best_token_jaccard": "" if diagnostic_best is None else f"{diagnostic_best[2]:.6f}",
             "grammyep_sent_ids": ",".join(map(str, sorted(ids))),
             "normalized_portuguese": normalize_pt(pt) if pt else "",
         })
 
-        # Fuzzy proposals ONLY when there is no exact/normalized match.
+        # Ordinary fuzzy proposals only after both normalization layers fail.
         if pt and not ids:
             candidates = []
             for (_, _), grow in unique_gram_pt.items():
@@ -326,7 +421,7 @@ def main() -> None:
             "sent_id": g["sent_id"],
             "nheengatu": g["nheengatu"],
             "portuguese_equivalents": " || ".join(g["portuguese_unique"]),
-            "covered_exact_or_normalized": "yes" if sources else "no",
+            "covered_by_normalization_layers": "yes" if sources else "no",
             "sources": ",".join(sources),
         })
 
@@ -350,13 +445,30 @@ def main() -> None:
         args.outdir / "kadiweu_matches.tsv",
         match_rows,
         ["source", "source_index", "uid", "status", "kadiweu", "portuguese",
-         "match_type", "grammyep_sent_ids", "normalized_portuguese"]
+         "match_type", "has_slash", "has_parenthetical",
+         "diagnostic_best_strategy", "diagnostic_best_form",
+         "diagnostic_best_sent_id", "diagnostic_best_portuguese",
+         "diagnostic_best_combined_score", "diagnostic_best_char_score",
+         "diagnostic_best_token_jaccard", "grammyep_sent_ids",
+         "normalized_portuguese"]
     )
+    editorial_rows = [r for r in match_rows if r["has_slash"] == "yes" or r["has_parenthetical"] == "yes"]
+    write_tsv(
+        args.outdir / "editorial_normalization_cases.tsv",
+        editorial_rows,
+        ["source", "source_index", "uid", "status", "kadiweu", "portuguese",
+         "match_type", "has_slash", "has_parenthetical",
+         "diagnostic_best_strategy", "diagnostic_best_form",
+         "diagnostic_best_sent_id", "diagnostic_best_portuguese",
+         "diagnostic_best_combined_score", "diagnostic_best_char_score",
+         "diagnostic_best_token_jaccard", "grammyep_sent_ids"]
+    )
+
     write_tsv(
         args.outdir / "stimulus_coverage.tsv",
         coverage_rows,
         ["sent_id", "nheengatu", "portuguese_equivalents",
-         "covered_exact_or_normalized", "sources"]
+         "covered_by_normalization_layers", "sources"]
     )
     write_tsv(
         args.outdir / "variant_candidates.tsv",
@@ -392,9 +504,11 @@ def main() -> None:
     for s in ("van", "hil", "ped"):
         rs = by_source[s]
         exactish = sum(r["match_type"] in ("EXACT_RAW", "EXACT_NORMALIZED") for r in rs)
+        editorial = sum(r["match_type"].startswith("EDITORIAL_NORMALIZED_") for r in rs)
         summary.extend([
             {"measure": f"{s}_records", "value": len(rs)},
             {"measure": f"{s}_exact_or_normalized_records", "value": exactish},
+            {"measure": f"{s}_editorial_normalized_records", "value": editorial},
             {"measure": f"{s}_covered_grammyep_sentences",
              "value": len(coverage_by_source[s])},
         ])
@@ -403,6 +517,9 @@ def main() -> None:
         r["match_type"] in ("EXACT_RAW", "EXACT_NORMALIZED")
         for r in match_rows
     )
+    editorial_exact_total = sum(r["match_type"] == "EDITORIAL_NORMALIZED_EXACT" for r in match_rows)
+    editorial_similar_total = sum(r["match_type"] == "EDITORIAL_NORMALIZED_SIMILAR" for r in match_rows)
+    editorial_total = editorial_exact_total + editorial_similar_total
     # Count Kadiweu RECORDS with at least one variant candidate, rather
     # than rows in variant_candidates.tsv (which may contain up to top-k
     # candidates for the same Kadiweu record).
@@ -411,13 +528,23 @@ def main() -> None:
         for r in variant_rows
     }
     variant_record_total = len(variant_records)
-    related_total = exactish_total + variant_record_total
+    related_total = exactish_total + editorial_total + variant_record_total
     related_percentage = (
         100.0 * related_total / len(tycho) if tycho else 0.0
     )
 
+    slash_n = sum(r["has_slash"] == "yes" for r in match_rows)
+    paren_n = sum(r["has_parenthetical"] == "yes" for r in match_rows)
+    diagnostic_n = sum(bool(r["diagnostic_best_strategy"]) for r in match_rows)
+
     summary.extend([
         {"measure": "kadiweu_exact_or_normalized_records", "value": exactish_total},
+        {"measure": "kadiweu_editorial_normalized_exact_records", "value": editorial_exact_total},
+        {"measure": "kadiweu_editorial_normalized_similar_records", "value": editorial_similar_total},
+        {"measure": "kadiweu_editorial_normalized_records", "value": editorial_total},
+        {"measure": "kadiweu_records_with_slash", "value": slash_n},
+        {"measure": "kadiweu_records_with_parenthetical", "value": paren_n},
+        {"measure": "kadiweu_records_with_diagnostic_form", "value": diagnostic_n},
         {"measure": "kadiweu_records_with_variant_candidate",
          "value": variant_record_total},
         {"measure": "kadiweu_related_records_total", "value": related_total},
@@ -440,14 +567,22 @@ def main() -> None:
     for s in ("van", "hil", "ped"):
         rs = by_source[s]
         exactish = sum(r["match_type"] in ("EXACT_RAW", "EXACT_NORMALIZED") for r in rs)
-        print(f"{s}: {len(rs)} records; {exactish} exact/normalized; "
+        editorial = sum(r["match_type"].startswith("EDITORIAL_NORMALIZED_") for r in rs)
+        editorial = sum(r["match_type"].startswith("EDITORIAL_NORMALIZED_") for r in rs)
+        print(f"{s}: {len(rs)} records; {exactish} strict exact/normalized; "
+              f"{editorial} editorial-normalized; "
               f"{len(coverage_by_source[s])} GrammYEP SENT-IDs covered")
     print(f"van ∩ hil stimulus coverage: "
           f"{len(coverage_by_source['van'] & coverage_by_source['hil'])}")
-    print(f"Variant candidate rows written: {len(variant_rows)}")
+    print(f"Editorial-normalized records: {editorial_total} "
+          f"({editorial_exact_total} exact after transformation; "
+          f"{editorial_similar_total} similar after transformation)")
+    print(f"Variant candidate rows written after normalization layers: {len(variant_rows)}")
     print(f"Kadiweu records with >=1 variant candidate: {variant_record_total}")
-    print(f"Related Kadiweu records (exact/normalized + variant): "
+    print(f"Automatically related Kadiweu records (strict + editorial + fuzzy): "
           f"{related_total}/{len(tycho)} ({related_percentage:.2f}%)")
+    print(f"Kadiweu records containing '/': {slash_n}")
+    print(f"Kadiweu records containing parenthetical material: {paren_n}")
     print(f"Output directory: {args.outdir}")
 
 
