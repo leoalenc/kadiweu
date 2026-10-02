@@ -33,6 +33,8 @@ import csv
 import hashlib
 import json
 import re
+import tarfile
+import zipfile
 import unicodedata
 from collections import Counter, defaultdict
 from difflib import SequenceMatcher
@@ -145,7 +147,7 @@ def similarity(a: str, b: str) -> tuple[float, float, float]:
     return combined, char, jac
 
 
-def parse_grammyep_portuguese(path: Path) -> list[dict]:
+def parse_grammyep_portuguese_text(text: str) -> list[dict]:
     """
     Parse blocks of the form:
 
@@ -161,7 +163,7 @@ def parse_grammyep_portuguese(path: Path) -> list[dict]:
     records = []
     current = None
 
-    for line in path.read_text(encoding="utf-8").splitlines():
+    for line in text.splitlines():
         m = SENT_RE.match(line)
         if m:
             if current is not None:
@@ -182,6 +184,62 @@ def parse_grammyep_portuguese(path: Path) -> list[dict]:
         rec["portuguese_unique"] = list(dict.fromkeys(rec["portuguese"]))
 
     return records
+
+
+def parse_gf_release(archive: Path) -> tuple[list[dict], dict[int, list[str]]]:
+    """Read parallel 1.0.0 treebank files; align by validated SENT block order."""
+    def member(name: str) -> str:
+        suffix = "/treebank/" + name
+        if tarfile.is_tarfile(archive):
+            with tarfile.open(archive, "r:*") as tf:
+                names = [n for n in tf.getnames() if n.endswith(suffix)]
+                if len(names) != 1:
+                    raise ValueError(f"Expected one {name} in {archive}; got {names}")
+                return tf.extractfile(names[0]).read().decode("utf-8-sig")
+        if zipfile.is_zipfile(archive):
+            with zipfile.ZipFile(archive) as zf:
+                names = [n for n in zf.namelist() if n.endswith(suffix)]
+                if len(names) != 1:
+                    raise ValueError(f"Expected one {name} in {archive}; got {names}")
+                return zf.read(names[0]).decode("utf-8-sig")
+        raise ValueError(f"Unsupported archive: {archive}")
+
+    def blocks(text: str) -> list[str]:
+        return [b.strip() for b in re.split(r"\n\s*\n", text) if b.strip()]
+
+    sources = blocks(member("GraYrl-GraPor.txt"))
+    parsed = blocks(member("GraYrl-Pos.parsed"))
+    if len(sources) != len(parsed):
+        raise ValueError(f"GF alignment differs: {len(sources)} vs {len(parsed)} blocks")
+    result = {}
+    for source, gf in zip(sources, parsed):
+        m = SENT_RE.match(source.splitlines()[0])
+        if not m or int(m.group(1)) in result:
+            raise ValueError(f"Missing/duplicate SENT-ID in GF source: {source[:90]}")
+        trees = [line.strip() for line in gf.splitlines() if line.strip()]
+        if not trees or not all(t.startswith("Pred ") for t in trees):
+            raise ValueError(f"Unexpected GF trees for SENT-{m.group(1)}")
+        result[int(m.group(1))] = trees
+    gram = parse_grammyep_portuguese_text(member("GraYrl-GraPor.txt"))
+    if {g["sent_id"] for g in gram} != result.keys():
+        raise ValueError("GrammYEP Portuguese and GF identifiers differ")
+    return gram, result
+
+
+def gf_fields(ids: set[int], index: dict[int, list[str]]) -> dict[str, str]:
+    """Keep every tree for every matched SENT-ID, with unambiguous provenance."""
+    resolved = [(sid, t) for sid in sorted(ids) for t in index.get(sid, [])]
+    missing = sorted(ids - index.keys())
+    return {
+        "gf_tree_count": str(len(resolved)),
+        "gf_abstract_trees": " || ".join(t for _, t in resolved),
+        "gf_trees_by_sent_id": " || ".join(f"SENT-{sid}::{t}" for sid, t in resolved),
+        "gf_alignment_status": (
+            "NO_MATCH" if not ids else
+            "MISSING_GF_SENT_IDS:" + ",".join(map(str, missing)) if missing else
+            "MATCHED_MULTIPLE_SENT_IDS" if len(ids) > 1 else "MATCHED"
+        ),
+    }
 
 
 def looks_like_sentence_record(obj: dict) -> bool:
@@ -236,8 +294,8 @@ def write_tsv(path: Path, rows: list[dict], fields: list[str]) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--gram-por", type=Path, required=True,
-                    help="Updated GraYrl-GraPor file")
+    ap.add_argument("--gf-release", type=Path, required=True,
+                    help="GrammYEP release archive containing aligned GF treebank")
     ap.add_argument("--van", type=Path, required=True)
     ap.add_argument("--hil", type=Path, required=True)
     ap.add_argument("--ped", type=Path, required=True)
@@ -252,7 +310,7 @@ def main() -> None:
     args.outdir.mkdir(parents=True, exist_ok=True)
 
     inputs = [
-        ("grammyep_portuguese", args.gram_por),
+        ("grammyep_gf_release", args.gf_release),
         ("van", args.van),
         ("hil", args.hil),
         ("ped", args.ped),
@@ -266,7 +324,7 @@ def main() -> None:
     write_tsv(args.outdir / "input_sha256.tsv", hash_rows,
               ["role", "path", "sha256"])
 
-    gram = parse_grammyep_portuguese(args.gram_por)
+    gram, gf_index = parse_gf_release(args.gf_release)
 
     raw_index = defaultdict(set)
     norm_index = defaultdict(set)
@@ -375,6 +433,8 @@ def main() -> None:
             "diagnostic_best_token_jaccard": "" if diagnostic_best is None else f"{diagnostic_best[2]:.6f}",
             "grammyep_sent_ids": ",".join(map(str, sorted(ids))),
             "normalized_portuguese": normalize_pt(pt) if pt else "",
+            "portuguese_field_role": "TBP_TRANSLATION_NOT_VERIFIED_STIMULUS",
+            **gf_fields(ids, gf_index),
         })
 
         # Ordinary fuzzy proposals only after both normalization layers fail.
@@ -408,6 +468,7 @@ def main() -> None:
                     "token_jaccard": f"{jac:.6f}",
                     "manual_decision": "",
                     "manual_comment": "",
+                    **gf_fields({sid}, gf_index),
                 })
 
     # Exact/normalized stimulus coverage table.
@@ -423,6 +484,7 @@ def main() -> None:
             "portuguese_equivalents": " || ".join(g["portuguese_unique"]),
             "covered_by_normalization_layers": "yes" if sources else "no",
             "sources": ",".join(sources),
+            **gf_fields({g["sent_id"]}, gf_index),
         })
 
     # Portuguese equivalents that map to >1 GrammYEP SENT-ID.
@@ -441,6 +503,7 @@ def main() -> None:
                 "surface_forms": " || ".join(forms),
             })
 
+    gf_cols = ["gf_tree_count", "gf_abstract_trees", "gf_trees_by_sent_id", "gf_alignment_status"]
     write_tsv(
         args.outdir / "kadiweu_matches.tsv",
         match_rows,
@@ -450,7 +513,7 @@ def main() -> None:
          "diagnostic_best_sent_id", "diagnostic_best_portuguese",
          "diagnostic_best_combined_score", "diagnostic_best_char_score",
          "diagnostic_best_token_jaccard", "grammyep_sent_ids",
-         "normalized_portuguese"]
+         "normalized_portuguese", "portuguese_field_role", *gf_cols]
     )
     editorial_rows = [r for r in match_rows if r["has_slash"] == "yes" or r["has_parenthetical"] == "yes"]
     write_tsv(
@@ -461,14 +524,15 @@ def main() -> None:
          "diagnostic_best_strategy", "diagnostic_best_form",
          "diagnostic_best_sent_id", "diagnostic_best_portuguese",
          "diagnostic_best_combined_score", "diagnostic_best_char_score",
-         "diagnostic_best_token_jaccard", "grammyep_sent_ids"]
+         "diagnostic_best_token_jaccard", "grammyep_sent_ids",
+         "portuguese_field_role", *gf_cols]
     )
 
     write_tsv(
         args.outdir / "stimulus_coverage.tsv",
         coverage_rows,
         ["sent_id", "nheengatu", "portuguese_equivalents",
-         "covered_by_normalization_layers", "sources"]
+         "covered_by_normalization_layers", "sources", *gf_cols]
     )
     write_tsv(
         args.outdir / "variant_candidates.tsv",
@@ -476,7 +540,7 @@ def main() -> None:
         ["source", "source_index", "uid", "status", "kadiweu",
          "kadiweu_portuguese", "rank", "grammyep_sent_id", "nheengatu",
          "grammyep_portuguese", "combined_score", "char_score",
-         "token_jaccard", "manual_decision", "manual_comment"]
+         "token_jaccard", "manual_decision", "manual_comment", *gf_cols]
     )
     write_tsv(
         args.outdir / "ambiguous_portuguese.tsv",
@@ -559,6 +623,7 @@ def main() -> None:
 
     write_tsv(args.outdir / "summary.tsv", summary, ["measure", "value"])
 
+    print(f"GF treebank: {len(gf_index)} SENT-IDs; {sum(map(len, gf_index.values()))} trees")
     print(f"GrammYEP base sentences: {len(gram)}")
     print(f"Kadiweu records: {len(tycho)}")
     print(f"Exact/raw or conservatively normalized Kadiweu records: {exactish_total}")
