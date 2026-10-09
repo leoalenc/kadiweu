@@ -1,0 +1,42 @@
+! A small XFST morphological transducer for Kadiweu nouns.
+! Source: Griffiths' Kadiweu dictionary.
+!
+! The selected nouns have an unchanged singular stem and form the plural
+! by concatenating -tedi. Gender is an inherent lexical property.
+
+define MStem {dioxoi}     ! chupim
+  | {ebici}               ! chuva
+  | {epenai}              ! lua; mês
+  | {epiibi}              ! pica-pau
+  | {ojoi}                ! jiboia
+  | {oloopa}              ! abelha
+;
+
+define FStem {eniidi}     ! bem-te-vi
+  | {etacani}             ! cesto
+  | {exio}                ! bico-de-prata
+  | {naxokoni}            ! papagaio
+;
+
+! Gender tags occur only on the upper (analysis) side.
+define GenderedStem [MStem "+M":0]
+  | [FStem "+F":0]
+;
+
+! Singular has no lower-side exponent; plural is realized as -tedi.
+define Number [["+SG"] .x. 0]
+  | [["+PL"] .x. {tedi}]
+;
+
+define KadiweuNouns GenderedStem Number;
+
+! Leave the completed transducer on top of the stack.
+push defined KadiweuNouns
+
+! Suggested interactive tests after sourcing this file:
+! apply up ebici
+! apply up ebicitedi
+! apply up eniidi
+! apply up eniiditedi
+! apply down epenai+M+PL
+! apply down naxokoni+F+SG

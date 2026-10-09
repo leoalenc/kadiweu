@@ -1,0 +1,64 @@
+! Kadiweu: substantivos simples com flags para genero e classe de plural
+! Arquitetura principal: Root -> GENDER -> NUMBER
+
+Multichar_Symbols
++N +M +F +SG +PL
+@U.GENDER.M@
+@U.GENDER.F@
+@U.PLCLASS.TEDI@
+@U.PLCLASS.LI@
+
+LEXICON Root
+
+! Masculinos, plural em -tedi
+dioxoi@U.GENDER.M@@U.PLCLASS.TEDI@ GENDER ; ! chupim
+ebici@U.GENDER.M@@U.PLCLASS.TEDI@ GENDER ;  ! chuva
+epenai@U.GENDER.M@@U.PLCLASS.TEDI@ GENDER ; ! lua, mes
+epiibi@U.GENDER.M@@U.PLCLASS.TEDI@ GENDER ; ! pica-pau
+ojoi@U.GENDER.M@@U.PLCLASS.TEDI@ GENDER ;   ! jiboia
+oloopa@U.GENDER.M@@U.PLCLASS.TEDI@ GENDER ; ! abelha
+
+! Femininos, plural em -tedi
+eniidi@U.GENDER.F@@U.PLCLASS.TEDI@ GENDER ;   ! bem-te-vi
+etacani@U.GENDER.F@@U.PLCLASS.TEDI@ GENDER ; ! cesto
+exio@U.GENDER.F@@U.PLCLASS.TEDI@ GENDER ;    ! bico-de-prata
+naxokoni@U.GENDER.F@@U.PLCLASS.TEDI@ GENDER ; ! papagaio
+
+! Masculinos, plural em -li
+nodaajo@U.GENDER.M@@U.PLCLASS.LI@ GENDER ; ! faca
+enoale@U.GENDER.M@@U.PLCLASS.LI@ GENDER ;  ! noite
+
+! Femininos, plural em -li
+natena@U.GENDER.F@@U.PLCLASS.LI@ GENDER ; ! flauta
+
+LEXICON GENDER
+
+@U.GENDER.M@ M_TAG ;
+@U.GENDER.F@ F_TAG ;
+
+! Lexicos auxiliares: emitem a etiqueta de genero na face superior.
+LEXICON M_TAG
+
++N+M:0 NUMBER ;
+
+LEXICON F_TAG
+
++N+F:0 NUMBER ;
+
+LEXICON NUMBER
+
++SG:0 # ;
++PL:0 PLURAL_CLASS ;
+
+LEXICON PLURAL_CLASS
+
+@U.PLCLASS.TEDI@ TEDI_SUFFIX ;
+@U.PLCLASS.LI@ LI_SUFFIX ;
+
+LEXICON TEDI_SUFFIX
+
+0:tedi # ;
+
+LEXICON LI_SUFFIX
+
+0:li # ;

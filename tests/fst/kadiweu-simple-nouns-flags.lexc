@@ -1,0 +1,60 @@
+! A small lexc morphological transducer for Kadiweu nouns.
+! Version using flag diacritics to encode inflection-class dependencies.
+! Source: Griffiths' Kadiweu dictionary; flag-diacritic architecture based
+! on Beesley and Karttunen (2003), Chapter 8.
+!
+! A root sets PLCLASS to TEDI or LI. After the shared gender and number
+! lexicons, the plural path must unify with the same PLCLASS value.
+
+Multichar_Symbols
++N
++M
++F
++SG
++PL
+@U.PLCLASS.TEDI@
+@U.PLCLASS.LI@
+
+LEXICON Root
+
+! Plural class -tedi.
+dioxoi@U.PLCLASS.TEDI@      MASC ;  ! chupim
+ebici@U.PLCLASS.TEDI@       MASC ;  ! chuva
+epenai@U.PLCLASS.TEDI@      MASC ;  ! lua; mes
+epiibi@U.PLCLASS.TEDI@      MASC ;  ! pica-pau
+ojoi@U.PLCLASS.TEDI@        MASC ;  ! jiboia
+oloopa@U.PLCLASS.TEDI@      MASC ;  ! abelha
+
+eniidi@U.PLCLASS.TEDI@      FEM ;   ! bem-te-vi
+etacani@U.PLCLASS.TEDI@     FEM ;   ! cesto
+exio@U.PLCLASS.TEDI@        FEM ;   ! bico-de-prata
+naxokoni@U.PLCLASS.TEDI@    FEM ;   ! papagaio
+
+! Plural class -li.
+nodaajo@U.PLCLASS.LI@       MASC ;  ! faca
+enoale@U.PLCLASS.LI@        MASC ;  ! noite
+natena@U.PLCLASS.LI@        FEM ;   ! flauta
+
+! Gender is independent of inflection class.
+LEXICON MASC
++N+M:0                      NUMBER ;
+
+LEXICON FEM
++N+F:0                      NUMBER ;
+
+! Singular is unmarked. Plural continues to the shared class test.
+LEXICON NUMBER
++SG:0                       # ;
++PL:0                       PLURAL_CLASS ;
+
+! Only the flag compatible with the root's PLCLASS value succeeds.
+LEXICON PLURAL_CLASS
+@U.PLCLASS.TEDI@            TEDI_SUFFIX ;
+@U.PLCLASS.LI@              LI_SUFFIX ;
+
+LEXICON TEDI_SUFFIX
+0:tedi                      # ;
+
+LEXICON LI_SUFFIX
+0:li                        # ;
+

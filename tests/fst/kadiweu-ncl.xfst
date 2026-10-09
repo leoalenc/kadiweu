@@ -1,0 +1,69 @@
+! Kadiweu deictic roots used in numeral classifiers.
+!
+! Final lexical-string format:
+!     LEMMA + POS + FEATURES
+!
+! Examples:
+!     ijo+D+M+GO  <->  ijo
+!     ijo+D+F+GO  <->  ajo
+!
+! Meanings of the classifier-feature tags (Sandalo & Michelioudakis 2016:6):
+! |tag    |deictic  | meaning                     |
+! |       |root     |                             |
+! |_______|_________|_____________________________|
+! |+ST    |-d:a-    |'standing/verically extended'|
+! |+SI    |-n:i-    |'sitting/non-extended'       |
+! |+CO    |-n:a-    |'coming/approaching'         |
+! |+LY    |-d:i-    |'lying/horizontally extended'|
+! |+GO    |-jo-     |'going away'                 |
+! |+AB    |-ka-     |'absent/out of sight'        |
+
+! Gender prefix.  On the initial lexical side, both genders have i-;
+! the feminine prefix is realized as a- on the surface side.
+! The boundary marker ^ and the gender tags have no surface realization.
+define GNR [i %+M:0 %^:0 | i:a %+F:0 %^:0];
+
+! Deictic roots and their classifier features.
+! +D is the part-of-speech tag; the following tag is a feature.
+define NCL [{da} %+D:0 %+ST:0 | {ni} %+D:0 %+SI:0 | {na} %+D:0 %+CO:0 | {di} %+D:0 %+LY:0 | {jo} %+D:0 %+GO:0 | {ca} %+D:0 %+AB:0];
+
+! The unmodified morphotactic network has lexical strings such as:
+!     i+M^jo+D+GO  <->  ijo
+!     i+F^jo+D+GO  <->  ajo
+define GNRNCL GNR NCL;
+
+! First partial rule: remove gender and ^ from their old prefix position.
+define DeletePrefixGender [0 <- [[%+M | %+F] %^]];
+
+! Second partial rule: insert masculine gender immediately after +D.
+! Following Beesley and Karttunen, [..] denotes one particular
+! empty-string position; bare 0 must not be used for this epenthesis.
+! $[+M] says that the preceding material contains +M, without specifying
+! what occurs before or after that tag.  The final ? matches the single
+! classifier-feature tag following the insertion site (for example +GO).
+define InsertMasculine [%+M <- [..] || $[%+M] %+D _ ?];
+
+! Third partial rule: insert feminine gender under the parallel condition:
+! the preceding material contains +F, and the insertion site follows +D.
+define InsertFeminine [%+F <- [..] || $[%+F] %+D _ ?];
+
+! The complete relocation operation is now a readable rule cascade.
+define RelocateGender DeletePrefixGender .o. InsertMasculine .o. InsertFeminine;
+
+! Final bidirectional analyzer/generator.
+define KadiweuNCL RelocateGender .o. GNRNCL;
+
+! Leave the completed network on top of the stack.
+push defined KadiweuNCL
+
+! Suggested tests after sourcing this file:
+!     apply up ijo        => ijo+D+M+GO
+!     apply up ajo        => ijo+D+F+GO
+!     apply up ica        => ica+D+M+AB
+!     apply up aca        => ica+D+F+AB
+!     apply down ijo+D+M+GO  => ijo
+!     apply down ijo+D+F+GO  => ajo
+!
+! To enumerate the complete relation:
+!     print upper-words
+!     print lower-words

@@ -1,0 +1,25 @@
+/* Net:  */
+digraph no_name {
+charset="utf-8";
+rankdir = LR ;
+rotate=90 ;
+ranksep =".15" ;
+/* default shape for nodes */
+node[shape=circle,fixedsize=true,fontsize="10",height=".35"] ;
+/* default size for arc labels */
+edge[fontsize="12"];
+
+0;
+0 -> 1 [label="a i",fontsize="12"];
+1;
+1 -> 2 [label="c",fontsize="12"];
+1 -> 3 [label="d n",fontsize="12"];
+1 -> 4 [label="j",fontsize="12"];
+2;
+2 -> 5 [label="a",fontsize="12"];
+3;
+3 -> 5 [label="a i",fontsize="12"];
+4;
+4 -> 5 [label="o",fontsize="12"];
+5 [shape=doublecircle,height=".27",label="5"];
+}

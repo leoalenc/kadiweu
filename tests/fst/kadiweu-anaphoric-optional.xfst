@@ -1,0 +1,98 @@
+! Kadiweu anaphoric demonstratives: optional gender-vowel copy
+!
+! This script illustrates the separation between:
+!   1. morphotactics: nG ^ GENDER ^ DEICTIC-ROOT
+!   2. morphophonology: optional copying of GENDER inside nG
+!
+! The morpheme-boundary symbol is ^.  Because ^ is an XFST operator,
+! it must be escaped as %^ when it occurs as an ordinary symbol.
+!
+! Examples of morphotactic strings:
+!   nG^i^da  masculine + standing/vertically extended
+!   nG^a^da  feminine  + standing/vertically extended
+!   nG^i^ni  masculine + sitting/non-extended
+!   nG^a^ni  feminine  + sitting/non-extended
+
+
+! ------------------------------------------------------------------
+! MORPHOTACTICS
+! ------------------------------------------------------------------
+
+! nG is the anaphoric demonstrative morpheme.
+! i is masculine and a is feminine.
+!
+! Deictic classifier roots:
+!   da  standing/vertically extended
+!   ni  sitting/non-extended
+!   na  coming/approaching
+!   di  lying/horizontally extended
+!   jo  going away
+!   ca  absent/out of sight
+define AnaphoricMorphotactics [
+  {nG} %^ [i | a] %^
+  [{da} | {ni} | {na} | {di} | {jo} | {ca}]
+];
+
+
+! ------------------------------------------------------------------
+! MORPHOPHONOLOGY
+! ------------------------------------------------------------------
+
+! [..] denotes one empty-string position.
+! The parenthesized arrow (->) makes the insertion optional.
+!
+! If masculine i follows the anaphoric morpheme, optionally insert
+! a copy of i between n and G:
+!
+!   nG^i^da  ->  nG^i^da  or  niG^i^da
+define CopyMasculine [
+  [..] (->) i || n _ G %^ i
+];
+
+! If feminine a follows the anaphoric morpheme, optionally insert
+! a copy of a between n and G:
+!
+!   nG^a^da  ->  nG^a^da  or  naG^a^da
+define CopyFeminine [
+  [..] (->) a || n _ G %^ a
+];
+
+! Morpheme boundaries are not pronounced and therefore disappear
+! from the final surface forms.
+define DeleteBoundary [
+  %^ -> 0
+];
+
+
+! ------------------------------------------------------------------
+! COMPLETE TRANSDUCER
+! ------------------------------------------------------------------
+
+! Composition applies the two optional copy rules before deleting ^.
+define AnaphoricDemonstratives [AnaphoricMorphotactics
+  .o. CopyMasculine
+  .o. CopyFeminine
+  .o. DeleteBoundary];
+
+! Leave the completed network on top of the XFST stack.
+push defined AnaphoricDemonstratives
+
+
+! ------------------------------------------------------------------
+! SUGGESTED TESTS AFTER SOURCING THIS FILE
+! ------------------------------------------------------------------
+!
+! apply down nG^i^da
+! Expected: nGida, niGida
+!
+! apply down nG^a^da
+! Expected: nGada, naGada
+!
+! apply down nG^i^ni
+! Expected: nGini, niGini
+!
+! apply down nG^a^ni
+! Expected: nGani, naGani
+!
+! print upper-words
+! print lower-words

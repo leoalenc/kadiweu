@@ -1,0 +1,60 @@
+! A small lexc morphological transducer for Kadiweu nouns.
+! Source: Griffiths' Kadiweu dictionary, especially the plural classes
+! described on p. 336.
+!
+! Architecture:
+!   root -> gender-and-inflection continuation -> number realization
+!
+! The continuation lexicons avoid repeating +N and gender tags for every
+! noun. Gender and inflection class are combined in the continuation name
+! so that a noun can reach only its own plural paradigm.
+
+Multichar_Symbols
++N
++M
++F
++SG
++PL
+
+LEXICON Root
+
+! Masculine nouns whose plural is formed with -tedi.
+dioxoi      M_TEDI ;  ! chupim
+ebici       M_TEDI ;  ! chuva
+epenai      M_TEDI ;  ! lua; mes
+epiibi      M_TEDI ;  ! pica-pau
+ojoi        M_TEDI ;  ! jiboia
+oloopa      M_TEDI ;  ! abelha
+
+! Feminine nouns whose plural is formed with -tedi.
+eniidi      F_TEDI ;  ! bem-te-vi
+etacani     F_TEDI ;  ! cesto
+exio        F_TEDI ;  ! bico-de-prata
+naxokoni    F_TEDI ;  ! papagaio
+
+! Nouns whose plural is formed by adding -li to the singular.
+nodaajo     M_LI ;    ! faca: nodaajo ~ nodaajoli
+enoale      M_LI ;    ! noite: enoale ~ enoaleli
+natena      F_LI ;    ! flauta: natena ~ natenali
+
+! Category and inherent gender are added once per gender/class combination.
+LEXICON M_TEDI
++N+M:0      TEDI ;
+
+LEXICON F_TEDI
++N+F:0      TEDI ;
+
+LEXICON M_LI
++N+M:0      LI ;
+
+LEXICON F_LI
++N+F:0      LI ;
+
+! Each continuation reaches only the appropriate number paradigm.
+LEXICON TEDI
++SG:0       # ;
++PL:tedi    # ;
+
+LEXICON LI
++SG:0       # ;
++PL:li      # ;

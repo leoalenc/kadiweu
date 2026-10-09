@@ -1,0 +1,50 @@
+# Beck, D. (2017). The typology of morphological processes: Form and function.
+# In A. Y. Aikhenvald & R. M. W. Dixon (Eds.), The Cambridge handbook of
+# linguistic typology (pp. 325–360). Cambridge University Press.
+# https://doi.org/10.1017/9781316135716.011
+
+# Tausug lexical transducer: infinitive and realis
+#
+# Beck (2017: 332-333), examples (10) and (11):
+#   baytaan+V+INF   <-> baytaan
+#   baytaan+V+R     <-> biyaytaan
+#   kalupahan+V+INF <-> kalupahan
+#   kalupahan+V+R   <-> kiyalupahan
+#
+# The intermediate strings contain the abstract morphemes ^INF and ^R:
+#   baytaan^INF, baytaan^R, kalupahan^INF, kalupahan^R.
+
+clear stack
+
+define Vowel [a | i | u];
+define NonVowel \Vowel;
+define Root [{marī} | {baytaan} | {kalupahan}];
+
+# Morphotactics: ROOT + V + {INF,R} -> ROOT ^ {INF,R}
+define LexicalLanguage Root [{+V+INF} | {+V+R}];
+define EncodeMorphemes [{+V+INF} -> {^INF}, {+V+R} -> {^R}];
+define Morphotactics LexicalLanguage .o. EncodeMorphemes;
+
+# Morph realization: ^R triggers iy immediately before the first vowel.
+define RealisInfixation [..] -> {iy} || .#. [NonVowel]* _ Vowel ?* {^R} .#. ;
+define DeleteMorphemes [{^INF} | {^R}] -> 0;
+
+define TausugLexicalTransducer Morphotactics .o. RealisInfixation .o. DeleteMorphemes;
+
+regex TausugLexicalTransducer;
+
+# Surface -> lexical analysis
+apply up baytaan
+apply up biyaytaan
+apply up kalupahan
+apply up kiyalupahan
+
+# Lexical analysis -> surface
+apply down baytaan+V+INF
+apply down baytaan+V+R
+apply down kalupahan+V+INF
+apply down kalupahan+V+R
+
+# Enumerate the complete lower and upper languages.
+print lower-words
+print upper-words

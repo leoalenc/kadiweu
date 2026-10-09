@@ -1,0 +1,5 @@
+regex {da} %+D:0  %+ST:0 | {ni} %+D:0 %+SI:0 | {na} %+D:0 %+CO:0 | {di} %+D:0 %+LY:0 | {jo} %+D:0 %+GO:0 | {ca} %+D:0 %+AB:0 ;
+
+regex [i:a %+F:0 | i %+M:0] %^:0 ;
+
+
