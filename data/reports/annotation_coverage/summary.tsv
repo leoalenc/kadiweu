@@ -1,0 +1,5 @@
+source	sentences	done_sentences	review_sentences	pt_translation	all_tokens_segmented	sentences_with_some_unsegmented_token	no_tokens_segmented	sentences_with_at_least_one_split_piece	sentences_with_unglossed_split_piece	all_split_pieces_glossed	complete_segmentation_and_gloss	tokens	tokens_without_segmentation	split_pieces	split_pieces_without_gloss	split_entries_without_morpheme_form
+van-data.json	75	69	6	75	24	51	0	75	55	20	9	289	92	521	179	0
+hil-data.json	70	66	4	70	16	54	6	64	56	4	3	261	110	398	169	4
+ped-gramm.json	61	54	7	60	24	37	3	58	46	11	5	253	82	399	122	3
+TOTAL	206	189	17	205	64	142	9	197	157	35	17	803	284	1318	470	7

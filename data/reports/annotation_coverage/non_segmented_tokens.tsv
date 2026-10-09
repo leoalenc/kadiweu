@@ -1,0 +1,285 @@
+source	sentence_number	status	sentence_uid	token_number	token_form	sentence_text
+van-data.json	2	DONE	d07f0db7-963e-47ab-ab3f-36614732bacd	3	weiigi	iGeladi idei weiigi
+van-data.json	3	DONE	f50b632e-fc1a-4ec0-b8b3-610dab7be736	2	ideaGi	iGeladi ideaGi weiigi
+van-data.json	3	DONE	f50b632e-fc1a-4ec0-b8b3-610dab7be736	3	weiigi	iGeladi ideaGi weiigi
+van-data.json	4	DONE	d26cfc71-a117-4817-9f35-4a7d23fd1f88	1	iwaalo	iwaalo ja libiniena
+van-data.json	5	DONE	e3b84bb7-7e6e-474c-9ad6-c6a47b409a5a	1	iwaalo	iwaalo ja ninitibeke
+van-data.json	5	DONE	e3b84bb7-7e6e-474c-9ad6-c6a47b409a5a	3	ninitibeke	iwaalo ja ninitibeke
+van-data.json	9	REVIEW	2c026af9-b8a1-4389-b658-00113b070dee	3	lodejedi	niwatece liwaGatena lodejedi etidi weiigi
+van-data.json	9	REVIEW	2c026af9-b8a1-4389-b658-00113b070dee	4	etidi	niwatece liwaGatena lodejedi etidi weiigi
+van-data.json	9	REVIEW	2c026af9-b8a1-4389-b658-00113b070dee	5	weiigi	niwatece liwaGatena lodejedi etidi weiigi
+van-data.json	10	DONE	0c38eab8-c6b0-4f02-bf05-27ea6285fe70	1	Gawenigi	Gawenigi eliodi me libinienigi
+van-data.json	10	DONE	0c38eab8-c6b0-4f02-bf05-27ea6285fe70	2	eliodi	Gawenigi eliodi me libinienigi
+van-data.json	10	DONE	0c38eab8-c6b0-4f02-bf05-27ea6285fe70	3	me	Gawenigi eliodi me libinienigi
+van-data.json	11	DONE	a85fda39-1575-4120-9432-8fb534ebdbd2	2	liwenigi	niGida liwenigi libinienigi
+van-data.json	12	DONE	a1e15803-1e5e-481f-8137-a84beac6cbcc	3	daGaxa	niGida niwenigi daGaxa me dakake loojedi
+van-data.json	12	DONE	a1e15803-1e5e-481f-8137-a84beac6cbcc	4	me	niGida niwenigi daGaxa me dakake loojedi
+van-data.json	12	DONE	a1e15803-1e5e-481f-8137-a84beac6cbcc	6	*T*	niGida niwenigi daGaxa me dakake loojedi
+van-data.json	13	DONE	e9806e26-701d-4f5f-9ca9-63216cccf3d0	3	Pedro	naGajo lomiigo Pedro idei niwatece
+van-data.json	14	DONE	2386b5b5-57d0-4a1f-86c2-73f67561744c	5	@anitaGa	naGajo lomiigo nigaanigawaanigi manitaGa niwatece
+van-data.json	15	REVIEW	4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7	4	@adi	Nigaanigawaanigi idei madi niwatece ane adi nomiigo
+van-data.json	15	REVIEW	4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7	6	ane	Nigaanigawaanigi idei madi niwatece ane adi nomiigo
+van-data.json	15	REVIEW	4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7	7	*T*	Nigaanigawaanigi idei madi niwatece ane adi nomiigo
+van-data.json	16	REVIEW	235440ba-548e-4df6-8d9e-214cc8714f8f	4	@anitaGa	niGijo nigaanigawaanigi manitaGa lomigo niwatece
+van-data.json	16	REVIEW	235440ba-548e-4df6-8d9e-214cc8714f8f	5	lomigo	niGijo nigaanigawaanigi manitaGa lomigo niwatece
+van-data.json	17	DONE	86f5c128-e931-4443-90cc-2359748ed69f	2	nigotaGa	Eeyo nigotaGa
+van-data.json	18	DONE	d021bede-064b-4fd5-bb33-6c7cd4279c1b	1	Eyo	Eyo manitaGa nigotaGa
+van-data.json	18	DONE	d021bede-064b-4fd5-bb33-6c7cd4279c1b	3	@anitaGa	Eyo manitaGa nigotaGa
+van-data.json	18	DONE	d021bede-064b-4fd5-bb33-6c7cd4279c1b	4	nigotaGa	Eyo manitaGa nigotaGa
+van-data.json	19	DONE	e5c65dad-8b04-46da-b965-4921887cbca4	6	@initaGa	niGijoa lionigipi iwaalo idei minitaGa
+van-data.json	20	DONE	8c5dd09c-d010-4c48-9601-9d3b14c61119	1	dibixodi	dibixodi idei manitaGa
+van-data.json	20	DONE	8c5dd09c-d010-4c48-9601-9d3b14c61119	4	@anitaGa	dibixodi idei manitaGa
+van-data.json	21	DONE	9b107abc-b49f-4ce2-9c43-30c7e5b5f8b2	1	iwalepodi	iwalepodi ja libinienigipi
+van-data.json	22	DONE	0d6cdbcf-9d99-4eff-8615-149ec22fec5f	2	ninitibeci	ajo ninitibeci
+van-data.json	24	DONE	661c62a7-3c8c-4609-b989-017deaae82c6	2	daGaxa	ajo daGaxa ninitibeci
+van-data.json	24	DONE	661c62a7-3c8c-4609-b989-017deaae82c6	3	ninitibeci	ajo daGaxa ninitibeci
+van-data.json	25	DONE	abe20c80-8394-478c-92eb-feef1512e5ed	2	eliodi	ajo eliodi linikeGegi
+van-data.json	30	DONE	0c7e64fb-f070-4faa-a12a-c110cdf4bf16	6	@ica	niGijo lodaajo ajo lodowa aGica digoida liGeladi
+van-data.json	31	DONE	5d76c7ee-51ce-47b0-a85d-ddc7f7d33f5f	3	niganigawanigi	ica liwigo niganigawanigi libinienigi
+van-data.json	32	DONE	46190f73-f21e-4073-b09c-8b2d17c6668e	2	wetiGa	naGani wetiGa liwaGatena
+van-data.json	33	DONE	a0bb1280-1040-4dff-9311-a1a31049b6f8	1	naGani	naGani wetiGa iwaGadi
+van-data.json	33	DONE	a0bb1280-1040-4dff-9311-a1a31049b6f8	2	wetiGa	naGani wetiGa iwaGadi
+van-data.json	35	DONE	675ef4d4-ebe8-4601-bf42-908deb0df82b	2	wetiGa	ani wetiGa eliodi me iwaGadi
+van-data.json	35	DONE	675ef4d4-ebe8-4601-bf42-908deb0df82b	3	eliodi	ani wetiGa eliodi me iwaGadi
+van-data.json	35	DONE	675ef4d4-ebe8-4601-bf42-908deb0df82b	4	me	ani wetiGa eliodi me iwaGadi
+van-data.json	36	DONE	42b65fc9-cec4-40a9-8aec-cdeec3731df8	2	wetiGa	ani wetiGa iwaGadi
+van-data.json	37	DONE	ba34b659-bcb8-4aa2-b9f4-b969ba786b12	2	wetiGa	ani wetiGa me iwaGadi eniteloco iGonagi
+van-data.json	37	DONE	ba34b659-bcb8-4aa2-b9f4-b969ba786b12	3	me	ani wetiGa me iwaGadi eniteloco iGonagi
+van-data.json	37	DONE	ba34b659-bcb8-4aa2-b9f4-b969ba786b12	6	iGonagi	ani wetiGa me iwaGadi eniteloco iGonagi
+van-data.json	38	DONE	61da4017-2140-4577-82e4-d5108efae675	2	wetiGa	ani wetiGa ane iwaGadi eniteloco iGonagi
+van-data.json	38	DONE	61da4017-2140-4577-82e4-d5108efae675	3	ane	ani wetiGa ane iwaGadi eniteloco iGonagi
+van-data.json	38	DONE	61da4017-2140-4577-82e4-d5108efae675	4	*T*	ani wetiGa ane iwaGadi eniteloco iGonagi
+van-data.json	38	DONE	61da4017-2140-4577-82e4-d5108efae675	7	iGonagi	ani wetiGa ane iwaGadi eniteloco iGonagi
+van-data.json	42	REVIEW	44646324-eb90-42f0-b944-21f0452109e2	4	libinienaGa	ijoa nigetedi liwigo libinienaGa
+van-data.json	43	DONE	a2910ce3-a0d2-4eac-bcc3-2da15db88b90	4	ijowa	ijo niwigo libinienigi ijowa nigetedi
+van-data.json	45	REVIEW	5739aca1-95fc-4584-9550-d7bd73c3c361	1	okokodi	okokodi ligetedi midi niwigo libinienaGa .
+van-data.json	45	REVIEW	5739aca1-95fc-4584-9550-d7bd73c3c361	4	@idi	okokodi ligetedi midi niwigo libinienaGa .
+van-data.json	45	REVIEW	5739aca1-95fc-4584-9550-d7bd73c3c361	7	.	okokodi ligetedi midi niwigo libinienaGa .
+van-data.json	46	REVIEW	83a62eb4-5a9e-43b0-b6b4-bded8dbd8ffe	2	okokodi	liwigo okokodi ligetedi libinienigi .
+van-data.json	46	REVIEW	83a62eb4-5a9e-43b0-b6b4-bded8dbd8ffe	5	.	liwigo okokodi ligetedi libinienigi .
+van-data.json	47	DONE	fad6e8d3-1e9f-451c-aaa7-fd28aecfd967	5	@dakake	idiwa noGojedi lixagotaGaGa adakake loojedi
+van-data.json	47	DONE	fad6e8d3-1e9f-451c-aaa7-fd28aecfd967	6	*T*	idiwa noGojedi lixagotaGaGa adakake loojedi
+van-data.json	50	DONE	e7f4ab65-14d7-44f5-a197-c99c4ab173cd	3	@anitaGa	etee manitaGa
+van-data.json	51	DONE	7aa17dd7-2c26-4df9-8f90-65d8d58e2c59	3	@initaGa	etee minitaGa
+van-data.json	52	DONE	c3c548d7-b154-437e-9baf-541a1bbbab6e	3	@ica	ee aGica inikeGegi
+van-data.json	53	DONE	c4d99cf1-e781-4efb-83ff-4a0ab873b7ec	3	@dininitibeci	ee aGidininitibeci
+van-data.json	54	DONE	969ba2f3-88dc-417e-ad3f-16ce88b4c762	2	@ee	aGee eliodi niinikeGegi
+van-data.json	54	DONE	969ba2f3-88dc-417e-ad3f-16ce88b4c762	3	eliodi	aGee eliodi niinikeGegi
+van-data.json	55	DONE	39925f76-d73f-423f-95cd-f88bd78f2a6e	2	eliodi	ee eliodi me aGidininitibeci
+van-data.json	55	DONE	39925f76-d73f-423f-95cd-f88bd78f2a6e	3	me	ee eliodi me aGidininitibeci
+van-data.json	55	DONE	39925f76-d73f-423f-95cd-f88bd78f2a6e	5	@dininitibeci	ee eliodi me aGidininitibeci
+van-data.json	56	DONE	d3095a7e-477d-405e-9ea2-85bfdacad7d3	2	@ica	aGica daGa jipegitege
+van-data.json	56	DONE	d3095a7e-477d-405e-9ea2-85bfdacad7d3	3	daGa	aGica daGa jipegitege
+van-data.json	56	DONE	d3095a7e-477d-405e-9ea2-85bfdacad7d3	4	jipegitege	aGica daGa jipegitege
+van-data.json	57	DONE	813f2ad7-42fb-4fbd-84b4-1957c68aa4f9	2	@ica	aGica daGa jipegitegi
+van-data.json	57	DONE	813f2ad7-42fb-4fbd-84b4-1957c68aa4f9	3	daGa	aGica daGa jipegitegi
+van-data.json	57	DONE	813f2ad7-42fb-4fbd-84b4-1957c68aa4f9	4	jipegitegi	aGica daGa jipegitegi
+van-data.json	61	DONE	42df6a83-6ae1-49b2-bd99-fbed7e2a083b	2	@ee	aGeewi mica iniKGigi
+van-data.json	61	DONE	42df6a83-6ae1-49b2-bd99-fbed7e2a083b	3	@ewi	aGeewi mica iniKGigi
+van-data.json	61	DONE	42df6a83-6ae1-49b2-bd99-fbed7e2a083b	5	@ica	aGeewi mica iniKGigi
+van-data.json	62	DONE	27d94732-46ea-4286-a1d4-b2861806a579	2	@eyo	aGeyo mica inikGigi
+van-data.json	62	DONE	27d94732-46ea-4286-a1d4-b2861806a579	4	@ica	aGeyo mica inikGigi
+van-data.json	64	DONE	d3952c8a-1ac1-4255-be0b-63978fdf368b	2	@idedonaGa	aGidedonaGa midi Godoigi
+van-data.json	64	DONE	d3952c8a-1ac1-4255-be0b-63978fdf368b	4	@idi	aGidedonaGa midi Godoigi
+van-data.json	64	DONE	d3952c8a-1ac1-4255-be0b-63978fdf368b	5	Godoigi	aGidedonaGa midi Godoigi
+van-data.json	66	DONE	fbae0277-3aad-4812-9229-94179b5a97a0	2	@idejonaGa	aGidejonaGa midi Godoigi
+van-data.json	66	DONE	fbae0277-3aad-4812-9229-94179b5a97a0	4	@idi	aGidejonaGa midi Godoigi
+van-data.json	67	DONE	6599689a-3fbe-4598-8827-78aceeff3931	3	Maria	ijo lemé Maria ipegitegi weiigi
+van-data.json	67	DONE	6599689a-3fbe-4598-8827-78aceeff3931	5	weiigi	ijo lemé Maria ipegitegi weiigi
+van-data.json	68	DONE	b8878027-73d2-4b11-bc18-cbdcf5637e55	1	biju	biju dapico
+van-data.json	69	DONE	30ef1810-38e0-4cef-8db3-4dda590faa09	2	niale	libiwe niale ixagodi
+van-data.json	71	DONE	f240dcfe-ca05-42aa-8644-07b9e3464e1a	3	Maria	idiwa leonigipi Maria libinienigipi
+van-data.json	72	DONE	b97e5b2f-d0da-4238-8ee6-2c64ded91f76	1	ijowa	ijowa leonigipi iwaalo idi metaGa
+van-data.json	75	DONE	81048a6f-e084-4b0a-965a-f41fb5c53ff7	4	weiigi	nigotaGa liGeladi ipegitegi weiigi
+hil-data.json	1	DONE	fcef38ed-be6b-4f2a-b5cf-fa4db625ecfb	1	Iwaalo	Iwaalo libiniena
+hil-data.json	1	DONE	fcef38ed-be6b-4f2a-b5cf-fa4db625ecfb	2	libiniena	Iwaalo libiniena
+hil-data.json	2	DONE	31d3b4c0-4aab-4538-999b-b8ee85c34444	1	Iwaalo	Iwaalo ninitibeci
+hil-data.json	2	DONE	31d3b4c0-4aab-4538-999b-b8ee85c34444	2	ninitibeci	Iwaalo ninitibeci
+hil-data.json	5	DONE	e349508c-4d86-48b8-9918-057988755e77	1	Etogo	Etogo aneiwaGadi adakake lojedi
+hil-data.json	5	DONE	e349508c-4d86-48b8-9918-057988755e77	3	*T*	Etogo aneiwaGadi adakake lojedi
+hil-data.json	5	DONE	e349508c-4d86-48b8-9918-057988755e77	4	@iwaGadi	Etogo aneiwaGadi adakake lojedi
+hil-data.json	5	DONE	e349508c-4d86-48b8-9918-057988755e77	6	@dakake	Etogo aneiwaGadi adakake lojedi
+hil-data.json	5	DONE	e349508c-4d86-48b8-9918-057988755e77	7	*T*	Etogo aneiwaGadi adakake lojedi
+hil-data.json	6	DONE	1d10c633-e74d-4e27-ac23-6b6b2dde9647	1	Etogo	Etogo ane iwaGadi adakake loojedi
+hil-data.json	6	DONE	1d10c633-e74d-4e27-ac23-6b6b2dde9647	2	ane	Etogo ane iwaGadi adakake loojedi
+hil-data.json	6	DONE	1d10c633-e74d-4e27-ac23-6b6b2dde9647	3	*T*	Etogo ane iwaGadi adakake loojedi
+hil-data.json	6	DONE	1d10c633-e74d-4e27-ac23-6b6b2dde9647	6	@dakake	Etogo ane iwaGadi adakake loojedi
+hil-data.json	6	DONE	1d10c633-e74d-4e27-ac23-6b6b2dde9647	7	*T*	Etogo ane iwaGadi adakake loojedi
+hil-data.json	7	DONE	435e4b10-ab78-4ee3-84b0-7773dbe10bf7	1	Gawenigi	Gawenigi eliodi me libinienigi
+hil-data.json	7	DONE	435e4b10-ab78-4ee3-84b0-7773dbe10bf7	2	eliodi	Gawenigi eliodi me libinienigi
+hil-data.json	7	DONE	435e4b10-ab78-4ee3-84b0-7773dbe10bf7	3	me	Gawenigi eliodi me libinienigi
+hil-data.json	8	DONE	cf44903e-0c33-44bc-a146-1fb8a4ccb973	2	liwenigi	NiGijo liwenigi libinienigi
+hil-data.json	9	DONE	0ca977cd-2edf-45d9-b958-068648aebef9	3	eliodi	NiGida niwenigi eliodi me dakake loojedi
+hil-data.json	9	DONE	0ca977cd-2edf-45d9-b958-068648aebef9	4	me	NiGida niwenigi eliodi me dakake loojedi
+hil-data.json	9	DONE	0ca977cd-2edf-45d9-b958-068648aebef9	6	*T*	NiGida niwenigi eliodi me dakake loojedi
+hil-data.json	10	DONE	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887	2	lomigo	NaGajo lomigo Pedilo idei madi niwatece
+hil-data.json	10	DONE	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887	3	Pedilo	NaGajo lomigo Pedilo idei madi niwatece
+hil-data.json	10	DONE	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887	6	@adi	NaGajo lomigo Pedilo idei madi niwatece
+hil-data.json	11	DONE	92838eda-ef9b-4f05-a5eb-38a4709c0337	2	lomigo	NaGajo lomigo niganigawanigi madi niwatece
+hil-data.json	11	DONE	92838eda-ef9b-4f05-a5eb-38a4709c0337	3	niganigawanigi	NaGajo lomigo niganigawanigi madi niwatece
+hil-data.json	11	DONE	92838eda-ef9b-4f05-a5eb-38a4709c0337	5	@adi	NaGajo lomigo niganigawanigi madi niwatece
+hil-data.json	12	DONE	3a7e213b-323e-4694-bad9-47091f3533f5	1	Te	Te ee nigotaGa
+hil-data.json	12	DONE	3a7e213b-323e-4694-bad9-47091f3533f5	3	nigotaGa	Te ee nigotaGa
+hil-data.json	13	DONE	0de3d311-348a-4107-a191-9fc3f960c249	6	@ijotaGa	niGijoa lionaGa iwaalo idei mijotaGa
+hil-data.json	14	DONE	4e9130da-80fd-4ac2-8665-956c95b299e2	1	dibixodi	dibixodi ideiticoaci maditaGa
+hil-data.json	14	DONE	4e9130da-80fd-4ac2-8665-956c95b299e2	4	@aditaGa	dibixodi ideiticoaci maditaGa
+hil-data.json	15	DONE	baccc279-f303-4b4f-a6d7-4404de699f4a	3	.	Iwaalepodi libinienigipi .
+hil-data.json	16	DONE	af474637-80f3-4001-884c-4d5f452fb573	1	Ninitibeci	Ninitibeci .
+hil-data.json	16	DONE	af474637-80f3-4001-884c-4d5f452fb573	2	.	Ninitibeci .
+hil-data.json	17	DONE	8f297896-5ee6-461f-86e3-0d4d4ef5a661	1	ninitibeci	ninitibeci naGada
+hil-data.json	18	DONE	4855882d-49f1-4035-bd12-73abf82df995	1	Ninitibeci	Ninitibeci naGadi .
+hil-data.json	18	DONE	4855882d-49f1-4035-bd12-73abf82df995	3	.	Ninitibeci naGadi .
+hil-data.json	25	DONE	24a9e039-79d0-4026-8824-0d061c2b21ee	2	eliodi	naGana eliodi meninitibeci
+hil-data.json	25	DONE	24a9e039-79d0-4026-8824-0d061c2b21ee	4	@ninitibeci	naGana eliodi meninitibeci
+hil-data.json	27	DONE	f9af3f8f-3b06-4756-8676-b5ffb2c24b44	1	DapipocoGo	DapipocoGo
+hil-data.json	32	DONE	4aed8aa8-bd36-4940-8020-8ba12122304e	2	.	Ninitibigiwaji .
+hil-data.json	33	DONE	3a27c7c6-ecd6-45c0-a71e-b4aa2a242a3d	3	lodawa	NiGida lodajo lodawa aidei dineigi
+hil-data.json	33	DONE	3a27c7c6-ecd6-45c0-a71e-b4aa2a242a3d	5	@idei	NiGida lodajo lodawa aidei dineigi
+hil-data.json	33	DONE	3a27c7c6-ecd6-45c0-a71e-b4aa2a242a3d	6	dineigi	NiGida lodajo lodawa aidei dineigi
+hil-data.json	34	DONE	64f2c803-b436-4202-b4c7-acf5c7205bc3	2	niganigawanigi	liwigo niganigawanigi libinienigi
+hil-data.json	35	DONE	8bad7bc3-f82f-46c0-9e63-c780104b11e2	2	wetiGa	naGani wetiGa eliodi me iwaGadi
+hil-data.json	35	DONE	8bad7bc3-f82f-46c0-9e63-c780104b11e2	3	eliodi	naGani wetiGa eliodi me iwaGadi
+hil-data.json	35	DONE	8bad7bc3-f82f-46c0-9e63-c780104b11e2	4	me	naGani wetiGa eliodi me iwaGadi
+hil-data.json	36	DONE	768a3635-dcaf-4210-b236-73568abadbdb	2	wetiGa	NaGani wetiGa iwaGadi
+hil-data.json	38	DONE	f4b854f9-c3c6-4e88-8a9b-ca73fcba8d46	2	wetiGa	NaGani wetiGa iwaGadi
+hil-data.json	39	DONE	38f73c1c-ddfb-4153-9310-d24214cd68e7	2	wetiGa	NaGani wetiGa ane iwaGadi eniteloco iGonagi
+hil-data.json	39	DONE	38f73c1c-ddfb-4153-9310-d24214cd68e7	3	ane	NaGani wetiGa ane iwaGadi eniteloco iGonagi
+hil-data.json	39	DONE	38f73c1c-ddfb-4153-9310-d24214cd68e7	4	*T*	NaGani wetiGa ane iwaGadi eniteloco iGonagi
+hil-data.json	40	REVIEW	e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4	2	wetiGa	NaGani wetiGa , ane iwaGadi , eniteloco iGonagi
+hil-data.json	40	REVIEW	e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4	3	,	NaGani wetiGa , ane iwaGadi , eniteloco iGonagi
+hil-data.json	40	REVIEW	e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4	4	ane	NaGani wetiGa , ane iwaGadi , eniteloco iGonagi
+hil-data.json	40	REVIEW	e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4	5	*T*	NaGani wetiGa , ane iwaGadi , eniteloco iGonagi
+hil-data.json	40	REVIEW	e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4	7	,	NaGani wetiGa , ane iwaGadi , eniteloco iGonagi
+hil-data.json	42	DONE	79cb0e55-9c06-4cb1-91b3-2b5233e1678f	2	okokodi	niGidiwa okokodi ligetedi midi niwigo libinienaGa
+hil-data.json	42	DONE	79cb0e55-9c06-4cb1-91b3-2b5233e1678f	5	@idi	niGidiwa okokodi ligetedi midi niwigo libinienaGa
+hil-data.json	43	DONE	a74fea0a-dd87-4c4d-8670-9db66f5b5b16	2	okokodi	niGidiwa okokodi ligetedi liwigo libinienaGa
+hil-data.json	44	DONE	83fdcd4c-338f-4a9f-8545-da8539e67e9d	5	@dakake	NiGidiwa noGojedi lixagotaGaGa adakake loojedi
+hil-data.json	44	DONE	83fdcd4c-338f-4a9f-8545-da8539e67e9d	6	*T*	NiGidiwa noGojedi lixagotaGaGa adakake loojedi
+hil-data.json	45	REVIEW	07bfcd00-7901-474d-bfb8-bf470266aafa	2	ite	Ee ite ee ina
+hil-data.json	46	REVIEW	42671da9-e433-4319-86a0-2a2cb8777a40	1	Ite	Ite ee madataGa
+hil-data.json	46	REVIEW	42671da9-e433-4319-86a0-2a2cb8777a40	4	@adataGa	Ite ee madataGa
+hil-data.json	47	REVIEW	e58e38a7-f117-48f1-8a17-9d896867fe60	1	Ite	Ite ee midataGa
+hil-data.json	47	REVIEW	e58e38a7-f117-48f1-8a17-9d896867fe60	4	@idataGa	Ite ee midataGa
+hil-data.json	48	DONE	4242d34b-9096-45a2-a666-502a2cb9ca49	3	@idinitibeci	Ee aidinitibeci .
+hil-data.json	48	DONE	4242d34b-9096-45a2-a666-502a2cb9ca49	4	.	Ee aidinitibeci .
+hil-data.json	49	DONE	1e9df213-90da-4674-8889-4ac858df72fe	3	@eliodi	Ee ageliodi me idinitibeci
+hil-data.json	49	DONE	1e9df213-90da-4674-8889-4ac858df72fe	4	me	Ee ageliodi me idinitibeci
+hil-data.json	50	DONE	c4302bef-3de9-4f3c-b762-f6b77183f263	3	@jipegitege	Ee ajipegitege
+hil-data.json	51	DONE	5bc48b27-0755-475f-813e-7a259f3c3c9e	3	@jipegitege	Ee ajipegitege
+hil-data.json	53	DONE	71aff593-7b38-4c17-9563-4503985dbd03	1	jipegitege	jipegitege
+hil-data.json	54	DONE	f4f18c18-728c-4d6b-b7dd-2df62c4a829a	1	jipegitege	jipegitege
+hil-data.json	55	DONE	90ca38d8-e063-4c98-af51-4b9022ade506	2	@eliodi	aGeliodi me idinitibeci .
+hil-data.json	55	DONE	90ca38d8-e063-4c98-af51-4b9022ade506	3	me	aGeliodi me idinitibeci .
+hil-data.json	55	DONE	90ca38d8-e063-4c98-af51-4b9022ade506	5	.	aGeliodi me idinitibeci .
+hil-data.json	56	DONE	82bfae64-45e7-403f-bcd0-190e00f4520f	2	.	jipecaGataGagi .
+hil-data.json	57	DONE	341bf09a-2ef8-455a-8b6b-88373c617dae	1	oko	oko aidejonaGa midi Godoigi
+hil-data.json	57	DONE	341bf09a-2ef8-455a-8b6b-88373c617dae	3	@idejonaGa	oko aidejonaGa midi Godoigi
+hil-data.json	57	DONE	341bf09a-2ef8-455a-8b6b-88373c617dae	5	@idi	oko aidejonaGa midi Godoigi
+hil-data.json	57	DONE	341bf09a-2ef8-455a-8b6b-88373c617dae	6	Godoigi	oko aidejonaGa midi Godoigi
+hil-data.json	58	DONE	9a136412-a636-4e5e-aa54-ac684ae7bed3	2	.	jipecaGataGagitiwaji .
+hil-data.json	59	DONE	dff00f05-7be1-4d62-b3ed-b8a8870851e9	2	@idejonaGa	aidejonaGa midi Godoigi
+hil-data.json	59	DONE	dff00f05-7be1-4d62-b3ed-b8a8870851e9	4	@idi	aidejonaGa midi Godoigi
+hil-data.json	59	DONE	dff00f05-7be1-4d62-b3ed-b8a8870851e9	5	Godoigi	aidejonaGa midi Godoigi
+hil-data.json	60	DONE	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	2	nelokodi	niGijo nelokodi Maria idei midi akiidi
+hil-data.json	60	DONE	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	3	Maria	niGijo nelokodi Maria idei midi akiidi
+hil-data.json	60	DONE	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	6	@idi	niGijo nelokodi Maria idei midi akiidi
+hil-data.json	60	DONE	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	7	akiidi	niGijo nelokodi Maria idei midi akiidi
+hil-data.json	61	DONE	f0c7c722-031a-4c6e-ad7e-739402475c99	2	bijo	NiGijo bijo dapicoGo
+hil-data.json	62	DONE	d5dcd2bf-a3d0-4074-a241-f706b153134f	3	niale	NaGada libiwe niale ixagodi
+hil-data.json	63	DONE	c3225d86-7037-4f8c-9981-8e92b6a081d6	1	nigidiwa	nigidiwa bijotedi dapicoGo
+hil-data.json	63	DONE	c3225d86-7037-4f8c-9981-8e92b6a081d6	2	bijotedi	nigidiwa bijotedi dapicoGo
+hil-data.json	64	DONE	d0cb9423-93bb-4b45-a02a-fee23a6dd8bb	1	Nigijoa	Nigijoa lianaGa Maria libinienigipi
+hil-data.json	64	DONE	d0cb9423-93bb-4b45-a02a-fee23a6dd8bb	2	lianaGa	Nigijoa lianaGa Maria libinienigipi
+hil-data.json	64	DONE	d0cb9423-93bb-4b45-a02a-fee23a6dd8bb	3	Maria	Nigijoa lianaGa Maria libinienigipi
+hil-data.json	65	DONE	13f012b0-ef62-4477-b4bd-00e000484874	3	iwaalo	NiGidi lionaGa iwaalo etidi meetaGa
+hil-data.json	65	DONE	13f012b0-ef62-4477-b4bd-00e000484874	6	@eetaGa	NiGidi lionaGa iwaalo etidi meetaGa
+hil-data.json	66	DONE	55fe3cf7-0293-48e6-aa78-44822f50347e	3	nakidi	liGeladi ipegitege nakidi nigotaGa
+hil-data.json	66	DONE	55fe3cf7-0293-48e6-aa78-44822f50347e	4	nigotaGa	liGeladi ipegitege nakidi nigotaGa
+hil-data.json	67	DONE	c0441856-b259-4d76-a88e-33a7e211b208	3	nakidi	liGeladi ipegitege nakidi nigotaGa
+hil-data.json	67	DONE	c0441856-b259-4d76-a88e-33a7e211b208	4	nigotaGa	liGeladi ipegitege nakidi nigotaGa
+hil-data.json	68	DONE	9527d53d-7184-4b08-8bb2-51b7fff1429d	1	nigotaGa	nigotaGa liGeladi ipegitege akiidi
+hil-data.json	68	DONE	9527d53d-7184-4b08-8bb2-51b7fff1429d	4	akiidi	nigotaGa liGeladi ipegitege akiidi
+hil-data.json	69	DONE	9669b093-f0a2-4187-9063-cec9ba4c0196	4	Pedilo	Nigaanigawaanigi etini liwatece Pedilo
+hil-data.json	70	DONE	529c167b-b3a7-40cc-af76-c7522719c6d4	5	ideloGole	NiGijo nigaanigawaanigi etini liwatece ideloGole
+ped-gramm.json	5	DONE	b2e3ea43-0d68-46ee-9f33-938610cc8aec	3	weiigi	niwatece etadi weiigi
+ped-gramm.json	7	DONE	e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9	2	Maria	liGeladi Maria aGipegetege
+ped-gramm.json	7	DONE	e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9	4	@ipegetege	liGeladi Maria aGipegetege
+ped-gramm.json	11	DONE	fef391af-9e63-419f-8f81-057459193f49	2	Maria	ica Maria looligi alidi
+ped-gramm.json	11	DONE	fef391af-9e63-419f-8f81-057459193f49	5	@lidi	ica Maria looligi alidi
+ped-gramm.json	17	DONE	12147353-b422-4ad7-9bef-1d20e70e2a74	4	niganigi	ica loigi ijo niganigi ipegitegi GanigotGa
+ped-gramm.json	24	DONE	2f47b402-9fe7-4714-96e3-c6cbdf405472	3	naigi	iGeladi idei naigi anenapioi
+ped-gramm.json	24	DONE	2f47b402-9fe7-4714-96e3-c6cbdf405472	5	*T*	iGeladi idei naigi anenapioi
+ped-gramm.json	24	DONE	2f47b402-9fe7-4714-96e3-c6cbdf405472	6	@napioi	iGeladi idei naigi anenapioi
+ped-gramm.json	25	DONE	a4d33655-fe74-4df2-8d5e-b3c88fba5fd1	3	naigi	iGeladi idei naigi me napioi
+ped-gramm.json	25	DONE	a4d33655-fe74-4df2-8d5e-b3c88fba5fd1	4	me	iGeladi idei naigi me napioi
+ped-gramm.json	26	DONE	f081c545-c42b-463d-b57f-db87787f20e7	1	João	João liGeladi ane napioi
+ped-gramm.json	26	DONE	f081c545-c42b-463d-b57f-db87787f20e7	3	ane	João liGeladi ane napioi
+ped-gramm.json	26	DONE	f081c545-c42b-463d-b57f-db87787f20e7	4	*T*	João liGeladi ane napioi
+ped-gramm.json	27	REVIEW	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc	4	@ijo	iGeladi idei mijo naigi naGajo
+ped-gramm.json	27	REVIEW	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc	5	naigi	iGeladi idei mijo naigi naGajo
+ped-gramm.json	28	REVIEW	ee1a1190-7803-404c-83f6-49d3ccf63b0d	1	Eyodi	Eyodi dowediteloco nawodigijedi micoataGa daGa me lionigipi
+ped-gramm.json	28	REVIEW	ee1a1190-7803-404c-83f6-49d3ccf63b0d	2	dowediteloco	Eyodi dowediteloco nawodigijedi micoataGa daGa me lionigipi
+ped-gramm.json	28	REVIEW	ee1a1190-7803-404c-83f6-49d3ccf63b0d	3	nawodigijedi	Eyodi dowediteloco nawodigijedi micoataGa daGa me lionigipi
+ped-gramm.json	28	REVIEW	ee1a1190-7803-404c-83f6-49d3ccf63b0d	5	@icawataGa	Eyodi dowediteloco nawodigijedi micoataGa daGa me lionigipi
+ped-gramm.json	28	REVIEW	ee1a1190-7803-404c-83f6-49d3ccf63b0d	6	daGa	Eyodi dowediteloco nawodigijedi micoataGa daGa me lionigipi
+ped-gramm.json	28	REVIEW	ee1a1190-7803-404c-83f6-49d3ccf63b0d	7	me	Eyodi dowediteloco nawodigijedi micoataGa daGa me lionigipi
+ped-gramm.json	29	REVIEW	4bdb4b8f-0176-4303-8a13-e313fbb6d7ad	1	Eyodi	Eyodi me niganaGacanajo
+ped-gramm.json	29	REVIEW	4bdb4b8f-0176-4303-8a13-e313fbb6d7ad	2	me	Eyodi me niganaGacanajo
+ped-gramm.json	29	REVIEW	4bdb4b8f-0176-4303-8a13-e313fbb6d7ad	3	niganaGacanajo	Eyodi me niganaGacanajo
+ped-gramm.json	30	DONE	7b806584-75e5-4017-b9e2-ba97458903bd	1	Eyodi	Eyodi ane niganaGacanajo
+ped-gramm.json	30	DONE	7b806584-75e5-4017-b9e2-ba97458903bd	2	ane	Eyodi ane niganaGacanajo
+ped-gramm.json	30	DONE	7b806584-75e5-4017-b9e2-ba97458903bd	3	*T*	Eyodi ane niganaGacanajo
+ped-gramm.json	30	DONE	7b806584-75e5-4017-b9e2-ba97458903bd	4	niganaGacanajo	Eyodi ane niganaGacanajo
+ped-gramm.json	31	REVIEW	845b9d1d-ad7c-445a-bfbd-04fd9255ffc2	1	Eyodi	Eyodi daGa niganaGacanajo
+ped-gramm.json	31	REVIEW	845b9d1d-ad7c-445a-bfbd-04fd9255ffc2	2	daGa	Eyodi daGa niganaGacanajo
+ped-gramm.json	31	REVIEW	845b9d1d-ad7c-445a-bfbd-04fd9255ffc2	3	niganaGacanajo	Eyodi daGa niganaGacanajo
+ped-gramm.json	35	DONE	014fefb1-d5e3-48c8-9ac3-9e713a41407f	3	naigi	iGeladi ipegitegi naigi ane napioi
+ped-gramm.json	35	DONE	014fefb1-d5e3-48c8-9ac3-9e713a41407f	4	ane	iGeladi ipegitegi naigi ane napioi
+ped-gramm.json	35	DONE	014fefb1-d5e3-48c8-9ac3-9e713a41407f	5	*T*	iGeladi ipegitegi naigi ane napioi
+ped-gramm.json	36	DONE	bb8018ba-76b3-43f2-82ea-78b6009c1f90	3	naigi	iGeladi ipegitegi naigi me napioi
+ped-gramm.json	36	DONE	bb8018ba-76b3-43f2-82ea-78b6009c1f90	4	me	iGeladi ipegitegi naigi me napioi
+ped-gramm.json	37	DONE	1da1bf7a-7975-4baf-821b-9df5c75ac297	3	@ipegitegi	iGeladi aGipegitegi weiigi
+ped-gramm.json	38	DONE	46bbf9a8-c650-4e4b-a44f-78bfe6c5d979	2	Gatodi	ijo Gatodi etijo ida .
+ped-gramm.json	38	DONE	46bbf9a8-c650-4e4b-a44f-78bfe6c5d979	5	.	ijo Gatodi etijo ida .
+ped-gramm.json	39	DONE	4ffc2f68-0474-488f-a94e-4065f952482a	3	akiidi	ijotawece etidi akiidi .
+ped-gramm.json	39	DONE	4ffc2f68-0474-488f-a94e-4065f952482a	4	.	ijotawece etidi akiidi .
+ped-gramm.json	40	DONE	10e550d6-df13-4527-8aee-aa23e3f2fcdd	4	.	iGeladi digoida weiigi .
+ped-gramm.json	41	DONE	874c123b-4c43-4001-bfce-8af4af0e5805	4	.	iGeladi idei weiigi .
+ped-gramm.json	42	REVIEW	aad13f14-bd9a-462a-9a43-68ba69a81519	1	nigotaGa	nigotaGa liGeladi ipegitegi weiigi .
+ped-gramm.json	42	REVIEW	aad13f14-bd9a-462a-9a43-68ba69a81519	5	.	nigotaGa liGeladi ipegitegi weiigi .
+ped-gramm.json	43	DONE	19401990-aa1d-4cf5-bea1-122254c6b77a	4	.	lotaGa GanaginaGa libinienaGa .
+ped-gramm.json	44	DONE	6d2a809e-0d32-4254-9489-f9e356e22493	1	nGida	nGida niwenigi daGaxa me dakake loojedi .
+ped-gramm.json	44	DONE	6d2a809e-0d32-4254-9489-f9e356e22493	3	daGaxa	nGida niwenigi daGaxa me dakake loojedi .
+ped-gramm.json	44	DONE	6d2a809e-0d32-4254-9489-f9e356e22493	4	me	nGida niwenigi daGaxa me dakake loojedi .
+ped-gramm.json	44	DONE	6d2a809e-0d32-4254-9489-f9e356e22493	6	*T*	nGida niwenigi daGaxa me dakake loojedi .
+ped-gramm.json	44	DONE	6d2a809e-0d32-4254-9489-f9e356e22493	8	.	nGida niwenigi daGaxa me dakake loojedi .
+ped-gramm.json	45	REVIEW	c25b098d-6b0a-4416-a31d-6d7219685a63	1	João	João liGeladi napioi .
+ped-gramm.json	45	REVIEW	c25b098d-6b0a-4416-a31d-6d7219685a63	4	.	João liGeladi napioi .
+ped-gramm.json	46	DONE	4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5	2	João	liGeladi João napioi .
+ped-gramm.json	46	DONE	4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5	4	.	liGeladi João napioi .
+ped-gramm.json	47	DONE	ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec	4	nigotaGa	liGeladi ipegitege niweiigi nigotaGa .
+ped-gramm.json	47	DONE	ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec	5	.	liGeladi ipegitege niweiigi nigotaGa .
+ped-gramm.json	48	DONE	8b1a9983-4dfd-49e8-9285-92c56c84b652	4	nigotaGa	liGeladi ipegitegi niweiigi nigotaGa .
+ped-gramm.json	48	DONE	8b1a9983-4dfd-49e8-9285-92c56c84b652	5	.	liGeladi ipegitegi niweiigi nigotaGa .
+ped-gramm.json	49	DONE	eeb42af3-fe5a-4b7d-97ea-b381ab589860	3	codaa	Niwatece iwaGadi codaa adakake loojedi .
+ped-gramm.json	49	DONE	eeb42af3-fe5a-4b7d-97ea-b381ab589860	5	@dakake	Niwatece iwaGadi codaa adakake loojedi .
+ped-gramm.json	49	DONE	eeb42af3-fe5a-4b7d-97ea-b381ab589860	7	.	Niwatece iwaGadi codaa adakake loojedi .
+ped-gramm.json	50	DONE	156fa9a4-4323-44f1-9cdc-ef5dc052b428	3	@initaGa	etee minitaGa
+ped-gramm.json	51	DONE	3b45c470-6164-4fcf-a4d5-90be0f27eb1d	3	@idininitebeci	ee aGidininitibeci
+ped-gramm.json	53	DONE	3f077b37-aa95-4012-9efb-a21630cdd6e9	2	@ee	aGee eliodi niinikeGegi
+ped-gramm.json	53	DONE	3f077b37-aa95-4012-9efb-a21630cdd6e9	3	eliodi	aGee eliodi niinikeGegi
+ped-gramm.json	54	DONE	74a76be1-d4b6-42e1-9100-6a436a7fa065	2	oko	akaami oko jipacaGataGagitiwaji
+ped-gramm.json	56	DONE	edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded	3	@idi	IiGeladi midi akiidi
+ped-gramm.json	56	DONE	edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded	4	akiidi	IiGeladi midi akiidi
+ped-gramm.json	57	DONE	2c0248b3-8f68-46e9-b41c-9f7807572c87	1	etogo	etogo aneiwaGadi adakake lojedi .
+ped-gramm.json	57	DONE	2c0248b3-8f68-46e9-b41c-9f7807572c87	3	*T*	etogo aneiwaGadi adakake lojedi .
+ped-gramm.json	57	DONE	2c0248b3-8f68-46e9-b41c-9f7807572c87	4	@iwaGadi	etogo aneiwaGadi adakake lojedi .
+ped-gramm.json	57	DONE	2c0248b3-8f68-46e9-b41c-9f7807572c87	6	@dakake	etogo aneiwaGadi adakake lojedi .
+ped-gramm.json	57	DONE	2c0248b3-8f68-46e9-b41c-9f7807572c87	7	*T*	etogo aneiwaGadi adakake lojedi .
+ped-gramm.json	57	DONE	2c0248b3-8f68-46e9-b41c-9f7807572c87	9	.	etogo aneiwaGadi adakake lojedi .
+ped-gramm.json	58	DONE	73ceda1b-be14-4e75-9b1e-2a490d7df366	1	etogo	etogo adakake lojedi
+ped-gramm.json	58	DONE	73ceda1b-be14-4e75-9b1e-2a490d7df366	3	@dakake	etogo adakake lojedi
+ped-gramm.json	58	DONE	73ceda1b-be14-4e75-9b1e-2a490d7df366	4	*T*	etogo adakake lojedi
+ped-gramm.json	59	DONE	bf632295-26f8-4ee6-979f-33f090ef0471	3	*T*	etogoli dakake lojetedi
+ped-gramm.json	60	DONE	bbd6b80b-3236-4172-8bd5-ba3fb404049e	3	*T*	etogoli dakake loojedi
+ped-gramm.json	61	DONE	1ab7fa26-ed92-4d55-98d0-0d76396373f0	4	@dakake	Etogoli iwaGadi adakake lojetedi

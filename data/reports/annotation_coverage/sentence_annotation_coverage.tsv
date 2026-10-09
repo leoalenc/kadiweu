@@ -1,0 +1,207 @@
+source	sentence_number	status	sentence_uid	token_count	segmented_token_count	unsegmented_token_count	segmented_tokens_over_total	all_tokens_segmented	no_tokens_segmented	pt_translation_present	split_piece_count	split_pieces_without_gloss	split_entries_without_morpheme_form	all_split_pieces_glossed	complete_segmentation_and_gloss	sentence_text
+van-data.json	1	DONE	a7e338a1-5403-40d4-b169-c840cf193aae	3	3	0	3/3	True	False	True	6	1	0	False	False	iGeladi digoida weiigi
+van-data.json	2	DONE	d07f0db7-963e-47ab-ab3f-36614732bacd	3	2	1	2/3	False	False	True	4	0	0	True	False	iGeladi idei weiigi
+van-data.json	3	DONE	f50b632e-fc1a-4ec0-b8b3-610dab7be736	3	1	2	1/3	False	False	True	2	0	0	True	False	iGeladi ideaGi weiigi
+van-data.json	4	DONE	d26cfc71-a117-4817-9f35-4a7d23fd1f88	3	2	1	2/3	False	False	True	4	2	0	False	False	iwaalo ja libiniena
+van-data.json	5	DONE	e3b84bb7-7e6e-474c-9ad6-c6a47b409a5a	3	1	2	1/3	False	False	True	1	1	0	False	False	iwaalo ja ninitibeke
+van-data.json	6	DONE	3e518fdb-d852-41e5-87a4-f8778597c2a1	3	3	0	3/3	True	False	True	8	1	0	False	False	lotaGa GanaaginaGa libinienaGa
+van-data.json	7	DONE	ee540050-e6fa-424e-9252-fd0b9312769d	3	3	0	3/3	True	False	True	8	1	0	False	False	lotaGa Gadodawa libinienaGa
+van-data.json	8	DONE	947061b4-7b73-4612-8aa8-0af0e04cbc85	4	4	0	4/4	True	False	True	9	4	0	False	False	niwatece iwaGadi noxilece lojetedi
+van-data.json	9	REVIEW	2c026af9-b8a1-4389-b658-00113b070dee	5	2	3	2/5	False	False	True	5	4	0	False	False	niwatece liwaGatena lodejedi etidi weiigi
+van-data.json	10	DONE	0c38eab8-c6b0-4f02-bf05-27ea6285fe70	4	1	3	1/4	False	False	True	4	1	0	False	False	Gawenigi eliodi me libinienigi
+van-data.json	11	DONE	a85fda39-1575-4120-9432-8fb534ebdbd2	3	2	1	2/3	False	False	True	7	4	0	False	False	niGida liwenigi libinienigi
+van-data.json	12	DONE	a1e15803-1e5e-481f-8137-a84beac6cbcc	7	4	3	4/7	False	False	True	9	4	0	False	False	niGida niwenigi daGaxa me dakake loojedi
+van-data.json	13	DONE	e9806e26-701d-4f5f-9ca9-63216cccf3d0	5	4	1	4/5	False	False	True	9	2	0	False	False	naGajo lomiigo Pedro idei niwatece
+van-data.json	14	DONE	2386b5b5-57d0-4a1f-86c2-73f67561744c	6	5	1	5/6	False	False	True	16	4	0	False	False	naGajo lomiigo nigaanigawaanigi manitaGa niwatece
+van-data.json	15	REVIEW	4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7	9	6	3	6/9	False	False	True	16	5	0	False	False	Nigaanigawaanigi idei madi niwatece ane adi nomiigo
+van-data.json	16	REVIEW	235440ba-548e-4df6-8d9e-214cc8714f8f	6	4	2	4/6	False	False	True	14	9	0	False	False	niGijo nigaanigawaanigi manitaGa lomigo niwatece
+van-data.json	17	DONE	86f5c128-e931-4443-90cc-2359748ed69f	2	1	1	1/2	False	False	True	1	0	0	True	False	Eeyo nigotaGa
+van-data.json	18	DONE	d021bede-064b-4fd5-bb33-6c7cd4279c1b	4	1	3	1/4	False	False	True	4	3	0	False	False	Eyo manitaGa nigotaGa
+van-data.json	19	DONE	e5c65dad-8b04-46da-b965-4921887cbca4	6	5	1	5/6	False	False	True	14	4	0	False	False	niGijoa lionigipi iwaalo idei minitaGa
+van-data.json	20	DONE	8c5dd09c-d010-4c48-9601-9d3b14c61119	4	2	2	2/4	False	False	True	6	0	0	True	False	dibixodi idei manitaGa
+van-data.json	21	DONE	9b107abc-b49f-4ce2-9c43-30c7e5b5f8b2	3	2	1	2/3	False	False	True	6	2	0	False	False	iwalepodi ja libinienigipi
+van-data.json	22	DONE	0d6cdbcf-9d99-4eff-8615-149ec22fec5f	2	1	1	1/2	False	False	True	2	0	0	True	False	ajo ninitibeci
+van-data.json	23	DONE	05676093-36c9-4e30-959a-e850447f32a5	2	2	0	2/2	True	False	True	4	0	0	True	True	ajo iwaGadi
+van-data.json	24	DONE	661c62a7-3c8c-4609-b989-017deaae82c6	3	1	2	1/3	False	False	True	2	0	0	True	False	ajo daGaxa ninitibeci
+van-data.json	25	DONE	abe20c80-8394-478c-92eb-feef1512e5ed	3	2	1	2/3	False	False	True	7	1	0	False	False	ajo eliodi linikeGegi
+van-data.json	26	DONE	0575dd46-865a-4ba4-bd49-ed6db054eeb4	2	2	0	2/2	True	False	True	5	0	0	True	True	ajo lapicaGa
+van-data.json	27	DONE	3aba0004-0ce2-4392-a334-ef814428ec0d	2	2	0	2/2	True	False	True	6	1	0	False	False	ijo libinienigi
+van-data.json	28	DONE	d369088d-7d87-44b9-a956-2d5bd5f955e1	2	2	0	2/2	True	False	True	6	0	0	True	True	ijo lapicaGigi
+van-data.json	29	DONE	a0ab1cad-f01e-49bb-8f31-5edf4fa4c102	2	2	0	2/2	True	False	True	7	2	0	False	False	niGijo ninitibigiwaji
+van-data.json	30	DONE	0c7e64fb-f070-4faa-a12a-c110cdf4bf16	8	7	1	7/8	False	False	True	17	5	0	False	False	niGijo lodaajo ajo lodowa aGica digoida liGeladi
+van-data.json	31	DONE	5d76c7ee-51ce-47b0-a85d-ddc7f7d33f5f	4	3	1	3/4	False	False	True	8	2	0	False	False	ica liwigo niganigawanigi libinienigi
+van-data.json	32	DONE	46190f73-f21e-4073-b09c-8b2d17c6668e	3	2	1	2/3	False	False	True	7	3	0	False	False	naGani wetiGa liwaGatena
+van-data.json	33	DONE	a0bb1280-1040-4dff-9311-a1a31049b6f8	3	1	2	1/3	False	False	True	2	0	0	True	False	naGani wetiGa iwaGadi
+van-data.json	34	DONE	e1acd124-849e-40dc-bbb0-a8b6ed281592	3	3	0	3/3	True	False	True	8	2	0	False	False	niGidiwa wetiadi iwaGadi
+van-data.json	35	DONE	675ef4d4-ebe8-4601-bf42-908deb0df82b	5	2	3	2/5	False	False	True	4	0	0	True	False	ani wetiGa eliodi me iwaGadi
+van-data.json	36	DONE	42b65fc9-cec4-40a9-8aec-cdeec3731df8	3	2	1	2/3	False	False	True	4	0	0	True	False	ani wetiGa iwaGadi
+van-data.json	37	DONE	ba34b659-bcb8-4aa2-b9f4-b969ba786b12	6	3	3	3/6	False	False	True	7	1	0	False	False	ani wetiGa me iwaGadi eniteloco iGonagi
+van-data.json	38	DONE	61da4017-2140-4577-82e4-d5108efae675	7	3	4	3/7	False	False	True	7	1	0	False	False	ani wetiGa ane iwaGadi eniteloco iGonagi
+van-data.json	39	DONE	6459c008-b2ad-4517-8227-b525616b720d	3	3	0	3/3	True	False	True	7	3	0	False	False	idiwa wetiadi iwaGadi
+van-data.json	40	DONE	b4e1df8d-6590-4ce9-9f72-c0b054398c89	4	4	0	4/4	True	False	True	9	4	0	False	False	niGidowa waca lotiidi dapicoGo
+van-data.json	41	DONE	278e4c5c-aaab-4ca3-8f5e-277610fb80c2	4	4	0	4/4	True	False	True	8	5	0	False	False	idowa waca lotiidi dapicoGo
+van-data.json	42	REVIEW	44646324-eb90-42f0-b944-21f0452109e2	4	3	1	3/4	False	False	True	8	3	0	False	False	ijoa nigetedi liwigo libinienaGa
+van-data.json	43	DONE	a2910ce3-a0d2-4eac-bcc3-2da15db88b90	5	4	1	4/5	False	False	True	10	5	0	False	False	ijo niwigo libinienigi ijowa nigetedi
+van-data.json	44	DONE	075356e6-f89c-4d83-b001-435d13b319dc	4	4	0	4/4	True	False	True	13	5	0	False	False	ijoa nigetedi niwigo libinienigipi
+van-data.json	45	REVIEW	5739aca1-95fc-4584-9550-d7bd73c3c361	7	4	3	4/7	False	False	True	12	2	0	False	False	okokodi ligetedi midi niwigo libinienaGa .
+van-data.json	46	REVIEW	83a62eb4-5a9e-43b0-b6b4-bded8dbd8ffe	5	3	2	3/5	False	False	True	9	1	0	False	False	liwigo okokodi ligetedi libinienigi .
+van-data.json	47	DONE	fad6e8d3-1e9f-451c-aaa7-fd28aecfd967	7	5	2	5/7	False	False	True	14	6	0	False	False	idiwa noGojedi lixagotaGaGa adakake loojedi
+van-data.json	48	DONE	e189be3e-9290-4d1c-b343-74d3858ce7cd	2	2	0	2/2	True	False	True	4	0	0	True	True	etee ina
+van-data.json	49	DONE	889846ee-66df-4c8f-88d1-e89d3619eb1e	2	2	0	2/2	True	False	True	4	0	0	True	True	eteyo ina
+van-data.json	50	DONE	e7f4ab65-14d7-44f5-a197-c99c4ab173cd	3	2	1	2/3	False	False	True	6	0	0	True	False	etee manitaGa
+van-data.json	51	DONE	7aa17dd7-2c26-4df9-8f90-65d8d58e2c59	3	2	1	2/3	False	False	True	6	0	0	True	False	etee minitaGa
+van-data.json	52	DONE	c3c548d7-b154-437e-9baf-541a1bbbab6e	4	3	1	3/4	False	False	True	8	3	0	False	False	ee aGica inikeGegi
+van-data.json	53	DONE	c4d99cf1-e781-4efb-83ff-4a0ab873b7ec	3	2	1	2/3	False	False	True	6	2	0	False	False	ee aGidininitibeci
+van-data.json	54	DONE	969ba2f3-88dc-417e-ad3f-16ce88b4c762	4	2	2	2/4	False	False	True	5	3	0	False	False	aGee eliodi niinikeGegi
+van-data.json	55	DONE	39925f76-d73f-423f-95cd-f88bd78f2a6e	5	2	3	2/5	False	False	True	5	4	0	False	False	ee eliodi me aGidininitibeci
+van-data.json	56	DONE	d3095a7e-477d-405e-9ea2-85bfdacad7d3	4	1	3	1/4	False	False	True	3	1	0	False	False	aGica daGa jipegitege
+van-data.json	57	DONE	813f2ad7-42fb-4fbd-84b4-1957c68aa4f9	4	1	3	1/4	False	False	True	3	1	0	False	False	aGica daGa jipegitegi
+van-data.json	58	DONE	b3c03f67-7664-43b7-9de8-b5243321eeb7	2	2	0	2/2	True	False	True	3	0	0	True	True	ee idiwaaGadi
+van-data.json	59	DONE	6852927c-53de-411d-9ed9-e0f9d78309cd	2	2	0	2/2	True	False	True	4	0	0	True	True	ee jigipegitege
+van-data.json	60	DONE	2b6a6bee-392e-49f9-97a9-0afbb0af2eff	2	2	0	2/2	True	False	True	4	0	0	True	True	ee jigipegitegi
+van-data.json	61	DONE	42df6a83-6ae1-49b2-bd99-fbed7e2a083b	6	3	3	3/6	False	False	True	10	10	0	False	False	aGeewi mica iniKGigi
+van-data.json	62	DONE	27d94732-46ea-4286-a1d4-b2861806a579	5	3	2	3/5	False	False	True	9	9	0	False	False	aGeyo mica inikGigi
+van-data.json	63	DONE	651a68ed-90a0-45b7-9eb5-411bc2c189c7	1	1	0	1/1	True	False	True	4	0	0	True	True	JipecaGataGagi
+van-data.json	64	DONE	d3952c8a-1ac1-4255-be0b-63978fdf368b	5	2	3	2/5	False	False	True	8	7	0	False	False	aGidedonaGa midi Godoigi
+van-data.json	65	DONE	e9b78452-925e-458b-848a-d52ab76f6840	1	1	0	1/1	True	False	True	5	1	0	False	False	jipacaGataGagitiwaji
+van-data.json	66	DONE	fbae0277-3aad-4812-9229-94179b5a97a0	5	3	2	3/5	False	False	True	10	5	0	False	False	aGidejonaGa midi Godoigi
+van-data.json	67	DONE	6599689a-3fbe-4598-8827-78aceeff3931	5	3	2	3/5	False	False	True	7	5	0	False	False	ijo lemé Maria ipegitegi weiigi
+van-data.json	68	DONE	b8878027-73d2-4b11-bc18-cbdcf5637e55	2	1	1	1/2	False	False	True	2	1	0	False	False	biju dapico
+van-data.json	69	DONE	30ef1810-38e0-4cef-8db3-4dda590faa09	3	2	1	2/3	False	False	True	3	2	0	False	False	libiwe niale ixagodi
+van-data.json	70	DONE	444f95ae-8ed7-422e-84f1-aae6d4af2b6d	3	3	0	3/3	True	False	True	7	3	0	False	False	idiwa bejoli dapico
+van-data.json	71	DONE	f240dcfe-ca05-42aa-8644-07b9e3464e1a	4	3	1	3/4	False	False	True	12	8	0	False	False	idiwa leonigipi Maria libinienigipi
+van-data.json	72	DONE	b97e5b2f-d0da-4238-8ee6-2c64ded91f76	5	4	1	4/5	False	False	True	9	5	0	False	False	ijowa leonigipi iwaalo idi metaGa
+van-data.json	73	DONE	c1b350df-ed1a-4e3b-89a8-a6fa9ca8382e	4	4	0	4/4	True	False	True	10	2	0	False	False	ligeladi ipegitege niweiigi nigotaGa
+van-data.json	74	DONE	ebff5ffa-8a9d-4f8b-9960-38f70b344c19	4	4	0	4/4	True	False	True	10	2	0	False	False	ligeladi ipegitegi niweiigi nigotaGa
+van-data.json	75	DONE	81048a6f-e084-4b0a-965a-f41fb5c53ff7	4	3	1	3/4	False	False	True	8	1	0	False	False	nigotaGa liGeladi ipegitegi weiigi
+hil-data.json	1	DONE	fcef38ed-be6b-4f2a-b5cf-fa4db625ecfb	2	0	2	0/2	False	True	True	0	0	0	False	False	Iwaalo libiniena
+hil-data.json	2	DONE	31d3b4c0-4aab-4538-999b-b8ee85c34444	2	0	2	0/2	False	True	True	0	0	0	False	False	Iwaalo ninitibeci
+hil-data.json	3	DONE	39f34955-a828-47d7-808d-b3b3565b42d6	3	3	0	3/3	True	False	True	8	3	0	False	False	LotaGa Ganioxoa libinienaGa
+hil-data.json	4	DONE	d3ae6cfd-bec1-49f3-a0f9-4ca0744e3404	3	3	0	3/3	True	False	True	8	1	0	False	False	LotaGa Gadodawa libinienaGa
+hil-data.json	5	DONE	e349508c-4d86-48b8-9918-057988755e77	8	3	5	3/8	False	False	True	7	7	0	False	False	Etogo aneiwaGadi adakake lojedi
+hil-data.json	6	DONE	1d10c633-e74d-4e27-ac23-6b6b2dde9647	8	3	5	3/8	False	False	True	6	2	0	False	False	Etogo ane iwaGadi adakake loojedi
+hil-data.json	7	DONE	435e4b10-ab78-4ee3-84b0-7773dbe10bf7	4	1	3	1/4	False	False	True	3	2	0	False	False	Gawenigi eliodi me libinienigi
+hil-data.json	8	DONE	cf44903e-0c33-44bc-a146-1fb8a4ccb973	3	2	1	2/3	False	False	True	6	3	0	False	False	NiGijo liwenigi libinienigi
+hil-data.json	9	DONE	0ca977cd-2edf-45d9-b958-068648aebef9	7	4	3	4/7	False	False	True	9	4	0	False	False	NiGida niwenigi eliodi me dakake loojedi
+hil-data.json	10	DONE	559ba85f-edfc-48dc-9bfb-0c3f8e5ad887	7	4	3	4/7	False	False	True	10	5	0	False	False	NaGajo lomigo Pedilo idei madi niwatece
+hil-data.json	11	DONE	92838eda-ef9b-4f05-a5eb-38a4709c0337	6	3	3	3/6	False	False	True	8	7	0	False	False	NaGajo lomigo niganigawanigi madi niwatece
+hil-data.json	12	DONE	3a7e213b-323e-4694-bad9-47091f3533f5	3	1	2	1/3	False	False	True	1	0	1	False	False	Te ee nigotaGa
+hil-data.json	13	DONE	0de3d311-348a-4107-a191-9fc3f960c249	6	5	1	5/6	False	False	True	12	7	0	False	False	niGijoa lionaGa iwaalo idei mijotaGa
+hil-data.json	14	DONE	4e9130da-80fd-4ac2-8665-956c95b299e2	4	2	2	2/4	False	False	True	7	6	0	False	False	dibixodi ideiticoaci maditaGa
+hil-data.json	15	DONE	baccc279-f303-4b4f-a6d7-4404de699f4a	3	2	1	2/3	False	False	True	9	3	0	False	False	Iwaalepodi libinienigipi .
+hil-data.json	16	DONE	af474637-80f3-4001-884c-4d5f452fb573	2	0	2	0/2	False	True	True	0	0	0	False	False	Ninitibeci .
+hil-data.json	17	DONE	8f297896-5ee6-461f-86e3-0d4d4ef5a661	2	1	1	1/2	False	False	True	3	3	0	False	False	ninitibeci naGada
+hil-data.json	18	DONE	4855882d-49f1-4035-bd12-73abf82df995	3	1	2	1/3	False	False	True	3	1	0	False	False	Ninitibeci naGadi .
+hil-data.json	19	DONE	d489d970-e6b1-42e3-add2-2221f2fb1fad	2	2	0	2/2	True	False	True	5	3	0	False	False	naGada iwaGadi
+hil-data.json	20	DONE	23b27bf4-3694-4053-8f74-b3c739fc8ee2	2	2	0	2/2	True	False	True	5	1	0	False	False	naGadi iwaGadi
+hil-data.json	21	DONE	85801af7-8128-4d85-a7bd-a182d5dc58a5	2	2	0	2/2	True	False	True	5	1	0	False	False	NaGana iwaGadi
+hil-data.json	22	DONE	b9d77060-3ac9-4305-ba86-2723cc7cb70a	2	2	0	2/2	True	False	True	4	0	0	True	True	Ada iwaGadi
+hil-data.json	23	DONE	7521cd51-aa9b-4ff6-8d87-a5ce4ca92b6d	2	2	0	2/2	True	False	True	4	0	0	True	True	Ani iwaGadi
+hil-data.json	24	DONE	96687d35-46ae-4338-9398-ff66a3165b61	2	2	0	2/2	True	False	True	4	0	0	True	True	Adi iwaGadi
+hil-data.json	25	DONE	24a9e039-79d0-4026-8824-0d061c2b21ee	4	2	2	2/4	False	False	True	5	3	0	False	False	naGana eliodi meninitibeci
+hil-data.json	26	DONE	fba05264-0e3c-4248-8211-3ac87c64c2e6	1	1	0	1/1	True	False	True	2	1	0	False	False	DapicoGo
+hil-data.json	27	DONE	f9af3f8f-3b06-4756-8676-b5ffb2c24b44	1	0	1	0/1	False	True	True	0	0	0	False	False	DapipocoGo
+hil-data.json	28	DONE	fab37d81-bb9b-4e20-a8f5-3b3969ee86d1	1	1	0	1/1	True	False	True	3	1	0	False	False	libiniena
+hil-data.json	29	DONE	0b9bddcd-f6af-4281-80a9-cac2377d0af1	1	1	0	1/1	True	False	True	4	1	0	False	False	libinienigi
+hil-data.json	30	DONE	38c689d8-332d-4406-b236-de4593e4853a	1	1	0	1/1	True	False	True	2	1	0	False	False	DapicoGo
+hil-data.json	31	DONE	ea70209d-4f3c-4bf9-8d93-2d91fa0f928c	1	1	0	1/1	True	False	True	2	1	0	False	False	DapicoGo
+hil-data.json	32	DONE	4aed8aa8-bd36-4940-8020-8ba12122304e	2	1	1	1/2	False	False	True	4	2	0	False	False	Ninitibigiwaji .
+hil-data.json	33	DONE	3a27c7c6-ecd6-45c0-a71e-b4aa2a242a3d	6	3	3	3/6	False	False	True	7	7	0	False	False	NiGida lodajo lodawa aidei dineigi
+hil-data.json	34	DONE	64f2c803-b436-4202-b4c7-acf5c7205bc3	3	2	1	2/3	False	False	True	5	2	0	False	False	liwigo niganigawanigi libinienigi
+hil-data.json	35	DONE	8bad7bc3-f82f-46c0-9e63-c780104b11e2	5	2	3	2/5	False	False	True	5	1	0	False	False	naGani wetiGa eliodi me iwaGadi
+hil-data.json	36	DONE	768a3635-dcaf-4210-b236-73568abadbdb	3	2	1	2/3	False	False	True	5	1	0	False	False	NaGani wetiGa iwaGadi
+hil-data.json	37	DONE	e5f90fbc-14e8-4c6f-9e07-61fbf67d042f	3	3	0	3/3	True	False	True	8	1	0	False	False	NiGinoa wetiadi iwaGadi
+hil-data.json	38	DONE	f4b854f9-c3c6-4e88-8a9b-ca73fcba8d46	3	2	1	2/3	False	False	True	5	1	0	False	False	NaGani wetiGa iwaGadi
+hil-data.json	39	DONE	38f73c1c-ddfb-4153-9310-d24214cd68e7	7	4	3	4/7	False	False	True	10	2	0	False	False	NaGani wetiGa ane iwaGadi eniteloco iGonagi
+hil-data.json	40	REVIEW	e1bcbfa4-89e4-4d25-8d84-bc9ed0b2f7e4	9	4	5	4/9	False	False	True	10	2	0	False	False	NaGani wetiGa , ane iwaGadi , eniteloco iGonagi
+hil-data.json	41	DONE	8dda04f0-f7e8-46d6-b41d-b65dd214f01b	4	4	0	4/4	True	False	True	9	3	0	False	False	NiGidoa waca lotiidi dapicoGo
+hil-data.json	42	DONE	79cb0e55-9c06-4cb1-91b3-2b5233e1678f	7	5	2	5/7	False	False	True	16	7	0	False	False	niGidiwa okokodi ligetedi midi niwigo libinienaGa
+hil-data.json	43	DONE	a74fea0a-dd87-4c4d-8670-9db66f5b5b16	5	4	1	4/5	False	False	True	13	3	0	False	False	niGidiwa okokodi ligetedi liwigo libinienaGa
+hil-data.json	44	DONE	83fdcd4c-338f-4a9f-8545-da8539e67e9d	7	5	2	5/7	False	False	True	15	8	0	False	False	NiGidiwa noGojedi lixagotaGaGa adakake loojedi
+hil-data.json	45	REVIEW	07bfcd00-7901-474d-bfb8-bf470266aafa	4	3	1	3/4	False	False	True	4	0	0	True	False	Ee ite ee ina
+hil-data.json	46	REVIEW	42671da9-e433-4319-86a0-2a2cb8777a40	4	2	2	2/4	False	False	True	3	2	0	False	False	Ite ee madataGa
+hil-data.json	47	REVIEW	e58e38a7-f117-48f1-8a17-9d896867fe60	4	2	2	2/4	False	False	True	3	2	0	False	False	Ite ee midataGa
+hil-data.json	48	DONE	4242d34b-9096-45a2-a666-502a2cb9ca49	4	2	2	2/4	False	False	True	3	2	0	False	False	Ee aidinitibeci .
+hil-data.json	49	DONE	1e9df213-90da-4674-8889-4ac858df72fe	5	3	2	3/5	False	False	True	7	6	0	False	False	Ee ageliodi me idinitibeci
+hil-data.json	50	DONE	c4302bef-3de9-4f3c-b762-f6b77183f263	3	2	1	2/3	False	False	True	5	4	0	False	False	Ee ajipegitege
+hil-data.json	51	DONE	5bc48b27-0755-475f-813e-7a259f3c3c9e	3	2	1	2/3	False	False	True	5	4	0	False	False	Ee ajipegitege
+hil-data.json	52	DONE	1e1fafc0-29c6-41d4-a0d2-4c825d9af376	2	2	0	2/2	True	False	True	4	3	0	False	False	ee idiwaGadi
+hil-data.json	53	DONE	71aff593-7b38-4c17-9563-4503985dbd03	1	0	1	0/1	False	True	True	0	0	0	False	False	jipegitege
+hil-data.json	54	DONE	f4f18c18-728c-4d6b-b7dd-2df62c4a829a	1	0	1	0/1	False	True	True	0	0	0	False	False	jipegitege
+hil-data.json	55	DONE	90ca38d8-e063-4c98-af51-4b9022ade506	5	2	3	2/5	False	False	True	6	6	0	False	False	aGeliodi me idinitibeci .
+hil-data.json	56	DONE	82bfae64-45e7-403f-bcd0-190e00f4520f	2	1	1	1/2	False	False	True	4	1	0	False	False	jipecaGataGagi .
+hil-data.json	57	DONE	341bf09a-2ef8-455a-8b6b-88373c617dae	6	2	4	2/6	False	False	True	8	6	0	False	False	oko aidejonaGa midi Godoigi
+hil-data.json	58	DONE	9a136412-a636-4e5e-aa54-ac684ae7bed3	2	1	1	1/2	False	False	True	5	1	0	False	False	jipecaGataGagitiwaji .
+hil-data.json	59	DONE	dff00f05-7be1-4d62-b3ed-b8a8870851e9	5	2	3	2/5	False	False	True	8	6	0	False	False	aidejonaGa midi Godoigi
+hil-data.json	60	DONE	3ab5703a-eb5c-48d2-b75b-992da5e60dd6	7	3	4	3/7	False	False	True	8	4	0	False	False	niGijo nelokodi Maria idei midi akiidi
+hil-data.json	61	DONE	f0c7c722-031a-4c6e-ad7e-739402475c99	3	2	1	2/3	False	False	True	5	2	0	False	False	NiGijo bijo dapicoGo
+hil-data.json	62	DONE	d5dcd2bf-a3d0-4074-a241-f706b153134f	4	3	1	3/4	False	False	True	6	2	0	False	False	NaGada libiwe niale ixagodi
+hil-data.json	63	DONE	c3225d86-7037-4f8c-9981-8e92b6a081d6	3	1	2	1/3	False	False	True	2	1	0	False	False	nigidiwa bijotedi dapicoGo
+hil-data.json	64	DONE	d0cb9423-93bb-4b45-a02a-fee23a6dd8bb	4	1	3	1/4	False	False	True	5	1	0	False	False	Nigijoa lianaGa Maria libinienigipi
+hil-data.json	65	DONE	13f012b0-ef62-4477-b4bd-00e000484874	6	4	2	4/6	False	False	True	12	4	0	False	False	NiGidi lionaGa iwaalo etidi meetaGa
+hil-data.json	66	DONE	55fe3cf7-0293-48e6-aa78-44822f50347e	4	2	2	2/4	False	False	True	5	0	1	False	False	liGeladi ipegitege nakidi nigotaGa
+hil-data.json	67	DONE	c0441856-b259-4d76-a88e-33a7e211b208	4	2	2	2/4	False	False	True	5	0	1	False	False	liGeladi ipegitege nakidi nigotaGa
+hil-data.json	68	DONE	9527d53d-7184-4b08-8bb2-51b7fff1429d	4	2	2	2/4	False	False	True	5	0	1	False	False	nigotaGa liGeladi ipegitege akiidi
+hil-data.json	69	DONE	9669b093-f0a2-4187-9063-cec9ba4c0196	4	3	1	3/4	False	False	True	10	2	0	False	False	Nigaanigawaanigi etini liwatece Pedilo
+hil-data.json	70	DONE	529c167b-b3a7-40cc-af76-c7522719c6d4	5	4	1	4/5	False	False	True	13	3	0	False	False	NiGijo nigaanigawaanigi etini liwatece ideloGole
+ped-gramm.json	1	DONE	ed98d4d1-638c-4377-8c6d-5511855636d1	4	4	0	4/4	True	False	True	7	1	0	False	False	ajo liwatece ja iwaGadi
+ped-gramm.json	2	DONE	ccb5ea37-b3ba-47a9-8d71-224f599ea7be	4	4	0	4/4	True	False	True	8	0	0	True	True	ajo liwatece etadi weiigi
+ped-gramm.json	3	DONE	49347527-d19d-4689-bff1-ba3e497e7b1f	4	4	0	4/4	True	False	True	8	5	0	False	False	ajo niwatece etadi digoida
+ped-gramm.json	4	DONE	69948fe6-81f6-4faa-a344-8f8c47486943	2	2	0	2/2	True	False	True	4	1	0	False	False	niwatece iwaGadi
+ped-gramm.json	5	DONE	b2e3ea43-0d68-46ee-9f33-938610cc8aec	3	2	1	2/3	False	False	True	5	0	1	False	False	niwatece etadi weiigi
+ped-gramm.json	6	DONE	1b99ecb9-5656-4c38-b60b-fbbe643708fb	4	4	0	4/4	True	False	True	8	4	0	False	False	ajo niwatece ipegitege weiigi
+ped-gramm.json	7	DONE	e553e02e-0d33-4fed-8f6a-b7cf5c9cf9c9	4	2	2	2/4	False	False	True	6	1	0	False	False	liGeladi Maria aGipegetege
+ped-gramm.json	8	DONE	79a6cd4e-b585-437a-9084-1fa077dec3b6	3	3	0	3/3	True	False	True	7	0	0	True	True	ica liGeladi ipegetege
+ped-gramm.json	9	DONE	e9d6dfb6-656d-44aa-ba17-86289fd72268	3	3	0	3/3	True	False	True	6	2	0	False	False	liGeladi idei nigotaGa
+ped-gramm.json	10	DONE	2fff1f23-4e6f-401c-8b74-6a17ff6a391a	3	3	0	3/3	True	False	True	7	0	0	True	True	ica liGeladi ipegitegi
+ped-gramm.json	11	DONE	fef391af-9e63-419f-8f81-057459193f49	5	3	2	3/5	False	False	True	7	1	0	False	False	ica Maria looligi alidi
+ped-gramm.json	12	DONE	070d221f-f72d-4055-9c82-ddc383743e6a	3	3	0	3/3	True	False	True	6	4	0	False	False	ica looligi lidi
+ped-gramm.json	13	DONE	68277d1f-c30b-4c4f-ba9e-c2883cc133af	3	3	0	3/3	True	False	True	6	5	0	False	False	ica looligi dapico
+ped-gramm.json	14	DONE	5bebca84-3ecb-44c1-bf70-7eef6f5c0ff5	4	4	0	4/4	True	False	True	7	6	0	False	False	ica looligi ja dapico
+ped-gramm.json	15	DONE	c5bd2cb2-e53b-40e4-9159-6dacde49c1b6	3	3	0	3/3	True	False	True	8	0	0	True	True	ica looligi lideGegi
+ped-gramm.json	16	DONE	19cc39ce-fe03-4551-8097-9d163a38a3c0	2	2	0	2/2	True	False	True	8	4	0	False	False	loigipodi libinienigipi
+ped-gramm.json	17	DONE	12147353-b422-4ad7-9bef-1d20e70e2a74	6	5	1	5/6	False	False	True	11	0	0	True	False	ica loigi ijo niganigi ipegitegi GanigotGa
+ped-gramm.json	18	DONE	582429f2-67d5-4077-b209-6deb7b5df54f	5	5	0	5/5	True	False	True	12	1	0	False	False	ica lideGegi loligi idei liGeladi
+ped-gramm.json	19	DONE	0f478381-6858-463d-94cc-903e9dc879f9	3	3	0	3/3	True	False	True	8	1	0	False	False	ica liwigo libinienigi
+ped-gramm.json	20	DONE	55551636-8ed3-4545-8510-d8dbfd817a1a	3	3	0	3/3	True	False	True	8	2	0	False	False	ica niwigo libinienigi
+ped-gramm.json	21	REVIEW	5d0b94bf-223d-4f09-8c6f-b951a70d6d0b	3	3	0	3/3	True	False	True	6	4	0	False	False	ica nioladi Ganixoa
+ped-gramm.json	22	DONE	881131dd-3f70-411a-ac7e-85557139d1e3	4	4	0	4/4	True	False	True	10	1	0	False	False	ica nioladi nioxoa libinienigi
+ped-gramm.json	23	DONE	95a7d135-4be0-463d-b443-76cc5828fc89	4	4	0	4/4	True	False	True	10	1	0	False	False	ica nioladi lodawa libinienigi
+ped-gramm.json	24	DONE	2f47b402-9fe7-4714-96e3-c6cbdf405472	6	3	3	3/6	False	False	True	6	1	0	False	False	iGeladi idei naigi anenapioi
+ped-gramm.json	25	DONE	a4d33655-fe74-4df2-8d5e-b3c88fba5fd1	5	3	2	3/5	False	False	True	6	1	0	False	False	iGeladi idei naigi me napioi
+ped-gramm.json	26	DONE	f081c545-c42b-463d-b57f-db87787f20e7	5	2	3	2/5	False	False	True	4	1	0	False	False	João liGeladi ane napioi
+ped-gramm.json	27	REVIEW	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc	6	4	2	4/6	False	False	True	10	5	0	False	False	iGeladi idei mijo naigi naGajo
+ped-gramm.json	28	REVIEW	ee1a1190-7803-404c-83f6-49d3ccf63b0d	8	2	6	2/8	False	False	True	8	5	0	False	False	Eyodi dowediteloco nawodigijedi micoataGa daGa me lionigipi
+ped-gramm.json	29	REVIEW	4bdb4b8f-0176-4303-8a13-e313fbb6d7ad	3	0	3	0/3	False	True	True	0	0	0	False	False	Eyodi me niganaGacanajo
+ped-gramm.json	30	DONE	7b806584-75e5-4017-b9e2-ba97458903bd	4	0	4	0/4	False	True	True	0	0	0	False	False	Eyodi ane niganaGacanajo
+ped-gramm.json	31	REVIEW	845b9d1d-ad7c-445a-bfbd-04fd9255ffc2	3	0	3	0/3	False	True	True	0	0	0	False	False	Eyodi daGa niganaGacanajo
+ped-gramm.json	32	DONE	a4ccc755-a644-4b04-ab1b-698e7acea4cc	3	3	0	3/3	True	False	True	7	3	0	False	False	iGeladi idei digoida
+ped-gramm.json	33	DONE	82117289-be52-45d0-886d-a5747eb20ea2	2	2	0	2/2	True	False	True	5	1	0	False	False	iGeladi ipegitaGagi
+ped-gramm.json	34	DONE	50f93fbc-14fa-48e7-b8ba-22f744109348	3	3	0	3/3	True	False	True	7	0	0	True	True	iGeladi ipegitegi liGeladi
+ped-gramm.json	35	DONE	014fefb1-d5e3-48c8-9ac3-9e713a41407f	6	3	3	3/6	False	False	True	7	1	0	False	False	iGeladi ipegitegi naigi ane napioi
+ped-gramm.json	36	DONE	bb8018ba-76b3-43f2-82ea-78b6009c1f90	5	3	2	3/5	False	False	True	7	1	0	False	False	iGeladi ipegitegi naigi me napioi
+ped-gramm.json	37	DONE	1da1bf7a-7975-4baf-821b-9df5c75ac297	4	3	1	3/4	False	False	True	7	0	0	True	False	iGeladi aGipegitegi weiigi
+ped-gramm.json	38	DONE	46bbf9a8-c650-4e4b-a44f-78bfe6c5d979	5	3	2	3/5	False	False	True	7	0	0	True	False	ijo Gatodi etijo ida .
+ped-gramm.json	39	DONE	4ffc2f68-0474-488f-a94e-4065f952482a	4	2	2	2/4	False	False	True	6	0	0	True	False	ijotawece etidi akiidi .
+ped-gramm.json	40	DONE	10e550d6-df13-4527-8aee-aa23e3f2fcdd	4	3	1	3/4	False	False	True	6	1	0	False	False	iGeladi digoida weiigi .
+ped-gramm.json	41	DONE	874c123b-4c43-4001-bfce-8af4af0e5805	4	3	1	3/4	False	False	True	5	0	0	True	False	iGeladi idei weiigi .
+ped-gramm.json	42	REVIEW	aad13f14-bd9a-462a-9a43-68ba69a81519	5	3	2	3/5	False	False	True	6	0	0	True	False	nigotaGa liGeladi ipegitegi weiigi .
+ped-gramm.json	43	DONE	19401990-aa1d-4cf5-bea1-122254c6b77a	4	3	1	3/4	False	False	True	8	4	0	False	False	lotaGa GanaginaGa libinienaGa .
+ped-gramm.json	44	DONE	6d2a809e-0d32-4254-9489-f9e356e22493	8	3	5	3/8	False	False	True	6	2	0	False	False	nGida niwenigi daGaxa me dakake loojedi .
+ped-gramm.json	45	REVIEW	c25b098d-6b0a-4416-a31d-6d7219685a63	4	2	2	2/4	False	False	True	4	1	0	False	False	João liGeladi napioi .
+ped-gramm.json	46	DONE	4e0112b1-baf1-4a7a-bf9e-88fabbe1edc5	4	2	2	2/4	False	False	True	4	1	0	False	False	liGeladi João napioi .
+ped-gramm.json	47	DONE	ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec	5	3	2	3/5	False	False	True	7	1	1	False	False	liGeladi ipegitege niweiigi nigotaGa .
+ped-gramm.json	48	DONE	8b1a9983-4dfd-49e8-9285-92c56c84b652	5	3	2	3/5	False	False	True	7	1	1	False	False	liGeladi ipegitegi niweiigi nigotaGa .
+ped-gramm.json	49	DONE	eeb42af3-fe5a-4b7d-97ea-b381ab589860	7	4	3	4/7	False	False	True	9	2	0	False	False	Niwatece iwaGadi codaa adakake loojedi .
+ped-gramm.json	50	DONE	156fa9a4-4323-44f1-9cdc-ef5dc052b428	3	2	1	2/3	False	False	True	5	2	0	False	False	etee minitaGa
+ped-gramm.json	51	DONE	3b45c470-6164-4fcf-a4d5-90be0f27eb1d	3	2	1	2/3	False	False	True	5	2	0	False	False	ee aGidininitibeci
+ped-gramm.json	52	DONE	d543f155-c01f-4b5e-add1-0533b8ac6e15	1	1	0	1/1	True	False	True	5	1	0	False	False	jipacaGataGagitiwaji
+ped-gramm.json	53	DONE	3f077b37-aa95-4012-9efb-a21630cdd6e9	4	2	2	2/4	False	False	True	5	3	0	False	False	aGee eliodi niinikeGegi
+ped-gramm.json	54	DONE	74a76be1-d4b6-42e1-9100-6a436a7fa065	3	2	1	2/3	False	False	True	7	4	0	False	False	akaami oko jipacaGataGagitiwaji
+ped-gramm.json	55	DONE	d3e098e5-4edd-4c24-81cf-78ff4a4d398c	4	4	0	4/4	True	False	True	10	9	0	False	False	niGidowa waca lotiidi dapikoGo
+ped-gramm.json	56	DONE	edb3d8e5-d0c3-4ee6-97a8-ecb3afc84ded	4	2	2	2/4	False	False	True	5	2	0	False	False	IiGeladi midi akiidi
+ped-gramm.json	57	DONE	2c0248b3-8f68-46e9-b41c-9f7807572c87	9	3	6	3/9	False	False	True	7	6	0	False	False	etogo aneiwaGadi adakake lojedi .
+ped-gramm.json	58	DONE	73ceda1b-be14-4e75-9b1e-2a490d7df366	5	2	3	2/5	False	False	True	5	4	0	False	False	etogo adakake lojedi
+ped-gramm.json	59	DONE	bf632295-26f8-4ee6-979f-33f090ef0471	4	3	1	3/4	False	False	True	7	5	0	False	False	etogoli dakake lojetedi
+ped-gramm.json	60	DONE	bbd6b80b-3236-4172-8bd5-ba3fb404049e	4	3	1	3/4	False	False	True	6	3	0	False	False	etogoli dakake loojedi
+ped-gramm.json	61	DONE	1ab7fa26-ed92-4d55-98d0-0d76396373f0	5	4	1	4/5	False	False	False	10	5	0	False	False	Etogoli iwaGadi adakake lojetedi

@@ -1,0 +1,8 @@
+source	sentence_number	status	sentence_uid	token_number	token_form	split_number	split_value	sentence_text
+hil-data.json	12	DONE	3a7e213b-323e-4694-bad9-47091f3533f5	3	nigotaGa	1	{}	Te ee nigotaGa
+hil-data.json	66	DONE	55fe3cf7-0293-48e6-aa78-44822f50347e	4	nigotaGa	1	{}	liGeladi ipegitege nakidi nigotaGa
+hil-data.json	67	DONE	c0441856-b259-4d76-a88e-33a7e211b208	4	nigotaGa	1	{}	liGeladi ipegitege nakidi nigotaGa
+hil-data.json	68	DONE	9527d53d-7184-4b08-8bb2-51b7fff1429d	1	nigotaGa	1	{}	nigotaGa liGeladi ipegitege akiidi
+ped-gramm.json	5	DONE	b2e3ea43-0d68-46ee-9f33-938610cc8aec	3	weiigi	1	{}	niwatece etadi weiigi
+ped-gramm.json	47	DONE	ef4d298a-643b-4c08-9bdd-f7c6b63ac9ec	4	nigotaGa	1	{}	liGeladi ipegitege niweiigi nigotaGa .
+ped-gramm.json	48	DONE	8b1a9983-4dfd-49e8-9285-92c56c84b652	4	nigotaGa	1	{}	liGeladi ipegitegi niweiigi nigotaGa .
