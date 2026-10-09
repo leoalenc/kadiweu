@@ -1,5 +1,5 @@
 role	path	sha256
-grammyep_portuguese	/home/leonel/grammyep/nheengatu/testfiles/GraYrl-GraPor.txt	d5c08fe4e49e744be5d46a7fa679f939a352a8767e9c090cdeb58b8899b8b439
+grammyep_gf_release	/home/leonel/grammyep/nheengatu-1.0.0.tar.gz	646b0a8ba88f4c269dfa9d9019e9076b1cb24aefc42a2a29628ce6caf0348f34
 van	../data/van-data.json	0ac0971ad838842dc0b2b9e936dcc5350f58fca801ebadfe95a9ab78346452a1
 hil	../data/hil-data.json	947c8f9c5303b7a30ade583eb73e7f9568bd9946929bec7d56e609e2313165c3
 ped	../data/ped-gramm.json	0658ca6cd45211b594686df24e02f8fb92710d49c2625a8efe09a534b0f26e34

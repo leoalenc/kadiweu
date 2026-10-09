@@ -1,30 +1,60 @@
 normalized_portuguese	grammyep_sent_ids	surface_forms
-a delea língua do seu irmão é bonita	27,97	a delea língua do seu irmão é bonita
-a delea palavra do seu irmão é bonita	27,97	a delea palavra do seu irmão é bonita
-a minha casa não é no rio	116,122	a minha casa não é no rio
-a minha casa não é perto do rio	115,121	a minha casa não é perto do rio
-ela está feliz	54,136	ela está feliz
-ela é feliz	6,39,53,134	ela é feliz
-ela é pesada	3,55	ela é pesada
-ele está feliz	54,136	ele está feliz
-ele é feliz	6,39,53,134	ele é feliz
-ele é pesado	3,55	ele é pesado
-eles são felizes	51,52	eles são felizes
-estas pedras estão pesadas	82,84,90,92	estas pedras estão pesadas
-estas pedras são pesadas	81,83,89,91	estas pedras são pesadas
-estes vermelhos peixes estão baratos	21,24	estes vermelhos peixes estão baratos
-eu estou aqui	2,13,49	eu estou aqui
-eu estou feliz	16,36,71,130	eu estou feliz
-eu estou perto dela	14,50,64	eu estou perto dela
-eu estou perto dele	14,50,64	eu estou perto dele
-eu não estou feliz	67,74	eu não estou feliz
-eu não estou perto dela	72,137	eu não estou perto dela
-eu não estou perto dele	72,137	eu não estou perto dele
-eu não sou feliz	66,73,103,138	eu não sou feliz
-eu sou feliz	70,129	eu sou feliz
-eu sou pesado	15,34	eu sou pesado
-nós não estamos na comunidade	9,40	nós não estamos na comunidade
-os beijus estão quentes	25,96	os beijus estão quentes
-tu estás feliz	63,100	tu estás feliz
-tu não estás feliz	12,41	tu não estás feliz
-tu és feliz	62,99	tu és feliz
+a delea língua do seu irmão é bonita	128,132	a delea língua do seu irmão é bonita
+a delea palavra do seu irmão é bonita	128,132	a delea palavra do seu irmão é bonita
+a deliciosa comida está na casa dela	230,237	a deliciosa comida está na casa dela
+a deliciosa comida está na casa dele	230,237	a deliciosa comida está na casa dele
+a minha casa não é no rio	188,196	a minha casa não é no rio
+a minha casa não é perto do rio	187,195	a minha casa não é perto do rio
+a pesada canoa está barata	49,173	a pesada canoa está barata
+aquelas filhas da mulher estão com eles	142,153	aquelas filhas da mulher estão com eles
+aquele anzol do menino é na canoa	143,144	aquele anzol do menino é na canoa
+aquele anzol do pedro está na canoa	140,141	aquele anzol do Pedro está na canoa
+aquele menino é na canoa do anzol	143,144	aquele menino é na canoa do anzol
+aqueles filhos da esposa dela estão com eles	156,157	aqueles filhos da esposa dela estão com eles
+aqueles filhos da esposa dele estão com eles	156,157	aqueles filhos da esposa dele estão com eles
+aqueles filhos da esposa estão com eles	156,157	aqueles filhos da esposa estão com eles
+aqueles filhos da mulher estão com eles	142,153,155	aqueles filhos da mulher estão com eles
+aqueles filhos da mulher são com eles	152,154	aqueles filhos da mulher são com eles
+ela está feliz	27,228	ela está feliz
+ela está pesada	19,34	ela está pesada
+ela é feliz	24,226	ela é feliz
+ela é muito feliz	25,227	ela é muito feliz
+ela é pesada	18,33	ela é pesada
+ele está feliz	27,228	ele está feliz
+ele está pesado	19,34	ele está pesado
+ele é feliz	24,226	ele é feliz
+ele é muito feliz	25,227	ele é muito feliz
+ele é pesado	18,33	ele é pesado
+eles são felizes	14,16,17	eles são felizes
+estas pedras estão pesadas	98,100,113,115	estas pedras estão pesadas
+estas pedras são pesadas	97,99,112,114	estas pedras são pesadas
+estes vermelhos peixes estão baratos	103,117,118	estes vermelhos peixes estão baratos
+eu estou aqui	12,58	eu estou aqui
+eu estou com ela	11,57	eu estou com ela
+eu estou com ele	11,57	eu estou com ele
+eu estou feliz	70,212	eu estou feliz
+eu estou perto dela	13,59	eu estou perto dela
+eu estou perto dele	13,59	eu estou perto dele
+eu estou pesado	68,177	eu estou pesado
+eu não estou feliz	64,75	eu não estou feliz
+eu não estou muito feliz	66,77	eu não estou muito feliz
+eu não estou perto dela	73,231	eu não estou perto dela
+eu não estou perto dele	73,231	eu não estou perto dele
+eu não sou feliz	63,74,158,234	eu não sou feliz
+eu não sou muito feliz	65,76	eu não sou muito feliz
+eu sou feliz	69,211	eu sou feliz
+eu sou pesado	67,176	eu sou pesado
+nós estamos perto de vocês	35,37	nós estamos perto de vocês
+nós não estamos na comunidade	40,232	nós não estamos na comunidade
+os beijus estão quentes	124,125	os beijus estão quentes
+os filhos da esposa dela estão comigo	215,217	os filhos da esposa dela estão comigo
+os filhos da esposa dele estão comigo	215,217	os filhos da esposa dele estão comigo
+os filhos da esposa estão comigo	215,217	os filhos da esposa estão comigo
+os filhos da maria estão bonitos	2,6	os filhos da Maria estão bonitos
+os filhos da maria são bonitos	1,5	os filhos da Maria são bonitos
+os filhos da mulher estão comigo	80,84	os filhos da mulher estão comigo
+os filhos da mulher são comigo	79,83	os filhos da mulher são comigo
+você está feliz	54,138	você está feliz
+você não está feliz	56,233	você não está feliz
+você é feliz	53,137	você é feliz
+vocês estão felizes	167,169	vocês estão felizes
