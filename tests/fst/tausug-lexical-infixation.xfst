@@ -6,45 +6,80 @@
 # Tausug lexical transducer: infinitive and realis
 #
 # Beck (2017: 332-333), examples (10) and (11):
+#   marī+V+INF       <-> marī
+#   marī+V+R         <-> miyarī
 #   baytaan+V+INF   <-> baytaan
 #   baytaan+V+R     <-> biyaytaan
+#   katumtuman+V+INF <-> katumtuman
+#   katumtuman+V+R   <-> kiyatumtuman
 #   kalupahan+V+INF <-> kalupahan
 #   kalupahan+V+R   <-> kiyalupahan
 #
-# The intermediate strings contain the abstract morphemes ^INF and ^R:
-#   baytaan^INF, baytaan^R, kalupahan^INF, kalupahan^R.
+# This is a lexical transducer, not merely a surface rewrite rule. Its upper
+# language contains a lemma, the part-of-speech tag +V, and an inflectional
+# tag (+INF or +R). Its lower language contains the corresponding word form.
+#
+# The transducer is built in three stages:
+#   1. Morphotactics accepts only listed roots with +V+INF or +V+R.
+#   2. RealisInfixation inserts iy before the first vowel when ^R is present.
+#   3. DeleteMorphemes removes the abstract ^INF and ^R markers.
+#
+# The intermediate strings therefore include forms such as baytaan^INF and
+# baytaan^R. The caret marks a morpheme boundary and is not printed in the
+# surface form.
 
 clear stack
 
 define Vowel [a | i | u];
 define NonVowel \Vowel;
-define Root [{marī} | {baytaan} | {kalupahan}];
+define Root [{marī} | {baytaan} | {katumtuman} | {kalupahan}];
 
-# Morphotactics: ROOT + V + {INF,R} -> ROOT ^ {INF,R}
+# Stage 1: lexical morphotactics.
+#
+# LexicalLanguage defines the valid upper-side analyses. EncodeMorphemes
+# replaces the visible tags +V+INF and +V+R with the internal boundary markers
+# ^INF and ^R used by the realization rules.
 define LexicalLanguage Root [{+V+INF} | {+V+R}];
 define EncodeMorphemes [{+V+INF} -> {^INF}, {+V+R} -> {^R}];
 define Morphotactics LexicalLanguage .o. EncodeMorphemes;
 
-# Morph realization: ^R triggers iy immediately before the first vowel.
+# Stage 2: morph realization.
+#
+# [..] denotes an empty-string position. The left context requires the word
+# boundary followed by zero or more non-vowels, so iy is inserted immediately
+# before the first vowel. The right context requires the final ^R marker;
+# infinitives containing ^INF are consequently unaffected by this rule.
 define RealisInfixation [..] -> {iy} || .#. [NonVowel]* _ Vowel ?* {^R} .#. ;
+
+# Stage 3: remove the internal markers from the surface side.
 define DeleteMorphemes [{^INF} | {^R}] -> 0;
 
+# Composition connects the output of each stage to the input of the next.
 define TausugLexicalTransducer Morphotactics .o. RealisInfixation .o. DeleteMorphemes;
 
 regex TausugLexicalTransducer;
 
-# Surface -> lexical analysis
+# Surface -> lexical analysis (`apply up`)
+apply up marī
+apply up miyarī
 apply up baytaan
 apply up biyaytaan
+apply up katumtuman
+apply up kiyatumtuman
 apply up kalupahan
 apply up kiyalupahan
 
-# Lexical analysis -> surface
+# Lexical analysis -> surface generation (`apply down`)
+apply down marī+V+INF
+apply down marī+V+R
 apply down baytaan+V+INF
 apply down baytaan+V+R
+apply down katumtuman+V+INF
+apply down katumtuman+V+R
 apply down kalupahan+V+INF
 apply down kalupahan+V+R
 
-# Enumerate the complete lower and upper languages.
+# Enumerate the complete surface (lower) and lexical (upper) languages.
+# Four roots times two inflectional values yield eight paths.
 print lower-words
 print upper-words
