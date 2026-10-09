@@ -1,0 +1,53 @@
+# Beck, D. (2017). The typology of morphological processes: Form and function.
+# In A. Y. Aikhenvald & R. M. W. Dixon (Eds.), The Cambridge handbook of
+# linguistic typology (pp. 325-360). Cambridge University Press.
+# https://doi.org/10.1017/9781316135716.011
+
+# Tausug realis infixation: isolated rewrite-rule demonstration
+#
+# Beck (2017: 332-333), examples (10) and (11):
+#   marī       -> miyarī
+#   baytaan    -> biyaytaan
+#   katumtuman -> kiyatumtuman
+#   kalupahan  -> kiyalupahan
+#
+# This script isolates the realization rule: it maps a base to a realis form
+# by inserting the infix iy immediately before the first vowel. It is not a
+# complete lexical transducer: it does not restrict the input to a lexicon,
+# represent +V, or distinguish +INF from +R. See
+# tausug-lexical-infixation.xfst for the complete teaching example.
+
+clear stack
+
+# The vowel class contains the three vowel symbols needed to locate the
+# insertion site. NonVowel is its complement in the transducer alphabet.
+define Vowel [a | i | u];
+define NonVowel \Vowel;
+
+# Rule anatomy:
+#   [..]          one empty-string position, the target of epenthesis
+#   -> {iy}       insert the multicharacter string iy
+#   ||            introduce the conditioning context
+#   .#.           word boundary
+#   [NonVowel]*   zero or more non-vowels before the first vowel
+#   _             insertion site
+#   Vowel         the first vowel of the base
+#   ?* .#.        the remainder of the word followed by its boundary
+#
+# Because the context begins at the left word boundary and permits only
+# non-vowels before _, the rule cannot insert iy before a later vowel.
+define TausugRealis [..] -> {iy} || .#. [NonVowel]* _ Vowel ?* .#. ;
+
+# Place the named rule on the stack as the current transducer.
+regex TausugRealis;
+
+# Apply the transducer from its upper/input side to its lower/output side.
+# Expected results are shown in the comments.
+apply down marī
+# miyarī
+apply down baytaan
+# biyaytaan
+apply down katumtuman
+# kiyatumtuman
+apply down kalupahan
+# kiyalupahan
