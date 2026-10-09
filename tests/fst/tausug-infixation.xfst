@@ -1,0 +1,26 @@
+# Tausug realis infixation
+#
+# Source examples (Beck 2017: 332-333):
+#   marī       -> miyarī
+#   baytaan    -> biyaytaan
+#   katumtuman -> kiyatumtuman
+#   kalupahan  -> kiyalupahan
+#
+# The realis infix {iy} is inserted immediately before the first vowel.
+# Following Beesley and Karttunen, [..] denotes one empty-string
+# position in an epenthesis rule.
+
+clear stack
+
+define Vowel [a | i | u];
+define NonVowel \Vowel;
+
+define TausugRealis     [..] -> {iy} || .#. [NonVowel]* _ Vowel ?* .#. ;
+
+regex TausugRealis;
+
+# Tests from examples (10) and (11)
+apply down marī
+apply down baytaan
+apply down katumtuman
+apply down kalupahan
