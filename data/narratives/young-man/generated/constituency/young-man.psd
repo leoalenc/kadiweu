@@ -1,0 +1,985 @@
+/*
+sentence = 1
+uid = 4681b474-24ee-11e5-9df9-0015c53587a5
+text = icaaGica liwoneGa ane libonaGadi exabigo
+text_por = O jovem que chamava Exabigo e sua faca.
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D icaaGica)
+      (N liwoneGa)
+    )
+    (NP-PRD
+      (CP-FRL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (NP
+            (N$ libonaGadi)
+            (NP
+              (NPR exabigo)
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID young-man,0.1)
+)
+/*
+sentence = 2
+uid = 68be0b30-5f01-11e6-904a-90b11c409ded
+text = icaaGica ica lodajo ane dalepe idowatawece
+text_por = Esta faca que era afiada de todos os lados
+*/
+(
+  (IP-MAT
+    (NP
+      (Q icaaGica)
+      (D ica)
+      (N$ lodajo)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VB dalepe)
+          (NP
+            (NUM idowatawece)
+          )
+        )
+      )
+    )
+  )
+  (ID young-man,0.2)
+)
+/*
+sentence = 3
+uid = 3684ce80-63e6-11e6-91c4-90b11c409ded
+text = liwaii libonaGadi anigiticeGegi
+text_por = Que chamava anigiticeGegi de dois gumes.
+*/
+(
+  (IP-MAT
+    (NP
+      (NP
+        (N$ liwaii)
+        (NP
+          (N$ libonaGadi)
+        )
+      )
+      (NPR anigiticeGegi)
+    )
+  )
+  (ID young-man,0.3)
+)
+/*
+sentence = 4
+uid = 4681b47e-24ee-11e5-9df9-0015c53587a5
+text = icowa eliodi onaGaGa GodapowaGaneGegi coda naGaGa ninionigi libonaGadi Gonodo itimeneGegi
+text_por = Seu pai também era guerreiro e também capitão chamado Mosquito Cheio.
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D icowa)
+    )
+    (Q eliodi)
+    (EV one@)
+    (ADVP
+      (ADV @aGaGa)
+    )
+    (NP-SBJ-PRD
+      (N$ GodapowaGaneGegi)
+    )
+    (CONJ coda)
+    (ADVP
+      (ADV naGaGa)
+    )
+    (NP-SBJ-PRD
+      (N ninionigi)
+    )
+    (NP-PRD
+      (N$ libonaGadi)
+      (NP
+        (N Gonodo)
+      )
+      (ADJ itimeneGegi)
+    )
+  )
+  (ID young-man,0.4)
+)
+/*
+sentence = 5
+uid = 4681db83-24ee-11e5-9df9-0015c53587a5
+text = icowa Exabigo onaniwa acowa lodawa pida one agopelowa one iGolaGadi
+text_por = O exabigo, por ser jovem, tinha sua esposa. Mas diz que safada, diz que o traía.
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D icowa)
+      (NPR Exabigo)
+    )
+    (NP-PRD
+      (Q onaniwa)
+      (D acowa)
+      (N$ lodawa)
+    )
+    (CONJ pida)
+    (EV one)
+    (ADJ agopelowa)
+    (IP
+      (EV one)
+      (VB iGolaGadi)
+    )
+  )
+  (ID young-man,0.5)
+)
+/*
+sentence = 6
+uid = 4681db8c-24ee-11e5-9df9-0015c53587a5
+text = icowa nokododi malee nidelakaditibece ica Godoigi
+text_por = Naqueles dias o nosso povo ainda guerreava.
+*/
+(
+  (IP-MAT
+    (NP
+      (D icowa)
+      (N nokododi)
+    )
+    (CP
+      (C malee)
+      (IP-SUB
+        (VB nidelakaditibece)
+        (NP
+          (D ica)
+          (N$ Godoigi)
+        )
+      )
+    )
+  )
+  (ID young-man,0.6)
+)
+/*
+sentence = 7
+uid = ae2dd2e0-5f06-11e6-904a-90b11c409ded
+text = jona dinowetacibece me igotibece nidelaGa oideleGe ica enimaGa
+text_por = Já se preparava para ir à guerra para brigar com os inimigos.
+*/
+(
+  (IP-MAT
+    (T jona)
+    (VB dinowetacibece)
+    (IP-ADV
+      (CP-THT
+        (C me)
+        (IP-SUB
+          (VB igotibece)
+        )
+      )
+      (VB nidelaGa)
+    )
+    (IP
+      (VB oideleGe)
+      (NP
+        (D ica)
+        (NPR enimaGa)
+      )
+    )
+  )
+  (ID young-man,0.7)
+)
+/*
+sentence = 8
+uid = 4681db98-24ee-11e5-9df9-0015c53587a5
+text = Exabigo jona dinilakidetetege ica eliododipi medaGa igoteda me witidaGa
+text_por = Exabigo já combinou com os pais que não ia para a guerra.
+*/
+(
+  (IP-MAT
+    (NP
+      (NPR Exabigo)
+    )
+    (T jona)
+    (VBAPL dinilakidetetege)
+    (NP-APL
+      (D ica)
+      (N$ eliododipi)
+      (CP-me
+        (C medaGa)
+        (IP-SUB
+          (VB igoteda)
+          (CP-me
+            (C me)
+            (IP-SUB
+              (NP
+                (N witidaGa)
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID young-man,0.8)
+)
+/*
+sentence = 9
+uid = 4681db9d-24ee-11e5-9df9-0015c53587a5
+text = Pida acowa lodawa oniniwa icowa eledi lokaGedi
+text_por = Mas a sua esposa tinha um amante.
+*/
+(
+  (IP-MAT
+    (CONJ Pida)
+    (NP-SBJ
+      (D acowa)
+      (N$ lodawa)
+    )
+    (NP-SBJ-PRD
+      (NUM oniniwa)
+      (D icowa)
+    )
+    (NP-PRD
+      (ADJ eledi)
+      (N$ lokaGedi)
+    )
+  )
+  (ID young-man,0.9)
+)
+/*
+sentence = 10
+uid = 4681dba0-24ee-11e5-9df9-0015c53587a5
+text = one noGolaGataGodi Exabigo
+text_por = Diz que traía Exabigo.
+*/
+(
+  (IP-MAT
+    (EV one)
+    (VB noGolaGataGodi)
+    (NP
+      (NPR Exabigo)
+    )
+  )
+  (ID young-man,0.10)
+)
+/*
+sentence = 11
+uid = 4681dba4-24ee-11e5-9df9-0015c53587a5
+text = noGo nenaditece icowa lokaGedi migo
+text_por = Quando a esposa viu passando o seu amante para ir à guerra.
+*/
+(
+  (IP-MAT
+    (CP-ADV
+      (CT noGo)
+      (IP-SUB
+        (VB nenaditece)
+        (NP
+          (D icowa)
+          (N$ lokaGedi)
+        )
+        (CP
+          (C migo)
+        )
+      )
+    )
+  )
+  (ID young-man,0.11)
+)
+/*
+sentence = 12
+uid = 4681dba8-24ee-11e5-9df9-0015c53587a5
+text = oda jaGaGa yema me igo
+text_por = Então também quis ir.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (ADVP
+      (ADV jaGaGa)
+    )
+    (VB yema)
+    (CP-THT
+      (C me)
+      (IP-SUB
+        (VB igo)
+      )
+    )
+  )
+  (ID young-man,0.12)
+)
+/*
+sentence = 13
+uid = 4681dbac-24ee-11e5-9df9-0015c53587a5
+text = Pida ja leegitece ijo lixigaGawepodi
+text_por = Mas os companheiros já estavam longe.
+*/
+(
+  (IP-MAT
+    (CONJ Pida)
+    (T ja)
+    (ADVP
+      (ADV leegitece)
+    )
+    (NP
+      (D ijo)
+      (N$ lixigaGawepodi)
+    )
+  )
+  (ID young-man,0.13)
+)
+/*
+sentence = 14
+uid = 4681dbb1-24ee-11e5-9df9-0015c53587a5
+text = one Exabigo aGejigo jeGeitiogi eiododipi medaGa ejigo
+text_por = Exabigo disse: não posso ir, já prometi para meus pais que não vou.
+*/
+(
+  (IP-MAT
+    (EV one)
+    (NP-SBJ
+      (NPR Exabigo)
+    )
+    (NEG aGejigo)
+    (T jeGeitiogi)
+    (NP-PRD
+      (N$ eiododipi)
+    )
+    (CP
+      (C medaGa)
+      (IP-SUB
+        (VB ejigo)
+      )
+    )
+  )
+  (ID young-man,0.14)
+)
+/*
+sentence = 19
+uid = 4681db82-24ee-11e5-9df9-0015c53587a5
+text = jonaGa domaGa yema me dayogo
+text_por = Já quase querendo chupar.
+*/
+(
+  (IP-MAT
+    (T jonaGa)
+    (T domaGa)
+    (VB yema)
+    (CP-THT
+      (C me)
+      (IP-SUB
+        (VB dayogo)
+      )
+    )
+  )
+  (ID young-man,0.19)
+)
+/*
+sentence = 21
+uid = 4681db91-24ee-11e5-9df9-0015c53587a5
+text = Pida acoa lodawa one idioca limedi me
+text_por = Mas a esposa dizia sempre: dá tempo.
+*/
+(
+  (IP-MAT
+    (CONJ Pida)
+    (NP
+      (D acoa)
+      (N$ lodawa)
+    )
+    (VB one)
+    (idioca idioca)
+    (limedi limedi)
+    (me me)
+  )
+  (ID young-man,0.21)
+)
+/*
+sentence = 23
+uid = 4681db9a-24ee-11e5-9df9-0015c53587a5
+text = me daiyoGo yema ica
+text_por = Que chupar o caldo, que era tão gostoso.
+*/
+(
+  (IP-MAT
+    (C me)
+    (daiyoGo daiyoGo)
+    (yema yema)
+    (ica ica)
+  )
+  (ID young-man,0.23)
+)
+/*
+sentence = 24
+uid = 4681db9c-24ee-11e5-9df9-0015c53587a5
+text = onee Exabigo ja Gocidi
+text_por = Disse exabigo: já é tarde.
+*/
+(
+  (IP-MAT
+    (EV+VB onee)
+    (NP-SBJ
+      (NPR Exabigo)
+    )
+    (ADVP
+      (ADV ja)
+    )
+    (NP-PRD
+      (N Gocidi)
+    )
+  )
+  (ID young-man,0.24)
+)
+/*
+sentence = 25
+uid = 4681dba3-24ee-11e5-9df9-0015c53587a5
+text = owoGoti anodagee ja limedi me noditice
+text_por = Você sabe muito bem que já é hora de nosso inimigo sair.
+*/
+(
+  (IP-MAT
+    (owoGoti owoGoti)
+    (T anodagee)
+    (NP
+      (N$ ja)
+    )
+    (CP
+      (C limedi)
+      (IP-SUB
+        (VB me)
+        (NP
+          (NPR noditice)
+        )
+      )
+    )
+  )
+  (ID young-man,0.25)
+)
+/*
+sentence = 27
+uid = 4681dbad-24ee-11e5-9df9-0015c53587a5
+text = iagigi atetaGa leegi aagenteloco oda jigi coda
+text_por = Corte, não demore, faça rápido então logo terei minha polpa.
+*/
+(
+  (IP-MAT
+    (iagigi iagigi)
+    (NP
+      (N atetaGa)
+    )
+    (aagenteloco leegi)
+    (oda aagenteloco)
+    (jigi oda)
+    (coda jigi)
+    (icoda coda)
+  )
+  (ID young-man,0.27)
+)
+/*
+sentence = 28
+uid = 4681dbb3-24ee-11e5-9df9-0015c53587a5
+text = onee Exabigo enice jakagidi naGa nixigitedice ica
+text_por = Exabigo desembanhou a sua faca afiada.
+*/
+(
+  (IP-MAT
+    (EV+VB onee)
+    (NP
+      (NPR Exabigo)
+    )
+    (enice enice)
+    (CT jakagidi)
+    (nixigitedice naGa)
+    (ica nixigitedice)
+    (lodajo ica)
+  )
+  (ID young-man,0.28)
+)
+/*
+sentence = 30
+uid = 4681b476-24ee-11e5-9df9-0015c53587a5
+text = onete acoa lodawa eletibece naGodo diGanaGawini
+text_por = Ele disse para sua esposa: fique atenta minha coitada, você vai ver, daqui há pouco eles já vão chegar.
+*/
+(
+  (IP-MAT
+    (EV one@)
+    (VBAPL @eete)
+    (NP-APL
+      (D acoa)
+      (N$ lodawa)
+    )
+    (eletibece eletibece)
+    (diGanaGawini naGodo)
+    (jiGicaGica diGanaGawini)
+  )
+  (ID young-man,0.30)
+)
+/*
+sentence = 31
+uid = 4681b47d-24ee-11e5-9df9-0015c53587a5
+text = coda nonidatapi noGonenaitege icoa liwoneGa ica
+text_por = E de repente o próprio jovem exabigo viu uma poeira.
+*/
+(
+  (IP-MAT
+    (CONJ coda)
+    (nonidatapi nonidatapi)
+    (NP-SBJ
+      (D noGonenaitege)
+      (N$ icoa)
+    )
+    (NP-PRD
+      (D liwoneGa)
+      (N ica)
+    )
+  )
+  (ID young-man,0.31)
+)
+/*
+sentence = 32
+uid = 4681db81-24ee-11e5-9df9-0015c53587a5
+text = aneGica eledi lowogo onete acoa lodawa naGodo itinowa
+text_por = Não teve outro pensamento, ele disse para a sua esposa: minha coitada estão vindo os inimigos.
+*/
+(
+  (IP-MAT
+    (aneGica aneGica)
+    (eledi eledi)
+    (lowogo lowogo)
+    (one@ onete)
+    (@eete acoa)
+    (acoa lodawa)
+    (lodawa naGodo)
+    (itinowa itinowa)
+  )
+  (ID young-man,0.32)
+)
+/*
+sentence = 34
+uid = 4681db89-24ee-11e5-9df9-0015c53587a5
+text = oda noGononotalo icoa lidelaGawadi icoa
+text_por = Então quando o Exabigo encontrou os inimigos.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (noGononotalo noGononotalo)
+    (icoa icoa)
+    (NP
+      (D lidelaGawadi)
+    )
+    (NPRO icoa)
+  )
+  (ID young-man,0.34)
+)
+/*
+sentence = 35
+uid = 4681db90-24ee-11e5-9df9-0015c53587a5
+text = naGa didele icoa liwoneGa ibake ica lodajo
+text_por = O jovem lutou usando a sua faca comprida.
+*/
+(
+  (IP-MAT
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB didele)
+        (NP
+          (D icoa)
+          (N$ liwoneGa)
+        )
+      )
+    )
+    (ibake ibake)
+    (ica ica)
+    (lodajo lodajo)
+  )
+  (ID young-man,0.35)
+)
+/*
+sentence = 36
+uid = 4681db94-24ee-11e5-9df9-0015c53587a5
+text = one eliodi ica nenigodi ica
+text_por = Diz que lutou bastante e matou muitos enimaGa.
+*/
+(
+  (IP-MAT
+    (EV one)
+    (eliodi eliodi)
+    (ica ica)
+    (NP
+      (D nenigodi)
+      (NPR ica)
+    )
+  )
+  (ID young-man,0.36)
+)
+/*
+sentence = 37
+uid = 4681db97-24ee-11e5-9df9-0015c53587a5
+text = one domaGa onopitedi Pida
+text_por = Diz que não foi ferido pelas flechas.
+*/
+(
+  (IP-MAT
+    (EV one)
+    (ADVP
+      (ADV domaGa)
+    )
+    (onopitedi onopitedi)
+    (Pida Pida)
+  )
+  (ID young-man,0.37)
+)
+/*
+sentence = 38
+uid = 4681db9e-24ee-11e5-9df9-0015c53587a5
+text = coda nonidata noGodemiteta me ewi liciagi me didele
+text_por = E quando perceberam que era lutador bom.
+*/
+(
+  (IP-MAT
+    (CONJ coda)
+    (VB nonidata)
+    (IP-ADV
+      (VB noGodemiteta)
+      (CP-me
+        (C me)
+        (IP-SUB
+          (NP
+            (ADJ ewi)
+            (N$ liciagi)
+          )
+        )
+      )
+      (CP-me
+        (C me)
+        (IP-SUB
+          (VB didele)
+        )
+      )
+    )
+  )
+  (ID young-man,0.38)
+)
+/*
+sentence = 39
+uid = 4681dba2-24ee-11e5-9df9-0015c53587a5
+text = coda noGonida jona
+text_por = Foram se afastando.
+*/
+(
+  (IP-MAT
+    (CONJ coda)
+    (noGonida noGonida)
+    (jona jona)
+  )
+  (ID young-man,0.39)
+)
+/*
+sentence = 41
+uid = 4681dbb0-24ee-11e5-9df9-0015c53587a5
+text = aGacoa me yakadi domaGa dotikotedibece megenidetedibige acoa
+text_por = Ele foi até o lugar assoviando, chamando sua esposa e ela não estava.
+*/
+(
+  (IP-MAT
+    (aGacoa aGacoa)
+    (me me)
+    (yakadi yakadi)
+    (domaGa domaGa)
+    (megenidetedibige dotikotedibece)
+    (acoa megenidetedibige)
+    (lodawa acoa)
+  )
+  (ID young-man,0.41)
+)
+/*
+sentence = 43
+uid = 4681b473-24ee-11e5-9df9-0015c53587a5
+text = natigide ayakadi doGotida me loigiwepodi idokida
+text_por = Exabigo pensou: não posso ser rebaixado pelos familiares dela, vou ter que lutar até a morte.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV natigide)
+    )
+    (oyajemagadi ayakadi)
+    (doGotida doGotida)
+    (me me)
+    (idokida loigiwepodi)
+    (me idokida)
+  )
+  (ID young-man,0.43)
+)
+/*
+sentence = 47
+uid = 4681db8b-24ee-11e5-9df9-0015c53587a5
+text = oda jadopitace niGica enimaGa naGa
+text_por = Então quando chamava os inimigos, voltaram.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (jadopitace jadopitace)
+    (niGica niGica)
+    (enimaGa enimaGa)
+    (naGa naGa)
+  )
+  (ID young-man,0.47)
+)
+/*
+sentence = 51
+uid = 4681dba1-24ee-11e5-9df9-0015c53587a5
+text = naGa nadi ica me naliGo icoa
+text_por = E vendo que estava ferido pelas flechas.
+*/
+(
+  (IP-MAT
+    (CT naGa)
+    (nadi nadi)
+    (ica ica)
+    (me me)
+    (naliGo naliGo)
+    (icoa icoa)
+  )
+  (ID young-man,0.51)
+)
+/*
+sentence = 54
+uid = 4681dbae-24ee-11e5-9df9-0015c53587a5
+text = oda joniGidia nemaGadi icoa
+text_por = Então ali o jovem morreu.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (joniGidia joniGidia)
+    (NP
+      (D nemaGadi)
+      (N$ icoa)
+    )
+  )
+  (ID young-man,0.54)
+)
+/*
+sentence = 55
+uid = 4681dbb2-24ee-11e5-9df9-0015c53587a5
+text = Pida naGawa lodawa me elodi
+text_por = Mas a sua esposa tinha fugido sem avisá-lo.
+*/
+(
+  (IP-MAT
+    (CONJ Pida)
+    (naGawa naGawa)
+    (lodawa lodawa)
+    (me me)
+    (aoneGewote elodi)
+  )
+  (ID young-man,0.55)
+)
+/*
+sentence = 56
+uid = 4681b471-24ee-11e5-9df9-0015c53587a5
+text = jonaGida me diletedibige daga
+text_por = E por isso ele pensou que ela tinha sido morta.
+*/
+(
+  (IP-MAT
+    (jonaGida jonaGida)
+    (me me)
+    (daga diletedibige)
+    (IP
+      (VB daga)
+    )
+  )
+  (ID young-man,0.56)
+)
+/*
+sentence = 58
+uid = 4681b479-24ee-11e5-9df9-0015c53587a5
+text = onete ica eliododipi jaladi didele
+text_por = Ela disse para os pais: larguei lutando, eu fugi.
+*/
+(
+  (IP-MAT
+    (EV one@)
+    (VBAPL @eete)
+    (NP-APL
+      (D ica)
+      (N eliododipi)
+    )
+    (VB jaladi)
+    (IP-ADV
+      (VB didele)
+    )
+  )
+  (ID young-man,0.58)
+)
+/*
+sentence = 59
+uid = 4681b47f-24ee-11e5-9df9-0015c53587a5
+text = oda one icoa eliodi ejigo joletebige
+text_por = Então disse o pai: eu vou procurar meu filho.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (EV one)
+    (NP-SBJ
+      (D icoa)
+    )
+    (eliodi eliodi)
+    (ejigo ejigo)
+    (NP-PRD
+      (N$ joletebige)
+    )
+  )
+  (ID young-man,0.59)
+)
+/*
+sentence = 60
+uid = 4681db84-24ee-11e5-9df9-0015c53587a5
+text = bidiGe jinadi meGe naGa yeleo migale ica
+text_por = Para que eu veja morto, ao menos um pedaço dele eu acho.
+*/
+(
+  (IP-MAT
+    (bidiGe bidiGe)
+    (jinadi jinadi)
+    (CP
+      (CT meGe)
+      (IP-SUB
+        (VB naGa)
+      )
+    )
+    (migale yeleo)
+    (ica migale)
+    (liwai ica)
+  )
+  (ID young-man,0.60)
+)
+/*
+sentence = 62
+uid = 4681db8d-24ee-11e5-9df9-0015c53587a5
+text = one icoa Gonodo itimina GodapoaGena ionigi
+text_por = Disse o mosquito cheio: nosso guerreiro ainda vive.
+*/
+(
+  (IP-MAT
+    (EV one)
+    (NP
+      (D icoa)
+      (N Gonodo)
+      (ADJ itimina)
+    )
+    (GodapoaGena GodapoaGena)
+    (ionigi ionigi)
+  )
+  (ID young-man,0.62)
+)
+/*
+sentence = 63
+uid = 4681db8e-24ee-11e5-9df9-0015c53587a5
+text = noGonicote ja yeleo
+text_por = Chegando lá, já estava morto.
+*/
+(
+  (IP-MAT
+    (CT+VB noGonicote)
+    (IP
+      (T ja)
+      (VB yeleo)
+    )
+  )
+  (ID young-man,0.63)
+)
+/*
+sentence = 64
+uid = 4681db95-24ee-11e5-9df9-0015c53587a5
+text = oda jona iwi ica eneitice icoa
+text_por = Então já viu onde foi o ferimento.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (T jona)
+    (VB iwi)
+    (NP
+      (D ica)
+    )
+    (eneitice eneitice)
+    (icoa icoa)
+  )
+  (ID young-man,0.64)
+)
+/*
+sentence = 70
+uid = 4681b472-24ee-11e5-9df9-0015c53587a5
+text = me idatibece me leeditibige me inidakaGata niGina GaniGica ane doide
+text_por = Algumas vezes é preciso enfrentarmos alguma coisa perigosa.
+*/
+(
+  (IP-MAT
+    (CP-me
+      (C me)
+      (IP-SUB
+        (NP
+          (DAPL idatibece)
+        )
+      )
+    )
+    (CP-me
+      (C me)
+      (IP-SUB
+        (NP
+          (N leeditibige)
+        )
+      )
+    )
+    (CP-me
+      (C me)
+      (IP-SUB
+        (VB inidakaGata)
+        (NP
+          (D niGina)
+          (N$ GaniGica)
+          (CP-REL
+            (WNP-1
+              (WPRO ane)
+            )
+            (IP-SUB
+              (NP-TRACE
+                (-NONE- *T*-1)
+              )
+              (VB doide)
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID young-man,0.70)
+)

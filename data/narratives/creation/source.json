@@ -1,0 +1,17 @@
+{
+  "document_uid": "D300",
+  "document_title": "1 - iliidaGatajegi (criação)",
+  "expected_title": "1 - iliidaGatajegi (criação)",
+  "source_json": "6ab937c6fc2406c2f4b03a04.json",
+  "source_json_sha256": "3761d1e5d948b6fdb84cdecfa30b916c9afac9f8f3a8b7454c01f811f4583e94",
+  "sentences": 92,
+  "statuses": {
+    "REVIEW": 6,
+    "<missing>": 85,
+    "DONE": 1
+  },
+  "reconstructed_trees": 92,
+  "skipped_trees": [],
+  "source_psd": "6ab937cefc2406c2f4b03a05.psd",
+  "archived_psd": "tycho/psd/6ab937cefc2406c2f4b03a05.22a2c1b8027a.psd"
+}

@@ -1,0 +1,650 @@
+(IP-MAT
+  (NP (NAPL naigitece))
+  (T janaG@)
+  (VB @onadi)
+  (NP (D ica) (N apakanigo))
+  (. .))(IP-MAT
+  (NP
+    (IP
+      (EV one)
+      (VB dinewegi)
+      (NP (D ica) (N apakanigo))
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP (DAPL @iditaGa)))))
+    (D ica)
+    (N wa))
+  (. .))(IP-MAT
+  (EV one)
+  (NP (N yaxoǥonoko))
+  (. .))(IP-MAT
+  (ADVP (ADV oda))
+  (CP
+    (CT naGa@)
+    (IP-SUB
+      (EV @one)
+      (VB @nadi)
+      (NP (D acoa) (N iwalo))))
+  (EV one@)
+  (VBAPL @eete)
+  (NP-APL (D icoa) (N$ lodawa))
+  (PUNC :)
+  (IP
+    (VB emani)
+    (IP-ADV
+      (CP-THT
+        (C me)
+        (IP-SUB
+          (AUX ejigo)
+          (VB jawo)
+          (NP (N$ ǥonibole))))
+      (VB inadeegi))))(IP-MAT
+  (EV one)
+  (IP
+    (NP (D icoa) (N ǥonelegiwa))
+    (EV one)
+    (VB nawela)))(CP-QUE
+  (EV one)
+  (WNP (WPRO+C+N$ igameGanimaweneGegi))
+  (PUNC ?))(IP-MAT
+  (ADVP (ADV oda))
+  (EV one)
+  (NP (D acoa) (N iwalo))
+  (PUNC :)
+  (INTJ cia)
+  (PUNC !)
+  (IP-MAT (AUX ejigo) (VB inadeegi) (VBAPL jiketaǥawa))
+  (WNP (WPRO+N$ anodaGee))
+  (CONJP
+    (CONJ pida)
+    (IP-MAT
+      (CP-ADV
+        (CT nige)
+        (IP-SUB
+          (VBAPL janotaǥawa)
+          (NP-APL (D ina))
+          (ADVP (ADV epece))))
+      (VB adotaǥaneǥeni)))
+  (CP-ADV
+    (CT nige)
+    (IP-SUB
+      (NP (PRO eyomaǥa))
+      (VB ǥadotaǥaneǥeni)))
+  (PUNC .))(IP-MAT
+  (ADVP (ADV oda))
+  (EV+T+VB joneǥigo)
+  (NP (D acoa) (N iwalo))
+  (VB onigo)
+  (CP-me
+    (C me@)
+    (IP-SUB
+      (NP (DAPL @anitaGa))))
+  (NP (D aca) (N apilalo))
+  (PUNC .))(IP-MAT
+  (ADVP (ADV oda))
+  (CT+VBAPL noGonicotedicogi)
+  (IP (EV one) (VBAPL dinaxoǥotedi))
+  (ADJ odowejegi)
+  (CP-me
+    (C me)
+    (IP-SUB (VBAPL dinaxoǥotedi)))
+  (PUNC .))(IP-MAT
+  (CP-ADV
+    (CT naǥa)
+    (IP-SUB (VB dabidetedi)))
+  (ADV+VB eǥadaǥadowate)
+  (PUNC .))(IP-MAT (CT+VB neǥewotace) (ADV+VB eǥadaǥadowate) (PUNC .))(IP-MAT
+  (CP-ADV
+    (CT niG@)
+    (NP (NUM @idawadadiGida))
+    (CP-me
+      (C me)
+      (IP-SUB (VB wote))))
+  (CONJ oda)
+  (NEG aG@)
+  (T @aleeka)
+  (NP-SBJ (D @acawa))
+  (CP-me
+    (C me)
+    (IP-SUB (VB dabiditedi)))
+  (PUNC .))(IP-MAT
+  (CONJ pida)
+  (NP (D niǥina))
+  (CP-me
+    (C me)
+    (IP-SUB (VBAPL dinabicetedibece)))
+  (EV one)
+  (VB iwolaǥadi)
+  (NP
+    (NP (N$ latobi))
+    (D inowa)
+    (N$ naxapo)
+    (NP (N$ lamadi)))
+  (PUNC .))(IP-MAT
+  (NP (NUM itowatadiǥida))
+  (T+N jeǥeijeeǥagi)
+  (NEG+ADV+D aǥaleǥacowa)
+  (PUNC .))(IP-MAT
+  (CONJ oda)
+  (NP (D icoa) (N$ lodowa))
+  (VBAPL iwiteta)
+  (NP-APL (D ica) (N apakanigo))
+  (PUNC .))(IP-MAT
+  (CONJ oda)
+  (CT+VBAPL noGodinilotedelogo)
+  (NP-SBJ (D acoa) (N iwalo))
+  (NP-PRD (D ica) (N apakanigo))
+  (CP (CT+VBAPL noGonipegite))
+  (PUNC .))(IP-MAT
+  (ADVP (ADV oda))
+  (VBAPL dinabicetedeloco)
+  (IP-APL
+    (NP (D ica) (N apakanigo))
+    (PUNC .)
+    (EV jaGa@)
+    (T @one)
+    (VB yelowadi))
+  (IP
+    (VB inoke)
+    (NP (N$ lotoinaǥadi)))
+  (PUNC .))(IP-MAT
+  (ADVP (ADV oda))
+  (NP (D icoa) (N$ lodawa))
+  (T jona)
+  (VB nadi)
+  (CP-ADV
+    (CT naǥa)
+    (IP-SUB
+      (VBAPL nixigitedeloco)
+      (NP-APL (D ani) (N apilalo))
+      (NP (D ica) (N apakanigo))))
+  (PUNC .))(IP-MAT
+  (ADVP (ADV oda))
+  (CT+VB noGonenotace)
+  (IP
+    (ADVP (ADV oda))
+    (EV one)
+    (VBAPL dinaxogotacenibece)
+    (IP-APL
+      (ADVP (ADV oda))
+      (T jona)
+      (VBAPL dabiditacedi)
+      (VB iticoǥo)
+      (NP (N$ lamodi))))
+  (PUNC .))(IP-MAT
+  (ADVP (ADV oda) (ADV codaanonidata))
+  (NP (D icoa))
+  (CP
+    (CNeg ade@)
+    (IP-SUB
+      (EV @one)
+      (VB yotaneǥe)
+      (ADVP (ADV onexaa))))
+  (VBAPL ikete)
+  (NP-APL (D ica) (N apakanigo))
+  (ADVP (ADV oda))
+  (T+VBAPL jiǥigotibece)
+  (CONJ pida)
+  (T+D jaǥadowa)
+  (CP-me
+    (C me)
+    (IP-SUB
+      (NP (N iwalo))))
+  (CONJ pida)
+  (NEG+D aǥana)
+  (VB dotaǥa)
+  (VBAPL diniwokoditedibece)
+  (. .))(IP-MAT
+  (T jona)
+  (ADVP (ADV leegitece))
+  (CT+EV noGone)
+  (IP (VB yotaǥaneǥe))
+  (PUNC .))(IP-MAT
+  (EV+VBAPL oneete)
+  (PUNC :)
+  (NP-SBJ (D ica))
+  (CP-me
+    (C me@)
+    (IP-SUB
+      (NP (ADJ @ele) (D ica)))
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP (D @idi)))))
+  (NP-PRD (D ica) (N$ ǥonibole))
+  (PUNC .))(IP-MAT
+  (EV one)
+  (NP (D icoa) (N$ lodawa))
+  (PUNC :)
+  (CP-QUE
+    (IP-SUB
+      (WADVP (WADV igame))
+      (VB ǥanimawenaǥegi)
+      (NP (D ica))))
+  (CP-QUE
+    (C me)
+    (IP-SUB (VB elowati)))
+  (PUNC ?)
+  (IP
+    (NP (D ica))
+    (VB nokanice)
+    (IP-ADV
+      (NEG daǥa)
+      (VB naitece)
+      (NP (D ijo) (N ijeǥagi))))
+  (PUNC .))(IP-MAT
+  (EV+VBAPL oneete)
+  (PUNC :)
+  (CONJP
+    (IP-MAT-MAT (VB etidiiǥaxi)))
+  (CONJP
+    (IP-MAT-MAT (VB inawelaǥadi)))
+  (CONJP
+    (CONJ oda)
+    (IP-MAT
+      (VBAPL datopetigi)
+      (NP-APL (N niale))))
+  (CONJ oda)
+  (ADVP (ADV ja))
+  (ADJ yeleo)
+  (CONJP
+    (IP-MAT-MAT
+      (VB dinoke)
+      (NP (N$ lotoinaǥadi))))
+  (PUNC .))(IP-MAT
+  (CONJ oda)
+  (NP (N$ lodawa))
+  (T ja)
+  (VB yowoǥodi)
+  (NP
+    (D aniwa)
+    (N$ lodawa)
+    (CP-me
+      (C me)
+      (IP-SUB
+        (NP (N nigediole)))))
+  (PUNC .))(IP-MAT
+  (CT+VBAPL jonoǥinicotiobece)
+  (NP-SBJ (D ica) (N liǥeladi))
+  (EV+NEG+ADV+D onaǥaleǥica)
+  (NP-PRD
+    (NP (N$ lita))
+    (D icoa)
+    (N ǥonelegiwa))
+  (PUNC .))(IP-MAT
+  (CONJ oda)
+  (T jona)
+  (VB node)
+  (NP (D icoa))
+  (NP (ADJ eletidi) (N ǥonelegiwa))
+  (EV+VBAPL oneete)
+  (NP (D acoa) (N$ lodawa))
+  (PUNC :)
+  (IP
+    (AUX ejigo)
+    (VB jawo)
+    (NP (N$ ǥodopegajo))
+    (AUX ejigo)
+    (VBAPL joletigi)
+    (NP-APL
+      (NP (N exate))
+      (N$ lamodi)))
+  (PUNC .))(IP-MAT
+  (CONJ oda)
+  (CP-ADV
+    (CT nige)
+    (IP-SUB (VB igo)))
+  (T jona)
+  (VBAPL dowicededio)
+  (NP-APL (D icoa) (N$ lokaǥetedi))
+  (NP (D icoa))
+  (NP (ADJ eletidi) (N$ ǥodapowaǥaneǥegi))
+  (NP (D icoa))
+  (NP (ADJ eletidi) (N ǥonelegiwadi) (ADJ iwiadi))
+  (PUNC .))(IP-MAT
+  (ADVP (ADV oda))
+  (T+VBAPL joniǥigotibece)
+  (CONJ+D ijaǥijowa)
+  (T+VB joniǥigo)
+  (VB+N dinexate)
+  (NP (N$ lamotidi))
+  (CP-ADV
+    (CT naǥa)
+    (IP-SUB
+      (VBAPL enoditedio)
+      (NP-APL (D ica) (N exate))
+      (CP-me
+        (C me)
+        (IP-SUB
+          (VBAPL icodedicogi)
+          (NP-APL (D ica) (N exatijadi))
+          (NP (D naǥadaǥawa))))))
+  (NP (D ajowa) (N$ lodawa))
+  (PUNC .))(CP-QUE
+  (CONJ oda)
+  (EV one)
+  (VB nawela)
+  (NP (D icoa))
+  (EV one)
+  (PUNC :)
+  (INTJ niya)
+  (PUNC !)
+  (NP
+    (CP-FRL
+      (WPRP+D amina)
+      (IP-SUB
+        (NP (N$ ǥabakedi)))))
+  (PUNC ?))(IP-MAT
+  (ADV oda)
+  (EV one)
+  (D acoa)
+  (N iwalo)
+  (PUNC :)
+  (ADV codaǥida)
+  (D ica)
+  (INTJ niye)
+  (PUNC !)
+  (VB jakapaǥatiwagi)
+  (CNEG+VB atejiitigi)
+  (D ica)
+  (C me)
+  (niǥinaǥanati)
+  (PUNC .))(IP-MAT
+  (ADVP (ADV oda))
+  (EV+VBAPL oneete)
+  (NP (D acoa) (N$ lodawa))
+  (PUNC :)
+  (CP-QUE
+    (WADVP-1 (WADV iga@))
+    (C @me)
+    (IP-SUB (ADVP *T*-1) (VBAPL icoǥoitigi)))
+  (PUNC ?)
+  (IP (AUX emi) (VB awi))
+  (PUNC ?))(IP-MAT
+  (EV+VB onee)
+  (NP (D icoa) (N ǥonelegiwa))
+  (PUNC :)
+  (INTJ ahe)
+  (PUNC !)
+  (ADJ ewi)
+  (IP
+    (CP
+      (CT noGo@)
+      (IP-SUB
+        (ADVP (ADV @idaaGee))
+        (VB ejigo)))
+    (VB jawi)
+    (IP-ADV
+      (VB inodetiogi)
+      (NP (N ǥonelegiwadi))))
+  (VB etidodenoda)
+  (PUNC .)
+  (VB onee)
+  (PUNC :)
+  (IP
+    (VB ejigo)
+    (IP-ADV (VB jawi)))
+  (PUNC .))(IP-MAT
+  (T ja)
+  (VB yowooǥodi)
+  (NP
+    (NP (D niǥica) (N$ lowoogo))
+    (D ijowa)
+    (N$ lodawa))
+  (PUNC .))(IP-MAT
+  (CONJ oda)
+  (CT naGa@)
+  (IP
+    (EV @one)
+    (NP (N nigoi))
+    (T jona)
+    (VB nowenakadi)
+    (NP (D icoa) (N akokododi))
+    (CP-ADV
+      (CT naǥa)
+      (IP-SUB
+        (VB yapacaǥatege)
+        (NP (N nigoi)))))
+  (PUNC .))(IP-MAT
+  (CONJ oda)
+  (CP
+    (CT naGa@)
+    (IP-SUB (VB @igotibece)))
+  (T ja)
+  (ADVP (ADV legitece))
+  (C+VB migotibece)
+  (IP
+    (NP (D niǥica))
+    (VB idee))
+  (CT+VB niǥinagina)
+  (IP
+    (NP (D ica) (N nigediogo))
+    (VB niotece)
+    (NP (N$ ladigodi)))
+  (PUNC .))(IP-MAT
+  (NP (D icoa) (N$ lodawa))
+  (ADVP (ADV oda))
+  (VBAPL yowoǥoditeda)
+  (EV+VB onee)
+  (T+D jaǥanaǥanowa)
+  (NP (N$ ǥoniotaagodo))
+  (ADVP (ADV onexaa))
+  (VBAPL anidakitalo)
+  (NP-APL (D ina))
+  (T baǥa)
+  (WNP (WPRO+VBAPL anigidatediogi))
+  (CNeg ade)
+  (CNeg+C adeǥica)
+  (CP
+    (C ane)
+    (IP-SUB (VB yelowadi))))(IP-MAT
+  (CONJ oda)
+  (CT+VB neǥeno)
+  (NP-SBJ (D ica) (N nigediogo))
+  (T+VBAPL domoǥonopitetice)
+  (IP (VBAPL onopitetice))
+  (NEG aǥ@)
+  (NP-PRD
+    (D @ica)
+    (CP-REL
+      (WNP-1 (WPRO ane))
+      (IP-SUB (NP-TRACE *T*-1) (VB naliǥo))))
+  (PUNC .))(IP-MAT
+  (ADVP (ADV oda))
+  (CT+VBAPL noǥopitedio)
+  (NP-SBJ (D acoa) (N iwalo))
+  (PUNC <lparen>)
+  (PUNC ...)
+  (PUNC <rparen>)
+  (NEG+ADV+D aǥalegica)
+  (NP-SBJ-PRD (N nigediogo))
+  (T+VB jeǥelodi)
+  (T+VB joǥopio)
+  (NP-PRD (D acoa) (N iwalo))
+  (PUNC .))(IP-MAT
+  (ADVP (ADV oda))
+  (NP (D icoa) (N$ lodawa))
+  (NEG+ADV+NEG+VB aǥaleeǥejigo)
+  (NP (PRO akami))
+  (NP (N$ ǥodixigaǥawepoditiwaji))
+  (CNeg ade@)
+  (NEG @adaGa)
+  (VB ǥodakamaǥaditeda)
+  (NP (N$ ǥoniotagodo))
+  (PUNC .))(IP-MAT
+  (ADVP (ADV oda))
+  (T ja)
+  (VBAPL dopitedicogi)
+  (NP-APL (N$ liǥeladi))
+  (CT+VB neǥeno)
+  (NP (D aniwa))
+  (PUNC .))(IP-MAT
+  (EV one@)
+  (VBAPL @eete)
+  (PUNC :)
+  (WADVP (WADV igaa))
+  (C+VB madopiliti)
+  (IP (ADV+NEG+AUX aǥaleǥemi) (VB awi))
+  (PUNC ?))(IP-MAT
+  (EV one@)
+  (VBAPL @eete)
+  (PUNC :)
+  (NEG aǥ@)
+  (NP (D @ica))
+  (CONJ+NEG+D codaǥida)
+  (CP-ADV
+    (CT naǥa)
+    (IP-SUB (VB idopiti)))
+  (PUNC .))(IP-MAT
+  (CONJ oda)
+  (EV+VBAPL oneete)
+  (PUNC :)
+  (T+AUX daǥaleǥeniǥa)
+  (IP
+    (VB inoǥaǥa)
+    (IP-ADV
+      (NP (N namokoligi))
+      (VB jawoda)
+      (NP (N$ laagigi))))
+  (PUNC .))(IP-MAT
+  (CONJ oda)
+  (T+VBAPL jiǥigotibece)
+  (IP
+    (VB onaǥa)
+    (NP (D ica) (N$ lagigi))
+    (NP (D niǥica)))
+  (CT+VBAPL noǥonotota)
+  (NP-SBJ (D ica) (N eyawigo))
+  (CONJ oda)
+  (EV one)
+  (T jona)
+  (NP-PRD (N$ lowoǥo))
+  (CP-me
+    (C me)
+    (IP-SUB
+      (VB yelowadi)
+      (NP (D aniwa) (N$ lodawa))))
+  (PUNC .))(IP-MAT
+  (CONJ oda)
+  (EV+VBAPL oneete)
+  (PUNC :)
+  (IP
+    (VBAPL anicoti)
+    (NP-APL (D ina))
+    (VB inaǥoni)
+    (VBAPL alitiwa))
+  (IP
+    (ADV+VB aleejakagidi)
+    (NP (D idoda) (N$ ǥodagigi))
+    (VB anokoigi)
+    (NP (N$ ǥodatacanigi)))
+  (C bidige)
+  (T+VB jenaǥati)
+  (PUNC .))(IP-MAT
+  (CONJ oda)
+  (CP
+    (CT naGa@)
+    (IP-SUB
+      (EV @one)
+      (VB yakagidi)
+      (NP (D ica))))
+  (EV one)
+  (T+VBAPL domeǥeete)
+  (IP
+    (VB alati)
+    (IP-ADV (VB aliti)))
+  (IP
+    (NEG aG@)
+    (EV @one)
+    (VB alati)
+    (NP (D acoa) (N iwalo)))
+  (PUNC .))(IP-MAT
+  (CONJ oda)
+  (CP
+    (CT naGa@)
+    (IP-SUB
+      (EV @one)
+      (VBAPL dojiti)
+      (NP-APL (D ica) (N eyawigo))))
+  (EV one)
+  (VBAPL dojitelogo)
+  (NP-APL (D acoa) (N iwalo))
+  (CT+D niǥica)
+  (CP-me
+    (C me)
+    (IP-SUB
+      (VB dojitelogo)
+      (ADVP (ADV oda))))
+  (CT+D niǥidi)
+  (NP
+    (CP-FRL
+      (WNP-1 (WPRO ane))
+      (IP-SUB (NP-TRACE *T*-1) (VB ipiati))))
+  (PUNC .)
+  (ADVNEG atalee)
+  (NP (N iwalo))
+  (T ja)
+  (NP (N nigediogo))
+  (NP
+    (D idi)
+    (CP-REL
+      (WNP-2 (WPRO ane))
+      (IP-SUB (NP-TRACE *T*-2) (VB ipiati))))
+  (PUNC .))(IP-MAT
+  (C leeǥodi)
+  (IP
+    (CP-me
+      (C me)
+      (IP-SUB
+        (NP (N nigediole))))
+    (NP (D acoa) (N iwalo))
+    (ADVP (ADV tige))
+    (T+ADV domalee)
+    (VB iteweǥe)
+    (NP (D ica) (N$ loniciwaǥa))
+    (CP-me
+      (C me)
+      (IP-SUB
+        (NP (N ijeǥagi)))))
+  (PUNC .))(IP-MAT
+  (CONJ oda)
+  (T ja)
+  (VBAPL dopitedio)
+  (NP-APL (D icoa) (N ǥonelegiwa))
+  (VBAPL enagitediogi)
+  (NP-APL
+    (NP (D ica) (N$ lowigiwepodi))
+    (D acoa)
+    (N iwalo))
+  (EV+VBAPL oneetediogi)
+  (PUNC :)
+  (IP
+    (AUX diganagi)
+    (VB awini)
+    (NP (N$ ǥoniotagodo)))
+  (PUNC .))(IP-MAT
+  (VBAPL niigotibece)
+  (VB oiwi)
+  (CT+D niǥidiaǥidi)
+  (NP (D ica) (N nigediogo))
+  (VBAPL ipiati)
+  (NP-APL (N eyawigo))
+  (CONJ oda)
+  (ADV+VB nexaaǥowo)
+  (NP
+    (N$ libegi)
+    (NP (N$ liwai)))
+  (CONJ oda)
+  (T+VBAPL joǥonaligitedi)
+  (PUNC .))(IP-MAT
+  (CONJ oda)
+  (T+ADV joneǥidaaǥee)
+  (NP-SBJ (D ica))
+  (NP-PRD (NAPL natematigi) (D acoa) (N nigediole))
+  (CP-ADV
+    (CT naǥa)
+    (IP-SUB (VB yeleo)))
+  (CONJ oda)
+  (T+VB jama)
+  (PUNC .))

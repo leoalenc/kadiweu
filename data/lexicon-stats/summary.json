@@ -1,0 +1,23 @@
+{
+  "source_entry_count": 7360,
+  "entries_with_nonempty_name": 7360,
+  "entries_missing_or_empty_name": 0,
+  "distinct_exact_name_strings": 6752,
+  "repeated_exact_name_strings": 451,
+  "entries_in_repeated_name_groups": 1059,
+  "extra_entries_beyond_one_per_name": 608,
+  "repeated_name_groups_with_multiple_tags": 175,
+  "repeated_name_groups_with_multiple_definition_or_sense_signatures": 392,
+  "repeated_name_groups_with_multiple_tag_and_meaning_combinations": 418,
+  "repeated_name_groups_with_redundant_content_records": 55,
+  "redundant_content_record_pairs": 92,
+  "entries_with_morphemes_field": 818,
+  "entries_with_nonempty_morphemes": 815,
+  "entries_with_empty_or_null_morphemes": 3,
+  "distinct_name_forms_with_at_least_one_tag": 2747,
+  "distinct_name_forms_with_multiple_tags": 97,
+  "maximum_distinct_tags_for_a_form": 4,
+  "forms_with_maximum_distinct_tags": [
+    "leeǥodi"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "document_uid": "D309",
+  "document_title": "2 - GodapoaGeneGegi (Nosso guerreiro)",
+  "expected_title": "2 - GodapoaGeneGegi (Nosso guerreiro)",
+  "source_json": "6ab937e3fc2406c2f4b03a06.json",
+  "source_json_sha256": "b654b9fbecc42a0b654ccbaeef3e3432f16afe0213816194801b18953ee055d6",
+  "sentences": 29,
+  "statuses": {
+    "<missing>": 24,
+    "REVIEW": 5
+  },
+  "reconstructed_trees": 29,
+  "skipped_trees": [],
+  "source_psd": "6ab937edfc2406c2f4b03a07.psd",
+  "archived_psd": "tycho/psd/6ab937edfc2406c2f4b03a07.fe529f43dc3b.psd"
+}

@@ -1,0 +1,169 @@
+/*
+sentence = 2
+uid = 075fd4a6-24f0-11e5-9df9-0015c53587a5
+status = REVIEW
+text = miniwa me GodapoaGeneGegi one agelaxaGa joaniGidaaGee
+text_por = Ele era um guerreiro considerado barrigudo
+*/
+(
+  (IP-MAT
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (D @iniwa)
+        )
+      )
+      (CP-me
+        (C me)
+        (IP-SUB
+          (NP
+            (N$ GodapoaGeneGegi)
+          )
+        )
+      )
+    )
+    (EV one)
+    (ADJ agelaxaGa)
+    (T joanaGa@)
+    (ADVP
+      (ADV @idaaGe)
+    )
+  )
+  (ID warrior,0.2)
+)
+
+/*
+sentence = 3
+uid = 075fd4aa-24f0-11e5-9df9-0015c53587a5
+status = REVIEW
+text = leeGodi mida ica libonaGadi me adecewatece
+text_por = por causa disso o seu nome era Coitada de Minha Canoa
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ leeGodi)
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (Q @ida)
+          (D ica)
+          (N$ libonaGadi)
+        )
+      )
+      (CP-me
+        (C me)
+        (IP-SUB
+          (NP
+            (NPR adecewatece)
+          )
+        )
+      )
+    )
+  )
+  (ID warrior,0.3)
+)
+
+/*
+sentence = 6
+uid = 075fd4b2-24f0-11e5-9df9-0015c53587a5
+status = REVIEW
+text = icoa Goneleegiwadi inaGinoa GodapoGenaGa migotibece oideleGe gaxiana
+text_por = os homens de igual valentia nossa que foram brigar com os paraguaios
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (NP
+        (D icoa)
+        (N Goneleegiwadi)
+      )
+      (Q ina@)
+      (D @inoa)
+      (N$ GodapoGenaGa)
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (AUX @igotibece)
+        (VB oideleGe)
+        (NP
+          (NPR gaxiana)
+        )
+      )
+    )
+  )
+  (ID warrior,0.6)
+)
+
+/*
+sentence = 23
+uid = 075fd4a3-24f0-11e5-9df9-0015c53587a5
+status = REVIEW
+text = oda onetediogi : akaami iokaGedipi ja limedi me eniGa
+text_por = Então ele disse para eles: vocês, meus companheiros, já é a hora deles. Vamos ...
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (VBAPL onetediogi)
+    (PUNC :)
+    (NP
+      (PRO akaami)
+    )
+    (NP
+      (N$ iokaGedipi)
+    )
+    (T ja)
+    (NP
+      (N$ limedi)
+    )
+    (CP-me
+      (C me)
+      (IP-SUB
+        (VB eniGa)
+      )
+    )
+  )
+  (ID warrior,0.23)
+)
+
+/*
+sentence = 29
+uid = 075fd4b4-24f0-11e5-9df9-0015c53587a5
+status = REVIEW
+text = icoa inionigi libonaGadi adecewatece icaGica ica liwiGadi nigiwiu
+text_por = O meu tio de nome Coitado da Minha Canoa e seu animal veloz
+*/
+(
+  (IP-MAT
+    (NP
+      (NP
+        (NP
+          (D icoa)
+          (N inionigi)
+        )
+        (N$ libonaGadi)
+        (NP
+          (NPR adecewatece)
+        )
+      )
+      (CONJP
+        (CONJ icaGica)
+        (NP
+          (D ica)
+          (N$ liwiGadi)
+          (NP
+            (NPR nigiwiu)
+          )
+        )
+      )
+    )
+  )
+  (ID warrior,0.29)
+)

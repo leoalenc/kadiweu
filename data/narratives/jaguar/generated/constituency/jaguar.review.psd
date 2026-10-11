@@ -1,0 +1,109 @@
+/*
+sentence = 1
+uid = 13e0ee30-8f07-11e6-b457-90b11c409ded
+status = REVIEW
+text = natigide natematigi acoa iwaalo ane dinanatigi me nigediogo .
+text_por = Agora a história da mulher que virava onça.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV natigide)
+    )
+    (NP
+      (NAPL natematigi)
+      (D acoa)
+      (N iwaalo)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VBAPL dinanatigi)
+          (CP-me
+            (C me)
+            (IP-SUB
+              (NP
+                (N nigediogo)
+              )
+            )
+          )
+        )
+      )
+    )
+    (. .)
+  )
+  (ID jaguar,0.1)
+)
+
+/*
+sentence = 2
+uid = 13e0ee31-8f07-11e6-b457-90b11c409ded
+status = REVIEW
+text = one idi ica wadonadi ica icoa nokododi ica aca liGeladi ica Godoigi .
+text_por = Diz que havia um casal, naqueles dias, em uma aldeia do nosso povo.
+*/
+(
+  (IP-MAT
+    (EV one)
+    (NP-SBJ
+      (Q idi)
+      (D ica)
+      (N wadonadi)
+    )
+    (NP-SBJ-PRD
+      (Q ica)
+      (D icoa)
+      (N nokododi)
+    )
+    (NP-SBJ-PRD
+      (Q ica)
+      (D aca)
+      (N$ liGeladi)
+    )
+    (NP-PRD
+      (D ica)
+      (N$ Godoigi)
+    )
+    (. .)
+  )
+  (ID jaguar,0.2)
+)
+
+/*
+sentence = 3
+uid = 13e0ee32-8f07-11e6-b457-90b11c409ded
+status = REVIEW
+text = oda onigotibecewaji yawaligitibiwaji ica miditaGa ica eledi Godoigi .
+text_por = E resolveram visitar uma outra aldeia nossa.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (VBAPL onigotibecewaji)
+    (VB yawaligitibiwaji)
+    (NP
+      (D ica)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (DAPL @iditaGa)
+          )
+        )
+      )
+    )
+    (D ica)
+    (NP
+      (ADJ eledi)
+      (N$ Godoigi)
+    )
+    (. .)
+  )
+  (ID jaguar,0.3)
+)

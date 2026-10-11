@@ -1,0 +1,29 @@
+{
+  "document_uid": "D388",
+  "document_title": "3 - nigedioli (onça)",
+  "expected_title": "3 - nigedioli (onça)",
+  "source_json": "6ab93821fc2406c2f4b03a0a.json",
+  "source_json_sha256": "c44d14b3d3f418816e28fa9543c038325315c0cf10a770954d8dad7057821225",
+  "sentences": 56,
+  "statuses": {
+    "REVIEW": 3,
+    "<missing>": 53
+  },
+  "reconstructed_trees": 54,
+  "skipped_trees": [
+    {
+      "number": 32,
+      "uid": "13e470a2-8f07-11e6-b457-90b11c409ded",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 34}"
+    },
+    {
+      "number": 35,
+      "uid": "13e470a6-8f07-11e6-b457-90b11c409ded",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 15, 't': 'IP-MAT'}"
+    }
+  ],
+  "source_psd": "6ab9382cfc2406c2f4b03a0b.psd",
+  "archived_psd": "tycho/psd/6ab9382cfc2406c2f4b03a0b.fbca725d4578.psd"
+}

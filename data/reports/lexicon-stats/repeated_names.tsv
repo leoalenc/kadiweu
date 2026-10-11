@@ -1,0 +1,1095 @@
+name	group_size	uid	tag	grammar	definition	senses	status
+Aneotedoǥoji	2	4008a71d-4085-446b-9ecd-26fb6fbf5264	NPR	nom próp	Deus (Literalmente Aquele que nos fez, criou. Considerado como pertence aos Kadiwéu com afixo -te)  - nom próp	"[{""definition"":""Deus (Literalmente Aquele que nos fez, criou. Considerado como pertence aos Kadiwéu com afixo -te)""}]"	TODO
+Aneotedoǥoji	2	59785ec7-2d9f-41de-bfc6-b22727564a7d	NPR			null	TODO
+Ewe’egwo’o	2	ac3adb43-edbb-49c9-a8a8-6dc9906e6774	N			null	TODO
+Ewe’egwo’o	2	dec490df-4362-4234-a173-25ef18db7326	VB			null	TODO
+Mi’ihawyi	2	b9a189b0-3760-4b34-94b7-afb7242e940a	PRO+ADV			null	TODO
+Mi’ihawyi	2	1db4e5d2-e063-49d5-b7fe-7274de8573ea	ADV			null	TODO
+Najigotediwa	2	0383ef93-a8d4-476e-9522-7f238462c861	VBAPL			null	
+Najigotediwa	2	d9db2ab4-932c-4925-a33e-2092f8884acc	VBAPL			null	
+aage	2	3ede64c8-53ae-4d07-a7c4-5365c664f70f	ADJ			null	
+aage	2	c4faff03-a780-4df6-bf2c-4e3acbe1d9a5	NEG+D		nao estou	"[{""definition"":""nao estou""}]"	REVIEW
+acoa	2	d2308da0-168b-48ff-9d3b-1ad4b538b5e7	D		classificador numeral para modificar objetos fora da visão na forma feminina plural ou honorificada	"[{""definition"":""classificador numeral para modificar objetos fora da visão na forma feminina plural ou honorificada""}]"	DONE
+acoa	2	8e13d210-acc2-4197-b263-d35811206452	D			null	
+aije	2	7701a19b-0ddb-4530-a38e-4dfabc92e932			matar pessoas	"[{""definition"":""matar pessoas""}]"	TODO
+aije	2	19fb07a7-e411-43af-a0c4-1862499dbb21			matar (pessoas)	"[{""definition"":""matar (pessoas)""}]"	REVIEW
+ajo	3	419d8b14-87bc-4ad2-80d4-cdf25deea72b	D		ferramenta/instrumento	"[{""definition"":""ferramenta/instrumento"",""examples"":[{""text"":""najoli       miwiiGa"",""translations"":{""en"":""hunt tools"",""pt-br"":""instrumentos de caça""}}]}]"	TODO
+ajo	3	fe4de3e9-0ae5-4632-96ce-6f31d0f86359	N			"[{""definition"":""ferramenta/instrumento"",""examples"":[{""glosses"":""alnbl-tool-pl COMP+1POSS-hunt-pl"",""morphemes"":""n-ajo-li     me+i-wii-Ga"",""text"":""najoli       miwiiGa"",""translations"":{""en"":""hunt tools"",""po"":""instrumentos de caça""}}]}]"	TODO
+ajo	3	4ec970fc-7b95-4919-b5f1-65386c9d26c4	PRO			null	
+akamaǥa	2	f412e21e-ee23-4c5a-9990-0cb8ad6cc29e			viver em paz	"[{""definition"":""viver em paz""}]"	TODO
+akamaǥa	2	12aadbd6-5b3d-43ad-962b-ddfeeab42895		pro pess poss	seu próprio, mesmo (você) (Pode também enfatizar 2a pessoa)  - pro pess poss	"[{""definition"":""seu próprio, mesmo (você) (Pode também enfatizar 2a pessoa)""}]"	TODO
+akape	2	e007e61a-9019-4e6f-9e43-7e52a16bc7d6	C		vt segurar	"[{""definition"":""vt segurar""}]"	TODO
+akape	2	0954f012-fc61-4008-a682-62a178cebeb8			segurar	"[{""definition"":""segurar""}]"	REVIEW
+akiidi	2	fbf0a01f-efed-4c4f-b9ce-bd26fa2a8a90	N	subst masc	rio  - subst masc	"[{""definition"":""rio""}]"	TODO
+akiidi	2	30095662-4640-44d5-83ad-137523de7a62	N			null	
+alatii	2	aa780f4e-2b44-4415-b60f-c5f6bc7969e5	VB		você mudou	"[{""definition"":""você mudou""}]"	DONE
+alatii	2	2448217f-5a9f-40c2-a1cf-7a034c72d467	VB		mudar de lugar	"[{""definition"":""mudar de lugar""}]"	DONE
+ale	2	36e51f88-a780-4d05-9b80-a4532f19a784	v		queimar	"[{""definition"":""queimar"",""examples"":[{""text"":""dinalegi"",""translations"":{""en"":""It burns itself"",""pt-br"":""Isto se queima sozinho""}},{""text"":""aqaami          jGaleki"",""translations"":{""en"":""You burn it"",""pt-br"":""Você o queima""}},{""text"":""analekGegi"",""translations"":{""en"":""sp. ant (burnee)"",""pt-br"":""Formiga correçao""}}]}]"	TODO
+ale	2	1f961a5c-0796-4c91-9a49-364770be7bf0	v	bivalent		"[{""definition"":""queimar"",""examples"":[{""glosses"":""3sg.SUBJ-theme-refl-burn-atel"",""morphemes"":""y-d-n-ale-g"",""text"":""dinalegi"",""translations"":{""en"":""It burns itself"",""po"":""Isto se queima sozinho""}},{""glosses"":""2PRONOUN compl-2pl.SUBJ-burn-atel-pl"",""morphemes"":""aqaami         jG-a-ale-g-i"",""text"":""aqaami          jGaleki"",""translations"":{""en"":""You burn it"",""po"":""Você o queima""}},{""glosses"":""relative+burn-atel-[-cause]"",""morphemes"":""ane+ale-g-Gegi"",""text"":""analekGegi"",""translations"":{""en"":""sp. ant (burnee)"",""po"":""Formiga correçao""}}]}]"	TODO
+alodǥaa	2	8478d1d1-e0fd-4263-ac04-392d138e12bf	N		tabaco	"[{""definition"":""tabaco"",""examples"":[{""text"":""nalodGaadi""}]}]"	TODO
+alodǥaa	2	86c18b57-5d64-404b-8f41-aa7e9cf8f549	N			"[{""definition"":""tabaco"",""examples"":[{""glosses"":""alnbl-tobacco-pl"",""morphemes"":""n-alodGaa-adi"",""text"":""nalodGaadi""}]}]"	TODO
+aloolanǥa	3	b38250c0-47bc-42ce-8af0-b7aa1f74db39	N		touro	"[{""definition"":""touro""}]"	TODO
+aloolanǥa	3	f505c14e-64c9-49be-8311-d842abb426fc	N			"[{""definition"":""touro""}]"	TODO
+aloolanǥa	3	59579703-b29e-4a08-b588-edbfab280257	N			"[{""definition"":""touro""}]"	TODO
+amaǥa	3	20e73e90-b3ee-4177-824c-2b8165a49c60	VB		empurrar	"[{""definition"":""empurrar"",""examples"":[{""text"":""jamaGateloko                                 baloote nameeja"",""translations"":{""en"":""I push the table against the wall"",""pt-br"":""Eu empurro a mesa em direçao da parede""}}]}]"	TODO
+amaǥa	3	dc6ff378-92fa-4127-9afa-319de9f4c60e	VB	bivalent	empurrar  jamaGa - I push it;	"[{""definition"":""empurrar "",""examples"":[{""glosses"":""1sg.SUBJ-push"",""morphemes"":""j-amaGa"",""text"":""jamaGa"",""translations"":{""en"":""I push it"",""po"":""Eu o empurro""}}]}]"	REVIEW
+amaǥa	3	dd350e30-59e7-48cf-83c6-a85e77457eec	VB	bivalent	empurrar. Eu empurro nele em algo. jamaGateloko baloote nameeja - I push the table against the wall;	"[{""definition"":""empurrar. Eu empurro nele em algo."",""examples"":[{""glosses"":""1sg.SUBJ-push-rel+3sg.CL-allative wall    table"",""morphemes"":""j-amaGa-t+e-lokom                       baloote nameeja"",""text"":""jamaGateloko                                 baloote nameeja"",""translations"":{""en"":""I push the table against the wall"",""po"":""Eu empurro a mesa em direçao da parede""}}]}]"	REVIEW
+ameelinedi	2	022dbf2c-48db-4545-ac1e-f5d5b0b2273f	WPRO+N$	intro	claro que ... , pois não  - intro	"[{""definition"":""claro que ... , pois não""}]"	TODO
+ameelinedi	2	bb611fa6-0dff-40e4-82d6-f48931ebbd9c	INTJ		sim senhor	"[{""definition"":""sim senhor""}]"	TODO
+ami	2	d28ee33d-ca26-4015-a662-6093d1225fcc	N		antepassado	"[{""definition"":""antepassado"",""examples"":[{""text"":""God-ami-pi"",""translations"":{""en"":""Our ancestors"",""pt-br"":""Nosso antepassados""}}]}]"	TODO
+ami	2	c923739d-7280-4f47-bd48-051270436d4c	N			"[{""definition"":""antepassado"",""examples"":[{""glosses"":""1pl.POSS-ancestor-pl"",""morphemes"":""God-ami-pi"",""text"":""God-ami-pi"",""translations"":{""en"":""Our ancestors"",""po"":""Nosso antepassados""}}]}]"	TODO
+amoǥo	4	d63cd0c4-b32b-4407-a401-e11b99d716da	N		pó	"[{""definition"":""pó""}]"	TODO
+amoǥo	4	3c94a2b1-21f1-4170-a11b-b51a1dfe825b		subst masc	pó, poeira  - subst masc	"[{""definition"":""pó, poeira""}]"	TODO
+amoǥo	4	6dc84bc1-30c4-446e-b1ab-51328dcd3d04	N			"[{""definition"":""pó""}]"	TODO
+amoǥo	4	fb0081fc-6d29-4984-be42-76155f515bfb	N			"[{""definition"":""pó""}]"	TODO
+ana	2	21b79ccc-e5e8-47f3-84e5-8eee3d766863	VB		vender dinana - He sells himself;	"[{""definition"":""vender"",""examples"":[{""text"":""dinana"",""translations"":{""en"":""He sells himself"",""pt-br"":""Ele se vende""}}]}]"	DONE
+ana	2	64f4727b-0672-452d-b1a6-bff1d4f26355	VB	unergative	vir janagaGa - we come;	"[{""definition"":""vir"",""examples"":[{""glosses"":""1sg.SUBJ-come-tel-pl"",""morphemes"":""j-ane-g-Ga"",""text"":""janagaGa"",""translations"":{""en"":""we come"",""po"":""nós viemos""}}]}]"	REVIEW
+ane	4	8944e953-6083-4d90-a305-b613f72a64cb	WPRO		vir	"[{""definition"":""vir"",""examples"":[{""text"":""janegaGa"",""translations"":{""en"":""we come"",""pt-br"":""nós viemos""}}]}]"	TODO
+ane	4	eff95d69-e7cd-493a-8028-a89b0a01030f	WPRO		que	"[{""definition"":""que""}]"	TODO
+ane	4	5600df71-8a46-4de7-bb5b-c9bbea6081f7	WPRO			null	
+ane	4	69366ae4-96e2-4469-b93d-9703bfff4a97	WADV			null	
+anee	2	c8da6581-1c59-4a6c-9f9b-42210abf5d5a	WPRO	adj	maneira dele (como ele é) (forma 3ª pessoa)  - adj	"[{""definition"":""maneira dele (como ele é) (forma 3ª pessoa)""}]"	TODO
+anee	2	6bf23802-f010-43fa-91b4-0933aba49dcb	WPRO			null	
+aneyate	4	7c0303dd-78cb-43d6-9dda-f2bcb03c4a15	WPRO+VB		que arrumar um lugar para	"[{""definition"":""que arrumar um lugar para""}]"	TODO
+aneyate	4	d3a074b6-1956-4acc-b3aa-8ee1d08ba5eb	WPRO+VB		que arrumar um lugar para	"[{""definition"":""que arrumar um lugar para""}]"	TODO
+aneyate	4	8b2aef3b-57ae-4f8a-8c5e-241c9557503d	WPRP+VBAPL		que arruma lugar para	"[{""definition"":""que arruma lugar para""}]"	TODO
+aneyate	4	b64ba5a8-125f-4a93-b1a5-3674446e9b8c	WPRO+VBAPL		que arruma lugar para	"[{""definition"":""que arruma lugar para""}]"	TODO
+ani	3	872dd9e7-11d8-40bf-b1b7-4ffd5712dfd0	VB		cair enitineki beegi - Paulo fell in a hole; enitini - He fell/He was born;	"[{""definition"":""cair"",""examples"":[{""text"":""enitineki                                                           beegi"",""translations"":{""en"":""Paulo fell in a hole"",""pt-br"":""Paulo caiu em um buraco""}},{""text"":""enitini"",""translations"":{""en"":""He fell/He was born"",""pt-br"":""Ele caiu/Ele nasceu""}}]}]"	REVIEW
+ani	3	0626e5bd-e00b-4900-97eb-52995eaf6057	N		cheiro	"[{""definition"":""cheiro"",""examples"":[{""text"":""lanigi"",""translations"":{""en"":""Its smell"",""pt-br"":""Seu cheiro""}},{""text"":""danike"",""translations"":{""en"":""It is smelling"",""pt-br"":""Feder/Fedido""}}]}]"	TODO
+ani	3	9b60d0f3-a95b-4d67-a0f8-8790c3551d36	N			"[{""definition"":""cheiro"",""examples"":[{""glosses"":""3POSS-smell"",""morphemes"":""l-anigi"",""text"":""lanigi"",""translations"":{""en"":""Its smell"",""po"":""Seu cheiro""}},{""glosses"":""3sg.SUBJ-theme-smell-[+become]"",""morphemes"":""y-d-ani-ken"",""text"":""danike"",""translations"":{""en"":""It is smelling"",""po"":""Feder/Fedido""}}]}]"	TODO
+aniaditibige	2	d451461f-a260-416f-a86a-7f3399940902	VBAPL		sentir falta	"[{""definition"":""sentir falta""}]"	TODO
+aniaditibige	2	3ac41521-d5ac-42c5-ab8e-0a8bb6a5620a	VB		faltaram	"[{""definition"":""faltaram""}]"	DONE
+aniǥica	2	12ab4831-cc3b-48cd-9f79-791d86d0bc5e	WPRO+D	dem neg	ainda não, não tem  - dem neg	"[{""definition"":""ainda não, não tem""}]"	TODO
+aniǥica	2	56d826c3-53b9-4449-8639-3db0c85247c1	NEG+ADV		sem direção	"[{""definition"":""sem direção""}]"	TODO
+aniǥodi	2	4e47700c-c6f6-4d09-a5fc-b4e465928991	N		penis	"[{""definition"":""penis"",""examples"":[{""text"":""eniGodi"",""translations"":{""en"":""Somebody's penis"",""pt-br"":""O penis de alguém""}}]}]"	TODO
+aniǥodi	2	fbf11647-8dc7-4561-a24d-96f4254243f4	N			"[{""definition"":""penis"",""examples"":[{""glosses"":""IND-penis"",""morphemes"":""e-aniGodi"",""text"":""eniGodi"",""translations"":{""en"":""Somebody's penis"",""po"":""O penis de alguém""}}]}]"	TODO
+anoko	2	96751470-dac6-41e3-a6eb-bc1cdcf82299	WPRO+N		estes	"[{""definition"":""estes""}]"	TODO
+anoko	2	e96431d8-3ebb-4367-bcd9-bc81750d3bfe	WPRP+PRO		estes	"[{""definition"":""estes""}]"	TODO
+aona	2	ae044d0b-e43b-4622-992f-4bb5283b8276	EV+NEG	intro	disse que não ... (contando sobre coisa não visto pelo contador)  - intro	"[{""definition"":""disse que não ... (contando sobre coisa não visto pelo contador)""}]"	TODO
+aona	2	8d5bff75-204f-4371-951b-2001c17c1542	NEG+EV		diz que não	"[{""definition"":""diz que não""}]"	TODO
+apaaǥate	2	057858bc-c313-42c2-a95f-3b0fc9f65453	N		piolho/orelha	"[{""definition"":""piolho/orelha"",""examples"":[{""text"":""i-napaGaate"",""translations"":{""en"":""My lice/ear"",""pt-br"":""Meu piolho/orelha""}}]}]"	TODO
+apaaǥate	2	35a1e6b0-0a44-49e9-81b9-2cbe46cc0ab3	N			"[{""definition"":""piolho/orelha"",""examples"":[{""glosses"":""1POSS-alnbl-lice"",""morphemes"":""i-n-apaGaate"",""text"":""i-napaGaate"",""translations"":{""en"":""My lice/ear"",""po"":""Meu piolho/orelha""}}]}]"	TODO
+api	2	ef8d2e90-3dc1-45ad-b0a8-434c5829f19d	VB		fumar japikonGa - We smoke; japi jigaalo - I smoke cigarrette;	"[{""definition"":""fumar"",""examples"":[{""text"":""japikonGa"",""translations"":{""en"":""We smoke"",""pt-br"":""Nós fumamos""}},{""text"":""japi                     jigaalo"",""translations"":{""en"":""I smoke cigarrette"",""pt-br"":""Eu fumo cigarro""}}]}]"	REVIEW
+api	2	812ccc87-88f6-449e-91b9-8ba4a0f93e47	VB	bivalent	fumar japikonGa - We smoke; japi jigaalo - I smoke cigarrette;	"[{""definition"":""fumar"",""examples"":[{""glosses"":""1sg.SUBJ-smoke-[-become]-pl"",""morphemes"":""j-api-kon-Ga"",""text"":""japikonGa"",""translations"":{""en"":""We smoke"",""po"":""Nós fumamos""}},{""glosses"":""1sg.SUBJ-smoke cigarrette"",""morphemes"":""j-api                   jigaalo"",""text"":""japi                     jigaalo"",""translations"":{""en"":""I smoke cigarrette"",""po"":""Eu fumo cigarro""}}]}]"	REVIEW
+apiiǥo	3	0fcdd9e2-0bd5-4662-9a70-f8f0e999a28d		subst masc	túmulo, sepulcro  - subst masc	"[{""definition"":""túmulo, sepulcro""}]"	TODO
+apiiǥo	3	65578949-dcad-4902-9140-9daa77e47aa9	N		cemitério	"[{""definition"":""cemitério"",""examples"":[{""text"":""lowogo           migo                           apiiGo"",""translations"":{""en"":""His thoughts were to go to the cemitery"",""pt-br"":""Seus pensamentos eram de ir ao cemitério""}},{""text"":""apiiGojegi"",""translations"":{""en"":""sweet potato"",""pt-br"":""batata doce""}}]}]"	TODO
+apiiǥo	3	e2586de2-ed62-4e6d-9886-ef1fcb29df56	N	free form		"[{""definition"":""cemitério"",""examples"":[{""glosses"":""3p-think-pl        COMP+3sg.SUBJ-go cemitery"",""morphemes"":""l-owo-go        me+y-go                     apiiGo"",""text"":""lowogo           migo                           apiiGo"",""translations"":{""en"":""His thoughts were to go to the cemitery"",""po"":""Seus pensamentos eram de ir ao cemitério""}},{""glosses"":""cemitery-source"",""morphemes"":""apiiGo-jegi"",""text"":""apiiGojegi"",""translations"":{""en"":""sweet potato"",""po"":""batata doce""}}]}]"	TODO
+atale	2	b37c61bf-8d2d-4b5f-b136-8219011add7d	VB		brilhar	"[{""definition"":""brilhar"",""examples"":[{""text"":""datale"",""translations"":{""en"":""It is shining"",""pt-br"":""Brilhante""}}]}]"	TODO
+atale	2	8d45b994-d005-4fad-a76f-4302ae870015	VB	unaccusative	brilhar/ fazer brilar datale - It is shining;	"[{""definition"":""brilhar/ fazer brilar"",""examples"":[{""glosses"":""3sg.SUBJ-theme-shine"",""morphemes"":""y-d-atal"",""text"":""datale"",""translations"":{""en"":""It is shining"",""po"":""Brilhante""}}]}]"	DONE
+atamaǥatee(tege)	2	213ded8e-eb61-4f55-a6fd-3872ed85a83b			(sinôn)	"[{""definition"":""(sinôn)""}]"	TODO
+atamaǥatee(tege)	2	ddd57fee-9af2-41e5-81f3-5e923f0e7577			fazer desviar	"[{""definition"":""fazer desviar""}]"	REVIEW
+atemati	2	da97ac32-aa31-456a-bf78-12bc2848f2ee	VB		contar estória jatemati natematiqo - I tell a story;	"[{""definition"":""contar estória"",""examples"":[{""text"":""jatemati                natematiqo"",""translations"":{""en"":""I tell a story"",""pt-br"":""Eu conto uma estória""}}]}]"	DONE
+atemati	2	93c64e5d-3616-476d-91e2-ff195b71b138	VB	bivalent	contar estória jatemati natematiqo - I tell a story;	"[{""definition"":""contar estória"",""examples"":[{""glosses"":""1sg.SUBJ-tell        alnbl-tell-[-become]"",""morphemes"":""j-atemati              n-atemati-qon"",""text"":""jatemati                natematiqo"",""translations"":{""en"":""I tell a story"",""po"":""Eu conto uma estória""}}]}]"	DONE
+atepaǥadi	2	69963d72-6bb3-4011-a1d8-28b08a955aa9			vt amassar	"[{""definition"":""vt amassar""}]"	TODO
+atepaǥadi	2	9c14803a-8766-4269-be12-fa68086cbc25			amassar	"[{""definition"":""amassar""}]"	REVIEW
+ateqǥod	2	743ae9e1-22c3-4ede-baf4-e09e759d65d1	N		peito	"[{""definition"":""peito"",""examples"":[{""text"":""yateqGodi"",""translations"":{""en"":""My chest"",""pt-br"":""Meu peito""}}]}]"	TODO
+ateqǥod	2	b1c633b1-2943-4943-ba1c-750e15046a6a	N			"[{""definition"":""peito"",""examples"":[{""glosses"":""1POSS-chest"",""morphemes"":""i-ateqGod"",""text"":""yateqGodi"",""translations"":{""en"":""My chest"",""po"":""Meu peito""}}]}]"	TODO
+atobi	2	d4353ed2-a8af-4813-9189-c1dc02739586	N		rosto	"[{""definition"":""rosto"",""examples"":[{""text"":""etobi"",""translations"":{""en"":""Somebody's face"",""pt-br"":""Rosto de alguém""}}]}]"	TODO
+atobi	2	95387153-2234-4867-a993-7dcac7a53b58	N			"[{""definition"":""rosto"",""examples"":[{""glosses"":""IND-face"",""morphemes"":""e-atobi"",""text"":""etobi"",""translations"":{""en"":""Somebody's face"",""po"":""Rosto de alguém""}}]}]"	TODO
+awaligi	2	b749f88d-5f17-4e81-afd8-20e17d4bf832	VB		andar jawaligi - I walk;	"[{""definition"":""andar"",""examples"":[{""text"":""jawaligi"",""translations"":{""en"":""I walk"",""po"":""Eu ando""}}]}]"	DONE
+awaligi	2	600f7d64-da77-408d-8dd7-031b71fc67a9	VB	unergative	andar jawaligi - I walk;	"[{""definition"":""andar"",""examples"":[{""glosses"":""1sg.SUBJ-walk"",""morphemes"":""j-awaligi"",""text"":""jawaligi"",""translations"":{""en"":""I walk"",""po"":""Eu ando""}}]}]"	DONE
+awela	3	2fce1e17-ed89-4c2b-8775-b786d898b1fe	N		sapato	"[{""definition"":""sapato"",""examples"":[{""text"":""aweladi"",""translations"":{""en"":""Shoes"",""po"":""Sapatos""}}]}]"	TODO
+awela	3	c423b8db-e6eb-4781-ac67-623f4519779e	N			"[{""definition"":""sapato"",""examples"":[{""glosses"":""shoe-pl"",""morphemes"":""awela-adi"",""text"":""aweladi"",""translations"":{""en"":""Shoes"",""po"":""Sapatos""}}]}]"	TODO
+awela	3	c423b8db-e6eb-4781-ac67-623f4519779d	VB	unaccusative	assustar Godawela - We are scared; jawelaGadi - I scare him;	"[{""definition"":""assustar"",""examples"":[{""glosses"":""1pl.OBJ-theme-scare"",""morphemes"":""Go-d-awela"",""text"":""Godawela"",""translations"":{""en"":""We are scared"",""po"":""Estamos assustados""}},{""glosses"":""1sg.SUBJ-scare-[+cause]"",""morphemes"":""j-awela-Gad"",""text"":""jawelaGadi"",""translations"":{""en"":""I scare him"",""po"":""Eu o assusto""}}]}]"	DONE
+awiǥo	2	e9e27013-1949-48a5-b4c3-1a311e1879e9	N		nádega/pilao de arroz	"[{""definition"":""nádega/pilao de arroz"",""examples"":[{""text"":""lawiGo"",""translations"":{""en"":""His buttock"",""po"":""Sua nádega""}}]}]"	TODO
+awiǥo	2	b70e16d8-7ad9-4327-b0cd-ca19730c1f52	N			"[{""definition"":""nádega/pilao de arroz"",""examples"":[{""glosses"":""3POSS-buttock"",""morphemes"":""l-awiGo"",""text"":""lawiGo"",""translations"":{""en"":""His buttock"",""po"":""Sua nádega""}}]}]"	TODO
+awodi	2	f6d655a2-0394-4337-b59d-7627e5f092ee	N		sangue	"[{""definition"":""sangue"",""examples"":[{""text"":""ewodi"",""translations"":{""en"":""Blood"",""po"":""Sangue""}}]}]"	TODO
+awodi	2	2fd10dbb-5e64-4d8e-8924-e7c25a21812a	N			"[{""definition"":""sangue"",""examples"":[{""glosses"":""IND-blood"",""morphemes"":""e-awodi"",""text"":""ewodi"",""translations"":{""en"":""Blood"",""po"":""Sangue""}}]}]"	TODO
+awoǥo	2	5f2901e3-a392-4bf0-9930-b8d219bcfc4c	N		flor	"[{""definition"":""flor"",""examples"":[{""text"":""lawoGo"",""translations"":{""en"":""Its flower"",""po"":""Sua flor""}}]}]"	TODO
+awoǥo	2	d58f27c4-78ef-4b35-a93d-e4226635e2cf	N			"[{""definition"":""flor"",""examples"":[{""glosses"":""3POSS-flower"",""morphemes"":""l-awoGo"",""text"":""lawoGo"",""translations"":{""en"":""Its flower"",""po"":""Sua flor""}}]}]"	TODO
+axilake(tibece)	2	e5b2ecca-363b-45a8-9cfc-41b862d05aca			vt sacudir coçando	"[{""definition"":""vt sacudir coçando""}]"	TODO
+axilake(tibece)	2	07cf4b94-793f-441b-8d60-c92a4dedb1eb			sacudir qualquer coisa que pode pegar	"[{""definition"":""sacudir qualquer coisa que pode pegar""}]"	REVIEW
+ayo	2	45703b27-3f43-4a87-afe0-69a1177303c3	VB		voar wayo - He flies; jayoGo - We fly;	"[{""definition"":""voar"",""examples"":[{""text"":""wayo"",""translations"":{""en"":""He flies"",""po"":""Ele voa""}},{""text"":""jayoGo"",""translations"":{""en"":""We fly"",""po"":""Nós voamos""}}]}]"	DONE
+ayo	2	2ea7cdae-cd64-4e82-88d3-45cc8df39ba0	VB	unergative		"[{""definition"":""voar"",""examples"":[{""glosses"":""3sg.SUBJ-fly"",""morphemes"":""w-ayo"",""text"":""wayo"",""translations"":{""en"":""He flies"",""po"":""Ele voa""}},{""glosses"":""1sg.SUBJ-fly-pl"",""morphemes"":""j-ayo-Ga"",""text"":""jayoGo"",""translations"":{""en"":""We fly"",""po"":""Nós voamos""}}]}]"	REVIEW
+aǥalee	4	ef7b13ce-2c93-477f-b435-49760eb02097	ADV	adv	não mais  - adv	"[{""definition"":""não mais""}]"	TODO
+aǥalee	4	baec5436-9adb-469a-b1a0-318ea84ed304	ADV			null	
+aǥalee	4	9cd1c61a-f576-40cc-ad0a-3d32f06409a6	ADV			null	
+aǥalee	4	4a389ad7-8136-4958-bdaf-f90d967e1862	NEG+ADV			null	
+aǥaleica	2	686ca45b-75a6-411b-80db-fe1e93e2b75b	NEG+ADV+D		não tinha mais	"[{""definition"":""não tinha mais""}]"	TODO
+aǥaleica	2	c1d47cca-e674-48f5-a312-e5e44ffe2756	NEG+ADV+D		não tinha mais	"[{""definition"":""não tinha mais""}]"	TODO
+aǥaleǥica	2	cb647dcf-8dea-4482-97f5-d77d348cc252	NEG+ADV+D		não mais	"[{""definition"":""não mais""}]"	TODO
+aǥaleǥica	2	ca9ab279-9d64-4cad-a43d-400426de8167	NEG+ADV		não mais	"[{""definition"":""não mais""}]"	TODO
+aǥica	4	b47dde75-02e1-492a-9b35-bab7f1c3057b	NEG+D	dem pro neg masc	não tem  - dem pro neg masc	"[{""definition"":""não tem""}]"	TODO
+aǥica	4	0f34b1a1-ffec-482b-9ab8-1edcfb3871c9	DEM		eles	"[{""definition"":""eles""}]"	TODO
+aǥica	4	f22acb53-1768-492b-b8e2-672ded781bcd	Q			null	
+aǥica	4	ee816ced-cf99-48d0-a5cf-cb5188e63691	Q			null	
+aǥidiokidita	2	3a7cf1be-76a1-424a-96c8-804d14e0fad7			sozinho, só	"[{""definition"":""sozinho, só""}]"	TODO
+aǥidiokidita	2	abe57856-ea05-4f58-a81e-cfab93f8fccd		adj dem	não só, não somente  - adj dem	"[{""definition"":""não só, não somente""}]"	TODO
+aǥokidi	2	17a713e0-fb0d-4d07-a958-3dd380966619	N		tarde	"[{""definition"":""tarde"",""examples"":[{""text"":""jGawii"",""translations"":{""en"":""It is already afternoon"",""pt-br"":""Já é de tarde""}}]}]"	TODO
+aǥokidi	2	3c91904f-1f35-49ee-8fa9-934f8a184a64	N	free form		"[{""definition"":""tarde"",""examples"":[{""glosses"":""compl-afternoon"",""morphemes"":""jG+awii"",""text"":""jGawii"",""translations"":{""en"":""It is already afternoon"",""po"":""Já é de tarde""}}]}]"	TODO
+baloote	2	0f635e3f-179d-406d-830e-27a7ba34df9a	N		parede	"[{""definition"":""parede""}]"	TODO
+baloote	2	68edc02f-a3f9-4671-bd6d-febd45a15c4b	N			"[{""definition"":""parede""}]"	TODO
+bayodi	2	d4c2ed57-e2a8-4198-91d6-ccf4d228782f	N	free form	pimenta  - free form	"[{""definition"":""pimenta""}]"	TODO
+bayodi	2	3bc4d449-2c6a-44ce-a585-4e895d9dad93		subst fem	1) coisa amarga 2) pimenta  - subst fem	"[{""definition"":""coisa amarga""},{""definition"":""pimenta""}]"	TODO
+baǥalee	3	fe4182f5-c527-452a-b95b-1e61dd0205c7	T	cont	mas ainda (contrastando)  - cont	"[{""definition"":""mas ainda (contrastando)""}]"	TODO
+baǥalee	3	b39f2fb0-68d8-4123-8a43-9aa1ae5761f1	T+ADV			null	
+baǥalee	3	683cac28-ac42-4bf7-8976-9d905df658a3	ADV			null	
+boonaǥad	2	bd331e43-28aa-4863-8983-8a47eb925039	VB		chamar	"[{""definition"":""chamar"",""examples"":[{""text"":""iboonaGadi      wedeeye"",""translations"":{""en"":""My name is Wedeeye"",""po"":""Meu nome é Wedeeye""}}]}]"	TODO
+boonaǥad	2	86d7763d-c8e1-490b-8d45-10ba8d365004	VB	unergative		"[{""definition"":""chamar"",""examples"":[{""glosses"":""1POSS-name    proper.name"",""morphemes"":""i-boonaGadi    wedeeye"",""text"":""iboonaGadi      wedeeye"",""translations"":{""en"":""My name is Wedeeye"",""po"":""Meu nome é Wedeeye""}}]}]"	TODO
+catinedi	2	375006bf-87f4-4a01-86c8-5801f94f38d7	QAPL	loc	embaixo  - loc	"[{""definition"":""embaixo""}]"	TODO
+catinedi	2	eae17fdb-d583-4089-a185-1813404fcae1	DAPL		dentro do	"[{""definition"":""dentro do""}]"	TODO
+dabidi	2	cef64d9c-fd37-489c-b0d1-98bfa990d775			levantar, parar	"[{""definition"":""levantar, parar""}]"	TODO
+dabidi	2	fe1c38d7-2457-49ad-b065-f09429f647d1			levantar-se, parar	"[{""definition"":""levantar-se, parar""}]"	REVIEW
+dakake	2	f9155447-5f2e-4f99-a120-1bf5481fb628	VBU	adj	duro  - adj	"[{""definition"":""duro""}]"	TODO
+dakake	2	6b570a13-5ec2-4bfe-8bea-73c789c06490	VB	unaccusative	"1) custar caro/estar duro daqaqe - It is expensive/hard;
+ 2) estar com frio"	"[{""definition"":""custar caro/estar duro"",""examples"":[{""glosses"":""3sg.SUBJ-theme-hard"",""morphemes"":""y-d-aqaqe"",""text"":""daqaqe"",""translations"":{""en"":""It is expensive/hard"",""po"":""Custa caro/É duro""}}]},{""definition"":""estar com frio"",""uid"":""""}]"	REVIEW
+datiode	2	ecb6eb55-79b3-420a-9a2a-f08e2c1d9302		vi	está chovendo (só 3ª pessoa existe)	"[{""definition"":""está chovendo (só 3ª pessoa existe)""}]"	DONE
+datiode	2	094246fa-5049-45fc-842b-b481f4690b44	VB	unaccusative	chover datyodi - It is raining; jGelyodi medatyodi - It has been raining a lot;	"[{""definition"":""chover"",""examples"":[{""glosses"":""3sg.SUBJ-theme-rain-atel"",""morphemes"":""y-d-atyo-d"",""text"":""datyodi"",""translations"":{""en"":""It is raining"",""po"":""Está chovendo""}},{""glosses"":""compl-lot         COMP+3sg.SUBJ-theme-rain-atel"",""morphemes"":""jG-elyodi       me+y-d-atyo-d"",""text"":""jGelyodi         medatyodi"",""translations"":{""en"":""It has been raining a lot"",""po"":""Tem chovido muito""}}]}]"	DONE
+dawalolo	2	e837c932-bee0-4382-a6dd-7685811eb925	N		formiga-carregadeira	"[{""definition"":""formiga-carregadeira""}]"	TODO
+dawalolo	2	d69ec318-a44b-4c24-8e34-6ef06294f006		subst masc	formiga carregador  - subst masc	"[{""definition"":""formiga carregador""}]"	TODO
+daǥa	4	fbf219ca-cfbe-4e26-b482-d78a0d918373	C	cond , neg	1) se 2) neg  - cond , neg	"[{""definition"":""se""},{""definition"":""neg""}]"	TODO
+daǥa	4	54bdcaf6-fd7a-4d6a-be8a-91f3e00d838e	C		que	"[{""definition"":""que""}]"	TODO
+daǥa	4	14f9741a-7c23-4818-ab96-c27de4f04acb	C		se	"[{""definition"":""se""}]"	TODO
+daǥa	4	3a668f3a-bea7-4ca3-abb3-666ccc2084f8	C			null	
+daǥadiaaǥica	2	f4e91f5d-7df0-46f4-bb5a-404f9bd4440b	NEG+ADV+D	neg	não tem mais, não ter mais  - neg	"[{""definition"":""não tem mais, não ter mais""}]"	TODO
+daǥadiaaǥica	2	21b3ee74-115b-4bc9-968a-61cd8d597b81	NEG+ADV+D			null	
+daǥaleeǥaǥa	2	50e688f1-65f5-4fa0-8076-7347a32bbf5d		cond	se podia, se tiver, se for  - cond	"[{""definition"":""se podia, se tiver, se for""}]"	TODO
+daǥaleeǥaǥa	2	fa1d284c-dea1-436c-bd19-cd71e67c9045	C+ADV		podia	"[{""definition"":""podia""}]"	TODO
+daǥaleǥaǥa	4	21512e9d-a307-4762-bf5b-ed602eb2529b	VB		você poderia	"[{""definition"":""você poderia""}]"	TODO
+daǥaleǥaǥa	4	c0d8688e-cc68-43a5-bd39-4e48d2ec3864	C+VB			null	
+daǥaleǥaǥa	4	3c164cd6-9364-4020-a1cb-f99e214c61fd	C+VB			null	
+daǥaleǥaǥa	4	4e54400e-913f-4c14-9198-3e13f157be73	C+VB			null	
+daǥawini	2	d0bcd5de-df0a-43bc-9ebc-19b98e6d1d18	CT+VB		veja	"[{""definition"":""veja""}]"	TODO
+daǥawini	2	ff7e4395-24f0-42f8-9349-ef5922085c7c	C+VB		veja	"[{""definition"":""veja""}]"	TODO
+delele	2	f796977c-87a0-42ad-97fd-4ecfce06617f	N		tereré	"[{""definition"":""tereré""}]"	TODO
+delele	2	7d954a9c-37af-4ac1-8dfd-cdd9a175f148	N			"[{""definition"":""tereré""}]"	TODO
+deǥeeyomoditaǥa	2	93fd2168-3552-4888-a165-01aec055ce70	CT+PROAPL			null	
+deǥeeyomoditaǥa	2	fe3033b7-8a5d-4060-a6b1-e2443bf9ae1a	CT+PRO+C+VBAPL			null	
+dibate	2	99559bda-ff9c-4059-9dd0-53625c2f3c00	VBAPL		tocar nele	"[{""definition"":""tocar nele""}]"	TODO
+dibate	2	7dd34a6f-bd58-4aed-a9a6-f26da8b6a96a	VBAPL		pegar	"[{""definition"":""pegar""}]"	TODO
+digoida	2	72d800aa-6cf4-41c7-9de9-d510f16a0e44	D	loc	lá  - loc	"[{""definition"":""lá""}]"	TODO
+digoida	2	b62e803f-0306-4f1e-bf31-3bcbc12d6570	ADV+D		lá	"[{""definition"":""lá""}]"	TODO
+diimigi	2	b97c3c8f-99a1-4dd6-9b6b-7a7101c74986	N		casa	"[{""definition"":""casa""}]"	TODO
+diimigi	2	bfcd3618-3f21-46e1-962b-7810ff16d911	N			"[{""definition"":""casa""}]"	TODO
+dinakagidi	2	2125de95-d40e-4863-9d2f-c62af2f459a7			cortar-se	"[{""definition"":""cortar-se""}]"	TODO
+dinakagidi	2	bb89d681-46f7-4bee-b2ee-baedb6c8360a			cortar-se	"[{""definition"":""cortar-se""}]"	REVIEW
+dinaladi	2	a52d5d96-df56-4518-ac1f-0c612fa3c33d			separar-se	"[{""definition"":""separar-se""}]"	TODO
+dinaladi	2	1b7c537e-3e38-4f65-a3bc-858f755536af			mudar-se	"[{""definition"":""mudar-se""}]"	REVIEW
+dineloǥodi	2	a316f98a-3a77-4bcd-9988-3cacc8d96a47			confessar	"[{""definition"":""confessar""}]"	TODO
+dineloǥodi	2	593767c2-feaa-4f2f-8f8e-eba9d3c7d58c			confessar	"[{""definition"":""confessar""}]"	REVIEW
+dinigoeteci	2	90d937d0-5f43-448a-9c4e-e8359a024952		adj	amarrado  - adj	"[{""definition"":""amarrado""}]"	TODO
+dinigoeteci	2	27710cc1-0fa4-456a-a9cd-de500ebbab96		adj	amarrado  - adj	"[{""definition"":""amarrado""}]"	TODO
+diniigi	2	8fa10b55-3571-4f33-8acc-25ba1ebc1655			mudar-se, diferenciar-se	"[{""definition"":""mudar-se, diferenciar-se""}]"	TODO
+diniigi	2	c0acf3a3-7b2d-4e06-a5b7-1784610faf24		124	transformar-se (mudar-se de aparência, se diferenciar, p.ex. por trocar roupas)	"[{""definition"":""transformar-se (mudar-se de aparência, se diferenciar, p.ex. por trocar roupas)""}]"	TODO
+dinika(tice)	2	b8cd9df4-027e-4507-baeb-534698f9813f			soltar-se	"[{""definition"":""soltar-se""}]"	TODO
+dinika(tice)	2	20293758-2e10-443c-b206-0b2027b21e18			soltar-se	"[{""definition"":""soltar-se""}]"	REVIEW
+dinilaa(tibeci)	2	c9be0090-eb2f-4d19-8630-e7892d871be7			arrepender-se	"[{""definition"":""arrepender-se""}]"	TODO
+dinilaa(tibeci)	2	4da4553f-18bf-4d5a-ab96-e173605c2fd6			arrepender-se	"[{""definition"":""arrepender-se""}]"	REVIEW
+diniomaǥadi	2	2d8e65fc-7116-4cbe-9df5-7be5c396ba02			separar-se	"[{""definition"":""separar-se""}]"	REVIEW
+diniomaǥadi	2	f56601aa-43da-4697-8fa1-5c7f7075ddf1			separar-se	"[{""definition"":""separar-se""}]"	TODO
+diniweniǥide	3	c0df980a-f535-4dc1-9cd5-4ccfe3b313c1			orgulhar-se	"[{""definition"":""orgulhar-se""}]"	TODO
+diniweniǥide	3	83d449ba-fd6b-41ca-85a8-eaf0b808129a		vi	"1) engrandecer-se
+ 2) orgulhar-se
+ 3) gabar-se"	"[{""definition"":""engrandecer-se""},{""definition"":""orgulhar-se""},{""definition"":""gabar-se""}]"	DONE
+diniweniǥide	3	d371b2f8-297c-47b2-9333-b28d772b8f77			engrandecer-se	"[{""definition"":""engrandecer-se""}]"	REVIEW
+diniǥeke	2	960bdb4e-8913-41e2-b884-ed7ff158eccd		subst masc	mediador (alguém que vai na frente para representar, pode ser capitão novo)  - subst masc	"[{""definition"":""mediador (alguém que vai na frente para representar, pode ser capitão novo)""}]"	TODO
+diniǥeke	2	0e867739-cd74-44d5-ac8f-451f9dd8414b		subst masc	mediador (alguém que vai na frente para representar, pode ser capitão novo)  - subst masc	"[{""definition"":""mediador (alguém que vai na frente para representar, pode ser capitão novo)""}]"	TODO
+dinowedi	2	913ccc34-3b7e-46af-b8c5-686aac3e7963				null	
+dinowedi	2	1af2fb96-37f3-451c-a2dd-73524ea23fe8	VB			null	
+dinyeelo	2	36408f90-231f-4cfe-8d41-2da39de82b73	N		dinheiro	"[{""definition"":""dinheiro""}]"	TODO
+dinyeelo	2	acc82250-269b-4484-a95d-c0c069ebb97b	N			"[{""definition"":""dinheiro""}]"	TODO
+ditigedi	2	af69bd24-3baa-4f40-bca4-90294d06a6de	ADV		longe	"[{""definition"":""longe"",""examples"":[{""text"":""igotibeki                                                        ditigedi"",""translations"":{""en"":""He goes far"",""po"":""Ele vai longe""}},{""text"":""jiwitikugii                                       ditigedi"",""translations"":{""en"":""I look far"",""po"":""Eu olho para longe""}}]}]"	TODO
+ditigedi	2	f338f13d-5dc1-4b66-9af4-0839da819363	ADV			"[{""definition"":""longe"",""examples"":[{""glosses"":""3sg.SUBJ-go-rel+intensive+3sg.CL-inessive  far"",""morphemes"":""y-go-t-b+e-k                                                 ditigedi"",""text"":""igotibeki                                                        ditigedi"",""translations"":{""en"":""He goes far"",""po"":""Ele vai longe""}},{""glosses"":""1sg.SUBJ-watch-rel+going.straight far"",""morphemes"":""j-iwin-t-kogii                                 ditigedi"",""text"":""jiwitikugii                                       ditigedi"",""translations"":{""en"":""I look far"",""po"":""Eu olho para longe""}}]}]"	TODO
+diwelekǥoni	3	85809dc4-e935-465d-b79d-cde0bd9b51c5	N		lobo	"[{""definition"":""lobo""}]"	TODO
+diwelekǥoni	3	72fd4c68-60a4-409a-aab8-913b4681fcf0	N			"[{""definition"":""lobo""}]"	TODO
+diwelekǥoni	3	754b1029-5b8a-4b13-899e-825f3228b23c	N			"[{""definition"":""lobo""}]"	TODO
+diwicide	2	45dc8b80-b9fd-4cd5-90f5-650a8557a681	VB		amanhecer	"[{""definition"":""amanhecer""}]"	TODO
+diwicide	2	1a760ad5-3650-4369-a4eb-bad6ea1e96a1	VB			null	
+doide	2	7939e48e-a8a6-42f5-ab23-048f15b1a729	VB	adj	perigoso  - adj	"[{""definition"":""perigoso""}]"	TODO
+doide	2	51fb070a-af46-4396-82ea-493cea41ea7f		vi	fazer outro ficar com medo (se engrossar para outro ficar com medo, aplica também para nuvens escuras)	"[{""definition"":""fazer outro ficar com medo (se engrossar para outro ficar com medo, aplica também para nuvens escuras)""}]"	TODO
+doletibige	2	5196dbd7-3c60-4990-8d1b-fb1307e19043	VB		procurar	"[{""definition"":""procurar""}]"	TODO
+doletibige	2	c221a6dc-c509-4e9a-8337-d0f9d0c828e8	VB		procurar	"[{""definition"":""procurar""}]"	TODO
+domaǥa	2	4dbd9ee4-17f8-4af3-ae30-2adbb767f943	T	adv	1) queria 2) pretende (tentando)  - adv	"[{""definition"":""queria""},{""definition"":""pretende (tentando)""}]"	TODO
+domaǥa	2	a25dba7b-fc89-4a7c-ae3a-14094b696d37	T		quase	"[{""definition"":""quase""}]"	TODO
+dyokoloǥoloǥo	3	2a8f0eea-b9ea-4123-9abc-83936633482b	N		borboleta	"[{""definition"":""borboleta""}]"	TODO
+dyokoloǥoloǥo	3	867b3dc9-8b90-4cd9-a31e-fc66557b30e5	N			"[{""definition"":""borboleta""}]"	TODO
+dyokoloǥoloǥo	3	90048959-1e44-44e0-9c47-049ed40e7dbd	N			"[{""definition"":""borboleta""}]"	TODO
+dǥa	2	3a148d31-f681-41ef-9dd0-795890f5a55f	N		irmao mais velho	"[{""definition"":""irmao mais velho"",""examples"":[{""text"":""lidGa"",""translations"":{""en"":""His elder brothet"",""po"":""Seu irmao mais velho""}}]}]"	TODO
+dǥa	2	646690eb-3e7d-4669-a7a5-734a48b5f74b	N			"[{""definition"":""irmao mais velho"",""examples"":[{""glosses"":""3POSS-elder.brother"",""morphemes"":""l-dGa"",""text"":""lidGa"",""translations"":{""en"":""His elder brothet"",""po"":""Seu irmao mais velho""}}]}]"	TODO
+e-ee	2	7a2361fb-bd8a-4aae-a6bd-f95c240caae1			(fala da mulher)	"[{""definition"":""(fala da mulher)""}]"	REVIEW
+e-ee	2	f2ea1372-e664-4aab-a542-d826226bdaa3			(variante do gênero feminino)	null	TODO
+ece	2	18f24ff8-2186-457e-aa17-7d0991dfeeb9	VB		raspar	"[{""definition"":""raspar"",""examples"":[{""text"":""dinecegi"",""translations"":{""en"":""It was scraped"",""po"":""Foi raspado""}}]}]"	TODO
+ece	2	7fe290c9-d315-44a5-95d6-442ac9abd417	VB	bivalent		"[{""definition"":""raspar"",""examples"":[{""glosses"":""3sg.SUBJ-theme-hither-scrape-tel"",""morphemes"":""y-d-n-ece-g"",""text"":""dinecegi"",""translations"":{""en"":""It was scraped"",""po"":""Foi raspado""}}]}]"	TODO
+eelaǥa	2	606b309e-e49b-4dfc-a256-bbdb9a74cbd5	N		costas	"[{""definition"":""costas"",""examples"":[{""text"":""leelaGa"",""translations"":{""en"":""His back"",""po"":""As costas dele""}}]}]"	TODO
+eelaǥa	2	9ac30016-13b3-4e3c-bb66-6db0dac41110	N			"[{""definition"":""costas"",""examples"":[{""glosses"":""3POSS-back"",""morphemes"":""l-eelaGa"",""text"":""leelaGa"",""translations"":{""en"":""His back"",""po"":""As costas dele""}}]}]"	TODO
+eeyomoditaga	2	36ccf4d8-30b2-42e9-9452-cdbc8656740e	PROAPL		null	[{}]	TODO
+eeyomoditaga	2	86e96742-17a1-4256-9b16-3c74f10e85a8	PRO+C+VBAPL			null	
+ejanaǥa	2	4a076012-be97-4bc4-80a3-cffe890dab65		vi	plantar	"[{""definition"":""plantar""}]"	DONE
+ejanaǥa	2	bd90836f-1028-421a-a92f-80e91f815fc1			plantar	"[{""definition"":""plantar""}]"	TODO
+ejate	2	3f50bfb5-c38c-45b7-aad4-041198616f86	VBAPL	vt	"1) por, colocar em algum lugar
+ 2) começar a ..."	"[{""definition"":""por, colocar em algum lugar""},{""definition"":""começar a ...""}]"	DONE
+ejate	2	2ba9a7da-5f27-4fbd-8fd9-1ff2b88847f8		vt	vender	"[{""definition"":""vender""}]"	DONE
+ejatigi	2	2e303281-b455-4d81-8fb3-724b540eb591	VBAPL	vt	"1) uma maneira de falar
+ 2) levar para certo lugar
+ 3) apelar"	"[{""definition"":""uma maneira de falar""},{""definition"":""levar para certo lugar""},{""definition"":""apelar""}]"	DONE
+ejatigi	2	f5741b3e-2c7a-4819-a110-4509774249fa	VBTAPL		levar para certo lugar, apelar	"[{""definition"":""levar para certo lugar, apelar""}]"	TODO
+eji	2	8dd0ea0e-7ebb-4ab5-ba34-76c25c201e66		vi	falar (eji; eni; ee; ejitaGa; enitiwaji; odi) (verbo principal de fala)	"[{""definition"":""falar (eji; eni; ee; ejitaGa; enitiwaji; odi) (verbo principal de fala)""}]"	DONE
+eji	2	dc73d2a9-1073-42a0-b1f2-bacdf5588e4d		vi	você fala	"[{""definition"":""você fala""}]"	DONE
+ejigo	3	5f1bd381-d5c1-4ef0-bf00-79b42bb16d28	AUX	vi	eu vou (ejigo; emii; igo; iniGa; emiitiwaji; igotibeci;)	"[{""definition"":""eu vou (ejigo; emii; igo; iniGa; emiitiwaji; igotibeci;)""}]"	DONE
+ejigo	3	ccf78ab9-27a3-4235-b307-db9aad62dfe7	AUX		vou	"[{""definition"":""vou""}]"	TODO
+ejigo	3	0fe37150-811c-4e1f-99bb-f5e08e276f45	T			null	
+ejiwaǥadi	2	989a69e3-6bdb-4048-bdfa-5700c5427909		vt	"1) acreditar
+ 2) obedecer"	"[{""definition"":""acreditar""},{""definition"":""obedecer""}]"	DONE
+ejiwaǥadi	2	172809cd-36fe-4e95-a458-2063bf48ddf6		vi	crer	"[{""definition"":""crer""}]"	DONE
+ejo	2	a16d1a9c-fea9-4bbb-a9f8-ab147b586c6a		vi	chegamos até nosso destino, encontrar, achar	"[{""definition"":""chegamos até nosso destino, encontrar, achar""}]"	DONE
+ejo	2	a99b277e-b694-4b4b-90f0-33e6f9541d1d		vi	vir chegar	"[{""definition"":""vir chegar""}]"	DONE
+ejota	4	40660ef0-07cb-470a-a004-1a9857823a27		vi	chego até meu destino	"[{""definition"":""chego até meu destino""}]"	DONE
+ejota	4	8b4980bb-0863-49ec-b6ba-cd2f6383520a		vi	ele (ou ela) chega até destino	"[{""definition"":""ele (ou ela) chega até destino""}]"	DONE
+ejota	4	f49eb194-9741-4aae-9740-20fc7d215d14		vi	chegar até destino (pode ser encontrar)	"[{""definition"":""chegar até destino (pode ser encontrar)""}]"	DONE
+ejota	4	c7a5a784-14ee-41a6-aacd-db8648eeb1b4		vi	"1) eles chegam
+ 2) chegar"	"[{""definition"":""eles chegam""},{""definition"":""chegar""}]"	DONE
+ejote	4	b6d7199c-7df8-4c89-8330-1deb34f9a596		vi	fico num lugar por enquanto (temporário)	"[{""definition"":""fico num lugar por enquanto (temporário)""}]"	DONE
+ejote	4	c5bc5d15-600e-432d-8bec-de579ad97785			eu chego	"[{""definition"":""eu chego""}]"	TODO
+ejote	4	84023e0f-6bde-410e-b37f-c2db354af98c	EV+T	vi	ficamos por enquanto (estado temporário)	"[{""definition"":""ficamos por enquanto (estado temporário)""}]"	DONE
+ejote	4	90c2ad1d-5e15-4dfc-bafb-95e2cc144859		vi	ficar num lugar (temporário)	"[{""definition"":""ficar num lugar (temporário)""}]"	DONE
+ejotibige	3	e7572325-3fc7-403c-9d07-60faec331271	T	vi	nós nos levantamos (de posição horizontal)	"[{""definition"":""nós nos levantamos (de posição horizontal)""}]"	DONE
+ejotibige	3	6c525cdc-01d4-45de-9339-9f460ba7189e		vi	"1) eu me levanto (de posição horizontal)
+ 2) deitar-se"	"[{""definition"":""eu me levanto (de posição horizontal)""},{""definition"":""deitar-se""}]"	DONE
+ejotibige	3	3cd47abb-ce58-4996-9801-d7e81ffa3d77		vi	você se levanta (de posição horizontal)	"[{""definition"":""você se levanta (de posição horizontal)""}]"	DONE
+ela	4	70e7087e-48b9-4af5-b1bc-c93e749f3a8d	N$		fruta	"[{""definition"":""fruta""}]"	TODO
+ela	4	23bca0bb-3a3c-4b1a-bce1-bee8d3c5ffbe	VB		ter raiva/odiar	"[{""definition"":""ter raiva/odiar"",""examples"":[{""text"":""idelatGawa"",""translations"":{""en"":""I hate you"",""po"":""Eu odeio você""}},{""text"":""GodelaGegi"",""translations"":{""en"":""Hate"",""po"":""Nosso ódio""}}]}]"	TODO
+ela	4	6327904f-07ab-448f-9d24-e620e64d57fc	N			"[{""definition"":""fruta""}]"	TODO
+ela	4	6327904f-07ab-448f-9d24-e620e64d57fb	VB	unaccusative		"[{""definition"":""ter raiva/odiar"",""examples"":[{""glosses"":""1sg.SUBJ-theme-hate-rel+2sg.CL-dative"",""morphemes"":""j-d-ela-t+Ga-wa"",""text"":""idelatGawa"",""translations"":{""en"":""I hate you"",""po"":""Eu odeio você""}},{""glosses"":""1pl.POSS-hate-[-cause]"",""morphemes"":""God-ela-Gegi"",""text"":""GodelaGegi"",""translations"":{""en"":""Hate"",""po"":""Nosso ódio""}}]}]"	TODO
+elaǥa	3	1140ab61-f7d9-484f-90c2-39875f4cc264		subst fem	costas  - subst fem	"[{""definition"":""costas""}]"	TODO
+elaǥa	3	0c8db43e-1eaf-4c97-b8a8-3dfe90da9f73	N		costas	"[{""definition"":""costas"",""examples"":[{""text"":""GodelaGa"",""translations"":{""en"":""Our back"",""po"":""Nossas costas""}}]}]"	TODO
+elaǥa	3	3ebe17c9-4c86-41b8-b000-a61ebc90a696	N			"[{""definition"":""costas"",""examples"":[{""glosses"":""1pl.POSS-back"",""morphemes"":""God-elaGa"",""text"":""GodelaGa"",""translations"":{""en"":""Our back"",""po"":""Nossas costas""}}]}]"	TODO
+eletidi	3	0773bef9-1b02-4435-be63-2b01068f80f1	ADJ		outras	"[{""definition"":""outras""}]"	TODO
+eletidi	3	7d67d071-5fdf-4ac4-9142-2ae709cdeadd	ADJ		outros	"[{""definition"":""outros""}]"	TODO
+eletidi	3	788ef1de-940c-4385-b717-0192616fd378	ADJ		outras	"[{""definition"":""outras""}]"	TODO
+eleǥide	2	237f5986-b299-4d47-911f-92c24e4bb862	VB		ofender	"[{""definition"":""ofender"",""examples"":[{""text"":""yatematigo   Joao eo                         me       deleGide"",""translations"":{""en"":""My story about John made him to be offended"",""po"":""Minha história do Joao o fez ficar ofendido""}}]}]"	TODO
+eleǥide	2	7fe61f30-88ae-497f-8ea5-750a2daed4bd	VB	unaccusative		"[{""definition"":""ofender"",""examples"":[{""glosses"":""1POSS-tell-pl John 3sg.SUBJ-make   COMP 1sg.SUBJ-theme-offend"",""morphemes"":""i-atemati-go John y-aon                   me       y-d-eleGide"",""text"":""yatematigo   Joao eo                         me       deleGide"",""translations"":{""en"":""My story about John made him to be offended"",""po"":""Minha história do Joao o fez ficar ofendido""}}]}]"	TODO
+eligo	2	1ad8e9ec-ca9b-4735-adde-28c779015f9b	VB		comer	"[{""definition"":""comer"",""examples"":[{""text"":""jeligo              wayaba"",""translations"":{""en"":""I eat guava"",""po"":""Eu como goiaba""}},{""text"":""jelikaGa"",""translations"":{""en"":""We eat it"",""po"":""Nós o comemos""}}]}]"	TODO
+eligo	2	64fcb599-5b13-4964-99bc-e81ebad96b99	VB	bivalent		"[{""definition"":""comer"",""examples"":[{""glosses"":""1sg.SUBJ-eat  guava"",""morphemes"":""j-eligo            wayaba"",""text"":""jeligo              wayaba"",""translations"":{""en"":""I eat guava"",""po"":""Eu como goiaba""}},{""glosses"":""1sg.SUBJ-eat-pl"",""morphemes"":""j-eligo-Ga"",""text"":""jelikaGa"",""translations"":{""en"":""We eat it"",""po"":""Nós o comemos""}}]}]"	TODO
+eliodi	3	df2df8b3-2fda-4f8f-b858-0f988601b00b	Q	subst masc	pai dele  - subst masc	"[{""definition"":""pai dele""}]"	TODO
+eliodi	3	9d7cf846-1137-4fbc-9d35-f5f00ed8cf76	N$	núm	muito, amplo, grande  - núm	"[{""definition"":""muito, amplo, grande""}]"	TODO
+eliodi	3	32614940-4df0-4c4e-888a-52945c19488f	Q			null	
+elo	2	933532b0-4016-490e-b8ac-124334c8768c	VB		ele correu	"[{""definition"":""ele correu"",""examples"":[{""text"":""eloditibigimeki                                     nalaGate"",""translations"":{""en"":""He ran him away to the mountain"",""pt-br"":""Ele o tocou para a montanha""}},{""text"":""waloqoditibigimeki                                                        nalaGate"",""translations"":{""en"":""He runs up the mountain"",""pt-br"":""Elesobe na montanha""}}]}]"	TODO
+elo	2	482b50a6-099f-441b-bd0e-57185ebe0717	VB	bivalent	ele corre/correu	"[{""definition"":""ele corre/correu"",""examples"":[{""glosses"":""3sg.SUBJ-run-atel-rel+3sg.CL-inessive alnbl-mountain"",""morphemes"":""y-alo-d-t+bigim+e-k                             n-alaGate"",""text"":""eloditibigimeki                                     nalaGate"",""translations"":{""en"":""He ran him away to the mountain"",""po"":""Ele o tocou para a montanha""}},{""glosses"":""3sg.SUBJ-[-become]-atel-rel+upwards+3sg.CL-inessive alnbl-mountain"",""morphemes"":""w-alo-qon-d-t+bigim+e-k                                              n-alaGate"",""text"":""waloqoditibigimeki                                                        nalaGate"",""translations"":{""en"":""He runs up the mountain"",""po"":""Elesobe na montanha""}}]}]"	TODO
+elodi	2	a4f74fb8-bec6-4a30-a8fe-b8ad5c5091c9			correr fugindo	"[{""definition"":""correr fugindo""}]"	TODO
+elodi	2	655597d6-5e6c-4243-baa3-13c9c65021ee			correr (talvez fugindo)	"[{""definition"":""correr (talvez fugindo)""}]"	REVIEW
+eloni	2	57f59954-394f-4789-94bd-d9d78e803044	N		gelo	"[{""definition"":""gelo""}]"	TODO
+eloni	2	09ca05c5-bf3e-4731-8f39-04621771415f	N			"[{""definition"":""gelo""}]"	TODO
+eloǥo	2	bf9bcfb8-0602-4960-a95a-a0e1cb90f045	VB		contar/informar	"[{""definition"":""contar/informar"",""examples"":[{""text"":""jeloGotaGa"",""translations"":{""en"":""We tell it"",""po"":""Nós contamos""}},{""text"":""oyeloGodita"",""translations"":{""en"":""They tell it to him"",""po"":""Eles os informam sobre isso""}},{""text"":""yeloGodite                              natematigo"",""translations"":{""en"":""He tells him a story"",""po"":""Ele conta-lhe uma estória""}}]}]"	TODO
+eloǥo	2	e176a508-7a72-45e7-b067-a115ff5b63a7	VB	bivalent		"[{""definition"":""contar/informar"",""examples"":[{""glosses"":""1sg.SUBJ-tell-atel-pl"",""morphemes"":""j-eloGo-d-Ga"",""text"":""jeloGotaGa"",""translations"":{""en"":""We tell it"",""po"":""Nós contamos""}},{""glosses"":""pl-3sg.SUBJ-tell-atel-rel+3sg.CL-dative"",""morphemes"":""o-y-eloGo-d+t-e-wa"",""text"":""oyeloGodita"",""translations"":{""en"":""They tell it to him"",""po"":""Eles os informam sobre isso""}},{""glosses"":""3sg.SUBJ-tell-atel-rel+3sg.CL alnbl-tell-pl"",""morphemes"":""y-eloGo-d-t-e                         n-atemati-go"",""text"":""yeloGodite                              natematigo"",""translations"":{""en"":""He tells him a story"",""po"":""Ele conta-lhe uma estória""}}]}]"	TODO
+emaǥa	3	884e4861-ce26-47ad-9ca3-b92a51296f51	VB		ficar bêbado	"[{""definition"":""ficar bêbado""}]"	TODO
+emaǥa	3	e4d6bca0-f702-4fec-ae8d-632ddd8dd582			ficar bêbado	"[{""definition"":""ficar bêbado""}]"	REVIEW
+emaǥa	3	01a5c26d-55d3-455a-8363-4b05a69aeac7	PRO	pro	1) eu mesmo 2) meu próprio  - pro	"[{""definition"":""eu mesmo""},{""definition"":""meu próprio""}]"	TODO
+emokaya	2	0bd24c0f-3022-4e6c-a509-e939bb3bdfb6	N		coquinho, baba-de-boi	"[{""definition"":""coquinho, baba-de-boi""}]"	TODO
+emokaya	2	b9812423-e975-4c8d-bff5-253aeeeb369c		subst fem	bocaiúva (fruta)  - subst fem	"[{""definition"":""bocaiúva (fruta)""}]"	TODO
+enidite	2	6cc3adeb-989d-4d01-a8ed-1cbfe2eb7a06	VBAPL		chamou por	"[{""definition"":""chamou por""}]"	TODO
+enidite	2	60236732-d0dd-4dbf-a475-9f7162b734dd	VBAPL		chamou	"[{""definition"":""chamou""}]"	TODO
+epiibi	2	a24b0a05-4bee-42d4-a0d4-8ba0136ca9d2	N	free form	pica-pau-de-topete-loiro  - free form	"[{""attributes"":{""scientific"":""Celeus flavescens""},""definition"":""pica-pau-de-topete-loiro""}]"	TODO
+epiibi	2	65bdef51-5de6-4ba3-a45f-529f1c57ed77	N	free form		"[{""attributes"":{""scientific"":""Celeus flavescens""},""definition"":""pica-pau-de-topete-loiro""}]"	TODO
+etadi	2	c674a47b-55b4-479a-aeaa-891dba6bb8df	VB	loc fem	está aí  - loc fem	"[{""definition"":""está aí""}]"	TODO
+etadi	2	6395863f-377d-4124-adf9-49ff166cfabc	VB		está	"[{""definition"":""está""}]"	TODO
+etakado	2	b002d3e0-0440-40e2-8706-bfb670c92c3a	N		agulha	"[{""definition"":""agulha""}]"	TODO
+etakado	2	569345d5-d1a7-4c90-921d-620d4b6b8c33		subst fem	agulha  - subst fem	"[{""definition"":""agulha""}]"	TODO
+etakemǥa	2	601b7893-9185-4973-9c7d-ec29643fb48d	N		coelho	"[{""definition"":""coelho"",""examples"":[{""text"":""etakemaGadi liweena"",""translations"":{""en"":""The rabbit's food/Carrot"",""po"":""Comida de coelho/Cenoura""}}]}]"	TODO
+etakemǥa	2	9faceaec-eff3-479e-bfe1-e976496e5afa	N			"[{""definition"":""coelho"",""examples"":[{""glosses"":""rabbit-pl   3POSS-food"",""morphemes"":""etakemGa-adi l-weena"",""text"":""etakemaGadi liweena"",""translations"":{""en"":""The rabbit's food/Carrot"",""po"":""Comida de coelho/Cenoura""}}]}]"	TODO
+etapini	2	0f473717-b408-4974-86b1-6cef34e3ab0e	N		caramujo	"[{""definition"":""caramujo""}]"	TODO
+etapini	2	9187e2b4-4b05-4b71-8932-1f6608fc21c8	N			"[{""definition"":""caramujo""}]"	TODO
+etee	2	e85d2b72-2e18-4341-88f1-5e286925c03d	VB	v estado	eu estou, fico	"[{""definition"":""eu estou, fico""}]"	REVIEW
+etee	2	08002f33-b587-4a56-88fd-4ead64018bea		v estado	está lá (referência a alguém que está deitado)	"[{""definition"":""está lá (referência a alguém que está deitado)""}]"	REVIEW
+etogo	2	ba68017f-fce8-43e6-8792-6253ba31aa9f	N		navio	"[{""definition"":""navio""}]"	TODO
+etogo	2	90413f22-ab6b-43be-b642-c486aa74d8ab		subst fem	1) barco 2) tipo de festa  - subst fem	"[{""definition"":""barco""},{""definition"":""tipo de festa""}]"	TODO
+etǥadi	3	62b0bdf8-148d-4179-a2c4-c91c9df824b2	N		bambu	"[{""definition"":""bambu""}]"	TODO
+etǥadi	3	7e6867a3-9606-4ff8-8cee-9fd51e8d0861	N			"[{""definition"":""bambu""}]"	TODO
+etǥadi	3	e6893f9d-52f1-43a0-b2f9-821447fe8eee	N			"[{""definition"":""bambu""}]"	TODO
+ewagi	2	2c70daac-8c0f-4e5d-a605-116d75731410		subst fem	pássaro que canta no frio e à noite  - subst fem	"[{""definition"":""pássaro que canta no frio e à noite""}]"	TODO
+ewagi	2	c0ef43ca-5b33-49ed-95bb-fd091427190c	N		ombro, costas	"[{""definition"":""ombro, costas"",""examples"":[{""text"":""lewagi"",""translations"":{""en"":""His sholders"",""po"":""O ombro dele""}}]}]"	TODO
+ewaloǥonǥa	3	84c9d68f-4e4a-4f88-95fd-66fd0f488136	N		mudo	"[{""definition"":""mudo""}]"	TODO
+ewaloǥonǥa	3	5186cebb-4a2c-4a15-a089-4941788372e7	N			"[{""definition"":""mudo""}]"	TODO
+ewaloǥonǥa	3	f2a0937f-3583-45f3-a6ef-9b1f35fdcb32	N			"[{""definition"":""mudo""}]"	TODO
+ewaǥaco	3	7cbf5d7d-ccc4-4ac3-b643-61c95185c148	N		capivara	"[{""definition"":""capivara""}]"	TODO
+ewaǥaco	3	6995a441-54e1-43c1-ad62-3103ed3239ff	N			"[{""definition"":""capivara""}]"	TODO
+ewaǥaco	3	9a2cd6b2-feb5-4a75-88a5-ee5157f4814e	N			"[{""definition"":""capivara""}]"	TODO
+ewi	2	b8b8ab2e-54aa-439a-9bbb-22854afc3e1c	N		verdade	"[{""definition"":""verdade"",""examples"":[{""text"":""ewi   mejigo                 nigotGa"",""translations"":{""en"":""I trully go to the city"",""po"":""Eu vou para a cidade de verdade""}}]}]"	TODO
+ewi	2	e08cd97a-1ef9-4862-936a-8520372e4768	N			"[{""definition"":""verdade"",""examples"":[{""glosses"":""truth  COMP+1AUX-go alnbl-city"",""morphemes"":""ewi  me+ej-go              n-gotGa"",""text"":""ewi   mejigo                 nigotGa"",""translations"":{""en"":""I trully go to the city"",""po"":""Eu vou para a cidade de verdade""}}]}]"	TODO
+ewiǥa	2	06f40bca-cd03-4dd9-8d69-c5f6f4f47feb	N		vida	"[{""definition"":""vida"",""examples"":[{""text"":""nGina    epootwe lewiGa      Goneleegiwa"",""translations"":{""en"":""As for Brazil, man has a short life-span""}},{""text"":""yewiGa"",""translations"":{""en"":""He is alive"",""po"":""Ele está vivo""}}]}]"	TODO
+ewiǥa	2	de30c472-cc98-465f-b702-83f8509e1a0c	N			"[{""definition"":""vida"",""examples"":[{""glosses"":""DEM       Brazil  3POSS-life 1pl.POSS-alnbl-man"",""morphemes"":""nGina    epootwe l-ewiGa    God-n-eleegiwa"",""text"":""nGina    epootwe lewiGa      Goneleegiwa"",""translations"":{""en"":""As for Brazil, man has a short life-span""}},{""glosses"":""3sg.SUBJ-life"",""morphemes"":""y-ewiGa"",""text"":""yewiGa"",""translations"":{""en"":""He is alive"",""po"":""Ele está vivo""}}]}]"	TODO
+eǥyadi	3	3d5067ca-6c28-445c-9b85-10ef36b3c059	N		macaco bugio	"[{""attributes"":{""scientific"":""allouatta caraya""},""definition"":""macaco bugio""}]"	TODO
+eǥyadi	3	2d42ba6b-fece-4be1-b4fd-ed3d2fbb7d4c	N			"[{""attributes"":{""scientific"":""allouatta caraya""},""definition"":""macaco bugio""}]"	TODO
+eǥyadi	3	07353717-9789-40cb-bdd2-fd8af7013ead	N			"[{""attributes"":{""scientific"":""allouatta caraya""},""definition"":""macaco bugio""}]"	TODO
+gaape	2	4baf6894-8a07-48d4-8fce-fd1bee5bc4fb		subst masc	café  - subst masc	"[{""definition"":""café""}]"	TODO
+gaape	2	56aaf301-3432-4c74-8880-73d3c89e41bb	N		café	"[{""definition"":""café""}]"	TODO
+gegi	2	bacfa290-363b-474c-8625-01249a65872a	N		brinco	"[{""definition"":""brinco"",""examples"":[{""text"":""nigegi"",""translations"":{""en"":""Earring"",""po"":""Brinco""}}]}]"	TODO
+gegi	2	93bf8d61-b14e-41a2-8f5d-f3a6e8e7b397	N			"[{""definition"":""brinco"",""examples"":[{""glosses"":""alnbl-earring"",""morphemes"":""n-gegi"",""text"":""nigegi"",""translations"":{""en"":""Earring"",""po"":""Brinco""}}]}]"	TODO
+gekooǥe	2	89da3c92-5161-42b3-b1cd-41034af3dc6f	N		olho	"[{""definition"":""olho"",""examples"":[{""text"":""nigekooGeli"",""translations"":{""en"":""his eyes"",""po"":""seus olhos""}}]}]"	TODO
+gekooǥe	2	510e8177-0df6-4b92-9a57-bb76683e9898	N			"[{""definition"":""olho"",""examples"":[{""glosses"":""3POSS-alnbl-eye-pl"",""morphemes"":""l-n-gekooGe-li"",""text"":""nigekooGeli"",""translations"":{""en"":""his eyes"",""po"":""seus olhos""}}]}]"	TODO
+gekǥale	2	acab9a6a-a18c-42cf-9b5b-5c790d24cc15	VB		preocupar-se	"[{""definition"":""preocupar-se"",""examples"":[{""text"":""idigekGaleGe"",""translations"":{""en"":""We are worried"",""po"":""Nós estamos preocupados""}},{""text"":""agekGale ~ agekGalo"",""translations"":{""en"":""upset"",""po"":""triste""}}]}]"	TODO
+gekǥale	2	f1a49d0f-4b18-4f0c-9eaf-13dfb131f8b2	VB	unaccusative		"[{""definition"":""preocupar-se"",""examples"":[{""glosses"":""1sg.SUBJ-theme-worry-pl"",""morphemes"":""j-d-gekGale-Ga"",""text"":""idigekGaleGe"",""translations"":{""en"":""We are worried"",""po"":""Nós estamos preocupados""}},{""glosses"":""relative+worry"",""morphemes"":""ane+gekGale"",""text"":""agekGale ~ agekGalo"",""translations"":{""en"":""upset"",""po"":""triste""}}]}]"	TODO
+go	2	6b99d117-e86c-4d8e-be3c-e0e6860c4d57	VB		ir	"[{""definition"":""ir"",""examples"":[{""text"":""ejigo        aqiidi"",""translations"":{""en"":""I go to the river"",""po"":""Eu vou para o rio""}},{""text"":""ejigo      jawaligi"",""translations"":{""en"":""I am going to walk"",""po"":""Eu estou andando/Eu vou andando""}},{""text"":""emye"",""translations"":{""en"":""you go""}},{""text"":""igo"",""translations"":{""en"":""he goes""}},{""text"":""eniGa""}]}]"	TODO
+go	2	50fdd921-8ea0-47c7-9cf0-514fcc6c260e	VB	bivalent/auxiliary		"[{""definition"":""ir"",""examples"":[{""glosses"":""1AUX-go river"",""morphemes"":""ej-go       aqiidi"",""text"":""ejigo        aqiidi"",""translations"":{""en"":""I go to the river"",""po"":""Eu vou para o rio""}},{""glosses"":""1aux-go 1sg.SUBJ-walk"",""morphemes"":""ej-go     j-awalig"",""text"":""ejigo      jawaligi"",""translations"":{""en"":""I am going to walk"",""po"":""Eu estou andando/Eu vou andando""}},{""text"":""emye"",""translations"":{""en"":""you go""}},{""text"":""igo"",""translations"":{""en"":""he goes""}},{""glosses"":""We go"",""text"":""eniGa""}]}]"	TODO
+goge	2	bdbecb63-50d8-441d-9cba-37ce0326d2f8	N		bumbo	"[{""definition"":""bumbo"",""examples"":[{""text"":""gogedi"",""translations"":{""en"":""drums"",""po"":""Bateria""}}]}]"	TODO
+goge	2	3fa2eea0-1231-4bef-8622-4da4002606ca	N	free form		"[{""definition"":""bumbo"",""examples"":[{""glosses"":""drum-pl"",""morphemes"":""goge-adi"",""text"":""gogedi"",""translations"":{""en"":""drums"",""po"":""Bateria""}}]}]"	TODO
+goopa	2	775f3f22-a973-49a9-87cf-5986b8e769b5	N		copo	"[{""definition"":""copo""}]"	TODO
+goopa	2	a86c1455-85b0-4c49-b2fb-0861f16d4a26	N			"[{""definition"":""copo""}]"	TODO
+gotǥa	2	60cee650-17d1-493b-8952-6f6debefe73e	N		cidade	"[{""definition"":""cidade"",""examples"":[{""text"":""nigotGa""}]}]"	TODO
+gotǥa	2	2aa92219-e5c8-44c7-b3fe-30f4badbb236	N			"[{""definition"":""cidade"",""examples"":[{""glosses"":""alnbl-city"",""morphemes"":""n-gotGa"",""text"":""nigotGa""}]}]"	TODO
+hamo	2	700336af-1034-4a80-88c0-5df3cf5729ae	P			null	TODO
+hamo	2	81d002c7-a9d0-480a-9d50-dc64c1798bca	C			null	TODO
+hawyi	3	ab3ae144-170d-42d5-a886-135ff4ef8f4e	ADV			null	TODO
+hawyi	3	e8fbba19-4e94-4cd7-b1da-17d621598703	CONJ			null	TODO
+hawyi	3	f84d7b02-e6ab-4601-b852-cc09d858af7c	C+AUX			null	TODO
+iate	2	8fd9b9ad-b0c0-494b-b3a0-8c8fb2d597e5			correr atrás	"[{""definition"":""correr atrás""}]"	TODO
+iate	2	d259791e-8236-4adc-9d87-1d248e2ecb48			correr atrás	"[{""definition"":""correr atrás""}]"	REVIEW
+ibo(tineci)	2	cb2a4a81-459e-46dc-afe8-235747586ff4			vt caber	"[{""definition"":""vt caber""}]"	TODO
+ibo(tineci)	2	b331362c-9514-4939-9744-a72fffefd73d			caber	"[{""definition"":""caber""}]"	REVIEW
+iboliǥa	2	9fe196f0-fa67-469a-a8db-42dc1786fbbf			envergonhar-se, ter vergonha	"[{""definition"":""envergonhar-se, ter vergonha""}]"	TODO
+iboliǥa	2	9696ed21-7875-4277-8d25-deaee38feb1f	N$		envergonhar-se, ter vergonha	"[{""definition"":""envergonhar-se, ter vergonha""}]"	REVIEW
+ica	5	20692ac6-2744-42dc-90d5-e429b9481127	D	dem	esse, tem, há  - dem	"[{""definition"":""esse, tem, há""}]"	TODO
+ica	5	48c74c1d-1be3-4f97-93a0-1a7bc0c7a0f6	Q		a	"[{""definition"":""a""}]"	TODO
+ica	5	2c605cfa-433f-4480-b2b3-b6d89f0fd4e6	D		ele	"[{""definition"":""ele""}]"	TODO
+ica	5	fef827bd-765a-43bf-849c-bebb22244af1	D			null	
+ica	5	d8466374-a2e7-4843-824e-d56805ab026a	D			null	
+icaaǥica	2	4122079f-55bf-425d-8568-d2cf696fcabf	D	conj	até mesmo, mesmo que, e também  - conj	"[{""definition"":""até mesmo, mesmo que, e também""}]"	TODO
+icaaǥica	2	bf9c7191-f911-4891-8026-711daf79c9be	Q			null	
+icaǥica	2	84433572-6317-4896-9f0e-bba47d5c313d	CONJ		sem	"[{""definition"":""sem""}]"	TODO
+icaǥica	2	5a508a8e-7a9b-4800-a935-723f84181805	CONJ		e	"[{""definition"":""e""}]"	TODO
+ici	2	c2e0d635-cd69-4439-9922-16533c654d5d	VB		puxar/balançar	"[{""definition"":""puxar/balançar"",""examples"":[{""text"":""jicikGatike"",""translations"":{""en"":""We pull it"",""po"":""Nós o puxamos""}},{""text"":""Paulo idicitike"",""translations"":{""en"":""Paulo swings me"",""po"":""Paulo me balança""}},{""text"":""nigaanigi            icigiteloko                                            la"",""translations"":{""en"":""The boy pulled the toy over himself"",""po"":""O menino puxou o brinquedo para cima de si""}}]}]"	TODO
+ici	2	3a7a2488-af69-4975-ab45-04e9eb0f152b	VB	bivalent		"[{""definition"":""puxar/balançar"",""examples"":[{""glosses"":""1sg.SUBJ-pull-tel-pl-rel+outwards"",""morphemes"":""j-ici-g-Ga-t+ke"",""text"":""jicikGatike"",""translations"":{""en"":""We pull it"",""po"":""Nós o puxamos""}},{""glosses"":""Paul  1sg.OBJ-theme-pull-rel+outwards"",""morphemes"":""Paulo i-d-ici-t+ke"",""text"":""Paulo idicitike"",""translations"":{""en"":""Paulo swings me"",""po"":""Paulo me balança""}},{""glosses"":""alnbl-child-m.dim 3sg.SUBJ-pull-tel-rel+3sg.CL-allative 3POSS-toy"",""morphemes"":""n-igaa-nigi         y-ici-g-t+e-lokom                                 l-am"",""text"":""nigaanigi            icigiteloko                                            la"",""translations"":{""en"":""The boy pulled the toy over himself"",""po"":""O menino puxou o brinquedo para cima de si""}}]}]"	TODO
+icilatidi	2	b6f895e2-ade1-4183-8cfc-75c2bf5af45a			vt curar	"[{""definition"":""vt curar""}]"	TODO
+icilatidi	2	d33db824-e8b4-488b-80a1-4ef4ee4afbc0			curar	"[{""definition"":""curar""}]"	REVIEW
+icoa	2	e6ea70d2-63cd-4951-b28e-cecb1a920ec1	D		esses	"[{""definition"":""esses""}]"	TODO
+icoa	2	9c3bb988-7a35-4ad3-a92d-de129245383f	D			null	
+icoatigilo	3	4402e506-7a16-46b5-b7a5-c9b90d3fa847	D+APL			null	TODO
+icoatigilo	3	c65f46b3-244c-4bd8-b6c7-09618d8f13f0	D+APL			null	
+icoatigilo	3	503a6a51-df0d-41c3-8e57-890fe87e6d26	DAPL			null	
+icoda	2	59c069c1-6121-4cb7-b282-879c39498a9e	CONJ		(forma dim)	"[{""definition"":""(forma dim)""}]"	TODO
+icoda	2	407eaff0-c40f-4df8-a010-4eab47c53ffe	D		este	"[{""definition"":""este""}]"	TODO
+icoǥotigi	3	c247c97f-ffbd-455b-98b2-cffc730e79bc	VBAPL		eles vem de	"[{""definition"":""eles vem de ""}]"	DONE
+icoǥotigi	3	86531534-464a-411a-9181-93db61beb2c3	VBAPL		vir de lá (fenômenos naturais, como chuva, etc)	"[{""definition"":""vir de lá (fenômenos naturais, como chuva, etc)""}]"	TODO
+icoǥotigi	3	de6061ee-f817-4f71-9626-1a3e93f77455	VBAPL			null	
+ida	6	d9fbea98-ae8f-46c4-aea7-8e8f50fdedf7	D	v estado	está lá	"[{""definition"":""está lá""}]"	REVIEW
+ida	6	79c561b3-2b44-4b61-9989-665a96a16fc5	D	dem	aquele lá, aí  - dem	"[{""definition"":""aquele lá, aí""}]"	TODO
+ida	6	b23e976b-2969-47cf-bfb0-cb501083d04c	Q		este	"[{""definition"":""este""}]"	TODO
+ida	6	7f896cc1-27b7-4243-a6ab-f7a387cd6d20	Q		este	"[{""definition"":""este""}]"	TODO
+ida	6	419a3f47-7522-4bf5-8fae-4c5b0747b108	D		este	"[{""definition"":""este""}]"	TODO
+ida	6	a7bed9dd-5407-49c6-aef0-2d692705a287	Q			null	
+idabiditi	2	924c7250-305a-452a-830e-e4465a4bcf91		vi	"1) levantar-se
+ 2) parar (só pessoas sentadas para ficar em pé, ou coisa para vertical)"	"[{""definition"":""levantar-se""},{""definition"":""parar (só pessoas sentadas para ficar em pé, ou coisa para vertical)""}]"	DONE
+idabiditi	2	1430f5f1-f090-4531-888f-33dac22a37c9	VB	unergative	levantar inawonoake etakani - I raise the basket;	"[{""definition"":""levantar"",""examples"":[{""glosses"":""1sg.SUBJ-raise-[+become]   basket"",""morphemes"":""j-awonoa-ken                      etakani"",""text"":""inawonoake                         etakani"",""translations"":{""en"":""I raise the basket"",""po"":""Eu levanto o cesto""}}]}]"	DONE
+idalaǥata	2	cb842c54-1144-4c21-bc8a-d68b1d1a5b2f		135	falar a respeito de	"[{""definition"":""falar a respeito de""}]"	REVIEW
+idalaǥata	2	d7654335-4d03-4153-bc61-be54c1c9be4d	VBAPL		vou falar de	"[{""definition"":""vou falar de""}]"	TODO
+idatibece	2	083743b5-4d9f-400f-b6fe-17f4aad4f924	Q	núm	alguns  - núm	"[{""definition"":""alguns""}]"	TODO
+idatibece	2	93165eec-fdb1-49b8-aedf-2fea53a93fa1	Q		às vezes	"[{""definition"":""às vezes""}]"	TODO
+idaǥae	2	3470de6b-abc0-4cc6-8a4f-879f0bcb8097	VB		acontecer	"[{""definition"":""acontecer"",""examples"":[{""text"":""idaGaee"",""translations"":{""en"":""It happened to me"",""pt-br"":""Aconteceu""}}]}]"	TODO
+idaǥae	2	dff1bf4f-bb4a-4095-81c4-c6e1c4e3ef8d	VB	unaccusative	acontecer	"[{""definition"":""acontecer"",""examples"":[{""glosses"":""1sg.SUBJ-theme-happen"",""morphemes"":""j-d-aGaee"",""text"":""idaGaee"",""translations"":{""en"":""It happened to me"",""po"":""Aconteceu""}}]}]"	TODO
+idaǥida	2	1e537608-a67a-4a2d-aa6f-458fce0005fa	Q		final	"[{""definition"":""final""}]"	TODO
+idaǥida	2	7719b404-3159-43d1-b5f3-7fd2eeb53cfc	D		este mesmo	"[{""definition"":""este mesmo""}]"	TODO
+ideleǥe	2	cbefb02b-63fb-4530-8c99-f31d70bcd5bf	VB		brigar com, lutar com	"[{""definition"":""brigar com, lutar com""}]"	TODO
+ideleǥe	2	f283a668-e6f8-4385-999b-8403055a7985			(variante do gênero feminino)	null	TODO
+idi	3	99eebdbf-741c-432f-a667-9cce06174b97	Q	dem	este  - dem	"[{""definition"":""este""}]"	TODO
+idi	3	6980bea2-3a92-4f73-955b-99eacf689913	Q			null	TODO
+idi	3	158dc79d-e97a-4cdb-9ec4-0643a693b1a2	Q		tinha	"[{""definition"":""tinha""}]"	TODO
+idigo	2	6da78a04-be49-45a3-b54a-2123da110836		vt	estar pronto, ser arrumado por alguém	"[{""definition"":""estar pronto, ser arrumado por alguém""}]"	DONE
+idigo	2	c1892706-1e36-4eea-b323-f7c84d6537d2	N	vi	estar pronto	"[{""definition"":""estar pronto""}]"	DONE
+idilaǥatege	2	c0ffee20-618a-4b35-8cf0-60471c67ebf4		vt	estar bem com	"[{""definition"":""estar bem com""}]"	DONE
+idilaǥatege	2	78ea7f6a-ad6a-4253-8a4c-dbbc0e471deb		vt	se dar bem com alguém	"[{""definition"":""se dar bem com alguém""}]"	REVIEW
+idiliditi	2	919b961f-668d-4518-8bfc-e6f959c02743		vi	sarar	"[{""definition"":""sarar""}]"	DONE
+idiliditi	2	13dc7a6f-aada-457a-b057-faec1c8ce3a1		vi	sarar (quando se pisa num espinho)	"[{""definition"":""sarar (quando se pisa num espinho)""}]"	DONE
+idinanatigi	3	5bad6b6b-4e9f-44f0-abca-6e2f311d587b		124	começar	"[{""definition"":""começar""}]"	REVIEW
+idinanatigi	3	43229d42-38a2-458b-bbd0-6f7098afc468		vt	transformar	"[{""definition"":""transformar""}]"	DONE
+idinanatigi	3	0e9168de-de29-48af-8269-3b7c525072f9	VB	unaccusative	principiar  - unaccusative	"[{""definition"":""principiar""}]"	REVIEW
+idinatemati	2	d4457c3b-262c-4ac1-b660-5c6f537f0c84		vi	confessar	"[{""definition"":""confessar""}]"	DONE
+idinatemati	2	c91ff105-1477-4717-8535-76ea07d06c8c		vi	confessar	"[{""definition"":""confessar""}]"	DONE
+idinaǥaditi	2	2b44ffe7-9aea-48d7-b5c7-c99160b2e27f		vt	esconder	"[{""definition"":""esconder""}]"	DONE
+idinaǥaditi	2	2db1e1d1-65b0-4a23-85df-54453730722c		vi	esconder-se	"[{""definition"":""esconder-se""}]"	DONE
+idinigetaǥatee	2	dfefc16f-782b-46a8-a1fd-d0f5dfb40566		vi	fazer com alta voz ou som (sempre acompanha outro verbo. Quando refere à voz, é usado com um verbo de fala)	"[{""definition"":""fazer com alta voz ou som (sempre acompanha outro verbo. Quando refere à voz, é usado com um verbo de fala)""}]"	DONE
+idinigetaǥatee	2	9e7e782a-895d-416c-9dd7-f184f169401d		vi	(querer) falar alto (só se usa com verbo de fala)	"[{""definition"":""(querer) falar alto (só se usa com verbo de fala)""}]"	DONE
+idowatawece	2	3938731d-f02f-4409-ab48-2153fa480f69	Q		todo	"[{""definition"":""todo""}]"	TODO
+idowatawece	2	65829553-ce2c-4ac3-a589-8da15eee53f4	NUM			null	
+igaa	2	cd64e5c5-f9f7-4c8f-a47f-c70503016af7	WADV	interrog	"1) quanto?
+ 2) como?"	"[{""definition"":""quanto?""},{""definition"":""como?""}]"	TODO
+igaa	2	d0a18290-59c5-42a2-92d3-9664298d7a40	N		criança	"[{""definition"":""criança"",""examples"":[{""text"":""nigaanigi"",""translations"":{""en"":""boy"",""po"":""menino""}},{""text"":""nigaanawaana"",""translations"":{""en"":""girl"",""po"":""menina""}},{""text"":""nigaanigaawaanigi"",""translations"":{""en"":""baby boy"",""po"":""bebê menino""}},{""text"":""nigaanaGegi"",""translations"":{""en"":""Menstruation"",""po"":""Menstruaçao""}}]}]"	TODO
+igaanaǥa	2	248b1038-14ac-46a8-be23-67213339c548		adv temp	quando (no passado)  - adv temp	"[{""definition"":""quando (no passado)""}]"	TODO
+igaanaǥa	2	9810a781-c63d-465a-958f-0da91e48c23d			cantar	"[{""definition"":""cantar""}]"	TODO
+igame	2	4ba4ff0a-2adb-4ca9-98ab-3884bb078a9f	WADV+C	interrog	onde?  - interrog	"[{""definition"":""onde?""}]"	TODO
+igame	2	8ad9f0e9-c94f-46d0-8917-1b638558c92c	WADV+C		de onde	"[{""definition"":""de onde""}]"	TODO
+igameǥanimaweneǥegi	2	145ef71c-6c1a-4f1c-9316-05288c41eca3	WADV+C+N$		qual sua maneira	"[{""definition"":""qual sua maneira""}]"	TODO
+igameǥanimaweneǥegi	2	1b307796-30e3-43f1-9537-ce9d17d28121	WPRO+C+N$		qual sua maneira	"[{""definition"":""qual sua maneira""}]"	TODO
+iiwoǥo	2	56045a32-4bed-434c-8c88-8c049518c41e			madeira/pau	"[{""definition"":""madeira/pau"",""examples"":[{""text"":""GoniiwoGo"",""translations"":{""en"":""Our spine"",""po"":""Nossa espinha""}}]}]"	TODO
+iiwoǥo	2	4bd61bbe-a9ed-459e-a810-bfde72e42833				"[{""definition"":""madeira/pau"",""examples"":[{""glosses"":""1pl.POSS-alnbl-stick"",""morphemes"":""God-n-iiwoGo"",""text"":""GoniiwoGo"",""translations"":{""en"":""Our spine"",""po"":""Nossa espinha""}}]}]"	TODO
+iiǥacin	2	bb433b3a-00f8-4bc3-a4fb-4bde4d138426	VB		ensinar/aprender	"[{""definition"":""ensinar/aprender"",""examples"":[{""text"":""diniiGaci"",""translations"":{""en"":""He teachs it to himself"",""po"":""Ele se ensina""}},{""text"":""niiGacinGodi"",""translations"":{""en"":""Teacher (of something to somebody)"",""po"":""Professor (de alguma coisa para alguém)""}},{""text"":""niiGacinGanGa"",""translations"":{""en"":""Teacher (of someting)"",""po"":""Professor (de alguma coisa)""}}]}]"	TODO
+iiǥacin	2	61d0c3d3-6613-4b35-8360-9fd1e6066d74	VB	bivalent		"[{""definition"":""ensinar/aprender"",""examples"":[{""glosses"":""3sg.SUBJ-theme-refl-teach"",""morphemes"":""y-d-n-iiGacin"",""text"":""diniiGaci"",""translations"":{""en"":""He teachs it to himself"",""po"":""Ele se ensina""}},{""glosses"":""alnbl-teach-[-become]"",""morphemes"":""n-iiGacin-God"",""text"":""niiGacinGodi"",""translations"":{""en"":""Teacher (of something to somebody)"",""po"":""Professor (de alguma coisa para alguém)""}},{""glosses"":""alnbl-teach-instrument"",""morphemes"":""n-iiGacin-GanGa"",""text"":""niiGacinGanGa"",""translations"":{""en"":""Teacher (of someting)"",""po"":""Professor (de alguma coisa)""}}]}]"	TODO
+iiǥad	2	4cb953b3-5c56-470d-bfe5-35e4715d236a	N		cunhado	"[{""definition"":""cunhado"",""examples"":[{""text"":""niiGad"",""translations"":{""en"":""brother in law""}},{""text"":""niiGate"",""translations"":{""en"":""sister in law"",""po"":""cunhada""}}]}]"	TODO
+iiǥad	2	14474081-d12b-47ca-8dc9-3399cd2cb144	N			"[{""definition"":""cunhado"",""examples"":[{""glosses"":""alnbl-brother.in.law"",""morphemes"":""n-iiGad"",""text"":""niiGad"",""translations"":{""en"":""brother in law""}},{""glosses"":""alnbl-brother.in.law-fem"",""morphemes"":""n-iiGad-te"",""text"":""niiGate"",""translations"":{""en"":""sister in law"",""po"":""cunhada""}}]}]"	TODO
+ijeǥadi	3	2d65ea9b-973e-45c1-8a19-5af20fcf0810	N		animal selvagem	"[{""definition"":""animal selvagem""}]"	TODO
+ijeǥadi	3	ae711791-ab59-4e86-8764-02d1777201ef	N			"[{""definition"":""animal selvagem""}]"	TODO
+ijeǥadi	3	292f6560-f520-4999-b92b-cf9aec091520	N			"[{""definition"":""animal selvagem""}]"	TODO
+ijo	2	adce5fec-d720-4c7b-90ed-aaf7c5ad8ef4	D	dem	aquele  - dem	"[{""definition"":""aquele""}]"	TODO
+ijo	2	23f00a28-2ffa-4796-94b6-7f96f45ef4b6	Q		este	"[{""definition"":""este""}]"	TODO
+ijoa	2	c2c7cafe-3c12-4052-8e18-d2c9d5f9f8f4	D		aqueles	"[{""definition"":""aqueles""}]"	TODO
+ijoa	2	be3c2e8f-0481-474f-97e6-cec5e6523010	Q		este	"[{""definition"":""este""}]"	TODO
+ila	2	b2373911-700a-4020-ba65-b568b511e65a		adj	1) queimado 2) assado  - adj	"[{""definition"":""queimado""},{""definition"":""assado""}]"	TODO
+ila	2	97e89d3a-7785-4ab8-a151-b31849c5e2fe	VB		1) estranhar (de pessoas, coisas ou acontecimentos) 2) tomar banho	"[{""definition"":""estranhar (de pessoas, coisas ou acontecimentos)""},{""definition"":""tomar banho"",""examples"":[{""text"":""jinilaGa"",""translations"":{""en"":""We take a bath"",""po"":""Nós tomamos banho""}},{""text"":""anila"",""translations"":{""en"":""He takes a bath"",""po"":""Ele toma banho""}}]}]"	REVIEW
+ilaaǥagi	3	2f9421a1-dd7f-446c-b5f7-fb788edeff74		subst masc	1) pássaro 2) ave  - subst masc	"[{""definition"":""pássaro""},{""definition"":""ave""}]"	TODO
+ilaaǥagi	3	5f2599c9-7359-4ba1-8a48-d9f3fdcbbb0c	N		pássaro	"[{""definition"":""pássaro"",""examples"":[{""text"":""ilaaGagi  lamodi"",""translations"":{""en"":""The bird's feather"",""po"":""Pena de pássaro""}}]}]"	TODO
+ilaaǥagi	3	39c41cbd-0ce2-4e47-8fff-9d732cb7cd19	N			"[{""definition"":""pássaro"",""examples"":[{""glosses"":""bird         3POSS-hair-pl"",""morphemes"":""ilaaGagi l-amo-adi"",""text"":""ilaaGagi  lamodi"",""translations"":{""en"":""The bird's feather"",""po"":""Pena de pássaro""}}]}]"	TODO
+ilaǥa	2	9120811b-69c7-4efd-b0ba-4177df31de54	N		calor	"[{""definition"":""calor"",""examples"":[{""text"":""nilaGa""}]}]"	TODO
+ilaǥa	2	80bac17a-3d51-4853-b37f-2c66be9c0cd0	N			"[{""definition"":""calor"",""examples"":[{""glosses"":""alnbl-heat"",""morphemes"":""n-ilaGa"",""text"":""nilaGa""}]}]"	TODO
+ilegeǥe	4	d84b5201-69c8-466f-9dc5-abe9d9ba4bd6		subst fem	melancia  - subst fem	"[{""definition"":""melancia""}]"	TODO
+ilegeǥe	4	a185802b-c9c6-46d9-8e81-b2203c2a8589	N		melancia	"[{""definition"":""melancia""}]"	TODO
+ilegeǥe	4	9b2c33b2-870c-40d4-9ae4-42ad5bdf7e62	N			"[{""definition"":""melancia""}]"	TODO
+ilegeǥe	4	645c4441-ceca-46bf-bb7d-b693061efb53	N			"[{""definition"":""melancia""}]"	TODO
+ili	2	d41188f8-b9b4-4cc8-a3d7-a62905427273	VB		apertar	"[{""definition"":""apertar"",""examples"":[{""text"":""diniligiketiwek"",""translations"":{""en"":""I press it through a hole"",""po"":""Apertando por um buraco""}},{""text"":""diniligiketibigi"",""translations"":{""en"":""I press it upward"",""po"":""Apertando para cima""}}]}]"	TODO
+ili	2	6fd665d2-e635-4af6-a266-106522303648	VB	bivalent		"[{""definition"":""apertar"",""examples"":[{""glosses"":""3sg.SUBJ-theme-hither-press-tel-[+become]-rel+inward+3sg.CL-inessive"",""morphemes"":""y-d-n-ili-g-ken-t+w+e-k"",""text"":""diniligiketiwek"",""translations"":{""en"":""I press it through a hole"",""po"":""Apertando por um buraco""}},{""glosses"":""3sg.SUBJ-theme-hither-press-tel-[+become]-rel+upward"",""morphemes"":""y-d-n-ili-g-ken-t+bigim"",""text"":""diniligiketibigi"",""translations"":{""en"":""I press it upward"",""po"":""Apertando para cima""}}]}]"	TODO
+ilikaǥa	3	d1610623-2dd5-46a0-aff8-4f36582ef921	N		diarréia	"[{""definition"":""diarréia""}]"	TODO
+ilikaǥa	3	34ac4ab9-6762-476b-b35b-1ec7a8098fef	N			"[{""definition"":""diarréia""}]"	TODO
+ilikaǥa	3	32232571-6b52-4d46-b320-42b6a7eafb0a	N			"[{""definition"":""diarréia""}]"	TODO
+ilipeǥe	2	0fd56700-8e29-48f3-a210-c16425389319			mamar da mãe	"[{""definition"":""mamar da mãe""}]"	TODO
+ilipeǥe	2	6e90f5f5-b7f3-40e1-a666-bb21a6932a86		subst fem	jabuticaba (tipo de fruta)  - subst fem	"[{""definition"":""jabuticaba (tipo de fruta)""}]"	TODO
+ilipǥe	3	7464a4d1-94e5-49ef-98b7-d2c8f43e3b0b	N	free form	jabuticaba  - free form	"[{""definition"":""jabuticaba""}]"	TODO
+ilipǥe	3	9f064385-899f-4733-bce4-c0593849f9e7	N	free form		"[{""definition"":""jabuticaba""}]"	TODO
+ilipǥe	3	552e4358-8806-4132-82fc-c7cca1041e73	N	free form		"[{""definition"":""jabuticaba""}]"	TODO
+imakatǥali	3	99e43fcc-d65a-44cc-9b1e-b9061b27c8dc	N	free form	azul  - free form	"[{""definition"":""azul""}]"	TODO
+imakatǥali	3	bbed8f95-37c0-4e79-92ac-52c81e15bb82	N	free form		"[{""definition"":""azul""}]"	TODO
+imakatǥali	3	11dea093-6485-4f49-b16e-12d2343625b1	N	free form		"[{""definition"":""azul""}]"	TODO
+ina	2	6248dbd1-fa4b-44e7-8cb8-b01a7ebd7d8c	D	loc , dem	esse, aqui  - loc , dem	"[{""definition"":""esse, aqui""}]"	TODO
+ina	2	98b3f805-3960-45fb-9edc-f9d6d24362d1	D		o	"[{""definition"":""o""}]"	TODO
+inawelaǥadi	2	91c5f319-74e2-4fcb-8631-c48c622c5bfc	VB		assustei-a	"[{""definition"":""assustei-a""}]"	TODO
+inawelaǥadi	2	06282359-46ef-4270-acf4-14e48e38e9c8		vt	assustar alguém	"[{""definition"":""assustar alguém""}]"	REVIEW
+ineike	2	4d41e7a0-2c53-4081-a358-cea40e10d11a			o que sobrou para mim	"[{""definition"":""o que sobrou para mim""}]"	TODO
+ineike	2	36f8523b-bee8-40d7-a306-c4fed9b0e7b0		vi	restar para ele (o que sobrou)	"[{""definition"":""restar para ele (o que sobrou)""}]"	DONE
+ini	3	cfe284cb-711c-498f-93c0-4958d5ffb6d5	VB		divertir-se	"[{""definition"":""divertir-se"",""examples"":[{""text"":""nini"",""translations"":{""en"":""Funny"",""po"":""Engraçado""}},{""text"":""ninitibek"",""translations"":{""en"":""He gets happy there/wonderful"",""po"":""Ele se alegra/maravilhoso""}},{""text"":""ninitibiwaji                                        me        nalooGo"",""translations"":{""en"":""They had fun while they were parting"",""po"":""Eles se divertiram enquanto festejavam""}},{""text"":""liniqedi"",""translations"":{""en"":""Happyness"",""po"":""Alegria""}}]}]"	TODO
+ini	3	135c2920-f647-41f2-868e-792a055a51f4	D			null	TODO
+ini	3	13c11bf9-a1d9-4628-907a-fc835827f6a5	VB	unergative		"[{""definition"":""divertir-se"",""examples"":[{""glosses"":""alnbl-fun"",""morphemes"":""n-ini"",""text"":""nini"",""translations"":{""en"":""Funny"",""po"":""Engraçado""}},{""glosses"":""3sg.SUBJ-hither-fun-rel+intensive+3sg.CL-inessive"",""morphemes"":""y-n-ini-t+b+e-k"",""text"":""ninitibek"",""translations"":{""en"":""He gets happy there/wonderful"",""po"":""Ele se alegra/maravilhoso""}},{""glosses"":""3sg.SUBJ -hither-fun-rel+intensive+pl  COMP 3pl.SUBJ-play.around-pl"",""morphemes"":""y-n-ini-t+b+waji                                me        n-aloo-Ga"",""text"":""ninitibiwaji                                        me        nalooGo"",""translations"":{""en"":""They had fun while they were parting"",""po"":""Eles se divertiram enquanto festejavam""}},{""glosses"":""3POSS-fun-[+become]-pl"",""morphemes"":""l-ini-qen-adi"",""text"":""liniqedi"",""translations"":{""en"":""Happyness"",""po"":""Alegria""}}]}]"	TODO
+inibaile	2	146c0898-63a4-4c47-a598-53dc8f7727d3			vi dançar port	"[{""definition"":""vi dançar port""}]"	TODO
+inibaile	2	926583de-43ef-4392-86ae-8417c5a61dce			dançar	"[{""definition"":""dançar""}]"	REVIEW
+inibeotege	2	9688f8e6-21fa-4510-a00c-195b1a2b20b4	VBAPL		eu espero por ele	"[{""definition"":""eu espero por ele""}]"	TODO
+inibeotege	2	03dc608e-d672-422a-87f4-278260e0471b		vt	esperar por (ele)	"[{""definition"":""esperar por (ele)""}]"	REVIEW
+inoa	4	b54ef508-45b2-491b-9ea4-a6a269abae49	D			null	TODO
+inoa	4	9aec8ca3-8f0e-47f8-bd7a-a67832bed8a1	Q		estas	"[{""definition"":""estas""}]"	TODO
+inoa	4	bb62540a-8555-4f0c-bee5-d49a80fa9f2e	D		eles	"[{""definition"":""eles""}]"	TODO
+inoa	4	f1958e83-8ea2-40c6-9385-9b9cb9662ee3	D		estas	"[{""definition"":""estas""}]"	TODO
+iodo	2	1e0b8b45-e65e-45d3-a8ab-d1a986b75441			(variante do gênero feminino)	null	TODO
+iodo	2	646353ad-fe21-4fad-8f71-626eabd7809e		subst fem	mãe  - subst fem	"[{""definition"":""mãe""}]"	TODO
+ipilǥe	3	644dac6b-196a-4cd7-9df0-5b926f4889bb	N	free form	grávida  - free form	"[{""definition"":""grávida""}]"	TODO
+ipilǥe	3	f6364120-3b18-4afa-af31-c862d13f0eec	N	free form		"[{""definition"":""grávida""}]"	TODO
+ipilǥe	3	6d55cd08-2ea0-43d2-b3c4-09908fde6a3b	N	free form		"[{""definition"":""grávida""}]"	TODO
+ite	2	0866dbce-bf17-40e8-aa44-ef572f45a751	VB		gostar de	"[{""definition"":""gostar de""}]"	TODO
+ite	2	1e09f082-1b00-47c3-ac33-4632eb135691		v loc	ele fica, está num lugar	"[{""definition"":""ele fica, está num lugar""}]"	TODO
+itidiwa	2	2047330a-abb2-43af-9aeb-b7942cfab7b6		v loc	"1) ele está, ele fica
+ 2) estar, ficar"	"[{""definition"":""ele está, ele fica""},{""definition"":""estar, ficar"",""uid"":""""}]"	REVIEW
+itidiwa	2	f451c2bd-0265-4a27-b4f5-05c68c7c5e41		v loc	está lá	"[{""definition"":""está lá""}]"	TODO
+itimi	2	4c2873f2-77af-49e6-bd73-1b9a5842e345			molhar	"[{""definition"":""molhar""}]"	TODO
+itimi	2	0353e09f-972d-4448-ad53-9afae0ae3c6a		adj	molhado  - adj	"[{""definition"":""molhado""}]"	TODO
+ito	2	edad94d7-7065-4059-8ab8-501b44f539c2	N		raiz	"[{""definition"":""raiz"",""examples"":[{""text"":""litodi               nyale"",""translations"":{""en"":""The tree's roots"",""po"":""Raiz de árvore""}},{""text"":""ee                  itodi"",""translations"":{""en"":""My nerves"",""po"":""Meus nervos""}}]}]"	TODO
+ito	2	e5ab8eed-c3e9-4d15-b5df-41b1c21138b6	N			"[{""definition"":""raiz"",""examples"":[{""glosses"":""3POSS-root-pl alnbl-tree"",""morphemes"":""l-ito-adi            n-yaale"",""text"":""litodi               nyale"",""translations"":{""en"":""The tree's roots"",""po"":""Raiz de árvore""}},{""glosses"":""1PRONOUN 1POSS-root-pl"",""morphemes"":""ee                 i-ito-adi"",""text"":""ee                  itodi"",""translations"":{""en"":""My nerves"",""po"":""Meus nervos""}}]}]"	TODO
+iwaalo	2	48048635-8a7f-4ffe-8f4b-9be71b56137e	N		mulher iwaalo lamodi - the woman's hair;	"[{""definition"":""mulher"",""examples"":[{""text"":""iwaalo         lamodi"",""translations"":{""en"":""the woman's hair"",""po"":""o cabelo da mulher""}}]}]"	EDITION
+iwaalo	2	3f4e2c45-53bb-476a-8edc-9de4ecd69aaa	N			"[{""definition"":""mulher"",""examples"":[{""glosses"":""woman         3POSS-hair-pl"",""morphemes"":""iwaalo        l-amo-adi"",""text"":""iwaalo         lamodi"",""translations"":{""en"":""the woman's hair"",""po"":""o cabelo da mulher""}}]}]"	TODO
+iwoǥo	4	7a7e69b6-bd20-4b60-8097-d527e04feb5a		subst masc	1) pau 2) lenha  - subst masc	"[{""definition"":""pau""},{""definition"":""lenha""}]"	TODO
+iwoǥo	4	c5c5238e-5d38-4c2b-859d-8bda312ba672	N		pau	"[{""definition"":""pau""}]"	TODO
+iwoǥo	4	dd16225a-f6af-4506-98b3-6e5c166162c4	N			"[{""definition"":""pau""}]"	TODO
+iwoǥo	4	028a148d-9fe2-4c74-a5d7-1b2fc943ffae	N			"[{""definition"":""pau""}]"	TODO
+ixagodi	2	635c458f-d153-4c26-989f-79a90284c5dd	VB		estar vermelho	"[{""definition"":""estar vermelho""}]"	TODO
+ixagodi	2	bac1a1f6-b821-449c-9651-2eaa5f987f8b	ADJ	adj	vermelho  - adj	"[{""definition"":""vermelho""}]"	TODO
+ixo(tinigi)	2	ce400acf-0c84-4c46-8bd2-c5c0495da22e			colocar numa coisa	"[{""definition"":""colocar numa coisa""}]"	TODO
+ixo(tinigi)	2	5abd2734-40c9-4961-a380-73c2e6e1a370			colocar numa coisa	"[{""definition"":""colocar numa coisa""}]"	REVIEW
+iǥeladi	3	11424225-0393-4ef3-990d-d7d1b20ae094	N$	subst masc	1) casa 2) lar  - subst masc	"[{""definition"":""casa""},{""definition"":""lar""}]"	TODO
+iǥeladi	3	878b0161-0b26-4c92-8e77-b6160057164a	N$		minha casa	"[{""definition"":""minha casa""}]"	TODO
+iǥeladi	3	5ef89e68-ce99-4485-bdd7-8244f789cf76	N$			null	TODO
+iǥeti	2	b0ed0368-6120-47df-85b2-d7ebb31c3eae	VB		atravessar	"[{""definition"":""atravessar"",""examples"":[{""text"":""jiGetita                                             ladigodi"",""translations"":{""en"":""I cross the creek"",""po"":""Eu cruzo/atravesso a vazante""}}]}]"	TODO
+iǥeti	2	90da1d67-b743-4e62-a143-2e9b8f966e67	VB	unergative		"[{""definition"":""atravessar"",""examples"":[{""glosses"":""1sg.SUBJ -cross-rel+3sg.CL-dative   creek"",""morphemes"":""j-iGeti-t+e-wa                                  ladigodi"",""text"":""jiGetita                                             ladigodi"",""translations"":{""en"":""I cross the creek"",""po"":""Eu cruzo/atravesso a vazante""}}]}]"	TODO
+iǥoowi	3	9ee9164d-4cea-4364-911f-e84f26e833a9	N		amarelo	"[{""definition"":""amarelo""}]"	TODO
+iǥoowi	3	26e0ad7c-61cd-45da-8152-49a17037955d	N			"[{""definition"":""amarelo""}]"	TODO
+iǥoowi	3	0b6615d6-7dcf-4a7f-ab14-4a58006e93fb	N			"[{""definition"":""amarelo""}]"	TODO
+ja	2	b58e0ced-a08e-4493-8fd1-3f20b96b89fa	T	adv	completa ação do verbo (geralmente segue introdutor)  - adv	"[{""definition"":""completa ação do verbo (geralmente segue introdutor)""}]"	TODO
+ja	2	96fc9702-a1ab-4699-85d2-cf61cffcff8e	T		já	"[{""definition"":""já""}]"	TODO
+jaale	3	191ff6c9-312b-4018-b676-ab5ab929c57c	VB		respirar	"[{""definition"":""respirar""}]"	REVIEW
+jaale	3	a5a8d3bd-070f-4109-8a75-05e7163fe7fa	VB		respirar	"[{""definition"":""respirar"",""examples"":[{""text"":""jaalaGa"",""translations"":{""en"":""We breathe"",""pt-br"":""Nós respiramos""}},{""text"":""aaletiwaji"",""translations"":{""en"":""You all breathe"",""pt-br"":""Vocês todos respiram""}}]}]"	TODO
+jaale	3	24768ecc-76ed-43a5-b6f0-0ba1e6d691fe	VB	unergative	respirar  - unergative	"[{""definition"":""respirar"",""examples"":[{""glosses"":""1sg.SUBJ-breathe-pl"",""morphemes"":""j-aale-Ga"",""text"":""jaalaGa"",""translations"":{""en"":""We breathe"",""po"":""Nós respiramos""}},{""glosses"":""2sg.SUBJ-breathe-rel+pl"",""morphemes"":""a-aale-t+waji"",""text"":""aaletiwaji"",""translations"":{""en"":""You all breathe"",""po"":""Vocês todos respiram""}}]}]"	DONE
+jaaleǥe	2	221b5fe1-3b10-4248-a15c-7a7f4bb830ee	VB		raptar  (variante do gênero masculino)	"[{""definition"":""raptar"",""examples"":[{""text"":""oyaaleGe"",""translations"":{""en"":""They kidnap him"",""pt-br"":""Eles o raptam""}}]}]"	REVIEW
+jaaleǥe	2	22aba460-aa1b-4054-9026-5c5aca70c843	VB	bivalent	raptar  - bivalent	"[{""definition"":""raptar"",""examples"":[{""glosses"":""pl-3pl.SUBJ-kidnap"",""morphemes"":""o-y-aalGe"",""text"":""oyaalGe"",""translations"":{""en"":""They kidnap him"",""po"":""Eles o raptam""}}]}]"	DONE
+jaaǥa	2	a91d57b2-53d7-4bcb-9061-bac089020d5b	AUX		nós vamos	"[{""definition"":""nós vamos""}]"	TODO
+jaaǥa	2	7c8e5fa6-75ce-42c8-a2b1-b5f0bf329d71	AUX			null	TODO
+jaaǥadi	2	ff82ec5e-bdaf-4609-b918-1b6c7a6afd37	VB	vt	"1) acabar com
+ 2) gastar
+ 3) destruir
+ 4) rasgar"	"[{""definition"":""acabar com""},{""definition"":""gastar""},{""definition"":""destruir""},{""definition"":""rasgar"",""uid"":""""}]"	REVIEW
+jaaǥadi	2	67e8fbb1-0a98-4bf3-8d4d-4798098294b8	VB		acabar	"[{""definition"":""acabar""}]"	TODO
+jaaǥaǥa	2	ab992b27-8f7f-4a38-bfa5-ed85d43b6e5f	C		quando	"[{""definition"":""quando""}]"	TODO
+jaaǥaǥa	2	fb524b05-38a7-4720-979c-523014bcc2aa	ADV		também	"[{""definition"":""também""}]"	TODO
+jabade	2	748e6a70-566a-4193-888b-d8ec12daf0fc	VB	vi	ter asas	"[{""definition"":""ter asas""}]"	DONE
+jabade	2	d162f301-86cb-47f8-9696-632c2e708d25	VB		eu tenho asas	"[{""definition"":""eu tenho asas"",""examples"":[{""text"":""Gadabaqeni"",""translations"":{""en"":""I take out the dust from you"",""pt-br"":""eu limpo o pó de você""}},{""text"":""abakGegi"",""translations"":{""en"":""Lazy"",""pt-br"":""Preguiçoso""}}]}]"	TODO
+jabale	3	47508447-109a-4f44-bb2b-376c99892c7c		vi	perder (no passado) (perder no sentido de não poder mais achar)	"[{""definition"":""perder (no passado) (perder no sentido de não poder mais achar)""}]"	DONE
+jabale	3	8b36bf77-ed60-4277-8267-16e2d7cb4764	VB		perder	"[{""definition"":""perder"",""examples"":[{""text"":""dabale                         latobi"",""translations"":{""en"":""His face was lost (expression to mean stupid)"",""pt-br"":""rosto perdido/estúpido""}}]}]"	REVIEW
+jabale	3	384357f4-09d2-451c-a965-8bc47fe66779	VB	bivalent	perder  - bivalent	"[{""definition"":""perder"",""examples"":[{""glosses"":""3sg.SUBJ-theme-loose  3POSS-face"",""morphemes"":""y-d-abale                   l-atobi"",""text"":""dabale                         latobi"",""translations"":{""en"":""His face was lost (expression to mean stupid)"",""po"":""rosto perdido/estúpido""}}]}]"	DONE
+jabice	2	b162a17d-8bb6-4657-9ec3-2f1d90ae41a6	VB	unergative	1) ciscar 2)   - unergative	"[{""definition"":""ciscar""},{""definition"":"""",""uid"":""""}]"	DONE
+jabice	2	5541a614-7376-4efb-a607-61362b6c9a35	VB	vi	levantar algo de um lado (outro lado vai para baixo, p.ex. balança)	"[{""definition"":""levantar algo de um lado (outro lado vai para baixo, p.ex. balança)""}]"	DONE
+jaca	2	1e140cf0-11bc-4061-aa55-bda1e4e05ace	N		cesto	"[{""definition"":""cesto""}]"	TODO
+jaca	2	0d4f61b9-82d5-4f6a-9d14-d9eb9fdacd01	VB	unergative	eu movo (algo)	"[{""definition"":""eu movo (algo)"",""examples"":[{""glosses"":""1sg.SUBJ-move-pl-rel+inward"",""morphemes"":""j-aka-Ga-t+w"",""text"":""jacaǥatiw"",""translations"":{""en"":""We move/go into"",""po"":""Entramos""}},{""glosses"":""1sg.SUBJ-move-rel+inward+3sg.CL-allative  house"",""morphemes"":""j-aka+t-w-e-k                                                diimigi"",""text"":""jakatiweki                                                      diimigi"",""translations"":{""en"":""I go into the house"",""po"":""eu entro na casa""}}]}]"	TODO
+jacipe	2	98bc21e5-dee5-48f2-a47f-048a9e363a4b	VB	vi , vt	eu bebo  - vi , vt	"[{""definition"":""eu bebo""}]"	DONE
+jacipe	2	a65a2800-6c09-46dd-b5d7-b7ab2daad804	VB	unergative	eu bebo	"[{""definition"":""eu bebo"",""examples"":[{""glosses"":""1sg.SUBJ-drink"",""morphemes"":""j-akipe"",""text"":""jacipe"",""translations"":{""en"":""I drink"",""po"":""Eu bebo""}}]}]"	TODO
+jadilo	2	29fad7f1-9858-4dc0-9c4e-9649a71bcd61		vt	secar  - vt	"[{""definition"":""secar""}]"	TODO
+jadilo	2	5abc9aff-8837-4b18-82f1-f7bf19d8dca3	VB		secar	"[{""definition"":""secar"",""examples"":[{""text"":""idinadilonaGa"",""translations"":{""en"":""we dry ourselves"",""pt-br"":""nós nos secamos""}}]}]"	REVIEW
+jajigijice	2	7a2af92e-0e1e-48ab-abbd-f2f883c7d47c		vt	"1) chocalhar
+ 2) peneirar"	"[{""definition"":""chocalhar""},{""definition"":""peneirar""}]"	EDITION
+jajigijice	2	3b016b51-858e-4aa0-88a6-9e4ab14ae068		vi	fazer som do rabo de cascavel	"[{""definition"":""fazer som do rabo de cascavel""}]"	DONE
+jakadi	2	485c9942-47c9-4157-beea-7d4b1d6f5230		vt	"1) achar, encontrar algo ou alguém 
+ 2) poder, (poder sobre)"	"[{""definition"":""achar, encontrar algo ou alguém ""},{""definition"":""poder, (poder sobre)""}]"	EDITION
+jakadi	2	cb398aa9-0687-418c-80c0-1996320276fc	VB		posso	"[{""definition"":""posso""}]"	TODO
+jakapetege	2	3e3d4d78-ed1a-4cc3-a974-9dad4574fde3		vt	"1) encontrar com
+ 2) estar contra, opor"	"[{""definition"":""encontrar com""},{""definition"":""estar contra, opor""}]"	EDITION
+jakapetege	2	c717bf8f-90a2-4675-8589-aaaeca16d772	VBAPL		eu encontrar eles	"[{""definition"":""eu encontrar eles""}]"	TODO
+jaladi	2	260f25d0-8528-439c-8a7d-f7cda8f93724		vt	"1) mudar, abandonar casa ou pessoa
+ 2) jogar fora (pode ser interpretado como abandonar uma coisa)"	"[{""definition"":""mudar, abandonar casa ou pessoa""},{""definition"":""jogar fora (pode ser interpretado como abandonar uma coisa)""}]"	EDITION
+jaladi	2	d844638f-806e-435d-b3c6-e3bf06cd7b99	VB		eu deixei	"[{""definition"":""eu deixei""}]"	TODO
+jalaǥate	3	50943824-4638-46ef-abd3-dcbdec9cccc8		vi	subir (subir numa árvore, morro)	"[{""definition"":""subir (subir numa árvore, morro)""}]"	DONE
+jalaǥate	3	deb935d2-e824-41be-bb55-9d6e98276390	VB		eu escalo	"[{""definition"":""eu escalo"",""examples"":[{""text"":""jalaǥateǥa"",""translations"":{""en"":""We climb up"",""pt-br"":""Nós escalamos/subimos""}},{""text"":""nalaǥate"",""translations"":{""en"":""Mountain/Hills"",""pt-br"":""Montanha/Serra/Morro""}}]}]"	TODO
+jalaǥate	3	9a0ff225-47b4-4f17-8e80-91cac6528cd5	VB	unergative	escalar	"[{""definition"":""escalar"",""examples"":[{""glosses"":""1sg.SUBJ-climb-pl"",""morphemes"":""j-alaGate-Ga"",""text"":""jalaǥateǥa"",""translations"":{""en"":""We climb up"",""po"":""Nós escalamos/subimos""}},{""glosses"":""alnbl-clim"",""morphemes"":""n-alaGate"",""text"":""nalaǥate"",""translations"":{""en"":""Mountain/Hills"",""po"":""Montanha/Serra/Morro""}}]}]"	TODO
+jalita	2	0489c030-5063-4873-8ef1-7212e713ee6a		vt	esperar por uma pessoa	"[{""definition"":""esperar por uma pessoa""}]"	EDITION
+jalita	2	dfa91952-9e49-49a4-8b96-f66b8b0b839c	VB	unergative	esperar  - unergative	"[{""definition"":""esperar"",""examples"":[{""glosses"":""1sg.SUBJ-wait-pl"",""morphemes"":""j-alii-Ga"",""text"":""jaliiGa"",""translations"":{""en"":""We wait"",""po"":""Nós esperamos""}},{""glosses"":""lot         COMP 1sg.SUBJ-wait-rel+3sg.CL-dative"",""morphemes"":""elyodi   me       j-alii-t+e-wa"",""text"":""alyodi    me       jalita"",""translations"":{""en"":""I have been waiting for him a lot"",""po"":""Tenho esperado muito por ele""}},{""glosses"":""pl-3sg.SUBJ-wait"",""morphemes"":""o-w-alii"",""text"":""owalii"",""translations"":{""en"":""They wait"",""po"":""Eles esperam""}}]}]"	TODO
+jaloo	2	760bf094-663f-4492-903f-48258dabfc66	VB		eu brinco/festejo	"[{""definition"":""eu brinco/festejo"",""examples"":[{""text"":""jalooǥo"",""translations"":{""en"":""They play around"",""pt-br"":""Eles brincam/festejam""}},{""text"":""nalooGegi"",""translations"":{""en"":""Their playing around/Party"",""pt-br"":""Festa""}}]}]"	TODO
+jaloo	2	f9d27bfd-ce85-40a4-816f-2fdc240287a5	VB	unergative	eu brinco/festejo	"[{""definition"":""eu brinco/festejo"",""examples"":[{""glosses"":""1pl.SUBJ-play-pl"",""morphemes"":""j-aloo-Ga"",""text"":""jalooǥo"",""translations"":{""en"":""They play around"",""po"":""Eles brincam/festejam""}},{""glosses"":""3POSS-alnbl-play-pl"",""morphemes"":""l-n-aloo-Ga"",""text"":""nalooGegi"",""translations"":{""en"":""Their playing around/Party"",""po"":""Festa""}}]}]"	TODO
+jame	2	faad0048-1c94-462d-8aa3-74171197bf11		vt	não dar valor ou confiança (não estimar, não é desprezar)	"[{""definition"":""não dar valor ou confiança (não estimar, não é desprezar)""}]"	EDITION
+jame	2	633421cc-5cec-499e-8f2d-6fc2f2516299	VB		eu brinco/ ou alguem zomba de mim nigaanigi yame la - The boy plays with the toy;	"[{""definition"":"" eu brinco/ ou alguem zomba de mim"",""examples"":[{""text"":""nigaanigi             yame              la"",""translations"":{""en"":""The boy plays with the toy"",""pt-br"":""A criança brinca com o brinquedo""}}]}]"	REVIEW
+jaote	2	83b6f944-b0e8-40b1-9050-48341b0afd3f		vt	"1) arrumar
+ 2) fazer (tanto para criar coisas quanto para ações)"	"[{""definition"":""arrumar""},{""definition"":""fazer (tanto para criar coisas quanto para ações)""}]"	EDITION
+jaote	2	3bba766e-55ec-4867-9f43-be5ba3a3061e		vt	fazer, criar (mais fazer ou criar do que consertar)	"[{""definition"":""fazer, criar (mais fazer ou criar do que consertar)""}]"	DONE
+jatematiǥa	2	781f4aa8-601f-49a9-87ca-240a72afd735	VB		contar	"[{""definition"":""contar""}]"	TODO
+jatematiǥa	2	f0cdeb15-6603-4261-a144-b5d25c3b47c7	VB			null	TODO
+jatenaǥa	2	8a5b2a0c-6e74-4fbf-a7e0-9f57b8a65993		vi	tocar instrumento	"[{""definition"":""tocar instrumento""}]"	DONE
+jatenaǥa	2	5483d5d5-8a1e-4217-99fa-d0a769a1dd94	VB	unergative	"1) tocar música/contar estória inatena - My flaut (music player); jatenati natenanGegi - I play music;
+ 2) eu toco/ soltar pum"	"[{""definition"":""tocar música/contar estória"",""examples"":[{""glosses"":""1POSS-alnbl-play"",""morphemes"":""i-n-atenan"",""text"":""inatena"",""translations"":{""en"":""My flaut (music player)"",""po"":""Minha flauta""}},{""glosses"":""1sg.SUBJ-play- [+cause]     alnbl-play-[-cause]"",""morphemes"":""j-atenan-ti                         n-atenan-Gegi"",""text"":""jatenati                              natenanGegi"",""translations"":{""en"":""I play music"",""po"":""Eu toco música""}}]},{""definition"":""eu toco/ soltar pum"",""uid"":""""}]"	DONE
+jatikata	2	cd6dffeb-0228-4640-8580-0771495a1446		vt	usar um objeto	"[{""definition"":""usar um objeto""}]"	EDITION
+jatikata	2	ee8449d6-1575-4def-bada-27ae78dc76d4	VBAPL		usando	"[{""definition"":""usando""}]"	TODO
+jawale	2	41eebc76-a3b1-4e21-86d5-4d214e0b6be8		vi	babar	"[{""definition"":""babar""}]"	DONE
+jawale	2	4b02f3a5-c87b-42d8-a49f-5841b29b3ab2		vt	"1) cuspir
+ 2) cuspir em alguém"	"[{""definition"":""cuspir""},{""definition"":""cuspir em alguém"",""uid"":""""}]"	EDITION
+jawi	2	649918e3-4469-4aa5-bd97-dc0de3684fb0	VB	vi	caçar	"[{""definition"":""caçar""}]"	DONE
+jawi	2	8c2bf90d-76b0-46a0-8ce0-829c0dcf1d05	VB		caçar	"[{""definition"":""caçar""}]"	TODO
+jawie	2	aeb00eb8-6d1e-4867-9771-27a7b91e90f5		vt	duvidar  - vt	"[{""definition"":""duvidar""}]"	EDITION
+jawie	2	abf6702c-54ac-4b73-b582-d8d8bbf1832e	VB		duvidar	"[{""definition"":""duvidar"",""examples"":[{""text"":""oyaawi"",""translations"":{""en"":""He doubts it"",""pt-br"":""Ele duvida disso""}}]}]"	REVIEW
+jaxawa	2	8bc158a7-ebc3-4d0e-b11a-1bd9610ba325		vt	ajudar	"[{""definition"":""ajudar""}]"	EDITION
+jaxawa	2	73810c80-ce67-48ab-9cf9-f365a08442fd	VB		ajudar	"[{""definition"":""ajudar"",""examples"":[{""text"":""dinacawa"",""translations"":{""en"":""he helps himself"",""pt-br"":""ele se ajuda""}}]}]"	REVIEW
+jaxaǥamenaǥa	2	7132bcf9-962b-43b5-9b70-6998680b0d73		vi	mastigar	"[{""definition"":""mastigar""}]"	DONE
+jaxaǥamenaǥa	2	c2293b56-dec3-41c5-8d97-e24c6752e1b6	VB		mastigar	"[{""definition"":""mastigar"",""examples"":[{""text"":""jaciGaminaGa"",""translations"":{""en"":""we chew it"",""pt-br"":""nós o mastigamos""}}]}]"	REVIEW
+jaxoditice	2	bde1cd62-5039-4ac5-99cd-87029f982de9		vi	descer (de cavalo, etc)	"[{""definition"":""descer (de cavalo, etc)""}]"	DONE
+jaxoditice	2	1c8567a7-9ab4-445a-b3b9-d0ebc6d7ea0b	VB		descer	"[{""definition"":""descer"",""examples"":[{""text"":""idacotGa"",""translations"":{""en"":""we go down"",""pt-br"":""nós descemos""}},{""text"":""idacoditi                                            eskada"",""translations"":{""en"":""I go down the stais"",""pt-br"":""eu desço a escada""}}]}]"	REVIEW
+je	2	03ed29ba-2473-4c9f-a44a-1f4ca62e0a8d	N		bruxa	"[{""definition"":""bruxa"",""examples"":[{""text"":""nijena"",""translations"":{""en"":""witch"",""po"":""Bruxa""}},{""text"":""nijenigi"",""translations"":{""en"":""Medicine man"",""po"":""Curandeiro""}}]}]"	TODO
+je	2	2f995a95-753f-417d-b501-556c1b1fe298	N			"[{""definition"":""bruxa"",""examples"":[{""glosses"":""alnbl-witch-f.dim"",""morphemes"":""n-je-na"",""text"":""nijena"",""translations"":{""en"":""witch"",""po"":""Bruxa""}},{""glosses"":""alnbl-witch-m.dim"",""morphemes"":""n-je-nigi"",""text"":""nijenigi"",""translations"":{""en"":""Medicine man"",""po"":""Curandeiro""}}]}]"	TODO
+jeloǥotee	2	407b8702-b9bd-4465-b500-04de373b2dba		vt	"1) fazer aparecer
+ 2) revelar
+ 3) manifestar
+ 4) destacar"	"[{""definition"":""fazer aparecer""},{""definition"":""revelar""},{""definition"":""manifestar""},{""definition"":""destacar""}]"	DONE
+jeloǥotee	2	be13b455-485e-47ea-ad49-5b351a7ee2f7		vi	passar a noite	"[{""definition"":""passar a noite""}]"	DONE
+jiba	2	68d162d8-0394-47d4-b0e4-f63074186935		vi	trabalhar	"[{""definition"":""trabalhar""}]"	DONE
+jiba	2	edcf5825-e327-4a15-bb91-ff260e54a151	VB		trabalhei	"[{""definition"":""trabalhei""}]"	TODO
+jibata	2	906ff47a-427f-4f31-92de-301ceb2b1cc1		vi	errar, estar errado (sem saber ou por intenção)	"[{""definition"":""errar, estar errado (sem saber ou por intenção)""}]"	DONE
+jibata	2	922bf291-cd34-49bf-aaf2-13f7d933716c		22	pegar	"[{""definition"":""pegar""}]"	EDITION
+jibiko	2	b7f95a89-9d23-4853-82ee-1548ef569c35		vi	"1) sonhar no dia (criança faz o papel de, brincando)
+ 2) fazer de conta"	"[{""definition"":""sonhar no dia (criança faz o papel de, brincando)""},{""definition"":""fazer de conta""}]"	DONE
+jibiko	2	4f3dbafe-4b67-459d-b959-dcbbb40199b0		vi	"1) pensar em fazer algo
+ 2) torrar mandioca ou farinha"	"[{""definition"":""pensar em fazer algo""},{""definition"":""torrar mandioca ou farinha""}]"	DONE
+jibode	2	1571cb2c-54fe-4366-a098-2d335ce26669		22	"1) despedir
+ 2) pedir licença
+ 3) avisar"	"[{""definition"":""despedir""},{""definition"":""pedir licença""},{""definition"":""avisar""}]"	EDITION
+jibode	2	047826bd-eabc-4ce9-bcdd-55e1a33016f5	VB	unaccusative	despedir-se idibode - I bid farewell;	"[{""definition"":""despedir-se"",""examples"":[{""glosses"":""1sg.SUBJ-theme-bid.farewell"",""morphemes"":""j-d-bode"",""text"":""idibode"",""translations"":{""en"":""I bid farewell"",""po"":""Eu me dispeço""}}]}]"	DONE
+jidi	2	7399e2a3-d911-41fe-96fe-33ba55d6c0ac		22	escrever. Quando na forma transitiva, pode se referir à escrita no corpo	"[{""definition"":""escrever. Quando na forma transitiva, pode se referir à escrita no corpo""}]"	EDITION
+jidi	2	63cec23d-10ca-4a44-b882-b58e8349f78e	N		escrevo	"[{""definition"":""escrevo""}]"	TODO
+jidiko	2	00199299-7a59-45fc-8521-edd903e5bde1		vi	"1) escrever para
+ 2) estudar"	"[{""definition"":""escrever para""},{""definition"":""estudar""}]"	DONE
+jidiko	2	a0c8561e-04b4-4457-8aa9-262c8e43d02a	VB		estudar	"[{""definition"":""estudar""}]"	TODO
+jige	3	ccad84e1-1d93-43e2-99c3-f4e01301ab88		vi	sonhar	"[{""definition"":""sonhar""}]"	DONE
+jige	3	d13a701c-5a6e-452f-97b6-39090c56cfc6		vi	ir lá para expressar opinião	"[{""definition"":""ir lá para expressar opinião""}]"	DONE
+jige	3	a28d97b5-9808-4a64-b8b4-ab2adfce7532	VB	vt	"1) perguntar
+ 2) sonhar (apenas sonho de dormir)"	"[{""definition"":""perguntar""},{""definition"":""sonhar (apenas sonho de dormir)"",""uid"":""""}]"	DONE
+jiiǥaxinaǥa	2	c6079632-fb31-4624-bce8-fd095970c642		vi	ensinar	"[{""definition"":""ensinar""}]"	DONE
+jiiǥaxinaǥa	2	329570b3-5e4f-4c6b-b170-a9a8e4f90d50	VB		VB	"[{""definition"":""VB""}]"	TODO
+jiiǥe	2	97c871a6-e2f9-4236-a8e8-6b47143bb56b	VB	vt	"1) mandar fazer algo
+ 2) enviar alguém"	"[{""definition"":""mandar fazer algo""},{""definition"":""enviar alguém"",""uid"":""""}]"	DONE
+jiiǥe	2	5e937c33-30ef-4ba9-9293-ca0738848c36	VB		mandei	"[{""definition"":""mandei""}]"	TODO
+jile	3	1c1e349b-2499-4add-8ca7-1838eef3273a		vt	adorar (pessoa ou Deus)	"[{""definition"":""adorar (pessoa ou Deus)""}]"	REVIEW
+jile	3	d703ca22-a91b-45ce-b864-d0aaafcd9745		vt	"1) pensar erradamente
+ 2) enganar-se"	"[{""definition"":""pensar erradamente""},{""definition"":""enganar-se""}]"	DONE
+jile	3	5320accc-efa7-4c00-bc32-763f92eef573		vt	aproximar com calma (com calma e cuidado para tirar medo e ter aprovação, ou adorar)  - vt	"[{""definition"":""aproximar com calma (com calma e cuidado para tirar medo e ter aprovação, ou adorar)""}]"	REVIEW
+jiligice	2	6d247ec6-3b43-4115-bc29-57ed2af45959		135	"1) comprimir
+ 2) apertar"	"[{""definition"":""comprimir""},{""definition"":""apertar"",""uid"":""""}]"	REVIEW
+jiligice	2	e1d8b3e8-ba68-471e-9ed0-3f780716483e		vt	1) obrigar alguém para fazer algo 2) apertar  - vt	"[{""definition"":""obrigar alguém para fazer algo""},{""definition"":""apertar""}]"	REVIEW
+jilojoko	2	a618d063-90d6-4d36-a963-71006f02d873		vt	socar  - vt	"[{""definition"":""socar""}]"	REVIEW
+jilojoko	2	ee4e4940-e4db-4c20-8304-a7782cf8a9fd	VB		socar/bater com algo sólido	"[{""definition"":""socar/bater com algo sólido"",""examples"":[{""text"":""nacakonqatedi"",""translations"":{""en"":""thunders (the one which makes pound something)"",""pt-br"":""trovoes""}},{""text"":""Maria yacako                         Pedro"",""translations"":{""en"":""Mary hit Peter"",""pt-br"":""Maria socou Pedro""}},{""text"":""lamoGo           dinacakota                                                     napalite"",""translations"":{""en"":""the flour was crushed by a machete"",""pt-br"":""A farinha foi socada por um machado""}},{""text"":""jacakota                                                  napalite           lamoGo"",""translations"":{""en"":""I will crush flour with a machete"",""pt-br"":""eu vou socar a farinha com um machado""}}]}]"	REVIEW
+jinadila	2	d701ebcf-3f0a-410b-98b8-9010fe40bbc6		vt	emprestar  - vt	"[{""definition"":""emprestar""}]"	REVIEW
+jinadila	2	97cf8a88-f6c1-4c3d-b7b2-4324279a2b2f	VB		emprestar	"[{""definition"":""emprestar"",""examples"":[{""text"":""onadila                              latopenigi"",""translations"":{""en"":""They borrowed a gun"",""pt-br"":""Eles emprestaram uma arma""}}]}]"	REVIEW
+jinata	4	15ac557f-b8b8-46bf-9a64-949b3e70f5bb	VBAPL		vimos	"[{""definition"":""vimos""}]"	TODO
+jinata	4	2862bf12-7e7d-470b-9412-d32253205e14	VBAPL		vimos	"[{""definition"":""vimos""}]"	TODO
+jinata	4	8ce1be23-8943-4a97-a34f-e6172a3e64e0	VB			null	TODO
+jinata	4	5a01b9d4-45fa-483d-aab3-af4fc36364b7	VBAPL		vimos	"[{""definition"":""vimos""}]"	TODO
+jinataǥa	2	32af97cb-dc5e-49bf-93ce-4e3ce49b3338	VB		vemos	"[{""definition"":""vemos""}]"	TODO
+jinataǥa	2	d3b8b918-af87-461b-a467-010a2afefb1e	VB		vemos	"[{""definition"":""vemos""}]"	TODO
+jinidi	2	249a53b0-021b-4b8b-827b-8c396ddffe66		vi	"1) ralar
+ 2) relar"	"[{""definition"":""ralar""},{""definition"":""relar""}]"	DONE
+jinidi	2	002cdb4f-a886-422a-a3e5-5ee720093a8e		vt	chamar  - vt	"[{""definition"":""chamar""}]"	REVIEW
+jiwi	2	ee09cd22-4034-4992-a53c-6453dd171f4d	VB	vt	1) espiar 2) olhar 3) ver 4) enxergar (usado para julgar ou escolher)  - vt	"[{""definition"":""espiar""},{""definition"":""olhar""},{""definition"":""ver""},{""definition"":""enxergar (usado para julgar ou escolher)""}]"	REVIEW
+jiwi	2	7845ee33-484c-4652-8562-3aca7feb96bb	VB		ver	"[{""definition"":""ver""}]"	TODO
+jixotio	2	c3ead393-b598-47f7-babf-c2e65da5cfd8		vt	colocar pessoa ou objeto para dentro	"[{""definition"":""colocar pessoa ou objeto para dentro""}]"	REVIEW
+jixotio	2	7a2879dd-62f4-443d-88ac-d3cac34a3fb7		vt	colocar (geralmente para guardar, animal no piquete ou no curral, coisas em casa, tocar disco ou fita)  - vt	"[{""definition"":""colocar (geralmente para guardar, animal no piquete ou no curral, coisas em casa, tocar disco ou fita)""}]"	REVIEW
+jiǥigotibece	3	abb0fa69-ae8a-4e4b-a8eb-dab8d944b705	AUX		foram	"[{""definition"":""foram""}]"	TODO
+jiǥigotibece	3	fb38d47c-988a-4e8f-8faf-5d8a1c774048	T+AUX		foram para	"[{""definition"":""foram para""}]"	TODO
+jiǥigotibece	3	254d7da6-940c-455b-b1ce-9a15d36a1062	T+AUX		foram para	"[{""definition"":""foram para""}]"	TODO
+joaniǥidaaǥee	2	7b29a740-04f8-4004-8f82-9f783516ad21	ADV	adv	1) foi assim, é como 2) foi mesmo 3) pois é! (mais afirmação)  - adv	"[{""definition"":""foi assim, é como""},{""definition"":""foi mesmo""},{""definition"":""pois é! (mais afirmação)""}]"	TODO
+joaniǥidaaǥee	2	6e0f0206-e09a-49b3-ac2a-10fd83213fa7	T+ADV		foi mesmo assim	"[{""definition"":""foi mesmo assim""}]"	TODO
+joletibige	2	68ebf7f7-ee50-43ea-8d2f-dd0e3b528e1b	VB		eu procurar	"[{""definition"":""eu procurar""}]"	TODO
+joletibige	2	bd4d2d03-92c9-42fa-a658-d18513e8d5bc		vt	procurar	"[{""definition"":""procurar""}]"	REVIEW
+jomokenaǥa	2	92180599-c99e-4efd-bb2e-b5f33181cfc2		vi	latir como cachorro	"[{""definition"":""latir como cachorro""}]"	DONE
+jomokenaǥa	2	95e6668b-9b85-4663-a417-d7d2852370f5			estou latindo como cachorro	"[{""definition"":""estou latindo como cachorro""}]"	TODO
+jona	3	20be6dcc-1c95-4df3-84ce-cac3a93252c4	T	fala rep	disse que já ... (em reportagem ou fofoca)  - fala rep	"[{""definition"":""disse que já ... (em reportagem ou fofoca)""}]"	TODO
+jona	3	de89c892-d6c3-4caf-a86f-9820ea83d9da	T+EV			null	TODO
+jona	3	d6ee8e22-0d8b-443e-9dda-d4f5e1b2363d	T		diz que	"[{""definition"":""diz que""}]"	TODO
+jonaǥa	22	f8bff6d0-b444-40fb-9acd-14c090860b7d	T		disse que já	"[{""definition"":""disse que já""}]"	TODO
+jonaǥa	22	6d9a7d7f-8668-40ec-a2b5-e0dbb8b6049e	T		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	9d4adf4f-97d8-4ef5-8657-c61a57befd0b	T		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	d8f7cb3c-3c62-43dd-9ad9-d0bc7cad4a6e	EV+T			null	TODO
+jonaǥa	22	14088c2a-b875-4e3e-ad86-d65eb0cbe2e1	T		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	b6fc4bda-005f-4ea0-ae2a-49fed1fba9e6	T+EV		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	72f970f3-69ae-4e0a-a542-0c4cc7e45641	T+EV		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	7a9edb93-b689-42f7-8c43-79e811e2bd2f	EV+T		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	d07ff4df-e1c9-4ffb-ba77-a7dd006a5d17	T		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	041a03e2-6413-4e02-a719-4a4d4e0fe63a	EV+T		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	6a7159df-4c8e-4e37-bfba-684816679dab	T		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	5b7ae463-db2b-40b4-b332-036c45ddfe4f	T		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	252a7ae9-af23-4ac2-93fb-cbb5428b5518	EV+T			null	TODO
+jonaǥa	22	9ee3cc53-f602-4cd6-95a2-445c49df28a7	EV+T			null	TODO
+jonaǥa	22	f3c36ac3-389d-474a-9e7e-c8344117d678	EV+T		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	bb866280-2cec-4a61-937b-63557301cfd5	EV+T			null	TODO
+jonaǥa	22	3e975a91-54ae-49da-8478-18bbea5b5e9b	T		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	3b92891d-1eed-4a79-aae5-1505fd258327	T		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	673a92ee-b5e6-4276-9d62-c2148ac1c458	T		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	d4457065-168d-4b79-ada7-9d8b1eb2d737	T		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	d8cffa03-f025-45ea-898f-7adbf5e50049	EV+T		já	"[{""definition"":""já""}]"	TODO
+jonaǥa	22	ef354ea1-f0df-491e-8d71-434937ffcc39	EV+T		já	"[{""definition"":""já""}]"	TODO
+jonaǥidaǥaǥi	2	6de9cd84-77f3-4730-b111-84eeada55172	T+D+ADV			null	TODO
+jonaǥidaǥaǥi	2	8cb83efa-b67b-4e4f-9530-0b975c934f8c	ADV			null	TODO
+joneǥenagitibece	2	1021a941-82f8-45f2-a6be-69ed8c3ba68a	T+EV+VB		vieram	"[{""definition"":""vieram""}]"	TODO
+joneǥenagitibece	2	8cab75b9-020e-4780-a79d-c71bba7a8f66	EV+T+VB		vieram	"[{""definition"":""vieram""}]"	TODO
+joneǥidaǥee	2	9e7a6966-2896-4b3a-afa5-ec056f016e31	T+ADV		assim	"[{""definition"":""assim""}]"	TODO
+joneǥidaǥee	2	6a1be369-280f-45bc-be10-f73222cc7f76	T+ADV		assim	"[{""definition"":""assim""}]"	TODO
+joniǥidiaǥi	2	3bdbfb13-9c48-49e5-90a9-85acbe8d534a	T+ADV		ficou	"[{""definition"":""ficou""}]"	TODO
+joniǥidiaǥi	2	9de21f8d-14b5-4f8a-8a3c-d104b3c521ff	T+ADV			null	TODO
+jonoǥonaditiogi	2	01193921-9b46-4f3d-b953-21c0287b563a	T+VBAPL		diz que avistaram	"[{""definition"":""diz que avistaram""}]"	TODO
+jonoǥonaditiogi	2	b9f338ce-8b0f-4ef3-9535-04873dda8944	T+VBAPL		diz que avistaram	"[{""definition"":""diz que avistaram""}]"	TODO
+jopotibige	2	eba05971-b96a-4fc0-a415-8cedd5bd3f40	VBAPL		preciso	"[{""definition"":""preciso""}]"	TODO
+jopotibige	2	233fd9b8-9124-446d-bc78-e58cff5c9639		vt	1) necessitar 2) querer (precisar de)	"[{""definition"":""necessitar""},{""definition"":""querer (precisar de)""}]"	REVIEW
+jotatibige	3	8739a1ee-bf58-4e67-9cf6-a06a58a7b5a9	VBAPL		falar de (alguém não presente)	"[{""definition"":""falar de (alguém não presente)""}]"	TODO
+jotatibige	3	db9a92aa-46a3-4ac0-aaf1-d462dbf719e1	VB			null	
+jotatibige	3	62faf596-9c29-4240-974b-c4233d18617a	VBAPL			null	
+jotigide	2	c31bb5f3-f587-4c13-82af-90790fa8c602	N		antigo	"[{""definition"":""antigo""}]"	TODO
+jotigide	2	73093d6f-95e1-4dff-a0e5-bc601a2e0028	ADV	adv temp	tempo antigo (nos tempos passados)  - adv temp	"[{""definition"":""tempo antigo (nos tempos passados)""}]"	TODO
+joǥoyotimadi	3	74ca71b8-06e3-4b73-92c7-d43965357557	CT+NEG+VB		não obedeceram	"[{""definition"":""não obedeceram""}]"	TODO
+joǥoyotimadi	3	02351f2f-1449-43af-99bb-6ee5508e405b	T+NEG+VBAPL		não obedeceram	"[{""definition"":""não obedeceram""}]"	TODO
+joǥoyotimadi	3	da5f1e13-950c-4885-b402-51416c9a814a	CT+NEG+VB		não obedeceram	"[{""definition"":""não obedeceram""}]"	TODO
+kahu	2	e8f6cac6-30fa-428a-8e95-bb77590d0906	C+VB			null	TODO
+kahu	2	aea74cbe-a711-48d7-814c-43178222eb62	MOD			null	TODO
+labadi	3	e055714f-3785-45d6-9d9f-cda4824c8311		subst	asa  - subst	"[{""definition"":""asa""}]"	TODO
+labadi	3	64b3e827-f180-4022-8614-8c0c481d7008	N$		asa	"[{""definition"":""asa"",""examples"":[{""text"":""labadi"",""translations"":{""en"":""Its wings"",""pt-br"":""Suas asas""}}]}]"	TODO
+labadi	3	4cf07a3f-1396-43e4-b593-5841f3638510	N$		asas	"[{""definition"":""asas"",""examples"":[{""glosses"":""3POSS-wing-pl"",""morphemes"":""l-aba-adi"",""text"":""labadi"",""translations"":{""en"":""Its wings"",""po"":""Suas asas""}}]}]"	DONE
+lapakaǥa	3	586f0ee6-0694-4b40-9d3d-a2f78faa693d	N		branco	"[{""definition"":""branco""}]"	TODO
+lapakaǥa	3	066c92c7-236f-4c21-9dfb-5805671d9b0c	N			"[{""definition"":""branco""}]"	TODO
+lapakaǥa	3	21d45b27-844e-4288-b3f6-e3f727105cf6	N			"[{""definition"":""branco""}]"	TODO
+latopagi	2	62356994-ed48-404e-916c-e88fb7e43200	N	subst masc	1) aparência 2) tipo 3) qualidade  - subst masc	"[{""definition"":""aparência""},{""definition"":""tipo""},{""definition"":""qualidade""}]"	TODO
+latopagi	2	0a3cb2de-cd39-4247-9875-1bc3b0d57e30	N$		tribo	"[{""definition"":""tribo""}]"	TODO
+leegi	2	6cc007b0-49ac-4eb6-abfe-9a94bfc17339	N		senso/pesado	"[{""definition"":""senso/pesado""}]"	TODO
+leegi	2	5790290a-c2f7-408a-8421-c5cc713bc065	ADJ	adv	1) depois de bastante tempo 2) longe  - adv	"[{""definition"":""depois de bastante tempo""},{""definition"":""longe""}]"	TODO
+leeǥodi	6	1c8f58de-a69a-4f66-b189-2bcb861ec463	N$		porque/por causa de	"[{""definition"":""porque/por causa de""}]"	TODO
+leeǥodi	6	66e81b21-3ef8-47e8-8226-96207dfaa967	N$	conj	por causa de ...  - conj	"[{""definition"":""por causa de ...""}]"	TODO
+leeǥodi	6	2e4a03db-3163-4996-a961-29c17fc6fdec	WADV		por causa	"[{""definition"":""por causa""}]"	TODO
+leeǥodi	6	94edac0c-679c-451b-9cfe-5d3ec39c476a	CONJ			"[{""definition"":""porque/por causa de""}]"	TODO
+leeǥodi	6	d12e4582-82b3-46fe-9828-5dd8f5cf16cf	CONJ			"[{""definition"":""porque/por causa de""}]"	TODO
+leeǥodi	6	828be2c3-fed0-4648-a370-b7222d762650	WPRO			null	
+leyeema	2	02c90c80-1d77-46f6-af10-249414eefc63	N		trigo	"[{""definition"":""trigo""}]"	TODO
+leyeema	2	3c81162a-e5c9-49b2-814a-abe53092011b		subst masc	trigo  - subst masc	"[{""definition"":""trigo""}]"	TODO
+leǥe-eelate	2	16654fdc-5395-4a1a-ba3d-235040b56d9c			(variante do gênero feminino)	null	TODO
+leǥe-eelate	2	ef3a40d5-cb71-4e93-9601-94f74eec62cf			(variante do gênero feminino)	null	TODO
+libitagi	2	990169b6-0062-4266-b703-a3024ba1c3db	N$	subst masc	osso dele  - subst masc	"[{""definition"":""osso dele""}]"	TODO
+libitagi	2	90125d83-fa3b-410d-8708-ab22af568fd5	N$			null	
+lidi	3	ba922ac9-ac8b-482a-a076-b3c4aac70faa	N$			null	TODO
+lidi	3	896f64fb-1e55-4bf5-822e-e7b941786dc5	N		cordao umbilical	"[{""definition"":""cordao umbilical"",""examples"":[{""text"":""elidi"",""translations"":{""en"":""Umbilical cord"",""po"":""Cordao umbilical""}}]}]"	TODO
+lidi	3	3cbc5448-6691-4770-b623-4c4b5e7ea8d6	N			"[{""definition"":""cordao umbilical"",""examples"":[{""glosses"":""IND-umbilical.cord"",""morphemes"":""e-lidi"",""text"":""elidi"",""translations"":{""en"":""Umbilical cord"",""po"":""Cordao umbilical""}}]}]"	TODO
+lidǥatadi	2	6d7a9cf4-3197-41b3-999a-293033fc62cc	N		órfao	"[{""definition"":""órfao"",""examples"":[{""text"":""nilidGatadi""},{""text"":""nilidGatajegi"",""translations"":{""en"":""Maid/slave"",""po"":""Criado""}}]}]"	TODO
+lidǥatadi	2	8e14ff0a-d954-4b7c-a54b-a81da26fd09e	N			"[{""definition"":""órfao"",""examples"":[{""glosses"":""alnbl-orphan"",""morphemes"":""n-lidGatadi"",""text"":""nilidGatadi""},{""glosses"":""alnbl-orphan-source"",""morphemes"":""n-lidGata-jegi"",""text"":""nilidGatajegi"",""translations"":{""en"":""Maid/slave"",""po"":""Criado""}}]}]"	TODO
+lita	2	f578874f-d9ac-492b-8676-c52cc116f196	N$	subst masc	1) o gosto 2) paz (tranqüilidade)  - subst masc	"[{""definition"":""o gosto""},{""definition"":""paz (tranqüilidade)""}]"	TODO
+lita	2	81a5ee58-1ca6-4526-93e0-9c2048aae2d5	N$			null	
+liwaǥa	4	5969664e-0b85-4387-b2b2-1cf57f090463		subst masc	anta  - subst masc	"[{""definition"":""anta""}]"	TODO
+liwaǥa	4	8c976e69-d4be-4cdd-b4f9-6dc5e5e313f4	N		anta	"[{""definition"":""anta""}]"	TODO
+liwaǥa	4	0824e68d-644b-4f73-b4bd-a3e1dea3b272	N			"[{""definition"":""anta""}]"	TODO
+liwaǥa	4	4ebf6b71-1b2f-46f8-990e-521c7c829ae0	N			"[{""definition"":""anta""}]"	TODO
+liwigo	2	914e5c4d-79dc-4cdb-9767-731d03b7d1ce	N$	subst masc	1) espírito dele 2) foto ou imagem dele 3) ídolo dele  - subst masc	"[{""definition"":""espírito dele""},{""definition"":""foto ou imagem dele""},{""definition"":""ídolo dele""}]"	TODO
+liwigo	2	dde5b1d8-6c96-45bc-bdb1-3cc7d74611aa	N$		fotografia dele/dela	"[{""definition"":""fotografia dele/dela""}]"	TODO
+liǥeladi	2	8103b2f3-4c19-49f9-ac79-85335c08e5c6	N$	subst	1) casa dele 2) lar dele  - subst	"[{""definition"":""casa dele""},{""definition"":""lar dele""}]"	TODO
+liǥeladi	2	3603325c-1953-4d3e-aab3-59638d49abfc	N$		casa dela/dele	"[{""definition"":""casa dela/dele""}]"	TODO
+lodawa	2	0328d14a-af37-4342-b32f-8789d6597f64	N$	(ger) subst masc ou fem	1) marido dela 2) esposa dele  - (ger) subst masc ou fem	"[{""definition"":""marido dela""},{""definition"":""esposa dele""}]"	TODO
+lodawa	2	9119fc5f-d27e-432c-ad03-bb982b103d91	N$		esposo	"[{""definition"":""esposo""}]"	TODO
+lokaǥa	2	951a2f08-bc70-4821-a4dc-2f9dbf039c8c	N		penhasco	"[{""definition"":""penhasco"",""examples"":[{""text"":""lilokaGa"",""translations"":{""en"":""Its crag"",""po"":""Seu penhasco""}}]}]"	TODO
+lokaǥa	2	06c803bc-7c84-4e8f-ab21-f2c700e165a1	N			"[{""definition"":""penhasco"",""examples"":[{""glosses"":""3POSS-crag"",""morphemes"":""l-lokaGa"",""text"":""lilokaGa"",""translations"":{""en"":""Its crag"",""po"":""Seu penhasco""}}]}]"	TODO
+lomiigo	2	6d0a4bd2-e69f-451f-9de8-c6b04fbc1234	N$	subst fem	anzol (para pescar)  - subst fem	"[{""definition"":""anzol (para pescar)""}]"	TODO
+lomiigo	2	9054f403-124f-437c-aa73-8cd46276801a	N$			null	
+looligi	2	48139576-8d91-4d36-9bfc-f89202eb1bf2	N$	subst masc	comida cozida  - subst masc	"[{""definition"":""comida cozida""}]"	TODO
+looligi	2	275bd636-dc74-432f-b92f-b285d498bcee	N$		sua comida	"[{""definition"":""sua comida""}]"	TODO
+lǥito	3	6411cfe6-3212-41e9-9a55-169c977ab12a	N		ratazana	"[{""definition"":""ratazana""}]"	TODO
+lǥito	3	8183238b-f319-44b0-972e-71e4d330408e	N			"[{""definition"":""ratazana""}]"	TODO
+lǥito	3	dd7c7b72-28d6-4ad0-89a9-9d141aba6390	N			"[{""definition"":""ratazana""}]"	TODO
+maaǥaleǥica	3	ec957883-b7bb-410c-bde7-648e666ceae5	C+ADV		não teve mais	"[{""definition"":""não teve mais""}]"	TODO
+maaǥaleǥica	3	9b42c5b1-6b12-4d31-8cbc-e0ce25ae034e	C+VB		não teve mais	"[{""definition"":""não teve mais""}]"	TODO
+maaǥaleǥica	3	53f40881-d76b-4f2b-8b59-aef93d8d7636	C+ADV		não teve mais	"[{""definition"":""não teve mais""}]"	TODO
+maleeka	3	095b986e-19f7-4e24-b44b-862a901232ab	C+T	adv temp	no início ou começo  - adv temp	"[{""definition"":""no início ou começo""}]"	TODO
+maleeka	3	f64e2dfc-cee7-4d51-852f-10c814ea01b9	C+ADV		que no início	"[{""definition"":""que no início""}]"	TODO
+maleeka	3	09face53-db9d-4530-85ed-a940d9afe90a	C			null	TODO
+maleka	3	e7563324-dfd5-48a3-9750-e99ef22b85e0	C+T		do que era	"[{""definition"":""do que era""}]"	TODO
+maleka	3	94c618e8-b79d-47b1-a5fa-40502a9761e5	ADV		do princípio	"[{""definition"":""do princípio""}]"	TODO
+maleka	3	9f7b6fb4-59d8-47fe-92d5-02884813d555	C+ADV		que no princípio	"[{""definition"":""que no princípio""}]"	TODO
+manitaǥa	3	8e127da0-aaba-4920-9949-964102841c69	C	loc fem	lá com ela  - loc fem	"[{""definition"":""lá com ela""}]"	TODO
+manitaǥa	3	be748c69-d7eb-4d5a-9bfc-f65d1de4b990	CD		numa	"[{""definition"":""numa""}]"	TODO
+manitaǥa	3	0a4bdc99-25d5-4f0e-8889-05eb5d2844c5	C+DAPL			null	
+medaǥa	2	2f74900b-54fb-4f10-8788-f2c61f4a237d	C NEG		que não	"[{""definition"":""que não""}]"	TODO
+medaǥa	2	fcbe5c49-27a7-4862-abfa-de6321588dc2	C+NEG		que não tem	"[{""definition"":""que não tem""}]"	TODO
+mee	2	421f4cf4-3e9f-4f34-beba-e64254acd586	C			null	TODO
+mee	2	585bfac3-dad3-4c07-806e-fe43dade4afb	C+PRO			null	
+micataǥa	2	b1df7bc9-f6b6-446b-a88d-7457a32e8b46	CD	adv	como  - adv	"[{""definition"":""como""}]"	TODO
+micataǥa	2	097a85bb-e2fb-4be3-a539-5aaacca20349	CD			null	TODO
+mida	3	df7f14c3-c2f4-4c4b-a534-d9c12769f361	C+D	adv	neste  - adv	"[{""definition"":""neste""}]"	TODO
+mida	3	af293fbe-76a8-4a67-888a-b4be556381fc	C+D		deste	"[{""definition"":""deste""}]"	TODO
+mida	3	7b07e30a-407a-4383-a678-391365038d85	C+Q		disso	"[{""definition"":""disso""}]"	TODO
+miditaGa	2	15176596-5802-4605-a0ec-370c5395f3be	C+DAPL			null	
+miditaGa	2	59a39de2-816d-4e9a-9d49-34df8204056e	CD			null	
+miditaǥa	4	08e6c592-c303-46d5-9cc8-7eab57c6e749		loc masc	onde, lá, onde está  - loc masc	"[{""definition"":""onde, lá, onde está""}]"	TODO
+miditaǥa	4	d5309273-2d45-44dd-826b-53d781ba766c	C+DAPL	(forma masc)	coisa deitada ou horizontal  - (forma masc)	"[{""definition"":""coisa deitada ou horizontal""}]"	TODO
+miditaǥa	4	08de319f-abe5-4206-b550-553bdeb7e01b	C+QAPL		que com ele	"[{""definition"":""que com ele""}]"	TODO
+miditaǥa	4	27c3a65e-1b3f-40a5-b326-57b1cd5537ac	CD		em que	"[{""definition"":""em que""}]"	TODO
+migaleeǥica	2	388ef42b-9f55-4bcb-b44d-393f3bb4a4ab	C+WADV+ADV			null	TODO
+migaleeǥica	2	855993f0-8164-437b-bed0-4623d614c9b8	C+ADV			null	TODO
+migaleǥica	2	38830c21-de88-4e64-9df5-63ed0a6f06b5	VB		se ainda tem outro	"[{""definition"":""se ainda tem outro""}]"	TODO
+migaleǥica	2	85c96a6c-4c9c-4378-a70b-ed3df35f18a8	VB		se ainda tem ainda	"[{""definition"":""se ainda tem ainda""}]"	TODO
+migotibece	3	a26e8f63-33cd-4c95-8418-62802650a790	C+VB		que foram	"[{""definition"":""que foram""}]"	TODO
+migotibece	3	25cdbc6e-6572-479b-9238-2587dc453fcb	C+VBAPL		que foram para	"[{""definition"":""que foram para""}]"	TODO
+migotibece	3	f10eb447-8cde-4421-9f27-a63c9721be27	C+AUX		que foram para	"[{""definition"":""que foram para""}]"	TODO
+minataǥa	2	e0f3dd13-6a3d-4513-84af-9e4ea80642d7		loc masc	lá onde está, lá com  - loc masc	"[{""definition"":""lá onde está, lá com""}]"	TODO
+minataǥa	2	8de457c5-85c8-45ec-858b-da7996d36dd2	CD			null	TODO
+miǥaleeǥica	3	27385274-c607-4745-8585-031c29e434a7	C+WADV+ADV			null	TODO
+miǥaleeǥica	3	29ca59e7-7705-468e-9d6c-a508bb9440ab	C+ADV+D			null	TODO
+miǥaleeǥica	3	98a73656-c4ef-440e-a174-f4040fe1c68b	C+WADV+ADV			null	TODO
+naakatakanaǥa	2	b38dc9d8-8cbd-461e-9591-d78775583299	N		destruidor de	"[{""definition"":""destruidor de""}]"	TODO
+naakatakanaǥa	2	dd6b69b9-afe6-44a8-a22f-e6b3af542b6e		subst	destruidor  - subst	"[{""definition"":""destruidor""}]"	TODO
+naalewe	2	3be79358-d933-4b2f-968a-dc7442c8286e			dever	"[{""definition"":""dever""}]"	TODO
+naalewe	2	95582e21-6867-43d0-9d8a-ecbac56689a1		subst masc	1) conta dele 2) débito dele  - subst masc	"[{""definition"":""conta dele""},{""definition"":""débito dele""}]"	TODO
+naaloǥo	3	4637952d-0ff5-4e5d-a4e1-34a4cda35966	VB		isso reflete	"[{""definition"":""isso reflete"",""examples"":[{""text"":""naaloGo"",""translations"":{""en"":""It lights"",""pt-br"":""Isso reflete""}},{""text"":""yaaloGonGadi"",""translations"":{""en"":""He set fire"",""pt-br"":""Ele pôs fogo""}}]}]"	TODO
+naaloǥo	3	cd9be99a-e295-47fc-b2da-61172d5ec77e	N		pulga	"[{""definition"":""pulga"",""examples"":[{""glosses"":""alnbl-flee-pl"",""morphemes"":""n-aalo-Ga"",""text"":""naaloGo"",""translations"":{""en"":""Flee"",""po"":""Pulga""}}]}]"	DONE
+naaloǥo	3	1ae4dff1-a038-48e7-abdc-f21d124c70b7	VB	unergative	refletir  - unergative	"[{""definition"":""refletir"",""examples"":[{""glosses"":""3sg.SUBJ-hither-reflect"",""morphemes"":""y-n-aaloGon"",""text"":""naaloGo"",""translations"":{""en"":""It lights"",""po"":""Isso reflete""}},{""glosses"":""3sg.SUBJ-reflect-[+cause]"",""morphemes"":""y-aaloGon-Gad"",""text"":""yaaloGonGadi"",""translations"":{""en"":""He set fire"",""po"":""Ele pôs fogo""}}]}]"	DONE
+naaǥa	2	587dfede-8cd9-428c-b79a-7c787fed27e6	VB		esconder-se	"[{""definition"":""esconder-se"",""examples"":[{""text"":""idinaaGaditineki                                                          beegi"",""translations"":{""en"":""I hidden myself in the hole"",""po"":""Eu me escondi no buraco""}},{""text"":""dinaaGaditi"",""translations"":{""en"":""It was hiden"",""po"":""escondido""}}]}]"	TODO
+naaǥa	2	767ad746-0db3-4b61-b420-2904d2dc9863	VB	unaccusative		"[{""definition"":""esconder-se"",""examples"":[{""glosses"":""1sg.SUBJ-theme-hide-rel+downward+3sg.CL-inessive hole"",""morphemes"":""j-d-naaGa-d-t-n+e-k                                                    beegi"",""text"":""idinaaGaditineki                                                          beegi"",""translations"":{""en"":""I hidden myself in the hole"",""po"":""Eu me escondi no buraco""}},{""glosses"":""3sg.SUBJ-hide-[+cause]"",""morphemes"":""y-d-naaGa-d-ti"",""text"":""dinaaGaditi"",""translations"":{""en"":""It was hiden"",""po"":""escondido""}}]}]"	TODO
+nabidi	2	1ebb23da-aba8-4438-ab6a-dbb30f86c0e5	Q	adj	queimado  - adj	"[{""definition"":""queimado""}]"	DONE
+nabidi	2	023edbd7-46ca-4c90-863a-80e04e87dab7		adj	preto (feito preto, pode ser porque queimou)  - adj	"[{""definition"":""preto (feito preto, pode ser porque queimou)""}]"	TODO
+nadegogo	2	a73fa291-a2b0-44da-a4b5-42c0a1af8c0c		subst masc	capim  - subst masc	"[{""definition"":""capim""}]"	TODO
+nadegogo	2	9defdb8c-d33c-4e06-a93b-2b170915a303	N		grama/capim	"[{""definition"":""grama/capim"",""examples"":[{""glosses"":""3sg.SUBJ-eat    alnbl-grass-pl"",""morphemes"":""y-eligo            n-adego-go"",""text"":""yeligo              nadegogo"",""translations"":{""en"":""He is eating grass"",""po"":""Ele está comendo capim""}}]}]"	DONE
+nadi	2	b91f97dd-b38a-404a-9b39-d534841d71a4			ver	"[{""definition"":""ver""}]"	REVIEW
+nadi	2	fad7c3f7-2614-4f97-a6f9-43e2945f03fa	VB	vt	ver  - vt	"[{""definition"":""ver""}]"	TODO
+nadokojegi	2	4e26be4e-5b37-4bf0-a855-abcd65fa7e03	N	subst masc	pomada  - subst masc	"[{""definition"":""pomada""}]"	DONE
+nadokojegi	2	c7b3f1d3-c83f-4d76-8733-7d043471f19a		subst masc	perfume  - subst masc	"[{""definition"":""perfume""}]"	TODO
+nadoneǥegi	2	bac1f578-f6bf-4422-bd9d-351eb5112e6b	N$	subst masc	casamento  - subst masc	"[{""definition"":""casamento""}]"	DONE
+nadoneǥegi	2	38a1b4fe-10fa-41f0-a5d2-e162a4d0fb02		subst masc	casamento  - subst masc	"[{""definition"":""casamento""}]"	TODO
+najigotediwa	3	77c27258-d86c-49e1-9d04-e1bfc2d5e2be			você traz para mim	"[{""definition"":""você traz para mim""}]"	TODO
+najigotediwa	3	0282b176-cff3-4f37-a8ae-b44f7d83e9a4	VBAPL			null	
+najigotediwa	3	8f2cfb7e-8c43-4b61-80af-c5392fdc6cfa	VBAPL			null	
+nakooǥa	3	a5e721fd-dc9b-45fb-b1b0-311cb70bca61	N		pica-pau-do-campo	"[{""attributes"":{""scientific"":""colaptes campestris""},""definition"":""pica-pau-do-campo""}]"	TODO
+nakooǥa	3	85e1e207-ce76-41d2-b20f-4d495e2bf656	N			"[{""attributes"":{""scientific"":""colaptes campestris""},""definition"":""pica-pau-do-campo""}]"	TODO
+nakooǥa	3	cd3fa728-f22d-47e6-a897-9c79ffde82a4	N			"[{""attributes"":{""scientific"":""colaptes campestris""},""definition"":""pica-pau-do-campo""}]"	TODO
+naliǥo	3	4afc84e2-8048-426b-9ca7-2da59ded9415	VB		acertassem	"[{""definition"":""acertassem""}]"	TODO
+naliǥo	3	0e9bc61b-04b3-4972-a993-10a1a8156cbb	VB		ele atingiu	"[{""definition"":""ele atingiu"",""examples"":[{""text"":""yopitena                  naliGo                      nigedyoogo"",""translations"":{""en"":""My arrow hit a jaguar"",""pt-br"":""Minha flecha atingiu a onça""}}]}]"	TODO
+naliǥo	3	53482c84-4c3b-456d-8c01-06f2ea8c59a0	VB	bivalent	ele atingiu	"[{""definition"":""ele atingiu"",""examples"":[{""glosses"":""1POSS-arrow-f.dim 3sg.SUBJ-hither-hit  alnbl-jaguar"",""morphemes"":""i-opite-na               y-n-aliGo                   n-gedyogo"",""text"":""yopitena                  naliGo                      nigedyoogo"",""translations"":{""en"":""My arrow hit a jaguar"",""po"":""Minha flecha atingiu a onça""}}]}]"	TODO
+napaaǥate	3	072a39c1-57e1-48df-ba07-afd652425191		subst masc	orelha de  - subst masc	"[{""definition"":""orelha de""}]"	TODO
+napaaǥate	3	f7177e4e-d899-4576-affb-8d186e217202	N		orelha	"[{""definition"":""orelha"",""examples"":[{""text"":""GonapaGate"",""translations"":{""en"":""our ear"",""po"":""nossa orelha""}}]}]"	TODO
+napaaǥate	3	2ff0c8a9-8d4b-4bf9-aeb0-03b746e45a37	N			"[{""definition"":""orelha"",""examples"":[{""glosses"":""1pl.POSS-ear"",""morphemes"":""God-napaaGate"",""text"":""GonapaGate"",""translations"":{""en"":""our ear"",""po"":""nossa orelha""}}]}]"	TODO
+napigo	2	141015fc-a17e-4a06-9a5b-415fb375d0f7	N		mel	"[{""definition"":""mel""}]"	TODO
+napigo	2	5aa1bcac-5f7f-4bca-b46f-b33f50767061	N			"[{""definition"":""mel""}]"	TODO
+napioi	2	be0894f1-0483-40d8-a160-e680054f648e	N$	adj	sujo  - adj	"[{""definition"":""sujo""}]"	TODO
+napioi	2	f7d0bb2c-c852-42d3-b58c-dc22fb8d1cab	ADJ		sujo	"[{""definition"":""sujo""}]"	TODO
+natematigigi	2	ddd26eb0-10ef-4ef1-8232-65baeb51b83e	NAPL	subst masc	história de  - subst masc	"[{""definition"":""história de""}]"	TODO
+natematigigi	2	f36818e2-db51-4df9-90b9-a9614f1a8801	NAPL		história de	"[{""definition"":""história de""}]"	TODO
+naǥa	2	10fa58c7-dddf-4353-bb15-5c98c833657d	CT		quando	"[{""definition"":""quando""}]"	TODO
+naǥa	2	db5e5570-7f5b-48cc-b9cb-5089cfcb7192	CT		quando	"[{""definition"":""quando""}]"	TODO
+naǥajo	2	da15a4a2-33e8-47e7-bd05-5639b6a3900a	PRO$	dem fem	aquela (coisa indo)  - dem fem	"[{""definition"":""aquela (coisa indo)""}]"	TODO
+naǥajo	2	ba830885-2773-47a6-85a5-84a220a1b874	D			null	
+naǥamalaǥa	2	ba3db890-98b8-499b-8bbe-df579bcdc810	N$	subst masc	fraqueza  - subst masc	"[{""definition"":""fraqueza""}]"	REVIEW
+naǥamalaǥa	2	1b2a8c4a-4d61-418e-82a3-9fdeae196678			fraqueza	"[{""definition"":""fraqueza""}]"	TODO
+nebi	2	1a5a8703-f67c-4302-98c8-7b0820790b87	N		dono	"[{""definition"":""dono""}]"	TODO
+nebi	2	a4a87a6a-5594-4be2-8dd9-516b1a1f723b	$PRO	pro poss	dele (no plural - bens dele)  - pro poss	"[{""definition"":""dele (no plural - bens dele)""}]"	TODO
+neyeǥa	2	c48d4846-c68f-4de4-aa92-3cde43ed54df	VB		partir	"[{""definition"":""partir"",""examples"":[{""text"":""Joao neyeGaditi                             liGeladi"",""translations"":{""en"":""John abandoned the Indian village (the village caused John cause quitting)"",""po"":""Joao deixou sua aldeia""}}]}]"	TODO
+neyeǥa	2	0a1b8fec-433b-48e6-aefd-047c94cbe27b	VB	unergative		"[{""definition"":""partir"",""examples"":[{""glosses"":""John 3sg.SUBJ-quit-atel-[+cause]   3POSS-village"",""morphemes"":""John y-neyeGa-d-ti                       l-Geladi"",""text"":""Joao neyeGaditi                             liGeladi"",""translations"":{""en"":""John abandoned the Indian village (the village caused John cause quitting)"",""po"":""Joao deixou sua aldeia""}}]}]"	TODO
+neǥepaanaǥa	2	b0b10742-ffa8-41cf-a92d-1e7ea80ff365	CT+ADV		quando quase	"[{""definition"":""quando quase""}]"	TODO
+neǥepaanaǥa	2	8b29b0dd-366d-4ac3-b5c1-941eb1b9c85b	CT+ADV		quando quase	"[{""definition"":""quando quase""}]"	TODO
+neǥeyomoditace	2	042e92d3-28cd-4a31-be22-6ff541405062	CT+PRO+C+VBAPL			null	
+neǥeyomoditace	2	1348706b-2899-49bb-bc1c-d9367a51a141	CT+PRO+C+VBAPL			null	
+nibedona	2	2bd38f06-e77d-4efe-b7ea-dce0d7dc4803	VB		abraçar	"[{""definition"":""abraçar"",""examples"":[{""text"":""idinibedonaGa"",""translations"":{""en"":""We embrance"",""po"":""Abraçamos""}},{""text"":""inibedona"",""translations"":{""en"":""My finger"",""po"":""Meu dedo""}},{""text"":""nibedonoGodi"",""translations"":{""en"":""Godfather"",""po"":""Padrinho""}},{""text"":""nibedonoGodo"",""translations"":{""en"":""Godmother"",""po"":""Madrinha""}}]}]"	TODO
+nibedona	2	3d8cf8fe-d47e-46fd-95ad-f0291055abf7	VB	unaccusative		"[{""definition"":""abraçar"",""examples"":[{""glosses"":""1pl.SUBJ-theme-embrace-pl"",""morphemes"":""j-d-nibedona-Ga"",""text"":""idinibedonaGa"",""translations"":{""en"":""We embrance"",""po"":""Abraçamos""}},{""glosses"":""1POSS-embrace"",""morphemes"":""i-nibedona"",""text"":""inibedona"",""translations"":{""en"":""My finger"",""po"":""Meu dedo""}},{""glosses"":""embrace-[+become]"",""morphemes"":""nibedona-God"",""text"":""nibedonoGodi"",""translations"":{""en"":""Godfather"",""po"":""Padrinho""}},{""glosses"":""finger-[+become]-feminine"",""morphemes"":""nibedona-God-o"",""text"":""nibedonoGodo"",""translations"":{""en"":""Godmother"",""po"":""Madrinha""}}]}]"	TODO
+nigaanigawaanigi	2	7fdeb53f-9cd9-42ae-ad67-2c4e48a49b3d	N		(forma dim)	"[{""definition"":""(forma dim)""}]"	TODO
+nigaanigawaanigi	2	84803b98-7c6f-467f-bf5b-8982961e0c34	N			null	
+nige	2	95fe7f8e-3a73-4e6a-ab92-00f717103e75	ADV	conj temp	1) quando 2) até (condicional, hipotético ou com universal temporal)  - conj temp	"[{""definition"":""quando""},{""definition"":""até (condicional, hipotético ou com universal temporal)""}]"	TODO
+nige	2	0dc1c27e-58fc-4165-bb13-5629c483a3f7	CT			null	
+nigicoa	2	1d65874a-6020-42f2-9267-3a01fb3419f3	D		os	"[{""definition"":""os""}]"	TODO
+nigicoa	2	68e2aacc-3835-4367-af0d-5ef4ef1d6415	D		estes	"[{""definition"":""estes""}]"	TODO
+nigoi	2	6c25fa09-41ff-4d12-8391-d5b6dc012d46	N		amanha	"[{""definition"":""amanha""}]"	TODO
+nigoi	2	084b9b32-9afd-4aea-9c07-6b06523f20bb	N			"[{""definition"":""amanha""}]"	TODO
+nigotaGa	2	2d02d7d9-4256-47fb-8522-1f2e3942def7	N			null	
+nigotaGa	2	f35372be-b889-46be-937b-cbefcd024ee0				null	
+niimete	2	1f48c3c9-8ecc-4821-8af6-3796776a90aa			(variante do gênero feminino)	null	TODO
+niimete	2	a48d0a1f-851e-4579-a8ee-fe9c0c35fac1			(variante do gênero feminino)	null	TODO
+niiǥenatakaneǥegi	2	3e135bc2-bffe-4f31-b1c4-b76b25f54809		subst masc	1) mandamento 2) ordem 3) lei  - subst masc	"[{""definition"":""mandamento""},{""definition"":""ordem""},{""definition"":""lei""}]"	TODO
+niiǥenatakaneǥegi	2	79449c34-7e9d-4af1-9796-c2a48716bb66		subst masc	1) lei 2) mandamento 3) ordem  - subst masc	"[{""definition"":""lei""},{""definition"":""mandamento""},{""definition"":""ordem""}]"	TODO
+nikaǥaabi	3	6a79220e-bd62-4b09-a7a9-c4eaf05f9168	N	free form	ano  - free form	"[{""definition"":""ano""}]"	TODO
+nikaǥaabi	3	be6eb254-d1e0-47f3-b0db-7e14bfaa126d	N	free form		"[{""definition"":""ano""}]"	TODO
+nikaǥaabi	3	3a426e1c-5b1b-4d45-8b1d-c4383efdcd41	N	free form		"[{""definition"":""ano""}]"	TODO
+nilejedi	2	14ef4324-1878-48c3-ad31-067f7e6749f5	N		corda dele	"[{""definition"":""corda dele""}]"	TODO
+nilejedi	2	db3056c0-c04d-48b0-895e-419a6c3ef1aa	nilejedi			null	
+niloko	2	7ccdc5a9-f281-4833-9683-f270bf821152		adj	assado  - adj	"[{""definition"":""assado""}]"	TODO
+niloko	2	ba18424e-50be-40e4-9fdb-145c24cb48ba			estar de volta	"[{""definition"":""estar de volta""}]"	TODO
+ninitibigiwaji	2	8b22af5d-d865-421b-8ec3-f8ba61fee312	VB			null	
+ninitibigiwaji	2	69ac16e9-2e7d-416f-8d76-81a5edad424f	VB			null	
+nioladi	3	8885d371-6176-454e-92d5-c265d41d401d	N$	subst masc	1) boca dele 2) idioma dele  - subst masc	"[{""definition"":""boca dele""},{""definition"":""idioma dele""}]"	TODO
+nioladi	3	9c887b1a-d5a8-4f26-a5f3-c118d29fd2cb	N$			null	TODO
+nioladi	3	44f5c5fd-049a-4d8e-a2f6-285432fffe00	N		língua	"[{""definition"":""língua""}]"	TODO
+nioxoa	2	cca730e9-ccdc-4c08-9d2a-043a7ecfec33	N$	subst masc	irmão dele  - subst masc	"[{""definition"":""irmão dele""}]"	TODO
+nioxoa	2	5065661b-0eff-4599-9350-4604a616e8e0	N$			null	TODO
+niwatece	2	900e2725-08ad-4bd2-9915-58fc842e2d0c	N$	42	canoa (barco para pescar)	"[{""definition"":""canoa (barco para pescar)""}]"	TODO
+niwatece	2	f038517d-bf12-4597-8c0f-71b370b0dbf4	N$	42	canoa	"[{""definition"":""canoa""}]"	TODO
+niwigo	2	b178e944-f315-4cba-ae7f-bb75af0dbfcd	N	subst masc	1) espírito 2) foto 3) ídolo  - subst masc	"[{""definition"":""espírito""},{""definition"":""foto""},{""definition"":""ídolo""}]"	TODO
+niwigo	2	5445fafc-c3c4-4858-8d57-4863e719d708	N$		fotografia	"[{""definition"":""fotografia""}]"	TODO
+nixigitiniwace	2	6921209d-2e77-451c-a233-efd596352461	VBAPL		puxou	"[{""definition"":""puxou""}]"	TODO
+nixigitiniwace	2	dd5bdfa2-967a-41a7-ae87-4dc82a94e223	VBAPL		puxou	"[{""definition"":""puxou""}]"	TODO
+niyoǥo	2	b0053a6e-3af9-4ce8-a178-fc5b8a5d157c	N		água	"[{""definition"":""água"",""examples"":[{""text"":""niyoGodi"",""translations"":{""en"":""water"",""po"":""água""}},{""text"":""niyoGojegi"",""translations"":{""en"":""Fish"",""po"":""Peixe""}},{""text"":""niyoGocegi"",""translations"":{""en"":""aligator"",""po"":""jacaré""}},{""text"":""nyoGotipijegi"",""translations"":{""en"":""water turtle"",""po"":""cágado""}}]}]"	TODO
+niyoǥo	2	75887ba2-60fb-4070-ac78-a6f99ff55e2c	N			"[{""definition"":""água"",""examples"":[{""glosses"":""water-pl"",""morphemes"":""niyoGo-adi"",""text"":""niyoGodi"",""translations"":{""en"":""water"",""po"":""água""}},{""glosses"":""water-source"",""morphemes"":""niyoGo-jegi"",""text"":""niyoGojegi"",""translations"":{""en"":""Fish"",""po"":""Peixe""}},{""glosses"":""water-?"",""morphemes"":""nyiioGo-cegi"",""text"":""niyoGocegi"",""translations"":{""en"":""aligator"",""po"":""jacaré""}},{""glosses"":""alnbl-water-?-pl-source"",""morphemes"":""n-yoGo-ti-pi-jegi"",""text"":""nyoGotipijegi"",""translations"":{""en"":""water turtle"",""po"":""cágado""}}]}]"	TODO
+niǥica	2	c13b53de-4bb5-4937-992c-583306efc9d9	D	dem masc	esse (coisa não vista)  - dem masc	"[{""definition"":""esse (coisa não vista)""}]"	TODO
+niǥica	2	11ddc650-c967-4db1-90cf-1a011d679ec0	D		esse	"[{""definition"":""esse""}]"	TODO
+niǥicotedicogi	2	00c97d0a-9f78-4385-9ac5-560c1005f746	CT+VBAPL			null	TODO
+niǥicotedicogi	2	abedffb2-2031-477d-ad8a-e1d2bc234282	CT+VBAPL		quando ele chegou em	"[{""definition"":""quando ele chegou em""}]"	TODO
+niǥidaǥida	2	fba3eae1-258e-4f32-8630-0d524b7bf588	ADV		mesmo	"[{""definition"":""mesmo""}]"	TODO
+niǥidaǥida	2	591e9c90-890b-4ea2-8872-1c710d9d5ae5	ADV			null	
+niǥidi	2	4fa101d0-c7f9-4d6e-af40-1339b9c88621	nigidi	dem masc	aquele  - dem masc	"[{""definition"":""aquele""}]"	TODO
+niǥidi	2	05dcf6ee-8ef0-4d10-b4bc-237b4a8450be	D		aqueles	"[{""definition"":""aqueles""}]"	TODO
+niǥigotibece	3	09ebd438-416e-4bfd-a679-9c4ad9f9ea36	CT+VB		quando foram para lá	"[{""definition"":""quando foram para lá""}]"	TODO
+niǥigotibece	3	43143b3f-b6e3-4637-99ae-182277c7e0d3	CT+VB		quando foram para lá	"[{""definition"":""quando foram para lá""}]"	TODO
+niǥigotibece	3	bfde38f1-9ca6-41da-baf3-3e729a73eed1	CT+VB		quando foram para lá	"[{""definition"":""quando foram para lá""}]"	TODO
+niǥina	2	c371a198-bbca-4cc2-88c5-486e5ac72d49	D	dem masc	esse  - dem masc	"[{""definition"":""esse""}]"	TODO
+niǥina	2	a3295b7f-2600-4c89-ab1b-af83f336ffe6	D		nesta	"[{""definition"":""nesta""}]"	TODO
+noenaǥa	2	9c4a313c-b2ba-43dd-ab9d-84868a08cc13	VB		cantarem	"[{""definition"":""cantarem""}]"	TODO
+noenaǥa	2	1b736484-d26e-4589-a328-ec972ca6c66c	VB		cantarem	"[{""definition"":""cantarem""}]"	TODO
+noiigiwa	2	bdc7a936-d161-4797-ad96-f6dd14dba2d1	N$	subst	parente, próximo (plural significa família)  - subst	"[{""definition"":""parente, próximo (plural significa família)""}]"	TODO
+noiigiwa	2	c36532d8-a8f8-4529-8164-7c786ddb9a6a		subst	vida junto com  - subst	"[{""definition"":""vida junto com""}]"	TODO
+nolagilati	2	dd2453dd-098d-41c1-853e-a0ad3223a00e			descascar grãos	"[{""definition"":""descascar grãos""}]"	TODO
+nolagilati	2	0041f63f-86f5-47f3-9c13-ac6504ff358d			descascar grãos	"[{""definition"":""descascar grãos""}]"	REVIEW
+nole(tice)	2	8ef36514-77d4-4e64-88e6-933b718b7b2d			abrir os olhos	"[{""definition"":""abrir os olhos""}]"	TODO
+nole(tice)	2	d3230169-cbab-4a11-a4db-7586e9c00533			abrir os olhos	"[{""definition"":""abrir os olhos""}]"	REVIEW
+noǥonenadi	2	70a6f234-b7c8-46bc-8ef9-f32b3f5f1b8b	CT		quando ele viu	"[{""definition"":""quando ele viu""}]"	TODO
+noǥonenadi	2	ecbfd9e8-56f0-437b-ae2f-708447ea8b1b	CT+EV+VB		quando viu	"[{""definition"":""quando viu""}]"	TODO
+o	2	402c2cb9-527a-454b-8703-c42f21aea5f2	VB		sair	"[{""definition"":""sair"",""examples"":[{""text"":""iidoditike"",""translations"":{""en"":""I leave"",""po"":""Eu saio""}},{""text"":""oqo                    Goneleegiwa  bGaGododitike"",""translations"":{""en"":""We man will leave"",""po"":""Nós os homens vamos sair""}}]}]"	TODO
+o	2	1c03e1e8-088f-447c-bb50-efb4dc56ef2f	VB	unaccusative		"[{""definition"":""sair"",""examples"":[{""glosses"":""1sg.SUBJ-theme-leave-atel-rel+outwards"",""morphemes"":""j-d-o-d-t+ke"",""text"":""iidoditike"",""translations"":{""en"":""I leave"",""po"":""Eu saio""}},{""glosses"":""1pl.PRONOUN  man                incompl+1pl.OBJ-theme-LEAVE-atel+rel-outwards"",""morphemes"":""oqo                   Goneleegiwa  bGa+Go-d-o-d-t+ke"",""text"":""oqo                    Goneleegiwa  bGaGododitike"",""translations"":{""en"":""We man will leave"",""po"":""Nós os homens vamos sair""}}]}]"	TODO
+o-oo(teci)	2	221aa2a1-f869-48bf-a0ab-796c7a35562f			(variante do gênero feminino)	null	TODO
+o-oo(teci)	2	fa262a18-40fa-4a11-8c77-0a54181bda29			(fala da mulher)	"[{""definition"":""(fala da mulher)""}]"	REVIEW
+ociǥate	2	613ddd64-a54c-41e6-a0ea-fa3a793b59b3	N		sogra	"[{""definition"":""sogra"",""examples"":[{""text"":""nociGate""}]}]"	TODO
+ociǥate	2	8991a091-c0df-404c-84a5-12e30c576230	N			"[{""definition"":""sogra"",""examples"":[{""glosses"":""alnbl-mother.in.law"",""morphemes"":""n-ociGa-te"",""text"":""nociGate""}]}]"	TODO
+odawa	2	99c2d780-a8b2-4878-87d6-b299a4b6f90b	N		cônjuge	"[{""definition"":""cônjuge"",""examples"":[{""text"":""lodawa"",""translations"":{""en"":""His spouse"",""po"":""Seu cônjuge""}}]}]"	TODO
+odawa	2	e2b94a34-5a08-4533-a92b-f3957aaf7b53	N			"[{""definition"":""cônjuge"",""examples"":[{""glosses"":""3POSS-spouse"",""morphemes"":""l-odawa"",""text"":""lodawa"",""translations"":{""en"":""His spouse"",""po"":""Seu cônjuge""}}]}]"	TODO
+odiǥa	3	3b643e97-9094-4438-86b6-ba3dcf6c9a2f	N		tambor	"[{""definition"":""tambor""}]"	TODO
+odiǥa	3	5930cf5a-232d-449f-a012-390c5d92c08d	N			"[{""definition"":""tambor""}]"	TODO
+odiǥa	3	5d4a1236-6efc-43b2-9c46-e5889becba15	N			"[{""definition"":""tambor""}]"	TODO
+odoeje	2	9309facb-7d92-49c5-8abb-7234b9ff37d1		vt	levar primeiro  - vt	"[{""definition"":""levar primeiro""}]"	TODO
+odoeje	2	f6972800-0abb-49f8-8f52-01ed38be77d9		subst fem	1) autoridade 2) guia (documento)  - subst fem	"[{""definition"":""autoridade""},{""definition"":""guia (documento)""}]"	REVIEW
+oitinege	2	d86c17be-8b8b-432e-b1c8-a6fee9cedec7	VBAPL		mexeram	"[{""definition"":""mexeram""}]"	TODO
+oitinege	2	93a91ece-8358-4957-aeac-99af2640d188	VB			null	
+ojete	2	1afd3b56-5607-4ffc-965f-1ff56f3e7898	VB		comprar	"[{""definition"":""comprar"",""examples"":[{""text"":""jinojeteGa"",""translations"":{""en"":""We buy it"",""po"":""Nós compramos""}},{""text"":""odinojeteta"",""translations"":{""en"":""It was bought to him"",""po"":""Ele o compra para ele""}},{""text"":""ojeteGaci"",""translations"":{""en"":""Market"",""po"":""Mercado""}},{""text"":""dinojetetiwa                                                           nGajo                    baleto"",""translations"":{""en"":""This coat was bought for me"",""po"":""Este casaco foi comprado para mim""}}]}]"	TODO
+ojete	2	011b68d3-8061-498c-b3e8-90ce794c176e	VB	bivalent		"[{""definition"":""comprar"",""examples"":[{""glosses"":""1sg.SUBJ-hither-buy-pl"",""morphemes"":""j-n-ojete-Ga"",""text"":""jinojeteGa"",""translations"":{""en"":""We buy it"",""po"":""Nós compramos""}},{""glosses"":""pl-3sg.SUBJ-theme-hither-buy-rel+3sg.CL-dative"",""morphemes"":""o-y-d-n-ojete-t+e-wa"",""text"":""odinojeteta"",""translations"":{""en"":""It was bought to him"",""po"":""Ele o compra para ele""}},{""glosses"":""buy-noum"",""morphemes"":""ojete-Gaci"",""text"":""ojeteGaci"",""translations"":{""en"":""Market"",""po"":""Mercado""}},{""glosses"":""3sg.SUBJ-theme-hither-buy-rel+1sg.CL-dative      close-fem-DEM    coat"",""morphemes"":""y-d-n-ojete-t+i-wa                                                nG-a-jo                 baleto"",""text"":""dinojetetiwa                                                           nGajo                    baleto"",""translations"":{""en"":""This coat was bought for me"",""po"":""Este casaco foi comprado para mim""}}]}]"	TODO
+oko	3	7c5ef124-d0bf-4ed4-9819-87b04d8d6da2	PRO$		acostumar-se	"[{""definition"":""acostumar-se"",""examples"":[{""text"":""yokoteki"",""translations"":{""en"":""He is geting used to it"",""po"":""Ele está se acostumando com ele""}}]}]"	TODO
+oko	3	f8eefe70-860a-4214-b828-ef76e1e7da93	N		pessoa	"[{""definition"":""pessoa""}]"	TODO
+oko	3	1e91a7c4-7b51-4bb0-b4f7-74b16e099d6c	VB	unergative		"[{""definition"":""acostumar-se"",""examples"":[{""glosses"":""3sg.SUBJ-get.used-rel+3sg.CL-allative"",""morphemes"":""y-oko-t+e-k"",""text"":""yokoteki"",""translations"":{""en"":""He is geting used to it"",""po"":""Ele está se acostumando com ele""}}]}]"	TODO
+okole	2	f5c4bbc7-c251-4826-883c-2dc7390c09a3	VB		jogar	"[{""definition"":""jogar"",""examples"":[{""text"":""oyokoletini                                      wetiGa  aqiidi"",""translations"":{""en"":""He throws the stone in the river"",""po"":""Ele joga a pedra no rio""}}]}]"	TODO
+okole	2	34d204cd-156c-4d1b-86b4-5024748a5bff	VB	bivalent		"[{""definition"":""jogar"",""examples"":[{""glosses"":""pl-3pl.SUBJ-throw-rel+going.inside stone    river"",""morphemes"":""o-y-okole-t+n                                 wetiGa  aqiidi"",""text"":""oyokoletini                                      wetiGa  aqiidi"",""translations"":{""en"":""He throws the stone in the river"",""po"":""Ele joga a pedra no rio""}}]}]"	TODO
+okoo	2	8c8f4133-c9a3-4a3a-9009-1c02f90c1d1d	N		verde	"[{""definition"":""verde""}]"	TODO
+okoo	2	3466ebb7-c965-4855-92e6-7642f7c2c587		adj	verde (média para escuro)  - adj	"[{""definition"":""verde (média para escuro)""}]"	TODO
+olagi	2	c2627ad2-f095-49bb-8126-8b4ac37f05a8	N		semente/muniçao	"[{""definition"":""semente/muniçao"",""examples"":[{""text"":""nyale          lolagi"",""translations"":{""en"":""Seed"",""po"":""Semente""}}]}]"	TODO
+olagi	2	48ee3098-e3ba-40b7-a71c-acdd95e7a88b	N			"[{""definition"":""semente/muniçao"",""examples"":[{""glosses"":""alnbl-tree      3POSS-seed"",""morphemes"":""n-yale        l-olag"",""text"":""nyale          lolagi"",""translations"":{""en"":""Seed"",""po"":""Semente""}}]}]"	TODO
+ole	4	2965d2b8-9c29-4442-afe6-6fe4a06fe512	N		fogo	"[{""definition"":""fogo"",""examples"":[{""text"":""noledi"",""translations"":{""en"":""Fire"",""po"":""Fogo""}},{""text"":""yoletedi"",""translations"":{""en"":""My matches"",""po"":""Meus fósforos""}}]}]"	TODO
+ole	4	766293d2-1115-401a-a389-0e02df283ccc	VB		procurar	"[{""definition"":""procurar"",""examples"":[{""text"":""odoletibigi"",""translations"":{""en"":""They were looked for"",""po"":""Eles foram procurados""}}]}]"	TODO
+ole	4	aa6ac7ab-7542-47f0-9f0a-2449014472ec	VB	bivalent		"[{""definition"":""procurar"",""examples"":[{""glosses"":""pl-3pl.SUBJ-theme-search-rel+upward"",""morphemes"":""o-y-d-ole-t+bigim"",""text"":""odoletibigi"",""translations"":{""en"":""They were looked for"",""po"":""Eles foram procurados""}}]}]"	TODO
+ole	4	aa6ac7ab-7542-47f0-9f0a-2449014472ed	N			"[{""definition"":""fogo"",""examples"":[{""glosses"":""alnbl-fire-pl"",""morphemes"":""n-ole-adi"",""text"":""noledi"",""translations"":{""en"":""Fire"",""po"":""Fogo""}},{""glosses"":""1POSS-fire-pl-pl"",""morphemes"":""i-ole-adi-adi"",""text"":""yoletedi"",""translations"":{""en"":""My matches"",""po"":""Meus fósforos""}}]}]"	TODO
+oli	2	5b240663-8cd5-49e1-b05c-06bef90390f5	VB		deter	"[{""definition"":""deter"",""examples"":[{""text"":""jinoli"",""translations"":{""en"":""I detain him"",""po"":""Eu o detenho""}},{""text"":""olikGegi"",""translations"":{""en"":""Stealer"",""po"":""Ladrao""}},{""text"":""olikGegawaanigi"",""translations"":{""en"":""Almost stealing"",""po"":""Ladrazinho""}}]}]"	TODO
+oli	2	52a0033b-b6c3-4aec-8e5c-5aa74234aedd	VB	bivalent		"[{""definition"":""deter"",""examples"":[{""glosses"":""1sg.SUBJ-hither-detain"",""morphemes"":""j-n-oli"",""text"":""jinoli"",""translations"":{""en"":""I detain him"",""po"":""Eu o detenho""}},{""glosses"":""detain-tel-[-cause]"",""morphemes"":""oli-g-Gegi"",""text"":""olikGegi"",""translations"":{""en"":""Stealer"",""po"":""Ladrao""}},{""glosses"":""detain-tel-[-cause]-like-m.dim"",""morphemes"":""oli-g-Gegi-waa-nigi"",""text"":""olikGegawaanigi"",""translations"":{""en"":""Almost stealing"",""po"":""Ladrazinho""}}]}]"	TODO
+omakajo	2	630c3adc-6196-4566-96b3-71d1bfdfcfff	N		coxa	"[{""definition"":""coxa"",""examples"":[{""text"":""lomakajo"",""translations"":{""en"":""His thigh"",""po"":""Sua coxa""}}]}]"	TODO
+omakajo	2	a7aa715d-66fd-4f92-ba58-fc65bd865b79	N			"[{""definition"":""coxa"",""examples"":[{""glosses"":""3POSS-thigh"",""morphemes"":""l-omakajo"",""text"":""lomakajo"",""translations"":{""en"":""His thigh"",""po"":""Sua coxa""}}]}]"	TODO
+omǥadotadi	3	bcdabc06-fd45-4cbe-b7d5-560589af1663	N		gaviao	"[{""definition"":""gaviao""}]"	TODO
+omǥadotadi	3	a7cabb1f-2514-4f15-a559-598253894cc9	N			"[{""definition"":""gaviao""}]"	TODO
+omǥadotadi	3	6adc42fb-e0a7-4eda-80a3-7ba41c5d1518	N			"[{""definition"":""gaviao""}]"	TODO
+one	5	0d9e23c8-e00f-4b03-8f23-f55dbd385681	EV	fala rep intro	disse que  - fala rep intro	"[{""definition"":""disse que""}]"	TODO
+one	5	3ea1e934-51bb-4fec-9eb5-0ffb7409101e	ADV			null	
+one	5	2eaa22ae-481a-46ba-b007-21ee423a576e	EV			null	
+one	5	07b1203a-b6b5-46bf-86cc-481227d5eb99	EV			null	
+one	5	43d83cc0-5f0b-4258-bc7b-9ed8efa87067	EV			null	
+one@	2	1d9eb98b-befc-4eda-8cd5-7aa08090a32b	EV			null	
+one@	2	18ba33a0-1ae6-4653-a22b-fc74cab65259	EV			null	
+oneta	2	3daa6cba-c4c1-41e5-8a5c-60803e7f05c5	EV+VBAPL		e falou	"[{""definition"":""e falou""}]"	TODO
+oneta	2	d18e0abc-4385-4fd3-ba54-87ecd0cb3017	VBAPL		e falou	"[{""definition"":""e falou""}]"	TODO
+onete	5	dc07b09d-0f6a-4448-b8b7-64f1d99bcc25	EV		diz que ele disse para ele	"[{""definition"":""diz que ele disse para ele""}]"	TODO
+onete	5	4e2fbfbb-e147-4919-96ab-496b3584d4e7	EV+VBAPL		Disse para ele	"[{""definition"":""Disse para ele""}]"	TODO
+onete	5	84e5a481-f0cc-4cb1-b4a8-8c80f97bb11f	EV+VBAPL		diz que disseram para ele	"[{""definition"":""diz que disseram para ele""}]"	TODO
+onete	5	07de6b25-510e-4431-a78f-3cecd45a4a0a	EV+VBAPL		ele disse	"[{""definition"":""ele disse""}]"	TODO
+onete	5	14d75bd0-b5d6-4499-ab26-41ba9404408d	EV+VBAPL		ele disse	"[{""definition"":""ele disse""}]"	TODO
+onetediogi	2	49d943b5-ec7d-41f9-bbc9-7b648bf78dbd	VBAPL		disse para eles	"[{""definition"":""disse para eles""}]"	TODO
+onetediogi	2	edc04b7e-4915-4180-a56c-c1bbea59527c	EV+VBAPL		disse para	"[{""definition"":""disse para""}]"	TODO
+oolo	2	21b89380-a3d1-4787-9ee0-220e40da848e	N		ouro	"[{""definition"":""ouro""}]"	TODO
+oolo	2	126c8b91-c960-4e9d-bf1d-7c462d6a1f35	N			"[{""definition"":""ouro""}]"	TODO
+ooǥa	2	9ebb2f47-24ae-4b7b-9173-2571edf688c6	VB		acreditar	"[{""definition"":""acreditar"",""examples"":[{""text"":""oyooGadi"",""translations"":{""en"":""They believe it"",""po"":""Eles acreditam nisso""}}]}]"	TODO
+ooǥa	2	6b8ba1ff-77de-41f9-9e7d-abb958a6ca07	VB	bivalent		"[{""definition"":""acreditar"",""examples"":[{""glosses"":""pl-3pl.SUBJ-believe"",""morphemes"":""o-y-ooGa-d"",""text"":""oyooGadi"",""translations"":{""en"":""They believe it"",""po"":""Eles acreditam nisso""}}]}]"	TODO
+opil	3	192de0a3-1d98-4615-8a3d-2f730d804338	VB		ir embora	"[{""definition"":""ir embora"",""examples"":[{""text"":""jopilGa"",""translations"":{""en"":""We go away"",""po"":""Nós vamos embora""}},{""text"":""Joao yopilGadi                                  Maria"",""translations"":{""en"":""John is taking Mary away (Lit. John makes Mary go away)"",""po"":""Joao está levando Maria embora""}},{""text"":""Joao nopilGadi                                            Maria""},{""text"":""John is bringing Mary back (Lit. John makes Mary come back)"",""translations"":{""po"":""Joao está trazendo Maria de volta""}}]}]"	TODO
+opil	3	cc3c5013-5a91-4280-b334-b419f96b1155	v	unaccusative		"[{""definition"":""voltar"",""examples"":[{""glosses"":""1sg.SUBJ-theme-come.back-pl"",""morphemes"":""j-d-opil-Ga"",""text"":""idopilaGa"",""translations"":{""en"":""We come back"",""po"":""Nós voltamos""}},{""glosses"":""1sg.SUBJ-theme-come.back-pl-rel+going"",""morphemes"":""j-d-opil-Ga-t+jo"",""text"":""idopilaGatijo"",""translations"":{""en"":""We come back"",""po"":""Nós voltamos""}}]}]"	TODO
+opil	3	cc3c5013-5a91-4280-b334-b419f96b1156	VB	unergative		"[{""definition"":""ir embora"",""examples"":[{""glosses"":""1sg.SUBJ-go.away-pl"",""morphemes"":""j-opil-Ga"",""text"":""jopilGa"",""translations"":{""en"":""We go away"",""po"":""Nós vamos embora""}},{""glosses"":""John 3sg.SUBJ-go.away-[+cause]      Mary"",""morphemes"":""John y-opil-Gad                               Maria"",""text"":""Joao yopilGadi                                  Maria"",""translations"":{""en"":""John is taking Mary away (Lit. John makes Mary go away)"",""po"":""Joao está levando Maria embora""}},{""glosses"":""John 3sg.SUBJ-hither-go.away- [+cause]     Mary"",""morphemes"":""John y-n-opil-Gad                                      Maria"",""text"":""Joao nopilGadi                                            Maria""},{""text"":""John is bringing Mary back (Lit. John makes Mary come back)"",""translations"":{""po"":""Joao está trazendo Maria de volta""}}]}]"	TODO
+opo	2	4b1676f2-4d5d-4692-8140-c4a825a86cd4	VB		precisar	"[{""definition"":""precisar"",""examples"":[{""text"":""ane      yopotibigi"",""translations"":{""en"":""The one who needs something"",""po"":""Necessitado""}}]}]"	TODO
+opo	2	23ca48ba-41b2-485e-8e3c-fb4b3f9ed252	VB	bivalent		"[{""definition"":""precisar"",""examples"":[{""glosses"":""relative 3sg.SUBJ-need-rel+upward"",""morphemes"":""ane      y-opo-t+bigim"",""text"":""ane      yopotibigi"",""translations"":{""en"":""The one who needs something"",""po"":""Necessitado""}}]}]"	TODO
+oqaaǥedi	2	0e26f5f5-12de-46bd-a8e6-e5507774f3e8	N		amigo	"[{""definition"":""amigo"",""examples"":[{""text"":""loqaaGedi"",""translations"":{""en"":""His friend"",""po"":""Seu amigo""}}]}]"	TODO
+oqaaǥedi	2	913b7b27-e845-44ff-89b3-67a9e99a38a4	N			"[{""definition"":""amigo"",""examples"":[{""glosses"":""3POSS-friend"",""morphemes"":""l-oqkaaGedi"",""text"":""loqaaGedi"",""translations"":{""en"":""His friend"",""po"":""Seu amigo""}}]}]"	TODO
+oqoloǥo	2	9957d111-30b4-4e94-9fcf-c49efb646d76	N		broto	"[{""definition"":""broto"",""examples"":[{""text"":""loqoloGoli"",""translations"":{""en"":""Buddings"",""po"":""Brotos""}}]}]"	TODO
+oqoloǥo	2	763e2441-fc3a-4ef0-99fe-5be616f82e93	N			"[{""definition"":""broto"",""examples"":[{""glosses"":""3POSS-budding-pl"",""morphemes"":""l-oqoloGo-li"",""text"":""loqoloGoli"",""translations"":{""en"":""Buddings"",""po"":""Brotos""}}]}]"	TODO
+oqǥatǥa	2	6d129f44-8900-40e8-b089-da923b795344	N		alto/comprido	"[{""definition"":""alto/comprido"",""examples"":[{""text"":""Goneleegiwa             oqGatGa"",""translations"":{""en"":""Tall man"",""po"":""Homem alto""}},{""text"":""nodaajo      oqGatGa"",""translations"":{""en"":""Sword"",""po"":""Espada""}}]}]"	TODO
+oqǥatǥa	2	52c6d01a-4673-4ae9-a18a-113c9304d673	N			"[{""definition"":""alto/comprido"",""examples"":[{""glosses"":""1pl.POSS-alnbl-man  long"",""morphemes"":""God-n-eleegiwa       oqGatGa"",""text"":""Goneleegiwa             oqGatGa"",""translations"":{""en"":""Tall man"",""po"":""Homem alto""}},{""glosses"":""alnbl-knife  long"",""morphemes"":""n-odaajo    oqGatGa"",""text"":""nodaajo      oqGatGa"",""translations"":{""en"":""Sword"",""po"":""Espada""}}]}]"	TODO
+otaǥa	2	551a3a82-1450-4b60-b89c-a90980f6edb7			palavra de	"[{""definition"":""palavra de""}]"	TODO
+otaǥa	2	73370252-074a-4f7f-b059-1fcfbf6e0888		cond	1) teria sido 2) seria 3) teria  - cond	"[{""definition"":""teria sido""},{""definition"":""seria""},{""definition"":""teria""}]"	TODO
+otaǥam	2	aa8a6424-af47-47b4-8150-318af887e538	VB		falar	"[{""definition"":""falar"",""examples"":[{""text"":""jotaGamGa"",""translations"":{""en"":""We speak"",""po"":""Nós falamos""}},{""text"":""notaGamGa"",""translations"":{""en"":""They speak"",""po"":""Eles falam""}},{""text"":""elyodi motaGamGeni                                    Mônica"",""translations"":{""en"":""You talk a lot to Mônica"",""po"":""Você fala bastante com Mônica""}},{""text"":""nGijo  me        idinotaGamGete                                                      Joao"",""translations"":{""en"":""This conversation with John""}}]}]"	TODO
+otaǥam	2	17cb5eda-c8de-440b-9cf7-b589a427cf43	VB	unergative		"[{""definition"":""falar"",""examples"":[{""glosses"":""1pl.SUBJ-speak-pl"",""morphemes"":""j-otaGam-Ga"",""text"":""jotaGamGa"",""translations"":{""en"":""We speak"",""po"":""Nós falamos""}},{""glosses"":""3pl.SUBJ-speak-pl"",""morphemes"":""n-otGam-Ga"",""text"":""notaGamGa"",""translations"":{""en"":""They speak"",""po"":""Eles falam""}},{""glosses"":""lot     COMP+2sg.SUBJ-speak-[+become]-pl  Monica"",""morphemes"":""elyodi me+a-otaGam-Gen-i                          Monica"",""text"":""elyodi motaGamGeni                                    Mônica"",""translations"":{""en"":""You talk a lot to Mônica"",""po"":""Você fala bastante com Mônica""}},{""glosses"":""DEM   COMP 1sg.SUBJ-theme-refl-speak-[+become]-rel+3sg.CL  John"",""morphemes"":""nGijo  me       j-d-n-otaGam-Gen-t+e                                             Joao"",""text"":""nGijo  me        idinotaGamGete                                                      Joao"",""translations"":{""en"":""This conversation with John""}}]}]"	TODO
+otete	2	be6ef34a-de10-4bbe-98e7-0c136125fb8a	VB		guardar	"[{""definition"":""guardar"",""examples"":[{""text"":""dinotete                                  katinedi                                       etakanigi"",""translations"":{""en"":""It is stored in a basket"",""po"":""guardado dentro do cesto""}}]}]"	TODO
+otete	2	c68680ee-d4b8-4f66-bfd9-91cea7b877b1	VB	bivalent		"[{""definition"":""guardar"",""examples"":[{""glosses"":""3sg.SUBJ-theme-hither-store loc-rel-downward+3sg.CL-theme  basket-m.dim"",""morphemes"":""y-d-n-otete                            ka-t-n+e-d                                   etaka-nigi"",""text"":""dinotete                                  katinedi                                       etakanigi"",""translations"":{""en"":""It is stored in a basket"",""po"":""guardado dentro do cesto""}}]}]"	TODO
+otwecaaǥa	2	a90ba3c0-7f9f-4dfc-84aa-3fa8ca48ddc0	CONJ		nem	"[{""definition"":""nem"",""examples"":[{""text"":""aidigikile                             otwecaaGa  idelowadi                 ekibi"",""translations"":{""en"":""I am neither hungry nor thirsty"",""po"":""Eu nao estou com fome nem com sede""}}]}]"	TODO
+otwecaaǥa	2	80fa670e-ff49-4a78-8b59-a27de28b4364	CONJ			"[{""definition"":""nem"",""examples"":[{""glosses"":""neg+1sg.SUBJ-theme-hungry nor             1sg.SUBJ-theme-kill   thirst"",""morphemes"":""aG+j-d-gikile                      otwecaaga   j-delowadi                ekibi"",""text"":""aidigikile                             otwecaaGa  idelowadi                 ekibi"",""translations"":{""en"":""I am neither hungry nor thirsty"",""po"":""Eu nao estou com fome nem com sede""}}]}]"	TODO
+otwinǥa	2	08a72374-590a-48da-ac75-37afcbbb6cf7	N		pescoço	"[{""definition"":""pescoço"",""examples"":[{""text"":""notwinGadi"",""translations"":{""en"":""Neck"",""po"":""Pescoço""}}]}]"	TODO
+otwinǥa	2	ab3b0cbf-b9c9-44dd-a9df-68c413a870f8	N			"[{""definition"":""pescoço"",""examples"":[{""glosses"":""alnbl-neck-pl"",""morphemes"":""n-otwinGa-adi"",""text"":""notwinGadi"",""translations"":{""en"":""Neck"",""po"":""Pescoço""}}]}]"	TODO
+otǥacaǥa	4	b96f4f94-d361-4184-b0e5-276773ad973a		noun	tagarela  - noun	"[{""definition"":""tagarela""}]"	TODO
+otǥacaǥa	4	4ada728b-ae67-4c84-8f33-cf92fb2bddd3		noun	tagarela  - noun	"[{""definition"":""tagarela""}]"	TODO
+otǥacaǥa	4	1ab979f7-e9ab-4d44-bd41-6883ab127cc6		noun		"[{""definition"":""tagarela""}]"	TODO
+otǥacaǥa	4	5e9dc8c4-bef7-452a-afeb-ed9a4521c41a		noun		"[{""definition"":""tagarela""}]"	TODO
+owe	2	eb77b452-e54c-4f18-9bf7-2d2f5f3a132c	N		dente	"[{""definition"":""dente"",""examples"":[{""text"":""lowe"",""translations"":{""en"":""His tooth"",""po"":""Dente dele""}}]}]"	TODO
+owe	2	d200587c-1db9-46b3-b950-41d136f830b1	N			"[{""definition"":""dente"",""examples"":[{""glosses"":""3POSS-tooth"",""morphemes"":""l-owe"",""text"":""lowe"",""translations"":{""en"":""His tooth"",""po"":""Dente dele""}}]}]"	TODO
+owidi	2	eab62377-6db9-4771-8887-f09c1c250441	Q		convés da canoa	"[{""definition"":""convés da canoa"",""examples"":[{""text"":""niwaatedi  lowidi"",""translations"":{""en"":""The boat's deck"",""po"":""O convés da canoa""}}]}]"	TODO
+owidi	2	4a762471-11de-4321-8378-19c874dd6ba0	N			"[{""definition"":""convés da canoa"",""examples"":[{""glosses"":""alnbl-boat 3POSS-deck"",""morphemes"":""n-waatedi  l-owidi"",""text"":""niwaatedi  lowidi"",""translations"":{""en"":""The boat's deck"",""po"":""O convés da canoa""}}]}]"	TODO
+owoogo	2	1aa2c481-d8f4-48c2-bb53-fc1161c09297	N		pensamento	"[{""definition"":""pensamento"",""examples"":[{""text"":""lowoogo"",""translations"":{""en"":""His thought"",""po"":""Seu pensamento""}}]}]"	TODO
+owoogo	2	46caab0e-6651-4405-9ba4-2715270f4756	N			"[{""definition"":""pensamento"",""examples"":[{""glosses"":""3POSS-thought"",""morphemes"":""l-owoogo"",""text"":""lowoogo"",""translations"":{""en"":""His thought"",""po"":""Seu pensamento""}}]}]"	TODO
+owyodǥay	2	4c62263f-2822-43ce-ad08-17df5247bb55	N		mameira de vestir/moda	"[{""definition"":""mameira de vestir/moda"",""examples"":[{""text"":""lowyodGay"",""translations"":{""en"":""His way to dress"",""po"":""Sua maneira de vestir-se""}}]}]"	TODO
+owyodǥay	2	3c7c7fa5-ddda-4e98-9efb-788f0549db06	N			"[{""definition"":""mameira de vestir/moda"",""examples"":[{""glosses"":""3POO-dressing"",""morphemes"":""l-owyodGay"",""text"":""lowyodGay"",""translations"":{""en"":""His way to dress"",""po"":""Sua maneira de vestir-se""}}]}]"	TODO
+oyakewaǥa	3	d9ba8307-1985-467b-988c-b68aa0be2234	N		sucuri	"[{""definition"":""sucuri""}]"	TODO
+oyakewaǥa	3	e1186bfd-e33f-4c31-bced-fb88439a1253	N			"[{""definition"":""sucuri""}]"	TODO
+oyakewaǥa	3	b6716c31-5266-45ed-8eb7-1942c5928864	N			"[{""definition"":""sucuri""}]"	TODO
+oǥa	2	97f7248a-380c-4f3c-a0e3-32644964c4b7	VB		tirar	"[{""definition"":""tirar"",""examples"":[{""text"":""jinoGaGatike"",""translations"":{""en"":""We take it out"",""po"":""Nós o tiramos de dentro""}}]}]"	TODO
+oǥa	2	e4326827-19a1-4843-bd61-c2220975babc	VB	bivalent		"[{""definition"":""tirar"",""examples"":[{""glosses"":""1sg.SUBJ-hither-take-pl-rel+outward"",""morphemes"":""j-n-oGa-Ga-t+ke"",""text"":""jinoGaGatike"",""translations"":{""en"":""We take it out"",""po"":""Nós o tiramos de dentro""}}]}]"	TODO
+oǥo	2	2c9e07fa-2ff9-421a-ba5a-f144443372e8	VB		avançar	"[{""definition"":""avançar"",""examples"":[{""text"":""ejoGoteloko"",""translations"":{""en"":""I move forward to it"",""po"":""Eu avanço para lá""}}]}]"	TODO
+oǥo	2	7d821e1c-71c5-4049-ac94-99476f43f4d3	VB	unergative		"[{""definition"":""avançar"",""examples"":[{""glosses"":""1sg.AUX-move.forward-rel+3sg.CL-adessive"",""morphemes"":""ej-oGo-t+e-lokom"",""text"":""ejoGoteloko"",""translations"":{""en"":""I move forward to it"",""po"":""Eu avanço para lá""}}]}]"	TODO
+oǥomoki	2	1f67e22a-cc8e-48f9-98e4-7e923bb5de71	N		cotovelo	"[{""definition"":""cotovelo"",""examples"":[{""text"":""loGomoki"",""translations"":{""en"":""His elbow"",""po"":""Seu cotovelo""}}]}]"	TODO
+oǥomoki	2	bd2ac343-f676-4b6b-add1-9b99f63d2b88	N			"[{""definition"":""cotovelo"",""examples"":[{""glosses"":""3POSS-elbow"",""morphemes"":""l-oGomoki"",""text"":""loGomoki"",""translations"":{""en"":""His elbow"",""po"":""Seu cotovelo""}}]}]"	TODO
+oǥotopǥa	2	78409d57-7ac5-4f9b-8264-64fbedf158cc	VB		deitado de bruços	"[{""definition"":""deitado de bruços"",""examples"":[{""text"":""inoGotopGati                                me        jyote"",""translations"":{""en"":""I am lying prone to sleep"",""po"":""Eu estou deitado de bruços para dormir""}}]}]"	TODO
+oǥotopǥa	2	304943c7-721c-496b-89f0-4eac8a654f04	VB	unaccusative		"[{""definition"":""deitado de bruços"",""examples"":[{""glosses"":""1sg.SUBJ-refl-lye.prone-[+cause] COMP  1sg.SUBJ -sleep"",""morphemes"":""j-n-oGotopGa-ti                           me        j-yote"",""text"":""inoGotopGati                                me        jyote"",""translations"":{""en"":""I am lying prone to sleep"",""po"":""Eu estou deitado de bruços para dormir""}}]}]"	TODO
+oǥowe(talo)	2	f8dcf138-4ceb-4dc2-a3d1-0bcbe422cf9f			(variante do gênero feminino)	null	TODO
+oǥowe(talo)	2	152682f4-be11-40e4-9afe-11d04316ded6			(variante do gênero feminino)	null	TODO
+oǥoweedi	2	1b69c155-c3e2-4f2e-add5-9f64b313e3cf	N		presente	"[{""definition"":""presente"",""examples"":[{""text"":""GonoGoweedi"",""translations"":{""en"":""Our gift"",""po"":""Nosso pesente/prêmio""}}]}]"	TODO
+oǥoweedi	2	5ebb34ec-0f18-431b-b341-0c12775d6123	N			"[{""definition"":""presente"",""examples"":[{""glosses"":""1pl.POSS-alnbl-gift"",""morphemes"":""God-n-oGoweedi"",""text"":""GonoGoweedi"",""translations"":{""en"":""Our gift"",""po"":""Nosso pesente/prêmio""}}]}]"	TODO
+pegi	2	448b1cfd-d409-440a-bc81-f7b7fba6d70b	VB	unaccusative		"[{""definition"":""ficar/estar"",""examples"":[{""glosses"":""house-pl         pl-3pl.SUBJ-theme-stay-rel+going.against"",""morphemes"":""diimigi-Ga   o-y-d-pegi-t+get"",""text"":""diimaGa      odipegitigeti"",""translations"":{""en"":""The houses are close to the mountain"",""po"":""As casa ficam perto do morro""}}]}]"	TODO
+pegi	2	448b1cfd-d409-440a-bc81-f7b7fba6d70c	VB	unergative		"[{""definition"":""aproximar-se"",""examples"":[{""glosses"":""3sg.SUBJ-stay-rel+going.together"",""morphemes"":""y-pegi-t+wag"",""text"":""ipegitiwagi"",""translations"":{""en"":""He is getting close"",""po"":""Ele se aproxima""}}]}]"	TODO
+pida	2	05de967e-16f3-4166-8c73-1fd70d301802	CONJ		mas	"[{""definition"":""mas"",""examples"":[{""text"":""idigikile                       pida aidelowadi                     ekibi"",""translations"":{""en"":""Im am hungry but I am not thirsty"",""po"":""Eu estou com fome mas nao estou com sede""}}]}]"	TODO
+pida	2	f8f03564-62f4-4f8a-a61e-3b33c3b8fd4f	CONJ			"[{""definition"":""mas"",""examples"":[{""glosses"":""1sg.SUBJ-theme-hungry but  neg+1sg.SUBJ-theme-kill thirst"",""morphemes"":""j-d-gikile                     pida aG+j-d-elowadi              ekibi"",""text"":""idigikile                       pida aidelowadi                     ekibi"",""translations"":{""en"":""Im am hungry but I am not thirsty"",""po"":""Eu estou com fome mas nao estou com sede""}}]}]"	TODO
+qan	2	b4398402-3e78-4298-930a-384f10ae54cb	VB	unaccusative		"[{""definition"":""descer"",""examples"":[{""glosses"":""1sg.SUBJ-theme-climb.down-pl-[+cause]      alnbl-mountain"",""morphemes"":""j-d-qan-Ga-ti                                               n-alaGate"",""text"":""idiniqanGati                                                 nalaGate"",""translations"":{""en"":""We climb down the hills"",""po"":""Nós descemos o morro""}}]}]"	TODO
+qan	2	b4398402-3e78-4298-930a-384f10ae54ca	VB	bivalent		"[{""definition"":""abandonar/deixar de lado"",""examples"":[{""glosses"":""compl+1pl.SUBJ-quit-pl 1pl.POSS-time-pl"",""morphemes"":""jaG+j-qan-Ga                God-aqata-Ga"",""text"":""jajiqanGa                       GodaqataGa"",""translations"":{""en"":""We have quit our traditions"",""po"":""Já abandonamos nossas tradiçoes""}},{""glosses"":""3sg.SUBJ-abandon+rel-3cl+rel-outward  horse"",""morphemes"":""y-qan-t+e-t+ke                                       apoligGaanGa"",""text"":""iqatedike                                               apolikGaanGa"",""translations"":{""en"":""I abandoned the horse"",""po"":""Eu soltei o cavalo""}}]}]"	TODO
+ti	2	c21b1913-d71e-4f04-8372-f98da13f309c	N			"[{""definition"":""canela da perna"",""examples"":[{""glosses"":""1POSS-ti"",""morphemes"":""i-ti"",""text"":""iti"",""translations"":{""en"":""My shinbone"",""po"":""Minha canela""}}]}]"	TODO
+ti	2	c21b1913-d71e-4f04-8372-f98da13f309b				"[{""examples"":[{""glosses"":""1sg.SUBJ-theme-sit-[+cause]"",""morphemes"":""j-d-ikon-ti"",""text"":""idikoti"",""translations"":{""en"":""I sit myself"",""po"":""Eu me sento (I cause myself (to) cause sitting)""}}]}]"	TODO
+tipo'oro	2	084eef27-6f6f-402e-beb5-77fca1f318e3	VB			null	TODO
+tipo'oro	2	f20e42a3-579f-4341-b825-cb302a9a4625	VB			null	TODO
+uruinyt	2	b9b89f50-b3df-4fba-910a-b623fed7b4bf	N			null	TODO
+uruinyt	2	38cb3ba6-e326-4253-8bf4-927101127bbd	N$			null	TODO
+wa	2	2faa6f1b-ac62-4ce3-810e-783966ad66d2	N		sombra	"[{""definition"":""sombra"",""examples"":[{""text"":""Gowa"",""translations"":{""en"":""Our shadow"",""po"":""Nossa sombra""}}]}]"	TODO
+wa	2	27c4c871-c91e-4750-8101-23e7b61094e2	N			"[{""definition"":""sombra"",""examples"":[{""glosses"":""1pl.POSS-shadow"",""morphemes"":""God-wa"",""text"":""Gowa"",""translations"":{""en"":""Our shadow"",""po"":""Nossa sombra""}}]}]"	TODO
+walokeni	2	86c8e400-ad08-4222-836b-bd589109683c	N		bagre	"[{""attributes"":{""scientific"":""Rhamdia pubescens""},""definition"":""bagre""}]"	TODO
+walokeni	2	b389f302-ef52-488b-a8d7-167ee183e8b2		subst fem	bagre (peixe)  - subst fem	"[{""definition"":""bagre (peixe)""}]"	TODO
+wama	2	c95acde9-74b1-4053-af87-36329cfa8f81	N	free form	jatobá  - free form	"[{""attributes"":{""scientific"":""Hymenaea""},""definition"":""jatobá""}]"	TODO
+wama	2	7459a635-6219-42b4-9b46-24d58667b02e	N	free form		"[{""attributes"":{""scientific"":""Hymenaea""},""definition"":""jatobá""}]"	TODO
+wawile	2	5b016ba9-4b4e-4ff5-87f4-3415473c09ae	N	free form	guavira  - free form	"[{""definition"":""guavira""}]"	TODO
+wawile	2	1a33079d-f971-4be8-9743-39c01d176622	N	free form		"[{""definition"":""guavira""}]"	TODO
+wayodaǥa	4	5d6ecb08-9b50-4f34-a09c-9279816d0a26		subst	coxo  - subst	"[{""definition"":""coxo""}]"	TODO
+wayodaǥa	4	e21cb084-9cbc-4510-a07e-13099b82011b	N		manco	"[{""definition"":""manco""}]"	TODO
+wayodaǥa	4	c136bc28-1489-45a3-acfb-dcde49f0d47a	N			"[{""definition"":""manco""}]"	TODO
+wayodaǥa	4	74b1f3a6-5634-462a-9107-6a12d8c548a2	N			"[{""definition"":""manco""}]"	TODO
+wedele	2	79b0104d-140c-4883-86fe-747f81392cd9	N	free form	carrapato  - free form	"[{""definition"":""carrapato""}]"	TODO
+wedele	2	a0426dc8-f7ba-4911-b634-2f6683afb453	N	free form		"[{""definition"":""carrapato""}]"	TODO
+weiigi	2	54049c13-629a-419f-9594-aa0011b881ed	N	subst masc	lagoa  - subst masc	"[{""definition"":""lagoa""}]"	TODO
+weiigi	2	00acefcd-24e5-4685-a2ab-5596184e3781	N		rio	"[{""definition"":""rio""}]"	TODO
+welete	2	418d8ff6-483d-4215-9fc5-f5fb718d9b80	N		seio	"[{""definition"":""seio"",""examples"":[{""text"":""iwelete"",""translations"":{""en"":""My breast"",""po"":""Meu seio""}}]}]"	TODO
+welete	2	a678f436-b8f2-4f14-aa7a-7206e08b378f	N			"[{""definition"":""seio"",""examples"":[{""glosses"":""1POSS-breast"",""morphemes"":""i-welete"",""text"":""iwelete"",""translations"":{""en"":""My breast"",""po"":""Meu seio""}}]}]"	TODO
+wetiǥa	4	8fdba93f-9002-4df4-a86d-9688f9a49c2b	N		pedra, morro	"[{""definition"":""pedra, morro""}]"	TODO
+wetiǥa	4	a4a58c33-6c02-4d6a-a8cd-5969340e16a2	N		pedra	"[{""definition"":""pedra""}]"	TODO
+wetiǥa	4	fcb44bbd-b102-440f-966e-26b222c1a79d	N			"[{""definition"":""pedra""}]"	TODO
+wetiǥa	4	a3b01984-c2f0-4d6f-b336-328872e37b8c	N			"[{""definition"":""pedra""}]"	TODO
+wiǥadi	3	2e1212b4-e9b4-438b-8991-db3d527d465c			possessão de	"[{""definition"":""possessão de""}]"	TODO
+wiǥadi	3	60b9a00e-d806-4dbe-9b16-d6f96415fede	N		animal doméstico	"[{""definition"":""animal doméstico"",""examples"":[{""text"":""Gowiqatedi"",""translations"":{""en"":""Our pets"",""po"":""Nossos animais domésticos""}}]}]"	TODO
+wiǥadi	3	27f729a3-ed37-48e4-8aa4-8f3bba0633f3	N			"[{""definition"":""animal doméstico"",""examples"":[{""glosses"":""1pl.POSS-pet-pl"",""morphemes"":""God-wiGadi-adi"",""text"":""Gowiqatedi"",""translations"":{""en"":""Our pets"",""po"":""Nossos animais domésticos""}}]}]"	TODO
+yaadi	2	e3bd0871-a59f-461c-8af0-53cd6d65bb9f			minha respiração	"[{""definition"":""minha respiração""}]"	TODO
+yaadi	2	31030dd3-8564-4959-9191-686406965faf	N$	subst masc	1) minha respiraçao 2) meu suspiro  - subst masc	"[{""definition"":""minha respiraçao"",""examples"":[{""text"":""Godaadi"",""translations"":{""en"":""Our breathe"",""pt-br"":""Nossa respiraçao""}}]},{""definition"":""meu suspiro"",""uid"":""""}]"	DONE
+yajolitaǥa	2	c14a3cd4-ea6d-4952-b5dc-6b4996404a99	VB		ficaram agitados	"[{""definition"":""ficaram agitados""}]"	TODO
+yajolitaǥa	2	48fccc7d-eb65-4bdf-9845-f37b01eb16dc	VB		ficaram agitados	"[{""definition"":""ficaram agitados""}]"	TODO
+yale	2	3717e3b4-6484-4f22-8e9b-7a9e3351e573	N		árvore	"[{""definition"":""árvore"",""examples"":[{""text"":""nyale"",""translations"":{}},{""text"":""nyalegipijegi"",""translations"":{""en"":""Wild"",""po"":""Selvagem""}},{""text"":""nyalejadi"",""translations"":{""en"":""savanna/field"",""po"":""cerrado""}}]}]"	DONE
+yale	2	fada5b0f-09bb-4ba7-abcb-284c6c3ac222	N			"[{""definition"":""árvore"",""examples"":[{""glosses"":""alnbl-tree"",""morphemes"":""n-yale"",""text"":""nyale""},{""glosses"":""alenbl-tree-classifier-pl-source"",""morphemes"":""n-yale-gi-pi-jegi"",""text"":""nyalegipijegi"",""translations"":{""en"":""Wild"",""po"":""Selvagem""}},{""glosses"":""alnbl-tree-classifier"",""morphemes"":""n-yaale-jadi"",""text"":""nyalejadi"",""translations"":{""en"":""savanna/field"",""po"":""cerrado""}}]}]"	TODO
+yeleo	2	2bc933dc-4a55-4818-8b6a-01f350214682		vi	morrer	"[{""definition"":""morrer""}]"	DONE
+yeleo	2	3701936d-fb67-4f9d-a119-f65f362ad7bb	VB		morrer	"[{""definition"":""morrer""}]"	TODO
+yiǥen	2	4ede9be8-9379-4e47-8ad9-fe4ee5d07bfe	VB		mandar	"[{""definition"":""mandar"",""examples"":[{""text"":""jyiGe"",""translations"":{""en"":""I order it"",""po"":""Eu o mando""}},{""text"":""nyiGenatakanGegi"",""translations"":{""en"":""Order"",""po"":""Ordem""}}]}]"	TODO
+yiǥen	2	a05aa21a-72d9-4ec0-ae6b-4ae252506c08	VB	bivalent		"[{""definition"":""mandar"",""examples"":[{""glosses"":""1sg.SUBJ-order"",""morphemes"":""j-yiGe"",""text"":""jyiGe"",""translations"":{""en"":""I order it"",""po"":""Eu o mando""}},{""glosses"":""alienable-ORDER+rel-3cl-dative-intr-noun"",""morphemes"":""n-yiGen-t+e-wa-kan-Gegi"",""text"":""nyiGenatakanGegi"",""translations"":{""en"":""Order"",""po"":""Ordem""}}]}]"	TODO
+yiǥo	2	b403f257-b50a-4085-8798-e44240b2ca17	N		terra/lugar	"[{""definition"":""terra/lugar"",""examples"":[{""text"":""inyiGo"",""translations"":{""en"":""My land/country"",""po"":""Minha terra/país""}}]}]"	TODO
+yiǥo	2	be2ea02f-ea88-444a-ac9b-deb690564174	N			"[{""definition"":""terra/lugar"",""examples"":[{""glosses"":""1POSS-alnbl-soil"",""morphemes"":""i-n-yiGo"",""text"":""inyiGo"",""translations"":{""en"":""My land/country"",""po"":""Minha terra/país""}}]}]"	TODO
+yo	3	9fddd5b9-4fc4-46d6-afcf-820b9ec32b45	N		sobrinho	"[{""definition"":""sobrinho"",""examples"":[{""text"":""iyo"",""translations"":{""en"":""My nephew"",""po"":""Meu sobrinho""}},{""text"":""iyonigi"",""translations"":{""en"":""My son"",""po"":""Meu filho""}}]}]"	TODO
+yo	3	b494387b-0f58-43e0-b21f-0324667fc2ce	VB	unergative		"[{""definition"":""seguir"",""examples"":[{""glosses"":""1pl.SUBJ-follow-pl-rel+3sg.CL-adessive"",""morphemes"":""j-yo-Ga-t+e-k"",""text"":""jyoGateki"",""translations"":{""en"":""We follow it"",""po"":""Nós o seguimos""}}]}]"	TODO
+yo	3	b494387b-0f58-43e0-b21f-0324667fc2cd	N			"[{""definition"":""sobrinho"",""examples"":[{""glosses"":""1POSS-nephew"",""morphemes"":""i-yo"",""text"":""iyo"",""translations"":{""en"":""My nephew"",""po"":""Meu sobrinho""}},{""glosses"":""1POSS-nephew-m.dim"",""morphemes"":""i-yo-nigi"",""text"":""iyonigi"",""translations"":{""en"":""My son"",""po"":""Meu filho""}}]}]"	TODO
+yowoǥoditeda	2	34c8f5bf-8e0e-4cc2-bf34-39b6ea1f98c4	VBAPL		sabia sobre ela	"[{""definition"":""sabia sobre ela""}]"	TODO
+yowoǥoditeda	2	6a22babf-b8c4-4977-a51f-9e0f93b3c745	ADJ			null	TODO
+ǥacoke	3	f627a743-f60a-4e1b-9b01-d085178e8269	N		lobinho	"[{""attributes"":{""scientific"":""Speothos venaticus""},""definition"":""lobinho""}]"	TODO
+ǥacoke	3	43d53e10-e247-4e9b-90db-611d0bee87eb	N			"[{""attributes"":{""scientific"":""Speothos venaticus""},""definition"":""lobinho""}]"	TODO
+ǥacoke	3	9cb89a42-ad7a-4718-9cc3-14974b7de925	N			"[{""attributes"":{""scientific"":""Speothos venaticus""},""definition"":""lobinho""}]"	TODO
+ǥalekani	3	6b1cf306-5b91-4e5d-b8a5-4f0729d8e3f9	N		veado/homossexual	"[{""attributes"":{""scientific"":""Blastocerus dichotomus""},""definition"":""veado/homossexual""}]"	TODO
+ǥalekani	3	acc32580-a70e-4f68-8491-bea2e0aada7b	N			"[{""attributes"":{""scientific"":""Blastocerus dichotomus""},""definition"":""veado/homossexual""}]"	TODO
+ǥalekani	3	6c2c1420-0ec8-49a7-bb89-46429ffb5fc9	N			"[{""attributes"":{""scientific"":""Blastocerus dichotomus""},""definition"":""veado/homossexual""}]"	TODO
+ǥatepa	3	5415816b-73c8-4109-9e50-265e49aef932	N		peixe pacu	"[{""attributes"":{""scientific"":""Mylossoma paraguayensis""},""definition"":""peixe pacu""}]"	TODO
+ǥatepa	3	725c9937-d76d-4bb4-9d50-9f23d82d62eb	N			"[{""attributes"":{""scientific"":""Mylossoma paraguayensis""},""definition"":""peixe pacu""}]"	TODO
+ǥatepa	3	0816fc05-0d63-46eb-8a92-c25793e47d05	N			"[{""attributes"":{""scientific"":""Mylossoma paraguayensis""},""definition"":""peixe pacu""}]"	TODO
+ǥatika	2	2e5580e4-52d7-473d-bca3-79cf81e03701	N		rato	"[{""definition"":""rato"",""examples"":[{""text"":""GatikaGa"",""translations"":{""en"":""mouse"",""pt-br"":""rato""}},{""text"":""Gatikadi"",""translations"":{""en"":""Mice"",""pt-br"":""Ratos""}}]}]"	TODO
+ǥatika	2	3079219d-4ae5-4500-9967-5c380c757ad6	N			"[{""definition"":""rato"",""examples"":[{""glosses"":""mouse-pl"",""morphemes"":""Gatika-Ga"",""text"":""GatikaGa"",""translations"":{""en"":""mouse"",""po"":""rato""}},{""glosses"":""mouse-pl"",""morphemes"":""Gatika-adi"",""text"":""Gatikadi"",""translations"":{""en"":""Mice"",""po"":""Ratos""}}]}]"	TODO
+ǥatodi	4	ef9ba33e-0026-4be5-948b-76d5912a5d1b	N	subst masc	tucano (pássaro)  - subst masc	"[{""definition"":""tucano (pássaro)""}]"	TODO
+ǥatodi	4	af830539-29e2-4ee9-b0d6-83c9bef89e84	N		tucano	"[{""definition"":""tucano""}]"	TODO
+ǥatodi	4	292d022d-e9b0-49c2-8fc3-d2b4ed00094c	N			"[{""definition"":""tucano""}]"	TODO
+ǥatodi	4	0d50025b-a263-415a-a3c6-4596ecad63f8	N			"[{""definition"":""tucano""}]"	TODO
+ǥeladi	2	87335290-21e4-490e-9a14-e8d6e57a456f	N		aldeia	"[{""definition"":""aldeia"",""examples"":[{""text"":""GoGeladi"",""translations"":{""en"":""Our village"",""pt-br"":""Nossa aldeia""}}]}]"	TODO
+ǥeladi	2	e3589395-a71b-497b-91a6-35a3fb9b794c	N			"[{""definition"":""aldeia"",""examples"":[{""glosses"":""1pl.POSS-village"",""morphemes"":""God-Geladi"",""text"":""GoGeladi"",""translations"":{""en"":""Our village"",""po"":""Nossa aldeia""}}]}]"	TODO
+ǥeǥati	2	324eb14e-0939-496d-8b8e-3218f0cae824	VB		atravessar	"[{""definition"":""atravessar"",""examples"":[{""text"":""jiGeGatita                                      aqiidi"",""translations"":{""en"":""I cross the river"",""pt-br"":""Eu cruzo o rio""}}]}]"	TODO
+ǥeǥati	2	d2cf88e3-60de-4f40-b3ac-0fe28e8b67a4	VB	unergative		"[{""definition"":""atravessar"",""examples"":[{""glosses"":""1sg.SUBJ-cross-rel+3sg.CL-dative river"",""morphemes"":""j-GeGati-t+e-wa                            aqiidi"",""text"":""jiGeGatita                                      aqiidi"",""translations"":{""en"":""I cross the river"",""po"":""Eu cruzo o rio""}}]}]"	TODO
+ǥila	2	da7ec99b-11b9-4c57-b51e-d8cd3f24e476	N		garganta	"[{""definition"":""garganta"",""examples"":[{""text"":""GoGila""},{""text"":""lGilagi"",""translations"":{""en"":""Her necklace"",""pt-br"":""Seu colar""}}]}]"	TODO
+ǥila	2	bbbfa522-44bd-404b-bf38-73a8f287e9e3	N			"[{""definition"":""garganta"",""examples"":[{""glosses"":""1POSS-throat"",""morphemes"":""God-Gila"",""text"":""GoGila""},{""glosses"":""3POSS-throat-augm"",""morphemes"":""l-Gila-gi"",""text"":""lGilagi"",""translations"":{""en"":""Her necklace"",""po"":""Seu colar""}}]}]"	TODO
+ǥiwoola	2	a2a73bcc-e962-4d70-8c5f-0d67d934e52f	VB		estrangular, enforcar	"[{""definition"":""estrangular, enforcar"",""examples"":[{""text"":""oyGiwoola"",""translations"":{""en"":""They strangled him"",""pt-br"":""Eles o enforcam""}}]}]"	TODO
+ǥiwoola	2	cf372383-0839-419c-ad11-5141b86ac54d	VB	bivalent		"[{""definition"":""estrangular, enforcar"",""examples"":[{""glosses"":""pl-3pl.SUBJ-strangle"",""morphemes"":""o-y-Giwoola"",""text"":""oyGiwoola"",""translations"":{""en"":""They strangled him"",""po"":""Eles o enforcam""}}]}]"	TODO
+ǥociǥa	3	eaa3d7e8-1e95-4c3f-9e60-d320b8e20b8a	N		macaco bugio	"[{""definition"":""macaco bugio""}]"	TODO
+ǥociǥa	3	f70596ea-af93-478f-a81c-f274ee68ee14	N			"[{""definition"":""macaco bugio""}]"	TODO
+ǥociǥa	3	c2896a3b-c180-4383-8c12-0981f4f64ea3	N			"[{""definition"":""macaco bugio""}]"	TODO
+ǥodami	3	67105669-2e4f-41ba-bc2a-7425a832fd6c	N		pica-pau-chorao	"[{""attributes"":{""scientific"":""Picoides mixtus""},""definition"":""pica-pau-chorao""}]"	TODO
+ǥodami	3	d91d546b-f5aa-46bc-b0c5-377201dc7b40	N			"[{""attributes"":{""scientific"":""Picoides mixtus""},""definition"":""pica-pau-chorao""}]"	TODO
+ǥodami	3	e2eb66ba-75de-453e-975a-3fad5732c89b	N			"[{""attributes"":{""scientific"":""Picoides mixtus""},""definition"":""pica-pau-chorao""}]"	TODO
+ǥodinǥa	3	c27298dd-3a21-4831-9ea4-32e1454a42d7	N	free form	boi/solteirao/homossexual  - free form	"[{""definition"":""boi/solteirao/homossexual""}]"	TODO
+ǥodinǥa	3	6401edcf-2017-430b-bbb7-6d54d91bfb69	N	free form		"[{""definition"":""boi/solteirao/homossexual""}]"	TODO
+ǥodinǥa	3	8c1e1c79-e884-4a68-960e-7e0aaa917306	N	free form		"[{""definition"":""boi/solteirao/homossexual""}]"	TODO
+ǥodiqokoloǥodi	3	7c32a3a7-6c29-4370-b9e9-6285305a3eb4	N		calango-verde	"[{""attributes"":{""scientific"":""Ameiva ameiva""},""definition"":""calango-verde""}]"	TODO
+ǥodiqokoloǥodi	3	73a2360a-875f-41a5-b88c-d5d098ecfef1	N			"[{""attributes"":{""scientific"":""Ameiva ameiva""},""definition"":""calango-verde""}]"	TODO
+ǥodiqokoloǥodi	3	22d7ac2c-438a-40db-a423-22239ebf57d5	N			"[{""attributes"":{""scientific"":""Ameiva ameiva""},""definition"":""calango-verde""}]"	TODO
+ǥola	2	7fb8749f-594a-48ec-bb67-e6954716b3f7	N		cego	"[{""definition"":""cego"",""examples"":[{""text"":""GolaGa"",""translations"":{""en"":""Blind person"",""pt-br"":""Pessoa cega""}},{""text"":""iGolaGadi"",""translations"":{""en"":""He betrays him"",""pt-br"":""Ele o trai""}},{""text"":""nGolaGatGakanGegi"",""translations"":{""en"":""adultery"",""pt-br"":""adultério""}},{""text"":""aGolaGatGakanGegi"",""translations"":{""en"":""adulterous"",""pt-br"":""adúltero""}}]}]"	TODO
+ǥola	2	dd50fba8-5391-4fc1-b17e-0789d1982ba7	N			"[{""definition"":""cego"",""examples"":[{""glosses"":""blind-pl"",""morphemes"":""Gola-Ga"",""text"":""GolaGa"",""translations"":{""en"":""Blind person"",""po"":""Pessoa cega""}},{""glosses"":""3sg.SUBJ-blind-[+cause]"",""morphemes"":""y-Gola-Gad"",""text"":""iGolaGadi"",""translations"":{""en"":""He betrays him"",""po"":""Ele o trai""}},{""glosses"":""alnbl-blind-[+cause]-pl-[-become]-[-cause]"",""morphemes"":""n-Gola-Gad-Ga-kan-Gegi"",""text"":""nGolaGatGakanGegi"",""translations"":{""en"":""adultery"",""po"":""adultério""}},{""glosses"":""relative+blind-[+cause]-pl-[-become]-[-cause]"",""morphemes"":""ane+Gola-Gad-Ga-kan-Gegi"",""text"":""aGolaGatGakanGegi"",""translations"":{""en"":""adulterous"",""po"":""adúltero""}}]}]"	TODO
+ǥoloo	2	624c2f2e-7b85-4660-ad31-9178e47d1023	VB		ter nojo	"[{""definition"":""ter nojo"",""examples"":[{""text"":""idGolotGawa"",""translations"":{""en"":""You disgate me"",""pt-br"":""Eu tenho nojo de você""}},{""text"":""GodGolooGo"",""translations"":{""en"":""Disgusting"",""pt-br"":""Nojento/Nosso nojo""}}]}]"	TODO
+ǥoloo	2	855e6bf6-34fd-46ae-81cc-544ee4dd983f	VB	unaccusative		"[{""definition"":""ter nojo"",""examples"":[{""glosses"":""1sg.SUBJ-theme-disgate-rel+2sg.CL-dative"",""morphemes"":""j-d-Goloo-t-Ga-wa"",""text"":""idGolotGawa"",""translations"":{""en"":""You disgate me"",""po"":""Eu tenho nojo de você""}},{""glosses"":""1pl.POSS-disgate-pl"",""morphemes"":""God-Goloo-Ga"",""text"":""GodGolooGo"",""translations"":{""en"":""Disgusting"",""po"":""Nojento/Nosso nojo""}}]}]"	TODO
+ǥomǥala	2	10eb13d4-b49f-462e-8d0a-e8d6e23713bf	N		piranhao	"[{""attributes"":{""scientific"":""Serrassalmus""},""definition"":""piranhao"",""examples"":[{""text"":""GomaGaladi""}]}]"	TODO
+ǥomǥala	2	f67686f9-032b-4538-84ee-3b49caffce49	N			"[{""attributes"":{""scientific"":""Serrassalmus""},""definition"":""piranhao"",""examples"":[{""glosses"":""pirana-pl"",""morphemes"":""GomGala-adi"",""text"":""GomaGaladi""}]}]"	TODO
+ǥona	2	5e51d8ae-b1e5-431a-a643-080f4edf913c	N		rastro	"[{""definition"":""rastro"",""examples"":[{""text"":""loGona"",""translations"":{""en"":""His track"",""pt-br"":""Seu rastro""}},{""text"":""GodoGonagi"",""translations"":{""en"":""Our foot"",""pt-br"":""Nosso pé""}}]}]"	TODO
+ǥona	2	965bf660-c5a0-490e-8d00-180c390f85bc	N			"[{""definition"":""rastro"",""examples"":[{""glosses"":""3POSS-track"",""morphemes"":""l-Gona"",""text"":""loGona"",""translations"":{""en"":""His track"",""po"":""Seu rastro""}},{""glosses"":""1pl.POSS-track-[+cause]"",""morphemes"":""God-Gona-gi"",""text"":""GodoGonagi"",""translations"":{""en"":""Our foot"",""po"":""Nosso pé""}}]}]"	TODO
+ǥonelegiwa	2	76272283-2a4c-4951-aed1-59f49b72e24a	N		homem  (variante do gênero masculino)	"[{""definition"":""homem""}]"	TODO
+ǥonelegiwa	2	aad561e2-3754-4aee-8154-8be707aec257	N		homem	"[{""definition"":""homem""}]"	TODO
+ǥonemedi	3	9dca8264-183f-42dd-92c5-0cf3d8667f80	N	free form	coruja  - free form	"[{""definition"":""coruja""}]"	TODO
+ǥonemedi	3	80b70413-9829-4185-aa4c-c89946b05c3e	N	free form		"[{""definition"":""coruja""}]"	TODO
+ǥonemedi	3	9729ba0a-2929-423f-b056-549dc96628ce	N	free form		"[{""definition"":""coruja""}]"	TODO
+ǥoola	2	077633c3-858e-4796-974d-73e570064f01	VB		cozinhar	"[{""definition"":""cozinhar"",""examples"":[{""text"":""dinoGoola"",""translations"":{""en"":""It was cooked"",""pt-br"":""Cozido""}},{""text"":""jajinoGoola"",""translations"":{""en"":""I have cooked"",""pt-br"":""Eu já cozinhei""}}]}]"	TODO
+ǥoola	2	bc60a1f2-c47b-4aff-9763-3a261b9c7782	VB	unergative		"[{""definition"":""cozinhar"",""examples"":[{""glosses"":""3sg.SUBJ-theme-hither-cook"",""morphemes"":""y-d-n-Goola"",""text"":""dinoGoola"",""translations"":{""en"":""It was cooked"",""po"":""Cozido""}},{""glosses"":""compl+1sg.SUBJ-cook"",""morphemes"":""jaG+j-Goola"",""text"":""jajinoGoola"",""translations"":{""en"":""I have cooked"",""po"":""Eu já cozinhei""}}]}]"	TODO
+ǥopokonaǥadi	2	4addc66a-577c-4eae-8a0b-dfea2d9232c8	N		carão	"[{""definition"":""carão""}]"	TODO
+ǥopokonaǥadi	2	3816202d-1376-4e8e-8df3-b1ef06c6eb6e	NPR			null	
+ǥwetadi	3	53717970-c5de-4313-b2d4-7d092688f99a	N	free form	remédio  - free form	"[{""definition"":""remédio""}]"	TODO
+ǥwetadi	3	8241a56d-aed0-493b-a252-709feb204fdf	N	free form		"[{""definition"":""remédio""}]"	TODO
+ǥwetadi	3	f470ccd2-30c9-43aa-b9f8-eb367a7ec006	N	free form		"[{""definition"":""remédio""}]"	TODO

@@ -1,0 +1,1844 @@
+/*
+sentence = 1
+uid = 13e0ee30-8f07-11e6-b457-90b11c409ded
+status = REVIEW
+text = natigide natematigi acoa iwaalo ane dinanatigi me nigediogo .
+text_por = Agora a história da mulher que virava onça.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV natigide)
+    )
+    (NP
+      (NAPL natematigi)
+      (D acoa)
+      (N iwaalo)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VBAPL dinanatigi)
+          (CP-me
+            (C me)
+            (IP-SUB
+              (NP
+                (N nigediogo)
+              )
+            )
+          )
+        )
+      )
+    )
+    (. .)
+  )
+  (ID jaguar,0.1)
+)
+/*
+sentence = 2
+uid = 13e0ee31-8f07-11e6-b457-90b11c409ded
+status = REVIEW
+text = one idi ica wadonadi ica icoa nokododi ica aca liGeladi ica Godoigi .
+text_por = Diz que havia um casal, naqueles dias, em uma aldeia do nosso povo.
+*/
+(
+  (IP-MAT
+    (EV one)
+    (NP-SBJ
+      (Q idi)
+      (D ica)
+      (N wadonadi)
+    )
+    (NP-SBJ-PRD
+      (Q ica)
+      (D icoa)
+      (N nokododi)
+    )
+    (NP-SBJ-PRD
+      (Q ica)
+      (D aca)
+      (N$ liGeladi)
+    )
+    (NP-PRD
+      (D ica)
+      (N$ Godoigi)
+    )
+    (. .)
+  )
+  (ID jaguar,0.2)
+)
+/*
+sentence = 3
+uid = 13e0ee32-8f07-11e6-b457-90b11c409ded
+status = REVIEW
+text = oda onigotibecewaji yawaligitibiwaji ica miditaGa ica eledi Godoigi .
+text_por = E resolveram visitar uma outra aldeia nossa.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (VBAPL onigotibecewaji)
+    (VB yawaligitibiwaji)
+    (NP
+      (D ica)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (DAPL @iditaGa)
+          )
+        )
+      )
+    )
+    (D ica)
+    (NP
+      (ADJ eledi)
+      (N$ Godoigi)
+    )
+    (. .)
+  )
+  (ID jaguar,0.3)
+)
+/*
+sentence = 4
+uid = 13e0ee33-8f07-11e6-b457-90b11c409ded
+text = naigitece jonoGonadi ica apakanigo .
+text_por = No caminho, viram uma ema.
+*/
+(
+  (IP-MAT
+    (NP
+      (NAPL naigitece)
+    )
+    (T janaG@)
+    (VB @onadi)
+    (NP
+      (D ica)
+      (N apakanigo)
+    )
+    (. .)
+  )
+  (ID jaguar,0.4)
+)
+/*
+sentence = 5
+uid = 13e0ee34-8f07-11e6-b457-90b11c409ded
+text = one dinewegi ica apakanigo miditaGa ica wa .
+text_por = Puxando com o bico onde estava a sombra (debaixo da asa).
+*/
+(
+  (IP-MAT
+    (NP
+      (IP
+        (EV one)
+        (VB dinewegi)
+        (NP
+          (D ica)
+          (N apakanigo)
+        )
+        (CP-me
+          (C me@)
+          (IP-SUB
+            (NP
+              (DAPL @iditaGa)
+            )
+          )
+        )
+      )
+      (D ica)
+      (N wa)
+    )
+    (. .)
+  )
+  (ID jaguar,0.5)
+)
+/*
+sentence = 6
+uid = 13e0ee35-8f07-11e6-b457-90b11c409ded
+text = one yaxoGonoko .
+text_por = Diz que era meio dia.
+*/
+(
+  (IP-MAT
+    (EV one)
+    (NP
+      (N yaxoGonoko)
+    )
+    (. .)
+  )
+  (ID jaguar,0.6)
+)
+/*
+sentence = 7
+uid = 13e0ee36-8f07-11e6-b457-90b11c409ded
+text = oda noGonenadi acoa iwalo onete icoa lodawa : emani me ejigo jawo Gonibole inadeegi
+text_por = E a mulher falou para o marido: você quer que eu faça e traga nossa carne?
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (CP
+      (CT naGa@)
+      (IP-SUB
+        (EV @one)
+        (VB @nadi)
+        (NP
+          (D acoa)
+          (N iwalo)
+        )
+      )
+    )
+    (EV one@)
+    (VBAPL @eete)
+    (NP-APL
+      (D icoa)
+      (N$ lodawa)
+    )
+    (PUNC :)
+    (IP
+      (VB emani)
+      (IP-ADV
+        (CP-THT
+          (C me)
+          (IP-SUB
+            (AUX ejigo)
+            (VB jawo)
+            (NP
+              (N$ Gonibole)
+            )
+          )
+        )
+        (VB inadeegi)
+      )
+    )
+  )
+  (ID jaguar,0.7)
+)
+/*
+sentence = 8
+uid = 13e0ee37-8f07-11e6-b457-90b11c409ded
+text = one icoa Gonelegiwa one nawela
+text_por = Diz que o homem se assustou.
+*/
+(
+  (IP-MAT
+    (EV one)
+    (IP
+      (NP
+        (D icoa)
+        (N Gonelegiwa)
+      )
+      (EV one)
+      (VB nawela)
+    )
+  )
+  (ID jaguar,0.8)
+)
+/*
+sentence = 9
+uid = a9a1ffc0-9f5d-11e6-abbc-90b11c409ded
+text = one igameGanimaweneGegi ?
+text_por = De que maneira?
+*/
+(
+  (CP-QUE
+    (EV one)
+    (WNP
+      (WPRO+C+N$ igameGanimaweneGegi)
+    )
+    (PUNC ?)
+  )
+  (ID jaguar,0.9)
+)
+/*
+sentence = 10
+uid = 13e0ee38-8f07-11e6-b457-90b11c409ded
+text = oda one acoa iwalo : cia ! ejigo inadeegi jiketaGawa anodaGee pida nige janotaGawa ina epece adotaGaneGeni nige eyomaGa GadotaGaneGeni .
+text_por = A mulher: ah! Eu o trarei te mostrarei meu jeito, mas quando eu o trouxer até você, não fale comigo até eu que eu mesma fale com você
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (EV one)
+    (NP
+      (D acoa)
+      (N iwalo)
+    )
+    (PUNC :)
+    (INTJ cia)
+    (PUNC !)
+    (IP-MAT
+      (AUX ejigo)
+      (VB inadeegi)
+      (VBAPL jiketaGawa)
+    )
+    (WNP
+      (WPRO+N$ anodaGee)
+    )
+    (CONJP
+      (CONJ pida)
+      (IP-MAT
+        (CP-ADV
+          (CT nige)
+          (IP-SUB
+            (VBAPL janotaGawa)
+            (NP-APL
+              (D ina)
+            )
+            (ADVP
+              (ADV epece)
+            )
+          )
+        )
+        (VB adotaGaneGeni)
+      )
+    )
+    (CP-ADV
+      (CT nige)
+      (IP-SUB
+        (NP
+          (PRO eyomaGa)
+        )
+        (VB GadotaGaneGeni)
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.10)
+)
+/*
+sentence = 11
+uid = 13e0ee3a-8f07-11e6-b457-90b11c409ded
+text = oda joneGigo acoa iwalo onigo manitaGa aca apilalo .
+text_por = E ela foi até o cupim.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (EV+T+VB joneGigo)
+    (NP
+      (D acoa)
+      (N iwalo)
+    )
+    (VB onigo)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (DAPL @anitaGa)
+        )
+      )
+    )
+    (NP
+      (D aca)
+      (N apilalo)
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.11)
+)
+/*
+sentence = 12
+uid = 13e0ee3b-8f07-11e6-b457-90b11c409ded
+text = oda noGonicotedicogi one dinaxoGotedi odowejegi me dinaxoGotedi .
+text_por = Quando chegou nele, diz que se jogou em cima protegida para se jogar em cima
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (CT+VBAPL noGonicotedicogi)
+    (IP
+      (EV one)
+      (VBAPL dinaxoGotedi)
+    )
+    (ADJ odowejegi)
+    (CP-me
+      (C me)
+      (IP-SUB
+        (VBAPL dinaxoGotedi)
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.12)
+)
+/*
+sentence = 13
+uid = 13e0ee3c-8f07-11e6-b457-90b11c409ded
+text = naGa dabidetedi eGadaGadowate .
+text_por = Quando se levantou estava igual.
+*/
+(
+  (IP-MAT
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB dabidetedi)
+      )
+    )
+    (ADV+VB eGadaGadowate)
+    (PUNC .)
+  )
+  (ID jaguar,0.13)
+)
+/*
+sentence = 14
+uid = 13e0ee3d-8f07-11e6-b457-90b11c409ded
+text = neGewotace eGadaGadowate .
+text_por = Ela fez outra vez e continuava a mesma.
+*/
+(
+  (IP-MAT
+    (CT+VB neGewotace)
+    (ADV+VB eGadaGadowate)
+    (PUNC .)
+  )
+  (ID jaguar,0.14)
+)
+/*
+sentence = 15
+uid = 13e0ee3e-8f07-11e6-b457-90b11c409ded
+text = niGitowadadiGida me wote oda aGaleGacowa me dabiditedi .
+text_por = Na terceira vez ela não se levantou mais.
+*/
+(
+  (IP-MAT
+    (CP-ADV
+      (CT niG@)
+      (NP
+        (NUM @idawadadiGida)
+      )
+      (CP-me
+        (C me)
+        (IP-SUB
+          (VB wote)
+        )
+      )
+    )
+    (CONJ oda)
+    (NEG aG@)
+    (T @aleeka)
+    (NP-SBJ
+      (D @acawa)
+    )
+    (CP-me
+      (C me)
+      (IP-SUB
+        (VB dabiditedi)
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.15)
+)
+/*
+sentence = 16
+uid = 13e0ee3f-8f07-11e6-b457-90b11c409ded
+text = pida niGina me dinabicetedibece one iwolaGadi latobi inowa naxapo lamadi .
+text_por = Mas quando ela pulava, diz que apalpava o seu rosto, as suas unhas e seu cabelo.
+*/
+(
+  (IP-MAT
+    (CONJ pida)
+    (NP
+      (D niGina)
+    )
+    (CP-me
+      (C me)
+      (IP-SUB
+        (VBAPL dinabicetedibece)
+      )
+    )
+    (EV one)
+    (VB iwolaGadi)
+    (NP
+      (NP
+        (N$ latobi)
+      )
+      (D inowa)
+      (N$ naxapo)
+      (NP
+        (N$ lamadi)
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.16)
+)
+/*
+sentence = 17
+uid = 13e0ee40-8f07-11e6-b457-90b11c409ded
+text = itowatadiGida jeGeijeeGagi aGaleGacowa .
+text_por = Então no terceiro pulo ela não se levantou mais e já era bicho onça.
+*/
+(
+  (IP-MAT
+    (NP
+      (NUM itowatadiGida)
+    )
+    (T+N jeGeijeeGagi)
+    (NEG+ADV+D aGaleGacowa)
+    (PUNC .)
+  )
+  (ID jaguar,0.17)
+)
+/*
+sentence = 18
+uid = 13e0ee41-8f07-11e6-b457-90b11c409ded
+text = oda icoa lodowa iwiteta ica apakanigo .
+text_por = E o marido olhava a ema.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (NP
+      (D icoa)
+      (N$ lodowa)
+    )
+    (VBAPL iwiteta)
+    (NP-APL
+      (D ica)
+      (N apakanigo)
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.18)
+)
+/*
+sentence = 19
+uid = 13e11540-8f07-11e6-b457-90b11c409ded
+text = oda noGodinilotedelogo acoa iwalo ica apakanigo noGonipegite .
+text_por = E a mulher se direcionou devagar até a ema.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (CT+VBAPL noGodinilotedelogo)
+    (NP-SBJ
+      (D acoa)
+      (N iwalo)
+    )
+    (NP-PRD
+      (D ica)
+      (N apakanigo)
+    )
+    (CP
+      (CT+VBAPL noGonipegite)
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.19)
+)
+/*
+sentence = 20
+uid = 13e44990-8f07-11e6-b457-90b11c409ded
+text = oda dinabicetedeloco ica apakanigo . jona yelowadi inoke lotoinaGadi .
+text_por = E pulou na ema, matou-a quebrando o seu pescoço.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (VBAPL dinabicetedeloco)
+    (IP-APL
+      (NP
+        (D ica)
+        (N apakanigo)
+      )
+      (PUNC .)
+      (EV jaGa@)
+      (T @one)
+      (VB yelowadi)
+    )
+    (IP
+      (VB inoke)
+      (NP
+        (N$ lotoinaGadi)
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.20)
+)
+/*
+sentence = 21
+uid = 13e44991-8f07-11e6-b457-90b11c409ded
+text = oda icoa lodawa jona nadi naGa nixigitedeloco ani apilalo ica apakanigo .
+text_por = E o marido viu quando ela puxou pela boca até o cupim.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (NP
+      (D icoa)
+      (N$ lodawa)
+    )
+    (T jona)
+    (VB nadi)
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VBAPL nixigitedeloco)
+        (NP-APL
+          (D ani)
+          (N apilalo)
+        )
+        (NP
+          (D ica)
+          (N apakanigo)
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.21)
+)
+/*
+sentence = 22
+uid = 13e44992-8f07-11e6-b457-90b11c409ded
+text = oda noGonenotace oda one dinaxogotacenibece oda jona dabiditacedi iticoGo lamodi .
+text_por = E voltando então pulou de novo, e levantou e passava a mão no seu cabelo.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (CT+VB noGonenotace)
+    (IP
+      (ADVP
+        (ADV oda)
+      )
+      (EV one)
+      (VBAPL dinaxogotacenibece)
+      (IP-APL
+        (ADVP
+          (ADV oda)
+        )
+        (T jona)
+        (VBAPL dabiditacedi)
+        (VB iticoGo)
+        (NP
+          (N$ lamodi)
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.22)
+)
+/*
+sentence = 23
+uid = 13e44993-8f07-11e6-b457-90b11c409ded
+text = oda codaanonidata icoa atone yotaneGe onexaa ikete ica apakanigo oda jiGigotibece pida jaGadowa me iwalo pida aGana dotaGa diniwokoditedibece .
+text_por = E ela chegou até o marido, não falava nada, só mostrava a ema, e foram embora, mas ela já era mulher e passando várias vezes a mão no rosto e no corpo.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+      (ADV codaanonidata)
+    )
+    (NP
+      (D icoa)
+    )
+    (CP
+      (CNeg ade@)
+      (IP-SUB
+        (EV @one)
+        (VB yotaneGe)
+        (ADVP
+          (ADV onexaa)
+        )
+      )
+    )
+    (VBAPL ikete)
+    (NP-APL
+      (D ica)
+      (N apakanigo)
+    )
+    (ADVP
+      (ADV oda)
+    )
+    (T+VBAPL jiGigotibece)
+    (CONJ pida)
+    (T+D jaGadowa)
+    (CP-me
+      (C me)
+      (IP-SUB
+        (NP
+          (N iwalo)
+        )
+      )
+    )
+    (CONJ pida)
+    (NEG+D aGana)
+    (VB dotaGa)
+    (VBAPL diniwokoditedibece)
+    (. .)
+  )
+  (ID jaguar,0.23)
+)
+/*
+sentence = 24
+uid = 13e44994-8f07-11e6-b457-90b11c409ded
+text = jona leegitece noGone yotaGaneGe .
+text_por = Estava longe quando falou
+*/
+(
+  (IP-MAT
+    (T jona)
+    (ADVP
+      (ADV leegitece)
+    )
+    (CT+EV noGone)
+    (IP
+      (VB yotaGaneGe)
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.24)
+)
+/*
+sentence = 25
+uid = 13e44995-8f07-11e6-b457-90b11c409ded
+text = oneete : ica mele ica midi ica Gonibole .
+text_por = Ela disse para ele: que bom, temos esta boa carne.
+*/
+(
+  (IP-MAT
+    (EV+VBAPL oneete)
+    (PUNC :)
+    (NP-SBJ
+      (D ica)
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (ADJ @ele)
+          (D ica)
+        )
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (D @idi)
+          )
+        )
+      )
+    )
+    (NP-PRD
+      (D ica)
+      (N$ Gonibole)
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.25)
+)
+/*
+sentence = 26
+uid = 13e44996-8f07-11e6-b457-90b11c409ded
+text = one icoa lodawa : igame GanimawenaGegi ica me elowati ? ica nokanice daGa naitece ijo ijeGagi .
+text_por = E ele perguntou: mas como você conseguiu matar a ema? Ele fingindo não ter visto a onça.
+*/
+(
+  (IP-MAT
+    (EV one)
+    (NP
+      (D icoa)
+      (N$ lodawa)
+    )
+    (PUNC :)
+    (CP-QUE
+      (IP-SUB
+        (WADVP
+          (WADV igame)
+        )
+        (VB GanimawenaGegi)
+        (NP
+          (D ica)
+        )
+      )
+    )
+    (CP-QUE
+      (C me)
+      (IP-SUB
+        (VB elowati)
+      )
+    )
+    (PUNC ?)
+    (IP
+      (NP
+        (D ica)
+      )
+      (VB nokanice)
+      (IP-ADV
+        (NEG daGa)
+        (VB naitece)
+        (NP
+          (D ijo)
+          (N ijeGagi)
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.26)
+)
+/*
+sentence = 27
+uid = 13e44998-8f07-11e6-b457-90b11c409ded
+text = oneete : etidiiGaxi inawelaGadi oda datopetigi niale oda ja yeleo dinoke lotoinaGadi .
+text_por = Disse ela: eu assustei a ema, ela bateu na árvore e já morreu quebrando seu pescoço.
+*/
+(
+  (IP-MAT
+    (EV+VBAPL oneete)
+    (PUNC :)
+    (CONJP
+      (IP-MAT-MAT
+        (VB etidiiGaxi)
+      )
+    )
+    (CONJP
+      (IP-MAT-MAT
+        (VB inawelaGadi)
+      )
+    )
+    (CONJP
+      (CONJ oda)
+      (IP-MAT
+        (VBAPL datopetigi)
+        (NP-APL
+          (N niale)
+        )
+      )
+    )
+    (CONJ oda)
+    (ADVP
+      (ADV ja)
+    )
+    (ADJ yeleo)
+    (CONJP
+      (IP-MAT-MAT
+        (VB dinoke)
+        (NP
+          (N$ lotoinaGadi)
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.27)
+)
+/*
+sentence = 28
+uid = 13e44999-8f07-11e6-b457-90b11c409ded
+text = oda lodawa ja yowoGodi aniwa lodawa me nigediole .
+text_por = Mas o marido já sabia que a esposa virava onça.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (NP
+      (N$ lodawa)
+    )
+    (T ja)
+    (VB yowoGodi)
+    (NP
+      (D aniwa)
+      (N$ lodawa)
+      (CP-me
+        (C me)
+        (IP-SUB
+          (NP
+            (N nigediole)
+          )
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.28)
+)
+/*
+sentence = 29
+uid = 13e4499a-8f07-11e6-b457-90b11c409ded
+text = jonoGinicotiobece ica liGeladi onaGaleGica lita icoa Gonelegiwa .
+text_por = E chegando na aldeia o homem já não ficava mais tranquilo.
+*/
+(
+  (IP-MAT
+    (CT+VBAPL jonoGinicotiobece)
+    (NP-SBJ
+      (D ica)
+      (N liGeladi)
+    )
+    (EV+NEG+ADV+D onaGaleGica)
+    (NP-PRD
+      (NP
+        (N$ lita)
+      )
+      (D icoa)
+      (N Gonelegiwa)
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.29)
+)
+/*
+sentence = 30
+uid = 13e470a0-8f07-11e6-b457-90b11c409ded
+text = oda jona node icoa eletidi Gonelegiwa oneete acoa lodawa : ejigo jawo Godopegajo ejigo joletigi exate lamodi .
+text_por = Então ele já convidou os outros homens dizendo para a esposa: eu vou buscar folha de bacuri para colocar na oca.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (T jona)
+    (VB node)
+    (NP
+      (D icoa)
+    )
+    (NP
+      (ADJ eletidi)
+      (N Gonelegiwa)
+    )
+    (EV+VBAPL oneete)
+    (NP
+      (D acoa)
+      (N$ lodawa)
+    )
+    (PUNC :)
+    (IP
+      (AUX ejigo)
+      (VB jawo)
+      (NP
+        (N$ Godopegajo)
+      )
+      (AUX ejigo)
+      (VBAPL joletigi)
+      (NP-APL
+        (NP
+          (N exate)
+        )
+        (N$ lamodi)
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.30)
+)
+/*
+sentence = 31
+uid = 13e470a1-8f07-11e6-b457-90b11c409ded
+text = oda nige igo jona dowicededio icoa lokaGetedi icoa eletidi GodapowaGaneGegi icoa eletidi Gonelegiwadi iwiadi .
+text_por = Mas já direcionou aos seus companheiros, outros valentes homens caçadores.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (CP-ADV
+      (CT nige)
+      (IP-SUB
+        (VB igo)
+      )
+    )
+    (T jona)
+    (VBAPL dowicededio)
+    (NP-APL
+      (D icoa)
+      (N$ lokaGetedi)
+    )
+    (NP
+      (D icoa)
+    )
+    (NP
+      (ADJ eletidi)
+      (N$ GodapowaGaneGegi)
+    )
+    (NP
+      (D icoa)
+    )
+    (NP
+      (ADJ eletidi)
+      (N Gonelegiwadi)
+      (ADJ iwiadi)
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.31)
+)
+/*
+sentence = 33
+uid = 13e470a4-8f07-11e6-b457-90b11c409ded
+text = oda joniGigotibece ijaGijowa joniGigo dinexate lamotidi naGa enoditedio ica exate me icodedicogi ica exatijadi naGadaGawa ajowa lodawa .
+text_por = E foram se direcionando para o bacurizal, e quando chegou ao bacurizal de repente a esposa apareceu.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (T+VBAPL joniGigotibece)
+    (CONJ+D ijaGijowa)
+    (T+VB joniGigo)
+    (VB+N dinexate)
+    (NP
+      (N$ lamotidi)
+    )
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VBAPL enoditedio)
+        (NP-APL
+          (D ica)
+          (N exate)
+        )
+        (CP-me
+          (C me)
+          (IP-SUB
+            (VBAPL icodedicogi)
+            (NP-APL
+              (D ica)
+              (N exatijadi)
+            )
+            (NP
+              (D naGadaGawa)
+            )
+          )
+        )
+      )
+    )
+    (NP
+      (D ajowa)
+      (N$ lodawa)
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.33)
+)
+/*
+sentence = 34
+uid = 13e470a5-8f07-11e6-b457-90b11c409ded
+text = oda one nawela icoa one : niya ! amina Gabakedi ?
+text_por = E ele assustou dizendo: o que você está fazendo aqui?
+*/
+(
+  (CP-QUE
+    (CONJ oda)
+    (EV one)
+    (VB nawela)
+    (NP
+      (D icoa)
+    )
+    (EV one)
+    (PUNC :)
+    (INTJ niya)
+    (PUNC !)
+    (NP
+      (CP-FRL
+        (WPRP+D amina)
+        (IP-SUB
+          (NP
+            (N$ Gabakedi)
+          )
+        )
+      )
+    )
+    (PUNC ?)
+  )
+  (ID jaguar,0.34)
+)
+/*
+sentence = 36
+uid = 13e470a7-8f07-11e6-b457-90b11c409ded
+text = oda oneete acoa lodawa : igame icoGoitigi ? emi awi ?
+text_por = Então disse para o marido: de onde você vem? vai caçar?
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (EV+VBAPL oneete)
+    (NP
+      (D acoa)
+      (N$ lodawa)
+    )
+    (PUNC :)
+    (CP-QUE
+      (WADVP-1
+        (WADV iga@)
+      )
+      (C @me)
+      (IP-SUB
+        (ADVP
+          (-NONE- *T*-1)
+        )
+        (VBAPL icoGoitigi)
+      )
+    )
+    (PUNC ?)
+    (IP
+      (AUX emi)
+      (VB awi)
+    )
+    (PUNC ?)
+  )
+  (ID jaguar,0.36)
+)
+/*
+sentence = 37
+uid = 13e470a9-8f07-11e6-b457-90b11c409ded
+text = onee icoa Gonelegiwa : ahe ! ewi noGidaaGee ejigo jawi inodetiogi Gonelegiwadi etidodenoda . onee : ejigo jawi .
+text_por = Ele disse: sim nos vamos caçar, eu vou caçar, até já combinaram comigo, fui convidado para caçar.
+*/
+(
+  (IP-MAT
+    (EV+VB onee)
+    (NP
+      (D icoa)
+      (N Gonelegiwa)
+    )
+    (PUNC :)
+    (INTJ ahe)
+    (PUNC !)
+    (ADJ ewi)
+    (IP
+      (CP
+        (CT noGo@)
+        (IP-SUB
+          (ADVP
+            (ADV @idaaGee)
+          )
+          (VB ejigo)
+        )
+      )
+      (VB jawi)
+      (IP-ADV
+        (VB inodetiogi)
+        (NP
+          (N Gonelegiwadi)
+        )
+      )
+    )
+    (VB etidodenoda)
+    (PUNC .)
+    (VB onee)
+    (PUNC :)
+    (IP
+      (VB ejigo)
+      (IP-ADV
+        (VB jawi)
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.37)
+)
+/*
+sentence = 38
+uid = 13e470ac-8f07-11e6-b457-90b11c409ded
+text = ja yowooGodi niGica lowoogo ijowa lodawa .
+text_por = Ela já sabia qual o pensamento do marido.
+*/
+(
+  (IP-MAT
+    (T ja)
+    (VB yowooGodi)
+    (NP
+      (NP
+        (D niGica)
+        (N$ lowoogo)
+      )
+      (D ijowa)
+      (N$ lodawa)
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.38)
+)
+/*
+sentence = 39
+uid = 13e470ad-8f07-11e6-b457-90b11c409ded
+text = oda noGone nigoi jona nowenakadi icoa akokododi naGa yapacaGatege nigoi .
+text_por = E no outro dia, quando cantava os falos, quando clareou.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (CT naGa@)
+    (IP
+      (EV @one)
+      (NP
+        (N nigoi)
+      )
+      (T jona)
+      (VB nowenakadi)
+      (NP
+        (D icoa)
+        (N akokododi)
+      )
+      (CP-ADV
+        (CT naGa)
+        (IP-SUB
+          (VB yapacaGatege)
+          (NP
+            (N nigoi)
+          )
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.39)
+)
+/*
+sentence = 40
+uid = 13e58210-8f07-11e6-b457-90b11c409ded
+text = oda niGigotibece ja legitece migotibece niGica idee niGinagina ica nigediogo niotece ladigodi .
+text_por = Então já foram indo para longe e quando chegaram numa vazante, vinha uma onça pintada.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (CP
+      (CT naGa@)
+      (IP-SUB
+        (VB @igotibece)
+      )
+    )
+    (T ja)
+    (ADVP
+      (ADV legitece)
+    )
+    (C+VB migotibece)
+    (IP
+      (NP
+        (D niGica)
+      )
+      (VB idee)
+    )
+    (CT+VB niGinagina)
+    (IP
+      (NP
+        (D ica)
+        (N nigediogo)
+      )
+      (VB niotece)
+      (NP
+        (N$ ladigodi)
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.40)
+)
+/*
+sentence = 41
+uid = 13e58211-8f07-11e6-b457-90b11c409ded
+text = icoa lodawa oda yowoGoditeda onee jaGanaGanowa Goniotaagodo onexaa anidakitalo ina baGa anigidatediogi ade adeGica ane yelowadi
+text_por = O marido disse: é ela mesmo, cuidado, jogue as flechas para acertar, senão ela mata um de nós.
+*/
+(
+  (IP-MAT
+    (NP
+      (D icoa)
+      (N$ lodawa)
+    )
+    (ADVP
+      (ADV oda)
+    )
+    (VBAPL yowoGoditeda)
+    (EV+VB onee)
+    (T+D jaGanaGanowa)
+    (NP
+      (N$ Goniotaagodo)
+    )
+    (ADVP
+      (ADV onexaa)
+    )
+    (VBAPL anidakitalo)
+    (NP-APL
+      (D ina)
+    )
+    (T baGa)
+    (WNP
+      (WPRO+VBAPL anigidatediogi)
+    )
+    (CNeg ade)
+    (CNeg+C adeGica)
+    (CP
+      (C ane)
+      (IP-SUB
+        (VB yelowadi)
+      )
+    )
+  )
+  (ID jaguar,0.41)
+)
+/*
+sentence = 42
+uid = 13e58212-8f07-11e6-b457-90b11c409ded
+text = oda neGeno ica nigediogo domoGonopitetice onopitetice aGica ane naliGo .
+text_por = E quando a onça chegou tentaram jogar várias flechas sem atingi-la.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (CT+VB neGeno)
+    (NP-SBJ
+      (D ica)
+      (N nigediogo)
+    )
+    (T+VBAPL domoGonopitetice)
+    (IP
+      (VBAPL onopitetice)
+    )
+    (NEG aG@)
+    (NP-PRD
+      (D @ica)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VB naliGo)
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.42)
+)
+/*
+sentence = 43
+uid = 13e58213-8f07-11e6-b457-90b11c409ded
+text = oda noGopitedio acoa iwalo ( ... ) aGalegica nigediogo jeGelodi joGopio acoa iwalo .
+text_por = E a onça sumiu e ela também voltou para casa.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (CT+VBAPL noGopitedio)
+    (NP-SBJ
+      (D acoa)
+      (N iwalo)
+    )
+    (PUNC ()
+    (PUNC ...)
+    (PUNC ))
+    (NEG+ADV+D aGalegica)
+    (NP-SBJ-PRD
+      (N nigediogo)
+    )
+    (T+VB jeGelodi)
+    (T+VB joGopio)
+    (NP-PRD
+      (D acoa)
+      (N iwalo)
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.43)
+)
+/*
+sentence = 44
+uid = 13e58214-8f07-11e6-b457-90b11c409ded
+text = oda icoa lodawa aGaleeGejigo akami GodixigaGawepoditiwaji adedaGa GodakamaGaditeda Goniotagodo .
+text_por = E o marido decidiu voltar sabendo que ela não iria deixá-los em paz.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (NP
+      (D icoa)
+      (N$ lodawa)
+    )
+    (NEG+ADV+NEG+VB aGaleeGejigo)
+    (NP
+      (PRO akami)
+    )
+    (NP
+      (N$ GodixigaGawepoditiwaji)
+    )
+    (CNeg ade@)
+    (NEG @adaGa)
+    (VB GodakamaGaditeda)
+    (NP
+      (N$ Goniotagodo)
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.44)
+)
+/*
+sentence = 45
+uid = 13e58215-8f07-11e6-b457-90b11c409ded
+text = oda ja dopitedicogi liGeladi neGeno aniwa .
+text_por = E ele voltou para casa, chegando ela estava lá.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (T ja)
+    (VBAPL dopitedicogi)
+    (NP-APL
+      (N$ liGeladi)
+    )
+    (CT+VB neGeno)
+    (NP
+      (D aniwa)
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.45)
+)
+/*
+sentence = 46
+uid = 13e58216-8f07-11e6-b457-90b11c409ded
+text = onete : igaa madopiliti aGaleGemi awi ?
+text_por = E ela disse: porque você não vai mais caçar?
+*/
+(
+  (IP-MAT
+    (EV one@)
+    (VBAPL @eete)
+    (PUNC :)
+    (WADVP
+      (WADV igaa)
+    )
+    (C+VB madopiliti)
+    (IP
+      (ADV+NEG+AUX aGaleGemi)
+      (VB awi)
+    )
+    (PUNC ?)
+  )
+  (ID jaguar,0.46)
+)
+/*
+sentence = 47
+uid = 13e58217-8f07-11e6-b457-90b11c409ded
+text = onete : aGica codaGida naGa idopiti .
+text_por = E ele disse que não era por nada, de repente decidiu voltar.
+*/
+(
+  (IP-MAT
+    (EV one@)
+    (VBAPL @eete)
+    (PUNC :)
+    (NEG aG@)
+    (NP
+      (D @ica)
+    )
+    (CONJ+NEG+D codaGida)
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB idopiti)
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.47)
+)
+/*
+sentence = 48
+uid = 13e58218-8f07-11e6-b457-90b11c409ded
+text = oda oneete : daGaleGeniGa inoGaGa namokoligi jawoda laagigi .
+text_por = E ele convidou ela para ir tirar coqueiro para farinha.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (EV+VBAPL oneete)
+    (PUNC :)
+    (T+AUX daGaleGeniGa)
+    (IP
+      (VB inoGaGa)
+      (IP-ADV
+        (NP
+          (N namokoligi)
+        )
+        (VB jawoda)
+        (NP
+          (N$ laagigi)
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.48)
+)
+/*
+sentence = 49
+uid = 13e58219-8f07-11e6-b457-90b11c409ded
+text = oda jiGigotibece onaGa ica lagigi niGica noGonotota ica eyawigo oda one jona lowoGo me yelowadi aniwa lodawa .
+text_por = E chegando num dos coqueiros, então o pensamento do marido era matar a esposa apesar dela ter o mesmo pensamento de matá-lo também.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (T+VBAPL jiGigotibece)
+    (IP
+      (VB onaGa)
+      (NP
+        (D ica)
+        (N$ lagigi)
+      )
+      (NP
+        (D niGica)
+      )
+    )
+    (CT+VBAPL noGonotota)
+    (NP-SBJ
+      (D ica)
+      (N eyawigo)
+    )
+    (CONJ oda)
+    (EV one)
+    (T jona)
+    (NP-PRD
+      (N$ lowoGo)
+    )
+    (CP-me
+      (C me)
+      (IP-SUB
+        (VB yelowadi)
+        (NP
+          (D aniwa)
+          (N$ lodawa)
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.49)
+)
+/*
+sentence = 50
+uid = 13e5821a-8f07-11e6-b457-90b11c409ded
+text = oda oneete : anicoti ina inaGoni alitiwa aleejakagidi idoda Godagigi anokoigi Godatacanigi bidige jenaGati .
+text_por = E disse para ela: sente aqui, espere, vou cortar o bagaço, e trance um cesto para enchermos de farinha para que coloquemos o que precisamos.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (EV+VBAPL oneete)
+    (PUNC :)
+    (IP
+      (VBAPL anicoti)
+      (NP-APL
+        (D ina)
+      )
+      (VB inaGoni)
+      (VBAPL alitiwa)
+    )
+    (IP
+      (ADV+VB aleejakagidi)
+      (NP
+        (D idoda)
+        (N$ Godagigi)
+      )
+      (VB anokoigi)
+      (NP
+        (N$ Godatacanigi)
+      )
+    )
+    (C bidige)
+    (T+VB jenaGati)
+    (PUNC .)
+  )
+  (ID jaguar,0.50)
+)
+/*
+sentence = 51
+uid = 13e5821b-8f07-11e6-b457-90b11c409ded
+text = oda noGone yakagidi ica one domeGeete alati aliti aonaGa alati acoa iwalo .
+text_por = E ele disse para ela mudar de lugar, a mulher não mudou.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (CP
+      (CT naGa@)
+      (IP-SUB
+        (EV @one)
+        (VB yakagidi)
+        (NP
+          (D ica)
+        )
+      )
+    )
+    (EV one)
+    (T+VBAPL domeGeete)
+    (IP
+      (VB alati)
+      (IP-ADV
+        (VB aliti)
+      )
+    )
+    (IP
+      (NEG aG@)
+      (EV @one)
+      (VB alati)
+      (NP
+        (D acoa)
+        (N iwalo)
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.51)
+)
+/*
+sentence = 52
+uid = 13e5821c-8f07-11e6-b457-90b11c409ded
+text = oda noGone dojiti ica eyawigo one dojitelogo acoa iwalo niGica me dojitelogo oda niGidi ane ipiati . atalee iwalo ja nigediogo idi ane ipiati .
+text_por = E quando caiu o coqueiro, caiu na mulher, e não era mais mulher, era uma onça e ficou pressionada.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (CP
+      (CT naGa@)
+      (IP-SUB
+        (EV @one)
+        (VBAPL dojiti)
+        (NP-APL
+          (D ica)
+          (N eyawigo)
+        )
+      )
+    )
+    (EV one)
+    (VBAPL dojitelogo)
+    (NP-APL
+      (D acoa)
+      (N iwalo)
+    )
+    (CT+D niGica)
+    (CP-me
+      (C me)
+      (IP-SUB
+        (VB dojitelogo)
+        (ADVP
+          (ADV oda)
+        )
+      )
+    )
+    (CT+D niGidi)
+    (NP
+      (CP-FRL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VB ipiati)
+        )
+      )
+    )
+    (PUNC .)
+    (ADVNEG atalee)
+    (NP
+      (N iwalo)
+    )
+    (T ja)
+    (NP
+      (N nigediogo)
+    )
+    (NP
+      (D idi)
+      (CP-REL
+        (WNP-2
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-2)
+          )
+          (VB ipiati)
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.52)
+)
+/*
+sentence = 53
+uid = 13e5821e-8f07-11e6-b457-90b11c409ded
+text = leeGodi me nigediole acoa iwalo tige domalee iteweGe ica loniciwaGa me ijeGagi .
+text_por = Talvez tentou usar sua força de onça, mas não conseguiu.
+*/
+(
+  (IP-MAT
+    (C leeGodi)
+    (IP
+      (CP-me
+        (C me)
+        (IP-SUB
+          (NP
+            (N nigediole)
+          )
+        )
+      )
+      (NP
+        (D acoa)
+        (N iwalo)
+      )
+      (ADVP
+        (ADV tige)
+      )
+      (T+ADV domalee)
+      (VB iteweGe)
+      (NP
+        (D ica)
+        (N$ loniciwaGa)
+      )
+      (CP-me
+        (C me)
+        (IP-SUB
+          (NP
+            (N ijeGagi)
+          )
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.53)
+)
+/*
+sentence = 54
+uid = 13e5821f-8f07-11e6-b457-90b11c409ded
+text = oda ja dopitedio icoa Gonelegiwa enagitediogi ica lowigiwepodi acoa iwalo oneetediogi : diganagi awini Goniotagodo .
+text_por = Então o marido voltou, foi buscar os familiares da mulher dizendo: venha ver, queria avisar a tempo, mas sem ofender.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (T ja)
+    (VBAPL dopitedio)
+    (NP-APL
+      (D icoa)
+      (N Gonelegiwa)
+    )
+    (VBAPL enagitediogi)
+    (NP-APL
+      (NP
+        (D ica)
+        (N$ lowigiwepodi)
+      )
+      (D acoa)
+      (N iwalo)
+    )
+    (EV+VBAPL oneetediogi)
+    (PUNC :)
+    (IP
+      (AUX diganagi)
+      (VB awini)
+      (NP
+        (N$ Goniotagodo)
+      )
+    )
+    (PUNC .)
+  )
+  (ID jaguar,0.54)
+)
+/*
+sentence = 55
+uid = 13e5a920-8f07-11e6-b457-90b11c409ded
+text = niigotibece oiwi niGidiaGidi ica nigediogo ipiati eyawigo oda nexaaGowo libegi liwai oda joGonaligitedi .
+text_por = Chegando lá, viram realmente uma onça pintada pressionada pelo coqueiro, então só fizeram um buraco e enterraram a onça ali.
+*/
+(
+  (IP-MAT
+    (VBAPL niigotibece)
+    (VB oiwi)
+    (CT+D niGidiaGidi)
+    (NP
+      (D ica)
+      (N nigediogo)
+    )
+    (VBAPL ipiati)
+    (NP-APL
+      (N eyawigo)
+    )
+    (CONJ oda)
+    (ADV+VB nexaaGowo)
+    (NP
+      (N$ libegi)
+      (NP
+        (N$ liwai)
+      )
+    )
+    (CONJ oda)
+    (T+VBAPL joGonaligitedi)
+    (PUNC .)
+  )
+  (ID jaguar,0.55)
+)
+/*
+sentence = 56
+uid = 13e5a921-8f07-11e6-b457-90b11c409ded
+text = oda joneGidaaGee ica natematigi acoa nigediole naGa yeleo oda jama .
+text_por = E assim termina a história da mulher que virava onça, depois que ela realmente morreu, a onça não perseguiu mais o seu marido, e acabou.
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (T+ADV joneGidaaGee)
+    (NP-SBJ
+      (D ica)
+    )
+    (NP-PRD
+      (NAPL natematigi)
+      (D acoa)
+      (N nigediole)
+    )
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB yeleo)
+      )
+    )
+    (CONJ oda)
+    (T+VB jama)
+    (PUNC .)
+  )
+  (ID jaguar,0.56)
+)

@@ -1,0 +1,791 @@
+/*
+sentence = 1
+uid = 075fd4a1-24f0-11e5-9df9-0015c53587a5
+text = icoa Gonelegiwa ejiwajegi one GodapoaGeneGegi
+text_por = Diz que o homem kadiwéu era guerreiro, diz que este era barrigudo e por isso era chamado de 'coitada da minha canoa'.
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D icoa)
+      (N Gonelegiwa)
+      (ADJ ejiwajegi)
+    )
+    (EV one)
+    (NP-PRD
+      (N$ GodapoaGeneGegi)
+    )
+  )
+  (ID warrior,0.1)
+)
+
+/*
+sentence = 2
+uid = 075fd4a6-24f0-11e5-9df9-0015c53587a5
+status = REVIEW
+text = miniwa me GodapoaGeneGegi one agelaxaGa joaniGidaaGee
+text_por = Ele era um guerreiro considerado barrigudo
+*/
+(
+  (IP-MAT
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (D @iniwa)
+        )
+      )
+      (CP-me
+        (C me)
+        (IP-SUB
+          (NP
+            (N$ GodapoaGeneGegi)
+          )
+        )
+      )
+    )
+    (EV one)
+    (ADJ agelaxaGa)
+    (T joanaGa@)
+    (ADVP
+      (ADV @idaaGe)
+    )
+  )
+  (ID warrior,0.2)
+)
+
+/*
+sentence = 3
+uid = 075fd4aa-24f0-11e5-9df9-0015c53587a5
+status = REVIEW
+text = leeGodi mida ica libonaGadi me adecewatece
+text_por = por causa disso o seu nome era Coitada de Minha Canoa
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N$ leeGodi)
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (Q @ida)
+          (D ica)
+          (N$ libonaGadi)
+        )
+      )
+      (CP-me
+        (C me)
+        (IP-SUB
+          (NP
+            (NPR adecewatece)
+          )
+        )
+      )
+    )
+  )
+  (ID warrior,0.3)
+)
+
+/*
+sentence = 4
+uid = 075fd4af-24f0-11e5-9df9-0015c53587a5
+text = Pida one yediiGa miniwa me nideleGicajo
+text_por = Mas ele era um lutador rápido
+*/
+(
+  (IP-MAT
+    (CONJ Pida)
+    (EV one)
+    (VB yediiGa)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (D @iniwa)
+        )
+      )
+      (CP-me
+        (C me)
+        (IP-SUB
+          (NP
+            (N nideleGicajo)
+          )
+        )
+      )
+    )
+  )
+  (ID warrior,0.4)
+)
+
+/*
+sentence = 5
+uid = 8287c489-51a1-43f2-999c-d01ce0745aba
+text = jonaGa node icoa lokaGetedi
+text_por = ele convidou os seus amigos
+*/
+(
+  (IP-MAT
+    (EV one@)
+    (T @jaGa)
+    (VB node)
+    (NP
+      (D icoa)
+      (N$ lokaGetedi)
+    )
+  )
+  (ID warrior,0.5)
+)
+
+/*
+sentence = 6
+uid = 075fd4b2-24f0-11e5-9df9-0015c53587a5
+status = REVIEW
+text = icoa Goneleegiwadi inaGinoa GodapoGenaGa migotibece oideleGe gaxiana
+text_por = os homens de igual valentia nossa que foram brigar com os paraguaios
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (NP
+        (D icoa)
+        (N Goneleegiwadi)
+      )
+      (Q ina@)
+      (D @inoa)
+      (N$ GodapoGenaGa)
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (AUX @igotibece)
+        (VB oideleGe)
+        (NP
+          (NPR gaxiana)
+        )
+      )
+    )
+  )
+  (ID warrior,0.6)
+)
+
+/*
+sentence = 7
+uid = 075fd4b5-24f0-11e5-9df9-0015c53587a5
+text = niGigotibece jonoGonaditiogi icoa gaxiana
+text_por = E eles foram e avistaram os paraguaios.
+*/
+(
+  (IP-MAT
+    (CP
+      (CT naGa@)
+      (IP-SUB
+        (VB @igotibece)
+      )
+    )
+    (T jonaGa@)
+    (VBAPL @naditiogi)
+    (NP-APL
+      (D icoa)
+      (NPR gaxiana)
+    )
+  )
+  (ID warrior,0.7)
+)
+
+/*
+sentence = 8
+uid = 075fd4b7-24f0-11e5-9df9-0015c53587a5
+text = oda jaGa ecotece nimedaGa
+text_por = Então resolveram pernoitar
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (T jaGa)
+    (VBAPL ecotece)
+    (NP-APL
+      (N$ nimedaGa)
+    )
+  )
+  (ID warrior,0.8)
+)
+
+/*
+sentence = 9
+uid = 075fd4a0-24f0-11e5-9df9-0015c53587a5
+text = owallita ica naGa yajolitaGa okokododi me noenaGa
+text_por = Esperando os galos cantarem para irem avançar nos paraguaios.
+*/
+(
+  (IP-MAT
+    (VBAPL owallita)
+    (NP-APL
+      (D ica)
+    )
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB yajolitaGa)
+        (NP
+          (N okokododi)
+        )
+        (CP-me
+          (C me)
+          (IP-SUB
+            (VB noenaGa)
+          )
+        )
+      )
+    )
+  )
+  (ID warrior,0.9)
+)
+
+/*
+sentence = 10
+uid = 075fd4a4-24f0-11e5-9df9-0015c53587a5
+text = oda jiGigotibece oiwatiogi gaxiana
+text_por = Então avançaram nos paraguaios
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (T jaG@)
+    (AUX @igotibece)
+    (VBAPL oiwatiogi)
+    (NP-APL
+      (NPR gaxiana)
+    )
+  )
+  (ID warrior,0.10)
+)
+
+/*
+sentence = 11
+uid = 075fd4a8-24f0-11e5-9df9-0015c53587a5
+text = jona yajolitaGa me noenaGa
+text_por = Quando todos os galos estavam cantando,
+*/
+(
+  (IP-MAT
+    (T jona)
+    (VB yajolitaGa)
+    (CP-THT
+      (C me)
+      (IP-SUB
+        (VB noenaGa)
+      )
+    )
+  )
+  (ID warrior,0.11)
+)
+
+/*
+sentence = 12
+uid = 9f6edef6-310c-4cd5-86be-629a64fcf82a
+text = oda adecewatece ja niodi .
+text_por = Quando todos os galos estavam cantando, então "coitada da minha canoa" se levantou.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (NP
+      (NPR adecewatece)
+    )
+    (T ja)
+    (VB niodi)
+    (PUNC .)
+  )
+  (ID warrior,0.12)
+)
+
+/*
+sentence = 13
+uid = 075fd4ad-24f0-11e5-9df9-0015c53587a5
+text = oda jona dinowe dibate ica liwiGadi lapaceGegi libonaGadi nigiwiu
+text_por = Então se preparou, pegou seu animal branco chamado veloz.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (T jona)
+    (VB dinowe)
+    (VBAPL dibate)
+    (NP-APL
+      (D ica)
+      (N$ liwiGadi)
+      (NP
+        (N$ lapaceGegi)
+        (NP
+          (N$ libonaGadi)
+          (NP
+            (NPR nigiwiu)
+          )
+        )
+      )
+    )
+  )
+  (ID warrior,0.13)
+)
+
+/*
+sentence = 14
+uid = 075fd4b3-24f0-11e5-9df9-0015c53587a5
+text = niGica naGa igoteloco ica liwiGadi onetediogi icoa niodaGawa icoa lokaGetedi :
+text_por = Quando seu animal já estava encilhado disse para seus companheiros:
+*/
+(
+  (IP-MAT
+    (T+D niGica)
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VBAPL igoteloco)
+        (NP-APL
+          (D ica)
+          (N$ liwiGadi)
+        )
+      )
+    )
+    (EV one@)
+    (VBAPL @eetetiogi)
+    (NP-APL
+      (D icoa)
+      (N$ niodaGawa)
+      (NP
+        (D icoa)
+        (N$ lokaGetedi)
+      )
+    )
+    (PUNC :)
+  )
+  (ID warrior,0.14)
+)
+
+/*
+sentence = 15
+uid = 075fd4b8-24f0-11e5-9df9-0015c53587a5
+text = inioxoadipi adineyaGatitiweji ecoGo ejigo jaaGadi nigatoje gaxiana .
+text_por = Meus irmãos, se preparem, que eu vou à frente gastar a munição dos paraguaios.
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ inioxoadipi)
+    )
+    (VB adineyaGatitiweji)
+    (IP-ADV
+      (VB ecoGo)
+    )
+    (IP
+      (AUX ejigo)
+      (VB jaaGadi)
+      (NP
+        (N$ nigatoje)
+        (NP
+          (NPR gaxiana)
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID warrior,0.15)
+)
+
+/*
+sentence = 16
+uid = 075fd4a2-24f0-11e5-9df9-0015c53587a5
+text = oda joneGigo igo diletaginataka ixomaGateloco lodowe niodaGawa icoa gaxiana
+text_por = Então eles foram galopando e se colocando em frente aos soldados paraguaios
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (T jonaGa@)
+    (AUX @igo)
+    (VB igo)
+    (IP-ADV
+      (VB diletaginataka)
+    )
+    (IP
+      (VBAPL ixomaGateloco)
+      (NP-APL
+        (N$ lodowe)
+        (NP
+          (N niodaGawa)
+        )
+      )
+      (NP
+        (D icoa)
+        (ADJ gaxiana)
+      )
+    )
+  )
+  (ID warrior,0.16)
+)
+
+/*
+sentence = 17
+uid = 075fd4a7-24f0-11e5-9df9-0015c53587a5
+text = oda one onatopetedigi pida aGaca gatoje ane naligo
+text_por = Então diz que atiraram nele mas nenhuma munição o atingiu.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (EV one)
+    (VBAPL onatopetedigi)
+    (CONJ pida)
+    (NEG aG@)
+    (NP
+      (D @aca)
+      (N gatoje)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VB naligo)
+        )
+      )
+    )
+  )
+  (ID warrior,0.17)
+)
+
+/*
+sentence = 18
+uid = 075fd4ab-24f0-11e5-9df9-0015c53587a5
+text = niGijo naGa dopitedijo naGa igo naGa dopitedijo
+text_por = Então ele ia e voltava, ia e voltava de novo.
+*/
+(
+  (IP-MAT
+    (NP
+      (D niGijo)
+    )
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB dopitedijo)
+      )
+    )
+    (CP-ADV
+      (CT naGa)
+      (NP
+        (N igo)
+      )
+    )
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB dopitedijo)
+      )
+    )
+  )
+  (ID warrior,0.18)
+)
+
+/*
+sentence = 19
+uid = 075fd4ae-24f0-11e5-9df9-0015c53587a5
+text = niGica naGa owidijegi me ixomaGatedijo naGa igotace
+text_por = Quando ele foi outra vez ele foi atingido na coxa, mesmo assim ele voltou.
+*/
+(
+  (IP-MAT
+    (NP
+      (D niGica)
+    )
+    (CP-ADV
+      (CT naGa)
+      (NP
+        (N owidijegi)
+      )
+      (CP-me
+        (C me)
+        (IP-SUB
+          (VBAPL ixomaGatedijo)
+          (CP-ADV
+            (CT naGa)
+            (IP-SUB
+              (VB igotace)
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID warrior,0.19)
+)
+
+/*
+sentence = 20
+uid = 075fd4b1-24f0-11e5-9df9-0015c53587a5
+text = oda idokee me diletaginataka
+text_por = E sempre à galope, mas ele já sabia que a munição dos paraguaios havia acabado, porque não tinha mais tiros quando chegou até os companheiros.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+      (ADV idokee)
+    )
+    (CP-me
+      (C me)
+      (IP-SUB
+        (VBAPL diletaginataka)
+      )
+    )
+  )
+  (ID warrior,0.20)
+)
+
+/*
+sentence = 21
+uid = 075fd4b6-24f0-11e5-9df9-0015c53587a5
+text = Pida jona yowoGodi ica naGa ma nigatoje gaxiana
+text_por = Mas ele percebeu que acabou a munição dos paraguaios
+*/
+(
+  (IP-MAT
+    (CONJ Pida)
+    (T jona)
+    (VB yowoGodi)
+    (NP
+      (D ica)
+    )
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB ma)
+        (NP
+          (N$ nigatoje)
+          (NP
+            (NPR gaxiana)
+          )
+        )
+      )
+    )
+  )
+  (ID warrior,0.21)
+)
+
+/*
+sentence = 22
+uid = 075fd4b9-24f0-11e5-9df9-0015c53587a5
+text = leeGodi aGalee oyatopetelogo neGenotediogi lokaGedipi
+text_por = Por causa de não atirarem mais quando ele se afastava de seus amigos
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ leeGodi)
+    )
+    (ADVP
+      (ADV aGalee)
+    )
+    (VBAPL oyatopetelogo)
+    (CP
+      (CT naGa@)
+      (IP-SUB
+        (VB @notediogi)
+        (NP
+          (N$ lokaGedipi)
+        )
+      )
+    )
+  )
+  (ID warrior,0.22)
+)
+
+/*
+sentence = 23
+uid = 075fd4a3-24f0-11e5-9df9-0015c53587a5
+status = REVIEW
+text = oda onetediogi : akaami iokaGedipi ja limedi me eniGa
+text_por = Então ele disse para eles: vocês, meus companheiros, já é a hora deles. Vamos ...
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (VBAPL onetediogi)
+    (PUNC :)
+    (NP
+      (PRO akaami)
+    )
+    (NP
+      (N$ iokaGedipi)
+    )
+    (T ja)
+    (NP
+      (N$ limedi)
+    )
+    (CP-me
+      (C me)
+      (IP-SUB
+        (VB eniGa)
+      )
+    )
+  )
+  (ID warrior,0.23)
+)
+
+/*
+sentence = 24
+uid = 075fd4a5-24f0-11e5-9df9-0015c53587a5
+text = inaxacoGote inopitenaGa gaxiana
+text_por = dar pauladas e flechadas nos paraguaios
+*/
+(
+  (IP-MAT
+    (VB inaxacoGote)
+    (IP-ADV
+      (VB inopitenaGa)
+      (NP
+        (NPR gaxiana)
+      )
+    )
+  )
+  (ID warrior,0.24)
+)
+
+/*
+sentence = 25
+uid = 075fd4a9-24f0-11e5-9df9-0015c53587a5
+text = oda jiGigotibece emaGa onigodi icoatawece icoa gaxiana
+text_por = Então foram embora depois que mataram todos os paraguaios.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (AUX jiGigotibece)
+    (VB emaGa)
+    (IP-ADV
+      (VB onigodi)
+      (NP
+        (Q icoatawece)
+        (D icoa)
+        (NPR gaxiana)
+      )
+    )
+  )
+  (ID warrior,0.25)
+)
+
+/*
+sentence = 26
+uid = 075fd4ac-24f0-11e5-9df9-0015c53587a5
+text = oda jonaGa onadegi ica niganigipawanigi
+text_por = traziam para criar como servos da família.
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (EV jaGa@)
+    (T @one)
+    (VB onadegi)
+    (NP
+      (D ica)
+      (N niganigipawanigi)
+    )
+  )
+  (ID warrior,0.26)
+)
+
+/*
+sentence = 27
+uid = 08cd06b7-bdd2-4a47-ac88-2dbef72a3036
+text = joGonilidagaditiniwace niGidida niganigipawanigi
+text_por = e criaram as crianças
+*/
+(
+  (IP-MAT
+    (T jaG@)
+    (VB @onilidagaditniwak)
+    (NP
+      (D niGidida)
+      (N niganigipawanigi)
+    )
+  )
+  (ID warrior,0.27)
+)
+
+/*
+sentence = 28
+uid = 075fd4b0-24f0-11e5-9df9-0015c53587a5
+text = oda jona idaGee ica natematigi
+text_por = Foi assim a história de
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (T jona)
+    (NP
+      (ADJ idaGee)
+      (D ica)
+      (N$ natematigi)
+    )
+  )
+  (ID warrior,0.28)
+)
+
+/*
+sentence = 29
+uid = 075fd4b4-24f0-11e5-9df9-0015c53587a5
+status = REVIEW
+text = icoa inionigi libonaGadi adecewatece icaGica ica liwiGadi nigiwiu
+text_por = O meu tio de nome Coitado da Minha Canoa e seu animal veloz
+*/
+(
+  (IP-MAT
+    (NP
+      (NP
+        (NP
+          (D icoa)
+          (N inionigi)
+        )
+        (N$ libonaGadi)
+        (NP
+          (NPR adecewatece)
+        )
+      )
+      (CONJP
+        (CONJ icaGica)
+        (NP
+          (D ica)
+          (N$ liwiGadi)
+          (NP
+            (NPR nigiwiu)
+          )
+        )
+      )
+    )
+  )
+  (ID warrior,0.29)
+)

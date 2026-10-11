@@ -1,0 +1,100 @@
+{
+  "document_uid": "D305",
+  "document_title": "5 - LigedemaGa (sapo)",
+  "expected_title": "5 - LigedemaGa (sapo)",
+  "source_json": "6ab93862fc2406c2f4b03a0e.json",
+  "source_json_sha256": "7e1a0e3cd9e8e0dce20033c7d7a2f03ae9ae67e21c7c14dc9ba87ded30db7642",
+  "sentences": 39,
+  "statuses": {
+    "<missing>": 39
+  },
+  "reconstructed_trees": 25,
+  "skipped_trees": [
+    {
+      "number": 7,
+      "uid": "2a79d7cf-24ef-11e5-9df9-0015c53587a5",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 4, 't': 'IP-MAT'}"
+    },
+    {
+      "number": 8,
+      "uid": "2a79d7d1-24ef-11e5-9df9-0015c53587a5",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 8, 't': 'IP-MAT'}"
+    },
+    {
+      "number": 9,
+      "uid": "2a79d7d5-24ef-11e5-9df9-0015c53587a5",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 10, 't': 'IP-MAT'}"
+    },
+    {
+      "number": 11,
+      "uid": "2a79d7dc-24ef-11e5-9df9-0015c53587a5",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 9, 't': 'IP-MAT'}"
+    },
+    {
+      "number": 12,
+      "uid": "2a79d7de-24ef-11e5-9df9-0015c53587a5",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 9, 't': 'IP-MAT'}"
+    },
+    {
+      "number": 21,
+      "uid": "2a79d7d8-24ef-11e5-9df9-0015c53587a5",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 6, 't': 'IP-MAT'}"
+    },
+    {
+      "number": 24,
+      "uid": "2a79b0b1-24ef-11e5-9df9-0015c53587a5",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 8, 't': 'IP-MAT'}"
+    },
+    {
+      "number": 26,
+      "uid": "2a79b0b7-24ef-11e5-9df9-0015c53587a5",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 5, 't': 'IP-MAT'}"
+    },
+    {
+      "number": 30,
+      "uid": "2a79d7cc-24ef-11e5-9df9-0015c53587a5",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 11, 't': 'IP-MAT'}"
+    },
+    {
+      "number": 31,
+      "uid": "2a79d7ce-24ef-11e5-9df9-0015c53587a5",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 8, 't': 'IP-MAT'}"
+    },
+    {
+      "number": 32,
+      "uid": "2a79d7d2-24ef-11e5-9df9-0015c53587a5",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 9, 't': 'IP-MAT'}"
+    },
+    {
+      "number": 34,
+      "uid": "2a79d7d7-24ef-11e5-9df9-0015c53587a5",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 11, 't': 'IP-MAT'}"
+    },
+    {
+      "number": 36,
+      "uid": "2a79b0b0-24ef-11e5-9df9-0015c53587a5",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 11, 't': 'IP-MAT'}"
+    },
+    {
+      "number": 38,
+      "uid": "2a79b0b6-24ef-11e5-9df9-0015c53587a5",
+      "status": null,
+      "error": "usage: kadiweu_constituency.py [-h]\n                               (-n NUMBER [NUMBER ...] | -u UID [UID ...] | --all)\n                               [--show-spans] [--show-positions]\n                               [--no-metadata] [--status STATUS [STATUS ...]]\n                               [--format {pretty,lisp,corpussearch,corpussearch-pos}]\n                               [--trace-format {tycho,corpussearch}]\n                               [-o FILE | --output-dir DIR]\n                               json_file\nkadiweu_constituency.py: error: invalid chunk: {'i': 1, 'f': 6, 't': 'IP-MAT'}"
+    }
+  ],
+  "source_psd": "6ab9386afc2406c2f4b03a0f.psd",
+  "archived_psd": "tycho/psd/6ab9386afc2406c2f4b03a0f.9845c1a1e348.psd"
+}

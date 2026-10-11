@@ -1,0 +1,1758 @@
+Found 39 matching sentence(s).
+================================================================================
+Sentence 1
+================================================================================
+path: $.pages[0].sentences[0]
+uid: 2a79b0b2-24ef-11e5-9df9-0015c53587a5
+text: ica niganigawanigi lalokoa lamidi
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Um menino brincava com seus brinquedos
+comments:
+  <none>
+
+proto-conllu:
+  id=1    form='ica'                misc=TokenRange=0:3
+  id=2    form='niganigawanigi'     misc=TokenRange=3:17
+  id=3    form='lalokoa'            misc=TokenRange=17:24
+  id=4    form='lamidi'             misc=TokenRange=24:30
+
+chunks:
+  span=1-4 type=IP-MAT level=0
+  span=1-2 type=NP-SBJ level=1
+  span=3-4 type=NP-PRD level=1
+  span=4-4 type=NP level=2
+
+tokens:
+  p=1   v='ica'              t='D'          l=1   gloss-br='um'
+      splits:
+        [1] v='i'          t=None       gloss-br=None fn=None idx=None
+        [2] v='ca'         t=None       gloss-br=None fn=None idx=None
+  p=2   v='niganigawanigi'   t='N'          l=1   gloss-br='menino'
+  p=3   v='lalokoa'          t='N$'         l=1   gloss-br='suas brincadeiras'
+      splits:
+        [1] v='l'          t=None       gloss-br=None fn=None idx=None
+        [2] v='alo'        t=None       gloss-br=None fn=None idx=None
+        [3] v='koa'        t=None       gloss-br=None fn=None idx=None
+  p=4   v='lamidi'           t='N$'         l=2   gloss-br='seus brinquedos'
+      splits:
+        [1] v='l'          t=None       gloss-br=None fn=None idx=None
+        [2] v='amidi'      t=None       gloss-br=None fn=None idx=None
+
+conllu/token count check:
+  tokens=4  proto-conllu=4
+  order alignment:
+    token[1] p=1   v='ica'               <->  conllu[1] id='1'  form='ica'
+    token[2] p=2   v='niganigawanigi'    <->  conllu[2] id='2'  form='niganigawanigi'
+    token[3] p=3   v='lalokoa'           <->  conllu[3] id='3'  form='lalokoa'
+    token[4] p=4   v='lamidi'            <->  conllu[4] id='4'  form='lamidi'
+
+================================================================================
+Sentence 2
+================================================================================
+path: $.pages[0].sentences[1]
+uid: 2a79d7c0-24ef-11e5-9df9-0015c53587a5
+text: idiaGii nicotini iwii ajoa ligedemaGa ane idei
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: O menino estava sentado olhando um sapo que estava dentro da garrafa
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-7 type=IP-MAT level=0
+
+tokens:
+  p=1   v='idiaGii'          t='AUX'        l=0   gloss-br='ele estava'
+  p=2   v='nicotini'         t='nicotini'   l=0   gloss-br='sentado'
+  p=3   v='iwii'             t='Q'          l=0   gloss-br='olhando'
+      splits:
+        [1] v='iwi'        t=None       gloss-br='olhar' fn=None idx=None
+        [2] v='i'          t=None       gloss-br=None fn=None idx=None
+  p=4   v='ajoa'             t='ligedemaGa' l=0   gloss-br='um'
+  p=5   v='ligedemaGa'       t='ane'        l=0   gloss-br='sapo'
+  p=6   v='ane'              t='idei'       l=0   gloss-br='que'
+  p=7   v='idei'             t='catiwedi'   l=0   gloss-br='estava'
+      splits:
+        [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
+        [2] v='dei'        t='v'        gloss-br='ficar(permanente)' fn=None idx=None
+
+conllu/token count check:
+  tokens=7  proto-conllu=0
+
+================================================================================
+Sentence 3
+================================================================================
+path: $.pages[0].sentences[2]
+uid: 2a79d7c4-24ef-11e5-9df9-0015c53587a5
+text: niGijo niganigawanigi naGa diote oda naGajo ligedemaGa
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: O sapo foi embora quando o menino dormiu
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-7 type=IP-MAT level=0
+  span=1-1 type=NP level=1
+
+tokens:
+  p=1   v='niGijo'           t='D'          l=1   gloss-br='este'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=2   v='niganigawanigi'   t='niganigawanigi' l=0   gloss-br='menino'
+  p=3   v='naGa'             t='naGa'       l=0   gloss-br='quando'
+      splits:
+        [1] v='n@'         t='C'        gloss-br=None fn=None idx=None
+        [2] v='@aGa'       t='TR'       gloss-br=None fn=None idx=None
+  p=4   v='diote'            t='diote'      l=0   gloss-br='dormiu'
+      splits:
+        [1] v='d'          t='Inv'      gloss-br=None fn=None idx=None
+        [2] v='iote'       t='v'        gloss-br=None fn=None idx=None
+  p=5   v='oda'              t='oda'        l=0   gloss-br='então'
+  p=6   v='naGajo'           t='naGajo'     l=0   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=7   v='ligedemaGa'       t='T+VB'       l=0   gloss-br='sapo'
+
+conllu/token count check:
+  tokens=7  proto-conllu=0
+
+================================================================================
+Sentence 4
+================================================================================
+path: $.pages[0].sentences[3]
+uid: 2a79d7c7-24ef-11e5-9df9-0015c53587a5
+text: naGa yeloGotibige oda niGijo niganigawanigi idia naGa dole
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Quando amanheceu aquele menino olhou para todos os lados
+comments:
+  <none>
+
+proto-conllu:
+  id=1    form='naGa'               misc=TokenRange=0:4
+  id=2    form='yeloGotibige'       misc=TokenRange=4:16
+  id=3    form='oda'                misc=TokenRange=16:19
+  id=4    form='niGijo'             misc=TokenRange=19:25
+  id=5    form='niganigawanigi'     misc=TokenRange=25:39
+  id=6    form='idia'               misc=TokenRange=39:43
+  id=7    form='naGa'               misc=TokenRange=43:47
+  id=8    form='dole'               misc=TokenRange=47:51
+
+chunks:
+  span=1-8 type=IP-MAT level=0
+  span=1-2 type=CP-ADV level=1
+  span=2-2 type=IP-SUB level=2
+  span=3-5 type=CONJP level=1
+  span=4-5 type=NP level=2
+  span=6-6 type=NP level=1
+  span=7-8 type=CP-ADV level=1
+  span=8-8 type=IP-SUB level=2
+
+tokens:
+  p=1   v='naGa'             t='CT'         l=1   gloss-br='quando'
+      splits:
+        [1] v='n@'         t='C'        gloss-br=None fn=None idx=None
+        [2] v='@aGa'       t='TR'       gloss-br=None fn=None idx=None
+  p=2   v='yeloGotibige'     t='VB'         l=2   gloss-br='amanhecer'
+      splits:
+        [1] v='y'          t='Erg'      gloss-br='3pessoa' fn=None idx=None
+        [2] v='eloGo'      t='v'        gloss-br='aparecer' fn=None idx=None
+        [3] v='tibige'     t='Apl'      gloss-br='em' fn=None idx=None
+  p=3   v='oda'              t='CONJ'       l=1   gloss-br='então'
+  p=4   v='niGijo'           t='D'          l=2   gloss-br='esse'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=5   v='niganigawanigi'   t='N'          l=2   gloss-br='menino'
+  p=6   v='idia'             t='D'          l=1   gloss-br='olhou'
+  p=7   v='naGa'             t='CT'         l=1   gloss-br='quando'
+      splits:
+        [1] v='n@'         t='C'        gloss-br=None fn=None idx=None
+        [2] v='@aGa'       t='TR'       gloss-br=None fn=None idx=None
+  p=8   v='dole'             t='VB'         l=2   gloss-br='todos os lados'
+
+conllu/token count check:
+  tokens=8  proto-conllu=8
+  order alignment:
+    token[1] p=1   v='naGa'              <->  conllu[1] id='1'  form='naGa'
+    token[2] p=2   v='yeloGotibige'      <->  conllu[2] id='2'  form='yeloGotibige'
+    token[3] p=3   v='oda'               <->  conllu[3] id='3'  form='oda'
+    token[4] p=4   v='niGijo'            <->  conllu[4] id='4'  form='niGijo'
+    token[5] p=5   v='niganigawanigi'    <->  conllu[5] id='5'  form='niganigawanigi'
+    token[6] p=6   v='idia'              <->  conllu[6] id='6'  form='idia'
+    token[7] p=7   v='naGa'              <->  conllu[7] id='7'  form='naGa'
+    token[8] p=8   v='dole'              <->  conllu[8] id='8'  form='dole'
+
+================================================================================
+Sentence 5
+================================================================================
+path: $.pages[0].sentences[4]
+uid: 2a79d7ca-24ef-11e5-9df9-0015c53587a5
+text: iwitinigi naGajo galopa aGaleGaca me nadi
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Olhou na garrafa e viu que o sapo não estava mais lá
+comments:
+  <none>
+
+proto-conllu:
+  id=1    form='iwitinigi'          misc=TokenRange=0:9
+  id=2    form='naGajo'             misc=TokenRange=9:15
+  id=3    form='galopa'             misc=TokenRange=15:21
+  id=4    form='aGaleGaca'          misc=TokenRange=21:30
+  id=5    form='me'                 misc=TokenRange=30:32
+  id=6    form='nadi'               misc=TokenRange=32:36
+  id=7    form='naGajo'             misc=TokenRange=36:42
+  id=8    form='ligedemaGa'         misc=TokenRange=42:52
+
+chunks:
+  span=1-6 type=IP-MAT level=0
+
+tokens:
+  p=1   v='iwitinigi'        t='iwitinigi'  l=0   gloss-br='olhou'
+  p=2   v='naGajo'           t='naGajo'     l=0   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=3   v='galopa'           t='aGaleGaca'  l=0   gloss-br='garrafa'
+  p=4   v='aGaleGaca'        t='me'         l=0   gloss-br='e não estava mais'
+  p=5   v='me'               t='nadi'       l=0   gloss-br='que'
+  p=6   v='nadi'             t='naGajo'     l=0   gloss-br='viu'
+
+conllu/token count check:
+  tokens=6  proto-conllu=8
+  order alignment:
+    token[1] p=1   v='iwitinigi'         <->  conllu[1] id='1'  form='iwitinigi'
+    token[2] p=2   v='naGajo'            <->  conllu[2] id='2'  form='naGajo'
+    token[3] p=3   v='galopa'            <->  conllu[3] id='3'  form='galopa'
+    token[4] p=4   v='aGaleGaca'         <->  conllu[4] id='4'  form='aGaleGaca'
+    token[5] p=5   v='me'                <->  conllu[5] id='5'  form='me'
+    token[6] p=6   v='nadi'              <->  conllu[6] id='6'  form='nadi'
+    WARNING: token count and proto-conllu count differ.
+
+================================================================================
+Sentence 6
+================================================================================
+path: $.pages[0].sentences[5]
+uid: 2a79d7cd-24ef-11e5-9df9-0015c53587a5
+text: niGidiaGidi oda ja doletigi naGajo ligedemaGa laxawa niGijo liwiGadi
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Então, depois, procurou aquele sapo com a ajuda de seu cachorro
+comments:
+  <none>
+
+proto-conllu:
+  id=1    form='niGidiaGidi'        misc=TokenRange=0:11
+  id=2    form='oda'                misc=TokenRange=11:14
+  id=3    form='ja'                 misc=TokenRange=14:16
+  id=4    form='doletigi'           misc=TokenRange=16:24
+  id=5    form='naGajo'             misc=TokenRange=24:30
+  id=6    form='ligedemaGa'         misc=TokenRange=30:40
+  id=7    form='laxawa'             misc=TokenRange=40:46
+  id=8    form='niGijo'             misc=TokenRange=46:52
+  id=9    form='liwiGadi'           misc=TokenRange=52:60
+  id=10   form='necenigo'           misc=TokenRange=60:68
+
+chunks:
+  span=1-9 type=IP-MAT level=0
+  span=1-3 type=ADVP level=1
+  span=5-5 type=NP-APL level=1
+
+tokens:
+  p=1   v='niGidiaGidi'      t='ADV'        l=1   gloss-br='assim'
+  p=2   v='oda'              t='CONJ'       l=1   gloss-br='então'
+  p=3   v='ja'               t='ADV'        l=1   gloss-br='já'
+      splits:
+        [1] v='jaG'        t='t'        gloss-br='perfectivo/completivo' fn=None idx=None
+  p=4   v='doletigi'         t='VBAPL'      l=0   gloss-br='ele procurou'
+  p=5   v='naGajo'           t='PRO$'       l=1   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=6   v='ligedemaGa'       t='ligedemaGa' l=0   gloss-br='sapo'
+  p=7   v='laxawa'           t='laxawa'     l=0   gloss-br='sua ajuda'
+  p=8   v='niGijo'           t='niGijo'     l=0   gloss-br='este'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=9   v='liwiGadi'         t='liwiGadi'   l=0   gloss-br='seu animal'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='iwiGa'      t='n'        gloss-br=None fn=None idx=None
+        [3] v='di'         t='Cla'      gloss-br=None fn=None idx=None
+
+conllu/token count check:
+  tokens=9  proto-conllu=10
+  order alignment:
+    token[1] p=1   v='niGidiaGidi'       <->  conllu[1] id='1'  form='niGidiaGidi'
+    token[2] p=2   v='oda'               <->  conllu[2] id='2'  form='oda'
+    token[3] p=3   v='ja'                <->  conllu[3] id='3'  form='ja'
+    token[4] p=4   v='doletigi'          <->  conllu[4] id='4'  form='doletigi'
+    token[5] p=5   v='naGajo'            <->  conllu[5] id='5'  form='naGajo'
+    token[6] p=6   v='ligedemaGa'        <->  conllu[6] id='6'  form='ligedemaGa'
+    token[7] p=7   v='laxawa'            <->  conllu[7] id='7'  form='laxawa'
+    token[8] p=8   v='niGijo'            <->  conllu[8] id='8'  form='niGijo'
+    token[9] p=9   v='liwiGadi'          <->  conllu[9] id='9'  form='liwiGadi'
+    WARNING: token count and proto-conllu count differ.
+
+================================================================================
+Sentence 7
+================================================================================
+path: $.pages[0].sentences[6]
+uid: 2a79d7cf-24ef-11e5-9df9-0015c53587a5
+text: iwi iGoa liwelatedi leetidi
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Olhou dentro dos seus sapatos
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=None
+
+tokens:
+  p=1   v='iwi'              t=None         l=None gloss-br='olhou'
+  p=2   v='iGoa'             t=None         l=None gloss-br='seus'
+  p=3   v='liwelatedi'       t=None         l=None gloss-br='sapatos'
+  p=4   v='leetidi'          t=None         l=None gloss-br='dentro'
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 8
+================================================================================
+path: $.pages[0].sentences[7]
+uid: 2a79d7d1-24ef-11e5-9df9-0015c53587a5
+text: oda niGijo liwiGadi lanikoa naGajo galopa oda jaGanoya
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Então o cachorro caiu na garrafa e ela quebrou
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-8 type=IP-MAT level=None
+
+tokens:
+  p=1   v='oda'              t='ADV'        l=None gloss-br='então'
+  p=2   v='niGijo'           t='D'          l=None gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=3   v='liwiGadi'         t='N$'         l=None gloss-br='seu animal'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='iwiGa'      t='n'        gloss-br=None fn=None idx=None
+        [3] v='di'         t='Cla'      gloss-br=None fn=None idx=None
+  p=4   v='lanikoa'          t=None         l=None gloss-br='caiu'
+  p=5   v='naGajo'           t='D'          l=None gloss-br='aquela'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=6   v='galopa'           t=None         l=None gloss-br='garrafa'
+  p=7   v='oda'              t='ADV'        l=None gloss-br='então'
+  p=8   v='jaGanoya'         t=None         l=None gloss-br='já quebrou'
+
+conllu/token count check:
+  tokens=8  proto-conllu=0
+
+================================================================================
+Sentence 9
+================================================================================
+path: $.pages[0].sentences[8]
+uid: 2a79d7d5-24ef-11e5-9df9-0015c53587a5
+text: nigidiaGidi oda ja dibata niGijo liwiGadi coda eliodi me yelatema
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Então o menino muito bravo, pegou o animal
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-10 type=IP-MAT level=None
+
+tokens:
+  p=1   v='nigidiaGidi'      t='CT+ADV'     l=None gloss-br='depois'
+  p=2   v='oda'              t='ADV'        l=None gloss-br='então'
+  p=3   v='ja'               t='T'          l=None gloss-br='já'
+      splits:
+        [1] v='jaG'        t='PFV'      gloss-br=None fn=None idx=None
+  p=4   v='dibata'           t=None         l=None gloss-br='pegou'
+  p=5   v='niGijo'           t='D'          l=None gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=6   v='liwiGadi'         t='N$'         l=None gloss-br='seu animal'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='iwiGa'      t='n'        gloss-br=None fn=None idx=None
+        [3] v='di'         t='Cla'      gloss-br=None fn=None idx=None
+  p=7   v='coda'             t='CONJ'       l=None gloss-br='também'
+  p=8   v='eliodi'           t='Q'          l=None gloss-br='muito'
+  p=9   v='me'               t='C'          l=None gloss-br='que'
+  p=10  v='yelatema'         t=None         l=None gloss-br='bravo'
+
+conllu/token count check:
+  tokens=10  proto-conllu=0
+
+================================================================================
+Sentence 10
+================================================================================
+path: $.pages[0].sentences[9]
+uid: 2a79d7d9-24ef-11e5-9df9-0015c53587a5
+text: Pida niGijo niganigawanigi idokee me doletibige naGajo
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Mas aquele menino sempre procurava aquele sapo
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-7 type=IP-MAT level=0
+  span=2-2 type=NP level=1
+
+tokens:
+  p=1   v='Pida'             t='CONJ'       l=0   gloss-br='mas'
+  p=2   v='niGijo'           t='D'          l=1   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=3   v='niganigawanigi'   t='niganigawanigi' l=0   gloss-br='menino'
+  p=4   v='idokee'           t='idokee'     l=0   gloss-br='sempre'
+  p=5   v='me'               t='me'         l=0   gloss-br='que'
+  p=6   v='doletibige'       t='doletibige' l=0   gloss-br='procurava'
+      splits:
+        [1] v='d'          t=None       gloss-br=None fn=None idx=None
+        [2] v='ole'        t=None       gloss-br=None fn=None idx=None
+        [3] v='tibige'     t=None       gloss-br=None fn=None idx=None
+  p=7   v='naGajo'           t='naGajo'     l=0   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+
+conllu/token count check:
+  tokens=7  proto-conllu=0
+
+================================================================================
+Sentence 11
+================================================================================
+path: $.pages[0].sentences[10]
+uid: 2a79d7dc-24ef-11e5-9df9-0015c53587a5
+text: igotigi catiwetigi nialigi dapawetigi naGajo ligedemaGa ijaGijo liwigadi necenigo
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Andava no mato com seu cachorro gritando pelo sapo
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-9 type=IP-MAT level=None
+
+tokens:
+  p=1   v='igotigi'          t='VBAPL'      l=None gloss-br='andava'
+  p=2   v='catiwetigi'       t=None         l=None gloss-br='dentro'
+  p=3   v='nialigi'          t=None         l=None gloss-br='mato'
+  p=4   v='dapawetigi'       t=None         l=None gloss-br='chamando gritando por'
+  p=5   v='naGajo'           t='D'          l=None gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=6   v='ligedemaGa'       t=None         l=None gloss-br='sapo'
+  p=7   v='ijaGijo'          t=None         l=None gloss-br='com aquele'
+  p=8   v='liwigadi'         t=None         l=None gloss-br='seu animal'
+  p=9   v='necenigo'         t=None         l=None gloss-br='cachorro'
+
+conllu/token count check:
+  tokens=9  proto-conllu=0
+
+================================================================================
+Sentence 12
+================================================================================
+path: $.pages[0].sentences[11]
+uid: 2a79d7de-24ef-11e5-9df9-0015c53587a5
+text: niGijo niganigawanigi naGa nadi ijo begi oda ja iwitinigi
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Aquele menino quando viu um buraco, olhou dentro
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-9 type=IP-MAT level=None
+
+tokens:
+  p=1   v='niGijo'           t='D'          l=None gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=2   v='niganigawanigi'   t='N'          l=None gloss-br='menino'
+  p=3   v='naGa'             t='CT'         l=None gloss-br='quando'
+  p=4   v='nadi'             t=None         l=None gloss-br='viu'
+  p=5   v='ijo'              t='D'          l=None gloss-br='aquele'
+      splits:
+        [1] v='i'          t='Gnr'      gloss-br='Masc' fn=None idx=None
+        [2] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=6   v='begi'             t='N'          l=None gloss-br='buraco'
+  p=7   v='oda'              t='ADV'        l=None gloss-br='então'
+  p=8   v='ja'               t='T'          l=None gloss-br='já'
+      splits:
+        [1] v='jaG'        t='PFV'      gloss-br=None fn=None idx=None
+  p=9   v='iwitinigi'        t=None         l=None gloss-br='olhou dentro'
+
+conllu/token count check:
+  tokens=9  proto-conllu=0
+
+================================================================================
+Sentence 13
+================================================================================
+path: $.pages[0].sentences[12]
+uid: 2a79b0b5-24ef-11e5-9df9-0015c53587a5
+text: Pida niGijo liwiGadi jaaGaGa nadi ajo witelo libato ane idei
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Mas o cachorro também viu a cachopa do marimbondo que estava no pé da árvore
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-11 type=IP-MAT level=0
+  span=2-3 type=NP-SBJ level=1
+  span=8-11 type=NP-PRD level=1
+  span=8-11 type=CP-FRL level=2
+  span=8-8 type=WNP level=3
+  span=9-11 type=IP-SUB level=3
+  span=11-11 type=NP level=4
+  span=9-9 type=NP-TRACE level=4
+
+tokens:
+  p=1   v='Pida'             t='CONJ'       l=0   gloss-br='mas'
+  p=2   v='niGijo'           t='D'          l=1   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=3   v='liwiGadi'         t='N$'         l=1   gloss-br='animal'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='iwiGa'      t='n'        gloss-br=None fn=None idx=None
+        [3] v='di'         t='Cla'      gloss-br=None fn=None idx=None
+  p=4   v='jaaGaGa'          t='C'          l=0   gloss-br='também'
+  p=5   v='nadi'             t='nadi'       l=0   gloss-br='viu'
+  p=6   v='ajo'              t='ajo'        l=0   gloss-br='aquele'
+      splits:
+        [1] v='a'          t='Gnr'      gloss-br='Fem' fn=None idx=None
+        [2] v='jo'         t='Ncl'      gloss-br='em_frente' fn=None idx=None
+  p=7   v='witelo'           t='witelo'     l=0   gloss-br='marimbondo'
+  p=8   v='libato'           t='WPRO'       l=3   gloss-br='a sua cachopa'
+  p=9   v='*T*'              t=None         l=4   gloss-br=None
+  p=10  v='ane'              t='VB'         l=3   gloss-br='que'
+  p=11  v='idei'             t='N$'         l=4   gloss-br='estava'
+      splits:
+        [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
+        [2] v='dei'        t='v'        gloss-br='ficar(permanente)' fn=None idx=None
+
+conllu/token count check:
+  tokens=11  proto-conllu=0
+
+================================================================================
+Sentence 14
+================================================================================
+path: $.pages[0].sentences[13]
+uid: 2a79d7c2-24ef-11e5-9df9-0015c53587a5
+text: eGidaGe me iwitinigi niGijo begi oda daxoitice
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Enquanto ele estava olhando dentro do buraco, saiu de dentro uma preá
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-7 type=IP-MAT level=0
+  span=3-4 type=NP level=1
+  span=5-5 type=ADVP level=1
+
+tokens:
+  p=1   v='eGidaGe'          t='eGidaGe'    l=0   gloss-br='enquanto'
+  p=2   v='me'               t='me'         l=0   gloss-br='que'
+  p=3   v='iwitinigi'        t='D'          l=1   gloss-br='olhando'
+  p=4   v='niGijo'           t='N'          l=1   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=5   v='begi'             t='ADV'        l=1   gloss-br='buraco'
+  p=6   v='oda'              t='daxoitice'  l=0   gloss-br='então'
+  p=7   v='daxoitice'        t='ajo'        l=0   gloss-br='pulou de dentro'
+
+conllu/token count check:
+  tokens=7  proto-conllu=0
+
+================================================================================
+Sentence 15
+================================================================================
+path: $.pages[0].sentences[14]
+uid: 2a79d7c5-24ef-11e5-9df9-0015c53587a5
+text: oda eliodi me nawela
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Então ele se assustou muito
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=0
+  span=1-1 type=ADVP level=1
+  span=2-4 type=CP-me level=1
+  span=4-4 type=IP-SUB level=2
+
+tokens:
+  p=1   v='oda'              t='ADV'        l=1   gloss-br='então'
+  p=2   v='eliodi'           t='Q'          l=1   gloss-br='muito'
+  p=3   v='me'               t='C'          l=1   gloss-br='que'
+  p=4   v='nawela'           t='VB'         l=2   gloss-br='assustou'
+      splits:
+        [1] v='n'          t='Ant'      gloss-br='antipassivo' fn=None idx=None
+        [2] v='awela'      t='vi'       gloss-br='assustar' fn=None idx=None
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 16
+================================================================================
+path: $.pages[0].sentences[15]
+uid: 2a79d7c9-24ef-11e5-9df9-0015c53587a5
+text: ijaGijo niGijo liwiGadi baGa idokee me nomoketice naGajo witelo ane
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Mas o seu animal continuava latindo para o marimbondo que estava na árvore
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-11 type=IP-MAT level=0
+  span=7-11 type=NP level=1
+  span=9-11 type=CP-REL level=2
+  span=9-9 type=WNP level=3
+  span=10-11 type=IP-SUB level=3
+  span=10-10 type=NP-TRACE level=4
+
+tokens:
+  p=1   v='ijaGijo'          t='ijaGijo'    l=0   gloss-br='mas o seu animal'
+  p=2   v='niGijo'           t='niGijo'     l=0   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=3   v='liwiGadi'         t='liwiGadi'   l=0   gloss-br='seu animal'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='iwiGa'      t='n'        gloss-br=None fn=None idx=None
+        [3] v='di'         t='Cla'      gloss-br=None fn=None idx=None
+  p=4   v='baGa'             t='baGa'       l=0   gloss-br='continuativo'
+  p=5   v='idokee'           t='idokee'     l=0   gloss-br='estar sempre'
+  p=6   v='me'               t='me'         l=0   gloss-br='que'
+  p=7   v='nomoketice'       t='PRO$'       l=1   gloss-br='latindo para'
+  p=8   v='naGajo'           t='N'          l=1   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=9   v='witelo'           t='WPRO'       l=3   gloss-br='marimbondo'
+  p=10  v='*T*'              t=None         l=4   gloss-br=None
+  p=11  v='ane'              t='VB'         l=3   gloss-br='que'
+
+conllu/token count check:
+  tokens=11  proto-conllu=0
+
+================================================================================
+Sentence 17
+================================================================================
+path: $.pages[0].sentences[16]
+uid: 2a79d7cb-24ef-11e5-9df9-0015c53587a5
+text: nigidiaGidi niGijo necenigo ja yanikati naGago
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Depois o cachorro derrubou a cachopa de marimbondo
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-6 type=IP-MAT level=0
+  span=2-2 type=NP level=1
+
+tokens:
+  p=1   v='nigidiaGidi'      t='CT+ADV'     l=0   gloss-br='depois'
+  p=2   v='niGijo'           t='D'          l=1   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=3   v='necenigo'         t='necenigo'   l=0   gloss-br='cachorro'
+  p=4   v='ja'               t='ja'         l=0   gloss-br='já'
+      splits:
+        [1] v='jaG'        t='t'        gloss-br='perfectivo/completivo' fn=None idx=None
+  p=5   v='yanikati'         t='naGago'     l=0   gloss-br='derrubou'
+  p=6   v='naGago'           t='witelo'     l=0   gloss-br='aquela'
+
+conllu/token count check:
+  tokens=6  proto-conllu=0
+
+================================================================================
+Sentence 18
+================================================================================
+path: $.pages[0].sentences[17]
+uid: 2a79d7d0-24ef-11e5-9df9-0015c53587a5
+text: oda niGijo niganigawanigi jigiGo dalaGateloco naGajo niale me iwi
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Então o menino subiu naquela árvore para olhar dentro do oco dela
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-9 type=IP-MAT level=0
+  span=1-1 type=ADVP level=1
+  span=2-2 type=NP level=1
+
+tokens:
+  p=1   v='oda'              t='ADV'        l=1   gloss-br='então'
+  p=2   v='niGijo'           t='D'          l=1   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=3   v='niganigawanigi'   t='niganigawanigi' l=0   gloss-br='menino'
+  p=4   v='jigiGo'           t='dalaGateloco' l=0   gloss-br='foi'
+  p=5   v='dalaGateloco'     t='naGajo'     l=0   gloss-br='subindo na'
+  p=6   v='naGajo'           t='niale'      l=0   gloss-br='aquela'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=7   v='niale'            t='me'         l=0   gloss-br='árvore'
+  p=8   v='me'               t='iwi'        l=0   gloss-br='que'
+  p=9   v='iwi'              t='niGijo'     l=0   gloss-br='olhou'
+      splits:
+        [1] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [2] v='wi'         t='v'        gloss-br=None fn=None idx=None
+
+conllu/token count check:
+  tokens=9  proto-conllu=0
+
+================================================================================
+Sentence 19
+================================================================================
+path: $.pages[0].sentences[18]
+uid: 2a79d7d3-24ef-11e5-9df9-0015c53587a5
+text: egidaGee me iwi niGijo lawimagajegi niGajo niale oda daxoitice
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Enquanto olhava o oco da árvore, saiu um corujão
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-9 type=IP-MAT level=0
+  span=8-8 type=NP-SBJ level=1
+  span=9-9 type=NP-PRD level=1
+
+tokens:
+  p=1   v='egidaGee'         t='egidaGee'   l=0   gloss-br='enquanto'
+  p=2   v='me'               t='me'         l=0   gloss-br='que'
+  p=3   v='iwi'              t='iwi'        l=0   gloss-br='olhava'
+      splits:
+        [1] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [2] v='wi'         t='v'        gloss-br=None fn=None idx=None
+  p=4   v='niGijo'           t='niGijo'     l=0   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=5   v='lawimagajegi'     t='niGajo'     l=0   gloss-br='seu oco'
+  p=6   v='niGajo'           t='niale'      l=0   gloss-br='aquela'
+  p=7   v='niale'            t='oda'        l=0   gloss-br='árvore'
+  p=8   v='oda'              t='N'          l=1   gloss-br='então'
+  p=9   v='daxoitice'        t='N'          l=1   gloss-br='saiu'
+
+conllu/token count check:
+  tokens=9  proto-conllu=0
+
+================================================================================
+Sentence 20
+================================================================================
+path: $.pages[0].sentences[19]
+uid: 2a79d7d6-24ef-11e5-9df9-0015c53587a5
+text: oda niGijo niganigawanigi daGaxa me nawela
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Então o menino se assustou e caiu
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-6 type=IP-MAT level=0
+  span=1-1 type=ADVP level=1
+  span=2-2 type=NP level=1
+
+tokens:
+  p=1   v='oda'              t='ADV'        l=1   gloss-br='então'
+  p=2   v='niGijo'           t='D'          l=1   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=3   v='niganigawanigi'   t='niganigawanigi' l=0   gloss-br='menino'
+  p=4   v='daGaxa'           t='daGaxa'     l=0   gloss-br='muito'
+  p=5   v='me'               t='me'         l=0   gloss-br='que'
+  p=6   v='nawela'           t='nawela'     l=0   gloss-br='assustou'
+      splits:
+        [1] v='n'          t='Ant'      gloss-br='antipassivo' fn=None idx=None
+        [2] v='awela'      t='vi'       gloss-br='assustar' fn=None idx=None
+
+conllu/token count check:
+  tokens=6  proto-conllu=0
+
+================================================================================
+Sentence 21
+================================================================================
+path: $.pages[0].sentences[20]
+uid: 2a79d7d8-24ef-11e5-9df9-0015c53587a5
+text: Pida niGijo liwiGadi jaaGaGa oyelio witelo
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Mas os marimbondos já estavam picando o cachorro
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-6 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Pida'             t='CONJ'       l=None gloss-br='mas'
+  p=2   v='niGijo'           t='D'          l=None gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=3   v='liwiGadi'         t='N$'         l=None gloss-br='animal'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='iwiGa'      t='n'        gloss-br=None fn=None idx=None
+        [3] v='di'         t='Cla'      gloss-br=None fn=None idx=None
+  p=4   v='jaaGaGa'          t='C'          l=None gloss-br='já'
+  p=5   v='oyelio'           t=None         l=None gloss-br='eles picavam'
+  p=6   v='witelo'           t='N'          l=None gloss-br='marimbondo'
+
+conllu/token count check:
+  tokens=6  proto-conllu=0
+
+================================================================================
+Sentence 22
+================================================================================
+path: $.pages[0].sentences[21]
+uid: 2a79d7da-24ef-11e5-9df9-0015c53587a5
+text: oda naGajo jigiti noGojatice niGijo
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Então o corujão bicou o menino
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-5 type=IP-MAT level=0
+  span=1-1 type=ADVP level=1
+  span=2-3 type=NP level=1
+
+tokens:
+  p=1   v='oda'              t='ADV'        l=1   gloss-br='então'
+  p=2   v='naGajo'           t='PRO$'       l=1   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=3   v='jigiti'           t='N'          l=1   gloss-br='corujão'
+  p=4   v='noGojatice'       t='noGojatice' l=0   gloss-br='bicou'
+  p=5   v='niGijo'           t='niGijo'     l=0   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+
+conllu/token count check:
+  tokens=5  proto-conllu=0
+
+================================================================================
+Sentence 23
+================================================================================
+path: $.pages[0].sentences[22]
+uid: 2a79d7dd-24ef-11e5-9df9-0015c53587a5
+text: nigidiaGidi naGa ika niGijo niganigawanigi naGajo
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Depois quando o corujão não estava mais no menino
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-6 type=IP-MAT level=0
+  span=5-6 type=NP level=1
+
+tokens:
+  p=1   v='nigidiaGidi'      t='CT+ADV'     l=0   gloss-br='depois'
+  p=2   v='naGa'             t='CT'         l=0   gloss-br='quando'
+  p=3   v='ika'              t='ika'        l=0   gloss-br='ausente'
+  p=4   v='niGijo'           t='niGijo'     l=0   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=5   v='niganigawanigi'   t='PRO$'       l=1   gloss-br='menino'
+  p=6   v='naGajo'           t='N'          l=1   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+
+conllu/token count check:
+  tokens=6  proto-conllu=0
+
+================================================================================
+Sentence 24
+================================================================================
+path: $.pages[0].sentences[23]
+uid: 2a79b0b1-24ef-11e5-9df9-0015c53587a5
+text: oda ja jiGida dinanatagigi me doletagigi naGajo liGedemaGa
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Então ele começou a procurar aquele sapo
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-8 type=IP-MAT level=None
+
+tokens:
+  p=1   v='oda'              t='ADV'        l=None gloss-br='então'
+  p=2   v='ja'               t='T'          l=None gloss-br='já'
+      splits:
+        [1] v='jaG'        t='PFV'      gloss-br=None fn=None idx=None
+  p=3   v='jiGida'           t='T+D'        l=None gloss-br='ele'
+  p=4   v='dinanatagigi'     t=None         l=None gloss-br='começou'
+  p=5   v='me'               t='C'          l=None gloss-br='que'
+  p=6   v='doletagigi'       t=None         l=None gloss-br='procurar de novo'
+  p=7   v='naGajo'           t='D'          l=None gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=8   v='liGedemaGa'       t=None         l=None gloss-br='sapo'
+
+conllu/token count check:
+  tokens=8  proto-conllu=0
+
+================================================================================
+Sentence 25
+================================================================================
+path: $.pages[0].sentences[24]
+uid: 2a79b0b4-24ef-11e5-9df9-0015c53587a5
+text: oda niGijo niganigawanigi idoke me dapawatigi
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Então o menino estava sempre a procurar o sapo
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-6 type=IP-MAT level=0
+  span=1-1 type=ADVP level=1
+  span=2-2 type=NP level=1
+
+tokens:
+  p=1   v='oda'              t='ADV'        l=1   gloss-br='então'
+  p=2   v='niGijo'           t='D'          l=1   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=3   v='niganigawanigi'   t='niganigawanigi' l=0   gloss-br='menino'
+  p=4   v='idoke'            t='C'          l=0   gloss-br='estava sempre'
+  p=5   v='me'               t='dapawatigi' l=0   gloss-br='que'
+  p=6   v='dapawatigi'       t='naGajo'     l=0   gloss-br='procurar'
+
+conllu/token count check:
+  tokens=6  proto-conllu=0
+
+================================================================================
+Sentence 26
+================================================================================
+path: $.pages[0].sentences[25]
+uid: 2a79b0b7-24ef-11e5-9df9-0015c53587a5
+text: oda anadi naGajo oticaGanigo libiwe
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: E não viu o chifre do cervo
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-5 type=IP-MAT level=None
+
+tokens:
+  p=1   v='oda'              t='ADV'        l=None gloss-br='então'
+  p=2   v='anadi'            t=None         l=None gloss-br='não viu'
+  p=3   v='naGajo'           t='D'          l=None gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=4   v='oticaGanigo'      t='N'          l=None gloss-br='cervo'
+  p=5   v='libiwe'           t='N$'         l=None gloss-br='seu chifre'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br='3' fn=None idx=None
+        [2] v='ibiwe'      t='n'        gloss-br=None fn=None idx=None
+
+conllu/token count check:
+  tokens=5  proto-conllu=0
+
+================================================================================
+Sentence 27
+================================================================================
+path: $.pages[0].sentences[26]
+uid: 2a79d7c3-24ef-11e5-9df9-0015c53587a5
+text: naGa dibateloco diletibige daGa niale
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Quando descobriu pensou que era galho de árvore
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-5 type=IP-MAT level=0
+  span=4-5 type=NP level=1
+  span=4-4 type=NP level=2
+
+tokens:
+  p=1   v='naGa'             t='CT'         l=0   gloss-br='quando'
+  p=2   v='dibateloco'       t='dibateloco' l=0   gloss-br='descobriu'
+  p=3   v='diletibige'       t='C'          l=0   gloss-br='pensou'
+  p=4   v='daGa'             t='N'          l=2   gloss-br='que era'
+  p=5   v='niale'            t='N$'         l=1   gloss-br='árvore'
+
+conllu/token count check:
+  tokens=5  proto-conllu=0
+
+================================================================================
+Sentence 28
+================================================================================
+path: $.pages[0].sentences[27]
+uid: 2a79d7c6-24ef-11e5-9df9-0015c53587a5
+text: oda naGajo oticaGanigo ja nayioketini niGijo
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Então o cervo levantou enganchado o menino
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-6 type=IP-MAT level=0
+  span=1-1 type=ADVP level=1
+  span=2-3 type=NP level=1
+
+tokens:
+  p=1   v='oda'              t='ADV'        l=1   gloss-br='então'
+  p=2   v='naGajo'           t='PRO$'       l=1   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=3   v='oticaGanigo'      t='N'          l=1   gloss-br='cervo'
+  p=4   v='ja'               t='T'          l=0   gloss-br='já'
+      splits:
+        [1] v='jaG'        t='t'        gloss-br='perfectivo/completivo' fn=None idx=None
+  p=5   v='nayioketini'      t='nayioketini' l=0   gloss-br='levantou enganchado'
+  p=6   v='niGijo'           t='niGijo'     l=0   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+
+conllu/token count check:
+  tokens=6  proto-conllu=0
+
+================================================================================
+Sentence 29
+================================================================================
+path: $.pages[0].sentences[28]
+uid: 2a79d7c8-24ef-11e5-9df9-0015c53587a5
+text: Pida niGijo liwiGadi idokee me lixigaGawa
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Mas o seu animal estava sempre acompanhando-o
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-6 type=IP-MAT level=0
+  span=2-3 type=NP level=1
+  span=4-4 type=ADVP level=1
+  span=5-6 type=CP level=1
+  span=5-6 type=CP-me level=2
+  span=6-6 type=IP-SUB level=3
+  span=6-6 type=NP level=4
+
+tokens:
+  p=1   v='Pida'             t='CONJ'       l=0   gloss-br='mas'
+  p=2   v='niGijo'           t='D'          l=1   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=3   v='liwiGadi'         t='N$'         l=1   gloss-br='seu animal'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='iwiGa'      t='n'        gloss-br=None fn=None idx=None
+        [3] v='di'         t='Cla'      gloss-br=None fn=None idx=None
+  p=4   v='idokee'           t='ADV'        l=1   gloss-br='estava sempre'
+  p=5   v='me'               t='C'          l=2   gloss-br='que'
+  p=6   v='lixigaGawa'       t='N$'         l=4   gloss-br='acompanhando'
+
+conllu/token count check:
+  tokens=6  proto-conllu=0
+
+================================================================================
+Sentence 30
+================================================================================
+path: $.pages[0].sentences[29]
+uid: 2a79d7cc-24ef-11e5-9df9-0015c53587a5
+text: Oda naGajo oticaGanigo yeloteGe niGijo niganigawanigi oda yokoletinigi akiidi ijaGijo liwiGadi
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Então o cervo jogou o menino junto com o cachorro no rio
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-11 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Oda'              t='ADV'        l=None gloss-br='então'
+  p=2   v='naGajo'           t='D'          l=None gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=3   v='oticaGanigo'      t='N'          l=None gloss-br='cervo'
+  p=4   v='yeloteGe'         t=None         l=None gloss-br='correu'
+  p=5   v='niGijo'           t='D'          l=None gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=6   v='niganigawanigi'   t='N'          l=None gloss-br='menino'
+  p=7   v='oda'              t='ADV'        l=None gloss-br='então'
+  p=8   v='yokoletinigi'     t=None         l=None gloss-br='jogou-o'
+  p=9   v='akiidi'           t='N'          l=None gloss-br='no rio'
+  p=10  v='ijaGijo'          t=None         l=None gloss-br='ele'
+  p=11  v='liwiGadi'         t='N$'         l=None gloss-br='cachorro'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='iwiGa'      t='n'        gloss-br=None fn=None idx=None
+        [3] v='di'         t='Cla'      gloss-br=None fn=None idx=None
+
+conllu/token count check:
+  tokens=11  proto-conllu=0
+
+================================================================================
+Sentence 31
+================================================================================
+path: $.pages[0].sentences[30]
+uid: 2a79d7ce-24ef-11e5-9df9-0015c53587a5
+text: niGijo naGa enitinigi niGijo akiidi diotinece niGijo liwiGadi
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Ele caiu no rio junto com seu animal
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-8 type=IP-MAT level=None
+
+tokens:
+  p=1   v='niGijo'           t='D'          l=None gloss-br='ele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=2   v='naGa'             t='CT'         l=None gloss-br='quando'
+  p=3   v='enitinigi'        t=None         l=None gloss-br='caiu'
+  p=4   v='niGijo'           t='D'          l=None gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=5   v='akiidi'           t='N'          l=None gloss-br='rio'
+  p=6   v='diotinece'        t=None         l=None gloss-br='junto'
+  p=7   v='niGijo'           t='D'          l=None gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=8   v='liwiGadi'         t='N$'         l=None gloss-br='seu animal'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='iwiGa'      t='n'        gloss-br=None fn=None idx=None
+        [3] v='di'         t='Cla'      gloss-br=None fn=None idx=None
+
+conllu/token count check:
+  tokens=8  proto-conllu=0
+
+================================================================================
+Sentence 32
+================================================================================
+path: $.pages[0].sentences[31]
+uid: 2a79d7d2-24ef-11e5-9df9-0015c53587a5
+text: Pida naGa nabotigi oda niGijo liwiGadi oda wayoiteloco lacilo
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Mas quando flutuou, então seu animal subiu na sua cabeça
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-9 type=IP-MAT level=None
+
+tokens:
+  p=1   v='Pida'             t='CONJ'       l=None gloss-br='mas'
+  p=2   v='naGa'             t='CT'         l=None gloss-br='quando'
+  p=3   v='nabotigi'         t=None         l=None gloss-br='flutuou'
+  p=4   v='oda'              t='ADV'        l=None gloss-br='então'
+  p=5   v='niGijo'           t='D'          l=None gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Anf'      gloss-br=None fn=None idx=None
+        [2] v='i'          t='Gnr'      gloss-br='M' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=6   v='liwiGadi'         t='N$'         l=None gloss-br='seu animal'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='iwiGa'      t='n'        gloss-br=None fn=None idx=None
+        [3] v='di'         t='Cla'      gloss-br=None fn=None idx=None
+  p=7   v='oda'              t='ADV'        l=None gloss-br='então'
+  p=8   v='wayoiteloco'      t=None         l=None gloss-br='subiu na'
+  p=9   v='lacilo'           t=None         l=None gloss-br='sua cabeça'
+
+conllu/token count check:
+  tokens=9  proto-conllu=0
+
+================================================================================
+Sentence 33
+================================================================================
+path: $.pages[0].sentences[32]
+uid: 2a79d7d4-24ef-11e5-9df9-0015c53587a5
+text: oda idia naGa dole
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Então ele olhou para todos os lados
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=0
+  span=1-1 type=ADVP level=1
+  span=2-2 type=NP level=1
+  span=3-4 type=CP-ADV level=1
+  span=4-4 type=IP-SUB level=2
+
+tokens:
+  p=1   v='oda'              t='ADV'        l=1   gloss-br='então'
+  p=2   v='idia'             t='D'          l=1   gloss-br='olhou'
+  p=3   v='naGa'             t='CT'         l=1   gloss-br='quando'
+  p=4   v='dole'             t='VB'         l=2   gloss-br='todos os lados'
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 34
+================================================================================
+path: $.pages[0].sentences[33]
+uid: 2a79d7d7-24ef-11e5-9df9-0015c53587a5
+text: nigidiaGidi oda ja diGetita ijaGijo liwiGadi oda nadi naGajo niale ane
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Então quando chegou no seco com seu animal, ele viu a árvore que era oca
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-11 type=IP-MAT level=None
+
+tokens:
+  p=1   v='nigidiaGidi'      t='CT+ADV'     l=None gloss-br='depois'
+  p=2   v='oda'              t='ADV'        l=None gloss-br='então'
+  p=3   v='ja'               t='T'          l=None gloss-br='já'
+      splits:
+        [1] v='jaG'        t='PFV'      gloss-br=None fn=None idx=None
+  p=4   v='diGetita'         t=None         l=None gloss-br='chegou'
+  p=5   v='ijaGijo'          t=None         l=None gloss-br='no seco'
+  p=6   v='liwiGadi'         t='N$'         l=None gloss-br='seu animal'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='iwiGa'      t='n'        gloss-br=None fn=None idx=None
+        [3] v='di'         t='Cla'      gloss-br=None fn=None idx=None
+  p=7   v='oda'              t='ADV'        l=None gloss-br='então'
+  p=8   v='nadi'             t=None         l=None gloss-br='viu'
+  p=9   v='naGajo'           t='PRO$'       l=None gloss-br='aquela'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=10  v='niale'            t='N'          l=None gloss-br='árvore'
+  p=11  v='ane'              t='WPRO'       l=None gloss-br='que'
+
+conllu/token count check:
+  tokens=11  proto-conllu=0
+
+================================================================================
+Sentence 35
+================================================================================
+path: $.pages[0].sentences[34]
+uid: 2a79d7db-24ef-11e5-9df9-0015c53587a5
+text: oda metaijo liwiGadi anotokitini jiwinaga ica ane idei
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Então disse para seu animal que ficasse quieto, vamos ver o que está dentro da árvore
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-8 type=IP-MAT level=0
+  span=1-1 type=ADVP level=1
+
+tokens:
+  p=1   v='oda'              t='ADV'        l=1   gloss-br='então'
+  p=2   v='metaijo'          t='metaijo'    l=0   gloss-br='disse para ele'
+  p=3   v='liwiGadi'         t='liwiGadi'   l=0   gloss-br='seu animal'
+      splits:
+        [1] v='l'          t='Gen'      gloss-br=None fn=None idx=None
+        [2] v='iwiGa'      t='n'        gloss-br=None fn=None idx=None
+        [3] v='di'         t='Cla'      gloss-br=None fn=None idx=None
+  p=4   v='anotokitini'      t='jiwinaga'   l=0   gloss-br='que ficasse quieto'
+  p=5   v='jiwinaga'         t='ica'        l=0   gloss-br='vamos ver'
+  p=6   v='ica'              t='ane'        l=0   gloss-br='o'
+      splits:
+        [1] v='i'          t=None       gloss-br=None fn=None idx=None
+        [2] v='ca'         t=None       gloss-br=None fn=None idx=None
+  p=7   v='ane'              t='idei'       l=0   gloss-br='que'
+  p=8   v='idei'             t='naGadi'     l=0   gloss-br='está'
+      splits:
+        [1] v='i'          t='Erg'      gloss-br='3' fn=None idx=None
+        [2] v='dei'        t='v'        gloss-br='ficar(permanente)' fn=None idx=None
+
+conllu/token count check:
+  tokens=8  proto-conllu=0
+
+================================================================================
+Sentence 36
+================================================================================
+path: $.pages[0].sentences[35]
+uid: 2a79b0b0-24ef-11e5-9df9-0015c53587a5
+text: oda naGa oiwo caticedi naGajo niale oda joGonadi naGajo ligedemaGa anodoletigi
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Então quando olharam para dentro daquela árvore, viram o sapo que procuravam
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-11 type=IP-MAT level=None
+
+tokens:
+  p=1   v='oda'              t='ADV'        l=None gloss-br='então'
+  p=2   v='naGa'             t='CT'         l=None gloss-br='quando'
+  p=3   v='oiwo'             t=None         l=None gloss-br='olharam'
+  p=4   v='caticedi'         t=None         l=None gloss-br='dentro'
+  p=5   v='naGajo'           t='D'          l=None gloss-br='aquela'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=6   v='niale'            t='N'          l=None gloss-br='árvore'
+  p=7   v='oda'              t='ADV'        l=None gloss-br='então'
+  p=8   v='joGonadi'         t=None         l=None gloss-br='viram'
+  p=9   v='naGajo'           t='D'          l=None gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=10  v='ligedemaGa'       t=None         l=None gloss-br='sapo'
+  p=11  v='anodoletigi'      t=None         l=None gloss-br='que procuravam'
+
+conllu/token count check:
+  tokens=11  proto-conllu=0
+
+================================================================================
+Sentence 37
+================================================================================
+path: $.pages[0].sentences[36]
+uid: 2a79b0b3-24ef-11e5-9df9-0015c53587a5
+text: Pida naGajo ligedemaGa jogowidi
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: Mas aquele sapo já tinha filhotes
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-4 type=IP-MAT level=0
+  span=2-2 type=NP-SBJ level=1
+  span=4-4 type=NP-PRD level=1
+
+tokens:
+  p=1   v='Pida'             t='CONJ'       l=0   gloss-br='mas'
+  p=2   v='naGajo'           t='PRO$'       l=1   gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br=None fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br=None fn=None idx=None
+  p=3   v='ligedemaGa'       t='ligedemaGa' l=0   gloss-br='sapo'
+  p=4   v='jogowidi'         t='N'          l=1   gloss-br='já tinha'
+
+conllu/token count check:
+  tokens=4  proto-conllu=0
+
+================================================================================
+Sentence 38
+================================================================================
+path: $.pages[0].sentences[37]
+uid: 2a79b0b6-24ef-11e5-9df9-0015c53587a5
+text: nigidiaGidi oda jogodibata liona naGajo ligedemaGa
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: E pegaram um filhote do sapo
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-6 type=IP-MAT level=None
+
+tokens:
+  p=1   v='nigidiaGidi'      t='CT+ADV'     l=None gloss-br='depois'
+  p=2   v='oda'              t='ADV'        l=None gloss-br='então'
+  p=3   v='jogodibata'       t=None         l=None gloss-br='pegaram'
+  p=4   v='liona'            t=None         l=None gloss-br='um filhote'
+  p=5   v='naGajo'           t='D'          l=None gloss-br='aquele'
+      splits:
+        [1] v='nG'         t='Dem'      gloss-br=None fn=None idx=None
+        [2] v='a'          t='Gnr'      gloss-br='F' fn=None idx=None
+        [3] v='jo'         t='Ncl'      gloss-br='indo' fn=None idx=None
+  p=6   v='ligedemaGa'       t=None         l=None gloss-br='sapo'
+
+conllu/token count check:
+  tokens=6  proto-conllu=0
+
+================================================================================
+Sentence 39
+================================================================================
+path: $.pages[0].sentences[38]
+uid: 2a79d7c1-24ef-11e5-9df9-0015c53587a5
+text: oda joGopitibece naGa
+status: None
+struct_status: None
+visible: None
+container_meta:
+  uid: P31
+translations:
+  pt-br: E foram embora
+comments:
+  <none>
+
+proto-conllu:
+  <none>
+
+chunks:
+  span=1-3 type=IP-MAT level=0
+  span=1-1 type=ADVP level=1
+
+tokens:
+  p=1   v='oda'              t='ADV'        l=1   gloss-br='então'
+  p=2   v='joGopitibece'     t='joGopitibece' l=0   gloss-br='já acharam'
+  p=3   v='naGa'             t='naGa'       l=0   gloss-br='quando'
+
+conllu/token count check:
+  tokens=3  proto-conllu=0
+
+Wrote JSONL to: /home/leonel/kadiweu/data/narratives/.frog-wsdrs1p3/frog.jsonl

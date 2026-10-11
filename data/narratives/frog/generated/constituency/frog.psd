@@ -1,0 +1,561 @@
+/*
+sentence = 1
+uid = 2a79b0b2-24ef-11e5-9df9-0015c53587a5
+text = ica niganigawanigi lalokoa lamidi
+text_por = Um menino brincava com seus brinquedos
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ica)
+      (N niganigawanigi)
+    )
+    (NP-PRD
+      (N$ lalokoa)
+      (NP
+        (N$ lamidi)
+      )
+    )
+  )
+  (ID frog,0.1)
+)
+/*
+sentence = 2
+uid = 2a79d7c0-24ef-11e5-9df9-0015c53587a5
+text = idiaGii nicotini iwii ajoa ligedemaGa ane idei
+text_por = O menino estava sentado olhando um sapo que estava dentro da garrafa
+*/
+(
+  (IP-MAT
+    (AUX idiaGii)
+    (nicotini nicotini)
+    (Q iwii)
+    (ligedemaGa ajoa)
+    (ane ligedemaGa)
+    (idei ane)
+    (catiwedi idei)
+  )
+  (ID frog,0.2)
+)
+/*
+sentence = 3
+uid = 2a79d7c4-24ef-11e5-9df9-0015c53587a5
+text = niGijo niganigawanigi naGa diote oda naGajo ligedemaGa
+text_por = O sapo foi embora quando o menino dormiu
+*/
+(
+  (IP-MAT
+    (NP
+      (D niGijo)
+    )
+    (niganigawanigi niganigawanigi)
+    (naGa naGa)
+    (diote diote)
+    (oda oda)
+    (naGajo naGajo)
+    (T+VB ligedemaGa)
+  )
+  (ID frog,0.3)
+)
+/*
+sentence = 4
+uid = 2a79d7c7-24ef-11e5-9df9-0015c53587a5
+text = naGa yeloGotibige oda niGijo niganigawanigi idia naGa dole
+text_por = Quando amanheceu aquele menino olhou para todos os lados
+*/
+(
+  (IP-MAT
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB yeloGotibige)
+      )
+    )
+    (CONJP
+      (CONJ oda)
+      (NP
+        (D niGijo)
+        (N niganigawanigi)
+      )
+    )
+    (NP
+      (D idia)
+    )
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB dole)
+      )
+    )
+  )
+  (ID frog,0.4)
+)
+/*
+sentence = 5
+uid = 2a79d7ca-24ef-11e5-9df9-0015c53587a5
+text = iwitinigi naGajo galopa aGaleGaca me nadi
+text_por = Olhou na garrafa e viu que o sapo não estava mais lá
+*/
+(
+  (IP-MAT
+    (iwitinigi iwitinigi)
+    (naGajo naGajo)
+    (aGaleGaca galopa)
+    (me aGaleGaca)
+    (nadi me)
+    (naGajo nadi)
+  )
+  (ID frog,0.5)
+)
+/*
+sentence = 6
+uid = 2a79d7cd-24ef-11e5-9df9-0015c53587a5
+text = niGidiaGidi oda ja doletigi naGajo ligedemaGa laxawa niGijo liwiGadi
+text_por = Então, depois, procurou aquele sapo com a ajuda de seu cachorro
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV niGidiaGidi)
+      (CONJ oda)
+      (ADV ja)
+    )
+    (VBAPL doletigi)
+    (NP-APL
+      (PRO$ naGajo)
+    )
+    (ligedemaGa ligedemaGa)
+    (laxawa laxawa)
+    (niGijo niGijo)
+    (liwiGadi liwiGadi)
+  )
+  (ID frog,0.6)
+)
+/*
+sentence = 10
+uid = 2a79d7d9-24ef-11e5-9df9-0015c53587a5
+text = Pida niGijo niganigawanigi idokee me doletibige naGajo
+text_por = Mas aquele menino sempre procurava aquele sapo
+*/
+(
+  (IP-MAT
+    (CONJ Pida)
+    (NP
+      (D niGijo)
+    )
+    (niganigawanigi niganigawanigi)
+    (idokee idokee)
+    (me me)
+    (doletibige doletibige)
+    (naGajo naGajo)
+  )
+  (ID frog,0.10)
+)
+/*
+sentence = 13
+uid = 2a79b0b5-24ef-11e5-9df9-0015c53587a5
+text = Pida niGijo liwiGadi jaaGaGa nadi ajo witelo libato ane idei
+text_por = Mas o cachorro também viu a cachopa do marimbondo que estava no pé da árvore
+*/
+(
+  (IP-MAT
+    (CONJ Pida)
+    (NP-SBJ
+      (D niGijo)
+      (N$ liwiGadi)
+    )
+    (C jaaGaGa)
+    (nadi nadi)
+    (ajo ajo)
+    (witelo witelo)
+    (NP-PRD
+      (CP-FRL
+        (WNP-1
+          (WPRO libato)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VB ane)
+          (NP
+            (N$ idei)
+          )
+        )
+      )
+    )
+  )
+  (ID frog,0.13)
+)
+/*
+sentence = 14
+uid = 2a79d7c2-24ef-11e5-9df9-0015c53587a5
+text = eGidaGe me iwitinigi niGijo begi oda daxoitice
+text_por = Enquanto ele estava olhando dentro do buraco, saiu de dentro uma preá
+*/
+(
+  (IP-MAT
+    (eGidaGe eGidaGe)
+    (me me)
+    (NP
+      (D iwitinigi)
+      (N niGijo)
+    )
+    (ADVP
+      (ADV begi)
+    )
+    (daxoitice oda)
+    (ajo daxoitice)
+  )
+  (ID frog,0.14)
+)
+/*
+sentence = 15
+uid = 2a79d7c5-24ef-11e5-9df9-0015c53587a5
+text = oda eliodi me nawela
+text_por = Então ele se assustou muito
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (CP-me
+      (Q eliodi)
+      (C me)
+      (IP-SUB
+        (VB nawela)
+      )
+    )
+  )
+  (ID frog,0.15)
+)
+/*
+sentence = 16
+uid = 2a79d7c9-24ef-11e5-9df9-0015c53587a5
+text = ijaGijo niGijo liwiGadi baGa idokee me nomoketice naGajo witelo ane
+text_por = Mas o seu animal continuava latindo para o marimbondo que estava na árvore
+*/
+(
+  (IP-MAT
+    (ijaGijo ijaGijo)
+    (niGijo niGijo)
+    (liwiGadi liwiGadi)
+    (baGa baGa)
+    (idokee idokee)
+    (me me)
+    (NP
+      (PRO$ nomoketice)
+      (N naGajo)
+      (CP-REL
+        (WNP-1
+          (WPRO witelo)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VB ane)
+        )
+      )
+    )
+  )
+  (ID frog,0.16)
+)
+/*
+sentence = 17
+uid = 2a79d7cb-24ef-11e5-9df9-0015c53587a5
+text = nigidiaGidi niGijo necenigo ja yanikati naGago
+text_por = Depois o cachorro derrubou a cachopa de marimbondo
+*/
+(
+  (IP-MAT
+    (CT+ADV nigidiaGidi)
+    (NP
+      (D niGijo)
+    )
+    (necenigo necenigo)
+    (ja ja)
+    (naGago yanikati)
+    (witelo naGago)
+  )
+  (ID frog,0.17)
+)
+/*
+sentence = 18
+uid = 2a79d7d0-24ef-11e5-9df9-0015c53587a5
+text = oda niGijo niganigawanigi jigiGo dalaGateloco naGajo niale me iwi
+text_por = Então o menino subiu naquela árvore para olhar dentro do oco dela
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (NP
+      (D niGijo)
+    )
+    (niganigawanigi niganigawanigi)
+    (dalaGateloco jigiGo)
+    (naGajo dalaGateloco)
+    (niale naGajo)
+    (me niale)
+    (iwi me)
+    (niGijo iwi)
+  )
+  (ID frog,0.18)
+)
+/*
+sentence = 19
+uid = 2a79d7d3-24ef-11e5-9df9-0015c53587a5
+text = egidaGee me iwi niGijo lawimagajegi niGajo niale oda daxoitice
+text_por = Enquanto olhava o oco da árvore, saiu um corujão
+*/
+(
+  (IP-MAT
+    (egidaGee egidaGee)
+    (me me)
+    (iwi iwi)
+    (niGijo niGijo)
+    (niGajo lawimagajegi)
+    (niale niGajo)
+    (oda niale)
+    (NP-SBJ
+      (N oda)
+    )
+    (NP-PRD
+      (N daxoitice)
+    )
+  )
+  (ID frog,0.19)
+)
+/*
+sentence = 20
+uid = 2a79d7d6-24ef-11e5-9df9-0015c53587a5
+text = oda niGijo niganigawanigi daGaxa me nawela
+text_por = Então o menino se assustou e caiu
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (NP
+      (D niGijo)
+    )
+    (niganigawanigi niganigawanigi)
+    (daGaxa daGaxa)
+    (me me)
+    (nawela nawela)
+  )
+  (ID frog,0.20)
+)
+/*
+sentence = 22
+uid = 2a79d7da-24ef-11e5-9df9-0015c53587a5
+text = oda naGajo jigiti noGojatice niGijo
+text_por = Então o corujão bicou o menino
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (NP
+      (PRO$ naGajo)
+      (N jigiti)
+    )
+    (noGojatice noGojatice)
+    (niGijo niGijo)
+  )
+  (ID frog,0.22)
+)
+/*
+sentence = 23
+uid = 2a79d7dd-24ef-11e5-9df9-0015c53587a5
+text = nigidiaGidi naGa ika niGijo niganigawanigi naGajo
+text_por = Depois quando o corujão não estava mais no menino
+*/
+(
+  (IP-MAT
+    (CT+ADV nigidiaGidi)
+    (CT naGa)
+    (ika ika)
+    (niGijo niGijo)
+    (NP
+      (PRO$ niganigawanigi)
+      (N naGajo)
+    )
+  )
+  (ID frog,0.23)
+)
+/*
+sentence = 25
+uid = 2a79b0b4-24ef-11e5-9df9-0015c53587a5
+text = oda niGijo niganigawanigi idoke me dapawatigi
+text_por = Então o menino estava sempre a procurar o sapo
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (NP
+      (D niGijo)
+    )
+    (niganigawanigi niganigawanigi)
+    (C idoke)
+    (dapawatigi me)
+    (naGajo dapawatigi)
+  )
+  (ID frog,0.25)
+)
+/*
+sentence = 27
+uid = 2a79d7c3-24ef-11e5-9df9-0015c53587a5
+text = naGa dibateloco diletibige daGa niale
+text_por = Quando descobriu pensou que era galho de árvore
+*/
+(
+  (IP-MAT
+    (CT naGa)
+    (dibateloco dibateloco)
+    (C diletibige)
+    (NP
+      (NP
+        (N daGa)
+      )
+      (N$ niale)
+    )
+  )
+  (ID frog,0.27)
+)
+/*
+sentence = 28
+uid = 2a79d7c6-24ef-11e5-9df9-0015c53587a5
+text = oda naGajo oticaGanigo ja nayioketini niGijo
+text_por = Então o cervo levantou enganchado o menino
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (NP
+      (PRO$ naGajo)
+      (N oticaGanigo)
+    )
+    (T ja)
+    (nayioketini nayioketini)
+    (niGijo niGijo)
+  )
+  (ID frog,0.28)
+)
+/*
+sentence = 29
+uid = 2a79d7c8-24ef-11e5-9df9-0015c53587a5
+text = Pida niGijo liwiGadi idokee me lixigaGawa
+text_por = Mas o seu animal estava sempre acompanhando-o
+*/
+(
+  (IP-MAT
+    (CONJ Pida)
+    (NP
+      (D niGijo)
+      (N$ liwiGadi)
+    )
+    (ADVP
+      (ADV idokee)
+    )
+    (CP
+      (CP-me
+        (C me)
+        (IP-SUB
+          (NP
+            (N$ lixigaGawa)
+          )
+        )
+      )
+    )
+  )
+  (ID frog,0.29)
+)
+/*
+sentence = 33
+uid = 2a79d7d4-24ef-11e5-9df9-0015c53587a5
+text = oda idia naGa dole
+text_por = Então ele olhou para todos os lados
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (NP
+      (D idia)
+    )
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB dole)
+      )
+    )
+  )
+  (ID frog,0.33)
+)
+/*
+sentence = 35
+uid = 2a79d7db-24ef-11e5-9df9-0015c53587a5
+text = oda metaijo liwiGadi anotokitini jiwinaga ica ane idei
+text_por = Então disse para seu animal que ficasse quieto, vamos ver o que está dentro da árvore
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (metaijo metaijo)
+    (liwiGadi liwiGadi)
+    (jiwinaga anotokitini)
+    (ica jiwinaga)
+    (ane ica)
+    (idei ane)
+    (naGadi idei)
+  )
+  (ID frog,0.35)
+)
+/*
+sentence = 37
+uid = 2a79b0b3-24ef-11e5-9df9-0015c53587a5
+text = Pida naGajo ligedemaGa jogowidi
+text_por = Mas aquele sapo já tinha filhotes
+*/
+(
+  (IP-MAT
+    (CONJ Pida)
+    (NP-SBJ
+      (PRO$ naGajo)
+    )
+    (ligedemaGa ligedemaGa)
+    (NP-PRD
+      (N jogowidi)
+    )
+  )
+  (ID frog,0.37)
+)
+/*
+sentence = 39
+uid = 2a79d7c1-24ef-11e5-9df9-0015c53587a5
+text = oda joGopitibece naGa
+text_por = E foram embora
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (joGopitibece joGopitibece)
+    (naGa naGa)
+  )
+  (ID frog,0.39)
+)

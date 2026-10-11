@@ -1,0 +1,24 @@
+/*
+sentence = 29
+uid = c364f885-dbbd-4eac-ae74-2cfcea216f67
+status = DONE
+text = pida ayema ica me diote
+text_por = Mas não queria ele dormir
+*/
+(
+  (IP-MAT
+    (CONJ pida)
+    (NEG aG@)
+    (VB @yema)
+    (NP
+      (D ica)
+    )
+    (CP-me
+      (C me)
+      (IP-SUB
+        (VB diote)
+      )
+    )
+  )
+  (ID creation,0.29)
+)

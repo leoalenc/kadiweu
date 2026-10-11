@@ -1,0 +1,2483 @@
+/*
+sentence = 1
+uid = 27ce2aa0-24ed-11e5-b0c8-94de80bbbd4a
+status = REVIEW
+text = natigide jaaGa jatematiGa natematigigi ica maleeka iliidaGadi AneotedoGoji oko
+text_por = Agora vamos contar a história da criação do homem por Deus
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV natigide)
+    )
+    (AUX jaaGa)
+    (VB jatematiGa)
+    (NP
+      (NAPL natematigigi)
+      (NP-APL
+        (D ica)
+      )
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (T @aleeka)
+        (VB iliidaGadi)
+        (NP
+          (NPR AneotedoGoji)
+        )
+        (NP
+          (N oko)
+        )
+      )
+    )
+  )
+  (ID creation,0.1)
+)
+
+/*
+sentence = 2
+uid = 27ce2aae-24ed-11e5-b0c8-94de80bbbd4a
+status = REVIEW
+text = ica jotigide AneotedoGoji maleka ilidagiteda ina oko .
+text_por = Antigamente Deus criou esta gente
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ica)
+    )
+    (ADVP
+      (ADV jotigide)
+    )
+    (NP-PRD
+      (NPR AneotedoGoji)
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (T @aleeka)
+        (VB ilidagiteda)
+        (NP
+          (D ina)
+          (N oko)
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.2)
+)
+
+/*
+sentence = 3
+uid = 27ce2ab8-24ed-11e5-b0c8-94de80bbbd4a
+text = one enidite etolitoli
+text_por = Dizem que chamou caburé
+*/
+(
+  (IP-MAT
+    (EV one)
+    (VBAPL enidite)
+    (NP-APL
+      (N etolitoli)
+    )
+  )
+  (ID creation,0.3)
+)
+
+/*
+sentence = 4
+uid = 81bca471-0f2f-4764-9fae-87b2ed5e1a27
+text = oniketa etolitoli : owieni iawate
+text_por = diz que ele disse para ele: cuide de minha neta
+*/
+(
+  (IP-MAT
+    (EV one@)
+    (VBAPL @ikeeta)
+    (NP-APL
+      (N etolitoli)
+    )
+    (PUNC :)
+    (IP
+      (VBI owieni)
+      (NP
+        (N$ iawate)
+      )
+    )
+  )
+  (ID creation,0.4)
+)
+
+/*
+sentence = 5
+uid = 27ce2ac0-24ed-11e5-b0c8-94de80bbbd4a
+text = onete damiida ica inoeneGegi ?
+text_por = Ele disse: qual sera o meu canto?
+*/
+(
+  (IP-MAT
+    (EV one@)
+    (VBAPL @eete)
+    (CP-QUE
+      (WNP
+        (WPRO damiida)
+      )
+      (NP
+        (D ica)
+        (N$ inoeneGegi)
+      )
+    )
+    (. ?)
+  )
+  (ID creation,0.5)
+)
+
+/*
+sentence = 6
+uid = 27ce2ac2-24ed-11e5-b0c8-94de80bbbd4a
+text = onete idaGida idoda GadaxaceneGegi .
+text_por = ele disse : esse mesmo, esse seu cantar simples compassado
+*/
+(
+  (IP-MAT
+    (EV one@)
+    (VBAPL @eete)
+    (NP-APL
+      (Q idaGida)
+      (D idoda)
+      (N$ GadaxaceneGegi)
+    )
+    (. .)
+  )
+  (ID creation,0.6)
+)
+
+/*
+sentence = 7
+uid = 27ce2ac5-24ed-11e5-b0c8-94de80bbbd4a
+text = oda jonaGidaGee ica enoale jonaGidaGee etolitoli eotibige ica layagiGegi me anoe .
+text_por = Então esta noite o caburé ficou fazendo seu barulho que era gritado
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (ADVP
+      (ADV jonaGidaGee)
+    )
+    (NP
+      (D ica)
+      (N enoale)
+    )
+    (ADVP
+      (ADV jonaGidaGee)
+    )
+    (NP
+      (N etolitoli)
+    )
+    (VB eotibige)
+    (NP
+      (D ica)
+      (N$ layagiGegi)
+    )
+    (CP-me
+      (C me)
+      (IP-SUB
+        (NEG aG@)
+        (VB @noe)
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.7)
+)
+
+/*
+sentence = 8
+uid = 27ce2ac6-24ed-11e5-b0c8-94de80bbbd4a
+text = nigatibece ica ane wajibata .
+text_por = às vezes ele escutava algo
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV nigatibece)
+    )
+    (NP
+      (D ica)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VBAPL wajibata)
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.8)
+)
+
+/*
+sentence = 9
+uid = 27ce2ac7-24ed-11e5-b0c8-94de80bbbd4a
+text = oda ewo ica layageGegi : toli toli toli .
+text_por = E diz que fazia este barulho : toli toli toli
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (VB ewo)
+    (NP
+      (D ica)
+      (N$ layageGegi)
+    )
+    (: :)
+    (INTJ toli)
+    (INTJ toli)
+    (INTJ toli)
+    (. .)
+  )
+  (ID creation,0.9)
+)
+
+/*
+sentence = 10
+uid = 27ce2ac9-24ed-11e5-b0c8-94de80bbbd4a
+text = oda ica naGa legitece ica Gocide codaGida jonaGa noenakadi ocoGokodi .
+text_por = Então quando já era bem tarde e de repente cantava o galo
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (NP
+      (D ica)
+    )
+    (CP-ADV
+      (CT naGa)
+      (ADVP
+        (ADV legitece)
+      )
+      (NP
+        (D ica)
+        (N Gocide)
+      )
+    )
+    (ADVP
+      (ADV codaGida)
+    )
+    (T jonaGa)
+    (VB noenakadi)
+    (NP
+      (N ocoGokodi)
+    )
+    (. .)
+  )
+  (ID creation,0.10)
+)
+
+/*
+sentence = 11
+uid = 27ce2aca-24ed-11e5-b0c8-94de80bbbd4a
+text = oda codaGida jonaGa ibagi .
+text_por = Então ficou com sono
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (ADVP
+      (ADV codaGida)
+    )
+    (EV jaGa@)
+    (T @one)
+    (VB ibagi)
+    (. .)
+  )
+  (ID creation,0.11)
+)
+
+/*
+sentence = 12
+uid = 27ce2acb-24ed-11e5-b0c8-94de80bbbd4a
+text = oda naGa idiaGidi neGepaanaGa doletibige ina me yeloGotibige
+text_por = Então quando estava quase amanhecendo. amanheceu
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (CP-ADV
+      (CT naGa)
+      (ADVP
+        (ADV idiaGidi)
+      )
+    )
+    (CP
+      (CT naGa@)
+      (IP-SUB
+        (ADVP
+          (ADV @epaanaGa)
+        )
+        (VBAPL doletibige)
+        (NP-APL
+          (D ina)
+        )
+        (CP-me
+          (C me)
+          (IP-SUB
+            (VB yeloGotibige)
+          )
+        )
+      )
+    )
+  )
+  (ID creation,0.12)
+)
+
+/*
+sentence = 13
+uid = 27ce2acc-24ed-11e5-b0c8-94de80bbbd4a
+text = ja diwicide
+text_por = amanheceu
+*/
+(
+  (IP-MAT
+    (T ja)
+    (VB diwicide)
+  )
+  (ID creation,0.13)
+)
+
+/*
+sentence = 14
+uid = be67c626-3c67-4c00-bf38-8c221059a517
+text = jonaGa diote .
+text_por = Diz que dormiu
+*/
+(
+  (IP-MAT
+    (EV one@)
+    (T @jaGa)
+    (VB diote)
+    (. .)
+  )
+  (ID creation,0.14)
+)
+
+/*
+sentence = 15
+uid = 27ce2acd-24ed-11e5-b0c8-94de80bbbd4a
+text = oda jona diote
+text_por = Então diz que dormiu
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (T jona)
+    (VB diote)
+  )
+  (ID creation,0.15)
+)
+
+/*
+sentence = 16
+uid = 4a677877-208a-4fd6-b2ea-428fa48b5af6
+text = oda joneGenagitibece icoa olicaGaGa .
+text_por = Então vieram os ladrões
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (EV one@)
+    (T @jaGa)
+    (VB @yanagitibeci)
+    (NP
+      (D icoa)
+      (N olicaGaGa)
+    )
+    (. .)
+  )
+  (ID creation,0.16)
+)
+
+/*
+sentence = 17
+uid = 27ce2acf-24ed-11e5-b0c8-94de80bbbd4a
+text = oda jonaGa oyadeigi aca lawate AneotedoGoji .
+text_por = Então levaram a neta do criador
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (EV one@)
+    (T @jaGa)
+    (VB oyadeigi)
+    (NP
+      (D aca)
+      (N$ lawate)
+      (NP
+        (NPR AneotedoGoji)
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.17)
+)
+
+/*
+sentence = 18
+uid = 27ce2ad0-24ed-11e5-b0c8-94de80bbbd4a
+text = oda noGo eledi noko jona aǤaleica etolitoli .
+text_por = Então no outro dia o caburé foi despedido
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (CP-ADV
+      (CT noGo)
+      (NP
+        (ADJ eledi)
+        (N noko)
+      )
+    )
+    (T jona)
+    (NEG aǤ@)
+    (ADVP
+      (ADV @alee)
+    )
+    (NP
+      (D @ica)
+      (N etolitoli)
+    )
+    (. .)
+  )
+  (ID creation,0.18)
+)
+
+/*
+sentence = 19
+uid = 27ce2ad1-24ed-11e5-b0c8-94de80bbbd4a
+status = REVIEW
+text = jonaGa enotio enidite AneotedoGoji GopokonaGadi .
+text_por = Então Deus chamou o carão
+*/
+(
+  (IP-MAT
+    (EV one@)
+    (T @jaGa)
+    (VBAPL enotio)
+    (VBAPL enidite)
+    (NP-APL
+      (NPR AneotedoGoji)
+    )
+    (NP
+      (NPR GopokonaGadi)
+    )
+    (. .)
+  )
+  (ID creation,0.19)
+)
+
+/*
+sentence = 20
+uid = 27ce2ad2-24ed-11e5-b0c8-94de80bbbd4a
+text = maaGa yoweedi aca latacani lawate onete
+text_por = também cuide da cesta da sua neta, diz que disseram para ele
+*/
+(
+  (IP-MAT
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (ADVP
+          (ADV @aaGa)
+        )
+      )
+    )
+    (VB yoweedi)
+    (NP
+      (D aca)
+      (N$ latacani)
+      (NP
+        (N$ lawate)
+      )
+    )
+    (EV one@)
+    (VBAPL @eete)
+  )
+  (ID creation,0.20)
+)
+
+/*
+sentence = 21
+uid = 27ce2ad4-24ed-11e5-b0c8-94de80bbbd4a
+text = iniwalo , daGaleeGaGa owenta yawate
+text_por = Minhã irmã , por favor cuide da minha neta
+*/
+(
+  (IP-MAT
+    (NP
+      (N$ iniwalo)
+    )
+    (PUNC ,)
+    (CP
+      (C daGa@)
+      (IP-SUB
+        (ADVP
+          (ADV @aleeGaGa)
+        )
+        (VBAPL owenta)
+        (NP-APL
+          (N$ yawate)
+        )
+      )
+    )
+  )
+  (ID creation,0.21)
+)
+
+/*
+sentence = 22
+uid = 27ce2ad6-24ed-11e5-b0c8-94de80bbbd4a
+text = oda one GopokonaGadi : ameelinedi daataGa jowei .
+text_por = Então diz que carão falou: sim senhor, vou cuidar
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (EV one)
+    (NP-SBJ
+      (N GopokonaGadi)
+    )
+    (PUNC :)
+    (NP-PRD
+      (CP-FRL
+        (WNP-1
+          (WPRO+N$ ameelinedi)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VBAPL daataGa)
+          (VB jowei)
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.22)
+)
+
+/*
+sentence = 23
+uid = 27ce2ad8-24ed-11e5-b0c8-94de80bbbd4a
+text = amidoda icoda yayageGegi ?
+text_por = Que barulho vou fazer?
+*/
+(
+  (IP-MAT
+    (CP-QUE
+      (WNP
+        (WPRO amidoda)
+      )
+      (NP
+        (D icoda)
+        (N$ yayageGegi)
+      )
+    )
+    (. ?)
+  )
+  (ID creation,0.23)
+)
+
+/*
+sentence = 24
+uid = 27ce2ad9-24ed-11e5-b0c8-94de80bbbd4a
+text = oneta : idaGidoda ida GadayageGegi .
+text_por = Ele falou esse seu barulho mesmo
+*/
+(
+  (IP-MAT
+    (EV one@)
+    (VBAPL @eeta)
+    (: :)
+    (NP
+      (Q idaGidoda)
+      (D ida)
+      (N$ GadayageGegi)
+    )
+    (. .)
+  )
+  (ID creation,0.24)
+)
+
+/*
+sentence = 25
+uid = 27ce2adc-24ed-11e5-b0c8-94de80bbbd4a
+text = oda joniGidaGee jotigenoale onanida Gopokoladi : craw craw craw .
+text_por = Então o carão naquela noite ficou fazendo craw craw craw
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (T jonaGa@)
+    (ADVP
+      (ADV @idaGee)
+    )
+    (NP-SBJ
+      (ADJ jotigi@)
+      (N @enoale)
+    )
+    (NP-PRD
+      (Q onanida)
+      (N Gopokoladi)
+    )
+    (: :)
+    (INTJ craw)
+    (INTJ craw)
+    (INTJ craw)
+    (. .)
+  )
+  (ID creation,0.25)
+)
+
+/*
+sentence = 26
+uid = 27ce2ade-24ed-11e5-b0c8-94de80bbbd4a
+text = one diganaGatibece
+text_por = Diz que ele cantou
+*/
+(
+  (IP-MAT
+    (EV one)
+    (VB diganaGatibece)
+  )
+  (ID creation,0.26)
+)
+
+/*
+sentence = 27
+uid = 1c1b07dc-9cde-4a4f-aed6-e1078270929f
+text = jonaGa nipegi me yeloGotibigi .
+text_por = Era perto de amanhecer
+*/
+(
+  (IP-MAT
+    (T jonaGa)
+    (ADVP
+      (ADV nipegi)
+    )
+    (CP-me
+      (C me)
+      (IP-SUB
+        (VB yeloGotibigi)
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.27)
+)
+
+/*
+sentence = 28
+uid = 27ce2adf-24ed-11e5-b0c8-94de80bbbd4a
+text = idatibece jona nakajaketinibece
+text_por = às vezes pegava no sono, mas não queria dormir
+*/
+(
+  (IP-MAT
+    (Q idatibece)
+    (T jona)
+    (VBAPL nakajaketinibece)
+  )
+  (ID creation,0.28)
+)
+
+/*
+sentence = 29
+uid = c364f885-dbbd-4eac-ae74-2cfcea216f67
+status = DONE
+text = pida ayema ica me diote
+text_por = Mas não queria ele dormir
+*/
+(
+  (IP-MAT
+    (CONJ pida)
+    (NEG aG@)
+    (VB @yema)
+    (NP
+      (D ica)
+    )
+    (CP-me
+      (C me)
+      (IP-SUB
+        (VB diote)
+      )
+    )
+  )
+  (ID creation,0.29)
+)
+
+/*
+sentence = 30
+uid = 27ce2ae1-24ed-11e5-b0c8-94de80bbbd4a
+text = oda niGica naGa epaanaGa doletibige me yeloGotibige one naditege icoa itoatadiGida oko ja nieta ica lawate AneotedoGoji .
+text_por = Então ele, quando estava amanhecendo, avistou umas três pessoas chegando na neta de Deus
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (NP
+      (D niGica)
+    )
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (ADVP
+          (ADV epaanaGa)
+        )
+        (VB doletibige)
+        (CP-THT
+          (C me)
+          (IP-SUB
+            (VB yeloGotibige)
+          )
+        )
+      )
+    )
+    (EV one)
+    (VBAPL naditege)
+    (IP-APL
+      (NP
+        (D icoa)
+        (NUM itoatadiGida)
+        (N oko)
+      )
+      (T ja)
+      (VBAPL nieta)
+      (NP-APL
+        (D ica)
+        (N$ lawate)
+        (NP
+          (NPR AneotedoGoji)
+        )
+      )
+    )
+    (PUNC .)
+  )
+  (ID creation,0.30)
+)
+
+/*
+sentence = 31
+uid = 27ce51b0-24ed-11e5-b0c8-94de80bbbd4a
+text = oda ane kodanoGonida oko .
+text_por = Então apareceram pessoas
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (NP-SBJ
+      (CP-FRL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (ADVP
+            (ADV kodanoGonida)
+          )
+        )
+      )
+    )
+    (NP-PRD
+      (N oko)
+    )
+    (. .)
+  )
+  (ID creation,0.31)
+)
+
+/*
+sentence = 32
+uid = 27ce51b1-24ed-11e5-b0c8-94de80bbbd4a
+text = olicaGaGa ida niGidi icoGotigi .
+text_por = Ladrões estes que vinham
+*/
+(
+  (IP-MAT
+    (NP
+      (N olicaGaGa)
+    )
+    (NP
+      (Q ida)
+      (D niGidi)
+    )
+    (VBAPL icoGotigi)
+    (. .)
+  )
+  (ID creation,0.32)
+)
+
+/*
+sentence = 33
+uid = 27ce51b2-24ed-11e5-b0c8-94de80bbbd4a
+text = onoicoGotiwece ica begi niGicoa olicaGaGa .
+text_por = Vieram de um buraco estes ladrões
+*/
+(
+  (IP-MAT
+    (VBAPL onoicoGotiwece)
+    (NP-APL
+      (D ica)
+      (N begi)
+    )
+    (NP
+      (D niGicoa)
+      (N olicaGaGa)
+    )
+    (. .)
+  )
+  (ID creation,0.33)
+)
+
+/*
+sentence = 34
+uid = 27ce51b3-24ed-11e5-b0c8-94de80bbbd4a
+text = noGo enegepana nipegitiwace one naweloda GopokonaGadi .
+text_por = Quando estavam chegando cada vez mais próximo, dizem que carão se assustou
+*/
+(
+  (IP-MAT
+    (CP-ADV
+      (CT noGo)
+      (IP-SUB
+        (ADVP
+          (ADV enegepana)
+        )
+        (VBAPL nipegitiwace)
+      )
+    )
+    (EV one)
+    (VB naweloda)
+    (NP
+      (N GopokonaGadi)
+    )
+    (. .)
+  )
+  (ID creation,0.34)
+)
+
+/*
+sentence = 35
+uid = 27ce51b6-24ed-11e5-b0c8-94de80bbbd4a
+text = coda ica layaGegi : craw craw craw .
+text_por = E fez seu barulho craw craw craw
+*/
+(
+  (IP-MAT
+    (CONJ coda)
+    (NP
+      (D ica)
+      (N$ layaGegi)
+    )
+    (: :)
+    (INTJ craw)
+    (INTJ craw)
+    (INTJ craw)
+    (. .)
+  )
+  (ID creation,0.35)
+)
+
+/*
+sentence = 36
+uid = 27ce51b8-24ed-11e5-b0c8-94de80bbbd4a
+text = oda jonaGa daleitiniwace icoa domaGa olicaGaGa .
+text_por = Então correram juntos os quase ladrões
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (EV one@)
+    (T @jaGa)
+    (VB daleitiniwace)
+    (NP
+      (D icoa)
+      (T domaGa)
+      (N olicaGaGa)
+    )
+    (. .)
+  )
+  (ID creation,0.36)
+)
+
+/*
+sentence = 37
+uid = 27ce51b9-24ed-11e5-b0c8-94de80bbbd4a
+status = REVIEW
+text = oda naGa yeloGotibige niGina AneotedoGoji jonaGa enote .
+text_por = Então quando amanheceu Deus chegou
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB yeloGotibige)
+        (NP
+          (D niGina)
+          (NPR AneotedoGoji)
+        )
+      )
+    )
+    (T jonaGa)
+    (VB enote)
+    (. .)
+  )
+  (ID creation,0.37)
+)
+
+/*
+sentence = 38
+uid = 27ce51bb-24ed-11e5-b0c8-94de80bbbd4a
+text = onete iniwalo : igamodaGe ?
+text_por = e disse minha neta como tem passado
+*/
+(
+  (IP-MAT
+    (EV one@)
+    (VBAPL @eete)
+    (NP-APL
+      (N$ iniwalo)
+    )
+    (PUNC :)
+    (CP-QUE
+      (WADVP-1
+        (WADV iga@)
+      )
+      (C @me)
+      (IP-SUB
+        (ADVP
+          (-NONE- *T*-1)
+        )
+        (VB @odaGe)
+      )
+    )
+    (PUNC ?)
+  )
+  (ID creation,0.38)
+)
+
+/*
+sentence = 39
+uid = 27ce51bc-24ed-11e5-b0c8-94de80bbbd4a
+text = aGica daGa oitinege anida yawate
+text_por = ninguém poderia mexer na minha neta
+*/
+(
+  (CP-D
+    (Q aGica)
+    (C daGa)
+    (IP-SUB
+      (VBAPL oitinege)
+      (NP-APL
+        (D anida)
+        (N$ yawate)
+      )
+    )
+  )
+  (ID creation,0.39)
+)
+
+/*
+sentence = 40
+uid = 27ce51bd-24ed-11e5-b0c8-94de80bbbd4a
+text = one GopokonaGadi one aGica ane etinege .
+text_por = Diz que o carão disse que não mexeu
+*/
+(
+  (IP-MAT
+    (EV one)
+    (NP-SBJ
+      (N GopokonaGadi)
+    )
+    (EV one)
+    (NP-PRD
+      (Q aGica)
+      (CP-FRL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VB etinege)
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.40)
+)
+
+/*
+sentence = 41
+uid = 27ce51bf-24ed-11e5-b0c8-94de80bbbd4a
+text = Pida ja jooGodi ane digeticogi icoa olicaGaGa .
+text_por = Mas sei de onde vieram os ladrões
+*/
+(
+  (IP-MAT
+    (CONJ Pida)
+    (T ja)
+    (VB jooGodi)
+    (CP
+      (IP-SUB
+        (WADVP
+          (WADV ane)
+        )
+        (VBAPL digeticogi)
+        (NP-APL
+          (D icoa)
+          (N olicaGaGa)
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.41)
+)
+
+/*
+sentence = 42
+uid = 27ce51c0-24ed-11e5-b0c8-94de80bbbd4a
+text = onete igame icoGotigi ?
+text_por = Ele disse de onde vieram?diz que o carão disse deste buraco
+*/
+(
+  (IP-MAT
+    (EV one@)
+    (VBAPL @eete)
+    (CP-QUE
+      (CP
+        (WADVP-1
+          (WADV iga@)
+        )
+        (C @me)
+        (IP-SUB
+          (ADVP
+            (-NONE- *T*-1)
+          )
+          (VBAPL icoGotigi)
+        )
+      )
+    )
+    (. ?)
+  )
+  (ID creation,0.42)
+)
+
+/*
+sentence = 43
+uid = 94e71441-84f9-4ac2-ad11-7b821aa74a69
+text = one GopokonaGadi : mida begi .
+text_por = Foi o carão: que é deste buraco
+*/
+(
+  (IP-MAT
+    (EV one)
+    (NP
+      (N GopokonaGadi)
+    )
+    (PUNC :)
+    (CP
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (D @ida)
+            (N begi)
+          )
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.43)
+)
+
+/*
+sentence = 44
+uid = 27ce51c3-24ed-11e5-b0c8-94de80bbbd4a
+text = yowoGodi AneotedoGoji leeGodi jonaGa ida ica notoetigi .
+text_por = Deus já sabia, porque tem super poderes
+*/
+(
+  (IP-MAT
+    (VB yowoGodi)
+    (NP
+      (NPR AneotedoGoji)
+    )
+    (WADVP
+      (WADV leeGodi)
+    )
+    (T jonaGa)
+    (NP
+      (Q ida)
+      (D ica)
+      (N$ notoetigi)
+    )
+    (. .)
+  )
+  (ID creation,0.44)
+)
+
+/*
+sentence = 45
+uid = 27ce51c4-24ed-11e5-b0c8-94de80bbbd4a
+text = noGonidiaGi AneotedoGoji joneGeniditeta icoa liwiakatedi me igo doletedibige icoa olicaGaGa :
+text_por = Daí Deus chamou os seus cachorros
+*/
+(
+  (IP-MAT
+    (CONJ noGonidiaGi)
+    (NP-SBJ
+      (NPR AneotedoGoji)
+    )
+    (T+VBAPL joneGeniditeta)
+    (NP-PRD
+      (D icoa)
+      (N$ liwiakatedi)
+    )
+    (CP-me
+      (C me)
+      (IP-SUB
+        (AUX igo)
+        (VB doletedibige)
+        (NP
+          (D icoa)
+          (N olicaGaGa)
+        )
+      )
+    )
+    (: :)
+  )
+  (ID creation,0.45)
+)
+
+/*
+sentence = 46
+uid = 27ce51c5-24ed-11e5-b0c8-94de80bbbd4a
+text = necexodi ijo ica jakodaGa ijoa ica wajaidaGa .
+text_por = O cachorro jakodaGa e o cachorro wajaidaGa
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (N necexodi)
+    )
+    (NP-SBJ-PRD
+      (Q ijo)
+      (D ica)
+      (NPR jakodaGa)
+    )
+    (NP-PRD
+      (Q ijoa)
+      (D ica)
+      (NPR wajaidaGa)
+    )
+    (. .)
+  )
+  (ID creation,0.46)
+)
+
+/*
+sentence = 47
+uid = 27ce51c6-24ed-11e5-b0c8-94de80bbbd4a
+text = oda naGa igo dowicete doletedigi ica begi .
+text_por = Então eles foram direto procurando o buraco
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (AUX igo)
+        (VBAPL dowicete)
+        (VBAPL doletedigi)
+        (NP-APL
+          (D ica)
+          (N begi)
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.47)
+)
+
+/*
+sentence = 48
+uid = 27ce51c7-24ed-11e5-b0c8-94de80bbbd4a
+text = naGa igo oda niGidaGida iGe liwikatedi oda oyomoketinece .
+text_por = Quando foram, mandou que seus animais latissem
+*/
+(
+  (IP-MAT
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB igo)
+        (ADVP
+          (ADV oda)
+          (ADV niGidaGida)
+        )
+      )
+    )
+    (VB iGe)
+    (NP
+      (N$ liwikatedi)
+    )
+    (IP
+      (ADVP
+        (ADV oda)
+      )
+      (VB oyomoketinece)
+    )
+    (. .)
+  )
+  (ID creation,0.48)
+)
+
+/*
+sentence = 49
+uid = 27ce51c9-24ed-11e5-b0c8-94de80bbbd4a
+text = oda noGo onigo , AneotedoGoji naGa dalitenigi ica begi
+text_por = Então quando Deus olhou o buraco
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (CP-ADV
+      (CT noGo)
+      (IP-SUB
+        (VB onigo)
+        (PUNC ,)
+        (NP
+          (NPR AneotedoGoji)
+        )
+        (CP-ADV
+          (CT naGa)
+          (IP-SUB
+            (VBAPL dalitenigi)
+            (NP-APL
+              (D ica)
+              (N begi)
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID creation,0.49)
+)
+
+/*
+sentence = 50
+uid = 27ce51ca-24ed-11e5-b0c8-94de80bbbd4a
+status = REVIEW
+text = oda one Godaciloditio Godatobiditiogi ica catiwedi ica begi .
+text_por = Diz que cabeças e rostos haviam dentro do buraco
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (EV one)
+    (NP-SBJ
+      (N$ Godaciloditio)
+      (NP
+        (N$ Godatobiditiogi)
+      )
+    )
+    (NP-SBJ-PRD
+      (Q ica)
+      (DAPL catiwedi)
+    )
+    (NP-PRD
+      (D ica)
+      (N begi)
+    )
+    (. .)
+  )
+  (ID creation,0.50)
+)
+
+/*
+sentence = 51
+uid = 27ce51cc-24ed-11e5-b0c8-94de80bbbd4a
+text = oda AneotedoGoji jonaGa nixigitedibigi itowataletibece me nixigitedita ica oko .
+text_por = Então deus puxou de 2 em 2 estas pessoas
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (NP
+      (NPR AneotedoGoji)
+    )
+    (T jonaGa)
+    (VB nixigitedibigi)
+    (NP
+      (NUM itowataletibece)
+    )
+    (CP-me
+      (C me)
+      (IP-SUB
+        (VBAPL nixigitedita)
+        (NP-APL
+          (D ica)
+          (N oko)
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.51)
+)
+
+/*
+sentence = 52
+uid = 27ce51cd-24ed-11e5-b0c8-94de80bbbd4a
+text = oda jiGidi ica boliwiana .
+text_por = Então já tinha os bolivianos
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (T jaGa@)
+    (NP
+      (Q @idi)
+      (D ica)
+      (NPR boliwiana)
+    )
+    (. .)
+  )
+  (ID creation,0.52)
+)
+
+/*
+sentence = 53
+uid = 27ce51ce-24ed-11e5-b0c8-94de80bbbd4a
+text = oda one nixigitiniwace ecalaye
+text_por = Então diz que puxou o branco
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (EV one)
+    (VBAPL nixigitiniwace)
+    (NP-APL
+      (NPR ecalaye)
+    )
+  )
+  (ID creation,0.53)
+)
+
+/*
+sentence = 54
+uid = 27ce51cf-24ed-11e5-b0c8-94de80bbbd4a
+text = niGidiaGidi jaaGaGa nixigitiniwace ica japone .
+text_por = Então já puxou para cima os japoneses
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV niGidiaGidi)
+      (ADV jaaGaGa)
+    )
+    (VBAPL nixigitiniwace)
+    (NP-APL
+      (D ica)
+      (NPR japone)
+    )
+    (. .)
+  )
+  (ID creation,0.54)
+)
+
+/*
+sentence = 55
+uid = 27ce51d0-24ed-11e5-b0c8-94de80bbbd4a
+text = icoa gaxiana
+text_por = Os paraguaios
+*/
+(
+  (IP-MAT
+    (NP
+      (D icoa)
+      (NPR gaxiana)
+    )
+  )
+  (ID creation,0.55)
+)
+
+/*
+sentence = 56
+uid = 27ce51d1-24ed-11e5-b0c8-94de80bbbd4a
+text = ica boliwiana
+text_por = Os bolivianos
+*/
+(
+  (IP-MAT
+    (NP
+      (D ica)
+      (NPR boliwiana)
+    )
+  )
+  (ID creation,0.56)
+)
+
+/*
+sentence = 57
+uid = 27ce51d2-24ed-11e5-b0c8-94de80bbbd4a
+text = icoa alemayexedi
+text_por = Os alemães
+*/
+(
+  (IP-MAT
+    (NP
+      (D icoa)
+      (NPR alemayexedi)
+    )
+  )
+  (ID creation,0.57)
+)
+
+/*
+sentence = 58
+uid = 27ce51d3-24ed-11e5-b0c8-94de80bbbd4a
+text = coda inoatawece inoa icoa eletedi ane latopagi .
+text_por = E todas estas outras tribos
+*/
+(
+  (IP-MAT
+    (CONJ coda)
+    (NP-SBJ
+      (Q inoatawece)
+      (Q inoa)
+      (D icoa)
+    )
+    (NP-SBJ-PRD
+      (PRO eletedi)
+    )
+    (NP-PRD
+      (CP-FRL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (NP
+            (N$ latopagi)
+          )
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.58)
+)
+
+/*
+sentence = 59
+uid = 27ce51d4-24ed-11e5-b0c8-94de80bbbd4a
+text = jinataGa oko ane niGina iiGo .
+text_por = Estas pessoas que vemos nesta terra
+*/
+(
+  (IP-MAT
+    (VB jinataGa)
+    (NP
+      (N oko)
+    )
+    (NP
+      (CP-FRL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (NP
+            (D niGina)
+            (N$ iiGo)
+          )
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.59)
+)
+
+/*
+sentence = 60
+uid = 27ce51d5-24ed-11e5-b0c8-94de80bbbd4a
+text = jonaGa anipetedi AneotedoGoji
+text_por = Então deus descansou
+*/
+(
+  (IP-MAT
+    (EV one@)
+    (T @jaGa)
+    (VB anipetedi)
+    (NP
+      (NPR AneotedoGoji)
+    )
+  )
+  (ID creation,0.60)
+)
+
+/*
+sentence = 61
+uid = 27ce51d6-24ed-11e5-b0c8-94de80bbbd4a
+text = niGidiaGi ica nalaGatibigelo ica maniaditibige ica noigi ejewajegi .
+text_por = Quando lembrou que faltou o povo kadiwéu
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV niGidiaGi)
+    )
+    (NP
+      (D ica)
+    )
+    (VB nalaGatibigelo)
+    (CP-me
+      (Q ica)
+      (C me@)
+      (IP-SUB
+        (VB @aniaditibige)
+        (NP
+          (D ica)
+          (N$ noigi)
+          (NP
+            (NPR ejewajegi)
+          )
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.61)
+)
+
+/*
+sentence = 62
+uid = 27ce51d7-24ed-11e5-b0c8-94de80bbbd4a
+text = one aneote aniaditibige ica noigi ejewajegi .
+text_por = Diz que faltava o povo kadiwéu
+*/
+(
+  (IP-MAT
+    (EV one)
+    (NP
+      (NPR aneote)
+    )
+    (VBAPL aniaditibige)
+    (NP-APL
+      (D ica)
+      (N$ noigi)
+      (NP
+        (NPR ejewajegi)
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.62)
+)
+
+/*
+sentence = 63
+uid = 27ce51d9-24ed-11e5-b0c8-94de80bbbd4a
+text = jaaGaGa jowe , ijigo , jiwi miGaleeGica begi migaleeGica me jakapetege .
+text_por = De repente ele falou eu vou eu vou ver este buraco, se tem outros para encontrar
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV jaaGaGa)
+    )
+    (VB jowe)
+    (, ,)
+    (IP-ADV
+      (AUX ijigo)
+      (, ,)
+      (VB jiwi)
+    )
+    (C+ADV miGaleeGica)
+    (NP
+      (N begi)
+    )
+    (C+ADV migaleeGica)
+    (CP-me
+      (C me)
+      (IP-SUB
+        (VBAPL jakapetege)
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.63)
+)
+
+/*
+sentence = 64
+uid = 27ce51dc-24ed-11e5-b0c8-94de80bbbd4a
+text = naGa icodedicogi idiwoda inoatale Godatopidi catinedi ida begi .
+text_por = Quando chegou tinha dois rostos dentro do buraco
+*/
+(
+  (IP-MAT
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB icodedicogi)
+        (NP
+          (NP
+            (Q idiwoda)
+            (NUM inoatale)
+            (N$ Godatopidi)
+          )
+          (QAPL catinedi)
+          (D ida)
+          (N begi)
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.64)
+)
+
+/*
+sentence = 65
+uid = 27ce51dd-24ed-11e5-b0c8-94de80bbbd4a
+text = one AneotedoGoji noGa oninitibece oko .
+text_por = Diz que deus quando tirou cada uma dessas pessoas
+*/
+(
+  (IP-MAT
+    (EV one)
+    (NP
+      (NPR AneotedoGoji)
+    )
+    (VB noGa)
+    (NP
+      (Q oninitibece)
+      (N oko)
+    )
+    (. .)
+  )
+  (ID creation,0.65)
+)
+
+/*
+sentence = 66
+uid = 27ce51de-24ed-11e5-b0c8-94de80bbbd4a
+text = inaa onite ina ina adeoni ina .
+text_por = Disse fique aqui esse você neste canto
+*/
+(
+  (IP-MAT
+    (CONJ inaa)
+    (VB onite)
+    (NP
+      (D ina)
+    )
+    (IP
+      (NP
+        (D ina)
+      )
+      (VB adeoni)
+      (NP
+        (D ina)
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.66)
+)
+
+/*
+sentence = 67
+uid = 27ce51df-24ed-11e5-b0c8-94de80bbbd4a
+text = ini ini eledi mete akami ina .
+text_por = Disse ele pra este outro voce aqui
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (Q ini)
+      (D ini)
+      (ADJ eledi)
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (VBAPL @eete)
+        (NP-APL
+          (PRO akami)
+        )
+        (NP
+          (D ina)
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.67)
+)
+
+/*
+sentence = 68
+uid = 27ce51e1-24ed-11e5-b0c8-94de80bbbd4a
+text = one idi ica aneyate onitecibece latopagi ica oko .
+text_por = Diz que tinham que arrumar lugar para eles
+*/
+(
+  (IP-MAT
+    (EV one)
+    (NP
+      (Q idi)
+      (D ica)
+      (CP-REL
+        (WNP-1
+          (WPRO ane@)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VB @yate)
+          (NP
+            (NP
+              (NUM onitecibece)
+              (N$ latopagi)
+            )
+            (D ica)
+            (N oko)
+          )
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.68)
+)
+
+/*
+sentence = 69
+uid = 27ce51e3-24ed-11e5-b0c8-94de80bbbd4a
+text = oda naGa idiaGidi jiǤicotace anipetacedi AneotedoGoji .
+text_por = Então deus descansou
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (ADVP
+          (ADV idiaGidi)
+        )
+        (T jaǤa@)
+        (VBAPL @icotace)
+        (VB anipetacedi)
+        (NP
+          (NPR AneotedoGoji)
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.69)
+)
+
+/*
+sentence = 70
+uid = 27ce51e4-24ed-11e5-b0c8-94de80bbbd4a
+text = Pida naGa idiaGidi jonaGa nalatedibigi me aniaditibige ica ninakiladi icaGica ica enimaGa .
+text_por = Mas depois lembrou Que faltou os ninikiladis e os enimaGa
+*/
+(
+  (IP-MAT
+    (CONJ Pida)
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (ADVP
+          (ADV idiaGidi)
+        )
+        (T jonaGa)
+        (VB nalatedibigi)
+        (CP-THT
+          (C me)
+          (IP-SUB
+            (VB aniaditibige)
+            (NP
+              (NP
+                (D ica)
+                (NPR ninakiladi)
+              )
+              (CONJP
+                (CONJ icaGica)
+                (NP
+                  (D ica)
+                  (NPR enimaGa)
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.70)
+)
+
+/*
+sentence = 71
+uid = 27ce51e5-24ed-11e5-b0c8-94de80bbbd4a
+text = oda one ecotace ejigo jowa ibakedi .
+text_por = Então ele resolveu ir ao banheiro
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (EV one)
+    (VBAPL ecotace)
+    (IP-APL
+      (AUX ejigo)
+      (VB jowa)
+      (NP
+        (N$ ibakedi)
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.71)
+)
+
+/*
+sentence = 72
+uid = 27ce51e6-24ed-11e5-b0c8-94de80bbbd4a
+text = naGa icotedicogi oda naGa igo ,
+text_por = Então quando chegou
+*/
+(
+  (IP-MAT
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB icotedicogi)
+      )
+    )
+    (CONJ oda)
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB igo)
+      )
+    )
+    (, ,)
+  )
+  (ID creation,0.72)
+)
+
+/*
+sentence = 73
+uid = 27ce51e7-24ed-11e5-b0c8-94de80bbbd4a
+text = one dibate ica iwoGo ica nocilakajegi .
+text_por = Diz que pegou um graveto para se limpar
+*/
+(
+  (IP-MAT
+    (EV one)
+    (VBAPL dibate)
+    (NP-APL
+      (D ica)
+      (N iwoGo)
+    )
+    (NP
+      (D ica)
+      (N$ nocilakajegi)
+    )
+    (. .)
+  )
+  (ID creation,0.73)
+)
+
+/*
+sentence = 74
+uid = 27ce51ea-24ed-11e5-b0c8-94de80bbbd4a
+text = yokoletediogi ica lewoGa .
+text_por = E jogou este na mata
+*/
+(
+  (IP-MAT
+    (VBAPL yokoletediogi)
+    (NP-APL
+      (D ica)
+      (N$ lewoGa)
+    )
+    (. .)
+  )
+  (ID creation,0.74)
+)
+
+/*
+sentence = 75
+uid = 27ce51eb-24ed-11e5-b0c8-94de80bbbd4a
+text = oda niGijo iwoGo naGa enitini ,
+text_por = Então quando o graveto caiu
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (NP
+      (D niGijo)
+      (N iwoGo)
+    )
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VBAPL enitini)
+      )
+    )
+    (, ,)
+  )
+  (ID creation,0.75)
+)
+
+/*
+sentence = 76
+uid = 27ce51ec-24ed-11e5-b0c8-94de80bbbd4a
+text = oda one dapawe oi oi oi
+text_por = Gritaram oi oi oi
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (EV one)
+    (VB dapawe)
+    (INTJ oi)
+    (INTJ oi)
+    (INTJ oi)
+  )
+  (ID creation,0.76)
+)
+
+/*
+sentence = 77
+uid = 27ce51ee-24ed-11e5-b0c8-94de80bbbd4a
+text = oda jonaGa idaGee idi ica aneyate AneotedoGoji oninitecibece oko .
+text_por = E foi assim que Deus deu um jeito em cada pessoa
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (T jonaGa)
+    (ADVP
+      (ADV idaGee)
+    )
+    (NP
+      (Q idi)
+      (D ica)
+      (CP-REL
+        (WNP-1
+          (WPRO ane@)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VBAPL @yate)
+          (NP-APL
+            (NPR AneotedoGoji)
+          )
+          (NP
+            (Q oninitecibece)
+            (N oko)
+          )
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.77)
+)
+
+/*
+sentence = 78
+uid = 27ce51ef-24ed-11e5-b0c8-94de80bbbd4a
+text = Pida daGawini anoko ejewajegi moko otimadaGe
+text_por = Mas olhem os índios kadiwéus que somos nós, teimosos
+*/
+(
+  (IP-MAT
+    (CONJ Pida)
+    (C+VB daGawini)
+    (NP
+      (CP-FRL
+        (WNP-1
+          (WPRO ane@)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (NP
+            (N @oko)
+            (ADJ ejewajegi)
+          )
+        )
+      )
+    )
+    (C+N moko)
+    (ADJ otimadaGe)
+  )
+  (ID creation,0.78)
+)
+
+/*
+sentence = 79
+uid = 27ce51f0-24ed-11e5-b0c8-94de80bbbd4a
+text = oda jonaGa igotibece aniGica .
+text_por = Então ficamos sem direção
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (T jonaGa)
+    (VB igotibece)
+    (NEG aG@)
+    (NP
+      (D @ica)
+    )
+    (. .)
+  )
+  (ID creation,0.79)
+)
+
+/*
+sentence = 80
+uid = 27ce51f1-24ed-11e5-b0c8-94de80bbbd4a
+text = ica ane diiticogi joGoyotimadi icoa AneotedoGoji .
+text_por = Estes não obedeceram Deus
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ica)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VBAPL diiticogi)
+        )
+      )
+    )
+    (T+NEG+VBAPL joGoyotimadi)
+    (NP-PRD
+      (D icoa)
+      (NPR AneotedoGoji)
+    )
+    (. .)
+  )
+  (ID creation,0.80)
+)
+
+/*
+sentence = 81
+uid = 27ce51f2-24ed-11e5-b0c8-94de80bbbd4a
+text = naGa eno AneotedoGoji maaGaleGica ejewajegi
+text_por = Quando deus chegou não tinha mais kadiwéu
+*/
+(
+  (IP-MAT
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB eno)
+        (NP
+          (NPR AneotedoGoji)
+        )
+      )
+    )
+    (C+VB maaGaleGica)
+    (NP
+      (NPR ejewajegi)
+    )
+  )
+  (ID creation,0.81)
+)
+
+/*
+sentence = 82
+uid = 27ce51f4-24ed-11e5-b0c8-94de80bbbd4a
+text = oda jonaGa ixo
+text_por = E ele os amaldiçoou
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV oda)
+    )
+    (EV one@)
+    (T @jaGa)
+    (VB ixo)
+  )
+  (ID creation,0.82)
+)
+
+/*
+sentence = 83
+uid = 27ce51f5-24ed-11e5-b0c8-94de80bbbd4a
+text = one AneotedoGoji idokaneGenitiwaji akami iwiiadi akami alatikegipe .
+text_por = E diz que Deus disse fiquem assim vocês caçadores nômades
+*/
+(
+  (IP-MAT
+    (EV one)
+    (NP
+      (NPR AneotedoGoji)
+    )
+    (VB idokaneGenitiwaji)
+    (NP
+      (PRO akami)
+    )
+    (NP
+      (N iwiiadi)
+    )
+    (NP
+      (PRO akami)
+    )
+    (NP
+      (N alatikegipe)
+    )
+    (. .)
+  )
+  (ID creation,0.83)
+)
+
+/*
+sentence = 84
+uid = 27ce51f7-24ed-11e5-b0c8-94de80bbbd4a
+text = oda jona idaGee ica ane nixotedoGowa AneotedoGoji .
+text_por = Então Deus fez assim
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (T jona)
+    (ADVP
+      (ADV idaGee)
+    )
+    (NP
+      (D ica)
+      (CP-REL
+        (WNP-1
+          (WPRO ane)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (VB nixotedoGowa)
+          (NP
+            (NPR AneotedoGoji)
+          )
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.84)
+)
+
+/*
+sentence = 85
+uid = 27ce51f8-24ed-11e5-b0c8-94de80bbbd4a
+text = oda naGa idiaGidi alawini inoa anejinaGa jinataGa mewi .
+text_por = Agora veja nós
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (ADVP
+          (ADV idiaGidi)
+        )
+        (VB alawini)
+        (NP
+          (D inoa)
+          (CP-REL
+            (WNP-1
+              (WPRO ane@)
+            )
+            (IP-SUB
+              (NP-TRACE
+                (-NONE- *T*-1)
+              )
+              (VB @jinaGa)
+            )
+          )
+        )
+      )
+    )
+    (VB jinataGa)
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (NP
+          (N @iwi)
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.85)
+)
+
+/*
+sentence = 86
+uid = 27ce51fb-24ed-11e5-b0c8-94de80bbbd4a
+status = REVIEW
+text = medaGa Godiciagi inoa eletidi noika .
+text_por = Que não tem o mesmo jeito de ser dos outros índios
+*/
+(
+  (IP-MAT
+    (C me@)
+    (NEG @daGa)
+    (NP-SBJ
+      (N$ Godiciagi)
+    )
+    (NP-SBJ-PRD
+      (D inoa)
+    )
+    (NP-PRD
+      (ADJ eletidi)
+      (N noika)
+    )
+    (. .)
+  )
+  (ID creation,0.86)
+)
+
+/*
+sentence = 87
+uid = 27ce51fc-24ed-11e5-b0c8-94de80bbbd4a
+text = ina ecalaye boGoye etogowayo domojia aniginoa eletidi nimacinatedi ,
+text_por = E dos brancos que fazem aviões carros e outras máquinas
+*/
+(
+  (IP-MAT
+    (NP
+      (D ina)
+      (NPR ecalaye)
+    )
+    (T baGa@)
+    (VB @oye)
+    (NP
+      (N etogowayo)
+    )
+    (NP
+      (NP
+        (N domojia)
+      )
+      (CONJP
+        (CONJ aniginoa)
+        (NP
+          (ADJ eletidi)
+          (N nimacinatedi)
+        )
+      )
+    )
+    (, ,)
+  )
+  (ID creation,0.87)
+)
+
+/*
+sentence = 88
+uid = 27ce51fd-24ed-11e5-b0c8-94de80bbbd4a
+text = anedaGa yakadi meyowe ica noikegi
+text_por = Que não podem fazer os índios
+*/
+(
+  (IP-MAT
+    (NP
+      (CP-FRL
+        (WNP-1
+          (WPRO ane@)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (NEG @daGa)
+          (VB yakadi)
+          (CP-THT
+            (C me@)
+            (IP-SUB
+              (VB @yowe)
+              (NP
+                (D ica)
+                (N noikegi)
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID creation,0.88)
+)
+
+/*
+sentence = 89
+uid = 27ce51fe-24ed-11e5-b0c8-94de80bbbd4a
+text = initibece didiko initibece aniginoa icoa lixaketedi .
+text_por = Alguns estudam e tem sabedoria
+*/
+(
+  (IP-MAT
+    (Q initibece)
+    (VB didiko)
+    (NP
+      (Q initibece)
+      (CP-FRL
+        (WNP-1
+          (WPRO ane@)
+        )
+        (IP-SUB
+          (NP-TRACE
+            (-NONE- *T*-1)
+          )
+          (NP
+            (Q @inawa)
+            (D icoa)
+            (N$ lixaketedi)
+          )
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.89)
+)
+
+/*
+sentence = 90
+uid = 27ce51ff-24ed-11e5-b0c8-94de80bbbd4a
+text = ina noikegi ayowoGodi idoka
+text_por = Este índio não sabe que só sabem caçar que andam na mata
+*/
+(
+  (IP-MAT
+    (NP
+      (D ina)
+      (N noikegi)
+    )
+    (NEG aG@)
+    (VB @yowoGodi)
+    (ADVP
+      (ADV idoka)
+    )
+  )
+  (ID creation,0.90)
+)
+
+/*
+sentence = 91
+uid = 27ce5200-24ed-11e5-b0c8-94de80bbbd4a
+text = yowogodi me dawi me igotigi lewoGa .
+text_por = Porque assim Deus o fez
+*/
+(
+  (IP-MAT
+    (VB yowogodi)
+    (CP-THT
+      (C me)
+      (IP-SUB
+        (VB dawi)
+        (CP-THT
+          (C me)
+          (IP-SUB
+            (VBAPL igotigi)
+            (NP-APL
+              (N$ lewoGa)
+            )
+          )
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.91)
+)
+
+/*
+sentence = 92
+uid = 27ce5201-24ed-11e5-b0c8-94de80bbbd4a
+text = leeGodi jodaGaGa idaGida anaaGa yajigote AneotedoGoji .
+text_por = Porque assim Deus o fez
+*/
+(
+  (IP-MAT
+    (WNP
+      (WPRO leeGodi)
+    )
+    (DEM jodaGaGa)
+    (DEM idaGida)
+    (IP
+      (ADVP
+        (ADV anaaGa)
+      )
+      (VB yajigote)
+      (NP
+        (NPR AneotedoGoji)
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.92)
+)

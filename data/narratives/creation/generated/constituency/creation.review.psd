@@ -1,0 +1,177 @@
+/*
+sentence = 1
+uid = 27ce2aa0-24ed-11e5-b0c8-94de80bbbd4a
+status = REVIEW
+text = natigide jaaGa jatematiGa natematigigi ica maleeka iliidaGadi AneotedoGoji oko
+text_por = Agora vamos contar a história da criação do homem por Deus
+*/
+(
+  (IP-MAT
+    (ADVP
+      (ADV natigide)
+    )
+    (AUX jaaGa)
+    (VB jatematiGa)
+    (NP
+      (NAPL natematigigi)
+      (NP-APL
+        (D ica)
+      )
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (T @aleeka)
+        (VB iliidaGadi)
+        (NP
+          (NPR AneotedoGoji)
+        )
+        (NP
+          (N oko)
+        )
+      )
+    )
+  )
+  (ID creation,0.1)
+)
+
+/*
+sentence = 2
+uid = 27ce2aae-24ed-11e5-b0c8-94de80bbbd4a
+status = REVIEW
+text = ica jotigide AneotedoGoji maleka ilidagiteda ina oko .
+text_por = Antigamente Deus criou esta gente
+*/
+(
+  (IP-MAT
+    (NP-SBJ
+      (D ica)
+    )
+    (ADVP
+      (ADV jotigide)
+    )
+    (NP-PRD
+      (NPR AneotedoGoji)
+    )
+    (CP-me
+      (C me@)
+      (IP-SUB
+        (T @aleeka)
+        (VB ilidagiteda)
+        (NP
+          (D ina)
+          (N oko)
+        )
+      )
+    )
+    (. .)
+  )
+  (ID creation,0.2)
+)
+
+/*
+sentence = 19
+uid = 27ce2ad1-24ed-11e5-b0c8-94de80bbbd4a
+status = REVIEW
+text = jonaGa enotio enidite AneotedoGoji GopokonaGadi .
+text_por = Então Deus chamou o carão
+*/
+(
+  (IP-MAT
+    (EV one@)
+    (T @jaGa)
+    (VBAPL enotio)
+    (VBAPL enidite)
+    (NP-APL
+      (NPR AneotedoGoji)
+    )
+    (NP
+      (NPR GopokonaGadi)
+    )
+    (. .)
+  )
+  (ID creation,0.19)
+)
+
+/*
+sentence = 37
+uid = 27ce51b9-24ed-11e5-b0c8-94de80bbbd4a
+status = REVIEW
+text = oda naGa yeloGotibige niGina AneotedoGoji jonaGa enote .
+text_por = Então quando amanheceu Deus chegou
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (CP-ADV
+      (CT naGa)
+      (IP-SUB
+        (VB yeloGotibige)
+        (NP
+          (D niGina)
+          (NPR AneotedoGoji)
+        )
+      )
+    )
+    (T jonaGa)
+    (VB enote)
+    (. .)
+  )
+  (ID creation,0.37)
+)
+
+/*
+sentence = 50
+uid = 27ce51ca-24ed-11e5-b0c8-94de80bbbd4a
+status = REVIEW
+text = oda one Godaciloditio Godatobiditiogi ica catiwedi ica begi .
+text_por = Diz que cabeças e rostos haviam dentro do buraco
+*/
+(
+  (IP-MAT
+    (CONJ oda)
+    (EV one)
+    (NP-SBJ
+      (N$ Godaciloditio)
+      (NP
+        (N$ Godatobiditiogi)
+      )
+    )
+    (NP-SBJ-PRD
+      (Q ica)
+      (DAPL catiwedi)
+    )
+    (NP-PRD
+      (D ica)
+      (N begi)
+    )
+    (. .)
+  )
+  (ID creation,0.50)
+)
+
+/*
+sentence = 86
+uid = 27ce51fb-24ed-11e5-b0c8-94de80bbbd4a
+status = REVIEW
+text = medaGa Godiciagi inoa eletidi noika .
+text_por = Que não tem o mesmo jeito de ser dos outros índios
+*/
+(
+  (IP-MAT
+    (C me@)
+    (NEG @daGa)
+    (NP-SBJ
+      (N$ Godiciagi)
+    )
+    (NP-SBJ-PRD
+      (D inoa)
+    )
+    (NP-PRD
+      (ADJ eletidi)
+      (N noika)
+    )
+    (. .)
+  )
+  (ID creation,0.86)
+)
