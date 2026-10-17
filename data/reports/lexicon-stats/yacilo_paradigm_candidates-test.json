@@ -1,0 +1,157 @@
+[
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75bdfd9"
+    },
+    "variantList": [],
+    "uid": "b9476fa7-c5fd-4af7-99a3-d1bd998f38f5",
+    "lexicon": "C12",
+    "name": "yacilo",
+    "tag": "N$",
+    "grammar": "subst masc",
+    "definition": "1) minha cabeça 2) chefe (cabeça de pessoa, capitão, chefe de festa ou qualquer líder)  - subst masc",
+    "variants": [],
+    "senses": [
+      {
+        "definition": "minha cabeça"
+      },
+      {
+        "definition": "chefe (cabeça de pessoa, capitão, chefe de festa ou qualquer líder)"
+      }
+    ],
+    "related": [
+      {
+        "entry": "05ae451d-8f25-435d-b957-d4ca01f84035",
+        "order": 1
+      }
+    ],
+    "copyright": "SIL",
+    "plurals": "-acilodi",
+    "modifiedBy": {
+      "uid": "b42219e3-648f-4081-a4ad-110337326750",
+      "name": "Filomena Sandalo",
+      "picture": "https://lh3.googleusercontent.com/a-/AFdZucpZ-EdG81In1mnqkQvybU8W_XMRrK0px-mhq8Tb=s96-c"
+    },
+    "modifiedAt": {
+      "$date": "2025-06-23T20:43:19.085Z"
+    },
+    "status": "DONE"
+  },
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75be6a1"
+    },
+    "uid": "be946f3c-05b0-402d-948c-6e0d41c5859d",
+    "lexicon": "C12",
+    "name": "ǥadacilo",
+    "grammar": "subst masc",
+    "definition": "1) sua cabeça 2) seu chefe  - subst masc",
+    "senses": [
+      {
+        "definition": "sua cabeça"
+      },
+      {
+        "definition": "seu chefe"
+      }
+    ],
+    "related": [
+      {
+        "entry": "8b279ce0-2273-490c-bfa0-45fa6679ef09",
+        "order": 1
+      }
+    ],
+    "copyright": "SIL",
+    "plurals": "Gadacilodi",
+    "markToDelete": false,
+    "status": "TODO"
+  },
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75be782"
+    },
+    "uid": "4c73a43e-3611-4b66-84c9-bed80b3ab62a",
+    "lexicon": "C12",
+    "name": "ǥodacilo",
+    "grammar": "subst masc",
+    "definition": "1) nossa cabeça 2) nosso chefe  - subst masc",
+    "senses": [
+      {
+        "definition": "nossa cabeça"
+      },
+      {
+        "definition": "nosso chefe"
+      }
+    ],
+    "related": [
+      {
+        "entry": "792bb083-d6cb-4556-80a5-266f25711f01",
+        "order": 1
+      }
+    ],
+    "copyright": "SIL",
+    "plurals": "Godacilodi",
+    "markToDelete": false,
+    "status": "TODO"
+  },
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75be78a"
+    },
+    "uid": "d737e4e4-9034-4f8a-b05c-ca6ebd827250",
+    "lexicon": "C12",
+    "name": "ǥodaciloditio",
+    "tag": "N$",
+    "attributes": [
+      {
+        "gloss": "cabeças",
+        "gloss-br": "cabeças"
+      }
+    ],
+    "abbr": false,
+    "definition": "cabeças",
+    "senses": [
+      {
+        "definition": "cabeças"
+      }
+    ],
+    "markToDelete": false,
+    "status": "TODO",
+    "copyright": "tycho"
+  },
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75becf9"
+    },
+    "uid": "8b279ce0-2273-490c-bfa0-45fa6679ef09",
+    "lexicon": "C12",
+    "name": "lacilo",
+    "grammar": "subst masc",
+    "definition": "1) cabeça dele 2) chefe dele  - subst masc",
+    "senses": [
+      {
+        "definition": "cabeça dele"
+      },
+      {
+        "definition": "chefe dele"
+      }
+    ],
+    "related": [
+      {
+        "entry": "792bb083-d6cb-4556-80a5-266f25711f01",
+        "order": 1
+      },
+      {
+        "entry": "6b38a713-2f03-4451-b605-7e1a784c56f7",
+        "order": 2
+      },
+      {
+        "entry": "2e69c8ac-f863-4330-b13a-22b24118fcd3",
+        "order": 3
+      }
+    ],
+    "copyright": "SIL",
+    "plurals": "lacilodi",
+    "markToDelete": false,
+    "status": "TODO"
+  }
+]

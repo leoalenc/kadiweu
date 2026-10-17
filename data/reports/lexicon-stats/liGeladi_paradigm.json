@@ -1,0 +1,464 @@
+[
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75be3ac"
+    },
+    "uid": "b100a47f-6cdb-4ffa-a31b-850353fc7b3e",
+    "lexicon": "C12",
+    "name": "diǥeladetedioǥoji",
+    "definition": "mora entre nós",
+    "senses": [
+      {
+        "definition": "mora entre nós"
+      }
+    ],
+    "copyright": "SIL",
+    "markToDelete": false,
+    "status": "TODO"
+  },
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75be3bc"
+    },
+    "uid": "8269cf6b-2026-4b22-a2cc-f51730227e7a",
+    "lexicon": "C12",
+    "name": "diǥeladetedoǥoji",
+    "definition": "mora em nós",
+    "senses": [
+      {
+        "definition": "mora em nós"
+      }
+    ],
+    "copyright": "SIL",
+    "markToDelete": false,
+    "status": "TODO"
+  },
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75be3ce"
+    },
+    "uid": "8747bd65-efda-48dd-8f40-ac37f1d44aa9",
+    "lexicon": "C12",
+    "name": "dimiigi",
+    "definition": "casa, edifício",
+    "senses": [
+      {
+        "definition": "casa, edifício"
+      }
+    ],
+    "copyright": "SIL",
+    "markToDelete": false,
+    "status": "TODO"
+  },
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75be9ad"
+    },
+    "uid": "8b3d6a4a-e260-41b3-8077-9c57e0138cd1",
+    "lexicon": "C12",
+    "name": "iǥe-eeladi",
+    "definition": "casa de (forma alternativa)",
+    "startHyphen": true,
+    "senses": [
+      {
+        "definition": "casa de (forma alternativa)"
+      }
+    ],
+    "copyright": "SIL",
+    "markToDelete": false,
+    "status": "TODO"
+  },
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75be9b8"
+    },
+    "uid": "137ead0f-6778-4b77-bdec-82c662bf2efe",
+    "lexicon": "C12",
+    "name": "iǥe-eelade",
+    "definition": "(variante do gênero feminino)",
+    "genderVariant": "F",
+    "markToDelete": false,
+    "status": "TODO",
+    "copyright": "tycho"
+  },
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75be9ba"
+    },
+    "uid": "11424225-0393-4ef3-990d-d7d1b20ae094",
+    "lexicon": "C12",
+    "name": "iǥeladi",
+    "tag": "N$",
+    "grammar": "subst masc",
+    "morphemes": [
+      {
+        "name": "i",
+        "tag": "Gen",
+        "attributes": {
+          "gloss-br": "1SG"
+        }
+      },
+      {
+        "name": "ǥeladi",
+        "tag": "n",
+        "attributes": {
+          "gloss-br": "casa"
+        }
+      }
+    ],
+    "attributes": [
+      {
+        "gloss-br": "minha casa"
+      }
+    ],
+    "definition": "1) casa 2) lar  - subst masc",
+    "startHyphen": true,
+    "senses": [
+      {
+        "definition": "casa"
+      },
+      {
+        "definition": "lar"
+      }
+    ],
+    "related": [
+      {
+        "entry": "8b3d6a4a-e260-41b3-8077-9c57e0138cd1",
+        "order": 1
+      },
+      {
+        "entry": "8747bd65-efda-48dd-8f40-ac37f1d44aa9",
+        "order": 2
+      }
+    ],
+    "copyright": "SIL",
+    "plurals": "-iGelatedi",
+    "status": "TODO",
+    "modifiedBy": {
+      "uid": "96e76df0-4f16-4cb3-9211-e65230d16495",
+      "name": "Leonel Figueiredo de Alencar",
+      "picture": "https://www.tycho.iel.unicamp.br/upload/users/e5c395ff-858e-4b88-b3ac-0d7e9246f25f.jpg"
+    },
+    "modifiedAt": {
+      "$date": "2026-07-21T14:43:39.17Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75be9c1"
+    },
+    "variantList": [],
+    "uid": "bb302697-daa3-4e63-8898-9c62004ee09d",
+    "lexicon": "C12",
+    "name": "jiǥelade",
+    "grammar": "vi",
+    "definition": "morar (fazer moradia)",
+    "variants": [],
+    "senses": [
+      {
+        "definition": "morar (fazer moradia)"
+      }
+    ],
+    "related": [
+      {
+        "entry": "b100a47f-6cdb-4ffa-a31b-850353fc7b3e",
+        "order": 1
+      },
+      {
+        "entry": "8269cf6b-2026-4b22-a2cc-f51730227e7a",
+        "order": 2
+      },
+      {
+        "entry": "137ead0f-6778-4b77-bdec-82c662bf2efe"
+      }
+    ],
+    "conjugations": [
+      {
+        "values": [
+          "jiǥelade",
+          "aǥeladee",
+          "diǥelade",
+          "jiǥeladeǥa",
+          "aǥeladeetiwaji",
+          "niǥeladeeǥa "
+        ],
+        "transitivity": "I"
+      }
+    ],
+    "copyright": "SIL",
+    "status": "DONE",
+    "modifiedBy": {
+      "uid": "056a8a6a-8459-49b2-807e-4bf0961fea8b",
+      "name": "João Vitor Antunes Gomes",
+      "picture": "https://lh3.googleusercontent.com/a/ACg8ocIoSBXgiqBfUsrL6OIUrYqmdKCmvr5gtWIXQheeUuIEYNOTFwo=s96-c"
+    },
+    "modifiedAt": {
+      "$date": "2026-03-19T18:20:27.645Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75bee6a"
+    },
+    "uid": "461fe08b-655c-4e2e-beb1-673e2cbdaba8",
+    "lexicon": "C12",
+    "name": "leǥe-eeladi",
+    "definition": "(variante do gênero feminino)",
+    "genderVariant": "F",
+    "markToDelete": false,
+    "status": "TODO",
+    "copyright": "tycho"
+  },
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75bee77"
+    },
+    "uid": "8103b2f3-4c19-49f9-ac79-85335c08e5c6",
+    "lexicon": "C12",
+    "name": "liǥeladi",
+    "tag": "N$",
+    "grammar": "subst",
+    "morphemes": [
+      {
+        "name": "l",
+        "tag": "Gen",
+        "attributes": {
+          "gloss-br": "3"
+        }
+      },
+      {
+        "name": "ǥeladi",
+        "tag": "n",
+        "attributes": {
+          "gloss-br": "casa",
+          "gloss": "house"
+        }
+      }
+    ],
+    "attributes": [
+      {
+        "gloss-br": "casa del(e|a)",
+        "gloss": "(his|her) house"
+      }
+    ],
+    "abbr": false,
+    "definition": "1) casa dele 2) lar dele  - subst",
+    "senses": [
+      {
+        "definition": "casa dele"
+      },
+      {
+        "definition": "lar dele"
+      }
+    ],
+    "related": [
+      {
+        "entry": "11424225-0393-4ef3-990d-d7d1b20ae094",
+        "order": 1
+      },
+      {
+        "entry": "bb302697-daa3-4e63-8898-9c62004ee09d",
+        "order": 2
+      },
+      {
+        "entry": "461fe08b-655c-4e2e-beb1-673e2cbdaba8"
+      }
+    ],
+    "copyright": "SIL",
+    "plurals": "liGelatedi",
+    "status": "TODO",
+    "modifiedBy": {
+      "uid": "96e76df0-4f16-4cb3-9211-e65230d16495",
+      "name": "Leonel Figueiredo de Alencar",
+      "picture": "https://www.tycho.iel.unicamp.br/upload/users/e5c395ff-858e-4b88-b3ac-0d7e9246f25f.jpg"
+    },
+    "modifiedAt": {
+      "$date": "2026-06-04T13:56:53.929Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "684d8030ee7f9275b75bf70e"
+    },
+    "uid": "3603325c-1953-4d3e-aab3-59638d49abfc",
+    "lexicon": "C12",
+    "name": "liǥeladi",
+    "tag": "N$",
+    "morphemes": [
+      {
+        "name": "l",
+        "tag": "Gen",
+        "attributes": {
+          "gloss-br": "3"
+        }
+      },
+      {
+        "name": "Geladi",
+        "tag": "n",
+        "attributes": {
+          "gloss-br": "casa"
+        }
+      }
+    ],
+    "attributes": [
+      {
+        "gloss-br": "casa dela/dele"
+      }
+    ],
+    "abbr": false,
+    "definition": "casa dela/dele",
+    "senses": [
+      {
+        "definition": "casa dela/dele"
+      }
+    ],
+    "markToDelete": false,
+    "status": "TODO",
+    "copyright": "tycho"
+  },
+  {
+    "_id": {
+      "$oid": "684d8030ee7f9275b75bf808"
+    },
+    "uid": "878b0161-0b26-4c92-8e77-b6160057164a",
+    "lexicon": "C12",
+    "name": "iǥeladi",
+    "tag": "N$",
+    "morphemes": [
+      {
+        "name": "i",
+        "tag": "Gen"
+      },
+      {
+        "name": "geladi",
+        "tag": "n"
+      }
+    ],
+    "attributes": [
+      {
+        "gloss-br": "minha casa"
+      }
+    ],
+    "abbr": false,
+    "definition": "minha casa",
+    "senses": [
+      {
+        "definition": "minha casa"
+      }
+    ],
+    "markToDelete": false,
+    "status": "TODO",
+    "copyright": "tycho"
+  },
+  {
+    "_id": {
+      "$oid": "684d8030ee7f9275b75bf818"
+    },
+    "uid": "5ef89e68-ce99-4485-bdd7-8244f789cf76",
+    "lexicon": "C12",
+    "name": "iǥeladi",
+    "tag": "N$",
+    "abbr": false,
+    "markToDelete": false,
+    "status": "TODO",
+    "copyright": "tycho"
+  },
+  {
+    "_id": {
+      "$oid": "69c417d77bf7345c2a0e5aef"
+    },
+    "uid": "68141ef7-8376-42d2-bca4-7b7c0915616f",
+    "lexicon": "C12",
+    "name": "liGeladi",
+    "tag": "N$",
+    "morphemes": [
+      {
+        "name": "l",
+        "tag": "Gen",
+        "attributes": {
+          "gloss-br": "3"
+        }
+      },
+      {
+        "name": "iGeladi",
+        "tag": "n",
+        "attributes": {
+          "gloss-br": "casa"
+        }
+      }
+    ],
+    "attributes": [
+      {
+        "gloss-br": "casa dela"
+      },
+      {
+        "gloss-br": "casa dele"
+      }
+    ],
+    "copyright": "tycho",
+    "struct": "aad13f14-bd9a-462a-9a43-68ba69a81519",
+    "createdBy": {
+      "uid": "b42219e3-648f-4081-a4ad-110337326750",
+      "name": "Filomena Sandalo",
+      "picture": "https://lh3.googleusercontent.com/a-/AFdZucpZ-EdG81In1mnqkQvybU8W_XMRrK0px-mhq8Tb=s96-c"
+    },
+    "modifiedBy": {
+      "uid": "b42219e3-648f-4081-a4ad-110337326750",
+      "name": "Filomena Sandalo",
+      "picture": "https://lh3.googleusercontent.com/a-/AFdZucpZ-EdG81In1mnqkQvybU8W_XMRrK0px-mhq8Tb=s96-c"
+    },
+    "createdAt": {
+      "$date": "2026-03-25T17:13:59.296Z"
+    },
+    "modifiedAt": {
+      "$date": "2026-09-10T20:18:35.133Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "69d125bc2ffeaf2c8b81e618"
+    },
+    "uid": "3cb854fe-d4fb-4358-886a-d61e7554146c",
+    "lexicon": "C12",
+    "name": "iGeladi",
+    "tag": "N$",
+    "morphemes": [
+      {
+        "name": "i",
+        "tag": "Gen",
+        "attributes": {
+          "gloss-br": "1s"
+        }
+      },
+      {
+        "name": "iGeladi",
+        "tag": "n",
+        "attributes": {
+          "gloss-br": "casa"
+        }
+      }
+    ],
+    "attributes": [
+      {
+        "gloss-br": "minha casa"
+      }
+    ],
+    "copyright": "tycho",
+    "createdBy": {
+      "uid": "96e76df0-4f16-4cb3-9211-e65230d16495",
+      "name": "Leonel Figueiredo de Alencar",
+      "picture": "https://www.tycho.iel.unicamp.br/upload/users/e5c395ff-858e-4b88-b3ac-0d7e9246f25f.jpg"
+    },
+    "modifiedBy": {
+      "uid": "96e76df0-4f16-4cb3-9211-e65230d16495",
+      "name": "Leonel Figueiredo de Alencar",
+      "picture": "https://www.tycho.iel.unicamp.br/upload/users/e5c395ff-858e-4b88-b3ac-0d7e9246f25f.jpg"
+    },
+    "createdAt": {
+      "$date": "2026-04-04T14:52:44.228Z"
+    },
+    "modifiedAt": {
+      "$date": "2026-10-01T16:05:38.252Z"
+    }
+  }
+]

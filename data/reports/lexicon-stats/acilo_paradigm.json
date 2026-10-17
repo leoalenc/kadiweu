@@ -1,0 +1,83 @@
+[
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75bdfd9"
+    },
+    "variantList": [],
+    "uid": "b9476fa7-c5fd-4af7-99a3-d1bd998f38f5",
+    "lexicon": "C12",
+    "name": "yacilo",
+    "tag": "N$",
+    "grammar": "subst masc",
+    "definition": "1) minha cabeça 2) chefe (cabeça de pessoa, capitão, chefe de festa ou qualquer líder)  - subst masc",
+    "variants": [],
+    "senses": [
+      {
+        "definition": "minha cabeça"
+      },
+      {
+        "definition": "chefe (cabeça de pessoa, capitão, chefe de festa ou qualquer líder)"
+      }
+    ],
+    "related": [
+      {
+        "entry": "05ae451d-8f25-435d-b957-d4ca01f84035",
+        "order": 1
+      }
+    ],
+    "copyright": "SIL",
+    "plurals": "-acilodi",
+    "modifiedBy": {
+      "uid": "b42219e3-648f-4081-a4ad-110337326750",
+      "name": "Filomena Sandalo",
+      "picture": "https://lh3.googleusercontent.com/a-/AFdZucpZ-EdG81In1mnqkQvybU8W_XMRrK0px-mhq8Tb=s96-c"
+    },
+    "modifiedAt": {
+      "$date": "2025-06-23T20:43:19.085Z"
+    },
+    "status": "DONE"
+  },
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75bdfee"
+    },
+    "variantList": [],
+    "uid": "05ae451d-8f25-435d-b957-d4ca01f84035",
+    "lexicon": "C12",
+    "name": "ejacilotidi",
+    "tag": "VB",
+    "grammar": "vt",
+    "definition": "ferir  - vt",
+    "variants": [],
+    "senses": [
+      {
+        "definition": "ferir"
+      }
+    ],
+    "related": [],
+    "conjugations": [
+      {
+        "values": [
+          "ejacilotidi",
+          "acilotiti",
+          "eyacilotidi dinanacilotidi (se ferir)",
+          "ejacilotitaGa",
+          "acilotititiwaji",
+          "oyacilotidi"
+        ],
+        "transitivity": "T"
+      }
+    ],
+    "copyright": "SIL",
+    "draft": true,
+    "modifiedBy": {
+      "uid": "b42219e3-648f-4081-a4ad-110337326750",
+      "name": "Filomena Sandalo",
+      "picture": "https://lh3.googleusercontent.com/a-/AFdZucpZ-EdG81In1mnqkQvybU8W_XMRrK0px-mhq8Tb=s96-c"
+    },
+    "modifiedAt": {
+      "$date": "2025-06-23T20:45:14.036Z"
+    },
+    "status": "DONE"
+  }
+]

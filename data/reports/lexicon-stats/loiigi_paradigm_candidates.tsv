@@ -1,0 +1,7 @@
+candidate_form_or_value	occurrence_type	source_record_name	source_record_uid	source_field	inclusion_reasons
+ǥodoigi	record_name	ǥodoigi	ea042498-d255-4291-ab0f-37fb739860a3	name	definition-or-gloss-contains:comunidade
+loiigi	record_name	loiigi	28d6a77a-19c6-44c0-9ce0-b37095f02d2b	name	seed-name
+loiigiwepodi, loiika	inside_record	loiigi	28d6a77a-19c6-44c0-9ce0-b37095f02d2b	plurals	source_record:seed-name; stored_in_field:plurals
+loigi	record_name	loigi	0ce442cd-796e-4fdf-bcaa-456a828fae70	name	definition-or-gloss-contains:comunidade
+Godoigi	record_name	Godoigi	4643f94c-0653-4795-95b4-0e2a73e52779	name	definition-or-gloss-contains:comunidade
+loigipodi	record_name	loigipodi	fdf4d086-67fa-4d91-8435-a6145b51acb2	name	definition-or-gloss-contains:comunidade

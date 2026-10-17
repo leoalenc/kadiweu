@@ -1,0 +1,183 @@
+[
+  {
+    "_id": {
+      "$oid": "684d802fee7f9275b75be805"
+    },
+    "uid": "ea042498-d255-4291-ab0f-37fb739860a3",
+    "lexicon": "C12",
+    "name": "ǥodoigi",
+    "tag": "N$",
+    "attributes": [
+      {
+        "gloss-br": "nosso comunidade"
+      },
+      {
+        "gloss-br": "nossa comunidade"
+      }
+    ],
+    "abbr": false,
+    "definition": "nosso povo",
+    "senses": [
+      {
+        "definition": "nosso povo"
+      }
+    ],
+    "copyright": "tycho",
+    "status": "TODO",
+    "modifiedBy": {
+      "uid": "b42219e3-648f-4081-a4ad-110337326750",
+      "name": "Filomena Sandalo",
+      "picture": "https://lh3.googleusercontent.com/a-/AFdZucpZ-EdG81In1mnqkQvybU8W_XMRrK0px-mhq8Tb=s96-c"
+    },
+    "modifiedAt": {
+      "$date": "2026-05-21T16:28:10.174Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "684d8030ee7f9275b75bef61"
+    },
+    "uid": "28d6a77a-19c6-44c0-9ce0-b37095f02d2b",
+    "lexicon": "C12",
+    "name": "loiigi",
+    "grammar": "subst masc",
+    "definition": "1) povo dele 2) turma dele (pessoas ou gente - o 2G plural acima significa os povos)  - subst masc",
+    "senses": [
+      {
+        "definition": "povo dele"
+      },
+      {
+        "definition": "turma dele (pessoas ou gente - o 2G plural acima significa os povos)"
+      }
+    ],
+    "related": [
+      {
+        "entry": "e701628a-5372-4153-8498-6ce67528972b",
+        "order": 1
+      }
+    ],
+    "copyright": "SIL",
+    "plurals": "loiigiwepodi, loiika",
+    "markToDelete": false,
+    "status": "TODO"
+  },
+  {
+    "_id": {
+      "$oid": "684d8030ee7f9275b75bf7f5"
+    },
+    "uid": "0ce442cd-796e-4fdf-bcaa-456a828fae70",
+    "lexicon": "C12",
+    "name": "loigi",
+    "tag": "N$",
+    "morphemes": [
+      {
+        "name": "l",
+        "tag": "Gen",
+        "attributes": {
+          "gloss-br": "3"
+        }
+      },
+      {
+        "name": "oigi",
+        "tag": "n",
+        "attributes": {
+          "gloss-br": "comunidade"
+        }
+      }
+    ],
+    "attributes": [
+      {
+        "gloss-br": "comunidade dele"
+      }
+    ],
+    "abbr": false,
+    "definition": "comunidade dele",
+    "senses": [
+      {
+        "definition": "comunidade dele"
+      }
+    ],
+    "markToDelete": false,
+    "status": "TODO",
+    "copyright": "tycho"
+  },
+  {
+    "_id": {
+      "$oid": "6a0f3435dd30157d70123a96"
+    },
+    "uid": "4643f94c-0653-4795-95b4-0e2a73e52779",
+    "lexicon": "C12",
+    "name": "Godoigi",
+    "tag": "N$",
+    "attributes": [
+      {
+        "gloss-br": "nossa comunidade"
+      },
+      {
+        "gloss-br": "nosso povo"
+      }
+    ],
+    "copyright": "tycho",
+    "createdBy": {
+      "uid": "b42219e3-648f-4081-a4ad-110337326750",
+      "name": "Filomena Sandalo",
+      "picture": "https://lh3.googleusercontent.com/a-/AFdZucpZ-EdG81In1mnqkQvybU8W_XMRrK0px-mhq8Tb=s96-c"
+    },
+    "modifiedBy": {
+      "uid": "b42219e3-648f-4081-a4ad-110337326750",
+      "name": "Filomena Sandalo",
+      "picture": "https://lh3.googleusercontent.com/a-/AFdZucpZ-EdG81In1mnqkQvybU8W_XMRrK0px-mhq8Tb=s96-c"
+    },
+    "createdAt": {
+      "$date": "2026-05-21T16:35:01.2Z"
+    },
+    "modifiedAt": {
+      "$date": "2026-09-10T20:14:38.014Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a10af2bdd30157d70123a9c"
+    },
+    "uid": "fdf4d086-67fa-4d91-8435-a6145b51acb2",
+    "lexicon": "C12",
+    "name": "loigipodi",
+    "tag": "N$",
+    "morphemes": [
+      {
+        "name": "l",
+        "tag": "Gnr"
+      },
+      {
+        "name": "oigi",
+        "tag": "n"
+      },
+      {
+        "name": "podi",
+        "tag": "Plu"
+      }
+    ],
+    "attributes": [
+      {
+        "gloss-br": "sua comunidade"
+      }
+    ],
+    "copyright": "tycho",
+    "createdBy": {
+      "uid": "b42219e3-648f-4081-a4ad-110337326750",
+      "name": "Filomena Sandalo",
+      "picture": "https://lh3.googleusercontent.com/a-/AFdZucpZ-EdG81In1mnqkQvybU8W_XMRrK0px-mhq8Tb=s96-c"
+    },
+    "modifiedBy": {
+      "uid": "b42219e3-648f-4081-a4ad-110337326750",
+      "name": "Filomena Sandalo",
+      "picture": "https://lh3.googleusercontent.com/a-/AFdZucpZ-EdG81In1mnqkQvybU8W_XMRrK0px-mhq8Tb=s96-c"
+    },
+    "createdAt": {
+      "$date": "2026-05-22T19:31:55.652Z"
+    },
+    "modifiedAt": {
+      "$date": "2026-05-22T19:31:55.652Z"
+    }
+  }
+]

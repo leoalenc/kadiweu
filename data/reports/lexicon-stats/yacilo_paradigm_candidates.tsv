@@ -1,0 +1,79 @@
+candidate_form_or_value	occurrence_type	source_record_name	source_record_uid	source_field	inclusion_reasons
+yacilo	record_name	yacilo	b9476fa7-c5fd-4af7-99a3-d1bd998f38f5	name	definition-or-gloss-contains:cabeça; name-contains-stem:acilo; plurals-contains-stem:acilo; seed-name
+-acilodi	inside_record	yacilo	b9476fa7-c5fd-4af7-99a3-d1bd998f38f5	plurals	form_value_contains_stem:acilo; source_record:definition-or-gloss-contains:cabeça; source_record:name-contains-stem:acilo; source_record:plurals-contains-stem:acilo; source_record:seed-name; source_record_definition-or-gloss-contains:cabeça; stored_in_field:plurals
+ejacilo	record_name	ejacilo	58ff2dcd-231d-4214-a08b-9ee3cd2d89c1	name	conjugations-contains-stem:acilo; name-contains-stem:acilo
+ejacilo	inside_record	ejacilo	58ff2dcd-231d-4214-a08b-9ee3cd2d89c1	conjugations	form_value_contains_stem:acilo; source_record:conjugations-contains-stem:acilo; source_record:name-contains-stem:acilo; stored_in_field:conjugations
+acilo	inside_record	ejacilo	58ff2dcd-231d-4214-a08b-9ee3cd2d89c1	conjugations	form_value_contains_stem:acilo; source_record:conjugations-contains-stem:acilo; source_record:name-contains-stem:acilo; stored_in_field:conjugations
+ejacilaǥa	inside_record	ejacilo	58ff2dcd-231d-4214-a08b-9ee3cd2d89c1	conjugations	source_record:conjugations-contains-stem:acilo; source_record:name-contains-stem:acilo; stored_in_field:conjugations
+ejacilaǥatiwaji	inside_record	ejacilo	58ff2dcd-231d-4214-a08b-9ee3cd2d89c1	conjugations	source_record:conjugations-contains-stem:acilo; source_record:name-contains-stem:acilo; stored_in_field:conjugations
+acilotiwaji	inside_record	ejacilo	58ff2dcd-231d-4214-a08b-9ee3cd2d89c1	conjugations	form_value_contains_stem:acilo; source_record:conjugations-contains-stem:acilo; source_record:name-contains-stem:acilo; stored_in_field:conjugations
+etacilotibigiwaji	inside_record	ejacilo	58ff2dcd-231d-4214-a08b-9ee3cd2d89c1	conjugations	form_value_contains_stem:acilo; source_record:conjugations-contains-stem:acilo; source_record:name-contains-stem:acilo; stored_in_field:conjugations
+ejacilotidi	record_name	ejacilotidi	05ae451d-8f25-435d-b957-d4ca01f84035	name	conjugations-contains-stem:acilo; name-contains-stem:acilo
+ejacilotidi	inside_record	ejacilotidi	05ae451d-8f25-435d-b957-d4ca01f84035	conjugations	form_value_contains_stem:acilo; source_record:conjugations-contains-stem:acilo; source_record:name-contains-stem:acilo; stored_in_field:conjugations
+acilotiti	inside_record	ejacilotidi	05ae451d-8f25-435d-b957-d4ca01f84035	conjugations	form_value_contains_stem:acilo; source_record:conjugations-contains-stem:acilo; source_record:name-contains-stem:acilo; stored_in_field:conjugations
+eyacilotidi dinanacilotidi (se ferir)	inside_record	ejacilotidi	05ae451d-8f25-435d-b957-d4ca01f84035	conjugations	form_value_contains_stem:acilo; source_record:conjugations-contains-stem:acilo; source_record:name-contains-stem:acilo; stored_in_field:conjugations
+ejacilotitaGa	inside_record	ejacilotidi	05ae451d-8f25-435d-b957-d4ca01f84035	conjugations	form_value_contains_stem:acilo; source_record:conjugations-contains-stem:acilo; source_record:name-contains-stem:acilo; stored_in_field:conjugations
+acilotititiwaji	inside_record	ejacilotidi	05ae451d-8f25-435d-b957-d4ca01f84035	conjugations	form_value_contains_stem:acilo; source_record:conjugations-contains-stem:acilo; source_record:name-contains-stem:acilo; stored_in_field:conjugations
+oyacilotidi	inside_record	ejacilotidi	05ae451d-8f25-435d-b957-d4ca01f84035	conjugations	form_value_contains_stem:acilo; source_record:conjugations-contains-stem:acilo; source_record:name-contains-stem:acilo; stored_in_field:conjugations
+jabalenaǥa	record_name	jabalenaǥa	b07b561f-f545-4f30-be19-f66c07e3009a	name	definition-or-gloss-contains:cabeça
+jabalenaGa	inside_record	jabalenaǥa	b07b561f-f545-4f30-be19-f66c07e3009a	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+abalenaGani	inside_record	jabalenaǥa	b07b561f-f545-4f30-be19-f66c07e3009a	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+dabalenaGa	inside_record	jabalenaǥa	b07b561f-f545-4f30-be19-f66c07e3009a	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+jabalenaGanaGa	inside_record	jabalenaǥa	b07b561f-f545-4f30-be19-f66c07e3009a	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+abalenaGanitiwaji	inside_record	jabalenaǥa	b07b561f-f545-4f30-be19-f66c07e3009a	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+nabalenaGanaGa	inside_record	jabalenaǥa	b07b561f-f545-4f30-be19-f66c07e3009a	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+dalicetigi	record_name	dalicetigi	5867af45-1852-4bcf-97e2-103f29abda2e	name	definition-or-gloss-contains:cabeça
+jetigi	record_name	jetigi	6954ae48-4b93-4829-98b4-c2113bc8b51d	name	definition-or-gloss-contains:cabeça
+jetigi	inside_record	jetigi	6954ae48-4b93-4829-98b4-c2113bc8b51d	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+enitigi	inside_record	jetigi	6954ae48-4b93-4829-98b4-c2113bc8b51d	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+yetigi	inside_record	jetigi	6954ae48-4b93-4829-98b4-c2113bc8b51d	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+jenaGatigi	inside_record	jetigi	6954ae48-4b93-4829-98b4-c2113bc8b51d	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+enitigitiwaji	inside_record	jetigi	6954ae48-4b93-4829-98b4-c2113bc8b51d	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+oyetigi 	inside_record	jetigi	6954ae48-4b93-4829-98b4-c2113bc8b51d	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+etidetigi	inside_record	jetigi	6954ae48-4b93-4829-98b4-c2113bc8b51d	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+etiǥadetigi	inside_record	jetigi	6954ae48-4b93-4829-98b4-c2113bc8b51d	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+oyetigi	inside_record	jetigi	6954ae48-4b93-4829-98b4-c2113bc8b51d	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+etiǥodetigi	inside_record	jetigi	6954ae48-4b93-4829-98b4-c2113bc8b51d	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+etiǥadenitigitiwaji	inside_record	jetigi	6954ae48-4b93-4829-98b4-c2113bc8b51d	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+oyetiniwace	inside_record	jetigi	6954ae48-4b93-4829-98b4-c2113bc8b51d	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+elimaǥa	record_name	elimaǥa	0fc9a9d4-9ec4-4ebd-8d77-76bd1d498103	name	definition-or-gloss-contains:cabeça
+etacilo	record_name	etacilo	24020754-f0d9-47b0-b8da-90c2b2ccd42f	name	name-contains-stem:acilo
+etakilo	record_name	etakilo	54b1467b-0fda-412d-90f0-1628daf09f64	name	name-contains-stem:akilo
+ǥadacilo	record_name	ǥadacilo	be946f3c-05b0-402d-948c-6e0d41c5859d	name	definition-or-gloss-contains:cabeça; name-contains-stem:acilo; plurals-contains-stem:acilo
+Gadacilodi	inside_record	ǥadacilo	be946f3c-05b0-402d-948c-6e0d41c5859d	plurals	form_value_contains_stem:acilo; source_record:definition-or-gloss-contains:cabeça; source_record:name-contains-stem:acilo; source_record:plurals-contains-stem:acilo; source_record_definition-or-gloss-contains:cabeça; stored_in_field:plurals
+ǥodacilo	record_name	ǥodacilo	4c73a43e-3611-4b66-84c9-bed80b3ab62a	name	definition-or-gloss-contains:cabeça; name-contains-stem:acilo; plurals-contains-stem:acilo
+Godacilodi	inside_record	ǥodacilo	4c73a43e-3611-4b66-84c9-bed80b3ab62a	plurals	form_value_contains_stem:acilo; source_record:definition-or-gloss-contains:cabeça; source_record:name-contains-stem:acilo; source_record:plurals-contains-stem:acilo; source_record_definition-or-gloss-contains:cabeça; stored_in_field:plurals
+ǥodaciloditio	record_name	ǥodaciloditio	d737e4e4-9034-4f8a-b05c-ca6ebd827250	name	definition-or-gloss-contains:cabeça; name-contains-stem:acilo
+lacilo-nelegi	record_name	lacilo-nelegi	2e69c8ac-f863-4330-b13a-22b24118fcd3	name	name-contains-stem:acilo
+lacilodipi	record_name	lacilodipi	6b38a713-2f03-4451-b605-7e1a784c56f7	name	name-contains-stem:acilo
+lacilo	record_name	lacilo	8b279ce0-2273-490c-bfa0-45fa6679ef09	name	definition-or-gloss-contains:cabeça; name-contains-stem:acilo; plurals-contains-stem:acilo
+lacilodi	inside_record	lacilo	8b279ce0-2273-490c-bfa0-45fa6679ef09	plurals	form_value_contains_stem:acilo; source_record:definition-or-gloss-contains:cabeça; source_record:name-contains-stem:acilo; source_record:plurals-contains-stem:acilo; source_record_definition-or-gloss-contains:cabeça; stored_in_field:plurals
+lacilojegi	record_name	lacilojegi	33c21926-066a-4873-809a-1540b2f98697	name	name-contains-stem:acilo; plurals-contains-stem:acilo
+lacilojedi	inside_record	lacilojegi	33c21926-066a-4873-809a-1540b2f98697	plurals	form_value_contains_stem:acilo; source_record:name-contains-stem:acilo; source_record:plurals-contains-stem:acilo; stored_in_field:plurals
+lacilotibige-ninyoǥodi	record_name	lacilotibige-ninyoǥodi	1f9ccfae-d6fa-4690-9fec-5629e86b4240	name	name-contains-stem:acilo
+lakaaǥadi	record_name	lakaaǥadi	97cd127b-8fb3-4ae9-9cf9-b211058a8f43	name	definition-or-gloss-contains:cabeça
+napigixo	record_name	napigixo	65cba01e-9b55-425d-af4f-1a4483d9f1f9	name	definition-or-gloss-contains:cabeça
+napigixodi, napigixoli	inside_record	napigixo	65cba01e-9b55-425d-af4f-1a4483d9f1f9	plurals	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:plurals
+opakilogola	record_name	opakilogola	e23bf544-60ee-489a-9fd6-d7411fae61f5	name	name-contains-stem:akilo; plurals-contains-stem:akilo
+opakilogoladi	inside_record	opakilogola	e23bf544-60ee-489a-9fd6-d7411fae61f5	plurals	form_value_contains_stem:akilo; source_record:name-contains-stem:akilo; source_record:plurals-contains-stem:akilo; stored_in_field:plurals
+yakilo	record_name	yakilo	186d4446-514d-4240-a0d8-b35da56bd2d7	name	definition-or-gloss-contains:cabeça; name-contains-stem:akilo
+atope	record_name	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	name	definition-or-gloss-contains:cabeça
+jatope	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+atopeni	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+iatope	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+jatopenaǥa	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+atopenitiwaji	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+oiatope	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+onatopetiloco	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+oiatopetaǥaloco	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+oiatopeteloco	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+onatopetoǥoloco	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+oiatopetaǥalocotiwaji	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+oitopetiogi	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+etidatopentigi	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+etiǥadatopentigi	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+onatopetigi	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+etiǥodatopetigi	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+etiǥatopenitigitiwaji	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+onatopetiniwace	inside_record	atope	8e4d4bd3-ac04-4043-b759-2468f7cf57b3	conjugations	source_record:definition-or-gloss-contains:cabeça; source_record_definition-or-gloss-contains:cabeça; stored_in_field:conjugations
+akilo	record_name	akilo	b17959dc-ab3e-4b1c-a130-887c51b6151d	name	definition-or-gloss-contains:cabeça; name-contains-stem:akilo
