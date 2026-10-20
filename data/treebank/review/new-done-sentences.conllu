@@ -53,7 +53,7 @@
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
-# ud_review_status = TODO
+# ud_review_status = DONE
 1	akaami	akaami	PRON	PRO	Number=Plur|PronType=Prs	3	obj	_	TokenRange=0:6
 2	oko	oko	PRON	PRO	_	3	nsubj	_	TokenRange=7:10
 3	jipacaGataGagitiwaji	jipacaGataGagitiwaji	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Number=Plur|Person[erg]=1|Person[obj]=2|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=11:31
@@ -68,8 +68,8 @@
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
-# ud_review_status = TODO
-1	IiGeladi	Geladi	NOUN	N$	Person[psor]=3	4	nsubj	_	TokenRange=0:8
+# ud_review_status = DONE
+1	LiGeladi	Geladi	NOUN	N$	Person[psor]=3	4	nsubj	_	TokenRange=0:8
 2-3	midi	_	_	_	_	_	_	_	TokenRange=9:13
 2	me	me	SCONJ	C	_	4	mark	_	_
 3	idi	idi	DET	D	Gender=Masc|PronType=Dem	4	det	_	_
@@ -85,7 +85,7 @@
 # source_document_uid = 28eeb8a0-d923-4d75-aebe-599aadddfbbb
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
-# ud_review_status = TODO
+# ud_review_status = DONE
 1	etogo	etogo	NOUN	N	Gender=Fem|Number=Sing	5	dislocated	_	TokenRange=0:5
 2-3	aneiwaGadi	_	_	_	_	_	_	_	TokenRange=6:16
 2	ane	ane	PRON	WPRO	PronType=Rel	3	nsubj	_	_
