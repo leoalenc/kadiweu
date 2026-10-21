@@ -731,9 +731,9 @@
 # source_document_uid = 9d0f60a9-8c32-44c0-ac68-0b5d5b993db8
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
-# ud_review_status = TODO
+# ud_review_status = DONE
 1	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	3	det	_	TokenRange=0:3
-2	niwigo	wigo	NOUN	N	_	3	nmod:poss	_	TokenRange=4:10
+2	niwigo	wigo	NOUN	N	Gender=Masc|Number=Sing	3	nmod:poss	_	TokenRange=4:10
 3	libinienigi	binie	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing|Person[psor]=3	5	nsubj	_	TokenRange=11:22
 4	ijowa	ijowa	DET	D	_	5	det	_	TokenRange=23:28
 5	nigetedi	getegi	NOUN	N$	Number=Plur	0	root	_	SpaceAfter=No|TokenRange=29:37
