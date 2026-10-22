@@ -299,8 +299,8 @@
 2	idei	dei	VERB	VB	Mood=Ind|Number[erg]=Sing|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
 3	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	TokenRange=13:18
 4-5	anenapioi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=19:28
-4	ane	napioi	PRON	WPRO	PronType=Rel	5	nsubj	_	_
-5	napioi	napioi	ADJ	ADJ	_	3	acl:relcl	_	_
+4	ane	ane	PRON	WPRO	PronType=Rel	5	nsubj	_	_
+5	napioi	napioi	NOUN	N	_	3	acl:relcl	_	_
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
 
 # sent_id = ped-gramm-25
@@ -313,7 +313,7 @@
 2	idei	dei	VERB	VB	Mood=Ind|Number[erg]=Sing|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=8:12
 3	naigi	naigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	TokenRange=13:18
 4	me	me	SCONJ	C	_	5	mark	_	TokenRange=19:21
-5	napioi	napioi	ADJ	ADJ	_	3	acl:relcl	_	SpaceAfter=No|TokenRange=22:28
+5	napioi	napioi	NOUN	N	_	3	acl:relcl	_	SpaceAfter=No|TokenRange=22:28
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
 
 # sent_id = ped-gramm-26
@@ -325,7 +325,7 @@
 1	João	joão	PROPN	NPR	Gender=Masc	2	nmod:poss	_	TokenRange=0:4
 2	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	0	root	_	TokenRange=5:13
 3	ane	ane	PRON	WPRO	PronType=Rel	4	nsubj	_	TokenRange=14:17
-4	napioi	napioi	ADJ	ADJ	_	2	acl:relcl	_	SpaceAfter=No|TokenRange=18:24
+4	napioi	napioi	NOUN	N	_	2	acl:relcl	_	SpaceAfter=No|TokenRange=18:24
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = ped-gramm-27
@@ -471,7 +471,7 @@
 1	ijo	ijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	Gatodi	Gatodi	NOUN	N	Gender=Masc|Number=Sing	3	nsubj	_	TokenRange=4:10
 3	etijo	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=3	0	root	_	TokenRange=11:16
-4	ida	ida	DET	PRO	Gender=Masc|Number=Sing|PronType=Dem	3	obj	_	SpaceAfter=No|TokenRange=17:20
+4	ida	ida	DET	D	Gender=Masc|Number=Sing|PronType=Dem	3	obj	_	SpaceAfter=No|TokenRange=17:20
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = ped-gramm-39
@@ -586,7 +586,7 @@
 # text_por = A casa dele/dela é perto da lagoa da cidade.
 1	liGeladi	Geladi	NOUN	N$	Gender=Masc|Number=Sing|Person[psor]=3	2	nsubj	_	TokenRange=0:8
 2	ipegitegi	pegi	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Person[erg]=3|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	TokenRange=9:18
-3	niweiigi	weiigi	NOUN	N	Gender=Masc|Number=Sing	2	obj	_	TokenRange=19:27
+3	niweiigi	weiigi	NOUN	N$	Gender=Masc|Number=Sing	2	obj	_	TokenRange=19:27
 4	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	3	nmod:poss	_	SpaceAfter=No|TokenRange=28:36
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=36:37
 
@@ -733,7 +733,7 @@
 # text_orig = NaGajo lomigo Pedilo idei madi niwatece
 # text_por_orig = Aquele anzol do Pedro está na canoa .
 # text_por = Aquele anzol do Pedro está na canoa.
-1	NaGajo	niGijo	DET	PRO$	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
+1	NaGajo	niGijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
 2	lomigo	omigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	nsubj	_	Lemma=lomiigo|TokenRange=7:13
 3	Pedilo	pedilo	PROPN	NPR	_	2	nmod:poss	_	TokenRange=14:20
 4	idei	dei	VERB	VB	Mood=Ind|Number[erg]=Sing|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=21:25
@@ -752,7 +752,7 @@
 # text_por_alt = Aquele anzol do menino está na canoa.
 1	NaGajo	niGijo	DET	D	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
 2	lomigo	lomigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	6	nsubj	_	Lemma=lomiigo|TokenRange=7:13
-3	niganigawanigi	nigaanigi	NOUN	N$	Degree=Dim|Gender=Masc|Number=Sing	2	nmod:poss	_	StandardForm=nigaanigawaanigi|TokenRange=14:28
+3	niganigawanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	2	nmod:poss	_	StandardForm=nigaanigawaanigi|TokenRange=14:28
 4-5	madi	_	_	_	_	_	_	_	TokenRange=29:33
 4	me	me	SCONJ	C	_	6	mark	_	_
 5	adi	idi	DET	D	Gender=Fem|Number=Sing|PronType=Dem	6	det	_	_
@@ -920,7 +920,7 @@
 # text_orig = Ninitibigiwaji .
 # text_por_orig = Eles são felizes .
 # text_por = Eles são felizes.
-1	Ninitibigiwaji	initibece	VERB	X	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:14
+1	Ninitibigiwaji	initibece	VERB	VB	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:14
 2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = hil-data-33
@@ -1191,18 +1191,6 @@
 6	niwatece	watece	NOUN	N	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=41:49
 7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=49:50
 
-# sent_id = van-data-15
-# sent_uid = 4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7
-# text = niGijo niganigawaanigi lomigo niwatece.
-# text_orig = niGijo niganigawaanigi lomigo niwatece
-# text_por_orig = aquele menino é na canoa do anzol
-# text_por = aquele menino é na canoa do anzol.
-1	niGijo	niGijo	DET	D	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:6
-2	niganigawaanigi	nigaanigi	NOUN	N	Degree=Dim|Gender=Masc|Number=Sing	4	nsubj	_	StandardForm=nigaanigawaanigi|TokenRange=7:22
-3	lomigo	omiigo	NOUN	N$	Gender=Fem|Number=Sing|Person[psor]=3	4	nmod:poss	_	StandardForm=lomiigo|TokenRange=23:29
-4	niwatece	watece	NOUN	N$	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=30:38
-5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=38:39
-
 # sent_id = van-data-16
 # sent_uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
 # text = niGijo nigaanigawaanigi manitaGa lomigo niwatece.
@@ -1345,7 +1333,7 @@
 # text_orig = idiwa wetiadi iwaGadi
 # text_por_orig = estas pedras estão pesadas
 # text_por = estas pedras estão pesadas.
-1	idiwa	idi	DET	Q	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:5
+1	idiwa	idi	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:5
 2	wetiadi	wetiGa	NOUN	N	Gender=Fem|Number=Plur	3	nsubj	_	TokenRange=6:13
 3	iwaGadi	waaGadi	VERB	VB	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|StandardForm=iwaaGadi|TokenRange=14:21
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
@@ -1626,7 +1614,7 @@
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
 # ud_review_status = DONE
-1	jipacaGataGagitiwaji	paca	VERB	VBAPL	Gender[obj]=Masc|Mood=Ind|Number=Plur|Person[erg]=1|Person[obj]=2|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:20
+1	jipacaGataGagitiwaji	pegi	VERB	VBAPL	Mood=Ind|Number[erg]=Plur|Number[obj]=Plur|Person[erg]=1|Person[obj]=2|VerbForm=Fin|Voice=Appl	0	root	_	SpaceAfter=No|TokenRange=0:20
 2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = ped-gramm-53
@@ -1641,7 +1629,7 @@
 # ud_review_status = DONE
 1-2	aGee	_	_	_	_	_	_	_	TokenRange=0:4
 1	aG	aG	PART	NEG	Polarity=Neg	4	advmod	_	_
-2	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+2	ee	ee	PRON	PRO	Gender[spkr]=Masc|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
 3	eliodi	eliodi	DET	Q	PronType=Ind	4	det	_	TokenRange=5:11
 4	niinikeGegi	nini	NOUN	N	Gender=Masc	0	root	_	SpaceAfter=No|TokenRange=12:23
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
@@ -1772,7 +1760,7 @@
 # generation_timestamp = 2026-09-03 12:38
 # ud_review_status = DONE
 1	niGijoa	niGijo	DET	D	Gender=Masc|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:7
-2	lionaGa	ion	NOUN	N$	Number=Plur	4	nsubj	_	TokenRange=8:15
+2	lionaGa	iona	NOUN	N$	Number=Plur	4	nsubj	_	TokenRange=8:15
 3	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	2	nmod:poss	_	TokenRange=16:22
 4	idei	dei	VERB	VB	Mood=Ind|Person[erg]=3|VerbForm=Fin	0	root	_	TokenRange=23:27
 5-6	mijotaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=28:36
@@ -1863,7 +1851,7 @@
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
 # ud_review_status = DONE
-1	Ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
+1	Ee	ee	PRON	PRO	Gender[spkr]=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
 2-3	aidinitibeci	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=3:15
 2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
 3	idinitibeci	idinitibeci	VERB	VB	Mood=Ind|VerbForm=Fin	0	root	_	_
@@ -1879,10 +1867,10 @@
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
 # ud_review_status = DONE
-1	Ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	TokenRange=0:2
+1	Ee	ee	PRON	PRO	Gender[spkr]=Masc|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	TokenRange=0:2
 2-3	ageliodi	_	_	_	_	_	_	_	TokenRange=3:11
 2	aG	aG	PART	NEG	Polarity=Neg	5	advmod	_	_
-3	eliodi	eliodi	DET	Q	PronType=Ind	5	advmod	_	_
+3	eliodi	eliodi	ADV	Q	PronType=Ind	5	advmod	_	_
 4	me	me	SCONJ	C	_	5	mark	_	TokenRange=12:14
 5	idinitibeci	ini	VERB	VB	Mood=Ind|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=15:26
 6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=26:27
@@ -1897,7 +1885,7 @@
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
 # ud_review_status = DONE
-1	Ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
+1	Ee	ee	PRON	PRO	Gender[spkr]=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
 2-3	ajipegitege	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=3:14
 2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
 3	jipegitege	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=1|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	_
@@ -1913,10 +1901,10 @@
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
 # ud_review_status = DONE
-1	Ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
+1	Ee	ee	PRON	PRO	Gender[spkr]=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
 2-3	ajipegitege	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=3:14
 2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
-3	jipegitege	jipegitege	VERB	VBAPL	Mood=Ind|Person[erg]=1|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	_
+3	jipegitege	pegi	VERB	VBAPL	Mood=Ind|Person[erg]=1|Person[obj]=3|VerbForm=Fin|Voice=Appl	0	root	_	_
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = hil-data-52
@@ -1929,7 +1917,7 @@
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
 # ud_review_status = DONE
-1	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
+1	ee	ee	PRON	PRO	Gender[spkr]=Masc|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	idiwaGadi	iwaGadi	VERB	VB	_	0	root	_	SpaceAfter=No|TokenRange=3:12
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
 
@@ -2002,7 +1990,7 @@
 1	oko	oko	NOUN	N	_	3	nsubj	_	TokenRange=0:3
 2-3	aidejonaGa	_	_	_	_	_	_	_	TokenRange=4:14
 2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
-3	idejonaGa	idejonaGa	VERB	VB	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin|Voice=Inv	0	root	_	_
+3	idejonaGa	dei	VERB	VB	Mood=Ind|Number[erg]=Plur|Person[erg]=1|VerbForm=Fin|Voice=Inv	0	root	_	_
 4-5	midi	_	_	_	_	_	_	_	TokenRange=15:19
 4	me	me	SCONJ	C	_	6	mark	_	_
 5	idi	idi	DET	D	Gender=Masc|Number=Sing|PronType=Dem	6	det	_	NumClass=Lying
@@ -2381,7 +2369,7 @@
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
 # ud_review_status = DONE
-1	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	TokenRange=0:2
+1	ee	ee	PRON	PRO	Gender[spkr]=Masc|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	TokenRange=0:2
 2-3	aGica	_	_	_	_	_	_	_	TokenRange=3:8
 2	aG	aG	PART	NEG	Polarity=Neg	4	advmod	_	_
 3	ica	ica	DET	D	Gender=Masc|Number=Sing|PronType=Dem	4	det	_	_
@@ -2398,7 +2386,7 @@
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
 # ud_review_status = DONE
-1	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
+1	ee	ee	PRON	PRO	Gender[spkr]=Masc|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:2
 2-3	aGidininitibeci	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=3:18
 2	aG	aG	PART	NEG	Polarity=Neg	3	advmod	_	_
 3	dininitibeci	nini	VERB	VB	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin|Voice=Inv	0	root	_	_
@@ -2416,7 +2404,7 @@
 # ud_review_status = DONE
 1-2	aGee	_	_	_	_	_	_	_	TokenRange=0:4
 1	aG	aG	PART	NEG	Polarity=Neg	4	advmod	_	_
-2	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+2	ee	ee	PRON	PRO	Gender[spkr]=Masc|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
 3	eliodi	eliodi	DET	Q	PronType=Ind	4	det	_	TokenRange=5:11
 4	niinikeGegi	nini	NOUN	N	Gender=Masc	0	root	_	SpaceAfter=No|TokenRange=12:23
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
@@ -2483,7 +2471,7 @@
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
 # ud_review_status = DONE
-1	ee	ee	PRON	PRO	Gender=Masc|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
+1	ee	ee	PRON	PRO	Gender[spkr]=Masc|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	idiwaaGadi	waaGadi	VERB	VB	Mood=Ind|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=3:13
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
 
@@ -2583,7 +2571,7 @@
 3-4	midi	_	_	_	_	_	_	_	TokenRange=12:16
 3	me	me	SCONJ	C	_	5	mark	_	_
 4	idi	idi	DET	D	PronType=Dem	5	det	_	_
-5	Godoigi	godoigi	NOUN	N$	_	2	obj	_	SpaceAfter=No|TokenRange=17:24
+5	Godoigi	oiigi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Plur|Person[psor]=1	2	obj	_	StandardForm=Godoiigi|SpaceAfter=No|TokenRange=17:24
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = van-data-65
@@ -2615,7 +2603,7 @@
 3-4	midi	_	_	_	_	_	_	_	TokenRange=12:16
 3	me	me	SCONJ	C	_	5	mark	_	_
 4	idi	idi	DET	D	Gender=Masc|PronType=Dem	5	det	_	_
-5	Godoigi	oigi	NOUN	N$	Person[psor]=1	2	obj	_	SpaceAfter=No|TokenRange=17:24
+5	Godoigi	oiigi	NOUN	N$	Gender=Masc|Number=Sing|Number[psor]=Plur|Person[psor]=1	2	obj	_	StandardForm=Godoiigi|SpaceAfter=No|TokenRange=17:24
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = van-data-68
@@ -2692,7 +2680,7 @@
 2	leonigipi	iona	NOUN	N$	Gender=Fem,Masc|Number=Plur|Person[psor]=3	4	nsubj	_	TokenRange=6:15
 3	iwaalo	iwaalo	NOUN	N	Gender=Fem|Number=Sing	2	nmod:poss	_	TokenRange=16:22
 4	idi	idi	DET	D	Gender=Masc|Number=Sing|PronType=Dem	0	root	_	TokenRange=23:26
-5	metaGa	taGa	SCONJ	CAPL	_	4	mark	_	SpaceAfter=No|TokenRange=27:33
+5	metaGa	metaGa	SCONJ	CAPL	_	4	mark	_	SpaceAfter=No|TokenRange=27:33
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=33:34
 
 # sent_id = van-data-75
