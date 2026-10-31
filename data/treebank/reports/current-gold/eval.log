@@ -1,0 +1,40 @@
+~/ud_tools$ ./tools/evaluate_treebank.pl -v UD_Kadiweu-Unicamp
+Running the following version of UD tools:
+commit 30bccf7b2f7746700238e6f9ab9981de83a54686
+Author: www-data (leoalenc) <leoalenc@github.com>
+Date:   Thu Oct 22 06:09:26 2026 +0200
+Evaluating the following revision of UD_Kadiweu-Unicamp:
+commit bcd931010d246372c20df829c35a6be9c24eb5cb
+Author: leoalenc <leonel.de.alencar@ufc.br>
+Date:   Sat Oct 24 00:09:58 2026 -0300
+CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
+Language-treebank code (from CoNLL-U file name) = 'kbc_unicamp'
+Language code (from CoNLL-U file name) = 'kbc'
+Found the following data files: kbc_unicamp-ud-test.conllu
+Size: counted 917 of 917 words (nodes).
+Size: min(0, log((N/1000)**2)) = 0.
+Size: maximum value 13.815511 is for 1000000 words or more.
+Split: Did not find more than 10000 training words.
+Split: Did not find at least 10000 development words.
+Split: Did not find at least 10000 test words.
+Lemmas: source of annotation (from README) factor is 1.
+Universal POS tags: 12 out of 17 found in the corpus.
+Universal POS tags: source of annotation (from README) factor is 1.
+Features: 625 out of 917 total words have one or more features.
+Features: source of annotation (from README) factor is 1.
+Universal relations: 17 out of 37 found in the corpus.
+Universal relations: source of annotation (from README) factor is 1.
+Genres: found 1 out of 18 known.
+/home/leonel/ud_tools/tools/validate.py --lang kbc --max-err=10 UD_Kadiweu-Unicamp/kbc_unicamp-ud-test.conllu
+*** PASSED ***
+Validity: 1
+(weight=0.111111111111111) * (score{features}=1) = 0.111111111111111
+(weight=0.111111111111111) * (score{genres}=0.0555555555555556) = 0.00617283950617284
+(weight=0.111111111111111) * (score{lemmas}=1) = 0.111111111111111
+(weight=0.37037037037037) * (score{size}=0) = 0
+(weight=0.0740740740740741) * (score{split}=0.01) = 0.000740740740740741
+(weight=0.111111111111111) * (score{tags}=0.705882352941177) = 0.0784313725490196
+(weight=0.111111111111111) * (score{udeprels}=0.459459459459459) = 0.0510510510510511
+(TOTAL score=0.358618226069206) * (availability=1) * (validity=1) = 0.358618226069206
+STARS = 2
+UD_Kadiweu-Unicamp	0.358618226069206	2

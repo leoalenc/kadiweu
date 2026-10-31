@@ -199,15 +199,47 @@ class PossessiveNPTests(unittest.TestCase):
             ],
         )
 
-    def test_two_np_daughters_are_unresolved_hil_043(self):
+    def test_multiple_np_daughters_attach_to_unique_possessum_hil_043(self):
         actual = assignment_tuples(
             "(NP-SBJ (D niGidiwa) (NP (N okokodi)) "
             "(N$ ligetedi) (NP (N$ liwigo)))",
             "hil-data,0.43",
         )
-        # Possession is unresolved, but the immediate D and unique N$ still
-        # establish a certain determiner dependency.
-        self.assertEqual(actual, [(1, 3, "det", DETERMINER_RULE)])
+        self.assertEqual(
+            actual,
+            [
+                (1, 3, "det", DETERMINER_RULE),
+                (2, 3, "nmod:poss", POSSESSOR_RULE),
+                (4, 3, "nmod:poss", POSSESSOR_RULE),
+            ],
+        )
+
+    def test_possessor_with_validated_me_relative_hil_042(self):
+        actual = assignment_tuples(
+            "(IP-MAT (NP-SBJ (D niGidiwa) (NP (N okokodi)) (N$ ligetedi) "
+            "(CP-me (C me@) (IP-SUB (NP (D @idi) (N niwigo))))) "
+            "(NP-PRD (N$ libinienaGa)))",
+            "hil-data,0.42",
+        )
+        self.assertEqual(
+            actual,
+            [
+                (1, 3, "det", DETERMINER_RULE),
+                (2, 3, "nmod:poss", POSSESSOR_RULE),
+                (3, 7, "nsubj", "clause-subject"),
+                (4, 6, "mark", MARK_RULE),
+                (5, 6, "det", DETERMINER_RULE),
+                (6, 3, "acl:relcl", RELATIVE_CLAUSE_RULE),
+            ],
+        )
+
+    def test_unvalidated_cp_me_does_not_license_possessor_rule(self):
+        actual = assignment_tuples(
+            "(NP (N$ ligetedi) (NP (N okokodi)) "
+            "(CP-me (C me) (IP-SUB (NP (N NOUN_ONE) (N NOUN_TWO)))))",
+            "negative-test,0.3",
+        )
+        self.assertNotIn("nmod:poss", [edge[2] for edge in actual])
 
     def test_q_modifier_with_possession_van_071(self):
         actual = assignment_tuples(

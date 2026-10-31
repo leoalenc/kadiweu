@@ -21,12 +21,12 @@ present, a sole D, DAPL, or PRO represents the NP and does not license a
 
 Possessive NPs license both orders::
 
-    NP -> (D) N$ NP
-    NP -> (D) NP N$
+    NP -> (D) N$ NP+
+    NP -> (D) NP+ N$
 
-The immediate N$ is the possessum and the head of the outer NP.  The lexical
-head of the immediate NP daughter is the possessor and depends on the
-possessum as ``nmod:poss``.
+A unique immediate N$ is the possessum and head. The lexical heads of its
+immediate NP daughters depend on it as ``nmod:poss``. Other daughters must be
+determiners or CP-me clauses independently validated as adnominal relatives.
 
 For a functional CP headed by an immediate C with an ``IP-SUB`` complement,
 UD promotes the content-word head of ``IP-SUB`` and attaches C to it as
@@ -548,56 +548,67 @@ def nominal_determiner_assignments(
 
 
 def possessive_np_assignments(node: ConstituentNode) -> list[DependencyAssignment]:
-    """Infer dependencies for one unambiguous possessive NP.
+    """Attach immediate NP possessor(s) to a unique N$ possessum.
 
-    Daughter order is immaterial.  The rule rejects additional daughters,
-    multiple N$ heads, multiple NP daughters, and possessors whose lexical
-    head cannot be established conservatively.
+    NP daughters are licensed as possessors when the same projection contains
+    exactly one immediate N$ possessum. Determiners and CP-me daughters that
+    are independently validated as adnominal relatives are also permitted.
+    This covers possessive NPs with more than one NP possessor and NPs that
+    contain a relative CP, while rejecting other extra material.
     """
-
     if not is_np(node):
         return []
 
     possessums = [
-        child
-        for child in node.children
+        child for child in node.children
         if isinstance(child, TokenNode)
         and not child.empty_category
         and child.tag == "N$"
     ]
     possessors = [child for child in node.children if is_np(child)]
     modifiers = [
-        child
-        for child in node.children
+        child for child in node.children
         if isinstance(child, TokenNode)
         and not child.empty_category
         and child.tag in NOMINAL_MODIFIER_TAGS
     ]
 
-    if len(possessums) != 1 or len(possessors) != 1:
+    if len(possessums) != 1 or not possessors:
         return []
 
+    possessum = possessums[0]
+    validated_relative_cps = {
+        id(child)
+        for child in node.children
+        if isinstance(child, ConstituentNode)
+        and child.label == "CP-me"
+        and any(
+            assignment.deprel == "acl:relcl"
+            and assignment.head_position == possessum.position
+            for assignment in relative_clause_assignments(child)
+        )
+    }
     permitted_ids = {
-        id(possessums[0]),
-        id(possessors[0]),
+        id(possessum),
+        *(id(possessor) for possessor in possessors),
         *(id(modifier) for modifier in modifiers),
+        *validated_relative_cps,
     }
     if any(id(child) not in permitted_ids for child in node.children):
         return []
 
-    possessor_head = lexical_head(possessors[0])
-    if possessor_head is None:
-        return []
-    possessum = possessums[0]
-
-    return [
-        DependencyAssignment(
+    result = []
+    for possessor in possessors:
+        possessor_head = lexical_head(possessor)
+        if possessor_head is None:
+            return []
+        result.append(DependencyAssignment(
             dependent_position=possessor_head.position,
             head_position=possessum.position,
             deprel="nmod:poss",
             rule=POSSESSOR_RULE,
-        )
-    ]
+        ))
+    return result
 
 
 def complementizer_assignments(

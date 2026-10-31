@@ -1,0 +1,2 @@
+draft_file,sent_uid,gold_sent_id,draft_sent_id,reason,gold_token_count,draft_token_count,gold_token_ids,draft_token_ids,gold_forms,draft_forms
+draft-all.conllu,ee1a1190-7803-404c-83f6-49d3ccf63b0d,ped-gramm-28,ped-gramm-28,token_count_mismatch,8,9,1 2 3 4 5 6 7 8,1 2 3 4 5 6 7 8 9,eyodi dowediteloco naodigijedi micoataGa daGa me lionigipi .,Eyodi dowediteloco nawodigijedi me icawataGa daGa me lionigipi .

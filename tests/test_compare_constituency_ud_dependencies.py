@@ -68,6 +68,38 @@ class ConlluParsingTests(unittest.TestCase):
 
 
 class ComparisonTests(unittest.TestCase):
+    def test_possessor_with_validated_me_relative_hil_042(self):
+        uid = "79cb0e55-9c06-4cb1-91b3-2b5233e1678f"
+        record = psd_record(
+            "(IP-MAT (NP-SBJ (D niGidiwa) (NP (N okokodi)) (N$ ligetedi) "
+            "(CP-me (C me@) (IP-SUB (NP (D @idi) (N niwigo))))) "
+            "(NP-PRD (N$ libinienaGa)))",
+            "hil-data,0.42",
+            uid,
+        )
+        gold = conllu_sentence(
+            f"""
+# sent_id = hil-data-42
+# sent_uid = {uid}
+1\tniGidiwa\t_\tDET\tD\t_\t3\tdet\t_\t_
+2\tokokodi\t_\tNOUN\tN\t_\t3\tnmod:poss\t_\t_
+3\tligetedi\t_\tNOUN\tN$\t_\t7\tnsubj\t_\t_
+4-5\tmidi\t_\t_\t_\t_\t_\t_\t_\t_
+4\tme\t_\tSCONJ\tC\t_\t6\tmark\t_\t_
+5\tidi\t_\tDET\tD\t_\t6\tdet\t_\t_
+6\tniwigo\t_\tNOUN\tN\t_\t3\tacl:relcl\t_\t_
+7\tlibinienaGa\t_\tNOUN\tN$\t_\t0\troot\t_\t_
+8\t.\t.\tPUNCT\tPUNCT\t_\t7\tpunct\t_\t_
+            """
+        )
+        rows = list(comparison_rows([record], [gold], RELATIONS))
+        by_dependent = {row["gold_dependent"]: row for row in rows}
+        self.assertEqual(by_dependent["okokodi"]["comparison"], "MATCH")
+        self.assertEqual(by_dependent["ligetedi"]["comparison"], "MATCH")
+        self.assertEqual(by_dependent["me"]["comparison"], "MATCH")
+        self.assertEqual(by_dependent["niwigo"]["comparison"], "MATCH")
+        self.assertTrue(all(row["comparison"] == "MATCH" for row in rows))
+
     def test_match_ane_relative_hil_039(self):
         uid = "38f73c1c-ddfb-4153-9310-d24214cd68e7"
         record = psd_record(

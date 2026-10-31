@@ -163,3 +163,18 @@
 2	me	me	SCONJ	C	_	3	mark	_	_
 3	initaGa	ini	PRON	DAPL	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	Case=Com
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
+
+
+# sent_id = hil-data-42
+# sent_uid = 79cb0e55-9c06-4cb1-91b3-2b5233e1678f
+# text = niGidiwa okokodi ligetedi midi niwigo libinienaGa.
+# text_por = Estes ovos da fotografia dela estão bonitos.
+1	niGidiwa	niGidi	DET	D	Gender=Masc|Number=Plur|PronType=Dem	3	det	_	_
+2	okokodi	okokodi	NOUN	N	_	3	nmod:poss	_	_
+3	ligetedi	getegi	NOUN	N$	Number=Plur|Person[psor]=3	7	nsubj	_	_
+4-5	midi	_	_	_	_	_	_	_	_
+4	me	me	SCONJ	C	_	6	mark	_	_
+5	idi	idi	DET	D	PronType=Dem	6	det	_	_
+6	niwigo	wigo	NOUN	N	_	3	acl:relcl	_	_
+7	libinienaGa	binie	NOUN	N$	Degree=Dim|Number=Plur|Person[psor]=3	0	root	_	_
+8	.	.	PUNCT	PUNCT	_	7	punct	_	_

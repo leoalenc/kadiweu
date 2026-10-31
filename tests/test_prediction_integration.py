@@ -92,6 +92,16 @@ class PredictionIntegrationTests(unittest.TestCase):
                     tokens = [types.SimpleNamespace(id=i, head=int(r[6]), deprel=r[7]) for i, r in rows.items()]
                     self.assertIsNone(bridge.graph_problem(tokens))
 
+    def test_hil_042_possessor_prediction_reaches_conllu(self):
+        uid = "79cb0e55-9c06-4cb1-91b3-2b5233e1678f"
+        sentence = next(sentence for _, _, sentence in self.sentences
+                        if sentence.get("uid") == uid)
+        output = convert(sentence)
+        rows = {int(columns[0]): columns for line in output.splitlines()
+                if not line.startswith("#") for columns in [line.split("\t")]
+                if columns[0].isdigit()}
+        self.assertEqual((int(rows[2][6]), rows[2][7]), (3, "nmod:poss"))
+
     def test_graph_failure_rolls_back_atomically(self):
         sentence = next(s for _, _, s in self.sentences if s.get("status") == "DONE")
         with patch.object(bridge, "graph_problem", return_value="test cycle"):
