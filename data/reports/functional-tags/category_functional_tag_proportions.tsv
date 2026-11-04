@@ -1,0 +1,7 @@
+category	phrase_count	functional_tagged_count	untagged_count	tagged_percent
+ADVP	1	0	1	0.00
+CONJP	1	0	1	0.00
+CP	47	46	1	97.87
+IP	237	237	0	100.00
+NP	363	129	234	35.54
+WNP	9	0	9	0.00
