@@ -45,13 +45,40 @@ import sys
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Sequence
 
-def collect_python_files(src: Path, exclude_dirs, exclude_files=()):
-    """Select Python sources, excluding named directories and relative filenames."""
+def collect_python_files(src: Path, exclude_dirs, exclude_files=(), include_files=()):
+    """Select Python sources, optionally restricting analysis to included files.
+
+    Relative include paths are resolved from ``src``; absolute paths are also
+    accepted, but must point inside ``src``. Exclusions are applied after
+    inclusion, so they can further narrow the selected set.
+    """
+    src = src.expanduser().resolve()
     excluded_dirs = set(exclude_dirs)
     excluded_files = {Path(name).as_posix() for name in exclude_files}
+    if include_files:
+        candidates = []
+        for name in include_files:
+            path = Path(name).expanduser()
+            if not path.is_absolute():
+                path = src / path
+            path = path.resolve()
+            try:
+                path.relative_to(src)
+            except ValueError as error:
+                raise ValueError(
+                    f"included file is outside --src ({src}): {name}"
+                ) from error
+            if not path.is_file():
+                raise FileNotFoundError(f"included file does not exist: {path}")
+            if path.suffix != ".py":
+                raise ValueError(f"included file is not a Python source file: {path}")
+            candidates.append(path)
+    else:
+        candidates = list(src.rglob("*.py"))
+
     return sorted(
         str(path)
-        for path in src.rglob("*.py")
+        for path in set(candidates)
         if not any(part in excluded_dirs for part in path.relative_to(src).parts[:-1])
         and path.name not in excluded_files
         and path.relative_to(src).as_posix() not in excluded_files
@@ -93,7 +120,7 @@ def run_command(command: Sequence[str]) -> Dict[str, Any]:
     }
 
 
-def run_cloc(src: Path, exclude_dirs: list[str], exclude_files=()) -> Dict[str, Any]:
+def run_cloc(src: Path, exclude_dirs: list[str], exclude_files=(), include_files=()) -> Dict[str, Any]:
     """Cross-check precisely the Python files supplied to Radon.
 
     Passing explicit filenames avoids cloc's independent directory traversal and
@@ -102,7 +129,7 @@ def run_cloc(src: Path, exclude_dirs: list[str], exclude_files=()) -> Dict[str, 
     if shutil.which("cloc") is None:
         return {"available": False, "reason": "cloc not found in PATH", "raw": None, "summary": {}}
 
-    files = sorted(collect_python_files(src, exclude_dirs, exclude_files))
+    files = collect_python_files(src, exclude_dirs, exclude_files, include_files)
     if not files:
         return {"available": False, "reason": "no Python files selected", "raw": None, "summary": {}}
 
@@ -154,11 +181,11 @@ def run_cloc(src: Path, exclude_dirs: list[str], exclude_files=()) -> Dict[str, 
         },
     }
 
-def run_radon_raw(src: Path, exclude_dirs: list[str], exclude_files=()) -> Dict[str, Any]:
+def run_radon_raw(src: Path, exclude_dirs: list[str], exclude_files=(), include_files=()) -> Dict[str, Any]:
     if shutil.which("radon") is None:
         return {"available": False, "reason": "radon not found in PATH", "raw": None, "summary": {}}
 
-    files = collect_python_files(src, exclude_dirs, exclude_files)
+    files = collect_python_files(src, exclude_dirs, exclude_files, include_files)
     result = run_command(["radon", "raw", "-j", *files])
 
     if result["returncode"] != 0:
@@ -204,11 +231,11 @@ def run_radon_raw(src: Path, exclude_dirs: list[str], exclude_files=()) -> Dict[
         "summary": totals,
     }
 
-def run_radon_hal(src: Path, exclude_dirs: list[str], exclude_files=()) -> Dict[str, Any]:
+def run_radon_hal(src: Path, exclude_dirs: list[str], exclude_files=(), include_files=()) -> Dict[str, Any]:
     if shutil.which("radon") is None:
         return {"available": False, "reason": "radon not found in PATH", "raw": None, "summary": {}}
 
-    files = collect_python_files(src, exclude_dirs, exclude_files)
+    files = collect_python_files(src, exclude_dirs, exclude_files, include_files)
     result = run_command(["radon", "hal", "-j", *files])
 
     if result["returncode"] != 0:
@@ -241,11 +268,11 @@ def run_radon_hal(src: Path, exclude_dirs: list[str], exclude_files=()) -> Dict[
         },
     }
 
-def run_radon_cc(src: Path, exclude_dirs: list[str], exclude_files=()) -> Dict[str, Any]:
+def run_radon_cc(src: Path, exclude_dirs: list[str], exclude_files=(), include_files=()) -> Dict[str, Any]:
     if shutil.which("radon") is None:
         return {"available": False, "reason": "radon not found in PATH", "raw": None, "summary": {}}
 
-    files = collect_python_files(src, exclude_dirs, exclude_files)
+    files = collect_python_files(src, exclude_dirs, exclude_files, include_files)
     result = run_command(
     ["radon", "cc", "-j", "-s", *files]
 )
@@ -306,11 +333,11 @@ def run_radon_cc(src: Path, exclude_dirs: list[str], exclude_files=()) -> Dict[s
     }
 
 
-def run_radon_mi(src: Path, exclude_dirs: list[str], exclude_files=()) -> Dict[str, Any]:
+def run_radon_mi(src: Path, exclude_dirs: list[str], exclude_files=(), include_files=()) -> Dict[str, Any]:
     if shutil.which("radon") is None:
         return {"available": False, "reason": "radon not found in PATH", "raw": None, "summary": {}}
 
-    files = collect_python_files(src, exclude_dirs, exclude_files)
+    files = collect_python_files(src, exclude_dirs, exclude_files, include_files)
     result = run_command(
     ["radon", "mi", "-j", "-s", *files]
 )
@@ -364,14 +391,15 @@ def run_radon_mi(src: Path, exclude_dirs: list[str], exclude_files=()) -> Dict[s
 def count_python_ast_objects(
     src: Path,
     exclude_dirs: list[str],
-    exclude_files=()
+    exclude_files=(),
+    include_files=(),
 ) -> Dict[str, Any]:
     files: List[Dict[str, Any]] = []
     total_logical_loc = 0
     total_functions = 0
     total_classes = 0
 
-    for selected_path in collect_python_files(src, exclude_dirs, exclude_files):
+    for selected_path in collect_python_files(src, exclude_dirs, exclude_files, include_files):
         path = Path(selected_path)
 
         rel = str(path.relative_to(src))
@@ -606,22 +634,24 @@ def build_report(args: argparse.Namespace) -> Dict[str, Any]:
             "python_version": sys.version,
             "src": str(src),
             "json_resources": [str(p) for p in json_paths],
+            "included_files": [item for group in args.include for item in group],
             "excluded_files": args.exclude_file,
             "json_out": str(json_out),
             "external_tools": {"cloc": shutil.which("cloc"), "radon": shutil.which("radon")},
             "notes": [
                 "CoNLL-U statistics are intentionally not computed here; use the standard UD Perl scripts.",
                 "Only JSON resources explicitly supplied with --json-resource are included.",
+                "When --include is supplied, only the listed Python files are analyzed (subject to exclusions).",
                 "The tests directory is not analyzed unless it is inside --src.",
             ],
         },
         "software_metrics": {
-            "radon_raw": run_radon_raw(src, args.exclude_dir, args.exclude_file),
-            "radon_cc": run_radon_cc(src, args.exclude_dir, args.exclude_file),
-            "radon_mi": run_radon_mi(src, args.exclude_dir, args.exclude_file),
-            "radon_hal": run_radon_hal(src, args.exclude_dir, args.exclude_file),
-            "python_ast": count_python_ast_objects(src, args.exclude_dir, args.exclude_file),
-            "cloc_crosscheck": run_cloc(src, args.exclude_dir, args.exclude_file),
+            "radon_raw": run_radon_raw(src, args.exclude_dir, args.exclude_file, [p for group in args.include for p in group]),
+            "radon_cc": run_radon_cc(src, args.exclude_dir, args.exclude_file, [p for group in args.include for p in group]),
+            "radon_mi": run_radon_mi(src, args.exclude_dir, args.exclude_file, [p for group in args.include for p in group]),
+            "radon_hal": run_radon_hal(src, args.exclude_dir, args.exclude_file, [p for group in args.include for p in group]),
+            "python_ast": count_python_ast_objects(src, args.exclude_dir, args.exclude_file, [p for group in args.include for p in group]),
+            "cloc_crosscheck": run_cloc(src, args.exclude_dir, args.exclude_file, [p for group in args.include for p in group]),
         },
         "linguistic_resources": {"summary": summarize_json_resources(json_resource_metrics), "files": json_resource_metrics},
     }
@@ -632,6 +662,11 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
         description="Compute publication-oriented metrics for the Kadiwéu converter pipeline."
     )
     parser.add_argument("--src", default="src", help="Directory containing Python source scripts. Default: src")
+    parser.add_argument(
+        "--include", action="append", nargs="+", default=[], metavar="FILE",
+        help=("Python source file(s) to analyze, relative to --src or absolute. "
+              "Repeat --include as needed. If supplied, only these files are considered."),
+    )
     parser.add_argument(
         "--json-resource",
         action="append",
@@ -658,7 +693,11 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
     args = parse_args(argv)
-    report = build_report(args)
+    try:
+        report = build_report(args)
+    except (FileNotFoundError, ValueError) as error:
+        print(f"{Path(__file__).name}: error: {error}", file=sys.stderr)
+        return 2
 
     json_out = Path(args.json_out).expanduser().resolve()
     json_out.parent.mkdir(parents=True, exist_ok=True)

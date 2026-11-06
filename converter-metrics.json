@@ -1,0 +1,7389 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-06T13:25:24",
+    "script": "pipeline_publication_metrics.py",
+    "python_version": "3.9.5 (default, Nov 23 2021, 15:27:38) \n[GCC 9.3.0]",
+    "src": "/home/leonel/kadiweu/src",
+    "json_resources": [
+      "/home/leonel/kadiweu/data/resources/kadiweu_default_overrides.json",
+      "/home/leonel/kadiweu/data/resources/gold_derived_overrides.json",
+      "/home/leonel/kadiweu/data/resources/kadiweu_manual_overrides.json"
+    ],
+    "included_files": [
+      "kadiweu_json_to_conllu.py",
+      "kadiweu_linguistic_mappings.py",
+      "kadiweu_converter_config.py",
+      "kadiweu_morphology.py",
+      "kadiweu_normalization.py",
+      "kadiweu_empty_categories.py",
+      "kadiweu_token_ranges.py",
+      "kadiweu_prediction_bridge.py",
+      "kadiweu_constituency.py",
+      "update_overrides_from_gold.py",
+      "kadiweu_constituency_dependencies.py"
+    ],
+    "excluded_files": [],
+    "json_out": "/home/leonel/kadiweu/converter-metrics.json",
+    "external_tools": {
+      "cloc": "/usr/bin/cloc",
+      "radon": "/usr/bin/radon"
+    },
+    "notes": [
+      "CoNLL-U statistics are intentionally not computed here; use the standard UD Perl scripts.",
+      "Only JSON resources explicitly supplied with --json-resource are included.",
+      "When --include is supplied, only the listed Python files are analyzed (subject to exclusions).",
+      "The tests directory is not analyzed unless it is inside --src."
+    ]
+  },
+  "software_metrics": {
+    "radon_raw": {
+      "available": true,
+      "tool": "radon raw",
+      "raw": {
+        "/home/leonel/kadiweu/src/kadiweu_constituency.py": {
+          "loc": 1380,
+          "lloc": 833,
+          "sloc": 1125,
+          "comments": 17,
+          "multi": 46,
+          "blank": 161,
+          "single_comments": 48
+        },
+        "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py": {
+          "loc": 935,
+          "lloc": 456,
+          "sloc": 670,
+          "comments": 22,
+          "multi": 108,
+          "blank": 123,
+          "single_comments": 34
+        },
+        "/home/leonel/kadiweu/src/kadiweu_converter_config.py": {
+          "loc": 43,
+          "lloc": 4,
+          "sloc": 27,
+          "comments": 0,
+          "multi": 11,
+          "blank": 5,
+          "single_comments": 0
+        },
+        "/home/leonel/kadiweu/src/kadiweu_empty_categories.py": {
+          "loc": 187,
+          "lloc": 109,
+          "sloc": 121,
+          "comments": 4,
+          "multi": 18,
+          "blank": 44,
+          "single_comments": 4
+        },
+        "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py": {
+          "loc": 1627,
+          "lloc": 895,
+          "sloc": 1110,
+          "comments": 86,
+          "multi": 157,
+          "blank": 266,
+          "single_comments": 94
+        },
+        "/home/leonel/kadiweu/src/kadiweu_linguistic_mappings.py": {
+          "loc": 705,
+          "lloc": 362,
+          "sloc": 509,
+          "comments": 49,
+          "multi": 33,
+          "blank": 111,
+          "single_comments": 52
+        },
+        "/home/leonel/kadiweu/src/kadiweu_morphology.py": {
+          "loc": 292,
+          "lloc": 82,
+          "sloc": 148,
+          "comments": 2,
+          "multi": 80,
+          "blank": 62,
+          "single_comments": 2
+        },
+        "/home/leonel/kadiweu/src/kadiweu_normalization.py": {
+          "loc": 54,
+          "lloc": 29,
+          "sloc": 32,
+          "comments": 3,
+          "multi": 11,
+          "blank": 9,
+          "single_comments": 2
+        },
+        "/home/leonel/kadiweu/src/kadiweu_prediction_bridge.py": {
+          "loc": 75,
+          "lloc": 61,
+          "sloc": 55,
+          "comments": 1,
+          "multi": 8,
+          "blank": 10,
+          "single_comments": 2
+        },
+        "/home/leonel/kadiweu/src/kadiweu_token_ranges.py": {
+          "loc": 510,
+          "lloc": 298,
+          "sloc": 334,
+          "comments": 23,
+          "multi": 35,
+          "blank": 116,
+          "single_comments": 25
+        },
+        "/home/leonel/kadiweu/src/update_overrides_from_gold.py": {
+          "loc": 970,
+          "lloc": 467,
+          "sloc": 734,
+          "comments": 10,
+          "multi": 79,
+          "blank": 147,
+          "single_comments": 10
+        }
+      },
+      "summary": {
+        "files": 11,
+        "loc": 6778,
+        "lloc": 3596,
+        "sloc": 4865,
+        "comments": 217,
+        "multi": 586,
+        "blank": 1054,
+        "single_comments": 273
+      }
+    },
+    "radon_cc": {
+      "available": true,
+      "tool": "radon cc",
+      "raw": {
+        "/home/leonel/kadiweu/src/kadiweu_constituency.py": [
+          {
+            "type": "function",
+            "rank": "E",
+            "endline": 933,
+            "lineno": 794,
+            "col_offset": 0,
+            "complexity": 38,
+            "name": "tree_from_sentence",
+            "closures": [
+              {
+                "type": "function",
+                "rank": "A",
+                "endline": 902,
+                "lineno": 895,
+                "col_offset": 4,
+                "complexity": 2,
+                "name": "child_key",
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 588,
+            "lineno": 469,
+            "col_offset": 0,
+            "complexity": 14,
+            "name": "tree_from_psd_record",
+            "closures": [
+              {
+                "type": "function",
+                "rank": "D",
+                "endline": 565,
+                "lineno": 493,
+                "col_offset": 4,
+                "complexity": 21,
+                "name": "convert",
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 466,
+            "lineno": 425,
+            "col_offset": 0,
+            "complexity": 13,
+            "name": "_iter_psd_record_texts",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 1193,
+            "lineno": 1159,
+            "col_offset": 0,
+            "complexity": 11,
+            "name": "derived_output_name",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 1376,
+            "lineno": 1311,
+            "col_offset": 0,
+            "complexity": 11,
+            "name": "main",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 407,
+            "lineno": 388,
+            "col_offset": 0,
+            "complexity": 10,
+            "name": "_parse_psd_sexpr",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 779,
+            "lineno": 732,
+            "col_offset": 0,
+            "complexity": 10,
+            "name": "render_tree_graphviz",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 1075,
+            "lineno": 1029,
+            "col_offset": 0,
+            "complexity": 10,
+            "name": "selected_trees",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 1122,
+            "lineno": 1078,
+            "col_offset": 0,
+            "complexity": 10,
+            "name": "write_trees",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 990,
+            "lineno": 973,
+            "col_offset": 0,
+            "complexity": 9,
+            "name": "find_sentence",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 375,
+            "lineno": 365,
+            "col_offset": 0,
+            "complexity": 7,
+            "name": "_parse_psd_atom",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 422,
+            "lineno": 410,
+            "col_offset": 0,
+            "complexity": 7,
+            "name": "_metadata_from_comment",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 1025,
+            "lineno": 1002,
+            "col_offset": 0,
+            "complexity": 7,
+            "name": "print_tree",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "B",
+            "endline": 281,
+            "lineno": 262,
+            "col_offset": 4,
+            "complexity": 7,
+            "name": "corpussearch_metadata",
+            "classname": "ConstituencyTree",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 1229,
+            "lineno": 1217,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "_reject_duplicates",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 945,
+            "lineno": 937,
+            "col_offset": 0,
+            "complexity": 5,
+            "name": "is_sentence_object",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 1213,
+            "lineno": 1196,
+            "col_offset": 0,
+            "complexity": 5,
+            "name": "resolve_output_path",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 163,
+            "lineno": 137,
+            "col_offset": 4,
+            "complexity": 5,
+            "name": "word_pos_sequence",
+            "classname": "ConstituencyTree",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 352,
+            "lineno": 283,
+            "col_offset": 4,
+            "complexity": 5,
+            "name": "to_corpussearch",
+            "classname": "ConstituencyTree",
+            "closures": [
+              {
+                "type": "function",
+                "rank": "A",
+                "endline": 317,
+                "lineno": 314,
+                "col_offset": 8,
+                "complexity": 3,
+                "name": "indexed",
+                "closures": []
+              },
+              {
+                "type": "function",
+                "rank": "B",
+                "endline": 339,
+                "lineno": 319,
+                "col_offset": 8,
+                "complexity": 6,
+                "name": "render",
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 644,
+            "lineno": 600,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "render_tree_text",
+            "closures": [
+              {
+                "type": "function",
+                "rank": "B",
+                "endline": 632,
+                "lineno": 620,
+                "col_offset": 4,
+                "complexity": 7,
+                "name": "label_for",
+                "closures": []
+              },
+              {
+                "type": "function",
+                "rank": "B",
+                "endline": 640,
+                "lineno": 634,
+                "col_offset": 4,
+                "complexity": 7,
+                "name": "visit",
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 729,
+            "lineno": 650,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "tree_to_graphviz_dot",
+            "closures": [
+              {
+                "type": "function",
+                "rank": "C",
+                "endline": 721,
+                "lineno": 684,
+                "col_offset": 4,
+                "complexity": 11,
+                "name": "add_node",
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 787,
+            "lineno": 781,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "_coindex",
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 352,
+            "lineno": 109,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "ConstituencyTree",
+            "methods": [
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 131,
+                "lineno": 125,
+                "col_offset": 4,
+                "complexity": 2,
+                "name": "root",
+                "classname": "ConstituencyTree",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 135,
+                "lineno": 133,
+                "col_offset": 4,
+                "complexity": 2,
+                "name": "walk",
+                "classname": "ConstituencyTree",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 163,
+                "lineno": 137,
+                "col_offset": 4,
+                "complexity": 5,
+                "name": "word_pos_sequence",
+                "classname": "ConstituencyTree",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 194,
+                "lineno": 165,
+                "col_offset": 4,
+                "complexity": 4,
+                "name": "to_corpussearch_pos",
+                "classname": "ConstituencyTree",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 217,
+                "lineno": 196,
+                "col_offset": 4,
+                "complexity": 2,
+                "name": "pretty",
+                "classname": "ConstituencyTree",
+                "closures": [
+                  {
+                    "type": "function",
+                    "rank": "B",
+                    "endline": 213,
+                    "lineno": 202,
+                    "col_offset": 8,
+                    "complexity": 8,
+                    "name": "visit",
+                    "closures": []
+                  }
+                ]
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 233,
+                "lineno": 219,
+                "col_offset": 4,
+                "complexity": 3,
+                "name": "to_lisp",
+                "classname": "ConstituencyTree",
+                "closures": [
+                  {
+                    "type": "function",
+                    "rank": "A",
+                    "endline": 231,
+                    "lineno": 224,
+                    "col_offset": 8,
+                    "complexity": 4,
+                    "name": "render",
+                    "closures": []
+                  }
+                ]
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 254,
+                "lineno": 235,
+                "col_offset": 4,
+                "complexity": 4,
+                "name": "corpussearch_id",
+                "classname": "ConstituencyTree",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 260,
+                "lineno": 257,
+                "col_offset": 4,
+                "complexity": 1,
+                "name": "_corpussearch_metadata_value",
+                "classname": "ConstituencyTree",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "B",
+                "endline": 281,
+                "lineno": 262,
+                "col_offset": 4,
+                "complexity": 7,
+                "name": "corpussearch_metadata",
+                "classname": "ConstituencyTree",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 352,
+                "lineno": 283,
+                "col_offset": 4,
+                "complexity": 5,
+                "name": "to_corpussearch",
+                "classname": "ConstituencyTree",
+                "closures": [
+                  {
+                    "type": "function",
+                    "rank": "A",
+                    "endline": 317,
+                    "lineno": 314,
+                    "col_offset": 8,
+                    "complexity": 3,
+                    "name": "indexed",
+                    "closures": []
+                  },
+                  {
+                    "type": "function",
+                    "rank": "B",
+                    "endline": 339,
+                    "lineno": 319,
+                    "col_offset": 8,
+                    "complexity": 6,
+                    "name": "render",
+                    "closures": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 194,
+            "lineno": 165,
+            "col_offset": 4,
+            "complexity": 4,
+            "name": "to_corpussearch_pos",
+            "classname": "ConstituencyTree",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 254,
+            "lineno": 235,
+            "col_offset": 4,
+            "complexity": 4,
+            "name": "corpussearch_id",
+            "classname": "ConstituencyTree",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 385,
+            "lineno": 378,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "_split_indexed_label",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 1149,
+            "lineno": 1144,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "status_suffix",
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 62,
+            "lineno": 29,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "TokenNode",
+            "methods": [
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 46,
+                "lineno": 45,
+                "col_offset": 4,
+                "complexity": 2,
+                "name": "label",
+                "classname": "TokenNode",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 50,
+                "lineno": 49,
+                "col_offset": 4,
+                "complexity": 1,
+                "name": "span",
+                "classname": "TokenNode",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 54,
+                "lineno": 53,
+                "col_offset": 4,
+                "complexity": 1,
+                "name": "is_terminal",
+                "classname": "TokenNode",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 62,
+                "lineno": 56,
+                "col_offset": 4,
+                "complexity": 3,
+                "name": "display_label",
+                "classname": "TokenNode",
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 62,
+            "lineno": 56,
+            "col_offset": 4,
+            "complexity": 3,
+            "name": "display_label",
+            "classname": "TokenNode",
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 102,
+            "lineno": 66,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "ConstituentNode",
+            "methods": [
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 82,
+                "lineno": 81,
+                "col_offset": 4,
+                "complexity": 1,
+                "name": "span",
+                "classname": "ConstituentNode",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 86,
+                "lineno": 85,
+                "col_offset": 4,
+                "complexity": 1,
+                "name": "is_terminal",
+                "classname": "ConstituentNode",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 94,
+                "lineno": 88,
+                "col_offset": 4,
+                "complexity": 3,
+                "name": "display_label",
+                "classname": "ConstituentNode",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 102,
+                "lineno": 96,
+                "col_offset": 4,
+                "complexity": 3,
+                "name": "walk",
+                "classname": "ConstituentNode",
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 94,
+            "lineno": 88,
+            "col_offset": 4,
+            "complexity": 3,
+            "name": "display_label",
+            "classname": "ConstituentNode",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 102,
+            "lineno": 96,
+            "col_offset": 4,
+            "complexity": 3,
+            "name": "walk",
+            "classname": "ConstituentNode",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 233,
+            "lineno": 219,
+            "col_offset": 4,
+            "complexity": 3,
+            "name": "to_lisp",
+            "classname": "ConstituencyTree",
+            "closures": [
+              {
+                "type": "function",
+                "rank": "A",
+                "endline": 231,
+                "lineno": 224,
+                "col_offset": 8,
+                "complexity": 4,
+                "name": "render",
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 597,
+            "lineno": 591,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "iter_psd_records",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 791,
+            "lineno": 790,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "_contains",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 970,
+            "lineno": 949,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "iter_sentences",
+            "closures": [
+              {
+                "type": "function",
+                "rank": "B",
+                "endline": 966,
+                "lineno": 957,
+                "col_offset": 4,
+                "complexity": 6,
+                "name": "visit",
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 999,
+            "lineno": 993,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "load_document",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 1141,
+            "lineno": 1134,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "_filename_component",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 46,
+            "lineno": 45,
+            "col_offset": 4,
+            "complexity": 2,
+            "name": "label",
+            "classname": "TokenNode",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 131,
+            "lineno": 125,
+            "col_offset": 4,
+            "complexity": 2,
+            "name": "root",
+            "classname": "ConstituencyTree",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 135,
+            "lineno": 133,
+            "col_offset": 4,
+            "complexity": 2,
+            "name": "walk",
+            "classname": "ConstituencyTree",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 217,
+            "lineno": 196,
+            "col_offset": 4,
+            "complexity": 2,
+            "name": "pretty",
+            "classname": "ConstituencyTree",
+            "closures": [
+              {
+                "type": "function",
+                "rank": "B",
+                "endline": 213,
+                "lineno": 202,
+                "col_offset": 8,
+                "complexity": 8,
+                "name": "visit",
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 1156,
+            "lineno": 1153,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "_short_uid",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 1308,
+            "lineno": 1232,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "build_argument_parser",
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 25,
+            "lineno": 24,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "TreeConstructionError",
+            "methods": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 50,
+            "lineno": 49,
+            "col_offset": 4,
+            "complexity": 1,
+            "name": "span",
+            "classname": "TokenNode",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 54,
+            "lineno": 53,
+            "col_offset": 4,
+            "complexity": 1,
+            "name": "is_terminal",
+            "classname": "TokenNode",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 82,
+            "lineno": 81,
+            "col_offset": 4,
+            "complexity": 1,
+            "name": "span",
+            "classname": "ConstituentNode",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 86,
+            "lineno": 85,
+            "col_offset": 4,
+            "complexity": 1,
+            "name": "is_terminal",
+            "classname": "ConstituentNode",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 260,
+            "lineno": 257,
+            "col_offset": 4,
+            "complexity": 1,
+            "name": "_corpussearch_metadata_value",
+            "classname": "ConstituencyTree",
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 362,
+            "lineno": 356,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "PsdRecord",
+            "methods": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py": [
+          {
+            "type": "function",
+            "rank": "F",
+            "endline": 511,
+            "lineno": 425,
+            "col_offset": 0,
+            "complexity": 73,
+            "name": "argument_assignments",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "E",
+            "endline": 227,
+            "lineno": 176,
+            "col_offset": 0,
+            "complexity": 40,
+            "name": "ud_head",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "E",
+            "endline": 422,
+            "lineno": 376,
+            "col_offset": 0,
+            "complexity": 37,
+            "name": "possessor_raising_assignments",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "E",
+            "endline": 373,
+            "lineno": 329,
+            "col_offset": 0,
+            "complexity": 34,
+            "name": "complement_and_adjunct_assignments",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "D",
+            "endline": 611,
+            "lineno": 550,
+            "col_offset": 0,
+            "complexity": 26,
+            "name": "possessive_np_assignments",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "D",
+            "endline": 326,
+            "lineno": 291,
+            "col_offset": 0,
+            "complexity": 24,
+            "name": "clause_assignments",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "D",
+            "endline": 879,
+            "lineno": 841,
+            "col_offset": 0,
+            "complexity": 22,
+            "name": "infer_dependencies",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 173,
+            "lineno": 132,
+            "col_offset": 0,
+            "complexity": 17,
+            "name": "lexical_head",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 817,
+            "lineno": 758,
+            "col_offset": 0,
+            "complexity": 17,
+            "name": "relative_clause_assignments",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 680,
+            "lineno": 646,
+            "col_offset": 0,
+            "complexity": 16,
+            "name": "cp_modifier_assignments",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 288,
+            "lineno": 269,
+            "col_offset": 0,
+            "complexity": 15,
+            "name": "coordination_parts",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 708,
+            "lineno": 689,
+            "col_offset": 0,
+            "complexity": 12,
+            "name": "_unique_relative_ane",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 257,
+            "lineno": 248,
+            "col_offset": 0,
+            "complexity": 10,
+            "name": "verbless_capl_np",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 546,
+            "lineno": 514,
+            "col_offset": 0,
+            "complexity": 10,
+            "name": "nominal_determiner_assignments",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 755,
+            "lineno": 726,
+            "col_offset": 0,
+            "complexity": 10,
+            "name": "_attested_trace_relation",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 641,
+            "lineno": 614,
+            "col_offset": 0,
+            "complexity": 9,
+            "name": "complementizer_assignments",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 245,
+            "lineno": 240,
+            "col_offset": 0,
+            "complexity": 8,
+            "name": "overt_children",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 723,
+            "lineno": 711,
+            "col_offset": 0,
+            "complexity": 7,
+            "name": "_uniquely_coindexed_trace",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 266,
+            "lineno": 260,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "cp_complement",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 909,
+            "lineno": 892,
+            "col_offset": 0,
+            "complexity": 5,
+            "name": "write_tsv",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 114,
+            "lineno": 104,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "is_np",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 686,
+            "lineno": 684,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "_unique_ip_sub",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 834,
+            "lineno": 821,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "_add_assignment",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 122,
+            "lineno": 118,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "is_ip_sub",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 233,
+            "lineno": 230,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "has_function",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 889,
+            "lineno": 882,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "iter_psd_assignments",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 931,
+            "lineno": 923,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "main",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 129,
+            "lineno": 126,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "_normalized_form",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 237,
+            "lineno": 236,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "is_ip_mat",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 920,
+            "lineno": 914,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "build_argument_parser",
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 97,
+            "lineno": 91,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "DependencyAssignment",
+            "methods": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 101,
+            "lineno": 100,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "DependencyConflictError",
+            "methods": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/kadiweu_empty_categories.py": [
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 186,
+            "lineno": 115,
+            "col_offset": 0,
+            "complexity": 18,
+            "name": "resolve_empty_categories",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 72,
+            "lineno": 65,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "is_empty_category_token",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 96,
+            "lineno": 91,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "_same_local_domain",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 104,
+            "lineno": 99,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "_nearest_previous",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 112,
+            "lineno": 107,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "_nearest_next",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 62,
+            "lineno": 60,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "token_pos",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 80,
+            "lineno": 75,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "is_relative_pronoun",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 53,
+            "lineno": 52,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "token_form",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 57,
+            "lineno": 56,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "token_tag",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 84,
+            "lineno": 83,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "is_predicate_candidate",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 88,
+            "lineno": 87,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "is_nominal_candidate",
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 41,
+            "lineno": 37,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "DependencyHint",
+            "methods": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 49,
+            "lineno": 45,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "EmptyCategoryResolution",
+            "methods": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py": [
+          {
+            "type": "function",
+            "rank": "F",
+            "endline": 1340,
+            "lineno": 693,
+            "col_offset": 0,
+            "complexity": 176,
+            "name": "convert_sentence",
+            "closures": [
+              {
+                "type": "function",
+                "rank": "B",
+                "endline": 1162,
+                "lineno": 1145,
+                "col_offset": 4,
+                "complexity": 9,
+                "name": "demote_extra_core_dependents",
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "D",
+            "endline": 446,
+            "lineno": 409,
+            "col_offset": 0,
+            "complexity": 23,
+            "name": "pick_root_index",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 180,
+            "lineno": 119,
+            "col_offset": 0,
+            "complexity": 13,
+            "name": "apply_spaceafter_from_text",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 1615,
+            "lineno": 1519,
+            "col_offset": 0,
+            "complexity": 13,
+            "name": "main",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 406,
+            "lineno": 377,
+            "col_offset": 0,
+            "complexity": 11,
+            "name": "build_chunk_infos",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 632,
+            "lineno": 581,
+            "col_offset": 0,
+            "complexity": 11,
+            "name": "build_text_from_rows",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 1426,
+            "lineno": 1347,
+            "col_offset": 0,
+            "complexity": 11,
+            "name": "load_latest_import_record",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 323,
+            "lineno": 298,
+            "col_offset": 0,
+            "complexity": 10,
+            "name": "chunk_membership_for_tokens",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 465,
+            "lineno": 449,
+            "col_offset": 0,
+            "complexity": 8,
+            "name": "choose_nominal_attachment_target",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 374,
+            "lineno": 342,
+            "col_offset": 0,
+            "complexity": 7,
+            "name": "choose_chunk_head",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 520,
+            "lineno": 491,
+            "col_offset": 0,
+            "complexity": 7,
+            "name": "collect_mwt_group",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 657,
+            "lineno": 643,
+            "col_offset": 0,
+            "complexity": 7,
+            "name": "is_embedded_chunk",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 241,
+            "lineno": 223,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "extract_range",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 285,
+            "lineno": 244,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "build_space_aware_token_ranges",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 339,
+            "lineno": 328,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "chunk_head_candidates",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 534,
+            "lineno": 523,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "mwt_surface_form",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 553,
+            "lineno": 549,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "parse_misc",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 479,
+            "lineno": 467,
+            "col_offset": 0,
+            "complexity": 5,
+            "name": "is_mwt_start",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 117,
+            "lineno": 108,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "warn_on_composite_tag_without_mwt",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 188,
+            "lineno": 182,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "safe_get",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 205,
+            "lineno": 191,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "normalize_text_ground_truth",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 547,
+            "lineno": 537,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "add_spaceafter_no",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 559,
+            "lineno": 556,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "join_misc",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 570,
+            "lineno": 567,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "remove_spaceafter_no",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 1463,
+            "lineno": 1446,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "get_source_struct_status",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 210,
+            "lineno": 208,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "get_proto_rows",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 215,
+            "lineno": 213,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "get_tokens",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 220,
+            "lineno": 218,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "get_chunks",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 565,
+            "lineno": 561,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "add_misc_item",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 578,
+            "lineno": 573,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "ensure_spaceafter_no",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 1444,
+            "lineno": 1428,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "get_project_git_commit",
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 690,
+            "lineno": 664,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "DraftToken",
+            "methods": [
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 690,
+                "lineno": 665,
+                "col_offset": 4,
+                "complexity": 1,
+                "name": "__init__",
+                "classname": "DraftToken",
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 289,
+            "lineno": 288,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "range_to_misc",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 295,
+            "lineno": 292,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "final_punct_range",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 488,
+            "lineno": 482,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "clean_component_form",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 641,
+            "lineno": 635,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "final_punct_range_from_text",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 1345,
+            "lineno": 1343,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "load_json",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 1516,
+            "lineno": 1466,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "parse_args",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 690,
+            "lineno": 665,
+            "col_offset": 4,
+            "complexity": 1,
+            "name": "__init__",
+            "classname": "DraftToken",
+            "closures": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/kadiweu_linguistic_mappings.py": [
+          {
+            "type": "function",
+            "rank": "E",
+            "endline": 659,
+            "lineno": 569,
+            "col_offset": 0,
+            "complexity": 34,
+            "name": "infer_feats",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "D",
+            "endline": 365,
+            "lineno": 294,
+            "col_offset": 0,
+            "complexity": 23,
+            "name": "features_from_split",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 557,
+            "lineno": 536,
+            "col_offset": 0,
+            "complexity": 10,
+            "name": "infer_lemma",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 291,
+            "lineno": 273,
+            "col_offset": 0,
+            "complexity": 8,
+            "name": "_gender_from_gloss",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 227,
+            "lineno": 213,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "_target_for_component",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 533,
+            "lineno": 452,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "configure_override_resources",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 566,
+            "lineno": 560,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "_candidate_forms",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 675,
+            "lineno": 669,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "upos_override_candidates",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 210,
+            "lineno": 199,
+            "col_offset": 0,
+            "complexity": 5,
+            "name": "normalize_split_tags",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 394,
+            "lineno": 368,
+            "col_offset": 0,
+            "complexity": 5,
+            "name": "split_derived_feats",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 448,
+            "lineno": 397,
+            "col_offset": 0,
+            "complexity": 5,
+            "name": "load_override_resource",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 58,
+            "lineno": 51,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "safe_get",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 263,
+            "lineno": 256,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "_person_from_gloss",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 245,
+            "lineno": 230,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "_feature_applies_to_component",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 253,
+            "lineno": 247,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "_split_gloss",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 684,
+            "lineno": 678,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "infer_upos_for_form",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 693,
+            "lineno": 687,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "apply_upos_override",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 270,
+            "lineno": 266,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "_is_singular_gloss",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 666,
+            "lineno": 661,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "infer_upos",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 701,
+            "lineno": 696,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "get_form_correction",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 196,
+            "lineno": 193,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "canonicalize_split_tag",
+            "closures": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/kadiweu_morphology.py": [
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 188,
+            "lineno": 100,
+            "col_offset": 0,
+            "complexity": 5,
+            "name": "build_ng_deictic_form_map",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 98,
+            "lineno": 78,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "pluralize_ng_form",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 288,
+            "lineno": 275,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "format_gloss",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 207,
+            "lineno": 191,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "build_form_corrections_from_ng_deictics",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 220,
+            "lineno": 211,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "describe_ng_deictic_form",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 241,
+            "lineno": 233,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "get_standard_form_correction",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 272,
+            "lineno": 243,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "test_ng_deictic_forms",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 231,
+            "lineno": 222,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "correct_ng_deictic_form",
+            "closures": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/kadiweu_normalization.py": [
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 54,
+            "lineno": 40,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "canonicalize_override_map",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 33,
+            "lineno": 14,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "normalize_form_for_lookup",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 38,
+            "lineno": 35,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "get_surface_and_lookup_form",
+            "closures": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/kadiweu_prediction_bridge.py": [
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 35,
+            "lineno": 15,
+            "col_offset": 0,
+            "complexity": 14,
+            "name": "align_predictions",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 57,
+            "lineno": 38,
+            "col_offset": 0,
+            "complexity": 12,
+            "name": "graph_problem",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 75,
+            "lineno": 60,
+            "col_offset": 0,
+            "complexity": 11,
+            "name": "demote_unlocked_duplicates",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 12,
+            "lineno": 10,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "predict",
+            "closures": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/kadiweu_token_ranges.py": [
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 345,
+            "lineno": 311,
+            "col_offset": 0,
+            "complexity": 12,
+            "name": "assign_token_ranges_to_rows",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 211,
+            "lineno": 189,
+            "col_offset": 0,
+            "complexity": 9,
+            "name": "parse_conllu_blocks",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 414,
+            "lineno": 395,
+            "col_offset": 0,
+            "complexity": 9,
+            "name": "check_sentence",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 506,
+            "lineno": 478,
+            "col_offset": 0,
+            "complexity": 8,
+            "name": "main",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 110,
+            "lineno": 107,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "parse_misc",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 255,
+            "lineno": 240,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "visible_surface_rows",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 295,
+            "lineno": 258,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "align_forms_to_text",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 115,
+            "lineno": 113,
+            "col_offset": 0,
+            "complexity": 5,
+            "name": "join_misc",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 144,
+            "lineno": 131,
+            "col_offset": 0,
+            "complexity": 5,
+            "name": "set_misc_key",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 221,
+            "lineno": 214,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "serialize_blocks",
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 66,
+            "lineno": 55,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "TokenRangeIssue",
+            "methods": [
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 66,
+                "lineno": 63,
+                "col_offset": 4,
+                "complexity": 3,
+                "name": "format",
+                "classname": "TokenRangeIssue",
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 123,
+            "lineno": 118,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "get_misc_value",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 128,
+            "lineno": 126,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "remove_misc_key",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 155,
+            "lineno": 154,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "remove_flag",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 162,
+            "lineno": 158,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "get_token_range",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 237,
+            "lineno": 229,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "mwt_component_ids",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 303,
+            "lineno": 298,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "expected_ranges_for_rows",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 387,
+            "lineno": 348,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "assign_token_ranges_to_emitted_rows",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 443,
+            "lineno": 424,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "fix_conllu_text",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 66,
+            "lineno": 63,
+            "col_offset": 4,
+            "complexity": 3,
+            "name": "format",
+            "classname": "TokenRangeIssue",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 151,
+            "lineno": 147,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "ensure_flag",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 186,
+            "lineno": 182,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "mwt_span",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 308,
+            "lineno": 307,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "_next_visible_starts_immediately",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 421,
+            "lineno": 417,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "check_conllu_text",
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 91,
+            "lineno": 70,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "ConlluRow",
+            "methods": [
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 76,
+                "lineno": 75,
+                "col_offset": 4,
+                "complexity": 1,
+                "name": "id",
+                "classname": "ConlluRow",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 80,
+                "lineno": 79,
+                "col_offset": 4,
+                "complexity": 1,
+                "name": "form",
+                "classname": "ConlluRow",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 84,
+                "lineno": 83,
+                "col_offset": 4,
+                "complexity": 1,
+                "name": "misc",
+                "classname": "ConlluRow",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 88,
+                "lineno": 87,
+                "col_offset": 4,
+                "complexity": 2,
+                "name": "misc",
+                "classname": "ConlluRow",
+                "closures": []
+              },
+              {
+                "type": "method",
+                "rank": "A",
+                "endline": 91,
+                "lineno": 90,
+                "col_offset": 4,
+                "complexity": 1,
+                "name": "serialize",
+                "classname": "ConlluRow",
+                "closures": []
+              }
+            ]
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 88,
+            "lineno": 87,
+            "col_offset": 4,
+            "complexity": 2,
+            "name": "misc",
+            "classname": "ConlluRow",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 171,
+            "lineno": 170,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "is_int_id",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 175,
+            "lineno": 174,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "is_mwt_id",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 179,
+            "lineno": 178,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "is_empty_node_id",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 475,
+            "lineno": 451,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "parse_args",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 76,
+            "lineno": 75,
+            "col_offset": 4,
+            "complexity": 1,
+            "name": "id",
+            "classname": "ConlluRow",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 80,
+            "lineno": 79,
+            "col_offset": 4,
+            "complexity": 1,
+            "name": "form",
+            "classname": "ConlluRow",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 84,
+            "lineno": 83,
+            "col_offset": 4,
+            "complexity": 1,
+            "name": "misc",
+            "classname": "ConlluRow",
+            "closures": []
+          },
+          {
+            "type": "method",
+            "rank": "A",
+            "endline": 91,
+            "lineno": 90,
+            "col_offset": 4,
+            "complexity": 1,
+            "name": "serialize",
+            "classname": "ConlluRow",
+            "closures": []
+          },
+          {
+            "type": "class",
+            "rank": "A",
+            "endline": 99,
+            "lineno": 95,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "SentenceBlock",
+            "methods": []
+          }
+        ],
+        "/home/leonel/kadiweu/src/update_overrides_from_gold.py": [
+          {
+            "type": "function",
+            "rank": "F",
+            "endline": 745,
+            "lineno": 448,
+            "col_offset": 0,
+            "complexity": 51,
+            "name": "learn_overrides",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 180,
+            "lineno": 135,
+            "col_offset": 0,
+            "complexity": 12,
+            "name": "parse_conllu",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 445,
+            "lineno": 357,
+            "col_offset": 0,
+            "complexity": 11,
+            "name": "align_gold_with_json",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 264,
+            "lineno": 208,
+            "col_offset": 0,
+            "complexity": 8,
+            "name": "parse_json_sentences",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 101,
+            "lineno": 95,
+            "col_offset": 0,
+            "complexity": 7,
+            "name": "normalize_feats",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 966,
+            "lineno": 884,
+            "col_offset": 0,
+            "complexity": 7,
+            "name": "main",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "B",
+            "endline": 205,
+            "lineno": 195,
+            "col_offset": 0,
+            "complexity": 6,
+            "name": "walk_collect_sentences",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 110,
+            "lineno": 104,
+            "col_offset": 0,
+            "complexity": 5,
+            "name": "extract_prontype",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 120,
+            "lineno": 112,
+            "col_offset": 0,
+            "complexity": 5,
+            "name": "extract_standard_form",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 192,
+            "lineno": 183,
+            "col_offset": 0,
+            "complexity": 5,
+            "name": "is_sentence_object",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 319,
+            "lineno": 267,
+            "col_offset": 0,
+            "complexity": 5,
+            "name": "index_json_sentences_by_uid",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 92,
+            "lineno": 86,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "safe_get",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 757,
+            "lineno": 749,
+            "col_offset": 0,
+            "complexity": 4,
+            "name": "short_preview",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 84,
+            "lineno": 78,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "normalize_override_form",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 132,
+            "lineno": 126,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "most_common_with_share",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 323,
+            "lineno": 322,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "filter_gold_learning_tokens",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 354,
+            "lineno": 339,
+            "col_offset": 0,
+            "complexity": 3,
+            "name": "filter_json_alignment_tokens",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 336,
+            "lineno": 326,
+            "col_offset": 0,
+            "complexity": 2,
+            "name": "normalize_alignment_form",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 123,
+            "lineno": 122,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "json_key",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 827,
+            "lineno": 760,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "build_report",
+            "closures": []
+          },
+          {
+            "type": "function",
+            "rank": "A",
+            "endline": 881,
+            "lineno": 830,
+            "col_offset": 0,
+            "complexity": 1,
+            "name": "parse_args",
+            "closures": []
+          }
+        ]
+      },
+      "summary": {
+        "functions_and_methods": 214,
+        "classes": 13,
+        "total_cyclomatic_complexity": 1568,
+        "average_cyclomatic_complexity_per_function": 7.327,
+        "maximum_cyclomatic_complexity": 176,
+        "rank_counts": {
+          "E": 5,
+          "C": 21,
+          "B": 44,
+          "A": 136,
+          "F": 3,
+          "D": 5
+        },
+        "top_complex_functions": [
+          {
+            "type": "function",
+            "rank": "F",
+            "endline": 1340,
+            "lineno": 693,
+            "col_offset": 0,
+            "complexity": 176,
+            "name": "convert_sentence",
+            "closures": [
+              {
+                "type": "function",
+                "rank": "B",
+                "endline": 1162,
+                "lineno": 1145,
+                "col_offset": 4,
+                "complexity": 9,
+                "name": "demote_extra_core_dependents",
+                "closures": []
+              }
+            ],
+            "file": "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py"
+          },
+          {
+            "type": "function",
+            "rank": "F",
+            "endline": 511,
+            "lineno": 425,
+            "col_offset": 0,
+            "complexity": 73,
+            "name": "argument_assignments",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py"
+          },
+          {
+            "type": "function",
+            "rank": "F",
+            "endline": 745,
+            "lineno": 448,
+            "col_offset": 0,
+            "complexity": 51,
+            "name": "learn_overrides",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/update_overrides_from_gold.py"
+          },
+          {
+            "type": "function",
+            "rank": "E",
+            "endline": 227,
+            "lineno": 176,
+            "col_offset": 0,
+            "complexity": 40,
+            "name": "ud_head",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py"
+          },
+          {
+            "type": "function",
+            "rank": "E",
+            "endline": 933,
+            "lineno": 794,
+            "col_offset": 0,
+            "complexity": 38,
+            "name": "tree_from_sentence",
+            "closures": [
+              {
+                "type": "function",
+                "rank": "A",
+                "endline": 902,
+                "lineno": 895,
+                "col_offset": 4,
+                "complexity": 2,
+                "name": "child_key",
+                "closures": []
+              }
+            ],
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency.py"
+          },
+          {
+            "type": "function",
+            "rank": "E",
+            "endline": 422,
+            "lineno": 376,
+            "col_offset": 0,
+            "complexity": 37,
+            "name": "possessor_raising_assignments",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py"
+          },
+          {
+            "type": "function",
+            "rank": "E",
+            "endline": 373,
+            "lineno": 329,
+            "col_offset": 0,
+            "complexity": 34,
+            "name": "complement_and_adjunct_assignments",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py"
+          },
+          {
+            "type": "function",
+            "rank": "E",
+            "endline": 659,
+            "lineno": 569,
+            "col_offset": 0,
+            "complexity": 34,
+            "name": "infer_feats",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_linguistic_mappings.py"
+          },
+          {
+            "type": "function",
+            "rank": "D",
+            "endline": 611,
+            "lineno": 550,
+            "col_offset": 0,
+            "complexity": 26,
+            "name": "possessive_np_assignments",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py"
+          },
+          {
+            "type": "function",
+            "rank": "D",
+            "endline": 326,
+            "lineno": 291,
+            "col_offset": 0,
+            "complexity": 24,
+            "name": "clause_assignments",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py"
+          },
+          {
+            "type": "function",
+            "rank": "D",
+            "endline": 446,
+            "lineno": 409,
+            "col_offset": 0,
+            "complexity": 23,
+            "name": "pick_root_index",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py"
+          },
+          {
+            "type": "function",
+            "rank": "D",
+            "endline": 365,
+            "lineno": 294,
+            "col_offset": 0,
+            "complexity": 23,
+            "name": "features_from_split",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_linguistic_mappings.py"
+          },
+          {
+            "type": "function",
+            "rank": "D",
+            "endline": 879,
+            "lineno": 841,
+            "col_offset": 0,
+            "complexity": 22,
+            "name": "infer_dependencies",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 186,
+            "lineno": 115,
+            "col_offset": 0,
+            "complexity": 18,
+            "name": "resolve_empty_categories",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_empty_categories.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 173,
+            "lineno": 132,
+            "col_offset": 0,
+            "complexity": 17,
+            "name": "lexical_head",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 817,
+            "lineno": 758,
+            "col_offset": 0,
+            "complexity": 17,
+            "name": "relative_clause_assignments",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 680,
+            "lineno": 646,
+            "col_offset": 0,
+            "complexity": 16,
+            "name": "cp_modifier_assignments",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 288,
+            "lineno": 269,
+            "col_offset": 0,
+            "complexity": 15,
+            "name": "coordination_parts",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 588,
+            "lineno": 469,
+            "col_offset": 0,
+            "complexity": 14,
+            "name": "tree_from_psd_record",
+            "closures": [
+              {
+                "type": "function",
+                "rank": "D",
+                "endline": 565,
+                "lineno": 493,
+                "col_offset": 4,
+                "complexity": 21,
+                "name": "convert",
+                "closures": []
+              }
+            ],
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 35,
+            "lineno": 15,
+            "col_offset": 0,
+            "complexity": 14,
+            "name": "align_predictions",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_prediction_bridge.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 466,
+            "lineno": 425,
+            "col_offset": 0,
+            "complexity": 13,
+            "name": "_iter_psd_record_texts",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 180,
+            "lineno": 119,
+            "col_offset": 0,
+            "complexity": 13,
+            "name": "apply_spaceafter_from_text",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 1615,
+            "lineno": 1519,
+            "col_offset": 0,
+            "complexity": 13,
+            "name": "main",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 708,
+            "lineno": 689,
+            "col_offset": 0,
+            "complexity": 12,
+            "name": "_unique_relative_ane",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py"
+          },
+          {
+            "type": "function",
+            "rank": "C",
+            "endline": 57,
+            "lineno": 38,
+            "col_offset": 0,
+            "complexity": 12,
+            "name": "graph_problem",
+            "closures": [],
+            "file": "/home/leonel/kadiweu/src/kadiweu_prediction_bridge.py"
+          }
+        ]
+      }
+    },
+    "radon_mi": {
+      "available": true,
+      "tool": "radon mi",
+      "raw": {
+        "/home/leonel/kadiweu/src/kadiweu_constituency.py": {
+          "mi": 0.0,
+          "rank": "C"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py": {
+          "mi": 0.0,
+          "rank": "C"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_converter_config.py": {
+          "mi": 100.0,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_empty_categories.py": {
+          "mi": 55.720811745972775,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py": {
+          "mi": 0.0,
+          "rank": "C"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_linguistic_mappings.py": {
+          "mi": 25.808791480685766,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_morphology.py": {
+          "mi": 69.22263391295613,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_normalization.py": {
+          "mi": 81.50928297166332,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_prediction_bridge.py": {
+          "mi": 58.64989568546276,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/kadiweu_token_ranges.py": {
+          "mi": 34.509630694076776,
+          "rank": "A"
+        },
+        "/home/leonel/kadiweu/src/update_overrides_from_gold.py": {
+          "mi": 20.12175397233473,
+          "rank": "A"
+        }
+      },
+      "summary": {
+        "files": 11,
+        "average_maintainability_index": 40.504,
+        "minimum_maintainability_index": 0.0,
+        "maximum_maintainability_index": 100.0,
+        "rank_counts": {
+          "C": 3,
+          "A": 8
+        },
+        "files_by_maintainability": [
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency.py",
+            "maintainability_index": 0.0,
+            "rank": "C"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py",
+            "maintainability_index": 0.0,
+            "rank": "C"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py",
+            "maintainability_index": 0.0,
+            "rank": "C"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/update_overrides_from_gold.py",
+            "maintainability_index": 20.12175397233473,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_linguistic_mappings.py",
+            "maintainability_index": 25.808791480685766,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_token_ranges.py",
+            "maintainability_index": 34.509630694076776,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_empty_categories.py",
+            "maintainability_index": 55.720811745972775,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_prediction_bridge.py",
+            "maintainability_index": 58.64989568546276,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_morphology.py",
+            "maintainability_index": 69.22263391295613,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_normalization.py",
+            "maintainability_index": 81.50928297166332,
+            "rank": "A"
+          },
+          {
+            "file": "/home/leonel/kadiweu/src/kadiweu_converter_config.py",
+            "maintainability_index": 100.0,
+            "rank": "A"
+          }
+        ]
+      }
+    },
+    "radon_hal": {
+      "available": true,
+      "tool": "radon hal",
+      "raw": {
+        "/home/leonel/kadiweu/src/kadiweu_constituency.py": {
+          "total": [
+            19,
+            322,
+            248,
+            467,
+            341,
+            715,
+            2763.265857508335,
+            6015.743969252284,
+            13.777950310559007,
+            82884.62148940298,
+            4604.701193855722,
+            2.005247989750761
+          ],
+          "functions": [
+            [
+              "label",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "span",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "is_terminal",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "display_label",
+              [
+                1,
+                4,
+                2,
+                4,
+                5,
+                6,
+                8.0,
+                13.931568569324174,
+                0.5,
+                6.965784284662087,
+                0.3869880158145604,
+                0.004643856189774725
+              ]
+            ],
+            [
+              "span",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "is_terminal",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "display_label",
+              [
+                1,
+                5,
+                3,
+                6,
+                6,
+                9,
+                11.60964047443681,
+                23.264662506490403,
+                0.6,
+                13.95879750389424,
+                0.7754887502163467,
+                0.007754887502163467
+              ]
+            ],
+            [
+              "walk",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "root",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "walk",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "word_pos_sequence",
+              [
+                3,
+                5,
+                3,
+                5,
+                8,
+                8,
+                16.36452797660028,
+                24.0,
+                1.5,
+                36.0,
+                2.0,
+                0.008
+              ]
+            ],
+            [
+              "to_corpussearch_pos",
+              [
+                2,
+                5,
+                4,
+                8,
+                7,
+                12,
+                13.60964047443681,
+                33.68825906469125,
+                1.6,
+                53.901214503506004,
+                2.9945119168614447,
+                0.011229419688230418
+              ]
+            ],
+            [
+              "pretty",
+              [
+                4,
+                14,
+                8,
+                15,
+                18,
+                23,
+                61.30296890880645,
+                95.90827503317318,
+                2.142857142857143,
+                205.51773221394254,
+                11.417651789663473,
+                0.03196942501105773
+              ]
+            ],
+            [
+              "to_lisp",
+              [
+                4,
+                8,
+                5,
+                9,
+                12,
+                14,
+                32.0,
+                50.18947501009619,
+                2.25,
+                112.92631877271643,
+                6.273684376262024,
+                0.016729825003365395
+              ]
+            ],
+            [
+              "corpussearch_id",
+              [
+                2,
+                4,
+                3,
+                4,
+                6,
+                7,
+                10.0,
+                18.094737505048094,
+                1.0,
+                18.094737505048094,
+                1.0052631947248942,
+                0.006031579168349364
+              ]
+            ],
+            [
+              "_corpussearch_metadata_value",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "corpussearch_metadata",
+              [
+                2,
+                6,
+                3,
+                6,
+                8,
+                9,
+                17.509775004326936,
+                27.0,
+                1.0,
+                27.0,
+                1.5,
+                0.009
+              ]
+            ],
+            [
+              "to_corpussearch",
+              [
+                6,
+                16,
+                10,
+                18,
+                22,
+                28,
+                79.50977500432694,
+                124.86408532184433,
+                3.375,
+                421.4162879612246,
+                23.412015997845813,
+                0.04162136177394811
+              ]
+            ],
+            [
+              "_parse_psd_atom",
+              [
+                6,
+                12,
+                9,
+                18,
+                18,
+                27,
+                58.52932501298082,
+                112.58797503894243,
+                4.5,
+                506.64588767524094,
+                28.146993759735608,
+                0.03752932501298081
+              ]
+            ],
+            [
+              "_split_indexed_label",
+              [
+                2,
+                3,
+                2,
+                3,
+                5,
+                5,
+                6.754887502163469,
+                11.60964047443681,
+                1.0,
+                11.60964047443681,
+                0.6449800263576005,
+                0.0038698801581456034
+              ]
+            ],
+            [
+              "_parse_psd_sexpr",
+              [
+                6,
+                11,
+                12,
+                24,
+                17,
+                36,
+                53.563522809337215,
+                147.14866228501225,
+                6.545454545454546,
+                963.1548804109893,
+                53.50860446727719,
+                0.04904955409500408
+              ]
+            ],
+            [
+              "_metadata_from_comment",
+              [
+                4,
+                6,
+                4,
+                6,
+                10,
+                10,
+                23.509775004326936,
+                33.219280948873624,
+                2.0,
+                66.43856189774725,
+                3.691031216541514,
+                0.01107309364962454
+              ]
+            ],
+            [
+              "_iter_psd_record_texts",
+              [
+                6,
+                13,
+                20,
+                40,
+                19,
+                60,
+                63.61549134016113,
+                254.8756508066151,
+                9.23076923076923,
+                2352.6983151379854,
+                130.7054619521103,
+                0.08495855026887171
+              ]
+            ],
+            [
+              "tree_from_psd_record",
+              [
+                8,
+                45,
+                31,
+                60,
+                53,
+                91,
+                271.13338933483533,
+                521.2407613652512,
+                5.333333333333333,
+                2779.9507272813394,
+                154.44170707118553,
+                0.17374692045508372
+              ]
+            ],
+            [
+              "iter_psd_records",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "render_tree_text",
+              [
+                5,
+                23,
+                13,
+                25,
+                28,
+                38,
+                115.65156546374811,
+                182.67948703818894,
+                2.717391304347826,
+                496.41164956029604,
+                27.578424975572002,
+                0.06089316234606298
+              ]
+            ],
+            [
+              "tree_to_graphviz_dot",
+              [
+                2,
+                14,
+                8,
+                16,
+                16,
+                24,
+                55.30296890880645,
+                96.0,
+                1.1428571428571428,
+                109.71428571428571,
+                6.095238095238095,
+                0.032
+              ]
+            ],
+            [
+              "render_tree_graphviz",
+              [
+                7,
+                12,
+                7,
+                13,
+                19,
+                20,
+                62.67103446305711,
+                84.9585502688717,
+                3.7916666666666665,
+                322.1345031028052,
+                17.896361283489178,
+                0.028319516756290568
+              ]
+            ],
+            [
+              "_coindex",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "_contains",
+              [
+                2,
+                4,
+                3,
+                6,
+                6,
+                9,
+                10.0,
+                23.264662506490403,
+                1.5,
+                34.89699375973561,
+                1.938721875540867,
+                0.007754887502163467
+              ]
+            ],
+            [
+              "tree_from_sentence",
+              [
+                12,
+                29,
+                26,
+                48,
+                41,
+                74,
+                183.90099886735348,
+                396.4588483417382,
+                9.931034482758621,
+                3937.2464938765725,
+                218.73591632647626,
+                0.13215294944724607
+              ]
+            ],
+            [
+              "is_sentence_object",
+              [
+                3,
+                6,
+                3,
+                6,
+                9,
+                9,
+                20.264662506490406,
+                28.529325012980813,
+                1.5,
+                42.793987519471216,
+                2.377443751081734,
+                0.009509775004326938
+              ]
+            ],
+            [
+              "iter_sentences",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "find_sentence",
+              [
+                6,
+                14,
+                12,
+                24,
+                20,
+                36,
+                68.81274391313339,
+                155.58941141594505,
+                5.142857142857143,
+                800.1741158534318,
+                44.45411754741288,
+                0.05186313713864835
+              ]
+            ],
+            [
+              "load_document",
+              [
+                1,
+                1,
+                1,
+                1,
+                2,
+                2,
+                0.0,
+                2.0,
+                0.5,
+                1.0,
+                0.05555555555555555,
+                0.0006666666666666666
+              ]
+            ],
+            [
+              "print_tree",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "selected_trees",
+              [
+                2,
+                6,
+                4,
+                8,
+                8,
+                12,
+                17.509775004326936,
+                36.0,
+                1.3333333333333333,
+                48.0,
+                2.6666666666666665,
+                0.012
+              ]
+            ],
+            [
+              "write_trees",
+              [
+                2,
+                6,
+                4,
+                8,
+                8,
+                12,
+                17.509775004326936,
+                36.0,
+                1.3333333333333333,
+                48.0,
+                2.6666666666666665,
+                0.012
+              ]
+            ],
+            [
+              "_filename_component",
+              [
+                1,
+                1,
+                1,
+                1,
+                2,
+                2,
+                0.0,
+                2.0,
+                0.5,
+                1.0,
+                0.05555555555555555,
+                0.0006666666666666666
+              ]
+            ],
+            [
+              "status_suffix",
+              [
+                1,
+                1,
+                1,
+                1,
+                2,
+                2,
+                0.0,
+                2.0,
+                0.5,
+                1.0,
+                0.05555555555555555,
+                0.0006666666666666666
+              ]
+            ],
+            [
+              "_short_uid",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "derived_output_name",
+              [
+                5,
+                15,
+                9,
+                17,
+                20,
+                26,
+                70.2129994085646,
+                112.37013046707143,
+                2.8333333333333335,
+                318.3820363233691,
+                17.687890906853838,
+                0.03745671015569048
+              ]
+            ],
+            [
+              "resolve_output_path",
+              [
+                4,
+                6,
+                5,
+                8,
+                10,
+                13,
+                23.509775004326936,
+                43.18506523353572,
+                2.6666666666666665,
+                115.16017395609524,
+                6.397787442005291,
+                0.014395021744511906
+              ]
+            ],
+            [
+              "_reject_duplicates",
+              [
+                4,
+                7,
+                4,
+                8,
+                11,
+                12,
+                27.651484454403228,
+                41.51317942364757,
+                2.2857142857142856,
+                94.88726725405158,
+                5.27151484744731,
+                0.01383772647454919
+              ]
+            ],
+            [
+              "build_argument_parser",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "main",
+              [
+                4,
+                13,
+                10,
+                15,
+                17,
+                25,
+                56.105716335834195,
+                102.1865710312585,
+                2.3076923076923075,
+                235.81516391828882,
+                13.100842439904934,
+                0.03406219034375283
+              ]
+            ]
+          ]
+        },
+        "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py": {
+          "total": [
+            13,
+            554,
+            332,
+            674,
+            567,
+            1006,
+            5097.118876327085,
+            9202.088154491881,
+            7.907942238267148,
+            72769.58159716413,
+            4042.7545331757847,
+            3.0673627181639604
+          ],
+          "functions": [
+            [
+              "is_np",
+              [
+                4,
+                8,
+                4,
+                9,
+                12,
+                13,
+                32.0,
+                46.604512509375034,
+                2.25,
+                104.86015314609382,
+                5.825564063671879,
+                0.015534837503125011
+              ]
+            ],
+            [
+              "is_ip_sub",
+              [
+                3,
+                6,
+                3,
+                6,
+                9,
+                9,
+                20.264662506490406,
+                28.529325012980813,
+                1.5,
+                42.793987519471216,
+                2.377443751081734,
+                0.009509775004326938
+              ]
+            ],
+            [
+              "_normalized_form",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "lexical_head",
+              [
+                4,
+                18,
+                12,
+                22,
+                22,
+                34,
+                83.05865002596161,
+                151.6206750336681,
+                2.4444444444444446,
+                370.62831674896654,
+                20.590462041609253,
+                0.050540225011222704
+              ]
+            ],
+            [
+              "ud_head",
+              [
+                6,
+                34,
+                23,
+                45,
+                40,
+                68,
+                188.4835116068385,
+                361.8911104523407,
+                3.9705882352941178,
+                1436.920585619588,
+                79.82892142331045,
+                0.12063037015078022
+              ]
+            ],
+            [
+              "has_function",
+              [
+                3,
+                7,
+                3,
+                7,
+                10,
+                10,
+                24.406371956566698,
+                33.219280948873624,
+                1.5,
+                49.82892142331043,
+                2.7682734124061352,
+                0.01107309364962454
+              ]
+            ],
+            [
+              "is_ip_mat",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "overt_children",
+              [
+                3,
+                10,
+                6,
+                10,
+                13,
+                16,
+                37.974168451037094,
+                59.207035490257475,
+                1.5,
+                88.81055323538621,
+                4.933919624188123,
+                0.019735678496752493
+              ]
+            ],
+            [
+              "verbless_capl_np",
+              [
+                5,
+                16,
+                9,
+                16,
+                21,
+                25,
+                75.60964047443682,
+                109.80793556946902,
+                2.5,
+                274.5198389236726,
+                15.251102162426255,
+                0.03660264518982301
+              ]
+            ],
+            [
+              "cp_complement",
+              [
+                2,
+                5,
+                3,
+                6,
+                7,
+                9,
+                13.60964047443681,
+                25.26619429851844,
+                1.2,
+                30.319433158222125,
+                1.6844129532345624,
+                0.008422064766172813
+              ]
+            ],
+            [
+              "coordination_parts",
+              [
+                6,
+                22,
+                13,
+                24,
+                28,
+                37,
+                113.61727061434748,
+                177.87213211613133,
+                3.272727272727273,
+                582.1269778346117,
+                32.34038765747843,
+                0.05929071070537711
+              ]
+            ],
+            [
+              "clause_assignments",
+              [
+                7,
+                28,
+                16,
+                34,
+                35,
+                50,
+                154.25742227201613,
+                256.46415084724833,
+                4.25,
+                1089.9726411008055,
+                60.55403561671142,
+                0.08548805028241611
+              ]
+            ],
+            [
+              "complement_and_adjunct_assignments",
+              [
+                10,
+                51,
+                30,
+                62,
+                61,
+                92,
+                322.5129733894199,
+                545.6278350557856,
+                6.078431372549019,
+                3316.5613503390887,
+                184.2534083521716,
+                0.1818759450185952
+              ]
+            ],
+            [
+              "possessor_raising_assignments",
+              [
+                8,
+                62,
+                36,
+                81,
+                70,
+                117,
+                393.1601712439863,
+                717.1261129825612,
+                5.225806451612903,
+                3747.5622678443515,
+                208.19790376913065,
+                0.23904203766085372
+              ]
+            ],
+            [
+              "argument_assignments",
+              [
+                12,
+                107,
+                75,
+                153,
+                119,
+                228,
+                764.3565175535766,
+                1572.0184500342111,
+                8.57943925233645,
+                13487.036795620616,
+                749.2798219789231,
+                0.5240061500114037
+              ]
+            ],
+            [
+              "nominal_determiner_assignments",
+              [
+                6,
+                14,
+                8,
+                15,
+                20,
+                23,
+                68.81274391313339,
+                99.40434618240934,
+                3.2142857142857144,
+                319.51396987203003,
+                17.75077610400167,
+                0.033134782060803114
+              ]
+            ],
+            [
+              "possessive_np_assignments",
+              [
+                8,
+                31,
+                17,
+                33,
+                39,
+                50,
+                177.58008562199316,
+                264.27011094311246,
+                4.258064516129032,
+                1125.2791820803498,
+                62.51551011557498,
+                0.08809003698103748
+              ]
+            ],
+            [
+              "complementizer_assignments",
+              [
+                7,
+                15,
+                8,
+                16,
+                22,
+                24,
+                78.25484338853101,
+                107.02635884729514,
+                3.7333333333333334,
+                399.5650730299019,
+                22.198059612772326,
+                0.03567545294909838
+              ]
+            ],
+            [
+              "cp_modifier_assignments",
+              [
+                9,
+                21,
+                12,
+                23,
+                30,
+                35,
+                120.76799089133479,
+                171.74117084629816,
+                4.928571428571429,
+                846.4386277424695,
+                47.024368207914975,
+                0.057247056948766056
+              ]
+            ],
+            [
+              "_unique_ip_sub",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "_unique_relative_ane",
+              [
+                5,
+                19,
+                10,
+                20,
+                24,
+                30,
+                92.32026322986493,
+                137.5488750216347,
+                2.6315789473684212,
+                361.97072374114396,
+                20.109484652285776,
+                0.04584962500721157
+              ]
+            ],
+            [
+              "_uniquely_coindexed_trace",
+              [
+                2,
+                9,
+                4,
+                10,
+                11,
+                14,
+                30.529325012980813,
+                48.43204266092217,
+                1.1111111111111112,
+                53.81338073435797,
+                2.989632263019887,
+                0.016144014220307392
+              ]
+            ],
+            [
+              "_attested_trace_relation",
+              [
+                6,
+                15,
+                7,
+                17,
+                21,
+                24,
+                74.11313393845472,
+                105.41561814669026,
+                3.4,
+                358.4131016987469,
+                19.911838983263717,
+                0.03513853938223009
+              ]
+            ],
+            [
+              "relative_clause_assignments",
+              [
+                6,
+                27,
+                17,
+                34,
+                33,
+                51,
+                143.89173756274062,
+                257.2641000872811,
+                3.7777777777777777,
+                971.8866003297287,
+                53.993700018318265,
+                0.0857547000290937
+              ]
+            ],
+            [
+              "_add_assignment",
+              [
+                3,
+                6,
+                4,
+                8,
+                9,
+                12,
+                20.264662506490406,
+                38.03910001730775,
+                2.0,
+                76.0782000346155,
+                4.226566668589751,
+                0.012679700005769252
+              ]
+            ],
+            [
+              "infer_dependencies",
+              [
+                6,
+                13,
+                7,
+                13,
+                19,
+                20,
+                63.61549134016113,
+                84.9585502688717,
+                3.0,
+                254.8756508066151,
+                14.159758378145284,
+                0.028319516756290568
+              ]
+            ],
+            [
+              "iter_psd_assignments",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "write_tsv",
+              [
+                2,
+                4,
+                2,
+                4,
+                6,
+                6,
+                10.0,
+                15.509775004326936,
+                1.0,
+                15.509775004326936,
+                0.861654166907052,
+                0.005169925001442312
+              ]
+            ],
+            [
+              "build_argument_parser",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "main",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ]
+          ]
+        },
+        "/home/leonel/kadiweu/src/kadiweu_converter_config.py": {
+          "total": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            0.0
+          ],
+          "functions": []
+        },
+        "/home/leonel/kadiweu/src/kadiweu_empty_categories.py": {
+          "total": [
+            11,
+            42,
+            29,
+            52,
+            53,
+            81,
+            264.53107956171823,
+            463.96155681961915,
+            6.809523809523809,
+            3159.35726786693,
+            175.51984821482947,
+            0.15465385227320638
+          ],
+          "functions": [
+            [
+              "token_form",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "token_tag",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "token_pos",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "is_empty_category_token",
+              [
+                1,
+                1,
+                1,
+                1,
+                2,
+                2,
+                0.0,
+                2.0,
+                0.5,
+                1.0,
+                0.05555555555555555,
+                0.0006666666666666666
+              ]
+            ],
+            [
+              "is_relative_pronoun",
+              [
+                2,
+                4,
+                2,
+                4,
+                6,
+                6,
+                10.0,
+                15.509775004326936,
+                1.0,
+                15.509775004326936,
+                0.861654166907052,
+                0.005169925001442312
+              ]
+            ],
+            [
+              "is_predicate_candidate",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "is_nominal_candidate",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "_same_local_domain",
+              [
+                4,
+                7,
+                5,
+                10,
+                11,
+                15,
+                27.651484454403228,
+                51.89147427955947,
+                2.857142857142857,
+                148.26135508445563,
+                8.236741949136423,
+                0.01729715809318649
+              ]
+            ],
+            [
+              "_nearest_previous",
+              [
+                2,
+                2,
+                3,
+                4,
+                4,
+                7,
+                4.0,
+                14.0,
+                2.0,
+                28.0,
+                1.5555555555555556,
+                0.004666666666666667
+              ]
+            ],
+            [
+              "_nearest_next",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "resolve_empty_categories",
+              [
+                4,
+                20,
+                14,
+                25,
+                24,
+                39,
+                94.43856189774725,
+                178.81353752812512,
+                2.5,
+                447.0338438203128,
+                24.835213545572934,
+                0.05960451250937504
+              ]
+            ]
+          ]
+        },
+        "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py": {
+          "total": [
+            17,
+            388,
+            333,
+            647,
+            405,
+            980,
+            3406.253051069862,
+            8488.542535816547,
+            14.17396907216495,
+            120316.33937042036,
+            6684.2410761344645,
+            2.8295141786055154
+          ],
+          "functions": [
+            [
+              "warn_on_composite_tag_without_mwt",
+              [
+                3,
+                6,
+                3,
+                6,
+                9,
+                9,
+                20.264662506490406,
+                28.529325012980813,
+                1.5,
+                42.793987519471216,
+                2.377443751081734,
+                0.009509775004326938
+              ]
+            ],
+            [
+              "apply_spaceafter_from_text",
+              [
+                8,
+                21,
+                18,
+                36,
+                29,
+                54,
+                116.23866587835397,
+                262.33097373688895,
+                6.857142857142857,
+                1798.8409627672384,
+                99.93560904262435,
+                0.08744365791229632
+              ]
+            ],
+            [
+              "safe_get",
+              [
+                3,
+                5,
+                3,
+                5,
+                8,
+                8,
+                16.36452797660028,
+                24.0,
+                1.5,
+                36.0,
+                2.0,
+                0.008
+              ]
+            ],
+            [
+              "normalize_text_ground_truth",
+              [
+                3,
+                3,
+                3,
+                5,
+                6,
+                8,
+                9.509775004326938,
+                20.67970000576925,
+                2.5,
+                51.69925001442312,
+                2.87218055635684,
+                0.006893233335256416
+              ]
+            ],
+            [
+              "get_proto_rows",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "get_tokens",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "get_chunks",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "extract_range",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "build_space_aware_token_ranges",
+              [
+                5,
+                14,
+                10,
+                20,
+                19,
+                30,
+                64.91260938324326,
+                127.43782540330756,
+                3.5714285714285716,
+                455.13509072609844,
+                25.28528281811658,
+                0.042479275134435855
+              ]
+            ],
+            [
+              "range_to_misc",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "final_punct_range",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "chunk_membership_for_tokens",
+              [
+                4,
+                11,
+                7,
+                11,
+                15,
+                18,
+                46.053747805010275,
+                70.32403072095333,
+                2.0,
+                140.64806144190666,
+                7.8137811912170365,
+                0.02344134357365111
+              ]
+            ],
+            [
+              "chunk_head_candidates",
+              [
+                1,
+                1,
+                1,
+                2,
+                2,
+                3,
+                0.0,
+                3.0,
+                1.0,
+                3.0,
+                0.16666666666666666,
+                0.001
+              ]
+            ],
+            [
+              "choose_chunk_head",
+              [
+                2,
+                6,
+                4,
+                6,
+                8,
+                10,
+                17.509775004326936,
+                30.0,
+                1.0,
+                30.0,
+                1.6666666666666667,
+                0.01
+              ]
+            ],
+            [
+              "build_chunk_infos",
+              [
+                5,
+                12,
+                8,
+                13,
+                17,
+                21,
+                54.62919048309069,
+                85.83671966625714,
+                2.7083333333333335,
+                232.4744490961131,
+                12.915247172006282,
+                0.02861223988875238
+              ]
+            ],
+            [
+              "pick_root_index",
+              [
+                5,
+                19,
+                13,
+                26,
+                24,
+                39,
+                92.32026322986493,
+                178.81353752812512,
+                3.4210526315789473,
+                611.7305231225333,
+                33.98502906236296,
+                0.05960451250937504
+              ]
+            ],
+            [
+              "choose_nominal_attachment_target",
+              [
+                8,
+                12,
+                9,
+                19,
+                20,
+                28,
+                67.01955000865388,
+                121.01398665684616,
+                6.333333333333333,
+                766.4219154933589,
+                42.57899530518661,
+                0.040337995552282055
+              ]
+            ],
+            [
+              "is_mwt_start",
+              [
+                4,
+                11,
+                7,
+                13,
+                15,
+                20,
+                46.053747805010275,
+                78.13781191217038,
+                2.3636363636363638,
+                184.68937361058454,
+                10.260520756143585,
+                0.026045937304056792
+              ]
+            ],
+            [
+              "clean_component_form",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "collect_mwt_group",
+              [
+                6,
+                14,
+                9,
+                17,
+                20,
+                26,
+                68.81274391313339,
+                112.37013046707143,
+                3.642857142857143,
+                409.34833241576024,
+                22.74157402309779,
+                0.03745671015569048
+              ]
+            ],
+            [
+              "mwt_surface_form",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "add_spaceafter_no",
+              [
+                4,
+                6,
+                4,
+                7,
+                10,
+                11,
+                23.509775004326936,
+                36.541209043760986,
+                2.3333333333333335,
+                85.26282110210897,
+                4.736823394561609,
+                0.012180403014586996
+              ]
+            ],
+            [
+              "parse_misc",
+              [
+                5,
+                6,
+                5,
+                9,
+                11,
+                14,
+                27.11941547876375,
+                48.43204266092217,
+                3.75,
+                181.62015997845813,
+                10.090008887692118,
+                0.016144014220307392
+              ]
+            ],
+            [
+              "join_misc",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "add_misc_item",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "remove_spaceafter_no",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "ensure_spaceafter_no",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "build_text_from_rows",
+              [
+                6,
+                16,
+                14,
+                27,
+                22,
+                41,
+                79.50977500432694,
+                182.83669636412918,
+                5.0625,
+                925.6107753434039,
+                51.42282085241133,
+                0.06094556545470973
+              ]
+            ],
+            [
+              "final_punct_range_from_text",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "is_embedded_chunk",
+              [
+                5,
+                13,
+                6,
+                13,
+                18,
+                19,
+                59.715356810271004,
+                79.22857502740393,
+                2.5,
+                198.07143756850985,
+                11.003968753806102,
+                0.026409525009134644
+              ]
+            ],
+            [
+              "__init__",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "convert_sentence",
+              [
+                14,
+                153,
+                171,
+                343,
+                167,
+                514,
+                1163.6833088407823,
+                3795.224006331663,
+                15.69281045751634,
+                59557.73097517858,
+                3308.7628319543655,
+                1.265074668777221
+              ]
+            ],
+            [
+              "load_json",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "load_latest_import_record",
+              [
+                5,
+                11,
+                7,
+                11,
+                16,
+                18,
+                49.663388279447084,
+                72.0,
+                2.5,
+                180.0,
+                10.0,
+                0.024
+              ]
+            ],
+            [
+              "get_project_git_commit",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "get_source_struct_status",
+              [
+                2,
+                2,
+                2,
+                4,
+                4,
+                6,
+                4.0,
+                12.0,
+                2.0,
+                24.0,
+                1.3333333333333333,
+                0.004
+              ]
+            ],
+            [
+              "parse_args",
+              [
+                1,
+                4,
+                2,
+                4,
+                5,
+                6,
+                8.0,
+                13.931568569324174,
+                0.5,
+                6.965784284662087,
+                0.3869880158145604,
+                0.004643856189774725
+              ]
+            ],
+            [
+              "main",
+              [
+                5,
+                14,
+                9,
+                14,
+                19,
+                23,
+                64.91260938324326,
+                97.70233280920246,
+                2.5,
+                244.25583202300615,
+                13.569768445722564,
+                0.03256744426973415
+              ]
+            ]
+          ]
+        },
+        "/home/leonel/kadiweu/src/kadiweu_linguistic_mappings.py": {
+          "total": [
+            10,
+            156,
+            115,
+            215,
+            166,
+            330,
+            1169.7420270913844,
+            2433.7630123444856,
+            6.891025641025641,
+            16771.123322245654,
+            931.7290734580919,
+            0.8112543374481619
+          ],
+          "functions": [
+            [
+              "safe_get",
+              [
+                3,
+                5,
+                3,
+                5,
+                8,
+                8,
+                16.36452797660028,
+                24.0,
+                1.5,
+                36.0,
+                2.0,
+                0.008
+              ]
+            ],
+            [
+              "canonicalize_split_tag",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "normalize_split_tags",
+              [
+                1,
+                1,
+                1,
+                1,
+                2,
+                2,
+                0.0,
+                2.0,
+                0.5,
+                1.0,
+                0.05555555555555555,
+                0.0006666666666666666
+              ]
+            ],
+            [
+              "_target_for_component",
+              [
+                3,
+                11,
+                7,
+                14,
+                14,
+                21,
+                42.808635307173745,
+                79.95445336320968,
+                1.9090909090909092,
+                152.64032005703666,
+                8.480017780946481,
+                0.026651484454403226
+              ]
+            ],
+            [
+              "_feature_applies_to_component",
+              [
+                3,
+                4,
+                3,
+                5,
+                7,
+                8,
+                12.75488750216347,
+                22.458839376460833,
+                1.875,
+                42.11032383086406,
+                2.3394624350480036,
+                0.007486279792153611
+              ]
+            ],
+            [
+              "_split_gloss",
+              [
+                2,
+                3,
+                2,
+                4,
+                5,
+                6,
+                6.754887502163469,
+                13.931568569324174,
+                1.3333333333333333,
+                18.575424759098897,
+                1.0319680421721609,
+                0.004643856189774725
+              ]
+            ],
+            [
+              "_person_from_gloss",
+              [
+                3,
+                5,
+                3,
+                5,
+                8,
+                8,
+                16.36452797660028,
+                24.0,
+                1.5,
+                36.0,
+                2.0,
+                0.008
+              ]
+            ],
+            [
+              "_is_singular_gloss",
+              [
+                2,
+                3,
+                2,
+                3,
+                5,
+                5,
+                6.754887502163469,
+                11.60964047443681,
+                1.0,
+                11.60964047443681,
+                0.6449800263576005,
+                0.0038698801581456034
+              ]
+            ],
+            [
+              "_gender_from_gloss",
+              [
+                3,
+                13,
+                9,
+                17,
+                16,
+                26,
+                52.860603837997665,
+                104.0,
+                1.9615384615384615,
+                204.0,
+                11.333333333333334,
+                0.034666666666666665
+              ]
+            ],
+            [
+              "features_from_split",
+              [
+                5,
+                28,
+                24,
+                48,
+                33,
+                72,
+                146.2155782920497,
+                363.1963765938086,
+                4.285714285714286,
+                1556.5558996877512,
+                86.47532776043062,
+                0.12106545886460288
+              ]
+            ],
+            [
+              "split_derived_feats",
+              [
+                1,
+                3,
+                3,
+                3,
+                4,
+                6,
+                4.754887502163469,
+                12.0,
+                0.5,
+                6.0,
+                0.3333333333333333,
+                0.004
+              ]
+            ],
+            [
+              "load_override_resource",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "configure_override_resources",
+              [
+                4,
+                7,
+                5,
+                8,
+                11,
+                13,
+                27.651484454403228,
+                44.97261104228487,
+                2.2857142857142856,
+                102.79453952522255,
+                5.710807751401252,
+                0.01499087034742829
+              ]
+            ],
+            [
+              "infer_lemma",
+              [
+                3,
+                8,
+                5,
+                8,
+                11,
+                13,
+                28.75488750216347,
+                44.97261104228487,
+                1.5,
+                67.4589165634273,
+                3.747717586857072,
+                0.01499087034742829
+              ]
+            ],
+            [
+              "_candidate_forms",
+              [
+                2,
+                3,
+                2,
+                4,
+                5,
+                6,
+                6.754887502163469,
+                13.931568569324174,
+                1.3333333333333333,
+                18.575424759098897,
+                1.0319680421721609,
+                0.004643856189774725
+              ]
+            ],
+            [
+              "infer_feats",
+              [
+                8,
+                39,
+                31,
+                60,
+                47,
+                91,
+                230.1306865356277,
+                505.46758550266503,
+                6.153846153846154,
+                3110.5697569394774,
+                172.80943094108207,
+                0.168489195167555
+              ]
+            ],
+            [
+              "infer_upos",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "upos_override_candidates",
+              [
+                2,
+                3,
+                2,
+                4,
+                5,
+                6,
+                6.754887502163469,
+                13.931568569324174,
+                1.3333333333333333,
+                18.575424759098897,
+                1.0319680421721609,
+                0.004643856189774725
+              ]
+            ],
+            [
+              "infer_upos_for_form",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "apply_upos_override",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "get_form_correction",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ]
+          ]
+        },
+        "/home/leonel/kadiweu/src/kadiweu_morphology.py": {
+          "total": [
+            6,
+            22,
+            13,
+            25,
+            28,
+            38,
+            113.61727061434748,
+            182.67948703818894,
+            3.409090909090909,
+            622.7709785392805,
+            34.598387696626695,
+            0.06089316234606298
+          ],
+          "functions": [
+            [
+              "pluralize_ng_form",
+              [
+                2,
+                6,
+                5,
+                9,
+                8,
+                14,
+                17.509775004326936,
+                42.0,
+                1.5,
+                63.0,
+                3.5,
+                0.014
+              ]
+            ],
+            [
+              "build_ng_deictic_form_map",
+              [
+                1,
+                4,
+                2,
+                4,
+                5,
+                6,
+                8.0,
+                13.931568569324174,
+                0.5,
+                6.965784284662087,
+                0.3869880158145604,
+                0.004643856189774725
+              ]
+            ],
+            [
+              "build_form_corrections_from_ng_deictics",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "describe_ng_deictic_form",
+              [
+                2,
+                4,
+                2,
+                4,
+                6,
+                6,
+                10.0,
+                15.509775004326936,
+                1.0,
+                15.509775004326936,
+                0.861654166907052,
+                0.005169925001442312
+              ]
+            ],
+            [
+              "correct_ng_deictic_form",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "get_standard_form_correction",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "test_ng_deictic_forms",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "format_gloss",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ]
+          ]
+        },
+        "/home/leonel/kadiweu/src/kadiweu_normalization.py": {
+          "total": [
+            7,
+            14,
+            8,
+            15,
+            21,
+            23,
+            72.95445336320968,
+            101.02330072391149,
+            3.75,
+            378.8373777146681,
+            21.046520984148227,
+            0.03367443357463716
+          ],
+          "functions": [
+            [
+              "normalize_form_for_lookup",
+              [
+                3,
+                4,
+                3,
+                5,
+                7,
+                8,
+                12.75488750216347,
+                22.458839376460833,
+                1.875,
+                42.11032383086406,
+                2.3394624350480036,
+                0.007486279792153611
+              ]
+            ],
+            [
+              "get_surface_and_lookup_form",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "canonicalize_override_map",
+              [
+                3,
+                8,
+                4,
+                8,
+                11,
+                12,
+                28.75488750216347,
+                41.51317942364757,
+                1.5,
+                62.26976913547136,
+                3.4594316186372978,
+                0.01383772647454919
+              ]
+            ]
+          ]
+        },
+        "/home/leonel/kadiweu/src/kadiweu_prediction_bridge.py": {
+          "total": [
+            8,
+            52,
+            34,
+            67,
+            60,
+            101,
+            320.4228653433368,
+            596.5959501564604,
+            5.153846153846154,
+            3074.763743114065,
+            170.8202079507814,
+            0.19886531671882013
+          ],
+          "functions": [
+            [
+              "predict",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "align_predictions",
+              [
+                7,
+                24,
+                16,
+                32,
+                31,
+                48,
+                129.690584471711,
+                237.80142289857002,
+                4.666666666666667,
+                1109.7399735266602,
+                61.65222075148112,
+                0.07926714096619
+              ]
+            ],
+            [
+              "graph_problem",
+              [
+                6,
+                16,
+                12,
+                23,
+                22,
+                35,
+                79.50977500432694,
+                156.0801066523054,
+                4.3125,
+                673.095459938067,
+                37.394192218781505,
+                0.05202670221743513
+              ]
+            ],
+            [
+              "demote_unlocked_duplicates",
+              [
+                5,
+                12,
+                6,
+                12,
+                17,
+                18,
+                54.62919048309069,
+                73.57433114250613,
+                2.5,
+                183.93582785626532,
+                10.218657103125851,
+                0.02452477704750204
+              ]
+            ]
+          ]
+        },
+        "/home/leonel/kadiweu/src/kadiweu_token_ranges.py": {
+          "total": [
+            13,
+            96,
+            61,
+            113,
+            109,
+            174,
+            680.2621164050653,
+            1177.6640725111852,
+            7.651041666666667,
+            9010.356888119433,
+            500.5753826733019,
+            0.39255469083706174
+          ],
+          "functions": [
+            [
+              "format",
+              [
+                1,
+                3,
+                2,
+                4,
+                4,
+                6,
+                4.754887502163469,
+                12.0,
+                0.6666666666666666,
+                8.0,
+                0.4444444444444444,
+                0.004
+              ]
+            ],
+            [
+              "id",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "form",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "misc",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "misc",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "serialize",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "parse_misc",
+              [
+                5,
+                6,
+                5,
+                9,
+                11,
+                14,
+                27.11941547876375,
+                48.43204266092217,
+                3.75,
+                181.62015997845813,
+                10.090008887692118,
+                0.016144014220307392
+              ]
+            ],
+            [
+              "join_misc",
+              [
+                2,
+                3,
+                2,
+                4,
+                5,
+                6,
+                6.754887502163469,
+                13.931568569324174,
+                1.3333333333333333,
+                18.575424759098897,
+                1.0319680421721609,
+                0.004643856189774725
+              ]
+            ],
+            [
+              "get_misc_value",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "remove_misc_key",
+              [
+                2,
+                3,
+                2,
+                3,
+                5,
+                5,
+                6.754887502163469,
+                11.60964047443681,
+                1.0,
+                11.60964047443681,
+                0.6449800263576005,
+                0.0038698801581456034
+              ]
+            ],
+            [
+              "set_misc_key",
+              [
+                2,
+                5,
+                5,
+                8,
+                7,
+                13,
+                13.60964047443681,
+                36.49561398674886,
+                1.6,
+                58.39298237879817,
+                3.2440545765998987,
+                0.012165204662249619
+              ]
+            ],
+            [
+              "ensure_flag",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "remove_flag",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "get_token_range",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "is_int_id",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "is_mwt_id",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "is_empty_node_id",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "mwt_span",
+              [
+                1,
+                1,
+                1,
+                1,
+                2,
+                2,
+                0.0,
+                2.0,
+                0.5,
+                1.0,
+                0.05555555555555555,
+                0.0006666666666666666
+              ]
+            ],
+            [
+              "parse_conllu_blocks",
+              [
+                3,
+                5,
+                3,
+                5,
+                8,
+                8,
+                16.36452797660028,
+                24.0,
+                1.5,
+                36.0,
+                2.0,
+                0.008
+              ]
+            ],
+            [
+              "serialize_blocks",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "mwt_component_ids",
+              [
+                2,
+                4,
+                2,
+                4,
+                6,
+                6,
+                10.0,
+                15.509775004326936,
+                1.0,
+                15.509775004326936,
+                0.861654166907052,
+                0.005169925001442312
+              ]
+            ],
+            [
+              "visible_surface_rows",
+              [
+                2,
+                4,
+                2,
+                4,
+                6,
+                6,
+                10.0,
+                15.509775004326936,
+                1.0,
+                15.509775004326936,
+                0.861654166907052,
+                0.005169925001442312
+              ]
+            ],
+            [
+              "align_forms_to_text",
+              [
+                5,
+                11,
+                8,
+                16,
+                16,
+                24,
+                49.663388279447084,
+                96.0,
+                3.6363636363636362,
+                349.09090909090907,
+                19.39393939393939,
+                0.032
+              ]
+            ],
+            [
+              "expected_ranges_for_rows",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "_next_visible_starts_immediately",
+              [
+                3,
+                5,
+                3,
+                5,
+                8,
+                8,
+                16.36452797660028,
+                24.0,
+                1.5,
+                36.0,
+                2.0,
+                0.008
+              ]
+            ],
+            [
+              "assign_token_ranges_to_rows",
+              [
+                4,
+                14,
+                7,
+                14,
+                18,
+                21,
+                61.30296890880645,
+                87.56842503028855,
+                2.0,
+                175.1368500605771,
+                9.729825003365395,
+                0.029189475010096184
+              ]
+            ],
+            [
+              "assign_token_ranges_to_emitted_rows",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "check_sentence",
+              [
+                6,
+                11,
+                7,
+                14,
+                17,
+                21,
+                53.563522809337215,
+                85.83671966625714,
+                3.8181818181818183,
+                327.74020236207275,
+                18.207789020115154,
+                0.02861223988875238
+              ]
+            ],
+            [
+              "check_conllu_text",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "fix_conllu_text",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "parse_args",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "main",
+              [
+                3,
+                7,
+                5,
+                8,
+                10,
+                13,
+                24.406371956566698,
+                43.18506523353572,
+                1.7142857142857142,
+                74.03154040034694,
+                4.11286335557483,
+                0.014395021744511906
+              ]
+            ]
+          ]
+        },
+        "/home/leonel/kadiweu/src/update_overrides_from_gold.py": {
+          "total": [
+            14,
+            147,
+            119,
+            217,
+            161,
+            336,
+            1111.654803599752,
+            2463.1880710465116,
+            10.333333333333334,
+            25452.943400813954,
+            1414.052411156331,
+            0.8210626903488372
+          ],
+          "functions": [
+            [
+              "normalize_override_form",
+              [
+                3,
+                5,
+                3,
+                5,
+                8,
+                8,
+                16.36452797660028,
+                24.0,
+                1.5,
+                36.0,
+                2.0,
+                0.008
+              ]
+            ],
+            [
+              "safe_get",
+              [
+                3,
+                5,
+                3,
+                5,
+                8,
+                8,
+                16.36452797660028,
+                24.0,
+                1.5,
+                36.0,
+                2.0,
+                0.008
+              ]
+            ],
+            [
+              "normalize_feats",
+              [
+                5,
+                7,
+                6,
+                10,
+                12,
+                16,
+                31.26112492884004,
+                57.359400011538504,
+                3.5714285714285716,
+                204.85500004120897,
+                11.38083333562272,
+                0.01911980000384617
+              ]
+            ],
+            [
+              "extract_prontype",
+              [
+                3,
+                4,
+                3,
+                5,
+                7,
+                8,
+                12.75488750216347,
+                22.458839376460833,
+                1.875,
+                42.11032383086406,
+                2.3394624350480036,
+                0.007486279792153611
+              ]
+            ],
+            [
+              "extract_standard_form",
+              [
+                3,
+                4,
+                3,
+                5,
+                7,
+                8,
+                12.75488750216347,
+                22.458839376460833,
+                1.875,
+                42.11032383086406,
+                2.3394624350480036,
+                0.007486279792153611
+              ]
+            ],
+            [
+              "json_key",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "most_common_with_share",
+              [
+                2,
+                3,
+                2,
+                3,
+                5,
+                5,
+                6.754887502163469,
+                11.60964047443681,
+                1.0,
+                11.60964047443681,
+                0.6449800263576005,
+                0.0038698801581456034
+              ]
+            ],
+            [
+              "parse_conllu",
+              [
+                4,
+                10,
+                7,
+                13,
+                14,
+                20,
+                41.219280948873624,
+                76.14709844115208,
+                2.6,
+                197.98245594699543,
+                10.999025330388635,
+                0.025382366147050694
+              ]
+            ],
+            [
+              "is_sentence_object",
+              [
+                2,
+                5,
+                4,
+                5,
+                7,
+                9,
+                13.60964047443681,
+                25.26619429851844,
+                1.0,
+                25.26619429851844,
+                1.403677461028802,
+                0.008422064766172813
+              ]
+            ],
+            [
+              "walk_collect_sentences",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "parse_json_sentences",
+              [
+                2,
+                6,
+                5,
+                7,
+                8,
+                12,
+                17.509775004326936,
+                36.0,
+                1.1666666666666667,
+                42.0,
+                2.3333333333333335,
+                0.012
+              ]
+            ],
+            [
+              "index_json_sentences_by_uid",
+              [
+                3,
+                5,
+                4,
+                6,
+                8,
+                10,
+                16.36452797660028,
+                30.0,
+                1.8,
+                54.0,
+                3.0,
+                0.01
+              ]
+            ],
+            [
+              "filter_gold_learning_tokens",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "normalize_alignment_form",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "filter_json_alignment_tokens",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "align_gold_with_json",
+              [
+                5,
+                12,
+                7,
+                12,
+                17,
+                19,
+                54.62919048309069,
+                77.66179398375645,
+                2.5,
+                194.15448495939114,
+                10.78636027552173,
+                0.02588726466125215
+              ]
+            ],
+            [
+              "learn_overrides",
+              [
+                10,
+                43,
+                45,
+                88,
+                53,
+                133,
+                266.54866540106383,
+                761.8134204569055,
+                10.232558139534884,
+                7795.3001163032195,
+                433.0722286835122,
+                0.2539378068189685
+              ]
+            ],
+            [
+              "short_preview",
+              [
+                3,
+                4,
+                3,
+                5,
+                7,
+                8,
+                12.75488750216347,
+                22.458839376460833,
+                1.875,
+                42.11032383086406,
+                2.3394624350480036,
+                0.007486279792153611
+              ]
+            ],
+            [
+              "build_report",
+              [
+                1,
+                2,
+                1,
+                2,
+                3,
+                3,
+                2.0,
+                4.754887502163469,
+                0.5,
+                2.3774437510817346,
+                0.1320802083934297,
+                0.0015849625007211565
+              ]
+            ],
+            [
+              "parse_args",
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.0,
+                0.0
+              ]
+            ],
+            [
+              "main",
+              [
+                3,
+                8,
+                6,
+                12,
+                11,
+                18,
+                28.75488750216347,
+                62.26976913547136,
+                2.25,
+                140.10698055481055,
+                7.78372114193392,
+                0.020756589711823786
+              ]
+            ]
+          ]
+        }
+      },
+      "summary": {
+        "files": 11,
+        "note": "Halstead metrics are stored per file in raw output."
+      }
+    },
+    "python_ast": {
+      "summary": {
+        "python_files": 11,
+        "logical_loc_ast_statements": 3303,
+        "functions_and_methods_ast": 225,
+        "classes_ast": 13
+      },
+      "files": [
+        {
+          "path": "kadiweu_constituency.py",
+          "parse_error": null,
+          "logical_loc": 751,
+          "functions": 56,
+          "classes": 5
+        },
+        {
+          "path": "kadiweu_constituency_dependencies.py",
+          "parse_error": null,
+          "logical_loc": 445,
+          "functions": 30,
+          "classes": 2
+        },
+        {
+          "path": "kadiweu_converter_config.py",
+          "parse_error": null,
+          "logical_loc": 3,
+          "functions": 0,
+          "classes": 0
+        },
+        {
+          "path": "kadiweu_empty_categories.py",
+          "parse_error": null,
+          "logical_loc": 95,
+          "functions": 11,
+          "classes": 2
+        },
+        {
+          "path": "kadiweu_json_to_conllu.py",
+          "parse_error": null,
+          "logical_loc": 853,
+          "functions": 39,
+          "classes": 1
+        },
+        {
+          "path": "kadiweu_linguistic_mappings.py",
+          "parse_error": null,
+          "logical_loc": 338,
+          "functions": 21,
+          "classes": 0
+        },
+        {
+          "path": "kadiweu_morphology.py",
+          "parse_error": null,
+          "logical_loc": 73,
+          "functions": 8,
+          "classes": 0
+        },
+        {
+          "path": "kadiweu_normalization.py",
+          "parse_error": null,
+          "logical_loc": 25,
+          "functions": 3,
+          "classes": 0
+        },
+        {
+          "path": "kadiweu_prediction_bridge.py",
+          "parse_error": null,
+          "logical_loc": 58,
+          "functions": 4,
+          "classes": 0
+        },
+        {
+          "path": "kadiweu_token_ranges.py",
+          "parse_error": null,
+          "logical_loc": 262,
+          "functions": 32,
+          "classes": 3
+        },
+        {
+          "path": "update_overrides_from_gold.py",
+          "parse_error": null,
+          "logical_loc": 400,
+          "functions": 21,
+          "classes": 0
+        }
+      ]
+    },
+    "cloc_crosscheck": {
+      "available": true,
+      "tool": "cloc",
+      "selected_python_files": [
+        "/home/leonel/kadiweu/src/kadiweu_constituency.py",
+        "/home/leonel/kadiweu/src/kadiweu_constituency_dependencies.py",
+        "/home/leonel/kadiweu/src/kadiweu_converter_config.py",
+        "/home/leonel/kadiweu/src/kadiweu_empty_categories.py",
+        "/home/leonel/kadiweu/src/kadiweu_json_to_conllu.py",
+        "/home/leonel/kadiweu/src/kadiweu_linguistic_mappings.py",
+        "/home/leonel/kadiweu/src/kadiweu_morphology.py",
+        "/home/leonel/kadiweu/src/kadiweu_normalization.py",
+        "/home/leonel/kadiweu/src/kadiweu_prediction_bridge.py",
+        "/home/leonel/kadiweu/src/kadiweu_token_ranges.py",
+        "/home/leonel/kadiweu/src/update_overrides_from_gold.py"
+      ],
+      "raw": {
+        "header": {
+          "cloc_url": "github.com/AlDanial/cloc",
+          "cloc_version": "1.82",
+          "elapsed_seconds": 0.0650050640106201,
+          "n_files": 11,
+          "n_lines": 6778,
+          "files_per_second": 169.21758585151,
+          "lines_per_second": 104268.799718321
+        },
+        "Python": {
+          "nFiles": 11,
+          "blank": 1054,
+          "comment": 874,
+          "code": 4850
+        },
+        "SUM": {
+          "blank": 1054,
+          "comment": 874,
+          "code": 4850,
+          "nFiles": 11
+        }
+      },
+      "summary": {
+        "python_files": 11,
+        "python_blank_lines": 1054,
+        "python_comment_lines": 874,
+        "python_code_lines_sloc": 4850,
+        "all_files": 11,
+        "all_blank_lines": 1054,
+        "all_comment_lines": 874,
+        "all_code_lines": 4850
+      }
+    }
+  },
+  "linguistic_resources": {
+    "summary": {
+      "files": 3,
+      "physical_lines": 8129,
+      "blank_lines": 5,
+      "sentence_like_objects": 0,
+      "lexicon_entries_heuristic": 0,
+      "override_rules_heuristic": 1209,
+      "parse_errors": []
+    },
+    "files": [
+      {
+        "path": "/home/leonel/kadiweu/data/resources/kadiweu_default_overrides.json",
+        "physical_lines": 57,
+        "blank_lines": 0,
+        "parse_error": null,
+        "top_level_type": "dict",
+        "top_level_items": 5,
+        "sentence_like_objects": 0,
+        "lexicon_entries_heuristic": 0,
+        "override_rules_heuristic": 45
+      },
+      {
+        "path": "/home/leonel/kadiweu/data/resources/gold_derived_overrides.json",
+        "physical_lines": 7936,
+        "blank_lines": 0,
+        "parse_error": null,
+        "top_level_type": "dict",
+        "top_level_items": 11,
+        "sentence_like_objects": 0,
+        "lexicon_entries_heuristic": 0,
+        "override_rules_heuristic": 1093
+      },
+      {
+        "path": "/home/leonel/kadiweu/data/resources/kadiweu_manual_overrides.json",
+        "physical_lines": 136,
+        "blank_lines": 5,
+        "parse_error": null,
+        "top_level_type": "dict",
+        "top_level_items": 7,
+        "sentence_like_objects": 0,
+        "lexicon_entries_heuristic": 0,
+        "override_rules_heuristic": 71
+      }
+    ]
+  }
+}
