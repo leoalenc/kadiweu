@@ -4,8 +4,9 @@
 The --sentence value may be a whitespace-separated sequence of word/POS
 tokens (for example, ``Etogo/N``), optionally ending in untagged punctuation,
 or a whitespace-separated sequence of POS tags. Only POS tags are sent to the
-CFG; tagged words are returned under POS preterminals in NLTK bracketed-tree
-format.
+CFG; tagged words are returned under POS preterminals. Trees are printed in
+NLTK bracketed (LISP) format by default, or as ASCII or Unicode tree drawings
+with ``--format``.
 
 Requires NLTK (``python -m pip install nltk``).
 """
@@ -20,6 +21,12 @@ from nltk import CFG
 from nltk.grammar import Nonterminal
 from nltk.parse import ChartParser
 from nltk.tree import Tree
+from kadiweu_constituency import (
+    ConstituentNode,
+    ConstituencyTree,
+    TokenNode,
+    render_tree_text,
+)
 
 
 def sentence_to_tags(sentence, punctuation_tag=None):
@@ -76,6 +83,57 @@ def insert_preterminals(tree, tags, words):
         tree[position] = Tree(tag, [word])
 
 
+def to_constituency_tree(tree):
+    """Adapt an NLTK Tree for the project's shared tree text renderer."""
+    tokens = []
+    leaf_count = 0
+
+    def convert(node, level=0, parent=None):
+        nonlocal leaf_count
+
+        if not isinstance(node, Tree):
+            # A bare POS terminal (when input consists only of tags) is shown
+            # as a leaf label. Tagged word input instead uses TokenNode below.
+            leaf_count += 1
+            return ConstituentNode(
+                label=str(node),
+                start=leaf_count,
+                end=leaf_count,
+                level=level,
+                parent=parent,
+            )
+
+        if len(node) == 1 and not isinstance(node[0], Tree):
+            leaf_count += 1
+            token = TokenNode(
+                position=leaf_count,
+                form=str(node[0]),
+                tag=str(node.label()),
+                level=level,
+                parent=parent,
+            )
+            tokens.append(token)
+            return token
+
+        start = leaf_count + 1
+        constituent = ConstituentNode(
+            label=str(node.label()),
+            start=start,
+            end=start - 1,
+            level=level,
+            parent=parent,
+        )
+        for child in node:
+            constituent.children.append(convert(child, level + 1, constituent))
+        constituent.end = leaf_count
+        return constituent
+
+    root = convert(tree)
+    if not isinstance(root, ConstituentNode):
+        raise ValueError("the parse tree has no constituent root")
+    return ConstituencyTree(roots=[root], tokens=tokens)
+
+
 def build_arg_parser():
     parser = argparse.ArgumentParser(
         description=(
@@ -121,9 +179,22 @@ def build_arg_parser():
         help="print only the total number of parses (ignores --max-parses)",
     )
     parser.add_argument(
+        "--format",
+        choices=("lisp", "ascii", "unicode"),
+        default="lisp",
+        help=("tree output format: NLTK LISP, ASCII, or Unicode "
+              "(default: lisp)"),
+    )
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        action="store_true",
+        help="print diagnostics and parse headings",
+    )
+    parser.add_argument(
         "--trees-only",
         action="store_true",
-        help="print only bracketed parse trees, without diagnostic text",
+        help="suppress diagnostics (legacy option; also the default)",
     )
     return parser
 
@@ -175,13 +246,18 @@ def main(argv=None):
         return 2
 
     parser = ChartParser(grammar)
+    verbose = args.verbose and not args.trees_only
 
     if args.number:
         # Count every parse without retaining or modifying the parse trees.
-        print(sum(1 for _ in parser.parse(tags)))
+        if verbose:
+            print("POS sequence:", " ".join(tags))
+            print("Grammar start symbol:", grammar.start())
+        count = sum(1 for _ in parser.parse(tags))
+        print(f"Number of parse trees: {count}" if verbose else count)
         return 0
 
-    if not args.trees_only:
+    if verbose:
         print("POS sequence:", " ".join(tags))
         print("Grammar start symbol:", grammar.start())
 
@@ -193,17 +269,24 @@ def main(argv=None):
     ]
 
     if not parses:
-        print("No parse found.")
+        if verbose:
+            print("No parse found.")
         return 1
 
-    if not args.trees_only:
+    if verbose:
         print("Showing up to {} parse(s):".format(args.max_parses))
     for index, tree in enumerate(parses, 1):
         if words is not None:
             insert_preterminals(tree, tags, words)
-        if not args.trees_only:
-            print("\nParse {}:".format(index))
-        print(tree)
+        if index > 1:
+            print()
+        if verbose:
+            print("Parse {}:".format(index))
+        if args.format == "lisp":
+            print(tree)
+        else:
+            adapted_tree = to_constituency_tree(tree)
+            print(render_tree_text(adapted_tree, style=args.format))
     return 0
 
 
