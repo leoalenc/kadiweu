@@ -1,0 +1,2799 @@
+/*
+PREFACE:  
+Copyright 2010 Beth Randall
+Date:  Mon Oct 19 11:21:52 BRT 2026
+
+command file:     trace-revision.q
+output file:      trace-revision.out
+
+node:   $METAROOT
+query:  ({1}IP-MAT exists) 
+
+replace_label{1}: IP-MAT-TEST
+*/
+/*
+HEADER:
+source file:  kadiweu-parser-full-test-C.psd
+*/
+
+/~*
+Iwaalo libiniena
+(hil-data,0.1)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+( (IP-MAT-TEST (NP-SBJ (N Iwaalo))
+	       (NP-PRD (N$ libiniena)))
+  (ID hil-data,0.1))
+
+/~*
+Iwaalo ninitibeci
+(hil-data,0.2)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N Iwaalo))
+	       (VB ninitibeci))
+  (ID hil-data,0.2))
+
+/~*
+LotaGa Ganioxoa libinienaGa
+(hil-data,0.3)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N$ LotaGa)
+		       (NP (N$ Ganioxoa)))
+	       (NP-PRD (N$ libinienaGa)))
+  (ID hil-data,0.3))
+
+/~*
+LotaGa Gadodawa libinienaGa
+(hil-data,0.4)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N$ LotaGa)
+		       (NP (N$ Gadodawa)))
+	       (NP-PRD (N$ libinienaGa)))
+  (ID hil-data,0.4))
+
+/~*
+Etogo ane@ @iwaGadi aG@ @dakake lojedi
+(hil-data,0.5)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-2 (N Etogo)
+		     (CP-REL (WNP-1 (WPRO ane@))
+			     (IP-SUB (NP-TRACE *T*-1)
+				     (VB @iwaGadi))))
+	       (NEG aG@)
+	       (VBU @dakake)
+	       (NP (NP-GEN *T*-2)
+		   (N$ lojedi)))
+  (ID hil-data,0.5))
+
+/~*
+Etogo ane iwaGadi aG@ @dakake loojedi
+(hil-data,0.6)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-2 (N Etogo)
+		     (CP-REL (WNP-1 (WPRO ane))
+			     (IP-SUB (NP-TRACE *T*-1)
+				     (VB iwaGadi))))
+	       (NEG aG@)
+	       (VBU @dakake)
+	       (NP (NP-GEN *T*-2)
+		   (N$ loojedi)))
+  (ID hil-data,0.6))
+
+/~*
+Gawenigi eliodi me libinienigi
+(hil-data,0.7)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N$ Gawenigi))
+	       (CP-me (Q eliodi)
+		      (C me)
+		      (IP-SUB (NP (N$ libinienigi)))))
+  (ID hil-data,0.7))
+
+/~*
+NiGijo liwenigi libinienigi
+(hil-data,0.8)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D NiGijo) (N$ liwenigi))
+	       (NP-PRD (N$ libinienigi)))
+  (ID hil-data,0.8))
+
+/~*
+NiGida niwenigi eliodi me dakake loojedi
+(hil-data,0.9)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-1 (D NiGida) (N niwenigi))
+	       (CP-me (Q eliodi)
+		      (C me)
+		      (IP-SUB (VBU dakake)
+			      (NP (NP-GEN *T*-1)
+				  (N$ loojedi)))))
+  (ID hil-data,0.9))
+
+/~*
+NaGajo lomigo Pedilo idei me@ @adi niwatece
+(hil-data,0.10)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D NaGajo)
+		   (N$ lomigo)
+		   (NP (NPR Pedilo)))
+	       (VB idei)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (D @adi) (N$ niwatece)))))
+  (ID hil-data,0.10))
+
+/~*
+NaGajo lomigo niganigawanigi me@ @adi niwatece
+(hil-data,0.11)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D NaGajo)
+		   (N$ lomigo)
+		   (NP (N niganigawanigi))
+		   (CP-me (C me@)
+			  (IP-SUB (NP (D @adi) (N$ niwatece))))))
+  (ID hil-data,0.11))
+
+/~*
+Te ee nigotaGa
+(hil-data,0.12)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VB Te)
+	       (NP (PRO ee))
+	       (NP (N nigotaGa)))
+  (ID hil-data,0.12))
+
+/~*
+niGijoa lionaGa iwaalo idei me@ @ijotaGa
+(hil-data,0.13)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D niGijoa)
+		   (N$ lionaGa)
+		   (NP (N iwaalo)))
+	       (VB idei)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (DAPL @ijotaGa)))))
+  (ID hil-data,0.13))
+
+/~*
+dibixodi ideiticoaci me@ @aditaGa
+(hil-data,0.14)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N dibixodi))
+	       (VB ideiticoaci)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (DAPL @aditaGa)))))
+  (ID hil-data,0.14))
+
+/~*
+Iwaalepodi libinienigipi.
+(hil-data,0.15)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N Iwaalepodi))
+	       (NP-PRD (N$ libinienigipi))
+	       (PUNC .))
+  (ID hil-data,0.15))
+
+/~*
+Ninitibeci.
+(hil-data,0.16)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VB Ninitibeci) (PUNC .))
+  (ID hil-data,0.16))
+
+/~*
+ninitibeci naGada
+(hil-data,0.17)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VB ninitibeci)
+	       (NP (D naGada)))
+  (ID hil-data,0.17))
+
+/~*
+Ninitibeci naGadi.
+(hil-data,0.18)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VB Ninitibeci)
+	       (NP (D naGadi))
+	       (PUNC .))
+  (ID hil-data,0.18))
+
+/~*
+naGada iwaGadi
+(hil-data,0.19)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D naGada))
+	       (VB iwaGadi))
+  (ID hil-data,0.19))
+
+/~*
+naGadi iwaGadi
+(hil-data,0.20)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D naGadi))
+	       (VB iwaGadi))
+  (ID hil-data,0.20))
+
+/~*
+NaGana iwaGadi
+(hil-data,0.21)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D NaGana))
+	       (VB iwaGadi))
+  (ID hil-data,0.21))
+
+/~*
+Ada iwaGadi
+(hil-data,0.22)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D Ada))
+	       (VB iwaGadi))
+  (ID hil-data,0.22))
+
+/~*
+Ani iwaGadi
+(hil-data,0.23)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D Ani))
+	       (VB iwaGadi))
+  (ID hil-data,0.23))
+
+/~*
+Adi iwaGadi
+(hil-data,0.24)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D Adi))
+	       (VB iwaGadi))
+  (ID hil-data,0.24))
+
+/~*
+naGana eliodi me@ @ninitibeci
+(hil-data,0.25)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D naGana))
+	       (CP-me (Q eliodi)
+		      (C me@)
+		      (IP-SUB (VB @ninitibeci))))
+  (ID hil-data,0.25))
+
+/~*
+DapicoGo
+(hil-data,0.26)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VB DapicoGo))
+  (ID hil-data,0.26))
+
+/~*
+DapipocoGo
+(hil-data,0.27)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VB DapipocoGo))
+  (ID hil-data,0.27))
+
+/~*
+libiniena
+(hil-data,0.28)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ libiniena)))
+  (ID hil-data,0.28))
+
+/~*
+libinienigi
+(hil-data,0.29)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ libinienigi)))
+  (ID hil-data,0.29))
+
+/~*
+DapicoGo
+(hil-data,0.30)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VB DapicoGo))
+  (ID hil-data,0.30))
+
+/~*
+DapicoGo
+(hil-data,0.31)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VB DapicoGo))
+  (ID hil-data,0.31))
+
+/~*
+Ninitibigiwaji.
+(hil-data,0.32)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N Ninitibigiwaji))
+	       (PUNC .))
+  (ID hil-data,0.32))
+
+/~*
+NiGida lodajo lodawa aG@ @idei dineigi
+(hil-data,0.33)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D NiGida)
+		   (N$ lodajo)
+		   (NP (N lodawa)))
+	       (NEG aG@)
+	       (VB @idei)
+	       (NP (N dineigi)))
+  (ID hil-data,0.33))
+
+/~*
+liwigo niganigawanigi libinienigi
+(hil-data,0.34)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N$ liwigo)
+		       (NP (N niganigawanigi)))
+	       (NP-PRD (N$ libinienigi)))
+  (ID hil-data,0.34))
+
+/~*
+naGani wetiGa eliodi me iwaGadi
+(hil-data,0.35)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D naGani) (N wetiGa))
+	       (CP-me (Q eliodi)
+		      (C me)
+		      (IP-SUB (VB iwaGadi))))
+  (ID hil-data,0.35))
+
+/~*
+NaGani wetiGa iwaGadi
+(hil-data,0.36)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D NaGani) (N wetiGa))
+	       (VB iwaGadi))
+  (ID hil-data,0.36))
+
+/~*
+NiGinoa wetiadi iwaGadi
+(hil-data,0.37)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D NiGinoa) (N wetiadi))
+	       (VB iwaGadi))
+  (ID hil-data,0.37))
+
+/~*
+NaGani wetiGa iwaGadi
+(hil-data,0.38)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D NaGani) (N wetiGa))
+	       (VB iwaGadi))
+  (ID hil-data,0.38))
+
+/~*
+NaGani wetiGa ane iwaGadi eniteloco iGonagi
+(hil-data,0.39)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D NaGani)
+		   (N wetiGa)
+		   (CP-REL (WNP-1 (WPRO ane))
+			   (IP-SUB (NP-TRACE *T*-1)
+				   (VB iwaGadi))))
+	       (VBAPL eniteloco)
+	       (NP-APL (N$ iGonagi)))
+  (ID hil-data,0.39))
+
+/~*
+NiGidoa waca lotiidi dapicoGo
+(hil-data,0.41)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D NiGidoa)
+		   (NP (N waca))
+		   (N$ lotiidi))
+	       (VB dapicoGo))
+  (ID hil-data,0.41))
+
+/~*
+niGidiwa okokodi ligetedi me@ @idi niwigo libinienaGa
+(hil-data,0.42)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D niGidiwa)
+		       (NP (N okokodi))
+		       (N$ ligetedi)
+		       (CP-me (C me@)
+			      (IP-SUB (NP (D @idi) (N niwigo)))))
+	       (NP-PRD (N$ libinienaGa)))
+  (ID hil-data,0.42))
+
+/~*
+niGidiwa okokodi ligetedi liwigo libinienaGa
+(hil-data,0.43)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D niGidiwa)
+		       (NP (N okokodi))
+		       (N$ ligetedi)
+		       (NP (N$ liwigo)))
+	       (NP-PRD (N$ libinienaGa)))
+  (ID hil-data,0.43))
+
+/~*
+NiGidiwa noGojedi lixagotaGaGa aG@ @dakake loojedi
+(hil-data,0.44)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-1 (D NiGidiwa)
+		     (NP (N noGojedi))
+		     (N$ lixagotaGaGa))
+	       (NEG aG@)
+	       (VBU @dakake)
+	       (NP (NP-GEN *T*-1)
+		   (N$ loojedi)))
+  (ID hil-data,0.44))
+
+/~*
+Ee aG@ @idinitibeci.
+(hil-data,0.48)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (PRO Ee))
+	       (NEG aG@)
+	       (VB @idinitibeci)
+	       (PUNC .))
+  (ID hil-data,0.48))
+
+/~*
+Ee aG@ @eliodi me idinitibeci
+(hil-data,0.49)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (PRO Ee))
+	       (NEG aG@)
+	       (CP-me (Q @eliodi)
+		      (C me)
+		      (IP-SUB (VB idinitibeci))))
+  (ID hil-data,0.49))
+
+/~*
+Ee aG@ @jipegitege
+(hil-data,0.50)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (PRO Ee))
+	       (NEG aG@)
+	       (VBAPL @jipegitege))
+  (ID hil-data,0.50))
+
+/~*
+Ee aG@ @jipegitege
+(hil-data,0.51)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (PRO Ee))
+	       (NEG aG@)
+	       (VBAPL @jipegitege))
+  (ID hil-data,0.51))
+
+/~*
+ee idiwaGadi
+(hil-data,0.52)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (PRO ee))
+	       (VB idiwaGadi))
+  (ID hil-data,0.52))
+
+/~*
+jipegitege
+(hil-data,0.53)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VBAPL jipegitege))
+  (ID hil-data,0.53))
+
+/~*
+jipegitege
+(hil-data,0.54)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VBAPL jipegitege))
+  (ID hil-data,0.54))
+
+/~*
+aG@ @eliodi me idinitibeci.
+(hil-data,0.55)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NEG aG@)
+	       (CP-me (Q @eliodi)
+		      (C me)
+		      (IP-SUB (VB idinitibeci)))
+	       (PUNC .))
+  (ID hil-data,0.55))
+
+/~*
+jipecaGataGagi.
+(hil-data,0.56)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VBAPL jipecaGataGagi) (PUNC .))
+  (ID hil-data,0.56))
+
+/~*
+oko aG@ @idejonaGa me@ @idi Godoigi
+(hil-data,0.57)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N oko))
+	       (NEG aG@)
+	       (VB @idejonaGa)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (D @idi) (N$ Godoigi)))))
+  (ID hil-data,0.57))
+
+/~*
+jipecaGataGagitiwaji.
+(hil-data,0.58)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VBAPL jipecaGataGagitiwaji) (PUNC .))
+  (ID hil-data,0.58))
+
+/~*
+aG@ @idejonaGa me@ @idi Godoigi
+(hil-data,0.59)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NEG aG@)
+	       (VB @idejonaGa)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (D @idi) (N$ Godoigi)))))
+  (ID hil-data,0.59))
+
+/~*
+niGijo nelokodi Maria idei me@ @idi akiidi
+(hil-data,0.60)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D niGijo)
+		   (N$ nelokodi)
+		   (NP (NPR Maria)))
+	       (VB idei)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (D @idi) (N akiidi)))))
+  (ID hil-data,0.60))
+
+/~*
+NiGijo bijo dapicoGo
+(hil-data,0.61)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D NiGijo) (N bijo))
+	       (VB dapicoGo))
+  (ID hil-data,0.61))
+
+/~*
+NaGada libiwe niale ixagodi
+(hil-data,0.62)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D NaGada)
+		   (N$ libiwe)
+		   (NP (N niale)))
+	       (VB ixagodi))
+  (ID hil-data,0.62))
+
+/~*
+nigidiwa bijotedi dapicoGo
+(hil-data,0.63)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D nigidiwa) (N bijotedi))
+	       (VB dapicoGo))
+  (ID hil-data,0.63))
+
+/~*
+Nigijoa lianaGa Maria libinienigipi
+(hil-data,0.64)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D Nigijoa)
+		       (N$ lianaGa)
+		       (NP (NPR Maria)))
+	       (NP-PRD (N$ libinienigipi)))
+  (ID hil-data,0.64))
+
+/~*
+NiGidi lionaGa iwaalo etidi me@ @eetaGa
+(hil-data,0.65)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D NiGidi)
+		   (N$ lionaGa)
+		   (NP (N iwaalo)))
+	       (VB etidi)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (DAPL @eetaGa)))))
+  (ID hil-data,0.65))
+
+/~*
+liGeladi ipegitege nakidi nigotaGa
+(hil-data,0.66)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ liGeladi))
+	       (VBAPL ipegitege)
+	       (NP-APL (N$ nakidi)
+		       (NP (N nigotaGa))))
+  (ID hil-data,0.66))
+
+/~*
+liGeladi ipegitege nakidi nigotaGa
+(hil-data,0.67)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ liGeladi))
+	       (VBAPL ipegitege)
+	       (NP-APL (N$ nakidi)
+		       (NP (N nigotaGa))))
+  (ID hil-data,0.67))
+
+/~*
+nigotaGa liGeladi ipegitege akiidi
+(hil-data,0.68)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ nigotaGa)
+		   (NP (N$ liGeladi)))
+	       (VBAPL ipegitege)
+	       (NP-APL (N akiidi)))
+  (ID hil-data,0.68))
+
+/~*
+Nigaanigawaanigi etini liwatece Pedilo
+(hil-data,0.69)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N Nigaanigawaanigi))
+	       (VB etini)
+	       (NP (N$ liwatece)
+		   (NP (NPR Pedilo))))
+  (ID hil-data,0.69))
+
+/~*
+NiGijo nigaanigawaanigi etini liwatece ideloGole
+(hil-data,0.70)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D NiGijo) (N nigaanigawaanigi))
+	       (VB etini)
+	       (NP (N$ liwatece)
+		   (NP (N ideloGole))))
+  (ID hil-data,0.70))
+
+/~*
+NaGani wetiGa, ane iwaGadi, eniteloco iGonagi
+(hil-data,0.40)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D NaGani)
+		   (N wetiGa)
+		   (PUNC ,)
+		   (CP-REL (WNP-1 (WPRO ane))
+			   (IP-SUB (NP-TRACE *T*-1)
+				   (VB iwaGadi))))
+	       (PUNC ,)
+	       (VBAPL eniteloco)
+	       (NP-APL (N$ iGonagi)))
+  (ID hil-data,0.40))
+
+/~*
+Ee ite ee ina
+(hil-data,0.45)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (PRO Ee))
+	       (VB ite)
+	       (NP (PRO ee))
+	       (NP (D ina)))
+  (ID hil-data,0.45))
+
+/~*
+Ite ee me@ @adataGa
+(hil-data,0.46)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VB Ite)
+	       (NP (PRO ee)
+		   (CP-me (C me@)
+			  (IP-SUB (NP (DAPL @adataGa))))))
+  (ID hil-data,0.46))
+
+/~*
+Ite ee me@ @idataGa
+(hil-data,0.47)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VB Ite)
+	       (NP (PRO ee)
+		   (CP-me (C me@)
+			  (IP-SUB (NP (DAPL @idataGa))))))
+  (ID hil-data,0.47))
+
+/~*
+ajo liwatece ja iwaGadi
+(ped-gramm,0.1)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ajo) (N$ liwatece))
+	       (T ja)
+	       (VB iwaGadi))
+  (ID ped-gramm,0.1))
+
+/~*
+ajo liwatece etadi weiigi
+(ped-gramm,0.2)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ajo) (N$ liwatece))
+	       (VB etadi)
+	       (NP (N weiigi)))
+  (ID ped-gramm,0.2))
+
+/~*
+ajo niwatece etadi digoida
+(ped-gramm,0.3)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ajo) (N$ niwatece))
+	       (VB etadi)
+	       (NP (D digoida)))
+  (ID ped-gramm,0.3))
+
+/~*
+niwatece iwaGadi
+(ped-gramm,0.4)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ niwatece))
+	       (VB iwaGadi))
+  (ID ped-gramm,0.4))
+
+/~*
+niwatece etadi weiigi
+(ped-gramm,0.5)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ niwatece))
+	       (VB etadi)
+	       (NP (N weiigi)))
+  (ID ped-gramm,0.5))
+
+/~*
+ajo niwatece ipegitege weiigi
+(ped-gramm,0.6)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ajo) (N$ niwatece))
+	       (VBAPL ipegitege)
+	       (NP-APL (N weiigi)))
+  (ID ped-gramm,0.6))
+
+/~*
+liGeladi Maria aG@ @ipegetege
+(ped-gramm,0.7)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ liGeladi)
+		   (NP (NPR Maria)))
+	       (NEG aG@)
+	       (VBAPL @ipegetege))
+  (ID ped-gramm,0.7))
+
+/~*
+ica liGeladi ipegetege
+(ped-gramm,0.8)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ica) (N$ liGeladi))
+	       (VBAPL ipegetege))
+  (ID ped-gramm,0.8))
+
+/~*
+liGeladi idei nigotaGa
+(ped-gramm,0.9)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ liGeladi))
+	       (VB idei)
+	       (NP (N nigotaGa)))
+  (ID ped-gramm,0.9))
+
+/~*
+ica liGeladi ipegitegi
+(ped-gramm,0.10)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ica) (N$ liGeladi))
+	       (VBAPL ipegitegi))
+  (ID ped-gramm,0.10))
+
+/~*
+ica Maria looligi aG@ @lidi
+(ped-gramm,0.11)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ica)
+		       (NP (NPR Maria))
+		       (N$ looligi))
+	       (NEG aG@)
+	       (NP-PRD (N$ @lidi)))
+  (ID ped-gramm,0.11))
+
+/~*
+ica looligi lidi
+(ped-gramm,0.12)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ica) (N$ looligi))
+	       (NP-PRD (N$ lidi)))
+  (ID ped-gramm,0.12))
+
+/~*
+ica looligi dapico
+(ped-gramm,0.13)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ica) (N$ looligi))
+	       (VB dapico))
+  (ID ped-gramm,0.13))
+
+/~*
+ica looligi ja dapico
+(ped-gramm,0.14)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ica) (N$ looligi))
+	       (T ja)
+	       (VB dapico))
+  (ID ped-gramm,0.14))
+
+/~*
+ica looligi lideGegi
+(ped-gramm,0.15)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ica) (N$ looligi))
+	       (NP-PRD (N$ lideGegi)))
+  (ID ped-gramm,0.15))
+
+/~*
+loigipodi libinienigipi
+(ped-gramm,0.16)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N$ loigipodi))
+	       (NP-PRD (N$ libinienigipi)))
+  (ID ped-gramm,0.16))
+
+/~*
+ica loigi ijo niganigi ipegitegi GanigotGa
+(ped-gramm,0.17)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ica)
+		   (N$ loigi)
+		   (NP (D ijo) (N niganigi)))
+	       (VBAPL ipegitegi)
+	       (NP-APL (N$ GanigotGa)))
+  (ID ped-gramm,0.17))
+
+/~*
+ica lideGegi loligi idei liGeladi
+(ped-gramm,0.18)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ica)
+		   (N$ lideGegi)
+		   (NP (N$ loligi)))
+	       (VB idei)
+	       (NP (N$ liGeladi)))
+  (ID ped-gramm,0.18))
+
+/~*
+ica liwigo libinienigi
+(ped-gramm,0.19)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ica) (N$ liwigo))
+	       (NP-PRD (N$ libinienigi)))
+  (ID ped-gramm,0.19))
+
+/~*
+ica niwigo libinienigi
+(ped-gramm,0.20)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ica)
+		       (NP (N niwigo)))
+	       (NP-PRD (N$ libinienigi)))
+  (ID ped-gramm,0.20))
+
+/~*
+ica nioladi nioxoa libinienigi
+(ped-gramm,0.22)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ica)
+		       (N$ nioladi)
+		       (NP (N$ nioxoa)))
+	       (NP-PRD (N$ libinienigi)))
+  (ID ped-gramm,0.22))
+
+/~*
+ica nioladi lodawa libinienigi
+(ped-gramm,0.23)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ica)
+		       (N$ nioladi)
+		       (NP (N$ lodawa)))
+	       (NP-PRD (N$ libinienigi)))
+  (ID ped-gramm,0.23))
+
+/~*
+iGeladi idei naigi ane@ @napioi
+(ped-gramm,0.24)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ iGeladi))
+	       (VB idei)
+	       (NP (N naigi)
+		   (CP-REL (WNP-1 (WPRO ane@))
+			   (IP-SUB (NP-TRACE *T*-1)
+				   (NP (N @napioi))))))
+  (ID ped-gramm,0.24))
+
+/~*
+iGeladi idei naigi me napioi
+(ped-gramm,0.25)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ iGeladi))
+	       (VB idei)
+	       (NP (N naigi)
+		   (CP-me (C me)
+			  (IP-SUB (NP (N napioi))))))
+  (ID ped-gramm,0.25))
+
+/~*
+João liGeladi ane napioi
+(ped-gramm,0.26)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (NPR João))
+	       (NP-PRD (N$ liGeladi)
+		       (CP-REL (WNP-1 (WPRO ane))
+			       (IP-SUB (NP-TRACE *T*-1)
+				       (NP (N napioi))))))
+  (ID ped-gramm,0.26))
+
+/~*
+Eyodi ane niganaGacanajo
+(ped-gramm,0.30)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ Eyodi)
+		   (CP-REL (WNP-1 (WPRO ane))
+			   (IP-SUB (NP-TRACE *T*-1)
+				   (NP (N niganaGacanajo))))))
+  (ID ped-gramm,0.30))
+
+/~*
+iGeladi idei digoida
+(ped-gramm,0.32)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ iGeladi))
+	       (VB idei)
+	       (NP (D digoida)))
+  (ID ped-gramm,0.32))
+
+/~*
+iGeladi ipegitaGagi
+(ped-gramm,0.33)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ iGeladi))
+	       (VBAPL ipegitaGagi))
+  (ID ped-gramm,0.33))
+
+/~*
+iGeladi ipegitegi liGeladi
+(ped-gramm,0.34)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ iGeladi))
+	       (VBAPL ipegitegi)
+	       (NP-APL (N$ liGeladi)))
+  (ID ped-gramm,0.34))
+
+/~*
+iGeladi ipegitegi naigi ane napioi
+(ped-gramm,0.35)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ iGeladi))
+	       (VBAPL ipegitegi)
+	       (NP-APL (N naigi)
+		       (CP-REL (WNP-1 (WPRO ane))
+			       (IP-SUB (NP-TRACE *T*-1)
+				       (NP (N napioi))))))
+  (ID ped-gramm,0.35))
+
+/~*
+iGeladi ipegitegi naigi me napioi
+(ped-gramm,0.36)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ iGeladi))
+	       (VBAPL ipegitegi)
+	       (NP-APL (N naigi)
+		       (CP-me (C me)
+			      (IP-SUB (NP (N napioi))))))
+  (ID ped-gramm,0.36))
+
+/~*
+iGeladi aG@ @ipegitegi weiigi
+(ped-gramm,0.37)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ iGeladi))
+	       (NEG aG@)
+	       (VBAPL @ipegitegi)
+	       (NP-APL (N weiigi)))
+  (ID ped-gramm,0.37))
+
+/~*
+ijo Gatodi etijo ida.
+(ped-gramm,0.38)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ijo) (N Gatodi))
+	       (VB etijo)
+	       (NP (D ida))
+	       (PUNC .))
+  (ID ped-gramm,0.38))
+
+/~*
+ijotawece etidi akiidi.
+(ped-gramm,0.39)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ijotawece))
+	       (VB etidi)
+	       (NP (N akiidi))
+	       (PUNC .))
+  (ID ped-gramm,0.39))
+
+/~*
+iGeladi digoida weiigi.
+(ped-gramm,0.40)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N$ iGeladi))
+	       (NP-PRD (D digoida) (N weiigi))
+	       (PUNC .))
+  (ID ped-gramm,0.40))
+
+/~*
+iGeladi idei weiigi.
+(ped-gramm,0.41)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ iGeladi))
+	       (VB idei)
+	       (NP (N weiigi))
+	       (PUNC .))
+  (ID ped-gramm,0.41))
+
+/~*
+lotaGa GanaginaGa libinienaGa.
+(ped-gramm,0.43)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N$ lotaGa)
+		       (NP (N$ GanaginaGa)))
+	       (NP-PRD (N$ libinienaGa))
+	       (PUNC .))
+  (ID ped-gramm,0.43))
+
+/~*
+nGida niwenigi daGaxa me dakake loojedi.
+(ped-gramm,0.44)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-1 (D nGida) (N niwenigi))
+	       (CP-me (Q daGaxa)
+		      (C me)
+		      (IP-SUB (VBU dakake)
+			      (NP (NP-GEN *T*-1)
+				  (N$ loojedi))))
+	       (PUNC .))
+  (ID ped-gramm,0.44))
+
+/~*
+liGeladi João napioi.
+(ped-gramm,0.46)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N$ liGeladi)
+		       (NP (NPR João)))
+	       (NP-PRD (N$ napioi))
+	       (PUNC .))
+  (ID ped-gramm,0.46))
+
+/~*
+liGeladi ipegitege niweiigi nigotaGa.
+(ped-gramm,0.47)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ liGeladi))
+	       (VBAPL ipegitege)
+	       (NP-APL (N niweiigi))
+	       (NP (N$ nigotaGa))
+	       (PUNC .))
+  (ID ped-gramm,0.47))
+
+/~*
+liGeladi ipegitegi niweiigi nigotaGa.
+(ped-gramm,0.48)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ liGeladi))
+	       (VBAPL ipegitegi)
+	       (NP-APL (N$ niweiigi)
+		       (NP (N nigotaGa)))
+	       (PUNC .))
+  (ID ped-gramm,0.48))
+
+/~*
+Niwatece iwaGadi codaa aG@ @dakake loojedi.
+(ped-gramm,0.49)
+*~/
+/*
+0 :  1 IP-MAT
+0 :  2 IP-MAT
+0 :  11 IP-MAT
+*/
+
+( (IP-MAT-TEST (IP-MAT-TEST (NP (N$ Niwatece))
+			    (VB iwaGadi))
+	       (CONJP (CONJ codaa)
+		      (IP-MAT-TEST (NEG aG@)
+				   (VBU @dakake)
+				   (NP (N$ loojedi))))
+	       (PUNC .))
+  (ID ped-gramm,0.49))
+
+/~*
+etee me@ @initaGa
+(ped-gramm,0.50)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VB etee)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (DAPL @initaGa)))))
+  (ID ped-gramm,0.50))
+
+/~*
+ee aG@ @idininitebeci
+(ped-gramm,0.51)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (PRO ee))
+	       (NEG aG@)
+	       (VB @idininitebeci))
+  (ID ped-gramm,0.51))
+
+/~*
+jipacaGataGagitiwaji
+(ped-gramm,0.52)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VBAPL jipacaGataGagitiwaji))
+  (ID ped-gramm,0.52))
+
+/~*
+aG@ @ee eliodi niinikeGegi
+(ped-gramm,0.53)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NEG aG@)
+	       (NP-SBJ (PRO @ee))
+	       (NP-PRD (Q eliodi) (N niinikeGegi)))
+  (ID ped-gramm,0.53))
+
+/~*
+akaami oko jipacaGataGagitiwaji
+(ped-gramm,0.54)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (PRO akaami))
+	       (NP (PRO oko))
+	       (VBAPL jipacaGataGagitiwaji))
+  (ID ped-gramm,0.54))
+
+/~*
+niGidowa waca lotiidi dapikoGo
+(ped-gramm,0.55)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D niGidowa)
+		   (NP (N waca))
+		   (N$ lotiidi))
+	       (VB dapikoGo))
+  (ID ped-gramm,0.55))
+
+/~*
+IiGeladi me@ @idi akiidi
+(ped-gramm,0.56)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ IiGeladi)
+		   (CP-me (C me@)
+			  (IP-SUB (NP (D @idi) (N akiidi))))))
+  (ID ped-gramm,0.56))
+
+/~*
+etogo ane@ @iwaGadi aG@ @dakake lojedi.
+(ped-gramm,0.57)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-2 (N etogo)
+		     (CP-REL (WNP-1 (WPRO ane@))
+			     (IP-SUB (NP-TRACE *T*-1)
+				     (VB @iwaGadi))))
+	       (NEG aG@)
+	       (VBU @dakake)
+	       (NP (NP-GEN *T*-2)
+		   (N$ lojedi))
+	       (PUNC .))
+  (ID ped-gramm,0.57))
+
+/~*
+etogo aG@ @dakake lojedi
+(ped-gramm,0.58)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-1 (N etogo))
+	       (NEG aG@)
+	       (VBU @dakake)
+	       (NP (NP-GEN *T*-1)
+		   (N$ lojedi)))
+  (ID ped-gramm,0.58))
+
+/~*
+etogoli dakake lojetedi
+(ped-gramm,0.59)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-1 (N etogoli))
+	       (VBU dakake)
+	       (NP (NP-GEN *T*-1)
+		   (N$ lojetedi)))
+  (ID ped-gramm,0.59))
+
+/~*
+etogoli dakake loojedi
+(ped-gramm,0.60)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-1 (N etogoli))
+	       (VBU dakake)
+	       (NP (NP-GEN *T*-1)
+		   (N$ loojedi)))
+  (ID ped-gramm,0.60))
+
+/~*
+Etogoli iwaGadi aG@ @dakake lojetedi
+(ped-gramm,0.61)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N Etogoli))
+	       (VB iwaGadi)
+	       (IP-ADV (NEG aG@)
+		       (VBU @dakake)
+		       (NP (N$ lojetedi))))
+  (ID ped-gramm,0.61))
+
+/~*
+ica nioladi Ganixoa
+(ped-gramm,0.21)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ica)
+		       (NP (N nioladi)))
+	       (NP-PRD (N$ Ganixoa)))
+  (ID ped-gramm,0.21))
+
+/~*
+iGeladi idei me@ @ijo naigi naGajo
+(ped-gramm,0.27)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ iGeladi))
+	       (VB idei)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (D @ijo) (N naigi) (PRO$ naGajo)))))
+  (ID ped-gramm,0.27))
+
+/~*
+Eyodi dowediteloco nawodigijedi me@ @icawataGa daGa me lionigipi
+(ped-gramm,0.28)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ Eyodi))
+	       (VBAPL dowediteloco)
+	       (NP-APL (N nawodigijedi)
+		       (CP-me (C me@)
+			      (IP-SUB (NP (DAPL @icawataGa)))))
+	       (CP-daGa (C daGa)
+			(CP-me (C me)
+			       (IP-SUB (NP (N$ lionigipi))))))
+  (ID ped-gramm,0.28))
+
+/~*
+Eyodi me niganaGacanajo
+(ped-gramm,0.29)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ Eyodi)
+		   (CP-me (C me)
+			  (IP-SUB (NP (N niganaGacanajo))))))
+  (ID ped-gramm,0.29))
+
+/~*
+Eyodi daGa niganaGacanajo
+(ped-gramm,0.31)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ Eyodi))
+	       (CP-daGa (C daGa)
+			(IP-SUB (NP (N niganaGacanajo)))))
+  (ID ped-gramm,0.31))
+
+/~*
+nigotaGa liGeladi ipegitegi weiigi.
+(ped-gramm,0.42)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N nigotaGa))
+	       (NP (N$ liGeladi))
+	       (VBAPL ipegitegi)
+	       (NP-APL (N weiigi))
+	       (PUNC .))
+  (ID ped-gramm,0.42))
+
+/~*
+João liGeladi napioi.
+(ped-gramm,0.45)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (NPR João))
+	       (NP-PRD (N$ liGeladi)
+		       (NP (N napioi)))
+	       (PUNC .))
+  (ID ped-gramm,0.45))
+
+/~*
+iGeladi digoida weiigi
+(van-data,0.1)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N$ iGeladi))
+	       (NP-PRD (D digoida) (N weiigi)))
+  (ID van-data,0.1))
+
+/~*
+iGeladi idei weiigi
+(van-data,0.2)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ iGeladi))
+	       (VB idei)
+	       (NP (N weiigi)))
+  (ID van-data,0.2))
+
+/~*
+iGeladi ideaGi weiigi
+(van-data,0.3)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ iGeladi))
+	       (VB ideaGi)
+	       (NP (N weiigi)))
+  (ID van-data,0.3))
+
+/~*
+iwaalo ja libiniena
+(van-data,0.4)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N iwaalo))
+	       (T ja)
+	       (NP-PRD (N$ libiniena)))
+  (ID van-data,0.4))
+
+/~*
+iwaalo ja ninitibeke
+(van-data,0.5)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N iwaalo))
+	       (T ja)
+	       (VB ninitibeke))
+  (ID van-data,0.5))
+
+/~*
+lotaGa GanaaginaGa libinienaGa
+(van-data,0.6)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N$ lotaGa)
+		       (NP (N$ GanaaginaGa)))
+	       (NP-PRD (N$ libinienaGa)))
+  (ID van-data,0.6))
+
+/~*
+lotaGa Gadodawa libinienaGa
+(van-data,0.7)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N$ lotaGa)
+		       (NP (N$ Gadodawa)))
+	       (NP-PRD (N$ libinienaGa)))
+  (ID van-data,0.7))
+
+/~*
+niwatece iwaGadi noxilece lojetedi
+(van-data,0.8)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ niwatece))
+	       (VB iwaGadi)
+	       (IP-ADV (VB noxilece)
+		       (NP (N$ lojetedi))))
+  (ID van-data,0.8))
+
+/~*
+Gawenigi eliodi me libinienigi
+(van-data,0.10)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N$ Gawenigi))
+	       (CP-me (Q eliodi)
+		      (C me)
+		      (IP-SUB (NP (N$ libinienigi)))))
+  (ID van-data,0.10))
+
+/~*
+niGida liwenigi libinienigi
+(van-data,0.11)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D niGida) (N$ liwenigi))
+	       (NP-PRD (N$ libinienigi)))
+  (ID van-data,0.11))
+
+/~*
+niGida niwenigi daGaxa me dakake loojedi
+(van-data,0.12)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-1 (D niGida) (N niwenigi))
+	       (CP-me (Q daGaxa)
+		      (C me)
+		      (IP-SUB (VBU dakake)
+			      (NP (NP-GEN *T*-1)
+				  (N$ loojedi)))))
+  (ID van-data,0.12))
+
+/~*
+naGajo lomiigo Pedro idei niwatece
+(van-data,0.13)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D naGajo)
+		   (N$ lomiigo)
+		   (NP (NPR Pedro)))
+	       (VB idei)
+	       (NP (N niwatece)))
+  (ID van-data,0.13))
+
+/~*
+naGajo lomiigo nigaanigawaanigi me@ @anitaGa niwatece
+(van-data,0.14)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D naGajo)
+		   (N$ lomiigo)
+		   (NP (N nigaanigawaanigi))
+		   (CP-me (C me@)
+			  (IP-SUB (NP (DAPL @anitaGa) (N niwatece))))))
+  (ID van-data,0.14))
+
+/~*
+Eeyo nigotaGa
+(van-data,0.17)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (PRO Eeyo))
+	       (NP-PRD (N nigotaGa)))
+  (ID van-data,0.17))
+
+/~*
+Eyo me@ @anitaGa nigotaGa
+(van-data,0.18)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (PRO Eyo)
+		   (CP-me (C me@)
+			  (IP-SUB (NP (DAPL @anitaGa) (N nigotaGa))))))
+  (ID van-data,0.18))
+
+/~*
+niGijoa lionigipi iwaalo idei me@ @initaGa
+(van-data,0.19)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D niGijoa)
+		   (N$ lionigipi)
+		   (NP (N iwaalo)))
+	       (VB idei)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (DAPL @initaGa)))))
+  (ID van-data,0.19))
+
+/~*
+dibixodi idei me@ @anitaGa
+(van-data,0.20)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N dibixodi))
+	       (VB idei)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (DAPL @anitaGa)))))
+  (ID van-data,0.20))
+
+/~*
+iwalepodi ja libinienigipi
+(van-data,0.21)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N iwalepodi))
+	       (T ja)
+	       (NP-PRD (N$ libinienigipi)))
+  (ID van-data,0.21))
+
+/~*
+ajo ninitibeci
+(van-data,0.22)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ajo))
+	       (VB ninitibeci))
+  (ID van-data,0.22))
+
+/~*
+ajo iwaGadi
+(van-data,0.23)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ajo))
+	       (VB iwaGadi))
+  (ID van-data,0.23))
+
+/~*
+ajo daGaxa ninitibeci
+(van-data,0.24)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ajo))
+	       (ADVP (ADV daGaxa))
+	       (VB ninitibeci))
+  (ID van-data,0.24))
+
+/~*
+ajo eliodi linikeGegi
+(van-data,0.25)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ajo))
+	       (NP-PRD (Q eliodi) (N$ linikeGegi)))
+  (ID van-data,0.25))
+
+/~*
+ajo lapicaGa
+(van-data,0.26)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ajo))
+	       (NP-PRD (N$ lapicaGa)))
+  (ID van-data,0.26))
+
+/~*
+ijo libinienigi
+(van-data,0.27)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ijo))
+	       (NP-PRD (N$ libinienigi)))
+  (ID van-data,0.27))
+
+/~*
+ijo lapicaGigi
+(van-data,0.28)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ijo))
+	       (NP-PRD (N$ lapicaGigi)))
+  (ID van-data,0.28))
+
+/~*
+niGijo ninitibigiwaji
+(van-data,0.29)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D niGijo))
+	       (VB ninitibigiwaji))
+  (ID van-data,0.29))
+
+/~*
+niGijo lodaajo ajo lodowa aG@ @ica digoida liGeladi
+(van-data,0.30)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D niGijo) (N$ lodaajo))
+	       (NP-SBJ-PRD (D ajo) (N$ lodowa))
+	       (NEG aG@)
+	       (NP-PRD (Q @ica) (D digoida) (N$ liGeladi)))
+  (ID van-data,0.30))
+
+/~*
+ica liwigo niganigawanigi libinienigi
+(van-data,0.31)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ica)
+		       (N$ liwigo)
+		       (NP (N niganigawanigi)))
+	       (NP-PRD (N$ libinienigi)))
+  (ID van-data,0.31))
+
+/~*
+naGani wetiGa liwaGatena
+(van-data,0.32)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D naGani)
+		       (NP (N wetiGa)))
+	       (NP-PRD (N$ liwaGatena)))
+  (ID van-data,0.32))
+
+/~*
+naGani wetiGa iwaGadi
+(van-data,0.33)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D naGani) (N wetiGa))
+	       (VB iwaGadi))
+  (ID van-data,0.33))
+
+/~*
+niGidiwa wetiadi iwaGadi
+(van-data,0.34)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D niGidiwa) (N wetiadi))
+	       (VB iwaGadi))
+  (ID van-data,0.34))
+
+/~*
+ani wetiGa eliodi me iwaGadi
+(van-data,0.35)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ani) (N wetiGa))
+	       (CP-me (Q eliodi)
+		      (C me)
+		      (IP-SUB (VB iwaGadi))))
+  (ID van-data,0.35))
+
+/~*
+ani wetiGa iwaGadi
+(van-data,0.36)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ani) (N wetiGa))
+	       (VB iwaGadi))
+  (ID van-data,0.36))
+
+/~*
+ani wetiGa me iwaGadi eniteloco iGonagi
+(van-data,0.37)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ani) (N wetiGa))
+	       (CP-me (C me)
+		      (IP-SUB (VB iwaGadi)))
+	       (VBAPL eniteloco)
+	       (NP-APL (N$ iGonagi)))
+  (ID van-data,0.37))
+
+/~*
+ani wetiGa ane iwaGadi eniteloco iGonagi
+(van-data,0.38)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ani)
+		   (N wetiGa)
+		   (CP-REL (WNP-1 (WPRO ane))
+			   (IP-SUB (NP-TRACE *T*-1)
+				   (VB iwaGadi))))
+	       (VBAPL eniteloco)
+	       (NP-APL (N$ iGonagi)))
+  (ID van-data,0.38))
+
+/~*
+idiwa wetiadi iwaGadi
+(van-data,0.39)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D idiwa) (N wetiadi))
+	       (VB iwaGadi))
+  (ID van-data,0.39))
+
+/~*
+niGidowa waca lotiidi dapicoGo
+(van-data,0.40)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D niGidowa)
+		   (NP (N waca))
+		   (N$ lotiidi))
+	       (VB dapicoGo))
+  (ID van-data,0.40))
+
+/~*
+idowa waca lotiidi dapicoGo
+(van-data,0.41)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D idowa)
+		   (NP (N waca))
+		   (N$ lotiidi))
+	       (VB dapicoGo))
+  (ID van-data,0.41))
+
+/~*
+ijo niwigo libinienigi ijowa nigetedi
+(van-data,0.43)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ijo)
+		       (NP (N niwigo))
+		       (N$ libinienigi))
+	       (NP-PRD (D ijowa) (N$ nigetedi)))
+  (ID van-data,0.43))
+
+/~*
+ijoa nigetedi niwigo libinienigipi
+(van-data,0.44)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ijoa) (N nigetedi))
+	       (NP-SBJ-PRD (N niwigo))
+	       (NP-PRD (N$ libinienigipi)))
+  (ID van-data,0.44))
+
+/~*
+idiwa noGojedi lixagotaGaGa aG@ @dakake loojedi
+(van-data,0.47)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-1 (D idiwa)
+		     (NP (N noGojedi))
+		     (N$ lixagotaGaGa))
+	       (NEG aG@)
+	       (VBU @dakake)
+	       (NP (NP-GEN *T*-1)
+		   (N$ loojedi)))
+  (ID van-data,0.47))
+
+/~*
+etee ina
+(van-data,0.48)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VB etee)
+	       (NP (D ina)))
+  (ID van-data,0.48))
+
+/~*
+eteyo ina
+(van-data,0.49)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VB eteyo)
+	       (NP (D ina)))
+  (ID van-data,0.49))
+
+/~*
+etee me@ @anitaGa
+(van-data,0.50)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VB etee)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (DAPL @anitaGa)))))
+  (ID van-data,0.50))
+
+/~*
+etee me@ @initaGa
+(van-data,0.51)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VB etee)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (DAPL @initaGa)))))
+  (ID van-data,0.51))
+
+/~*
+ee aG@ @ica inikeGegi
+(van-data,0.52)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (PRO ee))
+	       (NEG aG@)
+	       (NP-PRD (D @ica) (N$ inikeGegi)))
+  (ID van-data,0.52))
+
+/~*
+ee aG@ @dininitibeci
+(van-data,0.53)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (PRO ee))
+	       (NEG aG@)
+	       (VB @dininitibeci))
+  (ID van-data,0.53))
+
+/~*
+aG@ @ee eliodi niinikeGegi
+(van-data,0.54)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NEG aG@)
+	       (NP-SBJ (PRO @ee))
+	       (NP-PRD (Q eliodi) (N niinikeGegi)))
+  (ID van-data,0.54))
+
+/~*
+ee eliodi me aG@ @dininitibeci
+(van-data,0.55)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (PRO ee))
+	       (CP-me (Q eliodi)
+		      (C me)
+		      (IP-SUB (NEG aG@) (VB @dininitibeci))))
+  (ID van-data,0.55))
+
+/~*
+ee idiwaaGadi
+(van-data,0.58)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (PRO ee))
+	       (VB idiwaaGadi))
+  (ID van-data,0.58))
+
+/~*
+ee jigipegitege
+(van-data,0.59)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (PRO ee))
+	       (VB jigipegitege))
+  (ID van-data,0.59))
+
+/~*
+ee jigipegitegi
+(van-data,0.60)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (PRO ee))
+	       (VB jigipegitegi))
+  (ID van-data,0.60))
+
+/~*
+aG@ @ee @ewi me@ @ica iniKGigi
+(van-data,0.61)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NEG aG@)
+	       (NP (PRO @ee))
+	       (ADJ @ewi)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (D @ica) (N$ iniKGigi)))))
+  (ID van-data,0.61))
+
+/~*
+aG@ @eyo me@ @ica inikGigi
+(van-data,0.62)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NEG aG@)
+	       (NP (PRO @eyo)
+		   (CP-me (C me@)
+			  (IP-SUB (NP (D @ica) (N$ inikGigi))))))
+  (ID van-data,0.62))
+
+/~*
+JipecaGataGagi
+(van-data,0.63)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VBAPL JipecaGataGagi))
+  (ID van-data,0.63))
+
+/~*
+aG@ @idedonaGa me@ @idi Godoigi
+(van-data,0.64)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NEG aG@)
+	       (VB @idedonaGa)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (D @idi) (N$ Godoigi)))))
+  (ID van-data,0.64))
+
+/~*
+jipacaGataGagitiwaji
+(van-data,0.65)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (VBAPL jipacaGataGagitiwaji))
+  (ID van-data,0.65))
+
+/~*
+aG@ @idejonaGa me@ @idi Godoigi
+(van-data,0.66)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NEG aG@)
+	       (VB @idejonaGa)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (D @idi) (N$ Godoigi)))))
+  (ID van-data,0.66))
+
+/~*
+ijo lemé Maria ipegitegi weiigi
+(van-data,0.67)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D ijo)
+		   (N$ lemé)
+		   (NP (NPR Maria)))
+	       (VBAPL ipegitegi)
+	       (NP-APL (N weiigi)))
+  (ID van-data,0.67))
+
+/~*
+biju dapico
+(van-data,0.68)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N biju))
+	       (VB dapico))
+  (ID van-data,0.68))
+
+/~*
+libiwe niale ixagodi
+(van-data,0.69)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ libiwe)
+		   (NP (N niale)))
+	       (VB ixagodi))
+  (ID van-data,0.69))
+
+/~*
+idiwa bejoli dapico
+(van-data,0.70)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D idiwa) (N bejoli))
+	       (VB dapico))
+  (ID van-data,0.70))
+
+/~*
+idiwa leonigipi Maria libinienigipi
+(van-data,0.71)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (Q idiwa)
+		       (N$ leonigipi)
+		       (NP (NPR Maria)))
+	       (NP-PRD (N$ libinienigipi)))
+  (ID van-data,0.71))
+
+/~*
+ijowa leonigipi iwaalo idi metaGa
+(van-data,0.72)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ijowa)
+		       (N$ leonigipi)
+		       (NP (N iwaalo)))
+	       (NP-PRD (D idi))
+	       (CAPL metaGa))
+  (ID van-data,0.72))
+
+/~*
+ligeladi ipegitege niweiigi nigotaGa
+(van-data,0.73)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ ligeladi))
+	       (VBAPL ipegitege)
+	       (NP-APL (N niweiigi))
+	       (NP (N$ nigotaGa)))
+  (ID van-data,0.73))
+
+/~*
+ligeladi ipegitegi niweiigi nigotaGa
+(van-data,0.74)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ ligeladi))
+	       (VBAPL ipegitegi)
+	       (NP-APL (N$ niweiigi)
+		       (NP (N nigotaGa))))
+  (ID van-data,0.74))
+
+/~*
+nigotaGa liGeladi ipegitegi weiigi
+(van-data,0.75)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N$ nigotaGa)
+		   (NP (N$ liGeladi)))
+	       (VBAPL ipegitegi)
+	       (NP-APL (N weiigi)))
+  (ID van-data,0.75))
+
+/~*
+niwatece liwaGatena lodejedi etidi weiigi
+(van-data,0.9)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (NP (N niwatece))
+		   (N$ liwaGatena)
+		   (NP (N$ lodejedi)))
+	       (VB etidi)
+	       (NP (N weiigi)))
+  (ID van-data,0.9))
+
+/~*
+Nigaanigawaanigi idei me@ @adi niwatece ane adi nomiigo
+(van-data,0.15)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (N Nigaanigawaanigi))
+	       (VB idei)
+	       (CP-me (C me@)
+		      (IP-SUB (NP (D @adi) (N$ niwatece))))
+	       (NP (CP-FRL (WNP-1 (WPRO ane))
+			   (IP-SUB (NP-TRACE *T*-1)
+				   (NP (D adi) (N nomiigo))))))
+  (ID van-data,0.15))
+
+/~*
+niGijo nigaanigawaanigi me@ @anitaGa lomigo niwatece
+(van-data,0.16)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP (D niGijo)
+		   (N nigaanigawaanigi)
+		   (CP-me (C me@)
+			  (IP-SUB (NP (DAPL @anitaGa)
+				      (N$ lomigo)
+				      (NP (N niwatece)))))))
+  (ID van-data,0.16))
+
+/~*
+ijoa nigetedi liwigo libinienaGa
+(van-data,0.42)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (D ijoa)
+		       (NP (N nigetedi))
+		       (N$ liwigo))
+	       (NP-PRD (N$ libinienaGa)))
+  (ID van-data,0.42))
+
+/~*
+okokodi ligetedi me@ @idi niwigo libinienaGa.
+(van-data,0.45)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N okokodi))
+	       (NP-SBJ-PRD (N$ ligetedi)
+			   (CP-me (C me@)
+				  (IP-SUB (NP (D @idi) (N niwigo)))))
+	       (NP-PRD (N$ libinienaGa))
+	       (PUNC .))
+  (ID van-data,0.45))
+
+/~*
+liwigo okokodi ligetedi libinienigi.
+(van-data,0.46)
+*~/
+/*
+0 :  1 IP-MAT
+*/
+
+( (IP-MAT-TEST (NP-SBJ (N$ liwigo)
+		       (NP (N okokodi))
+		       (N$ ligetedi))
+	       (NP-PRD (N$ libinienigi))
+	       (PUNC .))
+  (ID van-data,0.46))
+/*
+FOOTER
+  source file, hits/tokens/total
+  kadiweu-parser-full-test-C.psd	204/204/206
+*/
+/*
+SUMMARY:  
+source files, hits/tokens/total
+  kadiweu-parser-full-test-C.psd	204/204/206
+whole search, hits/tokens/total
+		204/204/206
+*/
