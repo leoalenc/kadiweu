@@ -16,25 +16,25 @@ The grammar was induced from the 189 `DONE` trees. The 17 `REVIEW` sentences wer
 - There were **no partial trace matches** in this REVIEW set.
 - All 17 input yields aligned with their corresponding full-tree records.
 
-| Sentence | Provisional issue inferred from the tree and prompt | CFG result |
+| Sentence | Provisional issue inferred from the tree and prompt | CFG result | Candidate | Note |
 |---|---|---:|
-| `hil-data,0.40` | Prompt seems compatible; complex relative clause and applicative structure need review | 0 parses |
-| `hil-data,0.45` | The tree assigns two pronouns and a demonstrative; check how these express “I am here” | 0 |
-| `hil-data,0.46` | Paired comitative example; `CP-me`/`DAPL` analysis needs review | 0 |
-| `hil-data,0.47` | Paired comitative example; `CP-me`/`DAPL` analysis needs review | 0 |
-| `ped-gramm,0.21` | Elicited NP fragment; the current subject/predicate grouping is not reproduced | 3; no match |
-| `ped-gramm,0.27` | Possible mismatch: the locative phrase is analyzed as a `CP-me` clause without an overt predicate | 0 |
-| `ped-gramm,0.28` | Applicative plus `daGa` comparison structure; attachment is unresolved | 0 |
-| `ped-gramm,0.29` | NP fragment with a relative-like `CP-me`; current tree is reproduced | 6; exact match at 5 |
-| `ped-gramm,0.31` | Conditional fragment; the grammar lacks the `CP-daGa` structure | 6; no match |
-| `ped-gramm,0.42` | Applicative “be near” construction; current tree is reproduced | 1; exact match at 1 |
+| `hil-data,0.40` | Prompt seems compatible; complex relative clause and applicative structure need review | 0 parses | No | Debatable use of commas |
+| `hil-data,0.45` | The tree assigns two pronouns and a demonstrative; check how these express “I am here” | 0 | No | Structure under investigation |
+| `hil-data,0.46` | Paired comitative example; `CP-me`/`DAPL` analysis needs review | 0 | Yes | There are analogous sentences with pre-verbal subject and `CP-me` verb complement |
+| `hil-data,0.47` | Paired comitative example; `CP-me`/`DAPL` analysis needs review | 0 | Yes | See note on `hil-data,0.46` |
+| `ped-gramm,0.21` | Elicited NP fragment; the current subject/predicate grouping is not reproduced | 3; no match | No | NP fragment |
+| `ped-gramm,0.27` | The analysis of *naGajo* as a possessive pronoun is under debate; it is not clear whether it should be warpped in a NP | 0 | Yes | There is a new tree in the sopurce treebank with `DONE` status |
+| `ped-gramm,0.28` | Applicative plus `daGa` comparison structure; attachment is unresolved | 0 | No | |
+| `ped-gramm,0.29` | NP fragment with a relative-like `CP-me`; current tree is reproduced | 6; exact match at 5 | No | NP fragment |
+| `ped-gramm,0.31` | Conditional fragment; the grammar lacks the `CP-daGa` structure | 6; no match | No | NP fragment |
+| `ped-gramm,0.42` | Applicative “be near” construction; current tree is reproduced. **Clear prompt–analysis mismatch:** "city" should be possessor | 1; exact match at 1 | Yes | Inversion of possessor-possessum order |
 | `ped-gramm,0.45` | **Clear prompt–analysis mismatch:** NP reading versus predication | 0 |
-| `van-data,0.9` | Heavy/cheap modifiers are represented as stacked nominal material; check intended structure | 1; no match |
-| `van-data,0.15` | Locative `CP-me` plus relative clause; attachment needs review | 4; no match |
-| `van-data,0.16` | `DAPL` locative phrase under `CP-me`; relation needs review | 2; no match |
-| `van-data,0.42` | Possible mismatch: the tree’s predicate appears to be “photo/beauty,” while the prompt describes the eggs as beautiful | 6; no match |
-| `van-data,0.45` | The prompt gives two readings; constituent attachment remains unresolved | 4; no match |
-| `van-data,0.46` | Possible mismatch involving subject/predicate and possessive attachment | 4; no match |
+| `van-data,0.9` | Heavy/cheap modifiers are represented as stacked nominal material. | 1; no match | Yes | Intended structure can be produced by a new CFG rule |
+| `van-data,0.15` | **Prompt–analysis mismatch:** Relative clause is not free. It should be attached inside the locative `CP-me` | 4; no match | Yes | Intended structure with a `CP-REL`can be produced by a new CFG rule |
+| `van-data,0.16` | **Clear prompt–analysis mismatch:** "canoe" is possessum in the Portuguese translation, not possessor | 2; no match | Yes | Inversion of possessor-possessum order | 
+| `van-data,0.42` | **Clear prompt–analysis mismatch:** the tree’s predicate is "her/his/its photo of the beauty", while the prompt describes the eggs of her photo as beautiful | 6; no match | Yes | Check whether the CFG already produces the intended structure; otherwise, create a new rule for that. |
+| `van-data,0.45` | **Clear prompt–analysis mismatch:** `CP-me` is actually a relative clause modifying "eggs". | 4; no match | Yes | Check whether the CFG already produces the intended structure; otherwise, create a new rule for that.|
+| `van-data,0.46` | **Clear prompt–analysis mismatch:** *liwigo okokodi ligetedi* should constitute the NP-SBJ, *liwigo* 'photo' being the head. Possible recursive structure, given the paraphrase "his/her/its photo of the eggs of the chicken"| 4; no match | Yes | Check whether the CFG already produces the intended structure; otherwise, create a new rule for that.|
 
 ## Implications for adding CFG rules
 
