@@ -103,7 +103,7 @@ revision_note = Analyzes libinienaGa as the matrix predicate (NP-PRD); the two P
       (N$ ligetedi)
       (CP-me
         (C me@)
-        (IP-SUB (NP (D @idi) (NP (N niwigo)))
+        (IP-SUB (NP (D @idi) (N niwigo))
         )
       )
     )

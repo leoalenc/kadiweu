@@ -7,6 +7,8 @@ or a whitespace-separated sequence of POS tags. Only POS tags are sent to the
 CFG; tagged words are returned under POS preterminals. Trees are printed in
 NLTK bracketed (LISP) format by default, or as ASCII or Unicode tree drawings
 with ``--format``.
+In batch mode, ``--output`` writes all generated parses as CorpusSearch-style
+PSD records with sentence metadata and a parse number.
 
 Requires NLTK (``python -m pip install nltk``).
 """
@@ -129,6 +131,39 @@ def parse_cfg_signature(tree):
     return visit(tree)
 
 
+def format_psd_tree(tree, indent=2):
+    """Format an NLTK tree as an indented parenthesized PSD tree."""
+    prefix = " " * indent
+    if len(tree) == 1 and isinstance(tree[0], str):
+        return f"{prefix}({tree.label()} {tree[0]})"
+
+    lines = [f"{prefix}({tree.label()}"]
+    for child in tree:
+        if isinstance(child, Tree):
+            lines.append(format_psd_tree(child, indent + 2))
+        else:
+            lines.append(f"{' ' * (indent + 2)}{child}")
+    lines.append(f"{prefix})")
+    return "\n".join(lines)
+
+
+def format_psd_record(metadata, corpus_id, parse_number, tree):
+    """Return one numbered parse in the project's CorpusSearch PSD style."""
+    metadata_lines = []
+    for key in ("sentence", "uid", "status", "text", "text_por"):
+        value = metadata.get(key)
+        if value:
+            value = " ".join(str(value).split()).replace("*/", "* /")
+            metadata_lines.append(f"{key} = {value}")
+    metadata_lines.append(f"parse_number = {parse_number}")
+
+    lines = ["/*", *metadata_lines, "*/", "(", format_psd_tree(tree)]
+    if corpus_id:
+        lines.append(f"  (ID {corpus_id})")
+    lines.append(")")
+    return "\n".join(lines)
+
+
 def to_constituency_tree(tree):
     """Adapt an NLTK Tree for the project's shared tree text renderer."""
     tokens = []
@@ -220,6 +255,13 @@ def build_arg_parser():
         help="write per-sentence batch results to this TSV file",
     )
     parser.add_argument(
+        "-o",
+        "--output",
+        type=Path,
+        metavar="PSD",
+        help="write generated batch parses to this PSD file",
+    )
+    parser.add_argument(
         "--gold-trees",
         type=Path,
         metavar="FILE",
@@ -272,8 +314,11 @@ def main(argv=None):
     if bool(args.sentence) == bool(args.flat_trees):
         print("error: specify exactly one of --sentence or --flat-trees", file=sys.stderr)
         return 2
-    if (args.report or args.gold_trees) and not args.flat_trees:
-        print("error: --report and --gold-trees require --flat-trees", file=sys.stderr)
+    if (args.report or args.gold_trees or args.output) and not args.flat_trees:
+        print(
+            "error: --report, --gold-trees, and --output require --flat-trees",
+            file=sys.stderr,
+        )
         return 2
     if args.flat_trees and not args.flat_trees.is_file():
         print(f"error: flat-tree file not found: {args.flat_trees}", file=sys.stderr)
@@ -354,6 +399,7 @@ def main(argv=None):
                         gold_by_id[metadata["corpus_id"]] = (metadata, tree)
 
             rows = []
+            psd_records = []
             parsed_sentences = 0
             total_parses = 0
             aligned_gold = 0
@@ -391,6 +437,17 @@ def main(argv=None):
 
                     for parse_number, parse_tree in enumerate(parses, start=1):
                         parse_count = parse_number
+                        if args.output:
+                            output_tree = parse_tree.copy(deep=True)
+                            insert_preterminals(output_tree, tags, words)
+                            psd_records.append(
+                                format_psd_record(
+                                    metadata,
+                                    metadata.get("corpus_id", ""),
+                                    parse_number,
+                                    output_tree,
+                                )
+                            )
                         if gold_signature is not None and parse_cfg_signature(parse_tree) == gold_signature:
                             if gold_has_traces:
                                 partial_numbers.append(parse_number)
@@ -443,6 +500,11 @@ def main(argv=None):
                     )
                     writer.writeheader()
                     writer.writerows(rows)
+            if args.output:
+                args.output.write_text(
+                    "\n\n".join(psd_records) + ("\n" if psd_records else ""),
+                    encoding="utf-8",
+                )
         except (OSError, UnicodeError, ValueError) as exc:
             print(f"error: {exc}", file=sys.stderr)
             return 2
@@ -459,6 +521,8 @@ def main(argv=None):
             )
         if args.report:
             print(f"Per-sentence report: {args.report}")
+        if args.output:
+            print(f"Parse trees: {args.output} ({len(psd_records)} records)")
         return 0
 
     if args.number:

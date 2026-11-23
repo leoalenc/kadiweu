@@ -1,0 +1,2301 @@
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 1
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (N nigaanigawaanigi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (NP
+              (NP
+                (DAPL @anitaGa)
+              )
+              (N$ lomigo)
+            )
+            (N$ niwatece)
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 2
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (N nigaanigawaanigi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (DAPL @anitaGa)
+            (NP
+              (N$ lomigo)
+            )
+            (N$ niwatece)
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 3
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (N nigaanigawaanigi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (DAPL @anitaGa)
+            (NP
+              (NP-GEN
+              )
+              (N$ lomigo)
+            )
+            (N$ niwatece)
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 4
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (N nigaanigawaanigi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (NP
+              (NP
+                (DAPL @anitaGa)
+              )
+              (N$ lomigo)
+            )
+            (N$ niwatece)
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 5
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (N nigaanigawaanigi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (DAPL @anitaGa)
+            (NP
+              (N$ lomigo)
+            )
+            (N$ niwatece)
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 6
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (N nigaanigawaanigi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (DAPL @anitaGa)
+            (NP
+              (NP-GEN
+              )
+              (N$ lomigo)
+            )
+            (N$ niwatece)
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 7
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (N nigaanigawaanigi)
+        (CP-me
+          (C me@)
+          (IP-SUB
+            (NP
+              (NP
+                (NP
+                  (DAPL @anitaGa)
+                )
+                (N$ lomigo)
+              )
+              (N$ niwatece)
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 8
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (N nigaanigawaanigi)
+        (CP-me
+          (C me@)
+          (IP-SUB
+            (NP
+              (DAPL @anitaGa)
+              (NP
+                (N$ lomigo)
+              )
+              (N$ niwatece)
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 9
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (N nigaanigawaanigi)
+        (CP-me
+          (C me@)
+          (IP-SUB
+            (NP
+              (DAPL @anitaGa)
+              (NP
+                (NP-GEN
+                )
+                (N$ lomigo)
+              )
+              (N$ niwatece)
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 10
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (N nigaanigawaanigi)
+        (CP-me
+          (C me@)
+          (IP-SUB
+            (NP-TRACE
+            )
+            (NP
+              (NP
+                (NP
+                  (DAPL @anitaGa)
+                )
+                (N$ lomigo)
+              )
+              (N$ niwatece)
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 11
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (N nigaanigawaanigi)
+        (CP-me
+          (C me@)
+          (IP-SUB
+            (NP-TRACE
+            )
+            (NP
+              (DAPL @anitaGa)
+              (NP
+                (N$ lomigo)
+              )
+              (N$ niwatece)
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 12
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (N nigaanigawaanigi)
+        (CP-me
+          (C me@)
+          (IP-SUB
+            (NP-TRACE
+            )
+            (NP
+              (DAPL @anitaGa)
+              (NP
+                (NP-GEN
+                )
+                (N$ lomigo)
+              )
+              (N$ niwatece)
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 13
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (NP
+          (N nigaanigawaanigi)
+          (CP-me
+            (C me@)
+            (IP-SUB
+              (NP
+                (NP
+                  (DAPL @anitaGa)
+                )
+                (N$ lomigo)
+              )
+            )
+          )
+        )
+        (N$ niwatece)
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 14
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (NP
+          (N nigaanigawaanigi)
+          (CP-me
+            (C me@)
+            (IP-SUB
+              (NP-TRACE
+              )
+              (NP
+                (NP
+                  (DAPL @anitaGa)
+                )
+                (N$ lomigo)
+              )
+            )
+          )
+        )
+        (N$ niwatece)
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 15
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (NP
+          (NP
+            (N nigaanigawaanigi)
+            (CP-me
+              (C me@)
+              (IP-SUB
+                (NP
+                  (DAPL @anitaGa)
+                )
+              )
+            )
+          )
+          (N$ lomigo)
+        )
+        (N$ niwatece)
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 16
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D niGijo)
+        (NP
+          (NP
+            (N nigaanigawaanigi)
+            (CP-me
+              (C me@)
+              (IP-SUB
+                (NP-TRACE
+                )
+                (NP
+                  (DAPL @anitaGa)
+                )
+              )
+            )
+          )
+          (N$ lomigo)
+        )
+        (N$ niwatece)
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 17
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP
+          (D niGijo)
+          (N nigaanigawaanigi)
+          (CP-me
+            (C me@)
+            (IP-SUB
+              (NP
+                (NP
+                  (DAPL @anitaGa)
+                )
+                (N$ lomigo)
+              )
+            )
+          )
+        )
+        (N$ niwatece)
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 18
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP
+          (D niGijo)
+          (N nigaanigawaanigi)
+          (CP-me
+            (C me@)
+            (IP-SUB
+              (NP-TRACE
+              )
+              (NP
+                (NP
+                  (DAPL @anitaGa)
+                )
+                (N$ lomigo)
+              )
+            )
+          )
+        )
+        (N$ niwatece)
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 19
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP
+          (D niGijo)
+          (NP
+            (N nigaanigawaanigi)
+            (CP-me
+              (C me@)
+              (IP-SUB
+                (NP
+                  (DAPL @anitaGa)
+                )
+              )
+            )
+          )
+          (N$ lomigo)
+        )
+        (N$ niwatece)
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 20
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP
+          (D niGijo)
+          (NP
+            (N nigaanigawaanigi)
+            (CP-me
+              (C me@)
+              (IP-SUB
+                (NP-TRACE
+                )
+                (NP
+                  (DAPL @anitaGa)
+                )
+              )
+            )
+          )
+          (N$ lomigo)
+        )
+        (N$ niwatece)
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 21
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP
+          (NP
+            (D niGijo)
+            (N nigaanigawaanigi)
+            (CP-me
+              (C me@)
+              (IP-SUB
+                (NP
+                  (DAPL @anitaGa)
+                )
+              )
+            )
+          )
+          (N$ lomigo)
+        )
+        (N$ niwatece)
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 22
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP
+          (NP
+            (D niGijo)
+            (N nigaanigawaanigi)
+            (CP-me
+              (C me@)
+              (IP-SUB
+                (NP-TRACE
+                )
+                (NP
+                  (DAPL @anitaGa)
+                )
+              )
+            )
+          )
+          (N$ lomigo)
+        )
+        (N$ niwatece)
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 23
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (D niGijo)
+        (N nigaanigawaanigi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (NP
+              (NP
+                (DAPL @anitaGa)
+              )
+              (N$ lomigo)
+            )
+            (N$ niwatece)
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 24
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (D niGijo)
+        (N nigaanigawaanigi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (DAPL @anitaGa)
+            (NP
+              (N$ lomigo)
+            )
+            (N$ niwatece)
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 25
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (D niGijo)
+        (N nigaanigawaanigi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (DAPL @anitaGa)
+            (NP
+              (NP-GEN
+              )
+              (N$ lomigo)
+            )
+            (N$ niwatece)
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 26
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (D niGijo)
+        (N nigaanigawaanigi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (NP
+              (NP
+                (DAPL @anitaGa)
+              )
+              (N$ lomigo)
+            )
+            (N$ niwatece)
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 27
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (D niGijo)
+        (N nigaanigawaanigi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (DAPL @anitaGa)
+            (NP
+              (N$ lomigo)
+            )
+            (N$ niwatece)
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 28
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (D niGijo)
+        (N nigaanigawaanigi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (DAPL @anitaGa)
+            (NP
+              (NP-GEN
+              )
+              (N$ lomigo)
+            )
+            (N$ niwatece)
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 29
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (D niGijo)
+        (NP
+          (N nigaanigawaanigi)
+          (CP-me
+            (C me@)
+            (IP-SUB
+              (NP
+                (DAPL @anitaGa)
+              )
+            )
+          )
+        )
+        (N$ lomigo)
+      )
+      (NP-PRD
+        (N$ niwatece)
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 30
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (D niGijo)
+        (NP
+          (N nigaanigawaanigi)
+          (CP-me
+            (C me@)
+            (IP-SUB
+              (NP-TRACE
+              )
+              (NP
+                (DAPL @anitaGa)
+              )
+            )
+          )
+        )
+        (N$ lomigo)
+      )
+      (NP-PRD
+        (N$ niwatece)
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 31
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (NP
+          (D niGijo)
+          (N nigaanigawaanigi)
+          (CP-me
+            (C me@)
+            (IP-SUB
+              (NP
+                (DAPL @anitaGa)
+              )
+            )
+          )
+        )
+        (N$ lomigo)
+      )
+      (NP-PRD
+        (N$ niwatece)
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 16
+uid = 235440ba-548e-4df6-8d9e-214cc8714f8f
+status = REVIEW
+text = niGijo nigaanigawaanigi manitaGa lomigo niwatece
+text_por = Aquele menino está na canoa do anzol.
+parse_number = 32
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (NP
+          (D niGijo)
+          (N nigaanigawaanigi)
+          (CP-me
+            (C me@)
+            (IP-SUB
+              (NP-TRACE
+              )
+              (NP
+                (DAPL @anitaGa)
+              )
+            )
+          )
+        )
+        (N$ lomigo)
+      )
+      (NP-PRD
+        (N$ niwatece)
+      )
+    )
+  )
+  (ID van-data,0.16)
+)
+
+/*
+sentence = 46
+uid = 42671da9-e433-4319-86a0-2a2cb8777a40
+status = REVIEW
+text = Ite ee madataGa
+text_por = Eu estou com ela .
+parse_number = 1
+*/
+(
+  (ROOT
+    (IP-MAT
+      (VB Ite)
+      (NP
+        (PRO ee)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (DAPL @adataGa)
+          )
+        )
+      )
+    )
+  )
+  (ID hil-data,0.46)
+)
+
+/*
+sentence = 46
+uid = 42671da9-e433-4319-86a0-2a2cb8777a40
+status = REVIEW
+text = Ite ee madataGa
+text_por = Eu estou com ela .
+parse_number = 2
+*/
+(
+  (ROOT
+    (IP-MAT
+      (VB Ite)
+      (NP
+        (PRO ee)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (DAPL @adataGa)
+          )
+        )
+      )
+    )
+  )
+  (ID hil-data,0.46)
+)
+
+/*
+sentence = 42
+uid = 44646324-eb90-42f0-b944-21f0452109e2
+status = REVIEW
+text = ijoa nigetedi liwigo libinienaGa
+text_por = estes ovos da fotografia dela estão bonitos
+parse_number = 1
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP
+          (NP
+            (D ijoa)
+            (N nigetedi)
+          )
+          (N$ liwigo)
+        )
+        (N$ libinienaGa)
+      )
+    )
+  )
+  (ID van-data,0.42)
+)
+
+/*
+sentence = 42
+uid = 44646324-eb90-42f0-b944-21f0452109e2
+status = REVIEW
+text = ijoa nigetedi liwigo libinienaGa
+text_por = estes ovos da fotografia dela estão bonitos
+parse_number = 2
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP
+          (D ijoa)
+          (NP
+            (N nigetedi)
+          )
+          (N$ liwigo)
+        )
+        (N$ libinienaGa)
+      )
+    )
+  )
+  (ID van-data,0.42)
+)
+
+/*
+sentence = 42
+uid = 44646324-eb90-42f0-b944-21f0452109e2
+status = REVIEW
+text = ijoa nigetedi liwigo libinienaGa
+text_por = estes ovos da fotografia dela estão bonitos
+parse_number = 3
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (D ijoa)
+        (NP
+          (NP
+            (N nigetedi)
+          )
+          (N$ liwigo)
+        )
+        (N$ libinienaGa)
+      )
+    )
+  )
+  (ID van-data,0.42)
+)
+
+/*
+sentence = 42
+uid = 44646324-eb90-42f0-b944-21f0452109e2
+status = REVIEW
+text = ijoa nigetedi liwigo libinienaGa
+text_por = estes ovos da fotografia dela estão bonitos
+parse_number = 4
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (NP
+          (D ijoa)
+          (N nigetedi)
+        )
+        (N$ liwigo)
+      )
+      (NP-PRD
+        (N$ libinienaGa)
+      )
+    )
+  )
+  (ID van-data,0.42)
+)
+
+/*
+sentence = 42
+uid = 44646324-eb90-42f0-b944-21f0452109e2
+status = REVIEW
+text = ijoa nigetedi liwigo libinienaGa
+text_por = estes ovos da fotografia dela estão bonitos
+parse_number = 5
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (D ijoa)
+        (NP
+          (N nigetedi)
+        )
+        (N$ liwigo)
+      )
+      (NP-PRD
+        (N$ libinienaGa)
+      )
+    )
+  )
+  (ID van-data,0.42)
+)
+
+/*
+sentence = 42
+uid = 44646324-eb90-42f0-b944-21f0452109e2
+status = REVIEW
+text = ijoa nigetedi liwigo libinienaGa
+text_por = estes ovos da fotografia dela estão bonitos
+parse_number = 6
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (D ijoa)
+        (N nigetedi)
+        (NP
+          (N$ liwigo)
+        )
+      )
+      (NP-PRD
+        (N$ libinienaGa)
+      )
+    )
+  )
+  (ID van-data,0.42)
+)
+
+/*
+sentence = 42
+uid = 44646324-eb90-42f0-b944-21f0452109e2
+status = REVIEW
+text = ijoa nigetedi liwigo libinienaGa
+text_por = estes ovos da fotografia dela estão bonitos
+parse_number = 7
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (D ijoa)
+        (N nigetedi)
+        (NP
+          (NP-GEN
+          )
+          (N$ liwigo)
+        )
+      )
+      (NP-PRD
+        (N$ libinienaGa)
+      )
+    )
+  )
+  (ID van-data,0.42)
+)
+
+/*
+sentence = 15
+uid = 4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7
+status = REVIEW
+text = Nigaanigawaanigi idei madi niwatece ane adi nomiigo
+text_por = O menino está na canoa que (tem) o anzol
+parse_number = 1
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (N Nigaanigawaanigi)
+      )
+      (VB idei)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (NP
+              (D @adi)
+            )
+            (N$ niwatece)
+            (CP-REL
+              (WNP
+                (WPRO ane)
+              )
+              (IP-SUB
+                (NP
+                  (D adi)
+                  (N nomiigo)
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.15)
+)
+
+/*
+sentence = 15
+uid = 4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7
+status = REVIEW
+text = Nigaanigawaanigi idei madi niwatece ane adi nomiigo
+text_por = O menino está na canoa que (tem) o anzol
+parse_number = 2
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (N Nigaanigawaanigi)
+      )
+      (VB idei)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (NP
+              (D @adi)
+            )
+            (N$ niwatece)
+            (CP-REL
+              (WNP
+                (WPRO ane)
+              )
+              (IP-SUB
+                (NP-TRACE
+                )
+                (NP
+                  (D adi)
+                  (N nomiigo)
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.15)
+)
+
+/*
+sentence = 15
+uid = 4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7
+status = REVIEW
+text = Nigaanigawaanigi idei madi niwatece ane adi nomiigo
+text_por = O menino está na canoa que (tem) o anzol
+parse_number = 3
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (N Nigaanigawaanigi)
+      )
+      (VB idei)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (D @adi)
+            (N$ niwatece)
+            (CP-REL
+              (WNP
+                (WPRO ane)
+              )
+              (IP-SUB
+                (NP
+                  (D adi)
+                  (N nomiigo)
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.15)
+)
+
+/*
+sentence = 15
+uid = 4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7
+status = REVIEW
+text = Nigaanigawaanigi idei madi niwatece ane adi nomiigo
+text_por = O menino está na canoa que (tem) o anzol
+parse_number = 4
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (N Nigaanigawaanigi)
+      )
+      (VB idei)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (D @adi)
+            (N$ niwatece)
+            (CP-REL
+              (WNP
+                (WPRO ane)
+              )
+              (IP-SUB
+                (NP-TRACE
+                )
+                (NP
+                  (D adi)
+                  (N nomiigo)
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.15)
+)
+
+/*
+sentence = 15
+uid = 4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7
+status = REVIEW
+text = Nigaanigawaanigi idei madi niwatece ane adi nomiigo
+text_por = O menino está na canoa que (tem) o anzol
+parse_number = 5
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (N Nigaanigawaanigi)
+      )
+      (VB idei)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (D @adi)
+            (N$ niwatece)
+            (CP-REL
+              (WNP
+                (WPRO ane)
+              )
+              (IP-SUB
+                (NP
+                  (D adi)
+                  (N nomiigo)
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.15)
+)
+
+/*
+sentence = 15
+uid = 4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7
+status = REVIEW
+text = Nigaanigawaanigi idei madi niwatece ane adi nomiigo
+text_por = O menino está na canoa que (tem) o anzol
+parse_number = 6
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (N Nigaanigawaanigi)
+      )
+      (VB idei)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (D @adi)
+            (N$ niwatece)
+            (CP-REL
+              (WNP
+                (WPRO ane)
+              )
+              (IP-SUB
+                (NP-TRACE
+                )
+                (NP
+                  (D adi)
+                  (N nomiigo)
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.15)
+)
+
+/*
+sentence = 15
+uid = 4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7
+status = REVIEW
+text = Nigaanigawaanigi idei madi niwatece ane adi nomiigo
+text_por = O menino está na canoa que (tem) o anzol
+parse_number = 7
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (N Nigaanigawaanigi)
+      )
+      (VB idei)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (NP
+              (D @adi)
+            )
+            (N$ niwatece)
+            (CP-REL
+              (WNP
+                (WPRO ane)
+              )
+              (IP-SUB
+                (NP
+                  (D adi)
+                  (N nomiigo)
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.15)
+)
+
+/*
+sentence = 15
+uid = 4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7
+status = REVIEW
+text = Nigaanigawaanigi idei madi niwatece ane adi nomiigo
+text_por = O menino está na canoa que (tem) o anzol
+parse_number = 8
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (N Nigaanigawaanigi)
+      )
+      (VB idei)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (NP
+              (D @adi)
+            )
+            (N$ niwatece)
+            (CP-REL
+              (WNP
+                (WPRO ane)
+              )
+              (IP-SUB
+                (NP-TRACE
+                )
+                (NP
+                  (D adi)
+                  (N nomiigo)
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID van-data,0.15)
+)
+
+/*
+sentence = 45
+uid = 5739aca1-95fc-4584-9550-d7bd73c3c361
+status = REVIEW
+text = okokodi ligetedi midi niwigo libinienaGa .
+text_por = Os ovos da fotografia são bonitos. (Os ovos de galinha que estão na fotografia são bonitos.)
+parse_number = 1
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP
+          (N okokodi)
+        )
+        (N$ ligetedi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (NP
+              (D @idi)
+              (N niwigo)
+            )
+            (N$ libinienaGa)
+          )
+        )
+      )
+      (PUNC .)
+    )
+  )
+  (ID van-data,0.45)
+)
+
+/*
+sentence = 45
+uid = 5739aca1-95fc-4584-9550-d7bd73c3c361
+status = REVIEW
+text = okokodi ligetedi midi niwigo libinienaGa .
+text_por = Os ovos da fotografia são bonitos. (Os ovos de galinha que estão na fotografia são bonitos.)
+parse_number = 2
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP
+          (N okokodi)
+        )
+        (N$ ligetedi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (D @idi)
+            (NP
+              (N niwigo)
+            )
+            (N$ libinienaGa)
+          )
+        )
+      )
+      (PUNC .)
+    )
+  )
+  (ID van-data,0.45)
+)
+
+/*
+sentence = 45
+uid = 5739aca1-95fc-4584-9550-d7bd73c3c361
+status = REVIEW
+text = okokodi ligetedi midi niwigo libinienaGa .
+text_por = Os ovos da fotografia são bonitos. (Os ovos de galinha que estão na fotografia são bonitos.)
+parse_number = 3
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP
+          (N okokodi)
+        )
+        (N$ ligetedi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (NP
+              (D @idi)
+              (N niwigo)
+            )
+            (N$ libinienaGa)
+          )
+        )
+      )
+      (PUNC .)
+    )
+  )
+  (ID van-data,0.45)
+)
+
+/*
+sentence = 45
+uid = 5739aca1-95fc-4584-9550-d7bd73c3c361
+status = REVIEW
+text = okokodi ligetedi midi niwigo libinienaGa .
+text_por = Os ovos da fotografia são bonitos. (Os ovos de galinha que estão na fotografia são bonitos.)
+parse_number = 4
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP
+          (N okokodi)
+        )
+        (N$ ligetedi)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (D @idi)
+            (NP
+              (N niwigo)
+            )
+            (N$ libinienaGa)
+          )
+        )
+      )
+      (PUNC .)
+    )
+  )
+  (ID van-data,0.45)
+)
+
+/*
+sentence = 45
+uid = 5739aca1-95fc-4584-9550-d7bd73c3c361
+status = REVIEW
+text = okokodi ligetedi midi niwigo libinienaGa .
+text_por = Os ovos da fotografia são bonitos. (Os ovos de galinha que estão na fotografia são bonitos.)
+parse_number = 5
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (NP
+          (N okokodi)
+        )
+        (N$ ligetedi)
+        (CP-me
+          (C me@)
+          (IP-SUB
+            (NP
+              (D @idi)
+              (N niwigo)
+            )
+          )
+        )
+      )
+      (NP-PRD
+        (N$ libinienaGa)
+      )
+      (PUNC .)
+    )
+  )
+  (ID van-data,0.45)
+)
+
+/*
+sentence = 45
+uid = 5739aca1-95fc-4584-9550-d7bd73c3c361
+status = REVIEW
+text = okokodi ligetedi midi niwigo libinienaGa .
+text_por = Os ovos da fotografia são bonitos. (Os ovos de galinha que estão na fotografia são bonitos.)
+parse_number = 6
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (NP
+          (N okokodi)
+        )
+        (N$ ligetedi)
+        (CP-me
+          (C me@)
+          (IP-SUB
+            (NP-TRACE
+            )
+            (NP
+              (D @idi)
+              (N niwigo)
+            )
+          )
+        )
+      )
+      (NP-PRD
+        (N$ libinienaGa)
+      )
+      (PUNC .)
+    )
+  )
+  (ID van-data,0.45)
+)
+
+/*
+sentence = 27
+uid = 7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+status = REVIEW
+text = iGeladi idei mijo naigi naGajo
+text_por = A minha casa fica naquela rua suja dela
+parse_number = 1
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (N$ iGeladi)
+      )
+      (VB idei)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (D @ijo)
+            (N$ naigi)
+            (NP
+              (D naGajo)
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.27)
+)
+
+/*
+sentence = 27
+uid = 7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+status = REVIEW
+text = iGeladi idei mijo naigi naGajo
+text_por = A minha casa fica naquela rua suja dela
+parse_number = 2
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (N$ iGeladi)
+      )
+      (VB idei)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (D @ijo)
+            (N$ naigi)
+            (NP
+              (D naGajo)
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.27)
+)
+
+/*
+sentence = 27
+uid = 7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+status = REVIEW
+text = iGeladi idei mijo naigi naGajo
+text_por = A minha casa fica naquela rua suja dela
+parse_number = 3
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP-GEN
+        )
+        (N$ iGeladi)
+      )
+      (VB idei)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (D @ijo)
+            (N$ naigi)
+            (NP
+              (D naGajo)
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.27)
+)
+
+/*
+sentence = 27
+uid = 7b810df7-6ed0-4027-b2fe-72c64e9ca1dc
+status = REVIEW
+text = iGeladi idei mijo naigi naGajo
+text_por = A minha casa fica naquela rua suja dela
+parse_number = 4
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP-GEN
+        )
+        (N$ iGeladi)
+      )
+      (VB idei)
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (D @ijo)
+            (N$ naigi)
+            (NP
+              (D naGajo)
+            )
+          )
+        )
+      )
+    )
+  )
+  (ID ped-gramm,0.27)
+)
+
+/*
+sentence = 46
+uid = 83a62eb4-5a9e-43b0-b6b4-bded8dbd8ffe
+status = REVIEW
+text = liwigo okokodi ligetedi libinienigi .
+text_por = A fotografia dos ovos (da galinha) é bonita.
+parse_number = 1
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP
+          (NP
+            (N$ liwigo)
+            (NP
+              (N okokodi)
+            )
+          )
+          (N$ ligetedi)
+        )
+        (N$ libinienigi)
+      )
+      (PUNC .)
+    )
+  )
+  (ID van-data,0.46)
+)
+
+/*
+sentence = 46
+uid = 83a62eb4-5a9e-43b0-b6b4-bded8dbd8ffe
+status = REVIEW
+text = liwigo okokodi ligetedi libinienigi .
+text_por = A fotografia dos ovos (da galinha) é bonita.
+parse_number = 2
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP
+          (N$ liwigo)
+          (NP
+            (NP
+              (N okokodi)
+            )
+            (N$ ligetedi)
+          )
+        )
+        (N$ libinienigi)
+      )
+      (PUNC .)
+    )
+  )
+  (ID van-data,0.46)
+)
+
+/*
+sentence = 46
+uid = 83a62eb4-5a9e-43b0-b6b4-bded8dbd8ffe
+status = REVIEW
+text = liwigo okokodi ligetedi libinienigi .
+text_por = A fotografia dos ovos (da galinha) é bonita.
+parse_number = 3
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (N$ liwigo)
+        (NP
+          (NP
+            (NP
+              (N okokodi)
+            )
+            (N$ ligetedi)
+          )
+          (N$ libinienigi)
+        )
+      )
+      (PUNC .)
+    )
+  )
+  (ID van-data,0.46)
+)
+
+/*
+sentence = 46
+uid = 83a62eb4-5a9e-43b0-b6b4-bded8dbd8ffe
+status = REVIEW
+text = liwigo okokodi ligetedi libinienigi .
+text_por = A fotografia dos ovos (da galinha) é bonita.
+parse_number = 4
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (NP
+          (N$ liwigo)
+          (NP
+            (N okokodi)
+          )
+        )
+        (N$ ligetedi)
+      )
+      (NP-PRD
+        (N$ libinienigi)
+      )
+      (PUNC .)
+    )
+  )
+  (ID van-data,0.46)
+)
+
+/*
+sentence = 46
+uid = 83a62eb4-5a9e-43b0-b6b4-bded8dbd8ffe
+status = REVIEW
+text = liwigo okokodi ligetedi libinienigi .
+text_por = A fotografia dos ovos (da galinha) é bonita.
+parse_number = 5
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (N$ liwigo)
+        (NP
+          (NP
+            (N okokodi)
+          )
+          (N$ ligetedi)
+        )
+      )
+      (NP-PRD
+        (N$ libinienigi)
+      )
+      (PUNC .)
+    )
+  )
+  (ID van-data,0.46)
+)
+
+/*
+sentence = 42
+uid = aad13f14-bd9a-462a-9a43-68ba69a81519
+status = REVIEW
+text = nigotaGa liGeladi ipegitegi weiigi .
+text_por = A cidade da casa dela é perto do rio.
+parse_number = 1
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP
+        (NP
+          (N nigotaGa)
+        )
+        (N$ liGeladi)
+      )
+      (VBAPL ipegitegi)
+      (NP-APL
+        (N weiigi)
+      )
+      (PUNC .)
+    )
+  )
+  (ID ped-gramm,0.42)
+)
+
+/*
+sentence = 45
+uid = c25b098d-6b0a-4416-a31d-6d7219685a63
+status = REVIEW
+text = João liGeladi napioi .
+text_por = A casa do João é suja.
+parse_number = 1
+*/
+(
+  (ROOT
+    (IP-MAT
+      (NP-SBJ
+        (NP
+          (NPR João)
+        )
+        (N$ liGeladi)
+      )
+      (NP-PRD
+        (N napioi)
+      )
+      (PUNC .)
+    )
+  )
+  (ID ped-gramm,0.45)
+)
+
+/*
+sentence = 47
+uid = e58e38a7-f117-48f1-8a17-9d896867fe60
+status = REVIEW
+text = Ite ee midataGa
+text_por = Eu estou com ele .
+parse_number = 1
+*/
+(
+  (ROOT
+    (IP-MAT
+      (VB Ite)
+      (NP
+        (PRO ee)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP
+            (DAPL @idataGa)
+          )
+        )
+      )
+    )
+  )
+  (ID hil-data,0.47)
+)
+
+/*
+sentence = 47
+uid = e58e38a7-f117-48f1-8a17-9d896867fe60
+status = REVIEW
+text = Ite ee midataGa
+text_por = Eu estou com ele .
+parse_number = 2
+*/
+(
+  (ROOT
+    (IP-MAT
+      (VB Ite)
+      (NP
+        (PRO ee)
+      )
+      (CP-me
+        (C me@)
+        (IP-SUB
+          (NP-TRACE
+          )
+          (NP
+            (DAPL @idataGa)
+          )
+        )
+      )
+    )
+  )
+  (ID hil-data,0.47)
+)

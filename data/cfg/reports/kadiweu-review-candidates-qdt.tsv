@@ -3,7 +3,7 @@ sentence	corpussearch_id	uid	tokens	parse_count	parse_found	exact_match_parse_nu
 46	hil-data,0.46	42671da9-e433-4319-86a0-2a2cb8777a40	4	2	yes	1		exact	
 42	van-data,0.42	44646324-eb90-42f0-b944-21f0452109e2	4	7	yes	4		exact	
 15	van-data,0.15	4c41fdf6-0c48-4eb6-91f7-121c21f3e2a7	8	8	yes		4	partial_trace	
-45	van-data,0.45	5739aca1-95fc-4584-9550-d7bd73c3c361	7	4	yes			no_match	
+45	van-data,0.45	5739aca1-95fc-4584-9550-d7bd73c3c361	7	6	yes	5		exact	
 27	ped-gramm,0.27	7b810df7-6ed0-4027-b2fe-72c64e9ca1dc	6	4	yes	1		exact	
 46	van-data,0.46	83a62eb4-5a9e-43b0-b6b4-bded8dbd8ffe	5	5	yes	5		exact	
 42	ped-gramm,0.42	aad13f14-bd9a-462a-9a43-68ba69a81519	5	1	yes	1		exact	
