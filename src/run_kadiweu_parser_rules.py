@@ -728,16 +728,22 @@ def _canonical_index(
     return mapping[original]
 
 
-def trace_normalized_tree(tree: str) -> str:
+def trace_normalized_tree(
+    tree: str,
+    *,
+    collapse_empty_category_wrapper: bool = True,
+) -> str:
     """Canonicalize trace notation while preserving trace structure.
 
-    The normalization treats these representations as equivalent:
+    By default, the normalization treats these representations as equivalent:
 
         (NP-TRACE (-NONE- *T*-1))
         (NP-TRACE *T*-1)
 
     It also alpha-normalizes consistently renamed coindices. It does not
-    remove trace-bearing nodes or ignore trace attachment.
+    remove trace-bearing nodes or ignore trace attachment. Set
+    ``collapse_empty_category_wrapper=False`` when the ``-NONE-`` node itself
+    must be preserved for strict structural comparison.
     """
     root = parse_sexpr(tree)
     coindices: dict[str, str] = {}
@@ -778,7 +784,8 @@ def trace_normalized_tree(tree: str) -> str:
         # Collapse the CorpusSearch empty-category wrapper while retaining
         # the trace atom and the category that dominates it.
         if (
-            len(node) == 2
+            collapse_empty_category_wrapper
+            and len(node) == 2
             and isinstance(node[1], list)
             and len(node[1]) == 2
             and node[1][0] == "-NONE-"
