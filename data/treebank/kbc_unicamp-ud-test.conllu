@@ -1225,8 +1225,8 @@
 1	Eyo	eeyo	PRON	PRO	Gender[spkr]=Fem|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	StandardForm=Eeyo|TokenRange=0:3
 2-3	manitaGa	_	_	_	_	_	_	_	TokenRange=4:12
 2	me	me	SCONJ	C	_	4	mark	_	_
-3	anitaGa	ini	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	4	det	_	_
-4	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	0	root	_	Case=Com|NumClass=Sitting|SpaceAfter=No|TokenRange=13:21
+3	anitaGa	ini	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	4	det	_	NumClass=Sitting
+4	nigotaGa	nigotaGa	NOUN	N	Gender=Fem|Number=Sing	0	root	_	Case=Com|SpaceAfter=No|TokenRange=13:21
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = van-data-19
@@ -1395,7 +1395,7 @@
 # text_orig = eteyo ina
 # text_por_orig = eu estou aqui
 # text_por = eu estou aqui.
-1	eteyo	et	VERB	VB	Gender=Fem|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	StandardForm=eteeyo|TokenRange=0:5
+1	eteyo	et	VERB	VB	Gender[spkr]=Fem|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	StandardForm=eteeyo|TokenRange=0:5
 2	ina	ina	DET	D	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	SpaceAfter=No|TokenRange=6:9
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=9:10
 
@@ -1405,7 +1405,7 @@
 # text_orig = etee manitaGa
 # text_por_orig = eu estou com ela
 # text_por = eu estou com ela.
-1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+1	etee	et	VERB	VB	Gender[spkr]=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
 2-3	manitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
 2	me	me	SCONJ	C	_	3	mark	_	_
 3	anitaGa	ini	DET	DAPL	Gender=Fem|Number=Sing|PronType=Dem	1	obj	_	Case=Com
@@ -1417,7 +1417,7 @@
 # text_orig = etee minitaGa
 # text_por_orig = eu estou com ele
 # text_por = eu estou com ele.
-1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+1	etee	et	VERB	VB	Gender[spkr]=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
 2-3	minitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
 2	me	me	SCONJ	C	_	3	mark	_	_
 3	initaGa	ini	DET	DAPL	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	Case=Com
@@ -1598,7 +1598,7 @@
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
 # ud_review_status = DONE
-1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+1	etee	et	VERB	VB	Gender[spkr]=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
 2-3	minitaGa	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=5:13
 2	me	me	SCONJ	C	_	3	mark	_	_
 3	initaGa	ini	DET	DAPL	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	_
@@ -2355,7 +2355,7 @@
 # project_git_commit = e3dd2730d767a027ae702dd06c52097642972b69
 # generation_timestamp = 2026-09-03 12:38
 # ud_review_status = DONE
-1	etee	et	VERB	VB	Gender=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+1	etee	et	VERB	VB	Gender[spkr]=Masc|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
 2	ina	ina	DET	D	Gender=Masc|Number=Sing|PronType=Dem	1	obj	_	SpaceAfter=No|TokenRange=5:8
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=8:9
 
