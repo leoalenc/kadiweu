@@ -1,0 +1,517 @@
+{
+  "schema_version": 1,
+  "source": "upload/lexicon-kadiweu(1).json",
+  "extractor": "KadiweuLexicon from kadiweu_lexicon_explorer.py",
+  "entry_count": 7,
+  "records": [
+    {
+      "record_type": "headword",
+      "form": "etadi",
+      "entry_name": "etadi",
+      "tag": "VB",
+      "grammar": "loc fem",
+      "definition": "está aí  - loc fem",
+      "senses": [
+        {
+          "definition": "está aí"
+        }
+      ],
+      "morphemes": [
+        {
+          "name": "et",
+          "tag": "v",
+          "attributes": {
+            "gloss-br": "estar em/ficar em (temporário)"
+          }
+        },
+        {
+          "name": "a",
+          "tag": "Gnr",
+          "attributes": {
+            "gloss-br": "F"
+          }
+        },
+        {
+          "name": "di",
+          "tag": "Ncl",
+          "attributes": {
+            "gloss-br": "deitado",
+            "gloss": "lying"
+          }
+        }
+      ],
+      "variants": [],
+      "conjugations": [],
+      "lexicon_status": "TODO",
+      "lexicon": "C12",
+      "uid": "c674a47b-55b4-479a-aeaa-891dba6bb8df",
+      "copyright": "SIL",
+      "review_status": "source_entry"
+    },
+    {
+      "record_type": "headword",
+      "form": "etadi",
+      "entry_name": "etadi",
+      "tag": "VB",
+      "grammar": null,
+      "definition": "está",
+      "senses": [
+        {
+          "definition": "está"
+        }
+      ],
+      "morphemes": [
+        {
+          "name": "et",
+          "tag": "v"
+        },
+        {
+          "name": "a",
+          "tag": "Gnr",
+          "attributes": {
+            "gloss-br": "F"
+          }
+        },
+        {
+          "name": "di",
+          "tag": "Ncl"
+        }
+      ],
+      "variants": [],
+      "conjugations": [],
+      "lexicon_status": "TODO",
+      "lexicon": "C12",
+      "uid": "6395863f-377d-4124-adf9-49ff166cfabc",
+      "copyright": "tycho",
+      "review_status": "source_entry"
+    },
+    {
+      "record_type": "conjugation_form",
+      "form": "etakami",
+      "entry_name": "etee",
+      "entry_uid": "e85d2b72-2e18-4341-88f1-5e286925c03d",
+      "paradigm_index": 0,
+      "form_index": 1,
+      "transitivity": "I",
+      "paradigm_values": [
+        "etee",
+        "etakami",
+        "etoko",
+        "eteetiwaji",
+        "etakamitiwaji",
+        "etokotiwaji"
+      ],
+      "review_status": "paradigm_form"
+    },
+    {
+      "record_type": "conjugation_form",
+      "form": "etakamitiwaji",
+      "entry_name": "etee",
+      "entry_uid": "e85d2b72-2e18-4341-88f1-5e286925c03d",
+      "paradigm_index": 0,
+      "form_index": 4,
+      "transitivity": "I",
+      "paradigm_values": [
+        "etee",
+        "etakami",
+        "etoko",
+        "eteetiwaji",
+        "etakamitiwaji",
+        "etokotiwaji"
+      ],
+      "review_status": "paradigm_form"
+    },
+    {
+      "record_type": "conjugation_form",
+      "form": "etee",
+      "entry_name": "etee",
+      "entry_uid": "e85d2b72-2e18-4341-88f1-5e286925c03d",
+      "paradigm_index": 0,
+      "form_index": 0,
+      "transitivity": "I",
+      "paradigm_values": [
+        "etee",
+        "etakami",
+        "etoko",
+        "eteetiwaji",
+        "etakamitiwaji",
+        "etokotiwaji"
+      ],
+      "review_status": "paradigm_form"
+    },
+    {
+      "record_type": "conjugation_form",
+      "form": "etee",
+      "entry_name": "etini",
+      "entry_uid": "911b42ba-1864-4017-9736-e956c320baf2",
+      "paradigm_index": 0,
+      "form_index": 0,
+      "transitivity": "I",
+      "paradigm_values": [
+        "etee",
+        "etini",
+        "etini",
+        "eteetiwaji",
+        "initiwaji",
+        "etinitiwaji"
+      ],
+      "review_status": "paradigm_form"
+    },
+    {
+      "record_type": "headword",
+      "form": "etee",
+      "entry_name": "etee",
+      "tag": "VB",
+      "grammar": "v estado",
+      "definition": "eu estou, fico",
+      "senses": [
+        {
+          "definition": "eu estou, fico"
+        }
+      ],
+      "morphemes": [
+        {
+          "name": "et",
+          "tag": "v",
+          "attributes": {
+            "gloss-br": "estar"
+          }
+        },
+        {
+          "name": "ee",
+          "tag": "Pro",
+          "attributes": {
+            "gloss-br": "1SG (fala de homem)",
+            "gloss": "1SG (man's speech)"
+          }
+        }
+      ],
+      "variants": [],
+      "conjugations": [
+        {
+          "values": [
+            "etee",
+            "etakami",
+            "etoko",
+            "eteetiwaji",
+            "etakamitiwaji",
+            "etokotiwaji"
+          ],
+          "transitivity": "I"
+        }
+      ],
+      "lexicon_status": "REVIEW",
+      "lexicon": "C12",
+      "uid": "e85d2b72-2e18-4341-88f1-5e286925c03d",
+      "copyright": "SIL",
+      "review_status": "source_entry"
+    },
+    {
+      "record_type": "conjugation_form",
+      "form": "eteetiwaji",
+      "entry_name": "etee",
+      "entry_uid": "e85d2b72-2e18-4341-88f1-5e286925c03d",
+      "paradigm_index": 0,
+      "form_index": 3,
+      "transitivity": "I",
+      "paradigm_values": [
+        "etee",
+        "etakami",
+        "etoko",
+        "eteetiwaji",
+        "etakamitiwaji",
+        "etokotiwaji"
+      ],
+      "review_status": "paradigm_form"
+    },
+    {
+      "record_type": "conjugation_form",
+      "form": "eteetiwaji",
+      "entry_name": "etini",
+      "entry_uid": "911b42ba-1864-4017-9736-e956c320baf2",
+      "paradigm_index": 0,
+      "form_index": 3,
+      "transitivity": "I",
+      "paradigm_values": [
+        "etee",
+        "etini",
+        "etini",
+        "eteetiwaji",
+        "initiwaji",
+        "etinitiwaji"
+      ],
+      "review_status": "paradigm_form"
+    },
+    {
+      "record_type": "headword",
+      "form": "eteeyo",
+      "entry_name": "eteeyo",
+      "tag": "VB",
+      "grammar": null,
+      "definition": null,
+      "senses": [],
+      "morphemes": [
+        {
+          "name": "et",
+          "tag": "v",
+          "attributes": {
+            "gloss-br": "estar"
+          }
+        },
+        {
+          "name": "eeyo",
+          "tag": "Pro",
+          "attributes": {
+            "gloss-br": "1SG (fala de homem)",
+            "gloss": "1SG (woman's speech)"
+          }
+        }
+      ],
+      "variants": [],
+      "conjugations": [],
+      "lexicon_status": null,
+      "lexicon": "C12",
+      "uid": "a33bbaee-4986-4466-afca-64f92f0d3b0b",
+      "copyright": "tycho",
+      "review_status": "source_entry"
+    },
+    {
+      "record_type": "headword",
+      "form": "eteyo",
+      "entry_name": "eteyo",
+      "tag": "VB",
+      "grammar": null,
+      "definition": null,
+      "senses": [],
+      "morphemes": [
+        {
+          "name": "et",
+          "tag": "v",
+          "attributes": {
+            "gloss-br": "estar"
+          }
+        },
+        {
+          "name": "eeyo",
+          "tag": "Pro",
+          "attributes": {
+            "gloss-br": "1SG (fala de homem)",
+            "gloss": "1SG (woman's speech)"
+          }
+        }
+      ],
+      "variants": [],
+      "conjugations": [],
+      "lexicon_status": null,
+      "lexicon": "C12",
+      "uid": "81acc915-b154-4f63-8122-d5273f8f44f4",
+      "copyright": "tycho",
+      "review_status": "source_entry"
+    },
+    {
+      "record_type": "headword",
+      "form": "etijo",
+      "entry_name": "etijo",
+      "tag": "VB",
+      "grammar": null,
+      "definition": null,
+      "senses": [],
+      "morphemes": [
+        {
+          "name": "et",
+          "tag": "v",
+          "attributes": {
+            "gloss-br": "está"
+          }
+        },
+        {
+          "name": "i",
+          "tag": "Gnr",
+          "attributes": {
+            "gloss-br": "M"
+          }
+        },
+        {
+          "name": "jo",
+          "tag": "Ncl",
+          "attributes": {
+            "gloss-br": "indo",
+            "gloss": "going_away"
+          }
+        }
+      ],
+      "variants": [],
+      "conjugations": [],
+      "lexicon_status": null,
+      "lexicon": "C12",
+      "uid": "2950678a-5b6d-47d0-9b83-c8d829032d1e",
+      "copyright": "tycho",
+      "review_status": "source_entry"
+    },
+    {
+      "record_type": "conjugation_form",
+      "form": "etini",
+      "entry_name": "etini",
+      "entry_uid": "911b42ba-1864-4017-9736-e956c320baf2",
+      "paradigm_index": 0,
+      "form_index": 1,
+      "transitivity": "I",
+      "paradigm_values": [
+        "etee",
+        "etini",
+        "etini",
+        "eteetiwaji",
+        "initiwaji",
+        "etinitiwaji"
+      ],
+      "review_status": "paradigm_form"
+    },
+    {
+      "record_type": "conjugation_form",
+      "form": "etini",
+      "entry_name": "etini",
+      "entry_uid": "911b42ba-1864-4017-9736-e956c320baf2",
+      "paradigm_index": 0,
+      "form_index": 2,
+      "transitivity": "I",
+      "paradigm_values": [
+        "etee",
+        "etini",
+        "etini",
+        "eteetiwaji",
+        "initiwaji",
+        "etinitiwaji"
+      ],
+      "review_status": "paradigm_form"
+    },
+    {
+      "record_type": "headword",
+      "form": "etini",
+      "entry_name": "etini",
+      "tag": "VB",
+      "grammar": "v estado",
+      "definition": "está aqui (animal em pé ou pessoa sentada)",
+      "senses": [
+        {
+          "definition": "está aqui (animal em pé ou pessoa sentada)"
+        }
+      ],
+      "morphemes": [
+        {
+          "name": "et",
+          "tag": "v",
+          "attributes": {
+            "gloss-br": "estar"
+          }
+        },
+        {
+          "name": "i",
+          "tag": "Gnr",
+          "attributes": {
+            "gloss-br": "M"
+          }
+        },
+        {
+          "name": "ni",
+          "tag": "Ncl",
+          "attributes": {
+            "gloss-br": "sentad(o|a)",
+            "gloss": "sitting"
+          }
+        }
+      ],
+      "variants": [],
+      "conjugations": [
+        {
+          "tense": "",
+          "values": [
+            "etee",
+            "etini",
+            "etini",
+            "eteetiwaji",
+            "initiwaji",
+            "etinitiwaji"
+          ],
+          "transitivity": "I"
+        }
+      ],
+      "lexicon_status": "REVIEW",
+      "lexicon": "C12",
+      "uid": "911b42ba-1864-4017-9736-e956c320baf2",
+      "copyright": "SIL",
+      "review_status": "source_entry"
+    },
+    {
+      "record_type": "conjugation_form",
+      "form": "etinitiwaji",
+      "entry_name": "etini",
+      "entry_uid": "911b42ba-1864-4017-9736-e956c320baf2",
+      "paradigm_index": 0,
+      "form_index": 5,
+      "transitivity": "I",
+      "paradigm_values": [
+        "etee",
+        "etini",
+        "etini",
+        "eteetiwaji",
+        "initiwaji",
+        "etinitiwaji"
+      ],
+      "review_status": "paradigm_form"
+    },
+    {
+      "record_type": "conjugation_form",
+      "form": "etoko",
+      "entry_name": "etee",
+      "entry_uid": "e85d2b72-2e18-4341-88f1-5e286925c03d",
+      "paradigm_index": 0,
+      "form_index": 2,
+      "transitivity": "I",
+      "paradigm_values": [
+        "etee",
+        "etakami",
+        "etoko",
+        "eteetiwaji",
+        "etakamitiwaji",
+        "etokotiwaji"
+      ],
+      "review_status": "paradigm_form"
+    },
+    {
+      "record_type": "conjugation_form",
+      "form": "etokotiwaji",
+      "entry_name": "etee",
+      "entry_uid": "e85d2b72-2e18-4341-88f1-5e286925c03d",
+      "paradigm_index": 0,
+      "form_index": 5,
+      "transitivity": "I",
+      "paradigm_values": [
+        "etee",
+        "etakami",
+        "etoko",
+        "eteetiwaji",
+        "etakamitiwaji",
+        "etokotiwaji"
+      ],
+      "review_status": "paradigm_form"
+    },
+    {
+      "record_type": "conjugation_form",
+      "form": "initiwaji",
+      "entry_name": "etini",
+      "entry_uid": "911b42ba-1864-4017-9736-e956c320baf2",
+      "paradigm_index": 0,
+      "form_index": 4,
+      "transitivity": "I",
+      "paradigm_values": [
+        "etee",
+        "etini",
+        "etini",
+        "eteetiwaji",
+        "initiwaji",
+        "etinitiwaji"
+      ],
+      "review_status": "paradigm_form"
+    }
+  ]
+}

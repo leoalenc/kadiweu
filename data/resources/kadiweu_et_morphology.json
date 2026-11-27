@@ -1,0 +1,502 @@
+{
+  "schema_version": 1,
+  "feature_values": {
+    "da": {
+      "value": "Standing",
+      "meaning": "standing / vertically extended"
+    },
+    "ni": {
+      "value": "Sitting",
+      "meaning": "sitting / non-extended"
+    },
+    "na": {
+      "value": "Coming",
+      "meaning": "coming / approaching"
+    },
+    "di": {
+      "value": "Lying",
+      "meaning": "lying / horizontally extended"
+    },
+    "jo": {
+      "value": "Going",
+      "meaning": "going away"
+    },
+    "ca": {
+      "value": "Absent",
+      "meaning": "absent / out of sight",
+      "source_form": "ka"
+    }
+  },
+  "d_element_templates": {
+    "gender_vowels": {
+      "i": "Masc",
+      "a": "Fem"
+    },
+    "classifier_roots": [
+      "ca",
+      "da",
+      "di",
+      "jo",
+      "na",
+      "ni"
+    ],
+    "forms": [
+      "gender-vowel + root",
+      "nG + gender-vowel + root",
+      "reduced nG + gender-vowel + root"
+    ]
+  },
+  "et_verb_templates": {
+    "classifier_agreement": "et + gender vowel + Ncl root",
+    "personal_pronouns": {
+      "ee": {
+        "Person": "1",
+        "Number": "Sing"
+      },
+      "eeyo": {
+        "Person": "1",
+        "Number": "Sing"
+      },
+      "akaami": {
+        "Person": "2",
+        "Number": "Sing"
+      },
+      "akami": {
+        "Person": "2",
+        "Number": "Sing",
+        "status": "orthographic_variant_to_review"
+      },
+      "oko": {
+        "Person": "1",
+        "Number": "Plur"
+      }
+    }
+  },
+  "forms": {
+    "etadi": {
+      "forms": [
+        "etadi"
+      ],
+      "analyses": [
+        {
+          "segments": [
+            {
+              "form": "et",
+              "tag": "v"
+            },
+            {
+              "form": "a",
+              "tag": "Gnr"
+            },
+            {
+              "form": "di",
+              "tag": "Ncl"
+            }
+          ],
+          "features": {
+            "NumClass": "Lying",
+            "Gender": "Fem"
+          },
+          "analysis_type": "incorporated_classifier",
+          "evidence": "headword",
+          "review_status": "attested_segmentation"
+        }
+      ],
+      "sources": [
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etadi",
+          "uid": "c674a47b-55b4-479a-aeaa-891dba6bb8df",
+          "tag": "VB",
+          "grammar": "loc fem",
+          "definition": "está aí  - loc fem",
+          "lexicon_status": "TODO",
+          "record_type": "headword",
+          "review_status": "source_entry"
+        },
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etadi",
+          "uid": "6395863f-377d-4124-adf9-49ff166cfabc",
+          "tag": "VB",
+          "definition": "está",
+          "lexicon_status": "TODO",
+          "record_type": "headword",
+          "review_status": "source_entry"
+        }
+      ],
+      "status": "attested_analysis"
+    },
+    "etakami": {
+      "forms": [
+        "etakami"
+      ],
+      "analyses": [],
+      "sources": [
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etee",
+          "entry_uid": "e85d2b72-2e18-4341-88f1-5e286925c03d",
+          "record_type": "conjugation_form",
+          "review_status": "paradigm_form",
+          "paradigm_index": 0,
+          "form_index": 1
+        }
+      ],
+      "status": "form_only"
+    },
+    "etakamitiwaji": {
+      "forms": [
+        "etakamitiwaji"
+      ],
+      "analyses": [],
+      "sources": [
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etee",
+          "entry_uid": "e85d2b72-2e18-4341-88f1-5e286925c03d",
+          "record_type": "conjugation_form",
+          "review_status": "paradigm_form",
+          "paradigm_index": 0,
+          "form_index": 4
+        }
+      ],
+      "status": "form_only"
+    },
+    "etee": {
+      "forms": [
+        "etee"
+      ],
+      "analyses": [
+        {
+          "segments": [
+            {
+              "form": "et",
+              "tag": "v"
+            },
+            {
+              "form": "ee",
+              "tag": "Pro"
+            }
+          ],
+          "features": {
+            "Person": "1",
+            "Number": "Sing"
+          },
+          "analysis_type": "incorporated_personal_pronoun",
+          "evidence": "headword",
+          "review_status": "attested_segmentation"
+        }
+      ],
+      "sources": [
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etee",
+          "entry_uid": "e85d2b72-2e18-4341-88f1-5e286925c03d",
+          "record_type": "conjugation_form",
+          "review_status": "paradigm_form",
+          "paradigm_index": 0,
+          "form_index": 0
+        },
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etini",
+          "entry_uid": "911b42ba-1864-4017-9736-e956c320baf2",
+          "record_type": "conjugation_form",
+          "review_status": "paradigm_form",
+          "paradigm_index": 0,
+          "form_index": 0
+        },
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etee",
+          "uid": "e85d2b72-2e18-4341-88f1-5e286925c03d",
+          "tag": "VB",
+          "grammar": "v estado",
+          "definition": "eu estou, fico",
+          "lexicon_status": "REVIEW",
+          "record_type": "headword",
+          "review_status": "source_entry"
+        }
+      ],
+      "status": "attested_analysis"
+    },
+    "eteetiwaji": {
+      "forms": [
+        "eteetiwaji"
+      ],
+      "analyses": [],
+      "sources": [
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etee",
+          "entry_uid": "e85d2b72-2e18-4341-88f1-5e286925c03d",
+          "record_type": "conjugation_form",
+          "review_status": "paradigm_form",
+          "paradigm_index": 0,
+          "form_index": 3
+        },
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etini",
+          "entry_uid": "911b42ba-1864-4017-9736-e956c320baf2",
+          "record_type": "conjugation_form",
+          "review_status": "paradigm_form",
+          "paradigm_index": 0,
+          "form_index": 3
+        }
+      ],
+      "status": "form_only"
+    },
+    "eteeyo": {
+      "forms": [
+        "eteeyo"
+      ],
+      "analyses": [
+        {
+          "segments": [
+            {
+              "form": "et",
+              "tag": "v"
+            },
+            {
+              "form": "eeyo",
+              "tag": "Pro"
+            }
+          ],
+          "features": {
+            "Person": "1",
+            "Number": "Sing"
+          },
+          "analysis_type": "incorporated_personal_pronoun",
+          "evidence": "headword",
+          "review_status": "attested_segmentation"
+        }
+      ],
+      "sources": [
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "eteeyo",
+          "uid": "a33bbaee-4986-4466-afca-64f92f0d3b0b",
+          "tag": "VB",
+          "record_type": "headword",
+          "review_status": "source_entry"
+        }
+      ],
+      "status": "attested_analysis"
+    },
+    "eteyo": {
+      "forms": [
+        "eteyo"
+      ],
+      "analyses": [
+        {
+          "segments": [
+            {
+              "form": "et",
+              "tag": "v"
+            },
+            {
+              "form": "eeyo",
+              "tag": "Pro"
+            }
+          ],
+          "features": {
+            "Person": "1",
+            "Number": "Sing"
+          },
+          "analysis_type": "incorporated_personal_pronoun",
+          "evidence": "headword",
+          "review_status": "attested_segmentation"
+        }
+      ],
+      "sources": [
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "eteyo",
+          "uid": "81acc915-b154-4f63-8122-d5273f8f44f4",
+          "tag": "VB",
+          "record_type": "headword",
+          "review_status": "source_entry"
+        }
+      ],
+      "status": "attested_analysis"
+    },
+    "etijo": {
+      "forms": [
+        "etijo"
+      ],
+      "analyses": [
+        {
+          "segments": [
+            {
+              "form": "et",
+              "tag": "v"
+            },
+            {
+              "form": "i",
+              "tag": "Gnr"
+            },
+            {
+              "form": "jo",
+              "tag": "Ncl"
+            }
+          ],
+          "features": {
+            "NumClass": "Going",
+            "Gender": "Masc"
+          },
+          "analysis_type": "incorporated_classifier",
+          "evidence": "headword",
+          "review_status": "attested_segmentation"
+        }
+      ],
+      "sources": [
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etijo",
+          "uid": "2950678a-5b6d-47d0-9b83-c8d829032d1e",
+          "tag": "VB",
+          "record_type": "headword",
+          "review_status": "source_entry"
+        }
+      ],
+      "status": "attested_analysis"
+    },
+    "etini": {
+      "forms": [
+        "etini"
+      ],
+      "analyses": [
+        {
+          "segments": [
+            {
+              "form": "et",
+              "tag": "v"
+            },
+            {
+              "form": "i",
+              "tag": "Gnr"
+            },
+            {
+              "form": "ni",
+              "tag": "Ncl"
+            }
+          ],
+          "features": {
+            "NumClass": "Sitting",
+            "Gender": "Masc"
+          },
+          "analysis_type": "incorporated_classifier",
+          "evidence": "headword",
+          "review_status": "attested_segmentation"
+        }
+      ],
+      "sources": [
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etini",
+          "entry_uid": "911b42ba-1864-4017-9736-e956c320baf2",
+          "record_type": "conjugation_form",
+          "review_status": "paradigm_form",
+          "paradigm_index": 0,
+          "form_index": 1
+        },
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etini",
+          "entry_uid": "911b42ba-1864-4017-9736-e956c320baf2",
+          "record_type": "conjugation_form",
+          "review_status": "paradigm_form",
+          "paradigm_index": 0,
+          "form_index": 2
+        },
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etini",
+          "uid": "911b42ba-1864-4017-9736-e956c320baf2",
+          "tag": "VB",
+          "grammar": "v estado",
+          "definition": "está aqui (animal em pé ou pessoa sentada)",
+          "lexicon_status": "REVIEW",
+          "record_type": "headword",
+          "review_status": "source_entry"
+        }
+      ],
+      "status": "attested_analysis"
+    },
+    "etinitiwaji": {
+      "forms": [
+        "etinitiwaji"
+      ],
+      "analyses": [],
+      "sources": [
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etini",
+          "entry_uid": "911b42ba-1864-4017-9736-e956c320baf2",
+          "record_type": "conjugation_form",
+          "review_status": "paradigm_form",
+          "paradigm_index": 0,
+          "form_index": 5
+        }
+      ],
+      "status": "form_only"
+    },
+    "etoko": {
+      "forms": [
+        "etoko"
+      ],
+      "analyses": [],
+      "sources": [
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etee",
+          "entry_uid": "e85d2b72-2e18-4341-88f1-5e286925c03d",
+          "record_type": "conjugation_form",
+          "review_status": "paradigm_form",
+          "paradigm_index": 0,
+          "form_index": 2
+        }
+      ],
+      "status": "form_only"
+    },
+    "etokotiwaji": {
+      "forms": [
+        "etokotiwaji"
+      ],
+      "analyses": [],
+      "sources": [
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etee",
+          "entry_uid": "e85d2b72-2e18-4341-88f1-5e286925c03d",
+          "record_type": "conjugation_form",
+          "review_status": "paradigm_form",
+          "paradigm_index": 0,
+          "form_index": 5
+        }
+      ],
+      "status": "form_only"
+    },
+    "initiwaji": {
+      "forms": [
+        "initiwaji"
+      ],
+      "analyses": [],
+      "sources": [
+        {
+          "source": "TBP JSON lexicon",
+          "entry_name": "etini",
+          "entry_uid": "911b42ba-1864-4017-9736-e956c320baf2",
+          "record_type": "conjugation_form",
+          "review_status": "paradigm_form",
+          "paradigm_index": 0,
+          "form_index": 4
+        }
+      ],
+      "status": "form_only"
+    }
+  },
+  "provenance_note": "Source evidence is retained. Unsegmented dictionary/conjugation forms are not treated as confirmed analyses unless a productive fallback recognizes them."
+}

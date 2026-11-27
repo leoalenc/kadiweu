@@ -85,6 +85,7 @@ from kadiweu_linguistic_mappings import (
     apply_upos_override,
     get_form_correction,
 )
+from kadiweu_et_morphology import add_features as add_et_morphology_features
 
 from kadiweu_token_ranges import assign_token_ranges_to_emitted_rows
 
@@ -841,6 +842,15 @@ def convert_sentence(
                     feature_source_token=group[0],
                     restrict_split_feats_to_component=True,
                 )
+                feats = add_et_morphology_features(
+                    feats,
+                    surface_form,
+                    lemma,
+                    upos,
+                    gtag,
+                    source_token=gtok,
+                    feature_source_token=group[0],
+                )
 
                 draft = DraftToken(
                     source_pos=int(gtok.get("p", 0) or 0),
@@ -923,6 +933,15 @@ def convert_sentence(
                         current_feats.append(feat)
 
                 feats = "|".join(sorted(set(current_feats))) if current_feats else "_"
+
+            feats = add_et_morphology_features(
+                feats,
+                surface_form,
+                lemma,
+                upos,
+                gtag,
+                source_token=tok,
+            )
 
         # Range from proto scaffold, converted to space-aware positions
         misc = "_"
